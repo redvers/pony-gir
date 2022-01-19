@@ -8,13 +8,13 @@ use "../GObject"
   Struct Align (bits): 64
 
   Fields (Offset in bits):
-     000000: [FundamentalType(int) size=32]: dummy0  
-     000064: [PointerType size=64]->[FundamentalType(void) size=0]: dummy1  
-     000128: [PointerType size=64]->[FundamentalType(void) size=0]: dummy2  
-     000192: [ArrayType size=(0-255)]->[FundamentalType(unsigned char) size=8] -- UNSUPPORTED - FIXME: dummy3  
+     000000: [FundamentalType(int) size=32]: dummy0
+     000064: [PointerType size=64]->[FundamentalType(void) size=0]: dummy1
+     000128: [PointerType size=64]->[FundamentalType(void) size=0]: dummy2
+     000192: [ArrayType size=(0-255)]->[FundamentalType(unsigned char) size=8] -- UNSUPPORTED - FIXME: dummy3
 */
 struct GUriParamsIter
-  var dummy0: I32 = I32(0)
-  var dummy1: Pointer[None] = Pointer[None]
-  var dummy2: Pointer[None] = Pointer[None]
-  var dummy3: Pointer[U8] = Pointer[U8]
+//  var dummy0: I32 = I32(0)
+//  var dummy1: Pointer[None] = Pointer[None]
+//  var dummy2: Pointer[None] = Pointer[None]
+//  var dummy3: Pointer[U8] = Pointer[U8]

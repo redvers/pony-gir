@@ -8,13 +8,13 @@ use "../GObject"
   Struct Align (bits): 64
 
   Fields (Offset in bits):
-     000000: [FundamentalType(long unsigned int) size=64]: seq_id  
-     000064: [FundamentalType(unsigned int) size=32]: hook_size  
-     000080: [FundamentalType(unsigned int) size=32]: is_setup  
-     000128: [PointerType size=64]->[Struct size=512,fid: f78]: hooks  
-     000192: [PointerType size=64]->[FundamentalType(void) size=0]: dummy3  
-     000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: finalize_hook  
-     000320: [ArrayType size=(0-1)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: dummy  
+     000000: [FundamentalType(long unsigned int) size=64]: seq_id
+     000064: [FundamentalType(unsigned int) size=32]: hook_size
+     000080: [FundamentalType(unsigned int) size=32]: is_setup
+     000128: [PointerType size=64]->[Struct size=512,fid: f78]: hooks
+     000192: [PointerType size=64]->[FundamentalType(void) size=0]: dummy3
+     000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: finalize_hook
+     000320: [ArrayType size=(0-1)]->[PointerType size=64]->[FundamentalType(void) size=0]
 */
 struct GHookList
   var seq_id: U64 = U64(0)
@@ -23,4 +23,5 @@ struct GHookList
   var hooks: NullablePointer[GHook] = NullablePointer[GHook].none()
   var dummy3: Pointer[None] = Pointer[None]
   var finalize_hook: Pointer[None] = Pointer[None]
-  var dummy: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  var dummy0: Pointer[None] = Pointer[None]
+  var dummy1: Pointer[None] = Pointer[None]

@@ -8,9 +8,10 @@ use "../GObject"
   Struct Align (bits): 64
 
   Fields (Offset in bits):
-     000000: [PointerType size=64]->[FundamentalType(void) size=0]: p  
-     000064: [ArrayType size=(0-1)]->[FundamentalType(unsigned int) size=32] -- UNSUPPORTED - FIXME: i  
+     000000: [PointerType size=64]->[FundamentalType(void) size=0]: p
+     000064: [ArrayType size=(0-1)]->[FundamentalType(unsigned int) size=32]
 */
 struct GCond
   var p: Pointer[None] = Pointer[None]
-  var i: Pointer[U32] = Pointer[U32]
+  var i0: U32 = U32(0)
+  var i1: U32 = U32(0)

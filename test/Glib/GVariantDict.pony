@@ -8,7 +8,7 @@ use "../GObject"
   Struct Align (bits): 64
 
   Fields (Offset in bits):
-     000000: [UNION size=1024] -- UNSUPPORTED FIXME: u  
+     000000: [UNION size=1024] -- UNSUPPORTED FIXME: u
 */
 struct GVariantDict
-  var u: None = None
+//  var u: None = None
