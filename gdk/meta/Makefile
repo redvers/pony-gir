@@ -1,10 +1,11 @@
 #structgdk:
-#	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gtk-3.xml -s f348 f350 f351 f352 f353 f354 f355 f356 f357 f358 f359 f360 f361 f362 f363 f364 f365 f366 f367 f368 f369 f370 f371 f372 f373 f374 f375 f377 f378 f379 f380 f381 f382 f383 f384 f385 f386 f387 f388 f389 f390 f391
+#	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gtk-3.xml -s f348 f350 f351 f352 f353 f354 f355 f356 f357 f358 f359 f360 f361 f362 f363 f364 f365 f366 f367 f368 f369 f370 f371 f372 f373 f374 f375 f377 f378 f379 f380 f381 f382 f383 f384 f385 f386 f387 f388 f389 f390 f391 f349
 
 all:
 	rm -f ../../test/Gdk/*
 	sh -x mkstruct.sh _9645 ../../test/Gdk/GdkPoint.pony
 	sh -x mkstruct.sh _9648 ../../test/Gdk/GdkAtom.pony
+	sh -x mkstruct.sh _9650 ../../test/Gdk/GdkColor.pony
 	sh -x mkstruct.sh _9654 ../../test/Gdk/GdkCursor.pony
 	sh -x mkstruct.sh _9656 ../../test/Gdk/GdkVisual.pony
 	sh -x mkstruct.sh _9658 ../../test/Gdk/GdkDevice.pony

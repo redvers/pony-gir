@@ -17,8 +17,8 @@ codegenstruct:
 #	sh -x mkstruct.sh _3360 ../../test/GObject/GParameter.pony
 #	sh -x mkstruct.sh _3362 ../../test/GObject/GParamSpecPool.pony
 #	sh -x mkstruct.sh _3388 ../../test/GObject/GParamSpecTypeInfo.pony
-#	sh -x mkstruct.sh _3400 ../../test/GObject/GClosure.pony
-#	sh -x mkstruct.sh _3402 ../../test/GObject/GClosureNotifyData.pony
+	sh -x mkstruct.sh _3400 ../../test/GObject/GClosure.pony
+	sh -x mkstruct.sh _3402 ../../test/GObject/GClosureNotifyData.pony
 #	sh -x mkstruct.sh _3408 ../../test/GObject/GCClosure.pony
 #	sh -x mkstruct.sh _3472 ../../test/GObject/GSignalQuery.pony
 #	sh -x mkstruct.sh _3474 ../../test/GObject/GSignalInvocationHint.pony

@@ -101,7 +101,7 @@ all:
 #	sh -x mkstruct.sh _6401 ../../test/Gio/GSimpleActionGroupPrivate.pony
 #	sh -x mkstruct.sh _6403 ../../test/Gio/GSimpleActionGroupClass.pony
 	sh -x mkstruct.sh _4486 ../../test/Gio/GApplicationPrivate.pony
-#	sh -x mkstruct.sh _4488 ../../test/Gio/GApplicationClass.pony
+	sh -x mkstruct.sh _4488 ../../test/Gio/GApplicationClass.pony
 #	sh -x mkstruct.sh _4140 ../../test/Gio/GApplicationCommandLine.pony
 #	sh -x mkstruct.sh _4528 ../../test/Gio/GApplicationCommandLinePrivate.pony
 #	sh -x mkstruct.sh _4530 ../../test/Gio/GApplicationCommandLineClass.pony

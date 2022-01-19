@@ -487,6 +487,13 @@
     <field name="group" id="_23411" type="I32" fieldid="_141" offset="32" fid="f383" line="60"/>
     <field name="level" id="_23412" type="I32" fieldid="_141" offset="64" fid="f383" line="61"/>
   </struct>
+
+  <struct name="GdkColor" id="_9650" size="96" align="32" fid="f349" lineno="54">
+    <field name="pixel" id="_22952" type="U32" fieldid="_17" offset="0" fid="f349" line="56"/>
+    <field name="red" id="_22953" type="U16" fieldid="_15" offset="32" fid="f349" line="57"/>
+    <field name="green" id="_22954" type="U16" fieldid="_15" offset="48" fid="f349" line="58"/>
+    <field name="blue" id="_22955" type="U16" fieldid="_15" offset="64" fid="f349" line="59"/>
+  </struct>
 </structs>
 </castxml2pony>
 
