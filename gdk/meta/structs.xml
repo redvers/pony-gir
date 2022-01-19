@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./types.xml"/>
+<xi:include href="./../../castxml-results/gtk-3.xml"/>
+                    <structs>
+                      <struct name="GdkPoint" id="_9645" size="64" align="32" fid="f348" lineno="464">
+    <field name="x" id="_22948" type="I32" fieldid="_141" offset="0" fid="f348" line="466"/>
+    <field name="y" id="_22949" type="I32" fieldid="_141" offset="32" fid="f348" line="467"/>
+  </struct>
+
+  <struct name="GdkAtom" id="_9648" size="" align="" fid="f348" lineno="102">
+
+  </struct>
+
+  <struct name="GdkCursor" id="_9654" size="" align="" fid="f348" lineno="134">
+
+  </struct>
+
+  <struct name="GdkVisual" id="_9656" size="" align="" fid="f348" lineno="135">
+
+  </struct>
+
+  <struct name="GdkDevice" id="_9658" size="" align="" fid="f348" lineno="136">
+
+  </struct>
+
+  <struct name="GdkDragContext" id="_9660" size="" align="" fid="f348" lineno="137">
+
+  </struct>
+
+  <struct name="GdkDisplayManager" id="_9662" size="" align="" fid="f348" lineno="139">
+
+  </struct>
+
+  <struct name="GdkDeviceManager" id="_9664" size="" align="" fid="f348" lineno="140">
+
+  </struct>
+
+  <struct name="GdkDisplay" id="_9666" size="" align="" fid="f348" lineno="141">
+
+  </struct>
+
+  <struct name="GdkScreen" id="_9668" size="" align="" fid="f348" lineno="142">
+
+  </struct>
+
+  <struct name="GdkWindow" id="_9670" size="" align="" fid="f348" lineno="143">
+
+  </struct>
+
+  <struct name="GdkKeymap" id="_9672" size="" align="" fid="f348" lineno="144">
+
+  </struct>
+
+  <struct name="GdkAppLaunchContext" id="_9674" size="" align="" fid="f348" lineno="145">
+
+  </struct>
+
+  <struct name="GdkGLContext" id="_9678" size="" align="" fid="f348" lineno="148">
+
+  </struct>
+
+  <struct name="GdkRGBA" id="_9652" size="256" align="64" fid="f350" lineno="37">
+    <field name="red" id="_22957" type="F64" fieldid="_148" offset="0" fid="f350" line="39"/>
+    <field name="green" id="_22958" type="F64" fieldid="_148" offset="64" fid="f350" line="40"/>
+    <field name="blue" id="_22959" type="F64" fieldid="_148" offset="128" fid="f350" line="41"/>
+    <field name="alpha" id="_22960" type="F64" fieldid="_148" offset="192" fid="f350" line="42"/>
+  </struct>
+
+  <struct name="GdkSeat" id="_9676" size="192" align="64" fid="f351" lineno="79">
+    <field name="parent_instance" id="_22973" type="GObject" fieldid="_3573" offset="0" fid="f351" line="81"/>
+  </struct>
+
+  <struct name="GdkTimeCoord" id="_9702" size="8256" align="64" fid="f352" lineno="119">
+    <field name="time" id="_22987" type="U32" fieldid="_17" offset="0" fid="f352" line="121"/>
+    <field name="axes" id="_22988" type="Pointer[F64]" fieldid="_28067" offset="64" fid="f352" line="122"/>
+  </struct>
+
+  <struct name="GdkDeviceTool" id="_9777" size="" align="" fid="f354" lineno="35">
+
+  </struct>
+
+  <struct name="GdkEventAny" id="_9785" size="192" align="64" fid="f355" lineno="598">
+    <field name="gtype" id="_23012" type="I32" fieldid="_9843" offset="0" fid="f355" line="600"/>
+    <field name="window" id="_23013" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="601"/>
+    <field name="send_event" id="_23014" type="I8" fieldid="_12" offset="128" fid="f355" line="602"/>
+  </struct>
+
+  <struct name="GdkEventExpose" id="_9787" size="448" align="64" fid="f355" lineno="620">
+    <field name="gtype" id="_23016" type="I32" fieldid="_9843" offset="0" fid="f355" line="622"/>
+    <field name="window" id="_23017" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="623"/>
+    <field name="send_event" id="_23018" type="I8" fieldid="_12" offset="128" fid="f355" line="624"/>
+    <field name="area" id="_23019" type="Cairorectangleint" fieldid="_9647" offset="160" fid="f355" line="625"/>
+    <field name="region" id="_23020" type="NullablePointer[Cairoregion]" fieldid="_22945" offset="320" fid="f355" line="626"/>
+    <field name="count" id="_23021" type="I32" fieldid="_141" offset="384" fid="f355" line="627"/>
+  </struct>
+
+  <struct name="GdkEventVisibility" id="_9789" size="192" align="64" fid="f355" lineno="645">
+    <field name="gtype" id="_23023" type="I32" fieldid="_9843" offset="0" fid="f355" line="647"/>
+    <field name="window" id="_23024" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="648"/>
+    <field name="send_event" id="_23025" type="I8" fieldid="_12" offset="128" fid="f355" line="649"/>
+    <field name="state" id="_23026" type="I32" fieldid="_9845" offset="160" fid="f355" line="650"/>
+  </struct>
+
+  <struct name="GdkEventMotion" id="_9791" size="640" align="64" fid="f355" lineno="677">
+    <field name="gtype" id="_23028" type="I32" fieldid="_9843" offset="0" fid="f355" line="679"/>
+    <field name="window" id="_23029" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="680"/>
+    <field name="send_event" id="_23030" type="I8" fieldid="_12" offset="128" fid="f355" line="681"/>
+    <field name="time" id="_23031" type="U32" fieldid="_17" offset="160" fid="f355" line="682"/>
+    <field name="x" id="_23032" type="F64" fieldid="_148" offset="192" fid="f355" line="683"/>
+    <field name="y" id="_23033" type="F64" fieldid="_148" offset="256" fid="f355" line="684"/>
+    <field name="axes" id="_23034" type="Pointer[F64]" fieldid="_19750" offset="320" fid="f355" line="685"/>
+    <field name="state" id="_23035" type="U32" fieldid="_146" offset="384" fid="f355" line="686"/>
+    <field name="is_hint" id="_23036" type="I16" fieldid="_14" offset="416" fid="f355" line="687"/>
+    <field name="device" id="_23037" type="NullablePointer[GdkDevice]" fieldid="_22993" offset="448" fid="f355" line="688"/>
+    <field name="x_root" id="_23038" type="F64" fieldid="_148" offset="512" fid="f355" line="689"/>
+    <field name="y_root" id="_23039" type="F64" fieldid="_148" offset="576" fid="f355" line="689"/>
+  </struct>
+
+  <struct name="GdkEventButton" id="_9793" size="640" align="64" fid="f355" lineno="751">
+    <field name="gtype" id="_23041" type="I32" fieldid="_9843" offset="0" fid="f355" line="753"/>
+    <field name="window" id="_23042" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="754"/>
+    <field name="send_event" id="_23043" type="I8" fieldid="_12" offset="128" fid="f355" line="755"/>
+    <field name="time" id="_23044" type="U32" fieldid="_17" offset="160" fid="f355" line="756"/>
+    <field name="x" id="_23045" type="F64" fieldid="_148" offset="192" fid="f355" line="757"/>
+    <field name="y" id="_23046" type="F64" fieldid="_148" offset="256" fid="f355" line="758"/>
+    <field name="axes" id="_23047" type="Pointer[F64]" fieldid="_19750" offset="320" fid="f355" line="759"/>
+    <field name="state" id="_23048" type="U32" fieldid="_146" offset="384" fid="f355" line="760"/>
+    <field name="button" id="_23049" type="U32" fieldid="_146" offset="416" fid="f355" line="761"/>
+    <field name="device" id="_23050" type="NullablePointer[GdkDevice]" fieldid="_22993" offset="448" fid="f355" line="762"/>
+    <field name="x_root" id="_23051" type="F64" fieldid="_148" offset="512" fid="f355" line="763"/>
+    <field name="y_root" id="_23052" type="F64" fieldid="_148" offset="576" fid="f355" line="763"/>
+  </struct>
+
+  <struct name="GdkEventTouch" id="_9795" size="768" align="64" fid="f355" lineno="801">
+    <field name="gtype" id="_23054" type="I32" fieldid="_9843" offset="0" fid="f355" line="803"/>
+    <field name="window" id="_23055" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="804"/>
+    <field name="send_event" id="_23056" type="I8" fieldid="_12" offset="128" fid="f355" line="805"/>
+    <field name="time" id="_23057" type="U32" fieldid="_17" offset="160" fid="f355" line="806"/>
+    <field name="x" id="_23058" type="F64" fieldid="_148" offset="192" fid="f355" line="807"/>
+    <field name="y" id="_23059" type="F64" fieldid="_148" offset="256" fid="f355" line="808"/>
+    <field name="axes" id="_23060" type="Pointer[F64]" fieldid="_19750" offset="320" fid="f355" line="809"/>
+    <field name="state" id="_23061" type="U32" fieldid="_146" offset="384" fid="f355" line="810"/>
+    <field name="sequence" id="_23062" type="NullablePointer[GdkEventSequence]" fieldid="_23278" offset="448" fid="f355" line="811"/>
+    <field name="emulating_pointer" id="_23063" type="I32" fieldid="_142" offset="512" fid="f355" line="812"/>
+    <field name="device" id="_23064" type="NullablePointer[GdkDevice]" fieldid="_22993" offset="576" fid="f355" line="813"/>
+    <field name="x_root" id="_23065" type="F64" fieldid="_148" offset="640" fid="f355" line="814"/>
+    <field name="y_root" id="_23066" type="F64" fieldid="_148" offset="704" fid="f355" line="814"/>
+  </struct>
+
+  <struct name="GdkEventScroll" id="_9797" size="768" align="64" fid="f355" lineno="849">
+    <field name="gtype" id="_23068" type="I32" fieldid="_9843" offset="0" fid="f355" line="851"/>
+    <field name="window" id="_23069" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="852"/>
+    <field name="send_event" id="_23070" type="I8" fieldid="_12" offset="128" fid="f355" line="853"/>
+    <field name="time" id="_23071" type="U32" fieldid="_17" offset="160" fid="f355" line="854"/>
+    <field name="x" id="_23072" type="F64" fieldid="_148" offset="192" fid="f355" line="855"/>
+    <field name="y" id="_23073" type="F64" fieldid="_148" offset="256" fid="f355" line="856"/>
+    <field name="state" id="_23074" type="U32" fieldid="_146" offset="320" fid="f355" line="857"/>
+    <field name="direction" id="_23075" type="I32" fieldid="_9849" offset="352" fid="f355" line="858"/>
+    <field name="device" id="_23076" type="NullablePointer[GdkDevice]" fieldid="_22993" offset="384" fid="f355" line="859"/>
+    <field name="x_root" id="_23077" type="F64" fieldid="_148" offset="448" fid="f355" line="860"/>
+    <field name="y_root" id="_23078" type="F64" fieldid="_148" offset="512" fid="f355" line="860"/>
+    <field name="delta_x" id="_23079" type="F64" fieldid="_148" offset="576" fid="f355" line="861"/>
+    <field name="delta_y" id="_23080" type="F64" fieldid="_148" offset="640" fid="f355" line="862"/>
+    <field name="is_stop" id="_23081" type="U32" fieldid="_146" offset="704" fid="f355" line="863"/>
+  </struct>
+
+  <struct name="GdkEventKey" id="_9799" size="448" align="64" fid="f355" lineno="897">
+    <field name="gtype" id="_23083" type="I32" fieldid="_9843" offset="0" fid="f355" line="899"/>
+    <field name="window" id="_23084" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="900"/>
+    <field name="send_event" id="_23085" type="I8" fieldid="_12" offset="128" fid="f355" line="901"/>
+    <field name="time" id="_23086" type="U32" fieldid="_17" offset="160" fid="f355" line="902"/>
+    <field name="state" id="_23087" type="U32" fieldid="_146" offset="192" fid="f355" line="903"/>
+    <field name="keyval" id="_23088" type="U32" fieldid="_146" offset="224" fid="f355" line="904"/>
+    <field name="length" id="_23089" type="I32" fieldid="_141" offset="256" fid="f355" line="905"/>
+    <field name="string" id="_23090" type="String" fieldid="_19202" offset="320" fid="f355" line="906"/>
+    <field name="hardware_keycode" id="_23091" type="U16" fieldid="_15" offset="384" fid="f355" line="907"/>
+    <field name="group" id="_23092" type="U8" fieldid="_13" offset="400" fid="f355" line="908"/>
+    <field name="is_modifier" id="_23093" type="U32" fieldid="_146" offset="408" fid="f355" line="909"/>
+  </struct>
+
+  <struct name="GdkEventFocus" id="_9801" size="192" align="64" fid="f355" lineno="965">
+    <field name="gtype" id="_23095" type="I32" fieldid="_9843" offset="0" fid="f355" line="967"/>
+    <field name="window" id="_23096" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="968"/>
+    <field name="send_event" id="_23097" type="I8" fieldid="_12" offset="128" fid="f355" line="969"/>
+    <field name="gin" id="_23098" type="I16" fieldid="_14" offset="144" fid="f355" line="970"/>
+  </struct>
+
+  <struct name="GdkEventCrossing" id="_9803" size="704" align="64" fid="f355" lineno="938">
+    <field name="gtype" id="_23100" type="I32" fieldid="_9843" offset="0" fid="f355" line="940"/>
+    <field name="window" id="_23101" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="941"/>
+    <field name="send_event" id="_23102" type="I8" fieldid="_12" offset="128" fid="f355" line="942"/>
+    <field name="subwindow" id="_23103" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="192" fid="f355" line="943"/>
+    <field name="time" id="_23104" type="U32" fieldid="_17" offset="256" fid="f355" line="944"/>
+    <field name="x" id="_23105" type="F64" fieldid="_148" offset="320" fid="f355" line="945"/>
+    <field name="y" id="_23106" type="F64" fieldid="_148" offset="384" fid="f355" line="946"/>
+    <field name="x_root" id="_23107" type="F64" fieldid="_148" offset="448" fid="f355" line="947"/>
+    <field name="y_root" id="_23108" type="F64" fieldid="_148" offset="512" fid="f355" line="948"/>
+    <field name="mode" id="_23109" type="I32" fieldid="_9853" offset="576" fid="f355" line="949"/>
+    <field name="detail" id="_23110" type="I32" fieldid="_9851" offset="608" fid="f355" line="950"/>
+    <field name="focus" id="_23111" type="I32" fieldid="_142" offset="640" fid="f355" line="951"/>
+    <field name="state" id="_23112" type="U32" fieldid="_146" offset="672" fid="f355" line="952"/>
+  </struct>
+
+  <struct name="GdkEventConfigure" id="_9805" size="320" align="64" fid="f355" lineno="985">
+    <field name="gtype" id="_23114" type="I32" fieldid="_9843" offset="0" fid="f355" line="987"/>
+    <field name="window" id="_23115" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="988"/>
+    <field name="send_event" id="_23116" type="I8" fieldid="_12" offset="128" fid="f355" line="989"/>
+    <field name="x" id="_23117" type="I32" fieldid="_141" offset="160" fid="f355" line="990"/>
+    <field name="y" id="_23118" type="I32" fieldid="_141" offset="192" fid="f355" line="990"/>
+    <field name="width" id="_23119" type="I32" fieldid="_141" offset="224" fid="f355" line="991"/>
+    <field name="height" id="_23120" type="I32" fieldid="_141" offset="256" fid="f355" line="992"/>
+  </struct>
+
+  <struct name="GdkEventProperty" id="_9807" size="320" align="64" fid="f355" lineno="1007">
+    <field name="gtype" id="_23122" type="I32" fieldid="_9843" offset="0" fid="f355" line="1009"/>
+    <field name="window" id="_23123" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1010"/>
+    <field name="send_event" id="_23124" type="I8" fieldid="_12" offset="128" fid="f355" line="1011"/>
+    <field name="atom" id="_23125" type="NullablePointer[GdkAtom]" fieldid="_9649" offset="192" fid="f355" line="1012"/>
+    <field name="time" id="_23126" type="U32" fieldid="_17" offset="256" fid="f355" line="1013"/>
+    <field name="state" id="_23127" type="U32" fieldid="_146" offset="288" fid="f355" line="1014"/>
+  </struct>
+
+  <struct name="GdkEventSelection" id="_9809" size="512" align="64" fid="f355" lineno="1032">
+    <field name="gtype" id="_23129" type="I32" fieldid="_9843" offset="0" fid="f355" line="1034"/>
+    <field name="window" id="_23130" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1035"/>
+    <field name="send_event" id="_23131" type="I8" fieldid="_12" offset="128" fid="f355" line="1036"/>
+    <field name="selection" id="_23132" type="NullablePointer[GdkAtom]" fieldid="_9649" offset="192" fid="f355" line="1037"/>
+    <field name="target" id="_23133" type="NullablePointer[GdkAtom]" fieldid="_9649" offset="256" fid="f355" line="1038"/>
+    <field name="property" id="_23134" type="NullablePointer[GdkAtom]" fieldid="_9649" offset="320" fid="f355" line="1039"/>
+    <field name="time" id="_23135" type="U32" fieldid="_17" offset="384" fid="f355" line="1040"/>
+    <field name="requestor" id="_23136" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="448" fid="f355" line="1041"/>
+  </struct>
+
+  <struct name="GdkEventOwnerChange" id="_9811" size="448" align="64" fid="f355" lineno="1062">
+    <field name="gtype" id="_23138" type="I32" fieldid="_9843" offset="0" fid="f355" line="1064"/>
+    <field name="window" id="_23139" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1065"/>
+    <field name="send_event" id="_23140" type="I8" fieldid="_12" offset="128" fid="f355" line="1066"/>
+    <field name="owner" id="_23141" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="192" fid="f355" line="1067"/>
+    <field name="reason" id="_23142" type="I32" fieldid="_9861" offset="256" fid="f355" line="1068"/>
+    <field name="selection" id="_23143" type="NullablePointer[GdkAtom]" fieldid="_9649" offset="320" fid="f355" line="1069"/>
+    <field name="time" id="_23144" type="U32" fieldid="_17" offset="384" fid="f355" line="1070"/>
+    <field name="selection_time" id="_23145" type="U32" fieldid="_17" offset="416" fid="f355" line="1071"/>
+  </struct>
+
+  <struct name="GdkEventProximity" id="_9813" size="256" align="64" fid="f355" lineno="1093">
+    <field name="gtype" id="_23147" type="I32" fieldid="_9843" offset="0" fid="f355" line="1095"/>
+    <field name="window" id="_23148" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1096"/>
+    <field name="send_event" id="_23149" type="I8" fieldid="_12" offset="128" fid="f355" line="1097"/>
+    <field name="time" id="_23150" type="U32" fieldid="_17" offset="160" fid="f355" line="1098"/>
+    <field name="device" id="_23151" type="NullablePointer[GdkDevice]" fieldid="_22993" offset="192" fid="f355" line="1099"/>
+  </struct>
+
+  <struct name="GdkEventDND" id="_9815" size="320" align="64" fid="f355" lineno="1188">
+    <field name="gtype" id="_23153" type="I32" fieldid="_9843" offset="0" fid="f355" line="1189"/>
+    <field name="window" id="_23154" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1190"/>
+    <field name="send_event" id="_23155" type="I8" fieldid="_12" offset="128" fid="f355" line="1191"/>
+    <field name="context" id="_23156" type="NullablePointer[GdkDragContext]" fieldid="_23007" offset="192" fid="f355" line="1192"/>
+    <field name="time" id="_23157" type="U32" fieldid="_17" offset="256" fid="f355" line="1194"/>
+    <field name="x_root" id="_23158" type="I16" fieldid="_139" offset="288" fid="f355" line="1195"/>
+    <field name="y_root" id="_23159" type="I16" fieldid="_139" offset="304" fid="f355" line="1195"/>
+  </struct>
+
+  <struct name="GdkEventWindowState" id="_9817" size="256" align="64" fid="f355" lineno="1133">
+    <field name="gtype" id="_23161" type="I32" fieldid="_9843" offset="0" fid="f355" line="1135"/>
+    <field name="window" id="_23162" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1136"/>
+    <field name="send_event" id="_23163" type="I8" fieldid="_12" offset="128" fid="f355" line="1137"/>
+    <field name="changed_mask" id="_23164" type="I32" fieldid="_9857" offset="160" fid="f355" line="1138"/>
+    <field name="new_window_state" id="_23165" type="I32" fieldid="_9857" offset="192" fid="f355" line="1139"/>
+  </struct>
+
+  <struct name="GdkEventSetting" id="_9819" size="256" align="64" fid="f355" lineno="1113">
+    <field name="gtype" id="_23167" type="I32" fieldid="_9843" offset="0" fid="f355" line="1115"/>
+    <field name="window" id="_23168" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1116"/>
+    <field name="send_event" id="_23169" type="I8" fieldid="_12" offset="128" fid="f355" line="1117"/>
+    <field name="action" id="_23170" type="I32" fieldid="_9859" offset="160" fid="f355" line="1118"/>
+    <field name="name" id="_23171" type="String" fieldid="_19104" offset="192" fid="f355" line="1119"/>
+  </struct>
+
+  <struct name="GdkEventGrabBroken" id="_9821" size="320" align="64" fid="f355" lineno="1163">
+    <field name="gtype" id="_23173" type="I32" fieldid="_9843" offset="0" fid="f355" line="1164"/>
+    <field name="window" id="_23174" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1165"/>
+    <field name="send_event" id="_23175" type="I8" fieldid="_12" offset="128" fid="f355" line="1166"/>
+    <field name="keyboard" id="_23176" type="I32" fieldid="_142" offset="160" fid="f355" line="1167"/>
+    <field name="implicit" id="_23177" type="I32" fieldid="_142" offset="192" fid="f355" line="1168"/>
+    <field name="grab_window" id="_23178" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="256" fid="f355" line="1169"/>
+  </struct>
+
+  <struct name="GdkEventTouchpadSwipe" id="_9823" size="640" align="64" fid="f355" lineno="1220">
+    <field name="gtype" id="_23180" type="I32" fieldid="_9843" offset="0" fid="f355" line="1221"/>
+    <field name="window" id="_23181" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1222"/>
+    <field name="send_event" id="_23182" type="I8" fieldid="_12" offset="128" fid="f355" line="1223"/>
+    <field name="phase" id="_23183" type="I8" fieldid="_12" offset="136" fid="f355" line="1224"/>
+    <field name="n_fingers" id="_23184" type="I8" fieldid="_12" offset="144" fid="f355" line="1225"/>
+    <field name="time" id="_23185" type="U32" fieldid="_17" offset="160" fid="f355" line="1226"/>
+    <field name="x" id="_23186" type="F64" fieldid="_148" offset="192" fid="f355" line="1227"/>
+    <field name="y" id="_23187" type="F64" fieldid="_148" offset="256" fid="f355" line="1228"/>
+    <field name="dx" id="_23188" type="F64" fieldid="_148" offset="320" fid="f355" line="1229"/>
+    <field name="dy" id="_23189" type="F64" fieldid="_148" offset="384" fid="f355" line="1230"/>
+    <field name="x_root" id="_23190" type="F64" fieldid="_148" offset="448" fid="f355" line="1231"/>
+    <field name="y_root" id="_23191" type="F64" fieldid="_148" offset="512" fid="f355" line="1231"/>
+    <field name="state" id="_23192" type="U32" fieldid="_146" offset="576" fid="f355" line="1232"/>
+  </struct>
+
+  <struct name="GdkEventTouchpadPinch" id="_9825" size="768" align="64" fid="f355" lineno="1261">
+    <field name="gtype" id="_23194" type="I32" fieldid="_9843" offset="0" fid="f355" line="1262"/>
+    <field name="window" id="_23195" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1263"/>
+    <field name="send_event" id="_23196" type="I8" fieldid="_12" offset="128" fid="f355" line="1264"/>
+    <field name="phase" id="_23197" type="I8" fieldid="_12" offset="136" fid="f355" line="1265"/>
+    <field name="n_fingers" id="_23198" type="I8" fieldid="_12" offset="144" fid="f355" line="1266"/>
+    <field name="time" id="_23199" type="U32" fieldid="_17" offset="160" fid="f355" line="1267"/>
+    <field name="x" id="_23200" type="F64" fieldid="_148" offset="192" fid="f355" line="1268"/>
+    <field name="y" id="_23201" type="F64" fieldid="_148" offset="256" fid="f355" line="1269"/>
+    <field name="dx" id="_23202" type="F64" fieldid="_148" offset="320" fid="f355" line="1270"/>
+    <field name="dy" id="_23203" type="F64" fieldid="_148" offset="384" fid="f355" line="1271"/>
+    <field name="angle_delta" id="_23204" type="F64" fieldid="_148" offset="448" fid="f355" line="1272"/>
+    <field name="scale" id="_23205" type="F64" fieldid="_148" offset="512" fid="f355" line="1273"/>
+    <field name="x_root" id="_23206" type="F64" fieldid="_148" offset="576" fid="f355" line="1274"/>
+    <field name="y_root" id="_23207" type="F64" fieldid="_148" offset="640" fid="f355" line="1274"/>
+    <field name="state" id="_23208" type="U32" fieldid="_146" offset="704" fid="f355" line="1275"/>
+  </struct>
+
+  <struct name="GdkEventPadButton" id="_9827" size="320" align="64" fid="f355" lineno="1294">
+    <field name="gtype" id="_23210" type="I32" fieldid="_9843" offset="0" fid="f355" line="1295"/>
+    <field name="window" id="_23211" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1296"/>
+    <field name="send_event" id="_23212" type="I8" fieldid="_12" offset="128" fid="f355" line="1297"/>
+    <field name="time" id="_23213" type="U32" fieldid="_17" offset="160" fid="f355" line="1298"/>
+    <field name="group" id="_23214" type="U32" fieldid="_146" offset="192" fid="f355" line="1299"/>
+    <field name="button" id="_23215" type="U32" fieldid="_146" offset="224" fid="f355" line="1300"/>
+    <field name="mode" id="_23216" type="U32" fieldid="_146" offset="256" fid="f355" line="1301"/>
+  </struct>
+
+  <struct name="GdkEventPadAxis" id="_9829" size="384" align="64" fid="f355" lineno="1322">
+    <field name="gtype" id="_23218" type="I32" fieldid="_9843" offset="0" fid="f355" line="1323"/>
+    <field name="window" id="_23219" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1324"/>
+    <field name="send_event" id="_23220" type="I8" fieldid="_12" offset="128" fid="f355" line="1325"/>
+    <field name="time" id="_23221" type="U32" fieldid="_17" offset="160" fid="f355" line="1326"/>
+    <field name="group" id="_23222" type="U32" fieldid="_146" offset="192" fid="f355" line="1327"/>
+    <field name="index" id="_23223" type="U32" fieldid="_146" offset="224" fid="f355" line="1328"/>
+    <field name="mode" id="_23224" type="U32" fieldid="_146" offset="256" fid="f355" line="1329"/>
+    <field name="value" id="_23225" type="F64" fieldid="_148" offset="320" fid="f355" line="1330"/>
+  </struct>
+
+  <struct name="GdkEventPadGroupMode" id="_9831" size="256" align="64" fid="f355" lineno="1349">
+    <field name="gtype" id="_23227" type="I32" fieldid="_9843" offset="0" fid="f355" line="1350"/>
+    <field name="window" id="_23228" type="NullablePointer[GdkWindow]" fieldid="_22995" offset="64" fid="f355" line="1351"/>
+    <field name="send_event" id="_23229" type="I8" fieldid="_12" offset="128" fid="f355" line="1352"/>
+    <field name="time" id="_23230" type="U32" fieldid="_17" offset="160" fid="f355" line="1353"/>
+    <field name="group" id="_23231" type="U32" fieldid="_146" offset="192" fid="f355" line="1354"/>
+    <field name="mode" id="_23232" type="U32" fieldid="_146" offset="224" fid="f355" line="1355"/>
+  </struct>
+
+  <struct name="GdkEventSequence" id="_9833" size="" align="" fid="f355" lineno="149">
+
+  </struct>
+
+  <struct name="GdkDrawingContext" id="_9910" size="" align="" fid="f357" lineno="34">
+
+  </struct>
+
+  <struct name="GdkDrawingContextClass" id="_9912" size="" align="" fid="f357" lineno="35">
+
+  </struct>
+
+  <struct name="GdkFrameTimings" id="_9919" size="" align="" fid="f358" lineno="30">
+
+  </struct>
+
+  <struct name="GdkFrameClock" id="_9930" size="" align="" fid="f359" lineno="43">
+
+  </struct>
+
+  <struct name="GdkFrameClockPrivate" id="_9932" size="" align="" fid="f359" lineno="44">
+
+  </struct>
+
+  <struct name="GdkFrameClockClass" id="_9934" size="" align="" fid="f359" lineno="45">
+
+  </struct>
+
+  <struct name="GdkGeometry" id="_9948" size="448" align="64" fid="f360" lineno="446">
+    <field name="min_width" id="_23290" type="I32" fieldid="_141" offset="0" fid="f360" line="448"/>
+    <field name="min_height" id="_23291" type="I32" fieldid="_141" offset="32" fid="f360" line="449"/>
+    <field name="max_width" id="_23292" type="I32" fieldid="_141" offset="64" fid="f360" line="450"/>
+    <field name="max_height" id="_23293" type="I32" fieldid="_141" offset="96" fid="f360" line="451"/>
+    <field name="base_width" id="_23294" type="I32" fieldid="_141" offset="128" fid="f360" line="452"/>
+    <field name="base_height" id="_23295" type="I32" fieldid="_141" offset="160" fid="f360" line="453"/>
+    <field name="width_inc" id="_23296" type="I32" fieldid="_141" offset="192" fid="f360" line="454"/>
+    <field name="height_inc" id="_23297" type="I32" fieldid="_141" offset="224" fid="f360" line="455"/>
+    <field name="min_aspect" id="_23298" type="F64" fieldid="_148" offset="256" fid="f360" line="456"/>
+    <field name="max_aspect" id="_23299" type="F64" fieldid="_148" offset="320" fid="f360" line="457"/>
+    <field name="win_gravity" id="_23300" type="I32" fieldid="_9967" offset="384" fid="f360" line="458"/>
+  </struct>
+
+  <struct name="GdkWindowAttr" id="_9950" size="640" align="64" fid="f360" lineno="353">
+    <field name="title" id="_23302" type="String" fieldid="_19202" offset="0" fid="f360" line="355"/>
+    <field name="event_mask" id="_23303" type="I32" fieldid="_141" offset="64" fid="f360" line="356"/>
+    <field name="x" id="_23304" type="I32" fieldid="_141" offset="96" fid="f360" line="357"/>
+    <field name="y" id="_23305" type="I32" fieldid="_141" offset="128" fid="f360" line="357"/>
+    <field name="width" id="_23306" type="I32" fieldid="_141" offset="160" fid="f360" line="358"/>
+    <field name="height" id="_23307" type="I32" fieldid="_141" offset="192" fid="f360" line="359"/>
+    <field name="wclass" id="_23308" type="I32" fieldid="_9955" offset="224" fid="f360" line="360"/>
+    <field name="visual" id="_23309" type="NullablePointer[GdkVisual]" fieldid="_23343" offset="256" fid="f360" line="361"/>
+    <field name="window_type" id="_23310" type="I32" fieldid="_9957" offset="320" fid="f360" line="362"/>
+    <field name="cursor" id="_23311" type="NullablePointer[GdkCursor]" fieldid="_23000" offset="384" fid="f360" line="363"/>
+    <field name="wmclass_name" id="_23312" type="String" fieldid="_19202" offset="448" fid="f360" line="364"/>
+    <field name="wmclass_class" id="_23313" type="String" fieldid="_19202" offset="512" fid="f360" line="365"/>
+    <field name="override_redirect" id="_23314" type="I32" fieldid="_142" offset="576" fid="f360" line="366"/>
+    <field name="type_hint" id="_23315" type="I32" fieldid="_9697" offset="608" fid="f360" line="367"/>
+  </struct>
+
+  <struct name="GdkWindowRedirect" id="_9952" size="" align="" fid="f360" lineno="42">
+
+  </struct>
+
+  <struct name="GdkWindowClass" id="_9974" size="1856" align="64" fid="f360" lineno="471">
+    <field name="parent_class" id="_23328" type="GObjectClass" fieldid="_3575" offset="0" fid="f360" line="473"/>
+    <field name="pick_embedded_child" id="_23329" type="Pointer[None]" fieldid="_28071" offset="1088" fid="f360" line="475"/>
+    <field name="to_embedder" id="_23330" type="Pointer[None]" fieldid="_28072" offset="1152" fid="f360" line="480"/>
+    <field name="from_embedder" id="_23331" type="Pointer[None]" fieldid="_28072" offset="1216" fid="f360" line="485"/>
+    <field name="create_surface" id="_23332" type="Pointer[None]" fieldid="_28073" offset="1280" fid="f360" line="490"/>
+    <field name="_gdk_reserved1" id="_23333" type="Pointer[None]" fieldid="_19233" offset="1344" fid="f360" line="495"/>
+    <field name="_gdk_reserved2" id="_23334" type="Pointer[None]" fieldid="_19233" offset="1408" fid="f360" line="496"/>
+    <field name="_gdk_reserved3" id="_23335" type="Pointer[None]" fieldid="_19233" offset="1472" fid="f360" line="497"/>
+    <field name="_gdk_reserved4" id="_23336" type="Pointer[None]" fieldid="_19233" offset="1536" fid="f360" line="498"/>
+    <field name="_gdk_reserved5" id="_23337" type="Pointer[None]" fieldid="_19233" offset="1600" fid="f360" line="499"/>
+    <field name="_gdk_reserved6" id="_23338" type="Pointer[None]" fieldid="_19233" offset="1664" fid="f360" line="500"/>
+    <field name="_gdk_reserved7" id="_23339" type="Pointer[None]" fieldid="_19233" offset="1728" fid="f360" line="501"/>
+    <field name="_gdk_reserved8" id="_23340" type="Pointer[None]" fieldid="_19233" offset="1792" fid="f360" line="502"/>
+  </struct>
+
+  <struct name="GdkMonitor" id="_10159" size="" align="" fid="f362" lineno="39">
+
+  </struct>
+
+  <struct name="GdkMonitorClass" id="_10161" size="" align="" fid="f362" lineno="40">
+
+  </struct>
+
+  <struct name="GdkPixbuf" id="_10288" size="" align="" fid="f367" lineno="89">
+
+  </struct>
+
+  <struct name="GdkPixbufAnimation" id="_10360" size="" align="" fid="f369" lineno="39">
+
+  </struct>
+
+  <struct name="GdkPixbufAnimationIter" id="_10362" size="" align="" fid="f369" lineno="42">
+
+  </struct>
+
+  <struct name="GdkPixbufSimpleAnim" id="_10382" size="" align="" fid="f370" lineno="38">
+
+  </struct>
+
+  <struct name="GdkPixbufSimpleAnimClass" id="_10384" size="" align="" fid="f370" lineno="39">
+
+  </struct>
+
+  <struct name="GdkPixbufFormat" id="_10392" size="" align="" fid="f371" lineno="42">
+
+  </struct>
+
+  <struct name="GdkPixbufLoader" id="_10412" size="256" align="64" fid="f372" lineno="47">
+    <field name="parent_instance" id="_23384" type="GObject" fieldid="_3573" offset="0" fid="f372" line="50"/>
+    <field name="priv" id="_23385" type="Pointer[None]" fieldid="_149" offset="192" fid="f372" line="52"/>
+  </struct>
+
+  <struct name="GdkPixbufLoaderClass" id="_10414" size="1344" align="64" fid="f372" lineno="56">
+    <field name="parent_class" id="_23387" type="GObjectClass" fieldid="_3575" offset="0" fid="f372" line="58"/>
+    <field name="size_prepared" id="_23388" type="Pointer[None]" fieldid="_28079" offset="1088" fid="f372" line="60"/>
+    <field name="area_prepared" id="_23389" type="Pointer[None]" fieldid="_28080" offset="1152" fid="f372" line="64"/>
+    <field name="area_updated" id="_23390" type="Pointer[None]" fieldid="_28081" offset="1216" fid="f372" line="67"/>
+    <field name="closed" id="_23391" type="Pointer[None]" fieldid="_28080" offset="1280" fid="f372" line="73"/>
+  </struct>
+
+  <struct name="GdkDevicePad" id="_10540" size="" align="" fid="f379" lineno="36">
+
+  </struct>
+
+  <struct name="GdkDevicePadInterface" id="_10542" size="" align="" fid="f379" lineno="37">
+
+  </struct>
+
+  <struct name="GdkKeymapKey" id="_10622" size="96" align="32" fid="f383" lineno="57">
+    <field name="keycode" id="_23410" type="U32" fieldid="_146" offset="0" fid="f383" line="59"/>
+    <field name="group" id="_23411" type="I32" fieldid="_141" offset="32" fid="f383" line="60"/>
+    <field name="level" id="_23412" type="I32" fieldid="_141" offset="64" fid="f383" line="61"/>
+  </struct>
+</structs>
+</castxml2pony>
+

@@ -5,6 +5,7 @@ use "Pango"
 use "Cairo"
 use "Harfbuzz"
 use "Atk"
+use "Gdk"
 
 actor Main
   new create(env: Env) =>

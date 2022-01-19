@@ -1,0 +1,232 @@
+<typedefs>
+  <typedef name="String"
+    embed="var"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    embed="var"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="U16"
+    embed="var"
+    ponytypein="U16"
+    ponytypeinconv=""
+    ponytypeout="U16"
+    structtype="U16"
+    structdef="U16(0)"
+    argtype="U16"
+    rvtype="U16"/>
+
+  <typedef name="F64"
+    embed="var"
+    ponytypein="F64"
+    ponytypeinconv=""
+    ponytypeout="F64"
+    structtype="F64"
+    structdef="F64(0)"
+    argtype="F64"
+    rvtype="F64"/>
+
+  <typedef name="I8"
+    embed="var"
+    ponytypein="I8"
+    ponytypeinconv=""
+    ponytypeout="I8"
+    structtype="I8"
+    structdef="I8(0)"
+    argtype="I8"
+    rvtype="I8"/>
+
+  <typedef name="Pointer[None]"
+    embed="var"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="GObjectClass"
+    embed="embed"
+    ponytypein="GObjectClass tag"
+    ponytypeinconv=""
+    ponytypeout="GObjectClass"
+    structtype="GObjectClass"
+    structdef="GObjectClass"
+    argtype="GObjectClass tag"
+    rvtype="GObjectClass"/>
+
+  <typedef name="I32"
+    embed="var"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="Pointer[F64]"
+    embed="var"
+    ponytypein="Pointer[F64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[F64]"
+    structtype="Pointer[F64]"
+    structdef="Pointer[F64]"
+    argtype="Pointer[F64] tag"
+    rvtype="Pointer[F64]"/>
+
+  <typedef name="U32"
+    embed="var"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="NullablePointer[GdkAtom]"
+    embed="var"
+    ponytypein="NullablePointer[GdkAtom] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GdkAtom]"
+    structtype="NullablePointer[GdkAtom]"
+    structdef="NullablePointer[GdkAtom].none()"
+    argtype="NullablePointer[GdkAtom] tag"
+    rvtype="NullablePointer[GdkAtom]"/>
+
+  <typedef name="NullablePointer[GdkVisual]"
+    embed="var"
+    ponytypein="NullablePointer[GdkVisual] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GdkVisual]"
+    structtype="NullablePointer[GdkVisual]"
+    structdef="NullablePointer[GdkVisual].none()"
+    argtype="NullablePointer[GdkVisual] tag"
+    rvtype="NullablePointer[GdkVisual]"/>
+
+  <typedef name="NullablePointer[GdkDragContext]"
+    embed="var"
+    ponytypein="NullablePointer[GdkDragContext] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GdkDragContext]"
+    structtype="NullablePointer[GdkDragContext]"
+    structdef="NullablePointer[GdkDragContext].none()"
+    argtype="NullablePointer[GdkDragContext] tag"
+    rvtype="NullablePointer[GdkDragContext]"/>
+
+  <typedef name="NullablePointer[GdkWindow]"
+    embed="var"
+    ponytypein="NullablePointer[GdkWindow] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GdkWindow]"
+    structtype="NullablePointer[GdkWindow]"
+    structdef="NullablePointer[GdkWindow].none()"
+    argtype="NullablePointer[GdkWindow] tag"
+    rvtype="NullablePointer[GdkWindow]"/>
+
+  <typedef name="NullablePointer[Cairoregion]"
+    embed="var"
+    ponytypein="NullablePointer[Cairoregion] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[Cairoregion]"
+    structtype="NullablePointer[Cairoregion]"
+    structdef="NullablePointer[Cairoregion].none()"
+    argtype="NullablePointer[Cairoregion] tag"
+    rvtype="NullablePointer[Cairoregion]"/>
+
+  <typedef name="NullablePointer[GdkCursor]"
+    embed="var"
+    ponytypein="NullablePointer[GdkCursor] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GdkCursor]"
+    structtype="NullablePointer[GdkCursor]"
+    structdef="NullablePointer[GdkCursor].none()"
+    argtype="NullablePointer[GdkCursor] tag"
+    rvtype="NullablePointer[GdkCursor]"/>
+
+  <typedef name="I16"
+    embed="var"
+    ponytypein="I16"
+    ponytypeinconv=""
+    ponytypeout="I16"
+    structtype="I16"
+    structdef="I16(0)"
+    argtype="I16"
+    rvtype="I16"/>
+
+  <typedef name="U8"
+    embed="var"
+    ponytypein="U8"
+    ponytypeinconv=""
+    ponytypeout="U8"
+    structtype="U8"
+    structdef="U8(0)"
+    argtype="U8"
+    rvtype="U8"/>
+
+  <typedef name="NullablePointer[GdkDevice]"
+    embed="var"
+    ponytypein="NullablePointer[GdkDevice] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GdkDevice]"
+    structtype="NullablePointer[GdkDevice]"
+    structdef="NullablePointer[GdkDevice].none()"
+    argtype="NullablePointer[GdkDevice] tag"
+    rvtype="NullablePointer[GdkDevice]"/>
+
+  <typedef name="NullablePointer[GdkEventSequence]"
+    embed="var"
+    ponytypein="NullablePointer[GdkEventSequence] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GdkEventSequence]"
+    structtype="NullablePointer[GdkEventSequence]"
+    structdef="NullablePointer[GdkEventSequence].none()"
+    argtype="NullablePointer[GdkEventSequence] tag"
+    rvtype="NullablePointer[GdkEventSequence]"/>
+
+  <typedef name="GObject"
+    embed="embed"
+    ponytypein="GObject tag"
+    ponytypeinconv=""
+    ponytypeout="GObject"
+    structtype="GObject"
+    structdef="GObject"
+    argtype="GObject tag"
+    rvtype="GObject"/>
+
+  <typedef name="Cairorectangleint"
+    embed="embed"
+    ponytypein="Cairorectangleint tag"
+    ponytypeinconv=""
+    ponytypeout="Cairorectangleint"
+    structtype="Cairorectangleint"
+    structdef="Cairorectangleint"
+    argtype="Cairorectangleint tag"
+    rvtype="Cairorectangleint"/>
+</typedefs>
+
