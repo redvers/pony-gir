@@ -1,16 +1,91 @@
 codegetstruct:
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_173 renderfields=1  > ../pony-glib/Glib/GTimeVal.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_177 renderfields=1  > ../pony-glib/Glib/GBytes.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_179 renderfields=1  > ../pony-glib/Glib/GArray.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_181 renderfields=1  > ../pony-glib/Glib/GByteArray.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_183 renderfields=1  > ../pony-glib/Glib/GPtrArray.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_273 renderfields=1  > ../pony-glib/Glib/GError.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_898 renderfields=1  > ../pony-glib/Glib/GData.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_173 renderfields=1  > ../../test/Glib/GTimeVal.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_177 renderfields=1  > ../../test/Glib/GBytes.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_179 renderfields=1  > ../../test/Glib/GArray.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_181 renderfields=1  > ../../test/Glib/GByteArray.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_183 renderfields=1  > ../../test/Glib/GPtrArray.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_273 renderfields=1  > ../../test/Glib/GError.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_898 renderfields=1  > ../../test/Glib/GData.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1240 renderfields=1  > ../../test/Glib/GSList.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1651 renderfields=1  > ../../test/Glib/GVariantType.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1684 renderfields=1  > ../../test/Glib/GVariant.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1766 renderfields=1  > ../../test/Glib/GVariantIter.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1776 renderfields=1  > ../../test/Glib/GVariantBuilder.pony
+	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1803 renderfields=1  > ../../test/Glib/GVariantDict.pony
 
-
-
-
-
+#  <struct name="GDebugKey" id="_313" size="128" align="64" fid="f22" lineno="275">
+#  <struct name="GThread" id="_534" size="192" align="64" fid="f39" lineno="46">
+#  <struct name="GRecMutex" id="_538" size="128" align="64" fid="f38" lineno="79">
+#  <struct name="GRWLock" id="_540" size="128" align="64" fid="f38" lineno="65">
+#  <struct name="GCond" id="_542" size="128" align="64" fid="f38" lineno="72">
+#  <struct name="GPrivate" id="_544" size="256" align="64" fid="f38" lineno="87">
+#  <struct name="GOnce" id="_546" size="128" align="64" fid="f38" lineno="103">
+#  <struct name="GAsyncQueue" id="_601" size="" align="" fid="f40" lineno="36">
+#  <struct name="GTimeZone" id="_719" size="" align="" fid="f58" lineno="32">
+#  <struct name="GDateTime" id="_737" size="" align="" fid="f59" lineno="96">
+#  <struct name="GBookmarkFile" id="_792" size="" align="" fid="f60" lineno="78">
+#  <struct name="GChecksum" id="_864" size="" align="" fid="f63" lineno="65">
+#  <struct name="GIConv" id="_880" size="" align="" fid="f64" lineno="83">
+#  <struct name="GData" id="_898" size="" align="" fid="f65" lineno="36">
+#  <struct name="GDate" id="_922" size="64" align="32" fid="f66" lineno="99">
+#  <struct name="GDir" id="_995" size="" align="" fid="f69" lineno="37">
+#  <struct name="GMemVTable" id="_1047" size="384" align="64" fid="f73" lineno="369">
+#  <struct name="GNode" id="_1069" size="320" align="64" fid="f74" lineno="65">
+#  <struct name="GList" id="_1103" size="192" align="64" fid="f75" lineno="39">
+#  <struct name="GHashTable" id="_1138" size="" align="" fid="f76" lineno="37">
+#  <struct name="GHashTableIter" id="_1141" size="320" align="64" fid="f76" lineno="45">
+#  <struct name="GHmac" id="_1183" size="" align="" fid="f77" lineno="40">
+#  <struct name="GHook" id="_1195" size="512" align="64" fid="f78" lineno="73">
+#  <struct name="GHookList" id="_1197" size="448" align="64" fid="f78" lineno="63">
+#  <struct name="GPollFD" id="_1236" size="64" align="32" fid="f80" lineno="91">
+#  <struct name="GSList" id="_1240" size="128" align="64" fid="f81" lineno="39">
+#  <struct name="GMainContext" id="_1274" size="" align="" fid="f82" lineno="48">
+#  <struct name="GMainLoop" id="_1276" size="" align="" fid="f82" lineno="56">
+#  <struct name="GSource" id="_1278" size="768" align="64" fid="f82" lineno="225">
+#  <struct name="GSourcePrivate" id="_1280" size="" align="" fid="f82" lineno="65">
+#  <struct name="GSourceCallbackFuncs" id="_1282" size="192" align="64" fid="f82" lineno="250">
+#  <struct name="GSourceFuncs" id="_1284" size="384" align="64" fid="f82" lineno="268">
+#  <struct name="GString" id="_1466" size="192" align="64" fid="f84" lineno="41">
+#  <struct name="GIOChannel" id="_1504" size="896" align="64" fid="f85" lineno="97">
+#  <struct name="GIOFuncs" id="_1506" size="512" align="64" fid="f85" lineno="131">
+#  <struct name="GKeyFile" id="_1561" size="" align="" fid="f86" lineno="48">
+#  <struct name="GMappedFile" id="_1614" size="" align="" fid="f87" lineno="32">
+#  <struct name="GMarkupParseContext" id="_1629" size="" align="" fid="f88" lineno="112">
+#  <struct name="GMarkupParser" id="_1631" size="320" align="64" fid="f88" lineno="143">
+#  <struct name="GLogField" id="_1832" size="192" align="64" fid="f91" lineno="157">
+#  <struct name="GOptionContext" id="_1857" size="" align="" fid="f92" lineno="38">
+#  <struct name="GOptionGroup" id="_1859" size="" align="" fid="f92" lineno="51">
+#  <struct name="GOptionEntry" id="_1861" size="384" align="64" fid="f92" lineno="258">
+#  <struct name="GPatternSpec" id="_1903" size="" align="" fid="f93" lineno="30">
+#  <struct name="GQueue" id="_1916" size="192" align="64" fid="f96" lineno="47">
+#  <struct name="GRand" id="_1961" size="" align="" fid="f97" lineno="36">
+#  <struct name="GRegex" id="_2015" size="" align="" fid="f101" lineno="413">
+#  <struct name="GMatchInfo" id="_2017" size="" align="" fid="f101" lineno="422">
+#  <struct name="GScanner" id="_2060" size="1152" align="64" fid="f102" lineno="169">
+#  <struct name="GScannerConfig" id="_2062" size="320" align="64" fid="f102" lineno="127">
+#  <struct name="GSequence" id="_2092" size="" align="" fid="f103" lineno="30">
+#  <struct name="GSequenceNode" id="_2094" size="" align="" fid="f103" lineno="31">
+#  <struct name="GStringChunk" id="_2284" size="" align="" fid="f110" lineno="36">
+#  <struct name="GStrvBuilder" id="_2292" size="" align="" fid="f111" lineno="39">
+#  <struct name="GTestCase" id="_2302" size="" align="" fid="f113" lineno="35">
+#  <struct name="GTestSuite" id="_2304" size="" align="" fid="f113" lineno="36">
+#  <struct name="GThreadPool" id="_2390" size="192" align="64" fid="f114" lineno="41">
+#  <struct name="GTimer" id="_2408" size="" align="" fid="f115" lineno="40">
+#  <struct name="GTrashStack" id="_2422" size="64" align="64" fid="f116" lineno="39">
+#  <struct name="GTree" id="_2428" size="" align="" fid="f117" lineno="38">
+#  <struct name="GTreeNode" id="_2430" size="" align="" fid="f117" lineno="47">
+#  <struct name="GUri" id="_2465" size="" align="" fid="f118" lineno="31">
+#  <struct name="GUriParamsIter" id="_2500" size="2240" align="64" fid="f118" lineno="273">
+#  <struct name="GAllocator" id="_2522" size="" align="" fid="f121" lineno="27">
+#  <struct name="GMemChunk" id="_2524" size="" align="" fid="f121" lineno="28">
+#  <struct name="GCache" id="_2544" size="" align="" fid="f122" lineno="36">
+#  <struct name="GCompletion" id="_2555" size="320" align="64" fid="f123" lineno="47">
+#  <struct name="GRelation" id="_2567" size="" align="" fid="f124" lineno="36">
+#  <struct name="GTuples" id="_2569" size="32" align="32" fid="f124" lineno="39">
+#  <struct name="GThreadFunctions" id="_2584" size="1344" align="64" fid="f39" lineno="56">
+#  <struct name="GStaticRecMutex" id="_2733" size="512" align="64" fid="f39" lineno="157">
+#  <struct name="GStaticRWLock" id="_2742" size="640" align="64" fid="f39" lineno="198">
+#  <struct name="GStaticPrivate" id="_2753" size="32" align="32" fid="f39" lineno="240">
 
 structmeta:
 	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/glib.xml -S

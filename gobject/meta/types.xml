@@ -280,13 +280,13 @@
     rvtype="NullablePointer[Libcfpstate]"/>
 
   <typedef name="NullablePointer[FUNCTIONTYPE]"
-    ponytypein="NullablePointer[FUNCTIONTYPE] tag"
+    ponytypein="Pointer[None] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[FUNCTIONTYPE]"
-    structtype="NullablePointer[FUNCTIONTYPE]"
-    structdef="NullablePointer[FUNCTIONTYPE].none()"
-    argtype="NullablePointer[FUNCTIONTYPE] tag"
-    rvtype="NullablePointer[FUNCTIONTYPE]"/>
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
 
   <typedef name="NullablePointer[GSourceCallbackFuncs]"
     ponytypein="NullablePointer[GSourceCallbackFuncs] tag"

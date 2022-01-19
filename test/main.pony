@@ -1,5 +1,6 @@
 use "Glib"
+use "GObject"
 
 actor Main
   new create(env: Env) =>
-    env.out.print("All good")
+    env.out.print("Oof")

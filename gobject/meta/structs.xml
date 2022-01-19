@@ -957,7 +957,7 @@
   </struct>
 
   <struct name="GTypeQuery" id="_3257" size="192" align="64" fid="f131" lineno="461">
-    <field name="type" id="_5016" type="U64" fieldid="_3236" offset="0" fid="f131" line="463"/>
+    <field name="gtype" id="_5016" type="U64" fieldid="_3236" offset="0" fid="f131" line="463"/>
     <field name="type_name" id="_5017" type="String" fieldid="_4044" offset="64" fid="f131" line="464"/>
     <field name="class_size" id="_5018" type="U32" fieldid="_146" offset="128" fid="f131" line="465"/>
     <field name="instance_size" id="_5019" type="U32" fieldid="_146" offset="160" fid="f131" line="466"/>
@@ -1247,7 +1247,7 @@
 
   <struct name="GParamSpecVariant" id="_3750" size="960" align="64" fid="f143" lineno="976">
     <field name="parent_instance" id="_5280" type="GParamSpec" fieldid="_3357" offset="0" fid="f143" line="978"/>
-    <field name="type" id="_5281" type="NullablePointer[GVariantType]" fieldid="_4598" offset="576" fid="f143" line="979"/>
+    <field name="gtype" id="_5281" type="NullablePointer[GVariantType]" fieldid="_4598" offset="576" fid="f143" line="979"/>
     <field name="default_value" id="_5282" type="NullablePointer[GVariant]" fieldid="_4603" offset="640" fid="f143" line="980"/>
     <field name="padding" id="_5283" type="Pointer[Pointer[None]]" fieldid="_5559" offset="704" fid="f143" line="983"/>
   </struct>
@@ -1375,7 +1375,7 @@
 
   <struct name="Anon" id="_5483" size="1024" align="64" fid="f90" lineno="302">
     <field name="partial_magic" id="_5657" type="U64" fieldid="_21" offset="0" fid="f90" line="303"/>
-    <field name="type" id="_5658" type="NullablePointer[GVariantType]" fieldid="_4599" offset="64" fid="f90" line="304"/>
+    <field name="gtype" id="_5658" type="NullablePointer[GVariantType]" fieldid="_4599" offset="64" fid="f90" line="304"/>
     <field name="y" id="_5659" type="Pointer[U64]" fieldid="_5701" offset="128" fid="f90" line="305"/>
   </struct>
 
