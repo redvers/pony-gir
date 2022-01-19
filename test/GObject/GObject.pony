@@ -13,6 +13,6 @@ use "../Glib"
      000128: [PointerType size=64]->[Struct size=,fid: f65]: qdata  
 */
 struct GObject
-  var g_type_instance: GTypeInstance = GTypeInstance
+  embed g_type_instance: GTypeInstance = GTypeInstance
   var ref_count: U32 = U32(0)
   var qdata: NullablePointer[GData] = NullablePointer[GData].none()

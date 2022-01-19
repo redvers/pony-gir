@@ -22,7 +22,7 @@ use "../Glib"
      000704: [ArrayType size=(0-5)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: pdummy  
 */
 struct GObjectClass
-  var g_type_class: GTypeClass = GTypeClass
+  embed g_type_class: GTypeClass = GTypeClass
   var construct_properties: NullablePointer[GSList] = NullablePointer[GSList].none()
   var constructor: Pointer[None] = Pointer[None]
   var set_property: Pointer[None] = Pointer[None]

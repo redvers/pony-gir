@@ -27,11 +27,11 @@ struct <xsl:value-of select="./@name"/><xsl:text>
 </xsl:template>
 
 <xsl:template match="field" mode="generateField">
-<xsl:text>  </xsl:text>var <xsl:value-of select="@name"/>
-<xsl:text>: </xsl:text>
 <xsl:variable name="key" select="@type"/>
 <xsl:variable name="fieldid" select="@fieldid"/>
 <xsl:variable name="ffid" select="@fid"/>
+<xsl:text>  </xsl:text><xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$key]/@embed"/><xsl:text> </xsl:text><xsl:value-of select="@name"/>
+<xsl:text>: </xsl:text>
 <xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$key]/@structtype"/>
 <xsl:text> = </xsl:text>
 <xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$key]/@structdef"/><xsl:text>

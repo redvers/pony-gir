@@ -1,5 +1,6 @@
 <typedefs>
   <typedef name="String"
+    embed="var"
     ponytypein="String"
     ponytypeinconv=".cstring()"
     ponytypeout="String"
@@ -19,6 +20,7 @@
   </typedef>
 
   <typedef name="Array[String]"
+    embed="var"
     ponytypein="Array[String]"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
@@ -28,6 +30,7 @@
     rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="NullablePointer[Pthreadinternallist]"
+    embed="var"
     ponytypein="NullablePointer[Pthreadinternallist] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Pthreadinternallist]"
@@ -37,6 +40,7 @@
     rvtype="NullablePointer[Pthreadinternallist]"/>
 
   <typedef name="NullablePointer[GSourcePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSourcePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSourcePrivate]"
@@ -46,6 +50,7 @@
     rvtype="NullablePointer[GSourcePrivate]"/>
 
   <typedef name="NullablePointer[GIOFuncs]"
+    embed="var"
     ponytypein="NullablePointer[GIOFuncs] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GIOFuncs]"
@@ -55,6 +60,7 @@
     rvtype="NullablePointer[GIOFuncs]"/>
 
   <typedef name="NullablePointer[GParamSpec]"
+    embed="var"
     ponytypein="NullablePointer[GParamSpec] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GParamSpec]"
@@ -64,6 +70,7 @@
     rvtype="NullablePointer[GParamSpec]"/>
 
   <typedef name="U32"
+    embed="var"
     ponytypein="U32"
     ponytypeinconv=""
     ponytypeout="U32"
@@ -73,6 +80,7 @@
     rvtype="U32"/>
 
   <typedef name="NullablePointer[Pthreadinternalslist]"
+    embed="var"
     ponytypein="NullablePointer[Pthreadinternalslist] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Pthreadinternalslist]"
@@ -82,6 +90,7 @@
     rvtype="NullablePointer[Pthreadinternalslist]"/>
 
   <typedef name="Pthreadinternallist"
+    embed="embed"
     ponytypein="Pthreadinternallist tag"
     ponytypeinconv=""
     ponytypeout="Pthreadinternallist"
@@ -91,6 +100,7 @@
     rvtype="Pthreadinternallist"/>
 
   <typedef name="GClosure"
+    embed="embed"
     ponytypein="GClosure tag"
     ponytypeinconv=""
     ponytypeout="GClosure"
@@ -100,6 +110,7 @@
     rvtype="GClosure"/>
 
   <typedef name="NullablePointer[GData]"
+    embed="var"
     ponytypein="NullablePointer[GData] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GData]"
@@ -109,6 +120,7 @@
     rvtype="NullablePointer[GData]"/>
 
   <typedef name="NullablePointer[GValue]"
+    embed="var"
     ponytypein="NullablePointer[GValue] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GValue]"
@@ -118,6 +130,7 @@
     rvtype="NullablePointer[GValue]"/>
 
   <typedef name="I64"
+    embed="var"
     ponytypein="I64"
     ponytypeinconv=""
     ponytypeout="I64"
@@ -127,6 +140,7 @@
     rvtype="I64"/>
 
   <typedef name="GTypeInterface"
+    embed="embed"
     ponytypein="GTypeInterface tag"
     ponytypeinconv=""
     ponytypeout="GTypeInterface"
@@ -136,6 +150,7 @@
     rvtype="GTypeInterface"/>
 
   <typedef name="NullablePointer[GClosureNotifyData]"
+    embed="var"
     ponytypein="NullablePointer[GClosureNotifyData] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GClosureNotifyData]"
@@ -145,6 +160,7 @@
     rvtype="NullablePointer[GClosureNotifyData]"/>
 
   <typedef name="I16"
+    embed="var"
     ponytypein="I16"
     ponytypeinconv=""
     ponytypeout="I16"
@@ -154,6 +170,7 @@
     rvtype="I16"/>
 
   <typedef name="NullablePointer[GFlagsClass]"
+    embed="var"
     ponytypein="NullablePointer[GFlagsClass] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFlagsClass]"
@@ -163,6 +180,7 @@
     rvtype="NullablePointer[GFlagsClass]"/>
 
   <typedef name="F128"
+    embed="var"
     ponytypein="F128"
     ponytypeinconv=""
     ponytypeout="F128"
@@ -172,6 +190,7 @@
     rvtype="F128"/>
 
   <typedef name="NullablePointer[GList]"
+    embed="var"
     ponytypein="NullablePointer[GList] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GList]"
@@ -181,6 +200,7 @@
     rvtype="NullablePointer[GList]"/>
 
   <typedef name="NullablePointer[GIConv]"
+    embed="var"
     ponytypein="NullablePointer[GIConv] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GIConv]"
@@ -190,6 +210,7 @@
     rvtype="NullablePointer[GIConv]"/>
 
   <typedef name="NullablePointer[GScannerConfig]"
+    embed="var"
     ponytypein="NullablePointer[GScannerConfig] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GScannerConfig]"
@@ -199,6 +220,7 @@
     rvtype="NullablePointer[GScannerConfig]"/>
 
   <typedef name="NullablePointer[GSourceFuncs]"
+    embed="var"
     ponytypein="NullablePointer[GSourceFuncs] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSourceFuncs]"
@@ -208,6 +230,7 @@
     rvtype="NullablePointer[GSourceFuncs]"/>
 
   <typedef name="Pointer[NullablePointer[Localedata]]"
+    embed="var"
     ponytypein="Pointer[NullablePointer[Localedata]] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[NullablePointer[Localedata]]"
@@ -217,6 +240,7 @@
     rvtype="Pointer[NullablePointer[Localedata]]"/>
 
   <typedef name="NullablePointer[GHook]"
+    embed="var"
     ponytypein="NullablePointer[GHook] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GHook]"
@@ -226,6 +250,7 @@
     rvtype="NullablePointer[GHook]"/>
 
   <typedef name="GObject"
+    embed="embed"
     ponytypein="GObject tag"
     ponytypeinconv=""
     ponytypeout="GObject"
@@ -235,6 +260,7 @@
     rvtype="GObject"/>
 
   <typedef name="NullablePointer[Pthreadcleanupbuffer]"
+    embed="var"
     ponytypein="NullablePointer[Pthreadcleanupbuffer] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Pthreadcleanupbuffer]"
@@ -244,6 +270,7 @@
     rvtype="NullablePointer[Pthreadcleanupbuffer]"/>
 
   <typedef name="Pointer[U64]"
+    embed="var"
     ponytypein="Pointer[U64] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U64]"
@@ -253,6 +280,7 @@
     rvtype="Pointer[U64]"/>
 
   <typedef name="NullablePointer[GNode]"
+    embed="var"
     ponytypein="NullablePointer[GNode] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GNode]"
@@ -262,6 +290,7 @@
     rvtype="NullablePointer[GNode]"/>
 
   <typedef name="GParamSpec"
+    embed="embed"
     ponytypein="GParamSpec tag"
     ponytypeinconv=""
     ponytypeout="GParamSpec"
@@ -271,6 +300,7 @@
     rvtype="GParamSpec"/>
 
   <typedef name="NullablePointer[Libcfpstate]"
+    embed="var"
     ponytypein="NullablePointer[Libcfpstate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Libcfpstate]"
@@ -279,16 +309,18 @@
     argtype="NullablePointer[Libcfpstate] tag"
     rvtype="NullablePointer[Libcfpstate]"/>
 
-  <typedef name="NullablePointer[FUNCTIONTYPE]"
-    ponytypein="Pointer[None] tag"
+  <typedef name="NullablePointer[GCond]"
+    embed="var"
+    ponytypein="NullablePointer[GCond] tag"
     ponytypeinconv=""
-    ponytypeout="Pointer[None]"
-    structtype="Pointer[None]"
-    structdef="Pointer[None]"
-    argtype="Pointer[None] tag"
-    rvtype="Pointer[None]"/>
+    ponytypeout="NullablePointer[GCond]"
+    structtype="NullablePointer[GCond]"
+    structdef="NullablePointer[GCond].none()"
+    argtype="NullablePointer[GCond] tag"
+    rvtype="NullablePointer[GCond]"/>
 
   <typedef name="NullablePointer[GSourceCallbackFuncs]"
+    embed="var"
     ponytypein="NullablePointer[GSourceCallbackFuncs] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSourceCallbackFuncs]"
@@ -298,6 +330,7 @@
     rvtype="NullablePointer[GSourceCallbackFuncs]"/>
 
   <typedef name="NullablePointer[GTypeValueTable]"
+    embed="var"
     ponytypein="NullablePointer[GTypeValueTable] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTypeValueTable]"
@@ -306,25 +339,8 @@
     argtype="NullablePointer[GTypeValueTable] tag"
     rvtype="NullablePointer[GTypeValueTable]"/>
 
-  <typedef name="NullablePointer[GCond]"
-    ponytypein="NullablePointer[GCond] tag"
-    ponytypeinconv=""
-    ponytypeout="NullablePointer[GCond]"
-    structtype="NullablePointer[GCond]"
-    structdef="NullablePointer[GCond].none()"
-    argtype="NullablePointer[GCond] tag"
-    rvtype="NullablePointer[GCond]"/>
-
-  <typedef name="NullablePointer[GMainContext]"
-    ponytypein="NullablePointer[GMainContext] tag"
-    ponytypeinconv=""
-    ponytypeout="NullablePointer[GMainContext]"
-    structtype="NullablePointer[GMainContext]"
-    structdef="NullablePointer[GMainContext].none()"
-    argtype="NullablePointer[GMainContext] tag"
-    rvtype="NullablePointer[GMainContext]"/>
-
   <typedef name="NullablePointer[GVariantType]"
+    embed="var"
     ponytypein="NullablePointer[GVariantType] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GVariantType]"
@@ -333,7 +349,18 @@
     argtype="NullablePointer[GVariantType] tag"
     rvtype="NullablePointer[GVariantType]"/>
 
+  <typedef name="NullablePointer[GMainContext]"
+    embed="var"
+    ponytypein="NullablePointer[GMainContext] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GMainContext]"
+    structtype="NullablePointer[GMainContext]"
+    structdef="NullablePointer[GMainContext].none()"
+    argtype="NullablePointer[GMainContext] tag"
+    rvtype="NullablePointer[GMainContext]"/>
+
   <typedef name="Xsavehdr"
+    embed="embed"
     ponytypein="Xsavehdr tag"
     ponytypeinconv=""
     ponytypeout="Xsavehdr"
@@ -343,6 +370,7 @@
     rvtype="Xsavehdr"/>
 
   <typedef name="NullablePointer[Ucontextt]"
+    embed="var"
     ponytypein="NullablePointer[Ucontextt] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Ucontextt]"
@@ -352,6 +380,7 @@
     rvtype="NullablePointer[Ucontextt]"/>
 
   <typedef name="NullablePointer[GVariant]"
+    embed="var"
     ponytypein="NullablePointer[GVariant] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GVariant]"
@@ -361,6 +390,7 @@
     rvtype="NullablePointer[GVariant]"/>
 
   <typedef name="Pointer[Libcxmmreg]"
+    embed="var"
     ponytypein="Pointer[Libcxmmreg] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Libcxmmreg]"
@@ -370,6 +400,7 @@
     rvtype="Pointer[Libcxmmreg]"/>
 
   <typedef name="Pointer[F128]"
+    embed="var"
     ponytypein="Pointer[F128] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[F128]"
@@ -379,6 +410,7 @@
     rvtype="Pointer[F128]"/>
 
   <typedef name="NullablePointer[GTypeClass]"
+    embed="var"
     ponytypein="NullablePointer[GTypeClass] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTypeClass]"
@@ -388,6 +420,7 @@
     rvtype="NullablePointer[GTypeClass]"/>
 
   <typedef name="Pointer[U8]"
+    embed="var"
     ponytypein="Pointer[U8] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U8]"
@@ -397,6 +430,7 @@
     rvtype="Pointer[U8]"/>
 
   <typedef name="F64"
+    embed="var"
     ponytypein="F64"
     ponytypeinconv=""
     ponytypeout="F64"
@@ -406,6 +440,7 @@
     rvtype="F64"/>
 
   <typedef name="I8"
+    embed="var"
     ponytypein="I8"
     ponytypeinconv=""
     ponytypeout="I8"
@@ -415,6 +450,7 @@
     rvtype="I8"/>
 
   <typedef name="Pointer[None]"
+    embed="var"
     ponytypein="Pointer[None] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[None]"
@@ -424,6 +460,7 @@
     rvtype="Pointer[None]"/>
 
   <typedef name="Libcfpstate"
+    embed="embed"
     ponytypein="Libcfpstate tag"
     ponytypeinconv=""
     ponytypeout="Libcfpstate"
@@ -433,6 +470,7 @@
     rvtype="Libcfpstate"/>
 
   <typedef name="I32"
+    embed="var"
     ponytypein="I32"
     ponytypeinconv=""
     ponytypeout="I32"
@@ -442,6 +480,7 @@
     rvtype="I32"/>
 
   <typedef name="Pointer[Xmmreg]"
+    embed="var"
     ponytypein="Pointer[Xmmreg] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Xmmreg]"
@@ -451,6 +490,7 @@
     rvtype="Pointer[Xmmreg]"/>
 
   <typedef name="Pointer[U32]"
+    embed="var"
     ponytypein="Pointer[U32] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U32]"
@@ -460,6 +500,7 @@
     rvtype="Pointer[U32]"/>
 
   <typedef name="Fpstate"
+    embed="embed"
     ponytypein="Fpstate tag"
     ponytypeinconv=""
     ponytypeout="Fpstate"
@@ -469,6 +510,7 @@
     rvtype="Fpstate"/>
 
   <typedef name="GValue"
+    embed="embed"
     ponytypein="GValue tag"
     ponytypeinconv=""
     ponytypeout="GValue"
@@ -478,6 +520,7 @@
     rvtype="GValue"/>
 
   <typedef name="Pointer[I64]"
+    embed="var"
     ponytypein="Pointer[I64] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[I64]"
@@ -487,6 +530,7 @@
     rvtype="Pointer[I64]"/>
 
   <typedef name="NullablePointer[Pointer[None]]"
+    embed="var"
     ponytypein="NullablePointer[Pointer[None]] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Pointer[None]]"
@@ -496,6 +540,7 @@
     rvtype="NullablePointer[Pointer[None]]"/>
 
   <typedef name="U64"
+    embed="var"
     ponytypein="U64"
     ponytypeinconv=""
     ponytypeout="U64"
@@ -505,6 +550,7 @@
     rvtype="U64"/>
 
   <typedef name="GObjectClass"
+    embed="embed"
     ponytypein="GObjectClass tag"
     ponytypeinconv=""
     ponytypeout="GObjectClass"
@@ -514,6 +560,7 @@
     rvtype="GObjectClass"/>
 
   <typedef name="GTypeClass"
+    embed="embed"
     ponytypein="GTypeClass tag"
     ponytypeinconv=""
     ponytypeout="GTypeClass"
@@ -523,6 +570,7 @@
     rvtype="GTypeClass"/>
 
   <typedef name="NullablePointer[GFlagsValue]"
+    embed="var"
     ponytypein="NullablePointer[GFlagsValue] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFlagsValue]"
@@ -532,6 +580,7 @@
     rvtype="NullablePointer[GFlagsValue]"/>
 
   <typedef name="Pointer[Anon]"
+    embed="var"
     ponytypein="Pointer[Anon] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Anon]"
@@ -541,6 +590,7 @@
     rvtype="Pointer[Anon]"/>
 
   <typedef name="Pointer[I32]"
+    embed="var"
     ponytypein="Pointer[I32] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[I32]"
@@ -550,6 +600,7 @@
     rvtype="Pointer[I32]"/>
 
   <typedef name="U16"
+    embed="var"
     ponytypein="U16"
     ponytypeinconv=""
     ponytypeout="U16"
@@ -559,6 +610,7 @@
     rvtype="U16"/>
 
   <typedef name="NullablePointer[GEnumClass]"
+    embed="var"
     ponytypein="NullablePointer[GEnumClass] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GEnumClass]"
@@ -568,6 +620,7 @@
     rvtype="NullablePointer[GEnumClass]"/>
 
   <typedef name="None"
+    embed="embed"
     ponytypein="None tag"
     ponytypeinconv=""
     ponytypeout="None"
@@ -577,6 +630,7 @@
     rvtype="None"/>
 
   <typedef name="Pointer[Pointer[None]]"
+    embed="var"
     ponytypein="Pointer[Pointer[None]] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[None]]"
@@ -586,6 +640,7 @@
     rvtype="Pointer[Pointer[None]]"/>
 
   <typedef name="NullablePointer[GTrashStack]"
+    embed="var"
     ponytypein="NullablePointer[GTrashStack] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTrashStack]"
@@ -595,6 +650,7 @@
     rvtype="NullablePointer[GTrashStack]"/>
 
   <typedef name="Pointer[String]"
+    embed="var"
     ponytypein="Pointer[String] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[String]"
@@ -604,6 +660,7 @@
     rvtype="Pointer[String]"/>
 
   <typedef name="Anon"
+    embed="embed"
     ponytypein="Anon tag"
     ponytypeinconv=""
     ponytypeout="Anon"
@@ -613,6 +670,7 @@
     rvtype="Anon"/>
 
   <typedef name="NullablePointer[GHashTable]"
+    embed="var"
     ponytypein="NullablePointer[GHashTable] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GHashTable]"
@@ -622,6 +680,7 @@
     rvtype="NullablePointer[GHashTable]"/>
 
   <typedef name="F32"
+    embed="var"
     ponytypein="F32"
     ponytypeinconv=""
     ponytypeout="F32"
@@ -631,6 +690,7 @@
     rvtype="F32"/>
 
   <typedef name="NullablePointer[GSList]"
+    embed="var"
     ponytypein="NullablePointer[GSList] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSList]"
@@ -640,6 +700,7 @@
     rvtype="NullablePointer[GSList]"/>
 
   <typedef name="Pointer[U16]"
+    embed="var"
     ponytypein="Pointer[U16] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U16]"
@@ -649,6 +710,7 @@
     rvtype="Pointer[U16]"/>
 
   <typedef name="Pointer[Fpxreg]"
+    embed="var"
     ponytypein="Pointer[Fpxreg] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Fpxreg]"
@@ -658,6 +720,7 @@
     rvtype="Pointer[Fpxreg]"/>
 
   <typedef name="NullablePointer[GString]"
+    embed="var"
     ponytypein="NullablePointer[GString] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GString]"
@@ -667,6 +730,7 @@
     rvtype="NullablePointer[GString]"/>
 
   <typedef name="Timespec"
+    embed="embed"
     ponytypein="Timespec tag"
     ponytypeinconv=""
     ponytypeout="Timespec"
@@ -676,6 +740,7 @@
     rvtype="Timespec"/>
 
   <typedef name="Pointer[Libcfpxreg]"
+    embed="var"
     ponytypein="Pointer[Libcfpxreg] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Libcfpxreg]"
@@ -685,6 +750,7 @@
     rvtype="Pointer[Libcfpxreg]"/>
 
   <typedef name="NullablePointer[GEnumValue]"
+    embed="var"
     ponytypein="NullablePointer[GEnumValue] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GEnumValue]"
@@ -694,6 +760,7 @@
     rvtype="NullablePointer[GEnumValue]"/>
 
   <typedef name="NullablePointer[GSource]"
+    embed="var"
     ponytypein="NullablePointer[GSource] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSource]"
@@ -703,6 +770,7 @@
     rvtype="NullablePointer[GSource]"/>
 
   <typedef name="Ymmhstate"
+    embed="embed"
     ponytypein="Ymmhstate tag"
     ponytypeinconv=""
     ponytypeout="Ymmhstate"
@@ -712,6 +780,7 @@
     rvtype="Ymmhstate"/>
 
   <typedef name="U8"
+    embed="var"
     ponytypein="U8"
     ponytypeinconv=""
     ponytypeout="U8"
@@ -721,6 +790,7 @@
     rvtype="U8"/>
 
   <typedef name="GTypeInstance"
+    embed="embed"
     ponytypein="GTypeInstance tag"
     ponytypeinconv=""
     ponytypeout="GTypeInstance"
