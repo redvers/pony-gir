@@ -27,7 +27,7 @@ use "../Gio"
      001920: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _pango_reserved4  
 */
 struct PangoRendererClass
-  var parent_class: GObjectClass = GObjectClass
+  embed parent_class: GObjectClass = GObjectClass
   var draw_glyphs: Pointer[None] = Pointer[None]
   var draw_rectangle: Pointer[None] = Pointer[None]
   var draw_error_underline: Pointer[None] = Pointer[None]

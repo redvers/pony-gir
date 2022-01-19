@@ -48,13 +48,13 @@
 
   <struct name="PangoEngineLangClass" id="_8895" size="1152" align="64" fid="f320" lineno="140">
     <field name="parent_class" id="_22684" type="PangoEngineClass" fieldid="_8893" offset="0" fid="f320" line="143"/>
-    <field name="script_break" id="_22685" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28021" offset="1088" fid="f320" line="146"/>
+    <field name="script_break" id="_22685" type="Pointer[None]" fieldid="_28021" offset="1088" fid="f320" line="146"/>
   </struct>
 
   <struct name="PangoEngineShapeClass" id="_8898" size="1216" align="64" fid="f320" lineno="222">
     <field name="parent_class" id="_22687" type="PangoEngineClass" fieldid="_8893" offset="0" fid="f320" line="225"/>
-    <field name="script_shape" id="_22688" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28022" offset="1088" fid="f320" line="228"/>
-    <field name="covers" id="_22689" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28023" offset="1152" fid="f320" line="236"/>
+    <field name="script_shape" id="_22688" type="Pointer[None]" fieldid="_28022" offset="1088" fid="f320" line="228"/>
+    <field name="covers" id="_22689" type="Pointer[None]" fieldid="_28023" offset="1152" fid="f320" line="236"/>
   </struct>
 
   <struct name="PangoEngineInfo" id="_8901" size="320" align="64" fid="f320" lineno="286">
@@ -101,35 +101,35 @@
 
   <struct name="PangoFontFamilyClass" id="_8654" size="1472" align="64" fid="f321" lineno="400">
     <field name="parent_class" id="_22516" type="GObjectClass" fieldid="_3575" offset="0" fid="f321" line="402"/>
-    <field name="list_faces" id="_22517" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27984" offset="1088" fid="f321" line="406"/>
-    <field name="get_name" id="_22518" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27985" offset="1152" fid="f321" line="409"/>
-    <field name="is_monospace" id="_22519" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27986" offset="1216" fid="f321" line="410"/>
-    <field name="is_variable" id="_22520" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27986" offset="1280" fid="f321" line="411"/>
-    <field name="get_face" id="_22521" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27987" offset="1344" fid="f321" line="413"/>
-    <field name="_pango_reserved2" id="_22522" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1408" fid="f321" line="420"/>
+    <field name="list_faces" id="_22517" type="Pointer[None]" fieldid="_27984" offset="1088" fid="f321" line="406"/>
+    <field name="get_name" id="_22518" type="Pointer[None]" fieldid="_27985" offset="1152" fid="f321" line="409"/>
+    <field name="is_monospace" id="_22519" type="Pointer[None]" fieldid="_27986" offset="1216" fid="f321" line="410"/>
+    <field name="is_variable" id="_22520" type="Pointer[None]" fieldid="_27986" offset="1280" fid="f321" line="411"/>
+    <field name="get_face" id="_22521" type="Pointer[None]" fieldid="_27987" offset="1344" fid="f321" line="413"/>
+    <field name="_pango_reserved2" id="_22522" type="Pointer[None]" fieldid="_19233" offset="1408" fid="f321" line="420"/>
   </struct>
 
   <struct name="PangoFontFaceClass" id="_8662" size="1536" align="64" fid="f321" lineno="470">
     <field name="parent_class" id="_22527" type="GObjectClass" fieldid="_3575" offset="0" fid="f321" line="472"/>
-    <field name="get_face_name" id="_22528" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27989" offset="1088" fid="f321" line="476"/>
-    <field name="describe" id="_22529" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27990" offset="1152" fid="f321" line="477"/>
-    <field name="list_sizes" id="_22530" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27991" offset="1216" fid="f321" line="478"/>
-    <field name="is_synthesized" id="_22531" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27992" offset="1280" fid="f321" line="481"/>
-    <field name="get_family" id="_22532" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27993" offset="1344" fid="f321" line="482"/>
-    <field name="_pango_reserved3" id="_22533" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1408" fid="f321" line="487"/>
-    <field name="_pango_reserved4" id="_22534" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1472" fid="f321" line="488"/>
+    <field name="get_face_name" id="_22528" type="Pointer[None]" fieldid="_27989" offset="1088" fid="f321" line="476"/>
+    <field name="describe" id="_22529" type="Pointer[None]" fieldid="_27990" offset="1152" fid="f321" line="477"/>
+    <field name="list_sizes" id="_22530" type="Pointer[None]" fieldid="_27991" offset="1216" fid="f321" line="478"/>
+    <field name="is_synthesized" id="_22531" type="Pointer[None]" fieldid="_27992" offset="1280" fid="f321" line="481"/>
+    <field name="get_family" id="_22532" type="Pointer[None]" fieldid="_27993" offset="1344" fid="f321" line="482"/>
+    <field name="_pango_reserved3" id="_22533" type="Pointer[None]" fieldid="_19233" offset="1408" fid="f321" line="487"/>
+    <field name="_pango_reserved4" id="_22534" type="Pointer[None]" fieldid="_19233" offset="1472" fid="f321" line="488"/>
   </struct>
 
   <struct name="PangoFontClass" id="_8670" size="1600" align="64" fid="f321" lineno="537">
     <field name="parent_class" id="_22537" type="GObjectClass" fieldid="_3575" offset="0" fid="f321" line="539"/>
-    <field name="describe" id="_22538" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27994" offset="1088" fid="f321" line="543"/>
-    <field name="get_coverage" id="_22539" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27995" offset="1152" fid="f321" line="544"/>
-    <field name="get_glyph_extents" id="_22540" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27996" offset="1216" fid="f321" line="546"/>
-    <field name="get_metrics" id="_22541" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27997" offset="1280" fid="f321" line="550"/>
-    <field name="get_font_map" id="_22542" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27998" offset="1344" fid="f321" line="552"/>
-    <field name="describe_absolute" id="_22543" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27994" offset="1408" fid="f321" line="553"/>
-    <field name="get_features" id="_22544" type="NullablePointer[FUNCTIONTYPE]" fieldid="_27999" offset="1472" fid="f321" line="554"/>
-    <field name="create_hb_font" id="_22545" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28000" offset="1536" fid="f321" line="558"/>
+    <field name="describe" id="_22538" type="Pointer[None]" fieldid="_27994" offset="1088" fid="f321" line="543"/>
+    <field name="get_coverage" id="_22539" type="Pointer[None]" fieldid="_27995" offset="1152" fid="f321" line="544"/>
+    <field name="get_glyph_extents" id="_22540" type="Pointer[None]" fieldid="_27996" offset="1216" fid="f321" line="546"/>
+    <field name="get_metrics" id="_22541" type="Pointer[None]" fieldid="_27997" offset="1280" fid="f321" line="550"/>
+    <field name="get_font_map" id="_22542" type="Pointer[None]" fieldid="_27998" offset="1344" fid="f321" line="552"/>
+    <field name="describe_absolute" id="_22543" type="Pointer[None]" fieldid="_27994" offset="1408" fid="f321" line="553"/>
+    <field name="get_features" id="_22544" type="Pointer[None]" fieldid="_27999" offset="1472" fid="f321" line="554"/>
+    <field name="create_hb_font" id="_22545" type="Pointer[None]" fieldid="_28000" offset="1536" fid="f321" line="558"/>
   </struct>
 
   <struct name="PangoFontMap" id="_8527" size="192" align="64" fid="f322" lineno="49">
@@ -138,14 +138,14 @@
 
   <struct name="PangoFontMapClass" id="_8823" size="1600" align="64" fid="f322" lineno="72">
     <field name="parent_class" id="_22648" type="GObjectClass" fieldid="_3575" offset="0" fid="f322" line="74"/>
-    <field name="load_font" id="_22649" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28012" offset="1088" fid="f322" line="78"/>
-    <field name="list_families" id="_22650" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28013" offset="1152" fid="f322" line="81"/>
-    <field name="load_fontset" id="_22651" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28014" offset="1216" fid="f322" line="84"/>
+    <field name="load_font" id="_22649" type="Pointer[None]" fieldid="_28012" offset="1088" fid="f322" line="78"/>
+    <field name="list_families" id="_22650" type="Pointer[None]" fieldid="_28013" offset="1152" fid="f322" line="81"/>
+    <field name="load_fontset" id="_22651" type="Pointer[None]" fieldid="_28014" offset="1216" fid="f322" line="84"/>
     <field name="shape_engine_type" id="_22652" type="String" fieldid="_19149" offset="1280" fid="f322" line="89"/>
-    <field name="get_serial" id="_22653" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28015" offset="1344" fid="f322" line="91"/>
-    <field name="changed" id="_22654" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28016" offset="1408" fid="f322" line="92"/>
-    <field name="get_family" id="_22655" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28017" offset="1472" fid="f322" line="94"/>
-    <field name="get_face" id="_22656" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28018" offset="1536" fid="f322" line="97"/>
+    <field name="get_serial" id="_22653" type="Pointer[None]" fieldid="_28015" offset="1344" fid="f322" line="91"/>
+    <field name="changed" id="_22654" type="Pointer[None]" fieldid="_28016" offset="1408" fid="f322" line="92"/>
+    <field name="get_family" id="_22655" type="Pointer[None]" fieldid="_28017" offset="1472" fid="f322" line="94"/>
+    <field name="get_face" id="_22656" type="Pointer[None]" fieldid="_28018" offset="1536" fid="f322" line="97"/>
   </struct>
 
   <struct name="PangoContext" id="_8825" size="" align="" fid="f322" lineno="38">
@@ -183,9 +183,9 @@
 
   <struct name="PangoAttrClass" id="_8695" size="256" align="64" fid="f329" lineno="348">
     <field name="gtype" id="_22561" type="I32" fieldid="_8720" offset="0" fid="f329" line="351"/>
-    <field name="copy" id="_22562" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28001" offset="64" fid="f329" line="352"/>
-    <field name="destroy" id="_22563" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28002" offset="128" fid="f329" line="353"/>
-    <field name="equal" id="_22564" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28003" offset="192" fid="f329" line="354"/>
+    <field name="copy" id="_22562" type="Pointer[None]" fieldid="_28001" offset="64" fid="f329" line="352"/>
+    <field name="destroy" id="_22563" type="Pointer[None]" fieldid="_28002" offset="128" fid="f329" line="353"/>
+    <field name="equal" id="_22564" type="Pointer[None]" fieldid="_28003" offset="192" fid="f329" line="354"/>
   </struct>
 
   <struct name="PangoAttrString" id="_8697" size="192" align="64" fid="f329" lineno="365">
@@ -229,8 +229,8 @@
     <field name="ink_rect" id="_22589" type="PangoRectangle" fieldid="_8530" offset="128" fid="f329" line="458"/>
     <field name="logical_rect" id="_22590" type="PangoRectangle" fieldid="_8530" offset="256" fid="f329" line="459"/>
     <field name="data" id="_22591" type="Pointer[None]" fieldid="_149" offset="384" fid="f329" line="461"/>
-    <field name="copy_func" id="_22592" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8726" offset="448" fid="f329" line="462"/>
-    <field name="destroy_func" id="_22593" type="NullablePointer[FUNCTIONTYPE]" fieldid="_154" offset="512" fid="f329" line="463"/>
+    <field name="copy_func" id="_22592" type="Pointer[None]" fieldid="_8726" offset="448" fid="f329" line="462"/>
+    <field name="destroy_func" id="_22593" type="Pointer[None]" fieldid="_154" offset="512" fid="f329" line="463"/>
   </struct>
 
   <struct name="PangoAttrFontFeatures" id="_8713" size="192" align="64" fid="f329" lineno="490">
@@ -271,14 +271,14 @@
 
   <struct name="PangoFontsetClass" id="_8809" size="1600" align="64" fid="f331" lineno="96">
     <field name="parent_class" id="_22633" type="GObjectClass" fieldid="_3575" offset="0" fid="f331" line="98"/>
-    <field name="get_font" id="_22634" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28007" offset="1088" fid="f331" line="102"/>
-    <field name="get_metrics" id="_22635" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28008" offset="1152" fid="f331" line="105"/>
-    <field name="get_language" id="_22636" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28009" offset="1216" fid="f331" line="106"/>
-    <field name="foreach" id="_22637" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28010" offset="1280" fid="f331" line="107"/>
-    <field name="_pango_reserved1" id="_22638" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1344" fid="f331" line="114"/>
-    <field name="_pango_reserved2" id="_22639" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1408" fid="f331" line="115"/>
-    <field name="_pango_reserved3" id="_22640" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1472" fid="f331" line="116"/>
-    <field name="_pango_reserved4" id="_22641" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1536" fid="f331" line="117"/>
+    <field name="get_font" id="_22634" type="Pointer[None]" fieldid="_28007" offset="1088" fid="f331" line="102"/>
+    <field name="get_metrics" id="_22635" type="Pointer[None]" fieldid="_28008" offset="1152" fid="f331" line="105"/>
+    <field name="get_language" id="_22636" type="Pointer[None]" fieldid="_28009" offset="1216" fid="f331" line="106"/>
+    <field name="foreach" id="_22637" type="Pointer[None]" fieldid="_28010" offset="1280" fid="f331" line="107"/>
+    <field name="_pango_reserved1" id="_22638" type="Pointer[None]" fieldid="_19233" offset="1344" fid="f331" line="114"/>
+    <field name="_pango_reserved2" id="_22639" type="Pointer[None]" fieldid="_19233" offset="1408" fid="f331" line="115"/>
+    <field name="_pango_reserved3" id="_22640" type="Pointer[None]" fieldid="_19233" offset="1472" fid="f331" line="116"/>
+    <field name="_pango_reserved4" id="_22641" type="Pointer[None]" fieldid="_19233" offset="1536" fid="f331" line="117"/>
   </struct>
 
   <struct name="PangoFontsetSimple" id="_8812" size="" align="" fid="f331" lineno="133">
@@ -368,20 +368,20 @@
 
   <struct name="PangoRendererClass" id="_9071" size="1984" align="64" fid="f338" lineno="131">
     <field name="parent_class" id="_22748" type="GObjectClass" fieldid="_3575" offset="0" fid="f338" line="134"/>
-    <field name="draw_glyphs" id="_22749" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28027" offset="1088" fid="f338" line="139"/>
-    <field name="draw_rectangle" id="_22750" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28028" offset="1152" fid="f338" line="144"/>
-    <field name="draw_error_underline" id="_22751" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28029" offset="1216" fid="f338" line="150"/>
-    <field name="draw_shape" id="_22752" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28030" offset="1280" fid="f338" line="155"/>
-    <field name="draw_trapezoid" id="_22753" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28031" offset="1344" fid="f338" line="160"/>
-    <field name="draw_glyph" id="_22754" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28032" offset="1408" fid="f338" line="168"/>
-    <field name="part_changed" id="_22755" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28033" offset="1472" fid="f338" line="174"/>
-    <field name="begin" id="_22756" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28034" offset="1536" fid="f338" line="177"/>
-    <field name="gend" id="_22757" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28034" offset="1600" fid="f338" line="178"/>
-    <field name="prepare_run" id="_22758" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28035" offset="1664" fid="f338" line="180"/>
-    <field name="draw_glyph_item" id="_22759" type="NullablePointer[FUNCTIONTYPE]" fieldid="_28036" offset="1728" fid="f338" line="183"/>
-    <field name="_pango_reserved2" id="_22760" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1792" fid="f338" line="192"/>
-    <field name="_pango_reserved3" id="_22761" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1856" fid="f338" line="193"/>
-    <field name="_pango_reserved4" id="_22762" type="NullablePointer[FUNCTIONTYPE]" fieldid="_19233" offset="1920" fid="f338" line="194"/>
+    <field name="draw_glyphs" id="_22749" type="Pointer[None]" fieldid="_28027" offset="1088" fid="f338" line="139"/>
+    <field name="draw_rectangle" id="_22750" type="Pointer[None]" fieldid="_28028" offset="1152" fid="f338" line="144"/>
+    <field name="draw_error_underline" id="_22751" type="Pointer[None]" fieldid="_28029" offset="1216" fid="f338" line="150"/>
+    <field name="draw_shape" id="_22752" type="Pointer[None]" fieldid="_28030" offset="1280" fid="f338" line="155"/>
+    <field name="draw_trapezoid" id="_22753" type="Pointer[None]" fieldid="_28031" offset="1344" fid="f338" line="160"/>
+    <field name="draw_glyph" id="_22754" type="Pointer[None]" fieldid="_28032" offset="1408" fid="f338" line="168"/>
+    <field name="part_changed" id="_22755" type="Pointer[None]" fieldid="_28033" offset="1472" fid="f338" line="174"/>
+    <field name="begin" id="_22756" type="Pointer[None]" fieldid="_28034" offset="1536" fid="f338" line="177"/>
+    <field name="gend" id="_22757" type="Pointer[None]" fieldid="_28034" offset="1600" fid="f338" line="178"/>
+    <field name="prepare_run" id="_22758" type="Pointer[None]" fieldid="_28035" offset="1664" fid="f338" line="180"/>
+    <field name="draw_glyph_item" id="_22759" type="Pointer[None]" fieldid="_28036" offset="1728" fid="f338" line="183"/>
+    <field name="_pango_reserved2" id="_22760" type="Pointer[None]" fieldid="_19233" offset="1792" fid="f338" line="192"/>
+    <field name="_pango_reserved3" id="_22761" type="Pointer[None]" fieldid="_19233" offset="1856" fid="f338" line="193"/>
+    <field name="_pango_reserved4" id="_22762" type="Pointer[None]" fieldid="_19233" offset="1920" fid="f338" line="194"/>
   </struct>
 
   <struct name="PangoRendererPrivate" id="_9073" size="" align="" fid="f338" lineno="37">

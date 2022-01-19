@@ -18,9 +18,9 @@ use "../Gio"
      000512: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: destroy_func  
 */
 struct PangoAttrShape
-  var attr: PangoAttribute = PangoAttribute
-  var ink_rect: PangoRectangle = PangoRectangle
-  var logical_rect: PangoRectangle = PangoRectangle
+  embed attr: PangoAttribute = PangoAttribute
+  embed ink_rect: PangoRectangle = PangoRectangle
+  embed logical_rect: PangoRectangle = PangoRectangle
   var data: Pointer[None] = Pointer[None]
   var copy_func: Pointer[None] = Pointer[None]
   var destroy_func: Pointer[None] = Pointer[None]

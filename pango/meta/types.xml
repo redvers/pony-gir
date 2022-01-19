@@ -1,5 +1,6 @@
 <typedefs>
   <typedef name="String"
+    embed="var"
     ponytypein="String"
     ponytypeinconv=".cstring()"
     ponytypeout="String"
@@ -19,6 +20,7 @@
   </typedef>
 
   <typedef name="Array[String]"
+    embed="var"
     ponytypein="Array[String]"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
@@ -28,6 +30,7 @@
     rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="GObjectClass"
+    embed="embed"
     ponytypein="GObjectClass tag"
     ponytypeinconv=""
     ponytypeout="GObjectClass"
@@ -36,16 +39,8 @@
     argtype="GObjectClass tag"
     rvtype="GObjectClass"/>
 
-  <typedef name="F64"
-    ponytypein="F64"
-    ponytypeinconv=""
-    ponytypeout="F64"
-    structtype="F64"
-    structdef="F64(0)"
-    argtype="F64"
-    rvtype="F64"/>
-
   <typedef name="Pointer[None]"
+    embed="var"
     ponytypein="Pointer[None] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[None]"
@@ -54,16 +49,28 @@
     argtype="Pointer[None] tag"
     rvtype="Pointer[None]"/>
 
-  <typedef name="NullablePointer[PangoFont]"
-    ponytypein="NullablePointer[PangoFont] tag"
+  <typedef name="NullablePointer[PangoEngineShape]"
+    embed="var"
+    ponytypein="NullablePointer[PangoEngineShape] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[PangoFont]"
-    structtype="NullablePointer[PangoFont]"
-    structdef="NullablePointer[PangoFont].none()"
-    argtype="NullablePointer[PangoFont] tag"
-    rvtype="NullablePointer[PangoFont]"/>
+    ponytypeout="NullablePointer[PangoEngineShape]"
+    structtype="NullablePointer[PangoEngineShape]"
+    structdef="NullablePointer[PangoEngineShape].none()"
+    argtype="NullablePointer[PangoEngineShape] tag"
+    rvtype="NullablePointer[PangoEngineShape]"/>
+
+  <typedef name="F64"
+    embed="var"
+    ponytypein="F64"
+    ponytypeinconv=""
+    ponytypeout="F64"
+    structtype="F64"
+    structdef="F64(0)"
+    argtype="F64"
+    rvtype="F64"/>
 
   <typedef name="I32"
+    embed="var"
     ponytypein="I32"
     ponytypeinconv=""
     ponytypeout="I32"
@@ -73,6 +80,7 @@
     rvtype="I32"/>
 
   <typedef name="NullablePointer[PangoLanguage]"
+    embed="var"
     ponytypein="NullablePointer[PangoLanguage] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoLanguage]"
@@ -82,6 +90,7 @@
     rvtype="NullablePointer[PangoLanguage]"/>
 
   <typedef name="U32"
+    embed="var"
     ponytypein="U32"
     ponytypeinconv=""
     ponytypeout="U32"
@@ -90,16 +99,18 @@
     argtype="U32"
     rvtype="U32"/>
 
-  <typedef name="NullablePointer[PangoEngineShape]"
-    ponytypein="NullablePointer[PangoEngineShape] tag"
+  <typedef name="NullablePointer[PangoMatrix]"
+    embed="var"
+    ponytypein="NullablePointer[PangoMatrix] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[PangoEngineShape]"
-    structtype="NullablePointer[PangoEngineShape]"
-    structdef="NullablePointer[PangoEngineShape].none()"
-    argtype="NullablePointer[PangoEngineShape] tag"
-    rvtype="NullablePointer[PangoEngineShape]"/>
+    ponytypeout="NullablePointer[PangoMatrix]"
+    structtype="NullablePointer[PangoMatrix]"
+    structdef="NullablePointer[PangoMatrix].none()"
+    argtype="NullablePointer[PangoMatrix] tag"
+    rvtype="NullablePointer[PangoMatrix]"/>
 
   <typedef name="NullablePointer[PangoItem]"
+    embed="var"
     ponytypein="NullablePointer[PangoItem] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoItem]"
@@ -109,6 +120,7 @@
     rvtype="NullablePointer[PangoItem]"/>
 
   <typedef name="NullablePointer[PangoAttrClass]"
+    embed="var"
     ponytypein="NullablePointer[PangoAttrClass] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoAttrClass]"
@@ -117,16 +129,18 @@
     argtype="NullablePointer[PangoAttrClass] tag"
     rvtype="NullablePointer[PangoAttrClass]"/>
 
-  <typedef name="NullablePointer[PangoMatrix]"
-    ponytypein="NullablePointer[PangoMatrix] tag"
+  <typedef name="NullablePointer[PangoFont]"
+    embed="var"
+    ponytypein="NullablePointer[PangoFont] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[PangoMatrix]"
-    structtype="NullablePointer[PangoMatrix]"
-    structdef="NullablePointer[PangoMatrix].none()"
-    argtype="NullablePointer[PangoMatrix] tag"
-    rvtype="NullablePointer[PangoMatrix]"/>
+    ponytypeout="NullablePointer[PangoFont]"
+    structtype="NullablePointer[PangoFont]"
+    structdef="NullablePointer[PangoFont].none()"
+    argtype="NullablePointer[PangoFont] tag"
+    rvtype="NullablePointer[PangoFont]"/>
 
   <typedef name="PangoEngine"
+    embed="embed"
     ponytypein="PangoEngine tag"
     ponytypeinconv=""
     ponytypeout="PangoEngine"
@@ -136,6 +150,7 @@
     rvtype="PangoEngine"/>
 
   <typedef name="PangoGlyphGeometry"
+    embed="embed"
     ponytypein="PangoGlyphGeometry tag"
     ponytypeinconv=""
     ponytypeout="PangoGlyphGeometry"
@@ -145,6 +160,7 @@
     rvtype="PangoGlyphGeometry"/>
 
   <typedef name="PangoRectangle"
+    embed="embed"
     ponytypein="PangoRectangle tag"
     ponytypeinconv=""
     ponytypeout="PangoRectangle"
@@ -154,6 +170,7 @@
     rvtype="PangoRectangle"/>
 
   <typedef name="PangoColor"
+    embed="embed"
     ponytypein="PangoColor tag"
     ponytypeinconv=""
     ponytypeout="PangoColor"
@@ -163,6 +180,7 @@
     rvtype="PangoColor"/>
 
   <typedef name="Pointer[I32]"
+    embed="var"
     ponytypein="Pointer[I32] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[I32]"
@@ -172,6 +190,7 @@
     rvtype="Pointer[I32]"/>
 
   <typedef name="NullablePointer[PangoEngineScriptInfo]"
+    embed="var"
     ponytypein="NullablePointer[PangoEngineScriptInfo] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoEngineScriptInfo]"
@@ -181,6 +200,7 @@
     rvtype="NullablePointer[PangoEngineScriptInfo]"/>
 
   <typedef name="U16"
+    embed="var"
     ponytypein="U16"
     ponytypeinconv=""
     ponytypeout="U16"
@@ -190,6 +210,7 @@
     rvtype="U16"/>
 
   <typedef name="NullablePointer[PangoGlyphInfo]"
+    embed="var"
     ponytypein="NullablePointer[PangoGlyphInfo] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoGlyphInfo]"
@@ -199,6 +220,7 @@
     rvtype="NullablePointer[PangoGlyphInfo]"/>
 
   <typedef name="NullablePointer[PangoRendererPrivate]"
+    embed="var"
     ponytypein="NullablePointer[PangoRendererPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoRendererPrivate]"
@@ -208,6 +230,7 @@
     rvtype="NullablePointer[PangoRendererPrivate]"/>
 
   <typedef name="GObject"
+    embed="embed"
     ponytypein="GObject tag"
     ponytypeinconv=""
     ponytypeout="GObject"
@@ -217,6 +240,7 @@
     rvtype="GObject"/>
 
   <typedef name="NullablePointer[PangoEngineLang]"
+    embed="var"
     ponytypein="NullablePointer[PangoEngineLang] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoEngineLang]"
@@ -226,6 +250,7 @@
     rvtype="NullablePointer[PangoEngineLang]"/>
 
   <typedef name="NullablePointer[PangoGlyphString]"
+    embed="var"
     ponytypein="NullablePointer[PangoGlyphString] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoGlyphString]"
@@ -234,16 +259,8 @@
     argtype="NullablePointer[PangoGlyphString] tag"
     rvtype="NullablePointer[PangoGlyphString]"/>
 
-  <typedef name="NullablePointer[FUNCTIONTYPE]"
-    ponytypein="Pointer[FUNCTIONTYPE] tag"
-    ponytypeinconv=""
-    ponytypeout="Pointer[None]"
-    structtype="Pointer[None]"
-    structdef="Pointer[None]"
-    argtype="Pointer[None] tag"
-    rvtype="Pointer[None]"/>
-
   <typedef name="NullablePointer[PangoFontDescription]"
+    embed="var"
     ponytypein="NullablePointer[PangoFontDescription] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoFontDescription]"
@@ -253,6 +270,7 @@
     rvtype="NullablePointer[PangoFontDescription]"/>
 
   <typedef name="NullablePointer[GSList]"
+    embed="var"
     ponytypein="NullablePointer[GSList] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSList]"
@@ -262,6 +280,7 @@
     rvtype="NullablePointer[GSList]"/>
 
   <typedef name="PangoAnalysis"
+    embed="embed"
     ponytypein="PangoAnalysis tag"
     ponytypeinconv=""
     ponytypeout="PangoAnalysis"
@@ -271,6 +290,7 @@
     rvtype="PangoAnalysis"/>
 
   <typedef name="PangoAttribute"
+    embed="embed"
     ponytypein="PangoAttribute tag"
     ponytypeinconv=""
     ponytypeout="PangoAttribute"
@@ -280,6 +300,7 @@
     rvtype="PangoAttribute"/>
 
   <typedef name="PangoEngineClass"
+    embed="embed"
     ponytypein="PangoEngineClass tag"
     ponytypeinconv=""
     ponytypeout="PangoEngineClass"
@@ -289,6 +310,7 @@
     rvtype="PangoEngineClass"/>
 
   <typedef name="PangoGlyphVisAttr"
+    embed="embed"
     ponytypein="PangoGlyphVisAttr tag"
     ponytypeinconv=""
     ponytypeout="PangoGlyphVisAttr"
@@ -298,6 +320,7 @@
     rvtype="PangoGlyphVisAttr"/>
 
   <typedef name="NullablePointer[PangoGlyphItem]"
+    embed="var"
     ponytypein="NullablePointer[PangoGlyphItem] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoGlyphItem]"
@@ -307,6 +330,7 @@
     rvtype="NullablePointer[PangoGlyphItem]"/>
 
   <typedef name="U8"
+    embed="var"
     ponytypein="U8"
     ponytypeinconv=""
     ponytypeout="U8"
@@ -316,6 +340,7 @@
     rvtype="U8"/>
 
   <typedef name="NullablePointer[PangoLayout]"
+    embed="var"
     ponytypein="NullablePointer[PangoLayout] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[PangoLayout]"

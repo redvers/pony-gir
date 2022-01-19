@@ -16,5 +16,5 @@ use "../Gio"
 */
 struct PangoGlyphInfo
   var glyph: U32 = U32(0)
-  var geometry: PangoGlyphGeometry = PangoGlyphGeometry
-  var attr: PangoGlyphVisAttr = PangoGlyphVisAttr
+  embed geometry: PangoGlyphGeometry = PangoGlyphGeometry
+  embed attr: PangoGlyphVisAttr = PangoGlyphVisAttr

@@ -21,7 +21,7 @@ use "../Gio"
      001536: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_face  
 */
 struct PangoFontMapClass
-  var parent_class: GObjectClass = GObjectClass
+  embed parent_class: GObjectClass = GObjectClass
   var load_font: Pointer[None] = Pointer[None]
   var list_families: Pointer[None] = Pointer[None]
   var load_fontset: Pointer[None] = Pointer[None]

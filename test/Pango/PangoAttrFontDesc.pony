@@ -14,5 +14,5 @@ use "../Gio"
      000128: [PointerType size=64]->[Struct size=,fid: f321]: desc  
 */
 struct PangoAttrFontDesc
-  var attr: PangoAttribute = PangoAttribute
+  embed attr: PangoAttribute = PangoAttribute
   var desc: NullablePointer[PangoFontDescription] = NullablePointer[PangoFontDescription].none()

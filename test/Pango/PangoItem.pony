@@ -19,4 +19,4 @@ struct PangoItem
   var offset: I32 = I32(0)
   var length: I32 = I32(0)
   var num_chars: I32 = I32(0)
-  var analysis: PangoAnalysis = PangoAnalysis
+  embed analysis: PangoAnalysis = PangoAnalysis

@@ -13,4 +13,4 @@ use "../Gio"
      000000: [Struct size=1088,fid: f139]: parent_class  
 */
 struct PangoEngineClass
-  var parent_class: GObjectClass = GObjectClass
+  embed parent_class: GObjectClass = GObjectClass

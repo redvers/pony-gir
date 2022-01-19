@@ -13,4 +13,4 @@ use "../Gio"
      000000: [Struct size=192,fid: f320]: parent_instance  
 */
 struct PangoEngineLang
-  var parent_instance: PangoEngine = PangoEngine
+  embed parent_instance: PangoEngine = PangoEngine

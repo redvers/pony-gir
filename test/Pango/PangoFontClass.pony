@@ -21,7 +21,7 @@ use "../Gio"
      001536: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: create_hb_font  
 */
 struct PangoFontClass
-  var parent_class: GObjectClass = GObjectClass
+  embed parent_class: GObjectClass = GObjectClass
   var describe: Pointer[None] = Pointer[None]
   var get_coverage: Pointer[None] = Pointer[None]
   var get_glyph_extents: Pointer[None] = Pointer[None]

@@ -20,7 +20,7 @@ use "../Gio"
      001472: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _pango_reserved4  
 */
 struct PangoFontFaceClass
-  var parent_class: GObjectClass = GObjectClass
+  embed parent_class: GObjectClass = GObjectClass
   var get_face_name: Pointer[None] = Pointer[None]
   var describe: Pointer[None] = Pointer[None]
   var list_sizes: Pointer[None] = Pointer[None]

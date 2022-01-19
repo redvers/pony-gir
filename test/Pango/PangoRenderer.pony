@@ -18,7 +18,7 @@ use "../Gio"
      000384: [PointerType size=64]->[Struct size=,fid: f338]: priv  
 */
 struct PangoRenderer
-  var parent_instance: GObject = GObject
+  embed parent_instance: GObject = GObject
   var underline: I32 = I32(0)
   var strikethrough: I32 = I32(0)
   var active_count: I32 = I32(0)

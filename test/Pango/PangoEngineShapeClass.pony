@@ -15,6 +15,6 @@ use "../Gio"
      001152: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: covers  
 */
 struct PangoEngineShapeClass
-  var parent_class: PangoEngineClass = PangoEngineClass
+  embed parent_class: PangoEngineClass = PangoEngineClass
   var script_shape: Pointer[None] = Pointer[None]
   var covers: Pointer[None] = Pointer[None]
