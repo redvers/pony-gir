@@ -1,0 +1,2250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./types.xml"/>
+<xi:include href="./../../castxml-results/gio.xml"/>
+                    <structs>
+                      <struct name="GIOChannel" id="_1504" size="896" align="64" fid="f85" lineno="97">
+    <field name="ref_count" id="_8695" type="I32" fieldid="_141" offset="0" fid="f85" line="100"/>
+    <field name="funcs" id="_8696" type="NullablePointer[GIOFuncs]" fieldid="_11438" offset="64" fid="f85" line="101"/>
+    <field name="encoding" id="_8697" type="String" fieldid="_8191" offset="128" fid="f85" line="103"/>
+    <field name="read_cd" id="_8698" type="NullablePointer[GIConv]" fieldid="_881" offset="192" fid="f85" line="104"/>
+    <field name="write_cd" id="_8699" type="NullablePointer[GIConv]" fieldid="_881" offset="256" fid="f85" line="105"/>
+    <field name="line_term" id="_8700" type="String" fieldid="_8191" offset="320" fid="f85" line="106"/>
+    <field name="line_term_len" id="_8701" type="U32" fieldid="_146" offset="384" fid="f85" line="107"/>
+    <field name="buf_size" id="_8702" type="U64" fieldid="_21" offset="448" fid="f85" line="109"/>
+    <field name="read_buf" id="_8703" type="NullablePointer[GString]" fieldid="_8693" offset="512" fid="f85" line="110"/>
+    <field name="encoded_read_buf" id="_8704" type="NullablePointer[GString]" fieldid="_8693" offset="576" fid="f85" line="111"/>
+    <field name="write_buf" id="_8705" type="NullablePointer[GString]" fieldid="_8693" offset="640" fid="f85" line="112"/>
+    <field name="partial_write_buf" id="_8706" type="Pointer[U8]" fieldid="_11439" offset="704" fid="f85" line="113"/>
+    <field name="use_buffer" id="_8707" type="U32" fieldid="_146" offset="752" fid="f85" line="117"/>
+    <field name="do_encode" id="_8708" type="U32" fieldid="_146" offset="753" fid="f85" line="118"/>
+    <field name="close_on_unref" id="_8709" type="U32" fieldid="_146" offset="754" fid="f85" line="119"/>
+    <field name="is_readable" id="_8710" type="U32" fieldid="_146" offset="755" fid="f85" line="120"/>
+    <field name="is_writeable" id="_8711" type="U32" fieldid="_146" offset="756" fid="f85" line="121"/>
+    <field name="is_seekable" id="_8712" type="U32" fieldid="_146" offset="757" fid="f85" line="122"/>
+    <field name="reserved1" id="_8713" type="Pointer[None]" fieldid="_149" offset="768" fid="f85" line="124"/>
+    <field name="reserved2" id="_8714" type="Pointer[None]" fieldid="_149" offset="832" fid="f85" line="125"/>
+  </struct>
+
+  <struct name="GIOFuncs" id="_1506" size="512" align="64" fid="f85" lineno="131">
+    <field name="io_read" id="_8716" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11440" offset="0" fid="f85" line="133"/>
+    <field name="io_write" id="_8717" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11441" offset="64" fid="f85" line="138"/>
+    <field name="io_seek" id="_8718" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11442" offset="128" fid="f85" line="143"/>
+    <field name="io_close" id="_8719" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11443" offset="192" fid="f85" line="147"/>
+    <field name="io_create_watch" id="_8720" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11444" offset="256" fid="f85" line="149"/>
+    <field name="io_free" id="_8721" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11445" offset="320" fid="f85" line="151"/>
+    <field name="io_set_flags" id="_8722" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11446" offset="384" fid="f85" line="152"/>
+    <field name="io_get_flags" id="_8723" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11447" offset="448" fid="f85" line="155"/>
+  </struct>
+
+  <struct name="GAppLaunchContext" id="_4090" size="256" align="64" fid="f151" lineno="273">
+    <field name="parent_instance" id="_9563" type="GObject" fieldid="_3573" offset="0" fid="f151" line="275"/>
+    <field name="priv" id="_9564" type="NullablePointer[GAppLaunchContextPrivate]" fieldid="_11555" offset="192" fid="f151" line="278"/>
+  </struct>
+
+  <struct name="GAppLaunchContextClass" id="_4431" size="1600" align="64" fid="f151" lineno="281">
+    <field name="parent_class" id="_9942" type="GObjectClass" fieldid="_3575" offset="0" fid="f151" line="283"/>
+    <field name="get_display" id="_9943" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11644" offset="1088" fid="f151" line="285"/>
+    <field name="get_startup_notify_id" id="_9944" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11644" offset="1152" fid="f151" line="288"/>
+    <field name="launch_failed" id="_9945" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11645" offset="1216" fid="f151" line="291"/>
+    <field name="launched" id="_9946" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11646" offset="1280" fid="f151" line="293"/>
+    <field name="_g_reserved1" id="_9947" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f151" line="298"/>
+    <field name="_g_reserved2" id="_9948" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f151" line="299"/>
+    <field name="_g_reserved3" id="_9949" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f151" line="300"/>
+    <field name="_g_reserved4" id="_9950" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1536" fid="f151" line="301"/>
+  </struct>
+
+  <struct name="GAppLaunchContextPrivate" id="_4433" size="" align="" fid="f151" lineno="45">
+
+  </struct>
+
+  <struct name="GAppInfoIface" id="_4435" size="1728" align="64" fid="f151" lineno="88">
+    <field name="g_iface" id="_9953" type="GTypeInterface" fieldid="_3246" offset="0" fid="f151" line="90"/>
+    <field name="dup" id="_9954" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11647" offset="128" fid="f151" line="94"/>
+    <field name="equal" id="_9955" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11648" offset="192" fid="f151" line="95"/>
+    <field name="get_id" id="_9956" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11649" offset="256" fid="f151" line="97"/>
+    <field name="get_name" id="_9957" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11649" offset="320" fid="f151" line="98"/>
+    <field name="get_description" id="_9958" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11649" offset="384" fid="f151" line="99"/>
+    <field name="get_executable" id="_9959" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11649" offset="448" fid="f151" line="100"/>
+    <field name="get_icon" id="_9960" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11650" offset="512" fid="f151" line="101"/>
+    <field name="launch" id="_9961" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11651" offset="576" fid="f151" line="102"/>
+    <field name="supports_uris" id="_9962" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11652" offset="640" fid="f151" line="106"/>
+    <field name="supports_files" id="_9963" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11652" offset="704" fid="f151" line="107"/>
+    <field name="launch_uris" id="_9964" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11651" offset="768" fid="f151" line="108"/>
+    <field name="should_show" id="_9965" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11652" offset="832" fid="f151" line="112"/>
+    <field name="set_as_default_for_type" id="_9966" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11653" offset="896" fid="f151" line="115"/>
+    <field name="set_as_default_for_extension" id="_9967" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11653" offset="960" fid="f151" line="118"/>
+    <field name="add_supports_type" id="_9968" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11653" offset="1024" fid="f151" line="121"/>
+    <field name="can_remove_supports_type" id="_9969" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11652" offset="1088" fid="f151" line="124"/>
+    <field name="remove_supports_type" id="_9970" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11653" offset="1152" fid="f151" line="125"/>
+    <field name="can_delete" id="_9971" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11652" offset="1216" fid="f151" line="128"/>
+    <field name="do_delete" id="_9972" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11652" offset="1280" fid="f151" line="129"/>
+    <field name="get_commandline" id="_9973" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11649" offset="1344" fid="f151" line="130"/>
+    <field name="get_display_name" id="_9974" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11649" offset="1408" fid="f151" line="131"/>
+    <field name="set_as_last_used_for_type" id="_9975" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11653" offset="1472" fid="f151" line="132"/>
+    <field name="get_supported_types" id="_9976" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11654" offset="1536" fid="f151" line="135"/>
+    <field name="launch_uris_async" id="_9977" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11655" offset="1600" fid="f151" line="136"/>
+    <field name="launch_uris_finish" id="_9978" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11656" offset="1664" fid="f151" line="142"/>
+  </struct>
+
+  <struct name="GAppInfoMonitor" id="_4482" size="" align="" fid="f151" lineno="337">
+
+  </struct>
+
+  <struct name="GAppInfo" id="_4092" size="" align="" fid="f152" lineno="33">
+
+  </struct>
+
+  <struct name="GAsyncResult" id="_4094" size="" align="" fid="f152" lineno="34">
+
+  </struct>
+
+  <struct name="GAsyncInitable" id="_4096" size="" align="" fid="f152" lineno="35">
+
+  </struct>
+
+  <struct name="GCharsetConverter" id="_4104" size="" align="" fid="f152" lineno="39">
+
+  </struct>
+
+  <struct name="GConverter" id="_4106" size="" align="" fid="f152" lineno="40">
+
+  </struct>
+
+  <struct name="GDatagramBased" id="_4112" size="" align="" fid="f152" lineno="43">
+
+  </struct>
+
+  <struct name="GSimplePermission" id="_4116" size="" align="" fid="f152" lineno="45">
+
+  </struct>
+
+  <struct name="GZlibCompressor" id="_4118" size="" align="" fid="f152" lineno="46">
+
+  </struct>
+
+  <struct name="GZlibDecompressor" id="_4120" size="" align="" fid="f152" lineno="47">
+
+  </struct>
+
+  <struct name="GRemoteActionGroup" id="_4124" size="" align="" fid="f152" lineno="50">
+
+  </struct>
+
+  <struct name="GDBusActionGroup" id="_4126" size="" align="" fid="f152" lineno="51">
+
+  </struct>
+
+  <struct name="GActionMap" id="_4128" size="" align="" fid="f152" lineno="52">
+
+  </struct>
+
+  <struct name="GActionGroup" id="_4130" size="" align="" fid="f152" lineno="53">
+
+  </struct>
+
+  <struct name="GPropertyAction" id="_4132" size="" align="" fid="f152" lineno="54">
+
+  </struct>
+
+  <struct name="GSimpleAction" id="_4134" size="" align="" fid="f152" lineno="55">
+
+  </struct>
+
+  <struct name="GAction" id="_4136" size="" align="" fid="f152" lineno="56">
+
+  </struct>
+
+  <struct name="GSettingsBackend" id="_4142" size="" align="" fid="f152" lineno="59">
+
+  </struct>
+
+  <struct name="GNotification" id="_4150" size="" align="" fid="f152" lineno="64">
+
+  </struct>
+
+  <struct name="GDrive" id="_4152" size="" align="" fid="f152" lineno="71">
+
+  </struct>
+
+  <struct name="GFile" id="_4162" size="" align="" fid="f152" lineno="84">
+
+  </struct>
+
+  <struct name="GFileInfo" id="_4164" size="" align="" fid="f152" lineno="85">
+
+  </struct>
+
+  <struct name="GFileAttributeMatcher" id="_4166" size="" align="" fid="f152" lineno="92">
+
+  </struct>
+
+  <struct name="GFileDescriptorBased" id="_4172" size="" align="" fid="f152" lineno="95">
+
+  </struct>
+
+  <struct name="GFileIcon" id="_4180" size="" align="" fid="f152" lineno="99">
+
+  </struct>
+
+  <struct name="GFilenameCompleter" id="_4182" size="" align="" fid="f152" lineno="100">
+
+  </struct>
+
+  <struct name="GIcon" id="_4184" size="" align="" fid="f152" lineno="103">
+
+  </struct>
+
+  <struct name="GInitable" id="_4196" size="" align="" fid="f152" lineno="109">
+
+  </struct>
+
+  <struct name="GIOModule" id="_4198" size="" align="" fid="f152" lineno="110">
+
+  </struct>
+
+  <struct name="GIOExtensionPoint" id="_4200" size="" align="" fid="f152" lineno="111">
+
+  </struct>
+
+  <struct name="GIOExtension" id="_4202" size="" align="" fid="f152" lineno="112">
+
+  </struct>
+
+  <struct name="GIOSchedulerJob" id="_4204" size="" align="" fid="f152" lineno="119">
+
+  </struct>
+
+  <struct name="GIOStreamAdapter" id="_4206" size="" align="" fid="f152" lineno="120">
+
+  </struct>
+
+  <struct name="GLoadableIcon" id="_4208" size="" align="" fid="f152" lineno="121">
+
+  </struct>
+
+  <struct name="GBytesIcon" id="_4210" size="" align="" fid="f152" lineno="122">
+
+  </struct>
+
+  <struct name="GMount" id="_4216" size="" align="" fid="f152" lineno="131">
+
+  </struct>
+
+  <struct name="GNetworkMonitor" id="_4222" size="" align="" fid="f152" lineno="134">
+
+  </struct>
+
+  <struct name="GSimpleIOStream" id="_4230" size="" align="" fid="f152" lineno="138">
+
+  </struct>
+
+  <struct name="GPollableInputStream" id="_4232" size="" align="" fid="f152" lineno="139">
+
+  </struct>
+
+  <struct name="GPollableOutputStream" id="_4234" size="" align="" fid="f152" lineno="140">
+
+  </struct>
+
+  <struct name="GResource" id="_4238" size="" align="" fid="f152" lineno="150">
+
+  </struct>
+
+  <struct name="GSeekable" id="_4240" size="" align="" fid="f152" lineno="151">
+
+  </struct>
+
+  <struct name="GSimpleAsyncResult" id="_4242" size="" align="" fid="f152" lineno="152">
+
+  </struct>
+
+  <struct name="GSocketConnectable" id="_4260" size="" align="" fid="f152" lineno="205">
+
+  </struct>
+
+  <struct name="GSrvTarget" id="_4262" size="" align="" fid="f152" lineno="206">
+
+  </struct>
+
+  <struct name="GTask" id="_4264" size="" align="" fid="f152" lineno="207">
+
+  </struct>
+
+  <struct name="GDtlsConnection" id="_4272" size="" align="" fid="f152" lineno="226">
+
+  </struct>
+
+  <struct name="GDtlsClientConnection" id="_4274" size="" align="" fid="f152" lineno="227">
+
+  </struct>
+
+  <struct name="GDtlsServerConnection" id="_4276" size="" align="" fid="f152" lineno="228">
+
+  </struct>
+
+  <struct name="GThemedIcon" id="_4278" size="" align="" fid="f152" lineno="229">
+
+  </struct>
+
+  <struct name="GTlsClientConnection" id="_4282" size="" align="" fid="f152" lineno="231">
+
+  </struct>
+
+  <struct name="GTlsFileDatabase" id="_4288" size="" align="" fid="f152" lineno="234">
+
+  </struct>
+
+  <struct name="GTlsServerConnection" id="_4294" size="" align="" fid="f152" lineno="237">
+
+  </struct>
+
+  <struct name="GProxyResolver" id="_4298" size="" align="" fid="f152" lineno="247">
+
+  </struct>
+
+  <struct name="GProxy" id="_4300" size="" align="" fid="f152" lineno="248">
+
+  </struct>
+
+  <struct name="GVolume" id="_4306" size="" align="" fid="f152" lineno="257">
+
+  </struct>
+
+  <struct name="GInputVector" id="_4318" size="128" align="64" fid="f152" lineno="438">
+    <field name="buffer" id="_9789" type="Pointer[None]" fieldid="_149" offset="0" fid="f152" line="439"/>
+    <field name="size" id="_9790" type="U64" fieldid="_21" offset="64" fid="f152" line="440"/>
+  </struct>
+
+  <struct name="GInputMessage" id="_4320" size="448" align="64" fid="f152" lineno="484">
+    <field name="address" id="_9792" type="Array[NullablePointer[GSocketAddress]]" fieldid="_10953" offset="0" fid="f152" line="485"/>
+    <field name="vectors" id="_9793" type="NullablePointer[GInputVector]" fieldid="_10954" offset="64" fid="f152" line="487"/>
+    <field name="num_vectors" id="_9794" type="U32" fieldid="_146" offset="128" fid="f152" line="488"/>
+    <field name="bytes_received" id="_9795" type="U64" fieldid="_21" offset="192" fid="f152" line="490"/>
+    <field name="flags" id="_9796" type="I32" fieldid="_141" offset="256" fid="f152" line="491"/>
+    <field name="control_messages" id="_9797" type="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]" fieldid="_10955" offset="320" fid="f152" line="493"/>
+    <field name="num_control_messages" id="_9798" type="Pointer[U32]" fieldid="_8192" offset="384" fid="f152" line="494"/>
+  </struct>
+
+  <struct name="GOutputVector" id="_4322" size="128" align="64" fid="f152" lineno="511">
+    <field name="buffer" id="_9800" type="Pointer[None]" fieldid="_150" offset="0" fid="f152" line="512"/>
+    <field name="size" id="_9801" type="U64" fieldid="_21" offset="64" fid="f152" line="513"/>
+  </struct>
+
+  <struct name="GOutputMessage" id="_4324" size="320" align="64" fid="f152" lineno="539">
+    <field name="address" id="_9803" type="NullablePointer[GSocketAddress]" fieldid="_10592" offset="0" fid="f152" line="540"/>
+    <field name="vectors" id="_9804" type="NullablePointer[GOutputVector]" fieldid="_10093" offset="64" fid="f152" line="542"/>
+    <field name="num_vectors" id="_9805" type="U32" fieldid="_146" offset="128" fid="f152" line="543"/>
+    <field name="bytes_sent" id="_9806" type="U32" fieldid="_146" offset="160" fid="f152" line="545"/>
+    <field name="control_messages" id="_9807" type="Array[NullablePointer[GSocketControlMessage]]" fieldid="_10956" offset="192" fid="f152" line="547"/>
+    <field name="num_control_messages" id="_9808" type="U32" fieldid="_146" offset="256" fid="f152" line="548"/>
+  </struct>
+
+  <struct name="GCredentials" id="_4326" size="" align="" fid="f152" lineno="551">
+
+  </struct>
+
+  <struct name="GUnixCredentialsMessage" id="_4328" size="" align="" fid="f152" lineno="552">
+
+  </struct>
+
+  <struct name="GUnixFDList" id="_4330" size="" align="" fid="f152" lineno="553">
+
+  </struct>
+
+  <struct name="GDBusMessage" id="_4332" size="" align="" fid="f152" lineno="554">
+
+  </struct>
+
+  <struct name="GDBusConnection" id="_4334" size="" align="" fid="f152" lineno="555">
+
+  </struct>
+
+  <struct name="GDBusMethodInvocation" id="_4338" size="" align="" fid="f152" lineno="557">
+
+  </struct>
+
+  <struct name="GDBusServer" id="_4340" size="" align="" fid="f152" lineno="558">
+
+  </struct>
+
+  <struct name="GDBusAuthObserver" id="_4342" size="" align="" fid="f152" lineno="559">
+
+  </struct>
+
+  <struct name="GDBusInterface" id="_4366" size="" align="" fid="f152" lineno="602">
+
+  </struct>
+
+  <struct name="GDBusObject" id="_4370" size="" align="" fid="f152" lineno="604">
+
+  </struct>
+
+  <struct name="GDBusObjectManager" id="_4376" size="" align="" fid="f152" lineno="607">
+
+  </struct>
+
+  <struct name="GTestDBus" id="_4383" size="" align="" fid="f152" lineno="637">
+
+  </struct>
+
+  <struct name="GSubprocess" id="_4385" size="" align="" fid="f152" lineno="646">
+
+  </struct>
+
+  <struct name="GSubprocessLauncher" id="_4387" size="" align="" fid="f152" lineno="654">
+
+  </struct>
+
+  <struct name="GBufferedInputStream" id="_4098" size="384" align="64" fid="f153" lineno="47">
+    <field name="parent_instance" id="_9569" type="GFilterInputStream" fieldid="_4159" offset="0" fid="f153" line="49"/>
+    <field name="priv" id="_9570" type="NullablePointer[GBufferedInputStreamPrivate]" fieldid="_11556" offset="320" fid="f153" line="52"/>
+  </struct>
+
+  <struct name="GBufferedInputStreamClass" id="_4599" size="2688" align="64" fid="f153" lineno="55">
+    <field name="parent_class" id="_10056" type="GFilterInputStreamClass" fieldid="_4594" offset="0" fid="f153" line="57"/>
+    <field name="fill" id="_10057" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11685" offset="2176" fid="f153" line="59"/>
+    <field name="fill_async" id="_10058" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11686" offset="2240" fid="f153" line="65"/>
+    <field name="fill_finish" id="_10059" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11687" offset="2304" fid="f153" line="71"/>
+    <field name="_g_reserved1" id="_10060" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f153" line="77"/>
+    <field name="_g_reserved2" id="_10061" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2432" fid="f153" line="78"/>
+    <field name="_g_reserved3" id="_10062" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2496" fid="f153" line="79"/>
+    <field name="_g_reserved4" id="_10063" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2560" fid="f153" line="80"/>
+    <field name="_g_reserved5" id="_10064" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f153" line="81"/>
+  </struct>
+
+  <struct name="GBufferedInputStreamPrivate" id="_4601" size="" align="" fid="f153" lineno="45">
+
+  </struct>
+
+  <struct name="GBufferedOutputStream" id="_4100" size="384" align="64" fid="f154" lineno="47">
+    <field name="parent_instance" id="_9572" type="GFilterOutputStream" fieldid="_4161" offset="0" fid="f154" line="49"/>
+    <field name="priv" id="_9573" type="NullablePointer[GBufferedOutputStreamPrivate]" fieldid="_11557" offset="320" fid="f154" line="52"/>
+  </struct>
+
+  <struct name="GBufferedOutputStreamClass" id="_4657" size="2688" align="64" fid="f154" lineno="55">
+    <field name="parent_class" id="_10100" type="GFilterOutputStreamClass" fieldid="_4652" offset="0" fid="f154" line="57"/>
+    <field name="_g_reserved1" id="_10101" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2560" fid="f154" line="61"/>
+    <field name="_g_reserved2" id="_10102" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f154" line="62"/>
+  </struct>
+
+  <struct name="GBufferedOutputStreamPrivate" id="_4659" size="" align="" fid="f154" lineno="45">
+
+  </struct>
+
+  <struct name="GCancellable" id="_4102" size="256" align="64" fid="f155" lineno="47">
+    <field name="parent_instance" id="_9575" type="GObject" fieldid="_3573" offset="0" fid="f155" line="49"/>
+    <field name="priv" id="_9576" type="NullablePointer[GCancellablePrivate]" fieldid="_11558" offset="192" fid="f155" line="52"/>
+  </struct>
+
+  <struct name="GCancellableClass" id="_4671" size="1472" align="64" fid="f155" lineno="55">
+    <field name="parent_class" id="_10107" type="GObjectClass" fieldid="_3575" offset="0" fid="f155" line="57"/>
+    <field name="cancelled" id="_10108" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11699" offset="1088" fid="f155" line="59"/>
+    <field name="_g_reserved1" id="_10109" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1152" fid="f155" line="63"/>
+    <field name="_g_reserved2" id="_10110" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1216" fid="f155" line="64"/>
+    <field name="_g_reserved3" id="_10111" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f155" line="65"/>
+    <field name="_g_reserved4" id="_10112" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f155" line="66"/>
+    <field name="_g_reserved5" id="_10113" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f155" line="67"/>
+  </struct>
+
+  <struct name="GCancellablePrivate" id="_4673" size="" align="" fid="f155" lineno="45">
+
+  </struct>
+
+  <struct name="GConverterInputStream" id="_4108" size="384" align="64" fid="f156" lineno="49">
+    <field name="parent_instance" id="_9580" type="GFilterInputStream" fieldid="_4159" offset="0" fid="f156" line="51"/>
+    <field name="priv" id="_9581" type="NullablePointer[GConverterInputStreamPrivate]" fieldid="_11559" offset="320" fid="f156" line="54"/>
+  </struct>
+
+  <struct name="GConverterInputStreamClass" id="_4718" size="2496" align="64" fid="f156" lineno="57">
+    <field name="parent_class" id="_10124" type="GFilterInputStreamClass" fieldid="_4594" offset="0" fid="f156" line="59"/>
+    <field name="_g_reserved1" id="_10125" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2176" fid="f156" line="63"/>
+    <field name="_g_reserved2" id="_10126" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2240" fid="f156" line="64"/>
+    <field name="_g_reserved3" id="_10127" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2304" fid="f156" line="65"/>
+    <field name="_g_reserved4" id="_10128" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f156" line="66"/>
+    <field name="_g_reserved5" id="_10129" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2432" fid="f156" line="67"/>
+  </struct>
+
+  <struct name="GConverterInputStreamPrivate" id="_4720" size="" align="" fid="f156" lineno="47">
+
+  </struct>
+
+  <struct name="GConverterOutputStream" id="_4110" size="384" align="64" fid="f157" lineno="49">
+    <field name="parent_instance" id="_9583" type="GFilterOutputStream" fieldid="_4161" offset="0" fid="f157" line="51"/>
+    <field name="priv" id="_9584" type="NullablePointer[GConverterOutputStreamPrivate]" fieldid="_11560" offset="320" fid="f157" line="54"/>
+  </struct>
+
+  <struct name="GConverterOutputStreamClass" id="_4725" size="2880" align="64" fid="f157" lineno="57">
+    <field name="parent_class" id="_10133" type="GFilterOutputStreamClass" fieldid="_4652" offset="0" fid="f157" line="59"/>
+    <field name="_g_reserved1" id="_10134" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2560" fid="f157" line="63"/>
+    <field name="_g_reserved2" id="_10135" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f157" line="64"/>
+    <field name="_g_reserved3" id="_10136" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2688" fid="f157" line="65"/>
+    <field name="_g_reserved4" id="_10137" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2752" fid="f157" line="66"/>
+    <field name="_g_reserved5" id="_10138" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2816" fid="f157" line="67"/>
+  </struct>
+
+  <struct name="GConverterOutputStreamPrivate" id="_4727" size="" align="" fid="f157" lineno="47">
+
+  </struct>
+
+  <struct name="GDataInputStream" id="_4114" size="448" align="64" fid="f158" lineno="48">
+    <field name="parent_instance" id="_9587" type="GBufferedInputStream" fieldid="_4099" offset="0" fid="f158" line="50"/>
+    <field name="priv" id="_9588" type="NullablePointer[GDataInputStreamPrivate]" fieldid="_11561" offset="384" fid="f158" line="53"/>
+  </struct>
+
+  <struct name="GDataInputStreamClass" id="_4869" size="3008" align="64" fid="f158" lineno="56">
+    <field name="parent_class" id="_10158" type="GBufferedInputStreamClass" fieldid="_4600" offset="0" fid="f158" line="58"/>
+    <field name="_g_reserved1" id="_10159" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2688" fid="f158" line="62"/>
+    <field name="_g_reserved2" id="_10160" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2752" fid="f158" line="63"/>
+    <field name="_g_reserved3" id="_10161" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2816" fid="f158" line="64"/>
+    <field name="_g_reserved4" id="_10162" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2880" fid="f158" line="65"/>
+    <field name="_g_reserved5" id="_10163" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2944" fid="f158" line="66"/>
+  </struct>
+
+  <struct name="GDataInputStreamPrivate" id="_4871" size="" align="" fid="f158" lineno="46">
+
+  </struct>
+
+  <struct name="GSimpleActionGroup" id="_4122" size="256" align="64" fid="f159" lineno="54">
+    <field name="parent_instance" id="_9593" type="GObject" fieldid="_3573" offset="0" fid="f159" line="57"/>
+    <field name="priv" id="_9594" type="NullablePointer[GSimpleActionGroupPrivate]" fieldid="_11562" offset="192" fid="f159" line="59"/>
+  </struct>
+
+  <struct name="GSimpleActionGroupPrivate" id="_6401" size="" align="" fid="f159" lineno="44">
+
+  </struct>
+
+  <struct name="GSimpleActionGroupClass" id="_6403" size="1856" align="64" fid="f159" lineno="62">
+    <field name="parent_class" id="_10921" type="GObjectClass" fieldid="_3575" offset="0" fid="f159" line="65"/>
+    <field name="padding" id="_10922" type="Pointer[Pointer[None]]" fieldid="_11963" offset="1088" fid="f159" line="68"/>
+  </struct>
+
+  <struct name="GApplication" id="_4138" size="256" align="64" fid="f160" lineno="44">
+    <field name="parent_instance" id="_9603" type="GObject" fieldid="_3573" offset="0" fid="f160" line="47"/>
+    <field name="priv" id="_9604" type="NullablePointer[GApplicationPrivate]" fieldid="_11563" offset="192" fid="f160" line="49"/>
+  </struct>
+
+  <struct name="GApplicationPrivate" id="_4486" size="" align="" fid="f160" lineno="41">
+
+  </struct>
+
+  <struct name="GApplicationClass" id="_4488" size="2496" align="64" fid="f160" lineno="52">
+    <field name="parent_class" id="_9988" type="GObjectClass" fieldid="_3575" offset="0" fid="f160" line="55"/>
+    <field name="startup" id="_9989" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11657" offset="1088" fid="f160" line="59"/>
+    <field name="activate" id="_9990" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11657" offset="1152" fid="f160" line="61"/>
+    <field name="open" id="_9991" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11658" offset="1216" fid="f160" line="63"/>
+    <field name="command_line" id="_9992" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11659" offset="1280" fid="f160" line="68"/>
+    <field name="local_command_line" id="_9993" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11660" offset="1344" fid="f160" line="92"/>
+    <field name="before_emit" id="_9994" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11661" offset="1408" fid="f160" line="96"/>
+    <field name="after_emit" id="_9995" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11661" offset="1472" fid="f160" line="98"/>
+    <field name="add_platform_data" id="_9996" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11662" offset="1536" fid="f160" line="100"/>
+    <field name="quit_mainloop" id="_9997" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11657" offset="1600" fid="f160" line="102"/>
+    <field name="run_mainloop" id="_9998" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11657" offset="1664" fid="f160" line="103"/>
+    <field name="shutdown" id="_9999" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11657" offset="1728" fid="f160" line="104"/>
+    <field name="dbus_register" id="_10000" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11663" offset="1792" fid="f160" line="106"/>
+    <field name="dbus_unregister" id="_10001" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11664" offset="1856" fid="f160" line="110"/>
+    <field name="handle_local_options" id="_10002" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11665" offset="1920" fid="f160" line="113"/>
+    <field name="name_lost" id="_10003" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11666" offset="1984" fid="f160" line="115"/>
+    <field name="padding" id="_10004" type="Pointer[Pointer[None]]" fieldid="_11667" offset="2048" fid="f160" line="118"/>
+  </struct>
+
+  <struct name="GApplicationCommandLine" id="_4140" size="256" align="64" fid="f161" lineno="50">
+    <field name="parent_instance" id="_9606" type="GObject" fieldid="_3573" offset="0" fid="f161" line="53"/>
+    <field name="priv" id="_9607" type="NullablePointer[GApplicationCommandLinePrivate]" fieldid="_11564" offset="192" fid="f161" line="55"/>
+  </struct>
+
+  <struct name="GApplicationCommandLinePrivate" id="_4528" size="" align="" fid="f161" lineno="47">
+
+  </struct>
+
+  <struct name="GApplicationCommandLineClass" id="_4530" size="1984" align="64" fid="f161" lineno="58">
+    <field name="parent_class" id="_10010" type="GObjectClass" fieldid="_3575" offset="0" fid="f161" line="61"/>
+    <field name="print_literal" id="_10011" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11668" offset="1088" fid="f161" line="63"/>
+    <field name="printerr_literal" id="_10012" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11668" offset="1152" fid="f161" line="65"/>
+    <field name="get_stdin" id="_10013" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11669" offset="1216" fid="f161" line="67"/>
+    <field name="padding" id="_10014" type="Pointer[Pointer[None]]" fieldid="_11670" offset="1280" fid="f161" line="69"/>
+  </struct>
+
+  <struct name="GSettings" id="_4144" size="256" align="64" fid="f162" lineno="63">
+    <field name="parent_instance" id="_9610" type="GObject" fieldid="_3573" offset="0" fid="f162" line="65"/>
+    <field name="priv" id="_9611" type="NullablePointer[GSettingsPrivate]" fieldid="_11565" offset="192" fid="f162" line="66"/>
+  </struct>
+
+  <struct name="GSettingsPrivate" id="_6334" size="" align="" fid="f162" lineno="42">
+
+  </struct>
+
+  <struct name="GSettingsClass" id="_6336" size="2624" align="64" fid="f162" lineno="45">
+    <field name="parent_class" id="_10906" type="GObjectClass" fieldid="_3575" offset="0" fid="f162" line="47"/>
+    <field name="writable_changed" id="_10907" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11956" offset="1088" fid="f162" line="50"/>
+    <field name="changed" id="_10908" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11956" offset="1152" fid="f162" line="52"/>
+    <field name="writable_change_event" id="_10909" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11957" offset="1216" fid="f162" line="54"/>
+    <field name="change_event" id="_10910" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11958" offset="1280" fid="f162" line="56"/>
+    <field name="padding" id="_10911" type="Pointer[Pointer[None]]" fieldid="_11959" offset="1344" fid="f162" line="60"/>
+  </struct>
+
+  <struct name="GPermission" id="_4146" size="256" align="64" fid="f163" lineno="46">
+    <field name="parent_instance" id="_9613" type="GObject" fieldid="_3573" offset="0" fid="f163" line="48"/>
+    <field name="priv" id="_9614" type="NullablePointer[GPermissionPrivate]" fieldid="_11566" offset="192" fid="f163" line="51"/>
+  </struct>
+
+  <struct name="GPermissionPrivate" id="_6145" size="" align="" fid="f163" lineno="43">
+
+  </struct>
+
+  <struct name="GPermissionClass" id="_6147" size="2496" align="64" fid="f163" lineno="54">
+    <field name="parent_class" id="_10791" type="GObjectClass" fieldid="_3575" offset="0" fid="f163" line="55"/>
+    <field name="acquire" id="_10792" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11918" offset="1088" fid="f163" line="57"/>
+    <field name="acquire_async" id="_10793" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11919" offset="1152" fid="f163" line="60"/>
+    <field name="acquire_finish" id="_10794" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11920" offset="1216" fid="f163" line="64"/>
+    <field name="release" id="_10795" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11918" offset="1280" fid="f163" line="68"/>
+    <field name="release_async" id="_10796" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11919" offset="1344" fid="f163" line="71"/>
+    <field name="release_finish" id="_10797" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11920" offset="1408" fid="f163" line="75"/>
+    <field name="reserved" id="_10798" type="Pointer[Pointer[None]]" fieldid="_11921" offset="1472" fid="f163" line="79"/>
+  </struct>
+
+  <struct name="GMenuModel" id="_4148" size="256" align="64" fid="f164" lineno="136">
+    <field name="parent_instance" id="_9616" type="GObject" fieldid="_3573" offset="0" fid="f164" line="138"/>
+    <field name="priv" id="_9617" type="NullablePointer[GMenuModelPrivate]" fieldid="_11567" offset="192" fid="f164" line="139"/>
+  </struct>
+
+  <struct name="GMenuModelPrivate" id="_5946" size="" align="" fid="f164" lineno="125">
+
+  </struct>
+
+  <struct name="GMenuModelClass" id="_5948" size="1600" align="64" fid="f164" lineno="158">
+    <field name="parent_class" id="_10659" type="GObjectClass" fieldid="_3575" offset="0" fid="f164" line="160"/>
+    <field name="is_mutable" id="_10660" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11873" offset="1088" fid="f164" line="162"/>
+    <field name="get_n_items" id="_10661" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11874" offset="1152" fid="f164" line="163"/>
+    <field name="get_item_attributes" id="_10662" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11875" offset="1216" fid="f164" line="164"/>
+    <field name="iterate_item_attributes" id="_10663" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11876" offset="1280" fid="f164" line="167"/>
+    <field name="get_item_attribute_value" id="_10664" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11877" offset="1344" fid="f164" line="169"/>
+    <field name="get_item_links" id="_10665" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11875" offset="1408" fid="f164" line="173"/>
+    <field name="iterate_item_links" id="_10666" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11878" offset="1472" fid="f164" line="176"/>
+    <field name="get_item_link" id="_10667" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11879" offset="1536" fid="f164" line="178"/>
+  </struct>
+
+  <struct name="GMenuAttributeIterPrivate" id="_5950" size="" align="" fid="f164" lineno="128">
+
+  </struct>
+
+  <struct name="GMenuAttributeIterClass" id="_5952" size="1152" align="64" fid="f164" lineno="238">
+    <field name="parent_class" id="_10670" type="GObjectClass" fieldid="_3575" offset="0" fid="f164" line="240"/>
+    <field name="get_next" id="_10671" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11880" offset="1088" fid="f164" line="242"/>
+  </struct>
+
+  <struct name="GMenuAttributeIter" id="_5954" size="256" align="64" fid="f164" lineno="232">
+    <field name="parent_instance" id="_10673" type="GObject" fieldid="_3573" offset="0" fid="f164" line="234"/>
+    <field name="priv" id="_10674" type="NullablePointer[GMenuAttributeIterPrivate]" fieldid="_11881" offset="192" fid="f164" line="235"/>
+  </struct>
+
+  <struct name="GMenuLinkIterPrivate" id="_5956" size="" align="" fid="f164" lineno="132">
+
+  </struct>
+
+  <struct name="GMenuLinkIterClass" id="_5958" size="1152" align="64" fid="f164" lineno="280">
+    <field name="parent_class" id="_10677" type="GObjectClass" fieldid="_3575" offset="0" fid="f164" line="282"/>
+    <field name="get_next" id="_10678" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11882" offset="1088" fid="f164" line="284"/>
+  </struct>
+
+  <struct name="GMenuLinkIter" id="_5960" size="256" align="64" fid="f164" lineno="274">
+    <field name="parent_instance" id="_10680" type="GObject" fieldid="_3573" offset="0" fid="f164" line="276"/>
+    <field name="priv" id="_10681" type="NullablePointer[GMenuLinkIterPrivate]" fieldid="_11883" offset="192" fid="f164" line="277"/>
+  </struct>
+
+  <struct name="GFileEnumerator" id="_4154" size="256" align="64" fid="f165" lineno="47">
+    <field name="parent_instance" id="_9621" type="GObject" fieldid="_3573" offset="0" fid="f165" line="49"/>
+    <field name="priv" id="_9622" type="NullablePointer[GFileEnumeratorPrivate]" fieldid="_11568" offset="192" fid="f165" line="52"/>
+  </struct>
+
+  <struct name="GFileEnumeratorClass" id="_5492" size="1920" align="64" fid="f165" lineno="55">
+    <field name="parent_class" id="_10472" type="GObjectClass" fieldid="_3575" offset="0" fid="f165" line="57"/>
+    <field name="next_file" id="_10473" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11822" offset="1088" fid="f165" line="61"/>
+    <field name="close_fn" id="_10474" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11823" offset="1152" fid="f165" line="64"/>
+    <field name="next_files_async" id="_10475" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11824" offset="1216" fid="f165" line="68"/>
+    <field name="next_files_finish" id="_10476" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11825" offset="1280" fid="f165" line="74"/>
+    <field name="close_async" id="_10477" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11826" offset="1344" fid="f165" line="77"/>
+    <field name="close_finish" id="_10478" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11827" offset="1408" fid="f165" line="82"/>
+    <field name="_g_reserved1" id="_10479" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f165" line="88"/>
+    <field name="_g_reserved2" id="_10480" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1536" fid="f165" line="89"/>
+    <field name="_g_reserved3" id="_10481" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1600" fid="f165" line="90"/>
+    <field name="_g_reserved4" id="_10482" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f165" line="91"/>
+    <field name="_g_reserved5" id="_10483" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1728" fid="f165" line="92"/>
+    <field name="_g_reserved6" id="_10484" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1792" fid="f165" line="93"/>
+    <field name="_g_reserved7" id="_10485" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1856" fid="f165" line="94"/>
+  </struct>
+
+  <struct name="GFileEnumeratorPrivate" id="_5494" size="" align="" fid="f165" lineno="45">
+
+  </struct>
+
+  <struct name="GFileMonitor" id="_4156" size="256" align="64" fid="f166" lineno="47">
+    <field name="parent_instance" id="_9624" type="GObject" fieldid="_3573" offset="0" fid="f166" line="49"/>
+    <field name="priv" id="_9625" type="NullablePointer[GFileMonitorPrivate]" fieldid="_11569" offset="192" fid="f166" line="52"/>
+  </struct>
+
+  <struct name="GFileMonitorClass" id="_5631" size="1536" align="64" fid="f166" lineno="55">
+    <field name="parent_class" id="_10543" type="GObjectClass" fieldid="_3575" offset="0" fid="f166" line="57"/>
+    <field name="changed" id="_10544" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11847" offset="1088" fid="f166" line="60"/>
+    <field name="cancel" id="_10545" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11848" offset="1152" fid="f166" line="66"/>
+    <field name="_g_reserved1" id="_10546" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1216" fid="f166" line="70"/>
+    <field name="_g_reserved2" id="_10547" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f166" line="71"/>
+    <field name="_g_reserved3" id="_10548" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f166" line="72"/>
+    <field name="_g_reserved4" id="_10549" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f166" line="73"/>
+    <field name="_g_reserved5" id="_10550" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f166" line="74"/>
+  </struct>
+
+  <struct name="GFileMonitorPrivate" id="_5633" size="" align="" fid="f166" lineno="40">
+
+  </struct>
+
+  <struct name="GFilterInputStream" id="_4158" size="320" align="64" fid="f167" lineno="46">
+    <field name="parent_instance" id="_9627" type="GInputStream" fieldid="_4195" offset="0" fid="f167" line="48"/>
+    <field name="base_stream" id="_9628" type="NullablePointer[GInputStream]" fieldid="_10017" offset="256" fid="f167" line="51"/>
+  </struct>
+
+  <struct name="GFilterInputStreamClass" id="_4593" size="2176" align="64" fid="f167" lineno="54">
+    <field name="parent_class" id="_10050" type="GInputStreamClass" fieldid="_4570" offset="0" fid="f167" line="56"/>
+    <field name="_g_reserved1" id="_10051" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1984" fid="f167" line="60"/>
+    <field name="_g_reserved2" id="_10052" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2048" fid="f167" line="61"/>
+    <field name="_g_reserved3" id="_10053" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2112" fid="f167" line="62"/>
+  </struct>
+
+  <struct name="GFilterOutputStream" id="_4160" size="320" align="64" fid="f168" lineno="46">
+    <field name="parent_instance" id="_9630" type="GOutputStream" fieldid="_4227" offset="0" fid="f168" line="48"/>
+    <field name="base_stream" id="_9631" type="NullablePointer[GOutputStream]" fieldid="_10091" offset="256" fid="f168" line="51"/>
+  </struct>
+
+  <struct name="GFilterOutputStreamClass" id="_4651" size="2560" align="64" fid="f168" lineno="54">
+    <field name="parent_class" id="_10094" type="GOutputStreamClass" fieldid="_4616" offset="0" fid="f168" line="56"/>
+    <field name="_g_reserved1" id="_10095" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f168" line="60"/>
+    <field name="_g_reserved2" id="_10096" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2432" fid="f168" line="61"/>
+    <field name="_g_reserved3" id="_10097" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2496" fid="f168" line="62"/>
+  </struct>
+
+  <struct name="GFileAttributeInfo" id="_4168" size="128" align="64" fid="f169" lineno="40">
+    <field name="name" id="_9636" type="String" fieldid="_8093" offset="0" fid="f169" line="42"/>
+    <field name="gtype" id="_9637" type="I32" fieldid="_3941" offset="64" fid="f169" line="43"/>
+    <field name="flags" id="_9638" type="I32" fieldid="_3943" offset="96" fid="f169" line="44"/>
+  </struct>
+
+  <struct name="GFileAttributeInfoList" id="_4170" size="128" align="64" fid="f169" lineno="55">
+    <field name="infos" id="_9640" type="NullablePointer[GFileAttributeInfo]" fieldid="_11570" offset="0" fid="f169" line="57"/>
+    <field name="n_infos" id="_9641" type="I32" fieldid="_8097" offset="64" fid="f169" line="58"/>
+  </struct>
+
+  <struct name="GFileInputStream" id="_4174" size="320" align="64" fid="f170" lineno="50">
+    <field name="parent_instance" id="_9644" type="GInputStream" fieldid="_4195" offset="0" fid="f170" line="52"/>
+    <field name="priv" id="_9645" type="NullablePointer[GFileInputStreamPrivate]" fieldid="_11571" offset="256" fid="f170" line="55"/>
+  </struct>
+
+  <struct name="GFileInputStreamClass" id="_5596" size="2688" align="64" fid="f170" lineno="58">
+    <field name="parent_class" id="_10494" type="GInputStreamClass" fieldid="_4570" offset="0" fid="f170" line="60"/>
+    <field name="tell" id="_10495" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11828" offset="1984" fid="f170" line="62"/>
+    <field name="can_seek" id="_10496" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11829" offset="2048" fid="f170" line="63"/>
+    <field name="seek" id="_10497" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11830" offset="2112" fid="f170" line="64"/>
+    <field name="query_info" id="_10498" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11831" offset="2176" fid="f170" line="69"/>
+    <field name="query_info_async" id="_10499" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11832" offset="2240" fid="f170" line="73"/>
+    <field name="query_info_finish" id="_10500" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11833" offset="2304" fid="f170" line="79"/>
+    <field name="_g_reserved1" id="_10501" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f170" line="85"/>
+    <field name="_g_reserved2" id="_10502" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2432" fid="f170" line="86"/>
+    <field name="_g_reserved3" id="_10503" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2496" fid="f170" line="87"/>
+    <field name="_g_reserved4" id="_10504" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2560" fid="f170" line="88"/>
+    <field name="_g_reserved5" id="_10505" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f170" line="89"/>
+  </struct>
+
+  <struct name="GFileInputStreamPrivate" id="_5598" size="" align="" fid="f170" lineno="48">
+
+  </struct>
+
+  <struct name="GFileOutputStream" id="_4176" size="320" align="64" fid="f171" lineno="50">
+    <field name="parent_instance" id="_9647" type="GOutputStream" fieldid="_4227" offset="0" fid="f171" line="52"/>
+    <field name="priv" id="_9648" type="NullablePointer[GFileOutputStreamPrivate]" fieldid="_11572" offset="256" fid="f171" line="55"/>
+  </struct>
+
+  <struct name="GFileOutputStreamClass" id="_5647" size="3264" align="64" fid="f171" lineno="58">
+    <field name="parent_class" id="_10560" type="GOutputStreamClass" fieldid="_4616" offset="0" fid="f171" line="60"/>
+    <field name="tell" id="_10561" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11850" offset="2368" fid="f171" line="62"/>
+    <field name="can_seek" id="_10562" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11851" offset="2432" fid="f171" line="63"/>
+    <field name="seek" id="_10563" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11852" offset="2496" fid="f171" line="64"/>
+    <field name="can_truncate" id="_10564" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11851" offset="2560" fid="f171" line="69"/>
+    <field name="truncate_fn" id="_10565" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11853" offset="2624" fid="f171" line="70"/>
+    <field name="query_info" id="_10566" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11854" offset="2688" fid="f171" line="74"/>
+    <field name="query_info_async" id="_10567" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11855" offset="2752" fid="f171" line="78"/>
+    <field name="query_info_finish" id="_10568" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11856" offset="2816" fid="f171" line="84"/>
+    <field name="get_etag" id="_10569" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11857" offset="2880" fid="f171" line="87"/>
+    <field name="_g_reserved1" id="_10570" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2944" fid="f171" line="90"/>
+    <field name="_g_reserved2" id="_10571" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="3008" fid="f171" line="91"/>
+    <field name="_g_reserved3" id="_10572" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="3072" fid="f171" line="92"/>
+    <field name="_g_reserved4" id="_10573" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="3136" fid="f171" line="93"/>
+    <field name="_g_reserved5" id="_10574" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="3200" fid="f171" line="94"/>
+  </struct>
+
+  <struct name="GFileOutputStreamPrivate" id="_5649" size="" align="" fid="f171" lineno="48">
+
+  </struct>
+
+  <struct name="GFileIOStream" id="_4178" size="320" align="64" fid="f172" lineno="50">
+    <field name="parent_instance" id="_9650" type="GIOStream" fieldid="_4229" offset="0" fid="f172" line="52"/>
+    <field name="priv" id="_9651" type="NullablePointer[GFileIOStreamPrivate]" fieldid="_11573" offset="256" fid="f172" line="55"/>
+  </struct>
+
+  <struct name="GFileIOStreamClass" id="_5622" size="2944" align="64" fid="f172" lineno="58">
+    <field name="parent_class" id="_10526" type="GIOStreamClass" fieldid="_5609" offset="0" fid="f172" line="60"/>
+    <field name="tell" id="_10527" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11839" offset="2048" fid="f172" line="62"/>
+    <field name="can_seek" id="_10528" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11840" offset="2112" fid="f172" line="63"/>
+    <field name="seek" id="_10529" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11841" offset="2176" fid="f172" line="64"/>
+    <field name="can_truncate" id="_10530" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11840" offset="2240" fid="f172" line="69"/>
+    <field name="truncate_fn" id="_10531" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11842" offset="2304" fid="f172" line="70"/>
+    <field name="query_info" id="_10532" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11843" offset="2368" fid="f172" line="74"/>
+    <field name="query_info_async" id="_10533" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11844" offset="2432" fid="f172" line="78"/>
+    <field name="query_info_finish" id="_10534" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11845" offset="2496" fid="f172" line="84"/>
+    <field name="get_etag" id="_10535" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11846" offset="2560" fid="f172" line="87"/>
+    <field name="_g_reserved1" id="_10536" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f172" line="90"/>
+    <field name="_g_reserved2" id="_10537" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2688" fid="f172" line="91"/>
+    <field name="_g_reserved3" id="_10538" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2752" fid="f172" line="92"/>
+    <field name="_g_reserved4" id="_10539" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2816" fid="f172" line="93"/>
+    <field name="_g_reserved5" id="_10540" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2880" fid="f172" line="94"/>
+  </struct>
+
+  <struct name="GFileIOStreamPrivate" id="_5624" size="" align="" fid="f172" lineno="48">
+
+  </struct>
+
+  <struct name="GInetAddress" id="_4186" size="256" align="64" fid="f173" lineno="43">
+    <field name="parent_instance" id="_9656" type="GObject" fieldid="_3573" offset="0" fid="f173" line="45"/>
+    <field name="priv" id="_9657" type="NullablePointer[GInetAddressPrivate]" fieldid="_11574" offset="192" fid="f173" line="48"/>
+  </struct>
+
+  <struct name="GInetAddressClass" id="_5656" size="1216" align="64" fid="f173" lineno="51">
+    <field name="parent_class" id="_10577" type="GObjectClass" fieldid="_3575" offset="0" fid="f173" line="53"/>
+    <field name="to_string" id="_10578" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11858" offset="1088" fid="f173" line="55"/>
+    <field name="to_bytes" id="_10579" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11859" offset="1152" fid="f173" line="56"/>
+  </struct>
+
+  <struct name="GInetAddressPrivate" id="_5658" size="" align="" fid="f173" lineno="41">
+
+  </struct>
+
+  <struct name="GInetAddressMask" id="_4188" size="256" align="64" fid="f174" lineno="40">
+    <field name="parent_instance" id="_9659" type="GObject" fieldid="_3573" offset="0" fid="f174" line="42"/>
+    <field name="priv" id="_9660" type="NullablePointer[GInetAddressMaskPrivate]" fieldid="_11575" offset="192" fid="f174" line="45"/>
+  </struct>
+
+  <struct name="GInetAddressMaskClass" id="_5680" size="1088" align="64" fid="f174" lineno="48">
+    <field name="parent_class" id="_10583" type="GObjectClass" fieldid="_3575" offset="0" fid="f174" line="50"/>
+  </struct>
+
+  <struct name="GInetAddressMaskPrivate" id="_5682" size="" align="" fid="f174" lineno="38">
+
+  </struct>
+
+  <struct name="GInetSocketAddress" id="_4190" size="256" align="64" fid="f175" lineno="43">
+    <field name="parent_instance" id="_9662" type="GSocketAddress" fieldid="_4257" offset="0" fid="f175" line="45"/>
+    <field name="priv" id="_9663" type="NullablePointer[GInetSocketAddressPrivate]" fieldid="_11576" offset="192" fid="f175" line="48"/>
+  </struct>
+
+  <struct name="GInetSocketAddressClass" id="_5700" size="1280" align="64" fid="f175" lineno="51">
+    <field name="parent_class" id="_10593" type="GSocketAddressClass" fieldid="_5694" offset="0" fid="f175" line="53"/>
+  </struct>
+
+  <struct name="GInetSocketAddressPrivate" id="_5702" size="" align="" fid="f175" lineno="41">
+
+  </struct>
+
+  <struct name="GNativeSocketAddress" id="_4192" size="256" align="64" fid="f176" lineno="43">
+    <field name="parent_instance" id="_9665" type="GSocketAddress" fieldid="_4257" offset="0" fid="f176" line="45"/>
+    <field name="priv" id="_9666" type="NullablePointer[GNativeSocketAddressPrivate]" fieldid="_11577" offset="192" fid="f176" line="48"/>
+  </struct>
+
+  <struct name="GNativeSocketAddressClass" id="_6077" size="1280" align="64" fid="f176" lineno="51">
+    <field name="parent_class" id="_10739" type="GSocketAddressClass" fieldid="_5694" offset="0" fid="f176" line="53"/>
+  </struct>
+
+  <struct name="GNativeSocketAddressPrivate" id="_6079" size="" align="" fid="f176" lineno="41">
+
+  </struct>
+
+  <struct name="GInputStream" id="_4194" size="256" align="64" fid="f177" lineno="47">
+    <field name="parent_instance" id="_9668" type="GObject" fieldid="_3573" offset="0" fid="f177" line="49"/>
+    <field name="priv" id="_9669" type="NullablePointer[GInputStreamPrivate]" fieldid="_11578" offset="192" fid="f177" line="52"/>
+  </struct>
+
+  <struct name="GInputStreamClass" id="_4569" size="1984" align="64" fid="f177" lineno="55">
+    <field name="parent_class" id="_10033" type="GObjectClass" fieldid="_3575" offset="0" fid="f177" line="57"/>
+    <field name="read_fn" id="_10034" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11677" offset="1088" fid="f177" line="61"/>
+    <field name="skip" id="_10035" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11678" offset="1152" fid="f177" line="66"/>
+    <field name="close_fn" id="_10036" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11679" offset="1216" fid="f177" line="70"/>
+    <field name="read_async" id="_10037" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11680" offset="1280" fid="f177" line="75"/>
+    <field name="read_finish" id="_10038" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11681" offset="1344" fid="f177" line="82"/>
+    <field name="skip_async" id="_10039" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11682" offset="1408" fid="f177" line="85"/>
+    <field name="skip_finish" id="_10040" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11681" offset="1472" fid="f177" line="91"/>
+    <field name="close_async" id="_10041" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11683" offset="1536" fid="f177" line="94"/>
+    <field name="close_finish" id="_10042" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11684" offset="1600" fid="f177" line="99"/>
+    <field name="_g_reserved1" id="_10043" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f177" line="105"/>
+    <field name="_g_reserved2" id="_10044" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1728" fid="f177" line="106"/>
+    <field name="_g_reserved3" id="_10045" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1792" fid="f177" line="107"/>
+    <field name="_g_reserved4" id="_10046" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1856" fid="f177" line="108"/>
+    <field name="_g_reserved5" id="_10047" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1920" fid="f177" line="109"/>
+  </struct>
+
+  <struct name="GInputStreamPrivate" id="_4571" size="" align="" fid="f177" lineno="45">
+
+  </struct>
+
+  <struct name="GMemoryInputStream" id="_4212" size="320" align="64" fid="f178" lineno="47">
+    <field name="parent_instance" id="_9679" type="GInputStream" fieldid="_4195" offset="0" fid="f178" line="49"/>
+    <field name="priv" id="_9680" type="NullablePointer[GMemoryInputStreamPrivate]" fieldid="_11579" offset="256" fid="f178" line="52"/>
+  </struct>
+
+  <struct name="GMemoryInputStreamClass" id="_5905" size="2304" align="64" fid="f178" lineno="55">
+    <field name="parent_class" id="_10632" type="GInputStreamClass" fieldid="_4570" offset="0" fid="f178" line="57"/>
+    <field name="_g_reserved1" id="_10633" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1984" fid="f178" line="60"/>
+    <field name="_g_reserved2" id="_10634" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2048" fid="f178" line="61"/>
+    <field name="_g_reserved3" id="_10635" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2112" fid="f178" line="62"/>
+    <field name="_g_reserved4" id="_10636" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2176" fid="f178" line="63"/>
+    <field name="_g_reserved5" id="_10637" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2240" fid="f178" line="64"/>
+  </struct>
+
+  <struct name="GMemoryInputStreamPrivate" id="_5907" size="" align="" fid="f178" lineno="45">
+
+  </struct>
+
+  <struct name="GMemoryOutputStream" id="_4214" size="320" align="64" fid="f179" lineno="47">
+    <field name="parent_instance" id="_9682" type="GOutputStream" fieldid="_4227" offset="0" fid="f179" line="49"/>
+    <field name="priv" id="_9683" type="NullablePointer[GMemoryOutputStreamPrivate]" fieldid="_11580" offset="256" fid="f179" line="52"/>
+  </struct>
+
+  <struct name="GMemoryOutputStreamClass" id="_5933" size="2688" align="64" fid="f179" lineno="55">
+    <field name="parent_class" id="_10648" type="GOutputStreamClass" fieldid="_4616" offset="0" fid="f179" line="57"/>
+    <field name="_g_reserved1" id="_10649" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f179" line="61"/>
+    <field name="_g_reserved2" id="_10650" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2432" fid="f179" line="62"/>
+    <field name="_g_reserved3" id="_10651" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2496" fid="f179" line="63"/>
+    <field name="_g_reserved4" id="_10652" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2560" fid="f179" line="64"/>
+    <field name="_g_reserved5" id="_10653" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f179" line="65"/>
+  </struct>
+
+  <struct name="GMemoryOutputStreamPrivate" id="_5935" size="" align="" fid="f179" lineno="45">
+
+  </struct>
+
+  <struct name="GMountOperation" id="_4218" size="256" align="64" fid="f180" lineno="48">
+    <field name="parent_instance" id="_9686" type="GObject" fieldid="_3573" offset="0" fid="f180" line="50"/>
+    <field name="priv" id="_9687" type="NullablePointer[GMountOperationPrivate]" fieldid="_11581" offset="192" fid="f180" line="52"/>
+  </struct>
+
+  <struct name="GMountOperationClass" id="_6052" size="2048" align="64" fid="f180" lineno="55">
+    <field name="parent_class" id="_10721" type="GObjectClass" fieldid="_3575" offset="0" fid="f180" line="57"/>
+    <field name="ask_password" id="_10722" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11899" offset="1088" fid="f180" line="61"/>
+    <field name="ask_question" id="_10723" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11900" offset="1152" fid="f180" line="76"/>
+    <field name="reply" id="_10724" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11901" offset="1216" fid="f180" line="80"/>
+    <field name="aborted" id="_10725" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11902" offset="1280" fid="f180" line="83"/>
+    <field name="show_processes" id="_10726" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11903" offset="1344" fid="f180" line="98"/>
+    <field name="show_unmount_progress" id="_10727" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11904" offset="1408" fid="f180" line="103"/>
+    <field name="_g_reserved1" id="_10728" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f180" line="110"/>
+    <field name="_g_reserved2" id="_10729" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1536" fid="f180" line="111"/>
+    <field name="_g_reserved3" id="_10730" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1600" fid="f180" line="112"/>
+    <field name="_g_reserved4" id="_10731" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f180" line="113"/>
+    <field name="_g_reserved5" id="_10732" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1728" fid="f180" line="114"/>
+    <field name="_g_reserved6" id="_10733" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1792" fid="f180" line="115"/>
+    <field name="_g_reserved7" id="_10734" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1856" fid="f180" line="116"/>
+    <field name="_g_reserved8" id="_10735" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1920" fid="f180" line="117"/>
+    <field name="_g_reserved9" id="_10736" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1984" fid="f180" line="118"/>
+  </struct>
+
+  <struct name="GMountOperationPrivate" id="_6054" size="" align="" fid="f180" lineno="46">
+
+  </struct>
+
+  <struct name="GNetworkAddress" id="_4220" size="256" align="64" fid="f181" lineno="40">
+    <field name="parent_instance" id="_9689" type="GObject" fieldid="_3573" offset="0" fid="f181" line="42"/>
+    <field name="priv" id="_9690" type="NullablePointer[GNetworkAddressPrivate]" fieldid="_11582" offset="192" fid="f181" line="45"/>
+  </struct>
+
+  <struct name="GNetworkAddressClass" id="_6098" size="1088" align="64" fid="f181" lineno="48">
+    <field name="parent_class" id="_10775" type="GObjectClass" fieldid="_3575" offset="0" fid="f181" line="50"/>
+  </struct>
+
+  <struct name="GNetworkAddressPrivate" id="_6100" size="" align="" fid="f181" lineno="38">
+
+  </struct>
+
+  <struct name="GNetworkService" id="_4224" size="256" align="64" fid="f182" lineno="40">
+    <field name="parent_instance" id="_9693" type="GObject" fieldid="_3573" offset="0" fid="f182" line="42"/>
+    <field name="priv" id="_9694" type="NullablePointer[GNetworkServicePrivate]" fieldid="_11583" offset="192" fid="f182" line="45"/>
+  </struct>
+
+  <struct name="GNetworkServiceClass" id="_6120" size="1088" align="64" fid="f182" lineno="48">
+    <field name="parent_class" id="_10786" type="GObjectClass" fieldid="_3575" offset="0" fid="f182" line="50"/>
+  </struct>
+
+  <struct name="GNetworkServicePrivate" id="_6122" size="" align="" fid="f182" lineno="38">
+
+  </struct>
+
+  <struct name="GOutputStream" id="_4226" size="256" align="64" fid="f183" lineno="51">
+    <field name="parent_instance" id="_9696" type="GObject" fieldid="_3573" offset="0" fid="f183" line="53"/>
+    <field name="priv" id="_9697" type="NullablePointer[GOutputStreamPrivate]" fieldid="_11584" offset="192" fid="f183" line="56"/>
+  </struct>
+
+  <struct name="GOutputStreamClass" id="_4615" size="2368" align="64" fid="f183" lineno="60">
+    <field name="parent_class" id="_10068" type="GObjectClass" fieldid="_3575" offset="0" fid="f183" line="62"/>
+    <field name="write_fn" id="_10069" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11688" offset="1088" fid="f183" line="66"/>
+    <field name="splice" id="_10070" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11689" offset="1152" fid="f183" line="71"/>
+    <field name="flush" id="_10071" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11690" offset="1216" fid="f183" line="76"/>
+    <field name="close_fn" id="_10072" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11690" offset="1280" fid="f183" line="79"/>
+    <field name="write_async" id="_10073" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11691" offset="1344" fid="f183" line="85"/>
+    <field name="write_finish" id="_10074" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11692" offset="1408" fid="f183" line="92"/>
+    <field name="splice_async" id="_10075" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11693" offset="1472" fid="f183" line="95"/>
+    <field name="splice_finish" id="_10076" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11692" offset="1536" fid="f183" line="102"/>
+    <field name="flush_async" id="_10077" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11694" offset="1600" fid="f183" line="105"/>
+    <field name="flush_finish" id="_10078" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11695" offset="1664" fid="f183" line="110"/>
+    <field name="close_async" id="_10079" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11694" offset="1728" fid="f183" line="113"/>
+    <field name="close_finish" id="_10080" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11695" offset="1792" fid="f183" line="118"/>
+    <field name="writev_fn" id="_10081" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11696" offset="1856" fid="f183" line="122"/>
+    <field name="writev_async" id="_10082" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11697" offset="1920" fid="f183" line="129"/>
+    <field name="writev_finish" id="_10083" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11698" offset="1984" fid="f183" line="137"/>
+    <field name="_g_reserved4" id="_10084" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2048" fid="f183" line="144"/>
+    <field name="_g_reserved5" id="_10085" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2112" fid="f183" line="145"/>
+    <field name="_g_reserved6" id="_10086" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2176" fid="f183" line="146"/>
+    <field name="_g_reserved7" id="_10087" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2240" fid="f183" line="147"/>
+    <field name="_g_reserved8" id="_10088" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2304" fid="f183" line="148"/>
+  </struct>
+
+  <struct name="GOutputStreamPrivate" id="_4617" size="" align="" fid="f183" lineno="49">
+
+  </struct>
+
+  <struct name="GIOStream" id="_4228" size="256" align="64" fid="f184" lineno="46">
+    <field name="parent_instance" id="_9699" type="GObject" fieldid="_3573" offset="0" fid="f184" line="48"/>
+    <field name="priv" id="_9700" type="NullablePointer[GIOStreamPrivate]" fieldid="_11585" offset="192" fid="f184" line="51"/>
+  </struct>
+
+  <struct name="GIOStreamPrivate" id="_5606" size="" align="" fid="f184" lineno="38">
+
+  </struct>
+
+  <struct name="GIOStreamClass" id="_5608" size="2048" align="64" fid="f184" lineno="54">
+    <field name="parent_class" id="_10509" type="GObjectClass" fieldid="_3575" offset="0" fid="f184" line="56"/>
+    <field name="get_input_stream" id="_10510" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11834" offset="1088" fid="f184" line="58"/>
+    <field name="get_output_stream" id="_10511" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11835" offset="1152" fid="f184" line="59"/>
+    <field name="close_fn" id="_10512" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11836" offset="1216" fid="f184" line="61"/>
+    <field name="close_async" id="_10513" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11837" offset="1280" fid="f184" line="64"/>
+    <field name="close_finish" id="_10514" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11838" offset="1344" fid="f184" line="69"/>
+    <field name="_g_reserved1" id="_10515" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f184" line="74"/>
+    <field name="_g_reserved2" id="_10516" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f184" line="75"/>
+    <field name="_g_reserved3" id="_10517" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1536" fid="f184" line="76"/>
+    <field name="_g_reserved4" id="_10518" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1600" fid="f184" line="77"/>
+    <field name="_g_reserved5" id="_10519" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f184" line="78"/>
+    <field name="_g_reserved6" id="_10520" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1728" fid="f184" line="79"/>
+    <field name="_g_reserved7" id="_10521" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1792" fid="f184" line="80"/>
+    <field name="_g_reserved8" id="_10522" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1856" fid="f184" line="81"/>
+    <field name="_g_reserved9" id="_10523" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1920" fid="f184" line="82"/>
+    <field name="_g_reserved10" id="_10524" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1984" fid="f184" line="83"/>
+  </struct>
+
+  <struct name="GResolver" id="_4236" size="256" align="64" fid="f185" lineno="41">
+    <field name="parent_instance" id="_9705" type="GObject" fieldid="_3573" offset="0" fid="f185" line="42"/>
+    <field name="priv" id="_9706" type="NullablePointer[GResolverPrivate]" fieldid="_11586" offset="192" fid="f185" line="44"/>
+  </struct>
+
+  <struct name="GResolverPrivate" id="_6246" size="" align="" fid="f185" lineno="38">
+
+  </struct>
+
+  <struct name="GResolverClass" id="_6248" size="2112" align="64" fid="f185" lineno="63">
+    <field name="parent_class" id="_10863" type="GObjectClass" fieldid="_3575" offset="0" fid="f185" line="64"/>
+    <field name="reload" id="_10864" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11941" offset="1088" fid="f185" line="67"/>
+    <field name="lookup_by_name" id="_10865" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11942" offset="1152" fid="f185" line="70"/>
+    <field name="lookup_by_name_async" id="_10866" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11943" offset="1216" fid="f185" line="74"/>
+    <field name="lookup_by_name_finish" id="_10867" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11944" offset="1280" fid="f185" line="79"/>
+    <field name="lookup_by_address" id="_10868" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11945" offset="1344" fid="f185" line="83"/>
+    <field name="lookup_by_address_async" id="_10869" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11946" offset="1408" fid="f185" line="87"/>
+    <field name="lookup_by_address_finish" id="_10870" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11947" offset="1472" fid="f185" line="92"/>
+    <field name="lookup_service" id="_10871" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11942" offset="1536" fid="f185" line="96"/>
+    <field name="lookup_service_async" id="_10872" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11943" offset="1600" fid="f185" line="100"/>
+    <field name="lookup_service_finish" id="_10873" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11944" offset="1664" fid="f185" line="105"/>
+    <field name="lookup_records" id="_10874" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11948" offset="1728" fid="f185" line="109"/>
+    <field name="lookup_records_async" id="_10875" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11949" offset="1792" fid="f185" line="115"/>
+    <field name="lookup_records_finish" id="_10876" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11944" offset="1856" fid="f185" line="122"/>
+    <field name="lookup_by_name_with_flags_async" id="_10877" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11950" offset="1920" fid="f185" line="141"/>
+    <field name="lookup_by_name_with_flags_finish" id="_10878" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11944" offset="1984" fid="f185" line="158"/>
+    <field name="lookup_by_name_with_flags" id="_10879" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11951" offset="2048" fid="f185" line="176"/>
+  </struct>
+
+  <struct name="GSocket" id="_4244" size="256" align="64" fid="f186" lineno="68">
+    <field name="parent_instance" id="_9711" type="GObject" fieldid="_3573" offset="0" fid="f186" line="70"/>
+    <field name="priv" id="_9712" type="NullablePointer[GSocketPrivate]" fieldid="_11587" offset="192" fid="f186" line="71"/>
+  </struct>
+
+  <struct name="GSocketPrivate" id="_6454" size="" align="" fid="f186" lineno="46">
+
+  </struct>
+
+  <struct name="GSocketClass" id="_6456" size="1728" align="64" fid="f186" lineno="49">
+    <field name="parent_class" id="_10940" type="GObjectClass" fieldid="_3575" offset="0" fid="f186" line="51"/>
+    <field name="_g_reserved1" id="_10941" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1088" fid="f186" line="56"/>
+    <field name="_g_reserved2" id="_10942" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1152" fid="f186" line="57"/>
+    <field name="_g_reserved3" id="_10943" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1216" fid="f186" line="58"/>
+    <field name="_g_reserved4" id="_10944" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f186" line="59"/>
+    <field name="_g_reserved5" id="_10945" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f186" line="60"/>
+    <field name="_g_reserved6" id="_10946" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f186" line="61"/>
+    <field name="_g_reserved7" id="_10947" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f186" line="62"/>
+    <field name="_g_reserved8" id="_10948" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1536" fid="f186" line="63"/>
+    <field name="_g_reserved9" id="_10949" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1600" fid="f186" line="64"/>
+    <field name="_g_reserved10" id="_10950" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f186" line="65"/>
+  </struct>
+
+  <struct name="GSocketControlMessage" id="_4246" size="256" align="64" fid="f187" lineno="85">
+    <field name="parent_instance" id="_9714" type="GObject" fieldid="_3573" offset="0" fid="f187" line="87"/>
+    <field name="priv" id="_9715" type="NullablePointer[GSocketControlMessagePrivate]" fieldid="_11588" offset="192" fid="f187" line="88"/>
+  </struct>
+
+  <struct name="GSocketControlMessagePrivate" id="_6574" size="" align="" fid="f187" lineno="47">
+
+  </struct>
+
+  <struct name="GSocketControlMessageClass" id="_6576" size="1728" align="64" fid="f187" lineno="61">
+    <field name="parent_class" id="_10982" type="GObjectClass" fieldid="_3575" offset="0" fid="f187" line="63"/>
+    <field name="get_size" id="_10983" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11968" offset="1088" fid="f187" line="65"/>
+    <field name="get_level" id="_10984" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11969" offset="1152" fid="f187" line="66"/>
+    <field name="get_type" id="_10985" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11969" offset="1216" fid="f187" line="67"/>
+    <field name="serialize" id="_10986" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11970" offset="1280" fid="f187" line="68"/>
+    <field name="deserialize" id="_10987" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11971" offset="1344" fid="f187" line="70"/>
+    <field name="_g_reserved1" id="_10988" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f187" line="78"/>
+    <field name="_g_reserved2" id="_10989" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f187" line="79"/>
+    <field name="_g_reserved3" id="_10990" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1536" fid="f187" line="80"/>
+    <field name="_g_reserved4" id="_10991" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1600" fid="f187" line="81"/>
+    <field name="_g_reserved5" id="_10992" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f187" line="82"/>
+  </struct>
+
+  <struct name="GSocketClient" id="_4248" size="256" align="64" fid="f188" lineno="65">
+    <field name="parent_instance" id="_9717" type="GObject" fieldid="_3573" offset="0" fid="f188" line="67"/>
+    <field name="priv" id="_9718" type="NullablePointer[GSocketClientPrivate]" fieldid="_11589" offset="192" fid="f188" line="68"/>
+  </struct>
+
+  <struct name="GSocketClientPrivate" id="_6516" size="" align="" fid="f188" lineno="46">
+
+  </struct>
+
+  <struct name="GSocketClientClass" id="_6518" size="1408" align="64" fid="f188" lineno="49">
+    <field name="parent_class" id="_10958" type="GObjectClass" fieldid="_3575" offset="0" fid="f188" line="51"/>
+    <field name="event" id="_10959" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11965" offset="1088" fid="f188" line="53"/>
+    <field name="_g_reserved1" id="_10960" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1152" fid="f188" line="59"/>
+    <field name="_g_reserved2" id="_10961" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1216" fid="f188" line="60"/>
+    <field name="_g_reserved3" id="_10962" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f188" line="61"/>
+    <field name="_g_reserved4" id="_10963" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f188" line="62"/>
+  </struct>
+
+  <struct name="GSocketConnection" id="_4250" size="320" align="64" fid="f189" lineno="65">
+    <field name="parent_instance" id="_9720" type="GIOStream" fieldid="_4229" offset="0" fid="f189" line="67"/>
+    <field name="priv" id="_9721" type="NullablePointer[GSocketConnectionPrivate]" fieldid="_11590" offset="256" fid="f189" line="68"/>
+  </struct>
+
+  <struct name="GSocketConnectionPrivate" id="_6559" size="" align="" fid="f189" lineno="49">
+
+  </struct>
+
+  <struct name="GSocketConnectionClass" id="_6561" size="2432" align="64" fid="f189" lineno="52">
+    <field name="parent_class" id="_10973" type="GIOStreamClass" fieldid="_5609" offset="0" fid="f189" line="54"/>
+    <field name="_g_reserved1" id="_10974" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2048" fid="f189" line="57"/>
+    <field name="_g_reserved2" id="_10975" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2112" fid="f189" line="58"/>
+    <field name="_g_reserved3" id="_10976" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2176" fid="f189" line="59"/>
+    <field name="_g_reserved4" id="_10977" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2240" fid="f189" line="60"/>
+    <field name="_g_reserved5" id="_10978" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2304" fid="f189" line="61"/>
+    <field name="_g_reserved6" id="_10979" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f189" line="62"/>
+  </struct>
+
+  <struct name="GSocketListener" id="_4252" size="256" align="64" fid="f190" lineno="76">
+    <field name="parent_instance" id="_9723" type="GObject" fieldid="_3573" offset="0" fid="f190" line="78"/>
+    <field name="priv" id="_9724" type="NullablePointer[GSocketListenerPrivate]" fieldid="_11591" offset="192" fid="f190" line="79"/>
+  </struct>
+
+  <struct name="GSocketListenerPrivate" id="_6584" size="" align="" fid="f190" lineno="49">
+
+  </struct>
+
+  <struct name="GSocketListenerClass" id="_6586" size="1536" align="64" fid="f190" lineno="58">
+    <field name="parent_class" id="_10996" type="GObjectClass" fieldid="_3575" offset="0" fid="f190" line="60"/>
+    <field name="changed" id="_10997" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11972" offset="1088" fid="f190" line="62"/>
+    <field name="event" id="_10998" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11973" offset="1152" fid="f190" line="64"/>
+    <field name="_g_reserved2" id="_10999" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1216" fid="f190" line="69"/>
+    <field name="_g_reserved3" id="_11000" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f190" line="70"/>
+    <field name="_g_reserved4" id="_11001" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f190" line="71"/>
+    <field name="_g_reserved5" id="_11002" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f190" line="72"/>
+    <field name="_g_reserved6" id="_11003" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f190" line="73"/>
+  </struct>
+
+  <struct name="GSocketService" id="_4254" size="320" align="64" fid="f191" lineno="72">
+    <field name="parent_instance" id="_9726" type="GSocketListener" fieldid="_4253" offset="0" fid="f191" line="74"/>
+    <field name="priv" id="_9727" type="NullablePointer[GSocketServicePrivate]" fieldid="_11592" offset="256" fid="f191" line="75"/>
+  </struct>
+
+  <struct name="GSocketServicePrivate" id="_6602" size="" align="" fid="f191" lineno="46">
+
+  </struct>
+
+  <struct name="GSocketServiceClass" id="_6604" size="1984" align="64" fid="f191" lineno="55">
+    <field name="parent_class" id="_11007" type="GSocketListenerClass" fieldid="_6587" offset="0" fid="f191" line="57"/>
+    <field name="incoming" id="_11008" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11974" offset="1536" fid="f191" line="59"/>
+    <field name="_g_reserved1" id="_11009" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1600" fid="f191" line="64"/>
+    <field name="_g_reserved2" id="_11010" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f191" line="65"/>
+    <field name="_g_reserved3" id="_11011" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1728" fid="f191" line="66"/>
+    <field name="_g_reserved4" id="_11012" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1792" fid="f191" line="67"/>
+    <field name="_g_reserved5" id="_11013" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1856" fid="f191" line="68"/>
+    <field name="_g_reserved6" id="_11014" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1920" fid="f191" line="69"/>
+  </struct>
+
+  <struct name="GSocketAddress" id="_4256" size="192" align="64" fid="f192" lineno="42">
+    <field name="parent_instance" id="_9729" type="GObject" fieldid="_3573" offset="0" fid="f192" line="44"/>
+  </struct>
+
+  <struct name="GSocketAddressClass" id="_5693" size="1280" align="64" fid="f192" lineno="47">
+    <field name="parent_class" id="_10587" type="GObjectClass" fieldid="_3575" offset="0" fid="f192" line="49"/>
+    <field name="get_family" id="_10588" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11860" offset="1088" fid="f192" line="51"/>
+    <field name="get_native_size" id="_10589" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11861" offset="1152" fid="f192" line="53"/>
+    <field name="to_native" id="_10590" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11862" offset="1216" fid="f192" line="55"/>
+  </struct>
+
+  <struct name="GSocketAddressEnumerator" id="_4258" size="192" align="64" fid="f193" lineno="45">
+    <field name="parent_instance" id="_9731" type="GObject" fieldid="_3573" offset="0" fid="f193" line="48"/>
+  </struct>
+
+  <struct name="GSocketAddressEnumeratorClass" id="_6222" size="1280" align="64" fid="f193" lineno="59">
+    <field name="parent_class" id="_10834" type="GObjectClass" fieldid="_3575" offset="0" fid="f193" line="62"/>
+    <field name="next" id="_10835" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11933" offset="1088" fid="f193" line="67"/>
+    <field name="next_async" id="_10836" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11934" offset="1152" fid="f193" line="71"/>
+    <field name="next_finish" id="_10837" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11935" offset="1216" fid="f193" line="75"/>
+  </struct>
+
+  <struct name="GTcpConnection" id="_4266" size="384" align="64" fid="f194" lineno="52">
+    <field name="parent_instance" id="_9736" type="GSocketConnection" fieldid="_4251" offset="0" fid="f194" line="54"/>
+    <field name="priv" id="_9737" type="NullablePointer[GTcpConnectionPrivate]" fieldid="_11593" offset="320" fid="f194" line="55"/>
+  </struct>
+
+  <struct name="GTcpConnectionPrivate" id="_6705" size="" align="" fid="f194" lineno="44">
+
+  </struct>
+
+  <struct name="GTcpConnectionClass" id="_6707" size="2432" align="64" fid="f194" lineno="47">
+    <field name="parent_class" id="_11024" type="GSocketConnectionClass" fieldid="_6562" offset="0" fid="f194" line="49"/>
+  </struct>
+
+  <struct name="GTcpWrapperConnection" id="_4268" size="448" align="64" fid="f195" lineno="52">
+    <field name="parent_instance" id="_9739" type="GTcpConnection" fieldid="_4267" offset="0" fid="f195" line="54"/>
+    <field name="priv" id="_9740" type="NullablePointer[GTcpWrapperConnectionPrivate]" fieldid="_11594" offset="384" fid="f195" line="55"/>
+  </struct>
+
+  <struct name="GTcpWrapperConnectionPrivate" id="_6712" size="" align="" fid="f195" lineno="44">
+
+  </struct>
+
+  <struct name="GTcpWrapperConnectionClass" id="_6714" size="2432" align="64" fid="f195" lineno="47">
+    <field name="parent_class" id="_11028" type="GTcpConnectionClass" fieldid="_6708" offset="0" fid="f195" line="49"/>
+  </struct>
+
+  <struct name="GThreadedSocketService" id="_4270" size="384" align="64" fid="f196" lineno="68">
+    <field name="parent_instance" id="_9742" type="GSocketService" fieldid="_4255" offset="0" fid="f196" line="70"/>
+    <field name="priv" id="_9743" type="NullablePointer[GThreadedSocketServicePrivate]" fieldid="_11595" offset="320" fid="f196" line="71"/>
+  </struct>
+
+  <struct name="GThreadedSocketServicePrivate" id="_6737" size="" align="" fid="f196" lineno="49">
+
+  </struct>
+
+  <struct name="GThreadedSocketServiceClass" id="_6739" size="2368" align="64" fid="f196" lineno="52">
+    <field name="parent_class" id="_11035" type="GSocketServiceClass" fieldid="_6605" offset="0" fid="f196" line="54"/>
+    <field name="run" id="_11036" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11976" offset="1984" fid="f196" line="56"/>
+    <field name="_g_reserved1" id="_11037" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2048" fid="f196" line="61"/>
+    <field name="_g_reserved2" id="_11038" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2112" fid="f196" line="62"/>
+    <field name="_g_reserved3" id="_11039" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2176" fid="f196" line="63"/>
+    <field name="_g_reserved4" id="_11040" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2240" fid="f196" line="64"/>
+    <field name="_g_reserved5" id="_11041" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2304" fid="f196" line="65"/>
+  </struct>
+
+  <struct name="GTlsCertificate" id="_4280" size="256" align="64" fid="f197" lineno="40">
+    <field name="parent_instance" id="_9749" type="GObject" fieldid="_3573" offset="0" fid="f197" line="41"/>
+    <field name="priv" id="_9750" type="NullablePointer[GTlsCertificatePrivate]" fieldid="_11596" offset="192" fid="f197" line="43"/>
+  </struct>
+
+  <struct name="GTlsCertificateClass" id="_6759" size="1664" align="64" fid="f197" lineno="46">
+    <field name="parent_class" id="_11056" type="GObjectClass" fieldid="_3575" offset="0" fid="f197" line="48"/>
+    <field name="verify" id="_11057" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11980" offset="1088" fid="f197" line="50"/>
+    <field name="padding" id="_11058" type="Pointer[Pointer[None]]" fieldid="_11612" offset="1152" fid="f197" line="56"/>
+  </struct>
+
+  <struct name="GTlsCertificatePrivate" id="_6761" size="" align="" fid="f197" lineno="38">
+
+  </struct>
+
+  <struct name="GTlsConnection" id="_4284" size="320" align="64" fid="f198" lineno="40">
+    <field name="parent_instance" id="_9753" type="GIOStream" fieldid="_4229" offset="0" fid="f198" line="41"/>
+    <field name="priv" id="_9754" type="NullablePointer[GTlsConnectionPrivate]" fieldid="_11597" offset="256" fid="f198" line="43"/>
+  </struct>
+
+  <struct name="GTlsConnectionClass" id="_6778" size="2816" align="64" fid="f198" lineno="60">
+    <field name="parent_class" id="_11061" type="GIOStreamClass" fieldid="_5609" offset="0" fid="f198" line="62"/>
+    <field name="accept_certificate" id="_11062" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11981" offset="2048" fid="f198" line="65"/>
+    <field name="handshake" id="_11063" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11982" offset="2112" fid="f198" line="70"/>
+    <field name="handshake_async" id="_11064" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11983" offset="2176" fid="f198" line="74"/>
+    <field name="handshake_finish" id="_11065" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11984" offset="2240" fid="f198" line="79"/>
+    <field name="get_binding_data" id="_11066" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11985" offset="2304" fid="f198" line="84"/>
+    <field name="get_negotiated_protocol" id="_11067" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11986" offset="2368" fid="f198" line="90"/>
+    <field name="padding" id="_11068" type="Pointer[Pointer[None]]" fieldid="_11541" offset="2432" fid="f198" line="94"/>
+  </struct>
+
+  <struct name="GTlsConnectionPrivate" id="_6780" size="" align="" fid="f198" lineno="38">
+
+  </struct>
+
+  <struct name="GTlsDatabase" id="_4286" size="256" align="64" fid="f199" lineno="45">
+    <field name="parent_instance" id="_9756" type="GObject" fieldid="_3573" offset="0" fid="f199" line="47"/>
+    <field name="priv" id="_9757" type="NullablePointer[GTlsDatabasePrivate]" fieldid="_11598" offset="192" fid="f199" line="49"/>
+  </struct>
+
+  <struct name="GTlsDatabaseClass" id="_6820" size="2944" align="64" fid="f199" lineno="52">
+    <field name="parent_class" id="_11076" type="GObjectClass" fieldid="_3575" offset="0" fid="f199" line="54"/>
+    <field name="verify_chain" id="_11077" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11988" offset="1088" fid="f199" line="58"/>
+    <field name="verify_chain_async" id="_11078" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11989" offset="1152" fid="f199" line="67"/>
+    <field name="verify_chain_finish" id="_11079" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11990" offset="1216" fid="f199" line="77"/>
+    <field name="create_certificate_handle" id="_11080" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11991" offset="1280" fid="f199" line="81"/>
+    <field name="lookup_certificate_for_handle" id="_11081" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11992" offset="1344" fid="f199" line="84"/>
+    <field name="lookup_certificate_for_handle_async" id="_11082" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11993" offset="1408" fid="f199" line="91"/>
+    <field name="lookup_certificate_for_handle_finish" id="_11083" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11994" offset="1472" fid="f199" line="99"/>
+    <field name="lookup_certificate_issuer" id="_11084" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11995" offset="1536" fid="f199" line="103"/>
+    <field name="lookup_certificate_issuer_async" id="_11085" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11996" offset="1600" fid="f199" line="110"/>
+    <field name="lookup_certificate_issuer_finish" id="_11086" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11994" offset="1664" fid="f199" line="118"/>
+    <field name="lookup_certificates_issued_by" id="_11087" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11997" offset="1728" fid="f199" line="122"/>
+    <field name="lookup_certificates_issued_by_async" id="_11088" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11998" offset="1792" fid="f199" line="129"/>
+    <field name="lookup_certificates_issued_by_finish" id="_11089" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11999" offset="1856" fid="f199" line="137"/>
+    <field name="padding" id="_11090" type="Pointer[Pointer[None]]" fieldid="_11921" offset="1920" fid="f199" line="143"/>
+  </struct>
+
+  <struct name="GTlsDatabasePrivate" id="_6822" size="" align="" fid="f199" lineno="43">
+
+  </struct>
+
+  <struct name="GTlsInteraction" id="_4290" size="256" align="64" fid="f200" lineno="42">
+    <field name="parent_instance" id="_9760" type="GObject" fieldid="_3573" offset="0" fid="f200" line="45"/>
+    <field name="priv" id="_9761" type="NullablePointer[GTlsInteractionPrivate]" fieldid="_11599" offset="192" fid="f200" line="46"/>
+  </struct>
+
+  <struct name="GTlsInteractionClass" id="_6842" size="2816" align="64" fid="f200" lineno="49">
+    <field name="parent_class" id="_11096" type="GObjectClass" fieldid="_3575" offset="0" fid="f200" line="52"/>
+    <field name="ask_password" id="_11097" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12000" offset="1088" fid="f200" line="55"/>
+    <field name="ask_password_async" id="_11098" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12001" offset="1152" fid="f200" line="60"/>
+    <field name="ask_password_finish" id="_11099" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12002" offset="1216" fid="f200" line="66"/>
+    <field name="request_certificate" id="_11100" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12003" offset="1280" fid="f200" line="70"/>
+    <field name="request_certificate_async" id="_11101" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12004" offset="1344" fid="f200" line="76"/>
+    <field name="request_certificate_finish" id="_11102" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12002" offset="1408" fid="f200" line="83"/>
+    <field name="padding" id="_11103" type="Pointer[Pointer[None]]" fieldid="_12005" offset="1472" fid="f200" line="89"/>
+  </struct>
+
+  <struct name="GTlsInteractionPrivate" id="_6844" size="" align="" fid="f200" lineno="40">
+
+  </struct>
+
+  <struct name="GTlsPassword" id="_4292" size="256" align="64" fid="f201" lineno="42">
+    <field name="parent_instance" id="_9763" type="GObject" fieldid="_3573" offset="0" fid="f201" line="44"/>
+    <field name="priv" id="_9764" type="NullablePointer[GTlsPasswordPrivate]" fieldid="_11600" offset="192" fid="f201" line="46"/>
+  </struct>
+
+  <struct name="GTlsPasswordClass" id="_6855" size="1536" align="64" fid="f201" lineno="58">
+    <field name="parent_class" id="_11107" type="GObjectClass" fieldid="_3575" offset="0" fid="f201" line="60"/>
+    <field name="get_value" id="_11108" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12006" offset="1088" fid="f201" line="64"/>
+    <field name="set_value" id="_11109" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12007" offset="1152" fid="f201" line="67"/>
+    <field name="get_default_warning" id="_11110" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12008" offset="1216" fid="f201" line="72"/>
+    <field name="padding" id="_11111" type="Pointer[Pointer[None]]" fieldid="_11530" offset="1280" fid="f201" line="76"/>
+  </struct>
+
+  <struct name="GTlsPasswordPrivate" id="_6857" size="" align="" fid="f201" lineno="40">
+
+  </struct>
+
+  <struct name="GVfs" id="_4296" size="192" align="64" fid="f202" lineno="76">
+    <field name="parent_instance" id="_9767" type="GObject" fieldid="_3573" offset="0" fid="f202" line="78"/>
+  </struct>
+
+  <struct name="GVfsClass" id="_6875" size="2176" align="64" fid="f202" lineno="81">
+    <field name="parent_class" id="_11117" type="GObjectClass" fieldid="_3575" offset="0" fid="f202" line="83"/>
+    <field name="is_active" id="_11118" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12010" offset="1088" fid="f202" line="87"/>
+    <field name="get_file_for_path" id="_11119" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12011" offset="1152" fid="f202" line="88"/>
+    <field name="get_file_for_uri" id="_11120" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12011" offset="1216" fid="f202" line="90"/>
+    <field name="get_supported_uri_schemes" id="_11121" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12012" offset="1280" fid="f202" line="92"/>
+    <field name="parse_name" id="_11122" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12011" offset="1344" fid="f202" line="93"/>
+    <field name="local_file_add_info" id="_11123" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12013" offset="1408" fid="f202" line="97"/>
+    <field name="add_writable_namespaces" id="_11124" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12014" offset="1472" fid="f202" line="105"/>
+    <field name="local_file_set_attributes" id="_11125" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12015" offset="1536" fid="f202" line="107"/>
+    <field name="local_file_removed" id="_11126" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12016" offset="1600" fid="f202" line="113"/>
+    <field name="local_file_moved" id="_11127" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12017" offset="1664" fid="f202" line="115"/>
+    <field name="deserialize_icon" id="_11128" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12018" offset="1728" fid="f202" line="118"/>
+    <field name="_g_reserved1" id="_11129" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1792" fid="f202" line="121"/>
+    <field name="_g_reserved2" id="_11130" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1856" fid="f202" line="122"/>
+    <field name="_g_reserved3" id="_11131" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1920" fid="f202" line="123"/>
+    <field name="_g_reserved4" id="_11132" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1984" fid="f202" line="124"/>
+    <field name="_g_reserved5" id="_11133" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2048" fid="f202" line="125"/>
+    <field name="_g_reserved6" id="_11134" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2112" fid="f202" line="126"/>
+  </struct>
+
+  <struct name="GProxyAddress" id="_4302" size="320" align="64" fid="f203" lineno="42">
+    <field name="parent_instance" id="_9771" type="GInetSocketAddress" fieldid="_4191" offset="0" fid="f203" line="44"/>
+    <field name="priv" id="_9772" type="NullablePointer[GProxyAddressPrivate]" fieldid="_11601" offset="256" fid="f203" line="47"/>
+  </struct>
+
+  <struct name="GProxyAddressClass" id="_6209" size="1280" align="64" fid="f203" lineno="50">
+    <field name="parent_class" id="_10831" type="GInetSocketAddressClass" fieldid="_5701" offset="0" fid="f203" line="52"/>
+  </struct>
+
+  <struct name="GProxyAddressPrivate" id="_6211" size="" align="" fid="f203" lineno="40">
+
+  </struct>
+
+  <struct name="GProxyAddressEnumerator" id="_4304" size="256" align="64" fid="f204" lineno="50">
+    <field name="parent_instance" id="_9774" type="GSocketAddressEnumerator" fieldid="_4259" offset="0" fid="f204" line="53"/>
+    <field name="priv" id="_9775" type="NullablePointer[GProxyAddressEnumeratorPrivate]" fieldid="_11602" offset="192" fid="f204" line="54"/>
+  </struct>
+
+  <struct name="GProxyAddressEnumeratorClass" id="_6228" size="1728" align="64" fid="f204" lineno="62">
+    <field name="parent_class" id="_10840" type="GSocketAddressEnumeratorClass" fieldid="_6223" offset="0" fid="f204" line="65"/>
+    <field name="_g_reserved1" id="_10841" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f204" line="67"/>
+    <field name="_g_reserved2" id="_10842" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f204" line="68"/>
+    <field name="_g_reserved3" id="_10843" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1408" fid="f204" line="69"/>
+    <field name="_g_reserved4" id="_10844" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1472" fid="f204" line="70"/>
+    <field name="_g_reserved5" id="_10845" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1536" fid="f204" line="71"/>
+    <field name="_g_reserved6" id="_10846" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1600" fid="f204" line="72"/>
+    <field name="_g_reserved7" id="_10847" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1664" fid="f204" line="73"/>
+  </struct>
+
+  <struct name="GProxyAddressEnumeratorPrivate" id="_6230" size="" align="" fid="f204" lineno="48">
+
+  </struct>
+
+  <struct name="GVolumeMonitor" id="_4308" size="256" align="64" fid="f205" lineno="57">
+    <field name="parent_instance" id="_9778" type="GObject" fieldid="_3573" offset="0" fid="f205" line="59"/>
+    <field name="priv" id="_9779" type="Pointer[None]" fieldid="_149" offset="192" fid="f205" line="62"/>
+  </struct>
+
+  <struct name="GVolumeMonitorClass" id="_6083" size="2688" align="64" fid="f205" lineno="65">
+    <field name="parent_class" id="_10742" type="GObjectClass" fieldid="_3575" offset="0" fid="f205" line="67"/>
+    <field name="volume_added" id="_10743" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11905" offset="1088" fid="f205" line="71"/>
+    <field name="volume_removed" id="_10744" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11905" offset="1152" fid="f205" line="73"/>
+    <field name="volume_changed" id="_10745" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11905" offset="1216" fid="f205" line="75"/>
+    <field name="mount_added" id="_10746" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11906" offset="1280" fid="f205" line="78"/>
+    <field name="mount_removed" id="_10747" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11906" offset="1344" fid="f205" line="80"/>
+    <field name="mount_pre_unmount" id="_10748" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11906" offset="1408" fid="f205" line="82"/>
+    <field name="mount_changed" id="_10749" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11906" offset="1472" fid="f205" line="84"/>
+    <field name="drive_connected" id="_10750" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11907" offset="1536" fid="f205" line="87"/>
+    <field name="drive_disconnected" id="_10751" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11907" offset="1600" fid="f205" line="89"/>
+    <field name="drive_changed" id="_10752" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11907" offset="1664" fid="f205" line="91"/>
+    <field name="is_supported" id="_10753" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11908" offset="1728" fid="f205" line="96"/>
+    <field name="get_connected_drives" id="_10754" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11909" offset="1792" fid="f205" line="98"/>
+    <field name="get_volumes" id="_10755" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11909" offset="1856" fid="f205" line="99"/>
+    <field name="get_mounts" id="_10756" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11909" offset="1920" fid="f205" line="100"/>
+    <field name="get_volume_for_uuid" id="_10757" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11910" offset="1984" fid="f205" line="102"/>
+    <field name="get_mount_for_uuid" id="_10758" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11911" offset="2048" fid="f205" line="105"/>
+    <field name="adopt_orphan_mount" id="_10759" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11912" offset="2112" fid="f205" line="110"/>
+    <field name="drive_eject_button" id="_10760" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11907" offset="2176" fid="f205" line="114"/>
+    <field name="drive_stop_button" id="_10761" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11907" offset="2240" fid="f205" line="118"/>
+    <field name="_g_reserved1" id="_10762" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2304" fid="f205" line="123"/>
+    <field name="_g_reserved2" id="_10763" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f205" line="124"/>
+    <field name="_g_reserved3" id="_10764" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2432" fid="f205" line="125"/>
+    <field name="_g_reserved4" id="_10765" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2496" fid="f205" line="126"/>
+    <field name="_g_reserved5" id="_10766" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2560" fid="f205" line="127"/>
+    <field name="_g_reserved6" id="_10767" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f205" line="128"/>
+  </struct>
+
+  <struct name="GDBusProxy" id="_4336" size="256" align="64" fid="f206" lineno="51">
+    <field name="parent_instance" id="_9815" type="GObject" fieldid="_3573" offset="0" fid="f206" line="54"/>
+    <field name="priv" id="_9816" type="NullablePointer[GDBusProxyPrivate]" fieldid="_11611" offset="192" fid="f206" line="55"/>
+  </struct>
+
+  <struct name="GDBusProxyClass" id="_5196" size="3264" align="64" fid="f206" lineno="67">
+    <field name="parent_class" id="_10273" type="GObjectClass" fieldid="_3575" offset="0" fid="f206" line="70"/>
+    <field name="g_properties_changed" id="_10274" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11739" offset="1088" fid="f206" line="74"/>
+    <field name="g_signal" id="_10275" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11740" offset="1152" fid="f206" line="77"/>
+    <field name="padding" id="_10276" type="Pointer[Pointer[None]]" fieldid="_11741" offset="1216" fid="f206" line="84"/>
+  </struct>
+
+  <struct name="GDBusProxyPrivate" id="_5198" size="" align="" fid="f206" lineno="41">
+
+  </struct>
+
+  <struct name="GDBusErrorEntry" id="_4344" size="128" align="64" fid="f207" lineno="68">
+    <field name="error_code" id="_9821" type="I32" fieldid="_141" offset="0" fid="f207" line="70"/>
+    <field name="dbus_error_name" id="_9822" type="String" fieldid="_8204" offset="64" fid="f207" line="71"/>
+  </struct>
+
+  <struct name="GDBusInterfaceVTable" id="_4346" size="704" align="64" fid="f208" lineno="384">
+    <field name="method_call" id="_9824" type="NullablePointer[FUNCTIONTYPE]" fieldid="_4966" offset="0" fid="f208" line="386"/>
+    <field name="get_property" id="_9825" type="NullablePointer[FUNCTIONTYPE]" fieldid="_4967" offset="64" fid="f208" line="387"/>
+    <field name="set_property" id="_9826" type="NullablePointer[FUNCTIONTYPE]" fieldid="_4968" offset="128" fid="f208" line="388"/>
+    <field name="padding" id="_9827" type="Pointer[Pointer[None]]" fieldid="_11612" offset="192" fid="f208" line="395"/>
+  </struct>
+
+  <struct name="GDBusSubtreeVTable" id="_4348" size="704" align="64" fid="f208" lineno="522">
+    <field name="enumerate" id="_9829" type="NullablePointer[FUNCTIONTYPE]" fieldid="_4972" offset="0" fid="f208" line="524"/>
+    <field name="introspect" id="_9830" type="NullablePointer[FUNCTIONTYPE]" fieldid="_4973" offset="64" fid="f208" line="525"/>
+    <field name="dispatch" id="_9831" type="NullablePointer[FUNCTIONTYPE]" fieldid="_4974" offset="128" fid="f208" line="526"/>
+    <field name="padding" id="_9832" type="Pointer[Pointer[None]]" fieldid="_11612" offset="192" fid="f208" line="533"/>
+  </struct>
+
+  <struct name="GDBusAnnotationInfo" id="_4350" size="256" align="64" fid="f209" lineno="43">
+    <field name="ref_count" id="_9834" type="I32" fieldid="_141" offset="0" fid="f209" line="46"/>
+    <field name="key" id="_9835" type="String" fieldid="_8191" offset="64" fid="f209" line="47"/>
+    <field name="value" id="_9836" type="String" fieldid="_8191" offset="128" fid="f209" line="48"/>
+    <field name="annotations" id="_9837" type="Array[NullablePointer[GDBusAnnotationInfo]]" fieldid="_10218" offset="192" fid="f209" line="49"/>
+  </struct>
+
+  <struct name="GDBusArgInfo" id="_4352" size="256" align="64" fid="f209" lineno="63">
+    <field name="ref_count" id="_9839" type="I32" fieldid="_141" offset="0" fid="f209" line="66"/>
+    <field name="name" id="_9840" type="String" fieldid="_8191" offset="64" fid="f209" line="67"/>
+    <field name="signature" id="_9841" type="String" fieldid="_8191" offset="128" fid="f209" line="68"/>
+    <field name="annotations" id="_9842" type="Array[NullablePointer[GDBusAnnotationInfo]]" fieldid="_10218" offset="192" fid="f209" line="69"/>
+  </struct>
+
+  <struct name="GDBusMethodInfo" id="_4354" size="320" align="64" fid="f209" lineno="84">
+    <field name="ref_count" id="_9844" type="I32" fieldid="_141" offset="0" fid="f209" line="87"/>
+    <field name="name" id="_9845" type="String" fieldid="_8191" offset="64" fid="f209" line="88"/>
+    <field name="in_args" id="_9846" type="Array[NullablePointer[GDBusArgInfo]]" fieldid="_11613" offset="128" fid="f209" line="89"/>
+    <field name="out_args" id="_9847" type="Array[NullablePointer[GDBusArgInfo]]" fieldid="_11613" offset="192" fid="f209" line="90"/>
+    <field name="annotations" id="_9848" type="Array[NullablePointer[GDBusAnnotationInfo]]" fieldid="_10218" offset="256" fid="f209" line="91"/>
+  </struct>
+
+  <struct name="GDBusSignalInfo" id="_4356" size="256" align="64" fid="f209" lineno="105">
+    <field name="ref_count" id="_9850" type="I32" fieldid="_141" offset="0" fid="f209" line="108"/>
+    <field name="name" id="_9851" type="String" fieldid="_8191" offset="64" fid="f209" line="109"/>
+    <field name="args" id="_9852" type="Array[NullablePointer[GDBusArgInfo]]" fieldid="_11613" offset="128" fid="f209" line="110"/>
+    <field name="annotations" id="_9853" type="Array[NullablePointer[GDBusAnnotationInfo]]" fieldid="_10218" offset="192" fid="f209" line="111"/>
+  </struct>
+
+  <struct name="GDBusPropertyInfo" id="_4358" size="320" align="64" fid="f209" lineno="126">
+    <field name="ref_count" id="_9855" type="I32" fieldid="_141" offset="0" fid="f209" line="129"/>
+    <field name="name" id="_9856" type="String" fieldid="_8191" offset="64" fid="f209" line="130"/>
+    <field name="signature" id="_9857" type="String" fieldid="_8191" offset="128" fid="f209" line="131"/>
+    <field name="flags" id="_9858" type="I32" fieldid="_4029" offset="192" fid="f209" line="132"/>
+    <field name="annotations" id="_9859" type="Array[NullablePointer[GDBusAnnotationInfo]]" fieldid="_10218" offset="256" fid="f209" line="133"/>
+  </struct>
+
+  <struct name="GDBusInterfaceInfo" id="_4360" size="384" align="64" fid="f209" lineno="149">
+    <field name="ref_count" id="_9861" type="I32" fieldid="_141" offset="0" fid="f209" line="152"/>
+    <field name="name" id="_9862" type="String" fieldid="_8191" offset="64" fid="f209" line="153"/>
+    <field name="methods" id="_9863" type="Array[NullablePointer[GDBusMethodInfo]]" fieldid="_11614" offset="128" fid="f209" line="154"/>
+    <field name="signals" id="_9864" type="Array[NullablePointer[GDBusSignalInfo]]" fieldid="_11615" offset="192" fid="f209" line="155"/>
+    <field name="properties" id="_9865" type="Array[NullablePointer[GDBusPropertyInfo]]" fieldid="_11616" offset="256" fid="f209" line="156"/>
+    <field name="annotations" id="_9866" type="Array[NullablePointer[GDBusAnnotationInfo]]" fieldid="_10218" offset="320" fid="f209" line="157"/>
+  </struct>
+
+  <struct name="GDBusNodeInfo" id="_4362" size="320" align="64" fid="f209" lineno="172">
+    <field name="ref_count" id="_9868" type="I32" fieldid="_141" offset="0" fid="f209" line="175"/>
+    <field name="path" id="_9869" type="String" fieldid="_8191" offset="64" fid="f209" line="176"/>
+    <field name="interfaces" id="_9870" type="Array[NullablePointer[GDBusInterfaceInfo]]" fieldid="_11617" offset="128" fid="f209" line="177"/>
+    <field name="nodes" id="_9871" type="Array[NullablePointer[GDBusNodeInfo]]" fieldid="_11195" offset="192" fid="f209" line="178"/>
+    <field name="annotations" id="_9872" type="Array[NullablePointer[GDBusAnnotationInfo]]" fieldid="_10218" offset="256" fid="f209" line="179"/>
+  </struct>
+
+  <struct name="GDBusInterfaceSkeleton" id="_4368" size="256" align="64" fid="f210" lineno="46">
+    <field name="parent_instance" id="_9877" type="GObject" fieldid="_3573" offset="0" fid="f210" line="49"/>
+    <field name="priv" id="_9878" type="NullablePointer[GDBusInterfaceSkeletonPrivate]" fieldid="_11620" offset="192" fid="f210" line="50"/>
+  </struct>
+
+  <struct name="GDBusInterfaceSkeletonClass" id="_5001" size="2432" align="64" fid="f210" lineno="66">
+    <field name="parent_class" id="_10206" type="GObjectClass" fieldid="_3575" offset="0" fid="f210" line="68"/>
+    <field name="get_info" id="_10207" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11719" offset="1088" fid="f210" line="71"/>
+    <field name="get_vtable" id="_10208" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11720" offset="1152" fid="f210" line="72"/>
+    <field name="get_properties" id="_10209" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11721" offset="1216" fid="f210" line="73"/>
+    <field name="flush" id="_10210" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11722" offset="1280" fid="f210" line="74"/>
+    <field name="vfunc_padding" id="_10211" type="Pointer[Pointer[None]]" fieldid="_11612" offset="1344" fid="f210" line="77"/>
+    <field name="g_authorize_method" id="_10212" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11723" offset="1856" fid="f210" line="81"/>
+    <field name="signal_padding" id="_10213" type="Pointer[Pointer[None]]" fieldid="_11612" offset="1920" fid="f210" line="85"/>
+  </struct>
+
+  <struct name="GDBusInterfaceSkeletonPrivate" id="_5003" size="" align="" fid="f210" lineno="36">
+
+  </struct>
+
+  <struct name="GDBusObjectSkeleton" id="_4372" size="256" align="64" fid="f211" lineno="46">
+    <field name="parent_instance" id="_9881" type="GObject" fieldid="_3573" offset="0" fid="f211" line="49"/>
+    <field name="priv" id="_9882" type="NullablePointer[GDBusObjectSkeletonPrivate]" fieldid="_11621" offset="192" fid="f211" line="50"/>
+  </struct>
+
+  <struct name="GDBusObjectSkeletonClass" id="_5185" size="1664" align="64" fid="f211" lineno="62">
+    <field name="parent_class" id="_10268" type="GObjectClass" fieldid="_3575" offset="0" fid="f211" line="64"/>
+    <field name="authorize_method" id="_10269" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11738" offset="1088" fid="f211" line="67"/>
+    <field name="padding" id="_10270" type="Pointer[Pointer[None]]" fieldid="_11612" offset="1152" fid="f211" line="72"/>
+  </struct>
+
+  <struct name="GDBusObjectSkeletonPrivate" id="_5187" size="" align="" fid="f211" lineno="36">
+
+  </struct>
+
+  <struct name="GDBusObjectProxy" id="_4374" size="256" align="64" fid="f212" lineno="46">
+    <field name="parent_instance" id="_9884" type="GObject" fieldid="_3573" offset="0" fid="f212" line="49"/>
+    <field name="priv" id="_9885" type="NullablePointer[GDBusObjectProxyPrivate]" fieldid="_11622" offset="192" fid="f212" line="50"/>
+  </struct>
+
+  <struct name="GDBusObjectProxyClass" id="_5178" size="1600" align="64" fid="f212" lineno="61">
+    <field name="parent_class" id="_10263" type="GObjectClass" fieldid="_3575" offset="0" fid="f212" line="63"/>
+    <field name="padding" id="_10264" type="Pointer[Pointer[None]]" fieldid="_11612" offset="1088" fid="f212" line="66"/>
+  </struct>
+
+  <struct name="GDBusObjectProxyPrivate" id="_5180" size="" align="" fid="f212" lineno="36">
+
+  </struct>
+
+  <struct name="GDBusObjectManagerClient" id="_4378" size="256" align="64" fid="f213" lineno="46">
+    <field name="parent_instance" id="_9888" type="GObject" fieldid="_3573" offset="0" fid="f213" line="49"/>
+    <field name="priv" id="_9889" type="NullablePointer[GDBusObjectManagerClientPrivate]" fieldid="_11623" offset="192" fid="f213" line="50"/>
+  </struct>
+
+  <struct name="GDBusObjectManagerClientClass" id="_5151" size="1728" align="64" fid="f213" lineno="63">
+    <field name="parent_class" id="_10250" type="GObjectClass" fieldid="_3575" offset="0" fid="f213" line="65"/>
+    <field name="interface_proxy_signal" id="_10251" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11736" offset="1088" fid="f213" line="68"/>
+    <field name="interface_proxy_properties_changed" id="_10252" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11737" offset="1152" fid="f213" line="75"/>
+    <field name="padding" id="_10253" type="Pointer[Pointer[None]]" fieldid="_11612" offset="1216" fid="f213" line="82"/>
+  </struct>
+
+  <struct name="GDBusObjectManagerClientPrivate" id="_5153" size="" align="" fid="f213" lineno="36">
+
+  </struct>
+
+  <struct name="GDBusObjectManagerServer" id="_4380" size="256" align="64" fid="f214" lineno="46">
+    <field name="parent_instance" id="_9891" type="GObject" fieldid="_3573" offset="0" fid="f214" line="49"/>
+    <field name="priv" id="_9892" type="NullablePointer[GDBusObjectManagerServerPrivate]" fieldid="_11624" offset="192" fid="f214" line="50"/>
+  </struct>
+
+  <struct name="GDBusObjectManagerServerClass" id="_5166" size="1600" align="64" fid="f214" lineno="61">
+    <field name="parent_class" id="_10257" type="GObjectClass" fieldid="_3575" offset="0" fid="f214" line="63"/>
+    <field name="padding" id="_10258" type="Pointer[Pointer[None]]" fieldid="_11612" offset="1088" fid="f214" line="66"/>
+  </struct>
+
+  <struct name="GDBusObjectManagerServerPrivate" id="_5168" size="" align="" fid="f214" lineno="36">
+
+  </struct>
+
+  <struct name="GActionInterface" id="_4389" size="640" align="64" fid="f215" lineno="40">
+    <field name="g_iface" id="_9898" type="GTypeInterface" fieldid="_3246" offset="0" fid="f215" line="42"/>
+    <field name="get_name" id="_9899" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11626" offset="128" fid="f215" line="45"/>
+    <field name="get_parameter_type" id="_9900" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11627" offset="192" fid="f215" line="46"/>
+    <field name="get_state_type" id="_9901" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11627" offset="256" fid="f215" line="47"/>
+    <field name="get_state_hint" id="_9902" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11628" offset="320" fid="f215" line="48"/>
+    <field name="get_enabled" id="_9903" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11629" offset="384" fid="f215" line="50"/>
+    <field name="get_state" id="_9904" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11628" offset="448" fid="f215" line="51"/>
+    <field name="change_state" id="_9905" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11630" offset="512" fid="f215" line="53"/>
+    <field name="activate" id="_9906" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11630" offset="576" fid="f215" line="55"/>
+  </struct>
+
+  <struct name="GActionGroupInterface" id="_4403" size="1024" align="64" fid="f216" lineno="42">
+    <field name="g_iface" id="_9909" type="GTypeInterface" fieldid="_3246" offset="0" fid="f216" line="44"/>
+    <field name="has_action" id="_9910" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11631" offset="128" fid="f216" line="47"/>
+    <field name="list_actions" id="_9911" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11632" offset="192" fid="f216" line="50"/>
+    <field name="get_action_enabled" id="_9912" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11631" offset="256" fid="f216" line="52"/>
+    <field name="get_action_parameter_type" id="_9913" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11633" offset="320" fid="f216" line="55"/>
+    <field name="get_action_state_type" id="_9914" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11633" offset="384" fid="f216" line="58"/>
+    <field name="get_action_state_hint" id="_9915" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11634" offset="448" fid="f216" line="61"/>
+    <field name="get_action_state" id="_9916" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11634" offset="512" fid="f216" line="64"/>
+    <field name="change_action_state" id="_9917" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11635" offset="576" fid="f216" line="67"/>
+    <field name="activate_action" id="_9918" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11635" offset="640" fid="f216" line="71"/>
+    <field name="action_added" id="_9919" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11636" offset="704" fid="f216" line="76"/>
+    <field name="action_removed" id="_9920" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11636" offset="768" fid="f216" line="78"/>
+    <field name="action_enabled_changed" id="_9921" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11637" offset="832" fid="f216" line="80"/>
+    <field name="action_state_changed" id="_9922" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11635" offset="896" fid="f216" line="83"/>
+    <field name="query_action" id="_9923" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11638" offset="960" fid="f216" line="88"/>
+  </struct>
+
+  <struct name="GActionMapInterface" id="_4422" size="320" align="64" fid="f218" lineno="43">
+    <field name="g_iface" id="_9928" type="GTypeInterface" fieldid="_3246" offset="0" fid="f218" line="45"/>
+    <field name="lookup_action" id="_9929" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11639" offset="128" fid="f218" line="47"/>
+    <field name="add_action" id="_9930" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11640" offset="192" fid="f218" line="49"/>
+    <field name="remove_action" id="_9931" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11641" offset="256" fid="f218" line="51"/>
+  </struct>
+
+  <struct name="GActionEntry" id="_4424" size="512" align="64" fid="f218" lineno="55">
+    <field name="name" id="_9933" type="String" fieldid="_8204" offset="0" fid="f218" line="57"/>
+    <field name="activate" id="_9934" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11642" offset="64" fid="f218" line="59"/>
+    <field name="parameter_type" id="_9935" type="String" fieldid="_8204" offset="128" fid="f218" line="63"/>
+    <field name="state" id="_9936" type="String" fieldid="_8204" offset="192" fid="f218" line="65"/>
+    <field name="change_state" id="_9937" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11642" offset="256" fid="f218" line="67"/>
+    <field name="padding" id="_9938" type="Pointer[U64]" fieldid="_11643" offset="320" fid="f218" line="72"/>
+  </struct>
+
+  <struct name="GInitableIface" id="_4546" size="192" align="64" fid="f219" lineno="57">
+    <field name="g_iface" id="_10019" type="GTypeInterface" fieldid="_3246" offset="0" fid="f219" line="59"/>
+    <field name="init" id="_10020" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11671" offset="128" fid="f219" line="63"/>
+  </struct>
+
+  <struct name="GAsyncInitableIface" id="_4553" size="256" align="64" fid="f220" lineno="59">
+    <field name="g_iface" id="_10023" type="GTypeInterface" fieldid="_3246" offset="0" fid="f220" line="61"/>
+    <field name="init_async" id="_10024" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11672" offset="128" fid="f220" line="65"/>
+    <field name="init_finish" id="_10025" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11673" offset="192" fid="f220" line="70"/>
+  </struct>
+
+  <struct name="GAsyncResultIface" id="_4562" size="320" align="64" fid="f221" lineno="55">
+    <field name="g_iface" id="_10028" type="GTypeInterface" fieldid="_3246" offset="0" fid="f221" line="57"/>
+    <field name="get_user_data" id="_10029" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11674" offset="128" fid="f221" line="61"/>
+    <field name="get_source_object" id="_10030" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11675" offset="192" fid="f221" line="62"/>
+    <field name="is_tagged" id="_10031" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11676" offset="256" fid="f221" line="64"/>
+  </struct>
+
+  <struct name="GConverterIface" id="_4690" size="256" align="64" fid="f223" lineno="58">
+    <field name="g_iface" id="_10116" type="GTypeInterface" fieldid="_3246" offset="0" fid="f223" line="60"/>
+    <field name="convert" id="_10117" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11700" offset="128" fid="f223" line="64"/>
+    <field name="reset" id="_10118" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11701" offset="192" fid="f223" line="73"/>
+  </struct>
+
+  <struct name="GCharsetConverterClass" id="_4695" size="1088" align="64" fid="f224" lineno="41">
+    <field name="parent_class" id="_10121" type="GObjectClass" fieldid="_3575" offset="0" fid="f224" line="43"/>
+  </struct>
+
+  <struct name="GCredentialsClass" id="_4850" size="" align="" fid="f229" lineno="45">
+
+  </struct>
+
+  <struct name="GDatagramBasedInterface" id="_4861" size="448" align="64" fid="f230" lineno="69">
+    <field name="g_iface" id="_10148" type="GTypeInterface" fieldid="_3246" offset="0" fid="f230" line="71"/>
+    <field name="receive_messages" id="_10149" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11702" offset="128" fid="f230" line="74"/>
+    <field name="send_messages" id="_10150" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11703" offset="192" fid="f230" line="81"/>
+    <field name="create_source" id="_10151" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11704" offset="256" fid="f230" line="89"/>
+    <field name="condition_check" id="_10152" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11705" offset="320" fid="f230" line="92"/>
+    <field name="condition_wait" id="_10153" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11706" offset="384" fid="f230" line="94"/>
+  </struct>
+
+  <struct name="GDataOutputStream" id="_4897" size="384" align="64" fid="f231" lineno="49">
+    <field name="parent_instance" id="_10167" type="GFilterOutputStream" fieldid="_4161" offset="0" fid="f231" line="51"/>
+    <field name="priv" id="_10168" type="NullablePointer[GDataOutputStreamPrivate]" fieldid="_11707" offset="320" fid="f231" line="54"/>
+  </struct>
+
+  <struct name="GDataOutputStreamClass" id="_4899" size="2880" align="64" fid="f231" lineno="57">
+    <field name="parent_class" id="_10170" type="GFilterOutputStreamClass" fieldid="_4652" offset="0" fid="f231" line="59"/>
+    <field name="_g_reserved1" id="_10171" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2560" fid="f231" line="63"/>
+    <field name="_g_reserved2" id="_10172" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2624" fid="f231" line="64"/>
+    <field name="_g_reserved3" id="_10173" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2688" fid="f231" line="65"/>
+    <field name="_g_reserved4" id="_10174" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2752" fid="f231" line="66"/>
+    <field name="_g_reserved5" id="_10175" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2816" fid="f231" line="67"/>
+  </struct>
+
+  <struct name="GDataOutputStreamPrivate" id="_4901" size="" align="" fid="f231" lineno="47">
+
+  </struct>
+
+  <struct name="GDBusInterfaceIface" id="_4994" size="384" align="64" fid="f235" lineno="55">
+    <field name="parent_iface" id="_10198" type="GTypeInterface" fieldid="_3246" offset="0" fid="f235" line="57"/>
+    <field name="get_info" id="_10199" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11716" offset="128" fid="f235" line="60"/>
+    <field name="get_object" id="_10200" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11717" offset="192" fid="f235" line="61"/>
+    <field name="set_object" id="_10201" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11718" offset="256" fid="f235" line="62"/>
+    <field name="dup_object" id="_10202" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11717" offset="320" fid="f235" line="64"/>
+  </struct>
+
+  <struct name="GDBusMenuModel" id="_5050" size="" align="" fid="f236" lineno="33">
+
+  </struct>
+
+  <struct name="GDBusObjectIface" id="_5138" size="448" align="64" fid="f241" lineno="48">
+    <field name="parent_iface" id="_10232" type="GTypeInterface" fieldid="_3246" offset="0" fid="f241" line="50"/>
+    <field name="get_object_path" id="_10233" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11726" offset="128" fid="f241" line="53"/>
+    <field name="get_interfaces" id="_10234" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11727" offset="192" fid="f241" line="54"/>
+    <field name="get_interface" id="_10235" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11728" offset="256" fid="f241" line="55"/>
+    <field name="interface_added" id="_10236" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11729" offset="320" fid="f241" line="59"/>
+    <field name="interface_removed" id="_10237" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11729" offset="384" fid="f241" line="61"/>
+  </struct>
+
+  <struct name="GDBusObjectManagerIface" id="_5144" size="640" align="64" fid="f242" lineno="51">
+    <field name="parent_iface" id="_10239" type="GTypeInterface" fieldid="_3246" offset="0" fid="f242" line="53"/>
+    <field name="get_object_path" id="_10240" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11730" offset="128" fid="f242" line="56"/>
+    <field name="get_objects" id="_10241" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11731" offset="192" fid="f242" line="57"/>
+    <field name="get_object" id="_10242" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11732" offset="256" fid="f242" line="58"/>
+    <field name="get_interface" id="_10243" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11733" offset="320" fid="f242" line="60"/>
+    <field name="object_added" id="_10244" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11734" offset="384" fid="f242" line="65"/>
+    <field name="object_removed" id="_10245" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11734" offset="448" fid="f242" line="67"/>
+    <field name="interface_added" id="_10246" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11735" offset="512" fid="f242" line="70"/>
+    <field name="interface_removed" id="_10247" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11735" offset="576" fid="f242" line="73"/>
+  </struct>
+
+  <struct name="GDriveIface" id="_5246" size="2176" align="64" fid="f245" lineno="89">
+    <field name="g_iface" id="_10281" type="GTypeInterface" fieldid="_3246" offset="0" fid="f245" line="91"/>
+    <field name="changed" id="_10282" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11742" offset="128" fid="f245" line="94"/>
+    <field name="disconnected" id="_10283" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11742" offset="192" fid="f245" line="95"/>
+    <field name="eject_button" id="_10284" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11742" offset="256" fid="f245" line="96"/>
+    <field name="get_name" id="_10285" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11743" offset="320" fid="f245" line="99"/>
+    <field name="get_icon" id="_10286" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11744" offset="384" fid="f245" line="100"/>
+    <field name="has_volumes" id="_10287" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="448" fid="f245" line="101"/>
+    <field name="get_volumes" id="_10288" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11746" offset="512" fid="f245" line="102"/>
+    <field name="is_media_removable" id="_10289" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="576" fid="f245" line="103"/>
+    <field name="has_media" id="_10290" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="640" fid="f245" line="104"/>
+    <field name="is_media_check_automatic" id="_10291" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="704" fid="f245" line="105"/>
+    <field name="can_eject" id="_10292" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="768" fid="f245" line="106"/>
+    <field name="can_poll_for_media" id="_10293" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="832" fid="f245" line="107"/>
+    <field name="eject" id="_10294" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11747" offset="896" fid="f245" line="108"/>
+    <field name="eject_finish" id="_10295" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11748" offset="960" fid="f245" line="113"/>
+    <field name="poll_for_media" id="_10296" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11749" offset="1024" fid="f245" line="116"/>
+    <field name="poll_for_media_finish" id="_10297" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11748" offset="1088" fid="f245" line="120"/>
+    <field name="get_identifier" id="_10298" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11750" offset="1152" fid="f245" line="124"/>
+    <field name="enumerate_identifiers" id="_10299" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11751" offset="1216" fid="f245" line="126"/>
+    <field name="get_start_stop_type" id="_10300" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11752" offset="1280" fid="f245" line="128"/>
+    <field name="can_start" id="_10301" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="1344" fid="f245" line="130"/>
+    <field name="can_start_degraded" id="_10302" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="1408" fid="f245" line="131"/>
+    <field name="start" id="_10303" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11753" offset="1472" fid="f245" line="132"/>
+    <field name="start_finish" id="_10304" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11748" offset="1536" fid="f245" line="138"/>
+    <field name="can_stop" id="_10305" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="1600" fid="f245" line="142"/>
+    <field name="stop" id="_10306" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11754" offset="1664" fid="f245" line="143"/>
+    <field name="stop_finish" id="_10307" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11748" offset="1728" fid="f245" line="149"/>
+    <field name="stop_button" id="_10308" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11742" offset="1792" fid="f245" line="153"/>
+    <field name="eject_with_operation" id="_10309" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11754" offset="1856" fid="f245" line="155"/>
+    <field name="eject_with_operation_finish" id="_10310" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11748" offset="1920" fid="f245" line="161"/>
+    <field name="get_sort_key" id="_10311" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11755" offset="1984" fid="f245" line="165"/>
+    <field name="get_symbolic_icon" id="_10312" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11744" offset="2048" fid="f245" line="166"/>
+    <field name="is_removable" id="_10313" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11745" offset="2112" fid="f245" line="167"/>
+  </struct>
+
+  <struct name="GDtlsConnectionInterface" id="_5277" size="768" align="64" fid="f246" lineno="56">
+    <field name="g_iface" id="_10317" type="GTypeInterface" fieldid="_3246" offset="0" fid="f246" line="58"/>
+    <field name="accept_certificate" id="_10318" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11756" offset="128" fid="f246" line="61"/>
+    <field name="handshake" id="_10319" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11757" offset="192" fid="f246" line="66"/>
+    <field name="handshake_async" id="_10320" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11758" offset="256" fid="f246" line="70"/>
+    <field name="handshake_finish" id="_10321" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11759" offset="320" fid="f246" line="75"/>
+    <field name="shutdown" id="_10322" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11760" offset="384" fid="f246" line="79"/>
+    <field name="shutdown_async" id="_10323" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11761" offset="448" fid="f246" line="85"/>
+    <field name="shutdown_finish" id="_10324" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11759" offset="512" fid="f246" line="92"/>
+    <field name="set_advertised_protocols" id="_10325" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11762" offset="576" fid="f246" line="96"/>
+    <field name="get_negotiated_protocol" id="_10326" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11763" offset="640" fid="f246" line="98"/>
+    <field name="get_binding_data" id="_10327" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11764" offset="704" fid="f246" line="101"/>
+  </struct>
+
+  <struct name="GDtlsClientConnectionInterface" id="_5307" size="128" align="64" fid="f247" lineno="46">
+    <field name="g_iface" id="_10333" type="GTypeInterface" fieldid="_3246" offset="0" fid="f247" line="48"/>
+  </struct>
+
+  <struct name="GDtlsServerConnectionInterface" id="_5316" size="128" align="64" fid="f248" lineno="54">
+    <field name="g_iface" id="_10337" type="GTypeInterface" fieldid="_3246" offset="0" fid="f248" line="56"/>
+  </struct>
+
+  <struct name="GIconIface" id="_5320" size="448" align="64" fid="f249" lineno="61">
+    <field name="g_iface" id="_10339" type="GTypeInterface" fieldid="_3246" offset="0" fid="f249" line="63"/>
+    <field name="hash" id="_10340" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11765" offset="128" fid="f249" line="67"/>
+    <field name="equal" id="_10341" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11766" offset="192" fid="f249" line="68"/>
+    <field name="to_tokens" id="_10342" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11767" offset="256" fid="f249" line="70"/>
+    <field name="from_tokens" id="_10343" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11768" offset="320" fid="f249" line="73"/>
+    <field name="serialize" id="_10344" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11769" offset="384" fid="f249" line="78"/>
+  </struct>
+
+  <struct name="GEmblem" id="_5329" size="" align="" fid="f250" lineno="43">
+
+  </struct>
+
+  <struct name="GEmblemClass" id="_5331" size="" align="" fid="f250" lineno="44">
+
+  </struct>
+
+  <struct name="GEmblemedIcon" id="_5338" size="256" align="64" fid="f251" lineno="50">
+    <field name="parent_instance" id="_10349" type="GObject" fieldid="_3573" offset="0" fid="f251" line="52"/>
+    <field name="priv" id="_10350" type="NullablePointer[GEmblemedIconPrivate]" fieldid="_11770" offset="192" fid="f251" line="55"/>
+  </struct>
+
+  <struct name="GEmblemedIconClass" id="_5340" size="1088" align="64" fid="f251" lineno="58">
+    <field name="parent_class" id="_10352" type="GObjectClass" fieldid="_3575" offset="0" fid="f251" line="60"/>
+  </struct>
+
+  <struct name="GEmblemedIconPrivate" id="_5342" size="" align="" fid="f251" lineno="48">
+
+  </struct>
+
+  <struct name="GFileIface" id="_5350" size="6720" align="64" fid="f252" lineno="162">
+    <field name="g_iface" id="_10356" type="GTypeInterface" fieldid="_3246" offset="0" fid="f252" line="164"/>
+    <field name="dup" id="_10357" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11771" offset="128" fid="f252" line="168"/>
+    <field name="hash" id="_10358" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11772" offset="192" fid="f252" line="169"/>
+    <field name="equal" id="_10359" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11773" offset="256" fid="f252" line="170"/>
+    <field name="is_native" id="_10360" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11774" offset="320" fid="f252" line="172"/>
+    <field name="has_uri_scheme" id="_10361" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11775" offset="384" fid="f252" line="173"/>
+    <field name="get_uri_scheme" id="_10362" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11776" offset="448" fid="f252" line="175"/>
+    <field name="get_basename" id="_10363" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11776" offset="512" fid="f252" line="176"/>
+    <field name="get_path" id="_10364" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11776" offset="576" fid="f252" line="177"/>
+    <field name="get_uri" id="_10365" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11776" offset="640" fid="f252" line="178"/>
+    <field name="get_parse_name" id="_10366" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11776" offset="704" fid="f252" line="179"/>
+    <field name="get_parent" id="_10367" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11771" offset="768" fid="f252" line="180"/>
+    <field name="prefix_matches" id="_10368" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11773" offset="832" fid="f252" line="181"/>
+    <field name="get_relative_path" id="_10369" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11777" offset="896" fid="f252" line="183"/>
+    <field name="resolve_relative_path" id="_10370" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11778" offset="960" fid="f252" line="185"/>
+    <field name="get_child_for_display_name" id="_10371" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11779" offset="1024" fid="f252" line="187"/>
+    <field name="enumerate_children" id="_10372" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11780" offset="1088" fid="f252" line="191"/>
+    <field name="enumerate_children_async" id="_10373" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11781" offset="1152" fid="f252" line="196"/>
+    <field name="enumerate_children_finish" id="_10374" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11782" offset="1216" fid="f252" line="203"/>
+    <field name="query_info" id="_10375" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11783" offset="1280" fid="f252" line="207"/>
+    <field name="query_info_async" id="_10376" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11781" offset="1344" fid="f252" line="212"/>
+    <field name="query_info_finish" id="_10377" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11784" offset="1408" fid="f252" line="219"/>
+    <field name="query_filesystem_info" id="_10378" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11785" offset="1472" fid="f252" line="223"/>
+    <field name="query_filesystem_info_async" id="_10379" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11786" offset="1536" fid="f252" line="227"/>
+    <field name="query_filesystem_info_finish" id="_10380" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11784" offset="1600" fid="f252" line="233"/>
+    <field name="find_enclosing_mount" id="_10381" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11787" offset="1664" fid="f252" line="237"/>
+    <field name="find_enclosing_mount_async" id="_10382" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11788" offset="1728" fid="f252" line="240"/>
+    <field name="find_enclosing_mount_finish" id="_10383" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11789" offset="1792" fid="f252" line="245"/>
+    <field name="set_display_name" id="_10384" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11790" offset="1856" fid="f252" line="249"/>
+    <field name="set_display_name_async" id="_10385" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11786" offset="1920" fid="f252" line="253"/>
+    <field name="set_display_name_finish" id="_10386" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11791" offset="1984" fid="f252" line="259"/>
+    <field name="query_settable_attributes" id="_10387" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11792" offset="2048" fid="f252" line="263"/>
+    <field name="_query_settable_attributes_async" id="_10388" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2112" fid="f252" line="266"/>
+    <field name="_query_settable_attributes_finish" id="_10389" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2176" fid="f252" line="267"/>
+    <field name="query_writable_namespaces" id="_10390" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11792" offset="2240" fid="f252" line="269"/>
+    <field name="_query_writable_namespaces_async" id="_10391" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2304" fid="f252" line="272"/>
+    <field name="_query_writable_namespaces_finish" id="_10392" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="2368" fid="f252" line="273"/>
+    <field name="set_attribute" id="_10393" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11793" offset="2432" fid="f252" line="275"/>
+    <field name="set_attributes_from_info" id="_10394" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11794" offset="2496" fid="f252" line="282"/>
+    <field name="set_attributes_async" id="_10395" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11795" offset="2560" fid="f252" line="287"/>
+    <field name="set_attributes_finish" id="_10396" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11796" offset="2624" fid="f252" line="294"/>
+    <field name="read_fn" id="_10397" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11797" offset="2688" fid="f252" line="299"/>
+    <field name="read_async" id="_10398" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11788" offset="2752" fid="f252" line="302"/>
+    <field name="read_finish" id="_10399" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11798" offset="2816" fid="f252" line="307"/>
+    <field name="append_to" id="_10400" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11799" offset="2880" fid="f252" line="311"/>
+    <field name="append_to_async" id="_10401" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11800" offset="2944" fid="f252" line="315"/>
+    <field name="append_to_finish" id="_10402" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11801" offset="3008" fid="f252" line="321"/>
+    <field name="create" id="_10403" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11799" offset="3072" fid="f252" line="325"/>
+    <field name="create_async" id="_10404" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11800" offset="3136" fid="f252" line="329"/>
+    <field name="create_finish" id="_10405" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11801" offset="3200" fid="f252" line="335"/>
+    <field name="replace" id="_10406" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11802" offset="3264" fid="f252" line="339"/>
+    <field name="replace_async" id="_10407" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11803" offset="3328" fid="f252" line="345"/>
+    <field name="replace_finish" id="_10408" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11801" offset="3392" fid="f252" line="353"/>
+    <field name="delete_file" id="_10409" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11804" offset="3456" fid="f252" line="357"/>
+    <field name="delete_file_async" id="_10410" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11788" offset="3520" fid="f252" line="360"/>
+    <field name="delete_file_finish" id="_10411" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="3584" fid="f252" line="365"/>
+    <field name="trash" id="_10412" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11804" offset="3648" fid="f252" line="369"/>
+    <field name="trash_async" id="_10413" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11788" offset="3712" fid="f252" line="372"/>
+    <field name="trash_finish" id="_10414" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="3776" fid="f252" line="377"/>
+    <field name="make_directory" id="_10415" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11804" offset="3840" fid="f252" line="381"/>
+    <field name="make_directory_async" id="_10416" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11788" offset="3904" fid="f252" line="384"/>
+    <field name="make_directory_finish" id="_10417" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="3968" fid="f252" line="389"/>
+    <field name="make_symbolic_link" id="_10418" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11806" offset="4032" fid="f252" line="393"/>
+    <field name="_make_symbolic_link_async" id="_10419" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="4096" fid="f252" line="397"/>
+    <field name="_make_symbolic_link_finish" id="_10420" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="4160" fid="f252" line="398"/>
+    <field name="copy" id="_10421" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11807" offset="4224" fid="f252" line="400"/>
+    <field name="copy_async" id="_10422" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11808" offset="4288" fid="f252" line="407"/>
+    <field name="copy_finish" id="_10423" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="4352" fid="f252" line="416"/>
+    <field name="move" id="_10424" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11807" offset="4416" fid="f252" line="420"/>
+    <field name="_move_async" id="_10425" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="4480" fid="f252" line="427"/>
+    <field name="_move_finish" id="_10426" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="4544" fid="f252" line="428"/>
+    <field name="mount_mountable" id="_10427" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11809" offset="4608" fid="f252" line="430"/>
+    <field name="mount_mountable_finish" id="_10428" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11791" offset="4672" fid="f252" line="436"/>
+    <field name="unmount_mountable" id="_10429" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11810" offset="4736" fid="f252" line="440"/>
+    <field name="unmount_mountable_finish" id="_10430" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="4800" fid="f252" line="445"/>
+    <field name="eject_mountable" id="_10431" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11810" offset="4864" fid="f252" line="449"/>
+    <field name="eject_mountable_finish" id="_10432" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="4928" fid="f252" line="454"/>
+    <field name="mount_enclosing_volume" id="_10433" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11809" offset="4992" fid="f252" line="458"/>
+    <field name="mount_enclosing_volume_finish" id="_10434" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="5056" fid="f252" line="464"/>
+    <field name="monitor_dir" id="_10435" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11811" offset="5120" fid="f252" line="468"/>
+    <field name="monitor_file" id="_10436" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11811" offset="5184" fid="f252" line="472"/>
+    <field name="open_readwrite" id="_10437" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11812" offset="5248" fid="f252" line="477"/>
+    <field name="open_readwrite_async" id="_10438" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11788" offset="5312" fid="f252" line="480"/>
+    <field name="open_readwrite_finish" id="_10439" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11813" offset="5376" fid="f252" line="485"/>
+    <field name="create_readwrite" id="_10440" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11814" offset="5440" fid="f252" line="488"/>
+    <field name="create_readwrite_async" id="_10441" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11800" offset="5504" fid="f252" line="492"/>
+    <field name="create_readwrite_finish" id="_10442" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11813" offset="5568" fid="f252" line="498"/>
+    <field name="replace_readwrite" id="_10443" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11815" offset="5632" fid="f252" line="501"/>
+    <field name="replace_readwrite_async" id="_10444" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11803" offset="5696" fid="f252" line="507"/>
+    <field name="replace_readwrite_finish" id="_10445" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11813" offset="5760" fid="f252" line="515"/>
+    <field name="start_mountable" id="_10446" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11816" offset="5824" fid="f252" line="519"/>
+    <field name="start_mountable_finish" id="_10447" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="5888" fid="f252" line="525"/>
+    <field name="stop_mountable" id="_10448" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11817" offset="5952" fid="f252" line="529"/>
+    <field name="stop_mountable_finish" id="_10449" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="6016" fid="f252" line="535"/>
+    <field name="supports_thread_contexts" id="_10450" type="I32" fieldid="_142" offset="6080" fid="f252" line="539"/>
+    <field name="unmount_mountable_with_operation" id="_10451" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11817" offset="6144" fid="f252" line="541"/>
+    <field name="unmount_mountable_with_operation_finish" id="_10452" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="6208" fid="f252" line="547"/>
+    <field name="eject_mountable_with_operation" id="_10453" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11817" offset="6272" fid="f252" line="551"/>
+    <field name="eject_mountable_with_operation_finish" id="_10454" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="6336" fid="f252" line="557"/>
+    <field name="poll_mountable" id="_10455" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11818" offset="6400" fid="f252" line="561"/>
+    <field name="poll_mountable_finish" id="_10456" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11805" offset="6464" fid="f252" line="565"/>
+    <field name="measure_disk_usage" id="_10457" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11819" offset="6528" fid="f252" line="569"/>
+    <field name="measure_disk_usage_async" id="_10458" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11820" offset="6592" fid="f252" line="578"/>
+    <field name="measure_disk_usage_finish" id="_10459" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11821" offset="6656" fid="f252" line="586"/>
+  </struct>
+
+  <struct name="GFileIconClass" id="_5509" size="" align="" fid="f253" lineno="44">
+
+  </struct>
+
+  <struct name="GFileInfoClass" id="_5514" size="" align="" fid="f254" lineno="44">
+
+  </struct>
+
+  <struct name="GFilenameCompleterClass" id="_5640" size="1344" align="64" fid="f256" lineno="46">
+    <field name="parent_class" id="_10553" type="GObjectClass" fieldid="_3575" offset="0" fid="f256" line="48"/>
+    <field name="got_completion_data" id="_10554" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11849" offset="1088" fid="f256" line="52"/>
+    <field name="_g_reserved1" id="_10555" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1152" fid="f256" line="56"/>
+    <field name="_g_reserved2" id="_10556" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1216" fid="f256" line="57"/>
+    <field name="_g_reserved3" id="_10557" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f256" line="58"/>
+  </struct>
+
+  <struct name="GIOModuleScope" id="_5811" size="" align="" fid="f259" lineno="33">
+
+  </struct>
+
+  <struct name="GIOModuleClass" id="_5816" size="" align="" fid="f259" lineno="55">
+
+  </struct>
+
+  <struct name="GListModel" id="_5843" size="" align="" fid="f261" lineno="36">
+
+  </struct>
+
+  <struct name="GListModelInterface" id="_5845" size="320" align="64" fid="f261" lineno="38">
+    <field name="g_iface" id="_10611" type="GTypeInterface" fieldid="_3246" offset="0" fid="f261" line="40"/>
+    <field name="get_item_type" id="_10612" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11865" offset="128" fid="f261" line="42"/>
+    <field name="get_n_items" id="_10613" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11866" offset="192" fid="f261" line="44"/>
+    <field name="get_item" id="_10614" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11867" offset="256" fid="f261" line="46"/>
+  </struct>
+
+  <struct name="GListStore" id="_5865" size="" align="" fid="f262" lineno="36">
+
+  </struct>
+
+  <struct name="Anon" id="_5867" size="1088" align="64" fid="f262" lineno="36">
+    <field name="parent_class" id="_10620" type="GObjectClass" fieldid="_3575" offset="0" fid="f262" line="36"/>
+  </struct>
+
+  <struct name="GLoadableIconIface" id="_5899" size="320" align="64" fid="f263" lineno="54">
+    <field name="g_iface" id="_10626" type="GTypeInterface" fieldid="_3246" offset="0" fid="f263" line="56"/>
+    <field name="load" id="_10627" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11868" offset="128" fid="f263" line="60"/>
+    <field name="load_async" id="_10628" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11869" offset="192" fid="f263" line="65"/>
+    <field name="load_finish" id="_10629" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11870" offset="256" fid="f263" line="70"/>
+  </struct>
+
+  <struct name="GMemoryMonitor" id="_5916" size="" align="" fid="f264" lineno="42">
+
+  </struct>
+
+  <struct name="GMemoryMonitorInterface" id="_5918" size="192" align="64" fid="f264" lineno="48">
+    <field name="g_iface" id="_10642" type="GTypeInterface" fieldid="_3246" offset="0" fid="f264" line="50"/>
+    <field name="low_memory_warning" id="_10643" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11871" offset="128" fid="f264" line="53"/>
+  </struct>
+
+  <struct name="GMenuItem" id="_5981" size="" align="" fid="f265" lineno="39">
+
+  </struct>
+
+  <struct name="GMenu" id="_5983" size="" align="" fid="f265" lineno="40">
+
+  </struct>
+
+  <struct name="GMountIface" id="_6022" size="1856" align="64" fid="f267" lineno="75">
+    <field name="g_iface" id="_10691" type="GTypeInterface" fieldid="_3246" offset="0" fid="f267" line="77"/>
+    <field name="changed" id="_10692" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11884" offset="128" fid="f267" line="81"/>
+    <field name="unmounted" id="_10693" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11884" offset="192" fid="f267" line="82"/>
+    <field name="get_root" id="_10694" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11885" offset="256" fid="f267" line="86"/>
+    <field name="get_name" id="_10695" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11886" offset="320" fid="f267" line="87"/>
+    <field name="get_icon" id="_10696" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11887" offset="384" fid="f267" line="88"/>
+    <field name="get_uuid" id="_10697" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11886" offset="448" fid="f267" line="89"/>
+    <field name="get_volume" id="_10698" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11888" offset="512" fid="f267" line="90"/>
+    <field name="get_drive" id="_10699" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11889" offset="576" fid="f267" line="91"/>
+    <field name="can_unmount" id="_10700" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11890" offset="640" fid="f267" line="92"/>
+    <field name="can_eject" id="_10701" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11890" offset="704" fid="f267" line="93"/>
+    <field name="unmount" id="_10702" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11891" offset="768" fid="f267" line="95"/>
+    <field name="unmount_finish" id="_10703" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11892" offset="832" fid="f267" line="100"/>
+    <field name="eject" id="_10704" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11891" offset="896" fid="f267" line="104"/>
+    <field name="eject_finish" id="_10705" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11892" offset="960" fid="f267" line="109"/>
+    <field name="remount" id="_10706" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11893" offset="1024" fid="f267" line="113"/>
+    <field name="remount_finish" id="_10707" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11892" offset="1088" fid="f267" line="119"/>
+    <field name="guess_content_type" id="_10708" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11894" offset="1152" fid="f267" line="123"/>
+    <field name="guess_content_type_finish" id="_10709" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11895" offset="1216" fid="f267" line="128"/>
+    <field name="guess_content_type_sync" id="_10710" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11896" offset="1280" fid="f267" line="131"/>
+    <field name="pre_unmount" id="_10711" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11884" offset="1344" fid="f267" line="137"/>
+    <field name="unmount_with_operation" id="_10712" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11897" offset="1408" fid="f267" line="139"/>
+    <field name="unmount_with_operation_finish" id="_10713" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11892" offset="1472" fid="f267" line="145"/>
+    <field name="eject_with_operation" id="_10714" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11897" offset="1536" fid="f267" line="149"/>
+    <field name="eject_with_operation_finish" id="_10715" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11892" offset="1600" fid="f267" line="155"/>
+    <field name="get_default_location" id="_10716" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11885" offset="1664" fid="f267" line="158"/>
+    <field name="get_sort_key" id="_10717" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11898" offset="1728" fid="f267" line="160"/>
+    <field name="get_symbolic_icon" id="_10718" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11887" offset="1792" fid="f267" line="161"/>
+  </struct>
+
+  <struct name="GNativeVolumeMonitor" id="_6093" size="256" align="64" fid="f268" lineno="43">
+    <field name="parent_instance" id="_10770" type="GVolumeMonitor" fieldid="_4309" offset="0" fid="f268" line="45"/>
+  </struct>
+
+  <struct name="GNativeVolumeMonitorClass" id="_6095" size="2752" align="64" fid="f268" lineno="48">
+    <field name="parent_class" id="_10772" type="GVolumeMonitorClass" fieldid="_6084" offset="0" fid="f268" line="50"/>
+    <field name="get_mount_for_mount_path" id="_10773" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11913" offset="2688" fid="f268" line="52"/>
+  </struct>
+
+  <struct name="GNetworkMonitorInterface" id="_6110" size="384" align="64" fid="f269" lineno="47">
+    <field name="g_iface" id="_10779" type="GTypeInterface" fieldid="_3246" offset="0" fid="f269" line="48"/>
+    <field name="network_changed" id="_10780" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11914" offset="128" fid="f269" line="50"/>
+    <field name="can_reach" id="_10781" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11915" offset="192" fid="f269" line="53"/>
+    <field name="can_reach_async" id="_10782" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11916" offset="256" fid="f269" line="57"/>
+    <field name="can_reach_finish" id="_10783" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11917" offset="320" fid="f269" line="62"/>
+  </struct>
+
+  <struct name="GPollableInputStreamInterface" id="_6160" size="384" align="64" fid="f271" lineno="66">
+    <field name="g_iface" id="_10801" type="GTypeInterface" fieldid="_3246" offset="0" fid="f271" line="68"/>
+    <field name="can_poll" id="_10802" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11922" offset="128" fid="f271" line="71"/>
+    <field name="is_readable" id="_10803" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11922" offset="192" fid="f271" line="73"/>
+    <field name="create_source" id="_10804" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11923" offset="256" fid="f271" line="74"/>
+    <field name="read_nonblocking" id="_10805" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11924" offset="320" fid="f271" line="76"/>
+  </struct>
+
+  <struct name="GPollableOutputStreamInterface" id="_6167" size="448" align="64" fid="f272" lineno="74">
+    <field name="g_iface" id="_10808" type="GTypeInterface" fieldid="_3246" offset="0" fid="f272" line="76"/>
+    <field name="can_poll" id="_10809" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11925" offset="128" fid="f272" line="79"/>
+    <field name="is_writable" id="_10810" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11925" offset="192" fid="f272" line="81"/>
+    <field name="create_source" id="_10811" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11926" offset="256" fid="f272" line="82"/>
+    <field name="write_nonblocking" id="_10812" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11927" offset="320" fid="f272" line="84"/>
+    <field name="writev_nonblocking" id="_10813" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11928" offset="384" fid="f272" line="88"/>
+  </struct>
+
+  <struct name="GPowerProfileMonitor" id="_6181" size="" align="" fid="f274" lineno="43">
+
+  </struct>
+
+  <struct name="GPowerProfileMonitorInterface" id="_6183" size="128" align="64" fid="f274" lineno="49">
+    <field name="g_iface" id="_10817" type="GTypeInterface" fieldid="_3246" offset="0" fid="f274" line="52"/>
+  </struct>
+
+  <struct name="GProxyInterface" id="_6201" size="384" align="64" fid="f276" lineno="71">
+    <field name="g_iface" id="_10823" type="GTypeInterface" fieldid="_3246" offset="0" fid="f276" line="73"/>
+    <field name="connect" id="_10824" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11929" offset="128" fid="f276" line="77"/>
+    <field name="connect_async" id="_10825" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11930" offset="192" fid="f276" line="83"/>
+    <field name="connect_finish" id="_10826" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11931" offset="256" fid="f276" line="90"/>
+    <field name="supports_hostname" id="_10827" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11932" offset="320" fid="f276" line="94"/>
+  </struct>
+
+  <struct name="GProxyResolverInterface" id="_6233" size="384" align="64" fid="f277" lineno="47">
+    <field name="g_iface" id="_10850" type="GTypeInterface" fieldid="_3246" offset="0" fid="f277" line="48"/>
+    <field name="is_supported" id="_10851" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11936" offset="128" fid="f277" line="51"/>
+    <field name="lookup" id="_10852" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11937" offset="192" fid="f277" line="53"/>
+    <field name="lookup_async" id="_10853" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11938" offset="256" fid="f277" line="58"/>
+    <field name="lookup_finish" id="_10854" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11939" offset="320" fid="f277" line="64"/>
+  </struct>
+
+  <struct name="GRemoteActionGroupInterface" id="_6241" size="256" align="64" fid="f278" lineno="43">
+    <field name="g_iface" id="_10857" type="GTypeInterface" fieldid="_3246" offset="0" fid="f278" line="45"/>
+    <field name="activate_action_full" id="_10858" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11940" offset="128" fid="f278" line="47"/>
+    <field name="change_action_state_full" id="_10859" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11940" offset="192" fid="f278" line="52"/>
+  </struct>
+
+  <struct name="GStaticResource" id="_6274" size="320" align="64" fid="f279" lineno="53">
+    <field name="data" id="_10883" type="String" fieldid="_8198" offset="0" fid="f279" line="55"/>
+    <field name="data_len" id="_10884" type="U64" fieldid="_21" offset="64" fid="f279" line="56"/>
+    <field name="resource" id="_10885" type="NullablePointer[GResource]" fieldid="_10889" offset="128" fid="f279" line="57"/>
+    <field name="next" id="_10886" type="NullablePointer[GStaticResource]" fieldid="_10890" offset="192" fid="f279" line="58"/>
+    <field name="padding" id="_10887" type="Pointer[None]" fieldid="_149" offset="256" fid="f279" line="59"/>
+  </struct>
+
+  <struct name="GSeekableIface" id="_6294" size="448" align="64" fid="f280" lineno="55">
+    <field name="g_iface" id="_10891" type="GTypeInterface" fieldid="_3246" offset="0" fid="f280" line="57"/>
+    <field name="tell" id="_10892" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11952" offset="128" fid="f280" line="61"/>
+    <field name="can_seek" id="_10893" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11953" offset="192" fid="f280" line="63"/>
+    <field name="seek" id="_10894" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11954" offset="256" fid="f280" line="64"/>
+    <field name="can_truncate" id="_10895" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11953" offset="320" fid="f280" line="70"/>
+    <field name="truncate_fn" id="_10896" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11955" offset="384" fid="f280" line="71"/>
+  </struct>
+
+  <struct name="GSettingsSchemaSource" id="_6302" size="" align="" fid="f281" lineno="26">
+
+  </struct>
+
+  <struct name="GSettingsSchema" id="_6304" size="" align="" fid="f281" lineno="27">
+
+  </struct>
+
+  <struct name="GSettingsSchemaKey" id="_6306" size="" align="" fid="f281" lineno="28">
+
+  </struct>
+
+  <struct name="GSimpleAsyncResultClass" id="_6411" size="" align="" fid="f283" lineno="44">
+
+  </struct>
+
+  <struct name="GSimpleProxyResolver" id="_6443" size="256" align="64" fid="f286" lineno="46">
+    <field name="parent_instance" id="_10927" type="GObject" fieldid="_3573" offset="0" fid="f286" line="48"/>
+    <field name="priv" id="_10928" type="NullablePointer[GSimpleProxyResolverPrivate]" fieldid="_11964" offset="192" fid="f286" line="51"/>
+  </struct>
+
+  <struct name="GSimpleProxyResolverPrivate" id="_6445" size="" align="" fid="f286" lineno="43">
+
+  </struct>
+
+  <struct name="GSimpleProxyResolverClass" id="_6447" size="1408" align="64" fid="f286" lineno="54">
+    <field name="parent_class" id="_10931" type="GObjectClass" fieldid="_3575" offset="0" fid="f286" line="56"/>
+    <field name="_g_reserved1" id="_10932" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1088" fid="f286" line="60"/>
+    <field name="_g_reserved2" id="_10933" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1152" fid="f286" line="61"/>
+    <field name="_g_reserved3" id="_10934" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1216" fid="f286" line="62"/>
+    <field name="_g_reserved4" id="_10935" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1280" fid="f286" line="63"/>
+    <field name="_g_reserved5" id="_10936" type="NullablePointer[FUNCTIONTYPE]" fieldid="_8222" offset="1344" fid="f286" line="64"/>
+  </struct>
+
+  <struct name="GSocketConnectableIface" id="_6553" size="320" align="64" fid="f287" lineno="53">
+    <field name="g_iface" id="_10967" type="GTypeInterface" fieldid="_3246" offset="0" fid="f287" line="55"/>
+    <field name="enumerate" id="_10968" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11966" offset="128" fid="f287" line="59"/>
+    <field name="proxy_enumerate" id="_10969" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11966" offset="192" fid="f287" line="61"/>
+    <field name="to_string" id="_10970" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11967" offset="256" fid="f287" line="63"/>
+  </struct>
+
+  <struct name="GTaskClass" id="_6666" size="" align="" fid="f291" lineno="37">
+
+  </struct>
+
+  <struct name="GThemedIconClass" id="_6728" size="" align="" fid="f293" lineno="44">
+
+  </struct>
+
+  <struct name="GTlsBackend" id="_6743" size="" align="" fid="f294" lineno="44">
+
+  </struct>
+
+  <struct name="GTlsBackendInterface" id="_6745" size="704" align="64" fid="f294" lineno="64">
+    <field name="g_iface" id="_11044" type="GTypeInterface" fieldid="_3246" offset="0" fid="f294" line="66"/>
+    <field name="supports_tls" id="_11045" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11977" offset="128" fid="f294" line="69"/>
+    <field name="get_certificate_type" id="_11046" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11978" offset="192" fid="f294" line="70"/>
+    <field name="get_client_connection_type" id="_11047" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11978" offset="256" fid="f294" line="71"/>
+    <field name="get_server_connection_type" id="_11048" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11978" offset="320" fid="f294" line="72"/>
+    <field name="get_file_database_type" id="_11049" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11978" offset="384" fid="f294" line="73"/>
+    <field name="get_default_database" id="_11050" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11979" offset="448" fid="f294" line="74"/>
+    <field name="supports_dtls" id="_11051" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11977" offset="512" fid="f294" line="75"/>
+    <field name="get_dtls_client_connection_type" id="_11052" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11978" offset="576" fid="f294" line="76"/>
+    <field name="get_dtls_server_connection_type" id="_11053" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11978" offset="640" fid="f294" line="77"/>
+  </struct>
+
+  <struct name="GTlsClientConnectionInterface" id="_6808" size="192" align="64" fid="f295" lineno="46">
+    <field name="g_iface" id="_11072" type="GTypeInterface" fieldid="_3246" offset="0" fid="f295" line="48"/>
+    <field name="copy_session_state" id="_11073" type="NullablePointer[FUNCTIONTYPE]" fieldid="_11987" offset="128" fid="f295" line="50"/>
+  </struct>
+
+  <struct name="GTlsFileDatabaseInterface" id="_6838" size="640" align="64" fid="f296" lineno="40">
+    <field name="g_iface" id="_11093" type="GTypeInterface" fieldid="_3246" offset="0" fid="f296" line="42"/>
+    <field name="padding" id="_11094" type="Pointer[Pointer[None]]" fieldid="_11612" offset="128" fid="f296" line="46"/>
+  </struct>
+
+  <struct name="GTlsServerConnectionInterface" id="_6870" size="128" align="64" fid="f297" lineno="53">
+    <field name="g_iface" id="_11114" type="GTypeInterface" fieldid="_3246" offset="0" fid="f297" line="55"/>
+  </struct>
+
+  <struct name="GVolumeIface" id="_6887" size="1472" align="64" fid="f298" lineno="126">
+    <field name="g_iface" id="_11137" type="GTypeInterface" fieldid="_3246" offset="0" fid="f298" line="128"/>
+    <field name="changed" id="_11138" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12019" offset="128" fid="f298" line="132"/>
+    <field name="removed" id="_11139" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12019" offset="192" fid="f298" line="133"/>
+    <field name="get_name" id="_11140" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12020" offset="256" fid="f298" line="137"/>
+    <field name="get_icon" id="_11141" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12021" offset="320" fid="f298" line="138"/>
+    <field name="get_uuid" id="_11142" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12020" offset="384" fid="f298" line="139"/>
+    <field name="get_drive" id="_11143" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12022" offset="448" fid="f298" line="140"/>
+    <field name="get_mount" id="_11144" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12023" offset="512" fid="f298" line="141"/>
+    <field name="can_mount" id="_11145" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12024" offset="576" fid="f298" line="142"/>
+    <field name="can_eject" id="_11146" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12024" offset="640" fid="f298" line="143"/>
+    <field name="mount_fn" id="_11147" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12025" offset="704" fid="f298" line="144"/>
+    <field name="mount_finish" id="_11148" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12026" offset="768" fid="f298" line="150"/>
+    <field name="eject" id="_11149" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12027" offset="832" fid="f298" line="153"/>
+    <field name="eject_finish" id="_11150" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12026" offset="896" fid="f298" line="158"/>
+    <field name="get_identifier" id="_11151" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12028" offset="960" fid="f298" line="162"/>
+    <field name="enumerate_identifiers" id="_11152" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12029" offset="1024" fid="f298" line="164"/>
+    <field name="should_automount" id="_11153" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12024" offset="1088" fid="f298" line="166"/>
+    <field name="get_activation_root" id="_11154" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12030" offset="1152" fid="f298" line="168"/>
+    <field name="eject_with_operation" id="_11155" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12031" offset="1216" fid="f298" line="170"/>
+    <field name="eject_with_operation_finish" id="_11156" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12026" offset="1280" fid="f298" line="176"/>
+    <field name="get_sort_key" id="_11157" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12032" offset="1344" fid="f298" line="180"/>
+    <field name="get_symbolic_icon" id="_11158" type="NullablePointer[FUNCTIONTYPE]" fieldid="_12021" offset="1408" fid="f298" line="181"/>
+  </struct>
+
+  <struct name="GZlibCompressorClass" id="_6909" size="1088" align="64" fid="f299" lineno="42">
+    <field name="parent_class" id="_11160" type="GObjectClass" fieldid="_3575" offset="0" fid="f299" line="44"/>
+  </struct>
+
+  <struct name="GZlibDecompressorClass" id="_6915" size="1088" align="64" fid="f300" lineno="42">
+    <field name="parent_class" id="_11163" type="GObjectClass" fieldid="_3575" offset="0" fid="f300" line="44"/>
+  </struct>
+</structs>
+</castxml2pony>
+

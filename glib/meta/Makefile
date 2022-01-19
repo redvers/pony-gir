@@ -1,91 +1,98 @@
-codegetstruct:
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_173 renderfields=1  > ../../test/Glib/GTimeVal.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_177 renderfields=1  > ../../test/Glib/GBytes.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_179 renderfields=1  > ../../test/Glib/GArray.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_181 renderfields=1  > ../../test/Glib/GByteArray.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_183 renderfields=1  > ../../test/Glib/GPtrArray.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_273 renderfields=1  > ../../test/Glib/GError.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_898 renderfields=1  > ../../test/Glib/GData.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1240 renderfields=1  > ../../test/Glib/GSList.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1651 renderfields=1  > ../../test/Glib/GVariantType.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1684 renderfields=1  > ../../test/Glib/GVariant.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1766 renderfields=1  > ../../test/Glib/GVariantIter.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1776 renderfields=1  > ../../test/Glib/GVariantBuilder.pony
-	saxon-he -xi structs.xml ../../xsl/makestruct.xsl struct=_1803 renderfields=1  > ../../test/Glib/GVariantDict.pony
+#structmeta:
+#	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/glib.xml -s f3 f16 f17 f18 f20 f21 f22 f38 f39 f40 f55 f56 f57 f58 f59 f60 f61 f62 f63 f64 f65 f66 f69 f70 f71 f72 f73 f74 f75 f76 f77 f78 f79 f80 f81 f82 f83 f84 f85 f86 f87 f88 f89 f90 f91 f92 f93 f94 f95 f96 f97 f98 f99 f100 f101 f102 f103 f104 f107 f108 f109 f110 f111 f113 f114 f115 f116 f117 f118 f119 f120 f121 f122 f123 f124 f130
 
-#  <struct name="GDebugKey" id="_313" size="128" align="64" fid="f22" lineno="275">
-#  <struct name="GThread" id="_534" size="192" align="64" fid="f39" lineno="46">
-#  <struct name="GRecMutex" id="_538" size="128" align="64" fid="f38" lineno="79">
-#  <struct name="GRWLock" id="_540" size="128" align="64" fid="f38" lineno="65">
-#  <struct name="GCond" id="_542" size="128" align="64" fid="f38" lineno="72">
-#  <struct name="GPrivate" id="_544" size="256" align="64" fid="f38" lineno="87">
-#  <struct name="GOnce" id="_546" size="128" align="64" fid="f38" lineno="103">
-#  <struct name="GAsyncQueue" id="_601" size="" align="" fid="f40" lineno="36">
-#  <struct name="GTimeZone" id="_719" size="" align="" fid="f58" lineno="32">
-#  <struct name="GDateTime" id="_737" size="" align="" fid="f59" lineno="96">
-#  <struct name="GBookmarkFile" id="_792" size="" align="" fid="f60" lineno="78">
-#  <struct name="GChecksum" id="_864" size="" align="" fid="f63" lineno="65">
-#  <struct name="GIConv" id="_880" size="" align="" fid="f64" lineno="83">
-#  <struct name="GData" id="_898" size="" align="" fid="f65" lineno="36">
-#  <struct name="GDate" id="_922" size="64" align="32" fid="f66" lineno="99">
-#  <struct name="GDir" id="_995" size="" align="" fid="f69" lineno="37">
-#  <struct name="GMemVTable" id="_1047" size="384" align="64" fid="f73" lineno="369">
-#  <struct name="GNode" id="_1069" size="320" align="64" fid="f74" lineno="65">
-#  <struct name="GList" id="_1103" size="192" align="64" fid="f75" lineno="39">
-#  <struct name="GHashTable" id="_1138" size="" align="" fid="f76" lineno="37">
-#  <struct name="GHashTableIter" id="_1141" size="320" align="64" fid="f76" lineno="45">
-#  <struct name="GHmac" id="_1183" size="" align="" fid="f77" lineno="40">
-#  <struct name="GHook" id="_1195" size="512" align="64" fid="f78" lineno="73">
-#  <struct name="GHookList" id="_1197" size="448" align="64" fid="f78" lineno="63">
-#  <struct name="GPollFD" id="_1236" size="64" align="32" fid="f80" lineno="91">
-#  <struct name="GSList" id="_1240" size="128" align="64" fid="f81" lineno="39">
-#  <struct name="GMainContext" id="_1274" size="" align="" fid="f82" lineno="48">
-#  <struct name="GMainLoop" id="_1276" size="" align="" fid="f82" lineno="56">
-#  <struct name="GSource" id="_1278" size="768" align="64" fid="f82" lineno="225">
-#  <struct name="GSourcePrivate" id="_1280" size="" align="" fid="f82" lineno="65">
-#  <struct name="GSourceCallbackFuncs" id="_1282" size="192" align="64" fid="f82" lineno="250">
-#  <struct name="GSourceFuncs" id="_1284" size="384" align="64" fid="f82" lineno="268">
-#  <struct name="GString" id="_1466" size="192" align="64" fid="f84" lineno="41">
-#  <struct name="GIOChannel" id="_1504" size="896" align="64" fid="f85" lineno="97">
-#  <struct name="GIOFuncs" id="_1506" size="512" align="64" fid="f85" lineno="131">
-#  <struct name="GKeyFile" id="_1561" size="" align="" fid="f86" lineno="48">
-#  <struct name="GMappedFile" id="_1614" size="" align="" fid="f87" lineno="32">
-#  <struct name="GMarkupParseContext" id="_1629" size="" align="" fid="f88" lineno="112">
-#  <struct name="GMarkupParser" id="_1631" size="320" align="64" fid="f88" lineno="143">
-#  <struct name="GLogField" id="_1832" size="192" align="64" fid="f91" lineno="157">
-#  <struct name="GOptionContext" id="_1857" size="" align="" fid="f92" lineno="38">
-#  <struct name="GOptionGroup" id="_1859" size="" align="" fid="f92" lineno="51">
-#  <struct name="GOptionEntry" id="_1861" size="384" align="64" fid="f92" lineno="258">
-#  <struct name="GPatternSpec" id="_1903" size="" align="" fid="f93" lineno="30">
-#  <struct name="GQueue" id="_1916" size="192" align="64" fid="f96" lineno="47">
-#  <struct name="GRand" id="_1961" size="" align="" fid="f97" lineno="36">
-#  <struct name="GRegex" id="_2015" size="" align="" fid="f101" lineno="413">
-#  <struct name="GMatchInfo" id="_2017" size="" align="" fid="f101" lineno="422">
-#  <struct name="GScanner" id="_2060" size="1152" align="64" fid="f102" lineno="169">
-#  <struct name="GScannerConfig" id="_2062" size="320" align="64" fid="f102" lineno="127">
-#  <struct name="GSequence" id="_2092" size="" align="" fid="f103" lineno="30">
-#  <struct name="GSequenceNode" id="_2094" size="" align="" fid="f103" lineno="31">
-#  <struct name="GStringChunk" id="_2284" size="" align="" fid="f110" lineno="36">
-#  <struct name="GStrvBuilder" id="_2292" size="" align="" fid="f111" lineno="39">
-#  <struct name="GTestCase" id="_2302" size="" align="" fid="f113" lineno="35">
-#  <struct name="GTestSuite" id="_2304" size="" align="" fid="f113" lineno="36">
-#  <struct name="GThreadPool" id="_2390" size="192" align="64" fid="f114" lineno="41">
-#  <struct name="GTimer" id="_2408" size="" align="" fid="f115" lineno="40">
-#  <struct name="GTrashStack" id="_2422" size="64" align="64" fid="f116" lineno="39">
-#  <struct name="GTree" id="_2428" size="" align="" fid="f117" lineno="38">
-#  <struct name="GTreeNode" id="_2430" size="" align="" fid="f117" lineno="47">
-#  <struct name="GUri" id="_2465" size="" align="" fid="f118" lineno="31">
-#  <struct name="GUriParamsIter" id="_2500" size="2240" align="64" fid="f118" lineno="273">
-#  <struct name="GAllocator" id="_2522" size="" align="" fid="f121" lineno="27">
-#  <struct name="GMemChunk" id="_2524" size="" align="" fid="f121" lineno="28">
-#  <struct name="GCache" id="_2544" size="" align="" fid="f122" lineno="36">
-#  <struct name="GCompletion" id="_2555" size="320" align="64" fid="f123" lineno="47">
-#  <struct name="GRelation" id="_2567" size="" align="" fid="f124" lineno="36">
-#  <struct name="GTuples" id="_2569" size="32" align="32" fid="f124" lineno="39">
-#  <struct name="GThreadFunctions" id="_2584" size="1344" align="64" fid="f39" lineno="56">
-#  <struct name="GStaticRecMutex" id="_2733" size="512" align="64" fid="f39" lineno="157">
-#  <struct name="GStaticRWLock" id="_2742" size="640" align="64" fid="f39" lineno="198">
-#  <struct name="GStaticPrivate" id="_2753" size="32" align="32" fid="f39" lineno="240">
 
-structmeta:
-	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/glib.xml -S
+codegenstruct:
+	rm -f ../../test/Glib/*pony
+	sh -x mkstruct.sh _173 ../../test/Glib/GTimeVal.pony
+	sh -x mkstruct.sh _3315 ../../test/Glib/Anon.pony
+	sh -x mkstruct.sh _3319 ../../test/Glib/Anon.pony
+	sh -x mkstruct.sh _177 ../../test/Glib/GBytes.pony
+	sh -x mkstruct.sh _179 ../../test/Glib/GArray.pony
+	sh -x mkstruct.sh _181 ../../test/Glib/GByteArray.pony
+	sh -x mkstruct.sh _183 ../../test/Glib/GPtrArray.pony
+	sh -x mkstruct.sh _273 ../../test/Glib/GError.pony
+	sh -x mkstruct.sh _313 ../../test/Glib/GDebugKey.pony
+	sh -x mkstruct.sh _538 ../../test/Glib/GRecMutex.pony
+#	sh -x mkstruct.sh _540 ../../test/Glib/GRWLock.pony
+	sh -x mkstruct.sh _542 ../../test/Glib/GCond.pony
+	sh -x mkstruct.sh _544 ../../test/Glib/GPrivate.pony
+	sh -x mkstruct.sh _546 ../../test/Glib/GOnce.pony
+	sh -x mkstruct.sh _534 ../../test/Glib/GThread.pony
+	sh -x mkstruct.sh _2584 ../../test/Glib/GThreadFunctions.pony
+	sh -x mkstruct.sh _2728 ../../test/Glib/Anon.pony
+#	sh -x mkstruct.sh _2733 ../../test/Glib/GStaticRecMutex.pony
+	sh -x mkstruct.sh _2742 ../../test/Glib/GStaticRWLock.pony
+	sh -x mkstruct.sh _2753 ../../test/Glib/GStaticPrivate.pony
+	sh -x mkstruct.sh _601 ../../test/Glib/GAsyncQueue.pony
+	sh -x mkstruct.sh _719 ../../test/Glib/GTimeZone.pony
+	sh -x mkstruct.sh _737 ../../test/Glib/GDateTime.pony
+	sh -x mkstruct.sh _792 ../../test/Glib/GBookmarkFile.pony
+	sh -x mkstruct.sh _864 ../../test/Glib/GChecksum.pony
+	sh -x mkstruct.sh _880 ../../test/Glib/GIConv.pony
+	sh -x mkstruct.sh _898 ../../test/Glib/GData.pony
+	sh -x mkstruct.sh _922 ../../test/Glib/GDate.pony
+	sh -x mkstruct.sh _995 ../../test/Glib/GDir.pony
+	sh -x mkstruct.sh _1047 ../../test/Glib/GMemVTable.pony
+	sh -x mkstruct.sh _1069 ../../test/Glib/GNode.pony
+	sh -x mkstruct.sh _1103 ../../test/Glib/GList.pony
+	sh -x mkstruct.sh _1138 ../../test/Glib/GHashTable.pony
+	sh -x mkstruct.sh _1141 ../../test/Glib/GHashTableIter.pony
+	sh -x mkstruct.sh _1183 ../../test/Glib/GHmac.pony
+	sh -x mkstruct.sh _1195 ../../test/Glib/GHook.pony
+	sh -x mkstruct.sh _1197 ../../test/Glib/GHookList.pony
+	sh -x mkstruct.sh _1236 ../../test/Glib/GPollFD.pony
+	sh -x mkstruct.sh _1240 ../../test/Glib/GSList.pony
+	sh -x mkstruct.sh _1274 ../../test/Glib/GMainContext.pony
+	sh -x mkstruct.sh _1276 ../../test/Glib/GMainLoop.pony
+	sh -x mkstruct.sh _1278 ../../test/Glib/GSource.pony
+	sh -x mkstruct.sh _1280 ../../test/Glib/GSourcePrivate.pony
+	sh -x mkstruct.sh _1282 ../../test/Glib/GSourceCallbackFuncs.pony
+	sh -x mkstruct.sh _1284 ../../test/Glib/GSourceFuncs.pony
+	sh -x mkstruct.sh _1466 ../../test/Glib/GString.pony
+	sh -x mkstruct.sh _1504 ../../test/Glib/GIOChannel.pony
+	sh -x mkstruct.sh _1506 ../../test/Glib/GIOFuncs.pony
+	sh -x mkstruct.sh _1561 ../../test/Glib/GKeyFile.pony
+	sh -x mkstruct.sh _1614 ../../test/Glib/GMappedFile.pony
+	sh -x mkstruct.sh _1629 ../../test/Glib/GMarkupParseContext.pony
+	sh -x mkstruct.sh _1631 ../../test/Glib/GMarkupParser.pony
+	sh -x mkstruct.sh _1651 ../../test/Glib/GVariantType.pony
+	sh -x mkstruct.sh _1684 ../../test/Glib/GVariant.pony
+	sh -x mkstruct.sh _1766 ../../test/Glib/GVariantIter.pony
+	sh -x mkstruct.sh _1776 ../../test/Glib/GVariantBuilder.pony
+	sh -x mkstruct.sh _1803 ../../test/Glib/GVariantDict.pony
+	sh -x mkstruct.sh _4443 ../../test/Glib/Anon.pony
+	sh -x mkstruct.sh _4447 ../../test/Glib/Anon.pony
+	sh -x mkstruct.sh _1832 ../../test/Glib/GLogField.pony
+	sh -x mkstruct.sh _1857 ../../test/Glib/GOptionContext.pony
+	sh -x mkstruct.sh _1859 ../../test/Glib/GOptionGroup.pony
+	sh -x mkstruct.sh _1861 ../../test/Glib/GOptionEntry.pony
+	sh -x mkstruct.sh _1903 ../../test/Glib/GPatternSpec.pony
+	sh -x mkstruct.sh _1916 ../../test/Glib/GQueue.pony
+	sh -x mkstruct.sh _1961 ../../test/Glib/GRand.pony
+	sh -x mkstruct.sh _2015 ../../test/Glib/GRegex.pony
+	sh -x mkstruct.sh _2017 ../../test/Glib/GMatchInfo.pony
+	sh -x mkstruct.sh _2060 ../../test/Glib/GScanner.pony
+	sh -x mkstruct.sh _2062 ../../test/Glib/GScannerConfig.pony
+	sh -x mkstruct.sh _2092 ../../test/Glib/GSequence.pony
+	sh -x mkstruct.sh _2094 ../../test/Glib/GSequenceNode.pony
+	sh -x mkstruct.sh _2284 ../../test/Glib/GStringChunk.pony
+	sh -x mkstruct.sh _2292 ../../test/Glib/GStrvBuilder.pony
+	sh -x mkstruct.sh _2302 ../../test/Glib/GTestCase.pony
+	sh -x mkstruct.sh _2304 ../../test/Glib/GTestSuite.pony
+	sh -x mkstruct.sh _2364 ../../test/Glib/Anon.pony
+	sh -x mkstruct.sh _2371 ../../test/Glib/Anon.pony
+	sh -x mkstruct.sh _2373 ../../test/Glib/Anon.pony
+	sh -x mkstruct.sh _2390 ../../test/Glib/GThreadPool.pony
+	sh -x mkstruct.sh _2408 ../../test/Glib/GTimer.pony
+	sh -x mkstruct.sh _2422 ../../test/Glib/GTrashStack.pony
+	sh -x mkstruct.sh _2428 ../../test/Glib/GTree.pony
+	sh -x mkstruct.sh _2430 ../../test/Glib/GTreeNode.pony
+	sh -x mkstruct.sh _2465 ../../test/Glib/GUri.pony
+	sh -x mkstruct.sh _2500 ../../test/Glib/GUriParamsIter.pony
+	sh -x mkstruct.sh _2522 ../../test/Glib/GAllocator.pony
+	sh -x mkstruct.sh _2524 ../../test/Glib/GMemChunk.pony
+	sh -x mkstruct.sh _2544 ../../test/Glib/GCache.pony
+	sh -x mkstruct.sh _2555 ../../test/Glib/GCompletion.pony
+	sh -x mkstruct.sh _2567 ../../test/Glib/GRelation.pony
+	sh -x mkstruct.sh _2569 ../../test/Glib/GTuples.pony

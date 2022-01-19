@@ -1,0 +1,1101 @@
+<typedefs>
+  <typedef name="String"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="GFilterInputStream"
+    ponytypein="GFilterInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterInputStream"
+    structtype="GFilterInputStream"
+    structdef="GFilterInputStream"
+    argtype="GFilterInputStream tag"
+    rvtype="GFilterInputStream"/>
+
+  <typedef name="NullablePointer[GIOFuncs]"
+    ponytypein="NullablePointer[GIOFuncs] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GIOFuncs]"
+    structtype="NullablePointer[GIOFuncs]"
+    structdef="NullablePointer[GIOFuncs].none()"
+    argtype="NullablePointer[GIOFuncs] tag"
+    rvtype="NullablePointer[GIOFuncs]"/>
+
+  <typedef name="NullablePointer[GSocketListenerPrivate]"
+    ponytypein="NullablePointer[GSocketListenerPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSocketListenerPrivate]"
+    structtype="NullablePointer[GSocketListenerPrivate]"
+    structdef="NullablePointer[GSocketListenerPrivate].none()"
+    argtype="NullablePointer[GSocketListenerPrivate] tag"
+    rvtype="NullablePointer[GSocketListenerPrivate]"/>
+
+  <typedef name="GSocketAddressEnumerator"
+    ponytypein="GSocketAddressEnumerator tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddressEnumerator"
+    structtype="GSocketAddressEnumerator"
+    structdef="GSocketAddressEnumerator"
+    argtype="GSocketAddressEnumerator tag"
+    rvtype="GSocketAddressEnumerator"/>
+
+  <typedef name="Array[NullablePointer[GDBusArgInfo]]"
+    ponytypein="Array[NullablePointer[GDBusArgInfo]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GDBusArgInfo]]"
+    structtype="Array[NullablePointer[GDBusArgInfo]]"
+    structdef="Array[NullablePointer[GDBusArgInfo]]"
+    argtype="Array[NullablePointer[GDBusArgInfo]] tag"
+    rvtype="Array[NullablePointer[GDBusArgInfo]]"/>
+
+  <typedef name="Array[NullablePointer[GDBusMethodInfo]]"
+    ponytypein="Array[NullablePointer[GDBusMethodInfo]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GDBusMethodInfo]]"
+    structtype="Array[NullablePointer[GDBusMethodInfo]]"
+    structdef="Array[NullablePointer[GDBusMethodInfo]]"
+    argtype="Array[NullablePointer[GDBusMethodInfo]] tag"
+    rvtype="Array[NullablePointer[GDBusMethodInfo]]"/>
+
+  <typedef name="NullablePointer[GDataOutputStreamPrivate]"
+    ponytypein="NullablePointer[GDataOutputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDataOutputStreamPrivate]"
+    structtype="NullablePointer[GDataOutputStreamPrivate]"
+    structdef="NullablePointer[GDataOutputStreamPrivate].none()"
+    argtype="NullablePointer[GDataOutputStreamPrivate] tag"
+    rvtype="NullablePointer[GDataOutputStreamPrivate]"/>
+
+  <typedef name="NullablePointer[GIOStreamPrivate]"
+    ponytypein="NullablePointer[GIOStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GIOStreamPrivate]"
+    structtype="NullablePointer[GIOStreamPrivate]"
+    structdef="NullablePointer[GIOStreamPrivate].none()"
+    argtype="NullablePointer[GIOStreamPrivate] tag"
+    rvtype="NullablePointer[GIOStreamPrivate]"/>
+
+  <typedef name="NullablePointer[GSocketAddress]"
+    ponytypein="NullablePointer[GSocketAddress] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSocketAddress]"
+    structtype="NullablePointer[GSocketAddress]"
+    structdef="NullablePointer[GSocketAddress].none()"
+    argtype="NullablePointer[GSocketAddress] tag"
+    rvtype="NullablePointer[GSocketAddress]"/>
+
+  <typedef name="GInetSocketAddress"
+    ponytypein="GInetSocketAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GInetSocketAddress"
+    structtype="GInetSocketAddress"
+    structdef="GInetSocketAddress"
+    argtype="GInetSocketAddress tag"
+    rvtype="GInetSocketAddress"/>
+
+  <typedef name="NullablePointer[GSimpleProxyResolverPrivate]"
+    ponytypein="NullablePointer[GSimpleProxyResolverPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSimpleProxyResolverPrivate]"
+    structtype="NullablePointer[GSimpleProxyResolverPrivate]"
+    structdef="NullablePointer[GSimpleProxyResolverPrivate].none()"
+    argtype="NullablePointer[GSimpleProxyResolverPrivate] tag"
+    rvtype="NullablePointer[GSimpleProxyResolverPrivate]"/>
+
+  <typedef name="NullablePointer[GPermissionPrivate]"
+    ponytypein="NullablePointer[GPermissionPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GPermissionPrivate]"
+    structtype="NullablePointer[GPermissionPrivate]"
+    structdef="NullablePointer[GPermissionPrivate].none()"
+    argtype="NullablePointer[GPermissionPrivate] tag"
+    rvtype="NullablePointer[GPermissionPrivate]"/>
+
+  <typedef name="NullablePointer[GIConv]"
+    ponytypein="NullablePointer[GIConv] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GIConv]"
+    structtype="NullablePointer[GIConv]"
+    structdef="NullablePointer[GIConv].none()"
+    argtype="NullablePointer[GIConv] tag"
+    rvtype="NullablePointer[GIConv]"/>
+
+  <typedef name="GTcpConnectionClass"
+    ponytypein="GTcpConnectionClass tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpConnectionClass"
+    structtype="GTcpConnectionClass"
+    structdef="GTcpConnectionClass"
+    argtype="GTcpConnectionClass tag"
+    rvtype="GTcpConnectionClass"/>
+
+  <typedef name="Array[NullablePointer[GDBusAnnotationInfo]]"
+    ponytypein="Array[NullablePointer[GDBusAnnotationInfo]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GDBusAnnotationInfo]]"
+    structtype="Array[NullablePointer[GDBusAnnotationInfo]]"
+    structdef="Array[NullablePointer[GDBusAnnotationInfo]]"
+    argtype="Array[NullablePointer[GDBusAnnotationInfo]] tag"
+    rvtype="Array[NullablePointer[GDBusAnnotationInfo]]"/>
+
+  <typedef name="NullablePointer[GFileAttributeInfo]"
+    ponytypein="NullablePointer[GFileAttributeInfo] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GFileAttributeInfo]"
+    structtype="NullablePointer[GFileAttributeInfo]"
+    structdef="NullablePointer[GFileAttributeInfo].none()"
+    argtype="NullablePointer[GFileAttributeInfo] tag"
+    rvtype="NullablePointer[GFileAttributeInfo]"/>
+
+  <typedef name="Pointer[U64]"
+    ponytypein="Pointer[U64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U64]"
+    structtype="Pointer[U64]"
+    structdef="Pointer[U64]"
+    argtype="Pointer[U64] tag"
+    rvtype="Pointer[U64]"/>
+
+  <typedef name="NullablePointer[GDBusObjectSkeletonPrivate]"
+    ponytypein="NullablePointer[GDBusObjectSkeletonPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDBusObjectSkeletonPrivate]"
+    structtype="NullablePointer[GDBusObjectSkeletonPrivate]"
+    structdef="NullablePointer[GDBusObjectSkeletonPrivate].none()"
+    argtype="NullablePointer[GDBusObjectSkeletonPrivate] tag"
+    rvtype="NullablePointer[GDBusObjectSkeletonPrivate]"/>
+
+  <typedef name="NullablePointer[FUNCTIONTYPE]"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="NullablePointer[GSocketPrivate]"
+    ponytypein="NullablePointer[GSocketPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSocketPrivate]"
+    structtype="NullablePointer[GSocketPrivate]"
+    structdef="NullablePointer[GSocketPrivate].none()"
+    argtype="NullablePointer[GSocketPrivate] tag"
+    rvtype="NullablePointer[GSocketPrivate]"/>
+
+  <typedef name="GSocketAddress"
+    ponytypein="GSocketAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddress"
+    structtype="GSocketAddress"
+    structdef="GSocketAddress"
+    argtype="GSocketAddress tag"
+    rvtype="GSocketAddress"/>
+
+  <typedef name="NullablePointer[GApplicationPrivate]"
+    ponytypein="NullablePointer[GApplicationPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GApplicationPrivate]"
+    structtype="NullablePointer[GApplicationPrivate]"
+    structdef="NullablePointer[GApplicationPrivate].none()"
+    argtype="NullablePointer[GApplicationPrivate] tag"
+    rvtype="NullablePointer[GApplicationPrivate]"/>
+
+  <typedef name="NullablePointer[GFileOutputStreamPrivate]"
+    ponytypein="NullablePointer[GFileOutputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GFileOutputStreamPrivate]"
+    structtype="NullablePointer[GFileOutputStreamPrivate]"
+    structdef="NullablePointer[GFileOutputStreamPrivate].none()"
+    argtype="NullablePointer[GFileOutputStreamPrivate] tag"
+    rvtype="NullablePointer[GFileOutputStreamPrivate]"/>
+
+  <typedef name="GIOStream"
+    ponytypein="GIOStream tag"
+    ponytypeinconv=""
+    ponytypeout="GIOStream"
+    structtype="GIOStream"
+    structdef="GIOStream"
+    argtype="GIOStream tag"
+    rvtype="GIOStream"/>
+
+  <typedef name="GInetSocketAddressClass"
+    ponytypein="GInetSocketAddressClass tag"
+    ponytypeinconv=""
+    ponytypeout="GInetSocketAddressClass"
+    structtype="GInetSocketAddressClass"
+    structdef="GInetSocketAddressClass"
+    argtype="GInetSocketAddressClass tag"
+    rvtype="GInetSocketAddressClass"/>
+
+  <typedef name="NullablePointer[GInputVector]"
+    ponytypein="NullablePointer[GInputVector] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GInputVector]"
+    structtype="NullablePointer[GInputVector]"
+    structdef="NullablePointer[GInputVector].none()"
+    argtype="NullablePointer[GInputVector] tag"
+    rvtype="NullablePointer[GInputVector]"/>
+
+  <typedef name="GFilterOutputStreamClass"
+    ponytypein="GFilterOutputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterOutputStreamClass"
+    structtype="GFilterOutputStreamClass"
+    structdef="GFilterOutputStreamClass"
+    argtype="GFilterOutputStreamClass tag"
+    rvtype="GFilterOutputStreamClass"/>
+
+  <typedef name="NullablePointer[GSimpleActionGroupPrivate]"
+    ponytypein="NullablePointer[GSimpleActionGroupPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSimpleActionGroupPrivate]"
+    structtype="NullablePointer[GSimpleActionGroupPrivate]"
+    structdef="NullablePointer[GSimpleActionGroupPrivate].none()"
+    argtype="NullablePointer[GSimpleActionGroupPrivate] tag"
+    rvtype="NullablePointer[GSimpleActionGroupPrivate]"/>
+
+  <typedef name="NullablePointer[GFileInputStreamPrivate]"
+    ponytypein="NullablePointer[GFileInputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GFileInputStreamPrivate]"
+    structtype="NullablePointer[GFileInputStreamPrivate]"
+    structdef="NullablePointer[GFileInputStreamPrivate].none()"
+    argtype="NullablePointer[GFileInputStreamPrivate] tag"
+    rvtype="NullablePointer[GFileInputStreamPrivate]"/>
+
+  <typedef name="GObjectClass"
+    ponytypein="GObjectClass tag"
+    ponytypeinconv=""
+    ponytypeout="GObjectClass"
+    structtype="GObjectClass"
+    structdef="GObjectClass"
+    argtype="GObjectClass tag"
+    rvtype="GObjectClass"/>
+
+  <typedef name="Pointer[None]"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="NullablePointer[GInetSocketAddressPrivate]"
+    ponytypein="NullablePointer[GInetSocketAddressPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GInetSocketAddressPrivate]"
+    structtype="NullablePointer[GInetSocketAddressPrivate]"
+    structdef="NullablePointer[GInetSocketAddressPrivate].none()"
+    argtype="NullablePointer[GInetSocketAddressPrivate] tag"
+    rvtype="NullablePointer[GInetSocketAddressPrivate]"/>
+
+  <typedef name="I32"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="NullablePointer[GSocketControlMessagePrivate]"
+    ponytypein="NullablePointer[GSocketControlMessagePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSocketControlMessagePrivate]"
+    structtype="NullablePointer[GSocketControlMessagePrivate]"
+    structdef="NullablePointer[GSocketControlMessagePrivate].none()"
+    argtype="NullablePointer[GSocketControlMessagePrivate] tag"
+    rvtype="NullablePointer[GSocketControlMessagePrivate]"/>
+
+  <typedef name="Pointer[U32]"
+    ponytypein="Pointer[U32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U32]"
+    structtype="Pointer[U32]"
+    structdef="Pointer[U32]"
+    argtype="Pointer[U32] tag"
+    rvtype="Pointer[U32]"/>
+
+  <typedef name="NullablePointer[GNetworkAddressPrivate]"
+    ponytypein="NullablePointer[GNetworkAddressPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GNetworkAddressPrivate]"
+    structtype="NullablePointer[GNetworkAddressPrivate]"
+    structdef="NullablePointer[GNetworkAddressPrivate].none()"
+    argtype="NullablePointer[GNetworkAddressPrivate] tag"
+    rvtype="NullablePointer[GNetworkAddressPrivate]"/>
+
+  <typedef name="NullablePointer[GSocketServicePrivate]"
+    ponytypein="NullablePointer[GSocketServicePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSocketServicePrivate]"
+    structtype="NullablePointer[GSocketServicePrivate]"
+    structdef="NullablePointer[GSocketServicePrivate].none()"
+    argtype="NullablePointer[GSocketServicePrivate] tag"
+    rvtype="NullablePointer[GSocketServicePrivate]"/>
+
+  <typedef name="NullablePointer[GDBusObjectManagerClientPrivate]"
+    ponytypein="NullablePointer[GDBusObjectManagerClientPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDBusObjectManagerClientPrivate]"
+    structtype="NullablePointer[GDBusObjectManagerClientPrivate]"
+    structdef="NullablePointer[GDBusObjectManagerClientPrivate].none()"
+    argtype="NullablePointer[GDBusObjectManagerClientPrivate] tag"
+    rvtype="NullablePointer[GDBusObjectManagerClientPrivate]"/>
+
+  <typedef name="GFilterOutputStream"
+    ponytypein="GFilterOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterOutputStream"
+    structtype="GFilterOutputStream"
+    structdef="GFilterOutputStream"
+    argtype="GFilterOutputStream tag"
+    rvtype="GFilterOutputStream"/>
+
+  <typedef name="NullablePointer[GTlsDatabasePrivate]"
+    ponytypein="NullablePointer[GTlsDatabasePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GTlsDatabasePrivate]"
+    structtype="NullablePointer[GTlsDatabasePrivate]"
+    structdef="NullablePointer[GTlsDatabasePrivate].none()"
+    argtype="NullablePointer[GTlsDatabasePrivate] tag"
+    rvtype="NullablePointer[GTlsDatabasePrivate]"/>
+
+  <typedef name="NullablePointer[GStaticResource]"
+    ponytypein="NullablePointer[GStaticResource] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GStaticResource]"
+    structtype="NullablePointer[GStaticResource]"
+    structdef="NullablePointer[GStaticResource].none()"
+    argtype="NullablePointer[GStaticResource] tag"
+    rvtype="NullablePointer[GStaticResource]"/>
+
+  <typedef name="GSocketListener"
+    ponytypein="GSocketListener tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketListener"
+    structtype="GSocketListener"
+    structdef="GSocketListener"
+    argtype="GSocketListener tag"
+    rvtype="GSocketListener"/>
+
+  <typedef name="Array[NullablePointer[GSocketAddress]]"
+    ponytypein="Array[NullablePointer[GSocketAddress]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GSocketAddress]]"
+    structtype="Array[NullablePointer[GSocketAddress]]"
+    structdef="Array[NullablePointer[GSocketAddress]]"
+    argtype="Array[NullablePointer[GSocketAddress]] tag"
+    rvtype="Array[NullablePointer[GSocketAddress]]"/>
+
+  <typedef name="NullablePointer[GNativeSocketAddressPrivate]"
+    ponytypein="NullablePointer[GNativeSocketAddressPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GNativeSocketAddressPrivate]"
+    structtype="NullablePointer[GNativeSocketAddressPrivate]"
+    structdef="NullablePointer[GNativeSocketAddressPrivate].none()"
+    argtype="NullablePointer[GNativeSocketAddressPrivate] tag"
+    rvtype="NullablePointer[GNativeSocketAddressPrivate]"/>
+
+  <typedef name="NullablePointer[GSettingsPrivate]"
+    ponytypein="NullablePointer[GSettingsPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSettingsPrivate]"
+    structtype="NullablePointer[GSettingsPrivate]"
+    structdef="NullablePointer[GSettingsPrivate].none()"
+    argtype="NullablePointer[GSettingsPrivate] tag"
+    rvtype="NullablePointer[GSettingsPrivate]"/>
+
+  <typedef name="GFilterInputStreamClass"
+    ponytypein="GFilterInputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterInputStreamClass"
+    structtype="GFilterInputStreamClass"
+    structdef="GFilterInputStreamClass"
+    argtype="GFilterInputStreamClass tag"
+    rvtype="GFilterInputStreamClass"/>
+
+  <typedef name="Array[NullablePointer[GDBusPropertyInfo]]"
+    ponytypein="Array[NullablePointer[GDBusPropertyInfo]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GDBusPropertyInfo]]"
+    structtype="Array[NullablePointer[GDBusPropertyInfo]]"
+    structdef="Array[NullablePointer[GDBusPropertyInfo]]"
+    argtype="Array[NullablePointer[GDBusPropertyInfo]] tag"
+    rvtype="Array[NullablePointer[GDBusPropertyInfo]]"/>
+
+  <typedef name="Pointer[Pointer[None]]"
+    ponytypein="Pointer[Pointer[None]] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[None]]"
+    structtype="Pointer[Pointer[None]]"
+    structdef="Pointer[Pointer[None]]"
+    argtype="Pointer[Pointer[None]] tag"
+    rvtype="Pointer[Pointer[None]]"/>
+
+  <typedef name="GSocketAddressEnumeratorClass"
+    ponytypein="GSocketAddressEnumeratorClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddressEnumeratorClass"
+    structtype="GSocketAddressEnumeratorClass"
+    structdef="GSocketAddressEnumeratorClass"
+    argtype="GSocketAddressEnumeratorClass tag"
+    rvtype="GSocketAddressEnumeratorClass"/>
+
+  <typedef name="Array[NullablePointer[GSocketControlMessage]]"
+    ponytypein="Array[NullablePointer[GSocketControlMessage]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GSocketControlMessage]]"
+    structtype="Array[NullablePointer[GSocketControlMessage]]"
+    structdef="Array[NullablePointer[GSocketControlMessage]]"
+    argtype="Array[NullablePointer[GSocketControlMessage]] tag"
+    rvtype="Array[NullablePointer[GSocketControlMessage]]"/>
+
+  <typedef name="GSocketListenerClass"
+    ponytypein="GSocketListenerClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketListenerClass"
+    structtype="GSocketListenerClass"
+    structdef="GSocketListenerClass"
+    argtype="GSocketListenerClass tag"
+    rvtype="GSocketListenerClass"/>
+
+  <typedef name="GVolumeMonitorClass"
+    ponytypein="GVolumeMonitorClass tag"
+    ponytypeinconv=""
+    ponytypeout="GVolumeMonitorClass"
+    structtype="GVolumeMonitorClass"
+    structdef="GVolumeMonitorClass"
+    argtype="GVolumeMonitorClass tag"
+    rvtype="GVolumeMonitorClass"/>
+
+  <typedef name="NullablePointer[GInetAddressPrivate]"
+    ponytypein="NullablePointer[GInetAddressPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GInetAddressPrivate]"
+    structtype="NullablePointer[GInetAddressPrivate]"
+    structdef="NullablePointer[GInetAddressPrivate].none()"
+    argtype="NullablePointer[GInetAddressPrivate] tag"
+    rvtype="NullablePointer[GInetAddressPrivate]"/>
+
+  <typedef name="NullablePointer[GOutputVector]"
+    ponytypein="NullablePointer[GOutputVector] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GOutputVector]"
+    structtype="NullablePointer[GOutputVector]"
+    structdef="NullablePointer[GOutputVector].none()"
+    argtype="NullablePointer[GOutputVector] tag"
+    rvtype="NullablePointer[GOutputVector]"/>
+
+  <typedef name="NullablePointer[GTlsCertificatePrivate]"
+    ponytypein="NullablePointer[GTlsCertificatePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GTlsCertificatePrivate]"
+    structtype="NullablePointer[GTlsCertificatePrivate]"
+    structdef="NullablePointer[GTlsCertificatePrivate].none()"
+    argtype="NullablePointer[GTlsCertificatePrivate] tag"
+    rvtype="NullablePointer[GTlsCertificatePrivate]"/>
+
+  <typedef name="NullablePointer[GInputStreamPrivate]"
+    ponytypein="NullablePointer[GInputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GInputStreamPrivate]"
+    structtype="NullablePointer[GInputStreamPrivate]"
+    structdef="NullablePointer[GInputStreamPrivate].none()"
+    argtype="NullablePointer[GInputStreamPrivate] tag"
+    rvtype="NullablePointer[GInputStreamPrivate]"/>
+
+  <typedef name="NullablePointer[GFileMonitorPrivate]"
+    ponytypein="NullablePointer[GFileMonitorPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GFileMonitorPrivate]"
+    structtype="NullablePointer[GFileMonitorPrivate]"
+    structdef="NullablePointer[GFileMonitorPrivate].none()"
+    argtype="NullablePointer[GFileMonitorPrivate] tag"
+    rvtype="NullablePointer[GFileMonitorPrivate]"/>
+
+  <typedef name="NullablePointer[GDataInputStreamPrivate]"
+    ponytypein="NullablePointer[GDataInputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDataInputStreamPrivate]"
+    structtype="NullablePointer[GDataInputStreamPrivate]"
+    structdef="NullablePointer[GDataInputStreamPrivate].none()"
+    argtype="NullablePointer[GDataInputStreamPrivate] tag"
+    rvtype="NullablePointer[GDataInputStreamPrivate]"/>
+
+  <typedef name="NullablePointer[GProxyAddressEnumeratorPrivate]"
+    ponytypein="NullablePointer[GProxyAddressEnumeratorPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GProxyAddressEnumeratorPrivate]"
+    structtype="NullablePointer[GProxyAddressEnumeratorPrivate]"
+    structdef="NullablePointer[GProxyAddressEnumeratorPrivate].none()"
+    argtype="NullablePointer[GProxyAddressEnumeratorPrivate] tag"
+    rvtype="NullablePointer[GProxyAddressEnumeratorPrivate]"/>
+
+  <typedef name="GSocketConnection"
+    ponytypein="GSocketConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketConnection"
+    structtype="GSocketConnection"
+    structdef="GSocketConnection"
+    argtype="GSocketConnection tag"
+    rvtype="GSocketConnection"/>
+
+  <typedef name="GBufferedInputStreamClass"
+    ponytypein="GBufferedInputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedInputStreamClass"
+    structtype="GBufferedInputStreamClass"
+    structdef="GBufferedInputStreamClass"
+    argtype="GBufferedInputStreamClass tag"
+    rvtype="GBufferedInputStreamClass"/>
+
+  <typedef name="NullablePointer[GTcpWrapperConnectionPrivate]"
+    ponytypein="NullablePointer[GTcpWrapperConnectionPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GTcpWrapperConnectionPrivate]"
+    structtype="NullablePointer[GTcpWrapperConnectionPrivate]"
+    structdef="NullablePointer[GTcpWrapperConnectionPrivate].none()"
+    argtype="NullablePointer[GTcpWrapperConnectionPrivate] tag"
+    rvtype="NullablePointer[GTcpWrapperConnectionPrivate]"/>
+
+  <typedef name="GSocketService"
+    ponytypein="GSocketService tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketService"
+    structtype="GSocketService"
+    structdef="GSocketService"
+    argtype="GSocketService tag"
+    rvtype="GSocketService"/>
+
+  <typedef name="NullablePointer[GFileIOStreamPrivate]"
+    ponytypein="NullablePointer[GFileIOStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GFileIOStreamPrivate]"
+    structtype="NullablePointer[GFileIOStreamPrivate]"
+    structdef="NullablePointer[GFileIOStreamPrivate].none()"
+    argtype="NullablePointer[GFileIOStreamPrivate] tag"
+    rvtype="NullablePointer[GFileIOStreamPrivate]"/>
+
+  <typedef name="NullablePointer[GOutputStream]"
+    ponytypein="NullablePointer[GOutputStream] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GOutputStream]"
+    structtype="NullablePointer[GOutputStream]"
+    structdef="NullablePointer[GOutputStream].none()"
+    argtype="NullablePointer[GOutputStream] tag"
+    rvtype="NullablePointer[GOutputStream]"/>
+
+  <typedef name="NullablePointer[GAppLaunchContextPrivate]"
+    ponytypein="NullablePointer[GAppLaunchContextPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GAppLaunchContextPrivate]"
+    structtype="NullablePointer[GAppLaunchContextPrivate]"
+    structdef="NullablePointer[GAppLaunchContextPrivate].none()"
+    argtype="NullablePointer[GAppLaunchContextPrivate] tag"
+    rvtype="NullablePointer[GAppLaunchContextPrivate]"/>
+
+  <typedef name="NullablePointer[GTlsPasswordPrivate]"
+    ponytypein="NullablePointer[GTlsPasswordPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GTlsPasswordPrivate]"
+    structtype="NullablePointer[GTlsPasswordPrivate]"
+    structdef="NullablePointer[GTlsPasswordPrivate].none()"
+    argtype="NullablePointer[GTlsPasswordPrivate] tag"
+    rvtype="NullablePointer[GTlsPasswordPrivate]"/>
+
+  <typedef name="GSocketConnectionClass"
+    ponytypein="GSocketConnectionClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketConnectionClass"
+    structtype="GSocketConnectionClass"
+    structdef="GSocketConnectionClass"
+    argtype="GSocketConnectionClass tag"
+    rvtype="GSocketConnectionClass"/>
+
+  <typedef name="NullablePointer[GMemoryOutputStreamPrivate]"
+    ponytypein="NullablePointer[GMemoryOutputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GMemoryOutputStreamPrivate]"
+    structtype="NullablePointer[GMemoryOutputStreamPrivate]"
+    structdef="NullablePointer[GMemoryOutputStreamPrivate].none()"
+    argtype="NullablePointer[GMemoryOutputStreamPrivate] tag"
+    rvtype="NullablePointer[GMemoryOutputStreamPrivate]"/>
+
+  <typedef name="NullablePointer[GInputStream]"
+    ponytypein="NullablePointer[GInputStream] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GInputStream]"
+    structtype="NullablePointer[GInputStream]"
+    structdef="NullablePointer[GInputStream].none()"
+    argtype="NullablePointer[GInputStream] tag"
+    rvtype="NullablePointer[GInputStream]"/>
+
+  <typedef name="GOutputStream"
+    ponytypein="GOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputStream"
+    structtype="GOutputStream"
+    structdef="GOutputStream"
+    argtype="GOutputStream tag"
+    rvtype="GOutputStream"/>
+
+  <typedef name="NullablePointer[GResolverPrivate]"
+    ponytypein="NullablePointer[GResolverPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GResolverPrivate]"
+    structtype="NullablePointer[GResolverPrivate]"
+    structdef="NullablePointer[GResolverPrivate].none()"
+    argtype="NullablePointer[GResolverPrivate] tag"
+    rvtype="NullablePointer[GResolverPrivate]"/>
+
+  <typedef name="U32"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="NullablePointer[GSocketConnectionPrivate]"
+    ponytypein="NullablePointer[GSocketConnectionPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSocketConnectionPrivate]"
+    structtype="NullablePointer[GSocketConnectionPrivate]"
+    structdef="NullablePointer[GSocketConnectionPrivate].none()"
+    argtype="NullablePointer[GSocketConnectionPrivate] tag"
+    rvtype="NullablePointer[GSocketConnectionPrivate]"/>
+
+  <typedef name="NullablePointer[GDBusObjectProxyPrivate]"
+    ponytypein="NullablePointer[GDBusObjectProxyPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDBusObjectProxyPrivate]"
+    structtype="NullablePointer[GDBusObjectProxyPrivate]"
+    structdef="NullablePointer[GDBusObjectProxyPrivate].none()"
+    argtype="NullablePointer[GDBusObjectProxyPrivate] tag"
+    rvtype="NullablePointer[GDBusObjectProxyPrivate]"/>
+
+  <typedef name="NullablePointer[GMenuAttributeIterPrivate]"
+    ponytypein="NullablePointer[GMenuAttributeIterPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GMenuAttributeIterPrivate]"
+    structtype="NullablePointer[GMenuAttributeIterPrivate]"
+    structdef="NullablePointer[GMenuAttributeIterPrivate].none()"
+    argtype="NullablePointer[GMenuAttributeIterPrivate] tag"
+    rvtype="NullablePointer[GMenuAttributeIterPrivate]"/>
+
+  <typedef name="GTypeInterface"
+    ponytypein="GTypeInterface tag"
+    ponytypeinconv=""
+    ponytypeout="GTypeInterface"
+    structtype="GTypeInterface"
+    structdef="GTypeInterface"
+    argtype="GTypeInterface tag"
+    rvtype="GTypeInterface"/>
+
+  <typedef name="GVolumeMonitor"
+    ponytypein="GVolumeMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GVolumeMonitor"
+    structtype="GVolumeMonitor"
+    structdef="GVolumeMonitor"
+    argtype="GVolumeMonitor tag"
+    rvtype="GVolumeMonitor"/>
+
+  <typedef name="NullablePointer[GFileEnumeratorPrivate]"
+    ponytypein="NullablePointer[GFileEnumeratorPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GFileEnumeratorPrivate]"
+    structtype="NullablePointer[GFileEnumeratorPrivate]"
+    structdef="NullablePointer[GFileEnumeratorPrivate].none()"
+    argtype="NullablePointer[GFileEnumeratorPrivate] tag"
+    rvtype="NullablePointer[GFileEnumeratorPrivate]"/>
+
+  <typedef name="NullablePointer[GThreadedSocketServicePrivate]"
+    ponytypein="NullablePointer[GThreadedSocketServicePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GThreadedSocketServicePrivate]"
+    structtype="NullablePointer[GThreadedSocketServicePrivate]"
+    structdef="NullablePointer[GThreadedSocketServicePrivate].none()"
+    argtype="NullablePointer[GThreadedSocketServicePrivate] tag"
+    rvtype="NullablePointer[GThreadedSocketServicePrivate]"/>
+
+  <typedef name="GObject"
+    ponytypein="GObject tag"
+    ponytypeinconv=""
+    ponytypeout="GObject"
+    structtype="GObject"
+    structdef="GObject"
+    argtype="GObject tag"
+    rvtype="GObject"/>
+
+  <typedef name="NullablePointer[GOutputStreamPrivate]"
+    ponytypein="NullablePointer[GOutputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GOutputStreamPrivate]"
+    structtype="NullablePointer[GOutputStreamPrivate]"
+    structdef="NullablePointer[GOutputStreamPrivate].none()"
+    argtype="NullablePointer[GOutputStreamPrivate] tag"
+    rvtype="NullablePointer[GOutputStreamPrivate]"/>
+
+  <typedef name="GSocketServiceClass"
+    ponytypein="GSocketServiceClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketServiceClass"
+    structtype="GSocketServiceClass"
+    structdef="GSocketServiceClass"
+    argtype="GSocketServiceClass tag"
+    rvtype="GSocketServiceClass"/>
+
+  <typedef name="NullablePointer[GMenuModelPrivate]"
+    ponytypein="NullablePointer[GMenuModelPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GMenuModelPrivate]"
+    structtype="NullablePointer[GMenuModelPrivate]"
+    structdef="NullablePointer[GMenuModelPrivate].none()"
+    argtype="NullablePointer[GMenuModelPrivate] tag"
+    rvtype="NullablePointer[GMenuModelPrivate]"/>
+
+  <typedef name="NullablePointer[GEmblemedIconPrivate]"
+    ponytypein="NullablePointer[GEmblemedIconPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GEmblemedIconPrivate]"
+    structtype="NullablePointer[GEmblemedIconPrivate]"
+    structdef="NullablePointer[GEmblemedIconPrivate].none()"
+    argtype="NullablePointer[GEmblemedIconPrivate] tag"
+    rvtype="NullablePointer[GEmblemedIconPrivate]"/>
+
+  <typedef name="NullablePointer[GBufferedOutputStreamPrivate]"
+    ponytypein="NullablePointer[GBufferedOutputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GBufferedOutputStreamPrivate]"
+    structtype="NullablePointer[GBufferedOutputStreamPrivate]"
+    structdef="NullablePointer[GBufferedOutputStreamPrivate].none()"
+    argtype="NullablePointer[GBufferedOutputStreamPrivate] tag"
+    rvtype="NullablePointer[GBufferedOutputStreamPrivate]"/>
+
+  <typedef name="Array[NullablePointer[GDBusSignalInfo]]"
+    ponytypein="Array[NullablePointer[GDBusSignalInfo]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GDBusSignalInfo]]"
+    structtype="Array[NullablePointer[GDBusSignalInfo]]"
+    structdef="Array[NullablePointer[GDBusSignalInfo]]"
+    argtype="Array[NullablePointer[GDBusSignalInfo]] tag"
+    rvtype="Array[NullablePointer[GDBusSignalInfo]]"/>
+
+  <typedef name="GTcpConnection"
+    ponytypein="GTcpConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpConnection"
+    structtype="GTcpConnection"
+    structdef="GTcpConnection"
+    argtype="GTcpConnection tag"
+    rvtype="GTcpConnection"/>
+
+  <typedef name="NullablePointer[GConverterInputStreamPrivate]"
+    ponytypein="NullablePointer[GConverterInputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GConverterInputStreamPrivate]"
+    structtype="NullablePointer[GConverterInputStreamPrivate]"
+    structdef="NullablePointer[GConverterInputStreamPrivate].none()"
+    argtype="NullablePointer[GConverterInputStreamPrivate] tag"
+    rvtype="NullablePointer[GConverterInputStreamPrivate]"/>
+
+  <typedef name="GOutputStreamClass"
+    ponytypein="GOutputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputStreamClass"
+    structtype="GOutputStreamClass"
+    structdef="GOutputStreamClass"
+    argtype="GOutputStreamClass tag"
+    rvtype="GOutputStreamClass"/>
+
+  <typedef name="NullablePointer[GDBusProxyPrivate]"
+    ponytypein="NullablePointer[GDBusProxyPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDBusProxyPrivate]"
+    structtype="NullablePointer[GDBusProxyPrivate]"
+    structdef="NullablePointer[GDBusProxyPrivate].none()"
+    argtype="NullablePointer[GDBusProxyPrivate] tag"
+    rvtype="NullablePointer[GDBusProxyPrivate]"/>
+
+  <typedef name="Array[NullablePointer[GDBusNodeInfo]]"
+    ponytypein="Array[NullablePointer[GDBusNodeInfo]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GDBusNodeInfo]]"
+    structtype="Array[NullablePointer[GDBusNodeInfo]]"
+    structdef="Array[NullablePointer[GDBusNodeInfo]]"
+    argtype="Array[NullablePointer[GDBusNodeInfo]] tag"
+    rvtype="Array[NullablePointer[GDBusNodeInfo]]"/>
+
+  <typedef name="NullablePointer[GTcpConnectionPrivate]"
+    ponytypein="NullablePointer[GTcpConnectionPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GTcpConnectionPrivate]"
+    structtype="NullablePointer[GTcpConnectionPrivate]"
+    structdef="NullablePointer[GTcpConnectionPrivate].none()"
+    argtype="NullablePointer[GTcpConnectionPrivate] tag"
+    rvtype="NullablePointer[GTcpConnectionPrivate]"/>
+
+  <typedef name="NullablePointer[GDBusObjectManagerServerPrivate]"
+    ponytypein="NullablePointer[GDBusObjectManagerServerPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDBusObjectManagerServerPrivate]"
+    structtype="NullablePointer[GDBusObjectManagerServerPrivate]"
+    structdef="NullablePointer[GDBusObjectManagerServerPrivate].none()"
+    argtype="NullablePointer[GDBusObjectManagerServerPrivate] tag"
+    rvtype="NullablePointer[GDBusObjectManagerServerPrivate]"/>
+
+  <typedef name="GBufferedInputStream"
+    ponytypein="GBufferedInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedInputStream"
+    structtype="GBufferedInputStream"
+    structdef="GBufferedInputStream"
+    argtype="GBufferedInputStream tag"
+    rvtype="GBufferedInputStream"/>
+
+  <typedef name="NullablePointer[GProxyAddressPrivate]"
+    ponytypein="NullablePointer[GProxyAddressPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GProxyAddressPrivate]"
+    structtype="NullablePointer[GProxyAddressPrivate]"
+    structdef="NullablePointer[GProxyAddressPrivate].none()"
+    argtype="NullablePointer[GProxyAddressPrivate] tag"
+    rvtype="NullablePointer[GProxyAddressPrivate]"/>
+
+  <typedef name="Pointer[U8]"
+    ponytypein="Pointer[U8] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U8]"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]"/>
+
+  <typedef name="NullablePointer[GCancellablePrivate]"
+    ponytypein="NullablePointer[GCancellablePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GCancellablePrivate]"
+    structtype="NullablePointer[GCancellablePrivate]"
+    structdef="NullablePointer[GCancellablePrivate].none()"
+    argtype="NullablePointer[GCancellablePrivate] tag"
+    rvtype="NullablePointer[GCancellablePrivate]"/>
+
+  <typedef name="GSocketAddressClass"
+    ponytypein="GSocketAddressClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddressClass"
+    structtype="GSocketAddressClass"
+    structdef="GSocketAddressClass"
+    argtype="GSocketAddressClass tag"
+    rvtype="GSocketAddressClass"/>
+
+  <typedef name="NullablePointer[GResource]"
+    ponytypein="NullablePointer[GResource] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GResource]"
+    structtype="NullablePointer[GResource]"
+    structdef="NullablePointer[GResource].none()"
+    argtype="NullablePointer[GResource] tag"
+    rvtype="NullablePointer[GResource]"/>
+
+  <typedef name="NullablePointer[GMenuLinkIterPrivate]"
+    ponytypein="NullablePointer[GMenuLinkIterPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GMenuLinkIterPrivate]"
+    structtype="NullablePointer[GMenuLinkIterPrivate]"
+    structdef="NullablePointer[GMenuLinkIterPrivate].none()"
+    argtype="NullablePointer[GMenuLinkIterPrivate] tag"
+    rvtype="NullablePointer[GMenuLinkIterPrivate]"/>
+
+  <typedef name="Array[NullablePointer[GDBusInterfaceInfo]]"
+    ponytypein="Array[NullablePointer[GDBusInterfaceInfo]] tag"
+    ponytypeinconv=""
+    ponytypeout="Array[NullablePointer[GDBusInterfaceInfo]]"
+    structtype="Array[NullablePointer[GDBusInterfaceInfo]]"
+    structdef="Array[NullablePointer[GDBusInterfaceInfo]]"
+    argtype="Array[NullablePointer[GDBusInterfaceInfo]] tag"
+    rvtype="Array[NullablePointer[GDBusInterfaceInfo]]"/>
+
+  <typedef name="NullablePointer[GTlsConnectionPrivate]"
+    ponytypein="NullablePointer[GTlsConnectionPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GTlsConnectionPrivate]"
+    structtype="NullablePointer[GTlsConnectionPrivate]"
+    structdef="NullablePointer[GTlsConnectionPrivate].none()"
+    argtype="NullablePointer[GTlsConnectionPrivate] tag"
+    rvtype="NullablePointer[GTlsConnectionPrivate]"/>
+
+  <typedef name="U64"
+    ponytypein="U64"
+    ponytypeinconv=""
+    ponytypeout="U64"
+    structtype="U64"
+    structdef="U64(0)"
+    argtype="U64"
+    rvtype="U64"/>
+
+  <typedef name="NullablePointer[GNetworkServicePrivate]"
+    ponytypein="NullablePointer[GNetworkServicePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GNetworkServicePrivate]"
+    structtype="NullablePointer[GNetworkServicePrivate]"
+    structdef="NullablePointer[GNetworkServicePrivate].none()"
+    argtype="NullablePointer[GNetworkServicePrivate] tag"
+    rvtype="NullablePointer[GNetworkServicePrivate]"/>
+
+  <typedef name="NullablePointer[GDBusInterfaceSkeletonPrivate]"
+    ponytypein="NullablePointer[GDBusInterfaceSkeletonPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GDBusInterfaceSkeletonPrivate]"
+    structtype="NullablePointer[GDBusInterfaceSkeletonPrivate]"
+    structdef="NullablePointer[GDBusInterfaceSkeletonPrivate].none()"
+    argtype="NullablePointer[GDBusInterfaceSkeletonPrivate] tag"
+    rvtype="NullablePointer[GDBusInterfaceSkeletonPrivate]"/>
+
+  <typedef name="NullablePointer[GBufferedInputStreamPrivate]"
+    ponytypein="NullablePointer[GBufferedInputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GBufferedInputStreamPrivate]"
+    structtype="NullablePointer[GBufferedInputStreamPrivate]"
+    structdef="NullablePointer[GBufferedInputStreamPrivate].none()"
+    argtype="NullablePointer[GBufferedInputStreamPrivate] tag"
+    rvtype="NullablePointer[GBufferedInputStreamPrivate]"/>
+
+  <typedef name="GInputStream"
+    ponytypein="GInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GInputStream"
+    structtype="GInputStream"
+    structdef="GInputStream"
+    argtype="GInputStream tag"
+    rvtype="GInputStream"/>
+
+  <typedef name="GInputStreamClass"
+    ponytypein="GInputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GInputStreamClass"
+    structtype="GInputStreamClass"
+    structdef="GInputStreamClass"
+    argtype="GInputStreamClass tag"
+    rvtype="GInputStreamClass"/>
+
+  <typedef name="NullablePointer[GTlsInteractionPrivate]"
+    ponytypein="NullablePointer[GTlsInteractionPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GTlsInteractionPrivate]"
+    structtype="NullablePointer[GTlsInteractionPrivate]"
+    structdef="NullablePointer[GTlsInteractionPrivate].none()"
+    argtype="NullablePointer[GTlsInteractionPrivate] tag"
+    rvtype="NullablePointer[GTlsInteractionPrivate]"/>
+
+  <typedef name="NullablePointer[GMemoryInputStreamPrivate]"
+    ponytypein="NullablePointer[GMemoryInputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GMemoryInputStreamPrivate]"
+    structtype="NullablePointer[GMemoryInputStreamPrivate]"
+    structdef="NullablePointer[GMemoryInputStreamPrivate].none()"
+    argtype="NullablePointer[GMemoryInputStreamPrivate] tag"
+    rvtype="NullablePointer[GMemoryInputStreamPrivate]"/>
+
+  <typedef name="NullablePointer[GApplicationCommandLinePrivate]"
+    ponytypein="NullablePointer[GApplicationCommandLinePrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GApplicationCommandLinePrivate]"
+    structtype="NullablePointer[GApplicationCommandLinePrivate]"
+    structdef="NullablePointer[GApplicationCommandLinePrivate].none()"
+    argtype="NullablePointer[GApplicationCommandLinePrivate] tag"
+    rvtype="NullablePointer[GApplicationCommandLinePrivate]"/>
+
+  <typedef name="NullablePointer[GString]"
+    ponytypein="NullablePointer[GString] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GString]"
+    structtype="NullablePointer[GString]"
+    structdef="NullablePointer[GString].none()"
+    argtype="NullablePointer[GString] tag"
+    rvtype="NullablePointer[GString]"/>
+
+  <typedef name="NullablePointer[GConverterOutputStreamPrivate]"
+    ponytypein="NullablePointer[GConverterOutputStreamPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GConverterOutputStreamPrivate]"
+    structtype="NullablePointer[GConverterOutputStreamPrivate]"
+    structdef="NullablePointer[GConverterOutputStreamPrivate].none()"
+    argtype="NullablePointer[GConverterOutputStreamPrivate] tag"
+    rvtype="NullablePointer[GConverterOutputStreamPrivate]"/>
+
+  <typedef name="GIOStreamClass"
+    ponytypein="GIOStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GIOStreamClass"
+    structtype="GIOStreamClass"
+    structdef="GIOStreamClass"
+    argtype="GIOStreamClass tag"
+    rvtype="GIOStreamClass"/>
+
+  <typedef name="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"
+    ponytypein="Pointer[Pointer[NullablePointer[GSocketControlMessage]]] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
+    structtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
+    structdef="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
+    argtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]] tag"
+    rvtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"/>
+
+  <typedef name="NullablePointer[GInetAddressMaskPrivate]"
+    ponytypein="NullablePointer[GInetAddressMaskPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GInetAddressMaskPrivate]"
+    structtype="NullablePointer[GInetAddressMaskPrivate]"
+    structdef="NullablePointer[GInetAddressMaskPrivate].none()"
+    argtype="NullablePointer[GInetAddressMaskPrivate] tag"
+    rvtype="NullablePointer[GInetAddressMaskPrivate]"/>
+
+  <typedef name="NullablePointer[GMountOperationPrivate]"
+    ponytypein="NullablePointer[GMountOperationPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GMountOperationPrivate]"
+    structtype="NullablePointer[GMountOperationPrivate]"
+    structdef="NullablePointer[GMountOperationPrivate].none()"
+    argtype="NullablePointer[GMountOperationPrivate] tag"
+    rvtype="NullablePointer[GMountOperationPrivate]"/>
+
+  <typedef name="NullablePointer[GSocketClientPrivate]"
+    ponytypein="NullablePointer[GSocketClientPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSocketClientPrivate]"
+    structtype="NullablePointer[GSocketClientPrivate]"
+    structdef="NullablePointer[GSocketClientPrivate].none()"
+    argtype="NullablePointer[GSocketClientPrivate] tag"
+    rvtype="NullablePointer[GSocketClientPrivate]"/>
+</typedefs>
+

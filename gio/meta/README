@@ -1,0 +1,1 @@
+grep '<struct ' structs.xml | sed -re 's/.*name="([^ ]+)" id="(_[0-9]+)" .*/   sh -x mkstruct.sh \2 ..\/..\/test\/Gio\/\1.pony/' >> Makefile
