@@ -1335,7 +1335,7 @@
 
   <struct name="GtkBindingArg" id="_13510" size="128" align="64" fid="f489" lineno="114">
     <field name="arg_type" id="_24918" type="U64" fieldid="_3236" offset="0" fid="f489" line="116"/>
-    <field name="d" id="_24920" type="None" fieldid="_28493" offset="64" fid="f489" line="121"/>
+    <field name="d" id="_24920" type="U64" fieldid="_28493" offset="64" fid="f489" line="121"/>
   </struct>
 
   <struct name="GtkBuildable" id="_13557" size="" align="" fid="f490" lineno="37">
@@ -2276,7 +2276,7 @@
   </struct>
 
   <struct name="GtkIMContextSimple" id="_14882" size="256" align="64" fid="f560" lineno="49">
-    <field name="object" id="_25636" type="GtkIMContext" fieldid="_12974" offset="0" fid="f560" line="51"/>
+    <field name="gobject" id="_25636" type="GtkIMContext" fieldid="_12974" offset="0" fid="f560" line="51"/>
     <field name="priv" id="_25637" type="NullablePointer[GtkIMContextSimplePrivate]" fieldid="_28617" offset="192" fid="f560" line="54"/>
   </struct>
 
@@ -2289,7 +2289,7 @@
   </struct>
 
   <struct name="GtkIMMulticontext" id="_14892" size="256" align="64" fid="f561" lineno="42">
-    <field name="object" id="_25643" type="GtkIMContext" fieldid="_12974" offset="0" fid="f561" line="44"/>
+    <field name="gobject" id="_25643" type="GtkIMContext" fieldid="_12974" offset="0" fid="f561" line="44"/>
     <field name="priv" id="_25644" type="NullablePointer[GtkIMMulticontextPrivate]" fieldid="_28618" offset="192" fid="f561" line="47"/>
   </struct>
 
@@ -2750,7 +2750,7 @@
 
   <struct name="GtkPageRange" id="_15519" size="64" align="32" fid="f592" lineno="48">
     <field name="start" id="_25964" type="I32" fieldid="_141" offset="0" fid="f592" line="50"/>
-    <field name="end" id="_25965" type="I32" fieldid="_141" offset="32" fid="f592" line="51"/>
+    <field name="gend" id="_25965" type="I32" fieldid="_141" offset="32" fid="f592" line="51"/>
   </struct>
 
   <struct name="GtkPrintOperationPreview" id="_15598" size="" align="" fid="f593" lineno="36">
@@ -3539,6 +3539,23 @@
     <field name="_gtk_reserved2" id="_26577" type="Pointer[None]" fieldid="_19233" offset="9088" fid="f645" line="60"/>
     <field name="_gtk_reserved3" id="_26578" type="Pointer[None]" fieldid="_19233" offset="9152" fid="f645" line="61"/>
     <field name="_gtk_reserved4" id="_26579" type="Pointer[None]" fieldid="_19233" offset="9216" fid="f645" line="62"/>
+  </struct>
+
+  <struct name="GtkMisc" id="_12159" size="320" align="64" fid="f443" lineno="50">
+    <field name="widget" id="_24202" type="GtkWidget" fieldid="_11069" offset="0" fid="f443" line="52"/>
+    <field name="priv" id="_24203" type="NullablePointer[GtkMiscPrivate]" fieldid="_28314" offset="256" fid="f443" line="55"/>
+  </struct>
+
+  <struct name="GtkMiscPrivate" id="_12161" size="" align="" fid="f443" lineno="47">
+
+  </struct>
+
+  <struct name="GtkMiscClass" id="_12163" size="6848" align="64" fid="f443" lineno="58">
+    <field name="parent_class" id="_24206" type="GtkWidgetClass" fieldid="_11539" offset="0" fid="f443" line="60"/>
+    <field name="_gtk_reserved1" id="_24207" type="Pointer[None]" fieldid="_19233" offset="6592" fid="f443" line="63"/>
+    <field name="_gtk_reserved2" id="_24208" type="Pointer[None]" fieldid="_19233" offset="6656" fid="f443" line="64"/>
+    <field name="_gtk_reserved3" id="_24209" type="Pointer[None]" fieldid="_19233" offset="6720" fid="f443" line="65"/>
+    <field name="_gtk_reserved4" id="_24210" type="Pointer[None]" fieldid="_19233" offset="6784" fid="f443" line="66"/>
   </struct>
 </structs>
 </castxml2pony>

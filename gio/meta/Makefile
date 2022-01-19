@@ -162,9 +162,9 @@ all:
 #	sh -x mkstruct.sh _4214 ../../test/Gio/GMemoryOutputStream.pony
 #	sh -x mkstruct.sh _5933 ../../test/Gio/GMemoryOutputStreamClass.pony
 #	sh -x mkstruct.sh _5935 ../../test/Gio/GMemoryOutputStreamPrivate.pony
-#	sh -x mkstruct.sh _4218 ../../test/Gio/GMountOperation.pony
-#	sh -x mkstruct.sh _6052 ../../test/Gio/GMountOperationClass.pony
-#	sh -x mkstruct.sh _6054 ../../test/Gio/GMountOperationPrivate.pony
+	sh -x mkstruct.sh _4218 ../../test/Gio/GMountOperation.pony
+	sh -x mkstruct.sh _6052 ../../test/Gio/GMountOperationClass.pony
+	sh -x mkstruct.sh _6054 ../../test/Gio/GMountOperationPrivate.pony
 #	sh -x mkstruct.sh _4220 ../../test/Gio/GNetworkAddress.pony
 #	sh -x mkstruct.sh _6098 ../../test/Gio/GNetworkAddressClass.pony
 #	sh -x mkstruct.sh _6100 ../../test/Gio/GNetworkAddressPrivate.pony

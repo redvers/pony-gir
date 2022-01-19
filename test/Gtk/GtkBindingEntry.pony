@@ -1,0 +1,37 @@
+use "../Glib"
+use "../GObject"
+use "../Cairo"
+use "../Atk"
+use "../Pango"
+use "../Gdk"
+use "../Gio"
+use "../Harfbuzz"
+
+
+/*
+  Source: headers/gtk-3.0/gtk/gtkbindings.h:91
+  Original Name: _GtkBindingEntry
+  Struct Size (bits):  384
+  Struct Align (bits): 64
+
+  Fields (Offset in bits):
+     000000: [FundamentalType(unsigned int) size=32]: keyval  
+     000032: [Enumeration size=32,fid: f348]: modifiers  
+     000064: [PointerType size=64]->[Struct size=512,fid: f489]: binding_set  
+     000128: [FundamentalType(unsigned int) size=32]: destroyed  
+     000129: [FundamentalType(unsigned int) size=32]: in_emission  
+     000130: [FundamentalType(unsigned int) size=32]: marks_unbound  
+     000192: [PointerType size=64]->[Struct size=384,fid: f489]: set_next  
+     000256: [PointerType size=64]->[Struct size=384,fid: f489]: hash_next  
+     000320: [PointerType size=64]->[Struct size=256,fid: f489]: signals  
+*/
+struct GtkBindingEntry
+  var keyval: U32 = U32(0)
+  var modifiers: I32 = I32(0)
+  var binding_set: NullablePointer[GtkBindingSet] = NullablePointer[GtkBindingSet].none()
+  var destroyed: U32 = U32(0)
+  var in_emission: U32 = U32(0)
+  var marks_unbound: U32 = U32(0)
+  var set_next: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none()
+  var hash_next: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none()
+  var signals: NullablePointer[GtkBindingSignal] = NullablePointer[GtkBindingSignal].none()

@@ -159,6 +159,16 @@
     argtype="NullablePointer[GtkCellRendererAccelPrivate] tag"
     rvtype="NullablePointer[GtkCellRendererAccelPrivate]"/>
 
+  <typedef name="NullablePointer[GtkMiscPrivate]"
+    embed="var"
+    ponytypein="NullablePointer[GtkMiscPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GtkMiscPrivate]"
+    structtype="NullablePointer[GtkMiscPrivate]"
+    structdef="NullablePointer[GtkMiscPrivate].none()"
+    argtype="NullablePointer[GtkMiscPrivate] tag"
+    rvtype="NullablePointer[GtkMiscPrivate]"/>
+
   <typedef name="GtkLabel"
     embed="embed"
     ponytypein="GtkLabel tag"

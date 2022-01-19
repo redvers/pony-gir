@@ -1,0 +1,53 @@
+use "../Glib"
+use "../GObject"
+use "../Cairo"
+use "../Atk"
+use "../Pango"
+use "../Gdk"
+use "../Gio"
+use "../Harfbuzz"
+
+
+/*
+  Source: headers/gtk-3.0/gtk/gtkcellrenderer.h:109
+  Original Name: _GtkCellRendererClass
+  Struct Size (bits):  2112
+  Struct Align (bits): 64
+
+  Fields (Offset in bits):
+     000000: [Struct size=1088,fid: f139]: parent_class  
+     001088: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_request_mode  
+     001152: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_preferred_width  
+     001216: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_preferred_height_for_width  
+     001280: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_preferred_height  
+     001344: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_preferred_width_for_height  
+     001408: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_aligned_area  
+     001472: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_size  
+     001536: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: render  
+     001600: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: activate  
+     001664: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: start_editing  
+     001728: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: editing_canceled  
+     001792: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: editing_started  
+     001856: [PointerType size=64]->[Struct size=,fid: f458]: priv  
+     001920: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved2  
+     001984: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved3  
+     002048: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
+*/
+struct GtkCellRendererClass
+  embed parent_class: GObjectClass = GObjectClass
+  var get_request_mode: Pointer[None] = Pointer[None]
+  var get_preferred_width: Pointer[None] = Pointer[None]
+  var get_preferred_height_for_width: Pointer[None] = Pointer[None]
+  var get_preferred_height: Pointer[None] = Pointer[None]
+  var get_preferred_width_for_height: Pointer[None] = Pointer[None]
+  var get_aligned_area: Pointer[None] = Pointer[None]
+  var get_size: Pointer[None] = Pointer[None]
+  var render: Pointer[None] = Pointer[None]
+  var activate: Pointer[None] = Pointer[None]
+  var start_editing: Pointer[None] = Pointer[None]
+  var editing_canceled: Pointer[None] = Pointer[None]
+  var editing_started: Pointer[None] = Pointer[None]
+  var priv: NullablePointer[GtkCellRendererClassPrivate] = NullablePointer[GtkCellRendererClassPrivate].none()
+  var _gtk_reserved2: Pointer[None] = Pointer[None]
+  var _gtk_reserved3: Pointer[None] = Pointer[None]
+  var _gtk_reserved4: Pointer[None] = Pointer[None]
