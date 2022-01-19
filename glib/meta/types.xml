@@ -379,13 +379,13 @@
     rvtype="Pointer[I64]"/>
 
   <typedef name="NullablePointer[Pointer[None]]"
-    ponytypein="NullablePointer[Pointer[None]] tag"
+    ponytypein="Pointer[Pointer[None]] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[Pointer[None]]"
-    structtype="NullablePointer[Pointer[None]]"
-    structdef="NullablePointer[Pointer[None]].none()"
-    argtype="NullablePointer[Pointer[None]] tag"
-    rvtype="NullablePointer[Pointer[None]]"/>
+    ponytypeout="Pointer[Pointer[None]]"
+    structtype="Pointer[Pointer[None]]"
+    structdef="Pointer[Pointer[None]]"
+    argtype="Pointer[Pointer[None]] tag"
+    rvtype="Pointer[Pointer[None]]"/>
 
   <typedef name="U64"
     ponytypein="U64"
