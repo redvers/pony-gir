@@ -1,5 +1,6 @@
 <typedefs>
   <typedef name="String"
+    embed="var"
     ponytypein="String"
     ponytypeinconv=".cstring()"
     ponytypeout="String"
@@ -19,6 +20,7 @@
   </typedef>
 
   <typedef name="Array[String]"
+    embed="var"
     ponytypein="Array[String]"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
@@ -28,6 +30,7 @@
     rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="Pointer[None]"
+    embed="var"
     ponytypein="Pointer[None] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[None]"
@@ -37,6 +40,7 @@
     rvtype="Pointer[None]"/>
 
   <typedef name="NullablePointer[GSourcePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSourcePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSourcePrivate]"
@@ -46,6 +50,7 @@
     rvtype="NullablePointer[GSourcePrivate]"/>
 
   <typedef name="I32"
+    embed="var"
     ponytypein="I32"
     ponytypeinconv=""
     ponytypeout="I32"
@@ -55,6 +60,7 @@
     rvtype="I32"/>
 
   <typedef name="NullablePointer[GIOFuncs]"
+    embed="var"
     ponytypein="NullablePointer[GIOFuncs] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GIOFuncs]"
@@ -64,6 +70,7 @@
     rvtype="NullablePointer[GIOFuncs]"/>
 
   <typedef name="Pointer[U32]"
+    embed="var"
     ponytypein="Pointer[U32] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U32]"
@@ -73,6 +80,7 @@
     rvtype="Pointer[U32]"/>
 
   <typedef name="U32"
+    embed="var"
     ponytypein="U32"
     ponytypeinconv=""
     ponytypeout="U32"
@@ -82,6 +90,7 @@
     rvtype="U32"/>
 
   <typedef name="NullablePointer[GData]"
+    embed="var"
     ponytypein="NullablePointer[GData] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GData]"
@@ -91,15 +100,17 @@
     rvtype="NullablePointer[GData]"/>
 
   <typedef name="NullablePointer[Pointer[None]]"
-    ponytypein="Pointer[Pointer[None]] tag"
+    embed="var"
+    ponytypein="NullablePointer[Pointer[None]] tag"
     ponytypeinconv=""
-    ponytypeout="Pointer[Pointer[None]]"
-    structtype="Pointer[Pointer[None]]"
-    structdef="Pointer[Pointer[None]]"
-    argtype="Pointer[Pointer[None]] tag"
-    rvtype="Pointer[Pointer[None]]"/>
+    ponytypeout="NullablePointer[Pointer[None]]"
+    structtype="NullablePointer[Pointer[None]]"
+    structdef="NullablePointer[Pointer[None]].none()"
+    argtype="NullablePointer[Pointer[None]] tag"
+    rvtype="NullablePointer[Pointer[None]]"/>
 
   <typedef name="I64"
+    embed="var"
     ponytypein="I64"
     ponytypeinconv=""
     ponytypeout="I64"
@@ -109,6 +120,7 @@
     rvtype="I64"/>
 
   <typedef name="U64"
+    embed="var"
     ponytypein="U64"
     ponytypeinconv=""
     ponytypeout="U64"
@@ -118,6 +130,7 @@
     rvtype="U64"/>
 
   <typedef name="NullablePointer[GList]"
+    embed="var"
     ponytypein="NullablePointer[GList] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GList]"
@@ -127,6 +140,7 @@
     rvtype="NullablePointer[GList]"/>
 
   <typedef name="NullablePointer[GIConv]"
+    embed="var"
     ponytypein="NullablePointer[GIConv] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GIConv]"
@@ -136,6 +150,7 @@
     rvtype="NullablePointer[GIConv]"/>
 
   <typedef name="NullablePointer[GVariantType]"
+    embed="var"
     ponytypein="NullablePointer[GVariantType] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GVariantType]"
@@ -145,6 +160,7 @@
     rvtype="NullablePointer[GVariantType]"/>
 
   <typedef name="U16"
+    embed="var"
     ponytypein="U16"
     ponytypeinconv=""
     ponytypeout="U16"
@@ -154,6 +170,7 @@
     rvtype="U16"/>
 
   <typedef name="NullablePointer[GSourceFuncs]"
+    embed="var"
     ponytypein="NullablePointer[GSourceFuncs] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSourceFuncs]"
@@ -163,6 +180,7 @@
     rvtype="NullablePointer[GSourceFuncs]"/>
 
   <typedef name="NullablePointer[GHook]"
+    embed="var"
     ponytypein="NullablePointer[GHook] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GHook]"
@@ -172,6 +190,7 @@
     rvtype="NullablePointer[GHook]"/>
 
   <typedef name="None"
+    embed="embed"
     ponytypein="None tag"
     ponytypeinconv=""
     ponytypeout="None"
@@ -181,6 +200,7 @@
     rvtype="None"/>
 
   <typedef name="Pointer[Pointer[None]]"
+    embed="var"
     ponytypein="Pointer[Pointer[None]] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[None]]"
@@ -190,6 +210,7 @@
     rvtype="Pointer[Pointer[None]]"/>
 
   <typedef name="NullablePointer[GScannerConfig]"
+    embed="var"
     ponytypein="NullablePointer[GScannerConfig] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GScannerConfig]"
@@ -199,6 +220,7 @@
     rvtype="NullablePointer[GScannerConfig]"/>
 
   <typedef name="Anon"
+    embed="embed"
     ponytypein="Anon tag"
     ponytypeinconv=""
     ponytypeout="Anon"
@@ -208,6 +230,7 @@
     rvtype="Anon"/>
 
   <typedef name="NullablePointer[GNode]"
+    embed="var"
     ponytypein="NullablePointer[GNode] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GNode]"
@@ -217,6 +240,7 @@
     rvtype="NullablePointer[GNode]"/>
 
   <typedef name="NullablePointer[GHashTable]"
+    embed="var"
     ponytypein="NullablePointer[GHashTable] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GHashTable]"
@@ -226,6 +250,7 @@
     rvtype="NullablePointer[GHashTable]"/>
 
   <typedef name="Pointer[U64]"
+    embed="var"
     ponytypein="Pointer[U64] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U64]"
@@ -235,6 +260,7 @@
     rvtype="Pointer[U64]"/>
 
   <typedef name="NullablePointer[GTrashStack]"
+    embed="var"
     ponytypein="NullablePointer[GTrashStack] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTrashStack]"
@@ -244,6 +270,7 @@
     rvtype="NullablePointer[GTrashStack]"/>
 
   <typedef name="NullablePointer[GCond]"
+    embed="var"
     ponytypein="NullablePointer[GCond] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GCond]"
@@ -253,6 +280,7 @@
     rvtype="NullablePointer[GCond]"/>
 
   <typedef name="NullablePointer[GSourceCallbackFuncs]"
+    embed="var"
     ponytypein="NullablePointer[GSourceCallbackFuncs] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSourceCallbackFuncs]"
@@ -261,25 +289,8 @@
     argtype="NullablePointer[GSourceCallbackFuncs] tag"
     rvtype="NullablePointer[GSourceCallbackFuncs]"/>
 
-  <typedef name="NullablePointer[FUNCTIONTYPE]"
-    ponytypein="Pointer[None] tag"
-    ponytypeinconv=""
-    ponytypeout="Pointer[None]"
-    structtype="Pointer[None]"
-    structdef="Pointer[None]"
-    argtype="Pointer[None] tag"
-    rvtype="Pointer[None]"/>
-
-  <typedef name="NullablePointer[GString]"
-    ponytypein="NullablePointer[GString] tag"
-    ponytypeinconv=""
-    ponytypeout="NullablePointer[GString]"
-    structtype="NullablePointer[GString]"
-    structdef="NullablePointer[GString].none()"
-    argtype="NullablePointer[GString] tag"
-    rvtype="NullablePointer[GString]"/>
-
   <typedef name="NullablePointer[GSList]"
+    embed="var"
     ponytypein="NullablePointer[GSList] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSList]"
@@ -288,7 +299,18 @@
     argtype="NullablePointer[GSList] tag"
     rvtype="NullablePointer[GSList]"/>
 
+  <typedef name="NullablePointer[GString]"
+    embed="var"
+    ponytypein="NullablePointer[GString] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GString]"
+    structtype="NullablePointer[GString]"
+    structdef="NullablePointer[GString].none()"
+    argtype="NullablePointer[GString] tag"
+    rvtype="NullablePointer[GString]"/>
+
   <typedef name="NullablePointer[GMainContext]"
+    embed="var"
     ponytypein="NullablePointer[GMainContext] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GMainContext]"
@@ -298,6 +320,7 @@
     rvtype="NullablePointer[GMainContext]"/>
 
   <typedef name="NullablePointer[GSource]"
+    embed="var"
     ponytypein="NullablePointer[GSource] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSource]"
@@ -307,6 +330,7 @@
     rvtype="NullablePointer[GSource]"/>
 
   <typedef name="NullablePointer[GVariant]"
+    embed="var"
     ponytypein="NullablePointer[GVariant] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GVariant]"
@@ -316,6 +340,7 @@
     rvtype="NullablePointer[GVariant]"/>
 
   <typedef name="U8"
+    embed="var"
     ponytypein="U8"
     ponytypeinconv=""
     ponytypeout="U8"
@@ -325,6 +350,7 @@
     rvtype="U8"/>
 
   <typedef name="Pointer[F128]"
+    embed="var"
     ponytypein="Pointer[F128] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[F128]"
@@ -334,6 +360,7 @@
     rvtype="Pointer[F128]"/>
 
   <typedef name="Pointer[U8]"
+    embed="var"
     ponytypein="Pointer[U8] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U8]"
