@@ -1,5 +1,6 @@
 <typedefs>
   <typedef name="String"
+    embed="var"
     ponytypein="String"
     ponytypeinconv=".cstring()"
     ponytypeout="String"
@@ -19,6 +20,7 @@
   </typedef>
 
   <typedef name="Array[String]"
+    embed="var"
     ponytypein="Array[String]"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
@@ -28,6 +30,7 @@
     rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="F64"
+    embed="var"
     ponytypein="F64"
     ponytypeinconv=""
     ponytypeout="F64"
@@ -37,6 +40,7 @@
     rvtype="F64"/>
 
   <typedef name="Pointer[None]"
+    embed="var"
     ponytypein="Pointer[None] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[None]"
@@ -46,6 +50,7 @@
     rvtype="Pointer[None]"/>
 
   <typedef name="I32"
+    embed="var"
     ponytypein="I32"
     ponytypeinconv=""
     ponytypeout="I32"
@@ -55,6 +60,7 @@
     rvtype="I32"/>
 
   <typedef name="NullablePointer[Cairorectangle]"
+    embed="var"
     ponytypein="NullablePointer[Cairorectangle] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Cairorectangle]"
@@ -64,6 +70,7 @@
     rvtype="NullablePointer[Cairorectangle]"/>
 
   <typedef name="U64"
+    embed="var"
     ponytypein="U64"
     ponytypeinconv=""
     ponytypeout="U64"
