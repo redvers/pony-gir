@@ -275,7 +275,7 @@
   </struct>
 
   <struct name="GSourceCallbackFuncs" id="_1282" size="192" align="64" fid="f82" lineno="250">
-    <field name="ref" id="_3806" type="Pointer[None]" fieldid="_3302" offset="0" fid="f82" line="252"/>
+    <field name="gref" id="_3806" type="Pointer[None]" fieldid="_3302" offset="0" fid="f82" line="252"/>
     <field name="unref" id="_3807" type="Pointer[None]" fieldid="_3302" offset="64" fid="f82" line="253"/>
     <field name="get" id="_3808" type="Pointer[None]" fieldid="_4420" offset="128" fid="f82" line="254"/>
   </struct>
@@ -346,7 +346,7 @@
     <field name="end_element" id="_3894" type="Pointer[None]" fieldid="_4439" offset="64" fid="f88" line="154"/>
     <field name="text" id="_3895" type="Pointer[None]" fieldid="_4440" offset="128" fid="f88" line="161"/>
     <field name="passthrough" id="_3896" type="Pointer[None]" fieldid="_4440" offset="192" fid="f88" line="172"/>
-    <field name="error" id="_3897" type="Pointer[None]" fieldid="_4441" offset="256" fid="f88" line="181"/>
+    <field name="gerror" id="_3897" type="Pointer[None]" fieldid="_4441" offset="256" fid="f88" line="181"/>
   </struct>
 
   <struct name="GVariantType" id="_1651" size="" align="" fid="f89" lineno="41">
@@ -362,11 +362,11 @@
   </struct>
 
   <struct name="GVariantBuilder" id="_1776" size="1024" align="64" fid="f90" lineno="298">
-    <field name="u" id="_3915" type="None" fieldid="_4446" offset="0" fid="f90" line="308"/>
+    <field name="u" id="_3915" type="U64" fieldid="_4446" offset="0" fid="f90" line="308"/>
   </struct>
 
   <struct name="GVariantDict" id="_1803" size="1024" align="64" fid="f90" lineno="440">
-    <field name="u" id="_3920" type="None" fieldid="_4450" offset="0" fid="f90" line="450"/>
+    <field name="u" id="_3920" type="U64" fieldid="_4450" offset="0" fid="f90" line="450"/>
   </struct>
 
   <struct name="Anon" id="_4443" size="1024" align="64" fid="f90" lineno="302">
@@ -435,11 +435,11 @@
     <field name="qdata" id="_3980" type="NullablePointer[GData]" fieldid="_4399" offset="192" fid="f102" line="182"/>
     <field name="config" id="_3981" type="NullablePointer[GScannerConfig]" fieldid="_4458" offset="256" fid="f102" line="185"/>
     <field name="token" id="_3982" type="I32" fieldid="_2070" offset="320" fid="f102" line="188"/>
-    <field name="value" id="_3983" type="None" fieldid="_2065" offset="384" fid="f102" line="189"/>
+    <field name="value" id="_3983" type="U64" fieldid="_2065" offset="384" fid="f102" line="189"/>
     <field name="line" id="_3984" type="U32" fieldid="_146" offset="448" fid="f102" line="190"/>
     <field name="position" id="_3985" type="U32" fieldid="_146" offset="480" fid="f102" line="191"/>
     <field name="next_token" id="_3986" type="I32" fieldid="_2070" offset="512" fid="f102" line="194"/>
-    <field name="next_value" id="_3987" type="None" fieldid="_2065" offset="576" fid="f102" line="195"/>
+    <field name="next_value" id="_3987" type="U64" fieldid="_2065" offset="576" fid="f102" line="195"/>
     <field name="next_line" id="_3988" type="U32" fieldid="_146" offset="640" fid="f102" line="196"/>
     <field name="next_position" id="_3989" type="U32" fieldid="_146" offset="672" fid="f102" line="197"/>
     <field name="symbol_table" id="_3990" type="NullablePointer[GHashTable]" fieldid="_3747" offset="704" fid="f102" line="201"/>

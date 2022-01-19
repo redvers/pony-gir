@@ -1,88 +1,93 @@
 #structmeta:
 #	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/glib.xml -s f3 f16 f17 f18 f20 f21 f22 f38 f39 f40 f55 f56 f57 f58 f59 f60 f61 f62 f63 f64 f65 f66 f69 f70 f71 f72 f73 f74 f75 f76 f77 f78 f79 f80 f81 f82 f83 f84 f85 f86 f87 f88 f89 f90 f91 f92 f93 f94 f95 f96 f97 f98 f99 f100 f101 f102 f103 f104 f107 f108 f109 f110 f111 f113 f114 f115 f116 f117 f118 f119 f120 f121 f122 f123 f124 f130
 
+use:
+	saxon-he -xi use.xml ../../xsl/makeuse.xsl |tee  ../../test/Glib/use.pony
+
+usemeta:
+	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/glib.xml -u f3 f16 f17 f18 f20 f21 f22 f38 f39 f40 f55 f56 f57 f58 f59 f60 f61 f62 f63 f64 f65 f66 f69 f70 f71 f72 f73 f74 f75 f76 f77 f78 f79 f80 f81 f82 f83 f84 f85 f86 f87 f88 f89 f90 f91 f92 f93 f94 f95 f96 f97 f98 f99 f100 f101 f102 f103 f104 f107 f108 f109 f110 f111 f113 f114 f115 f116 f117 f118 f119 f120 f121 f122 f123 f124 f130
 
 codegenstruct:
 	rm -f ../../test/Glib/*pony
-#	sh -x mkstruct.sh _173 ../../test/Glib/GTimeVal.pony
+	sh -x mkstruct.sh _173 ../../test/Glib/GTimeVal.pony
 	sh -x mkstruct.sh _177 ../../test/Glib/GBytes.pony
-#	sh -x mkstruct.sh _179 ../../test/Glib/GArray.pony
-#	sh -x mkstruct.sh _181 ../../test/Glib/GByteArray.pony
+	sh -x mkstruct.sh _179 ../../test/Glib/GArray.pony
+	sh -x mkstruct.sh _181 ../../test/Glib/GByteArray.pony
 	sh -x mkstruct.sh _183 ../../test/Glib/GPtrArray.pony
 	sh -x mkstruct.sh _273 ../../test/Glib/GError.pony
-#	sh -x mkstruct.sh _313 ../../test/Glib/GDebugKey.pony
-#	sh -x mkstruct.sh _538 ../../test/Glib/GRecMutex.pony # Array
-#	sh -x mkstruct.sh _542 ../../test/Glib/GCond.pony # Array
-#	sh -x mkstruct.sh _544 ../../test/Glib/GPrivate.pony # Array
-#	sh -x mkstruct.sh _546 ../../test/Glib/GOnce.pony
-#	sh -x mkstruct.sh _534 ../../test/Glib/GThread.pony
-#	sh -x mkstruct.sh _2584 ../../test/Glib/GThreadFunctions.pony
+	sh -x mkstruct.sh _313 ../../test/Glib/GDebugKey.pony
+	sh -x mkstruct.sh _538 ../../test/Glib/GRecMutex.pony # Array
+	sh -x mkstruct.sh _542 ../../test/Glib/GCond.pony # Array
+	sh -x mkstruct.sh _544 ../../test/Glib/GPrivate.pony # Array
+	sh -x mkstruct.sh _546 ../../test/Glib/GOnce.pony
+	sh -x mkstruct.sh _534 ../../test/Glib/GThread.pony
+	sh -x mkstruct.sh _2584 ../../test/Glib/GThreadFunctions.pony
 #	sh -x mkstruct.sh _2742 ../../test/Glib/GStaticRWLock.pony # Embedded anon - oops
-#	sh -x mkstruct.sh _2753 ../../test/Glib/GStaticPrivate.pony
-#	sh -x mkstruct.sh _601 ../../test/Glib/GAsyncQueue.pony
-#	sh -x mkstruct.sh _719 ../../test/Glib/GTimeZone.pony
+	sh -x mkstruct.sh _2753 ../../test/Glib/GStaticPrivate.pony
+	sh -x mkstruct.sh _601 ../../test/Glib/GAsyncQueue.pony
+	sh -x mkstruct.sh _719 ../../test/Glib/GTimeZone.pony
 	sh -x mkstruct.sh _737 ../../test/Glib/GDateTime.pony
-#	sh -x mkstruct.sh _792 ../../test/Glib/GBookmarkFile.pony
-#	sh -x mkstruct.sh _864 ../../test/Glib/GChecksum.pony
-#	sh -x mkstruct.sh _880 ../../test/Glib/GIConv.pony
+	sh -x mkstruct.sh _792 ../../test/Glib/GBookmarkFile.pony
+	sh -x mkstruct.sh _864 ../../test/Glib/GChecksum.pony
+	sh -x mkstruct.sh _880 ../../test/Glib/GIConv.pony
 	sh -x mkstruct.sh _898 ../../test/Glib/GData.pony
-#	sh -x mkstruct.sh _922 ../../test/Glib/GDate.pony
-#	sh -x mkstruct.sh _995 ../../test/Glib/GDir.pony
-#	sh -x mkstruct.sh _1047 ../../test/Glib/GMemVTable.pony
-#	sh -x mkstruct.sh _1069 ../../test/Glib/GNode.pony
+	sh -x mkstruct.sh _922 ../../test/Glib/GDate.pony
+	sh -x mkstruct.sh _995 ../../test/Glib/GDir.pony
+	sh -x mkstruct.sh _1047 ../../test/Glib/GMemVTable.pony
+	sh -x mkstruct.sh _1069 ../../test/Glib/GNode.pony
 	sh -x mkstruct.sh _1103 ../../test/Glib/GList.pony
 	sh -x mkstruct.sh _1138 ../../test/Glib/GHashTable.pony
-#	sh -x mkstruct.sh _1141 ../../test/Glib/GHashTableIter.pony
-#	sh -x mkstruct.sh _1183 ../../test/Glib/GHmac.pony
-#	sh -x mkstruct.sh _1195 ../../test/Glib/GHook.pony 
-#	sh -x mkstruct.sh _1197 ../../test/Glib/GHookList.pony
-#	sh -x mkstruct.sh _1236 ../../test/Glib/GPollFD.pony
+	sh -x mkstruct.sh _1141 ../../test/Glib/GHashTableIter.pony
+	sh -x mkstruct.sh _1183 ../../test/Glib/GHmac.pony
+	sh -x mkstruct.sh _1195 ../../test/Glib/GHook.pony 
+	sh -x mkstruct.sh _1197 ../../test/Glib/GHookList.pony
+	sh -x mkstruct.sh _1236 ../../test/Glib/GPollFD.pony
 	sh -x mkstruct.sh _1240 ../../test/Glib/GSList.pony
-#	sh -x mkstruct.sh _1274 ../../test/Glib/GMainContext.pony
-#	sh -x mkstruct.sh _1276 ../../test/Glib/GMainLoop.pony
-#	sh -x mkstruct.sh _1278 ../../test/Glib/GSource.pony
-#	sh -x mkstruct.sh _1280 ../../test/Glib/GSourcePrivate.pony
-#	sh -x mkstruct.sh _1282 ../../test/Glib/GSourceCallbackFuncs.pony
-#	sh -x mkstruct.sh _1284 ../../test/Glib/GSourceFuncs.pony
-#	sh -x mkstruct.sh _1466 ../../test/Glib/GString.pony
-##	sh -x mkstruct.sh _1504 ../../test/Glib/GIOChannel.pony # Array
-#	sh -x mkstruct.sh _1506 ../../test/Glib/GIOFuncs.pony
-#	sh -x mkstruct.sh _1561 ../../test/Glib/GKeyFile.pony
-#	sh -x mkstruct.sh _1614 ../../test/Glib/GMappedFile.pony
-#	sh -x mkstruct.sh _1629 ../../test/Glib/GMarkupParseContext.pony
-#	sh -x mkstruct.sh _1631 ../../test/Glib/GMarkupParser.pony
+	sh -x mkstruct.sh _1274 ../../test/Glib/GMainContext.pony
+	sh -x mkstruct.sh _1276 ../../test/Glib/GMainLoop.pony
+	sh -x mkstruct.sh _1278 ../../test/Glib/GSource.pony
+	sh -x mkstruct.sh _1280 ../../test/Glib/GSourcePrivate.pony
+	sh -x mkstruct.sh _1282 ../../test/Glib/GSourceCallbackFuncs.pony
+	sh -x mkstruct.sh _1284 ../../test/Glib/GSourceFuncs.pony
+	sh -x mkstruct.sh _1466 ../../test/Glib/GString.pony
+	sh -x mkstruct.sh _1504 ../../test/Glib/GIOChannel.pony # Array
+	sh -x mkstruct.sh _1506 ../../test/Glib/GIOFuncs.pony
+	sh -x mkstruct.sh _1561 ../../test/Glib/GKeyFile.pony
+	sh -x mkstruct.sh _1614 ../../test/Glib/GMappedFile.pony
+	sh -x mkstruct.sh _1629 ../../test/Glib/GMarkupParseContext.pony
+	sh -x mkstruct.sh _1631 ../../test/Glib/GMarkupParser.pony
 	sh -x mkstruct.sh _1651 ../../test/Glib/GVariantType.pony
 	sh -x mkstruct.sh _1684 ../../test/Glib/GVariant.pony
-##	sh -x mkstruct.sh _1766 ../../test/Glib/GVariantIter.pony // Array
-##	sh -x mkstruct.sh _1776 ../../test/Glib/GVariantBuilder.pony // Union
-##	sh -x mkstruct.sh _1803 ../../test/Glib/GVariantDict.pony Union
-#	sh -x mkstruct.sh _1832 ../../test/Glib/GLogField.pony
-#	sh -x mkstruct.sh _1857 ../../test/Glib/GOptionContext.pony
-#	sh -x mkstruct.sh _1859 ../../test/Glib/GOptionGroup.pony
-#	sh -x mkstruct.sh _1861 ../../test/Glib/GOptionEntry.pony
-#	sh -x mkstruct.sh _1903 ../../test/Glib/GPatternSpec.pony
-#	sh -x mkstruct.sh _1916 ../../test/Glib/GQueue.pony
-#	sh -x mkstruct.sh _1961 ../../test/Glib/GRand.pony
-#	sh -x mkstruct.sh _2015 ../../test/Glib/GRegex.pony
-#	sh -x mkstruct.sh _2017 ../../test/Glib/GMatchInfo.pony
-##	sh -x mkstruct.sh _2060 ../../test/Glib/GScanner.pony UNION
-#	sh -x mkstruct.sh _2062 ../../test/Glib/GScannerConfig.pony
-#	sh -x mkstruct.sh _2092 ../../test/Glib/GSequence.pony
-#	sh -x mkstruct.sh _2094 ../../test/Glib/GSequenceNode.pony
-#	sh -x mkstruct.sh _2284 ../../test/Glib/GStringChunk.pony
-#	sh -x mkstruct.sh _2292 ../../test/Glib/GStrvBuilder.pony
-#	sh -x mkstruct.sh _2302 ../../test/Glib/GTestCase.pony
-#	sh -x mkstruct.sh _2304 ../../test/Glib/GTestSuite.pony
-#	sh -x mkstruct.sh _2390 ../../test/Glib/GThreadPool.pony
-#	sh -x mkstruct.sh _2408 ../../test/Glib/GTimer.pony
-#	sh -x mkstruct.sh _2422 ../../test/Glib/GTrashStack.pony
-#	sh -x mkstruct.sh _2428 ../../test/Glib/GTree.pony
-#	sh -x mkstruct.sh _2430 ../../test/Glib/GTreeNode.pony
-#	sh -x mkstruct.sh _2465 ../../test/Glib/GUri.pony
-#	sh -x mkstruct.sh _2500 ../../test/Glib/GUriParamsIter.pony Needs Array
-#	sh -x mkstruct.sh _2522 ../../test/Glib/GAllocator.pony
-#	sh -x mkstruct.sh _2524 ../../test/Glib/GMemChunk.pony
-#	sh -x mkstruct.sh _2544 ../../test/Glib/GCache.pony
-#	sh -x mkstruct.sh _2555 ../../test/Glib/GCompletion.pony
-#	sh -x mkstruct.sh _2567 ../../test/Glib/GRelation.pony
-#	sh -x mkstruct.sh _2569 ../../test/Glib/GTuples.pony
+	sh -x mkstruct.sh _1766 ../../test/Glib/GVariantIter.pony // Array
+	sh -x mkstruct.sh _1776 ../../test/Glib/GVariantBuilder.pony // Union
+	sh -x mkstruct.sh _1803 ../../test/Glib/GVariantDict.pony Union
+	sh -x mkstruct.sh _1832 ../../test/Glib/GLogField.pony
+	sh -x mkstruct.sh _1857 ../../test/Glib/GOptionContext.pony
+	sh -x mkstruct.sh _1859 ../../test/Glib/GOptionGroup.pony
+	sh -x mkstruct.sh _1861 ../../test/Glib/GOptionEntry.pony
+	sh -x mkstruct.sh _1903 ../../test/Glib/GPatternSpec.pony
+	sh -x mkstruct.sh _1916 ../../test/Glib/GQueue.pony
+	sh -x mkstruct.sh _1961 ../../test/Glib/GRand.pony
+	sh -x mkstruct.sh _2015 ../../test/Glib/GRegex.pony
+	sh -x mkstruct.sh _2017 ../../test/Glib/GMatchInfo.pony
+	sh -x mkstruct.sh _2060 ../../test/Glib/GScanner.pony UNION
+	sh -x mkstruct.sh _2062 ../../test/Glib/GScannerConfig.pony
+	sh -x mkstruct.sh _2092 ../../test/Glib/GSequence.pony
+	sh -x mkstruct.sh _2094 ../../test/Glib/GSequenceNode.pony
+	sh -x mkstruct.sh _2284 ../../test/Glib/GStringChunk.pony
+	sh -x mkstruct.sh _2292 ../../test/Glib/GStrvBuilder.pony
+	sh -x mkstruct.sh _2302 ../../test/Glib/GTestCase.pony
+	sh -x mkstruct.sh _2304 ../../test/Glib/GTestSuite.pony
+	sh -x mkstruct.sh _2390 ../../test/Glib/GThreadPool.pony
+	sh -x mkstruct.sh _2408 ../../test/Glib/GTimer.pony
+	sh -x mkstruct.sh _2422 ../../test/Glib/GTrashStack.pony
+	sh -x mkstruct.sh _2428 ../../test/Glib/GTree.pony
+	sh -x mkstruct.sh _2430 ../../test/Glib/GTreeNode.pony
+	sh -x mkstruct.sh _2465 ../../test/Glib/GUri.pony
+	sh -x mkstruct.sh _2500 ../../test/Glib/GUriParamsIter.pony Needs Array
+	sh -x mkstruct.sh _2522 ../../test/Glib/GAllocator.pony
+	sh -x mkstruct.sh _2524 ../../test/Glib/GMemChunk.pony
+	sh -x mkstruct.sh _2544 ../../test/Glib/GCache.pony
+	sh -x mkstruct.sh _2555 ../../test/Glib/GCompletion.pony
+	sh -x mkstruct.sh _2567 ../../test/Glib/GRelation.pony
+	sh -x mkstruct.sh _2569 ../../test/Glib/GTuples.pony
