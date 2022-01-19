@@ -1,0 +1,212 @@
+<typedefs>
+  <typedef name="String"
+    embed="var"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    embed="var"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="GObjectClass"
+    embed="embed"
+    ponytypein="GObjectClass tag"
+    ponytypeinconv=""
+    ponytypeout="GObjectClass"
+    structtype="GObjectClass"
+    structdef="GObjectClass"
+    argtype="GObjectClass tag"
+    rvtype="GObjectClass"/>
+
+  <typedef name="Pointer[None]"
+    embed="var"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="NullablePointer[GHashTable]"
+    embed="var"
+    ponytypein="NullablePointer[GHashTable] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GHashTable]"
+    structtype="NullablePointer[GHashTable]"
+    structdef="NullablePointer[GHashTable].none()"
+    argtype="NullablePointer[GHashTable] tag"
+    rvtype="NullablePointer[GHashTable]"/>
+
+  <typedef name="NullablePointer[GPtrArray]"
+    embed="var"
+    ponytypein="NullablePointer[GPtrArray] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GPtrArray]"
+    structtype="NullablePointer[GPtrArray]"
+    structdef="NullablePointer[GPtrArray].none()"
+    argtype="NullablePointer[GPtrArray] tag"
+    rvtype="NullablePointer[GPtrArray]"/>
+
+  <typedef name="I32"
+    embed="var"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="NullablePointer[AtkRelationSet]"
+    embed="var"
+    ponytypein="NullablePointer[AtkRelationSet] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[AtkRelationSet]"
+    structtype="NullablePointer[AtkRelationSet]"
+    structdef="NullablePointer[AtkRelationSet].none()"
+    argtype="NullablePointer[AtkRelationSet] tag"
+    rvtype="NullablePointer[AtkRelationSet]"/>
+
+  <typedef name="U32"
+    embed="var"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="AtkObject"
+    embed="embed"
+    ponytypein="AtkObject tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObject"
+    structtype="AtkObject"
+    structdef="AtkObject"
+    argtype="AtkObject tag"
+    rvtype="AtkObject"/>
+
+  <typedef name="GValue"
+    embed="embed"
+    ponytypein="GValue tag"
+    ponytypeinconv=""
+    ponytypeout="GValue"
+    structtype="GValue"
+    structdef="GValue"
+    argtype="GValue tag"
+    rvtype="GValue"/>
+
+  <typedef name="GTypeInterface"
+    embed="embed"
+    ponytypein="GTypeInterface tag"
+    ponytypeinconv=""
+    ponytypeout="GTypeInterface"
+    structtype="GTypeInterface"
+    structdef="GTypeInterface"
+    argtype="GTypeInterface tag"
+    rvtype="GTypeInterface"/>
+
+  <typedef name="AtkObjectFactoryClass"
+    embed="embed"
+    ponytypein="AtkObjectFactoryClass tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObjectFactoryClass"
+    structtype="AtkObjectFactoryClass"
+    structdef="AtkObjectFactoryClass"
+    argtype="AtkObjectFactoryClass tag"
+    rvtype="AtkObjectFactoryClass"/>
+
+  <typedef name="AtkObjectClass"
+    embed="embed"
+    ponytypein="AtkObjectClass tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObjectClass"
+    structtype="AtkObjectClass"
+    structdef="AtkObjectClass"
+    argtype="AtkObjectClass tag"
+    rvtype="AtkObjectClass"/>
+
+  <typedef name="U16"
+    embed="var"
+    ponytypein="U16"
+    ponytypeinconv=""
+    ponytypeout="U16"
+    structtype="U16"
+    structdef="U16(0)"
+    argtype="U16"
+    rvtype="U16"/>
+
+  <typedef name="NullablePointer[AtkObject]"
+    embed="var"
+    ponytypein="NullablePointer[AtkObject] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[AtkObject]"
+    structtype="NullablePointer[AtkObject]"
+    structdef="NullablePointer[AtkObject].none()"
+    argtype="NullablePointer[AtkObject] tag"
+    rvtype="NullablePointer[AtkObject]"/>
+
+  <typedef name="AtkTextRectangle"
+    embed="embed"
+    ponytypein="AtkTextRectangle tag"
+    ponytypeinconv=""
+    ponytypeout="AtkTextRectangle"
+    structtype="AtkTextRectangle"
+    structdef="AtkTextRectangle"
+    argtype="AtkTextRectangle tag"
+    rvtype="AtkTextRectangle"/>
+
+  <typedef name="GObject"
+    embed="embed"
+    ponytypein="GObject tag"
+    ponytypeinconv=""
+    ponytypeout="GObject"
+    structtype="GObject"
+    structdef="GObject"
+    argtype="GObject tag"
+    rvtype="GObject"/>
+
+  <typedef name="Pointer[Pointer[None]]"
+    embed="var"
+    ponytypein="Pointer[Pointer[None]] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[None]]"
+    structtype="Pointer[Pointer[None]]"
+    structdef="Pointer[Pointer[None]]"
+    argtype="Pointer[Pointer[None]] tag"
+    rvtype="Pointer[Pointer[None]]"/>
+
+  <typedef name="AtkObjectFactory"
+    embed="embed"
+    ponytypein="AtkObjectFactory tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObjectFactory"
+    structtype="AtkObjectFactory"
+    structdef="AtkObjectFactory"
+    argtype="AtkObjectFactory tag"
+    rvtype="AtkObjectFactory"/>
+</typedefs>
+

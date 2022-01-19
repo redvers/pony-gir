@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./types.xml"/>
+<xi:include href="./../../castxml-results/gtk-3.xml"/>
+                    <structs>
+                      <struct name="AtkAttribute" id="_11094" size="128" align="64" fid="f407" lineno="437">
+    <field name="name" id="_23592" type="String" fieldid="_19202" offset="0" fid="f407" line="438"/>
+    <field name="value" id="_23593" type="String" fieldid="_19202" offset="64" fid="f407" line="439"/>
+  </struct>
+
+  <struct name="AtkImplementor" id="_11096" size="" align="" fid="f407" lineno="455">
+
+  </struct>
+
+  <struct name="AtkImplementorIface" id="_11098" size="192" align="64" fid="f407" lineno="694">
+    <field name="parent" id="_23596" type="GTypeInterface" fieldid="_3246" offset="0" fid="f407" line="696"/>
+    <field name="ref_accessible" id="_23597" type="Pointer[None]" fieldid="_28101" offset="128" fid="f407" line="698"/>
+  </struct>
+
+  <struct name="AtkObject" id="_11100" size="576" align="64" fid="f407" lineno="522">
+    <field name="parent" id="_23599" type="GObject" fieldid="_3573" offset="0" fid="f407" line="524"/>
+    <field name="description" id="_23600" type="String" fieldid="_19202" offset="192" fid="f407" line="526"/>
+    <field name="name" id="_23601" type="String" fieldid="_19202" offset="256" fid="f407" line="527"/>
+    <field name="accessible_parent" id="_23602" type="NullablePointer[AtkObject]" fieldid="_23646" offset="320" fid="f407" line="528"/>
+    <field name="role" id="_23603" type="I32" fieldid="_11090" offset="384" fid="f407" line="529"/>
+    <field name="relation_set" id="_23604" type="NullablePointer[AtkRelationSet]" fieldid="_23648" offset="448" fid="f407" line="530"/>
+    <field name="layer" id="_23605" type="I32" fieldid="_11092" offset="512" fid="f407" line="531"/>
+  </struct>
+
+  <struct name="AtkObjectClass" id="_11102" size="2816" align="64" fid="f407" lineno="549">
+    <field name="parent" id="_23607" type="GObjectClass" fieldid="_3575" offset="0" fid="f407" line="551"/>
+    <field name="get_name" id="_23608" type="Pointer[None]" fieldid="_28102" offset="1088" fid="f407" line="556"/>
+    <field name="get_description" id="_23609" type="Pointer[None]" fieldid="_28102" offset="1152" fid="f407" line="560"/>
+    <field name="get_parent" id="_23610" type="Pointer[None]" fieldid="_28103" offset="1216" fid="f407" line="564"/>
+    <field name="get_n_children" id="_23611" type="Pointer[None]" fieldid="_28104" offset="1280" fid="f407" line="569"/>
+    <field name="ref_child" id="_23612" type="Pointer[None]" fieldid="_28105" offset="1344" fid="f407" line="575"/>
+    <field name="get_index_in_parent" id="_23613" type="Pointer[None]" fieldid="_28104" offset="1408" fid="f407" line="581"/>
+    <field name="ref_relation_set" id="_23614" type="Pointer[None]" fieldid="_28106" offset="1472" fid="f407" line="585"/>
+    <field name="get_role" id="_23615" type="Pointer[None]" fieldid="_28107" offset="1536" fid="f407" line="589"/>
+    <field name="get_layer" id="_23616" type="Pointer[None]" fieldid="_28108" offset="1600" fid="f407" line="590"/>
+    <field name="get_mdi_zorder" id="_23617" type="Pointer[None]" fieldid="_28104" offset="1664" fid="f407" line="591"/>
+    <field name="ref_state_set" id="_23618" type="Pointer[None]" fieldid="_28109" offset="1728" fid="f407" line="595"/>
+    <field name="set_name" id="_23619" type="Pointer[None]" fieldid="_28110" offset="1792" fid="f407" line="599"/>
+    <field name="set_description" id="_23620" type="Pointer[None]" fieldid="_28110" offset="1856" fid="f407" line="604"/>
+    <field name="set_parent" id="_23621" type="Pointer[None]" fieldid="_28111" offset="1920" fid="f407" line="609"/>
+    <field name="set_role" id="_23622" type="Pointer[None]" fieldid="_28112" offset="1984" fid="f407" line="614"/>
+    <field name="connect_property_change_handler" id="_23623" type="Pointer[None]" fieldid="_28113" offset="2048" fid="f407" line="619"/>
+    <field name="remove_property_change_handler" id="_23624" type="Pointer[None]" fieldid="_28114" offset="2112" fid="f407" line="626"/>
+    <field name="initialize" id="_23625" type="Pointer[None]" fieldid="_28115" offset="2176" fid="f407" line="630"/>
+    <field name="children_changed" id="_23626" type="Pointer[None]" fieldid="_28116" offset="2240" fid="f407" line="636"/>
+    <field name="focus_event" id="_23627" type="Pointer[None]" fieldid="_23707" offset="2304" fid="f407" line="643"/>
+    <field name="property_change" id="_23628" type="Pointer[None]" fieldid="_23645" offset="2368" fid="f407" line="649"/>
+    <field name="state_change" id="_23629" type="Pointer[None]" fieldid="_28117" offset="2432" fid="f407" line="655"/>
+    <field name="visible_data_changed" id="_23630" type="Pointer[None]" fieldid="_23682" offset="2496" fid="f407" line="662"/>
+    <field name="active_descendant_changed" id="_23631" type="Pointer[None]" fieldid="_28118" offset="2560" fid="f407" line="670"/>
+    <field name="get_attributes" id="_23632" type="Pointer[None]" fieldid="_28119" offset="2624" fid="f407" line="677"/>
+    <field name="get_object_locale" id="_23633" type="Pointer[None]" fieldid="_28102" offset="2688" fid="f407" line="679"/>
+    <field name="pad1" id="_23634" type="Pointer[None]" fieldid="_11110" offset="2752" fid="f407" line="681"/>
+  </struct>
+
+  <struct name="AtkPropertyValues" id="_11108" size="448" align="64" fid="f407" lineno="475">
+    <field name="property_name" id="_23641" type="String" fieldid="_19215" offset="0" fid="f407" line="477"/>
+    <field name="old_value" id="_23642" type="GValue" fieldid="_3238" offset="64" fid="f407" line="478"/>
+    <field name="new_value" id="_23643" type="GValue" fieldid="_3238" offset="256" fid="f407" line="479"/>
+  </struct>
+
+  <struct name="AtkRelationSet" id="_11104" size="256" align="64" fid="f408" lineno="43">
+    <field name="parent" id="_23636" type="GObject" fieldid="_3573" offset="0" fid="f408" line="45"/>
+    <field name="relations" id="_23637" type="NullablePointer[GPtrArray]" fieldid="_19204" offset="192" fid="f408" line="47"/>
+  </struct>
+
+  <struct name="AtkRelationSetClass" id="_11400" size="1216" align="64" fid="f408" lineno="50">
+    <field name="parent" id="_23869" type="GObjectClass" fieldid="_3575" offset="0" fid="f408" line="52"/>
+    <field name="pad1" id="_23870" type="Pointer[None]" fieldid="_11110" offset="1088" fid="f408" line="54"/>
+    <field name="pad2" id="_23871" type="Pointer[None]" fieldid="_11110" offset="1152" fid="f408" line="55"/>
+  </struct>
+
+  <struct name="AtkStateSet" id="_11106" size="192" align="64" fid="f409" lineno="43">
+    <field name="parent" id="_23639" type="GObject" fieldid="_3573" offset="0" fid="f409" line="45"/>
+  </struct>
+
+  <struct name="AtkStateSetClass" id="_11432" size="1088" align="64" fid="f409" lineno="49">
+    <field name="parent" id="_23892" type="GObjectClass" fieldid="_3575" offset="0" fid="f409" line="51"/>
+  </struct>
+
+  <struct name="AtkAction" id="_11145" size="" align="" fid="f410" lineno="42">
+
+  </struct>
+
+  <struct name="AtkActionIface" id="_11147" size="576" align="64" fid="f410" lineno="62">
+    <field name="parent" id="_23653" type="GTypeInterface" fieldid="_3246" offset="0" fid="f410" line="65"/>
+    <field name="do_action" id="_23654" type="Pointer[None]" fieldid="_28121" offset="128" fid="f410" line="68"/>
+    <field name="get_n_actions" id="_23655" type="Pointer[None]" fieldid="_28122" offset="192" fid="f410" line="70"/>
+    <field name="get_description" id="_23656" type="Pointer[None]" fieldid="_28123" offset="256" fid="f410" line="71"/>
+    <field name="get_name" id="_23657" type="Pointer[None]" fieldid="_28123" offset="320" fid="f410" line="73"/>
+    <field name="get_keybinding" id="_23658" type="Pointer[None]" fieldid="_28123" offset="384" fid="f410" line="75"/>
+    <field name="set_description" id="_23659" type="Pointer[None]" fieldid="_28124" offset="448" fid="f410" line="77"/>
+    <field name="get_localized_name" id="_23660" type="Pointer[None]" fieldid="_28123" offset="512" fid="f410" line="80"/>
+  </struct>
+
+  <struct name="AtkUtil" id="_11157" size="192" align="64" fid="f411" lineno="135">
+    <field name="parent" id="_23663" type="GObject" fieldid="_3573" offset="0" fid="f411" line="137"/>
+  </struct>
+
+  <struct name="AtkUtilClass" id="_11159" size="1536" align="64" fid="f411" lineno="160">
+    <field name="parent" id="_23665" type="GObjectClass" fieldid="_3575" offset="0" fid="f411" line="162"/>
+    <field name="add_global_event_listener" id="_23666" type="Pointer[None]" fieldid="_28125" offset="1088" fid="f411" line="163"/>
+    <field name="remove_global_event_listener" id="_23667" type="Pointer[None]" fieldid="_19690" offset="1152" fid="f411" line="165"/>
+    <field name="add_key_event_listener" id="_23668" type="Pointer[None]" fieldid="_28126" offset="1216" fid="f411" line="166"/>
+    <field name="remove_key_event_listener" id="_23669" type="Pointer[None]" fieldid="_19690" offset="1280" fid="f411" line="168"/>
+    <field name="get_root" id="_23670" type="Pointer[None]" fieldid="_28127" offset="1344" fid="f411" line="169"/>
+    <field name="get_toolkit_name" id="_23671" type="Pointer[None]" fieldid="_28128" offset="1408" fid="f411" line="170"/>
+    <field name="get_toolkit_version" id="_23672" type="Pointer[None]" fieldid="_28128" offset="1472" fid="f411" line="171"/>
+  </struct>
+
+  <struct name="AtkKeyEventStruct" id="_11161" size="256" align="64" fid="f411" lineno="110">
+    <field name="gtype" id="_23674" type="I32" fieldid="_141" offset="0" fid="f411" line="111"/>
+    <field name="state" id="_23675" type="U32" fieldid="_146" offset="32" fid="f411" line="112"/>
+    <field name="keyval" id="_23676" type="U32" fieldid="_146" offset="64" fid="f411" line="113"/>
+    <field name="length" id="_23677" type="I32" fieldid="_141" offset="96" fid="f411" line="114"/>
+    <field name="string" id="_23678" type="String" fieldid="_19202" offset="128" fid="f411" line="115"/>
+    <field name="keycode" id="_23679" type="U16" fieldid="_15" offset="192" fid="f411" line="116"/>
+    <field name="timestamp" id="_23680" type="U32" fieldid="_17" offset="224" fid="f411" line="117"/>
+  </struct>
+
+  <struct name="AtkComponent" id="_11186" size="" align="" fid="f412" lineno="71">
+
+  </struct>
+
+  <struct name="AtkComponentIface" id="_11188" size="1216" align="64" fid="f412" lineno="146">
+    <field name="parent" id="_23688" type="GTypeInterface" fieldid="_3246" offset="0" fid="f412" line="149"/>
+    <field name="add_focus_handler" id="_23689" type="Pointer[None]" fieldid="_28131" offset="128" fid="f412" line="152"/>
+    <field name="contains" id="_23690" type="Pointer[None]" fieldid="_28132" offset="192" fid="f412" line="155"/>
+    <field name="ref_accessible_at_point" id="_23691" type="Pointer[None]" fieldid="_28133" offset="256" fid="f412" line="160"/>
+    <field name="get_extents" id="_23692" type="Pointer[None]" fieldid="_28134" offset="320" fid="f412" line="164"/>
+    <field name="get_position" id="_23693" type="Pointer[None]" fieldid="_28135" offset="384" fid="f412" line="170"/>
+    <field name="get_size" id="_23694" type="Pointer[None]" fieldid="_28136" offset="448" fid="f412" line="174"/>
+    <field name="grab_focus" id="_23695" type="Pointer[None]" fieldid="_28137" offset="512" fid="f412" line="177"/>
+    <field name="remove_focus_handler" id="_23696" type="Pointer[None]" fieldid="_28138" offset="576" fid="f412" line="178"/>
+    <field name="set_extents" id="_23697" type="Pointer[None]" fieldid="_28139" offset="640" fid="f412" line="180"/>
+    <field name="set_position" id="_23698" type="Pointer[None]" fieldid="_28132" offset="704" fid="f412" line="186"/>
+    <field name="set_size" id="_23699" type="Pointer[None]" fieldid="_28140" offset="768" fid="f412" line="190"/>
+    <field name="get_layer" id="_23700" type="Pointer[None]" fieldid="_28141" offset="832" fid="f412" line="194"/>
+    <field name="get_mdi_zorder" id="_23701" type="Pointer[None]" fieldid="_28142" offset="896" fid="f412" line="195"/>
+    <field name="bounds_changed" id="_23702" type="Pointer[None]" fieldid="_28143" offset="960" fid="f412" line="200"/>
+    <field name="get_alpha" id="_23703" type="Pointer[None]" fieldid="_28144" offset="1024" fid="f412" line="202"/>
+    <field name="scroll_to" id="_23704" type="Pointer[None]" fieldid="_28145" offset="1088" fid="f412" line="215"/>
+    <field name="scroll_to_point" id="_23705" type="Pointer[None]" fieldid="_28146" offset="1152" fid="f412" line="218"/>
+  </struct>
+
+  <struct name="AtkRectangle" id="_11191" size="128" align="32" fid="f412" lineno="102">
+    <field name="x" id="_23708" type="I32" fieldid="_141" offset="0" fid="f412" line="104"/>
+    <field name="y" id="_23709" type="I32" fieldid="_141" offset="32" fid="f412" line="105"/>
+    <field name="width" id="_23710" type="I32" fieldid="_141" offset="64" fid="f412" line="106"/>
+    <field name="height" id="_23711" type="I32" fieldid="_141" offset="96" fid="f412" line="107"/>
+  </struct>
+
+  <struct name="AtkDocument" id="_11211" size="" align="" fid="f413" lineno="45">
+
+  </struct>
+
+  <struct name="AtkDocumentIface" id="_11213" size="640" align="64" fid="f413" lineno="68">
+    <field name="parent" id="_23715" type="GTypeInterface" fieldid="_3246" offset="0" fid="f413" line="70"/>
+    <field name="get_document_type" id="_23716" type="Pointer[None]" fieldid="_28148" offset="128" fid="f413" line="71"/>
+    <field name="get_document" id="_23717" type="Pointer[None]" fieldid="_28149" offset="192" fid="f413" line="72"/>
+    <field name="get_document_locale" id="_23718" type="Pointer[None]" fieldid="_28148" offset="256" fid="f413" line="74"/>
+    <field name="get_document_attributes" id="_23719" type="Pointer[None]" fieldid="_28150" offset="320" fid="f413" line="75"/>
+    <field name="get_document_attribute_value" id="_23720" type="Pointer[None]" fieldid="_28151" offset="384" fid="f413" line="76"/>
+    <field name="set_document_attribute" id="_23721" type="Pointer[None]" fieldid="_28152" offset="448" fid="f413" line="78"/>
+    <field name="get_current_page_number" id="_23722" type="Pointer[None]" fieldid="_28153" offset="512" fid="f413" line="81"/>
+    <field name="get_page_count" id="_23723" type="Pointer[None]" fieldid="_28153" offset="576" fid="f413" line="82"/>
+  </struct>
+
+  <struct name="AtkText" id="_11227" size="" align="" fid="f414" lineno="114">
+
+  </struct>
+
+  <struct name="AtkTextIface" id="_11229" size="1792" align="64" fid="f414" lineno="250">
+    <field name="parent" id="_23728" type="GTypeInterface" fieldid="_3246" offset="0" fid="f414" line="252"/>
+    <field name="get_text" id="_23729" type="Pointer[None]" fieldid="_28154" offset="128" fid="f414" line="254"/>
+    <field name="get_text_after_offset" id="_23730" type="Pointer[None]" fieldid="_28155" offset="192" fid="f414" line="257"/>
+    <field name="get_text_at_offset" id="_23731" type="Pointer[None]" fieldid="_28155" offset="256" fid="f414" line="262"/>
+    <field name="get_character_at_offset" id="_23732" type="Pointer[None]" fieldid="_28156" offset="320" fid="f414" line="267"/>
+    <field name="get_text_before_offset" id="_23733" type="Pointer[None]" fieldid="_28155" offset="384" fid="f414" line="269"/>
+    <field name="get_caret_offset" id="_23734" type="Pointer[None]" fieldid="_28157" offset="448" fid="f414" line="274"/>
+    <field name="get_run_attributes" id="_23735" type="Pointer[None]" fieldid="_28158" offset="512" fid="f414" line="275"/>
+    <field name="get_default_attributes" id="_23736" type="Pointer[None]" fieldid="_28159" offset="576" fid="f414" line="279"/>
+    <field name="get_character_extents" id="_23737" type="Pointer[None]" fieldid="_28160" offset="640" fid="f414" line="280"/>
+    <field name="get_character_count" id="_23738" type="Pointer[None]" fieldid="_28157" offset="704" fid="f414" line="287"/>
+    <field name="get_offset_at_point" id="_23739" type="Pointer[None]" fieldid="_28161" offset="768" fid="f414" line="288"/>
+    <field name="get_n_selections" id="_23740" type="Pointer[None]" fieldid="_28157" offset="832" fid="f414" line="292"/>
+    <field name="get_selection" id="_23741" type="Pointer[None]" fieldid="_28162" offset="896" fid="f414" line="293"/>
+    <field name="add_selection" id="_23742" type="Pointer[None]" fieldid="_28163" offset="960" fid="f414" line="297"/>
+    <field name="remove_selection" id="_23743" type="Pointer[None]" fieldid="_28164" offset="1024" fid="f414" line="300"/>
+    <field name="set_selection" id="_23744" type="Pointer[None]" fieldid="_28165" offset="1088" fid="f414" line="302"/>
+    <field name="set_caret_offset" id="_23745" type="Pointer[None]" fieldid="_28164" offset="1152" fid="f414" line="306"/>
+    <field name="text_changed" id="_23746" type="Pointer[None]" fieldid="_28166" offset="1216" fid="f414" line="312"/>
+    <field name="text_caret_moved" id="_23747" type="Pointer[None]" fieldid="_28167" offset="1280" fid="f414" line="315"/>
+    <field name="text_selection_changed" id="_23748" type="Pointer[None]" fieldid="_28168" offset="1344" fid="f414" line="317"/>
+    <field name="text_attributes_changed" id="_23749" type="Pointer[None]" fieldid="_28168" offset="1408" fid="f414" line="319"/>
+    <field name="get_range_extents" id="_23750" type="Pointer[None]" fieldid="_28169" offset="1472" fid="f414" line="322"/>
+    <field name="get_bounded_ranges" id="_23751" type="Pointer[None]" fieldid="_28170" offset="1536" fid="f414" line="328"/>
+    <field name="get_string_at_offset" id="_23752" type="Pointer[None]" fieldid="_28171" offset="1600" fid="f414" line="334"/>
+    <field name="scroll_substring_to" id="_23753" type="Pointer[None]" fieldid="_28172" offset="1664" fid="f414" line="350"/>
+    <field name="scroll_substring_to_point" id="_23754" type="Pointer[None]" fieldid="_28173" offset="1728" fid="f414" line="354"/>
+  </struct>
+
+  <struct name="AtkTextRectangle" id="_11235" size="128" align="32" fid="f414" lineno="190">
+    <field name="x" id="_23758" type="I32" fieldid="_141" offset="0" fid="f414" line="191"/>
+    <field name="y" id="_23759" type="I32" fieldid="_141" offset="32" fid="f414" line="192"/>
+    <field name="width" id="_23760" type="I32" fieldid="_141" offset="64" fid="f414" line="193"/>
+    <field name="height" id="_23761" type="I32" fieldid="_141" offset="96" fid="f414" line="194"/>
+  </struct>
+
+  <struct name="AtkTextRange" id="_11237" size="256" align="64" fid="f414" lineno="208">
+    <field name="bounds" id="_23763" type="AtkTextRectangle" fieldid="_11236" offset="0" fid="f414" line="209"/>
+    <field name="start_offset" id="_23764" type="I32" fieldid="_141" offset="128" fid="f414" line="210"/>
+    <field name="end_offset" id="_23765" type="I32" fieldid="_141" offset="160" fid="f414" line="211"/>
+    <field name="content" id="_23766" type="String" fieldid="_19202" offset="192" fid="f414" line="212"/>
+  </struct>
+
+  <struct name="AtkEditableText" id="_11270" size="" align="" fid="f415" lineno="44">
+
+  </struct>
+
+  <struct name="AtkEditableTextIface" id="_11272" size="576" align="64" fid="f415" lineno="48">
+    <field name="parent_interface" id="_23773" type="GTypeInterface" fieldid="_3246" offset="0" fid="f415" line="50"/>
+    <field name="set_run_attributes" id="_23774" type="Pointer[None]" fieldid="_28175" offset="128" fid="f415" line="52"/>
+    <field name="set_text_contents" id="_23775" type="Pointer[None]" fieldid="_28176" offset="192" fid="f415" line="56"/>
+    <field name="insert_text" id="_23776" type="Pointer[None]" fieldid="_28177" offset="256" fid="f415" line="58"/>
+    <field name="copy_text" id="_23777" type="Pointer[None]" fieldid="_28178" offset="320" fid="f415" line="62"/>
+    <field name="cut_text" id="_23778" type="Pointer[None]" fieldid="_28178" offset="384" fid="f415" line="65"/>
+    <field name="delete_text" id="_23779" type="Pointer[None]" fieldid="_28178" offset="448" fid="f415" line="68"/>
+    <field name="paste_text" id="_23780" type="Pointer[None]" fieldid="_28179" offset="512" fid="f415" line="71"/>
+  </struct>
+
+  <struct name="AtkGObjectAccessible" id="_11295" size="576" align="64" fid="f417" lineno="45">
+    <field name="parent" id="_23783" type="AtkObject" fieldid="_11101" offset="0" fid="f417" line="47"/>
+  </struct>
+
+  <struct name="AtkGObjectAccessibleClass" id="_11297" size="2944" align="64" fid="f417" lineno="53">
+    <field name="parent_class" id="_23785" type="AtkObjectClass" fieldid="_11103" offset="0" fid="f417" line="55"/>
+    <field name="pad1" id="_23786" type="Pointer[None]" fieldid="_11110" offset="2816" fid="f417" line="57"/>
+    <field name="pad2" id="_23787" type="Pointer[None]" fieldid="_11110" offset="2880" fid="f417" line="58"/>
+  </struct>
+
+  <struct name="AtkHyperlink" id="_11304" size="192" align="64" fid="f418" lineno="58">
+    <field name="parent" id="_23791" type="GObject" fieldid="_3573" offset="0" fid="f418" line="60"/>
+  </struct>
+
+  <struct name="AtkHyperlinkClass" id="_11306" size="1728" align="64" fid="f418" lineno="63">
+    <field name="parent" id="_23793" type="GObjectClass" fieldid="_3575" offset="0" fid="f418" line="65"/>
+    <field name="get_uri" id="_23794" type="Pointer[None]" fieldid="_28180" offset="1088" fid="f418" line="67"/>
+    <field name="get_object" id="_23795" type="Pointer[None]" fieldid="_28181" offset="1152" fid="f418" line="69"/>
+    <field name="get_end_index" id="_23796" type="Pointer[None]" fieldid="_28182" offset="1216" fid="f418" line="71"/>
+    <field name="get_start_index" id="_23797" type="Pointer[None]" fieldid="_28182" offset="1280" fid="f418" line="72"/>
+    <field name="is_valid" id="_23798" type="Pointer[None]" fieldid="_28183" offset="1344" fid="f418" line="73"/>
+    <field name="get_n_anchors" id="_23799" type="Pointer[None]" fieldid="_28182" offset="1408" fid="f418" line="74"/>
+    <field name="link_state" id="_23800" type="Pointer[None]" fieldid="_28184" offset="1472" fid="f418" line="75"/>
+    <field name="is_selected_link" id="_23801" type="Pointer[None]" fieldid="_28183" offset="1536" fid="f418" line="76"/>
+    <field name="link_activated" id="_23802" type="Pointer[None]" fieldid="_28185" offset="1600" fid="f418" line="79"/>
+    <field name="pad1" id="_23803" type="Pointer[None]" fieldid="_11110" offset="1664" fid="f418" line="80"/>
+  </struct>
+
+  <struct name="AtkHyperlinkImpl" id="_11317" size="" align="" fid="f419" lineno="49">
+
+  </struct>
+
+  <struct name="AtkHyperlinkImplIface" id="_11319" size="192" align="64" fid="f419" lineno="53">
+    <field name="parent" id="_23807" type="GTypeInterface" fieldid="_3246" offset="0" fid="f419" line="55"/>
+    <field name="get_hyperlink" id="_23808" type="Pointer[None]" fieldid="_28186" offset="128" fid="f419" line="57"/>
+  </struct>
+
+  <struct name="AtkHypertext" id="_11323" size="" align="" fid="f420" lineno="44">
+
+  </struct>
+
+  <struct name="AtkHypertextIface" id="_11325" size="384" align="64" fid="f420" lineno="48">
+    <field name="parent" id="_23812" type="GTypeInterface" fieldid="_3246" offset="0" fid="f420" line="50"/>
+    <field name="get_link" id="_23813" type="Pointer[None]" fieldid="_28187" offset="128" fid="f420" line="52"/>
+    <field name="get_n_links" id="_23814" type="Pointer[None]" fieldid="_28188" offset="192" fid="f420" line="54"/>
+    <field name="get_link_index" id="_23815" type="Pointer[None]" fieldid="_28189" offset="256" fid="f420" line="55"/>
+    <field name="link_selected" id="_23816" type="Pointer[None]" fieldid="_28190" offset="320" fid="f420" line="61"/>
+  </struct>
+
+  <struct name="AtkImage" id="_11331" size="" align="" fid="f421" lineno="45">
+
+  </struct>
+
+  <struct name="AtkImageIface" id="_11333" size="448" align="64" fid="f421" lineno="49">
+    <field name="parent" id="_23820" type="GTypeInterface" fieldid="_3246" offset="0" fid="f421" line="51"/>
+    <field name="get_image_position" id="_23821" type="Pointer[None]" fieldid="_28191" offset="128" fid="f421" line="52"/>
+    <field name="get_image_description" id="_23822" type="Pointer[None]" fieldid="_28192" offset="192" fid="f421" line="56"/>
+    <field name="get_image_size" id="_23823" type="Pointer[None]" fieldid="_28193" offset="256" fid="f421" line="57"/>
+    <field name="set_image_description" id="_23824" type="Pointer[None]" fieldid="_28194" offset="320" fid="f421" line="60"/>
+    <field name="get_image_locale" id="_23825" type="Pointer[None]" fieldid="_28192" offset="384" fid="f421" line="62"/>
+  </struct>
+
+  <struct name="AtkNoOpObject" id="_11341" size="576" align="64" fid="f422" lineno="41">
+    <field name="parent" id="_23828" type="AtkObject" fieldid="_11101" offset="0" fid="f422" line="43"/>
+  </struct>
+
+  <struct name="AtkNoOpObjectClass" id="_11343" size="2816" align="64" fid="f422" lineno="49">
+    <field name="parent_class" id="_23830" type="AtkObjectClass" fieldid="_11103" offset="0" fid="f422" line="51"/>
+  </struct>
+
+  <struct name="AtkObjectFactory" id="_11347" size="192" align="64" fid="f423" lineno="42">
+    <field name="parent" id="_23832" type="GObject" fieldid="_3573" offset="0" fid="f423" line="44"/>
+  </struct>
+
+  <struct name="AtkObjectFactoryClass" id="_11349" size="1408" align="64" fid="f423" lineno="47">
+    <field name="parent_class" id="_23834" type="GObjectClass" fieldid="_3575" offset="0" fid="f423" line="49"/>
+    <field name="create_accessible" id="_23835" type="Pointer[None]" fieldid="_28195" offset="1088" fid="f423" line="51"/>
+    <field name="invalidate" id="_23836" type="Pointer[None]" fieldid="_28196" offset="1152" fid="f423" line="52"/>
+    <field name="get_accessible_type" id="_23837" type="Pointer[None]" fieldid="_27902" offset="1216" fid="f423" line="53"/>
+    <field name="pad1" id="_23838" type="Pointer[None]" fieldid="_11110" offset="1280" fid="f423" line="55"/>
+    <field name="pad2" id="_23839" type="Pointer[None]" fieldid="_11110" offset="1344" fid="f423" line="56"/>
+  </struct>
+
+  <struct name="AtkNoOpObjectFactory" id="_11355" size="192" align="64" fid="f424" lineno="41">
+    <field name="parent" id="_23842" type="AtkObjectFactory" fieldid="_11348" offset="0" fid="f424" line="43"/>
+  </struct>
+
+  <struct name="AtkNoOpObjectFactoryClass" id="_11357" size="1408" align="64" fid="f424" lineno="46">
+    <field name="parent_class" id="_23844" type="AtkObjectFactoryClass" fieldid="_11350" offset="0" fid="f424" line="48"/>
+  </struct>
+
+  <struct name="AtkPlug" id="_11361" size="576" align="64" fid="f425" lineno="41">
+    <field name="parent" id="_23846" type="AtkObject" fieldid="_11101" offset="0" fid="f425" line="43"/>
+  </struct>
+
+  <struct name="AtkPlugClass" id="_11363" size="2880" align="64" fid="f425" lineno="49">
+    <field name="parent_class" id="_23848" type="AtkObjectClass" fieldid="_11103" offset="0" fid="f425" line="51"/>
+    <field name="get_object_id" id="_23849" type="Pointer[None]" fieldid="_28197" offset="2816" fid="f425" line="56"/>
+  </struct>
+
+  <struct name="AtkRange" id="_11369" size="" align="" fid="f426" lineno="35">
+
+  </struct>
+
+  <struct name="AtkRegistry" id="_11378" size="320" align="64" fid="f427" lineno="39">
+    <field name="parent" id="_23854" type="GObject" fieldid="_3573" offset="0" fid="f427" line="41"/>
+    <field name="factory_type_registry" id="_23855" type="NullablePointer[GHashTable]" fieldid="_19612" offset="192" fid="f427" line="42"/>
+    <field name="factory_singleton_cache" id="_23856" type="NullablePointer[GHashTable]" fieldid="_19612" offset="256" fid="f427" line="43"/>
+  </struct>
+
+  <struct name="AtkRegistryClass" id="_11379" size="1088" align="64" fid="f427" lineno="46">
+    <field name="parent_class" id="_23857" type="GObjectClass" fieldid="_3575" offset="0" fid="f427" line="48"/>
+  </struct>
+
+  <struct name="AtkRelation" id="_11387" size="320" align="64" fid="f428" lineno="49">
+    <field name="parent" id="_23861" type="GObject" fieldid="_3573" offset="0" fid="f428" line="51"/>
+    <field name="target" id="_23862" type="NullablePointer[GPtrArray]" fieldid="_19204" offset="192" fid="f428" line="53"/>
+    <field name="relationship" id="_23863" type="I32" fieldid="_11088" offset="256" fid="f428" line="54"/>
+  </struct>
+
+  <struct name="AtkRelationClass" id="_11389" size="1088" align="64" fid="f428" lineno="57">
+    <field name="parent" id="_23865" type="GObjectClass" fieldid="_3575" offset="0" fid="f428" line="59"/>
+  </struct>
+
+  <struct name="AtkSelection" id="_11412" size="" align="" fid="f429" lineno="45">
+
+  </struct>
+
+  <struct name="AtkSelectionIface" id="_11414" size="640" align="64" fid="f429" lineno="49">
+    <field name="parent" id="_23874" type="GTypeInterface" fieldid="_3246" offset="0" fid="f429" line="51"/>
+    <field name="add_selection" id="_23875" type="Pointer[None]" fieldid="_28198" offset="128" fid="f429" line="53"/>
+    <field name="clear_selection" id="_23876" type="Pointer[None]" fieldid="_28199" offset="192" fid="f429" line="55"/>
+    <field name="ref_selection" id="_23877" type="Pointer[None]" fieldid="_28200" offset="256" fid="f429" line="56"/>
+    <field name="get_selection_count" id="_23878" type="Pointer[None]" fieldid="_28201" offset="320" fid="f429" line="58"/>
+    <field name="is_child_selected" id="_23879" type="Pointer[None]" fieldid="_28198" offset="384" fid="f429" line="59"/>
+    <field name="remove_selection" id="_23880" type="Pointer[None]" fieldid="_28198" offset="448" fid="f429" line="61"/>
+    <field name="select_all_selection" id="_23881" type="Pointer[None]" fieldid="_28199" offset="512" fid="f429" line="63"/>
+    <field name="selection_changed" id="_23882" type="Pointer[None]" fieldid="_28202" offset="576" fid="f429" line="67"/>
+  </struct>
+
+  <struct name="AtkSocket" id="_11424" size="640" align="64" fid="f430" lineno="41">
+    <field name="parent" id="_23885" type="AtkObject" fieldid="_11101" offset="0" fid="f430" line="43"/>
+    <field name="embedded_plug_id" id="_23886" type="String" fieldid="_19202" offset="576" fid="f430" line="46"/>
+  </struct>
+
+  <struct name="AtkSocketClass" id="_11426" size="2880" align="64" fid="f430" lineno="52">
+    <field name="parent_class" id="_23888" type="AtkObjectClass" fieldid="_11103" offset="0" fid="f430" line="54"/>
+    <field name="embed" id="_23889" type="Pointer[None]" fieldid="_28203" offset="2816" fid="f430" line="59"/>
+  </struct>
+
+  <struct name="AtkStreamableContent" id="_11446" size="" align="" fid="f431" lineno="38">
+
+  </struct>
+
+  <struct name="AtkStreamableContentIface" id="_11448" size="576" align="64" fid="f431" lineno="42">
+    <field name="parent" id="_23896" type="GTypeInterface" fieldid="_3246" offset="0" fid="f431" line="44"/>
+    <field name="get_n_mime_types" id="_23897" type="Pointer[None]" fieldid="_28204" offset="128" fid="f431" line="49"/>
+    <field name="get_mime_type" id="_23898" type="Pointer[None]" fieldid="_28205" offset="192" fid="f431" line="61"/>
+    <field name="get_stream" id="_23899" type="Pointer[None]" fieldid="_28206" offset="256" fid="f431" line="69"/>
+    <field name="get_uri" id="_23900" type="Pointer[None]" fieldid="_28207" offset="320" fid="f431" line="83"/>
+    <field name="pad1" id="_23901" type="Pointer[None]" fieldid="_11110" offset="384" fid="f431" line="87"/>
+    <field name="pad2" id="_23902" type="Pointer[None]" fieldid="_11110" offset="448" fid="f431" line="88"/>
+    <field name="pad3" id="_23903" type="Pointer[None]" fieldid="_11110" offset="512" fid="f431" line="89"/>
+  </struct>
+
+  <struct name="AtkTable" id="_11455" size="" align="" fid="f432" lineno="38">
+
+  </struct>
+
+  <struct name="AtkTableIface" id="_11457" size="2432" align="64" fid="f432" lineno="42">
+    <field name="parent" id="_23907" type="GTypeInterface" fieldid="_3246" offset="0" fid="f432" line="44"/>
+    <field name="ref_at" id="_23908" type="Pointer[None]" fieldid="_28208" offset="128" fid="f432" line="46"/>
+    <field name="get_index_at" id="_23909" type="Pointer[None]" fieldid="_28209" offset="192" fid="f432" line="49"/>
+    <field name="get_column_at_index" id="_23910" type="Pointer[None]" fieldid="_28210" offset="256" fid="f432" line="52"/>
+    <field name="get_row_at_index" id="_23911" type="Pointer[None]" fieldid="_28210" offset="320" fid="f432" line="54"/>
+    <field name="get_n_columns" id="_23912" type="Pointer[None]" fieldid="_28211" offset="384" fid="f432" line="56"/>
+    <field name="get_n_rows" id="_23913" type="Pointer[None]" fieldid="_28211" offset="448" fid="f432" line="57"/>
+    <field name="get_column_extent_at" id="_23914" type="Pointer[None]" fieldid="_28209" offset="512" fid="f432" line="58"/>
+    <field name="get_row_extent_at" id="_23915" type="Pointer[None]" fieldid="_28209" offset="576" fid="f432" line="61"/>
+    <field name="get_caption" id="_23916" type="Pointer[None]" fieldid="_28212" offset="640" fid="f432" line="65"/>
+    <field name="get_column_description" id="_23917" type="Pointer[None]" fieldid="_28213" offset="704" fid="f432" line="66"/>
+    <field name="get_column_header" id="_23918" type="Pointer[None]" fieldid="_28214" offset="768" fid="f432" line="68"/>
+    <field name="get_row_description" id="_23919" type="Pointer[None]" fieldid="_28213" offset="832" fid="f432" line="70"/>
+    <field name="get_row_header" id="_23920" type="Pointer[None]" fieldid="_28214" offset="896" fid="f432" line="72"/>
+    <field name="get_summary" id="_23921" type="Pointer[None]" fieldid="_28212" offset="960" fid="f432" line="74"/>
+    <field name="set_caption" id="_23922" type="Pointer[None]" fieldid="_28215" offset="1024" fid="f432" line="75"/>
+    <field name="set_column_description" id="_23923" type="Pointer[None]" fieldid="_28216" offset="1088" fid="f432" line="77"/>
+    <field name="set_column_header" id="_23924" type="Pointer[None]" fieldid="_28217" offset="1152" fid="f432" line="80"/>
+    <field name="set_row_description" id="_23925" type="Pointer[None]" fieldid="_28216" offset="1216" fid="f432" line="83"/>
+    <field name="set_row_header" id="_23926" type="Pointer[None]" fieldid="_28217" offset="1280" fid="f432" line="86"/>
+    <field name="set_summary" id="_23927" type="Pointer[None]" fieldid="_28215" offset="1344" fid="f432" line="89"/>
+    <field name="get_selected_columns" id="_23928" type="Pointer[None]" fieldid="_28218" offset="1408" fid="f432" line="91"/>
+    <field name="get_selected_rows" id="_23929" type="Pointer[None]" fieldid="_28218" offset="1472" fid="f432" line="93"/>
+    <field name="is_column_selected" id="_23930" type="Pointer[None]" fieldid="_28219" offset="1536" fid="f432" line="95"/>
+    <field name="is_row_selected" id="_23931" type="Pointer[None]" fieldid="_28219" offset="1600" fid="f432" line="97"/>
+    <field name="is_selected" id="_23932" type="Pointer[None]" fieldid="_28220" offset="1664" fid="f432" line="99"/>
+    <field name="add_row_selection" id="_23933" type="Pointer[None]" fieldid="_28219" offset="1728" fid="f432" line="102"/>
+    <field name="remove_row_selection" id="_23934" type="Pointer[None]" fieldid="_28219" offset="1792" fid="f432" line="104"/>
+    <field name="add_column_selection" id="_23935" type="Pointer[None]" fieldid="_28219" offset="1856" fid="f432" line="106"/>
+    <field name="remove_column_selection" id="_23936" type="Pointer[None]" fieldid="_28219" offset="1920" fid="f432" line="108"/>
+    <field name="row_inserted" id="_23937" type="Pointer[None]" fieldid="_28221" offset="1984" fid="f432" line="114"/>
+    <field name="column_inserted" id="_23938" type="Pointer[None]" fieldid="_28221" offset="2048" fid="f432" line="117"/>
+    <field name="row_deleted" id="_23939" type="Pointer[None]" fieldid="_28221" offset="2112" fid="f432" line="120"/>
+    <field name="column_deleted" id="_23940" type="Pointer[None]" fieldid="_28221" offset="2176" fid="f432" line="123"/>
+    <field name="row_reordered" id="_23941" type="Pointer[None]" fieldid="_28222" offset="2240" fid="f432" line="126"/>
+    <field name="column_reordered" id="_23942" type="Pointer[None]" fieldid="_28222" offset="2304" fid="f432" line="127"/>
+    <field name="model_changed" id="_23943" type="Pointer[None]" fieldid="_28222" offset="2368" fid="f432" line="128"/>
+  </struct>
+
+  <struct name="AtkTableCell" id="_11489" size="" align="" fid="f433" lineno="38">
+
+  </struct>
+
+  <struct name="AtkTableCellIface" id="_11491" size="576" align="64" fid="f433" lineno="63">
+    <field name="parent" id="_23947" type="GTypeInterface" fieldid="_3246" offset="0" fid="f433" line="66"/>
+    <field name="get_column_span" id="_23948" type="Pointer[None]" fieldid="_28223" offset="128" fid="f433" line="69"/>
+    <field name="get_column_header_cells" id="_23949" type="Pointer[None]" fieldid="_28224" offset="192" fid="f433" line="70"/>
+    <field name="get_position" id="_23950" type="Pointer[None]" fieldid="_28225" offset="256" fid="f433" line="71"/>
+    <field name="get_row_span" id="_23951" type="Pointer[None]" fieldid="_28223" offset="320" fid="f433" line="74"/>
+    <field name="get_row_header_cells" id="_23952" type="Pointer[None]" fieldid="_28224" offset="384" fid="f433" line="75"/>
+    <field name="get_row_column_span" id="_23953" type="Pointer[None]" fieldid="_28226" offset="448" fid="f433" line="76"/>
+    <field name="get_table" id="_23954" type="Pointer[None]" fieldid="_28227" offset="512" fid="f433" line="81"/>
+  </struct>
+
+  <struct name="AtkMisc" id="_11501" size="192" align="64" fid="f434" lineno="69">
+    <field name="parent" id="_23957" type="GObject" fieldid="_3573" offset="0" fid="f434" line="71"/>
+  </struct>
+
+  <struct name="AtkMiscClass" id="_11503" size="3264" align="64" fid="f434" lineno="92">
+    <field name="parent" id="_23959" type="GObjectClass" fieldid="_3575" offset="0" fid="f434" line="94"/>
+    <field name="threads_enter" id="_23960" type="Pointer[None]" fieldid="_28228" offset="1088" fid="f434" line="95"/>
+    <field name="threads_leave" id="_23961" type="Pointer[None]" fieldid="_28228" offset="1152" fid="f434" line="96"/>
+    <field name="vfuncs" id="_23962" type="Pointer[Pointer[None]]" fieldid="_27665" offset="1216" fid="f434" line="97"/>
+  </struct>
+
+  <struct name="AtkValue" id="_11510" size="" align="" fid="f435" lineno="39">
+
+  </struct>
+
+  <struct name="AtkValueIface" id="_11512" size="768" align="64" fid="f435" lineno="95">
+    <field name="parent" id="_23967" type="GTypeInterface" fieldid="_3246" offset="0" fid="f435" line="97"/>
+    <field name="get_current_value" id="_23968" type="Pointer[None]" fieldid="_28229" offset="128" fid="f435" line="100"/>
+    <field name="get_maximum_value" id="_23969" type="Pointer[None]" fieldid="_28229" offset="192" fid="f435" line="102"/>
+    <field name="get_minimum_value" id="_23970" type="Pointer[None]" fieldid="_28229" offset="256" fid="f435" line="104"/>
+    <field name="set_current_value" id="_23971" type="Pointer[None]" fieldid="_28230" offset="320" fid="f435" line="106"/>
+    <field name="get_minimum_increment" id="_23972" type="Pointer[None]" fieldid="_28229" offset="384" fid="f435" line="108"/>
+    <field name="get_value_and_text" id="_23973" type="Pointer[None]" fieldid="_28231" offset="448" fid="f435" line="111"/>
+    <field name="get_range" id="_23974" type="Pointer[None]" fieldid="_28232" offset="512" fid="f435" line="114"/>
+    <field name="get_increment" id="_23975" type="Pointer[None]" fieldid="_28233" offset="576" fid="f435" line="115"/>
+    <field name="get_sub_ranges" id="_23976" type="Pointer[None]" fieldid="_28234" offset="640" fid="f435" line="116"/>
+    <field name="set_value" id="_23977" type="Pointer[None]" fieldid="_28235" offset="704" fid="f435" line="117"/>
+  </struct>
+
+  <struct name="AtkWindow" id="_11529" size="" align="" fid="f436" lineno="41">
+
+  </struct>
+
+  <struct name="AtkWindowIface" id="_11531" size="128" align="64" fid="f436" lineno="44">
+    <field name="parent" id="_23982" type="GTypeInterface" fieldid="_3246" offset="0" fid="f436" line="46"/>
+  </struct>
+</structs>
+</castxml2pony>
+

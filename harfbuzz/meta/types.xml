@@ -1,5 +1,6 @@
 <typedefs>
   <typedef name="String"
+    embed="var"
     ponytypein="String"
     ponytypeinconv=".cstring()"
     ponytypeout="String"
@@ -19,6 +20,7 @@
   </typedef>
 
   <typedef name="Array[String]"
+    embed="var"
     ponytypein="Array[String]"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
@@ -28,6 +30,7 @@
     rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="F32"
+    embed="var"
     ponytypein="F32"
     ponytypeinconv=""
     ponytypeout="F32"
@@ -37,6 +40,7 @@
     rvtype="F32"/>
 
   <typedef name="NullablePointer[Hblanguageimplt]"
+    embed="var"
     ponytypein="NullablePointer[Hblanguageimplt] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[Hblanguageimplt]"
@@ -46,6 +50,7 @@
     rvtype="NullablePointer[Hblanguageimplt]"/>
 
   <typedef name="Pointer[None]"
+    embed="var"
     ponytypein="Pointer[None] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[None]"
@@ -55,6 +60,7 @@
     rvtype="Pointer[None]"/>
 
   <typedef name="I32"
+    embed="var"
     ponytypein="I32"
     ponytypeinconv=""
     ponytypeout="I32"
@@ -64,6 +70,7 @@
     rvtype="I32"/>
 
   <typedef name="U32"
+    embed="var"
     ponytypein="U32"
     ponytypeinconv=""
     ponytypeout="U32"
@@ -73,6 +80,7 @@
     rvtype="U32"/>
 
   <typedef name="U8"
+    embed="var"
     ponytypein="U8"
     ponytypeinconv=""
     ponytypeout="U8"
@@ -82,6 +90,7 @@
     rvtype="U8"/>
 
   <typedef name="None"
+    embed="embed"
     ponytypein="None tag"
     ponytypeinconv=""
     ponytypeout="None"

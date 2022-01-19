@@ -8,7 +8,7 @@ codegenstruct:
 	sh -x mkstruct.sh _177 ../../test/Glib/GBytes.pony
 #	sh -x mkstruct.sh _179 ../../test/Glib/GArray.pony
 #	sh -x mkstruct.sh _181 ../../test/Glib/GByteArray.pony
-#	sh -x mkstruct.sh _183 ../../test/Glib/GPtrArray.pony
+	sh -x mkstruct.sh _183 ../../test/Glib/GPtrArray.pony
 	sh -x mkstruct.sh _273 ../../test/Glib/GError.pony
 #	sh -x mkstruct.sh _313 ../../test/Glib/GDebugKey.pony
 #	sh -x mkstruct.sh _538 ../../test/Glib/GRecMutex.pony # Array
@@ -31,7 +31,7 @@ codegenstruct:
 #	sh -x mkstruct.sh _1047 ../../test/Glib/GMemVTable.pony
 #	sh -x mkstruct.sh _1069 ../../test/Glib/GNode.pony
 	sh -x mkstruct.sh _1103 ../../test/Glib/GList.pony
-#	sh -x mkstruct.sh _1138 ../../test/Glib/GHashTable.pony
+	sh -x mkstruct.sh _1138 ../../test/Glib/GHashTable.pony
 #	sh -x mkstruct.sh _1141 ../../test/Glib/GHashTableIter.pony
 #	sh -x mkstruct.sh _1183 ../../test/Glib/GHmac.pony
 #	sh -x mkstruct.sh _1195 ../../test/Glib/GHook.pony 

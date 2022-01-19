@@ -1,4 +1,4 @@
-#structpango:
+#structharfbuzz:
 #	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gtk-3.xml -s f304 f305 f306 f307 f308 f309 f310 f312 f313 f314 f315 f316
 
 
@@ -16,8 +16,8 @@ codegenharf:
 	sh -x mkstruct.sh _8268 ../../test/Harfbuzz/Hbfontfuncst.pony
 	sh -x mkstruct.sh _8278 ../../test/Harfbuzz/Hbfontextentst.pony
 	sh -x mkstruct.sh _8280 ../../test/Harfbuzz/Hbglyphextentst.pony
-	sh -x mkstruct.sh _8373 ../../test/Harfbuzz/Hbglyphinfot.pony
-	sh -x mkstruct.sh _8378 ../../test/Harfbuzz/Hbglyphpositiont.pony
+#	sh -x mkstruct.sh _8373 ../../test/Harfbuzz/Hbglyphinfot.pony
+#	sh -x mkstruct.sh _8378 ../../test/Harfbuzz/Hbglyphpositiont.pony
 	sh -x mkstruct.sh _8380 ../../test/Harfbuzz/Hbsegmentpropertiest.pony
 	sh -x mkstruct.sh _8384 ../../test/Harfbuzz/Hbbuffert.pony
 	sh -x mkstruct.sh _8467 ../../test/Harfbuzz/Hbmapt.pony
