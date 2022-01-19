@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./types.xml"/>
+<xi:include href="./../../castxml-results/gtk-3.xml"/>
+                    <structs>
+                      <struct name="Cairo" id="_9219" size="" align="" fid="f347" lineno="124">
+
+  </struct>
+
+  <struct name="Cairosurface" id="_9221" size="" align="" fid="f347" lineno="153">
+
+  </struct>
+
+  <struct name="Cairodevice" id="_9223" size="" align="" fid="f347" lineno="171">
+
+  </struct>
+
+  <struct name="Cairomatrix" id="_9225" size="384" align="64" fid="f347" lineno="192">
+    <field name="xx" id="_22818" type="F64" fieldid="_19147" offset="0" fid="f347" line="193"/>
+    <field name="yx" id="_22819" type="F64" fieldid="_19147" offset="64" fid="f347" line="193"/>
+    <field name="xy" id="_22820" type="F64" fieldid="_19147" offset="128" fid="f347" line="194"/>
+    <field name="yy" id="_22821" type="F64" fieldid="_19147" offset="192" fid="f347" line="194"/>
+    <field name="x0" id="_22822" type="F64" fieldid="_19147" offset="256" fid="f347" line="195"/>
+    <field name="y0" id="_22823" type="F64" fieldid="_19147" offset="320" fid="f347" line="195"/>
+  </struct>
+
+  <struct name="Cairopattern" id="_9227" size="" align="" fid="f347" lineno="220">
+
+  </struct>
+
+  <struct name="Cairouserdatakey" id="_9230" size="32" align="32" fid="f347" lineno="246">
+    <field name="unused" id="_22826" type="I32" fieldid="_19108" offset="0" fid="f347" line="247"/>
+  </struct>
+
+  <struct name="Cairorectangleint" id="_9240" size="128" align="32" fid="f347" lineno="483">
+    <field name="x" id="_22833" type="I32" fieldid="_19108" offset="0" fid="f347" line="484"/>
+    <field name="y" id="_22834" type="I32" fieldid="_19108" offset="32" fid="f347" line="484"/>
+    <field name="width" id="_22835" type="I32" fieldid="_19108" offset="64" fid="f347" line="485"/>
+    <field name="height" id="_22836" type="I32" fieldid="_19108" offset="96" fid="f347" line="485"/>
+  </struct>
+
+  <struct name="Cairorectangle" id="_9319" size="256" align="64" fid="f347" lineno="1002">
+    <field name="x" id="_22849" type="F64" fieldid="_19147" offset="0" fid="f347" line="1003"/>
+    <field name="y" id="_22850" type="F64" fieldid="_19147" offset="64" fid="f347" line="1003"/>
+    <field name="width" id="_22851" type="F64" fieldid="_19147" offset="128" fid="f347" line="1003"/>
+    <field name="height" id="_22852" type="F64" fieldid="_19147" offset="192" fid="f347" line="1003"/>
+  </struct>
+
+  <struct name="Cairorectanglelist" id="_9321" size="192" align="64" fid="f347" lineno="1017">
+    <field name="status" id="_22854" type="I32" fieldid="_9233" offset="0" fid="f347" line="1018"/>
+    <field name="rectangles" id="_22855" type="NullablePointer[Cairorectangle]" fieldid="_22931" offset="64" fid="f347" line="1019"/>
+    <field name="num_rectangles" id="_22856" type="I32" fieldid="_19108" offset="128" fid="f347" line="1020"/>
+  </struct>
+
+  <struct name="Cairoscaledfont" id="_9327" size="" align="" fid="f347" lineno="1059">
+
+  </struct>
+
+  <struct name="Cairofontface" id="_9329" size="" align="" fid="f347" lineno="1080">
+
+  </struct>
+
+  <struct name="Anon" id="_9331" size="192" align="64" fid="f347" lineno="1108">
+    <field name="index" id="_22861" type="U64" fieldid="_19107" offset="0" fid="f347" line="1109"/>
+    <field name="x" id="_22862" type="F64" fieldid="_19147" offset="64" fid="f347" line="1110"/>
+    <field name="y" id="_22863" type="F64" fieldid="_19147" offset="128" fid="f347" line="1111"/>
+  </struct>
+
+  <struct name="Anon" id="_9335" size="64" align="32" fid="f347" lineno="1140">
+    <field name="num_bytes" id="_22866" type="I32" fieldid="_19108" offset="0" fid="f347" line="1141"/>
+    <field name="num_glyphs" id="_22867" type="I32" fieldid="_19108" offset="32" fid="f347" line="1142"/>
+  </struct>
+
+  <struct name="Anon" id="_9341" size="384" align="64" fid="f347" lineno="1193">
+    <field name="x_bearing" id="_22871" type="F64" fieldid="_19147" offset="0" fid="f347" line="1194"/>
+    <field name="y_bearing" id="_22872" type="F64" fieldid="_19147" offset="64" fid="f347" line="1195"/>
+    <field name="width" id="_22873" type="F64" fieldid="_19147" offset="128" fid="f347" line="1196"/>
+    <field name="height" id="_22874" type="F64" fieldid="_19147" offset="192" fid="f347" line="1197"/>
+    <field name="x_advance" id="_22875" type="F64" fieldid="_19147" offset="256" fid="f347" line="1198"/>
+    <field name="y_advance" id="_22876" type="F64" fieldid="_19147" offset="320" fid="f347" line="1199"/>
+  </struct>
+
+  <struct name="Anon" id="_9343" size="320" align="64" fid="f347" lineno="1245">
+    <field name="ascent" id="_22878" type="F64" fieldid="_19147" offset="0" fid="f347" line="1246"/>
+    <field name="descent" id="_22879" type="F64" fieldid="_19147" offset="64" fid="f347" line="1247"/>
+    <field name="height" id="_22880" type="F64" fieldid="_19147" offset="128" fid="f347" line="1248"/>
+    <field name="max_x_advance" id="_22881" type="F64" fieldid="_19147" offset="192" fid="f347" line="1249"/>
+    <field name="max_y_advance" id="_22882" type="F64" fieldid="_19147" offset="256" fid="f347" line="1250"/>
+  </struct>
+
+  <struct name="Cairofontoptions" id="_9355" size="" align="" fid="f347" lineno="1385">
+
+  </struct>
+
+  <struct name="Cairopath" id="_9455" size="192" align="64" fid="f347" lineno="2100">
+    <field name="status" id="_22914" type="I32" fieldid="_9233" offset="0" fid="f347" line="2101"/>
+    <field name="data" id="_22915" type="Pointer[None]" fieldid="_28059" offset="64" fid="f347" line="2102"/>
+    <field name="num_data" id="_22916" type="I32" fieldid="_19108" offset="128" fid="f347" line="2103"/>
+  </struct>
+
+  <struct name="Cairoregion" id="_9617" size="" align="" fid="f347" lineno="3078">
+
+  </struct>
+
+  <struct name="Anon" id="_22909" size="64" align="32" fid="f347" lineno="2070">
+    <field name="type" id="_28053" type="I32" fieldid="_9452" offset="0" fid="f347" line="2071"/>
+    <field name="length" id="_28054" type="I32" fieldid="_19108" offset="32" fid="f347" line="2072"/>
+  </struct>
+
+  <struct name="Anon" id="_22911" size="128" align="64" fid="f347" lineno="2074">
+    <field name="x" id="_28056" type="F64" fieldid="_19147" offset="0" fid="f347" line="2075"/>
+    <field name="y" id="_28057" type="F64" fieldid="_19147" offset="64" fid="f347" line="2075"/>
+  </struct>
+</structs>
+</castxml2pony>
+

@@ -1,0 +1,327 @@
+<typedefs>
+  <typedef name="String"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="GObjectClass"
+    ponytypein="GObjectClass tag"
+    ponytypeinconv=""
+    ponytypeout="GObjectClass"
+    structtype="GObjectClass"
+    structdef="GObjectClass"
+    argtype="GObjectClass tag"
+    rvtype="GObjectClass"/>
+
+  <typedef name="F64"
+    ponytypein="F64"
+    ponytypeinconv=""
+    ponytypeout="F64"
+    structtype="F64"
+    structdef="F64(0)"
+    argtype="F64"
+    rvtype="F64"/>
+
+  <typedef name="Pointer[None]"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="NullablePointer[PangoFont]"
+    ponytypein="NullablePointer[PangoFont] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoFont]"
+    structtype="NullablePointer[PangoFont]"
+    structdef="NullablePointer[PangoFont].none()"
+    argtype="NullablePointer[PangoFont] tag"
+    rvtype="NullablePointer[PangoFont]"/>
+
+  <typedef name="I32"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="NullablePointer[PangoLanguage]"
+    ponytypein="NullablePointer[PangoLanguage] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoLanguage]"
+    structtype="NullablePointer[PangoLanguage]"
+    structdef="NullablePointer[PangoLanguage].none()"
+    argtype="NullablePointer[PangoLanguage] tag"
+    rvtype="NullablePointer[PangoLanguage]"/>
+
+  <typedef name="U32"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="NullablePointer[PangoEngineShape]"
+    ponytypein="NullablePointer[PangoEngineShape] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoEngineShape]"
+    structtype="NullablePointer[PangoEngineShape]"
+    structdef="NullablePointer[PangoEngineShape].none()"
+    argtype="NullablePointer[PangoEngineShape] tag"
+    rvtype="NullablePointer[PangoEngineShape]"/>
+
+  <typedef name="NullablePointer[PangoItem]"
+    ponytypein="NullablePointer[PangoItem] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoItem]"
+    structtype="NullablePointer[PangoItem]"
+    structdef="NullablePointer[PangoItem].none()"
+    argtype="NullablePointer[PangoItem] tag"
+    rvtype="NullablePointer[PangoItem]"/>
+
+  <typedef name="NullablePointer[PangoAttrClass]"
+    ponytypein="NullablePointer[PangoAttrClass] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoAttrClass]"
+    structtype="NullablePointer[PangoAttrClass]"
+    structdef="NullablePointer[PangoAttrClass].none()"
+    argtype="NullablePointer[PangoAttrClass] tag"
+    rvtype="NullablePointer[PangoAttrClass]"/>
+
+  <typedef name="NullablePointer[PangoMatrix]"
+    ponytypein="NullablePointer[PangoMatrix] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoMatrix]"
+    structtype="NullablePointer[PangoMatrix]"
+    structdef="NullablePointer[PangoMatrix].none()"
+    argtype="NullablePointer[PangoMatrix] tag"
+    rvtype="NullablePointer[PangoMatrix]"/>
+
+  <typedef name="PangoEngine"
+    ponytypein="PangoEngine tag"
+    ponytypeinconv=""
+    ponytypeout="PangoEngine"
+    structtype="PangoEngine"
+    structdef="PangoEngine"
+    argtype="PangoEngine tag"
+    rvtype="PangoEngine"/>
+
+  <typedef name="PangoGlyphGeometry"
+    ponytypein="PangoGlyphGeometry tag"
+    ponytypeinconv=""
+    ponytypeout="PangoGlyphGeometry"
+    structtype="PangoGlyphGeometry"
+    structdef="PangoGlyphGeometry"
+    argtype="PangoGlyphGeometry tag"
+    rvtype="PangoGlyphGeometry"/>
+
+  <typedef name="PangoRectangle"
+    ponytypein="PangoRectangle tag"
+    ponytypeinconv=""
+    ponytypeout="PangoRectangle"
+    structtype="PangoRectangle"
+    structdef="PangoRectangle"
+    argtype="PangoRectangle tag"
+    rvtype="PangoRectangle"/>
+
+  <typedef name="PangoColor"
+    ponytypein="PangoColor tag"
+    ponytypeinconv=""
+    ponytypeout="PangoColor"
+    structtype="PangoColor"
+    structdef="PangoColor"
+    argtype="PangoColor tag"
+    rvtype="PangoColor"/>
+
+  <typedef name="Pointer[I32]"
+    ponytypein="Pointer[I32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[I32]"
+    structtype="Pointer[I32]"
+    structdef="Pointer[I32]"
+    argtype="Pointer[I32] tag"
+    rvtype="Pointer[I32]"/>
+
+  <typedef name="NullablePointer[PangoEngineScriptInfo]"
+    ponytypein="NullablePointer[PangoEngineScriptInfo] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoEngineScriptInfo]"
+    structtype="NullablePointer[PangoEngineScriptInfo]"
+    structdef="NullablePointer[PangoEngineScriptInfo].none()"
+    argtype="NullablePointer[PangoEngineScriptInfo] tag"
+    rvtype="NullablePointer[PangoEngineScriptInfo]"/>
+
+  <typedef name="U16"
+    ponytypein="U16"
+    ponytypeinconv=""
+    ponytypeout="U16"
+    structtype="U16"
+    structdef="U16(0)"
+    argtype="U16"
+    rvtype="U16"/>
+
+  <typedef name="NullablePointer[PangoGlyphInfo]"
+    ponytypein="NullablePointer[PangoGlyphInfo] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoGlyphInfo]"
+    structtype="NullablePointer[PangoGlyphInfo]"
+    structdef="NullablePointer[PangoGlyphInfo].none()"
+    argtype="NullablePointer[PangoGlyphInfo] tag"
+    rvtype="NullablePointer[PangoGlyphInfo]"/>
+
+  <typedef name="NullablePointer[PangoRendererPrivate]"
+    ponytypein="NullablePointer[PangoRendererPrivate] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoRendererPrivate]"
+    structtype="NullablePointer[PangoRendererPrivate]"
+    structdef="NullablePointer[PangoRendererPrivate].none()"
+    argtype="NullablePointer[PangoRendererPrivate] tag"
+    rvtype="NullablePointer[PangoRendererPrivate]"/>
+
+  <typedef name="GObject"
+    ponytypein="GObject tag"
+    ponytypeinconv=""
+    ponytypeout="GObject"
+    structtype="GObject"
+    structdef="GObject"
+    argtype="GObject tag"
+    rvtype="GObject"/>
+
+  <typedef name="NullablePointer[PangoEngineLang]"
+    ponytypein="NullablePointer[PangoEngineLang] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoEngineLang]"
+    structtype="NullablePointer[PangoEngineLang]"
+    structdef="NullablePointer[PangoEngineLang].none()"
+    argtype="NullablePointer[PangoEngineLang] tag"
+    rvtype="NullablePointer[PangoEngineLang]"/>
+
+  <typedef name="NullablePointer[PangoGlyphString]"
+    ponytypein="NullablePointer[PangoGlyphString] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoGlyphString]"
+    structtype="NullablePointer[PangoGlyphString]"
+    structdef="NullablePointer[PangoGlyphString].none()"
+    argtype="NullablePointer[PangoGlyphString] tag"
+    rvtype="NullablePointer[PangoGlyphString]"/>
+
+  <typedef name="NullablePointer[FUNCTIONTYPE]"
+    ponytypein="Pointer[FUNCTIONTYPE] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="NullablePointer[PangoFontDescription]"
+    ponytypein="NullablePointer[PangoFontDescription] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoFontDescription]"
+    structtype="NullablePointer[PangoFontDescription]"
+    structdef="NullablePointer[PangoFontDescription].none()"
+    argtype="NullablePointer[PangoFontDescription] tag"
+    rvtype="NullablePointer[PangoFontDescription]"/>
+
+  <typedef name="NullablePointer[GSList]"
+    ponytypein="NullablePointer[GSList] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[GSList]"
+    structtype="NullablePointer[GSList]"
+    structdef="NullablePointer[GSList].none()"
+    argtype="NullablePointer[GSList] tag"
+    rvtype="NullablePointer[GSList]"/>
+
+  <typedef name="PangoAnalysis"
+    ponytypein="PangoAnalysis tag"
+    ponytypeinconv=""
+    ponytypeout="PangoAnalysis"
+    structtype="PangoAnalysis"
+    structdef="PangoAnalysis"
+    argtype="PangoAnalysis tag"
+    rvtype="PangoAnalysis"/>
+
+  <typedef name="PangoAttribute"
+    ponytypein="PangoAttribute tag"
+    ponytypeinconv=""
+    ponytypeout="PangoAttribute"
+    structtype="PangoAttribute"
+    structdef="PangoAttribute"
+    argtype="PangoAttribute tag"
+    rvtype="PangoAttribute"/>
+
+  <typedef name="PangoEngineClass"
+    ponytypein="PangoEngineClass tag"
+    ponytypeinconv=""
+    ponytypeout="PangoEngineClass"
+    structtype="PangoEngineClass"
+    structdef="PangoEngineClass"
+    argtype="PangoEngineClass tag"
+    rvtype="PangoEngineClass"/>
+
+  <typedef name="PangoGlyphVisAttr"
+    ponytypein="PangoGlyphVisAttr tag"
+    ponytypeinconv=""
+    ponytypeout="PangoGlyphVisAttr"
+    structtype="PangoGlyphVisAttr"
+    structdef="PangoGlyphVisAttr"
+    argtype="PangoGlyphVisAttr tag"
+    rvtype="PangoGlyphVisAttr"/>
+
+  <typedef name="NullablePointer[PangoGlyphItem]"
+    ponytypein="NullablePointer[PangoGlyphItem] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoGlyphItem]"
+    structtype="NullablePointer[PangoGlyphItem]"
+    structdef="NullablePointer[PangoGlyphItem].none()"
+    argtype="NullablePointer[PangoGlyphItem] tag"
+    rvtype="NullablePointer[PangoGlyphItem]"/>
+
+  <typedef name="U8"
+    ponytypein="U8"
+    ponytypeinconv=""
+    ponytypeout="U8"
+    structtype="U8"
+    structdef="U8(0)"
+    argtype="U8"
+    rvtype="U8"/>
+
+  <typedef name="NullablePointer[PangoLayout]"
+    ponytypein="NullablePointer[PangoLayout] tag"
+    ponytypeinconv=""
+    ponytypeout="NullablePointer[PangoLayout]"
+    structtype="NullablePointer[PangoLayout]"
+    structdef="NullablePointer[PangoLayout].none()"
+    argtype="NullablePointer[PangoLayout] tag"
+    rvtype="NullablePointer[PangoLayout]"/>
+</typedefs>
+

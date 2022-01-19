@@ -1,0 +1,8 @@
+
+pango-1.0
+cairo-1.16.0
+harfbuzz-3.0.0
+gtk-3.0/gdk
+gdk-pixbuf-2.0
+atk-1.0
+gtk-3.0/gtk

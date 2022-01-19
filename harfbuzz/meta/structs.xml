@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./types.xml"/>
+<xi:include href="./../../castxml-results/gtk-3.xml"/>
+                    <structs>
+                      <struct name="Hblanguageimplt" id="_8126" size="" align="" fid="f304" lineno="299">
+
+  </struct>
+
+  <struct name="Hbuserdatakeyt" id="_8137" size="8" align="8" fid="f304" lineno="743">
+    <field name="unused" id="_22317" type="U8" fieldid="_19161" offset="0" fid="f304" line="745"/>
+  </struct>
+
+  <struct name="Hbfeaturet" id="_8140" size="128" align="32" fid="f304" lineno="795">
+    <field name="gtag" id="_22319" type="U32" fieldid="_8119" offset="0" fid="f304" line="796"/>
+    <field name="value" id="_22320" type="U32" fieldid="_8092" offset="32" fid="f304" line="797"/>
+    <field name="start" id="_22321" type="U32" fieldid="_19116" offset="64" fid="f304" line="798"/>
+    <field name="gend" id="_22322" type="U32" fieldid="_19116" offset="96" fid="f304" line="799"/>
+  </struct>
+
+  <struct name="Hbvariationt" id="_8144" size="64" align="32" fid="f304" lineno="821">
+    <field name="gtag" id="_22325" type="U32" fieldid="_8119" offset="0" fid="f304" line="822"/>
+    <field name="value" id="_22326" type="F32" fieldid="_19162" offset="32" fid="f304" line="823"/>
+  </struct>
+
+  <struct name="Hbblobt" id="_8155" size="" align="" fid="f305" lineno="84">
+
+  </struct>
+
+  <struct name="Hbunicodefuncst" id="_8177" size="" align="" fid="f306" lineno="289">
+
+  </struct>
+
+  <struct name="Hbsett" id="_8207" size="" align="" fid="f307" lineno="57">
+
+  </struct>
+
+  <struct name="Hbfacet" id="_8240" size="" align="" fid="f308" lineno="55">
+
+  </struct>
+
+  <struct name="Hbfontt" id="_8266" size="" align="" fid="f309" lineno="46">
+
+  </struct>
+
+  <struct name="Hbfontfuncst" id="_8268" size="" align="" fid="f309" lineno="66">
+
+  </struct>
+
+  <struct name="Hbfontextentst" id="_8278" size="384" align="32" fid="f309" lineno="113">
+    <field name="ascender" id="_22355" type="I32" fieldid="_8115" offset="0" fid="f309" line="114"/>
+    <field name="descender" id="_22356" type="I32" fieldid="_8115" offset="32" fid="f309" line="115"/>
+    <field name="line_gap" id="_22357" type="I32" fieldid="_8115" offset="64" fid="f309" line="116"/>
+    <field name="reserved9" id="_22358" type="I32" fieldid="_8115" offset="96" fid="f309" line="118"/>
+    <field name="reserved8" id="_22359" type="I32" fieldid="_8115" offset="128" fid="f309" line="119"/>
+    <field name="reserved7" id="_22360" type="I32" fieldid="_8115" offset="160" fid="f309" line="120"/>
+    <field name="reserved6" id="_22361" type="I32" fieldid="_8115" offset="192" fid="f309" line="121"/>
+    <field name="reserved5" id="_22362" type="I32" fieldid="_8115" offset="224" fid="f309" line="122"/>
+    <field name="reserved4" id="_22363" type="I32" fieldid="_8115" offset="256" fid="f309" line="123"/>
+    <field name="reserved3" id="_22364" type="I32" fieldid="_8115" offset="288" fid="f309" line="124"/>
+    <field name="reserved2" id="_22365" type="I32" fieldid="_8115" offset="320" fid="f309" line="125"/>
+    <field name="reserved1" id="_22366" type="I32" fieldid="_8115" offset="352" fid="f309" line="126"/>
+  </struct>
+
+  <struct name="Hbglyphextentst" id="_8280" size="128" align="32" fid="f309" lineno="140">
+    <field name="x_bearing" id="_22368" type="I32" fieldid="_8115" offset="0" fid="f309" line="141"/>
+    <field name="y_bearing" id="_22369" type="I32" fieldid="_8115" offset="32" fid="f309" line="142"/>
+    <field name="width" id="_22370" type="I32" fieldid="_8115" offset="64" fid="f309" line="143"/>
+    <field name="height" id="_22371" type="I32" fieldid="_8115" offset="96" fid="f309" line="144"/>
+  </struct>
+
+  <struct name="Hbglyphinfot" id="_8373" size="160" align="32" fid="f310" lineno="62">
+    <field name="codepoint" id="_22393" type="U32" fieldid="_8114" offset="0" fid="f310" line="63"/>
+    <field name="mask" id="_22394" type="U32" fieldid="_8116" offset="32" fid="f310" line="65"/>
+    <field name="cluster" id="_22395" type="U32" fieldid="_8092" offset="64" fid="f310" line="67"/>
+    <field name="var1" id="_22396" type="None" fieldid="_8118" offset="96" fid="f310" line="70"/>
+    <field name="var2" id="_22397" type="None" fieldid="_8118" offset="128" fid="f310" line="71"/>
+  </struct>
+
+  <struct name="Hbglyphpositiont" id="_8378" size="160" align="32" fid="f310" lineno="126">
+    <field name="x_advance" id="_22401" type="I32" fieldid="_8115" offset="0" fid="f310" line="127"/>
+    <field name="y_advance" id="_22402" type="I32" fieldid="_8115" offset="32" fid="f310" line="128"/>
+    <field name="x_offset" id="_22403" type="I32" fieldid="_8115" offset="64" fid="f310" line="129"/>
+    <field name="y_offset" id="_22404" type="I32" fieldid="_8115" offset="96" fid="f310" line="130"/>
+    <field name="gvar" id="_22405" type="None" fieldid="_8118" offset="128" fid="f310" line="133"/>
+  </struct>
+
+  <struct name="Hbsegmentpropertiest" id="_8380" size="256" align="64" fid="f310" lineno="146">
+    <field name="direction" id="_22407" type="I32" fieldid="_8123" offset="0" fid="f310" line="147"/>
+    <field name="script" id="_22408" type="I32" fieldid="_8132" offset="32" fid="f310" line="148"/>
+    <field name="language" id="_22409" type="NullablePointer[Hblanguageimplt]" fieldid="_8127" offset="64" fid="f310" line="149"/>
+    <field name="reserved1" id="_22410" type="Pointer[None]" fieldid="_19119" offset="128" fid="f310" line="151"/>
+    <field name="reserved2" id="_22411" type="Pointer[None]" fieldid="_19119" offset="192" fid="f310" line="152"/>
+  </struct>
+
+  <struct name="Hbbuffert" id="_8384" size="" align="" fid="f310" lineno="182">
+
+  </struct>
+
+  <struct name="Hbmapt" id="_8467" size="" align="" fid="f312" lineno="54">
+
+  </struct>
+
+  <struct name="Hbshapeplant" id="_8486" size="" align="" fid="f314" lineno="53">
+
+  </struct>
+</structs>
+</castxml2pony>
+

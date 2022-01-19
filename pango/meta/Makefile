@@ -1,0 +1,67 @@
+#structpango:
+#	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gtk-3.xml -s f317 f318 f319 f320 f321 f322 f323 f324 f325 f326 f327 f328 f329 f330 f331 f332 f333 f334 f335 f336 f337 f338 f346 f376
+
+codegenpango:
+	rm -f ../../test/Pango/*
+	sh -x mkstruct.sh _8505 ../../test/Pango/PangoCoverage.pony
+	sh -x mkstruct.sh _8519 ../../test/Pango/PangoLogAttr.pony
+	sh -x mkstruct.sh _8529 ../../test/Pango/PangoRectangle.pony
+	sh -x mkstruct.sh _8521 ../../test/Pango/PangoEngineLang.pony
+	sh -x mkstruct.sh _8523 ../../test/Pango/PangoEngineShape.pony
+	sh -x mkstruct.sh _8890 ../../test/Pango/PangoEngine.pony
+	sh -x mkstruct.sh _8892 ../../test/Pango/PangoEngineClass.pony
+	sh -x mkstruct.sh _8895 ../../test/Pango/PangoEngineLangClass.pony
+	sh -x mkstruct.sh _8898 ../../test/Pango/PangoEngineShapeClass.pony
+	sh -x mkstruct.sh _8901 ../../test/Pango/PangoEngineInfo.pony
+	sh -x mkstruct.sh _8903 ../../test/Pango/PangoEngineScriptInfo.pony
+	sh -x mkstruct.sh _8525 ../../test/Pango/PangoFont.pony
+	sh -x mkstruct.sh _8588 ../../test/Pango/PangoFontDescription.pony
+	sh -x mkstruct.sh _8590 ../../test/Pango/PangoFontMetrics.pony
+	sh -x mkstruct.sh _8650 ../../test/Pango/PangoFontFace.pony
+	sh -x mkstruct.sh _8652 ../../test/Pango/PangoFontFamily.pony
+	sh -x mkstruct.sh _8654 ../../test/Pango/PangoFontFamilyClass.pony
+	sh -x mkstruct.sh _8662 ../../test/Pango/PangoFontFaceClass.pony
+	sh -x mkstruct.sh _8670 ../../test/Pango/PangoFontClass.pony
+	sh -x mkstruct.sh _8527 ../../test/Pango/PangoFontMap.pony
+	sh -x mkstruct.sh _8823 ../../test/Pango/PangoFontMapClass.pony
+	sh -x mkstruct.sh _8825 ../../test/Pango/PangoContext.pony
+	sh -x mkstruct.sh _8539 ../../test/Pango/PangoMatrix.pony
+	sh -x mkstruct.sh _8554 ../../test/Pango/PangoScriptIter.pony
+	sh -x mkstruct.sh _8564 ../../test/Pango/PangoLanguage.pony
+	sh -x mkstruct.sh _8684 ../../test/Pango/PangoColor.pony
+	sh -x mkstruct.sh _8693 ../../test/Pango/PangoAttribute.pony
+	sh -x mkstruct.sh _8695 ../../test/Pango/PangoAttrClass.pony
+	sh -x mkstruct.sh _8697 ../../test/Pango/PangoAttrString.pony
+	sh -x mkstruct.sh _8699 ../../test/Pango/PangoAttrLanguage.pony
+	sh -x mkstruct.sh _8701 ../../test/Pango/PangoAttrInt.pony
+	sh -x mkstruct.sh _8703 ../../test/Pango/PangoAttrSize.pony
+	sh -x mkstruct.sh _8705 ../../test/Pango/PangoAttrFloat.pony
+	sh -x mkstruct.sh _8707 ../../test/Pango/PangoAttrColor.pony
+	sh -x mkstruct.sh _8709 ../../test/Pango/PangoAttrFontDesc.pony
+	sh -x mkstruct.sh _8711 ../../test/Pango/PangoAttrShape.pony
+	sh -x mkstruct.sh _8713 ../../test/Pango/PangoAttrFontFeatures.pony
+	sh -x mkstruct.sh _8715 ../../test/Pango/PangoAttrList.pony
+	sh -x mkstruct.sh _8717 ../../test/Pango/PangoAttrIterator.pony
+	sh -x mkstruct.sh _8791 ../../test/Pango/PangoAnalysis.pony
+	sh -x mkstruct.sh _8793 ../../test/Pango/PangoItem.pony
+	sh -x mkstruct.sh _8807 ../../test/Pango/PangoFontset.pony
+	sh -x mkstruct.sh _8809 ../../test/Pango/PangoFontsetClass.pony
+	sh -x mkstruct.sh _8812 ../../test/Pango/PangoFontsetSimple.pony
+	sh -x mkstruct.sh _8814 ../../test/Pango/PangoFontsetSimpleClass.pony
+	sh -x mkstruct.sh _8835 ../../test/Pango/PangoContextClass.pony
+	sh -x mkstruct.sh _8864 ../../test/Pango/PangoGlyphGeometry.pony
+	sh -x mkstruct.sh _8866 ../../test/Pango/PangoGlyphVisAttr.pony
+	sh -x mkstruct.sh _8868 ../../test/Pango/PangoGlyphInfo.pony
+	sh -x mkstruct.sh _8870 ../../test/Pango/PangoGlyphString.pony
+	sh -x mkstruct.sh _8930 ../../test/Pango/PangoGlyphItem.pony
+	sh -x mkstruct.sh _8939 ../../test/Pango/PangoGlyphItemIter.pony
+	sh -x mkstruct.sh _8948 ../../test/Pango/PangoTabArray.pony
+	sh -x mkstruct.sh _8963 ../../test/Pango/PangoLayout.pony
+	sh -x mkstruct.sh _8965 ../../test/Pango/PangoLayoutClass.pony
+	sh -x mkstruct.sh _8967 ../../test/Pango/PangoLayoutLine.pony
+	sh -x mkstruct.sh _9045 ../../test/Pango/PangoLayoutIter.pony
+	sh -x mkstruct.sh _9069 ../../test/Pango/PangoRenderer.pony
+	sh -x mkstruct.sh _9071 ../../test/Pango/PangoRendererClass.pony
+	sh -x mkstruct.sh _9073 ../../test/Pango/PangoRendererPrivate.pony
+	sh -x mkstruct.sh _10479 ../../test/Pango/PangoCairoFont.pony
+	sh -x mkstruct.sh _10481 ../../test/Pango/PangoCairoFontMap.pony
