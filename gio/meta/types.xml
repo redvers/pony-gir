@@ -1,5 +1,6 @@
 <typedefs>
   <typedef name="String"
+    embed="var"
     ponytypein="String"
     ponytypeinconv=".cstring()"
     ponytypeout="String"
@@ -19,6 +20,7 @@
   </typedef>
 
   <typedef name="Array[String]"
+    embed="var"
     ponytypein="Array[String]"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
@@ -28,6 +30,7 @@
     rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="GFilterInputStream"
+    embed="embed"
     ponytypein="GFilterInputStream tag"
     ponytypeinconv=""
     ponytypeout="GFilterInputStream"
@@ -37,6 +40,7 @@
     rvtype="GFilterInputStream"/>
 
   <typedef name="NullablePointer[GIOFuncs]"
+    embed="var"
     ponytypein="NullablePointer[GIOFuncs] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GIOFuncs]"
@@ -46,6 +50,7 @@
     rvtype="NullablePointer[GIOFuncs]"/>
 
   <typedef name="NullablePointer[GSocketListenerPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSocketListenerPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSocketListenerPrivate]"
@@ -55,6 +60,7 @@
     rvtype="NullablePointer[GSocketListenerPrivate]"/>
 
   <typedef name="GSocketAddressEnumerator"
+    embed="embed"
     ponytypein="GSocketAddressEnumerator tag"
     ponytypeinconv=""
     ponytypeout="GSocketAddressEnumerator"
@@ -64,6 +70,7 @@
     rvtype="GSocketAddressEnumerator"/>
 
   <typedef name="Array[NullablePointer[GDBusArgInfo]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GDBusArgInfo]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GDBusArgInfo]]"
@@ -73,6 +80,7 @@
     rvtype="Array[NullablePointer[GDBusArgInfo]]"/>
 
   <typedef name="Array[NullablePointer[GDBusMethodInfo]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GDBusMethodInfo]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GDBusMethodInfo]]"
@@ -82,6 +90,7 @@
     rvtype="Array[NullablePointer[GDBusMethodInfo]]"/>
 
   <typedef name="NullablePointer[GDataOutputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDataOutputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDataOutputStreamPrivate]"
@@ -91,6 +100,7 @@
     rvtype="NullablePointer[GDataOutputStreamPrivate]"/>
 
   <typedef name="NullablePointer[GIOStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GIOStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GIOStreamPrivate]"
@@ -100,6 +110,7 @@
     rvtype="NullablePointer[GIOStreamPrivate]"/>
 
   <typedef name="NullablePointer[GSocketAddress]"
+    embed="var"
     ponytypein="NullablePointer[GSocketAddress] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSocketAddress]"
@@ -109,6 +120,7 @@
     rvtype="NullablePointer[GSocketAddress]"/>
 
   <typedef name="GInetSocketAddress"
+    embed="embed"
     ponytypein="GInetSocketAddress tag"
     ponytypeinconv=""
     ponytypeout="GInetSocketAddress"
@@ -118,6 +130,7 @@
     rvtype="GInetSocketAddress"/>
 
   <typedef name="NullablePointer[GSimpleProxyResolverPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSimpleProxyResolverPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSimpleProxyResolverPrivate]"
@@ -127,6 +140,7 @@
     rvtype="NullablePointer[GSimpleProxyResolverPrivate]"/>
 
   <typedef name="NullablePointer[GPermissionPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GPermissionPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GPermissionPrivate]"
@@ -136,6 +150,7 @@
     rvtype="NullablePointer[GPermissionPrivate]"/>
 
   <typedef name="NullablePointer[GIConv]"
+    embed="var"
     ponytypein="NullablePointer[GIConv] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GIConv]"
@@ -145,6 +160,7 @@
     rvtype="NullablePointer[GIConv]"/>
 
   <typedef name="GTcpConnectionClass"
+    embed="embed"
     ponytypein="GTcpConnectionClass tag"
     ponytypeinconv=""
     ponytypeout="GTcpConnectionClass"
@@ -154,6 +170,7 @@
     rvtype="GTcpConnectionClass"/>
 
   <typedef name="Array[NullablePointer[GDBusAnnotationInfo]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GDBusAnnotationInfo]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GDBusAnnotationInfo]]"
@@ -163,6 +180,7 @@
     rvtype="Array[NullablePointer[GDBusAnnotationInfo]]"/>
 
   <typedef name="NullablePointer[GFileAttributeInfo]"
+    embed="var"
     ponytypein="NullablePointer[GFileAttributeInfo] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFileAttributeInfo]"
@@ -172,6 +190,7 @@
     rvtype="NullablePointer[GFileAttributeInfo]"/>
 
   <typedef name="Pointer[U64]"
+    embed="var"
     ponytypein="Pointer[U64] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U64]"
@@ -181,6 +200,7 @@
     rvtype="Pointer[U64]"/>
 
   <typedef name="NullablePointer[GDBusObjectSkeletonPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDBusObjectSkeletonPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDBusObjectSkeletonPrivate]"
@@ -189,16 +209,8 @@
     argtype="NullablePointer[GDBusObjectSkeletonPrivate] tag"
     rvtype="NullablePointer[GDBusObjectSkeletonPrivate]"/>
 
-  <typedef name="NullablePointer[FUNCTIONTYPE]"
-    ponytypein="Pointer[None] tag"
-    ponytypeinconv=""
-    ponytypeout="Pointer[None]"
-    structtype="Pointer[None]"
-    structdef="Pointer[None]"
-    argtype="Pointer[None] tag"
-    rvtype="Pointer[None]"/>
-
   <typedef name="NullablePointer[GSocketPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSocketPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSocketPrivate]"
@@ -208,6 +220,7 @@
     rvtype="NullablePointer[GSocketPrivate]"/>
 
   <typedef name="GSocketAddress"
+    embed="embed"
     ponytypein="GSocketAddress tag"
     ponytypeinconv=""
     ponytypeout="GSocketAddress"
@@ -217,6 +230,7 @@
     rvtype="GSocketAddress"/>
 
   <typedef name="NullablePointer[GApplicationPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GApplicationPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GApplicationPrivate]"
@@ -226,6 +240,7 @@
     rvtype="NullablePointer[GApplicationPrivate]"/>
 
   <typedef name="NullablePointer[GFileOutputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GFileOutputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFileOutputStreamPrivate]"
@@ -235,6 +250,7 @@
     rvtype="NullablePointer[GFileOutputStreamPrivate]"/>
 
   <typedef name="GIOStream"
+    embed="embed"
     ponytypein="GIOStream tag"
     ponytypeinconv=""
     ponytypeout="GIOStream"
@@ -244,6 +260,7 @@
     rvtype="GIOStream"/>
 
   <typedef name="GInetSocketAddressClass"
+    embed="embed"
     ponytypein="GInetSocketAddressClass tag"
     ponytypeinconv=""
     ponytypeout="GInetSocketAddressClass"
@@ -253,6 +270,7 @@
     rvtype="GInetSocketAddressClass"/>
 
   <typedef name="NullablePointer[GInputVector]"
+    embed="var"
     ponytypein="NullablePointer[GInputVector] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GInputVector]"
@@ -262,6 +280,7 @@
     rvtype="NullablePointer[GInputVector]"/>
 
   <typedef name="GFilterOutputStreamClass"
+    embed="embed"
     ponytypein="GFilterOutputStreamClass tag"
     ponytypeinconv=""
     ponytypeout="GFilterOutputStreamClass"
@@ -271,6 +290,7 @@
     rvtype="GFilterOutputStreamClass"/>
 
   <typedef name="NullablePointer[GSimpleActionGroupPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSimpleActionGroupPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSimpleActionGroupPrivate]"
@@ -280,6 +300,7 @@
     rvtype="NullablePointer[GSimpleActionGroupPrivate]"/>
 
   <typedef name="NullablePointer[GFileInputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GFileInputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFileInputStreamPrivate]"
@@ -289,6 +310,7 @@
     rvtype="NullablePointer[GFileInputStreamPrivate]"/>
 
   <typedef name="GObjectClass"
+    embed="embed"
     ponytypein="GObjectClass tag"
     ponytypeinconv=""
     ponytypeout="GObjectClass"
@@ -298,6 +320,7 @@
     rvtype="GObjectClass"/>
 
   <typedef name="Pointer[None]"
+    embed="var"
     ponytypein="Pointer[None] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[None]"
@@ -307,6 +330,7 @@
     rvtype="Pointer[None]"/>
 
   <typedef name="NullablePointer[GInetSocketAddressPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GInetSocketAddressPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GInetSocketAddressPrivate]"
@@ -316,6 +340,7 @@
     rvtype="NullablePointer[GInetSocketAddressPrivate]"/>
 
   <typedef name="I32"
+    embed="var"
     ponytypein="I32"
     ponytypeinconv=""
     ponytypeout="I32"
@@ -325,6 +350,7 @@
     rvtype="I32"/>
 
   <typedef name="NullablePointer[GSocketControlMessagePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSocketControlMessagePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSocketControlMessagePrivate]"
@@ -334,6 +360,7 @@
     rvtype="NullablePointer[GSocketControlMessagePrivate]"/>
 
   <typedef name="Pointer[U32]"
+    embed="var"
     ponytypein="Pointer[U32] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U32]"
@@ -343,6 +370,7 @@
     rvtype="Pointer[U32]"/>
 
   <typedef name="NullablePointer[GNetworkAddressPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GNetworkAddressPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GNetworkAddressPrivate]"
@@ -352,6 +380,7 @@
     rvtype="NullablePointer[GNetworkAddressPrivate]"/>
 
   <typedef name="NullablePointer[GSocketServicePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSocketServicePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSocketServicePrivate]"
@@ -361,6 +390,7 @@
     rvtype="NullablePointer[GSocketServicePrivate]"/>
 
   <typedef name="NullablePointer[GDBusObjectManagerClientPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDBusObjectManagerClientPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDBusObjectManagerClientPrivate]"
@@ -370,6 +400,7 @@
     rvtype="NullablePointer[GDBusObjectManagerClientPrivate]"/>
 
   <typedef name="GFilterOutputStream"
+    embed="embed"
     ponytypein="GFilterOutputStream tag"
     ponytypeinconv=""
     ponytypeout="GFilterOutputStream"
@@ -379,6 +410,7 @@
     rvtype="GFilterOutputStream"/>
 
   <typedef name="NullablePointer[GTlsDatabasePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GTlsDatabasePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTlsDatabasePrivate]"
@@ -388,6 +420,7 @@
     rvtype="NullablePointer[GTlsDatabasePrivate]"/>
 
   <typedef name="NullablePointer[GStaticResource]"
+    embed="var"
     ponytypein="NullablePointer[GStaticResource] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GStaticResource]"
@@ -397,6 +430,7 @@
     rvtype="NullablePointer[GStaticResource]"/>
 
   <typedef name="GSocketListener"
+    embed="embed"
     ponytypein="GSocketListener tag"
     ponytypeinconv=""
     ponytypeout="GSocketListener"
@@ -406,6 +440,7 @@
     rvtype="GSocketListener"/>
 
   <typedef name="Array[NullablePointer[GSocketAddress]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GSocketAddress]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GSocketAddress]]"
@@ -415,6 +450,7 @@
     rvtype="Array[NullablePointer[GSocketAddress]]"/>
 
   <typedef name="NullablePointer[GNativeSocketAddressPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GNativeSocketAddressPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GNativeSocketAddressPrivate]"
@@ -424,6 +460,7 @@
     rvtype="NullablePointer[GNativeSocketAddressPrivate]"/>
 
   <typedef name="NullablePointer[GSettingsPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSettingsPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSettingsPrivate]"
@@ -433,6 +470,7 @@
     rvtype="NullablePointer[GSettingsPrivate]"/>
 
   <typedef name="GFilterInputStreamClass"
+    embed="embed"
     ponytypein="GFilterInputStreamClass tag"
     ponytypeinconv=""
     ponytypeout="GFilterInputStreamClass"
@@ -442,6 +480,7 @@
     rvtype="GFilterInputStreamClass"/>
 
   <typedef name="Array[NullablePointer[GDBusPropertyInfo]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GDBusPropertyInfo]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GDBusPropertyInfo]]"
@@ -451,6 +490,7 @@
     rvtype="Array[NullablePointer[GDBusPropertyInfo]]"/>
 
   <typedef name="Pointer[Pointer[None]]"
+    embed="var"
     ponytypein="Pointer[Pointer[None]] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[None]]"
@@ -460,6 +500,7 @@
     rvtype="Pointer[Pointer[None]]"/>
 
   <typedef name="GSocketAddressEnumeratorClass"
+    embed="embed"
     ponytypein="GSocketAddressEnumeratorClass tag"
     ponytypeinconv=""
     ponytypeout="GSocketAddressEnumeratorClass"
@@ -469,6 +510,7 @@
     rvtype="GSocketAddressEnumeratorClass"/>
 
   <typedef name="Array[NullablePointer[GSocketControlMessage]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GSocketControlMessage]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GSocketControlMessage]]"
@@ -478,6 +520,7 @@
     rvtype="Array[NullablePointer[GSocketControlMessage]]"/>
 
   <typedef name="GSocketListenerClass"
+    embed="embed"
     ponytypein="GSocketListenerClass tag"
     ponytypeinconv=""
     ponytypeout="GSocketListenerClass"
@@ -487,6 +530,7 @@
     rvtype="GSocketListenerClass"/>
 
   <typedef name="GVolumeMonitorClass"
+    embed="embed"
     ponytypein="GVolumeMonitorClass tag"
     ponytypeinconv=""
     ponytypeout="GVolumeMonitorClass"
@@ -496,6 +540,7 @@
     rvtype="GVolumeMonitorClass"/>
 
   <typedef name="NullablePointer[GInetAddressPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GInetAddressPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GInetAddressPrivate]"
@@ -505,6 +550,7 @@
     rvtype="NullablePointer[GInetAddressPrivate]"/>
 
   <typedef name="NullablePointer[GOutputVector]"
+    embed="var"
     ponytypein="NullablePointer[GOutputVector] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GOutputVector]"
@@ -514,6 +560,7 @@
     rvtype="NullablePointer[GOutputVector]"/>
 
   <typedef name="NullablePointer[GTlsCertificatePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GTlsCertificatePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTlsCertificatePrivate]"
@@ -523,6 +570,7 @@
     rvtype="NullablePointer[GTlsCertificatePrivate]"/>
 
   <typedef name="NullablePointer[GInputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GInputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GInputStreamPrivate]"
@@ -532,6 +580,7 @@
     rvtype="NullablePointer[GInputStreamPrivate]"/>
 
   <typedef name="NullablePointer[GFileMonitorPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GFileMonitorPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFileMonitorPrivate]"
@@ -541,6 +590,7 @@
     rvtype="NullablePointer[GFileMonitorPrivate]"/>
 
   <typedef name="NullablePointer[GDataInputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDataInputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDataInputStreamPrivate]"
@@ -550,6 +600,7 @@
     rvtype="NullablePointer[GDataInputStreamPrivate]"/>
 
   <typedef name="NullablePointer[GProxyAddressEnumeratorPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GProxyAddressEnumeratorPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GProxyAddressEnumeratorPrivate]"
@@ -559,6 +610,7 @@
     rvtype="NullablePointer[GProxyAddressEnumeratorPrivate]"/>
 
   <typedef name="GSocketConnection"
+    embed="embed"
     ponytypein="GSocketConnection tag"
     ponytypeinconv=""
     ponytypeout="GSocketConnection"
@@ -568,6 +620,7 @@
     rvtype="GSocketConnection"/>
 
   <typedef name="GBufferedInputStreamClass"
+    embed="embed"
     ponytypein="GBufferedInputStreamClass tag"
     ponytypeinconv=""
     ponytypeout="GBufferedInputStreamClass"
@@ -577,6 +630,7 @@
     rvtype="GBufferedInputStreamClass"/>
 
   <typedef name="NullablePointer[GTcpWrapperConnectionPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GTcpWrapperConnectionPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTcpWrapperConnectionPrivate]"
@@ -586,6 +640,7 @@
     rvtype="NullablePointer[GTcpWrapperConnectionPrivate]"/>
 
   <typedef name="GSocketService"
+    embed="embed"
     ponytypein="GSocketService tag"
     ponytypeinconv=""
     ponytypeout="GSocketService"
@@ -595,6 +650,7 @@
     rvtype="GSocketService"/>
 
   <typedef name="NullablePointer[GFileIOStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GFileIOStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFileIOStreamPrivate]"
@@ -604,6 +660,7 @@
     rvtype="NullablePointer[GFileIOStreamPrivate]"/>
 
   <typedef name="NullablePointer[GOutputStream]"
+    embed="var"
     ponytypein="NullablePointer[GOutputStream] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GOutputStream]"
@@ -613,6 +670,7 @@
     rvtype="NullablePointer[GOutputStream]"/>
 
   <typedef name="NullablePointer[GAppLaunchContextPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GAppLaunchContextPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GAppLaunchContextPrivate]"
@@ -622,6 +680,7 @@
     rvtype="NullablePointer[GAppLaunchContextPrivate]"/>
 
   <typedef name="NullablePointer[GTlsPasswordPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GTlsPasswordPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTlsPasswordPrivate]"
@@ -631,6 +690,7 @@
     rvtype="NullablePointer[GTlsPasswordPrivate]"/>
 
   <typedef name="GSocketConnectionClass"
+    embed="embed"
     ponytypein="GSocketConnectionClass tag"
     ponytypeinconv=""
     ponytypeout="GSocketConnectionClass"
@@ -640,6 +700,7 @@
     rvtype="GSocketConnectionClass"/>
 
   <typedef name="NullablePointer[GMemoryOutputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GMemoryOutputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GMemoryOutputStreamPrivate]"
@@ -649,6 +710,7 @@
     rvtype="NullablePointer[GMemoryOutputStreamPrivate]"/>
 
   <typedef name="NullablePointer[GInputStream]"
+    embed="var"
     ponytypein="NullablePointer[GInputStream] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GInputStream]"
@@ -658,6 +720,7 @@
     rvtype="NullablePointer[GInputStream]"/>
 
   <typedef name="GOutputStream"
+    embed="embed"
     ponytypein="GOutputStream tag"
     ponytypeinconv=""
     ponytypeout="GOutputStream"
@@ -667,6 +730,7 @@
     rvtype="GOutputStream"/>
 
   <typedef name="NullablePointer[GResolverPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GResolverPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GResolverPrivate]"
@@ -676,6 +740,7 @@
     rvtype="NullablePointer[GResolverPrivate]"/>
 
   <typedef name="U32"
+    embed="var"
     ponytypein="U32"
     ponytypeinconv=""
     ponytypeout="U32"
@@ -685,6 +750,7 @@
     rvtype="U32"/>
 
   <typedef name="NullablePointer[GSocketConnectionPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSocketConnectionPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSocketConnectionPrivate]"
@@ -694,6 +760,7 @@
     rvtype="NullablePointer[GSocketConnectionPrivate]"/>
 
   <typedef name="NullablePointer[GDBusObjectProxyPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDBusObjectProxyPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDBusObjectProxyPrivate]"
@@ -703,6 +770,7 @@
     rvtype="NullablePointer[GDBusObjectProxyPrivate]"/>
 
   <typedef name="NullablePointer[GMenuAttributeIterPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GMenuAttributeIterPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GMenuAttributeIterPrivate]"
@@ -712,6 +780,7 @@
     rvtype="NullablePointer[GMenuAttributeIterPrivate]"/>
 
   <typedef name="GTypeInterface"
+    embed="embed"
     ponytypein="GTypeInterface tag"
     ponytypeinconv=""
     ponytypeout="GTypeInterface"
@@ -721,6 +790,7 @@
     rvtype="GTypeInterface"/>
 
   <typedef name="GVolumeMonitor"
+    embed="embed"
     ponytypein="GVolumeMonitor tag"
     ponytypeinconv=""
     ponytypeout="GVolumeMonitor"
@@ -730,6 +800,7 @@
     rvtype="GVolumeMonitor"/>
 
   <typedef name="NullablePointer[GFileEnumeratorPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GFileEnumeratorPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GFileEnumeratorPrivate]"
@@ -739,6 +810,7 @@
     rvtype="NullablePointer[GFileEnumeratorPrivate]"/>
 
   <typedef name="NullablePointer[GThreadedSocketServicePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GThreadedSocketServicePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GThreadedSocketServicePrivate]"
@@ -748,6 +820,7 @@
     rvtype="NullablePointer[GThreadedSocketServicePrivate]"/>
 
   <typedef name="GObject"
+    embed="embed"
     ponytypein="GObject tag"
     ponytypeinconv=""
     ponytypeout="GObject"
@@ -757,6 +830,7 @@
     rvtype="GObject"/>
 
   <typedef name="NullablePointer[GOutputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GOutputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GOutputStreamPrivate]"
@@ -766,6 +840,7 @@
     rvtype="NullablePointer[GOutputStreamPrivate]"/>
 
   <typedef name="GSocketServiceClass"
+    embed="embed"
     ponytypein="GSocketServiceClass tag"
     ponytypeinconv=""
     ponytypeout="GSocketServiceClass"
@@ -775,6 +850,7 @@
     rvtype="GSocketServiceClass"/>
 
   <typedef name="NullablePointer[GMenuModelPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GMenuModelPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GMenuModelPrivate]"
@@ -784,6 +860,7 @@
     rvtype="NullablePointer[GMenuModelPrivate]"/>
 
   <typedef name="NullablePointer[GEmblemedIconPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GEmblemedIconPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GEmblemedIconPrivate]"
@@ -793,6 +870,7 @@
     rvtype="NullablePointer[GEmblemedIconPrivate]"/>
 
   <typedef name="NullablePointer[GBufferedOutputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GBufferedOutputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GBufferedOutputStreamPrivate]"
@@ -802,6 +880,7 @@
     rvtype="NullablePointer[GBufferedOutputStreamPrivate]"/>
 
   <typedef name="Array[NullablePointer[GDBusSignalInfo]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GDBusSignalInfo]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GDBusSignalInfo]]"
@@ -811,6 +890,7 @@
     rvtype="Array[NullablePointer[GDBusSignalInfo]]"/>
 
   <typedef name="GTcpConnection"
+    embed="embed"
     ponytypein="GTcpConnection tag"
     ponytypeinconv=""
     ponytypeout="GTcpConnection"
@@ -820,6 +900,7 @@
     rvtype="GTcpConnection"/>
 
   <typedef name="NullablePointer[GConverterInputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GConverterInputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GConverterInputStreamPrivate]"
@@ -829,6 +910,7 @@
     rvtype="NullablePointer[GConverterInputStreamPrivate]"/>
 
   <typedef name="GOutputStreamClass"
+    embed="embed"
     ponytypein="GOutputStreamClass tag"
     ponytypeinconv=""
     ponytypeout="GOutputStreamClass"
@@ -838,6 +920,7 @@
     rvtype="GOutputStreamClass"/>
 
   <typedef name="NullablePointer[GDBusProxyPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDBusProxyPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDBusProxyPrivate]"
@@ -847,6 +930,7 @@
     rvtype="NullablePointer[GDBusProxyPrivate]"/>
 
   <typedef name="Array[NullablePointer[GDBusNodeInfo]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GDBusNodeInfo]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GDBusNodeInfo]]"
@@ -856,6 +940,7 @@
     rvtype="Array[NullablePointer[GDBusNodeInfo]]"/>
 
   <typedef name="NullablePointer[GTcpConnectionPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GTcpConnectionPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTcpConnectionPrivate]"
@@ -865,6 +950,7 @@
     rvtype="NullablePointer[GTcpConnectionPrivate]"/>
 
   <typedef name="NullablePointer[GDBusObjectManagerServerPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDBusObjectManagerServerPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDBusObjectManagerServerPrivate]"
@@ -874,6 +960,7 @@
     rvtype="NullablePointer[GDBusObjectManagerServerPrivate]"/>
 
   <typedef name="GBufferedInputStream"
+    embed="embed"
     ponytypein="GBufferedInputStream tag"
     ponytypeinconv=""
     ponytypeout="GBufferedInputStream"
@@ -883,6 +970,7 @@
     rvtype="GBufferedInputStream"/>
 
   <typedef name="NullablePointer[GProxyAddressPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GProxyAddressPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GProxyAddressPrivate]"
@@ -892,6 +980,7 @@
     rvtype="NullablePointer[GProxyAddressPrivate]"/>
 
   <typedef name="Pointer[U8]"
+    embed="var"
     ponytypein="Pointer[U8] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[U8]"
@@ -901,6 +990,7 @@
     rvtype="Pointer[U8]"/>
 
   <typedef name="NullablePointer[GCancellablePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GCancellablePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GCancellablePrivate]"
@@ -910,6 +1000,7 @@
     rvtype="NullablePointer[GCancellablePrivate]"/>
 
   <typedef name="GSocketAddressClass"
+    embed="embed"
     ponytypein="GSocketAddressClass tag"
     ponytypeinconv=""
     ponytypeout="GSocketAddressClass"
@@ -919,6 +1010,7 @@
     rvtype="GSocketAddressClass"/>
 
   <typedef name="NullablePointer[GResource]"
+    embed="var"
     ponytypein="NullablePointer[GResource] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GResource]"
@@ -928,6 +1020,7 @@
     rvtype="NullablePointer[GResource]"/>
 
   <typedef name="NullablePointer[GMenuLinkIterPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GMenuLinkIterPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GMenuLinkIterPrivate]"
@@ -937,6 +1030,7 @@
     rvtype="NullablePointer[GMenuLinkIterPrivate]"/>
 
   <typedef name="Array[NullablePointer[GDBusInterfaceInfo]]"
+    embed="embed"
     ponytypein="Array[NullablePointer[GDBusInterfaceInfo]] tag"
     ponytypeinconv=""
     ponytypeout="Array[NullablePointer[GDBusInterfaceInfo]]"
@@ -946,6 +1040,7 @@
     rvtype="Array[NullablePointer[GDBusInterfaceInfo]]"/>
 
   <typedef name="NullablePointer[GTlsConnectionPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GTlsConnectionPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTlsConnectionPrivate]"
@@ -955,6 +1050,7 @@
     rvtype="NullablePointer[GTlsConnectionPrivate]"/>
 
   <typedef name="U64"
+    embed="var"
     ponytypein="U64"
     ponytypeinconv=""
     ponytypeout="U64"
@@ -964,6 +1060,7 @@
     rvtype="U64"/>
 
   <typedef name="NullablePointer[GNetworkServicePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GNetworkServicePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GNetworkServicePrivate]"
@@ -973,6 +1070,7 @@
     rvtype="NullablePointer[GNetworkServicePrivate]"/>
 
   <typedef name="NullablePointer[GDBusInterfaceSkeletonPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GDBusInterfaceSkeletonPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GDBusInterfaceSkeletonPrivate]"
@@ -982,6 +1080,7 @@
     rvtype="NullablePointer[GDBusInterfaceSkeletonPrivate]"/>
 
   <typedef name="NullablePointer[GBufferedInputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GBufferedInputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GBufferedInputStreamPrivate]"
@@ -991,6 +1090,7 @@
     rvtype="NullablePointer[GBufferedInputStreamPrivate]"/>
 
   <typedef name="GInputStream"
+    embed="embed"
     ponytypein="GInputStream tag"
     ponytypeinconv=""
     ponytypeout="GInputStream"
@@ -1000,6 +1100,7 @@
     rvtype="GInputStream"/>
 
   <typedef name="GInputStreamClass"
+    embed="embed"
     ponytypein="GInputStreamClass tag"
     ponytypeinconv=""
     ponytypeout="GInputStreamClass"
@@ -1009,6 +1110,7 @@
     rvtype="GInputStreamClass"/>
 
   <typedef name="NullablePointer[GTlsInteractionPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GTlsInteractionPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GTlsInteractionPrivate]"
@@ -1018,6 +1120,7 @@
     rvtype="NullablePointer[GTlsInteractionPrivate]"/>
 
   <typedef name="NullablePointer[GMemoryInputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GMemoryInputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GMemoryInputStreamPrivate]"
@@ -1027,6 +1130,7 @@
     rvtype="NullablePointer[GMemoryInputStreamPrivate]"/>
 
   <typedef name="NullablePointer[GApplicationCommandLinePrivate]"
+    embed="var"
     ponytypein="NullablePointer[GApplicationCommandLinePrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GApplicationCommandLinePrivate]"
@@ -1036,6 +1140,7 @@
     rvtype="NullablePointer[GApplicationCommandLinePrivate]"/>
 
   <typedef name="NullablePointer[GString]"
+    embed="var"
     ponytypein="NullablePointer[GString] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GString]"
@@ -1045,6 +1150,7 @@
     rvtype="NullablePointer[GString]"/>
 
   <typedef name="NullablePointer[GConverterOutputStreamPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GConverterOutputStreamPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GConverterOutputStreamPrivate]"
@@ -1054,6 +1160,7 @@
     rvtype="NullablePointer[GConverterOutputStreamPrivate]"/>
 
   <typedef name="GIOStreamClass"
+    embed="embed"
     ponytypein="GIOStreamClass tag"
     ponytypeinconv=""
     ponytypeout="GIOStreamClass"
@@ -1063,15 +1170,17 @@
     rvtype="GIOStreamClass"/>
 
   <typedef name="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"
-    ponytypein="Pointer[Pointer[NullablePointer[GSocketControlMessage]]] tag"
+    embed="var"
+    ponytypein="NullablePointer[Array[NullablePointer[GSocketControlMessage]]] tag"
     ponytypeinconv=""
-    ponytypeout="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
-    structtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
-    structdef="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
-    argtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]] tag"
-    rvtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"/>
+    ponytypeout="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"
+    structtype="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"
+    structdef="NullablePointer[Array[NullablePointer[GSocketControlMessage]]].none()"
+    argtype="NullablePointer[Array[NullablePointer[GSocketControlMessage]]] tag"
+    rvtype="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"/>
 
   <typedef name="NullablePointer[GInetAddressMaskPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GInetAddressMaskPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GInetAddressMaskPrivate]"
@@ -1081,6 +1190,7 @@
     rvtype="NullablePointer[GInetAddressMaskPrivate]"/>
 
   <typedef name="NullablePointer[GMountOperationPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GMountOperationPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GMountOperationPrivate]"
@@ -1090,6 +1200,7 @@
     rvtype="NullablePointer[GMountOperationPrivate]"/>
 
   <typedef name="NullablePointer[GSocketClientPrivate]"
+    embed="var"
     ponytypein="NullablePointer[GSocketClientPrivate] tag"
     ponytypeinconv=""
     ponytypeout="NullablePointer[GSocketClientPrivate]"
