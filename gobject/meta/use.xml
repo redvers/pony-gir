@@ -1,0 +1,5175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="./renderuse.xml"/>
+<xi:include href="./usetypes.xml"/>
+<xi:include href="./../../castxml-results/gobject.xml"/>
+                    <uses>
+                      <use id="_3261" name="g_type_init"
+     ponyname="g_type_init"
+     fid="f131"
+     lineno="710"
+     rv="None">
+     <useargs/>
+  </use>
+  <use id="_3262" name="g_type_init_with_debug_flags"
+     ponyname="g_type_init_with_debug_flags"
+     fid="f131"
+     lineno="712"
+     rv="None">
+     <useargs>
+       <usearg name="debugflags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3263" name="g_type_name"
+     ponyname="g_type_name"
+     fid="f131"
+     lineno="716"
+     rv="String">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3264" name="g_type_qname"
+     ponyname="g_type_qname"
+     fid="f131"
+     lineno="718"
+     rv="U32">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3265" name="g_type_from_name"
+     ponyname="g_type_from_name"
+     fid="f131"
+     lineno="720"
+     rv="U64">
+     <useargs>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3266" name="g_type_parent"
+     ponyname="g_type_parent"
+     fid="f131"
+     lineno="722"
+     rv="U64">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3267" name="g_type_depth"
+     ponyname="g_type_depth"
+     fid="f131"
+     lineno="724"
+     rv="U32">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3268" name="g_type_next_base"
+     ponyname="g_type_next_base"
+     fid="f131"
+     lineno="726"
+     rv="U64">
+     <useargs>
+       <usearg name="leaftype" type="U64"/>
+       <usearg name="roottype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3269" name="g_type_is_a"
+     ponyname="g_type_is_a"
+     fid="f131"
+     lineno="729"
+     rv="I32">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="isatype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3270" name="g_type_class_ref"
+     ponyname="g_type_class_ref"
+     fid="f131"
+     lineno="732"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3271" name="g_type_class_peek"
+     ponyname="g_type_class_peek"
+     fid="f131"
+     lineno="734"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3272" name="g_type_class_peek_static"
+     ponyname="g_type_class_peek_static"
+     fid="f131"
+     lineno="736"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3273" name="g_type_class_unref"
+     ponyname="g_type_class_unref"
+     fid="f131"
+     lineno="738"
+     rv="None">
+     <useargs>
+       <usearg name="gclass" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3274" name="g_type_class_peek_parent"
+     ponyname="g_type_class_peek_parent"
+     fid="f131"
+     lineno="740"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gclass" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3275" name="g_type_interface_peek"
+     ponyname="g_type_interface_peek"
+     fid="f131"
+     lineno="742"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="instanceclass" type="Pointer[None]"/>
+       <usearg name="ifacetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3276" name="g_type_interface_peek_parent"
+     ponyname="g_type_interface_peek_parent"
+     fid="f131"
+     lineno="745"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="giface" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3277" name="g_type_default_interface_ref"
+     ponyname="g_type_default_interface_ref"
+     fid="f131"
+     lineno="748"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3278" name="g_type_default_interface_peek"
+     ponyname="g_type_default_interface_peek"
+     fid="f131"
+     lineno="750"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3279" name="g_type_default_interface_unref"
+     ponyname="g_type_default_interface_unref"
+     fid="f131"
+     lineno="752"
+     rv="None">
+     <useargs>
+       <usearg name="giface" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3280" name="g_type_children"
+     ponyname="g_type_children"
+     fid="f131"
+     lineno="756"
+     rv="Pointer[U64]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="nchildren" type="Pointer[U32]"/>
+     </useargs>
+  </use>
+  <use id="_3281" name="g_type_interfaces"
+     ponyname="g_type_interfaces"
+     fid="f131"
+     lineno="759"
+     rv="Pointer[U64]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="ninterfaces" type="Pointer[U32]"/>
+     </useargs>
+  </use>
+  <use id="_3282" name="g_type_set_qdata"
+     ponyname="g_type_set_qdata"
+     fid="f131"
+     lineno="764"
+     rv="None">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="quark" type="U32"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3283" name="g_type_get_qdata"
+     ponyname="g_type_get_qdata"
+     fid="f131"
+     lineno="768"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="quark" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3284" name="g_type_query"
+     ponyname="g_type_query"
+     fid="f131"
+     lineno="771"
+     rv="None">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="query" type="NullablePointer[GTypeQuery]"/>
+     </useargs>
+  </use>
+  <use id="_3285" name="g_type_get_instance_count"
+     ponyname="g_type_get_instance_count"
+     fid="f131"
+     lineno="775"
+     rv="I32">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3299" name="g_type_register_static"
+     ponyname="g_type_register_static"
+     fid="f131"
+     lineno="1304"
+     rv="U64">
+     <useargs>
+       <usearg name="parenttype" type="U64"/>
+       <usearg name="typename" type="String"/>
+       <usearg name="info" type="NullablePointer[GTypeInfo]"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3300" name="g_type_register_static_simple"
+     ponyname="g_type_register_static_simple"
+     fid="f131"
+     lineno="1309"
+     rv="U64">
+     <useargs>
+       <usearg name="parenttype" type="U64"/>
+       <usearg name="typename" type="String"/>
+       <usearg name="classsize" type="U32"/>
+       <usearg name="classinit" type="Pointer[None]"/>
+       <usearg name="instancesize" type="U32"/>
+       <usearg name="instanceinit" type="Pointer[None]"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3301" name="g_type_register_dynamic"
+     ponyname="g_type_register_dynamic"
+     fid="f131"
+     lineno="1318"
+     rv="U64">
+     <useargs>
+       <usearg name="parenttype" type="U64"/>
+       <usearg name="typename" type="String"/>
+       <usearg name="plugin" type="NullablePointer[GTypePlugin]"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3302" name="g_type_register_fundamental"
+     ponyname="g_type_register_fundamental"
+     fid="f131"
+     lineno="1323"
+     rv="U64">
+     <useargs>
+       <usearg name="typeid" type="U64"/>
+       <usearg name="typename" type="String"/>
+       <usearg name="info" type="NullablePointer[GTypeInfo]"/>
+       <usearg name="finfo" type="NullablePointer[GTypeFundamentalInfo]"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3303" name="g_type_add_interface_static"
+     ponyname="g_type_add_interface_static"
+     fid="f131"
+     lineno="1329"
+     rv="None">
+     <useargs>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="interfacetype" type="U64"/>
+       <usearg name="info" type="NullablePointer[GInterfaceInfo]"/>
+     </useargs>
+  </use>
+  <use id="_3304" name="g_type_add_interface_dynamic"
+     ponyname="g_type_add_interface_dynamic"
+     fid="f131"
+     lineno="1333"
+     rv="None">
+     <useargs>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="interfacetype" type="U64"/>
+       <usearg name="plugin" type="NullablePointer[GTypePlugin]"/>
+     </useargs>
+  </use>
+  <use id="_3305" name="g_type_interface_add_prerequisite"
+     ponyname="g_type_interface_add_prerequisite"
+     fid="f131"
+     lineno="1337"
+     rv="None">
+     <useargs>
+       <usearg name="interfacetype" type="U64"/>
+       <usearg name="prerequisitetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3306" name="g_type_interface_prerequisites"
+     ponyname="g_type_interface_prerequisites"
+     fid="f131"
+     lineno="1340"
+     rv="Pointer[U64]">
+     <useargs>
+       <usearg name="interfacetype" type="U64"/>
+       <usearg name="nprerequisites" type="Pointer[U32]"/>
+     </useargs>
+  </use>
+  <use id="_3307" name="g_type_interface_instantiatable_prerequisite"
+     ponyname="g_type_interface_instantiatable_prerequisite"
+     fid="f131"
+     lineno="1343"
+     rv="U64">
+     <useargs>
+       <usearg name="interfacetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3308" name="g_type_class_add_private"
+     ponyname="g_type_class_add_private"
+     fid="f131"
+     lineno="1346"
+     rv="None">
+     <useargs>
+       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="privatesize" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3309" name="g_type_add_instance_private"
+     ponyname="g_type_add_instance_private"
+     fid="f131"
+     lineno="1349"
+     rv="I32">
+     <useargs>
+       <usearg name="classtype" type="U64"/>
+       <usearg name="privatesize" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3310" name="g_type_instance_get_private"
+     ponyname="g_type_instance_get_private"
+     fid="f131"
+     lineno="1352"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+       <usearg name="privatetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3311" name="g_type_class_adjust_private_offset"
+     ponyname="g_type_class_adjust_private_offset"
+     fid="f131"
+     lineno="1355"
+     rv="None">
+     <useargs>
+       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="privatesizeoroffset" type="Pointer[I32]"/>
+     </useargs>
+  </use>
+  <use id="_3312" name="g_type_add_class_private"
+     ponyname="g_type_add_class_private"
+     fid="f131"
+     lineno="1359"
+     rv="None">
+     <useargs>
+       <usearg name="classtype" type="U64"/>
+       <usearg name="privatesize" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3313" name="g_type_class_get_private"
+     ponyname="g_type_class_get_private"
+     fid="f131"
+     lineno="1362"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="klass" type="NullablePointer[GTypeClass]"/>
+       <usearg name="privatetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3314" name="g_type_class_get_instance_private_offset"
+     ponyname="g_type_class_get_instance_private_offset"
+     fid="f131"
+     lineno="1365"
+     rv="I32">
+     <useargs>
+       <usearg name="gclass" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3315" name="g_type_ensure"
+     ponyname="g_type_ensure"
+     fid="f131"
+     lineno="1368"
+     rv="None">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3316" name="g_type_get_type_registration_serial"
+     ponyname="g_type_get_type_registration_serial"
+     fid="f131"
+     lineno="1370"
+     rv="U32">
+     <useargs/>
+  </use>
+  <use id="_3317" name="g_type_get_plugin"
+     ponyname="g_type_get_plugin"
+     fid="f131"
+     lineno="2344"
+     rv="NullablePointer[GTypePlugin]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3318" name="g_type_interface_get_plugin"
+     ponyname="g_type_interface_get_plugin"
+     fid="f131"
+     lineno="2346"
+     rv="NullablePointer[GTypePlugin]">
+     <useargs>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="interfacetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3319" name="g_type_fundamental_next"
+     ponyname="g_type_fundamental_next"
+     fid="f131"
+     lineno="2349"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3320" name="g_type_fundamental"
+     ponyname="g_type_fundamental"
+     fid="f131"
+     lineno="2351"
+     rv="U64">
+     <useargs>
+       <usearg name="typeid" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3321" name="g_type_create_instance"
+     ponyname="g_type_create_instance"
+     fid="f131"
+     lineno="2353"
+     rv="NullablePointer[GTypeInstance]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3322" name="g_type_free_instance"
+     ponyname="g_type_free_instance"
+     fid="f131"
+     lineno="2355"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+     </useargs>
+  </use>
+  <use id="_3323" name="g_type_add_class_cache_func"
+     ponyname="g_type_add_class_cache_func"
+     fid="f131"
+     lineno="2358"
+     rv="None">
+     <useargs>
+       <usearg name="cachedata" type="Pointer[None]"/>
+       <usearg name="cachefunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3324" name="g_type_remove_class_cache_func"
+     ponyname="g_type_remove_class_cache_func"
+     fid="f131"
+     lineno="2361"
+     rv="None">
+     <useargs>
+       <usearg name="cachedata" type="Pointer[None]"/>
+       <usearg name="cachefunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3325" name="g_type_class_unref_uncached"
+     ponyname="g_type_class_unref_uncached"
+     fid="f131"
+     lineno="2364"
+     rv="None">
+     <useargs>
+       <usearg name="gclass" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3326" name="g_type_add_interface_check"
+     ponyname="g_type_add_interface_check"
+     fid="f131"
+     lineno="2367"
+     rv="None">
+     <useargs>
+       <usearg name="checkdata" type="Pointer[None]"/>
+       <usearg name="checkfunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3327" name="g_type_remove_interface_check"
+     ponyname="g_type_remove_interface_check"
+     fid="f131"
+     lineno="2370"
+     rv="None">
+     <useargs>
+       <usearg name="checkdata" type="Pointer[None]"/>
+       <usearg name="checkfunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3328" name="g_type_value_table_peek"
+     ponyname="g_type_value_table_peek"
+     fid="f131"
+     lineno="2374"
+     rv="NullablePointer[GTypeValueTable]">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3329" name="g_type_check_instance"
+     ponyname="g_type_check_instance"
+     fid="f131"
+     lineno="2379"
+     rv="I32">
+     <useargs>
+       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+     </useargs>
+  </use>
+  <use id="_3330" name="g_type_check_instance_cast"
+     ponyname="g_type_check_instance_cast"
+     fid="f131"
+     lineno="2381"
+     rv="NullablePointer[GTypeInstance]">
+     <useargs>
+       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+       <usearg name="ifacetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3331" name="g_type_check_instance_is_a"
+     ponyname="g_type_check_instance_is_a"
+     fid="f131"
+     lineno="2384"
+     rv="I32">
+     <useargs>
+       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+       <usearg name="ifacetype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3332" name="g_type_check_instance_is_fundamentally_a"
+     ponyname="g_type_check_instance_is_fundamentally_a"
+     fid="f131"
+     lineno="2387"
+     rv="I32">
+     <useargs>
+       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+       <usearg name="fundamentaltype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3333" name="g_type_check_class_cast"
+     ponyname="g_type_check_class_cast"
+     fid="f131"
+     lineno="2390"
+     rv="NullablePointer[GTypeClass]">
+     <useargs>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
+       <usearg name="isatype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3334" name="g_type_check_class_is_a"
+     ponyname="g_type_check_class_is_a"
+     fid="f131"
+     lineno="2393"
+     rv="I32">
+     <useargs>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
+       <usearg name="isatype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3335" name="g_type_check_is_value_type"
+     ponyname="g_type_check_is_value_type"
+     fid="f131"
+     lineno="2396"
+     rv="I32">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3336" name="g_type_check_value"
+     ponyname="g_type_check_value"
+     fid="f131"
+     lineno="2398"
+     rv="I32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3337" name="g_type_check_value_holds"
+     ponyname="g_type_check_value_holds"
+     fid="f131"
+     lineno="2400"
+     rv="I32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3338" name="g_type_test_flags"
+     ponyname="g_type_test_flags"
+     fid="f131"
+     lineno="2403"
+     rv="I32">
+     <useargs>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="flags" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3339" name="g_type_name_from_instance"
+     ponyname="g_type_name_from_instance"
+     fid="f131"
+     lineno="2409"
+     rv="String">
+     <useargs>
+       <usearg name="instance" type="NullablePointer[GTypeInstance]"/>
+     </useargs>
+  </use>
+  <use id="_3340" name="g_type_name_from_class"
+     ponyname="g_type_name_from_class"
+     fid="f131"
+     lineno="2411"
+     rv="String">
+     <useargs>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
+     </useargs>
+  </use>
+  <use id="_3342" name="g_value_init"
+     ponyname="g_value_init"
+     fid="f132"
+     lineno="133"
+     rv="NullablePointer[GValue]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="gtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3343" name="g_value_copy"
+     ponyname="g_value_copy"
+     fid="f132"
+     lineno="136"
+     rv="None">
+     <useargs>
+       <usearg name="srcvalue" type="NullablePointer[GValue]"/>
+       <usearg name="destvalue" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3344" name="g_value_reset"
+     ponyname="g_value_reset"
+     fid="f132"
+     lineno="139"
+     rv="NullablePointer[GValue]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3345" name="g_value_unset"
+     ponyname="g_value_unset"
+     fid="f132"
+     lineno="141"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3346" name="g_value_set_instance"
+     ponyname="g_value_set_instance"
+     fid="f132"
+     lineno="143"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3347" name="g_value_init_from_instance"
+     ponyname="g_value_init_from_instance"
+     fid="f132"
+     lineno="146"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3348" name="g_value_fits_pointer"
+     ponyname="g_value_fits_pointer"
+     fid="f132"
+     lineno="152"
+     rv="I32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3349" name="g_value_peek_pointer"
+     ponyname="g_value_peek_pointer"
+     fid="f132"
+     lineno="154"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3350" name="g_value_type_compatible"
+     ponyname="g_value_type_compatible"
+     fid="f132"
+     lineno="159"
+     rv="I32">
+     <useargs>
+       <usearg name="srctype" type="U64"/>
+       <usearg name="desttype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3351" name="g_value_type_transformable"
+     ponyname="g_value_type_transformable"
+     fid="f132"
+     lineno="162"
+     rv="I32">
+     <useargs>
+       <usearg name="srctype" type="U64"/>
+       <usearg name="desttype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3352" name="g_value_transform"
+     ponyname="g_value_transform"
+     fid="f132"
+     lineno="165"
+     rv="I32">
+     <useargs>
+       <usearg name="srcvalue" type="NullablePointer[GValue]"/>
+       <usearg name="destvalue" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3353" name="g_value_register_transform_func"
+     ponyname="g_value_register_transform_func"
+     fid="f132"
+     lineno="168"
+     rv="None">
+     <useargs>
+       <usearg name="srctype" type="U64"/>
+       <usearg name="desttype" type="U64"/>
+       <usearg name="transformfunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3364" name="g_param_spec_ref"
+     ponyname="g_param_spec_ref"
+     fid="f133"
+     lineno="282"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3365" name="g_param_spec_unref"
+     ponyname="g_param_spec_unref"
+     fid="f133"
+     lineno="284"
+     rv="None">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3366" name="g_param_spec_sink"
+     ponyname="g_param_spec_sink"
+     fid="f133"
+     lineno="286"
+     rv="None">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3367" name="g_param_spec_ref_sink"
+     ponyname="g_param_spec_ref_sink"
+     fid="f133"
+     lineno="288"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3368" name="g_param_spec_get_qdata"
+     ponyname="g_param_spec_get_qdata"
+     fid="f133"
+     lineno="290"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="quark" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3369" name="g_param_spec_set_qdata"
+     ponyname="g_param_spec_set_qdata"
+     fid="f133"
+     lineno="293"
+     rv="None">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="quark" type="U32"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3370" name="g_param_spec_set_qdata_full"
+     ponyname="g_param_spec_set_qdata_full"
+     fid="f133"
+     lineno="297"
+     rv="None">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="quark" type="U32"/>
+       <usearg name="data" type="Pointer[None]"/>
+       <usearg name="destroy" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3371" name="g_param_spec_steal_qdata"
+     ponyname="g_param_spec_steal_qdata"
+     fid="f133"
+     lineno="302"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="quark" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3372" name="g_param_spec_get_redirect_target"
+     ponyname="g_param_spec_get_redirect_target"
+     fid="f133"
+     lineno="305"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3373" name="g_param_value_set_default"
+     ponyname="g_param_value_set_default"
+     fid="f133"
+     lineno="308"
+     rv="None">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3374" name="g_param_value_defaults"
+     ponyname="g_param_value_defaults"
+     fid="f133"
+     lineno="311"
+     rv="I32">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3375" name="g_param_value_validate"
+     ponyname="g_param_value_validate"
+     fid="f133"
+     lineno="314"
+     rv="I32">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3376" name="g_param_value_convert"
+     ponyname="g_param_value_convert"
+     fid="f133"
+     lineno="317"
+     rv="I32">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="srcvalue" type="NullablePointer[GValue]"/>
+       <usearg name="destvalue" type="NullablePointer[GValue]"/>
+       <usearg name="strictvalidation" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3377" name="g_param_values_cmp"
+     ponyname="g_param_values_cmp"
+     fid="f133"
+     lineno="322"
+     rv="I32">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="value1" type="NullablePointer[GValue]"/>
+       <usearg name="value2" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3378" name="g_param_spec_get_name"
+     ponyname="g_param_spec_get_name"
+     fid="f133"
+     lineno="326"
+     rv="String">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3379" name="g_param_spec_get_nick"
+     ponyname="g_param_spec_get_nick"
+     fid="f133"
+     lineno="328"
+     rv="String">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3380" name="g_param_spec_get_blurb"
+     ponyname="g_param_spec_get_blurb"
+     fid="f133"
+     lineno="330"
+     rv="String">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3381" name="g_value_set_param"
+     ponyname="g_value_set_param"
+     fid="f133"
+     lineno="332"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="param" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3382" name="g_value_get_param"
+     ponyname="g_value_get_param"
+     fid="f133"
+     lineno="335"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3383" name="g_value_dup_param"
+     ponyname="g_value_dup_param"
+     fid="f133"
+     lineno="337"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3384" name="g_value_take_param"
+     ponyname="g_value_take_param"
+     fid="f133"
+     lineno="341"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="param" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3385" name="g_value_set_param_take_ownership"
+     ponyname="g_value_set_param_take_ownership"
+     fid="f133"
+     lineno="344"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="param" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3386" name="g_param_spec_get_default_value"
+     ponyname="g_param_spec_get_default_value"
+     fid="f133"
+     lineno="347"
+     rv="NullablePointer[GValue]">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3387" name="g_param_spec_get_name_quark"
+     ponyname="g_param_spec_get_name_quark"
+     fid="f133"
+     lineno="350"
+     rv="U32">
+     <useargs>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3390" name="g_param_type_register_static"
+     ponyname="g_param_type_register_static"
+     fid="f133"
+     lineno="398"
+     rv="U64">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="pspecinfo" type="NullablePointer[GParamSpecTypeInfo]"/>
+     </useargs>
+  </use>
+  <use id="_3391" name="g_param_spec_is_valid_name"
+     ponyname="g_param_spec_is_valid_name"
+     fid="f133"
+     lineno="402"
+     rv="I32">
+     <useargs>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3392" name="_g_param_type_register_static_constant"
+     ponyname="_g_param_type_register_static_constant"
+     fid="f133"
+     lineno="405"
+     rv="U64">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="pspecinfo" type="NullablePointer[GParamSpecTypeInfo]"/>
+       <usearg name="opttype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3393" name="g_param_spec_internal"
+     ponyname="g_param_spec_internal"
+     fid="f133"
+     lineno="412"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="paramtype" type="U64"/>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3394" name="g_param_spec_pool_new"
+     ponyname="g_param_spec_pool_new"
+     fid="f133"
+     lineno="418"
+     rv="NullablePointer[GParamSpecPool]">
+     <useargs>
+       <usearg name="typeprefixing" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3395" name="g_param_spec_pool_insert"
+     ponyname="g_param_spec_pool_insert"
+     fid="f133"
+     lineno="420"
+     rv="None">
+     <useargs>
+       <usearg name="pool" type="NullablePointer[GParamSpecPool]"/>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="ownertype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3396" name="g_param_spec_pool_remove"
+     ponyname="g_param_spec_pool_remove"
+     fid="f133"
+     lineno="424"
+     rv="None">
+     <useargs>
+       <usearg name="pool" type="NullablePointer[GParamSpecPool]"/>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3397" name="g_param_spec_pool_lookup"
+     ponyname="g_param_spec_pool_lookup"
+     fid="f133"
+     lineno="427"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="pool" type="NullablePointer[GParamSpecPool]"/>
+       <usearg name="paramname" type="String"/>
+       <usearg name="ownertype" type="U64"/>
+       <usearg name="walkancestors" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3398" name="g_param_spec_pool_list_owned"
+     ponyname="g_param_spec_pool_list_owned"
+     fid="f133"
+     lineno="432"
+     rv="NullablePointer[GList]">
+     <useargs>
+       <usearg name="pool" type="NullablePointer[GParamSpecPool]"/>
+       <usearg name="ownertype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3399" name="g_param_spec_pool_list"
+     ponyname="g_param_spec_pool_list"
+     fid="f133"
+     lineno="435"
+     rv="Array[NullablePointer[GParamSpec]]">
+     <useargs>
+       <usearg name="pool" type="NullablePointer[GParamSpecPool]"/>
+       <usearg name="ownertype" type="U64"/>
+       <usearg name="npspecsp" type="Pointer[U32]"/>
+     </useargs>
+  </use>
+  <use id="_3410" name="g_cclosure_new"
+     ponyname="g_cclosure_new"
+     fid="f134"
+     lineno="229"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="callbackfunc" type="Pointer[None]"/>
+       <usearg name="userdata" type="Pointer[None]"/>
+       <usearg name="destroydata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3411" name="g_cclosure_new_swap"
+     ponyname="g_cclosure_new_swap"
+     fid="f134"
+     lineno="233"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="callbackfunc" type="Pointer[None]"/>
+       <usearg name="userdata" type="Pointer[None]"/>
+       <usearg name="destroydata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3412" name="g_signal_type_cclosure_new"
+     ponyname="g_signal_type_cclosure_new"
+     fid="f134"
+     lineno="237"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="itype" type="U64"/>
+       <usearg name="structoffset" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3413" name="g_closure_ref"
+     ponyname="g_closure_ref"
+     fid="f134"
+     lineno="243"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3414" name="g_closure_sink"
+     ponyname="g_closure_sink"
+     fid="f134"
+     lineno="245"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3415" name="g_closure_unref"
+     ponyname="g_closure_unref"
+     fid="f134"
+     lineno="247"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3416" name="g_closure_new_simple"
+     ponyname="g_closure_new_simple"
+     fid="f134"
+     lineno="250"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="sizeofclosure" type="U32"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3417" name="g_closure_add_finalize_notifier"
+     ponyname="g_closure_add_finalize_notifier"
+     fid="f134"
+     lineno="253"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="notifydata" type="Pointer[None]"/>
+       <usearg name="notifyfunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3418" name="g_closure_remove_finalize_notifier"
+     ponyname="g_closure_remove_finalize_notifier"
+     fid="f134"
+     lineno="257"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="notifydata" type="Pointer[None]"/>
+       <usearg name="notifyfunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3419" name="g_closure_add_invalidate_notifier"
+     ponyname="g_closure_add_invalidate_notifier"
+     fid="f134"
+     lineno="261"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="notifydata" type="Pointer[None]"/>
+       <usearg name="notifyfunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3420" name="g_closure_remove_invalidate_notifier"
+     ponyname="g_closure_remove_invalidate_notifier"
+     fid="f134"
+     lineno="265"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="notifydata" type="Pointer[None]"/>
+       <usearg name="notifyfunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3421" name="g_closure_add_marshal_guards"
+     ponyname="g_closure_add_marshal_guards"
+     fid="f134"
+     lineno="269"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="premarshaldata" type="Pointer[None]"/>
+       <usearg name="premarshalnotify" type="Pointer[None]"/>
+       <usearg name="postmarshaldata" type="Pointer[None]"/>
+       <usearg name="postmarshalnotify" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3422" name="g_closure_set_marshal"
+     ponyname="g_closure_set_marshal"
+     fid="f134"
+     lineno="275"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="marshal" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3423" name="g_closure_set_meta_marshal"
+     ponyname="g_closure_set_meta_marshal"
+     fid="f134"
+     lineno="278"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="metamarshal" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3424" name="g_closure_invalidate"
+     ponyname="g_closure_invalidate"
+     fid="f134"
+     lineno="282"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3425" name="g_closure_invoke"
+     ponyname="g_closure_invoke"
+     fid="f134"
+     lineno="284"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3426" name="g_cclosure_marshal_generic"
+     ponyname="g_cclosure_marshal_generic"
+     fid="f134"
+     lineno="302"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returngvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3427" name="g_cclosure_marshal_generic_va"
+     ponyname="g_cclosure_marshal_generic_va"
+     fid="f134"
+     lineno="310"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="argslist" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3428" name="g_cclosure_marshal_VOID__VOID"
+     ponyname="g_cclosure_marshal_VOID__VOID"
+     fid="f135"
+     lineno="24"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3429" name="g_cclosure_marshal_VOID__VOIDv"
+     ponyname="g_cclosure_marshal_VOID__VOIDv"
+     fid="f135"
+     lineno="31"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3430" name="g_cclosure_marshal_VOID__BOOLEAN"
+     ponyname="g_cclosure_marshal_VOID__BOOLEAN"
+     fid="f135"
+     lineno="41"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3431" name="g_cclosure_marshal_VOID__BOOLEANv"
+     ponyname="g_cclosure_marshal_VOID__BOOLEANv"
+     fid="f135"
+     lineno="48"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3432" name="g_cclosure_marshal_VOID__CHAR"
+     ponyname="g_cclosure_marshal_VOID__CHAR"
+     fid="f135"
+     lineno="58"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3433" name="g_cclosure_marshal_VOID__CHARv"
+     ponyname="g_cclosure_marshal_VOID__CHARv"
+     fid="f135"
+     lineno="65"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3434" name="g_cclosure_marshal_VOID__UCHAR"
+     ponyname="g_cclosure_marshal_VOID__UCHAR"
+     fid="f135"
+     lineno="75"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3435" name="g_cclosure_marshal_VOID__UCHARv"
+     ponyname="g_cclosure_marshal_VOID__UCHARv"
+     fid="f135"
+     lineno="82"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3436" name="g_cclosure_marshal_VOID__INT"
+     ponyname="g_cclosure_marshal_VOID__INT"
+     fid="f135"
+     lineno="92"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3437" name="g_cclosure_marshal_VOID__INTv"
+     ponyname="g_cclosure_marshal_VOID__INTv"
+     fid="f135"
+     lineno="99"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3438" name="g_cclosure_marshal_VOID__UINT"
+     ponyname="g_cclosure_marshal_VOID__UINT"
+     fid="f135"
+     lineno="109"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3439" name="g_cclosure_marshal_VOID__UINTv"
+     ponyname="g_cclosure_marshal_VOID__UINTv"
+     fid="f135"
+     lineno="116"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3440" name="g_cclosure_marshal_VOID__LONG"
+     ponyname="g_cclosure_marshal_VOID__LONG"
+     fid="f135"
+     lineno="126"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3441" name="g_cclosure_marshal_VOID__LONGv"
+     ponyname="g_cclosure_marshal_VOID__LONGv"
+     fid="f135"
+     lineno="133"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3442" name="g_cclosure_marshal_VOID__ULONG"
+     ponyname="g_cclosure_marshal_VOID__ULONG"
+     fid="f135"
+     lineno="143"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3443" name="g_cclosure_marshal_VOID__ULONGv"
+     ponyname="g_cclosure_marshal_VOID__ULONGv"
+     fid="f135"
+     lineno="150"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3444" name="g_cclosure_marshal_VOID__ENUM"
+     ponyname="g_cclosure_marshal_VOID__ENUM"
+     fid="f135"
+     lineno="160"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3445" name="g_cclosure_marshal_VOID__ENUMv"
+     ponyname="g_cclosure_marshal_VOID__ENUMv"
+     fid="f135"
+     lineno="167"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3446" name="g_cclosure_marshal_VOID__FLAGS"
+     ponyname="g_cclosure_marshal_VOID__FLAGS"
+     fid="f135"
+     lineno="177"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3447" name="g_cclosure_marshal_VOID__FLAGSv"
+     ponyname="g_cclosure_marshal_VOID__FLAGSv"
+     fid="f135"
+     lineno="184"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3448" name="g_cclosure_marshal_VOID__FLOAT"
+     ponyname="g_cclosure_marshal_VOID__FLOAT"
+     fid="f135"
+     lineno="194"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3449" name="g_cclosure_marshal_VOID__FLOATv"
+     ponyname="g_cclosure_marshal_VOID__FLOATv"
+     fid="f135"
+     lineno="201"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3450" name="g_cclosure_marshal_VOID__DOUBLE"
+     ponyname="g_cclosure_marshal_VOID__DOUBLE"
+     fid="f135"
+     lineno="211"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3451" name="g_cclosure_marshal_VOID__DOUBLEv"
+     ponyname="g_cclosure_marshal_VOID__DOUBLEv"
+     fid="f135"
+     lineno="218"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3452" name="g_cclosure_marshal_VOID__STRING"
+     ponyname="g_cclosure_marshal_VOID__STRING"
+     fid="f135"
+     lineno="228"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3453" name="g_cclosure_marshal_VOID__STRINGv"
+     ponyname="g_cclosure_marshal_VOID__STRINGv"
+     fid="f135"
+     lineno="235"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3454" name="g_cclosure_marshal_VOID__PARAM"
+     ponyname="g_cclosure_marshal_VOID__PARAM"
+     fid="f135"
+     lineno="245"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3455" name="g_cclosure_marshal_VOID__PARAMv"
+     ponyname="g_cclosure_marshal_VOID__PARAMv"
+     fid="f135"
+     lineno="252"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3456" name="g_cclosure_marshal_VOID__BOXED"
+     ponyname="g_cclosure_marshal_VOID__BOXED"
+     fid="f135"
+     lineno="262"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3457" name="g_cclosure_marshal_VOID__BOXEDv"
+     ponyname="g_cclosure_marshal_VOID__BOXEDv"
+     fid="f135"
+     lineno="269"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3458" name="g_cclosure_marshal_VOID__POINTER"
+     ponyname="g_cclosure_marshal_VOID__POINTER"
+     fid="f135"
+     lineno="279"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3459" name="g_cclosure_marshal_VOID__POINTERv"
+     ponyname="g_cclosure_marshal_VOID__POINTERv"
+     fid="f135"
+     lineno="286"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3460" name="g_cclosure_marshal_VOID__OBJECT"
+     ponyname="g_cclosure_marshal_VOID__OBJECT"
+     fid="f135"
+     lineno="296"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3461" name="g_cclosure_marshal_VOID__OBJECTv"
+     ponyname="g_cclosure_marshal_VOID__OBJECTv"
+     fid="f135"
+     lineno="303"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3462" name="g_cclosure_marshal_VOID__VARIANT"
+     ponyname="g_cclosure_marshal_VOID__VARIANT"
+     fid="f135"
+     lineno="313"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3463" name="g_cclosure_marshal_VOID__VARIANTv"
+     ponyname="g_cclosure_marshal_VOID__VARIANTv"
+     fid="f135"
+     lineno="320"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3464" name="g_cclosure_marshal_VOID__UINT_POINTER"
+     ponyname="g_cclosure_marshal_VOID__UINT_POINTER"
+     fid="f135"
+     lineno="330"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3465" name="g_cclosure_marshal_VOID__UINT_POINTERv"
+     ponyname="g_cclosure_marshal_VOID__UINT_POINTERv"
+     fid="f135"
+     lineno="337"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3466" name="g_cclosure_marshal_BOOLEAN__FLAGS"
+     ponyname="g_cclosure_marshal_BOOLEAN__FLAGS"
+     fid="f135"
+     lineno="347"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3467" name="g_cclosure_marshal_BOOLEAN__FLAGSv"
+     ponyname="g_cclosure_marshal_BOOLEAN__FLAGSv"
+     fid="f135"
+     lineno="354"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3468" name="g_cclosure_marshal_STRING__OBJECT_POINTER"
+     ponyname="g_cclosure_marshal_STRING__OBJECT_POINTER"
+     fid="f135"
+     lineno="382"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3469" name="g_cclosure_marshal_STRING__OBJECT_POINTERv"
+     ponyname="g_cclosure_marshal_STRING__OBJECT_POINTERv"
+     fid="f135"
+     lineno="389"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3470" name="g_cclosure_marshal_BOOLEAN__BOXED_BOXED"
+     ponyname="g_cclosure_marshal_BOOLEAN__BOXED_BOXED"
+     fid="f135"
+     lineno="399"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="nparamvalues" type="U32"/>
+       <usearg name="paramvalues" type="NullablePointer[GValue]"/>
+       <usearg name="invocationhint" type="Pointer[None]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3471" name="g_cclosure_marshal_BOOLEAN__BOXED_BOXEDv"
+     ponyname="g_cclosure_marshal_BOOLEAN__BOXED_BOXEDv"
+     fid="f135"
+     lineno="406"
+     rv="None">
+     <useargs>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+       <usearg name="marshaldata" type="Pointer[None]"/>
+       <usearg name="nparams" type="I32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3486" name="g_signal_newv"
+     ponyname="g_signal_newv"
+     fid="f136"
+     lineno="277"
+     rv="U32">
+     <useargs>
+       <usearg name="signalname" type="String"/>
+       <usearg name="itype" type="U64"/>
+       <usearg name="signalflags" type="I32"/>
+       <usearg name="classclosure" type="NullablePointer[GClosure]"/>
+       <usearg name="accumulator" type="Pointer[None]"/>
+       <usearg name="accudata" type="Pointer[None]"/>
+       <usearg name="cmarshaller" type="Pointer[None]"/>
+       <usearg name="returntype" type="U64"/>
+       <usearg name="nparams" type="U32"/>
+       <usearg name="paramtypes" type="Pointer[U64]"/>
+     </useargs>
+  </use>
+  <use id="_3487" name="g_signal_new_valist"
+     ponyname="g_signal_new_valist"
+     fid="f136"
+     lineno="288"
+     rv="U32">
+     <useargs>
+       <usearg name="signalname" type="String"/>
+       <usearg name="itype" type="U64"/>
+       <usearg name="signalflags" type="I32"/>
+       <usearg name="classclosure" type="NullablePointer[GClosure]"/>
+       <usearg name="accumulator" type="Pointer[None]"/>
+       <usearg name="accudata" type="Pointer[None]"/>
+       <usearg name="cmarshaller" type="Pointer[None]"/>
+       <usearg name="returntype" type="U64"/>
+       <usearg name="nparams" type="U32"/>
+       <usearg name="args" type="NullablePointer[Valisttag]"/>
+     </useargs>
+  </use>
+  <use id="_3488" name="g_signal_new"
+     ponyname="g_signal_new"
+     fid="f136"
+     lineno="299"
+     rv="U32">
+     <useargs>
+       <usearg name="signalname" type="String"/>
+       <usearg name="itype" type="U64"/>
+       <usearg name="signalflags" type="I32"/>
+       <usearg name="classoffset" type="U32"/>
+       <usearg name="accumulator" type="Pointer[None]"/>
+       <usearg name="accudata" type="Pointer[None]"/>
+       <usearg name="cmarshaller" type="Pointer[None]"/>
+       <usearg name="returntype" type="U64"/>
+       <usearg name="nparams" type="U32"/>
+       <usearg name="parg9" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3489" name="g_signal_new_class_handler"
+     ponyname="g_signal_new_class_handler"
+     fid="f136"
+     lineno="310"
+     rv="U32">
+     <useargs>
+       <usearg name="signalname" type="String"/>
+       <usearg name="itype" type="U64"/>
+       <usearg name="signalflags" type="I32"/>
+       <usearg name="classhandler" type="Pointer[None]"/>
+       <usearg name="accumulator" type="Pointer[None]"/>
+       <usearg name="accudata" type="Pointer[None]"/>
+       <usearg name="cmarshaller" type="Pointer[None]"/>
+       <usearg name="returntype" type="U64"/>
+       <usearg name="nparams" type="U32"/>
+       <usearg name="parg9" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3490" name="g_signal_set_va_marshaller"
+     ponyname="g_signal_set_va_marshaller"
+     fid="f136"
+     lineno="321"
+     rv="None">
+     <useargs>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="vamarshaller" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3491" name="g_signal_emitv"
+     ponyname="g_signal_emitv"
+     fid="f136"
+     lineno="326"
+     rv="None">
+     <useargs>
+       <usearg name="instanceandparams" type="NullablePointer[GValue]"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3492" name="g_signal_emit_valist"
+     ponyname="g_signal_emit_valist"
+     fid="f136"
+     lineno="331"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="varargs" type="NullablePointer[Valisttag]"/>
+     </useargs>
+  </use>
+  <use id="_3493" name="g_signal_emit"
+     ponyname="g_signal_emit"
+     fid="f136"
+     lineno="336"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="parg3" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3494" name="g_signal_emit_by_name"
+     ponyname="g_signal_emit_by_name"
+     fid="f136"
+     lineno="341"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="detailedsignal" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3495" name="g_signal_lookup"
+     ponyname="g_signal_lookup"
+     fid="f136"
+     lineno="345"
+     rv="U32">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="itype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3496" name="g_signal_name"
+     ponyname="g_signal_name"
+     fid="f136"
+     lineno="348"
+     rv="String">
+     <useargs>
+       <usearg name="signalid" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3497" name="g_signal_query"
+     ponyname="g_signal_query"
+     fid="f136"
+     lineno="350"
+     rv="None">
+     <useargs>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="query" type="NullablePointer[GSignalQuery]"/>
+     </useargs>
+  </use>
+  <use id="_3498" name="g_signal_list_ids"
+     ponyname="g_signal_list_ids"
+     fid="f136"
+     lineno="353"
+     rv="Pointer[U32]">
+     <useargs>
+       <usearg name="itype" type="U64"/>
+       <usearg name="nids" type="Pointer[U32]"/>
+     </useargs>
+  </use>
+  <use id="_3499" name="g_signal_is_valid_name"
+     ponyname="g_signal_is_valid_name"
+     fid="f136"
+     lineno="356"
+     rv="I32">
+     <useargs>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3500" name="g_signal_parse_name"
+     ponyname="g_signal_parse_name"
+     fid="f136"
+     lineno="358"
+     rv="I32">
+     <useargs>
+       <usearg name="detailedsignal" type="String"/>
+       <usearg name="itype" type="U64"/>
+       <usearg name="signalidp" type="Pointer[U32]"/>
+       <usearg name="detailp" type="Pointer[U32]"/>
+       <usearg name="forcedetailquark" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3501" name="g_signal_get_invocation_hint"
+     ponyname="g_signal_get_invocation_hint"
+     fid="f136"
+     lineno="364"
+     rv="NullablePointer[GSignalInvocationHint]">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3502" name="g_signal_stop_emission"
+     ponyname="g_signal_stop_emission"
+     fid="f136"
+     lineno="369"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3503" name="g_signal_stop_emission_by_name"
+     ponyname="g_signal_stop_emission_by_name"
+     fid="f136"
+     lineno="373"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="detailedsignal" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3504" name="g_signal_add_emission_hook"
+     ponyname="g_signal_add_emission_hook"
+     fid="f136"
+     lineno="376"
+     rv="U64">
+     <useargs>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="hookfunc" type="Pointer[None]"/>
+       <usearg name="hookdata" type="Pointer[None]"/>
+       <usearg name="datadestroy" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3505" name="g_signal_remove_emission_hook"
+     ponyname="g_signal_remove_emission_hook"
+     fid="f136"
+     lineno="382"
+     rv="None">
+     <useargs>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="hookid" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3506" name="g_signal_has_handler_pending"
+     ponyname="g_signal_has_handler_pending"
+     fid="f136"
+     lineno="388"
+     rv="I32">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="maybeblocked" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3507" name="g_signal_connect_closure_by_id"
+     ponyname="g_signal_connect_closure_by_id"
+     fid="f136"
+     lineno="393"
+     rv="U64">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="after" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3508" name="g_signal_connect_closure"
+     ponyname="g_signal_connect_closure"
+     fid="f136"
+     lineno="399"
+     rv="U64">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="detailedsignal" type="String"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="after" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3509" name="g_signal_connect_data"
+     ponyname="g_signal_connect_data"
+     fid="f136"
+     lineno="404"
+     rv="U64">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="detailedsignal" type="String"/>
+       <usearg name="chandler" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+       <usearg name="destroydata" type="Pointer[None]"/>
+       <usearg name="connectflags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3510" name="g_signal_handler_block"
+     ponyname="g_signal_handler_block"
+     fid="f136"
+     lineno="411"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="handlerid" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3511" name="g_signal_handler_unblock"
+     ponyname="g_signal_handler_unblock"
+     fid="f136"
+     lineno="414"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="handlerid" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3512" name="g_signal_handler_disconnect"
+     ponyname="g_signal_handler_disconnect"
+     fid="f136"
+     lineno="417"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="handlerid" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3513" name="g_signal_handler_is_connected"
+     ponyname="g_signal_handler_is_connected"
+     fid="f136"
+     lineno="420"
+     rv="I32">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="handlerid" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3514" name="g_signal_handler_find"
+     ponyname="g_signal_handler_find"
+     fid="f136"
+     lineno="423"
+     rv="U64">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="mask" type="I32"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="func" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3515" name="g_signal_handlers_block_matched"
+     ponyname="g_signal_handlers_block_matched"
+     fid="f136"
+     lineno="431"
+     rv="U32">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="mask" type="I32"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="func" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3516" name="g_signal_handlers_unblock_matched"
+     ponyname="g_signal_handlers_unblock_matched"
+     fid="f136"
+     lineno="439"
+     rv="U32">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="mask" type="I32"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="func" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3517" name="g_signal_handlers_disconnect_matched"
+     ponyname="g_signal_handlers_disconnect_matched"
+     fid="f136"
+     lineno="447"
+     rv="U32">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="mask" type="I32"/>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="detail" type="U32"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+       <usearg name="func" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3518" name="g_clear_signal_handler"
+     ponyname="g_clear_signal_handler"
+     fid="f136"
+     lineno="456"
+     rv="None">
+     <useargs>
+       <usearg name="handleridptr" type="Pointer[U64]"/>
+       <usearg name="instance" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3519" name="g_signal_override_class_closure"
+     ponyname="g_signal_override_class_closure"
+     fid="f136"
+     lineno="475"
+     rv="None">
+     <useargs>
+       <usearg name="signalid" type="U32"/>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="classclosure" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3520" name="g_signal_override_class_handler"
+     ponyname="g_signal_override_class_handler"
+     fid="f136"
+     lineno="479"
+     rv="None">
+     <useargs>
+       <usearg name="signalname" type="String"/>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="classhandler" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3521" name="g_signal_chain_from_overridden"
+     ponyname="g_signal_chain_from_overridden"
+     fid="f136"
+     lineno="483"
+     rv="None">
+     <useargs>
+       <usearg name="instanceandparams" type="NullablePointer[GValue]"/>
+       <usearg name="returnvalue" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3522" name="g_signal_chain_from_overridden_handler"
+     ponyname="g_signal_chain_from_overridden_handler"
+     fid="f136"
+     lineno="486"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="parg1" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3523" name="g_signal_accumulator_true_handled"
+     ponyname="g_signal_accumulator_true_handled"
+     fid="f136"
+     lineno="622"
+     rv="I32">
+     <useargs>
+       <usearg name="ihint" type="NullablePointer[GSignalInvocationHint]"/>
+       <usearg name="returnaccu" type="NullablePointer[GValue]"/>
+       <usearg name="handlerreturn" type="NullablePointer[GValue]"/>
+       <usearg name="dummy" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3524" name="g_signal_accumulator_first_wins"
+     ponyname="g_signal_accumulator_first_wins"
+     fid="f136"
+     lineno="628"
+     rv="I32">
+     <useargs>
+       <usearg name="ihint" type="NullablePointer[GSignalInvocationHint]"/>
+       <usearg name="returnaccu" type="NullablePointer[GValue]"/>
+       <usearg name="handlerreturn" type="NullablePointer[GValue]"/>
+       <usearg name="dummy" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3525" name="g_signal_handlers_destroy"
+     ponyname="g_signal_handlers_destroy"
+     fid="f136"
+     lineno="635"
+     rv="None">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3526" name="_g_signals_destroy"
+     ponyname="_g_signals_destroy"
+     fid="f136"
+     lineno="636"
+     rv="None">
+     <useargs>
+       <usearg name="itype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3527" name="g_date_get_type"
+     ponyname="g_date_get_type"
+     fid="f137"
+     lineno="328"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3528" name="g_strv_get_type"
+     ponyname="g_strv_get_type"
+     fid="f137"
+     lineno="330"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3529" name="g_gstring_get_type"
+     ponyname="g_gstring_get_type"
+     fid="f137"
+     lineno="332"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3530" name="g_hash_table_get_type"
+     ponyname="g_hash_table_get_type"
+     fid="f137"
+     lineno="334"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3531" name="g_array_get_type"
+     ponyname="g_array_get_type"
+     fid="f137"
+     lineno="336"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3532" name="g_byte_array_get_type"
+     ponyname="g_byte_array_get_type"
+     fid="f137"
+     lineno="338"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3533" name="g_ptr_array_get_type"
+     ponyname="g_ptr_array_get_type"
+     fid="f137"
+     lineno="340"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3534" name="g_bytes_get_type"
+     ponyname="g_bytes_get_type"
+     fid="f137"
+     lineno="342"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3535" name="g_variant_type_get_gtype"
+     ponyname="g_variant_type_get_gtype"
+     fid="f137"
+     lineno="344"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3536" name="g_regex_get_type"
+     ponyname="g_regex_get_type"
+     fid="f137"
+     lineno="346"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3537" name="g_match_info_get_type"
+     ponyname="g_match_info_get_type"
+     fid="f137"
+     lineno="348"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3538" name="g_error_get_type"
+     ponyname="g_error_get_type"
+     fid="f137"
+     lineno="350"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3539" name="g_date_time_get_type"
+     ponyname="g_date_time_get_type"
+     fid="f137"
+     lineno="352"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3540" name="g_time_zone_get_type"
+     ponyname="g_time_zone_get_type"
+     fid="f137"
+     lineno="354"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3541" name="g_io_channel_get_type"
+     ponyname="g_io_channel_get_type"
+     fid="f137"
+     lineno="356"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3542" name="g_io_condition_get_type"
+     ponyname="g_io_condition_get_type"
+     fid="f137"
+     lineno="358"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3543" name="g_variant_builder_get_type"
+     ponyname="g_variant_builder_get_type"
+     fid="f137"
+     lineno="360"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3544" name="g_variant_dict_get_type"
+     ponyname="g_variant_dict_get_type"
+     fid="f137"
+     lineno="362"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3545" name="g_key_file_get_type"
+     ponyname="g_key_file_get_type"
+     fid="f137"
+     lineno="364"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3546" name="g_main_loop_get_type"
+     ponyname="g_main_loop_get_type"
+     fid="f137"
+     lineno="366"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3547" name="g_main_context_get_type"
+     ponyname="g_main_context_get_type"
+     fid="f137"
+     lineno="368"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3548" name="g_source_get_type"
+     ponyname="g_source_get_type"
+     fid="f137"
+     lineno="370"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3549" name="g_pollfd_get_type"
+     ponyname="g_pollfd_get_type"
+     fid="f137"
+     lineno="372"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3550" name="g_thread_get_type"
+     ponyname="g_thread_get_type"
+     fid="f137"
+     lineno="374"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3551" name="g_checksum_get_type"
+     ponyname="g_checksum_get_type"
+     fid="f137"
+     lineno="376"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3552" name="g_markup_parse_context_get_type"
+     ponyname="g_markup_parse_context_get_type"
+     fid="f137"
+     lineno="378"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3553" name="g_mapped_file_get_type"
+     ponyname="g_mapped_file_get_type"
+     fid="f137"
+     lineno="380"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3554" name="g_option_group_get_type"
+     ponyname="g_option_group_get_type"
+     fid="f137"
+     lineno="382"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3555" name="g_uri_get_type"
+     ponyname="g_uri_get_type"
+     fid="f137"
+     lineno="384"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3556" name="g_tree_get_type"
+     ponyname="g_tree_get_type"
+     fid="f137"
+     lineno="386"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3557" name="g_pattern_spec_get_type"
+     ponyname="g_pattern_spec_get_type"
+     fid="f137"
+     lineno="388"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3558" name="g_variant_get_gtype"
+     ponyname="g_variant_get_gtype"
+     fid="f137"
+     lineno="391"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3561" name="g_boxed_copy"
+     ponyname="g_boxed_copy"
+     fid="f138"
+     lineno="70"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="boxedtype" type="U64"/>
+       <usearg name="srcboxed" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3562" name="g_boxed_free"
+     ponyname="g_boxed_free"
+     fid="f138"
+     lineno="73"
+     rv="None">
+     <useargs>
+       <usearg name="boxedtype" type="U64"/>
+       <usearg name="boxed" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3563" name="g_value_set_boxed"
+     ponyname="g_value_set_boxed"
+     fid="f138"
+     lineno="76"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vboxed" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3564" name="g_value_set_static_boxed"
+     ponyname="g_value_set_static_boxed"
+     fid="f138"
+     lineno="79"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vboxed" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3565" name="g_value_take_boxed"
+     ponyname="g_value_take_boxed"
+     fid="f138"
+     lineno="82"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vboxed" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3566" name="g_value_set_boxed_take_ownership"
+     ponyname="g_value_set_boxed_take_ownership"
+     fid="f138"
+     lineno="85"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vboxed" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3567" name="g_value_get_boxed"
+     ponyname="g_value_get_boxed"
+     fid="f138"
+     lineno="88"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3568" name="g_value_dup_boxed"
+     ponyname="g_value_dup_boxed"
+     fid="f138"
+     lineno="90"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3569" name="g_boxed_type_register_static"
+     ponyname="g_boxed_type_register_static"
+     fid="f138"
+     lineno="95"
+     rv="U64">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="boxedcopy" type="Pointer[None]"/>
+       <usearg name="boxedfree" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3570" name="g_closure_get_type"
+     ponyname="g_closure_get_type"
+     fid="f138"
+     lineno="116"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3571" name="g_value_get_type"
+     ponyname="g_value_get_type"
+     fid="f138"
+     lineno="118"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3584" name="g_initially_unowned_get_type"
+     ponyname="g_initially_unowned_get_type"
+     fid="f139"
+     lineno="394"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3585" name="g_object_class_install_property"
+     ponyname="g_object_class_install_property"
+     fid="f139"
+     lineno="396"
+     rv="None">
+     <useargs>
+       <usearg name="oclass" type="NullablePointer[GObjectClass]"/>
+       <usearg name="propertyid" type="U32"/>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3586" name="g_object_class_find_property"
+     ponyname="g_object_class_find_property"
+     fid="f139"
+     lineno="400"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="oclass" type="NullablePointer[GObjectClass]"/>
+       <usearg name="propertyname" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3587" name="g_object_class_list_properties"
+     ponyname="g_object_class_list_properties"
+     fid="f139"
+     lineno="403"
+     rv="Array[NullablePointer[GParamSpec]]">
+     <useargs>
+       <usearg name="oclass" type="NullablePointer[GObjectClass]"/>
+       <usearg name="nproperties" type="Pointer[U32]"/>
+     </useargs>
+  </use>
+  <use id="_3588" name="g_object_class_override_property"
+     ponyname="g_object_class_override_property"
+     fid="f139"
+     lineno="406"
+     rv="None">
+     <useargs>
+       <usearg name="oclass" type="NullablePointer[GObjectClass]"/>
+       <usearg name="propertyid" type="U32"/>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3589" name="g_object_class_install_properties"
+     ponyname="g_object_class_install_properties"
+     fid="f139"
+     lineno="410"
+     rv="None">
+     <useargs>
+       <usearg name="oclass" type="NullablePointer[GObjectClass]"/>
+       <usearg name="npspecs" type="U32"/>
+       <usearg name="pspecs" type="Array[NullablePointer[GParamSpec]]"/>
+     </useargs>
+  </use>
+  <use id="_3590" name="g_object_interface_install_property"
+     ponyname="g_object_interface_install_property"
+     fid="f139"
+     lineno="415"
+     rv="None">
+     <useargs>
+       <usearg name="giface" type="Pointer[None]"/>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3591" name="g_object_interface_find_property"
+     ponyname="g_object_interface_find_property"
+     fid="f139"
+     lineno="418"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="giface" type="Pointer[None]"/>
+       <usearg name="propertyname" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3592" name="g_object_interface_list_properties"
+     ponyname="g_object_interface_list_properties"
+     fid="f139"
+     lineno="421"
+     rv="Array[NullablePointer[GParamSpec]]">
+     <useargs>
+       <usearg name="giface" type="Pointer[None]"/>
+       <usearg name="npropertiesp" type="Pointer[U32]"/>
+     </useargs>
+  </use>
+  <use id="_3593" name="g_object_get_type"
+     ponyname="g_object_get_type"
+     fid="f139"
+     lineno="425"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3594" name="g_object_new"
+     ponyname="g_object_new"
+     fid="f139"
+     lineno="427"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="objecttype" type="U64"/>
+       <usearg name="firstpropertyname" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3595" name="g_object_new_with_properties"
+     ponyname="g_object_new_with_properties"
+     fid="f139"
+     lineno="431"
+     rv="NullablePointer[GObject]">
+     <useargs>
+       <usearg name="objecttype" type="U64"/>
+       <usearg name="nproperties" type="U32"/>
+       <usearg name="names" type="Array[String]"/>
+       <usearg name="values" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3596" name="g_object_newv"
+     ponyname="g_object_newv"
+     fid="f139"
+     lineno="439"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="objecttype" type="U64"/>
+       <usearg name="nparameters" type="U32"/>
+       <usearg name="parameters" type="NullablePointer[GParameter]"/>
+     </useargs>
+  </use>
+  <use id="_3597" name="g_object_new_valist"
+     ponyname="g_object_new_valist"
+     fid="f139"
+     lineno="446"
+     rv="NullablePointer[GObject]">
+     <useargs>
+       <usearg name="objecttype" type="U64"/>
+       <usearg name="firstpropertyname" type="String"/>
+       <usearg name="varargs" type="NullablePointer[Valisttag]"/>
+     </useargs>
+  </use>
+  <use id="_3598" name="g_object_set"
+     ponyname="g_object_set"
+     fid="f139"
+     lineno="450"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+       <usearg name="firstpropertyname" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3599" name="g_object_get"
+     ponyname="g_object_get"
+     fid="f139"
+     lineno="454"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+       <usearg name="firstpropertyname" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3600" name="g_object_connect"
+     ponyname="g_object_connect"
+     fid="f139"
+     lineno="458"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+       <usearg name="signalspec" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3601" name="g_object_disconnect"
+     ponyname="g_object_disconnect"
+     fid="f139"
+     lineno="462"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+       <usearg name="signalspec" type="String"/>
+       <usearg name="parg2" type="..."/>
+     </useargs>
+  </use>
+  <use id="_3602" name="g_object_setv"
+     ponyname="g_object_setv"
+     fid="f139"
+     lineno="466"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="nproperties" type="U32"/>
+       <usearg name="names" type="Array[String]"/>
+       <usearg name="values" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3603" name="g_object_set_valist"
+     ponyname="g_object_set_valist"
+     fid="f139"
+     lineno="471"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="firstpropertyname" type="String"/>
+       <usearg name="varargs" type="NullablePointer[Valisttag]"/>
+     </useargs>
+  </use>
+  <use id="_3604" name="g_object_getv"
+     ponyname="g_object_getv"
+     fid="f139"
+     lineno="475"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="nproperties" type="U32"/>
+       <usearg name="names" type="Array[String]"/>
+       <usearg name="values" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3605" name="g_object_get_valist"
+     ponyname="g_object_get_valist"
+     fid="f139"
+     lineno="480"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="firstpropertyname" type="String"/>
+       <usearg name="varargs" type="NullablePointer[Valisttag]"/>
+     </useargs>
+  </use>
+  <use id="_3606" name="g_object_set_property"
+     ponyname="g_object_set_property"
+     fid="f139"
+     lineno="484"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="propertyname" type="String"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3607" name="g_object_get_property"
+     ponyname="g_object_get_property"
+     fid="f139"
+     lineno="488"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="propertyname" type="String"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3608" name="g_object_freeze_notify"
+     ponyname="g_object_freeze_notify"
+     fid="f139"
+     lineno="492"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3609" name="g_object_notify"
+     ponyname="g_object_notify"
+     fid="f139"
+     lineno="494"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="propertyname" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3610" name="g_object_notify_by_pspec"
+     ponyname="g_object_notify_by_pspec"
+     fid="f139"
+     lineno="497"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3611" name="g_object_thaw_notify"
+     ponyname="g_object_thaw_notify"
+     fid="f139"
+     lineno="500"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3612" name="g_object_is_floating"
+     ponyname="g_object_is_floating"
+     fid="f139"
+     lineno="502"
+     rv="I32">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3613" name="g_object_ref_sink"
+     ponyname="g_object_ref_sink"
+     fid="f139"
+     lineno="504"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3614" name="g_object_take_ref"
+     ponyname="g_object_take_ref"
+     fid="f139"
+     lineno="506"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3615" name="g_object_ref"
+     ponyname="g_object_ref"
+     fid="f139"
+     lineno="508"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3616" name="g_object_unref"
+     ponyname="g_object_unref"
+     fid="f139"
+     lineno="510"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3617" name="g_object_weak_ref"
+     ponyname="g_object_weak_ref"
+     fid="f139"
+     lineno="512"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3618" name="g_object_weak_unref"
+     ponyname="g_object_weak_unref"
+     fid="f139"
+     lineno="516"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3619" name="g_object_add_weak_pointer"
+     ponyname="g_object_add_weak_pointer"
+     fid="f139"
+     lineno="520"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="weakpointerlocation" type="NullablePointer[Pointer[None]]"/>
+     </useargs>
+  </use>
+  <use id="_3620" name="g_object_remove_weak_pointer"
+     ponyname="g_object_remove_weak_pointer"
+     fid="f139"
+     lineno="523"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="weakpointerlocation" type="NullablePointer[Pointer[None]]"/>
+     </useargs>
+  </use>
+  <use id="_3622" name="g_object_add_toggle_ref"
+     ponyname="g_object_add_toggle_ref"
+     fid="f139"
+     lineno="551"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3623" name="g_object_remove_toggle_ref"
+     ponyname="g_object_remove_toggle_ref"
+     fid="f139"
+     lineno="555"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3624" name="g_object_get_qdata"
+     ponyname="g_object_get_qdata"
+     fid="f139"
+     lineno="560"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="quark" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3625" name="g_object_set_qdata"
+     ponyname="g_object_set_qdata"
+     fid="f139"
+     lineno="563"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="quark" type="U32"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3626" name="g_object_set_qdata_full"
+     ponyname="g_object_set_qdata_full"
+     fid="f139"
+     lineno="567"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="quark" type="U32"/>
+       <usearg name="data" type="Pointer[None]"/>
+       <usearg name="destroy" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3627" name="g_object_steal_qdata"
+     ponyname="g_object_steal_qdata"
+     fid="f139"
+     lineno="572"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="quark" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3628" name="g_object_dup_qdata"
+     ponyname="g_object_dup_qdata"
+     fid="f139"
+     lineno="576"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="quark" type="U32"/>
+       <usearg name="dupfunc" type="Pointer[None]"/>
+       <usearg name="userdata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3629" name="g_object_replace_qdata"
+     ponyname="g_object_replace_qdata"
+     fid="f139"
+     lineno="581"
+     rv="I32">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="quark" type="U32"/>
+       <usearg name="oldval" type="Pointer[None]"/>
+       <usearg name="newval" type="Pointer[None]"/>
+       <usearg name="destroy" type="Pointer[None]"/>
+       <usearg name="olddestroy" type="NullablePointer[Pointer[None]]"/>
+     </useargs>
+  </use>
+  <use id="_3630" name="g_object_get_data"
+     ponyname="g_object_get_data"
+     fid="f139"
+     lineno="589"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="key" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3631" name="g_object_set_data"
+     ponyname="g_object_set_data"
+     fid="f139"
+     lineno="592"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="key" type="String"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3632" name="g_object_set_data_full"
+     ponyname="g_object_set_data_full"
+     fid="f139"
+     lineno="596"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="key" type="String"/>
+       <usearg name="data" type="Pointer[None]"/>
+       <usearg name="destroy" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3633" name="g_object_steal_data"
+     ponyname="g_object_steal_data"
+     fid="f139"
+     lineno="601"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="key" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3634" name="g_object_dup_data"
+     ponyname="g_object_dup_data"
+     fid="f139"
+     lineno="605"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="key" type="String"/>
+       <usearg name="dupfunc" type="Pointer[None]"/>
+       <usearg name="userdata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3635" name="g_object_replace_data"
+     ponyname="g_object_replace_data"
+     fid="f139"
+     lineno="610"
+     rv="I32">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="key" type="String"/>
+       <usearg name="oldval" type="Pointer[None]"/>
+       <usearg name="newval" type="Pointer[None]"/>
+       <usearg name="destroy" type="Pointer[None]"/>
+       <usearg name="olddestroy" type="NullablePointer[Pointer[None]]"/>
+     </useargs>
+  </use>
+  <use id="_3636" name="g_object_watch_closure"
+     ponyname="g_object_watch_closure"
+     fid="f139"
+     lineno="619"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3637" name="g_cclosure_new_object"
+     ponyname="g_cclosure_new_object"
+     fid="f139"
+     lineno="622"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="callbackfunc" type="Pointer[None]"/>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3638" name="g_cclosure_new_object_swap"
+     ponyname="g_cclosure_new_object_swap"
+     fid="f139"
+     lineno="625"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="callbackfunc" type="Pointer[None]"/>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3639" name="g_closure_new_object"
+     ponyname="g_closure_new_object"
+     fid="f139"
+     lineno="628"
+     rv="NullablePointer[GClosure]">
+     <useargs>
+       <usearg name="sizeofclosure" type="U32"/>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3640" name="g_value_set_object"
+     ponyname="g_value_set_object"
+     fid="f139"
+     lineno="631"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3641" name="g_value_get_object"
+     ponyname="g_value_get_object"
+     fid="f139"
+     lineno="634"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3642" name="g_value_dup_object"
+     ponyname="g_value_dup_object"
+     fid="f139"
+     lineno="636"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3643" name="g_signal_connect_object"
+     ponyname="g_signal_connect_object"
+     fid="f139"
+     lineno="638"
+     rv="U64">
+     <useargs>
+       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="detailedsignal" type="String"/>
+       <usearg name="chandler" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
+       <usearg name="connectflags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3644" name="g_object_force_floating"
+     ponyname="g_object_force_floating"
+     fid="f139"
+     lineno="646"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3645" name="g_object_run_dispose"
+     ponyname="g_object_run_dispose"
+     fid="f139"
+     lineno="648"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3646" name="g_value_take_object"
+     ponyname="g_value_take_object"
+     fid="f139"
+     lineno="652"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3647" name="g_value_set_object_take_ownership"
+     ponyname="g_value_set_object_take_ownership"
+     fid="f139"
+     lineno="655"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3648" name="g_object_compat_control"
+     ponyname="g_object_compat_control"
+     fid="f139"
+     lineno="659"
+     rv="U64">
+     <useargs>
+       <usearg name="what" type="U64"/>
+       <usearg name="data" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3649" name="g_clear_object"
+     ponyname="g_clear_object"
+     fid="f139"
+     lineno="689"
+     rv="None">
+     <useargs>
+       <usearg name="objectptr" type="Array[NullablePointer[GObject]]"/>
+     </useargs>
+  </use>
+  <use id="_3650" name="g_set_object"
+     ponyname="g_set_object"
+     fid="f139"
+     lineno="729"
+     rv="I32">
+     <useargs>
+       <usearg name="objectptr" type="Array[NullablePointer[GObject]]"/>
+       <usearg name="newobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3651" name="g_assert_finalize_object"
+     ponyname="g_assert_finalize_object"
+     fid="f139"
+     lineno="795"
+     rv="None">
+     <useargs>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3652" name="g_clear_weak_pointer"
+     ponyname="g_clear_weak_pointer"
+     fid="f139"
+     lineno="830"
+     rv="None">
+     <useargs>
+       <usearg name="weakpointerlocation" type="NullablePointer[Pointer[None]]"/>
+     </useargs>
+  </use>
+  <use id="_3653" name="g_set_weak_pointer"
+     ponyname="g_set_weak_pointer"
+     fid="f139"
+     lineno="885"
+     rv="I32">
+     <useargs>
+       <usearg name="weakpointerlocation" type="NullablePointer[Pointer[None]]"/>
+       <usearg name="newobject" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3656" name="g_weak_ref_init"
+     ponyname="g_weak_ref_init"
+     fid="f139"
+     lineno="921"
+     rv="None">
+     <useargs>
+       <usearg name="weakref" type="NullablePointer[Anon]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3657" name="g_weak_ref_clear"
+     ponyname="g_weak_ref_clear"
+     fid="f139"
+     lineno="924"
+     rv="None">
+     <useargs>
+       <usearg name="weakref" type="NullablePointer[Anon]"/>
+     </useargs>
+  </use>
+  <use id="_3658" name="g_weak_ref_get"
+     ponyname="g_weak_ref_get"
+     fid="f139"
+     lineno="926"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="weakref" type="NullablePointer[Anon]"/>
+     </useargs>
+  </use>
+  <use id="_3659" name="g_weak_ref_set"
+     ponyname="g_weak_ref_set"
+     fid="f139"
+     lineno="928"
+     rv="None">
+     <useargs>
+       <usearg name="weakref" type="NullablePointer[Anon]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3665" name="g_binding_flags_get_type"
+     ponyname="g_binding_flags_get_type"
+     fid="f140"
+     lineno="106"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3666" name="g_binding_get_type"
+     ponyname="g_binding_get_type"
+     fid="f140"
+     lineno="108"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3667" name="g_binding_get_flags"
+     ponyname="g_binding_get_flags"
+     fid="f140"
+     lineno="111"
+     rv="I32">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3668" name="g_binding_get_source"
+     ponyname="g_binding_get_source"
+     fid="f140"
+     lineno="113"
+     rv="NullablePointer[GObject]">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3669" name="g_binding_dup_source"
+     ponyname="g_binding_dup_source"
+     fid="f140"
+     lineno="115"
+     rv="NullablePointer[GObject]">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3670" name="g_binding_get_target"
+     ponyname="g_binding_get_target"
+     fid="f140"
+     lineno="117"
+     rv="NullablePointer[GObject]">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3671" name="g_binding_dup_target"
+     ponyname="g_binding_dup_target"
+     fid="f140"
+     lineno="119"
+     rv="NullablePointer[GObject]">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3672" name="g_binding_get_source_property"
+     ponyname="g_binding_get_source_property"
+     fid="f140"
+     lineno="121"
+     rv="String">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3673" name="g_binding_get_target_property"
+     ponyname="g_binding_get_target_property"
+     fid="f140"
+     lineno="123"
+     rv="String">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3674" name="g_binding_unbind"
+     ponyname="g_binding_unbind"
+     fid="f140"
+     lineno="125"
+     rv="None">
+     <useargs>
+       <usearg name="binding" type="NullablePointer[GBinding]"/>
+     </useargs>
+  </use>
+  <use id="_3675" name="g_object_bind_property"
+     ponyname="g_object_bind_property"
+     fid="f140"
+     lineno="128"
+     rv="NullablePointer[GBinding]">
+     <useargs>
+       <usearg name="source" type="Pointer[None]"/>
+       <usearg name="sourceproperty" type="String"/>
+       <usearg name="target" type="Pointer[None]"/>
+       <usearg name="targetproperty" type="String"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3676" name="g_object_bind_property_full"
+     ponyname="g_object_bind_property_full"
+     fid="f140"
+     lineno="134"
+     rv="NullablePointer[GBinding]">
+     <useargs>
+       <usearg name="source" type="Pointer[None]"/>
+       <usearg name="sourceproperty" type="String"/>
+       <usearg name="target" type="Pointer[None]"/>
+       <usearg name="targetproperty" type="String"/>
+       <usearg name="flags" type="I32"/>
+       <usearg name="transformto" type="Pointer[None]"/>
+       <usearg name="transformfrom" type="Pointer[None]"/>
+       <usearg name="userdata" type="Pointer[None]"/>
+       <usearg name="notify" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3677" name="g_object_bind_property_with_closures"
+     ponyname="g_object_bind_property_with_closures"
+     fid="f140"
+     lineno="144"
+     rv="NullablePointer[GBinding]">
+     <useargs>
+       <usearg name="source" type="Pointer[None]"/>
+       <usearg name="sourceproperty" type="String"/>
+       <usearg name="target" type="Pointer[None]"/>
+       <usearg name="targetproperty" type="String"/>
+       <usearg name="flags" type="I32"/>
+       <usearg name="transformto" type="NullablePointer[GClosure]"/>
+       <usearg name="transformfrom" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3686" name="g_enum_get_value"
+     ponyname="g_enum_get_value"
+     fid="f141"
+     lineno="219"
+     rv="NullablePointer[GEnumValue]">
+     <useargs>
+       <usearg name="enumclass" type="NullablePointer[GEnumClass]"/>
+       <usearg name="value" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3687" name="g_enum_get_value_by_name"
+     ponyname="g_enum_get_value_by_name"
+     fid="f141"
+     lineno="222"
+     rv="NullablePointer[GEnumValue]">
+     <useargs>
+       <usearg name="enumclass" type="NullablePointer[GEnumClass]"/>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3688" name="g_enum_get_value_by_nick"
+     ponyname="g_enum_get_value_by_nick"
+     fid="f141"
+     lineno="225"
+     rv="NullablePointer[GEnumValue]">
+     <useargs>
+       <usearg name="enumclass" type="NullablePointer[GEnumClass]"/>
+       <usearg name="nick" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3689" name="g_flags_get_first_value"
+     ponyname="g_flags_get_first_value"
+     fid="f141"
+     lineno="228"
+     rv="NullablePointer[GFlagsValue]">
+     <useargs>
+       <usearg name="flagsclass" type="NullablePointer[GFlagsClass]"/>
+       <usearg name="value" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3690" name="g_flags_get_value_by_name"
+     ponyname="g_flags_get_value_by_name"
+     fid="f141"
+     lineno="231"
+     rv="NullablePointer[GFlagsValue]">
+     <useargs>
+       <usearg name="flagsclass" type="NullablePointer[GFlagsClass]"/>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3691" name="g_flags_get_value_by_nick"
+     ponyname="g_flags_get_value_by_nick"
+     fid="f141"
+     lineno="234"
+     rv="NullablePointer[GFlagsValue]">
+     <useargs>
+       <usearg name="flagsclass" type="NullablePointer[GFlagsClass]"/>
+       <usearg name="nick" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3692" name="g_enum_to_string"
+     ponyname="g_enum_to_string"
+     fid="f141"
+     lineno="237"
+     rv="String">
+     <useargs>
+       <usearg name="genumtype" type="U64"/>
+       <usearg name="value" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3693" name="g_flags_to_string"
+     ponyname="g_flags_to_string"
+     fid="f141"
+     lineno="240"
+     rv="String">
+     <useargs>
+       <usearg name="flagstype" type="U64"/>
+       <usearg name="value" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3694" name="g_value_set_enum"
+     ponyname="g_value_set_enum"
+     fid="f141"
+     lineno="243"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="venum" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3695" name="g_value_get_enum"
+     ponyname="g_value_get_enum"
+     fid="f141"
+     lineno="246"
+     rv="I32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3696" name="g_value_set_flags"
+     ponyname="g_value_set_flags"
+     fid="f141"
+     lineno="248"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vflags" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3697" name="g_value_get_flags"
+     ponyname="g_value_get_flags"
+     fid="f141"
+     lineno="251"
+     rv="U32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3698" name="g_enum_register_static"
+     ponyname="g_enum_register_static"
+     fid="f141"
+     lineno="260"
+     rv="U64">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="conststaticvalues" type="NullablePointer[GEnumValue]"/>
+     </useargs>
+  </use>
+  <use id="_3699" name="g_flags_register_static"
+     ponyname="g_flags_register_static"
+     fid="f141"
+     lineno="263"
+     rv="U64">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="conststaticvalues" type="NullablePointer[GFlagsValue]"/>
+     </useargs>
+  </use>
+  <use id="_3700" name="g_enum_complete_type_info"
+     ponyname="g_enum_complete_type_info"
+     fid="f141"
+     lineno="269"
+     rv="None">
+     <useargs>
+       <usearg name="genumtype" type="U64"/>
+       <usearg name="info" type="NullablePointer[GTypeInfo]"/>
+       <usearg name="constvalues" type="NullablePointer[GEnumValue]"/>
+     </useargs>
+  </use>
+  <use id="_3701" name="g_flags_complete_type_info"
+     ponyname="g_flags_complete_type_info"
+     fid="f141"
+     lineno="273"
+     rv="None">
+     <useargs>
+       <usearg name="gflagstype" type="U64"/>
+       <usearg name="info" type="NullablePointer[GTypeInfo]"/>
+       <usearg name="constvalues" type="NullablePointer[GFlagsValue]"/>
+     </useargs>
+  </use>
+  <use id="_3702" name="g_unicode_type_get_type"
+     ponyname="g_unicode_type_get_type"
+     fid="f142"
+     lineno="12"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3703" name="g_unicode_break_type_get_type"
+     ponyname="g_unicode_break_type_get_type"
+     fid="f142"
+     lineno="14"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3704" name="g_unicode_script_get_type"
+     ponyname="g_unicode_script_get_type"
+     fid="f142"
+     lineno="16"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3705" name="g_normalize_mode_get_type"
+     ponyname="g_normalize_mode_get_type"
+     fid="f142"
+     lineno="18"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3752" name="g_param_spec_char"
+     ponyname="g_param_spec_char"
+     fid="f143"
+     lineno="988"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="I8"/>
+       <usearg name="maximum" type="I8"/>
+       <usearg name="defaultvalue" type="I8"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3753" name="g_param_spec_uchar"
+     ponyname="g_param_spec_uchar"
+     fid="f143"
+     lineno="996"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="U8"/>
+       <usearg name="maximum" type="U8"/>
+       <usearg name="defaultvalue" type="U8"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3754" name="g_param_spec_boolean"
+     ponyname="g_param_spec_boolean"
+     fid="f143"
+     lineno="1004"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="defaultvalue" type="I32"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3755" name="g_param_spec_int"
+     ponyname="g_param_spec_int"
+     fid="f143"
+     lineno="1010"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="I32"/>
+       <usearg name="maximum" type="I32"/>
+       <usearg name="defaultvalue" type="I32"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3756" name="g_param_spec_uint"
+     ponyname="g_param_spec_uint"
+     fid="f143"
+     lineno="1018"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="U32"/>
+       <usearg name="maximum" type="U32"/>
+       <usearg name="defaultvalue" type="U32"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3757" name="g_param_spec_long"
+     ponyname="g_param_spec_long"
+     fid="f143"
+     lineno="1026"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="I64"/>
+       <usearg name="maximum" type="I64"/>
+       <usearg name="defaultvalue" type="I64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3758" name="g_param_spec_ulong"
+     ponyname="g_param_spec_ulong"
+     fid="f143"
+     lineno="1034"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="U64"/>
+       <usearg name="maximum" type="U64"/>
+       <usearg name="defaultvalue" type="U64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3759" name="g_param_spec_int64"
+     ponyname="g_param_spec_int64"
+     fid="f143"
+     lineno="1042"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="I64"/>
+       <usearg name="maximum" type="I64"/>
+       <usearg name="defaultvalue" type="I64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3760" name="g_param_spec_uint64"
+     ponyname="g_param_spec_uint64"
+     fid="f143"
+     lineno="1050"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="U64"/>
+       <usearg name="maximum" type="U64"/>
+       <usearg name="defaultvalue" type="U64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3761" name="g_param_spec_unichar"
+     ponyname="g_param_spec_unichar"
+     fid="f143"
+     lineno="1058"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="defaultvalue" type="U32"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3762" name="g_param_spec_enum"
+     ponyname="g_param_spec_enum"
+     fid="f143"
+     lineno="1064"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="enumtype" type="U64"/>
+       <usearg name="defaultvalue" type="I32"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3763" name="g_param_spec_flags"
+     ponyname="g_param_spec_flags"
+     fid="f143"
+     lineno="1071"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="flagstype" type="U64"/>
+       <usearg name="defaultvalue" type="U32"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3764" name="g_param_spec_float"
+     ponyname="g_param_spec_float"
+     fid="f143"
+     lineno="1078"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="F32"/>
+       <usearg name="maximum" type="F32"/>
+       <usearg name="defaultvalue" type="F32"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3765" name="g_param_spec_double"
+     ponyname="g_param_spec_double"
+     fid="f143"
+     lineno="1086"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="minimum" type="F64"/>
+       <usearg name="maximum" type="F64"/>
+       <usearg name="defaultvalue" type="F64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3766" name="g_param_spec_string"
+     ponyname="g_param_spec_string"
+     fid="f143"
+     lineno="1094"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="defaultvalue" type="String"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3767" name="g_param_spec_param"
+     ponyname="g_param_spec_param"
+     fid="f143"
+     lineno="1100"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="paramtype" type="U64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3768" name="g_param_spec_boxed"
+     ponyname="g_param_spec_boxed"
+     fid="f143"
+     lineno="1106"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="boxedtype" type="U64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3769" name="g_param_spec_pointer"
+     ponyname="g_param_spec_pointer"
+     fid="f143"
+     lineno="1112"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3770" name="g_param_spec_value_array"
+     ponyname="g_param_spec_value_array"
+     fid="f143"
+     lineno="1117"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="elementspec" type="NullablePointer[GParamSpec]"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3771" name="g_param_spec_object"
+     ponyname="g_param_spec_object"
+     fid="f143"
+     lineno="1123"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="objecttype" type="U64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3772" name="g_param_spec_override"
+     ponyname="g_param_spec_override"
+     fid="f143"
+     lineno="1129"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="overridden" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3773" name="g_param_spec_gtype"
+     ponyname="g_param_spec_gtype"
+     fid="f143"
+     lineno="1132"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="isatype" type="U64"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3774" name="g_param_spec_variant"
+     ponyname="g_param_spec_variant"
+     fid="f143"
+     lineno="1138"
+     rv="NullablePointer[GParamSpec]">
+     <useargs>
+       <usearg name="name" type="String"/>
+       <usearg name="nick" type="String"/>
+       <usearg name="blurb" type="String"/>
+       <usearg name="gtype" type="NullablePointer[GVariantType]"/>
+       <usearg name="defaultvalue" type="NullablePointer[GVariant]"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3776" name="g_source_set_closure"
+     ponyname="g_source_set_closure"
+     fid="f144"
+     lineno="30"
+     rv="None">
+     <useargs>
+       <usearg name="source" type="NullablePointer[GSource]"/>
+       <usearg name="closure" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3777" name="g_source_set_dummy_callback"
+     ponyname="g_source_set_dummy_callback"
+     fid="f144"
+     lineno="34"
+     rv="None">
+     <useargs>
+       <usearg name="source" type="NullablePointer[GSource]"/>
+     </useargs>
+  </use>
+  <use id="_3786" name="glib_autoptr_clear_GTypeModule"
+     ponyname="glib_autoptr_clear_GTypeModule"
+     fid="f145"
+     lineno="39"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GTypeModule]"/>
+     </useargs>
+  </use>
+  <use id="_3787" name="glib_autoptr_cleanup_GTypeModule"
+     ponyname="glib_autoptr_cleanup_GTypeModule"
+     fid="f145"
+     lineno="39"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GTypeModule]]"/>
+     </useargs>
+  </use>
+  <use id="_3788" name="glib_listautoptr_cleanup_GTypeModule"
+     ponyname="glib_listautoptr_cleanup_GTypeModule"
+     fid="f145"
+     lineno="39"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3789" name="glib_slistautoptr_cleanup_GTypeModule"
+     ponyname="glib_slistautoptr_cleanup_GTypeModule"
+     fid="f145"
+     lineno="39"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3790" name="glib_queueautoptr_cleanup_GTypeModule"
+     ponyname="glib_queueautoptr_cleanup_GTypeModule"
+     fid="f145"
+     lineno="39"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3791" name="g_type_module_get_type"
+     ponyname="g_type_module_get_type"
+     fid="f145"
+     lineno="270"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3792" name="g_type_module_use"
+     ponyname="g_type_module_use"
+     fid="f145"
+     lineno="272"
+     rv="I32">
+     <useargs>
+       <usearg name="module" type="NullablePointer[GTypeModule]"/>
+     </useargs>
+  </use>
+  <use id="_3793" name="g_type_module_unuse"
+     ponyname="g_type_module_unuse"
+     fid="f145"
+     lineno="274"
+     rv="None">
+     <useargs>
+       <usearg name="module" type="NullablePointer[GTypeModule]"/>
+     </useargs>
+  </use>
+  <use id="_3794" name="g_type_module_set_name"
+     ponyname="g_type_module_set_name"
+     fid="f145"
+     lineno="276"
+     rv="None">
+     <useargs>
+       <usearg name="module" type="NullablePointer[GTypeModule]"/>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3795" name="g_type_module_register_type"
+     ponyname="g_type_module_register_type"
+     fid="f145"
+     lineno="279"
+     rv="U64">
+     <useargs>
+       <usearg name="module" type="NullablePointer[GTypeModule]"/>
+       <usearg name="parenttype" type="U64"/>
+       <usearg name="typename" type="String"/>
+       <usearg name="typeinfo" type="NullablePointer[GTypeInfo]"/>
+       <usearg name="flags" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3796" name="g_type_module_add_interface"
+     ponyname="g_type_module_add_interface"
+     fid="f145"
+     lineno="285"
+     rv="None">
+     <useargs>
+       <usearg name="module" type="NullablePointer[GTypeModule]"/>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="interfacetype" type="U64"/>
+       <usearg name="interfaceinfo" type="NullablePointer[GInterfaceInfo]"/>
+     </useargs>
+  </use>
+  <use id="_3797" name="g_type_module_register_enum"
+     ponyname="g_type_module_register_enum"
+     fid="f145"
+     lineno="290"
+     rv="U64">
+     <useargs>
+       <usearg name="module" type="NullablePointer[GTypeModule]"/>
+       <usearg name="name" type="String"/>
+       <usearg name="conststaticvalues" type="NullablePointer[GEnumValue]"/>
+     </useargs>
+  </use>
+  <use id="_3798" name="g_type_module_register_flags"
+     ponyname="g_type_module_register_flags"
+     fid="f145"
+     lineno="294"
+     rv="U64">
+     <useargs>
+       <usearg name="module" type="NullablePointer[GTypeModule]"/>
+       <usearg name="name" type="String"/>
+       <usearg name="conststaticvalues" type="NullablePointer[GFlagsValue]"/>
+     </useargs>
+  </use>
+  <use id="_3805" name="g_type_plugin_get_type"
+     ponyname="g_type_plugin_get_type"
+     fid="f146"
+     lineno="116"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3806" name="g_type_plugin_use"
+     ponyname="g_type_plugin_use"
+     fid="f146"
+     lineno="118"
+     rv="None">
+     <useargs>
+       <usearg name="plugin" type="NullablePointer[GTypePlugin]"/>
+     </useargs>
+  </use>
+  <use id="_3807" name="g_type_plugin_unuse"
+     ponyname="g_type_plugin_unuse"
+     fid="f146"
+     lineno="120"
+     rv="None">
+     <useargs>
+       <usearg name="plugin" type="NullablePointer[GTypePlugin]"/>
+     </useargs>
+  </use>
+  <use id="_3808" name="g_type_plugin_complete_type_info"
+     ponyname="g_type_plugin_complete_type_info"
+     fid="f146"
+     lineno="122"
+     rv="None">
+     <useargs>
+       <usearg name="plugin" type="NullablePointer[GTypePlugin]"/>
+       <usearg name="gtype" type="U64"/>
+       <usearg name="info" type="NullablePointer[GTypeInfo]"/>
+       <usearg name="valuetable" type="NullablePointer[GTypeValueTable]"/>
+     </useargs>
+  </use>
+  <use id="_3809" name="g_type_plugin_complete_interface_info"
+     ponyname="g_type_plugin_complete_interface_info"
+     fid="f146"
+     lineno="127"
+     rv="None">
+     <useargs>
+       <usearg name="plugin" type="NullablePointer[GTypePlugin]"/>
+       <usearg name="instancetype" type="U64"/>
+       <usearg name="interfacetype" type="U64"/>
+       <usearg name="info" type="NullablePointer[GInterfaceInfo]"/>
+     </useargs>
+  </use>
+  <use id="_3812" name="g_value_array_get_type"
+     ponyname="g_value_array_get_type"
+     fid="f147"
+     lineno="60"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3813" name="g_value_array_get_nth"
+     ponyname="g_value_array_get_nth"
+     fid="f147"
+     lineno="63"
+     rv="NullablePointer[GValue]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+       <usearg name="index" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3814" name="g_value_array_new"
+     ponyname="g_value_array_new"
+     fid="f147"
+     lineno="67"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="nprealloced" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3815" name="g_value_array_free"
+     ponyname="g_value_array_free"
+     fid="f147"
+     lineno="70"
+     rv="None">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+     </useargs>
+  </use>
+  <use id="_3816" name="g_value_array_copy"
+     ponyname="g_value_array_copy"
+     fid="f147"
+     lineno="73"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+     </useargs>
+  </use>
+  <use id="_3817" name="g_value_array_prepend"
+     ponyname="g_value_array_prepend"
+     fid="f147"
+     lineno="76"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3818" name="g_value_array_append"
+     ponyname="g_value_array_append"
+     fid="f147"
+     lineno="80"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3819" name="g_value_array_insert"
+     ponyname="g_value_array_insert"
+     fid="f147"
+     lineno="84"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+       <usearg name="index" type="U32"/>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3820" name="g_value_array_remove"
+     ponyname="g_value_array_remove"
+     fid="f147"
+     lineno="89"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+       <usearg name="index" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3821" name="g_value_array_sort"
+     ponyname="g_value_array_sort"
+     fid="f147"
+     lineno="93"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+       <usearg name="comparefunc" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3822" name="g_value_array_sort_with_data"
+     ponyname="g_value_array_sort_with_data"
+     fid="f147"
+     lineno="97"
+     rv="NullablePointer[GValueArray]">
+     <useargs>
+       <usearg name="valuearray" type="NullablePointer[GValueArray]"/>
+       <usearg name="comparefunc" type="Pointer[None]"/>
+       <usearg name="userdata" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3823" name="g_value_set_char"
+     ponyname="g_value_set_char"
+     fid="f148"
+     lineno="192"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vchar" type="U8"/>
+     </useargs>
+  </use>
+  <use id="_3824" name="g_value_get_char"
+     ponyname="g_value_get_char"
+     fid="f148"
+     lineno="195"
+     rv="U8">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3825" name="g_value_set_schar"
+     ponyname="g_value_set_schar"
+     fid="f148"
+     lineno="197"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vchar" type="I8"/>
+     </useargs>
+  </use>
+  <use id="_3826" name="g_value_get_schar"
+     ponyname="g_value_get_schar"
+     fid="f148"
+     lineno="200"
+     rv="I8">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3827" name="g_value_set_uchar"
+     ponyname="g_value_set_uchar"
+     fid="f148"
+     lineno="202"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vuchar" type="U8"/>
+     </useargs>
+  </use>
+  <use id="_3828" name="g_value_get_uchar"
+     ponyname="g_value_get_uchar"
+     fid="f148"
+     lineno="205"
+     rv="U8">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3829" name="g_value_set_boolean"
+     ponyname="g_value_set_boolean"
+     fid="f148"
+     lineno="207"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vboolean" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3830" name="g_value_get_boolean"
+     ponyname="g_value_get_boolean"
+     fid="f148"
+     lineno="210"
+     rv="I32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3831" name="g_value_set_int"
+     ponyname="g_value_set_int"
+     fid="f148"
+     lineno="212"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vint" type="I32"/>
+     </useargs>
+  </use>
+  <use id="_3832" name="g_value_get_int"
+     ponyname="g_value_get_int"
+     fid="f148"
+     lineno="215"
+     rv="I32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3833" name="g_value_set_uint"
+     ponyname="g_value_set_uint"
+     fid="f148"
+     lineno="217"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vuint" type="U32"/>
+     </useargs>
+  </use>
+  <use id="_3834" name="g_value_get_uint"
+     ponyname="g_value_get_uint"
+     fid="f148"
+     lineno="220"
+     rv="U32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3835" name="g_value_set_long"
+     ponyname="g_value_set_long"
+     fid="f148"
+     lineno="222"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vlong" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_3836" name="g_value_get_long"
+     ponyname="g_value_get_long"
+     fid="f148"
+     lineno="225"
+     rv="I64">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3837" name="g_value_set_ulong"
+     ponyname="g_value_set_ulong"
+     fid="f148"
+     lineno="227"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vulong" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3838" name="g_value_get_ulong"
+     ponyname="g_value_get_ulong"
+     fid="f148"
+     lineno="230"
+     rv="U64">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3839" name="g_value_set_int64"
+     ponyname="g_value_set_int64"
+     fid="f148"
+     lineno="232"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vint64" type="I64"/>
+     </useargs>
+  </use>
+  <use id="_3840" name="g_value_get_int64"
+     ponyname="g_value_get_int64"
+     fid="f148"
+     lineno="235"
+     rv="I64">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3841" name="g_value_set_uint64"
+     ponyname="g_value_set_uint64"
+     fid="f148"
+     lineno="237"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vuint64" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3842" name="g_value_get_uint64"
+     ponyname="g_value_get_uint64"
+     fid="f148"
+     lineno="240"
+     rv="U64">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3843" name="g_value_set_float"
+     ponyname="g_value_set_float"
+     fid="f148"
+     lineno="242"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vfloat" type="F32"/>
+     </useargs>
+  </use>
+  <use id="_3844" name="g_value_get_float"
+     ponyname="g_value_get_float"
+     fid="f148"
+     lineno="245"
+     rv="F32">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3845" name="g_value_set_double"
+     ponyname="g_value_set_double"
+     fid="f148"
+     lineno="247"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vdouble" type="F64"/>
+     </useargs>
+  </use>
+  <use id="_3846" name="g_value_get_double"
+     ponyname="g_value_get_double"
+     fid="f148"
+     lineno="250"
+     rv="F64">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3847" name="g_value_set_string"
+     ponyname="g_value_set_string"
+     fid="f148"
+     lineno="252"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vstring" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3848" name="g_value_set_static_string"
+     ponyname="g_value_set_static_string"
+     fid="f148"
+     lineno="255"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vstring" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3849" name="g_value_set_interned_string"
+     ponyname="g_value_set_interned_string"
+     fid="f148"
+     lineno="258"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vstring" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3850" name="g_value_get_string"
+     ponyname="g_value_get_string"
+     fid="f148"
+     lineno="261"
+     rv="String">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3851" name="g_value_dup_string"
+     ponyname="g_value_dup_string"
+     fid="f148"
+     lineno="263"
+     rv="String">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3852" name="g_value_set_pointer"
+     ponyname="g_value_set_pointer"
+     fid="f148"
+     lineno="265"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vpointer" type="Pointer[None]"/>
+     </useargs>
+  </use>
+  <use id="_3853" name="g_value_get_pointer"
+     ponyname="g_value_get_pointer"
+     fid="f148"
+     lineno="268"
+     rv="Pointer[None]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3854" name="g_gtype_get_type"
+     ponyname="g_gtype_get_type"
+     fid="f148"
+     lineno="270"
+     rv="U64">
+     <useargs/>
+  </use>
+  <use id="_3855" name="g_value_set_gtype"
+     ponyname="g_value_set_gtype"
+     fid="f148"
+     lineno="272"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vgtype" type="U64"/>
+     </useargs>
+  </use>
+  <use id="_3856" name="g_value_get_gtype"
+     ponyname="g_value_get_gtype"
+     fid="f148"
+     lineno="275"
+     rv="U64">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3857" name="g_value_set_variant"
+     ponyname="g_value_set_variant"
+     fid="f148"
+     lineno="277"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="variant" type="NullablePointer[GVariant]"/>
+     </useargs>
+  </use>
+  <use id="_3858" name="g_value_take_variant"
+     ponyname="g_value_take_variant"
+     fid="f148"
+     lineno="280"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="variant" type="NullablePointer[GVariant]"/>
+     </useargs>
+  </use>
+  <use id="_3859" name="g_value_get_variant"
+     ponyname="g_value_get_variant"
+     fid="f148"
+     lineno="283"
+     rv="NullablePointer[GVariant]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3860" name="g_value_dup_variant"
+     ponyname="g_value_dup_variant"
+     fid="f148"
+     lineno="285"
+     rv="NullablePointer[GVariant]">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3861" name="g_pointer_type_register_static"
+     ponyname="g_pointer_type_register_static"
+     fid="f148"
+     lineno="290"
+     rv="U64">
+     <useargs>
+       <usearg name="name" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3862" name="g_strdup_value_contents"
+     ponyname="g_strdup_value_contents"
+     fid="f148"
+     lineno="294"
+     rv="String">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use>
+  <use id="_3863" name="g_value_take_string"
+     ponyname="g_value_take_string"
+     fid="f148"
+     lineno="298"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vstring" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3864" name="g_value_set_string_take_ownership"
+     ponyname="g_value_set_string_take_ownership"
+     fid="f148"
+     lineno="301"
+     rv="None">
+     <useargs>
+       <usearg name="value" type="NullablePointer[GValue]"/>
+       <usearg name="vstring" type="String"/>
+     </useargs>
+  </use>
+  <use id="_3870" name="glib_autoptr_clear_GClosure"
+     ponyname="glib_autoptr_clear_GClosure"
+     fid="f149"
+     lineno="24"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GClosure]"/>
+     </useargs>
+  </use>
+  <use id="_3871" name="glib_autoptr_cleanup_GClosure"
+     ponyname="glib_autoptr_cleanup_GClosure"
+     fid="f149"
+     lineno="24"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GClosure]]"/>
+     </useargs>
+  </use>
+  <use id="_3872" name="glib_listautoptr_cleanup_GClosure"
+     ponyname="glib_listautoptr_cleanup_GClosure"
+     fid="f149"
+     lineno="24"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3873" name="glib_slistautoptr_cleanup_GClosure"
+     ponyname="glib_slistautoptr_cleanup_GClosure"
+     fid="f149"
+     lineno="24"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3874" name="glib_queueautoptr_cleanup_GClosure"
+     ponyname="glib_queueautoptr_cleanup_GClosure"
+     fid="f149"
+     lineno="24"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3879" name="glib_autoptr_clear_GEnumClass"
+     ponyname="glib_autoptr_clear_GEnumClass"
+     fid="f149"
+     lineno="25"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GEnumClass]"/>
+     </useargs>
+  </use>
+  <use id="_3880" name="glib_autoptr_cleanup_GEnumClass"
+     ponyname="glib_autoptr_cleanup_GEnumClass"
+     fid="f149"
+     lineno="25"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GEnumClass]]"/>
+     </useargs>
+  </use>
+  <use id="_3881" name="glib_listautoptr_cleanup_GEnumClass"
+     ponyname="glib_listautoptr_cleanup_GEnumClass"
+     fid="f149"
+     lineno="25"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3882" name="glib_slistautoptr_cleanup_GEnumClass"
+     ponyname="glib_slistautoptr_cleanup_GEnumClass"
+     fid="f149"
+     lineno="25"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3883" name="glib_queueautoptr_cleanup_GEnumClass"
+     ponyname="glib_queueautoptr_cleanup_GEnumClass"
+     fid="f149"
+     lineno="25"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3888" name="glib_autoptr_clear_GFlagsClass"
+     ponyname="glib_autoptr_clear_GFlagsClass"
+     fid="f149"
+     lineno="26"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GFlagsClass]"/>
+     </useargs>
+  </use>
+  <use id="_3889" name="glib_autoptr_cleanup_GFlagsClass"
+     ponyname="glib_autoptr_cleanup_GFlagsClass"
+     fid="f149"
+     lineno="26"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GFlagsClass]]"/>
+     </useargs>
+  </use>
+  <use id="_3890" name="glib_listautoptr_cleanup_GFlagsClass"
+     ponyname="glib_listautoptr_cleanup_GFlagsClass"
+     fid="f149"
+     lineno="26"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3891" name="glib_slistautoptr_cleanup_GFlagsClass"
+     ponyname="glib_slistautoptr_cleanup_GFlagsClass"
+     fid="f149"
+     lineno="26"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3892" name="glib_queueautoptr_cleanup_GFlagsClass"
+     ponyname="glib_queueautoptr_cleanup_GFlagsClass"
+     fid="f149"
+     lineno="26"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3897" name="glib_autoptr_clear_GObject"
+     ponyname="glib_autoptr_clear_GObject"
+     fid="f149"
+     lineno="27"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3898" name="glib_autoptr_cleanup_GObject"
+     ponyname="glib_autoptr_cleanup_GObject"
+     fid="f149"
+     lineno="27"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GObject]]"/>
+     </useargs>
+  </use>
+  <use id="_3899" name="glib_listautoptr_cleanup_GObject"
+     ponyname="glib_listautoptr_cleanup_GObject"
+     fid="f149"
+     lineno="27"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3900" name="glib_slistautoptr_cleanup_GObject"
+     ponyname="glib_slistautoptr_cleanup_GObject"
+     fid="f149"
+     lineno="27"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3901" name="glib_queueautoptr_cleanup_GObject"
+     ponyname="glib_queueautoptr_cleanup_GObject"
+     fid="f149"
+     lineno="27"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3906" name="glib_autoptr_clear_GInitiallyUnowned"
+     ponyname="glib_autoptr_clear_GInitiallyUnowned"
+     fid="f149"
+     lineno="28"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GObject]"/>
+     </useargs>
+  </use>
+  <use id="_3907" name="glib_autoptr_cleanup_GInitiallyUnowned"
+     ponyname="glib_autoptr_cleanup_GInitiallyUnowned"
+     fid="f149"
+     lineno="28"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GObject]]"/>
+     </useargs>
+  </use>
+  <use id="_3908" name="glib_listautoptr_cleanup_GInitiallyUnowned"
+     ponyname="glib_listautoptr_cleanup_GInitiallyUnowned"
+     fid="f149"
+     lineno="28"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3909" name="glib_slistautoptr_cleanup_GInitiallyUnowned"
+     ponyname="glib_slistautoptr_cleanup_GInitiallyUnowned"
+     fid="f149"
+     lineno="28"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3910" name="glib_queueautoptr_cleanup_GInitiallyUnowned"
+     ponyname="glib_queueautoptr_cleanup_GInitiallyUnowned"
+     fid="f149"
+     lineno="28"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3915" name="glib_autoptr_clear_GParamSpec"
+     ponyname="glib_autoptr_clear_GParamSpec"
+     fid="f149"
+     lineno="29"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GParamSpec]"/>
+     </useargs>
+  </use>
+  <use id="_3916" name="glib_autoptr_cleanup_GParamSpec"
+     ponyname="glib_autoptr_cleanup_GParamSpec"
+     fid="f149"
+     lineno="29"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GParamSpec]]"/>
+     </useargs>
+  </use>
+  <use id="_3917" name="glib_listautoptr_cleanup_GParamSpec"
+     ponyname="glib_listautoptr_cleanup_GParamSpec"
+     fid="f149"
+     lineno="29"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3918" name="glib_slistautoptr_cleanup_GParamSpec"
+     ponyname="glib_slistautoptr_cleanup_GParamSpec"
+     fid="f149"
+     lineno="29"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3919" name="glib_queueautoptr_cleanup_GParamSpec"
+     ponyname="glib_queueautoptr_cleanup_GParamSpec"
+     fid="f149"
+     lineno="29"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3924" name="glib_autoptr_clear_GTypeClass"
+     ponyname="glib_autoptr_clear_GTypeClass"
+     fid="f149"
+     lineno="30"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GTypeClass]"/>
+     </useargs>
+  </use>
+  <use id="_3925" name="glib_autoptr_cleanup_GTypeClass"
+     ponyname="glib_autoptr_cleanup_GTypeClass"
+     fid="f149"
+     lineno="30"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="Array[NullablePointer[GTypeClass]]"/>
+     </useargs>
+  </use>
+  <use id="_3926" name="glib_listautoptr_cleanup_GTypeClass"
+     ponyname="glib_listautoptr_cleanup_GTypeClass"
+     fid="f149"
+     lineno="30"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GList]]"/>
+     </useargs>
+  </use>
+  <use id="_3927" name="glib_slistautoptr_cleanup_GTypeClass"
+     ponyname="glib_slistautoptr_cleanup_GTypeClass"
+     fid="f149"
+     lineno="30"
+     rv="None">
+     <useargs>
+       <usearg name="l" type="Array[NullablePointer[GSList]]"/>
+     </useargs>
+  </use>
+  <use id="_3928" name="glib_queueautoptr_cleanup_GTypeClass"
+     ponyname="glib_queueautoptr_cleanup_GTypeClass"
+     fid="f149"
+     lineno="30"
+     rv="None">
+     <useargs>
+       <usearg name="q" type="Array[NullablePointer[GQueue]]"/>
+     </useargs>
+  </use>
+  <use id="_3929" name="glib_auto_cleanup_GValue"
+     ponyname="glib_auto_cleanup_GValue"
+     fid="f149"
+     lineno="31"
+     rv="None">
+     <useargs>
+       <usearg name="ptr" type="NullablePointer[GValue]"/>
+     </useargs>
+  </use></uses>
+</castxml2pony>
+

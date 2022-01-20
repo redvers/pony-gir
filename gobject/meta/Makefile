@@ -1,3 +1,5 @@
+all:	use
+
 codegenstruct:
 	rm -f ../../test/GObject/*
 	sh -x mkstruct.sh _3572 ../../test/GObject/GObject.pony
@@ -11,7 +13,7 @@ codegenstruct:
 #	sh -x mkstruct.sh _3251 ../../test/GObject/GTypeFundamentalInfo.pony
 #	sh -x mkstruct.sh _3253 ../../test/GObject/GInterfaceInfo.pony
 #	sh -x mkstruct.sh _3255 ../../test/GObject/GTypeValueTable.pony
-#	sh -x mkstruct.sh _3257 ../../test/GObject/GTypeQuery.pony
+	sh -x mkstruct.sh _3257 ../../test/GObject/GTypeQuery.pony
 #	sh -x mkstruct.sh _3356 ../../test/GObject/GParamSpec.pony
 #	sh -x mkstruct.sh _3358 ../../test/GObject/GParamSpecClass.pony
 #	sh -x mkstruct.sh _3360 ../../test/GObject/GParameter.pony
@@ -59,3 +61,9 @@ codegenstruct:
 
 structmeta:
 	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gobject.xml -S
+
+usemeta:
+	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gobject.xml -u f131 f132 f133 f134 f135 f136 f137 f138 f139 f140 f141 f142 f143 f144 f145 f146 f147 f148 f149 
+
+use:
+	saxon-he -xi use.xml ../../xsl/makeuse.xsl > ../../test/GObject/use.pony
