@@ -28,14 +28,14 @@ use "../Harfbuzz"
      008640: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkButtonClass
-  embed parent_class: GtkBinClass = GtkBinClass
-  var pressed: Pointer[None] = Pointer[None]
-  var released: Pointer[None] = Pointer[None]
-  var clicked: Pointer[None] = Pointer[None]
-  var enter: Pointer[None] = Pointer[None]
-  var leave: Pointer[None] = Pointer[None]
-  var activate: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef
+  var pressed: Pointer[None] = Pointer[None] // PointerType
+  var released: Pointer[None] = Pointer[None] // PointerType
+  var clicked: Pointer[None] = Pointer[None] // PointerType
+  var enter: Pointer[None] = Pointer[None] // PointerType
+  var leave: Pointer[None] = Pointer[None] // PointerType
+  var activate: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

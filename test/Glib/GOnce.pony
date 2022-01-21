@@ -12,5 +12,5 @@ use "../GObject"
      000064: [PointerType size=64]->[FundamentalType(void) size=0]: retval  
 */
 struct GOnce
-  var status: I32 = I32(0)
-  var retval: Pointer[None] = Pointer[None]
+  var status: I32 = I32(0) // CvQualifiedType
+  var retval: Pointer[None] = Pointer[None] // CvQualifiedType

@@ -14,7 +14,7 @@ use "../Glib"
      000160: [FundamentalType(unsigned int) size=32]: instance_size  
 */
 struct GTypeQuery
-  var gtype: U64 = U64(0)
-  var type_name: Pointer[U8] = Pointer[U8]
-  var class_size: U32 = U32(0)
-  var instance_size: U32 = U32(0)
+  var gtype: U64 = U64(0) // Typedef
+  var type_name: Pointer[U8] = Pointer[U8] // PointerType
+  var class_size: U32 = U32(0) // Typedef
+  var instance_size: U32 = U32(0) // Typedef

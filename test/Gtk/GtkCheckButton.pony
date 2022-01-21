@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=512,fid: f504]: toggle_button  
 */
 struct GtkCheckButton
-  embed toggle_button: GtkToggleButton = GtkToggleButton
+  embed toggle_button: GtkToggleButton = GtkToggleButton // Typedef

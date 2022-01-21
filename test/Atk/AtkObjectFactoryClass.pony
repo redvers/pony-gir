@@ -17,9 +17,9 @@ use "../GObject"
      001344: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: pad2  
 */
 struct AtkObjectFactoryClass
-  embed parent_class: GObjectClass = GObjectClass
-  var create_accessible: Pointer[None] = Pointer[None]
-  var invalidate: Pointer[None] = Pointer[None]
-  var get_accessible_type: Pointer[None] = Pointer[None]
-  var pad1: Pointer[None] = Pointer[None]
-  var pad2: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var create_accessible: Pointer[None] = Pointer[None] // PointerType
+  var invalidate: Pointer[None] = Pointer[None] // PointerType
+  var get_accessible_type: Pointer[None] = Pointer[None] // PointerType
+  var pad1: Pointer[None] = Pointer[None] // Typedef
+  var pad2: Pointer[None] = Pointer[None] // Typedef

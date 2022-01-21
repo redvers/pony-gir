@@ -15,6 +15,6 @@ use "../Gio"
      000064: [FundamentalType(int) size=32]: y_offset  
 */
 struct PangoGlyphGeometry
-  var width: I32 = I32(0)
-  var x_offset: I32 = I32(0)
-  var y_offset: I32 = I32(0)
+  var width: I32 = I32(0) // Typedef
+  var x_offset: I32 = I32(0) // Typedef
+  var y_offset: I32 = I32(0) // Typedef

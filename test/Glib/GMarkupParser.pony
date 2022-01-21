@@ -15,8 +15,8 @@ use "../GObject"
      000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: error  
 */
 struct GMarkupParser
-  var start_element: Pointer[None] = Pointer[None]
-  var end_element: Pointer[None] = Pointer[None]
-  var text: Pointer[None] = Pointer[None]
-  var passthrough: Pointer[None] = Pointer[None]
-  var gerror: Pointer[None] = Pointer[None]
+  var start_element: Pointer[None] = Pointer[None] // PointerType
+  var end_element: Pointer[None] = Pointer[None] // PointerType
+  var text: Pointer[None] = Pointer[None] // PointerType
+  var passthrough: Pointer[None] = Pointer[None] // PointerType
+  var gerror: Pointer[None] = Pointer[None] // PointerType

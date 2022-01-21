@@ -18,9 +18,9 @@ use "../Cairo"
      000256: [PointerType size=64]->[Struct size=,fid: f348]: grab_window  
 */
 struct GdkEventGrabBroken
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var keyboard: I32 = I32(0)
-  var implicit: I32 = I32(0)
-  var grab_window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var keyboard: I32 = I32(0) // Typedef
+  var implicit: I32 = I32(0) // Typedef
+  var grab_window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType

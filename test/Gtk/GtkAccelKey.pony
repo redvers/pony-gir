@@ -20,6 +20,6 @@ use "../Harfbuzz"
      000064: [FundamentalType(unsigned int) size=32]: accel_flags  
 */
 struct GtkAccelKey
-  var accel_key: U32 = U32(0)
-  var accel_mods: I32 = I32(0)
-  var accel_flags: U32 = U32(0)
+  var accel_key: U32 = U32(0) // Typedef
+  var accel_mods: I32 = I32(0) // Typedef
+  var accel_flags: U32 = U32(0) // Typedef

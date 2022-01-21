@@ -26,12 +26,12 @@ use "../Harfbuzz"
      001536: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved2  
 */
 struct GtkEntryCompletionClass
-  embed parent_class: GObjectClass = GObjectClass
-  var match_selected: Pointer[None] = Pointer[None]
-  var action_activated: Pointer[None] = Pointer[None]
-  var insert_prefix: Pointer[None] = Pointer[None]
-  var cursor_on_match: Pointer[None] = Pointer[None]
-  var no_matches: Pointer[None] = Pointer[None]
-  var _gtk_reserved0: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var match_selected: Pointer[None] = Pointer[None] // PointerType
+  var action_activated: Pointer[None] = Pointer[None] // PointerType
+  var insert_prefix: Pointer[None] = Pointer[None] // PointerType
+  var cursor_on_match: Pointer[None] = Pointer[None] // PointerType
+  var no_matches: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved0: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType

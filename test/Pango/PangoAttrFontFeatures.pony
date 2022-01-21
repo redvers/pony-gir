@@ -14,5 +14,5 @@ use "../Gio"
      000128: [PointerType size=64]->[FundamentalType(char) size=8]: features  
 */
 struct PangoAttrFontFeatures
-  embed attr: PangoAttribute = PangoAttribute
-  var features: Pointer[U8] = Pointer[U8]
+  embed attr: PangoAttribute = PangoAttribute // Typedef
+  var features: Pointer[U8] = Pointer[U8] // PointerType

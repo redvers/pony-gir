@@ -13,5 +13,5 @@ use "../GObject"
      000064: [PointerType size=64]->[FundamentalType(char) size=8]: value  
 */
 struct AtkAttribute
-  var name: Pointer[U8] = Pointer[U8]
-  var value: Pointer[U8] = Pointer[U8]
+  var name: Pointer[U8] = Pointer[U8] // PointerType
+  var value: Pointer[U8] = Pointer[U8] // PointerType

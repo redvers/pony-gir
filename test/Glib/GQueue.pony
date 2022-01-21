@@ -13,6 +13,6 @@ use "../GObject"
      000128: [FundamentalType(unsigned int) size=32]: length  
 */
 struct GQueue
-  var head: NullablePointer[GList] = NullablePointer[GList].none()
-  var tail: NullablePointer[GList] = NullablePointer[GList].none()
-  var length: U32 = U32(0)
+  var head: NullablePointer[GList] = NullablePointer[GList].none() // PointerType
+  var tail: NullablePointer[GList] = NullablePointer[GList].none() // PointerType
+  var length: U32 = U32(0) // Typedef

@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=320,fid: f478]: parent  
 */
 struct GtkSearchEntry
-  embed parent: GtkEntry = GtkEntry
+  embed parent: GtkEntry = GtkEntry // Typedef

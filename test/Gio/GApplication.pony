@@ -12,5 +12,5 @@ use "../GObject"
      000192: [PointerType size=64]->[Struct size=,fid: f160]: priv  
 */
 struct GApplication
-  embed parent_instance: GObject = GObject
-  var priv: NullablePointer[GApplicationPrivate] = NullablePointer[GApplicationPrivate].none()
+  embed parent_instance: GObject = GObject // Typedef
+  var priv: NullablePointer[GApplicationPrivate] = NullablePointer[GApplicationPrivate].none() // PointerType

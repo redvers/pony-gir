@@ -16,9 +16,9 @@ use "../GObject"
      000320: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: try_realloc  
 */
 struct GMemVTable
-  var malloc: Pointer[None] = Pointer[None]
-  var realloc: Pointer[None] = Pointer[None]
-  var free: Pointer[None] = Pointer[None]
-  var calloc: Pointer[None] = Pointer[None]
-  var try_malloc: Pointer[None] = Pointer[None]
-  var try_realloc: Pointer[None] = Pointer[None]
+  var malloc: Pointer[None] = Pointer[None] // PointerType
+  var realloc: Pointer[None] = Pointer[None] // PointerType
+  var free: Pointer[None] = Pointer[None] // PointerType
+  var calloc: Pointer[None] = Pointer[None] // PointerType
+  var try_malloc: Pointer[None] = Pointer[None] // PointerType
+  var try_realloc: Pointer[None] = Pointer[None] // PointerType

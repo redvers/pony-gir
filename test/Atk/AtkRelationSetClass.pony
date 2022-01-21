@@ -14,6 +14,6 @@ use "../GObject"
      001152: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: pad2  
 */
 struct AtkRelationSetClass
-  embed parent: GObjectClass = GObjectClass
-  var pad1: Pointer[None] = Pointer[None]
-  var pad2: Pointer[None] = Pointer[None]
+  embed parent: GObjectClass = GObjectClass // Typedef
+  var pad1: Pointer[None] = Pointer[None] // Typedef
+  var pad2: Pointer[None] = Pointer[None] // Typedef

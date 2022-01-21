@@ -25,16 +25,16 @@ use "../Gio"
      000012: [FundamentalType(unsigned int) size=32]: is_word_boundary  
 */
 struct PangoLogAttr
-  var is_line_break: U32 = U32(0)
-  var is_mandatory_break: U32 = U32(0)
-  var is_char_break: U32 = U32(0)
-  var is_white: U32 = U32(0)
-  var is_cursor_position: U32 = U32(0)
-  var is_word_start: U32 = U32(0)
-  var is_word_end: U32 = U32(0)
-  var is_sentence_boundary: U32 = U32(0)
-  var is_sentence_start: U32 = U32(0)
-  var is_sentence_end: U32 = U32(0)
-  var backspace_deletes_character: U32 = U32(0)
-  var is_expandable_space: U32 = U32(0)
-  var is_word_boundary: U32 = U32(0)
+  var is_line_break: U32 = U32(0) // Typedef
+  var is_mandatory_break: U32 = U32(0) // Typedef
+  var is_char_break: U32 = U32(0) // Typedef
+  var is_white: U32 = U32(0) // Typedef
+  var is_cursor_position: U32 = U32(0) // Typedef
+  var is_word_start: U32 = U32(0) // Typedef
+  var is_word_end: U32 = U32(0) // Typedef
+  var is_sentence_boundary: U32 = U32(0) // Typedef
+  var is_sentence_start: U32 = U32(0) // Typedef
+  var is_sentence_end: U32 = U32(0) // Typedef
+  var backspace_deletes_character: U32 = U32(0) // Typedef
+  var is_expandable_space: U32 = U32(0) // Typedef
+  var is_word_boundary: U32 = U32(0) // Typedef

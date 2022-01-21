@@ -25,11 +25,11 @@ use "../Harfbuzz"
      002816: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkCellRendererAccelClass
-  embed parent_class: GtkCellRendererTextClass = GtkCellRendererTextClass
-  var accel_edited: Pointer[None] = Pointer[None]
-  var accel_cleared: Pointer[None] = Pointer[None]
-  var _gtk_reserved0: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkCellRendererTextClass = GtkCellRendererTextClass // Typedef
+  var accel_edited: Pointer[None] = Pointer[None] // PointerType
+  var accel_cleared: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved0: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

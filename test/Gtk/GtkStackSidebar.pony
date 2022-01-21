@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=384,fid: f439]: parent  
 */
 struct GtkStackSidebar
-  embed parent: GtkBin = GtkBin
+  embed parent: GtkBin = GtkBin // Typedef

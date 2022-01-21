@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000384: [PointerType size=64]->[Struct size=,fid: f481]: priv  
 */
 struct GtkComboBox
-  embed parent_instance: GtkBin = GtkBin
-  var priv: NullablePointer[GtkComboBoxPrivate] = NullablePointer[GtkComboBoxPrivate].none()
+  embed parent_instance: GtkBin = GtkBin // Typedef
+  var priv: NullablePointer[GtkComboBoxPrivate] = NullablePointer[GtkComboBoxPrivate].none() // PointerType

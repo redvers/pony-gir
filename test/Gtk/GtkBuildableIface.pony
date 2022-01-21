@@ -28,14 +28,14 @@ use "../Harfbuzz"
      000704: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_internal_child  
 */
 struct GtkBuildableIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var set_name: Pointer[None] = Pointer[None]
-  var get_name: Pointer[None] = Pointer[None]
-  var add_child: Pointer[None] = Pointer[None]
-  var set_buildable_property: Pointer[None] = Pointer[None]
-  var construct_child: Pointer[None] = Pointer[None]
-  var custom_tag_start: Pointer[None] = Pointer[None]
-  var custom_tag_end: Pointer[None] = Pointer[None]
-  var custom_finished: Pointer[None] = Pointer[None]
-  var parser_finished: Pointer[None] = Pointer[None]
-  var get_internal_child: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var set_name: Pointer[None] = Pointer[None] // PointerType
+  var get_name: Pointer[None] = Pointer[None] // PointerType
+  var add_child: Pointer[None] = Pointer[None] // PointerType
+  var set_buildable_property: Pointer[None] = Pointer[None] // PointerType
+  var construct_child: Pointer[None] = Pointer[None] // PointerType
+  var custom_tag_start: Pointer[None] = Pointer[None] // PointerType
+  var custom_tag_end: Pointer[None] = Pointer[None] // PointerType
+  var custom_finished: Pointer[None] = Pointer[None] // PointerType
+  var parser_finished: Pointer[None] = Pointer[None] // PointerType
+  var get_internal_child: Pointer[None] = Pointer[None] // PointerType

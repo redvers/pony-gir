@@ -22,8 +22,8 @@ use "../Harfbuzz"
      009152: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkFontChooserDialogClass
-  embed parent_class: GtkDialogClass = GtkDialogClass
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkDialogClass = GtkDialogClass // Typedef
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

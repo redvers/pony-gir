@@ -14,5 +14,5 @@ use "../Gio"
      000064: [PointerType size=64]->[FundamentalType(char) size=8]: langs  
 */
 struct PangoEngineScriptInfo
-  var script: I32 = I32(0)
-  var langs: Pointer[U8] = Pointer[U8]
+  var script: I32 = I32(0) // Typedef
+  var langs: Pointer[U8] = Pointer[U8] // PointerType

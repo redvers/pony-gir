@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000320: [PointerType size=64]->[Struct size=,fid: f581]: priv  
 */
 struct GtkNotebook
-  embed container: GtkContainer = GtkContainer
-  var priv: NullablePointer[GtkNotebookPrivate] = NullablePointer[GtkNotebookPrivate].none()
+  embed container: GtkContainer = GtkContainer // Typedef
+  var priv: NullablePointer[GtkNotebookPrivate] = NullablePointer[GtkNotebookPrivate].none() // PointerType

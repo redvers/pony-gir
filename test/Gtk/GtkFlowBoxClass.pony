@@ -31,17 +31,17 @@ use "../Harfbuzz"
      008576: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved6  
 */
 struct GtkFlowBoxClass
-  embed parent_class: GtkContainerClass = GtkContainerClass
-  var child_activated: Pointer[None] = Pointer[None]
-  var selected_children_changed: Pointer[None] = Pointer[None]
-  var activate_cursor_child: Pointer[None] = Pointer[None]
-  var toggle_cursor_child: Pointer[None] = Pointer[None]
-  var move_cursor: Pointer[None] = Pointer[None]
-  var select_all: Pointer[None] = Pointer[None]
-  var unselect_all: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
-  var _gtk_reserved5: Pointer[None] = Pointer[None]
-  var _gtk_reserved6: Pointer[None] = Pointer[None]
+  embed parent_class: GtkContainerClass = GtkContainerClass // Typedef
+  var child_activated: Pointer[None] = Pointer[None] // PointerType
+  var selected_children_changed: Pointer[None] = Pointer[None] // PointerType
+  var activate_cursor_child: Pointer[None] = Pointer[None] // PointerType
+  var toggle_cursor_child: Pointer[None] = Pointer[None] // PointerType
+  var move_cursor: Pointer[None] = Pointer[None] // PointerType
+  var select_all: Pointer[None] = Pointer[None] // PointerType
+  var unselect_all: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved5: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved6: Pointer[None] = Pointer[None] // PointerType

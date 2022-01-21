@@ -16,7 +16,7 @@ use "../Gio"
      000128: [Struct size=384,fid: f330]: analysis  
 */
 struct PangoItem
-  var offset: I32 = I32(0)
-  var length: I32 = I32(0)
-  var num_chars: I32 = I32(0)
-  embed analysis: PangoAnalysis = PangoAnalysis
+  var offset: I32 = I32(0) // Typedef
+  var length: I32 = I32(0) // Typedef
+  var num_chars: I32 = I32(0) // Typedef
+  embed analysis: PangoAnalysis = PangoAnalysis // Typedef

@@ -13,6 +13,6 @@ use "../GObject"
      000128: [PointerType size=64]->[Struct size=192,fid: f75]: prev  
 */
 struct GList
-  var data: Pointer[None] = Pointer[None]
-  var next: NullablePointer[GList] = NullablePointer[GList].none()
-  var prev: NullablePointer[GList] = NullablePointer[GList].none()
+  var data: Pointer[None] = Pointer[None] // Typedef
+  var next: NullablePointer[GList] = NullablePointer[GList].none() // PointerType
+  var prev: NullablePointer[GList] = NullablePointer[GList].none() // PointerType

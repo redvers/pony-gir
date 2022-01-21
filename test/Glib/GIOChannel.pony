@@ -30,23 +30,23 @@ use "../GObject"
      000832: [PointerType size=64]->[FundamentalType(void) size=0]: reserved2  
 */
 struct GIOChannel
-  var ref_count: I32 = I32(0)
-  var funcs: NullablePointer[GIOFuncs] = NullablePointer[GIOFuncs].none()
-  var encoding: Pointer[U8] = Pointer[U8]
-  var read_cd: NullablePointer[GIConv] = NullablePointer[GIConv].none()
-  var write_cd: NullablePointer[GIConv] = NullablePointer[GIConv].none()
-  var line_term: Pointer[U8] = Pointer[U8]
-  var line_term_len: U32 = U32(0)
-  var buf_size: U64 = U64(0)
-  var read_buf: NullablePointer[GString] = NullablePointer[GString].none()
-  var encoded_read_buf: NullablePointer[GString] = NullablePointer[GString].none()
-  var write_buf: NullablePointer[GString] = NullablePointer[GString].none()
-  var partial_write_buf: Pointer[U8] = Pointer[U8]
-  var use_buffer: U32 = U32(0)
-  var do_encode: U32 = U32(0)
-  var close_on_unref: U32 = U32(0)
-  var is_readable: U32 = U32(0)
-  var is_writeable: U32 = U32(0)
-  var is_seekable: U32 = U32(0)
-  var reserved1: Pointer[None] = Pointer[None]
-  var reserved2: Pointer[None] = Pointer[None]
+  var ref_count: I32 = I32(0) // Typedef
+  var funcs: NullablePointer[GIOFuncs] = NullablePointer[GIOFuncs].none() // PointerType
+  var encoding: Pointer[U8] = Pointer[U8] // PointerType
+  var read_cd: NullablePointer[GIConv] = NullablePointer[GIConv].none() // Typedef
+  var write_cd: NullablePointer[GIConv] = NullablePointer[GIConv].none() // Typedef
+  var line_term: Pointer[U8] = Pointer[U8] // PointerType
+  var line_term_len: U32 = U32(0) // Typedef
+  var buf_size: U64 = U64(0) // Typedef
+  var read_buf: NullablePointer[GString] = NullablePointer[GString].none() // PointerType
+  var encoded_read_buf: NullablePointer[GString] = NullablePointer[GString].none() // PointerType
+  var write_buf: NullablePointer[GString] = NullablePointer[GString].none() // PointerType
+  var partial_write_buf: Pointer[U8] = Pointer[U8] // ArrayType
+  var use_buffer: U32 = U32(0) // Typedef
+  var do_encode: U32 = U32(0) // Typedef
+  var close_on_unref: U32 = U32(0) // Typedef
+  var is_readable: U32 = U32(0) // Typedef
+  var is_writeable: U32 = U32(0) // Typedef
+  var is_seekable: U32 = U32(0) // Typedef
+  var reserved1: Pointer[None] = Pointer[None] // Typedef
+  var reserved2: Pointer[None] = Pointer[None] // Typedef

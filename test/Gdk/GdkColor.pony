@@ -16,7 +16,7 @@ use "../Cairo"
      000064: [FundamentalType(short unsigned int) size=16]: blue  
 */
 struct GdkColor
-  var pixel: U32 = U32(0)
-  var red: U16 = U16(0)
-  var green: U16 = U16(0)
-  var blue: U16 = U16(0)
+  var pixel: U32 = U32(0) // Typedef
+  var red: U16 = U16(0) // Typedef
+  var green: U16 = U16(0) // Typedef
+  var blue: U16 = U16(0) // Typedef

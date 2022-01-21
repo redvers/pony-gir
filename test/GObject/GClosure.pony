@@ -23,16 +23,16 @@ use "../Glib"
      000192: [PointerType size=64]->[Struct size=128,fid: f134]: notifiers  
 */
 struct GClosure
-  var ref_count: U32 = U32(0)
-  var meta_marshal_nouse: U32 = U32(0)
-  var n_guards: U32 = U32(0)
-  var n_fnotifiers: U32 = U32(0)
-  var n_inotifiers: U32 = U32(0)
-  var in_inotify: U32 = U32(0)
-  var floating: U32 = U32(0)
-  var derivative_flag: U32 = U32(0)
-  var in_marshal: U32 = U32(0)
-  var is_invalid: U32 = U32(0)
-  var marshal: Pointer[None] = Pointer[None]
-  var data: Pointer[None] = Pointer[None]
-  var notifiers: NullablePointer[GClosureNotifyData] = NullablePointer[GClosureNotifyData].none()
+  var ref_count: U32 = U32(0) // Typedef
+  var meta_marshal_nouse: U32 = U32(0) // Typedef
+  var n_guards: U32 = U32(0) // Typedef
+  var n_fnotifiers: U32 = U32(0) // Typedef
+  var n_inotifiers: U32 = U32(0) // Typedef
+  var in_inotify: U32 = U32(0) // Typedef
+  var floating: U32 = U32(0) // Typedef
+  var derivative_flag: U32 = U32(0) // Typedef
+  var in_marshal: U32 = U32(0) // Typedef
+  var is_invalid: U32 = U32(0) // Typedef
+  var marshal: Pointer[None] = Pointer[None] // PointerType
+  var data: Pointer[None] = Pointer[None] // Typedef
+  var notifiers: NullablePointer[GClosureNotifyData] = NullablePointer[GClosureNotifyData].none() // PointerType

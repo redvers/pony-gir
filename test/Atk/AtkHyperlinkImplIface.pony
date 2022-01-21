@@ -13,5 +13,5 @@ use "../GObject"
      000128: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_hyperlink  
 */
 struct AtkHyperlinkImplIface
-  embed parent: GTypeInterface = GTypeInterface
-  var get_hyperlink: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var get_hyperlink: Pointer[None] = Pointer[None] // PointerType

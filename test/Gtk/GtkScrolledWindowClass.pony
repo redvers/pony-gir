@@ -25,11 +25,11 @@ use "../Harfbuzz"
      008448: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkScrolledWindowClass
-  embed parent_class: GtkBinClass = GtkBinClass
-  var scrollbar_spacing: I32 = I32(0)
-  var scroll_child: Pointer[None] = Pointer[None]
-  var move_focus_out: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef
+  var scrollbar_spacing: I32 = I32(0) // Typedef
+  var scroll_child: Pointer[None] = Pointer[None] // PointerType
+  var move_focus_out: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

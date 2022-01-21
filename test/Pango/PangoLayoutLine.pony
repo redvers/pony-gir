@@ -18,9 +18,9 @@ use "../Gio"
      000193: [FundamentalType(unsigned int) size=32]: resolved_dir  
 */
 struct PangoLayoutLine
-  var layout: NullablePointer[PangoLayout] = NullablePointer[PangoLayout].none()
-  var start_index: I32 = I32(0)
-  var length: I32 = I32(0)
-  var runs: NullablePointer[GSList] = NullablePointer[GSList].none()
-  var is_paragraph_start: U32 = U32(0)
-  var resolved_dir: U32 = U32(0)
+  var layout: NullablePointer[PangoLayout] = NullablePointer[PangoLayout].none() // PointerType
+  var start_index: I32 = I32(0) // Typedef
+  var length: I32 = I32(0) // Typedef
+  var runs: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
+  var is_paragraph_start: U32 = U32(0) // Typedef
+  var resolved_dir: U32 = U32(0) // Typedef

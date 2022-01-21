@@ -20,11 +20,11 @@ use "../Cairo"
      000416: [FundamentalType(unsigned int) size=32]: selection_time  
 */
 struct GdkEventOwnerChange
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var owner: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var reason: I32 = I32(0)
-  var selection: NullablePointer[GdkAtom] = NullablePointer[GdkAtom].none()
-  var time: U32 = U32(0)
-  var selection_time: U32 = U32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var owner: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var reason: I32 = I32(0) // Typedef
+  var selection: NullablePointer[GdkAtom] = NullablePointer[GdkAtom].none() // Typedef
+  var time: U32 = U32(0) // Typedef
+  var selection_time: U32 = U32(0) // Typedef

@@ -16,9 +16,9 @@ use "../GObject"
      000320: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: closure_marshal  
 */
 struct GSourceFuncs
-  var prepare: Pointer[None] = Pointer[None]
-  var check: Pointer[None] = Pointer[None]
-  var dispatch: Pointer[None] = Pointer[None]
-  var finalize: Pointer[None] = Pointer[None]
-  var closure_callback: Pointer[None] = Pointer[None]
-  var closure_marshal: Pointer[None] = Pointer[None]
+  var prepare: Pointer[None] = Pointer[None] // PointerType
+  var check: Pointer[None] = Pointer[None] // PointerType
+  var dispatch: Pointer[None] = Pointer[None] // PointerType
+  var finalize: Pointer[None] = Pointer[None] // PointerType
+  var closure_callback: Pointer[None] = Pointer[None] // Typedef
+  var closure_marshal: Pointer[None] = Pointer[None] // Typedef

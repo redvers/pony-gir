@@ -21,12 +21,12 @@ use "../Gio"
      000320: [PointerType size=64]->[Struct size=128,fid: f81]: extra_attrs  
 */
 struct PangoAnalysis
-  var shape_engine: NullablePointer[PangoEngineShape] = NullablePointer[PangoEngineShape].none()
-  var lang_engine: NullablePointer[PangoEngineLang] = NullablePointer[PangoEngineLang].none()
-  var font: NullablePointer[PangoFont] = NullablePointer[PangoFont].none()
-  var level: U8 = U8(0)
-  var gravity: U8 = U8(0)
-  var flags: U8 = U8(0)
-  var script: U8 = U8(0)
-  var language: NullablePointer[PangoLanguage] = NullablePointer[PangoLanguage].none()
-  var extra_attrs: NullablePointer[GSList] = NullablePointer[GSList].none()
+  var shape_engine: NullablePointer[PangoEngineShape] = NullablePointer[PangoEngineShape].none() // PointerType
+  var lang_engine: NullablePointer[PangoEngineLang] = NullablePointer[PangoEngineLang].none() // PointerType
+  var font: NullablePointer[PangoFont] = NullablePointer[PangoFont].none() // PointerType
+  var level: U8 = U8(0) // Typedef
+  var gravity: U8 = U8(0) // Typedef
+  var flags: U8 = U8(0) // Typedef
+  var script: U8 = U8(0) // Typedef
+  var language: NullablePointer[PangoLanguage] = NullablePointer[PangoLanguage].none() // PointerType
+  var extra_attrs: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType

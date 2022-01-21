@@ -12,5 +12,5 @@ use "../Glib"
      000064: [ArrayType size=(0-1)]->[UNION size=64] -- UNSUPPORTED FIXME -- UNSUPPORTED - FIXME: data  
 */
 struct GValue
-  var g_type: U64 = U64(0)
-  var data: Pointer[None] = Pointer[None]
+  var g_type: U64 = U64(0) // Typedef
+  var data: Pointer[None] = Pointer[None] // ArrayType

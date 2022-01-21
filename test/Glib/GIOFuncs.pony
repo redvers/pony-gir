@@ -18,11 +18,11 @@ use "../GObject"
      000448: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: io_get_flags  
 */
 struct GIOFuncs
-  var io_read: Pointer[None] = Pointer[None]
-  var io_write: Pointer[None] = Pointer[None]
-  var io_seek: Pointer[None] = Pointer[None]
-  var io_close: Pointer[None] = Pointer[None]
-  var io_create_watch: Pointer[None] = Pointer[None]
-  var io_free: Pointer[None] = Pointer[None]
-  var io_set_flags: Pointer[None] = Pointer[None]
-  var io_get_flags: Pointer[None] = Pointer[None]
+  var io_read: Pointer[None] = Pointer[None] // PointerType
+  var io_write: Pointer[None] = Pointer[None] // PointerType
+  var io_seek: Pointer[None] = Pointer[None] // PointerType
+  var io_close: Pointer[None] = Pointer[None] // PointerType
+  var io_create_watch: Pointer[None] = Pointer[None] // PointerType
+  var io_free: Pointer[None] = Pointer[None] // PointerType
+  var io_set_flags: Pointer[None] = Pointer[None] // PointerType
+  var io_get_flags: Pointer[None] = Pointer[None] // PointerType

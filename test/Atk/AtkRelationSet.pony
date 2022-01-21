@@ -13,5 +13,5 @@ use "../GObject"
      000192: [PointerType size=64]->[Struct size=128,fid: f17]: relations  
 */
 struct AtkRelationSet
-  embed parent: GObject = GObject
-  var relations: NullablePointer[GPtrArray] = NullablePointer[GPtrArray].none()
+  embed parent: GObject = GObject // Typedef
+  var relations: NullablePointer[GPtrArray] = NullablePointer[GPtrArray].none() // PointerType

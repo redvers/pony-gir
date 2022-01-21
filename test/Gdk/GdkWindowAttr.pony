@@ -26,17 +26,17 @@ use "../Cairo"
      000608: [Enumeration size=32,fid: f348]: type_hint  
 */
 struct GdkWindowAttr
-  var title: Pointer[U8] = Pointer[U8]
-  var event_mask: I32 = I32(0)
-  var x: I32 = I32(0)
-  var y: I32 = I32(0)
-  var width: I32 = I32(0)
-  var height: I32 = I32(0)
-  var wclass: I32 = I32(0)
-  var visual: NullablePointer[GdkVisual] = NullablePointer[GdkVisual].none()
-  var window_type: I32 = I32(0)
-  var cursor: NullablePointer[GdkCursor] = NullablePointer[GdkCursor].none()
-  var wmclass_name: Pointer[U8] = Pointer[U8]
-  var wmclass_class: Pointer[U8] = Pointer[U8]
-  var override_redirect: I32 = I32(0)
-  var type_hint: I32 = I32(0)
+  var title: Pointer[U8] = Pointer[U8] // PointerType
+  var event_mask: I32 = I32(0) // Typedef
+  var x: I32 = I32(0) // Typedef
+  var y: I32 = I32(0) // Typedef
+  var width: I32 = I32(0) // Typedef
+  var height: I32 = I32(0) // Typedef
+  var wclass: I32 = I32(0) // Typedef
+  var visual: NullablePointer[GdkVisual] = NullablePointer[GdkVisual].none() // PointerType
+  var window_type: I32 = I32(0) // Typedef
+  var cursor: NullablePointer[GdkCursor] = NullablePointer[GdkCursor].none() // PointerType
+  var wmclass_name: Pointer[U8] = Pointer[U8] // PointerType
+  var wmclass_class: Pointer[U8] = Pointer[U8] // PointerType
+  var override_redirect: I32 = I32(0) // Typedef
+  var type_hint: I32 = I32(0) // Typedef

@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[Struct size=,fid: f580]: priv  
 */
 struct GtkMountOperation
-  embed parent_instance: GMountOperation = GMountOperation
-  var priv: NullablePointer[GtkMountOperationPrivate] = NullablePointer[GtkMountOperationPrivate].none()
+  embed parent_instance: GMountOperation = GMountOperation // Typedef
+  var priv: NullablePointer[GtkMountOperationPrivate] = NullablePointer[GtkMountOperationPrivate].none() // PointerType

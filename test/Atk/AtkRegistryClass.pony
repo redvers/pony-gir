@@ -12,4 +12,4 @@ use "../GObject"
      000000: [Struct size=1088,fid: f139]: parent_class  
 */
 struct AtkRegistryClass
-  embed parent_class: GObjectClass = GObjectClass
+  embed parent_class: GObjectClass = GObjectClass // Typedef

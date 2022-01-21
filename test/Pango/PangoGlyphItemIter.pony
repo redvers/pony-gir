@@ -20,11 +20,11 @@ use "../Gio"
      000288: [FundamentalType(int) size=32]: end_char  
 */
 struct PangoGlyphItemIter
-  var glyph_item: NullablePointer[PangoGlyphItem] = NullablePointer[PangoGlyphItem].none()
-  var text: Pointer[U8] = Pointer[U8]
-  var start_glyph: I32 = I32(0)
-  var start_index: I32 = I32(0)
-  var start_char: I32 = I32(0)
-  var end_glyph: I32 = I32(0)
-  var end_index: I32 = I32(0)
-  var end_char: I32 = I32(0)
+  var glyph_item: NullablePointer[PangoGlyphItem] = NullablePointer[PangoGlyphItem].none() // PointerType
+  var text: Pointer[U8] = Pointer[U8] // PointerType
+  var start_glyph: I32 = I32(0) // FundamentalType
+  var start_index: I32 = I32(0) // FundamentalType
+  var start_char: I32 = I32(0) // FundamentalType
+  var end_glyph: I32 = I32(0) // FundamentalType
+  var end_index: I32 = I32(0) // FundamentalType
+  var end_char: I32 = I32(0) // FundamentalType

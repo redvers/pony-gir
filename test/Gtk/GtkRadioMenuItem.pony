@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000512: [PointerType size=64]->[Struct size=,fid: f597]: priv  
 */
 struct GtkRadioMenuItem
-  embed check_menu_item: GtkCheckMenuItem = GtkCheckMenuItem
-  var priv: NullablePointer[GtkRadioMenuItemPrivate] = NullablePointer[GtkRadioMenuItemPrivate].none()
+  embed check_menu_item: GtkCheckMenuItem = GtkCheckMenuItem // Typedef
+  var priv: NullablePointer[GtkRadioMenuItemPrivate] = NullablePointer[GtkRadioMenuItemPrivate].none() // PointerType

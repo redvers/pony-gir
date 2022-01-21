@@ -24,10 +24,10 @@ use "../Harfbuzz"
      009216: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkCheckMenuItemClass
-  embed parent_class: GtkMenuItemClass = GtkMenuItemClass
-  var toggled: Pointer[None] = Pointer[None]
-  var draw_indicator: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkMenuItemClass = GtkMenuItemClass // Typedef
+  var toggled: Pointer[None] = Pointer[None] // PointerType
+  var draw_indicator: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

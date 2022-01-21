@@ -18,9 +18,9 @@ use "../Gio"
      000384: [PointerType size=64]->[Struct size=,fid: f338]: priv  
 */
 struct PangoRenderer
-  embed parent_instance: GObject = GObject
-  var underline: I32 = I32(0)
-  var strikethrough: I32 = I32(0)
-  var active_count: I32 = I32(0)
-  var matrix: NullablePointer[PangoMatrix] = NullablePointer[PangoMatrix].none()
-  var priv: NullablePointer[PangoRendererPrivate] = NullablePointer[PangoRendererPrivate].none()
+  embed parent_instance: GObject = GObject // Typedef
+  var underline: I32 = I32(0) // Typedef
+  var strikethrough: I32 = I32(0) // Typedef
+  var active_count: I32 = I32(0) // FundamentalType
+  var matrix: NullablePointer[PangoMatrix] = NullablePointer[PangoMatrix].none() // PointerType
+  var priv: NullablePointer[PangoRendererPrivate] = NullablePointer[PangoRendererPrivate].none() // PointerType

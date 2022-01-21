@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000384: [PointerType size=64]->[Struct size=,fid: f445]: priv  
 */
 struct GtkMenu
-  embed menu_shell: GtkMenuShell = GtkMenuShell
-  var priv: NullablePointer[GtkMenuPrivate] = NullablePointer[GtkMenuPrivate].none()
+  embed menu_shell: GtkMenuShell = GtkMenuShell // Typedef
+  var priv: NullablePointer[GtkMenuPrivate] = NullablePointer[GtkMenuPrivate].none() // PointerType

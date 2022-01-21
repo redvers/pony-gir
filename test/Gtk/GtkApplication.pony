@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[Struct size=,fid: f437]: priv  
 */
 struct GtkApplication
-  embed parent: GApplication = GApplication
-  var priv: NullablePointer[GtkApplicationPrivate] = NullablePointer[GtkApplicationPrivate].none()
+  embed parent: GApplication = GApplication // Typedef
+  var priv: NullablePointer[GtkApplicationPrivate] = NullablePointer[GtkApplicationPrivate].none() // PointerType

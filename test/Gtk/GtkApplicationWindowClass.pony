@@ -19,5 +19,5 @@ use "../Harfbuzz"
      008576: [ArrayType size=(0-13)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GtkApplicationWindowClass
-  embed parent_class: GtkWindowClass = GtkWindowClass
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GtkWindowClass = GtkWindowClass // Typedef
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

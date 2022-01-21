@@ -25,16 +25,16 @@ use "../Cairo"
      001792: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gdk_reserved8  
 */
 struct GdkWindowClass
-  embed parent_class: GObjectClass = GObjectClass
-  var pick_embedded_child: Pointer[None] = Pointer[None]
-  var to_embedder: Pointer[None] = Pointer[None]
-  var from_embedder: Pointer[None] = Pointer[None]
-  var create_surface: Pointer[None] = Pointer[None]
-  var _gdk_reserved1: Pointer[None] = Pointer[None]
-  var _gdk_reserved2: Pointer[None] = Pointer[None]
-  var _gdk_reserved3: Pointer[None] = Pointer[None]
-  var _gdk_reserved4: Pointer[None] = Pointer[None]
-  var _gdk_reserved5: Pointer[None] = Pointer[None]
-  var _gdk_reserved6: Pointer[None] = Pointer[None]
-  var _gdk_reserved7: Pointer[None] = Pointer[None]
-  var _gdk_reserved8: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var pick_embedded_child: Pointer[None] = Pointer[None] // PointerType
+  var to_embedder: Pointer[None] = Pointer[None] // PointerType
+  var from_embedder: Pointer[None] = Pointer[None] // PointerType
+  var create_surface: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved4: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved5: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved6: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved7: Pointer[None] = Pointer[None] // PointerType
+  var _gdk_reserved8: Pointer[None] = Pointer[None] // PointerType

@@ -23,9 +23,9 @@ use "../Harfbuzz"
      008320: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved3  
 */
 struct GtkComboBoxClass
-  embed parent_class: GtkBinClass = GtkBinClass
-  var changed: Pointer[None] = Pointer[None]
-  var format_entry_text: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef
+  var changed: Pointer[None] = Pointer[None] // PointerType
+  var format_entry_text: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType

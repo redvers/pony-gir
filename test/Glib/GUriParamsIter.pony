@@ -14,7 +14,7 @@ use "../GObject"
      000192: [ArrayType size=(0-255)]->[FundamentalType(unsigned char) size=8] -- UNSUPPORTED - FIXME: dummy3  
 */
 struct GUriParamsIter
-  var dummy0: I32 = I32(0)
-  var dummy1: Pointer[None] = Pointer[None]
-  var dummy2: Pointer[None] = Pointer[None]
-  var dummy3: Pointer[U8] = Pointer[U8]
+  var dummy0: I32 = I32(0) // Typedef
+  var dummy1: Pointer[None] = Pointer[None] // Typedef
+  var dummy2: Pointer[None] = Pointer[None] // Typedef
+  var dummy3: Pointer[U8] = Pointer[U8] // ArrayType

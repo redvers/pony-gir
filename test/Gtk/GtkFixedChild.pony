@@ -20,6 +20,6 @@ use "../Harfbuzz"
      000096: [FundamentalType(int) size=32]: y  
 */
 struct GtkFixedChild
-  var widget: NullablePointer[GtkWidget] = NullablePointer[GtkWidget].none()
-  var x: I32 = I32(0)
-  var y: I32 = I32(0)
+  var widget: NullablePointer[GtkWidget] = NullablePointer[GtkWidget].none() // PointerType
+  var x: I32 = I32(0) // Typedef
+  var y: I32 = I32(0) // Typedef

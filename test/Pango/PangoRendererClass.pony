@@ -27,18 +27,18 @@ use "../Gio"
      001920: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _pango_reserved4  
 */
 struct PangoRendererClass
-  embed parent_class: GObjectClass = GObjectClass
-  var draw_glyphs: Pointer[None] = Pointer[None]
-  var draw_rectangle: Pointer[None] = Pointer[None]
-  var draw_error_underline: Pointer[None] = Pointer[None]
-  var draw_shape: Pointer[None] = Pointer[None]
-  var draw_trapezoid: Pointer[None] = Pointer[None]
-  var draw_glyph: Pointer[None] = Pointer[None]
-  var part_changed: Pointer[None] = Pointer[None]
-  var begin: Pointer[None] = Pointer[None]
-  var gend: Pointer[None] = Pointer[None]
-  var prepare_run: Pointer[None] = Pointer[None]
-  var draw_glyph_item: Pointer[None] = Pointer[None]
-  var _pango_reserved2: Pointer[None] = Pointer[None]
-  var _pango_reserved3: Pointer[None] = Pointer[None]
-  var _pango_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var draw_glyphs: Pointer[None] = Pointer[None] // PointerType
+  var draw_rectangle: Pointer[None] = Pointer[None] // PointerType
+  var draw_error_underline: Pointer[None] = Pointer[None] // PointerType
+  var draw_shape: Pointer[None] = Pointer[None] // PointerType
+  var draw_trapezoid: Pointer[None] = Pointer[None] // PointerType
+  var draw_glyph: Pointer[None] = Pointer[None] // PointerType
+  var part_changed: Pointer[None] = Pointer[None] // PointerType
+  var begin: Pointer[None] = Pointer[None] // PointerType
+  var gend: Pointer[None] = Pointer[None] // PointerType
+  var prepare_run: Pointer[None] = Pointer[None] // PointerType
+  var draw_glyph_item: Pointer[None] = Pointer[None] // PointerType
+  var _pango_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _pango_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _pango_reserved4: Pointer[None] = Pointer[None] // PointerType

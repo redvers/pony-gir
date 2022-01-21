@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=2496,fid: f472]: parent_class  
 */
 struct GtkIMContextSimpleClass
-  embed parent_class: GtkIMContextClass = GtkIMContextClass
+  embed parent_class: GtkIMContextClass = GtkIMContextClass // Typedef

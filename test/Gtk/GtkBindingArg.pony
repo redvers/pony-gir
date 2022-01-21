@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000064: [UNION size=64] -- UNSUPPORTED FIXME: d  
 */
 struct GtkBindingArg
-  var arg_type: U64 = U64(0)
-  var d: U64 = U64(0)
+  var arg_type: U64 = U64(0) // Typedef
+  var d: U64 = U64(0) // ElaboratedType

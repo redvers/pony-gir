@@ -19,11 +19,11 @@ use "../GObject"
      000512: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_table  
 */
 struct AtkTableCellIface
-  embed parent: GTypeInterface = GTypeInterface
-  var get_column_span: Pointer[None] = Pointer[None]
-  var get_column_header_cells: Pointer[None] = Pointer[None]
-  var get_position: Pointer[None] = Pointer[None]
-  var get_row_span: Pointer[None] = Pointer[None]
-  var get_row_header_cells: Pointer[None] = Pointer[None]
-  var get_row_column_span: Pointer[None] = Pointer[None]
-  var get_table: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var get_column_span: Pointer[None] = Pointer[None] // PointerType
+  var get_column_header_cells: Pointer[None] = Pointer[None] // PointerType
+  var get_position: Pointer[None] = Pointer[None] // PointerType
+  var get_row_span: Pointer[None] = Pointer[None] // PointerType
+  var get_row_header_cells: Pointer[None] = Pointer[None] // PointerType
+  var get_row_column_span: Pointer[None] = Pointer[None] // PointerType
+  var get_table: Pointer[None] = Pointer[None] // PointerType

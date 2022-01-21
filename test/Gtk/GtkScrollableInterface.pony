@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000128: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_border  
 */
 struct GtkScrollableInterface
-  embed base_iface: GTypeInterface = GTypeInterface
-  var get_border: Pointer[None] = Pointer[None]
+  embed base_iface: GTypeInterface = GTypeInterface // Typedef
+  var get_border: Pointer[None] = Pointer[None] // PointerType

@@ -27,20 +27,20 @@ use "../GObject"
      002048: [ArrayType size=(0-6)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GApplicationClass
-  embed parent_class: GObjectClass = GObjectClass
-  var startup: Pointer[None] = Pointer[None]
-  var activate: Pointer[None] = Pointer[None]
-  var open: Pointer[None] = Pointer[None]
-  var command_line: Pointer[None] = Pointer[None]
-  var local_command_line: Pointer[None] = Pointer[None]
-  var before_emit: Pointer[None] = Pointer[None]
-  var after_emit: Pointer[None] = Pointer[None]
-  var add_platform_data: Pointer[None] = Pointer[None]
-  var quit_mainloop: Pointer[None] = Pointer[None]
-  var run_mainloop: Pointer[None] = Pointer[None]
-  var shutdown: Pointer[None] = Pointer[None]
-  var dbus_register: Pointer[None] = Pointer[None]
-  var dbus_unregister: Pointer[None] = Pointer[None]
-  var handle_local_options: Pointer[None] = Pointer[None]
-  var name_lost: Pointer[None] = Pointer[None]
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var startup: Pointer[None] = Pointer[None] // PointerType
+  var activate: Pointer[None] = Pointer[None] // PointerType
+  var open: Pointer[None] = Pointer[None] // PointerType
+  var command_line: Pointer[None] = Pointer[None] // PointerType
+  var local_command_line: Pointer[None] = Pointer[None] // PointerType
+  var before_emit: Pointer[None] = Pointer[None] // PointerType
+  var after_emit: Pointer[None] = Pointer[None] // PointerType
+  var add_platform_data: Pointer[None] = Pointer[None] // PointerType
+  var quit_mainloop: Pointer[None] = Pointer[None] // PointerType
+  var run_mainloop: Pointer[None] = Pointer[None] // PointerType
+  var shutdown: Pointer[None] = Pointer[None] // PointerType
+  var dbus_register: Pointer[None] = Pointer[None] // PointerType
+  var dbus_unregister: Pointer[None] = Pointer[None] // PointerType
+  var handle_local_options: Pointer[None] = Pointer[None] // PointerType
+  var name_lost: Pointer[None] = Pointer[None] // PointerType
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

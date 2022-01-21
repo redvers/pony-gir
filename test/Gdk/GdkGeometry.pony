@@ -23,14 +23,14 @@ use "../Cairo"
      000384: [Enumeration size=32,fid: f360]: win_gravity  
 */
 struct GdkGeometry
-  var min_width: I32 = I32(0)
-  var min_height: I32 = I32(0)
-  var max_width: I32 = I32(0)
-  var max_height: I32 = I32(0)
-  var base_width: I32 = I32(0)
-  var base_height: I32 = I32(0)
-  var width_inc: I32 = I32(0)
-  var height_inc: I32 = I32(0)
-  var min_aspect: F64 = F64(0)
-  var max_aspect: F64 = F64(0)
-  var win_gravity: I32 = I32(0)
+  var min_width: I32 = I32(0) // Typedef
+  var min_height: I32 = I32(0) // Typedef
+  var max_width: I32 = I32(0) // Typedef
+  var max_height: I32 = I32(0) // Typedef
+  var base_width: I32 = I32(0) // Typedef
+  var base_height: I32 = I32(0) // Typedef
+  var width_inc: I32 = I32(0) // Typedef
+  var height_inc: I32 = I32(0) // Typedef
+  var min_aspect: F64 = F64(0) // Typedef
+  var max_aspect: F64 = F64(0) // Typedef
+  var win_gravity: I32 = I32(0) // Typedef

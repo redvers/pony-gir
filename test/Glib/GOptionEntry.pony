@@ -17,10 +17,10 @@ use "../GObject"
      000320: [PointerType size=64]->[FundamentalType(char) size=8]: arg_description  
 */
 struct GOptionEntry
-  var long_name: Pointer[U8] = Pointer[U8]
-  var short_name: U8 = U8(0)
-  var flags: I32 = I32(0)
-  var arg: I32 = I32(0)
-  var arg_data: Pointer[None] = Pointer[None]
-  var description: Pointer[U8] = Pointer[U8]
-  var arg_description: Pointer[U8] = Pointer[U8]
+  var long_name: Pointer[U8] = Pointer[U8] // PointerType
+  var short_name: U8 = U8(0) // Typedef
+  var flags: I32 = I32(0) // Typedef
+  var arg: I32 = I32(0) // Typedef
+  var arg_data: Pointer[None] = Pointer[None] // Typedef
+  var description: Pointer[U8] = Pointer[U8] // PointerType
+  var arg_description: Pointer[U8] = Pointer[U8] // PointerType

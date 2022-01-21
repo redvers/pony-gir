@@ -29,15 +29,15 @@ use "../Harfbuzz"
      008448: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved3  
 */
 struct GtkListBoxClass
-  embed parent_class: GtkContainerClass = GtkContainerClass
-  var row_selected: Pointer[None] = Pointer[None]
-  var row_activated: Pointer[None] = Pointer[None]
-  var activate_cursor_row: Pointer[None] = Pointer[None]
-  var toggle_cursor_row: Pointer[None] = Pointer[None]
-  var move_cursor: Pointer[None] = Pointer[None]
-  var selected_rows_changed: Pointer[None] = Pointer[None]
-  var select_all: Pointer[None] = Pointer[None]
-  var unselect_all: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
+  embed parent_class: GtkContainerClass = GtkContainerClass // Typedef
+  var row_selected: Pointer[None] = Pointer[None] // PointerType
+  var row_activated: Pointer[None] = Pointer[None] // PointerType
+  var activate_cursor_row: Pointer[None] = Pointer[None] // PointerType
+  var toggle_cursor_row: Pointer[None] = Pointer[None] // PointerType
+  var move_cursor: Pointer[None] = Pointer[None] // PointerType
+  var selected_rows_changed: Pointer[None] = Pointer[None] // PointerType
+  var select_all: Pointer[None] = Pointer[None] // PointerType
+  var unselect_all: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType

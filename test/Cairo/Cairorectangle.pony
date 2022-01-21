@@ -16,7 +16,7 @@ use "../Gio"
      000192: [FundamentalType(double) size=64]: height  
 */
 struct Cairorectangle
-  var x: F64 = F64(0)
-  var y: F64 = F64(0)
-  var width: F64 = F64(0)
-  var height: F64 = F64(0)
+  var x: F64 = F64(0) // FundamentalType
+  var y: F64 = F64(0) // FundamentalType
+  var width: F64 = F64(0) // FundamentalType
+  var height: F64 = F64(0) // FundamentalType

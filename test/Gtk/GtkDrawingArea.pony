@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[FundamentalType(void) size=0]: dummy  
 */
 struct GtkDrawingArea
-  embed widget: GtkWidget = GtkWidget
-  var dummy: Pointer[None] = Pointer[None]
+  embed widget: GtkWidget = GtkWidget // Typedef
+  var dummy: Pointer[None] = Pointer[None] // Typedef

@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[Struct size=,fid: f475]: priv  
 */
 struct GtkTreeModelFilter
-  embed parent: GObject = GObject
-  var priv: NullablePointer[GtkTreeModelFilterPrivate] = NullablePointer[GtkTreeModelFilterPrivate].none()
+  embed parent: GObject = GObject // Typedef
+  var priv: NullablePointer[GtkTreeModelFilterPrivate] = NullablePointer[GtkTreeModelFilterPrivate].none() // PointerType

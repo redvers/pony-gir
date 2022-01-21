@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[Struct size=,fid: f468]: priv  
 */
 struct GtkTextBuffer
-  embed parent_instance: GObject = GObject
-  var priv: NullablePointer[GtkTextBufferPrivate] = NullablePointer[GtkTextBufferPrivate].none()
+  embed parent_instance: GObject = GObject // Typedef
+  var priv: NullablePointer[GtkTextBufferPrivate] = NullablePointer[GtkTextBufferPrivate].none() // PointerType

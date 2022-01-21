@@ -20,6 +20,6 @@ use "../Harfbuzz"
      006656: [ArrayType size=(0-15)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GtkLevelBarClass
-  embed parent_class: GtkWidgetClass = GtkWidgetClass
-  var offset_changed: Pointer[None] = Pointer[None]
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GtkWidgetClass = GtkWidgetClass // Typedef
+  var offset_changed: Pointer[None] = Pointer[None] // PointerType
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

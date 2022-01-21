@@ -19,11 +19,11 @@ use "../GObject"
      000512: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: pad3  
 */
 struct AtkStreamableContentIface
-  embed parent: GTypeInterface = GTypeInterface
-  var get_n_mime_types: Pointer[None] = Pointer[None]
-  var get_mime_type: Pointer[None] = Pointer[None]
-  var get_stream: Pointer[None] = Pointer[None]
-  var get_uri: Pointer[None] = Pointer[None]
-  var pad1: Pointer[None] = Pointer[None]
-  var pad2: Pointer[None] = Pointer[None]
-  var pad3: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var get_n_mime_types: Pointer[None] = Pointer[None] // PointerType
+  var get_mime_type: Pointer[None] = Pointer[None] // PointerType
+  var get_stream: Pointer[None] = Pointer[None] // PointerType
+  var get_uri: Pointer[None] = Pointer[None] // PointerType
+  var pad1: Pointer[None] = Pointer[None] // Typedef
+  var pad2: Pointer[None] = Pointer[None] // Typedef
+  var pad3: Pointer[None] = Pointer[None] // Typedef

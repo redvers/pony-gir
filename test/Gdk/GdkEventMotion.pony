@@ -24,15 +24,15 @@ use "../Cairo"
      000576: [FundamentalType(double) size=64]: y_root  
 */
 struct GdkEventMotion
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var time: U32 = U32(0)
-  var x: F64 = F64(0)
-  var y: F64 = F64(0)
-  var axes: Pointer[F64] = Pointer[F64]
-  var state: U32 = U32(0)
-  var is_hint: I16 = I16(0)
-  var device: NullablePointer[GdkDevice] = NullablePointer[GdkDevice].none()
-  var x_root: F64 = F64(0)
-  var y_root: F64 = F64(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var time: U32 = U32(0) // Typedef
+  var x: F64 = F64(0) // Typedef
+  var y: F64 = F64(0) // Typedef
+  var axes: Pointer[F64] = Pointer[F64] // PointerType
+  var state: U32 = U32(0) // Typedef
+  var is_hint: I16 = I16(0) // Typedef
+  var device: NullablePointer[GdkDevice] = NullablePointer[GdkDevice].none() // PointerType
+  var x_root: F64 = F64(0) // Typedef
+  var y_root: F64 = F64(0) // Typedef

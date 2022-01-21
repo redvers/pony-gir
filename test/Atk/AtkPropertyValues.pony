@@ -14,6 +14,6 @@ use "../GObject"
      000256: [Struct size=192,fid: f132]: new_value  
 */
 struct AtkPropertyValues
-  var property_name: Pointer[U8] = Pointer[U8]
-  embed old_value: GValue = GValue
-  embed new_value: GValue = GValue
+  var property_name: Pointer[U8] = Pointer[U8] // PointerType
+  embed old_value: GValue = GValue // Typedef
+  embed new_value: GValue = GValue // Typedef

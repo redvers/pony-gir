@@ -22,8 +22,8 @@ use "../Harfbuzz"
      008000: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: stop_search  
 */
 struct GtkSearchEntryClass
-  embed parent_class: GtkEntryClass = GtkEntryClass
-  var search_changed: Pointer[None] = Pointer[None]
-  var next_match: Pointer[None] = Pointer[None]
-  var previous_match: Pointer[None] = Pointer[None]
-  var stop_search: Pointer[None] = Pointer[None]
+  embed parent_class: GtkEntryClass = GtkEntryClass // Typedef
+  var search_changed: Pointer[None] = Pointer[None] // PointerType
+  var next_match: Pointer[None] = Pointer[None] // PointerType
+  var previous_match: Pointer[None] = Pointer[None] // PointerType
+  var stop_search: Pointer[None] = Pointer[None] // PointerType

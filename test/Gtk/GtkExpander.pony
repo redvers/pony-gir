@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000384: [PointerType size=64]->[Struct size=,fid: f526]: priv  
 */
 struct GtkExpander
-  embed bin: GtkBin = GtkBin
-  var priv: NullablePointer[GtkExpanderPrivate] = NullablePointer[GtkExpanderPrivate].none()
+  embed bin: GtkBin = GtkBin // Typedef
+  var priv: NullablePointer[GtkExpanderPrivate] = NullablePointer[GtkExpanderPrivate].none() // PointerType

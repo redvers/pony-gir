@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[Struct size=,fid: f460]: priv  
 */
 struct GtkCellArea
-  embed parent_instance: GObject = GObject
-  var priv: NullablePointer[GtkCellAreaPrivate] = NullablePointer[GtkCellAreaPrivate].none()
+  embed parent_instance: GObject = GObject // Typedef
+  var priv: NullablePointer[GtkCellAreaPrivate] = NullablePointer[GtkCellAreaPrivate].none() // PointerType

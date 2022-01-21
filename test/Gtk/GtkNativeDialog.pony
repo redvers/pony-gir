@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=192,fid: f139]: parent_instance  
 */
 struct GtkNativeDialog
-  embed parent_instance: GObject = GObject
+  embed parent_instance: GObject = GObject // Typedef

@@ -11,4 +11,4 @@ use "../GObject"
      000000: [FundamentalType(unsigned int) size=32]: len  
 */
 struct GTuples
-  var len: U32 = U32(0)
+  var len: U32 = U32(0) // Typedef

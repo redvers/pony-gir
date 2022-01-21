@@ -23,9 +23,9 @@ use "../Harfbuzz"
      000384: [ArrayType size=(0-11)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GtkColorChooserInterface
-  embed base_interface: GTypeInterface = GTypeInterface
-  var get_rgba: Pointer[None] = Pointer[None]
-  var set_rgba: Pointer[None] = Pointer[None]
-  var add_palette: Pointer[None] = Pointer[None]
-  var color_activated: Pointer[None] = Pointer[None]
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed base_interface: GTypeInterface = GTypeInterface // Typedef
+  var get_rgba: Pointer[None] = Pointer[None] // PointerType
+  var set_rgba: Pointer[None] = Pointer[None] // PointerType
+  var add_palette: Pointer[None] = Pointer[None] // PointerType
+  var color_activated: Pointer[None] = Pointer[None] // PointerType
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=7808,fid: f438]: parent_class  
 */
 struct GtkStackClass
-  embed parent_class: GtkContainerClass = GtkContainerClass
+  embed parent_class: GtkContainerClass = GtkContainerClass // Typedef

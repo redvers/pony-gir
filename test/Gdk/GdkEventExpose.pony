@@ -18,9 +18,9 @@ use "../Cairo"
      000384: [FundamentalType(int) size=32]: count  
 */
 struct GdkEventExpose
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  embed area: Cairorectangleint = Cairorectangleint
-  var region: NullablePointer[Cairoregion] = NullablePointer[Cairoregion].none()
-  var count: I32 = I32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  embed area: Cairorectangleint = Cairorectangleint // Typedef
+  var region: NullablePointer[Cairoregion] = NullablePointer[Cairoregion].none() // PointerType
+  var count: I32 = I32(0) // Typedef

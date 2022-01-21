@@ -17,8 +17,8 @@ use "../Cairo"
      000192: [PointerType size=64]->[FundamentalType(char) size=8]: name  
 */
 struct GdkEventSetting
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var action: I32 = I32(0)
-  var name: Pointer[U8] = Pointer[U8]
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var action: I32 = I32(0) // Typedef
+  var name: Pointer[U8] = Pointer[U8] // PointerType

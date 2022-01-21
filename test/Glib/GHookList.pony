@@ -17,10 +17,10 @@ use "../GObject"
      000320: [ArrayType size=(0-1)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: dummy  
 */
 struct GHookList
-  var seq_id: U64 = U64(0)
-  var hook_size: U32 = U32(0)
-  var is_setup: U32 = U32(0)
-  var hooks: NullablePointer[GHook] = NullablePointer[GHook].none()
-  var dummy3: Pointer[None] = Pointer[None]
-  var finalize_hook: Pointer[None] = Pointer[None]
-  var dummy: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  var seq_id: U64 = U64(0) // Typedef
+  var hook_size: U32 = U32(0) // Typedef
+  var is_setup: U32 = U32(0) // Typedef
+  var hooks: NullablePointer[GHook] = NullablePointer[GHook].none() // PointerType
+  var dummy3: Pointer[None] = Pointer[None] // Typedef
+  var finalize_hook: Pointer[None] = Pointer[None] // Typedef
+  var dummy: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

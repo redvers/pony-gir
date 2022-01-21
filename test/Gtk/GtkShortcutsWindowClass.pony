@@ -20,6 +20,6 @@ use "../Harfbuzz"
      008640: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: search  
 */
 struct GtkShortcutsWindowClass
-  embed parent_class: GtkWindowClass = GtkWindowClass
-  var close: Pointer[None] = Pointer[None]
-  var search: Pointer[None] = Pointer[None]
+  embed parent_class: GtkWindowClass = GtkWindowClass // Typedef
+  var close: Pointer[None] = Pointer[None] // PointerType
+  var search: Pointer[None] = Pointer[None] // PointerType

@@ -21,7 +21,7 @@ use "../Harfbuzz"
      008192: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved2  
 */
 struct GtkListBoxRowClass
-  embed parent_class: GtkBinClass = GtkBinClass
-  var activate: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef
+  var activate: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType

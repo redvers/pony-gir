@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=1536,fid: f532]: parent_class  
 */
 struct Anon
-  embed parent_class: GtkNativeDialogClass = GtkNativeDialogClass
+  embed parent_class: GtkNativeDialogClass = GtkNativeDialogClass // Typedef

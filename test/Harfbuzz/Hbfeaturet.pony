@@ -14,7 +14,7 @@ use "../GObject"
      000096: [FundamentalType(unsigned int) size=32]: end  
 */
 struct Hbfeaturet
-  var gtag: U32 = U32(0)
-  var value: U32 = U32(0)
-  var start: U32 = U32(0)
-  var gend: U32 = U32(0)
+  var gtag: U32 = U32(0) // Typedef
+  var value: U32 = U32(0) // Typedef
+  var start: U32 = U32(0) // FundamentalType
+  var gend: U32 = U32(0) // FundamentalType

@@ -14,5 +14,5 @@ use "../Cairo"
      000064: [ArrayType size=(0-127)]->[FundamentalType(double) size=64] -- UNSUPPORTED - FIXME: axes  
 */
 struct GdkTimeCoord
-  var time: U32 = U32(0)
-  var axes: Pointer[F64] = Pointer[F64]
+  var time: U32 = U32(0) // Typedef
+  var axes: Pointer[F64] = Pointer[F64] // ArrayType

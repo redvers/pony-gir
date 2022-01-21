@@ -14,5 +14,5 @@ use "../Gio"
      000128: [Struct size=48,fid: f329]: color  
 */
 struct PangoAttrColor
-  embed attr: PangoAttribute = PangoAttribute
-  embed color: PangoColor = PangoColor
+  embed attr: PangoAttribute = PangoAttribute // Typedef
+  embed color: PangoColor = PangoColor // Typedef

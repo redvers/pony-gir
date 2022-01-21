@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=384,fid: f439]: parent_instance  
 */
 struct GtkListBoxRow
-  embed parent_instance: GtkBin = GtkBin
+  embed parent_instance: GtkBin = GtkBin // Typedef

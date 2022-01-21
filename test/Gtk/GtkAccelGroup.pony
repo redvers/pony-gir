@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[Struct size=,fid: f393]: priv  
 */
 struct GtkAccelGroup
-  embed parent: GObject = GObject
-  var priv: NullablePointer[GtkAccelGroupPrivate] = NullablePointer[GtkAccelGroupPrivate].none()
+  embed parent: GObject = GObject // Typedef
+  var priv: NullablePointer[GtkAccelGroupPrivate] = NullablePointer[GtkAccelGroupPrivate].none() // PointerType

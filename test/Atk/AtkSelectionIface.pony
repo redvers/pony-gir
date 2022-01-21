@@ -20,12 +20,12 @@ use "../GObject"
      000576: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: selection_changed  
 */
 struct AtkSelectionIface
-  embed parent: GTypeInterface = GTypeInterface
-  var add_selection: Pointer[None] = Pointer[None]
-  var clear_selection: Pointer[None] = Pointer[None]
-  var ref_selection: Pointer[None] = Pointer[None]
-  var get_selection_count: Pointer[None] = Pointer[None]
-  var is_child_selected: Pointer[None] = Pointer[None]
-  var remove_selection: Pointer[None] = Pointer[None]
-  var select_all_selection: Pointer[None] = Pointer[None]
-  var selection_changed: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var add_selection: Pointer[None] = Pointer[None] // PointerType
+  var clear_selection: Pointer[None] = Pointer[None] // PointerType
+  var ref_selection: Pointer[None] = Pointer[None] // PointerType
+  var get_selection_count: Pointer[None] = Pointer[None] // PointerType
+  var is_child_selected: Pointer[None] = Pointer[None] // PointerType
+  var remove_selection: Pointer[None] = Pointer[None] // PointerType
+  var select_all_selection: Pointer[None] = Pointer[None] // PointerType
+  var selection_changed: Pointer[None] = Pointer[None] // PointerType

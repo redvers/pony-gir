@@ -19,5 +19,5 @@ use "../Harfbuzz"
      008960: [ArrayType size=(0-15)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GtkAppChooserDialogClass
-  embed parent_class: GtkDialogClass = GtkDialogClass
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GtkDialogClass = GtkDialogClass // Typedef
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

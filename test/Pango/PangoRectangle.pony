@@ -16,7 +16,7 @@ use "../Gio"
      000096: [FundamentalType(int) size=32]: height  
 */
 struct PangoRectangle
-  var x: I32 = I32(0)
-  var y: I32 = I32(0)
-  var width: I32 = I32(0)
-  var height: I32 = I32(0)
+  var x: I32 = I32(0) // FundamentalType
+  var y: I32 = I32(0) // FundamentalType
+  var width: I32 = I32(0) // FundamentalType
+  var height: I32 = I32(0) // FundamentalType

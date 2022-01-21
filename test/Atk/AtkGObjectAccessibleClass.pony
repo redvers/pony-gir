@@ -14,6 +14,6 @@ use "../GObject"
      002880: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: pad2  
 */
 struct AtkGObjectAccessibleClass
-  embed parent_class: AtkObjectClass = AtkObjectClass
-  var pad1: Pointer[None] = Pointer[None]
-  var pad2: Pointer[None] = Pointer[None]
+  embed parent_class: AtkObjectClass = AtkObjectClass // Typedef
+  var pad1: Pointer[None] = Pointer[None] // Typedef
+  var pad2: Pointer[None] = Pointer[None] // Typedef

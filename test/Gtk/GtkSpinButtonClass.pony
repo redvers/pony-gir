@@ -27,13 +27,13 @@ use "../Harfbuzz"
      008320: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkSpinButtonClass
-  embed parent_class: GtkEntryClass = GtkEntryClass
-  var input: Pointer[None] = Pointer[None]
-  var output: Pointer[None] = Pointer[None]
-  var value_changed: Pointer[None] = Pointer[None]
-  var change_value: Pointer[None] = Pointer[None]
-  var wrapped: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkEntryClass = GtkEntryClass // Typedef
+  var input: Pointer[None] = Pointer[None] // PointerType
+  var output: Pointer[None] = Pointer[None] // PointerType
+  var value_changed: Pointer[None] = Pointer[None] // PointerType
+  var change_value: Pointer[None] = Pointer[None] // PointerType
+  var wrapped: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

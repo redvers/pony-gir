@@ -20,6 +20,6 @@ use "../Harfbuzz"
      000096: [FundamentalType(int) size=32]: natural_size  
 */
 struct GtkRequestedSize
-  var data: Pointer[None] = Pointer[None]
-  var minimum_size: I32 = I32(0)
-  var natural_size: I32 = I32(0)
+  var data: Pointer[None] = Pointer[None] // Typedef
+  var minimum_size: I32 = I32(0) // Typedef
+  var natural_size: I32 = I32(0) // Typedef

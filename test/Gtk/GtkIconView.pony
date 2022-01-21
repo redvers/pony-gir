@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000320: [PointerType size=64]->[Struct size=,fid: f558]: priv  
 */
 struct GtkIconView
-  embed parent: GtkContainer = GtkContainer
-  var priv: NullablePointer[GtkIconViewPrivate] = NullablePointer[GtkIconViewPrivate].none()
+  embed parent: GtkContainer = GtkContainer // Typedef
+  var priv: NullablePointer[GtkIconViewPrivate] = NullablePointer[GtkIconViewPrivate].none() // PointerType

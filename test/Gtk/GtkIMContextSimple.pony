@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[Struct size=,fid: f560]: priv  
 */
 struct GtkIMContextSimple
-  embed gobject: GtkIMContext = GtkIMContext
-  var priv: NullablePointer[GtkIMContextSimplePrivate] = NullablePointer[GtkIMContextSimplePrivate].none()
+  embed gobject: GtkIMContext = GtkIMContext // Typedef
+  var priv: NullablePointer[GtkIMContextSimplePrivate] = NullablePointer[GtkIMContextSimplePrivate].none() // PointerType

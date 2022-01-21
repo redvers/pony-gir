@@ -15,8 +15,8 @@ use "../GObject"
      000256: [PointerType size=64]->[Struct size=320,fid: f74]: children  
 */
 struct GNode
-  var data: Pointer[None] = Pointer[None]
-  var next: NullablePointer[GNode] = NullablePointer[GNode].none()
-  var prev: NullablePointer[GNode] = NullablePointer[GNode].none()
-  var parent: NullablePointer[GNode] = NullablePointer[GNode].none()
-  var children: NullablePointer[GNode] = NullablePointer[GNode].none()
+  var data: Pointer[None] = Pointer[None] // Typedef
+  var next: NullablePointer[GNode] = NullablePointer[GNode].none() // PointerType
+  var prev: NullablePointer[GNode] = NullablePointer[GNode].none() // PointerType
+  var parent: NullablePointer[GNode] = NullablePointer[GNode].none() // PointerType
+  var children: NullablePointer[GNode] = NullablePointer[GNode].none() // PointerType

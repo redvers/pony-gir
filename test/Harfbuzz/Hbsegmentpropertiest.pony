@@ -15,8 +15,8 @@ use "../GObject"
      000192: [PointerType size=64]->[FundamentalType(void) size=0]: reserved2  
 */
 struct Hbsegmentpropertiest
-  var direction: I32 = I32(0)
-  var script: I32 = I32(0)
-  var language: NullablePointer[Hblanguageimplt] = NullablePointer[Hblanguageimplt].none()
-  var reserved1: Pointer[None] = Pointer[None]
-  var reserved2: Pointer[None] = Pointer[None]
+  var direction: I32 = I32(0) // Typedef
+  var script: I32 = I32(0) // Typedef
+  var language: NullablePointer[Hblanguageimplt] = NullablePointer[Hblanguageimplt].none() // Typedef
+  var reserved1: Pointer[None] = Pointer[None] // PointerType
+  var reserved2: Pointer[None] = Pointer[None] // PointerType

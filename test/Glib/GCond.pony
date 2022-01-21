@@ -12,5 +12,5 @@ use "../GObject"
      000064: [ArrayType size=(0-1)]->[FundamentalType(unsigned int) size=32] -- UNSUPPORTED - FIXME: i  
 */
 struct GCond
-  var p: Pointer[None] = Pointer[None]
-  var i: Pointer[U32] = Pointer[U32]
+  var p: Pointer[None] = Pointer[None] // Typedef
+  var i: Pointer[U32] = Pointer[U32] // ArrayType

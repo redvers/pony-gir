@@ -15,7 +15,7 @@ use "../GObject"
      001216: [ArrayType size=(0-31)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: vfuncs  
 */
 struct AtkMiscClass
-  embed parent: GObjectClass = GObjectClass
-  var threads_enter: Pointer[None] = Pointer[None]
-  var threads_leave: Pointer[None] = Pointer[None]
-  var vfuncs: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent: GObjectClass = GObjectClass // Typedef
+  var threads_enter: Pointer[None] = Pointer[None] // PointerType
+  var threads_leave: Pointer[None] = Pointer[None] // PointerType
+  var vfuncs: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

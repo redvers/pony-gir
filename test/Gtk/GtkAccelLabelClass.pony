@@ -28,14 +28,14 @@ use "../Harfbuzz"
      008192: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkAccelLabelClass
-  embed parent_class: GtkLabelClass = GtkLabelClass
-  var signal_quote1: Pointer[U8] = Pointer[U8]
-  var signal_quote2: Pointer[U8] = Pointer[U8]
-  var mod_name_shift: Pointer[U8] = Pointer[U8]
-  var mod_name_control: Pointer[U8] = Pointer[U8]
-  var mod_name_alt: Pointer[U8] = Pointer[U8]
-  var mod_separator: Pointer[U8] = Pointer[U8]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkLabelClass = GtkLabelClass // Typedef
+  var signal_quote1: Pointer[U8] = Pointer[U8] // PointerType
+  var signal_quote2: Pointer[U8] = Pointer[U8] // PointerType
+  var mod_name_shift: Pointer[U8] = Pointer[U8] // PointerType
+  var mod_name_control: Pointer[U8] = Pointer[U8] // PointerType
+  var mod_name_alt: Pointer[U8] = Pointer[U8] // PointerType
+  var mod_separator: Pointer[U8] = Pointer[U8] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

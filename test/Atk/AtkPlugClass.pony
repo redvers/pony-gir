@@ -13,5 +13,5 @@ use "../GObject"
      002816: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_object_id  
 */
 struct AtkPlugClass
-  embed parent_class: AtkObjectClass = AtkObjectClass
-  var get_object_id: Pointer[None] = Pointer[None]
+  embed parent_class: AtkObjectClass = AtkObjectClass // Typedef
+  var get_object_id: Pointer[None] = Pointer[None] // PointerType

@@ -26,12 +26,12 @@ use "../Harfbuzz"
      000256: [ArrayType size=(0-1)]->[PointerType size=64]->[Struct size=256,fid: f350] -- UNSUPPORTED - FIXME: rgba  
 */
 struct GtkTextAppearance
-  embed bg_color: GdkColor = GdkColor
-  embed fg_color: GdkColor = GdkColor
-  var rise: I32 = I32(0)
-  var underline: U32 = U32(0)
-  var strikethrough: U32 = U32(0)
-  var draw_bg: U32 = U32(0)
-  var inside_selection: U32 = U32(0)
-  var is_text: U32 = U32(0)
-  var rgba: Pointer[NullablePointer[GdkRGBA]] = Pointer[NullablePointer[GdkRGBA]]
+  embed bg_color: GdkColor = GdkColor // Typedef
+  embed fg_color: GdkColor = GdkColor // Typedef
+  var rise: I32 = I32(0) // Typedef
+  var underline: U32 = U32(0) // Typedef
+  var strikethrough: U32 = U32(0) // Typedef
+  var draw_bg: U32 = U32(0) // Typedef
+  var inside_selection: U32 = U32(0) // Typedef
+  var is_text: U32 = U32(0) // Typedef
+  var rgba: Pointer[NullablePointer[GdkRGBA]] = Pointer[NullablePointer[GdkRGBA]] // ArrayType

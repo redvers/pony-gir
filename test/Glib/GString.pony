@@ -13,6 +13,6 @@ use "../GObject"
      000128: [FundamentalType(long unsigned int) size=64]: allocated_len  
 */
 struct GString
-  var str: Pointer[U8] = Pointer[U8]
-  var len: U64 = U64(0)
-  var allocated_len: U64 = U64(0)
+  var str: Pointer[U8] = Pointer[U8] // PointerType
+  var len: U64 = U64(0) // Typedef
+  var allocated_len: U64 = U64(0) // Typedef

@@ -26,19 +26,19 @@ use "../GObject"
      001984: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _g_reserved9  
 */
 struct GMountOperationClass
-  embed parent_class: GObjectClass = GObjectClass
-  var ask_password: Pointer[None] = Pointer[None]
-  var ask_question: Pointer[None] = Pointer[None]
-  var reply: Pointer[None] = Pointer[None]
-  var aborted: Pointer[None] = Pointer[None]
-  var show_processes: Pointer[None] = Pointer[None]
-  var show_unmount_progress: Pointer[None] = Pointer[None]
-  var _g_reserved1: Pointer[None] = Pointer[None]
-  var _g_reserved2: Pointer[None] = Pointer[None]
-  var _g_reserved3: Pointer[None] = Pointer[None]
-  var _g_reserved4: Pointer[None] = Pointer[None]
-  var _g_reserved5: Pointer[None] = Pointer[None]
-  var _g_reserved6: Pointer[None] = Pointer[None]
-  var _g_reserved7: Pointer[None] = Pointer[None]
-  var _g_reserved8: Pointer[None] = Pointer[None]
-  var _g_reserved9: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var ask_password: Pointer[None] = Pointer[None] // PointerType
+  var ask_question: Pointer[None] = Pointer[None] // PointerType
+  var reply: Pointer[None] = Pointer[None] // PointerType
+  var aborted: Pointer[None] = Pointer[None] // PointerType
+  var show_processes: Pointer[None] = Pointer[None] // PointerType
+  var show_unmount_progress: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved4: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved5: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved6: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved7: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved8: Pointer[None] = Pointer[None] // PointerType
+  var _g_reserved9: Pointer[None] = Pointer[None] // PointerType

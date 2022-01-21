@@ -12,5 +12,5 @@ use "../Glib"
      000064: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: notify  
 */
 struct GClosureNotifyData
-  var data: Pointer[None] = Pointer[None]
-  var notify: Pointer[None] = Pointer[None]
+  var data: Pointer[None] = Pointer[None] // Typedef
+  var notify: Pointer[None] = Pointer[None] // Typedef

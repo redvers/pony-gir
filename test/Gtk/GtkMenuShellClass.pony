@@ -32,18 +32,18 @@ use "../Harfbuzz"
      008640: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkMenuShellClass
-  embed parent_class: GtkContainerClass = GtkContainerClass
-  var submenu_placement: U32 = U32(0)
-  var deactivate: Pointer[None] = Pointer[None]
-  var selection_done: Pointer[None] = Pointer[None]
-  var move_current: Pointer[None] = Pointer[None]
-  var activate_current: Pointer[None] = Pointer[None]
-  var cancel: Pointer[None] = Pointer[None]
-  var select_item: Pointer[None] = Pointer[None]
-  var insert: Pointer[None] = Pointer[None]
-  var get_popup_delay: Pointer[None] = Pointer[None]
-  var move_selected: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkContainerClass = GtkContainerClass // Typedef
+  var submenu_placement: U32 = U32(0) // Typedef
+  var deactivate: Pointer[None] = Pointer[None] // PointerType
+  var selection_done: Pointer[None] = Pointer[None] // PointerType
+  var move_current: Pointer[None] = Pointer[None] // PointerType
+  var activate_current: Pointer[None] = Pointer[None] // PointerType
+  var cancel: Pointer[None] = Pointer[None] // PointerType
+  var select_item: Pointer[None] = Pointer[None] // PointerType
+  var insert: Pointer[None] = Pointer[None] // PointerType
+  var get_popup_delay: Pointer[None] = Pointer[None] // PointerType
+  var move_selected: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

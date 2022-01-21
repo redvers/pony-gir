@@ -11,4 +11,4 @@ use "../GObject"
      000000: [UNION size=1024] -- UNSUPPORTED FIXME: u  
 */
 struct GVariantBuilder
-  var u: U64 = U64(0)
+  var u: U64 = U64(0) // ElaboratedType

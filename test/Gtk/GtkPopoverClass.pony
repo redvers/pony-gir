@@ -20,6 +20,6 @@ use "../Harfbuzz"
      008128: [ArrayType size=(0-9)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: reserved  
 */
 struct GtkPopoverClass
-  embed parent_class: GtkBinClass = GtkBinClass
-  var closed: Pointer[None] = Pointer[None]
-  var reserved: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef
+  var closed: Pointer[None] = Pointer[None] // PointerType
+  var reserved: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

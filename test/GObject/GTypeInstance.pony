@@ -11,4 +11,4 @@ use "../Glib"
      000000: [PointerType size=64]->[Struct size=64,fid: f131]: g_class  
 */
 struct GTypeInstance
-  var g_class: NullablePointer[GTypeClass] = NullablePointer[GTypeClass].none()
+  var g_class: NullablePointer[GTypeClass] = NullablePointer[GTypeClass].none() // PointerType

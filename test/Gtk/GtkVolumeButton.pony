@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=512,fid: f610]: parent  
 */
 struct GtkVolumeButton
-  embed parent: GtkScaleButton = GtkScaleButton
+  embed parent: GtkScaleButton = GtkScaleButton // Typedef

@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000384: [PointerType size=64]->[Struct size=,fid: f584]: priv  
 */
 struct GtkOverlay
-  embed parent: GtkBin = GtkBin
-  var priv: NullablePointer[GtkOverlayPrivate] = NullablePointer[GtkOverlayPrivate].none()
+  embed parent: GtkBin = GtkBin // Typedef
+  var priv: NullablePointer[GtkOverlayPrivate] = NullablePointer[GtkOverlayPrivate].none() // PointerType

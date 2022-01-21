@@ -14,7 +14,7 @@ use "../GObject"
      000096: [FundamentalType(int) size=32]: height  
 */
 struct Hbglyphextentst
-  var x_bearing: I32 = I32(0)
-  var y_bearing: I32 = I32(0)
-  var width: I32 = I32(0)
-  var height: I32 = I32(0)
+  var x_bearing: I32 = I32(0) // Typedef
+  var y_bearing: I32 = I32(0) // Typedef
+  var width: I32 = I32(0) // Typedef
+  var height: I32 = I32(0) // Typedef

@@ -18,10 +18,10 @@ use "../GObject"
      000512: [Enumeration size=32,fid: f407]: layer  
 */
 struct AtkObject
-  embed parent: GObject = GObject
-  var description: Pointer[U8] = Pointer[U8]
-  var name: Pointer[U8] = Pointer[U8]
-  var accessible_parent: NullablePointer[AtkObject] = NullablePointer[AtkObject].none()
-  var role: I32 = I32(0)
-  var relation_set: NullablePointer[AtkRelationSet] = NullablePointer[AtkRelationSet].none()
-  var layer: I32 = I32(0)
+  embed parent: GObject = GObject // Typedef
+  var description: Pointer[U8] = Pointer[U8] // PointerType
+  var name: Pointer[U8] = Pointer[U8] // PointerType
+  var accessible_parent: NullablePointer[AtkObject] = NullablePointer[AtkObject].none() // PointerType
+  var role: I32 = I32(0) // Typedef
+  var relation_set: NullablePointer[AtkRelationSet] = NullablePointer[AtkRelationSet].none() // PointerType
+  var layer: I32 = I32(0) // Typedef

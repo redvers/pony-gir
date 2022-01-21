@@ -14,5 +14,5 @@ use "../Cairo"
      000032: [FundamentalType(int) size=32]: y  
 */
 struct GdkPoint
-  var x: I32 = I32(0)
-  var y: I32 = I32(0)
+  var x: I32 = I32(0) // Typedef
+  var y: I32 = I32(0) // Typedef

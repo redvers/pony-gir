@@ -25,11 +25,11 @@ use "../Harfbuzz"
      007680: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkScaleClass
-  embed parent_class: GtkRangeClass = GtkRangeClass
-  var format_value: Pointer[None] = Pointer[None]
-  var draw_value: Pointer[None] = Pointer[None]
-  var get_layout_offsets: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkRangeClass = GtkRangeClass // Typedef
+  var format_value: Pointer[None] = Pointer[None] // PointerType
+  var draw_value: Pointer[None] = Pointer[None] // PointerType
+  var get_layout_offsets: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=448,fid: f403]: window  
 */
 struct GtkShortcutsWindow
-  embed window: GtkWindow = GtkWindow
+  embed window: GtkWindow = GtkWindow // Typedef

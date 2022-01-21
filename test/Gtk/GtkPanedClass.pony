@@ -28,14 +28,14 @@ use "../Harfbuzz"
      008384: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkPanedClass
-  embed parent_class: GtkContainerClass = GtkContainerClass
-  var cycle_child_focus: Pointer[None] = Pointer[None]
-  var toggle_handle_focus: Pointer[None] = Pointer[None]
-  var move_handle: Pointer[None] = Pointer[None]
-  var cycle_handle_focus: Pointer[None] = Pointer[None]
-  var accept_position: Pointer[None] = Pointer[None]
-  var cancel_position: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkContainerClass = GtkContainerClass // Typedef
+  var cycle_child_focus: Pointer[None] = Pointer[None] // PointerType
+  var toggle_handle_focus: Pointer[None] = Pointer[None] // PointerType
+  var move_handle: Pointer[None] = Pointer[None] // PointerType
+  var cycle_handle_focus: Pointer[None] = Pointer[None] // PointerType
+  var accept_position: Pointer[None] = Pointer[None] // PointerType
+  var cancel_position: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

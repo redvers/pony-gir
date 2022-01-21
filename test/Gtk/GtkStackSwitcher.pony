@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=384,fid: f454]: widget  
 */
 struct GtkStackSwitcher
-  embed widget: GtkBox = GtkBox
+  embed widget: GtkBox = GtkBox // Typedef

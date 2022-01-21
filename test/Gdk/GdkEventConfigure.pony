@@ -19,10 +19,10 @@ use "../Cairo"
      000256: [FundamentalType(int) size=32]: height  
 */
 struct GdkEventConfigure
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var x: I32 = I32(0)
-  var y: I32 = I32(0)
-  var width: I32 = I32(0)
-  var height: I32 = I32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var x: I32 = I32(0) // Typedef
+  var y: I32 = I32(0) // Typedef
+  var width: I32 = I32(0) // Typedef
+  var height: I32 = I32(0) // Typedef

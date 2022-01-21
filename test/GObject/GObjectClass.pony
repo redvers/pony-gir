@@ -22,15 +22,15 @@ use "../Glib"
      000704: [ArrayType size=(0-5)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: pdummy  
 */
 struct GObjectClass
-  embed g_type_class: GTypeClass = GTypeClass
-  var construct_properties: NullablePointer[GSList] = NullablePointer[GSList].none()
-  var constructor: Pointer[None] = Pointer[None]
-  var set_property: Pointer[None] = Pointer[None]
-  var get_property: Pointer[None] = Pointer[None]
-  var dispose: Pointer[None] = Pointer[None]
-  var finalize: Pointer[None] = Pointer[None]
-  var dispatch_properties_changed: Pointer[None] = Pointer[None]
-  var notify: Pointer[None] = Pointer[None]
-  var constructed: Pointer[None] = Pointer[None]
-  var flags: U64 = U64(0)
-  var pdummy: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed g_type_class: GTypeClass = GTypeClass // Typedef
+  var construct_properties: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
+  var constructor: Pointer[None] = Pointer[None] // PointerType
+  var set_property: Pointer[None] = Pointer[None] // PointerType
+  var get_property: Pointer[None] = Pointer[None] // PointerType
+  var dispose: Pointer[None] = Pointer[None] // PointerType
+  var finalize: Pointer[None] = Pointer[None] // PointerType
+  var dispatch_properties_changed: Pointer[None] = Pointer[None] // PointerType
+  var notify: Pointer[None] = Pointer[None] // PointerType
+  var constructed: Pointer[None] = Pointer[None] // PointerType
+  var flags: U64 = U64(0) // Typedef
+  var pdummy: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

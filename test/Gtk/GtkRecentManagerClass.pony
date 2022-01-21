@@ -23,9 +23,9 @@ use "../Harfbuzz"
      001344: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_recent4  
 */
 struct GtkRecentManagerClass
-  embed parent_class: GObjectClass = GObjectClass
-  var changed: Pointer[None] = Pointer[None]
-  var _gtk_recent1: Pointer[None] = Pointer[None]
-  var _gtk_recent2: Pointer[None] = Pointer[None]
-  var _gtk_recent3: Pointer[None] = Pointer[None]
-  var _gtk_recent4: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var changed: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_recent1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_recent2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_recent3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_recent4: Pointer[None] = Pointer[None] // PointerType

@@ -13,6 +13,6 @@ use "../GObject"
      000128: [FundamentalType(int) size=32]: exclusive  
 */
 struct GThreadPool
-  var func: Pointer[None] = Pointer[None]
-  var user_data: Pointer[None] = Pointer[None]
-  var exclusive: I32 = I32(0)
+  var func: Pointer[None] = Pointer[None] // Typedef
+  var user_data: Pointer[None] = Pointer[None] // Typedef
+  var exclusive: I32 = I32(0) // Typedef

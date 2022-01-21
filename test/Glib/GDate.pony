@@ -16,9 +16,9 @@ use "../GObject"
      000044: [FundamentalType(unsigned int) size=32]: year  
 */
 struct GDate
-  var julian_days: U32 = U32(0)
-  var julian: U32 = U32(0)
-  var dmy: U32 = U32(0)
-  var day: U32 = U32(0)
-  var month: U32 = U32(0)
-  var year: U32 = U32(0)
+  var julian_days: U32 = U32(0) // Typedef
+  var julian: U32 = U32(0) // Typedef
+  var dmy: U32 = U32(0) // Typedef
+  var day: U32 = U32(0) // Typedef
+  var month: U32 = U32(0) // Typedef
+  var year: U32 = U32(0) // Typedef

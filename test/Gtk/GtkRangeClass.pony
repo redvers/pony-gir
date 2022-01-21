@@ -29,15 +29,15 @@ use "../Harfbuzz"
      007232: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved3  
 */
 struct GtkRangeClass
-  embed parent_class: GtkWidgetClass = GtkWidgetClass
-  var slider_detail: Pointer[U8] = Pointer[U8]
-  var stepper_detail: Pointer[U8] = Pointer[U8]
-  var value_changed: Pointer[None] = Pointer[None]
-  var adjust_bounds: Pointer[None] = Pointer[None]
-  var move_slider: Pointer[None] = Pointer[None]
-  var get_range_border: Pointer[None] = Pointer[None]
-  var change_value: Pointer[None] = Pointer[None]
-  var get_range_size_request: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
+  embed parent_class: GtkWidgetClass = GtkWidgetClass // Typedef
+  var slider_detail: Pointer[U8] = Pointer[U8] // PointerType
+  var stepper_detail: Pointer[U8] = Pointer[U8] // PointerType
+  var value_changed: Pointer[None] = Pointer[None] // PointerType
+  var adjust_bounds: Pointer[None] = Pointer[None] // PointerType
+  var move_slider: Pointer[None] = Pointer[None] // PointerType
+  var get_range_border: Pointer[None] = Pointer[None] // PointerType
+  var change_value: Pointer[None] = Pointer[None] // PointerType
+  var get_range_size_request: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType

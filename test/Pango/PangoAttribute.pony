@@ -15,6 +15,6 @@ use "../Gio"
      000096: [FundamentalType(unsigned int) size=32]: end_index  
 */
 struct PangoAttribute
-  var klass: NullablePointer[PangoAttrClass] = NullablePointer[PangoAttrClass].none()
-  var start_index: U32 = U32(0)
-  var end_index: U32 = U32(0)
+  var klass: NullablePointer[PangoAttrClass] = NullablePointer[PangoAttrClass].none() // PointerType
+  var start_index: U32 = U32(0) // Typedef
+  var end_index: U32 = U32(0) // Typedef

@@ -21,7 +21,7 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: start_editing  
 */
 struct GtkCellEditableIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var editing_done: Pointer[None] = Pointer[None]
-  var remove_widget: Pointer[None] = Pointer[None]
-  var start_editing: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var editing_done: Pointer[None] = Pointer[None] // PointerType
+  var remove_widget: Pointer[None] = Pointer[None] // PointerType
+  var start_editing: Pointer[None] = Pointer[None] // PointerType

@@ -13,6 +13,6 @@ use "../GObject"
      000128: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get  
 */
 struct GSourceCallbackFuncs
-  var gref: Pointer[None] = Pointer[None]
-  var unref: Pointer[None] = Pointer[None]
-  var get: Pointer[None] = Pointer[None]
+  var gref: Pointer[None] = Pointer[None] // PointerType
+  var unref: Pointer[None] = Pointer[None] // PointerType
+  var get: Pointer[None] = Pointer[None] // PointerType

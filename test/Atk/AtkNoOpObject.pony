@@ -12,4 +12,4 @@ use "../GObject"
      000000: [Struct size=576,fid: f407]: parent  
 */
 struct AtkNoOpObject
-  embed parent: AtkObject = AtkObject
+  embed parent: AtkObject = AtkObject // Typedef

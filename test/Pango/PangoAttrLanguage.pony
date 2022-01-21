@@ -14,5 +14,5 @@ use "../Gio"
      000128: [PointerType size=64]->[Struct size=,fid: f326]: value  
 */
 struct PangoAttrLanguage
-  embed attr: PangoAttribute = PangoAttribute
-  var value: NullablePointer[PangoLanguage] = NullablePointer[PangoLanguage].none()
+  embed attr: PangoAttribute = PangoAttribute // Typedef
+  var value: NullablePointer[PangoLanguage] = NullablePointer[PangoLanguage].none() // PointerType

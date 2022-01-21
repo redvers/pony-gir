@@ -18,11 +18,11 @@ use "../GObject"
      000448: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: destroy  
 */
 struct GHook
-  var data: Pointer[None] = Pointer[None]
-  var next: NullablePointer[GHook] = NullablePointer[GHook].none()
-  var prev: NullablePointer[GHook] = NullablePointer[GHook].none()
-  var ref_count: U32 = U32(0)
-  var hook_id: U64 = U64(0)
-  var flags: U32 = U32(0)
-  var func: Pointer[None] = Pointer[None]
-  var destroy: Pointer[None] = Pointer[None]
+  var data: Pointer[None] = Pointer[None] // Typedef
+  var next: NullablePointer[GHook] = NullablePointer[GHook].none() // PointerType
+  var prev: NullablePointer[GHook] = NullablePointer[GHook].none() // PointerType
+  var ref_count: U32 = U32(0) // Typedef
+  var hook_id: U64 = U64(0) // Typedef
+  var flags: U32 = U32(0) // Typedef
+  var func: Pointer[None] = Pointer[None] // Typedef
+  var destroy: Pointer[None] = Pointer[None] // Typedef

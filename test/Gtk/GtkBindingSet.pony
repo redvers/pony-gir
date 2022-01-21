@@ -25,11 +25,11 @@ use "../Harfbuzz"
      000448: [FundamentalType(unsigned int) size=32]: parsed  
 */
 struct GtkBindingSet
-  var set_name: Pointer[U8] = Pointer[U8]
-  var priority: I32 = I32(0)
-  var widget_path_pspecs: NullablePointer[GSList] = NullablePointer[GSList].none()
-  var widget_class_pspecs: NullablePointer[GSList] = NullablePointer[GSList].none()
-  var class_branch_pspecs: NullablePointer[GSList] = NullablePointer[GSList].none()
-  var entries: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none()
-  var current: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none()
-  var parsed: U32 = U32(0)
+  var set_name: Pointer[U8] = Pointer[U8] // PointerType
+  var priority: I32 = I32(0) // Typedef
+  var widget_path_pspecs: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
+  var widget_class_pspecs: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
+  var class_branch_pspecs: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
+  var entries: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none() // PointerType
+  var current: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none() // PointerType
+  var parsed: U32 = U32(0) // Typedef

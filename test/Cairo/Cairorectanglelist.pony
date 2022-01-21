@@ -15,6 +15,6 @@ use "../Gio"
      000128: [FundamentalType(int) size=32]: num_rectangles  
 */
 struct Cairorectanglelist
-  var status: I32 = I32(0)
-  var rectangles: NullablePointer[Cairorectangle] = NullablePointer[Cairorectangle].none()
-  var num_rectangles: I32 = I32(0)
+  var status: I32 = I32(0) // Typedef
+  var rectangles: NullablePointer[Cairorectangle] = NullablePointer[Cairorectangle].none() // PointerType
+  var num_rectangles: I32 = I32(0) // FundamentalType

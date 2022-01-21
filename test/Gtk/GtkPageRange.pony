@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000032: [FundamentalType(int) size=32]: end  
 */
 struct GtkPageRange
-  var start: I32 = I32(0)
-  var gend: I32 = I32(0)
+  var start: I32 = I32(0) // Typedef
+  var gend: I32 = I32(0) // Typedef

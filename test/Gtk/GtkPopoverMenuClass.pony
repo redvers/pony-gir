@@ -19,5 +19,5 @@ use "../Harfbuzz"
      008768: [ArrayType size=(0-9)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: reserved  
 */
 struct GtkPopoverMenuClass
-  embed parent_class: GtkPopoverClass = GtkPopoverClass
-  var reserved: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GtkPopoverClass = GtkPopoverClass // Typedef
+  var reserved: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

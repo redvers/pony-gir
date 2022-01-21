@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=8064,fid: f439]: parent_class  
 */
 struct GtkRevealerClass
-  embed parent_class: GtkBinClass = GtkBinClass
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef

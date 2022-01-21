@@ -13,6 +13,6 @@ use "../GObject"
      000128: [FundamentalType(long int) size=64]: length  
 */
 struct GLogField
-  var key: Pointer[U8] = Pointer[U8]
-  var value: Pointer[None] = Pointer[None]
-  var length: I64 = I64(0)
+  var key: Pointer[U8] = Pointer[U8] // PointerType
+  var value: Pointer[None] = Pointer[None] // Typedef
+  var length: I64 = I64(0) // Typedef

@@ -17,8 +17,8 @@ use "../Cairo"
      001280: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: closed  
 */
 struct GdkPixbufLoaderClass
-  embed parent_class: GObjectClass = GObjectClass
-  var size_prepared: Pointer[None] = Pointer[None]
-  var area_prepared: Pointer[None] = Pointer[None]
-  var area_updated: Pointer[None] = Pointer[None]
-  var closed: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var size_prepared: Pointer[None] = Pointer[None] // PointerType
+  var area_prepared: Pointer[None] = Pointer[None] // PointerType
+  var area_updated: Pointer[None] = Pointer[None] // PointerType
+  var closed: Pointer[None] = Pointer[None] // PointerType

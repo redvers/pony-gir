@@ -23,9 +23,9 @@ use "../Harfbuzz"
      003072: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkAccessibleClass
-  embed parent_class: AtkObjectClass = AtkObjectClass
-  var connect_widget_destroyed: Pointer[None] = Pointer[None]
-  var widget_set: Pointer[None] = Pointer[None]
-  var widget_unset: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: AtkObjectClass = AtkObjectClass // Typedef
+  var connect_widget_destroyed: Pointer[None] = Pointer[None] // PointerType
+  var widget_set: Pointer[None] = Pointer[None] // PointerType
+  var widget_unset: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

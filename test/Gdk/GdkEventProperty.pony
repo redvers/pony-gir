@@ -18,9 +18,9 @@ use "../Cairo"
      000288: [FundamentalType(unsigned int) size=32]: state  
 */
 struct GdkEventProperty
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var atom: NullablePointer[GdkAtom] = NullablePointer[GdkAtom].none()
-  var time: U32 = U32(0)
-  var state: U32 = U32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var atom: NullablePointer[GdkAtom] = NullablePointer[GdkAtom].none() // Typedef
+  var time: U32 = U32(0) // Typedef
+  var state: U32 = U32(0) // Typedef

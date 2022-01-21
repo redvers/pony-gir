@@ -25,16 +25,16 @@ use "../Cairo"
      000576: [FundamentalType(unsigned int) size=32]: state  
 */
 struct GdkEventTouchpadSwipe
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var phase: I8 = I8(0)
-  var n_fingers: I8 = I8(0)
-  var time: U32 = U32(0)
-  var x: F64 = F64(0)
-  var y: F64 = F64(0)
-  var dx: F64 = F64(0)
-  var dy: F64 = F64(0)
-  var x_root: F64 = F64(0)
-  var y_root: F64 = F64(0)
-  var state: U32 = U32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var phase: I8 = I8(0) // Typedef
+  var n_fingers: I8 = I8(0) // Typedef
+  var time: U32 = U32(0) // Typedef
+  var x: F64 = F64(0) // Typedef
+  var y: F64 = F64(0) // Typedef
+  var dx: F64 = F64(0) // Typedef
+  var dy: F64 = F64(0) // Typedef
+  var x_root: F64 = F64(0) // Typedef
+  var y_root: F64 = F64(0) // Typedef
+  var state: U32 = U32(0) // Typedef

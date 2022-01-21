@@ -18,9 +18,9 @@ use "../Cairo"
      000224: [FundamentalType(unsigned int) size=32]: mode  
 */
 struct GdkEventPadGroupMode
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var time: U32 = U32(0)
-  var group: U32 = U32(0)
-  var mode: U32 = U32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var time: U32 = U32(0) // Typedef
+  var group: U32 = U32(0) // Typedef
+  var mode: U32 = U32(0) // Typedef

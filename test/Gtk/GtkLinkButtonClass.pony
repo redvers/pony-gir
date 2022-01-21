@@ -23,9 +23,9 @@ use "../Harfbuzz"
      008960: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_padding4  
 */
 struct GtkLinkButtonClass
-  embed parent_class: GtkButtonClass = GtkButtonClass
-  var activate_link: Pointer[None] = Pointer[None]
-  var _gtk_padding1: Pointer[None] = Pointer[None]
-  var _gtk_padding2: Pointer[None] = Pointer[None]
-  var _gtk_padding3: Pointer[None] = Pointer[None]
-  var _gtk_padding4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkButtonClass = GtkButtonClass // Typedef
+  var activate_link: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_padding1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_padding2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_padding3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_padding4: Pointer[None] = Pointer[None] // PointerType

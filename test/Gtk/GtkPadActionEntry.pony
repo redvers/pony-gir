@@ -22,8 +22,8 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[FundamentalType(char) size=8]: action_name  
 */
 struct GtkPadActionEntry
-  var gtype: I32 = I32(0)
-  var index: I32 = I32(0)
-  var mode: I32 = I32(0)
-  var label: Pointer[U8] = Pointer[U8]
-  var action_name: Pointer[U8] = Pointer[U8]
+  var gtype: I32 = I32(0) // Typedef
+  var index: I32 = I32(0) // Typedef
+  var mode: I32 = I32(0) // Typedef
+  var label: Pointer[U8] = Pointer[U8] // PointerType
+  var action_name: Pointer[U8] = Pointer[U8] // PointerType

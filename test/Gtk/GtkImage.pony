@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000320: [PointerType size=64]->[Struct size=,fid: f477]: priv  
 */
 struct GtkImage
-  embed misc: GtkMisc = GtkMisc
-  var priv: NullablePointer[GtkImagePrivate] = NullablePointer[GtkImagePrivate].none()
+  embed misc: GtkMisc = GtkMisc // Typedef
+  var priv: NullablePointer[GtkImagePrivate] = NullablePointer[GtkImagePrivate].none() // PointerType

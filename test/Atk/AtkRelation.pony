@@ -14,6 +14,6 @@ use "../GObject"
      000256: [Enumeration size=32,fid: f406]: relationship  
 */
 struct AtkRelation
-  embed parent: GObject = GObject
-  var target: NullablePointer[GPtrArray] = NullablePointer[GPtrArray].none()
-  var relationship: I32 = I32(0)
+  embed parent: GObject = GObject // Typedef
+  var target: NullablePointer[GPtrArray] = NullablePointer[GPtrArray].none() // PointerType
+  var relationship: I32 = I32(0) // Typedef

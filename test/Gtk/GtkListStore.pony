@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[Struct size=,fid: f474]: priv  
 */
 struct GtkListStore
-  embed parent: GObject = GObject
-  var priv: NullablePointer[GtkListStorePrivate] = NullablePointer[GtkListStorePrivate].none()
+  embed parent: GObject = GObject // Typedef
+  var priv: NullablePointer[GtkListStorePrivate] = NullablePointer[GtkListStorePrivate].none() // PointerType

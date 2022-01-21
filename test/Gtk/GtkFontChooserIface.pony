@@ -26,12 +26,12 @@ use "../Harfbuzz"
      000576: [ArrayType size=(0-9)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GtkFontChooserIface
-  embed base_iface: GTypeInterface = GTypeInterface
-  var get_font_family: Pointer[None] = Pointer[None]
-  var get_font_face: Pointer[None] = Pointer[None]
-  var get_font_size: Pointer[None] = Pointer[None]
-  var set_filter_func: Pointer[None] = Pointer[None]
-  var font_activated: Pointer[None] = Pointer[None]
-  var set_font_map: Pointer[None] = Pointer[None]
-  var get_font_map: Pointer[None] = Pointer[None]
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed base_iface: GTypeInterface = GTypeInterface // Typedef
+  var get_font_family: Pointer[None] = Pointer[None] // PointerType
+  var get_font_face: Pointer[None] = Pointer[None] // PointerType
+  var get_font_size: Pointer[None] = Pointer[None] // PointerType
+  var set_filter_func: Pointer[None] = Pointer[None] // PointerType
+  var font_activated: Pointer[None] = Pointer[None] // PointerType
+  var set_font_map: Pointer[None] = Pointer[None] // PointerType
+  var get_font_map: Pointer[None] = Pointer[None] // PointerType
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

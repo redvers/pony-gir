@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[FundamentalType(void) size=0]: segment  
 */
 struct GtkTextChildAnchor
-  embed parent_instance: GObject = GObject
-  var segment: Pointer[None] = Pointer[None]
+  embed parent_instance: GObject = GObject // Typedef
+  var segment: Pointer[None] = Pointer[None] // Typedef

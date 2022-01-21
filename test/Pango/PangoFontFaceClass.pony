@@ -20,11 +20,11 @@ use "../Gio"
      001472: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _pango_reserved4  
 */
 struct PangoFontFaceClass
-  embed parent_class: GObjectClass = GObjectClass
-  var get_face_name: Pointer[None] = Pointer[None]
-  var describe: Pointer[None] = Pointer[None]
-  var list_sizes: Pointer[None] = Pointer[None]
-  var is_synthesized: Pointer[None] = Pointer[None]
-  var get_family: Pointer[None] = Pointer[None]
-  var _pango_reserved3: Pointer[None] = Pointer[None]
-  var _pango_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var get_face_name: Pointer[None] = Pointer[None] // PointerType
+  var describe: Pointer[None] = Pointer[None] // PointerType
+  var list_sizes: Pointer[None] = Pointer[None] // PointerType
+  var is_synthesized: Pointer[None] = Pointer[None] // PointerType
+  var get_family: Pointer[None] = Pointer[None] // PointerType
+  var _pango_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _pango_reserved4: Pointer[None] = Pointer[None] // PointerType

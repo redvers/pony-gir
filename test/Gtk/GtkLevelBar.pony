@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[Struct size=,fid: f565]: priv  
 */
 struct GtkLevelBar
-  embed parent: GtkWidget = GtkWidget
-  var priv: NullablePointer[GtkLevelBarPrivate] = NullablePointer[GtkLevelBarPrivate].none()
+  embed parent: GtkWidget = GtkWidget // Typedef
+  var priv: NullablePointer[GtkLevelBarPrivate] = NullablePointer[GtkLevelBarPrivate].none() // PointerType

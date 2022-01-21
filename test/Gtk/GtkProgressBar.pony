@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[Struct size=,fid: f595]: priv  
 */
 struct GtkProgressBar
-  embed parent: GtkWidget = GtkWidget
-  var priv: NullablePointer[GtkProgressBarPrivate] = NullablePointer[GtkProgressBarPrivate].none()
+  embed parent: GtkWidget = GtkWidget // Typedef
+  var priv: NullablePointer[GtkProgressBarPrivate] = NullablePointer[GtkProgressBarPrivate].none() // PointerType

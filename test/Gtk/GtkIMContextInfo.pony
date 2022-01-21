@@ -22,8 +22,8 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[FundamentalType(char) size=8]: default_locales  
 */
 struct GtkIMContextInfo
-  var context_id: Pointer[U8] = Pointer[U8]
-  var context_name: Pointer[U8] = Pointer[U8]
-  var domain: Pointer[U8] = Pointer[U8]
-  var domain_dirname: Pointer[U8] = Pointer[U8]
-  var default_locales: Pointer[U8] = Pointer[U8]
+  var context_id: Pointer[U8] = Pointer[U8] // PointerType
+  var context_name: Pointer[U8] = Pointer[U8] // PointerType
+  var domain: Pointer[U8] = Pointer[U8] // PointerType
+  var domain_dirname: Pointer[U8] = Pointer[U8] // PointerType
+  var default_locales: Pointer[U8] = Pointer[U8] // PointerType

@@ -27,13 +27,13 @@ use "../Harfbuzz"
      001600: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved8  
 */
 struct GtkBuilderClass
-  embed parent_class: GObjectClass = GObjectClass
-  var get_type_from_name: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
-  var _gtk_reserved5: Pointer[None] = Pointer[None]
-  var _gtk_reserved6: Pointer[None] = Pointer[None]
-  var _gtk_reserved7: Pointer[None] = Pointer[None]
-  var _gtk_reserved8: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var get_type_from_name: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved5: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved6: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved7: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved8: Pointer[None] = Pointer[None] // PointerType

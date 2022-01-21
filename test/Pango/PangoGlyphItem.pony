@@ -14,5 +14,5 @@ use "../Gio"
      000064: [PointerType size=64]->[Struct size=256,fid: f333]: glyphs  
 */
 struct PangoGlyphItem
-  var item: NullablePointer[PangoItem] = NullablePointer[PangoItem].none()
-  var glyphs: NullablePointer[PangoGlyphString] = NullablePointer[PangoGlyphString].none()
+  var item: NullablePointer[PangoItem] = NullablePointer[PangoItem].none() // PointerType
+  var glyphs: NullablePointer[PangoGlyphString] = NullablePointer[PangoGlyphString].none() // PointerType

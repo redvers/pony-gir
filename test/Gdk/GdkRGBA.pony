@@ -16,7 +16,7 @@ use "../Cairo"
      000192: [FundamentalType(double) size=64]: alpha  
 */
 struct GdkRGBA
-  var red: F64 = F64(0)
-  var green: F64 = F64(0)
-  var blue: F64 = F64(0)
-  var alpha: F64 = F64(0)
+  var red: F64 = F64(0) // Typedef
+  var green: F64 = F64(0) // Typedef
+  var blue: F64 = F64(0) // Typedef
+  var alpha: F64 = F64(0) // Typedef

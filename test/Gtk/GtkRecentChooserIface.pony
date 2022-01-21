@@ -32,18 +32,18 @@ use "../Harfbuzz"
      000960: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: selection_changed  
 */
 struct GtkRecentChooserIface
-  embed base_iface: GTypeInterface = GTypeInterface
-  var set_current_uri: Pointer[None] = Pointer[None]
-  var get_current_uri: Pointer[None] = Pointer[None]
-  var select_uri: Pointer[None] = Pointer[None]
-  var unselect_uri: Pointer[None] = Pointer[None]
-  var select_all: Pointer[None] = Pointer[None]
-  var unselect_all: Pointer[None] = Pointer[None]
-  var get_items: Pointer[None] = Pointer[None]
-  var get_recent_manager: Pointer[None] = Pointer[None]
-  var add_filter: Pointer[None] = Pointer[None]
-  var remove_filter: Pointer[None] = Pointer[None]
-  var list_filters: Pointer[None] = Pointer[None]
-  var set_sort_func: Pointer[None] = Pointer[None]
-  var item_activated: Pointer[None] = Pointer[None]
-  var selection_changed: Pointer[None] = Pointer[None]
+  embed base_iface: GTypeInterface = GTypeInterface // Typedef
+  var set_current_uri: Pointer[None] = Pointer[None] // PointerType
+  var get_current_uri: Pointer[None] = Pointer[None] // PointerType
+  var select_uri: Pointer[None] = Pointer[None] // PointerType
+  var unselect_uri: Pointer[None] = Pointer[None] // PointerType
+  var select_all: Pointer[None] = Pointer[None] // PointerType
+  var unselect_all: Pointer[None] = Pointer[None] // PointerType
+  var get_items: Pointer[None] = Pointer[None] // PointerType
+  var get_recent_manager: Pointer[None] = Pointer[None] // PointerType
+  var add_filter: Pointer[None] = Pointer[None] // PointerType
+  var remove_filter: Pointer[None] = Pointer[None] // PointerType
+  var list_filters: Pointer[None] = Pointer[None] // PointerType
+  var set_sort_func: Pointer[None] = Pointer[None] // PointerType
+  var item_activated: Pointer[None] = Pointer[None] // PointerType
+  var selection_changed: Pointer[None] = Pointer[None] // PointerType

@@ -25,11 +25,11 @@ use "../Harfbuzz"
      001472: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkTextTagTableClass
-  embed parent_class: GObjectClass = GObjectClass
-  var tag_changed: Pointer[None] = Pointer[None]
-  var tag_added: Pointer[None] = Pointer[None]
-  var tag_removed: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var tag_changed: Pointer[None] = Pointer[None] // PointerType
+  var tag_added: Pointer[None] = Pointer[None] // PointerType
+  var tag_removed: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

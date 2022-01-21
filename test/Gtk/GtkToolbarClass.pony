@@ -25,11 +25,11 @@ use "../Harfbuzz"
      008192: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkToolbarClass
-  embed parent_class: GtkContainerClass = GtkContainerClass
-  var orientation_changed: Pointer[None] = Pointer[None]
-  var style_changed: Pointer[None] = Pointer[None]
-  var popup_context_menu: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkContainerClass = GtkContainerClass // Typedef
+  var orientation_changed: Pointer[None] = Pointer[None] // PointerType
+  var style_changed: Pointer[None] = Pointer[None] // PointerType
+  var popup_context_menu: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

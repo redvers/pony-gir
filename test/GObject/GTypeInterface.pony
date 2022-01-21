@@ -12,5 +12,5 @@ use "../Glib"
      000064: [FundamentalType(long unsigned int) size=64]: g_instance_type  
 */
 struct GTypeInterface
-  var g_type: U64 = U64(0)
-  var g_instance_type: U64 = U64(0)
+  var g_type: U64 = U64(0) // Typedef
+  var g_instance_type: U64 = U64(0) // Typedef

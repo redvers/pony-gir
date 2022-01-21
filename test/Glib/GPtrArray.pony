@@ -12,5 +12,5 @@ use "../GObject"
      000064: [FundamentalType(unsigned int) size=32]: len  
 */
 struct GPtrArray
-  var pdata: NullablePointer[Pointer[None]] = NullablePointer[Pointer[None]].none()
-  var len: U32 = U32(0)
+  var pdata: NullablePointer[Pointer[None]] = NullablePointer[Pointer[None]].none() // PointerType
+  var len: U32 = U32(0) // Typedef

@@ -16,8 +16,8 @@ use "../GObject"
      000320: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: link_selected  
 */
 struct AtkHypertextIface
-  embed parent: GTypeInterface = GTypeInterface
-  var get_link: Pointer[None] = Pointer[None]
-  var get_n_links: Pointer[None] = Pointer[None]
-  var get_link_index: Pointer[None] = Pointer[None]
-  var link_selected: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var get_link: Pointer[None] = Pointer[None] // PointerType
+  var get_n_links: Pointer[None] = Pointer[None] // PointerType
+  var get_link_index: Pointer[None] = Pointer[None] // PointerType
+  var link_selected: Pointer[None] = Pointer[None] // PointerType

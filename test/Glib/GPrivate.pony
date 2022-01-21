@@ -13,6 +13,6 @@ use "../GObject"
      000128: [ArrayType size=(0-1)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: future  
 */
 struct GPrivate
-  var p: Pointer[None] = Pointer[None]
-  var notify: Pointer[None] = Pointer[None]
-  var future: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  var p: Pointer[None] = Pointer[None] // Typedef
+  var notify: Pointer[None] = Pointer[None] // Typedef
+  var future: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

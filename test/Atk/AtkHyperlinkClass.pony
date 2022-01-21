@@ -22,14 +22,14 @@ use "../GObject"
      001664: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: pad1  
 */
 struct AtkHyperlinkClass
-  embed parent: GObjectClass = GObjectClass
-  var get_uri: Pointer[None] = Pointer[None]
-  var get_object: Pointer[None] = Pointer[None]
-  var get_end_index: Pointer[None] = Pointer[None]
-  var get_start_index: Pointer[None] = Pointer[None]
-  var is_valid: Pointer[None] = Pointer[None]
-  var get_n_anchors: Pointer[None] = Pointer[None]
-  var link_state: Pointer[None] = Pointer[None]
-  var is_selected_link: Pointer[None] = Pointer[None]
-  var link_activated: Pointer[None] = Pointer[None]
-  var pad1: Pointer[None] = Pointer[None]
+  embed parent: GObjectClass = GObjectClass // Typedef
+  var get_uri: Pointer[None] = Pointer[None] // PointerType
+  var get_object: Pointer[None] = Pointer[None] // PointerType
+  var get_end_index: Pointer[None] = Pointer[None] // PointerType
+  var get_start_index: Pointer[None] = Pointer[None] // PointerType
+  var is_valid: Pointer[None] = Pointer[None] // PointerType
+  var get_n_anchors: Pointer[None] = Pointer[None] // PointerType
+  var link_state: Pointer[None] = Pointer[None] // PointerType
+  var is_selected_link: Pointer[None] = Pointer[None] // PointerType
+  var link_activated: Pointer[None] = Pointer[None] // PointerType
+  var pad1: Pointer[None] = Pointer[None] // Typedef

@@ -14,5 +14,5 @@ use "../Gio"
      001088: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: script_break  
 */
 struct PangoEngineLangClass
-  embed parent_class: PangoEngineClass = PangoEngineClass
-  var script_break: Pointer[None] = Pointer[None]
+  embed parent_class: PangoEngineClass = PangoEngineClass // Typedef
+  var script_break: Pointer[None] = Pointer[None] // PointerType

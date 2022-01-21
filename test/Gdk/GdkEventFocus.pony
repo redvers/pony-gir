@@ -16,7 +16,7 @@ use "../Cairo"
      000144: [FundamentalType(short int) size=16]: in  
 */
 struct GdkEventFocus
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var gin: I16 = I16(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var gin: I16 = I16(0) // Typedef

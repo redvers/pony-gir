@@ -19,11 +19,11 @@ use "../GObject"
      000512: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: paste_text  
 */
 struct AtkEditableTextIface
-  embed parent_interface: GTypeInterface = GTypeInterface
-  var set_run_attributes: Pointer[None] = Pointer[None]
-  var set_text_contents: Pointer[None] = Pointer[None]
-  var insert_text: Pointer[None] = Pointer[None]
-  var copy_text: Pointer[None] = Pointer[None]
-  var cut_text: Pointer[None] = Pointer[None]
-  var delete_text: Pointer[None] = Pointer[None]
-  var paste_text: Pointer[None] = Pointer[None]
+  embed parent_interface: GTypeInterface = GTypeInterface // Typedef
+  var set_run_attributes: Pointer[None] = Pointer[None] // PointerType
+  var set_text_contents: Pointer[None] = Pointer[None] // PointerType
+  var insert_text: Pointer[None] = Pointer[None] // PointerType
+  var copy_text: Pointer[None] = Pointer[None] // PointerType
+  var cut_text: Pointer[None] = Pointer[None] // PointerType
+  var delete_text: Pointer[None] = Pointer[None] // PointerType
+  var paste_text: Pointer[None] = Pointer[None] // PointerType

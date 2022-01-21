@@ -19,11 +19,11 @@ use "../GObject"
      000512: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_localized_name  
 */
 struct AtkActionIface
-  embed parent: GTypeInterface = GTypeInterface
-  var do_action: Pointer[None] = Pointer[None]
-  var get_n_actions: Pointer[None] = Pointer[None]
-  var get_description: Pointer[None] = Pointer[None]
-  var get_name: Pointer[None] = Pointer[None]
-  var get_keybinding: Pointer[None] = Pointer[None]
-  var set_description: Pointer[None] = Pointer[None]
-  var get_localized_name: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var do_action: Pointer[None] = Pointer[None] // PointerType
+  var get_n_actions: Pointer[None] = Pointer[None] // PointerType
+  var get_description: Pointer[None] = Pointer[None] // PointerType
+  var get_name: Pointer[None] = Pointer[None] // PointerType
+  var get_keybinding: Pointer[None] = Pointer[None] // PointerType
+  var set_description: Pointer[None] = Pointer[None] // PointerType
+  var get_localized_name: Pointer[None] = Pointer[None] // PointerType

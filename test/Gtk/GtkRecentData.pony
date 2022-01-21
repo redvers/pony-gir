@@ -24,10 +24,10 @@ use "../Harfbuzz"
      000384: [FundamentalType(int) size=32]: is_private  
 */
 struct GtkRecentData
-  var display_name: Pointer[U8] = Pointer[U8]
-  var description: Pointer[U8] = Pointer[U8]
-  var mime_type: Pointer[U8] = Pointer[U8]
-  var app_name: Pointer[U8] = Pointer[U8]
-  var app_exec: Pointer[U8] = Pointer[U8]
-  var groups: Pointer[Pointer[U8]] = Pointer[Pointer[U8]]
-  var is_private: I32 = I32(0)
+  var display_name: Pointer[U8] = Pointer[U8] // PointerType
+  var description: Pointer[U8] = Pointer[U8] // PointerType
+  var mime_type: Pointer[U8] = Pointer[U8] // PointerType
+  var app_name: Pointer[U8] = Pointer[U8] // PointerType
+  var app_exec: Pointer[U8] = Pointer[U8] // PointerType
+  var groups: Pointer[Pointer[U8]] = Pointer[Pointer[U8]] // PointerType
+  var is_private: I32 = I32(0) // Typedef

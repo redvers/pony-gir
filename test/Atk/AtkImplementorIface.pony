@@ -13,5 +13,5 @@ use "../GObject"
      000128: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: ref_accessible  
 */
 struct AtkImplementorIface
-  embed parent: GTypeInterface = GTypeInterface
-  var ref_accessible: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var ref_accessible: Pointer[None] = Pointer[None] // PointerType

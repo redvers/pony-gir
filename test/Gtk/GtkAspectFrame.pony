@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000448: [PointerType size=64]->[Struct size=,fid: f486]: priv  
 */
 struct GtkAspectFrame
-  embed frame: GtkFrame = GtkFrame
-  var priv: NullablePointer[GtkAspectFramePrivate] = NullablePointer[GtkAspectFramePrivate].none()
+  embed frame: GtkFrame = GtkFrame // Typedef
+  var priv: NullablePointer[GtkAspectFramePrivate] = NullablePointer[GtkAspectFramePrivate].none() // PointerType

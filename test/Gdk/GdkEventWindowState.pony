@@ -17,8 +17,8 @@ use "../Cairo"
      000192: [Enumeration size=32,fid: f355]: new_window_state  
 */
 struct GdkEventWindowState
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var changed_mask: I32 = I32(0)
-  var new_window_state: I32 = I32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var changed_mask: I32 = I32(0) // Typedef
+  var new_window_state: I32 = I32(0) // Typedef

@@ -15,6 +15,6 @@ use "../Cairo"
      000064: [FundamentalType(int) size=32]: level  
 */
 struct GdkKeymapKey
-  var keycode: U32 = U32(0)
-  var group: I32 = I32(0)
-  var level: I32 = I32(0)
+  var keycode: U32 = U32(0) // Typedef
+  var group: I32 = I32(0) // Typedef
+  var level: I32 = I32(0) // Typedef

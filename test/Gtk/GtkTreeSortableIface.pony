@@ -24,10 +24,10 @@ use "../Harfbuzz"
      000448: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: has_default_sort_func  
 */
 struct GtkTreeSortableIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var sort_column_changed: Pointer[None] = Pointer[None]
-  var get_sort_column_id: Pointer[None] = Pointer[None]
-  var set_sort_column_id: Pointer[None] = Pointer[None]
-  var set_sort_func: Pointer[None] = Pointer[None]
-  var set_default_sort_func: Pointer[None] = Pointer[None]
-  var has_default_sort_func: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var sort_column_changed: Pointer[None] = Pointer[None] // PointerType
+  var get_sort_column_id: Pointer[None] = Pointer[None] // PointerType
+  var set_sort_column_id: Pointer[None] = Pointer[None] // PointerType
+  var set_sort_func: Pointer[None] = Pointer[None] // PointerType
+  var set_default_sort_func: Pointer[None] = Pointer[None] // PointerType
+  var has_default_sort_func: Pointer[None] = Pointer[None] // PointerType

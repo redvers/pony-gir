@@ -14,7 +14,7 @@ use "../GObject"
      000160: [Enumeration size=32,fid: f39]: priority  
 */
 struct GThread
-  var func: Pointer[None] = Pointer[None]
-  var data: Pointer[None] = Pointer[None]
-  var joinable: I32 = I32(0)
-  var priority: I32 = I32(0)
+  var func: Pointer[None] = Pointer[None] // Typedef
+  var data: Pointer[None] = Pointer[None] // Typedef
+  var joinable: I32 = I32(0) // Typedef
+  var priority: I32 = I32(0) // Typedef

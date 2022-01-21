@@ -11,4 +11,4 @@ use "../GObject"
      000000: [FundamentalType(char) size=8]: unused  
 */
 struct Hbuserdatakeyt
-  var unused: U8 = U8(0)
+  var unused: U8 = U8(0) // FundamentalType

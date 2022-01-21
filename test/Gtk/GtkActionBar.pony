@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=384,fid: f439]: bin  
 */
 struct GtkActionBar
-  embed bin: GtkBin = GtkBin
+  embed bin: GtkBin = GtkBin // Typedef

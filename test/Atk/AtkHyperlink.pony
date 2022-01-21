@@ -12,4 +12,4 @@ use "../GObject"
      000000: [Struct size=192,fid: f139]: parent  
 */
 struct AtkHyperlink
-  embed parent: GObject = GObject
+  embed parent: GObject = GObject // Typedef

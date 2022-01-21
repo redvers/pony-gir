@@ -22,8 +22,8 @@ use "../Harfbuzz"
      008256: [ArrayType size=(0-15)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GtkAppChooserWidgetClass
-  embed parent_class: GtkBoxClass = GtkBoxClass
-  var application_selected: Pointer[None] = Pointer[None]
-  var application_activated: Pointer[None] = Pointer[None]
-  var populate_popup: Pointer[None] = Pointer[None]
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GtkBoxClass = GtkBoxClass // Typedef
+  var application_selected: Pointer[None] = Pointer[None] // PointerType
+  var application_activated: Pointer[None] = Pointer[None] // PointerType
+  var populate_popup: Pointer[None] = Pointer[None] // PointerType
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

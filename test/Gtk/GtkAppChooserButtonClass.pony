@@ -20,6 +20,6 @@ use "../Harfbuzz"
      008448: [ArrayType size=(0-15)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
 */
 struct GtkAppChooserButtonClass
-  embed parent_class: GtkComboBoxClass = GtkComboBoxClass
-  var custom_item_activated: Pointer[None] = Pointer[None]
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]]
+  embed parent_class: GtkComboBoxClass = GtkComboBoxClass // Typedef
+  var custom_item_activated: Pointer[None] = Pointer[None] // PointerType
+  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[Struct size=,fid: f466]: priv  
 */
 struct GtkTextTag
-  embed parent_instance: GObject = GObject
-  var priv: NullablePointer[GtkTextTagPrivate] = NullablePointer[GtkTextTagPrivate].none()
+  embed parent_instance: GObject = GObject // Typedef
+  var priv: NullablePointer[GtkTextTagPrivate] = NullablePointer[GtkTextTagPrivate].none() // PointerType

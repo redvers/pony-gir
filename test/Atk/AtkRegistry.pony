@@ -14,6 +14,6 @@ use "../GObject"
      000256: [PointerType size=64]->[Struct size=,fid: f76]: factory_singleton_cache  
 */
 struct AtkRegistry
-  embed parent: GObject = GObject
-  var factory_type_registry: NullablePointer[GHashTable] = NullablePointer[GHashTable].none()
-  var factory_singleton_cache: NullablePointer[GHashTable] = NullablePointer[GHashTable].none()
+  embed parent: GObject = GObject // Typedef
+  var factory_type_registry: NullablePointer[GHashTable] = NullablePointer[GHashTable].none() // PointerType
+  var factory_singleton_cache: NullablePointer[GHashTable] = NullablePointer[GHashTable].none() // PointerType

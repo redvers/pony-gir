@@ -13,5 +13,5 @@ use "../GObject"
      000576: [PointerType size=64]->[FundamentalType(char) size=8]: embedded_plug_id  
 */
 struct AtkSocket
-  embed parent: AtkObject = AtkObject
-  var embedded_plug_id: Pointer[U8] = Pointer[U8]
+  embed parent: AtkObject = AtkObject // Typedef
+  var embedded_plug_id: Pointer[U8] = Pointer[U8] // PointerType

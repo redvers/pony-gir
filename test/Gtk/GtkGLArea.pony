@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=256,fid: f399]: parent_instance  
 */
 struct GtkGLArea
-  embed parent_instance: GtkWidget = GtkWidget
+  embed parent_instance: GtkWidget = GtkWidget // Typedef

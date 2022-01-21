@@ -32,18 +32,18 @@ use "../Harfbuzz"
      001920: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved8  
 */
 struct GtkEntryBufferClass
-  embed parent_class: GObjectClass = GObjectClass
-  var inserted_text: Pointer[None] = Pointer[None]
-  var deleted_text: Pointer[None] = Pointer[None]
-  var get_text: Pointer[None] = Pointer[None]
-  var get_length: Pointer[None] = Pointer[None]
-  var insert_text: Pointer[None] = Pointer[None]
-  var delete_text: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
-  var _gtk_reserved5: Pointer[None] = Pointer[None]
-  var _gtk_reserved6: Pointer[None] = Pointer[None]
-  var _gtk_reserved7: Pointer[None] = Pointer[None]
-  var _gtk_reserved8: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var inserted_text: Pointer[None] = Pointer[None] // PointerType
+  var deleted_text: Pointer[None] = Pointer[None] // PointerType
+  var get_text: Pointer[None] = Pointer[None] // PointerType
+  var get_length: Pointer[None] = Pointer[None] // PointerType
+  var insert_text: Pointer[None] = Pointer[None] // PointerType
+  var delete_text: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved5: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved6: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved7: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved8: Pointer[None] = Pointer[None] // PointerType

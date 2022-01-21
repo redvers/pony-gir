@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000064: [Struct size=192,fid: f132]: value  
 */
 struct GtkSettingsValue
-  var origin: Pointer[U8] = Pointer[U8]
-  embed value: GValue = GValue
+  var origin: Pointer[U8] = Pointer[U8] // PointerType
+  embed value: GValue = GValue // Typedef

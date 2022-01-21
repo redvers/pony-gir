@@ -27,13 +27,13 @@ use "../Harfbuzz"
      000640: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_text_size_group  
 */
 struct GtkToolShellIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var get_icon_size: Pointer[None] = Pointer[None]
-  var get_orientation: Pointer[None] = Pointer[None]
-  var get_style: Pointer[None] = Pointer[None]
-  var get_relief_style: Pointer[None] = Pointer[None]
-  var rebuild_menu: Pointer[None] = Pointer[None]
-  var get_text_orientation: Pointer[None] = Pointer[None]
-  var get_text_alignment: Pointer[None] = Pointer[None]
-  var get_ellipsize_mode: Pointer[None] = Pointer[None]
-  var get_text_size_group: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var get_icon_size: Pointer[None] = Pointer[None] // PointerType
+  var get_orientation: Pointer[None] = Pointer[None] // PointerType
+  var get_style: Pointer[None] = Pointer[None] // PointerType
+  var get_relief_style: Pointer[None] = Pointer[None] // PointerType
+  var rebuild_menu: Pointer[None] = Pointer[None] // PointerType
+  var get_text_orientation: Pointer[None] = Pointer[None] // PointerType
+  var get_text_alignment: Pointer[None] = Pointer[None] // PointerType
+  var get_ellipsize_mode: Pointer[None] = Pointer[None] // PointerType
+  var get_text_size_group: Pointer[None] = Pointer[None] // PointerType

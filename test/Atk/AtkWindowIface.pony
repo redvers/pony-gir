@@ -12,4 +12,4 @@ use "../GObject"
      000000: [Struct size=128,fid: f131]: parent  
 */
 struct AtkWindowIface
-  embed parent: GTypeInterface = GTypeInterface
+  embed parent: GTypeInterface = GTypeInterface // Typedef

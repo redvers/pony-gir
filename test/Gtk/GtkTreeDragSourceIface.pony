@@ -21,7 +21,7 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: drag_data_delete  
 */
 struct GtkTreeDragSourceIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var row_draggable: Pointer[None] = Pointer[None]
-  var drag_data_get: Pointer[None] = Pointer[None]
-  var drag_data_delete: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var row_draggable: Pointer[None] = Pointer[None] // PointerType
+  var drag_data_get: Pointer[None] = Pointer[None] // PointerType
+  var drag_data_delete: Pointer[None] = Pointer[None] // PointerType

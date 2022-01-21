@@ -17,8 +17,8 @@ use "../Gio"
      000256: [FundamentalType(int) size=32]: n_scripts  
 */
 struct PangoEngineInfo
-  var id: Pointer[U8] = Pointer[U8]
-  var engine_type: Pointer[U8] = Pointer[U8]
-  var render_type: Pointer[U8] = Pointer[U8]
-  var scripts: NullablePointer[PangoEngineScriptInfo] = NullablePointer[PangoEngineScriptInfo].none()
-  var n_scripts: I32 = I32(0)
+  var id: Pointer[U8] = Pointer[U8] // PointerType
+  var engine_type: Pointer[U8] = Pointer[U8] // PointerType
+  var render_type: Pointer[U8] = Pointer[U8] // PointerType
+  var scripts: NullablePointer[PangoEngineScriptInfo] = NullablePointer[PangoEngineScriptInfo].none() // PointerType
+  var n_scripts: I32 = I32(0) // Typedef

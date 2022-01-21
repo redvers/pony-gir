@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000576: [PointerType size=64]->[Struct size=,fid: f449]: priv  
 */
 struct GtkAccessible
-  embed parent: AtkObject = AtkObject
-  var priv: NullablePointer[GtkAccessiblePrivate] = NullablePointer[GtkAccessiblePrivate].none()
+  embed parent: AtkObject = AtkObject // Typedef
+  var priv: NullablePointer[GtkAccessiblePrivate] = NullablePointer[GtkAccessiblePrivate].none() // PointerType

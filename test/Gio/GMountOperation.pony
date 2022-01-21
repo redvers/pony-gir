@@ -12,5 +12,5 @@ use "../GObject"
      000192: [PointerType size=64]->[Struct size=,fid: f180]: priv  
 */
 struct GMountOperation
-  embed parent_instance: GObject = GObject
-  var priv: NullablePointer[GMountOperationPrivate] = NullablePointer[GMountOperationPrivate].none()
+  embed parent_instance: GObject = GObject // Typedef
+  var priv: NullablePointer[GMountOperationPrivate] = NullablePointer[GMountOperationPrivate].none() // PointerType

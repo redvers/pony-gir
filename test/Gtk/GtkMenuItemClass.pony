@@ -31,17 +31,17 @@ use "../Harfbuzz"
      008832: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkMenuItemClass
-  embed parent_class: GtkBinClass = GtkBinClass
-  var hide_on_activate: U32 = U32(0)
-  var activate: Pointer[None] = Pointer[None]
-  var activate_item: Pointer[None] = Pointer[None]
-  var toggle_size_request: Pointer[None] = Pointer[None]
-  var toggle_size_allocate: Pointer[None] = Pointer[None]
-  var set_label: Pointer[None] = Pointer[None]
-  var get_label: Pointer[None] = Pointer[None]
-  var select: Pointer[None] = Pointer[None]
-  var deselect: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef
+  var hide_on_activate: U32 = U32(0) // Typedef
+  var activate: Pointer[None] = Pointer[None] // PointerType
+  var activate_item: Pointer[None] = Pointer[None] // PointerType
+  var toggle_size_request: Pointer[None] = Pointer[None] // PointerType
+  var toggle_size_allocate: Pointer[None] = Pointer[None] // PointerType
+  var set_label: Pointer[None] = Pointer[None] // PointerType
+  var get_label: Pointer[None] = Pointer[None] // PointerType
+  var select: Pointer[None] = Pointer[None] // PointerType
+  var deselect: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

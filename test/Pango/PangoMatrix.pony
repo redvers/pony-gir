@@ -18,9 +18,9 @@ use "../Gio"
      000320: [FundamentalType(double) size=64]: y0  
 */
 struct PangoMatrix
-  var xx: F64 = F64(0)
-  var xy: F64 = F64(0)
-  var yx: F64 = F64(0)
-  var yy: F64 = F64(0)
-  var x0: F64 = F64(0)
-  var y0: F64 = F64(0)
+  var xx: F64 = F64(0) // FundamentalType
+  var xy: F64 = F64(0) // FundamentalType
+  var yx: F64 = F64(0) // FundamentalType
+  var yy: F64 = F64(0) // FundamentalType
+  var x0: F64 = F64(0) // FundamentalType
+  var y0: F64 = F64(0) // FundamentalType

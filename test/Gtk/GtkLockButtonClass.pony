@@ -26,12 +26,12 @@ use "../Harfbuzz"
      009152: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: reserved7  
 */
 struct GtkLockButtonClass
-  embed parent_class: GtkButtonClass = GtkButtonClass
-  var reserved0: Pointer[None] = Pointer[None]
-  var reserved1: Pointer[None] = Pointer[None]
-  var reserved2: Pointer[None] = Pointer[None]
-  var reserved3: Pointer[None] = Pointer[None]
-  var reserved4: Pointer[None] = Pointer[None]
-  var reserved5: Pointer[None] = Pointer[None]
-  var reserved6: Pointer[None] = Pointer[None]
-  var reserved7: Pointer[None] = Pointer[None]
+  embed parent_class: GtkButtonClass = GtkButtonClass // Typedef
+  var reserved0: Pointer[None] = Pointer[None] // PointerType
+  var reserved1: Pointer[None] = Pointer[None] // PointerType
+  var reserved2: Pointer[None] = Pointer[None] // PointerType
+  var reserved3: Pointer[None] = Pointer[None] // PointerType
+  var reserved4: Pointer[None] = Pointer[None] // PointerType
+  var reserved5: Pointer[None] = Pointer[None] // PointerType
+  var reserved6: Pointer[None] = Pointer[None] // PointerType
+  var reserved7: Pointer[None] = Pointer[None] // PointerType

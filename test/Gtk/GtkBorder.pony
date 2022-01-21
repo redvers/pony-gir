@@ -21,7 +21,7 @@ use "../Harfbuzz"
      000048: [FundamentalType(short int) size=16]: bottom  
 */
 struct GtkBorder
-  var left: I16 = I16(0)
-  var right: I16 = I16(0)
-  var top: I16 = I16(0)
-  var bottom: I16 = I16(0)
+  var left: I16 = I16(0) // Typedef
+  var right: I16 = I16(0) // Typedef
+  var top: I16 = I16(0) // Typedef
+  var bottom: I16 = I16(0) // Typedef

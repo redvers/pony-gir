@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000384: [PointerType size=64]->[Struct size=,fid: f606]: priv  
 */
 struct GtkRecentChooserWidget
-  embed parent_instance: GtkBox = GtkBox
-  var priv: NullablePointer[GtkRecentChooserWidgetPrivate] = NullablePointer[GtkRecentChooserWidgetPrivate].none()
+  embed parent_instance: GtkBox = GtkBox // Typedef
+  var priv: NullablePointer[GtkRecentChooserWidgetPrivate] = NullablePointer[GtkRecentChooserWidgetPrivate].none() // PointerType

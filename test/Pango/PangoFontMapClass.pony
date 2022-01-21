@@ -21,12 +21,12 @@ use "../Gio"
      001536: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_face  
 */
 struct PangoFontMapClass
-  embed parent_class: GObjectClass = GObjectClass
-  var load_font: Pointer[None] = Pointer[None]
-  var list_families: Pointer[None] = Pointer[None]
-  var load_fontset: Pointer[None] = Pointer[None]
-  var shape_engine_type: Pointer[U8] = Pointer[U8]
-  var get_serial: Pointer[None] = Pointer[None]
-  var changed: Pointer[None] = Pointer[None]
-  var get_family: Pointer[None] = Pointer[None]
-  var get_face: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var load_font: Pointer[None] = Pointer[None] // PointerType
+  var list_families: Pointer[None] = Pointer[None] // PointerType
+  var load_fontset: Pointer[None] = Pointer[None] // PointerType
+  var shape_engine_type: Pointer[U8] = Pointer[U8] // PointerType
+  var get_serial: Pointer[None] = Pointer[None] // PointerType
+  var changed: Pointer[None] = Pointer[None] // PointerType
+  var get_family: Pointer[None] = Pointer[None] // PointerType
+  var get_face: Pointer[None] = Pointer[None] // PointerType

@@ -26,12 +26,12 @@ use "../Harfbuzz"
      000320: [PointerType size=64]->[Struct size=256,fid: f489]: signals  
 */
 struct GtkBindingEntry
-  var keyval: U32 = U32(0)
-  var modifiers: I32 = I32(0)
-  var binding_set: NullablePointer[GtkBindingSet] = NullablePointer[GtkBindingSet].none()
-  var destroyed: U32 = U32(0)
-  var in_emission: U32 = U32(0)
-  var marks_unbound: U32 = U32(0)
-  var set_next: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none()
-  var hash_next: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none()
-  var signals: NullablePointer[GtkBindingSignal] = NullablePointer[GtkBindingSignal].none()
+  var keyval: U32 = U32(0) // Typedef
+  var modifiers: I32 = I32(0) // Typedef
+  var binding_set: NullablePointer[GtkBindingSet] = NullablePointer[GtkBindingSet].none() // PointerType
+  var destroyed: U32 = U32(0) // Typedef
+  var in_emission: U32 = U32(0) // Typedef
+  var marks_unbound: U32 = U32(0) // Typedef
+  var set_next: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none() // PointerType
+  var hash_next: NullablePointer[GtkBindingEntry] = NullablePointer[GtkBindingEntry].none() // PointerType
+  var signals: NullablePointer[GtkBindingSignal] = NullablePointer[GtkBindingSignal].none() // PointerType

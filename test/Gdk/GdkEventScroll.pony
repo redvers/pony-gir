@@ -26,17 +26,17 @@ use "../Cairo"
      000704: [FundamentalType(unsigned int) size=32]: is_stop  
 */
 struct GdkEventScroll
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var time: U32 = U32(0)
-  var x: F64 = F64(0)
-  var y: F64 = F64(0)
-  var state: U32 = U32(0)
-  var direction: I32 = I32(0)
-  var device: NullablePointer[GdkDevice] = NullablePointer[GdkDevice].none()
-  var x_root: F64 = F64(0)
-  var y_root: F64 = F64(0)
-  var delta_x: F64 = F64(0)
-  var delta_y: F64 = F64(0)
-  var is_stop: U32 = U32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var time: U32 = U32(0) // Typedef
+  var x: F64 = F64(0) // Typedef
+  var y: F64 = F64(0) // Typedef
+  var state: U32 = U32(0) // Typedef
+  var direction: I32 = I32(0) // Typedef
+  var device: NullablePointer[GdkDevice] = NullablePointer[GdkDevice].none() // PointerType
+  var x_root: F64 = F64(0) // Typedef
+  var y_root: F64 = F64(0) // Typedef
+  var delta_x: F64 = F64(0) // Typedef
+  var delta_y: F64 = F64(0) // Typedef
+  var is_stop: U32 = U32(0) // Typedef

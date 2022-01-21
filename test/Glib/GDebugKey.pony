@@ -12,5 +12,5 @@ use "../GObject"
      000064: [FundamentalType(unsigned int) size=32]: value  
 */
 struct GDebugKey
-  var key: Pointer[U8] = Pointer[U8]
-  var value: U32 = U32(0)
+  var key: Pointer[U8] = Pointer[U8] // PointerType
+  var value: U32 = U32(0) // Typedef

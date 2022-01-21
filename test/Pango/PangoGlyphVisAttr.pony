@@ -13,4 +13,4 @@ use "../Gio"
      000000: [FundamentalType(unsigned int) size=32]: is_cluster_start  
 */
 struct PangoGlyphVisAttr
-  var is_cluster_start: U32 = U32(0)
+  var is_cluster_start: U32 = U32(0) // Typedef

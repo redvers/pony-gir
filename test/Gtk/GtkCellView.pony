@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[Struct size=,fid: f503]: priv  
 */
 struct GtkCellView
-  embed parent_instance: GtkWidget = GtkWidget
-  var priv: NullablePointer[GtkCellViewPrivate] = NullablePointer[GtkCellViewPrivate].none()
+  embed parent_instance: GtkWidget = GtkWidget // Typedef
+  var priv: NullablePointer[GtkCellViewPrivate] = NullablePointer[GtkCellViewPrivate].none() // PointerType

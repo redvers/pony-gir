@@ -31,17 +31,17 @@ use "../Harfbuzz"
      000896: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved8  
 */
 struct GtkPrintOperationPreviewIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var ready: Pointer[None] = Pointer[None]
-  var got_page_size: Pointer[None] = Pointer[None]
-  var render_page: Pointer[None] = Pointer[None]
-  var is_selected: Pointer[None] = Pointer[None]
-  var end_preview: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
-  var _gtk_reserved5: Pointer[None] = Pointer[None]
-  var _gtk_reserved6: Pointer[None] = Pointer[None]
-  var _gtk_reserved7: Pointer[None] = Pointer[None]
-  var _gtk_reserved8: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var ready: Pointer[None] = Pointer[None] // PointerType
+  var got_page_size: Pointer[None] = Pointer[None] // PointerType
+  var render_page: Pointer[None] = Pointer[None] // PointerType
+  var is_selected: Pointer[None] = Pointer[None] // PointerType
+  var end_preview: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved5: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved6: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved7: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved8: Pointer[None] = Pointer[None] // PointerType

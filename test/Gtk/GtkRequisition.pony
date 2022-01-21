@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000032: [FundamentalType(int) size=32]: height  
 */
 struct GtkRequisition
-  var width: I32 = I32(0)
-  var height: I32 = I32(0)
+  var width: I32 = I32(0) // Typedef
+  var height: I32 = I32(0) // Typedef

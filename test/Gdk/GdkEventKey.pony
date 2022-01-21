@@ -23,14 +23,14 @@ use "../Cairo"
      000408: [FundamentalType(unsigned int) size=32]: is_modifier  
 */
 struct GdkEventKey
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var time: U32 = U32(0)
-  var state: U32 = U32(0)
-  var keyval: U32 = U32(0)
-  var length: I32 = I32(0)
-  var string: Pointer[U8] = Pointer[U8]
-  var hardware_keycode: U16 = U16(0)
-  var group: U8 = U8(0)
-  var is_modifier: U32 = U32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var time: U32 = U32(0) // Typedef
+  var state: U32 = U32(0) // Typedef
+  var keyval: U32 = U32(0) // Typedef
+  var length: I32 = I32(0) // Typedef
+  var string: Pointer[U8] = Pointer[U8] // PointerType
+  var hardware_keycode: U16 = U16(0) // Typedef
+  var group: U8 = U8(0) // Typedef
+  var is_modifier: U32 = U32(0) // Typedef

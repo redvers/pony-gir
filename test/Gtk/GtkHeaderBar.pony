@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=320,fid: f438]: container  
 */
 struct GtkHeaderBar
-  embed container: GtkContainer = GtkContainer
+  embed container: GtkContainer = GtkContainer // Typedef

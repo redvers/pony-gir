@@ -14,5 +14,5 @@ use "../Cairo"
      000192: [PointerType size=64]->[FundamentalType(void) size=0]: priv  
 */
 struct GdkPixbufLoader
-  embed parent_instance: GObject = GObject
-  var priv: Pointer[None] = Pointer[None]
+  embed parent_instance: GObject = GObject // Typedef
+  var priv: Pointer[None] = Pointer[None] // Typedef

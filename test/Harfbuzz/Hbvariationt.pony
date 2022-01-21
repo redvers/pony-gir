@@ -12,5 +12,5 @@ use "../GObject"
      000032: [FundamentalType(float) size=32]: value  
 */
 struct Hbvariationt
-  var gtag: U32 = U32(0)
-  var value: F32 = F32(0)
+  var gtag: U32 = U32(0) // Typedef
+  var value: F32 = F32(0) // FundamentalType

@@ -15,6 +15,6 @@ use "../Gio"
      000128: [FundamentalType(int) size=32]: num_data  
 */
 struct Cairopath
-  var status: I32 = I32(0)
-  var data: Pointer[None] = Pointer[None]
-  var num_data: I32 = I32(0)
+  var status: I32 = I32(0) // Typedef
+  var data: Pointer[None] = Pointer[None] // PointerType
+  var num_data: I32 = I32(0) // FundamentalType

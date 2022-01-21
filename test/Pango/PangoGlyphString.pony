@@ -16,7 +16,7 @@ use "../Gio"
      000192: [FundamentalType(int) size=32]: space  
 */
 struct PangoGlyphString
-  var num_glyphs: I32 = I32(0)
-  var glyphs: NullablePointer[PangoGlyphInfo] = NullablePointer[PangoGlyphInfo].none()
-  var log_clusters: Pointer[I32] = Pointer[I32]
-  var space: I32 = I32(0)
+  var num_glyphs: I32 = I32(0) // Typedef
+  var glyphs: NullablePointer[PangoGlyphInfo] = NullablePointer[PangoGlyphInfo].none() // PointerType
+  var log_clusters: Pointer[I32] = Pointer[I32] // PointerType
+  var space: I32 = I32(0) // Typedef

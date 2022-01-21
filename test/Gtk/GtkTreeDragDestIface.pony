@@ -20,6 +20,6 @@ use "../Harfbuzz"
      000192: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: row_drop_possible  
 */
 struct GtkTreeDragDestIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var drag_data_received: Pointer[None] = Pointer[None]
-  var row_drop_possible: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var drag_data_received: Pointer[None] = Pointer[None] // PointerType
+  var row_drop_possible: Pointer[None] = Pointer[None] // PointerType

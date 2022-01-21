@@ -20,6 +20,6 @@ use "../Harfbuzz"
      000096: [FundamentalType(unsigned int) size=32]: info  
 */
 struct GtkTargetPair
-  var target: NullablePointer[GdkAtom] = NullablePointer[GdkAtom].none()
-  var flags: U32 = U32(0)
-  var info: U32 = U32(0)
+  var target: NullablePointer[GdkAtom] = NullablePointer[GdkAtom].none() // Typedef
+  var flags: U32 = U32(0) // Typedef
+  var info: U32 = U32(0) // Typedef

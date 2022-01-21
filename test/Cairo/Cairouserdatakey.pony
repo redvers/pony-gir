@@ -13,4 +13,4 @@ use "../Gio"
      000000: [FundamentalType(int) size=32]: unused  
 */
 struct Cairouserdatakey
-  var unused: I32 = I32(0)
+  var unused: I32 = I32(0) // FundamentalType

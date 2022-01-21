@@ -22,13 +22,13 @@ use "../Gio"
      000288: [FundamentalType(int) size=32]: strikethrough_thickness  
 */
 struct PangoFontMetrics
-  var ref_count: U32 = U32(0)
-  var ascent: I32 = I32(0)
-  var descent: I32 = I32(0)
-  var height: I32 = I32(0)
-  var approximate_char_width: I32 = I32(0)
-  var approximate_digit_width: I32 = I32(0)
-  var underline_position: I32 = I32(0)
-  var underline_thickness: I32 = I32(0)
-  var strikethrough_position: I32 = I32(0)
-  var strikethrough_thickness: I32 = I32(0)
+  var ref_count: U32 = U32(0) // Typedef
+  var ascent: I32 = I32(0) // FundamentalType
+  var descent: I32 = I32(0) // FundamentalType
+  var height: I32 = I32(0) // FundamentalType
+  var approximate_char_width: I32 = I32(0) // FundamentalType
+  var approximate_digit_width: I32 = I32(0) // FundamentalType
+  var underline_position: I32 = I32(0) // FundamentalType
+  var underline_thickness: I32 = I32(0) // FundamentalType
+  var strikethrough_position: I32 = I32(0) // FundamentalType
+  var strikethrough_thickness: I32 = I32(0) // FundamentalType

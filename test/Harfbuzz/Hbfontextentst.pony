@@ -22,15 +22,15 @@ use "../GObject"
      000352: [FundamentalType(int) size=32]: reserved1  
 */
 struct Hbfontextentst
-  var ascender: I32 = I32(0)
-  var descender: I32 = I32(0)
-  var line_gap: I32 = I32(0)
-  var reserved9: I32 = I32(0)
-  var reserved8: I32 = I32(0)
-  var reserved7: I32 = I32(0)
-  var reserved6: I32 = I32(0)
-  var reserved5: I32 = I32(0)
-  var reserved4: I32 = I32(0)
-  var reserved3: I32 = I32(0)
-  var reserved2: I32 = I32(0)
-  var reserved1: I32 = I32(0)
+  var ascender: I32 = I32(0) // Typedef
+  var descender: I32 = I32(0) // Typedef
+  var line_gap: I32 = I32(0) // Typedef
+  var reserved9: I32 = I32(0) // Typedef
+  var reserved8: I32 = I32(0) // Typedef
+  var reserved7: I32 = I32(0) // Typedef
+  var reserved6: I32 = I32(0) // Typedef
+  var reserved5: I32 = I32(0) // Typedef
+  var reserved4: I32 = I32(0) // Typedef
+  var reserved3: I32 = I32(0) // Typedef
+  var reserved2: I32 = I32(0) // Typedef
+  var reserved1: I32 = I32(0) // Typedef

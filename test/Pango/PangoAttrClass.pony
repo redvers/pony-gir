@@ -16,7 +16,7 @@ use "../Gio"
      000192: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: equal  
 */
 struct PangoAttrClass
-  var gtype: I32 = I32(0)
-  var copy: Pointer[None] = Pointer[None]
-  var destroy: Pointer[None] = Pointer[None]
-  var equal: Pointer[None] = Pointer[None]
+  var gtype: I32 = I32(0) // Typedef
+  var copy: Pointer[None] = Pointer[None] // PointerType
+  var destroy: Pointer[None] = Pointer[None] // PointerType
+  var equal: Pointer[None] = Pointer[None] // PointerType

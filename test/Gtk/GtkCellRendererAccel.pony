@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000320: [PointerType size=64]->[Struct size=,fid: f496]: priv  
 */
 struct GtkCellRendererAccel
-  embed parent: GtkCellRendererText = GtkCellRendererText
-  var priv: NullablePointer[GtkCellRendererAccelPrivate] = NullablePointer[GtkCellRendererAccelPrivate].none()
+  embed parent: GtkCellRendererText = GtkCellRendererText // Typedef
+  var priv: NullablePointer[GtkCellRendererAccelPrivate] = NullablePointer[GtkCellRendererAccelPrivate].none() // PointerType

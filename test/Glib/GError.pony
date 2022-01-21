@@ -13,6 +13,6 @@ use "../GObject"
      000064: [PointerType size=64]->[FundamentalType(char) size=8]: message  
 */
 struct GError
-  var domain: U32 = U32(0)
-  var code: I32 = I32(0)
-  var message: Pointer[U8] = Pointer[U8]
+  var domain: U32 = U32(0) // Typedef
+  var code: I32 = I32(0) // Typedef
+  var message: Pointer[U8] = Pointer[U8] // PointerType

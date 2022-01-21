@@ -20,6 +20,6 @@ use "../Harfbuzz"
      000192: [FundamentalType(unsigned int) size=32]: accel_path_quark  
 */
 struct GtkAccelGroupEntry
-  embed key: GtkAccelKey = GtkAccelKey
-  var closure: NullablePointer[GClosure] = NullablePointer[GClosure].none()
-  var accel_path_quark: U32 = U32(0)
+  embed key: GtkAccelKey = GtkAccelKey // Typedef
+  var closure: NullablePointer[GClosure] = NullablePointer[GClosure].none() // PointerType
+  var accel_path_quark: U32 = U32(0) // Typedef

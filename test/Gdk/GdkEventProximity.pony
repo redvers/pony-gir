@@ -17,8 +17,8 @@ use "../Cairo"
      000192: [PointerType size=64]->[Struct size=,fid: f348]: device  
 */
 struct GdkEventProximity
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var time: U32 = U32(0)
-  var device: NullablePointer[GdkDevice] = NullablePointer[GdkDevice].none()
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var time: U32 = U32(0) // Typedef
+  var device: NullablePointer[GdkDevice] = NullablePointer[GdkDevice].none() // PointerType

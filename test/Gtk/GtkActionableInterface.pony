@@ -22,8 +22,8 @@ use "../Harfbuzz"
      000320: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: set_action_target_value  
 */
 struct GtkActionableInterface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var get_action_name: Pointer[None] = Pointer[None]
-  var set_action_name: Pointer[None] = Pointer[None]
-  var get_action_target_value: Pointer[None] = Pointer[None]
-  var set_action_target_value: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var get_action_name: Pointer[None] = Pointer[None] // PointerType
+  var set_action_name: Pointer[None] = Pointer[None] // PointerType
+  var get_action_target_value: Pointer[None] = Pointer[None] // PointerType
+  var set_action_target_value: Pointer[None] = Pointer[None] // PointerType

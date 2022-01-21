@@ -15,8 +15,8 @@ use "../GObject"
      000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: strncmp_func  
 */
 struct GCompletion
-  var items: NullablePointer[GList] = NullablePointer[GList].none()
-  var func: Pointer[None] = Pointer[None]
-  var prefix: Pointer[U8] = Pointer[U8]
-  var cache: NullablePointer[GList] = NullablePointer[GList].none()
-  var strncmp_func: Pointer[None] = Pointer[None]
+  var items: NullablePointer[GList] = NullablePointer[GList].none() // PointerType
+  var func: Pointer[None] = Pointer[None] // Typedef
+  var prefix: Pointer[U8] = Pointer[U8] // PointerType
+  var cache: NullablePointer[GList] = NullablePointer[GList].none() // PointerType
+  var strncmp_func: Pointer[None] = Pointer[None] // Typedef

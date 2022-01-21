@@ -11,4 +11,4 @@ use "../GObject"
      000000: [FundamentalType(unsigned int) size=32]: index  
 */
 struct GStaticPrivate
-  var index: U32 = U32(0)
+  var index: U32 = U32(0) // Typedef

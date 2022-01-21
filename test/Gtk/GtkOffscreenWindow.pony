@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=448,fid: f403]: parent_object  
 */
 struct GtkOffscreenWindow
-  embed parent_object: GtkWindow = GtkWindow
+  embed parent_object: GtkWindow = GtkWindow // Typedef

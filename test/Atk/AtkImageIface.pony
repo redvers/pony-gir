@@ -17,9 +17,9 @@ use "../GObject"
      000384: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_image_locale  
 */
 struct AtkImageIface
-  embed parent: GTypeInterface = GTypeInterface
-  var get_image_position: Pointer[None] = Pointer[None]
-  var get_image_description: Pointer[None] = Pointer[None]
-  var get_image_size: Pointer[None] = Pointer[None]
-  var set_image_description: Pointer[None] = Pointer[None]
-  var get_image_locale: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var get_image_position: Pointer[None] = Pointer[None] // PointerType
+  var get_image_description: Pointer[None] = Pointer[None] // PointerType
+  var get_image_size: Pointer[None] = Pointer[None] // PointerType
+  var set_image_description: Pointer[None] = Pointer[None] // PointerType
+  var get_image_locale: Pointer[None] = Pointer[None] // PointerType

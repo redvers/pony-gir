@@ -16,7 +16,7 @@ use "../Cairo"
      000160: [Enumeration size=32,fid: f355]: state  
 */
 struct GdkEventVisibility
-  var gtype: I32 = I32(0)
-  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none()
-  var send_event: I8 = I8(0)
-  var state: I32 = I32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var window: NullablePointer[GdkWindow] = NullablePointer[GdkWindow].none() // PointerType
+  var send_event: I8 = I8(0) // Typedef
+  var state: I32 = I32(0) // Typedef

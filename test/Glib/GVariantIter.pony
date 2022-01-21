@@ -11,4 +11,4 @@ use "../GObject"
      000000: [ArrayType size=(0-15)]->[FundamentalType(long unsigned int) size=64] -- UNSUPPORTED - FIXME: x  
 */
 struct GVariantIter
-  var x: Pointer[U64] = Pointer[U64]
+  var x: Pointer[U64] = Pointer[U64] // ArrayType

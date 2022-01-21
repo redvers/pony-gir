@@ -24,10 +24,10 @@ use "../Harfbuzz"
      000384: [FundamentalType(int) size=32]: age  
 */
 struct GtkRecentFilterInfo
-  var contains: I32 = I32(0)
-  var uri: Pointer[U8] = Pointer[U8]
-  var display_name: Pointer[U8] = Pointer[U8]
-  var mime_type: Pointer[U8] = Pointer[U8]
-  var applications: Pointer[Pointer[U8]] = Pointer[Pointer[U8]]
-  var groups: Pointer[Pointer[U8]] = Pointer[Pointer[U8]]
-  var age: I32 = I32(0)
+  var contains: I32 = I32(0) // Typedef
+  var uri: Pointer[U8] = Pointer[U8] // PointerType
+  var display_name: Pointer[U8] = Pointer[U8] // PointerType
+  var mime_type: Pointer[U8] = Pointer[U8] // PointerType
+  var applications: Pointer[Pointer[U8]] = Pointer[Pointer[U8]] // PointerType
+  var groups: Pointer[Pointer[U8]] = Pointer[Pointer[U8]] // PointerType
+  var age: I32 = I32(0) // Typedef

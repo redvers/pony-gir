@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=448,fid: f506]: menu_item  
 */
 struct GtkSeparatorMenuItem
-  embed menu_item: GtkMenuItem = GtkMenuItem
+  embed menu_item: GtkMenuItem = GtkMenuItem // Typedef

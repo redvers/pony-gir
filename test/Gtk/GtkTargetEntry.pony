@@ -20,6 +20,6 @@ use "../Harfbuzz"
      000096: [FundamentalType(unsigned int) size=32]: info  
 */
 struct GtkTargetEntry
-  var target: Pointer[U8] = Pointer[U8]
-  var flags: U32 = U32(0)
-  var info: U32 = U32(0)
+  var target: Pointer[U8] = Pointer[U8] // PointerType
+  var flags: U32 = U32(0) // Typedef
+  var info: U32 = U32(0) // Typedef

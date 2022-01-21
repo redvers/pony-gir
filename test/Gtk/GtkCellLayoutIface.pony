@@ -27,13 +27,13 @@ use "../Harfbuzz"
      000640: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_area  
 */
 struct GtkCellLayoutIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var pack_start: Pointer[None] = Pointer[None]
-  var pack_end: Pointer[None] = Pointer[None]
-  var clear: Pointer[None] = Pointer[None]
-  var add_attribute: Pointer[None] = Pointer[None]
-  var set_cell_data_func: Pointer[None] = Pointer[None]
-  var clear_attributes: Pointer[None] = Pointer[None]
-  var reorder: Pointer[None] = Pointer[None]
-  var get_cells: Pointer[None] = Pointer[None]
-  var get_area: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var pack_start: Pointer[None] = Pointer[None] // PointerType
+  var pack_end: Pointer[None] = Pointer[None] // PointerType
+  var clear: Pointer[None] = Pointer[None] // PointerType
+  var add_attribute: Pointer[None] = Pointer[None] // PointerType
+  var set_cell_data_func: Pointer[None] = Pointer[None] // PointerType
+  var clear_attributes: Pointer[None] = Pointer[None] // PointerType
+  var reorder: Pointer[None] = Pointer[None] // PointerType
+  var get_cells: Pointer[None] = Pointer[None] // PointerType
+  var get_area: Pointer[None] = Pointer[None] // PointerType

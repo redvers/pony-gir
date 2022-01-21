@@ -28,14 +28,14 @@ use "../Harfbuzz"
      000704: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_position  
 */
 struct GtkEditableInterface
-  embed base_iface: GTypeInterface = GTypeInterface
-  var insert_text: Pointer[None] = Pointer[None]
-  var delete_text: Pointer[None] = Pointer[None]
-  var changed: Pointer[None] = Pointer[None]
-  var do_insert_text: Pointer[None] = Pointer[None]
-  var do_delete_text: Pointer[None] = Pointer[None]
-  var get_chars: Pointer[None] = Pointer[None]
-  var set_selection_bounds: Pointer[None] = Pointer[None]
-  var get_selection_bounds: Pointer[None] = Pointer[None]
-  var set_position: Pointer[None] = Pointer[None]
-  var get_position: Pointer[None] = Pointer[None]
+  embed base_iface: GTypeInterface = GTypeInterface // Typedef
+  var insert_text: Pointer[None] = Pointer[None] // PointerType
+  var delete_text: Pointer[None] = Pointer[None] // PointerType
+  var changed: Pointer[None] = Pointer[None] // PointerType
+  var do_insert_text: Pointer[None] = Pointer[None] // PointerType
+  var do_delete_text: Pointer[None] = Pointer[None] // PointerType
+  var get_chars: Pointer[None] = Pointer[None] // PointerType
+  var set_selection_bounds: Pointer[None] = Pointer[None] // PointerType
+  var get_selection_bounds: Pointer[None] = Pointer[None] // PointerType
+  var set_position: Pointer[None] = Pointer[None] // PointerType
+  var get_position: Pointer[None] = Pointer[None] // PointerType

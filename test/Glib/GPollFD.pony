@@ -13,6 +13,6 @@ use "../GObject"
      000048: [FundamentalType(short unsigned int) size=16]: revents  
 */
 struct GPollFD
-  var fd: I32 = I32(0)
-  var events: U16 = U16(0)
-  var revents: U16 = U16(0)
+  var fd: I32 = I32(0) // Typedef
+  var events: U16 = U16(0) // Typedef
+  var revents: U16 = U16(0) // Typedef

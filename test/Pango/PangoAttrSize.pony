@@ -15,6 +15,6 @@ use "../Gio"
      000160: [FundamentalType(unsigned int) size=32]: absolute  
 */
 struct PangoAttrSize
-  embed attr: PangoAttribute = PangoAttribute
-  var size: I32 = I32(0)
-  var absolute: U32 = U32(0)
+  embed attr: PangoAttribute = PangoAttribute // Typedef
+  var size: I32 = I32(0) // FundamentalType
+  var absolute: U32 = U32(0) // Typedef

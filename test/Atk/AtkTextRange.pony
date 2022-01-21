@@ -15,7 +15,7 @@ use "../GObject"
      000192: [PointerType size=64]->[FundamentalType(char) size=8]: content  
 */
 struct AtkTextRange
-  embed bounds: AtkTextRectangle = AtkTextRectangle
-  var start_offset: I32 = I32(0)
-  var end_offset: I32 = I32(0)
-  var content: Pointer[U8] = Pointer[U8]
+  embed bounds: AtkTextRectangle = AtkTextRectangle // Typedef
+  var start_offset: I32 = I32(0) // Typedef
+  var end_offset: I32 = I32(0) // Typedef
+  var content: Pointer[U8] = Pointer[U8] // PointerType

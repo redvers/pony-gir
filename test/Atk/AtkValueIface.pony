@@ -22,14 +22,14 @@ use "../GObject"
      000704: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: set_value  
 */
 struct AtkValueIface
-  embed parent: GTypeInterface = GTypeInterface
-  var get_current_value: Pointer[None] = Pointer[None]
-  var get_maximum_value: Pointer[None] = Pointer[None]
-  var get_minimum_value: Pointer[None] = Pointer[None]
-  var set_current_value: Pointer[None] = Pointer[None]
-  var get_minimum_increment: Pointer[None] = Pointer[None]
-  var get_value_and_text: Pointer[None] = Pointer[None]
-  var get_range: Pointer[None] = Pointer[None]
-  var get_increment: Pointer[None] = Pointer[None]
-  var get_sub_ranges: Pointer[None] = Pointer[None]
-  var set_value: Pointer[None] = Pointer[None]
+  embed parent: GTypeInterface = GTypeInterface // Typedef
+  var get_current_value: Pointer[None] = Pointer[None] // PointerType
+  var get_maximum_value: Pointer[None] = Pointer[None] // PointerType
+  var get_minimum_value: Pointer[None] = Pointer[None] // PointerType
+  var set_current_value: Pointer[None] = Pointer[None] // PointerType
+  var get_minimum_increment: Pointer[None] = Pointer[None] // PointerType
+  var get_value_and_text: Pointer[None] = Pointer[None] // PointerType
+  var get_range: Pointer[None] = Pointer[None] // PointerType
+  var get_increment: Pointer[None] = Pointer[None] // PointerType
+  var get_sub_ranges: Pointer[None] = Pointer[None] // PointerType
+  var set_value: Pointer[None] = Pointer[None] // PointerType

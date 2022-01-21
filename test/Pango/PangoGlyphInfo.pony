@@ -15,6 +15,6 @@ use "../Gio"
      000128: [Struct size=32,fid: f333]: attr  
 */
 struct PangoGlyphInfo
-  var glyph: U32 = U32(0)
-  embed geometry: PangoGlyphGeometry = PangoGlyphGeometry
-  embed attr: PangoGlyphVisAttr = PangoGlyphVisAttr
+  var glyph: U32 = U32(0) // Typedef
+  embed geometry: PangoGlyphGeometry = PangoGlyphGeometry // Typedef
+  embed attr: PangoGlyphVisAttr = PangoGlyphVisAttr // Typedef

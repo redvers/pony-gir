@@ -30,11 +30,35 @@ struct <xsl:value-of select="./@name"/><xsl:text>
 <xsl:variable name="key" select="@type"/>
 <xsl:variable name="fieldid" select="@fieldid"/>
 <xsl:variable name="ffid" select="@fid"/>
-<xsl:text>  </xsl:text><xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$key]/@embed"/><xsl:text> </xsl:text><xsl:value-of select="@name"/>
+<xsl:variable name="tkey" select="@fieldid"/>
+	<xsl:variable name="thatnode" select="/castxml2pony/CastXML/*[@id=$tkey]"/>
+<xsl:text>  </xsl:text>
+<xsl:choose>
+	<xsl:when test="substring($key,1,7) eq 'Pointer'">var</xsl:when>
+	<xsl:when test="substring($key,1,15) eq 'NullablePointer'">var</xsl:when>
+	<xsl:when test="$key eq 'F32'">var</xsl:when>
+	<xsl:when test="$key eq 'F64'">var</xsl:when>
+	<xsl:when test="$key eq 'F128'">var</xsl:when>
+	<xsl:when test="$key eq 'I8'">var</xsl:when>
+	<xsl:when test="$key eq 'I16'">var</xsl:when>
+	<xsl:when test="$key eq 'I32'">var</xsl:when>
+	<xsl:when test="$key eq 'I64'">var</xsl:when>
+	<xsl:when test="$key eq 'I128'">var</xsl:when>
+	<xsl:when test="$key eq 'U8'">var</xsl:when>
+	<xsl:when test="$key eq 'U16'">var</xsl:when>
+	<xsl:when test="$key eq 'U32'">var</xsl:when>
+	<xsl:when test="$key eq 'U64'">var</xsl:when>
+	<xsl:when test="$key eq 'U128'">var</xsl:when>
+	<xsl:when test="name(/castxml2pony/CastXML/*[@id=$tkey]) = 'PointerType'">var</xsl:when>
+	<xsl:when test="name(/castxml2pony/CastXML/*[@id=$tkey]) = 'Typedef'">embed</xsl:when>
+	<xsl:when test="name(/castxml2pony/CastXML/*[@id=$tkey]) = 'Struct'">embed</xsl:when>
+	<xsl:otherwise>var</xsl:otherwise>
+</xsl:choose><xsl:text> </xsl:text><xsl:value-of select="@name"/>
+
 <xsl:text>: </xsl:text>
 <xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$key]/@structtype"/>
 <xsl:text> = </xsl:text>
-<xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$key]/@structdef"/><xsl:text>
+<xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$key]/@structdef"/><xsl:text> // </xsl:text><xsl:value-of select="name($thatnode)"/><xsl:text>
 </xsl:text>
 </xsl:template>
 

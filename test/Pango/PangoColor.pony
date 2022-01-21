@@ -15,6 +15,6 @@ use "../Gio"
      000032: [FundamentalType(short unsigned int) size=16]: blue  
 */
 struct PangoColor
-  var red: U16 = U16(0)
-  var green: U16 = U16(0)
-  var blue: U16 = U16(0)
+  var red: U16 = U16(0) // Typedef
+  var green: U16 = U16(0) // Typedef
+  var blue: U16 = U16(0) // Typedef

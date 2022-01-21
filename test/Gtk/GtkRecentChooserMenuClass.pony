@@ -22,8 +22,8 @@ use "../Harfbuzz"
      009152: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: gtk_recent4  
 */
 struct GtkRecentChooserMenuClass
-  embed parent_class: GtkMenuClass = GtkMenuClass
-  var gtk_recent1: Pointer[None] = Pointer[None]
-  var gtk_recent2: Pointer[None] = Pointer[None]
-  var gtk_recent3: Pointer[None] = Pointer[None]
-  var gtk_recent4: Pointer[None] = Pointer[None]
+  embed parent_class: GtkMenuClass = GtkMenuClass // Typedef
+  var gtk_recent1: Pointer[None] = Pointer[None] // PointerType
+  var gtk_recent2: Pointer[None] = Pointer[None] // PointerType
+  var gtk_recent3: Pointer[None] = Pointer[None] // PointerType
+  var gtk_recent4: Pointer[None] = Pointer[None] // PointerType

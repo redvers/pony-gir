@@ -14,5 +14,5 @@ use "../Gio"
      000128: [FundamentalType(double) size=64]: value  
 */
 struct PangoAttrFloat
-  embed attr: PangoAttribute = PangoAttribute
-  var value: F64 = F64(0)
+  embed attr: PangoAttribute = PangoAttribute // Typedef
+  var value: F64 = F64(0) // FundamentalType

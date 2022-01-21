@@ -19,11 +19,11 @@ use "../GObject"
      001472: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_toolkit_version  
 */
 struct AtkUtilClass
-  embed parent: GObjectClass = GObjectClass
-  var add_global_event_listener: Pointer[None] = Pointer[None]
-  var remove_global_event_listener: Pointer[None] = Pointer[None]
-  var add_key_event_listener: Pointer[None] = Pointer[None]
-  var remove_key_event_listener: Pointer[None] = Pointer[None]
-  var get_root: Pointer[None] = Pointer[None]
-  var get_toolkit_name: Pointer[None] = Pointer[None]
-  var get_toolkit_version: Pointer[None] = Pointer[None]
+  embed parent: GObjectClass = GObjectClass // Typedef
+  var add_global_event_listener: Pointer[None] = Pointer[None] // PointerType
+  var remove_global_event_listener: Pointer[None] = Pointer[None] // PointerType
+  var add_key_event_listener: Pointer[None] = Pointer[None] // PointerType
+  var remove_key_event_listener: Pointer[None] = Pointer[None] // PointerType
+  var get_root: Pointer[None] = Pointer[None] // PointerType
+  var get_toolkit_name: Pointer[None] = Pointer[None] // PointerType
+  var get_toolkit_version: Pointer[None] = Pointer[None] // PointerType

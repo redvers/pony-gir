@@ -26,12 +26,12 @@ use "../Harfbuzz"
      008512: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved3  
 */
 struct GtkWindowClass
-  embed parent_class: GtkBinClass = GtkBinClass
-  var set_focus: Pointer[None] = Pointer[None]
-  var activate_focus: Pointer[None] = Pointer[None]
-  var activate_default: Pointer[None] = Pointer[None]
-  var keys_changed: Pointer[None] = Pointer[None]
-  var enable_debugging: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
+  embed parent_class: GtkBinClass = GtkBinClass // Typedef
+  var set_focus: Pointer[None] = Pointer[None] // PointerType
+  var activate_focus: Pointer[None] = Pointer[None] // PointerType
+  var activate_default: Pointer[None] = Pointer[None] // PointerType
+  var keys_changed: Pointer[None] = Pointer[None] // PointerType
+  var enable_debugging: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType

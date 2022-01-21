@@ -22,8 +22,8 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[FundamentalType(char) size=8]: mime_type  
 */
 struct GtkFileFilterInfo
-  var contains: I32 = I32(0)
-  var filename: Pointer[U8] = Pointer[U8]
-  var uri: Pointer[U8] = Pointer[U8]
-  var display_name: Pointer[U8] = Pointer[U8]
-  var mime_type: Pointer[U8] = Pointer[U8]
+  var contains: I32 = I32(0) // Typedef
+  var filename: Pointer[U8] = Pointer[U8] // PointerType
+  var uri: Pointer[U8] = Pointer[U8] // PointerType
+  var display_name: Pointer[U8] = Pointer[U8] // PointerType
+  var mime_type: Pointer[U8] = Pointer[U8] // PointerType

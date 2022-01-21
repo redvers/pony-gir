@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=320,fid: f600]: range  
 */
 struct GtkScrollbar
-  embed range: GtkRange = GtkRange
+  embed range: GtkRange = GtkRange // Typedef

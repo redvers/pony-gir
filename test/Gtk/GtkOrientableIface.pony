@@ -18,4 +18,4 @@ use "../Harfbuzz"
      000000: [Struct size=128,fid: f131]: base_iface  
 */
 struct GtkOrientableIface
-  embed base_iface: GTypeInterface = GTypeInterface
+  embed base_iface: GTypeInterface = GTypeInterface // Typedef

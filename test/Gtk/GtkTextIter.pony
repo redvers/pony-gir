@@ -31,17 +31,17 @@ use "../Harfbuzz"
      000576: [PointerType size=64]->[FundamentalType(void) size=0]: dummy14  
 */
 struct GtkTextIter
-  var dummy1: Pointer[None] = Pointer[None]
-  var dummy2: Pointer[None] = Pointer[None]
-  var dummy3: I32 = I32(0)
-  var dummy4: I32 = I32(0)
-  var dummy5: I32 = I32(0)
-  var dummy6: I32 = I32(0)
-  var dummy7: I32 = I32(0)
-  var dummy8: I32 = I32(0)
-  var dummy9: Pointer[None] = Pointer[None]
-  var dummy10: Pointer[None] = Pointer[None]
-  var dummy11: I32 = I32(0)
-  var dummy12: I32 = I32(0)
-  var dummy13: I32 = I32(0)
-  var dummy14: Pointer[None] = Pointer[None]
+  var dummy1: Pointer[None] = Pointer[None] // Typedef
+  var dummy2: Pointer[None] = Pointer[None] // Typedef
+  var dummy3: I32 = I32(0) // Typedef
+  var dummy4: I32 = I32(0) // Typedef
+  var dummy5: I32 = I32(0) // Typedef
+  var dummy6: I32 = I32(0) // Typedef
+  var dummy7: I32 = I32(0) // Typedef
+  var dummy8: I32 = I32(0) // Typedef
+  var dummy9: Pointer[None] = Pointer[None] // Typedef
+  var dummy10: Pointer[None] = Pointer[None] // Typedef
+  var dummy11: I32 = I32(0) // Typedef
+  var dummy12: I32 = I32(0) // Typedef
+  var dummy13: I32 = I32(0) // Typedef
+  var dummy14: Pointer[None] = Pointer[None] // Typedef

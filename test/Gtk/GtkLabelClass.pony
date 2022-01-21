@@ -30,16 +30,16 @@ use "../Harfbuzz"
      007552: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved8  
 */
 struct GtkLabelClass
-  embed parent_class: GtkMiscClass = GtkMiscClass
-  var move_cursor: Pointer[None] = Pointer[None]
-  var copy_clipboard: Pointer[None] = Pointer[None]
-  var populate_popup: Pointer[None] = Pointer[None]
-  var activate_link: Pointer[None] = Pointer[None]
-  var _gtk_reserved1: Pointer[None] = Pointer[None]
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
-  var _gtk_reserved5: Pointer[None] = Pointer[None]
-  var _gtk_reserved6: Pointer[None] = Pointer[None]
-  var _gtk_reserved7: Pointer[None] = Pointer[None]
-  var _gtk_reserved8: Pointer[None] = Pointer[None]
+  embed parent_class: GtkMiscClass = GtkMiscClass // Typedef
+  var move_cursor: Pointer[None] = Pointer[None] // PointerType
+  var copy_clipboard: Pointer[None] = Pointer[None] // PointerType
+  var populate_popup: Pointer[None] = Pointer[None] // PointerType
+  var activate_link: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved1: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved5: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved6: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved7: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved8: Pointer[None] = Pointer[None] // PointerType

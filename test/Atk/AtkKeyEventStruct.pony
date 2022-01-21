@@ -18,10 +18,10 @@ use "../GObject"
      000224: [FundamentalType(unsigned int) size=32]: timestamp  
 */
 struct AtkKeyEventStruct
-  var gtype: I32 = I32(0)
-  var state: U32 = U32(0)
-  var keyval: U32 = U32(0)
-  var length: I32 = I32(0)
-  var string: Pointer[U8] = Pointer[U8]
-  var keycode: U16 = U16(0)
-  var timestamp: U32 = U32(0)
+  var gtype: I32 = I32(0) // Typedef
+  var state: U32 = U32(0) // Typedef
+  var keyval: U32 = U32(0) // Typedef
+  var length: I32 = I32(0) // Typedef
+  var string: Pointer[U8] = Pointer[U8] // PointerType
+  var keycode: U16 = U16(0) // Typedef
+  var timestamp: U32 = U32(0) // Typedef

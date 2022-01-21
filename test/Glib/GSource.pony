@@ -23,16 +23,16 @@ use "../GObject"
      000704: [PointerType size=64]->[Struct size=,fid: f82]: priv  
 */
 struct GSource
-  var callback_data: Pointer[None] = Pointer[None]
-  var callback_funcs: NullablePointer[GSourceCallbackFuncs] = NullablePointer[GSourceCallbackFuncs].none()
-  var source_funcs: NullablePointer[GSourceFuncs] = NullablePointer[GSourceFuncs].none()
-  var ref_count: U32 = U32(0)
-  var context: NullablePointer[GMainContext] = NullablePointer[GMainContext].none()
-  var priority: I32 = I32(0)
-  var flags: U32 = U32(0)
-  var source_id: U32 = U32(0)
-  var poll_fds: NullablePointer[GSList] = NullablePointer[GSList].none()
-  var prev: NullablePointer[GSource] = NullablePointer[GSource].none()
-  var next: NullablePointer[GSource] = NullablePointer[GSource].none()
-  var name: Pointer[U8] = Pointer[U8]
-  var priv: NullablePointer[GSourcePrivate] = NullablePointer[GSourcePrivate].none()
+  var callback_data: Pointer[None] = Pointer[None] // Typedef
+  var callback_funcs: NullablePointer[GSourceCallbackFuncs] = NullablePointer[GSourceCallbackFuncs].none() // PointerType
+  var source_funcs: NullablePointer[GSourceFuncs] = NullablePointer[GSourceFuncs].none() // PointerType
+  var ref_count: U32 = U32(0) // Typedef
+  var context: NullablePointer[GMainContext] = NullablePointer[GMainContext].none() // PointerType
+  var priority: I32 = I32(0) // Typedef
+  var flags: U32 = U32(0) // Typedef
+  var source_id: U32 = U32(0) // Typedef
+  var poll_fds: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
+  var prev: NullablePointer[GSource] = NullablePointer[GSource].none() // PointerType
+  var next: NullablePointer[GSource] = NullablePointer[GSource].none() // PointerType
+  var name: Pointer[U8] = Pointer[U8] // PointerType
+  var priv: NullablePointer[GSourcePrivate] = NullablePointer[GSourcePrivate].none() // PointerType

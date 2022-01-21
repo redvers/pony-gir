@@ -25,11 +25,11 @@ use "../Harfbuzz"
      006976: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _switch_padding_5  
 */
 struct GtkSwitchClass
-  embed parent_class: GtkWidgetClass = GtkWidgetClass
-  var activate: Pointer[None] = Pointer[None]
-  var state_set: Pointer[None] = Pointer[None]
-  var _switch_padding_1: Pointer[None] = Pointer[None]
-  var _switch_padding_2: Pointer[None] = Pointer[None]
-  var _switch_padding_3: Pointer[None] = Pointer[None]
-  var _switch_padding_4: Pointer[None] = Pointer[None]
-  var _switch_padding_5: Pointer[None] = Pointer[None]
+  embed parent_class: GtkWidgetClass = GtkWidgetClass // Typedef
+  var activate: Pointer[None] = Pointer[None] // PointerType
+  var state_set: Pointer[None] = Pointer[None] // PointerType
+  var _switch_padding_1: Pointer[None] = Pointer[None] // PointerType
+  var _switch_padding_2: Pointer[None] = Pointer[None] // PointerType
+  var _switch_padding_3: Pointer[None] = Pointer[None] // PointerType
+  var _switch_padding_4: Pointer[None] = Pointer[None] // PointerType
+  var _switch_padding_5: Pointer[None] = Pointer[None] // PointerType

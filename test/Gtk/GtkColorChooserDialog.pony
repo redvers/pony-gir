@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000512: [PointerType size=64]->[Struct size=,fid: f511]: priv  
 */
 struct GtkColorChooserDialog
-  embed parent_instance: GtkDialog = GtkDialog
-  var priv: NullablePointer[GtkColorChooserDialogPrivate] = NullablePointer[GtkColorChooserDialogPrivate].none()
+  embed parent_instance: GtkDialog = GtkDialog // Typedef
+  var priv: NullablePointer[GtkColorChooserDialogPrivate] = NullablePointer[GtkColorChooserDialogPrivate].none() // PointerType

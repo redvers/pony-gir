@@ -34,20 +34,20 @@ use "../Harfbuzz"
      002048: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: _gtk_reserved4  
 */
 struct GtkCellRendererClass
-  embed parent_class: GObjectClass = GObjectClass
-  var get_request_mode: Pointer[None] = Pointer[None]
-  var get_preferred_width: Pointer[None] = Pointer[None]
-  var get_preferred_height_for_width: Pointer[None] = Pointer[None]
-  var get_preferred_height: Pointer[None] = Pointer[None]
-  var get_preferred_width_for_height: Pointer[None] = Pointer[None]
-  var get_aligned_area: Pointer[None] = Pointer[None]
-  var get_size: Pointer[None] = Pointer[None]
-  var render: Pointer[None] = Pointer[None]
-  var activate: Pointer[None] = Pointer[None]
-  var start_editing: Pointer[None] = Pointer[None]
-  var editing_canceled: Pointer[None] = Pointer[None]
-  var editing_started: Pointer[None] = Pointer[None]
-  var priv: NullablePointer[GtkCellRendererClassPrivate] = NullablePointer[GtkCellRendererClassPrivate].none()
-  var _gtk_reserved2: Pointer[None] = Pointer[None]
-  var _gtk_reserved3: Pointer[None] = Pointer[None]
-  var _gtk_reserved4: Pointer[None] = Pointer[None]
+  embed parent_class: GObjectClass = GObjectClass // Typedef
+  var get_request_mode: Pointer[None] = Pointer[None] // PointerType
+  var get_preferred_width: Pointer[None] = Pointer[None] // PointerType
+  var get_preferred_height_for_width: Pointer[None] = Pointer[None] // PointerType
+  var get_preferred_height: Pointer[None] = Pointer[None] // PointerType
+  var get_preferred_width_for_height: Pointer[None] = Pointer[None] // PointerType
+  var get_aligned_area: Pointer[None] = Pointer[None] // PointerType
+  var get_size: Pointer[None] = Pointer[None] // PointerType
+  var render: Pointer[None] = Pointer[None] // PointerType
+  var activate: Pointer[None] = Pointer[None] // PointerType
+  var start_editing: Pointer[None] = Pointer[None] // PointerType
+  var editing_canceled: Pointer[None] = Pointer[None] // PointerType
+  var editing_started: Pointer[None] = Pointer[None] // PointerType
+  var priv: NullablePointer[GtkCellRendererClassPrivate] = NullablePointer[GtkCellRendererClassPrivate].none() // PointerType
+  var _gtk_reserved2: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved3: Pointer[None] = Pointer[None] // PointerType
+  var _gtk_reserved4: Pointer[None] = Pointer[None] // PointerType

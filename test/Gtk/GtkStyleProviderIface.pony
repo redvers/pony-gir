@@ -21,7 +21,7 @@ use "../Harfbuzz"
      000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: get_icon_factory  
 */
 struct GtkStyleProviderIface
-  embed g_iface: GTypeInterface = GTypeInterface
-  var get_style: Pointer[None] = Pointer[None]
-  var get_style_property: Pointer[None] = Pointer[None]
-  var get_icon_factory: Pointer[None] = Pointer[None]
+  embed g_iface: GTypeInterface = GTypeInterface // Typedef
+  var get_style: Pointer[None] = Pointer[None] // PointerType
+  var get_style_property: Pointer[None] = Pointer[None] // PointerType
+  var get_icon_factory: Pointer[None] = Pointer[None] // PointerType

@@ -19,5 +19,5 @@ use "../Harfbuzz"
      000384: [PointerType size=64]->[Struct size=,fid: f571]: priv  
 */
 struct GtkPopover
-  embed parent_instance: GtkBin = GtkBin
-  var priv: NullablePointer[GtkPopoverPrivate] = NullablePointer[GtkPopoverPrivate].none()
+  embed parent_instance: GtkBin = GtkBin // Typedef
+  var priv: NullablePointer[GtkPopoverPrivate] = NullablePointer[GtkPopoverPrivate].none() // PointerType
