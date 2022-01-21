@@ -2,13 +2,21 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="text" omit-xml-declaration="yes" indent="no"/>
 <xsl:strip-space elements="*"/>
+<xsl:param name="fid"/>
 
+
+<xsl:template match="/castxml2pony/CastXML/Function[@file=$fid]">
+	<xsl:variable name="functionid"><xsl:value-of select="./@id"/></xsl:variable>
+	<xsl:if test="/castxml2pony/renderuses/renderuse[@id=$functionid]/@render eq '1'">
+		<xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@id=$functionid]"/><xsl:with-param name="render" select="1"/></xsl:call-template>
+	</xsl:if>
+</xsl:template>
+<!--
 <xsl:template match="/castxml2pony/renderuses/renderuse[@render='1']">
 	<xsl:variable name="iid" select="@id"/>
 	<xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@id=$iid]"/><xsl:with-param name="render" select="@render"/></xsl:call-template>
 </xsl:template>
 
-<!--
 <xsl:template match="/castxml2pony/renderstructs/renderstruct[@render='0']">
 	<xsl:apply-templates select="/castxml2pony/structs/struct" mode="inactive"/>*/
 </xsl:template>
