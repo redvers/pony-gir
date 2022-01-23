@@ -4111,7 +4111,7 @@
      ponyname="gtk_window_new"
      fid="f403"
      lineno="147"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkWindow]">
      <useargs>
        <usearg name="type" type="I32"/>
      </useargs>
@@ -6193,14 +6193,14 @@
      ponyname="gtk_dialog_new"
      fid="f441"
      lineno="146"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkDialog]">
      <useargs/>
   </use>
   <use id="_12083" name="gtk_dialog_new_with_buttons"
      ponyname="gtk_dialog_new_with_buttons"
      fid="f441"
      lineno="149"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkDialog]">
      <useargs>
        <usearg name="title" type="String"/>
        <usearg name="parent" type="NullablePointer[GtkWindow]"/>
@@ -6416,7 +6416,7 @@
      ponyname="gtk_about_dialog_new"
      fid="f442"
      lineno="132"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkAboutDialog]">
      <useargs/>
   </use>
   <use id="_12118" name="gtk_show_about_dialog"
@@ -6972,14 +6972,14 @@
      ponyname="gtk_menu_new"
      fid="f445"
      lineno="132"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkMenu]">
      <useargs/>
   </use>
   <use id="_12213" name="gtk_menu_new_from_model"
      ponyname="gtk_menu_new_from_model"
      fid="f445"
      lineno="134"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkMenu]">
      <useargs>
        <usearg name="model" type="NullablePointer[GMenuModel]"/>
      </useargs>
@@ -7343,7 +7343,7 @@
      ponyname="gtk_label_new"
      fid="f446"
      lineno="91"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkLabel]">
      <useargs>
        <usearg name="str" type="String"/>
      </useargs>
@@ -7352,7 +7352,7 @@
      ponyname="gtk_label_new_with_mnemonic"
      fid="f446"
      lineno="93"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkLabel]">
      <useargs>
        <usearg name="str" type="String"/>
      </useargs>
@@ -7874,7 +7874,7 @@
      ponyname="gtk_accel_label_new"
      fid="f447"
      lineno="85"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkAccelLabel]">
      <useargs>
        <usearg name="string" type="String"/>
      </useargs>
@@ -8300,7 +8300,7 @@
      ponyname="gtk_action_bar_new"
      fid="f451"
      lineno="63"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkActionBar]">
      <useargs/>
   </use>
   <use id="_12403" name="gtk_action_bar_get_center_widget"
@@ -8387,7 +8387,7 @@
      ponyname="gtk_app_chooser_dialog_new"
      fid="f453"
      lineno="72"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkAppChooser]">
      <useargs>
        <usearg name="parent" type="NullablePointer[GtkWindow]"/>
        <usearg name="flags" type="I32"/>
@@ -8398,7 +8398,7 @@
      ponyname="gtk_app_chooser_dialog_new_for_content_type"
      fid="f453"
      lineno="76"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkAppChooser]">
      <useargs>
        <usearg name="parent" type="NullablePointer[GtkWindow]"/>
        <usearg name="flags" type="I32"/>
@@ -8444,7 +8444,7 @@
      ponyname="gtk_box_new"
      fid="f454"
      lineno="80"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkBox]">
      <useargs>
        <usearg name="orientation" type="I32"/>
        <usearg name="spacing" type="I32"/>
@@ -8602,7 +8602,7 @@
      ponyname="gtk_app_chooser_widget_new"
      fid="f455"
      lineno="91"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkAppChooser]">
      <useargs>
        <usearg name="contenttype" type="String"/>
      </useargs>
@@ -14452,14 +14452,14 @@
      ponyname="gtk_image_new"
      fid="f477"
      lineno="114"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs/>
   </use>
   <use id="_13100" name="gtk_image_new_from_file"
      ponyname="gtk_image_new_from_file"
      fid="f477"
      lineno="116"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="filename" type="String"/>
      </useargs>
@@ -14468,7 +14468,7 @@
      ponyname="gtk_image_new_from_resource"
      fid="f477"
      lineno="118"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="resourcepath" type="String"/>
      </useargs>
@@ -14477,7 +14477,7 @@
      ponyname="gtk_image_new_from_pixbuf"
      fid="f477"
      lineno="120"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="pixbuf" type="NullablePointer[GdkPixbuf]"/>
      </useargs>
@@ -14486,7 +14486,7 @@
      ponyname="gtk_image_new_from_stock"
      fid="f477"
      lineno="122"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="stockid" type="String"/>
        <usearg name="size" type="I32"/>
@@ -14496,7 +14496,7 @@
      ponyname="gtk_image_new_from_icon_set"
      fid="f477"
      lineno="125"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="iconset" type="NullablePointer[GtkIconSet]"/>
        <usearg name="size" type="I32"/>
@@ -14506,7 +14506,7 @@
      ponyname="gtk_image_new_from_animation"
      fid="f477"
      lineno="128"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="animation" type="NullablePointer[GdkPixbufAnimation]"/>
      </useargs>
@@ -14515,7 +14515,7 @@
      ponyname="gtk_image_new_from_icon_name"
      fid="f477"
      lineno="130"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="iconname" type="String"/>
        <usearg name="size" type="I32"/>
@@ -14525,7 +14525,7 @@
      ponyname="gtk_image_new_from_gicon"
      fid="f477"
      lineno="133"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="icon" type="NullablePointer[GIcon]"/>
        <usearg name="size" type="I32"/>
@@ -14535,7 +14535,7 @@
      ponyname="gtk_image_new_from_surface"
      fid="f477"
      lineno="136"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkImage]">
      <useargs>
        <usearg name="surface" type="NullablePointer[Cairosurface]"/>
      </useargs>
@@ -14744,14 +14744,14 @@
      ponyname="gtk_entry_new"
      fid="f478"
      lineno="177"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkEntry]">
      <useargs/>
   </use>
   <use id="_13138" name="gtk_entry_new_with_buffer"
      ponyname="gtk_entry_new_with_buffer"
      fid="f478"
      lineno="179"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkEntry]">
      <useargs>
        <usearg name="buffer" type="NullablePointer[GtkEntryBuffer]"/>
      </useargs>
@@ -15492,7 +15492,7 @@
      ponyname="gtk_tree_view_new"
      fid="f479"
      lineno="208"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkTreeView]">
      <useargs/>
   </use>
   <use id="_13232" name="gtk_tree_view_new_with_model"
@@ -16763,14 +16763,14 @@
      ponyname="gtk_combo_box_new"
      fid="f481"
      lineno="81"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkComboBox]">
      <useargs/>
   </use>
   <use id="_13341" name="gtk_combo_box_new_with_area"
      ponyname="gtk_combo_box_new_with_area"
      fid="f481"
      lineno="83"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkComboBox]">
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
      </useargs>
@@ -16779,7 +16779,7 @@
      ponyname="gtk_combo_box_new_with_area_and_entry"
      fid="f481"
      lineno="85"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkComboBox]">
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
      </useargs>

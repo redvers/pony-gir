@@ -1,2 +1,3 @@
 all:
 	ponyc -d .
+	./test

@@ -21,3 +21,8 @@ use "../Harfbuzz"
 struct GtkFrame
   embed bin: GtkBin = GtkBin // Typedef
   var priv: NullablePointer[GtkFramePrivate] = NullablePointer[GtkFramePrivate].none() // PointerType
+
+  fun ref gtkbin():    GtkBin       => bin
+  fun ref container(): GtkContainer => bin.container
+  fun ref widget():    GtkWidget    => bin.container.widget
+  fun ref gobject():   GObject      => bin.container.widget.parent_instance

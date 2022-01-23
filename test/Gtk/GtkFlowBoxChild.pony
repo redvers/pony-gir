@@ -18,4 +18,9 @@ use "../Harfbuzz"
      000000: [Struct size=384,fid: f439]: parent_instance  
 */
 struct GtkFlowBoxChild
-  embed parent_instance: GtkBin = GtkBin // Typedef
+  embed bin: GtkBin = GtkBin // Typedef
+
+  fun ref gtkbin():    GtkBin       => bin
+  fun ref container(): GtkContainer => bin.container
+  fun ref widget():    GtkWidget    => bin.container.widget
+  fun ref gobject():   GObject      => bin.container.widget.parent_instance

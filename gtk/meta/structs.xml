@@ -1173,7 +1173,7 @@
   </struct>
 
   <struct name="GtkComboBox" id="_13333" size="448" align="64" fid="f481" lineno="42">
-    <field name="parent_instance" id="_24804" type="GtkBin" fieldid="_11900" offset="0" fid="f481" line="44"/>
+    <field name="bin" id="_24804" type="GtkBin" fieldid="_11900" offset="0" fid="f481" line="44"/>
     <field name="priv" id="_24805" type="NullablePointer[GtkComboBoxPrivate]" fieldid="_28471" offset="384" fid="f481" line="47"/>
   </struct>
 
@@ -1994,7 +1994,7 @@
   </struct>
 
   <struct name="GtkFlowBoxChild" id="_14298" size="384" align="64" fid="f535" lineno="86">
-    <field name="parent_instance" id="_25409" type="GtkBin" fieldid="_11900" offset="0" fid="f535" line="88"/>
+    <field name="bin" id="_25409" type="GtkBin" fieldid="_11900" offset="0" fid="f535" line="88"/>
   </struct>
 
   <struct name="GtkFlowBoxChildClass" id="_14300" size="8256" align="64" fid="f535" lineno="91">
@@ -2411,7 +2411,7 @@
   </struct>
 
   <struct name="GtkListBoxRow" id="_14993" size="384" align="64" fid="f567" lineno="98">
-    <field name="parent_instance" id="_25725" type="GtkBin" fieldid="_11900" offset="0" fid="f567" line="100"/>
+    <field name="bin" id="_25725" type="GtkBin" fieldid="_11900" offset="0" fid="f567" line="100"/>
   </struct>
 
   <struct name="GtkListBoxRowClass" id="_14995" size="8256" align="64" fid="f567" lineno="108">
@@ -2460,7 +2460,7 @@
   </struct>
 
   <struct name="GtkPopover" id="_15122" size="448" align="64" fid="f571" lineno="40">
-    <field name="parent_instance" id="_25767" type="GtkBin" fieldid="_11900" offset="0" fid="f571" line="42"/>
+    <field name="bin" id="_25767" type="GtkBin" fieldid="_11900" offset="0" fid="f571" line="42"/>
     <field name="priv" id="_25768" type="NullablePointer[GtkPopoverPrivate]" fieldid="_28639" offset="384" fid="f571" line="46"/>
   </struct>
 
@@ -2509,7 +2509,7 @@
   </struct>
 
   <struct name="GtkToolItem" id="_15183" size="448" align="64" fid="f574" lineno="45">
-    <field name="parent" id="_25798" type="GtkBin" fieldid="_11900" offset="0" fid="f574" line="47"/>
+    <field name="bin" id="_25798" type="GtkBin" fieldid="_11900" offset="0" fid="f574" line="47"/>
     <field name="priv" id="_25799" type="NullablePointer[GtkToolItemPrivate]" fieldid="_28643" offset="384" fid="f574" line="50"/>
   </struct>
 
@@ -2655,7 +2655,7 @@
   </struct>
 
   <struct name="GtkOverlay" id="_15361" size="448" align="64" fid="f584" lineno="43">
-    <field name="parent" id="_25903" type="GtkBin" fieldid="_11900" offset="0" fid="f584" line="45"/>
+    <field name="bin" id="_25903" type="GtkBin" fieldid="_11900" offset="0" fid="f584" line="45"/>
     <field name="priv" id="_25904" type="NullablePointer[GtkOverlayPrivate]" fieldid="_28663" offset="384" fid="f584" line="47"/>
   </struct>
 
@@ -3033,7 +3033,7 @@
   </struct>
 
   <struct name="GtkRevealer" id="_15925" size="384" align="64" fid="f608" lineno="49">
-    <field name="parent_instance" id="_26180" type="GtkBin" fieldid="_11900" offset="0" fid="f608" line="50"/>
+    <field name="bin" id="_26180" type="GtkBin" fieldid="_11900" offset="0" fid="f608" line="50"/>
   </struct>
 
   <struct name="GtkRevealerClass" id="_15927" size="8064" align="64" fid="f608" lineno="57">
@@ -3100,7 +3100,7 @@
   </struct>
 
   <struct name="GtkScrolledWindow" id="_15997" size="448" align="64" fid="f613" lineno="49">
-    <field name="container" id="_26225" type="GtkBin" fieldid="_11900" offset="0" fid="f613" line="51"/>
+    <field name="bin" id="_26225" type="GtkBin" fieldid="_11900" offset="0" fid="f613" line="51"/>
     <field name="priv" id="_26226" type="NullablePointer[GtkScrolledWindowPrivate]" fieldid="_28724" offset="384" fid="f613" line="53"/>
   </struct>
 
@@ -3120,7 +3120,7 @@
   </struct>
 
   <struct name="GtkSearchBar" id="_16041" size="384" align="64" fid="f614" lineno="49">
-    <field name="parent" id="_26242" type="GtkBin" fieldid="_11900" offset="0" fid="f614" line="52"/>
+    <field name="bin" id="_26242" type="GtkBin" fieldid="_11900" offset="0" fid="f614" line="52"/>
   </struct>
 
   <struct name="GtkSearchBarClass" id="_16043" size="8320" align="64" fid="f614" lineno="59">
@@ -3230,7 +3230,7 @@
   </struct>
 
   <struct name="GtkStackSidebar" id="_16163" size="384" align="64" fid="f625" lineno="45">
-    <field name="parent" id="_26317" type="GtkBin" fieldid="_11900" offset="0" fid="f625" line="47"/>
+    <field name="bin" id="_26317" type="GtkBin" fieldid="_11900" offset="0" fid="f625" line="47"/>
   </struct>
 
   <struct name="GtkStackSidebarPrivate" id="_16165" size="" align="" fid="f625" lineno="42">

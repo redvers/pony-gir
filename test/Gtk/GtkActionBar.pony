@@ -19,3 +19,8 @@ use "../Harfbuzz"
 */
 struct GtkActionBar
   embed bin: GtkBin = GtkBin // Typedef
+
+  fun ref gtkbin():    GtkBin       => bin
+  fun ref container(): GtkContainer => bin.container
+  fun ref widget():    GtkWidget    => bin.container.widget
+  fun ref gobject():   GObject      => bin.container.widget.parent_instance
