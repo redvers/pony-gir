@@ -124,30 +124,3 @@
 <xsl:template match="suffix"></xsl:template>
 
 </xsl:stylesheet>
-<!--
-<xsl:value-of select="$n/@name"/>[]()<xsl:text>
-</xsl:text>
-
-<xsl:if test="$render='1'"><xsl:apply-templates select="$n/field" mode="generateField"/></xsl:if>
--->
-<!--
--->
-<!--
-
-
-
-
-<xsl:template name="fileName">
-  <xsl:param name="str" />
-  <xsl:choose>
-    <xsl:when test="normalize-space(substring-after($str,'/'))">
-      <xsl:call-template name="fileName">
-        <xsl:with-param name="str" select="substring-after($str,'/')" />
-      </xsl:call-template>  
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:value-of select="$str" />
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:template>
--->
