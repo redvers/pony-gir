@@ -1,0 +1,3 @@
+gtk_popover_menu_get_type
+gtk_popover_menu_new
+gtk_popover_menu_open_submenu

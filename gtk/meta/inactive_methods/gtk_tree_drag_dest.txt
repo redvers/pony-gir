@@ -1,0 +1,3 @@
+gtk_tree_drag_dest_get_type
+gtk_tree_drag_dest_drag_data_received
+gtk_tree_drag_dest_row_drop_possible

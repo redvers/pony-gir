@@ -1,0 +1,4 @@
+gtk_text_direction_get_type
+gtk_text_search_flags_get_type
+gtk_text_window_type_get_type
+gtk_text_extend_selection_get_type

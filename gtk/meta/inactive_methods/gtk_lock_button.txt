@@ -1,0 +1,4 @@
+gtk_lock_button_get_type
+gtk_lock_button_new
+gtk_lock_button_get_permission
+gtk_lock_button_set_permission

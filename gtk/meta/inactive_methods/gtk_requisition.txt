@@ -1,0 +1,4 @@
+gtk_requisition_get_type
+gtk_requisition_new
+gtk_requisition_copy
+gtk_requisition_free

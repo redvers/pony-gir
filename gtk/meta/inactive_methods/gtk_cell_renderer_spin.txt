@@ -1,0 +1,2 @@
+gtk_cell_renderer_spin_get_type
+gtk_cell_renderer_spin_new

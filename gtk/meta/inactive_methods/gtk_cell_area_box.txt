@@ -1,0 +1,6 @@
+gtk_cell_area_box_get_type
+gtk_cell_area_box_new
+gtk_cell_area_box_pack_start
+gtk_cell_area_box_pack_end
+gtk_cell_area_box_get_spacing
+gtk_cell_area_box_set_spacing

@@ -1,0 +1,5 @@
+gtk_event_controller_scroll_get_type
+gtk_event_controller_scroll_new
+gtk_event_controller_scroll_set_flags
+gtk_event_controller_scroll_get_flags
+gtk_event_controller_scroll_flags_get_type

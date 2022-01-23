@@ -1,0 +1,2 @@
+gtk_file_chooser_widget_get_type
+gtk_file_chooser_widget_new

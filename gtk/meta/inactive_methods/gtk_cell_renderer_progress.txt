@@ -1,0 +1,2 @@
+gtk_cell_renderer_progress_get_type
+gtk_cell_renderer_progress_new

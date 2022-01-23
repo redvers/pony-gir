@@ -1,0 +1,5 @@
+gtk_invisible_get_type
+gtk_invisible_new
+gtk_invisible_new_for_screen
+gtk_invisible_set_screen
+gtk_invisible_get_screen

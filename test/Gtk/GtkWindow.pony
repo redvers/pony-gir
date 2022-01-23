@@ -7,6 +7,22 @@ use "../Gdk"
 use "../Gio"
 use "../Harfbuzz"
 
+use "lib:gtk-3"
+use "lib:gdk-3"
+use "lib:z"
+use "lib:pangocairo-1.0"
+use "lib:pango-1.0"
+use "lib:harfbuzz"
+use "lib:atk-1.0"
+use "lib:cairo-gobject"
+use "lib:cairo"
+use "lib:gdk_pixbuf-2.0"
+use "lib:glib-2.0"
+
+use @gtk_window_new[GtkWindow](gtype: I32)
+use @gtk_window_set_title[None](window: GtkWindow, title: Pointer[U8] tag)
+use @gtk_window_get_title[Pointer[U8]](window: GtkWindow)
+
 
 /*
   Source: headers/gtk-3.0/gtk/gtkwindow.h:53

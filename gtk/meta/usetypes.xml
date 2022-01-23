@@ -1321,13 +1321,13 @@
 
   <typedef name="NullablePointer[GtkWindow]"
     embed="var"
-    ponytypein="NullablePointer[GtkWindow] tag"
+    ponytypein="GtkWindow tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GtkWindow]"
+    ponytypeout="GtkWindow"
     structtype="NullablePointer[GtkWindow]"
     structdef="NullablePointer[GtkWindow].none()"
-    argtype="NullablePointer[GtkWindow] tag"
-    rvtype="NullablePointer[GtkWindow]"/>
+    argtype="GtkWindow"
+    rvtype="GtkWindow"/>
 
   <typedef name="NullablePointer[GtkSelectionData]"
     embed="var"

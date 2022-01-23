@@ -1,0 +1,6 @@
+gtk_color_chooser_get_type
+gtk_color_chooser_get_rgba
+gtk_color_chooser_set_rgba
+gtk_color_chooser_get_use_alpha
+gtk_color_chooser_set_use_alpha
+gtk_color_chooser_add_palette

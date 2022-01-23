@@ -1,0 +1,5 @@
+gtk_gesture_stylus_get_type
+gtk_gesture_stylus_new
+gtk_gesture_stylus_get_axis
+gtk_gesture_stylus_get_axes
+gtk_gesture_stylus_get_device_tool

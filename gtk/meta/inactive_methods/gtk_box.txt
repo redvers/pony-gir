@@ -1,0 +1,15 @@
+gtk_box_get_type
+gtk_box_new
+gtk_box_pack_start
+gtk_box_pack_end
+gtk_box_set_homogeneous
+gtk_box_get_homogeneous
+gtk_box_set_spacing
+gtk_box_get_spacing
+gtk_box_set_baseline_position
+gtk_box_get_baseline_position
+gtk_box_reorder_child
+gtk_box_query_child_packing
+gtk_box_set_child_packing
+gtk_box_set_center_widget
+gtk_box_get_center_widget

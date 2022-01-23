@@ -1,0 +1,3 @@
+gtk_search_entry_get_type
+gtk_search_entry_new
+gtk_search_entry_handle_event

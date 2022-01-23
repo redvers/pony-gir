@@ -1,0 +1,3 @@
+gtk_aspect_frame_get_type
+gtk_aspect_frame_new
+gtk_aspect_frame_set

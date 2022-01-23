@@ -1,0 +1,5 @@
+gtk_misc_get_type
+gtk_misc_set_alignment
+gtk_misc_get_alignment
+gtk_misc_set_padding
+gtk_misc_get_padding

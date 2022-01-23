@@ -1,0 +1,4 @@
+gtk_gesture_pan_get_type
+gtk_gesture_pan_new
+gtk_gesture_pan_get_orientation
+gtk_gesture_pan_set_orientation

@@ -1,0 +1,3 @@
+gtk_orientable_get_type
+gtk_orientable_set_orientation
+gtk_orientable_get_orientation

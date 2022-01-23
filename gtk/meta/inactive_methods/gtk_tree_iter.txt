@@ -1,0 +1,3 @@
+gtk_tree_iter_copy
+gtk_tree_iter_free
+gtk_tree_iter_get_type

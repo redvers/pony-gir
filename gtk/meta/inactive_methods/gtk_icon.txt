@@ -1,0 +1,2 @@
+gtk_icon_size_get_type
+gtk_icon_lookup_flags_get_type

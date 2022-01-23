@@ -1,0 +1,2 @@
+gtk_gesture_long_press_get_type
+gtk_gesture_long_press_new

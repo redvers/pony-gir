@@ -1,0 +1,4 @@
+gtk_fixed_get_type
+gtk_fixed_new
+gtk_fixed_put
+gtk_fixed_move

@@ -1,0 +1,4 @@
+gtk_gesture_drag_get_type
+gtk_gesture_drag_new
+gtk_gesture_drag_get_start_point
+gtk_gesture_drag_get_offset

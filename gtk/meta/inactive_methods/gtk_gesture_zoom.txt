@@ -1,0 +1,3 @@
+gtk_gesture_zoom_get_type
+gtk_gesture_zoom_new
+gtk_gesture_zoom_get_scale_delta

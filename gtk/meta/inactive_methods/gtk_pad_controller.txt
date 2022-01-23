@@ -1,0 +1,4 @@
+gtk_pad_controller_get_type
+gtk_pad_controller_new
+gtk_pad_controller_set_action_entries
+gtk_pad_controller_set_action

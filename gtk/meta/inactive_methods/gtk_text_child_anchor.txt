@@ -1,0 +1,4 @@
+gtk_text_child_anchor_get_type
+gtk_text_child_anchor_new
+gtk_text_child_anchor_get_widgets
+gtk_text_child_anchor_get_deleted

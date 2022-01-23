@@ -1,0 +1,6 @@
+gtk_shortcut_label_get_type
+gtk_shortcut_label_new
+gtk_shortcut_label_get_accelerator
+gtk_shortcut_label_set_accelerator
+gtk_shortcut_label_get_disabled_text
+gtk_shortcut_label_set_disabled_text

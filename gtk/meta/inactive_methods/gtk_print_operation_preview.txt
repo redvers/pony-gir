@@ -1,0 +1,4 @@
+gtk_print_operation_preview_get_type
+gtk_print_operation_preview_render_page
+gtk_print_operation_preview_end_preview
+gtk_print_operation_preview_is_selected

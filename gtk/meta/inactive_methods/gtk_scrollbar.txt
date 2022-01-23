@@ -1,0 +1,2 @@
+gtk_scrollbar_get_type
+gtk_scrollbar_new

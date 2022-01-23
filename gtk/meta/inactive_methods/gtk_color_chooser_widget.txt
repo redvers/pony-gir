@@ -1,0 +1,2 @@
+gtk_color_chooser_widget_get_type
+gtk_color_chooser_widget_new

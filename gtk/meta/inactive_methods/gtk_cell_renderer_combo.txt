@@ -1,0 +1,2 @@
+gtk_cell_renderer_combo_get_type
+gtk_cell_renderer_combo_new

@@ -1,0 +1,2 @@
+gtk_drawing_area_get_type
+gtk_drawing_area_new

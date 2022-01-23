@@ -1,0 +1,4 @@
+gtk_cell_editable_get_type
+gtk_cell_editable_start_editing
+gtk_cell_editable_editing_done
+gtk_cell_editable_remove_widget

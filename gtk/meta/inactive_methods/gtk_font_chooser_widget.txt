@@ -1,0 +1,2 @@
+gtk_font_chooser_widget_get_type
+gtk_font_chooser_widget_new

@@ -1,0 +1,7 @@
+gtk_text_tag_table_get_type
+gtk_text_tag_table_new
+gtk_text_tag_table_add
+gtk_text_tag_table_remove
+gtk_text_tag_table_lookup
+gtk_text_tag_table_foreach
+gtk_text_tag_table_get_size

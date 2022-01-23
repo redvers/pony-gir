@@ -1,0 +1,2 @@
+gtk_icon_set_render_icon_pixbuf
+gtk_icon_set_render_icon_surface

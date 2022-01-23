@@ -1,0 +1,2 @@
+gtk_cell_renderer_spinner_get_type
+gtk_cell_renderer_spinner_new

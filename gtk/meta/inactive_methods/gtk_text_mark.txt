@@ -1,0 +1,8 @@
+gtk_text_mark_get_type
+gtk_text_mark_new
+gtk_text_mark_set_visible
+gtk_text_mark_get_visible
+gtk_text_mark_get_name
+gtk_text_mark_get_deleted
+gtk_text_mark_get_buffer
+gtk_text_mark_get_left_gravity

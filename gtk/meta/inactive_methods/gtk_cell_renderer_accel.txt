@@ -1,0 +1,3 @@
+gtk_cell_renderer_accel_get_type
+gtk_cell_renderer_accel_new
+gtk_cell_renderer_accel_mode_get_type

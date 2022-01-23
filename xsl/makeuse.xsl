@@ -2,34 +2,25 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="text" omit-xml-declaration="yes" indent="no"/>
 <xsl:strip-space elements="*"/>
-<xsl:param name="fid"/>
+<xsl:param name="debug" />
 
-
-<xsl:template match="/castxml2pony/CastXML/Function[@file=$fid]">
-	<xsl:variable name="functionid"><xsl:value-of select="./@id"/></xsl:variable>
-	<xsl:if test="/castxml2pony/renderuses/renderuse[@id=$functionid]/@render eq '1'">
-		<xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@id=$functionid]"/><xsl:with-param name="render" select="1"/></xsl:call-template>
-	</xsl:if>
-</xsl:template>
-<!--
-<xsl:template match="/castxml2pony/renderuses/renderuse[@render='1']">
-	<xsl:variable name="iid" select="@id"/>
-	<xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@id=$iid]"/><xsl:with-param name="render" select="@render"/></xsl:call-template>
+<xsl:template match="/castxml2pony/renders/renderuse[@render='1']"> 
+  <xsl:variable name="fnname" select="./@name"/>
+  <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="1"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
 </xsl:template>
 
-<xsl:template match="/castxml2pony/renderstructs/renderstruct[@render='0']">
-	<xsl:apply-templates select="/castxml2pony/structs/struct" mode="inactive"/>*/
-</xsl:template>
--->
+
 <xsl:template name="mainuse">
 <xsl:param name="n" />
 <xsl:param name="render" />
+<xsl:param name="debug" />
+<xsl:variable name="fid" select="$n/@fid"/>
+<xsl:variable name="originalid" select="$n/@id"/>
+<xsl:if test="$debug eq '1'">
 <xsl:text>
 
 /*
   Source: </xsl:text>
-    <xsl:variable name="fid" select="$n/@fid"/>
-    <xsl:variable name="originalid" select="$n/@id"/>
     <xsl:value-of select="/castxml2pony/CastXML/File[@id=$fid]/@name"/>:<xsl:value-of select="$n/@lineno"/>
     <xsl:variable name="fnode" select="/castxml2pony/CastXML/Function[@id=$originalid]"/>
   Original Name: <xsl:value-of select="$fnode/@name"/>
@@ -40,12 +31,11 @@
 
   Arguments:
 <xsl:apply-templates select="/castxml2pony/CastXML/Function[@id=$originalid]/Argument" mode="generateCommentArg"/>*/
-<xsl:variable name="args">
+</xsl:if><xsl:variable name="args">
   <xsl:apply-templates select="/castxml2pony/uses/use[@id=$originalid]/useargs/usearg" mode="generateArgument"/>
 </xsl:variable>
 <xsl:variable name="rrv" select="$n/@rv"/>
 <xsl:if test="$render='0'">// </xsl:if><xsl:text>use @</xsl:text><xsl:value-of select="$n/@name"/>[<xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$rrv]/@rvtype"/>](<xsl:value-of select="$args"/>)
-
 </xsl:template>
 
 <xsl:template match="usearg" mode="generateArgument">

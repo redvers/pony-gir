@@ -1,0 +1,4 @@
+gtk_stack_switcher_get_type
+gtk_stack_switcher_new
+gtk_stack_switcher_set_stack
+gtk_stack_switcher_get_stack

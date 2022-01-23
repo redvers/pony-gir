@@ -1,0 +1,5 @@
+gtk_border_get_type
+gtk_border_new
+gtk_border_copy
+gtk_border_free
+gtk_border_style_get_type

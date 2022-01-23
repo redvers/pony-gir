@@ -1,0 +1,5 @@
+gtk_im_multicontext_get_type
+gtk_im_multicontext_new
+gtk_im_multicontext_append_menuitems
+gtk_im_multicontext_get_context_id
+gtk_im_multicontext_set_context_id

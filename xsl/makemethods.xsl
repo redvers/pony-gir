@@ -2,17 +2,17 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="text" omit-xml-declaration="yes" indent="no"/>
 <xsl:strip-space elements="*"/>
-<xsl:param name="struct"/>
 
 
-<xsl:template match="/castxml2pony/uses/use">
+<xsl:template match="/castxml2pony/renders/renderuse[@render='1']">
+	foo
+</xsl:template>
+<!--
 	<xsl:if test="./useargs/usearg[1][@type=concat('NullablePointer[', $struct, ']')]">
 		<xsl:value-of select="@name"/>
 		<xsl:text>
 		</xsl:text>
 	</xsl:if>
-</xsl:template>
-<!--
 <xsl:template match="/castxml2pony/CastXML/Function[@file=$fid]">
 	<xsl:variable name="functionid"><xsl:value-of select="./@id"/></xsl:variable>
 	<xsl:if test="/castxml2pony/renderuses/renderuse[@id=$functionid]/@render eq '1'">

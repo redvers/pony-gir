@@ -1,0 +1,4 @@
+gtk_stack_sidebar_get_type
+gtk_stack_sidebar_new
+gtk_stack_sidebar_set_stack
+gtk_stack_sidebar_get_stack

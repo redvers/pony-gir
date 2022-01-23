@@ -1,0 +1,7 @@
+gtk_link_button_get_type
+gtk_link_button_new
+gtk_link_button_new_with_label
+gtk_link_button_get_uri
+gtk_link_button_set_uri
+gtk_link_button_get_visited
+gtk_link_button_set_visited

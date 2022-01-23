@@ -1,0 +1,3 @@
+gtk_gesture_rotate_get_type
+gtk_gesture_rotate_new
+gtk_gesture_rotate_get_angle_delta

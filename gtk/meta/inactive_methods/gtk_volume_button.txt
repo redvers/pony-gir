@@ -1,0 +1,2 @@
+gtk_volume_button_get_type
+gtk_volume_button_new

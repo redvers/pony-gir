@@ -1,0 +1,4 @@
+gtk_spinner_get_type
+gtk_spinner_new
+gtk_spinner_start
+gtk_spinner_stop

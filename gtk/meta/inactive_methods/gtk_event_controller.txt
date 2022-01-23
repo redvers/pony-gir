@@ -1,0 +1,6 @@
+gtk_event_controller_get_type
+gtk_event_controller_get_widget
+gtk_event_controller_handle_event
+gtk_event_controller_reset
+gtk_event_controller_get_propagation_phase
+gtk_event_controller_set_propagation_phase

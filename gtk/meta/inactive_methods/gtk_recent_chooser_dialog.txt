@@ -1,0 +1,3 @@
+gtk_recent_chooser_dialog_get_type
+gtk_recent_chooser_dialog_new
+gtk_recent_chooser_dialog_new_for_manager

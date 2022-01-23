@@ -1,0 +1,2 @@
+gtk_model_button_get_type
+gtk_model_button_new

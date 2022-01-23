@@ -1,0 +1,3 @@
+gtk_gesture_swipe_get_type
+gtk_gesture_swipe_new
+gtk_gesture_swipe_get_velocity

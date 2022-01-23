@@ -1,0 +1,2 @@
+gtk_separator_get_type
+gtk_separator_new
