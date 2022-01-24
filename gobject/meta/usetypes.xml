@@ -131,23 +131,23 @@
 
   <typedef name="NullablePointer[GTypeModule]"
     embed="var"
-    ponytypein="NullablePointer[GTypeModule] tag"
+    ponytypein="GTypeModule tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GTypeModule]"
-    structtype="NullablePointer[GTypeModule]"
-    structdef="NullablePointer[GTypeModule].none()"
-    argtype="NullablePointer[GTypeModule] tag"
-    rvtype="NullablePointer[GTypeModule]"/>
+    ponytypeout="GTypeModule"
+    structtype="GTypeModule"
+    structdef="GTypeModule"
+    argtype="GTypeModule tag"
+    rvtype="GTypeModule"/>
 
   <typedef name="NullablePointer[GFlagsClass]"
     embed="var"
-    ponytypein="NullablePointer[GFlagsClass] tag"
+    ponytypein="GFlagsClass tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GFlagsClass]"
-    structtype="NullablePointer[GFlagsClass]"
-    structdef="NullablePointer[GFlagsClass].none()"
-    argtype="NullablePointer[GFlagsClass] tag"
-    rvtype="NullablePointer[GFlagsClass]"/>
+    ponytypeout="GFlagsClass"
+    structtype="GFlagsClass"
+    structdef="GFlagsClass"
+    argtype="GFlagsClass tag"
+    rvtype="GFlagsClass"/>
 
   <typedef name="I64"
     embed="var"
@@ -211,13 +211,13 @@
 
   <typedef name="NullablePointer[GTypePlugin]"
     embed="var"
-    ponytypein="NullablePointer[GTypePlugin] tag"
+    ponytypein="GTypePlugin tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GTypePlugin]"
-    structtype="NullablePointer[GTypePlugin]"
-    structdef="NullablePointer[GTypePlugin].none()"
-    argtype="NullablePointer[GTypePlugin] tag"
-    rvtype="NullablePointer[GTypePlugin]"/>
+    ponytypeout="GTypePlugin"
+    structtype="GTypePlugin"
+    structdef="GTypePlugin"
+    argtype="GTypePlugin tag"
+    rvtype="GTypePlugin"/>
 
   <typedef name="..."
     embed="embed"
@@ -301,23 +301,23 @@
 
   <typedef name="NullablePointer[GTypeClass]"
     embed="var"
-    ponytypein="NullablePointer[GTypeClass] tag"
+    ponytypein="GTypeClass tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GTypeClass]"
-    structtype="NullablePointer[GTypeClass]"
-    structdef="NullablePointer[GTypeClass].none()"
-    argtype="NullablePointer[GTypeClass] tag"
-    rvtype="NullablePointer[GTypeClass]"/>
+    ponytypeout="GTypeClass"
+    structtype="GTypeClass"
+    structdef="GTypeClass"
+    argtype="GTypeClass tag"
+    rvtype="GTypeClass"/>
 
   <typedef name="Array[NullablePointer[GTypeClass]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GTypeClass]] tag"
+    ponytypein="Pointer[NullablePointer[GTypeClass]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GTypeClass]]"
-    structtype="Array[NullablePointer[GTypeClass]]"
-    structdef="Array[NullablePointer[GTypeClass]]"
-    argtype="Array[NullablePointer[GTypeClass]] tag"
-    rvtype="Array[NullablePointer[GTypeClass]]"/>
+    ponytypeout="Pointer[NullablePointer[GTypeClass]]"
+    structtype="Pointer[NullablePointer[GTypeClass]]"
+    structdef="Pointer[NullablePointer[GTypeClass]]"
+    argtype="Pointer[NullablePointer[GTypeClass]] tag"
+    rvtype="Pointer[NullablePointer[GTypeClass]]"/>
 
   <typedef name="Array[NullablePointer[GFlagsClass]]"
     embed="embed"
@@ -481,23 +481,23 @@
 
   <typedef name="NullablePointer[GEnumClass]"
     embed="var"
-    ponytypein="NullablePointer[GEnumClass] tag"
+    ponytypein="GEnumClass tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GEnumClass]"
-    structtype="NullablePointer[GEnumClass]"
-    structdef="NullablePointer[GEnumClass].none()"
-    argtype="NullablePointer[GEnumClass] tag"
-    rvtype="NullablePointer[GEnumClass]"/>
+    ponytypeout="GEnumClass"
+    structtype="GEnumClass"
+    structdef="GEnumClass"
+    argtype="GEnumClass tag"
+    rvtype="GEnumClass"/>
 
   <typedef name="Array[NullablePointer[GEnumClass]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GEnumClass]] tag"
+    ponytypein="Pointer[NullablePointer[GEnumClass]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GEnumClass]]"
-    structtype="Array[NullablePointer[GEnumClass]]"
-    structdef="Array[NullablePointer[GEnumClass]]"
-    argtype="Array[NullablePointer[GEnumClass]] tag"
-    rvtype="Array[NullablePointer[GEnumClass]]"/>
+    ponytypeout="Pointer[NullablePointer[GEnumClass]]"
+    structtype="Pointer[NullablePointer[GEnumClass]]"
+    structdef="Pointer[NullablePointer[GEnumClass]]"
+    argtype="Pointer[NullablePointer[GEnumClass]] tag"
+    rvtype="Pointer[NullablePointer[GEnumClass]]"/>
 
   <typedef name="None"
     embed="embed"
@@ -561,13 +561,13 @@
 
   <typedef name="NullablePointer[GEnumValue]"
     embed="var"
-    ponytypein="NullablePointer[GEnumValue] tag"
+    ponytypein="GEnumValue tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GEnumValue]"
-    structtype="NullablePointer[GEnumValue]"
-    structdef="NullablePointer[GEnumValue].none()"
-    argtype="NullablePointer[GEnumValue] tag"
-    rvtype="NullablePointer[GEnumValue]"/>
+    ponytypeout="GEnumValue"
+    structtype="GEnumValue"
+    structdef="GEnumValue"
+    argtype="GEnumValue tag"
+    rvtype="GEnumValue"/>
 
   <typedef name="NullablePointer[GSource]"
     embed="var"

@@ -40,7 +40,7 @@
      lineno="720"
      rv="U64">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3266" name="g_type_parent"
@@ -85,7 +85,7 @@
      ponyname="g_type_class_ref"
      fid="f131"
      lineno="732"
-     rv="Pointer[None]">
+     rv="NullablePointer[GTypeClass]">
      <useargs>
        <usearg name="gtype" type="U64"/>
      </useargs>
@@ -94,7 +94,7 @@
      ponyname="g_type_class_peek"
      fid="f131"
      lineno="734"
-     rv="Pointer[None]">
+     rv="NullablePointer[GTypeClass]">
      <useargs>
        <usearg name="gtype" type="U64"/>
      </useargs>
@@ -103,7 +103,7 @@
      ponyname="g_type_class_peek_static"
      fid="f131"
      lineno="736"
-     rv="Pointer[None]">
+     rv="NullablePointer[GTypeClass]">
      <useargs>
        <usearg name="gtype" type="U64"/>
      </useargs>
@@ -114,16 +114,16 @@
      lineno="738"
      rv="None">
      <useargs>
-       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
      </useargs>
   </use>
   <use id="_3274" name="g_type_class_peek_parent"
      ponyname="g_type_class_peek_parent"
      fid="f131"
      lineno="740"
-     rv="Pointer[None]">
+     rv="NullablePointer[GTypeClass]">
      <useargs>
-       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
      </useargs>
   </use>
   <use id="_3275" name="g_type_interface_peek"
@@ -341,7 +341,7 @@
      lineno="1346"
      rv="None">
      <useargs>
-       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
        <usearg name="privatesize" type="U64"/>
      </useargs>
   </use>
@@ -371,7 +371,7 @@
      lineno="1355"
      rv="None">
      <useargs>
-       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
        <usearg name="privatesizeoroffset" type="Pointer[I32]"/>
      </useargs>
   </use>
@@ -401,7 +401,7 @@
      lineno="1365"
      rv="I32">
      <useargs>
-       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
      </useargs>
   </use>
   <use id="_3315" name="g_type_ensure"
@@ -499,7 +499,7 @@
      lineno="2364"
      rv="None">
      <useargs>
-       <usearg name="gclass" type="Pointer[None]"/>
+       <usearg name="gclass" type="NullablePointer[GTypeClass]"/>
      </useargs>
   </use>
   <use id="_3326" name="g_type_add_interface_check"
@@ -1003,7 +1003,7 @@
      lineno="398"
      rv="U64">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="pspecinfo" type="NullablePointer[GParamSpecTypeInfo]"/>
      </useargs>
   </use>
@@ -1013,7 +1013,7 @@
      lineno="402"
      rv="I32">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3392" name="_g_param_type_register_static_constant"
@@ -1022,7 +1022,7 @@
      lineno="405"
      rv="U64">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="pspecinfo" type="NullablePointer[GParamSpecTypeInfo]"/>
        <usearg name="opttype" type="U64"/>
      </useargs>
@@ -1034,7 +1034,7 @@
      rv="Pointer[None]">
      <useargs>
        <usearg name="paramtype" type="U64"/>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="flags" type="I32"/>
@@ -2075,7 +2075,7 @@
      lineno="345"
      rv="U32">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="itype" type="U64"/>
      </useargs>
   </use>
@@ -2114,7 +2114,7 @@
      lineno="356"
      rv="I32">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3500" name="g_signal_parse_name"
@@ -2736,7 +2736,7 @@
      lineno="95"
      rv="U64">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="boxedcopy" type="Pointer[None]"/>
        <usearg name="boxedfree" type="Pointer[None]"/>
      </useargs>
@@ -2801,7 +2801,7 @@
      <useargs>
        <usearg name="oclass" type="NullablePointer[GObjectClass]"/>
        <usearg name="propertyid" type="U32"/>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3589" name="g_object_class_install_properties"
@@ -3640,7 +3640,7 @@
      </useargs>
   </use>
   <use id="_3686" name="g_enum_get_value"
-     ponyname="g_enum_get_value"
+     ponyname="get_value"
      fid="f141"
      lineno="219"
      rv="NullablePointer[GEnumValue]">
@@ -3650,17 +3650,17 @@
      </useargs>
   </use>
   <use id="_3687" name="g_enum_get_value_by_name"
-     ponyname="g_enum_get_value_by_name"
+     ponyname="get_value_by_name"
      fid="f141"
      lineno="222"
      rv="NullablePointer[GEnumValue]">
      <useargs>
        <usearg name="enumclass" type="NullablePointer[GEnumClass]"/>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3688" name="g_enum_get_value_by_nick"
-     ponyname="g_enum_get_value_by_nick"
+     ponyname="get_value_by_nick"
      fid="f141"
      lineno="225"
      rv="NullablePointer[GEnumValue]">
@@ -3670,7 +3670,7 @@
      </useargs>
   </use>
   <use id="_3689" name="g_flags_get_first_value"
-     ponyname="g_flags_get_first_value"
+     ponyname="get_first_value"
      fid="f141"
      lineno="228"
      rv="NullablePointer[GFlagsValue]">
@@ -3680,17 +3680,17 @@
      </useargs>
   </use>
   <use id="_3690" name="g_flags_get_value_by_name"
-     ponyname="g_flags_get_value_by_name"
+     ponyname="get_value_by_name"
      fid="f141"
      lineno="231"
      rv="NullablePointer[GFlagsValue]">
      <useargs>
        <usearg name="flagsclass" type="NullablePointer[GFlagsClass]"/>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3691" name="g_flags_get_value_by_nick"
-     ponyname="g_flags_get_value_by_nick"
+     ponyname="get_value_by_nick"
      fid="f141"
      lineno="234"
      rv="NullablePointer[GFlagsValue]">
@@ -3700,7 +3700,7 @@
      </useargs>
   </use>
   <use id="_3692" name="g_enum_to_string"
-     ponyname="g_enum_to_string"
+     ponyname="to_string"
      fid="f141"
      lineno="237"
      rv="String">
@@ -3710,7 +3710,7 @@
      </useargs>
   </use>
   <use id="_3693" name="g_flags_to_string"
-     ponyname="g_flags_to_string"
+     ponyname="to_string"
      fid="f141"
      lineno="240"
      rv="String">
@@ -3758,27 +3758,27 @@
      </useargs>
   </use>
   <use id="_3698" name="g_enum_register_static"
-     ponyname="g_enum_register_static"
+     ponyname="register_static"
      fid="f141"
      lineno="260"
      rv="U64">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="conststaticvalues" type="NullablePointer[GEnumValue]"/>
      </useargs>
   </use>
   <use id="_3699" name="g_flags_register_static"
-     ponyname="g_flags_register_static"
+     ponyname="register_static"
      fid="f141"
      lineno="263"
      rv="U64">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="conststaticvalues" type="NullablePointer[GFlagsValue]"/>
      </useargs>
   </use>
   <use id="_3700" name="g_enum_complete_type_info"
-     ponyname="g_enum_complete_type_info"
+     ponyname="complete_type_info"
      fid="f141"
      lineno="269"
      rv="None">
@@ -3789,7 +3789,7 @@
      </useargs>
   </use>
   <use id="_3701" name="g_flags_complete_type_info"
-     ponyname="g_flags_complete_type_info"
+     ponyname="complete_type_info"
      fid="f141"
      lineno="273"
      rv="None">
@@ -3833,7 +3833,7 @@
      lineno="988"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="I8"/>
@@ -3848,7 +3848,7 @@
      lineno="996"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="U8"/>
@@ -3863,7 +3863,7 @@
      lineno="1004"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="defaultvalue" type="I32"/>
@@ -3876,7 +3876,7 @@
      lineno="1010"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="I32"/>
@@ -3891,7 +3891,7 @@
      lineno="1018"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="U32"/>
@@ -3906,7 +3906,7 @@
      lineno="1026"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="I64"/>
@@ -3921,7 +3921,7 @@
      lineno="1034"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="U64"/>
@@ -3936,7 +3936,7 @@
      lineno="1042"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="I64"/>
@@ -3951,7 +3951,7 @@
      lineno="1050"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="U64"/>
@@ -3966,7 +3966,7 @@
      lineno="1058"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="defaultvalue" type="U32"/>
@@ -3979,7 +3979,7 @@
      lineno="1064"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="enumtype" type="U64"/>
@@ -3993,7 +3993,7 @@
      lineno="1071"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="flagstype" type="U64"/>
@@ -4007,7 +4007,7 @@
      lineno="1078"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="F32"/>
@@ -4022,7 +4022,7 @@
      lineno="1086"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="minimum" type="F64"/>
@@ -4037,7 +4037,7 @@
      lineno="1094"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="defaultvalue" type="String"/>
@@ -4050,7 +4050,7 @@
      lineno="1100"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="paramtype" type="U64"/>
@@ -4063,7 +4063,7 @@
      lineno="1106"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="boxedtype" type="U64"/>
@@ -4076,7 +4076,7 @@
      lineno="1112"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="flags" type="I32"/>
@@ -4088,7 +4088,7 @@
      lineno="1117"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="elementspec" type="NullablePointer[GParamSpec]"/>
@@ -4101,7 +4101,7 @@
      lineno="1123"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="objecttype" type="U64"/>
@@ -4114,7 +4114,7 @@
      lineno="1129"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="overridden" type="NullablePointer[GParamSpec]"/>
      </useargs>
   </use>
@@ -4124,7 +4124,7 @@
      lineno="1132"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="isatype" type="U64"/>
@@ -4137,7 +4137,7 @@
      lineno="1138"
      rv="NullablePointer[GParamSpec]">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
        <usearg name="gtype" type="NullablePointer[GVariantType]"/>
@@ -4210,14 +4210,14 @@
      </useargs>
   </use>
   <use id="_3791" name="g_type_module_get_type"
-     ponyname="g_type_module_get_type"
+     ponyname="get_type"
      fid="f145"
      lineno="270"
      rv="U64">
      <useargs/>
   </use>
   <use id="_3792" name="g_type_module_use"
-     ponyname="g_type_module_use"
+     ponyname="guse"
      fid="f145"
      lineno="272"
      rv="I32">
@@ -4226,7 +4226,7 @@
      </useargs>
   </use>
   <use id="_3793" name="g_type_module_unuse"
-     ponyname="g_type_module_unuse"
+     ponyname="unuse"
      fid="f145"
      lineno="274"
      rv="None">
@@ -4235,17 +4235,17 @@
      </useargs>
   </use>
   <use id="_3794" name="g_type_module_set_name"
-     ponyname="g_type_module_set_name"
+     ponyname="set_name"
      fid="f145"
      lineno="276"
      rv="None">
      <useargs>
        <usearg name="module" type="NullablePointer[GTypeModule]"/>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3795" name="g_type_module_register_type"
-     ponyname="g_type_module_register_type"
+     ponyname="register_type"
      fid="f145"
      lineno="279"
      rv="U64">
@@ -4258,7 +4258,7 @@
      </useargs>
   </use>
   <use id="_3796" name="g_type_module_add_interface"
-     ponyname="g_type_module_add_interface"
+     ponyname="add_interface"
      fid="f145"
      lineno="285"
      rv="None">
@@ -4270,36 +4270,36 @@
      </useargs>
   </use>
   <use id="_3797" name="g_type_module_register_enum"
-     ponyname="g_type_module_register_enum"
+     ponyname="register_enum"
      fid="f145"
      lineno="290"
      rv="U64">
      <useargs>
        <usearg name="module" type="NullablePointer[GTypeModule]"/>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="conststaticvalues" type="NullablePointer[GEnumValue]"/>
      </useargs>
   </use>
   <use id="_3798" name="g_type_module_register_flags"
-     ponyname="g_type_module_register_flags"
+     ponyname="register_flags"
      fid="f145"
      lineno="294"
      rv="U64">
      <useargs>
        <usearg name="module" type="NullablePointer[GTypeModule]"/>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
        <usearg name="conststaticvalues" type="NullablePointer[GFlagsValue]"/>
      </useargs>
   </use>
   <use id="_3805" name="g_type_plugin_get_type"
-     ponyname="g_type_plugin_get_type"
+     ponyname="get_type"
      fid="f146"
      lineno="116"
      rv="U64">
      <useargs/>
   </use>
   <use id="_3806" name="g_type_plugin_use"
-     ponyname="g_type_plugin_use"
+     ponyname="guse"
      fid="f146"
      lineno="118"
      rv="None">
@@ -4308,7 +4308,7 @@
      </useargs>
   </use>
   <use id="_3807" name="g_type_plugin_unuse"
-     ponyname="g_type_plugin_unuse"
+     ponyname="unuse"
      fid="f146"
      lineno="120"
      rv="None">
@@ -4317,7 +4317,7 @@
      </useargs>
   </use>
   <use id="_3808" name="g_type_plugin_complete_type_info"
-     ponyname="g_type_plugin_complete_type_info"
+     ponyname="complete_type_info"
      fid="f146"
      lineno="122"
      rv="None">
@@ -4329,7 +4329,7 @@
      </useargs>
   </use>
   <use id="_3809" name="g_type_plugin_complete_interface_info"
-     ponyname="g_type_plugin_complete_interface_info"
+     ponyname="complete_interface_info"
      fid="f146"
      lineno="127"
      rv="None">
@@ -4811,7 +4811,7 @@
      lineno="290"
      rv="U64">
      <useargs>
-       <usearg name="name" type="String"/>
+       <usearg name="name'" type="String"/>
      </useargs>
   </use>
   <use id="_3862" name="g_strdup_value_contents"

@@ -1,8 +1,0 @@
-g_binding_flags_get_type
-g_flags_complete_type_info
-g_flags_get_first_value
-g_flags_get_value_by_name
-g_flags_get_value_by_nick
-g_flags_register_static
-g_flags_to_string
-g_type_init_with_debug_flags

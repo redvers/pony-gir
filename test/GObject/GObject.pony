@@ -25,9 +25,9 @@ use @g_signal_handlers_disconnect_matched[U32](instance: Pointer[None] tag, mask
 use @g_signal_handlers_unblock_matched[U32](instance: Pointer[None] tag, mask: I32, signalid: U32, detail: U32, closure: NullablePointer[GClosure] tag, func: Pointer[None] tag, data: Pointer[None] tag)
 use @g_signal_handler_unblock[None](instance: Pointer[None] tag, handlerid: U64)
 use @g_signal_has_handler_pending[I32](instance: Pointer[None] tag, signalid: U32, detail: U32, maybeblocked: I32)
-use @g_signal_is_valid_name[I32](name: Pointer[U8] tag)
+use @g_signal_is_valid_name[I32](name': Pointer[U8] tag)
 use @g_signal_list_ids[Pointer[U32]](itype: U64, nids: Pointer[U32] tag)
-use @g_signal_lookup[U32](name: Pointer[U8] tag, itype: U64)
+use @g_signal_lookup[U32](name': Pointer[U8] tag, itype: U64)
 use @g_signal_name[Pointer[U8]](signalid: U32)
 use @g_signal_new[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classoffset: U32, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, ...)
 use @g_signal_new_class_handler[U32](signalname: Pointer[U8] tag, itype: U64, signalflags: I32, classhandler: Pointer[None] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, ...)
@@ -128,8 +128,8 @@ struct GObject
 /*  fun g_signal_emit_by_name(instance: Pointer[None] tag, detailedsignal: String, ...): None =>
     @g_signal_emit_by_name(instance, detailedsignal.cstring(), ...)
 */
-  fun g_signal_lookup(name: String, itype: U64): U32 =>
-    @g_signal_lookup(name.cstring(), itype)
+  fun g_signal_lookup(name': String, itype: U64): U32 =>
+    @g_signal_lookup(name'.cstring(), itype)
 
   fun g_signal_name(signalid: U32): String =>
     var pcstring: Pointer[U8] =  @g_signal_name(signalid)
@@ -142,8 +142,8 @@ struct GObject
   fun g_signal_list_ids(itype: U64, nids: Pointer[U32] tag): Pointer[U32] =>
     @g_signal_list_ids(itype, nids)
 
-  fun g_signal_is_valid_name(name: String): I32 =>
-    @g_signal_is_valid_name(name.cstring())
+  fun g_signal_is_valid_name(name': String): I32 =>
+    @g_signal_is_valid_name(name'.cstring())
 
   fun g_signal_parse_name(detailedsignal: String, itype: U64, signalidp: Pointer[U32] tag, detailp: Pointer[U32] tag, forcedetailquark: I32): I32 =>
     @g_signal_parse_name(detailedsignal.cstring(), itype, signalidp, detailp, forcedetailquark)

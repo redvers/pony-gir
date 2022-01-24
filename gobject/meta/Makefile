@@ -2,12 +2,12 @@ codegenstruct:
 	rm -f ../../test/GObject/*
 	cat templates/callbacks.txt > ../../test/GObject/callbacks.pony
 	sh -x mkstruct.sh _3572 GObject g_object
-	sh -x mkstruct.sh _3243 GTypeClass
+	sh -x mkstruct.sh _3243 GTypeClass g_type_class
 	sh -x mkstruct.sh _3247 GTypeInstance
 	sh -x mkstruct.sh _3237 GValue g_value
 	sh -x mkstruct.sh _3245 GTypeInterface
 	sh -x mkstruct.sh _3574 GObjectClass
-	sh -x mkstruct.sh _3241 GTypePlugin
+	sh -x mkstruct.sh _3241 GTypePlugin g_type_plugin
 	sh -x mkstruct.sh _3249 GTypeInfo
 	sh -x mkstruct.sh _3251 GTypeFundamentalInfo
 	sh -x mkstruct.sh _3253 GInterfaceInfo
@@ -25,8 +25,8 @@ codegenstruct:
 	sh -x mkstruct.sh _3474 GSignalInvocationHint
 	sh -x mkstruct.sh _3578 GObjectConstructParam
 	sh -x mkstruct.sh _3660 GBinding
-	sh -x mkstruct.sh _3678 GEnumClass
-	sh -x mkstruct.sh _3680 GFlagsClass
+	sh -x mkstruct.sh _3678 GEnumClass g_enum_class
+	sh -x mkstruct.sh _3680 GFlagsClass g_flags_class
 	sh -x mkstruct.sh _3682 GEnumValue
 	sh -x mkstruct.sh _3684 GFlagsValue
 	sh -x mkstruct.sh _3706 GParamSpecChar
@@ -52,10 +52,11 @@ codegenstruct:
 	sh -x mkstruct.sh _3746 GParamSpecOverride
 	sh -x mkstruct.sh _3748 GParamSpecGType
 	sh -x mkstruct.sh _3750 GParamSpecVariant
-	sh -x mkstruct.sh _3778 GTypeModule
+	sh -x mkstruct.sh _3778 GTypeModule g_type_module
 	sh -x mkstruct.sh _3780 GTypeModuleClass
 	sh -x mkstruct.sh _3799 GTypePluginClass
 	sh -x mkstruct.sh _3810 GValueArray g_value_array
+	sh -x mkprim.sh 0 GType g_type
 
 
 structmeta:

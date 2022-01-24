@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/gobject.xml"/>
+<renders>
+  <renderuse name="g_type_module_add_interface" render="1"/>
+  <renderuse name="g_type_module_get_type" render="1"/>
+  <renderuse name="g_type_module_register_enum" render="1"/>
+  <renderuse name="g_type_module_register_flags" render="1"/>
+  <renderuse name="g_type_module_register_type" render="1"/>
+  <renderuse name="g_type_module_set_name" render="1"/>
+  <renderuse name="g_type_module_unuse" render="1"/>
+  <renderuse name="g_type_module_use" render="1"/>
+</renders>
+</castxml2pony> 

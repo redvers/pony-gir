@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/gobject.xml"/>
+<renders>
+  <renderuse name="g_type_class_add_private" render="1"/>
+  <renderuse name="g_type_class_adjust_private_offset" render="1"/>
+  <renderuse name="g_type_class_get_instance_private_offset" render="1"/>
+  <renderuse name="g_type_class_get_private" render="1"/>
+  <renderuse name="g_type_class_peek" render="1"/>
+  <renderuse name="g_type_class_peek_parent" render="1"/>
+  <renderuse name="g_type_class_peek_static" render="1"/>
+  <renderuse name="g_type_class_ref" render="1"/>
+  <renderuse name="g_type_class_unref" render="1"/>
+  <renderuse name="g_type_class_unref_uncached" render="1"/>
+</renders>
+</castxml2pony> 
+

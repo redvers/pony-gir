@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/gobject.xml"/>
+<renders>
+  <renderuse name="g_type_add_class_cache_func" render="1"/>
+  <renderuse name="g_type_add_class_private" render="1"/>
+  <renderuse name="g_type_add_instance_private" render="1"/>
+  <renderuse name="g_type_add_interface_check" render="1"/>
+  <renderuse name="g_type_add_interface_dynamic" render="1"/>
+  <renderuse name="g_type_add_interface_static" render="1"/>
+  <renderuse name="g_type_check_class_cast" render="1"/>
+  <renderuse name="g_type_check_class_is_a" render="1"/>
+  <renderuse name="g_type_check_instance" render="1"/>
+  <renderuse name="g_type_check_instance_cast" render="1"/>
+  <renderuse name="g_type_check_instance_is_a" render="1"/>
+  <renderuse name="g_type_check_instance_is_fundamentally_a" render="1"/>
+  <renderuse name="g_type_check_is_value_type" render="1"/>
+  <renderuse name="g_type_check_value" render="1"/>
+  <renderuse name="g_type_check_value_holds" render="1"/>
+  <renderuse name="g_type_children" render="1"/>
+  <renderuse name="g_type_create_instance" render="1"/>
+  <renderuse name="g_type_default_interface_peek" render="1"/>
+  <renderuse name="g_type_default_interface_ref" render="1"/>
+  <renderuse name="g_type_default_interface_unref" render="1"/>
+  <renderuse name="g_type_depth" render="1"/>
+  <renderuse name="g_type_ensure" render="1"/>
+  <renderuse name="g_type_free_instance" render="1"/>
+  <renderuse name="g_type_from_name" render="1"/>
+  <renderuse name="g_type_fundamental" render="1"/>
+  <renderuse name="g_type_fundamental_next" render="1"/>
+  <renderuse name="g_type_get_instance_count" render="1"/>
+  <renderuse name="g_type_get_plugin" render="1"/>
+  <renderuse name="g_type_get_qdata" render="1"/>
+  <renderuse name="g_type_get_type_registration_serial" render="1"/>
+  <renderuse name="g_type_init" render="1"/>
+  <renderuse name="g_type_init_with_debug_flags" render="1"/>
+  <renderuse name="g_type_instance_get_private" render="1"/>
+  <renderuse name="g_type_interfaces" render="1"/>
+  <renderuse name="g_type_is_a" render="1"/>
+  <renderuse name="g_type_name" render="1"/>
+  <renderuse name="g_type_name_from_class" render="1"/>
+  <renderuse name="g_type_name_from_instance" render="1"/>
+  <renderuse name="g_type_next_base" render="1"/>
+  <renderuse name="g_type_parent" render="1"/>
+  <renderuse name="g_type_qname" render="1"/>
+  <renderuse name="g_type_query" render="1"/>
+  <renderuse name="g_type_register_dynamic" render="1"/>
+  <renderuse name="g_type_register_fundamental" render="1"/>
+  <renderuse name="g_type_register_static" render="1"/>
+  <renderuse name="g_type_register_static_simple" render="1"/>
+  <renderuse name="g_type_remove_class_cache_func" render="1"/>
+  <renderuse name="g_type_remove_interface_check" render="1"/>
+  <renderuse name="g_type_set_qdata" render="1"/>
+  <renderuse name="g_type_test_flags" render="1"/>
+  <renderuse name="g_type_value_table_peek" render="1"/>
+</renders>
+</castxml2pony>

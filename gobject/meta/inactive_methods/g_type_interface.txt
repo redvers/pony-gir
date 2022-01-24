@@ -1,0 +1,7 @@
+  <renderuse name="g_type_interface_add_prerequisite" render="1"/>
+  <renderuse name="g_type_interface_get_plugin" render="1"/>
+  <renderuse name="g_type_interface_instantiatable_prerequisite" render="1"/>
+  <renderuse name="g_type_interface_peek" render="1"/>
+  <renderuse name="g_type_interface_peek_parent" render="1"/>
+  <renderuse name="g_type_interface_prerequisites" render="1"/>
+ 
