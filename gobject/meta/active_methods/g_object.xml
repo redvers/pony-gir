@@ -45,5 +45,54 @@
   <renderuse name="g_signal_stop_emission" render="1"/>
   <renderuse name="g_signal_stop_emission_by_name" render="1"/>
   <renderuse name="g_signal_type_cclosure_new" render="1"/>
+  <renderuse name="g_object_add_toggle_ref" render="1"/>
+  <renderuse name="g_object_add_weak_pointer" render="1"/>
+  <renderuse name="g_object_bind_property" render="1"/>
+  <renderuse name="g_object_bind_property_full" render="1"/>
+  <renderuse name="g_object_bind_property_with_closures" render="1"/>
+  <renderuse name="g_object_compat_control" render="1"/>
+  <renderuse name="g_object_connect" render="1"/>
+  <renderuse name="g_object_disconnect" render="1"/>
+  <renderuse name="g_object_dup_data" render="1"/>
+  <renderuse name="g_object_dup_qdata" render="1"/>
+  <renderuse name="g_object_force_floating" render="1"/>
+  <renderuse name="g_object_freeze_notify" render="1"/>
+  <renderuse name="g_object_get" render="1"/>
+  <renderuse name="g_object_get_data" render="1"/>
+  <renderuse name="g_object_get_property" render="1"/>
+  <renderuse name="g_object_get_qdata" render="1"/>
+  <renderuse name="g_object_get_type" render="1"/>
+  <renderuse name="g_object_getv" render="1"/>
+  <renderuse name="g_object_get_valist" render="0"/>
+  <renderuse name="g_object_is_floating" render="1"/>
+  <renderuse name="g_object_new" render="1"/>
+  <renderuse name="g_object_newv" render="0"/>
+  <renderuse name="g_object_new_valist" render="0"/>
+  <renderuse name="g_object_new_with_properties" render="1"/>
+  <renderuse name="g_object_notify" render="1"/>
+  <renderuse name="g_object_notify_by_pspec" render="1"/>
+  <renderuse name="g_object_ref" render="1"/>
+  <renderuse name="g_object_ref_sink" render="1"/>
+  <renderuse name="g_object_remove_toggle_ref" render="1"/>
+  <renderuse name="g_object_remove_weak_pointer" render="1"/>
+  <renderuse name="g_object_replace_data" render="1"/>
+  <renderuse name="g_object_replace_qdata" render="1"/>
+  <renderuse name="g_object_run_dispose" render="1"/>
+  <renderuse name="g_object_set" render="1"/>
+  <renderuse name="g_object_set_data" render="1"/>
+  <renderuse name="g_object_set_data_full" render="1"/>
+  <renderuse name="g_object_set_property" render="1"/>
+  <renderuse name="g_object_set_qdata" render="1"/>
+  <renderuse name="g_object_set_qdata_full" render="1"/>
+  <renderuse name="g_object_setv" render="1"/>
+  <renderuse name="g_object_set_valist" render="0"/>
+  <renderuse name="g_object_steal_data" render="1"/>
+  <renderuse name="g_object_steal_qdata" render="1"/>
+  <renderuse name="g_object_take_ref" render="1"/>
+  <renderuse name="g_object_thaw_notify" render="1"/>
+  <renderuse name="g_object_unref" render="1"/>
+  <renderuse name="g_object_watch_closure" render="1"/>
+  <renderuse name="g_object_weak_ref" render="1"/>
+  <renderuse name="g_object_weak_unref" render="1"/>
 </renders>
 </castxml2pony>

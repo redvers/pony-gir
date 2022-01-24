@@ -2763,7 +2763,7 @@
      <useargs/>
   </use>
   <use id="_3585" name="g_object_class_install_property"
-     ponyname="g_object_class_install_property"
+     ponyname="install_property"
      fid="f139"
      lineno="396"
      rv="None">
@@ -2774,7 +2774,7 @@
      </useargs>
   </use>
   <use id="_3586" name="g_object_class_find_property"
-     ponyname="g_object_class_find_property"
+     ponyname="find_property"
      fid="f139"
      lineno="400"
      rv="NullablePointer[GParamSpec]">
@@ -2784,7 +2784,7 @@
      </useargs>
   </use>
   <use id="_3587" name="g_object_class_list_properties"
-     ponyname="g_object_class_list_properties"
+     ponyname="list_properties"
      fid="f139"
      lineno="403"
      rv="Array[NullablePointer[GParamSpec]]">
@@ -2794,7 +2794,7 @@
      </useargs>
   </use>
   <use id="_3588" name="g_object_class_override_property"
-     ponyname="g_object_class_override_property"
+     ponyname="override_property"
      fid="f139"
      lineno="406"
      rv="None">
@@ -2805,7 +2805,7 @@
      </useargs>
   </use>
   <use id="_3589" name="g_object_class_install_properties"
-     ponyname="g_object_class_install_properties"
+     ponyname="install_properties"
      fid="f139"
      lineno="410"
      rv="None">
@@ -2816,7 +2816,7 @@
      </useargs>
   </use>
   <use id="_3590" name="g_object_interface_install_property"
-     ponyname="g_object_interface_install_property"
+     ponyname="install_property"
      fid="f139"
      lineno="415"
      rv="None">
@@ -2826,7 +2826,7 @@
      </useargs>
   </use>
   <use id="_3591" name="g_object_interface_find_property"
-     ponyname="g_object_interface_find_property"
+     ponyname="find_property"
      fid="f139"
      lineno="418"
      rv="NullablePointer[GParamSpec]">
@@ -2836,7 +2836,7 @@
      </useargs>
   </use>
   <use id="_3592" name="g_object_interface_list_properties"
-     ponyname="g_object_interface_list_properties"
+     ponyname="list_properties"
      fid="f139"
      lineno="421"
      rv="Array[NullablePointer[GParamSpec]]">
@@ -2846,17 +2846,17 @@
      </useargs>
   </use>
   <use id="_3593" name="g_object_get_type"
-     ponyname="g_object_get_type"
+     ponyname="get_type"
      fid="f139"
      lineno="425"
      rv="U64">
      <useargs/>
   </use>
   <use id="_3594" name="g_object_new"
-     ponyname="g_object_new"
+     ponyname="new"
      fid="f139"
      lineno="427"
-     rv="Pointer[None]">
+     rv="NullablePointer[GObject]">
      <useargs>
        <usearg name="objecttype" type="U64"/>
        <usearg name="firstpropertyname" type="String"/>
@@ -2864,7 +2864,7 @@
      </useargs>
   </use>
   <use id="_3595" name="g_object_new_with_properties"
-     ponyname="g_object_new_with_properties"
+     ponyname="new_with_properties"
      fid="f139"
      lineno="431"
      rv="NullablePointer[GObject]">
@@ -2876,10 +2876,10 @@
      </useargs>
   </use>
   <use id="_3596" name="g_object_newv"
-     ponyname="g_object_newv"
+     ponyname="newv"
      fid="f139"
      lineno="439"
-     rv="Pointer[None]">
+     rv="NullablePointer[GObject]">
      <useargs>
        <usearg name="objecttype" type="U64"/>
        <usearg name="nparameters" type="U32"/>
@@ -2887,7 +2887,7 @@
      </useargs>
   </use>
   <use id="_3597" name="g_object_new_valist"
-     ponyname="g_object_new_valist"
+     ponyname="new_valist"
      fid="f139"
      lineno="446"
      rv="NullablePointer[GObject]">
@@ -2898,7 +2898,7 @@
      </useargs>
   </use>
   <use id="_3598" name="g_object_set"
-     ponyname="g_object_set"
+     ponyname="set"
      fid="f139"
      lineno="450"
      rv="None">
@@ -2909,7 +2909,7 @@
      </useargs>
   </use>
   <use id="_3599" name="g_object_get"
-     ponyname="g_object_get"
+     ponyname="get"
      fid="f139"
      lineno="454"
      rv="None">
@@ -2920,7 +2920,7 @@
      </useargs>
   </use>
   <use id="_3600" name="g_object_connect"
-     ponyname="g_object_connect"
+     ponyname="connect"
      fid="f139"
      lineno="458"
      rv="Pointer[None]">
@@ -2931,7 +2931,7 @@
      </useargs>
   </use>
   <use id="_3601" name="g_object_disconnect"
-     ponyname="g_object_disconnect"
+     ponyname="disconnect"
      fid="f139"
      lineno="462"
      rv="None">
@@ -2942,7 +2942,7 @@
      </useargs>
   </use>
   <use id="_3602" name="g_object_setv"
-     ponyname="g_object_setv"
+     ponyname="setv"
      fid="f139"
      lineno="466"
      rv="None">
@@ -2954,7 +2954,7 @@
      </useargs>
   </use>
   <use id="_3603" name="g_object_set_valist"
-     ponyname="g_object_set_valist"
+     ponyname="set_valist"
      fid="f139"
      lineno="471"
      rv="None">
@@ -2965,7 +2965,7 @@
      </useargs>
   </use>
   <use id="_3604" name="g_object_getv"
-     ponyname="g_object_getv"
+     ponyname="getv"
      fid="f139"
      lineno="475"
      rv="None">
@@ -2977,7 +2977,7 @@
      </useargs>
   </use>
   <use id="_3605" name="g_object_get_valist"
-     ponyname="g_object_get_valist"
+     ponyname="get_valist"
      fid="f139"
      lineno="480"
      rv="None">
@@ -2988,7 +2988,7 @@
      </useargs>
   </use>
   <use id="_3606" name="g_object_set_property"
-     ponyname="g_object_set_property"
+     ponyname="set_property"
      fid="f139"
      lineno="484"
      rv="None">
@@ -2999,7 +2999,7 @@
      </useargs>
   </use>
   <use id="_3607" name="g_object_get_property"
-     ponyname="g_object_get_property"
+     ponyname="get_property"
      fid="f139"
      lineno="488"
      rv="None">
@@ -3010,7 +3010,7 @@
      </useargs>
   </use>
   <use id="_3608" name="g_object_freeze_notify"
-     ponyname="g_object_freeze_notify"
+     ponyname="freeze_notify"
      fid="f139"
      lineno="492"
      rv="None">
@@ -3019,7 +3019,7 @@
      </useargs>
   </use>
   <use id="_3609" name="g_object_notify"
-     ponyname="g_object_notify"
+     ponyname="notify"
      fid="f139"
      lineno="494"
      rv="None">
@@ -3029,7 +3029,7 @@
      </useargs>
   </use>
   <use id="_3610" name="g_object_notify_by_pspec"
-     ponyname="g_object_notify_by_pspec"
+     ponyname="notify_by_pspec"
      fid="f139"
      lineno="497"
      rv="None">
@@ -3039,7 +3039,7 @@
      </useargs>
   </use>
   <use id="_3611" name="g_object_thaw_notify"
-     ponyname="g_object_thaw_notify"
+     ponyname="thaw_notify"
      fid="f139"
      lineno="500"
      rv="None">
@@ -3048,7 +3048,7 @@
      </useargs>
   </use>
   <use id="_3612" name="g_object_is_floating"
-     ponyname="g_object_is_floating"
+     ponyname="is_floating"
      fid="f139"
      lineno="502"
      rv="I32">
@@ -3057,7 +3057,7 @@
      </useargs>
   </use>
   <use id="_3613" name="g_object_ref_sink"
-     ponyname="g_object_ref_sink"
+     ponyname="ref_sink"
      fid="f139"
      lineno="504"
      rv="Pointer[None]">
@@ -3066,7 +3066,7 @@
      </useargs>
   </use>
   <use id="_3614" name="g_object_take_ref"
-     ponyname="g_object_take_ref"
+     ponyname="take_ref"
      fid="f139"
      lineno="506"
      rv="Pointer[None]">
@@ -3075,7 +3075,7 @@
      </useargs>
   </use>
   <use id="_3615" name="g_object_ref"
-     ponyname="g_object_ref"
+     ponyname="gref"
      fid="f139"
      lineno="508"
      rv="Pointer[None]">
@@ -3084,7 +3084,7 @@
      </useargs>
   </use>
   <use id="_3616" name="g_object_unref"
-     ponyname="g_object_unref"
+     ponyname="unref"
      fid="f139"
      lineno="510"
      rv="None">
@@ -3093,29 +3093,29 @@
      </useargs>
   </use>
   <use id="_3617" name="g_object_weak_ref"
-     ponyname="g_object_weak_ref"
+     ponyname="weak_ref"
      fid="f139"
      lineno="512"
      rv="None">
      <useargs>
        <usearg name="gobject" type="NullablePointer[GObject]"/>
-       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="notify'" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3618" name="g_object_weak_unref"
-     ponyname="g_object_weak_unref"
+     ponyname="weak_unref"
      fid="f139"
      lineno="516"
      rv="None">
      <useargs>
        <usearg name="gobject" type="NullablePointer[GObject]"/>
-       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="notify'" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3619" name="g_object_add_weak_pointer"
-     ponyname="g_object_add_weak_pointer"
+     ponyname="add_weak_pointer"
      fid="f139"
      lineno="520"
      rv="None">
@@ -3125,7 +3125,7 @@
      </useargs>
   </use>
   <use id="_3620" name="g_object_remove_weak_pointer"
-     ponyname="g_object_remove_weak_pointer"
+     ponyname="remove_weak_pointer"
      fid="f139"
      lineno="523"
      rv="None">
@@ -3135,29 +3135,29 @@
      </useargs>
   </use>
   <use id="_3622" name="g_object_add_toggle_ref"
-     ponyname="g_object_add_toggle_ref"
+     ponyname="add_toggle_ref"
      fid="f139"
      lineno="551"
      rv="None">
      <useargs>
        <usearg name="gobject" type="NullablePointer[GObject]"/>
-       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="notify'" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3623" name="g_object_remove_toggle_ref"
-     ponyname="g_object_remove_toggle_ref"
+     ponyname="remove_toggle_ref"
      fid="f139"
      lineno="555"
      rv="None">
      <useargs>
        <usearg name="gobject" type="NullablePointer[GObject]"/>
-       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="notify'" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3624" name="g_object_get_qdata"
-     ponyname="g_object_get_qdata"
+     ponyname="get_qdata"
      fid="f139"
      lineno="560"
      rv="Pointer[None]">
@@ -3167,7 +3167,7 @@
      </useargs>
   </use>
   <use id="_3625" name="g_object_set_qdata"
-     ponyname="g_object_set_qdata"
+     ponyname="set_qdata"
      fid="f139"
      lineno="563"
      rv="None">
@@ -3178,7 +3178,7 @@
      </useargs>
   </use>
   <use id="_3626" name="g_object_set_qdata_full"
-     ponyname="g_object_set_qdata_full"
+     ponyname="set_qdata_full"
      fid="f139"
      lineno="567"
      rv="None">
@@ -3190,7 +3190,7 @@
      </useargs>
   </use>
   <use id="_3627" name="g_object_steal_qdata"
-     ponyname="g_object_steal_qdata"
+     ponyname="steal_qdata"
      fid="f139"
      lineno="572"
      rv="Pointer[None]">
@@ -3200,7 +3200,7 @@
      </useargs>
   </use>
   <use id="_3628" name="g_object_dup_qdata"
-     ponyname="g_object_dup_qdata"
+     ponyname="dup_qdata"
      fid="f139"
      lineno="576"
      rv="Pointer[None]">
@@ -3212,7 +3212,7 @@
      </useargs>
   </use>
   <use id="_3629" name="g_object_replace_qdata"
-     ponyname="g_object_replace_qdata"
+     ponyname="replace_qdata"
      fid="f139"
      lineno="581"
      rv="I32">
@@ -3226,7 +3226,7 @@
      </useargs>
   </use>
   <use id="_3630" name="g_object_get_data"
-     ponyname="g_object_get_data"
+     ponyname="get_data"
      fid="f139"
      lineno="589"
      rv="Pointer[None]">
@@ -3236,7 +3236,7 @@
      </useargs>
   </use>
   <use id="_3631" name="g_object_set_data"
-     ponyname="g_object_set_data"
+     ponyname="set_data"
      fid="f139"
      lineno="592"
      rv="None">
@@ -3247,7 +3247,7 @@
      </useargs>
   </use>
   <use id="_3632" name="g_object_set_data_full"
-     ponyname="g_object_set_data_full"
+     ponyname="set_data_full"
      fid="f139"
      lineno="596"
      rv="None">
@@ -3259,7 +3259,7 @@
      </useargs>
   </use>
   <use id="_3633" name="g_object_steal_data"
-     ponyname="g_object_steal_data"
+     ponyname="steal_data"
      fid="f139"
      lineno="601"
      rv="Pointer[None]">
@@ -3269,7 +3269,7 @@
      </useargs>
   </use>
   <use id="_3634" name="g_object_dup_data"
-     ponyname="g_object_dup_data"
+     ponyname="dup_data"
      fid="f139"
      lineno="605"
      rv="Pointer[None]">
@@ -3281,7 +3281,7 @@
      </useargs>
   </use>
   <use id="_3635" name="g_object_replace_data"
-     ponyname="g_object_replace_data"
+     ponyname="replace_data"
      fid="f139"
      lineno="610"
      rv="I32">
@@ -3295,7 +3295,7 @@
      </useargs>
   </use>
   <use id="_3636" name="g_object_watch_closure"
-     ponyname="g_object_watch_closure"
+     ponyname="watch_closure"
      fid="f139"
      lineno="619"
      rv="None">
@@ -3376,7 +3376,7 @@
      </useargs>
   </use>
   <use id="_3644" name="g_object_force_floating"
-     ponyname="g_object_force_floating"
+     ponyname="force_floating"
      fid="f139"
      lineno="646"
      rv="None">
@@ -3385,7 +3385,7 @@
      </useargs>
   </use>
   <use id="_3645" name="g_object_run_dispose"
-     ponyname="g_object_run_dispose"
+     ponyname="run_dispose"
      fid="f139"
      lineno="648"
      rv="None">
@@ -3414,7 +3414,7 @@
      </useargs>
   </use>
   <use id="_3648" name="g_object_compat_control"
-     ponyname="g_object_compat_control"
+     ponyname="compat_control"
      fid="f139"
      lineno="659"
      rv="U64">
@@ -3595,7 +3595,7 @@
      </useargs>
   </use>
   <use id="_3675" name="g_object_bind_property"
-     ponyname="g_object_bind_property"
+     ponyname="bind_property"
      fid="f140"
      lineno="128"
      rv="NullablePointer[GBinding]">
@@ -3608,7 +3608,7 @@
      </useargs>
   </use>
   <use id="_3676" name="g_object_bind_property_full"
-     ponyname="g_object_bind_property_full"
+     ponyname="bind_property_full"
      fid="f140"
      lineno="134"
      rv="NullablePointer[GBinding]">
@@ -3621,11 +3621,11 @@
        <usearg name="transformto" type="Pointer[None]"/>
        <usearg name="transformfrom" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
-       <usearg name="notify" type="Pointer[None]"/>
+       <usearg name="notify'" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3677" name="g_object_bind_property_with_closures"
-     ponyname="g_object_bind_property_with_closures"
+     ponyname="bind_property_with_closures"
      fid="f140"
      lineno="144"
      rv="NullablePointer[GBinding]">

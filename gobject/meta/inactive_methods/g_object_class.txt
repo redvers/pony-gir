@@ -1,0 +1,9 @@
+<renderuse name="g_object_class_find_property" render="1"/>
+  <renderuse name="g_object_class_install_properties" render="1"/>
+  <renderuse name="g_object_class_install_property" render="1"/>
+  <renderuse name="g_object_class_list_properties" render="1"/>
+  <renderuse name="g_object_class_override_property" render="1"/>
+
+  <renderuse name="g_object_interface_find_property" render="1"/>
+  <renderuse name="g_object_interface_install_property" render="1"/>
+  <renderuse name="g_object_interface_list_properties" render="1"/>
