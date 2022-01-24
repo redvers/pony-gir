@@ -18,7 +18,7 @@ all:
 #	sh -x mkstruct.sh _4124 ../../test/Gio/GRemoteActionGroup.pony
 #	sh -x mkstruct.sh _4126 ../../test/Gio/GDBusActionGroup.pony
 #	sh -x mkstruct.sh _4128 ../../test/Gio/GActionMap.pony
-#	sh -x mkstruct.sh _4130 ../../test/Gio/GActionGroup.pony
+	sh -x mkstruct.sh _4130 ../../test/Gio/GActionGroup.pony
 #	sh -x mkstruct.sh _4132 ../../test/Gio/GPropertyAction.pony
 #	sh -x mkstruct.sh _4134 ../../test/Gio/GSimpleAction.pony
 #	sh -x mkstruct.sh _4136 ../../test/Gio/GAction.pony

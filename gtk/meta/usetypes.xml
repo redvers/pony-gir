@@ -1326,7 +1326,7 @@
     ponytypeout="GtkWindow"
     structtype="NullablePointer[GtkWindow]"
     structdef="NullablePointer[GtkWindow].none()"
-    argtype="GtkWindow"
+    argtype="GtkWindow tag"
     rvtype="GtkWindow"/>
 
   <typedef name="NullablePointer[GtkSelectionData]"
@@ -2491,13 +2491,13 @@
 
   <typedef name="Array[NullablePointer[GError]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GError]] tag"
+    ponytypein="Pointer[NullablePointer[GError]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GError]]"
-    structtype="Array[NullablePointer[GError]]"
-    structdef="Array[NullablePointer[GError]]"
-    argtype="Array[NullablePointer[GError]] tag"
-    rvtype="Array[NullablePointer[GError]]"/>
+    ponytypeout="Pointer[NullablePointer[GError]]"
+    structtype="Pointer[NullablePointer[GError]]"
+    structdef="Pointer[NullablePointer[GError].none()]"
+    argtype="Pointer[NullablePointer[GError]] tag"
+    rvtype="Pointer[NullablePointer[GError]]"/>
 
   <typedef name="NullablePointer[GString]"
     embed="var"

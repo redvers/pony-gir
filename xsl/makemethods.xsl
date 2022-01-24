@@ -38,7 +38,7 @@
 <xsl:apply-templates select="/castxml2pony/CastXML/Function[@id=$originalid]/Argument" mode="generateCommentArg"/>*/
   </xsl:if>
 <xsl:variable name="args">
-  <xsl:apply-templates select="/castxml2pony/uses/use[@id=$originalid]/useargs/usearg" mode="generateArgument"/>
+	<xsl:apply-templates select="/castxml2pony/uses/use[@id=$originalid]/useargs/usearg" mode="generateArgument"><xsl:with-param name="n" select="count(/castxml2pony/uses/use[@id=$originalid]/useargs/usearg)"/></xsl:apply-templates>
 </xsl:variable>
 <xsl:variable name="cargs">
   <xsl:apply-templates select="/castxml2pony/uses/use[@id=$originalid]/useargs/usearg" mode="generateCArgument"/>
@@ -78,12 +78,16 @@
 </xsl:template>
 
 <xsl:template match="usearg" mode="generateArgument">
-<xsl:if test="position() > 2">, </xsl:if>
+<xsl:param name="n"/>
 <xsl:choose>
 	<xsl:when test="@type='...'">...</xsl:when>
 	<xsl:when test="((position() = 1) and (@type=concat('NullablePointer[', $struct, ']')))"></xsl:when>
 	<xsl:otherwise>
 		<xsl:value-of select="@name"/>: <xsl:variable name="ttype" select="@type"/><xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$ttype]/@ponytypein"/>
+	<xsl:choose>
+		<xsl:when test="position() &lt; $n">, </xsl:when>
+		<xsl:otherwise></xsl:otherwise>
+	</xsl:choose>
 	</xsl:otherwise>
 </xsl:choose>
 </xsl:template>
