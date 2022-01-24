@@ -1,0 +1,4 @@
+GStaticPrivate : g_static_private_free
+GStaticPrivate : g_static_private_get
+GStaticPrivate : g_static_private_init
+GStaticPrivate : g_static_private_set

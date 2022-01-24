@@ -1,0 +1,12 @@
+GData : g_datalist_clear
+GData : g_datalist_foreach
+GData : g_datalist_get_data
+GData : g_datalist_get_flags
+GData : g_datalist_id_dup_data
+GData : g_datalist_id_get_data
+GData : g_datalist_id_remove_no_notify
+GData : g_datalist_id_replace_data
+GData : g_datalist_id_set_data_full
+GData : g_datalist_init
+GData : g_datalist_set_flags
+GData : g_datalist_unset_flags

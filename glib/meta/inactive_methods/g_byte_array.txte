@@ -1,0 +1,13 @@
+GByteArray : g_byte_array_append
+GByteArray : g_byte_array_free
+GByteArray : g_byte_array_free_to_bytes
+GByteArray : g_byte_array_prepend
+GByteArray : g_byte_array_ref
+GByteArray : g_byte_array_remove_index
+GByteArray : g_byte_array_remove_index_fast
+GByteArray : g_byte_array_remove_range
+GByteArray : g_byte_array_set_size
+GByteArray : g_byte_array_sort
+GByteArray : g_byte_array_sort_with_data
+GByteArray : g_byte_array_steal
+GByteArray : g_byte_array_unref

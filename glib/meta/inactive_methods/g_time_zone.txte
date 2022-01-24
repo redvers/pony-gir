@@ -1,0 +1,10 @@
+GTimeZone : g_date_time_new
+GTimeZone : g_date_time_new_now
+GTimeZone : g_time_zone_adjust_time
+GTimeZone : g_time_zone_find_interval
+GTimeZone : g_time_zone_get_abbreviation
+GTimeZone : g_time_zone_get_identifier
+GTimeZone : g_time_zone_get_offset
+GTimeZone : g_time_zone_is_dst
+GTimeZone : g_time_zone_ref
+GTimeZone : g_time_zone_unref

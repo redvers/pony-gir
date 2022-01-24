@@ -1,0 +1,9 @@
+g_mutex_unlock
+g_mutex_trylock
+g_mutex_new
+g_mutex_locker_new
+g_mutex_locker_free
+g_mutex_lock
+g_mutex_init
+g_mutex_free
+g_mutex_clear

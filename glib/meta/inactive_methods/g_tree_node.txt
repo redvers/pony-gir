@@ -1,0 +1,4 @@
+g_tree_node_key
+g_tree_node_next
+g_tree_node_previous
+g_tree_node_value

@@ -1,0 +1,5 @@
+g_allocator_free
+g_list_push_allocator
+g_node_push_allocator
+g_slist_push_allocator
+g_allocator_new

@@ -1,0 +1,6 @@
+GHashTableIter : g_hash_table_iter_get_hash_table
+GHashTableIter : g_hash_table_iter_init
+GHashTableIter : g_hash_table_iter_next
+GHashTableIter : g_hash_table_iter_remove
+GHashTableIter : g_hash_table_iter_replace
+GHashTableIter : g_hash_table_iter_steal

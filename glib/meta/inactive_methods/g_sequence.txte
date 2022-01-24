@@ -1,0 +1,17 @@
+GSequence : g_sequence_append
+GSequence : g_sequence_foreach
+GSequence : g_sequence_free
+GSequence : g_sequence_get_begin_iter
+GSequence : g_sequence_get_end_iter
+GSequence : g_sequence_get_iter_at_pos
+GSequence : g_sequence_get_length
+GSequence : g_sequence_insert_sorted
+GSequence : g_sequence_insert_sorted_iter
+GSequence : g_sequence_is_empty
+GSequence : g_sequence_lookup
+GSequence : g_sequence_lookup_iter
+GSequence : g_sequence_prepend
+GSequence : g_sequence_search
+GSequence : g_sequence_search_iter
+GSequence : g_sequence_sort
+GSequence : g_sequence_sort_iter

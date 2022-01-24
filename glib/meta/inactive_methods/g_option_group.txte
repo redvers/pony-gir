@@ -1,0 +1,8 @@
+GOptionGroup : g_option_group_add_entries
+GOptionGroup : g_option_group_free
+GOptionGroup : g_option_group_ref
+GOptionGroup : g_option_group_set_error_hook
+GOptionGroup : g_option_group_set_parse_hooks
+GOptionGroup : g_option_group_set_translate_func
+GOptionGroup : g_option_group_set_translation_domain
+GOptionGroup : g_option_group_unref

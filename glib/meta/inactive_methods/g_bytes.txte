@@ -1,0 +1,8 @@
+GBytes : g_bytes_get_data
+GBytes : g_bytes_get_region
+GBytes : g_bytes_get_size
+GBytes : g_bytes_new_from_bytes
+GBytes : g_bytes_ref
+GBytes : g_bytes_unref
+GBytes : g_bytes_unref_to_array
+GBytes : g_bytes_unref_to_data

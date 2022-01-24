@@ -1,0 +1,7 @@
+g_mem_chunk_alloc
+g_mem_chunk_alloc0
+g_mem_chunk_clean
+g_mem_chunk_destroy
+g_mem_chunk_free
+g_mem_chunk_print
+g_mem_chunk_reset

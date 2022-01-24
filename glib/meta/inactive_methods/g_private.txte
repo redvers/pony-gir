@@ -1,0 +1,3 @@
+GPrivate : g_private_get
+GPrivate : g_private_replace
+GPrivate : g_private_set

@@ -1,0 +1,8 @@
+g_static_rw_lock_free
+g_static_rw_lock_init
+g_static_rw_lock_reader_lock
+g_static_rw_lock_reader_trylock
+g_static_rw_lock_reader_unlock
+g_static_rw_lock_writer_lock
+g_static_rw_lock_writer_trylock
+g_static_rw_lock_writer_unlock

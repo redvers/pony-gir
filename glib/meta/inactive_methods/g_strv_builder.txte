@@ -1,0 +1,6 @@
+GStrvBuilder : g_strv_builder_add
+GStrvBuilder : g_strv_builder_add_many
+GStrvBuilder : g_strv_builder_addv
+GStrvBuilder : g_strv_builder_end
+GStrvBuilder : g_strv_builder_ref
+GStrvBuilder : g_strv_builder_unref

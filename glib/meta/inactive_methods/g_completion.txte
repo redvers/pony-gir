@@ -1,0 +1,7 @@
+GCompletion : g_completion_add_items
+GCompletion : g_completion_clear_items
+GCompletion : g_completion_complete
+GCompletion : g_completion_complete_utf8
+GCompletion : g_completion_free
+GCompletion : g_completion_remove_items
+GCompletion : g_completion_set_compare

@@ -1,0 +1,11 @@
+GError : g_clear_error
+GError : g_error_copy
+GError : g_error_free
+GError : g_error_matches
+GError : g_prefix_error
+GError : g_prefix_error_literal
+GError : g_propagate_error
+GError : g_propagate_prefixed_error
+GError : g_set_error
+GError : g_set_error_literal
+GError : g_variant_parse_error_print_context

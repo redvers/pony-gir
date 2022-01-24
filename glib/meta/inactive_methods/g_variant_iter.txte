@@ -1,0 +1,7 @@
+GVariantIter : g_variant_iter_copy
+GVariantIter : g_variant_iter_free
+GVariantIter : g_variant_iter_init
+GVariantIter : g_variant_iter_loop
+GVariantIter : g_variant_iter_n_children
+GVariantIter : g_variant_iter_next
+GVariantIter : g_variant_iter_next_value

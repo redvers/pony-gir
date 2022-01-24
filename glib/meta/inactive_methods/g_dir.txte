@@ -1,0 +1,3 @@
+GDir : g_dir_close
+GDir : g_dir_read_name
+GDir : g_dir_rewind

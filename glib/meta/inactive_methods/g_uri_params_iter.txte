@@ -1,0 +1,2 @@
+GUriParamsIter : g_uri_params_iter_init
+GUriParamsIter : g_uri_params_iter_next

@@ -1,0 +1,6 @@
+GMainLoop : g_main_loop_get_context
+GMainLoop : g_main_loop_is_running
+GMainLoop : g_main_loop_quit
+GMainLoop : g_main_loop_ref
+GMainLoop : g_main_loop_run
+GMainLoop : g_main_loop_unref

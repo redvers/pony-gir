@@ -1,0 +1,2 @@
+g_uri_params_iter_init
+g_uri_params_iter_next

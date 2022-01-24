@@ -1,0 +1,7 @@
+g_variant_iter_copy
+g_variant_iter_free
+g_variant_iter_init
+g_variant_iter_loop
+g_variant_iter_n_children
+g_variant_iter_next
+g_variant_iter_next_value

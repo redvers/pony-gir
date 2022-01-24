@@ -1,0 +1,11 @@
+GMarkupParseContext : g_markup_parse_context_end_parse
+GMarkupParseContext : g_markup_parse_context_free
+GMarkupParseContext : g_markup_parse_context_get_element
+GMarkupParseContext : g_markup_parse_context_get_element_stack
+GMarkupParseContext : g_markup_parse_context_get_position
+GMarkupParseContext : g_markup_parse_context_get_user_data
+GMarkupParseContext : g_markup_parse_context_parse
+GMarkupParseContext : g_markup_parse_context_pop
+GMarkupParseContext : g_markup_parse_context_push
+GMarkupParseContext : g_markup_parse_context_ref
+GMarkupParseContext : g_markup_parse_context_unref

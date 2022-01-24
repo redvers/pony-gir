@@ -1,0 +1,8 @@
+GRand : g_rand_copy
+GRand : g_rand_double
+GRand : g_rand_double_range
+GRand : g_rand_free
+GRand : g_rand_int
+GRand : g_rand_int_range
+GRand : g_rand_set_seed
+GRand : g_rand_set_seed_array

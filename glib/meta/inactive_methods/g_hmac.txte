@@ -1,0 +1,6 @@
+GHmac : g_hmac_copy
+GHmac : g_hmac_get_digest
+GHmac : g_hmac_get_string
+GHmac : g_hmac_ref
+GHmac : g_hmac_unref
+GHmac : g_hmac_update

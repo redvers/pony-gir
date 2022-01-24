@@ -1,0 +1,2 @@
+g_tuples_destroy
+g_tuples_index

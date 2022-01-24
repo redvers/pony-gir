@@ -1,0 +1,16 @@
+GUri : g_uri_get_auth_params
+GUri : g_uri_get_flags
+GUri : g_uri_get_fragment
+GUri : g_uri_get_host
+GUri : g_uri_get_password
+GUri : g_uri_get_path
+GUri : g_uri_get_port
+GUri : g_uri_get_query
+GUri : g_uri_get_scheme
+GUri : g_uri_get_user
+GUri : g_uri_get_userinfo
+GUri : g_uri_parse_relative
+GUri : g_uri_ref
+GUri : g_uri_to_string
+GUri : g_uri_to_string_partial
+GUri : g_uri_unref

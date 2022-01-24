@@ -1,0 +1,8 @@
+g_relation_count
+g_relation_delete
+g_relation_destroy
+g_relation_exists
+g_relation_index
+g_relation_insert
+g_relation_print
+g_relation_select

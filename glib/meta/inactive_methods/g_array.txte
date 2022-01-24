@@ -1,0 +1,17 @@
+GArray : g_array_append_vals
+GArray : g_array_binary_search
+GArray : g_array_copy
+GArray : g_array_free
+GArray : g_array_get_element_size
+GArray : g_array_insert_vals
+GArray : g_array_prepend_vals
+GArray : g_array_ref
+GArray : g_array_remove_index
+GArray : g_array_remove_index_fast
+GArray : g_array_remove_range
+GArray : g_array_set_clear_func
+GArray : g_array_set_size
+GArray : g_array_sort
+GArray : g_array_sort_with_data
+GArray : g_array_steal
+GArray : g_array_unref

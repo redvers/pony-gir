@@ -1,0 +1,6 @@
+GChecksum : g_checksum_copy
+GChecksum : g_checksum_free
+GChecksum : g_checksum_get_digest
+GChecksum : g_checksum_get_string
+GChecksum : g_checksum_reset
+GChecksum : g_checksum_update

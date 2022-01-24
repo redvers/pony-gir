@@ -1,0 +1,10 @@
+g_rw_lock_clear
+g_rw_lock_init
+g_rw_lock_reader_lock
+g_rw_lock_reader_locker_new
+g_rw_lock_reader_trylock
+g_rw_lock_reader_unlock
+g_rw_lock_writer_lock
+g_rw_lock_writer_locker_new
+g_rw_lock_writer_trylock
+g_rw_lock_writer_unlock

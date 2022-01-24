@@ -1,0 +1,8 @@
+GCond : g_cond_broadcast
+GCond : g_cond_clear
+GCond : g_cond_free
+GCond : g_cond_init
+GCond : g_cond_signal
+GCond : g_cond_timed_wait
+GCond : g_cond_wait
+GCond : g_cond_wait_until

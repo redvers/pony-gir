@@ -1,0 +1,7 @@
+GPatternSpec : g_pattern_match
+GPatternSpec : g_pattern_match_string
+GPatternSpec : g_pattern_spec_copy
+GPatternSpec : g_pattern_spec_equal
+GPatternSpec : g_pattern_spec_free
+GPatternSpec : g_pattern_spec_match
+GPatternSpec : g_pattern_spec_match_string

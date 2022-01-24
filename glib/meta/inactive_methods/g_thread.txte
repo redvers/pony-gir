@@ -1,0 +1,4 @@
+GThread : g_thread_join
+GThread : g_thread_ref
+GThread : g_thread_set_priority
+GThread : g_thread_unref

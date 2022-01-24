@@ -1,0 +1,5 @@
+GTimeVal : g_date_time_new_from_timeval_local
+GTimeVal : g_date_time_new_from_timeval_utc
+GTimeVal : g_get_current_time
+GTimeVal : g_time_val_add
+GTimeVal : g_time_val_to_iso8601

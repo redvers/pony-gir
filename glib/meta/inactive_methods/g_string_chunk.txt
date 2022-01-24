@@ -1,0 +1,5 @@
+g_string_chunk_clear
+g_string_chunk_free
+g_string_chunk_insert
+g_string_chunk_insert_const
+g_string_chunk_insert_len

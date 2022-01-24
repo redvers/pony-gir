@@ -1,0 +1,6 @@
+GMappedFile : g_mapped_file_free
+GMappedFile : g_mapped_file_get_bytes
+GMappedFile : g_mapped_file_get_contents
+GMappedFile : g_mapped_file_get_length
+GMappedFile : g_mapped_file_ref
+GMappedFile : g_mapped_file_unref

@@ -1,0 +1,5 @@
+g_markup_vprintf_escaped
+g_markup_printf_escaped
+g_markup_escape_text
+g_markup_error_quark
+g_markup_collect_attributes

@@ -1,0 +1,7 @@
+GTimer : g_timer_continue
+GTimer : g_timer_destroy
+GTimer : g_timer_elapsed
+GTimer : g_timer_is_active
+GTimer : g_timer_reset
+GTimer : g_timer_start
+GTimer : g_timer_stop

@@ -1,0 +1,10 @@
+GRWLock : g_rw_lock_clear
+GRWLock : g_rw_lock_init
+GRWLock : g_rw_lock_reader_lock
+GRWLock : g_rw_lock_reader_locker_new
+GRWLock : g_rw_lock_reader_trylock
+GRWLock : g_rw_lock_reader_unlock
+GRWLock : g_rw_lock_writer_lock
+GRWLock : g_rw_lock_writer_locker_new
+GRWLock : g_rw_lock_writer_trylock
+GRWLock : g_rw_lock_writer_unlock
