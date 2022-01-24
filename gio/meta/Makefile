@@ -6,7 +6,7 @@ all:
 #	sh -x mkstruct.sh _4433 ../../test/Gio/GAppLaunchContextPrivate.pony
 #	sh -x mkstruct.sh _4435 ../../test/Gio/GAppInfoIface.pony
 #	sh -x mkstruct.sh _4482 ../../test/Gio/GAppInfoMonitor.pony
-#	sh -x mkstruct.sh _4092 ../../test/Gio/GAppInfo.pony
+	sh -x mkstruct.sh _4092 ../../test/Gio/GAppInfo.pony
 #	sh -x mkstruct.sh _4094 ../../test/Gio/GAsyncResult.pony
 #	sh -x mkstruct.sh _4096 ../../test/Gio/GAsyncInitable.pony
 #	sh -x mkstruct.sh _4104 ../../test/Gio/GCharsetConverter.pony

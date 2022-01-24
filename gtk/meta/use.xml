@@ -612,7 +612,7 @@
      <useargs>
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13533" name="gtk_builder_add_from_resource"
@@ -623,7 +623,7 @@
      <useargs>
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
        <usearg name="resourcepath" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13534" name="gtk_builder_add_from_string"
@@ -635,7 +635,7 @@
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
        <usearg name="buffer" type="String"/>
        <usearg name="length" type="U64"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13535" name="gtk_builder_add_objects_from_file"
@@ -647,7 +647,7 @@
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
        <usearg name="filename" type="String"/>
        <usearg name="objectids" type="Array[String]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13536" name="gtk_builder_add_objects_from_resource"
@@ -659,7 +659,7 @@
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
        <usearg name="resourcepath" type="String"/>
        <usearg name="objectids" type="Array[String]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13537" name="gtk_builder_add_objects_from_string"
@@ -672,7 +672,7 @@
        <usearg name="buffer" type="String"/>
        <usearg name="length" type="U64"/>
        <usearg name="objectids" type="Array[String]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13538" name="gtk_builder_get_object"
@@ -765,7 +765,7 @@
        <usearg name="pspec" type="NullablePointer[GParamSpec]"/>
        <usearg name="string" type="String"/>
        <usearg name="value" type="NullablePointer[GValue]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13547" name="gtk_builder_value_from_string_type"
@@ -778,7 +778,7 @@
        <usearg name="gtype" type="U64"/>
        <usearg name="string" type="String"/>
        <usearg name="value" type="NullablePointer[GValue]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13548" name="gtk_builder_new_from_file"
@@ -872,7 +872,7 @@
        <usearg name="templatetype" type="U64"/>
        <usearg name="buffer" type="String"/>
        <usearg name="length" type="U64"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_11545" name="gtk_widget_get_type"
@@ -20318,7 +20318,7 @@
        <usearg name="cssprovider" type="NullablePointer[GtkCssProvider]"/>
        <usearg name="data" type="String"/>
        <usearg name="length" type="I64"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13978" name="gtk_css_provider_load_from_file"
@@ -20329,7 +20329,7 @@
      <useargs>
        <usearg name="cssprovider" type="NullablePointer[GtkCssProvider]"/>
        <usearg name="file" type="NullablePointer[GFile]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13979" name="gtk_css_provider_load_from_path"
@@ -20340,7 +20340,7 @@
      <useargs>
        <usearg name="cssprovider" type="NullablePointer[GtkCssProvider]"/>
        <usearg name="path" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_13980" name="gtk_css_provider_load_from_resource"
@@ -21473,7 +21473,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkFileChooser]"/>
        <usearg name="file" type="NullablePointer[GFile]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14163" name="gtk_file_chooser_select_file"
@@ -21484,7 +21484,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkFileChooser]"/>
        <usearg name="file" type="NullablePointer[GFile]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14164" name="gtk_file_chooser_unselect_file"
@@ -21514,7 +21514,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkFileChooser]"/>
        <usearg name="file" type="NullablePointer[GFile]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14167" name="gtk_file_chooser_get_current_folder_file"
@@ -21685,7 +21685,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkFileChooser]"/>
        <usearg name="folder" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14185" name="gtk_file_chooser_remove_shortcut_folder"
@@ -21696,7 +21696,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkFileChooser]"/>
        <usearg name="folder" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14186" name="gtk_file_chooser_list_shortcut_folders"
@@ -21716,7 +21716,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkFileChooser]"/>
        <usearg name="uri" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14188" name="gtk_file_chooser_remove_shortcut_folder_uri"
@@ -21727,7 +21727,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkFileChooser]"/>
        <usearg name="uri" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14189" name="gtk_file_chooser_list_shortcut_folder_uris"
@@ -23720,7 +23720,7 @@
      rv="None">
      <useargs>
        <usearg name="area" type="NullablePointer[GtkGLArea]"/>
-       <usearg name="error" type="NullablePointer[GError]"/>
+       <usearg name="gerror" type="NullablePointer[GError]"/>
      </useargs>
   </use>
   <use id="_14527" name="gtk_gl_area_get_error"
@@ -24329,7 +24329,7 @@
        <usearg name="iconname" type="String"/>
        <usearg name="size" type="I32"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14763" name="gtk_icon_theme_load_icon_for_scale"
@@ -24343,7 +24343,7 @@
        <usearg name="size" type="I32"/>
        <usearg name="scale" type="I32"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14764" name="gtk_icon_theme_load_surface"
@@ -24358,7 +24358,7 @@
        <usearg name="scale" type="I32"/>
        <usearg name="forwindow" type="NullablePointer[GdkWindow]"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14765" name="gtk_icon_theme_lookup_by_gicon"
@@ -24521,7 +24521,7 @@
      rv="NullablePointer[GdkPixbuf]">
      <useargs>
        <usearg name="iconinfo" type="NullablePointer[GtkIconInfo]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14782" name="gtk_icon_info_load_surface"
@@ -24532,7 +24532,7 @@
      <useargs>
        <usearg name="iconinfo" type="NullablePointer[GtkIconInfo]"/>
        <usearg name="forwindow" type="NullablePointer[GdkWindow]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14783" name="gtk_icon_info_load_icon_async"
@@ -24555,7 +24555,7 @@
      <useargs>
        <usearg name="iconinfo" type="NullablePointer[GtkIconInfo]"/>
        <usearg name="res" type="NullablePointer[GAsyncResult]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14785" name="gtk_icon_info_load_symbolic"
@@ -24570,7 +24570,7 @@
        <usearg name="warningcolor" type="NullablePointer[GdkRGBA]"/>
        <usearg name="errorcolor" type="NullablePointer[GdkRGBA]"/>
        <usearg name="wassymbolic" type="Pointer[I32]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14786" name="gtk_icon_info_load_symbolic_async"
@@ -24598,7 +24598,7 @@
        <usearg name="iconinfo" type="NullablePointer[GtkIconInfo]"/>
        <usearg name="res" type="NullablePointer[GAsyncResult]"/>
        <usearg name="wassymbolic" type="Pointer[I32]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14788" name="gtk_icon_info_load_symbolic_for_context"
@@ -24610,7 +24610,7 @@
        <usearg name="iconinfo" type="NullablePointer[GtkIconInfo]"/>
        <usearg name="context" type="NullablePointer[GtkStyleContext]"/>
        <usearg name="wassymbolic" type="Pointer[I32]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14789" name="gtk_icon_info_load_symbolic_for_context_async"
@@ -24635,7 +24635,7 @@
        <usearg name="iconinfo" type="NullablePointer[GtkIconInfo]"/>
        <usearg name="res" type="NullablePointer[GAsyncResult]"/>
        <usearg name="wassymbolic" type="Pointer[I32]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14791" name="gtk_icon_info_load_symbolic_for_style"
@@ -24648,7 +24648,7 @@
        <usearg name="style" type="NullablePointer[GtkStyle]"/>
        <usearg name="state" type="I32"/>
        <usearg name="wassymbolic" type="Pointer[I32]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_14792" name="gtk_icon_info_set_raw_coordinates"
@@ -26649,7 +26649,7 @@
        <usearg name="parameterstring" type="String"/>
        <usearg name="entries" type="NullablePointer[GOptionEntry]"/>
        <usearg name="translationdomain" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15081" name="gtk_get_option_group"
@@ -28844,7 +28844,7 @@
      <useargs>
        <usearg name="keyfile" type="NullablePointer[GKeyFile]"/>
        <usearg name="groupname" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15410" name="gtk_paper_size_to_key_file"
@@ -29078,7 +29078,7 @@
      rv="NullablePointer[GtkPageSetup]">
      <useargs>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15436" name="gtk_page_setup_load_file"
@@ -29089,7 +29089,7 @@
      <useargs>
        <usearg name="setup" type="NullablePointer[GtkPageSetup]"/>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15437" name="gtk_page_setup_to_file"
@@ -29100,7 +29100,7 @@
      <useargs>
        <usearg name="setup" type="NullablePointer[GtkPageSetup]"/>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15438" name="gtk_page_setup_new_from_key_file"
@@ -29111,7 +29111,7 @@
      <useargs>
        <usearg name="keyfile" type="NullablePointer[GKeyFile]"/>
        <usearg name="groupname" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15439" name="gtk_page_setup_load_key_file"
@@ -29123,7 +29123,7 @@
        <usearg name="setup" type="NullablePointer[GtkPageSetup]"/>
        <usearg name="keyfile" type="NullablePointer[GKeyFile]"/>
        <usearg name="groupname" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15440" name="gtk_page_setup_to_key_file"
@@ -29701,7 +29701,7 @@
      rv="NullablePointer[GtkPrintSettings]">
      <useargs>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15525" name="gtk_print_settings_load_file"
@@ -29712,7 +29712,7 @@
      <useargs>
        <usearg name="settings" type="NullablePointer[GtkPrintSettings]"/>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15526" name="gtk_print_settings_to_file"
@@ -29723,7 +29723,7 @@
      <useargs>
        <usearg name="settings" type="NullablePointer[GtkPrintSettings]"/>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15527" name="gtk_print_settings_new_from_key_file"
@@ -29734,7 +29734,7 @@
      <useargs>
        <usearg name="keyfile" type="NullablePointer[GKeyFile]"/>
        <usearg name="groupname" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15528" name="gtk_print_settings_load_key_file"
@@ -29746,7 +29746,7 @@
        <usearg name="settings" type="NullablePointer[GtkPrintSettings]"/>
        <usearg name="keyfile" type="NullablePointer[GKeyFile]"/>
        <usearg name="groupname" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15529" name="gtk_print_settings_to_key_file"
@@ -30633,7 +30633,7 @@
        <usearg name="op" type="NullablePointer[GtkPrintOperation]"/>
        <usearg name="action" type="I32"/>
        <usearg name="parent" type="NullablePointer[GtkWindow]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15638" name="gtk_print_operation_get_error"
@@ -30643,7 +30643,7 @@
      rv="None">
      <useargs>
        <usearg name="op" type="NullablePointer[GtkPrintOperation]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15639" name="gtk_print_operation_get_status"
@@ -31556,7 +31556,7 @@
      <useargs>
        <usearg name="manager" type="NullablePointer[GtkRecentManager]"/>
        <usearg name="uri" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15784" name="gtk_recent_manager_lookup_item"
@@ -31567,7 +31567,7 @@
      <useargs>
        <usearg name="manager" type="NullablePointer[GtkRecentManager]"/>
        <usearg name="uri" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15785" name="gtk_recent_manager_has_item"
@@ -31589,7 +31589,7 @@
        <usearg name="manager" type="NullablePointer[GtkRecentManager]"/>
        <usearg name="uri" type="String"/>
        <usearg name="newuri" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15787" name="gtk_recent_manager_get_items"
@@ -31608,7 +31608,7 @@
      rv="I32">
      <useargs>
        <usearg name="manager" type="NullablePointer[GtkRecentManager]"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15789" name="gtk_recent_info_get_type"
@@ -31729,7 +31729,7 @@
      <useargs>
        <usearg name="info" type="NullablePointer[GtkRecentInfo]"/>
        <usearg name="appname" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15802" name="gtk_recent_info_get_applications"
@@ -32172,7 +32172,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkRecentChooser]"/>
        <usearg name="uri" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15865" name="gtk_recent_chooser_get_current_uri"
@@ -32201,7 +32201,7 @@
      <useargs>
        <usearg name="chooser" type="NullablePointer[GtkRecentChooser]"/>
        <usearg name="uri" type="String"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_15868" name="gtk_recent_chooser_unselect_uri"
@@ -33644,7 +33644,7 @@
        <usearg name="screen" type="NullablePointer[GdkScreen]"/>
        <usearg name="uri" type="String"/>
        <usearg name="timestamp" type="U32"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_16133" name="gtk_show_uri_on_window"
@@ -33656,7 +33656,7 @@
        <usearg name="parent" type="NullablePointer[GtkWindow]"/>
        <usearg name="uri" type="String"/>
        <usearg name="timestamp" type="U32"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_16140" name="gtk_stack_get_type"
@@ -34577,7 +34577,7 @@
        <usearg name="iter" type="NullablePointer[GtkTextIter]"/>
        <usearg name="data" type="String"/>
        <usearg name="length" type="U64"/>
-       <usearg name="error" type="Array[NullablePointer[GError]]"/>
+       <usearg name="gerror" type="Array[NullablePointer[GError]]"/>
      </useargs>
   </use>
   <use id="_16377" name="gtk_text_view_get_type"
