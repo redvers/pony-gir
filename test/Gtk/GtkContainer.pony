@@ -183,3 +183,6 @@ struct GtkContainer
   fun get_path_for_child(child: GtkWidget tag): NullablePointer[GtkWidgetPath] =>
     @gtk_container_get_path_for_child(this, child)
 
+
+  fun ref gobject(): GObject => widget.parent_instance
+  fun ref gtkwidget(): GtkWidget => widget

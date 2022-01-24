@@ -35,7 +35,7 @@ use @gtk_label_set_use_underline[None](label: GtkLabel tag, setting: I32)
 use @gtk_label_get_use_underline[I32](label: GtkLabel tag)
 use @gtk_label_set_markup_with_mnemonic[None](label: GtkLabel tag, str: Pointer[U8] tag)
 use @gtk_label_get_mnemonic_keyval[U32](label: GtkLabel tag)
-use @gtk_label_set_mnemonic_widget[None](label: GtkLabel tag, widget: GtkWidget tag)
+use @gtk_label_set_mnemonic_widget[None](label: GtkLabel tag, widget': GtkWidget tag)
 use @gtk_label_get_mnemonic_widget[GtkWidget](label: GtkLabel tag)
 use @gtk_label_set_text_with_mnemonic[None](label: GtkLabel tag, str: Pointer[U8] tag)
 use @gtk_label_set_justify[None](label: GtkLabel tag, jtype: I32)
@@ -136,8 +136,8 @@ struct GtkLabel
   fun get_mnemonic_keyval(): U32 =>
     @gtk_label_get_mnemonic_keyval(this)
 
-  fun set_mnemonic_widget(widget: GtkWidget tag): None =>
-    @gtk_label_set_mnemonic_widget(this, widget)
+  fun set_mnemonic_widget(widget': GtkWidget tag): None =>
+    @gtk_label_set_mnemonic_widget(this, widget')
 
   fun get_mnemonic_widget(): GtkWidget =>
     @gtk_label_get_mnemonic_widget(this)

@@ -3,6 +3,10 @@
 <xi:include href="../usetypes.xml"/>
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
+<inherits>
+  <inherit name="GObject" ponyfn="gobject" path="widget.parent_instance"/>
+  <inherit name="GtkWidget" ponyfn="gtkwidget" path="widget"/>
+</inherits>
 <renders>
   <renderuse name="gtk_container_get_type" render="1"/>
   <renderuse name="gtk_container_set_border_width" render="1"/>
