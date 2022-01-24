@@ -31,8 +31,8 @@ actor Main
     let window: GtkWindow = GtkWindow.gnew(0)
     window.set_title("Hello World")
     var string: String val = recover val window.get_title().clone() end
-    window.bin.container.widget.parent_instance.signal_connect_data("destroy", @{(): None => Gtk.gtk_main_quit()}, Pointer[None], Pointer[None], I32(0))
-//    window.show_all()
+    window.gobject().signal_connect_data("destroy", @{(): None => Gtk.gtk_main_quit()}, Pointer[None], Pointer[None], I32(0))
+    window.gtkwidget().show_all()
 
     Gtk.gtk_main()
 

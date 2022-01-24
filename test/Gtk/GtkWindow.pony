@@ -529,3 +529,8 @@ struct GtkWindow
   fun position_get_type(): U64 =>
     @gtk_window_position_get_type()
 
+
+  fun ref gobject(): GObject => bin.container.widget.parent_instance
+  fun ref gtkwidget(): GtkWidget => bin.container.widget
+  fun ref gtkcontainer(): GtkContainer => bin.container
+  fun ref gtkbin(): GtkBin => bin
