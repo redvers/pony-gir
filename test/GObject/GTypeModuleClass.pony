@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtypemodule.h:70
@@ -24,3 +27,4 @@ struct GTypeModuleClass
   var reserved2: Pointer[None] = Pointer[None] // PointerType
   var reserved3: Pointer[None] = Pointer[None] // PointerType
   var reserved4: Pointer[None] = Pointer[None] // PointerType
+

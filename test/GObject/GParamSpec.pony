@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gparam.h:209
@@ -30,3 +33,4 @@ struct GParamSpec
   var qdata: NullablePointer[GData] = NullablePointer[GData].none() // PointerType
   var ref_count: U32 = U32(0) // Typedef
   var param_id: U32 = U32(0) // Typedef
+

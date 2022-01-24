@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gclosure.h:179
@@ -36,3 +39,4 @@ struct GClosure
   var marshal: Pointer[None] = Pointer[None] // PointerType
   var data: Pointer[None] = Pointer[None] // Typedef
   var notifiers: NullablePointer[GClosureNotifyData] = NullablePointer[GClosureNotifyData].none() // PointerType
+

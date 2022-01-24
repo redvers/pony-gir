@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtypemodule.h:48
@@ -20,3 +23,4 @@ struct GTypeModule
   var type_infos: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
   var interface_infos: NullablePointer[GSList] = NullablePointer[GSList].none() // PointerType
   var name: Pointer[U8] = Pointer[U8] // PointerType
+

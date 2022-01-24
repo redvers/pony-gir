@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/genums.h:155
@@ -20,3 +23,4 @@ struct GEnumClass
   var maximum: I32 = I32(0) // Typedef
   var n_values: U32 = U32(0) // Typedef
   var values: NullablePointer[GEnumValue] = NullablePointer[GEnumValue].none() // PointerType
+

@@ -111,7 +111,7 @@
   <renderuse name="gtk_main_iteration" render="0"/>
   <renderuse name="gtk_main_iteration_do" render="0"/>
   <renderuse name="gtk_main_level" render="0"/>
-  <renderuse name="gtk_main_quit" render="0"/>
+  <renderuse name="gtk_main_quit" render="1"/>
   <renderuse name="gtk_message_type_get_type" render="0"/>
   <renderuse name="gtk_movement_step_get_type" render="0"/>
   <renderuse name="gtk_number_up_layout_get_type" render="0"/>

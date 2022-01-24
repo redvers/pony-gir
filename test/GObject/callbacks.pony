@@ -1,0 +1,1 @@
+type GCallback is @{(): None}

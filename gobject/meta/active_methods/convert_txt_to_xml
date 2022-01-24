@@ -1,0 +1,9 @@
+cat ../header.txt
+for f in `cat $1`;do
+  echo -n '  <renderuse name="'
+  echo -n $f
+  echo '" render="0"/>'
+done
+echo '</renders>'
+echo '</castxml2pony>'
+

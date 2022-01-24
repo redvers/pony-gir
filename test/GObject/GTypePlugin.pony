@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtype.h:406
@@ -10,3 +13,4 @@ use "../Glib"
   Fields (Offset in bits):
 */
 struct GTypePlugin
+

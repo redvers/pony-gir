@@ -2061,13 +2061,13 @@
 
   <typedef name="NullablePointer[Array[String]]"
     embed="var"
-    ponytypein="NullablePointer[Array[String]] tag"
+    ponytypein="Pointer[Pointer[U8]] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[Array[String]]"
-    structtype="NullablePointer[Array[String]]"
-    structdef="NullablePointer[Array[String]].none()"
-    argtype="NullablePointer[Array[String]] tag"
-    rvtype="NullablePointer[Array[String]]"/>
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
 
   <typedef name="NullablePointer[GtkCellRendererSpin]"
     embed="var"

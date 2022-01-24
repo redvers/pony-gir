@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtype.h:1284
@@ -26,3 +29,4 @@ struct GTypeValueTable
   var collect_value: Pointer[None] = Pointer[None] // PointerType
   var lcopy_format: Pointer[U8] = Pointer[U8] // PointerType
   var lcopy_value: Pointer[None] = Pointer[None] // PointerType
+

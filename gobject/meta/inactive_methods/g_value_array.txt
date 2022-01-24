@@ -1,0 +1,11 @@
+g_value_array_append
+g_value_array_copy
+g_value_array_free
+g_value_array_get_nth
+g_value_array_get_type
+g_value_array_insert
+g_value_array_new
+g_value_array_prepend
+g_value_array_remove
+g_value_array_sort
+g_value_array_sort_with_data

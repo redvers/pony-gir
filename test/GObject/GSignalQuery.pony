@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gsignal.h:263
@@ -24,3 +27,4 @@ struct GSignalQuery
   var return_type: U64 = U64(0) // Typedef
   var n_params: U32 = U32(0) // Typedef
   var param_types: Pointer[U64] = Pointer[U64] // PointerType
+

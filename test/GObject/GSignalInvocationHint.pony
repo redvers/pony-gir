@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gsignal.h:236
@@ -16,3 +19,4 @@ struct GSignalInvocationHint
   var signal_id: U32 = U32(0) // Typedef
   var detail: U32 = U32(0) // Typedef
   var run_type: I32 = I32(0) // Typedef
+

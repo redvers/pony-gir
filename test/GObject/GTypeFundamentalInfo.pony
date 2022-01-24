@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtype.h:1111
@@ -12,3 +15,4 @@ use "../Glib"
 */
 struct GTypeFundamentalInfo
   var type_flags: I32 = I32(0) // Typedef
+

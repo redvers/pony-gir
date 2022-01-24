@@ -19,6 +19,16 @@
     </ponytypeconvout>
   </typedef>
 
+  <typedef name="GCallback"
+    embed="var"
+    ponytypein="GCallback"
+    ponytypeinconv=""
+    ponytypeout="GCallback"
+    structtype="GCallback"
+    structdef="GCallback"
+    argtype="Pointer[None]"
+    rvtype="GCallback"/>
+
   <typedef name="Array[String]"
     embed="var"
     ponytypein="Array[String]"
@@ -251,13 +261,13 @@
 
   <typedef name="NullablePointer[GObject]"
     embed="var"
-    ponytypein="NullablePointer[GObject] tag"
+    ponytypein="GObject"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GObject]"
+    ponytypeout="GObject"
     structtype="NullablePointer[GObject]"
     structdef="NullablePointer[GObject].none()"
-    argtype="NullablePointer[GObject] tag"
-    rvtype="NullablePointer[GObject]"/>
+    argtype="GObject tag"
+    rvtype="GObject"/>
 
   <typedef name="Array[NullablePointer[GClosure]]"
     embed="embed"

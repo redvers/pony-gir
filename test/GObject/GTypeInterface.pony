@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtype.h:444
@@ -14,3 +17,4 @@ use "../Glib"
 struct GTypeInterface
   var g_type: U64 = U64(0) // Typedef
   var g_instance_type: U64 = U64(0) // Typedef
+

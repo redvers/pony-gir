@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
-<xi:include href="./renderuse.xml"/>
-<xi:include href="./usetypes.xml"/>
-<xi:include href="./../../castxml-results/gobject.xml"/>
-                    <uses>
-                      <use id="_3261" name="g_type_init"
+<uses>
+  <use id="_3261" name="g_type_init"
      ponyname="g_type_init"
      fid="f131"
      lineno="710"
@@ -2230,9 +2226,9 @@
      lineno="404"
      rv="U64">
      <useargs>
-       <usearg name="instance" type="Pointer[None]"/>
+       <usearg name="instance" type="NullablePointer[GObject]"/>
        <usearg name="detailedsignal" type="String"/>
-       <usearg name="chandler" type="Pointer[None]"/>
+       <usearg name="chandler" type="GCallback"/>
        <usearg name="data" type="Pointer[None]"/>
        <usearg name="destroydata" type="Pointer[None]"/>
        <usearg name="connectflags" type="I32"/>
@@ -5170,6 +5166,6 @@
      <useargs>
        <usearg name="ptr" type="NullablePointer[GValue]"/>
      </useargs>
-  </use></uses>
-</castxml2pony>
+  </use>
+</uses>
 

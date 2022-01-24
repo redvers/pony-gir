@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gparamspecs.h:835
@@ -20,3 +23,4 @@ struct GParamSpecDouble
   var maximum: F64 = F64(0) // Typedef
   var default_value: F64 = F64(0) // Typedef
   var epsilon: F64 = F64(0) // Typedef
+

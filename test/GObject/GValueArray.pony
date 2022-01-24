@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gvaluearray.h:49
@@ -16,3 +19,4 @@ struct GValueArray
   var n_values: U32 = U32(0) // Typedef
   var values: NullablePointer[GValue] = NullablePointer[GValue].none() // PointerType
   var n_prealloced: U32 = U32(0) // Typedef
+

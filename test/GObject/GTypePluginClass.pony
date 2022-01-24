@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtypeplugin.h:101
@@ -20,3 +23,4 @@ struct GTypePluginClass
   var unuse_plugin: Pointer[None] = Pointer[None] // Typedef
   var complete_type_info: Pointer[None] = Pointer[None] // Typedef
   var complete_interface_info: Pointer[None] = Pointer[None] // Typedef
+

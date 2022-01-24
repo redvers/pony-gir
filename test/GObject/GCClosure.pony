@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gclosure.h:220
@@ -14,3 +17,4 @@ use "../Glib"
 struct GCClosure
   embed closure: GClosure = GClosure // Typedef
   var callback: Pointer[None] = Pointer[None] // Typedef
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/gobject.xml"/>
+<renders>
+  <renderuse name="g_signal_accumulator_first_wins" render="1"/>
+  <renderuse name="g_signal_accumulator_true_handled" render="1"/>
+  <renderuse name="g_signal_add_emission_hook" render="1"/>
+  <renderuse name="g_signal_chain_from_overridden" render="1"/>
+  <renderuse name="g_signal_chain_from_overridden_handler" render="1"/>
+  <renderuse name="g_signal_connect_closure" render="1"/>
+  <renderuse name="g_signal_connect_closure_by_id" render="1"/>
+  <renderuse name="g_signal_connect_data" render="1"/>
+  <renderuse name="g_signal_connect_object" render="1"/>
+  <renderuse name="g_signal_emit" render="1"/>
+  <renderuse name="g_signal_emit_by_name" render="1"/>
+  <renderuse name="g_signal_emitv" render="1"/>
+  <renderuse name="g_signal_emit_valist" render="0"/>
+  <renderuse name="g_signal_get_invocation_hint" render="1"/>
+  <renderuse name="g_signal_handler_block" render="1"/>
+  <renderuse name="g_signal_handler_disconnect" render="1"/>
+  <renderuse name="g_signal_handler_find" render="1"/>
+  <renderuse name="g_signal_handler_is_connected" render="1"/>
+  <renderuse name="g_signal_handlers_block_matched" render="1"/>
+  <renderuse name="g_signal_handlers_destroy" render="1"/>
+  <renderuse name="g_signal_handlers_disconnect_matched" render="1"/>
+  <renderuse name="g_signal_handlers_unblock_matched" render="1"/>
+  <renderuse name="g_signal_handler_unblock" render="1"/>
+  <renderuse name="g_signal_has_handler_pending" render="1"/>
+  <renderuse name="g_signal_is_valid_name" render="1"/>
+  <renderuse name="g_signal_list_ids" render="1"/>
+  <renderuse name="g_signal_lookup" render="1"/>
+  <renderuse name="g_signal_name" render="1"/>
+  <renderuse name="g_signal_new" render="1"/>
+  <renderuse name="g_signal_new_class_handler" render="1"/>
+  <renderuse name="g_signal_newv" render="1"/>
+  <renderuse name="g_signal_new_valist" render="0"/>
+  <renderuse name="g_signal_override_class_closure" render="1"/>
+  <renderuse name="g_signal_override_class_handler" render="1"/>
+  <renderuse name="g_signal_parse_name" render="1"/>
+  <renderuse name="g_signal_query" render="1"/>
+  <renderuse name="g_signal_remove_emission_hook" render="1"/>
+  <renderuse name="g_signal_set_va_marshaller" render="0"/>
+  <renderuse name="g_signal_stop_emission" render="1"/>
+  <renderuse name="g_signal_stop_emission_by_name" render="1"/>
+  <renderuse name="g_signal_type_cclosure_new" render="1"/>
+</renders>
+</castxml2pony>

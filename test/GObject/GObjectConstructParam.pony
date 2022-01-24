@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gobject.h:371
@@ -14,3 +17,4 @@ use "../Glib"
 struct GObjectConstructParam
   var pspec: NullablePointer[GParamSpec] = NullablePointer[GParamSpec].none() // PointerType
   var value: NullablePointer[GValue] = NullablePointer[GValue].none() // PointerType
+

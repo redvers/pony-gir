@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtype.h:1083
@@ -30,3 +33,4 @@ struct GTypeInfo
   var n_preallocs: U16 = U16(0) // Typedef
   var instance_init: Pointer[None] = Pointer[None] // Typedef
   var value_table: NullablePointer[GTypeValueTable] = NullablePointer[GTypeValueTable].none() // PointerType
+

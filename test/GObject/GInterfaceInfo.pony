@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gtype.h:1124
@@ -16,3 +19,4 @@ struct GInterfaceInfo
   var interface_init: Pointer[None] = Pointer[None] // Typedef
   var interface_finalize: Pointer[None] = Pointer[None] // Typedef
   var interface_data: Pointer[None] = Pointer[None] // Typedef
+

@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/genums.h:176
@@ -18,3 +21,4 @@ struct GFlagsClass
   var mask: U32 = U32(0) // Typedef
   var n_values: U32 = U32(0) // Typedef
   var values: NullablePointer[GFlagsValue] = NullablePointer[GFlagsValue].none() // PointerType
+

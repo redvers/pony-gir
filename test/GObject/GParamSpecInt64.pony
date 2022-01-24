@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gparamspecs.h:734
@@ -18,3 +21,4 @@ struct GParamSpecInt64
   var minimum: I64 = I64(0) // Typedef
   var maximum: I64 = I64(0) // Typedef
   var default_value: I64 = I64(0) // Typedef
+

@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gparam.h:244
@@ -24,3 +27,4 @@ struct GParamSpecClass
   var value_validate: Pointer[None] = Pointer[None] // PointerType
   var values_cmp: Pointer[None] = Pointer[None] // PointerType
   var dummy: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType
+

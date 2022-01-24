@@ -1,5 +1,8 @@
 use "../Glib"
 
+use "lib:glib-2.0"
+
+
 
 /*
   Source: headers/glib-2.70.1/glib-2.0/gobject/gparam.h:273
@@ -14,3 +17,4 @@ use "../Glib"
 struct GParameter
   var name: Pointer[U8] = Pointer[U8] // PointerType
   embed value: GValue = GValue // Typedef
+

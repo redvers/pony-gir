@@ -573,3 +573,4 @@ codegenstructs:
 	sh -x mkstruct.sh _16775 GtkViewportClass
 	sh -x mkstruct.sh _16787 GtkVolumeButton
 	sh -x mkstruct.sh _16789 GtkVolumeButtonClass
+	sh -x mkprim.sh 0 Gtk gtk
