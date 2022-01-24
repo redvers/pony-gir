@@ -98,8 +98,8 @@ use @gtk_window_remove_mnemonic[None](window: GtkWindow tag, keyval: U32, target
 use @gtk_window_mnemonic_activate[I32](window: GtkWindow tag, keyval: U32, modifier: I32)
 use @gtk_window_set_mnemonic_modifier[None](window: GtkWindow tag, modifier: I32)
 use @gtk_window_get_mnemonic_modifier[I32](window: GtkWindow tag)
-use @gtk_window_activate_key[I32](window: GtkWindow tag, event: NullablePointer[GdkEventKey] tag)
-use @gtk_window_propagate_key_event[I32](window: GtkWindow tag, event: NullablePointer[GdkEventKey] tag)
+use @gtk_window_activate_key[I32](window: GtkWindow tag, gevent: NullablePointer[GdkEventKey] tag)
+use @gtk_window_propagate_key_event[I32](window: GtkWindow tag, gevent: NullablePointer[GdkEventKey] tag)
 use @gtk_window_present[None](window: GtkWindow tag)
 use @gtk_window_present_with_time[None](window: GtkWindow tag, timestamp: U32)
 use @gtk_window_iconify[None](window: GtkWindow tag)
@@ -400,11 +400,11 @@ struct GtkWindow
   fun get_mnemonic_modifier(): I32 =>
     @gtk_window_get_mnemonic_modifier(this)
 
-  fun activate_key(event: NullablePointer[GdkEventKey] tag): I32 =>
-    @gtk_window_activate_key(this, event)
+  fun activate_key(gevent: NullablePointer[GdkEventKey] tag): I32 =>
+    @gtk_window_activate_key(this, gevent)
 
-  fun propagate_key_event(event: NullablePointer[GdkEventKey] tag): I32 =>
-    @gtk_window_propagate_key_event(this, event)
+  fun propagate_key_event(gevent: NullablePointer[GdkEventKey] tag): I32 =>
+    @gtk_window_propagate_key_event(this, gevent)
 
   fun present(): None =>
     @gtk_window_present(this)

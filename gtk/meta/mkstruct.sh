@@ -12,3 +12,7 @@ fi
 if test -f "./active_methods/$3.xml"; then
 	saxon-he -xi active_methods/$3.xml ../../xsl/makemethods.xsl struct=$2 debug=0 >> ../../test/Gtk/$2.pony
 fi
+
+#if test -f "./active_methods/$3.sh"; then
+#	sh active_methods/$3.sh $2 $3 >> ../../test/Gtk/$2.pony
+#fi

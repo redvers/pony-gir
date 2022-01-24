@@ -32,7 +32,7 @@ actor Main
     window.set_title("Hello World")
     var string: String val = recover val window.get_title().clone() end
     window.bin.container.widget.parent_instance.signal_connect_data("destroy", @{(): None => Gtk.gtk_main_quit()}, Pointer[None], Pointer[None], I32(0))
-    window.bin.container.widget.show_all()
+//    window.show_all()
 
     Gtk.gtk_main()
 
