@@ -48,7 +48,7 @@ codegenstructs:
 	sh -x mkstruct.sh _11804 GtkApplication
 	sh -x mkstruct.sh _11806 GtkApplicationClass
 	sh -x mkstruct.sh _11808 GtkApplicationPrivate
-	sh -x mkstruct.sh _11843 GtkContainer
+	sh -x mkstruct.sh _11843 GtkContainer gtk_container
 	sh -x mkstruct.sh _11845 GtkContainerPrivate
 	sh -x mkstruct.sh _11847 GtkContainerClass
 	sh -x mkstruct.sh _11899 GtkBin
@@ -68,7 +68,7 @@ codegenstructs:
 	sh -x mkstruct.sh _12201 GtkMenu
 	sh -x mkstruct.sh _12203 GtkMenuClass
 	sh -x mkstruct.sh _12205 GtkMenuPrivate
-	sh -x mkstruct.sh _12252 GtkLabel
+	sh -x mkstruct.sh _12252 GtkLabel gtk_label
 	sh -x mkstruct.sh _12254 GtkLabelPrivate
 	sh -x mkstruct.sh _12256 GtkLabelClass
 	sh -x mkstruct.sh _12258 GtkLabelSelectionInfo
@@ -195,7 +195,7 @@ codegenstructs:
 	sh -x mkstruct.sh _13510 GtkBindingArg
 	sh -x mkstruct.sh _13557 GtkBuildable
 	sh -x mkstruct.sh _13559 GtkBuildableIface
-	sh -x mkstruct.sh _13572 GtkButton
+	sh -x mkstruct.sh _13572 GtkButton gtk_button
 #	cat templates/gtkbin-fn.txt >>  GtkButton
 	sh -x mkstruct.sh _13574 GtkButtonPrivate
 	sh -x mkstruct.sh _13576 GtkButtonClass

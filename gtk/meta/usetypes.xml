@@ -191,13 +191,13 @@
 
   <typedef name="NullablePointer[GtkLabel]"
     embed="var"
-    ponytypein="NullablePointer[GtkLabel] tag"
+    ponytypein="GtkLabel tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GtkLabel]"
-    structtype="NullablePointer[GtkLabel]"
-    structdef="NullablePointer[GtkLabel].none()"
-    argtype="NullablePointer[GtkLabel] tag"
-    rvtype="NullablePointer[GtkLabel]"/>
+    ponytypeout="GtkLabel"
+    structtype="GtkLabel"
+    structdef="GtkLabel"
+    argtype="GtkLabel tag"
+    rvtype="GtkLabel"/>
 
   <typedef name="Array[NullablePointer[GtkSwitch]]"
     embed="embed"
@@ -561,13 +561,13 @@
 
   <typedef name="Array[NullablePointer[GtkButtonBox]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GtkButtonBox]] tag"
+    ponytypein="Pointer[NullablePointer[GtkButtonBox]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GtkButtonBox]]"
-    structtype="Array[NullablePointer[GtkButtonBox]]"
-    structdef="Array[NullablePointer[GtkButtonBox]]"
-    argtype="Array[NullablePointer[GtkButtonBox]] tag"
-    rvtype="Array[NullablePointer[GtkButtonBox]]"/>
+    ponytypeout="Pointer[NullablePointer[GtkButtonBox]]"
+    structtype="Pointer[NullablePointer[GtkButtonBox]]"
+    structdef="Pointer[NullablePointer[GtkButtonBox]]"
+    argtype="Pointer[NullablePointer[GtkButtonBox]] tag"
+    rvtype="Pointer[NullablePointer[GtkButtonBox]]"/>
 
   <typedef name="Array[NullablePointer[GtkGesture]]"
     embed="embed"
@@ -991,13 +991,13 @@
 
   <typedef name="Array[NullablePointer[GtkContainer]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GtkContainer]] tag"
+    ponytypein="Pointer[NullablePointer[GtkContainer]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GtkContainer]]"
-    structtype="Array[NullablePointer[GtkContainer]]"
-    structdef="Array[NullablePointer[GtkContainer]]"
-    argtype="Array[NullablePointer[GtkContainer]] tag"
-    rvtype="Array[NullablePointer[GtkContainer]]"/>
+    ponytypeout="Pointer[NullablePointer[GtkContainer]]"
+    structtype="Pointer[NullablePointer[GtkContainer]]"
+    structdef="Pointer[NullablePointer[GtkContainer]]"
+    argtype="Pointer[NullablePointer[GtkContainer]] tag"
+    rvtype="Pointer[NullablePointer[GtkContainer]]"/>
 
   <typedef name="NullablePointer[GtkTextIter]"
     embed="var"
@@ -3111,13 +3111,13 @@
 
   <typedef name="NullablePointer[GtkContainer]"
     embed="var"
-    ponytypein="NullablePointer[GtkContainer] tag"
+    ponytypein="GtkContainer tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GtkContainer]"
-    structtype="NullablePointer[GtkContainer]"
-    structdef="NullablePointer[GtkContainer].none()"
-    argtype="NullablePointer[GtkContainer] tag"
-    rvtype="NullablePointer[GtkContainer]"/>
+    ponytypeout="GtkContainer"
+    structtype="GtkContainer"
+    structdef="GtkContainer"
+    argtype="GtkContainer tag"
+    rvtype="GtkContainer"/>
 
   <typedef name="Array[NullablePointer[GtkGestureSingle]]"
     embed="embed"
@@ -4061,13 +4061,13 @@
 
   <typedef name="NullablePointer[GtkButtonBox]"
     embed="var"
-    ponytypein="NullablePointer[GtkButtonBox] tag"
+    ponytypein="Pointer[GtkButtonBox] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GtkButtonBox]"
-    structtype="NullablePointer[GtkButtonBox]"
-    structdef="NullablePointer[GtkButtonBox].none()"
-    argtype="NullablePointer[GtkButtonBox] tag"
-    rvtype="NullablePointer[GtkButtonBox]"/>
+    ponytypeout="Pointer[GtkButtonBox]"
+    structtype="Pointer[GtkButtonBox]"
+    structdef="Pointer[GtkButtonBox]"
+    argtype="Pointer[GtkButtonBox] tag"
+    rvtype="Pointer[GtkButtonBox]"/>
 
   <typedef name="NullablePointer[GtkTextView]"
     embed="var"
@@ -4191,13 +4191,13 @@
 
   <typedef name="Array[NullablePointer[GtkButton]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GtkButton]] tag"
+    ponytypein="Pointer[NullablePointer[GtkButton]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GtkButton]]"
-    structtype="Array[NullablePointer[GtkButton]]"
-    structdef="Array[NullablePointer[GtkButton]]"
-    argtype="Array[NullablePointer[GtkButton]] tag"
-    rvtype="Array[NullablePointer[GtkButton]]"/>
+    ponytypeout="Pointer[NullablePointer[GtkButton]]"
+    structtype="Pointer[NullablePointer[GtkButton]]"
+    structdef="Pointer[NullablePointer[GtkButton]]"
+    argtype="Pointer[NullablePointer[GtkButton]] tag"
+    rvtype="Pointer[NullablePointer[GtkButton]]"/>
 
   <typedef name="Array[NullablePointer[GtkCheckMenuItem]]"
     embed="embed"
@@ -5091,13 +5091,13 @@
 
   <typedef name="NullablePointer[GtkButton]"
     embed="var"
-    ponytypein="NullablePointer[GtkButton] tag"
+    ponytypein="GtkButton tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GtkButton]"
-    structtype="NullablePointer[GtkButton]"
-    structdef="NullablePointer[GtkButton].none()"
-    argtype="NullablePointer[GtkButton] tag"
-    rvtype="NullablePointer[GtkButton]"/>
+    ponytypeout="GtkButton"
+    structtype="GtkButton"
+    structdef="GtkButton"
+    argtype="GtkButton tag"
+    rvtype="GtkButton"/>
 
   <typedef name="Array[NullablePointer[GtkCellLayout]]"
     embed="embed"

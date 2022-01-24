@@ -868,7 +868,7 @@
      rv="U32">
      <useargs>
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="templatetype" type="U64"/>
        <usearg name="buffer" type="String"/>
        <usearg name="length" type="U64"/>
@@ -883,7 +883,7 @@
      <useargs/>
   </use>
   <use id="_11546" name="gtk_widget_new"
-     ponyname="new"
+     ponyname="gnew"
      fid="f399"
      lineno="615"
      rv="NullablePointer[GtkWidget]">
@@ -899,7 +899,7 @@
      lineno="619"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11548" name="gtk_widget_destroyed"
@@ -908,7 +908,7 @@
      lineno="621"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="widgetpointer" type="Array[NullablePointer[GtkWidget]]"/>
      </useargs>
   </use>
@@ -918,7 +918,7 @@
      lineno="624"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11550" name="gtk_widget_show"
@@ -927,7 +927,7 @@
      lineno="626"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11551" name="gtk_widget_hide"
@@ -936,7 +936,7 @@
      lineno="628"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11552" name="gtk_widget_show_now"
@@ -945,7 +945,7 @@
      lineno="630"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11553" name="gtk_widget_show_all"
@@ -954,7 +954,7 @@
      lineno="632"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11554" name="gtk_widget_set_no_show_all"
@@ -963,7 +963,7 @@
      lineno="634"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="noshowall" type="I32"/>
      </useargs>
   </use>
@@ -973,7 +973,7 @@
      lineno="637"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11556" name="gtk_widget_map"
@@ -982,7 +982,7 @@
      lineno="639"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11557" name="gtk_widget_unmap"
@@ -991,7 +991,7 @@
      lineno="641"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11558" name="gtk_widget_realize"
@@ -1000,7 +1000,7 @@
      lineno="643"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11559" name="gtk_widget_unrealize"
@@ -1009,7 +1009,7 @@
      lineno="645"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11560" name="gtk_widget_draw"
@@ -1018,7 +1018,7 @@
      lineno="648"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cr" type="NullablePointer[Cairo]"/>
      </useargs>
   </use>
@@ -1028,7 +1028,7 @@
      lineno="652"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11562" name="gtk_widget_queue_draw_area"
@@ -1037,7 +1037,7 @@
      lineno="654"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="x" type="I32"/>
        <usearg name="y" type="I32"/>
        <usearg name="width" type="I32"/>
@@ -1050,7 +1050,7 @@
      lineno="660"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="region" type="NullablePointer[Cairoregion]"/>
      </useargs>
   </use>
@@ -1060,7 +1060,7 @@
      lineno="663"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11565" name="gtk_widget_queue_resize_no_redraw"
@@ -1069,7 +1069,7 @@
      lineno="665"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11566" name="gtk_widget_queue_allocate"
@@ -1078,7 +1078,7 @@
      lineno="667"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11567" name="gtk_widget_get_frame_clock"
@@ -1087,7 +1087,7 @@
      lineno="669"
      rv="NullablePointer[GdkFrameClock]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11568" name="gtk_widget_size_request"
@@ -1096,7 +1096,7 @@
      lineno="672"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="requisition" type="NullablePointer[GtkRequisition]"/>
      </useargs>
   </use>
@@ -1106,7 +1106,7 @@
      lineno="675"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="allocation" type="NullablePointer[Cairorectangleint]"/>
      </useargs>
   </use>
@@ -1116,7 +1116,7 @@
      lineno="678"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="allocation" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="baseline" type="I32"/>
      </useargs>
@@ -1127,7 +1127,7 @@
      lineno="683"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11572" name="gtk_widget_get_preferred_width"
@@ -1136,7 +1136,7 @@
      lineno="685"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumwidth" type="Pointer[I32]"/>
        <usearg name="naturalwidth" type="Pointer[I32]"/>
      </useargs>
@@ -1147,7 +1147,7 @@
      lineno="689"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="width" type="I32"/>
        <usearg name="minimumheight" type="Pointer[I32]"/>
        <usearg name="naturalheight" type="Pointer[I32]"/>
@@ -1159,7 +1159,7 @@
      lineno="694"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumheight" type="Pointer[I32]"/>
        <usearg name="naturalheight" type="Pointer[I32]"/>
      </useargs>
@@ -1170,7 +1170,7 @@
      lineno="698"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="height" type="I32"/>
        <usearg name="minimumwidth" type="Pointer[I32]"/>
        <usearg name="naturalwidth" type="Pointer[I32]"/>
@@ -1182,7 +1182,7 @@
      lineno="703"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="width" type="I32"/>
        <usearg name="minimumheight" type="Pointer[I32]"/>
        <usearg name="naturalheight" type="Pointer[I32]"/>
@@ -1196,7 +1196,7 @@
      lineno="710"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumsize" type="NullablePointer[GtkRequisition]"/>
        <usearg name="naturalsize" type="NullablePointer[GtkRequisition]"/>
      </useargs>
@@ -1207,7 +1207,7 @@
      lineno="715"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="requisition" type="NullablePointer[GtkRequisition]"/>
      </useargs>
   </use>
@@ -1217,7 +1217,7 @@
      lineno="718"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="accelsignal" type="String"/>
        <usearg name="accelgroup" type="NullablePointer[GtkAccelGroup]"/>
        <usearg name="accelkey" type="U32"/>
@@ -1231,7 +1231,7 @@
      lineno="725"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="accelgroup" type="NullablePointer[GtkAccelGroup]"/>
        <usearg name="accelkey" type="U32"/>
        <usearg name="accelmods" type="I32"/>
@@ -1243,7 +1243,7 @@
      lineno="730"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="accelpath" type="String"/>
        <usearg name="accelgroup" type="NullablePointer[GtkAccelGroup]"/>
      </useargs>
@@ -1254,7 +1254,7 @@
      lineno="734"
      rv="NullablePointer[GList]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11583" name="gtk_widget_can_activate_accel"
@@ -1263,7 +1263,7 @@
      lineno="736"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="signalid" type="U32"/>
      </useargs>
   </use>
@@ -1273,7 +1273,7 @@
      lineno="739"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="groupcycling" type="I32"/>
      </useargs>
   </use>
@@ -1283,7 +1283,7 @@
      lineno="742"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="gevent" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -1293,7 +1293,7 @@
      lineno="745"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="gevent" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -1303,7 +1303,7 @@
      lineno="748"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="gevent" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -1313,7 +1313,7 @@
      lineno="752"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11589" name="gtk_widget_reparent"
@@ -1322,7 +1322,7 @@
      lineno="755"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="newparent" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
@@ -1332,7 +1332,7 @@
      lineno="758"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="area" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="intersection" type="NullablePointer[Cairorectangleint]"/>
      </useargs>
@@ -1343,7 +1343,7 @@
      lineno="762"
      rv="NullablePointer[Cairoregion]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="region" type="NullablePointer[Cairoregion]"/>
      </useargs>
   </use>
@@ -1353,7 +1353,7 @@
      lineno="766"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11593" name="gtk_widget_child_notify"
@@ -1362,7 +1362,7 @@
      lineno="768"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="childproperty" type="String"/>
      </useargs>
   </use>
@@ -1372,7 +1372,7 @@
      lineno="771"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11595" name="gtk_widget_set_can_focus"
@@ -1381,7 +1381,7 @@
      lineno="774"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="canfocus" type="I32"/>
      </useargs>
   </use>
@@ -1391,7 +1391,7 @@
      lineno="777"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11597" name="gtk_widget_has_focus"
@@ -1400,7 +1400,7 @@
      lineno="779"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11598" name="gtk_widget_is_focus"
@@ -1409,7 +1409,7 @@
      lineno="781"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11599" name="gtk_widget_has_visible_focus"
@@ -1418,7 +1418,7 @@
      lineno="783"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11600" name="gtk_widget_grab_focus"
@@ -1427,7 +1427,7 @@
      lineno="785"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11601" name="gtk_widget_set_focus_on_click"
@@ -1436,7 +1436,7 @@
      lineno="787"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="focusonclick" type="I32"/>
      </useargs>
   </use>
@@ -1446,7 +1446,7 @@
      lineno="790"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11603" name="gtk_widget_set_can_default"
@@ -1455,7 +1455,7 @@
      lineno="793"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="candefault" type="I32"/>
      </useargs>
   </use>
@@ -1465,7 +1465,7 @@
      lineno="796"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11605" name="gtk_widget_has_default"
@@ -1474,7 +1474,7 @@
      lineno="798"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11606" name="gtk_widget_grab_default"
@@ -1483,7 +1483,7 @@
      lineno="800"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11607" name="gtk_widget_set_receives_default"
@@ -1492,7 +1492,7 @@
      lineno="803"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="receivesdefault" type="I32"/>
      </useargs>
   </use>
@@ -1502,7 +1502,7 @@
      lineno="806"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11609" name="gtk_widget_has_grab"
@@ -1511,7 +1511,7 @@
      lineno="809"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11610" name="gtk_widget_device_is_shadowed"
@@ -1520,7 +1520,7 @@
      lineno="812"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
      </useargs>
   </use>
@@ -1530,7 +1530,7 @@
      lineno="817"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="name" type="String"/>
      </useargs>
   </use>
@@ -1540,7 +1540,7 @@
      lineno="820"
      rv="String">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11613" name="gtk_widget_set_state"
@@ -1549,7 +1549,7 @@
      lineno="823"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="state" type="I32"/>
      </useargs>
   </use>
@@ -1559,7 +1559,7 @@
      lineno="827"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11615" name="gtk_widget_set_state_flags"
@@ -1568,7 +1568,7 @@
      lineno="830"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="clear" type="I32"/>
      </useargs>
@@ -1579,7 +1579,7 @@
      lineno="834"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -1589,7 +1589,7 @@
      lineno="837"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11618" name="gtk_widget_set_sensitive"
@@ -1598,7 +1598,7 @@
      lineno="840"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="sensitive" type="I32"/>
      </useargs>
   </use>
@@ -1608,7 +1608,7 @@
      lineno="843"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11620" name="gtk_widget_is_sensitive"
@@ -1617,7 +1617,7 @@
      lineno="845"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11621" name="gtk_widget_set_visible"
@@ -1626,7 +1626,7 @@
      lineno="848"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="visible" type="I32"/>
      </useargs>
   </use>
@@ -1636,7 +1636,7 @@
      lineno="851"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11623" name="gtk_widget_is_visible"
@@ -1645,7 +1645,7 @@
      lineno="853"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11624" name="gtk_widget_set_has_window"
@@ -1654,7 +1654,7 @@
      lineno="856"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="haswindow" type="I32"/>
      </useargs>
   </use>
@@ -1664,7 +1664,7 @@
      lineno="859"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11626" name="gtk_widget_is_toplevel"
@@ -1673,7 +1673,7 @@
      lineno="862"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11627" name="gtk_widget_is_drawable"
@@ -1682,7 +1682,7 @@
      lineno="864"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11628" name="gtk_widget_set_realized"
@@ -1691,7 +1691,7 @@
      lineno="866"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="realized" type="I32"/>
      </useargs>
   </use>
@@ -1701,7 +1701,7 @@
      lineno="869"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11630" name="gtk_widget_set_mapped"
@@ -1710,7 +1710,7 @@
      lineno="871"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="mapped" type="I32"/>
      </useargs>
   </use>
@@ -1720,7 +1720,7 @@
      lineno="874"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11632" name="gtk_widget_set_app_paintable"
@@ -1729,7 +1729,7 @@
      lineno="877"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="apppaintable" type="I32"/>
      </useargs>
   </use>
@@ -1739,7 +1739,7 @@
      lineno="880"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11634" name="gtk_widget_set_double_buffered"
@@ -1748,7 +1748,7 @@
      lineno="883"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="doublebuffered" type="I32"/>
      </useargs>
   </use>
@@ -1758,7 +1758,7 @@
      lineno="886"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11636" name="gtk_widget_set_redraw_on_allocate"
@@ -1767,7 +1767,7 @@
      lineno="889"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="redrawonallocate" type="I32"/>
      </useargs>
   </use>
@@ -1777,7 +1777,7 @@
      lineno="893"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="parent" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
@@ -1787,7 +1787,7 @@
      lineno="896"
      rv="NullablePointer[GtkWidget]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11639" name="gtk_widget_set_parent_window"
@@ -1796,7 +1796,7 @@
      lineno="899"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="parentwindow" type="NullablePointer[GdkWindow]"/>
      </useargs>
   </use>
@@ -1806,7 +1806,7 @@
      lineno="902"
      rv="NullablePointer[GdkWindow]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11641" name="gtk_widget_set_child_visible"
@@ -1815,7 +1815,7 @@
      lineno="905"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="isvisible" type="I32"/>
      </useargs>
   </use>
@@ -1825,7 +1825,7 @@
      lineno="908"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11643" name="gtk_widget_set_window"
@@ -1834,7 +1834,7 @@
      lineno="911"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="window" type="NullablePointer[GdkWindow]"/>
      </useargs>
   </use>
@@ -1844,7 +1844,7 @@
      lineno="914"
      rv="NullablePointer[GdkWindow]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11645" name="gtk_widget_register_window"
@@ -1853,7 +1853,7 @@
      lineno="916"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="window" type="NullablePointer[GdkWindow]"/>
      </useargs>
   </use>
@@ -1863,7 +1863,7 @@
      lineno="919"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="window" type="NullablePointer[GdkWindow]"/>
      </useargs>
   </use>
@@ -1873,7 +1873,7 @@
      lineno="923"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11648" name="gtk_widget_get_allocated_height"
@@ -1882,7 +1882,7 @@
      lineno="925"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11649" name="gtk_widget_get_allocated_baseline"
@@ -1891,7 +1891,7 @@
      lineno="927"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11650" name="gtk_widget_get_allocated_size"
@@ -1900,7 +1900,7 @@
      lineno="929"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="allocation" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="baseline" type="Pointer[I32]"/>
      </useargs>
@@ -1911,7 +1911,7 @@
      lineno="934"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="allocation" type="NullablePointer[Cairorectangleint]"/>
      </useargs>
   </use>
@@ -1921,7 +1921,7 @@
      lineno="937"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="allocation" type="NullablePointer[Cairorectangleint]"/>
      </useargs>
   </use>
@@ -1931,7 +1931,7 @@
      lineno="940"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="clip" type="NullablePointer[Cairorectangleint]"/>
      </useargs>
   </use>
@@ -1941,7 +1941,7 @@
      lineno="943"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="clip" type="NullablePointer[Cairorectangleint]"/>
      </useargs>
   </use>
@@ -1951,7 +1951,7 @@
      lineno="948"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="requisition" type="NullablePointer[GtkRequisition]"/>
      </useargs>
   </use>
@@ -1961,7 +1961,7 @@
      lineno="952"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="direction" type="I32"/>
      </useargs>
   </use>
@@ -1971,7 +1971,7 @@
      lineno="955"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="direction" type="I32"/>
      </useargs>
   </use>
@@ -1981,7 +1981,7 @@
      lineno="958"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11659" name="gtk_widget_set_size_request"
@@ -1990,7 +1990,7 @@
      lineno="961"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="width" type="I32"/>
        <usearg name="height" type="I32"/>
      </useargs>
@@ -2001,7 +2001,7 @@
      lineno="965"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="width" type="Pointer[I32]"/>
        <usearg name="height" type="Pointer[I32]"/>
      </useargs>
@@ -2012,7 +2012,7 @@
      lineno="969"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="events" type="I32"/>
      </useargs>
   </use>
@@ -2022,7 +2022,7 @@
      lineno="972"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="events" type="I32"/>
      </useargs>
   </use>
@@ -2032,7 +2032,7 @@
      lineno="975"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
        <usearg name="events" type="I32"/>
      </useargs>
@@ -2043,7 +2043,7 @@
      lineno="979"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
        <usearg name="events" type="I32"/>
      </useargs>
@@ -2054,7 +2054,7 @@
      lineno="983"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="opacity" type="F64"/>
      </useargs>
   </use>
@@ -2064,7 +2064,7 @@
      lineno="986"
      rv="F64">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11667" name="gtk_widget_set_device_enabled"
@@ -2073,7 +2073,7 @@
      lineno="989"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
        <usearg name="enabled" type="I32"/>
      </useargs>
@@ -2084,7 +2084,7 @@
      lineno="993"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
      </useargs>
   </use>
@@ -2094,7 +2094,7 @@
      lineno="997"
      rv="NullablePointer[GtkWidget]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11670" name="gtk_widget_get_ancestor"
@@ -2103,7 +2103,7 @@
      lineno="999"
      rv="NullablePointer[GtkWidget]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="widgettype" type="U64"/>
      </useargs>
   </use>
@@ -2113,7 +2113,7 @@
      lineno="1002"
      rv="NullablePointer[GdkVisual]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11672" name="gtk_widget_set_visual"
@@ -2122,7 +2122,7 @@
      lineno="1004"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="visual" type="NullablePointer[GdkVisual]"/>
      </useargs>
   </use>
@@ -2132,7 +2132,7 @@
      lineno="1008"
      rv="NullablePointer[GdkScreen]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11674" name="gtk_widget_has_screen"
@@ -2141,7 +2141,7 @@
      lineno="1010"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11675" name="gtk_widget_get_scale_factor"
@@ -2150,7 +2150,7 @@
      lineno="1012"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11676" name="gtk_widget_get_display"
@@ -2159,7 +2159,7 @@
      lineno="1014"
      rv="NullablePointer[GdkDisplay]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11677" name="gtk_widget_get_root_window"
@@ -2168,7 +2168,7 @@
      lineno="1016"
      rv="NullablePointer[GdkWindow]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11678" name="gtk_widget_get_settings"
@@ -2177,7 +2177,7 @@
      lineno="1018"
      rv="NullablePointer[GtkSettings]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11679" name="gtk_widget_get_clipboard"
@@ -2186,7 +2186,7 @@
      lineno="1020"
      rv="NullablePointer[GtkClipboard]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="selection" type="NullablePointer[GdkAtom]"/>
      </useargs>
   </use>
@@ -2196,7 +2196,7 @@
      lineno="1026"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11681" name="gtk_widget_set_hexpand"
@@ -2205,7 +2205,7 @@
      lineno="1028"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="expand" type="I32"/>
      </useargs>
   </use>
@@ -2215,7 +2215,7 @@
      lineno="1031"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11683" name="gtk_widget_set_hexpand_set"
@@ -2224,7 +2224,7 @@
      lineno="1033"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="set" type="I32"/>
      </useargs>
   </use>
@@ -2234,7 +2234,7 @@
      lineno="1036"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11685" name="gtk_widget_set_vexpand"
@@ -2243,7 +2243,7 @@
      lineno="1038"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="expand" type="I32"/>
      </useargs>
   </use>
@@ -2253,7 +2253,7 @@
      lineno="1041"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11687" name="gtk_widget_set_vexpand_set"
@@ -2262,7 +2262,7 @@
      lineno="1043"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="set" type="I32"/>
      </useargs>
   </use>
@@ -2272,7 +2272,7 @@
      lineno="1046"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11689" name="gtk_widget_compute_expand"
@@ -2281,7 +2281,7 @@
      lineno="1048"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="orientation" type="I32"/>
      </useargs>
   </use>
@@ -2291,7 +2291,7 @@
      lineno="1054"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11691" name="gtk_widget_set_support_multidevice"
@@ -2300,7 +2300,7 @@
      lineno="1056"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="supportmultidevice" type="I32"/>
      </useargs>
   </use>
@@ -2330,7 +2330,7 @@
      lineno="1067"
      rv="NullablePointer[AtkObject]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11695" name="gtk_widget_get_halign"
@@ -2339,7 +2339,7 @@
      lineno="1072"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11696" name="gtk_widget_set_halign"
@@ -2348,7 +2348,7 @@
      lineno="1074"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="align" type="I32"/>
      </useargs>
   </use>
@@ -2358,7 +2358,7 @@
      lineno="1077"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11698" name="gtk_widget_get_valign_with_baseline"
@@ -2367,7 +2367,7 @@
      lineno="1079"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11699" name="gtk_widget_set_valign"
@@ -2376,7 +2376,7 @@
      lineno="1081"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="align" type="I32"/>
      </useargs>
   </use>
@@ -2386,7 +2386,7 @@
      lineno="1084"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11701" name="gtk_widget_set_margin_left"
@@ -2395,7 +2395,7 @@
      lineno="1086"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="margin" type="I32"/>
      </useargs>
   </use>
@@ -2405,7 +2405,7 @@
      lineno="1089"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11703" name="gtk_widget_set_margin_right"
@@ -2414,7 +2414,7 @@
      lineno="1091"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="margin" type="I32"/>
      </useargs>
   </use>
@@ -2424,7 +2424,7 @@
      lineno="1094"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11705" name="gtk_widget_set_margin_start"
@@ -2433,7 +2433,7 @@
      lineno="1096"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="margin" type="I32"/>
      </useargs>
   </use>
@@ -2443,7 +2443,7 @@
      lineno="1099"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11707" name="gtk_widget_set_margin_end"
@@ -2452,7 +2452,7 @@
      lineno="1101"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="margin" type="I32"/>
      </useargs>
   </use>
@@ -2462,7 +2462,7 @@
      lineno="1104"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11709" name="gtk_widget_set_margin_top"
@@ -2471,7 +2471,7 @@
      lineno="1106"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="margin" type="I32"/>
      </useargs>
   </use>
@@ -2481,7 +2481,7 @@
      lineno="1109"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11711" name="gtk_widget_set_margin_bottom"
@@ -2490,7 +2490,7 @@
      lineno="1111"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="margin" type="I32"/>
      </useargs>
   </use>
@@ -2500,7 +2500,7 @@
      lineno="1116"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11713" name="gtk_widget_get_device_events"
@@ -2509,7 +2509,7 @@
      lineno="1118"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
      </useargs>
   </use>
@@ -2519,7 +2519,7 @@
      lineno="1121"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="x" type="Pointer[I32]"/>
        <usearg name="y" type="Pointer[I32]"/>
      </useargs>
@@ -2530,7 +2530,7 @@
      lineno="1126"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="ancestor" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
@@ -2554,7 +2554,7 @@
      lineno="1140"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11718" name="gtk_widget_override_color"
@@ -2563,7 +2563,7 @@
      lineno="1144"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="state" type="I32"/>
        <usearg name="color" type="NullablePointer[GdkRGBA]"/>
      </useargs>
@@ -2574,7 +2574,7 @@
      lineno="1148"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="state" type="I32"/>
        <usearg name="color" type="NullablePointer[GdkRGBA]"/>
      </useargs>
@@ -2585,7 +2585,7 @@
      lineno="1153"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="fontdesc" type="NullablePointer[PangoFontDescription]"/>
      </useargs>
   </use>
@@ -2595,7 +2595,7 @@
      lineno="1157"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="name" type="String"/>
        <usearg name="color" type="NullablePointer[GdkRGBA]"/>
      </useargs>
@@ -2606,7 +2606,7 @@
      lineno="1161"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cursor" type="NullablePointer[GdkRGBA]"/>
        <usearg name="secondarycursor" type="NullablePointer[GdkRGBA]"/>
      </useargs>
@@ -2617,7 +2617,7 @@
      lineno="1166"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11724" name="gtk_widget_create_pango_context"
@@ -2626,7 +2626,7 @@
      lineno="1169"
      rv="NullablePointer[PangoContext]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11725" name="gtk_widget_get_pango_context"
@@ -2635,7 +2635,7 @@
      lineno="1171"
      rv="NullablePointer[PangoContext]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11726" name="gtk_widget_set_font_options"
@@ -2644,7 +2644,7 @@
      lineno="1173"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="options" type="NullablePointer[Cairofontoptions]"/>
      </useargs>
   </use>
@@ -2654,7 +2654,7 @@
      lineno="1176"
      rv="NullablePointer[Cairofontoptions]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11728" name="gtk_widget_create_pango_layout"
@@ -2663,7 +2663,7 @@
      lineno="1178"
      rv="NullablePointer[PangoLayout]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="text" type="String"/>
      </useargs>
   </use>
@@ -2673,7 +2673,7 @@
      lineno="1182"
      rv="NullablePointer[GdkPixbuf]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="stockid" type="String"/>
        <usearg name="size" type="I32"/>
      </useargs>
@@ -2684,7 +2684,7 @@
      lineno="1190"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="name" type="String"/>
      </useargs>
   </use>
@@ -2694,7 +2694,7 @@
      lineno="1193"
      rv="String">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11732" name="gtk_widget_push_composite_child"
@@ -2758,7 +2758,7 @@
      lineno="1220"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="propertyname" type="String"/>
        <usearg name="value" type="NullablePointer[GValue]"/>
      </useargs>
@@ -2769,7 +2769,7 @@
      lineno="1224"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="varargs" type="NullablePointer[Valisttag]"/>
      </useargs>
@@ -2780,7 +2780,7 @@
      lineno="1228"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="parg2" type="..."/>
      </useargs>
@@ -2791,7 +2791,7 @@
      lineno="1235"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="dir" type="I32"/>
      </useargs>
   </use>
@@ -2801,7 +2801,7 @@
      lineno="1238"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11743" name="gtk_widget_set_default_direction"
@@ -2826,7 +2826,7 @@
      lineno="1247"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11746" name="gtk_widget_shape_combine_region"
@@ -2835,7 +2835,7 @@
      lineno="1252"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="region" type="NullablePointer[Cairoregion]"/>
      </useargs>
   </use>
@@ -2845,7 +2845,7 @@
      lineno="1255"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="region" type="NullablePointer[Cairoregion]"/>
      </useargs>
   </use>
@@ -2855,7 +2855,7 @@
      lineno="1259"
      rv="NullablePointer[GList]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11749" name="gtk_widget_add_mnemonic_label"
@@ -2864,7 +2864,7 @@
      lineno="1261"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="label" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
@@ -2874,7 +2874,7 @@
      lineno="1264"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="label" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
@@ -2884,7 +2884,7 @@
      lineno="1268"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="customwindow" type="NullablePointer[GtkWindow]"/>
      </useargs>
   </use>
@@ -2894,7 +2894,7 @@
      lineno="1271"
      rv="NullablePointer[GtkWindow]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11753" name="gtk_widget_trigger_tooltip_query"
@@ -2903,7 +2903,7 @@
      lineno="1273"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11754" name="gtk_widget_set_tooltip_text"
@@ -2912,7 +2912,7 @@
      lineno="1275"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="text" type="String"/>
      </useargs>
   </use>
@@ -2922,7 +2922,7 @@
      lineno="1278"
      rv="String">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11756" name="gtk_widget_set_tooltip_markup"
@@ -2931,7 +2931,7 @@
      lineno="1280"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="markup" type="String"/>
      </useargs>
   </use>
@@ -2941,7 +2941,7 @@
      lineno="1283"
      rv="String">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11758" name="gtk_widget_set_has_tooltip"
@@ -2950,7 +2950,7 @@
      lineno="1285"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="hastooltip" type="I32"/>
      </useargs>
   </use>
@@ -2960,7 +2960,7 @@
      lineno="1288"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11760" name="gtk_cairo_should_draw_window"
@@ -2980,7 +2980,7 @@
      rv="None">
      <useargs>
        <usearg name="cr" type="NullablePointer[Cairo]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="window" type="NullablePointer[GdkWindow]"/>
      </useargs>
   </use>
@@ -3022,7 +3022,7 @@
      lineno="1308"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11767" name="gtk_widget_get_style_context"
@@ -3031,7 +3031,7 @@
      lineno="1311"
      rv="NullablePointer[GtkStyleContext]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11768" name="gtk_widget_get_path"
@@ -3040,7 +3040,7 @@
      lineno="1314"
      rv="NullablePointer[GtkWidgetPath]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11769" name="gtk_widget_class_set_css_name"
@@ -3068,7 +3068,7 @@
      lineno="1323"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="intent" type="I32"/>
      </useargs>
   </use>
@@ -3078,7 +3078,7 @@
      lineno="1327"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="name" type="String"/>
        <usearg name="group" type="NullablePointer[GActionGroup]"/>
      </useargs>
@@ -3089,7 +3089,7 @@
      lineno="1334"
      rv="U32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
        <usearg name="notify" type="Pointer[None]"/>
@@ -3101,7 +3101,7 @@
      lineno="1340"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="id" type="U32"/>
      </useargs>
   </use>
@@ -3111,7 +3111,7 @@
      lineno="1454"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11776" name="gtk_widget_get_template_child"
@@ -3120,7 +3120,7 @@
      lineno="1456"
      rv="NullablePointer[GObject]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="widgettype" type="U64"/>
        <usearg name="name" type="String"/>
      </useargs>
@@ -3186,7 +3186,7 @@
      lineno="1481"
      rv="NullablePointer[GActionGroup]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="prefix" type="String"/>
      </useargs>
   </use>
@@ -3196,7 +3196,7 @@
      lineno="1485"
      rv="Array[String]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11784" name="gtk_widget_set_font_map"
@@ -3205,7 +3205,7 @@
      lineno="1488"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="fontmap" type="NullablePointer[PangoFontMap]"/>
      </useargs>
   </use>
@@ -3215,7 +3215,7 @@
      lineno="1491"
      rv="NullablePointer[PangoFontMap]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11790" name="glib_autoptr_clear_GtkWidget"
@@ -4078,7 +4078,7 @@
      lineno="1245"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cr" type="NullablePointer[Cairo]"/>
        <usearg name="location" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="isprimary" type="I32"/>
@@ -5604,14 +5604,14 @@
      </useargs>
   </use>
   <use id="_11851" name="gtk_container_get_type"
-     ponyname="gtk_container_get_type"
+     ponyname="get_type"
      fid="f438"
      lineno="142"
      rv="U64">
      <useargs/>
   </use>
   <use id="_11852" name="gtk_container_set_border_width"
-     ponyname="gtk_container_set_border_width"
+     ponyname="set_border_width"
      fid="f438"
      lineno="144"
      rv="None">
@@ -5621,7 +5621,7 @@
      </useargs>
   </use>
   <use id="_11853" name="gtk_container_get_border_width"
-     ponyname="gtk_container_get_border_width"
+     ponyname="get_border_width"
      fid="f438"
      lineno="147"
      rv="U32">
@@ -5630,27 +5630,27 @@
      </useargs>
   </use>
   <use id="_11854" name="gtk_container_add"
-     ponyname="gtk_container_add"
+     ponyname="add"
      fid="f438"
      lineno="149"
      rv="None">
      <useargs>
        <usearg name="container" type="NullablePointer[GtkContainer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11855" name="gtk_container_remove"
-     ponyname="gtk_container_remove"
+     ponyname="remove"
      fid="f438"
      lineno="152"
      rv="None">
      <useargs>
        <usearg name="container" type="NullablePointer[GtkContainer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11856" name="gtk_container_set_resize_mode"
-     ponyname="gtk_container_set_resize_mode"
+     ponyname="set_resize_mode"
      fid="f438"
      lineno="156"
      rv="None">
@@ -5660,7 +5660,7 @@
      </useargs>
   </use>
   <use id="_11857" name="gtk_container_get_resize_mode"
-     ponyname="gtk_container_get_resize_mode"
+     ponyname="get_resize_mode"
      fid="f438"
      lineno="159"
      rv="I32">
@@ -5669,7 +5669,7 @@
      </useargs>
   </use>
   <use id="_11858" name="gtk_container_check_resize"
-     ponyname="gtk_container_check_resize"
+     ponyname="check_resize"
      fid="f438"
      lineno="162"
      rv="None">
@@ -5678,7 +5678,7 @@
      </useargs>
   </use>
   <use id="_11859" name="gtk_container_foreach"
-     ponyname="gtk_container_foreach"
+     ponyname="foreach"
      fid="f438"
      lineno="165"
      rv="None">
@@ -5689,7 +5689,7 @@
      </useargs>
   </use>
   <use id="_11860" name="gtk_container_get_children"
-     ponyname="gtk_container_get_children"
+     ponyname="get_children"
      fid="f438"
      lineno="169"
      rv="NullablePointer[GList]">
@@ -5698,7 +5698,7 @@
      </useargs>
   </use>
   <use id="_11861" name="gtk_container_propagate_draw"
-     ponyname="gtk_container_propagate_draw"
+     ponyname="propagate_draw"
      fid="f438"
      lineno="172"
      rv="None">
@@ -5709,7 +5709,7 @@
      </useargs>
   </use>
   <use id="_11862" name="gtk_container_set_focus_chain"
-     ponyname="gtk_container_set_focus_chain"
+     ponyname="set_focus_chain"
      fid="f438"
      lineno="177"
      rv="None">
@@ -5719,7 +5719,7 @@
      </useargs>
   </use>
   <use id="_11863" name="gtk_container_get_focus_chain"
-     ponyname="gtk_container_get_focus_chain"
+     ponyname="get_focus_chain"
      fid="f438"
      lineno="180"
      rv="I32">
@@ -5729,7 +5729,7 @@
      </useargs>
   </use>
   <use id="_11864" name="gtk_container_unset_focus_chain"
-     ponyname="gtk_container_unset_focus_chain"
+     ponyname="unset_focus_chain"
      fid="f438"
      lineno="183"
      rv="None">
@@ -5738,7 +5738,7 @@
      </useargs>
   </use>
   <use id="_11865" name="gtk_container_set_reallocate_redraws"
-     ponyname="gtk_container_set_reallocate_redraws"
+     ponyname="set_reallocate_redraws"
      fid="f438"
      lineno="191"
      rv="None">
@@ -5748,7 +5748,7 @@
      </useargs>
   </use>
   <use id="_11866" name="gtk_container_set_focus_child"
-     ponyname="gtk_container_set_focus_child"
+     ponyname="set_focus_child"
      fid="f438"
      lineno="194"
      rv="None">
@@ -5758,7 +5758,7 @@
      </useargs>
   </use>
   <use id="_11867" name="gtk_container_get_focus_child"
-     ponyname="gtk_container_get_focus_child"
+     ponyname="get_focus_child"
      fid="f438"
      lineno="198"
      rv="NullablePointer[GtkWidget]">
@@ -5767,7 +5767,7 @@
      </useargs>
   </use>
   <use id="_11868" name="gtk_container_set_focus_vadjustment"
-     ponyname="gtk_container_set_focus_vadjustment"
+     ponyname="set_focus_vadjustment"
      fid="f438"
      lineno="200"
      rv="None">
@@ -5777,7 +5777,7 @@
      </useargs>
   </use>
   <use id="_11869" name="gtk_container_get_focus_vadjustment"
-     ponyname="gtk_container_get_focus_vadjustment"
+     ponyname="get_focus_vadjustment"
      fid="f438"
      lineno="203"
      rv="NullablePointer[GtkAdjustment]">
@@ -5786,7 +5786,7 @@
      </useargs>
   </use>
   <use id="_11870" name="gtk_container_set_focus_hadjustment"
-     ponyname="gtk_container_set_focus_hadjustment"
+     ponyname="set_focus_hadjustment"
      fid="f438"
      lineno="205"
      rv="None">
@@ -5796,7 +5796,7 @@
      </useargs>
   </use>
   <use id="_11871" name="gtk_container_get_focus_hadjustment"
-     ponyname="gtk_container_get_focus_hadjustment"
+     ponyname="get_focus_hadjustment"
      fid="f438"
      lineno="208"
      rv="NullablePointer[GtkAdjustment]">
@@ -5805,7 +5805,7 @@
      </useargs>
   </use>
   <use id="_11872" name="gtk_container_resize_children"
-     ponyname="gtk_container_resize_children"
+     ponyname="resize_children"
      fid="f438"
      lineno="211"
      rv="None">
@@ -5814,7 +5814,7 @@
      </useargs>
   </use>
   <use id="_11873" name="gtk_container_child_type"
-     ponyname="gtk_container_child_type"
+     ponyname="child_type"
      fid="f438"
      lineno="214"
      rv="U64">
@@ -5823,7 +5823,7 @@
      </useargs>
   </use>
   <use id="_11874" name="gtk_container_class_install_child_property"
-     ponyname="gtk_container_class_install_child_property"
+     ponyname="class_install_child_property"
      fid="f438"
      lineno="218"
      rv="None">
@@ -5834,7 +5834,7 @@
      </useargs>
   </use>
   <use id="_11875" name="gtk_container_class_install_child_properties"
-     ponyname="gtk_container_class_install_child_properties"
+     ponyname="class_install_child_properties"
      fid="f438"
      lineno="222"
      rv="None">
@@ -5845,7 +5845,7 @@
      </useargs>
   </use>
   <use id="_11876" name="gtk_container_class_find_child_property"
-     ponyname="gtk_container_class_find_child_property"
+     ponyname="class_find_child_property"
      fid="f438"
      lineno="226"
      rv="NullablePointer[GParamSpec]">
@@ -5855,7 +5855,7 @@
      </useargs>
   </use>
   <use id="_11877" name="gtk_container_class_list_child_properties"
-     ponyname="gtk_container_class_list_child_properties"
+     ponyname="class_list_child_properties"
      fid="f438"
      lineno="229"
      rv="Array[NullablePointer[GParamSpec]]">
@@ -5865,19 +5865,19 @@
      </useargs>
   </use>
   <use id="_11878" name="gtk_container_add_with_properties"
-     ponyname="gtk_container_add_with_properties"
+     ponyname="add_with_properties"
      fid="f438"
      lineno="232"
      rv="None">
      <useargs>
        <usearg name="container" type="NullablePointer[GtkContainer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="firstpropname" type="String"/>
        <usearg name="parg3" type="..."/>
      </useargs>
   </use>
   <use id="_11879" name="gtk_container_child_set"
-     ponyname="gtk_container_child_set"
+     ponyname="child_set"
      fid="f438"
      lineno="237"
      rv="None">
@@ -5889,7 +5889,7 @@
      </useargs>
   </use>
   <use id="_11880" name="gtk_container_child_get"
-     ponyname="gtk_container_child_get"
+     ponyname="child_get"
      fid="f438"
      lineno="242"
      rv="None">
@@ -5901,7 +5901,7 @@
      </useargs>
   </use>
   <use id="_11881" name="gtk_container_child_set_valist"
-     ponyname="gtk_container_child_set_valist"
+     ponyname="child_set_valist"
      fid="f438"
      lineno="247"
      rv="None">
@@ -5913,7 +5913,7 @@
      </useargs>
   </use>
   <use id="_11882" name="gtk_container_child_get_valist"
-     ponyname="gtk_container_child_get_valist"
+     ponyname="child_get_valist"
      fid="f438"
      lineno="252"
      rv="None">
@@ -5925,7 +5925,7 @@
      </useargs>
   </use>
   <use id="_11883" name="gtk_container_child_set_property"
-     ponyname="gtk_container_child_set_property"
+     ponyname="child_set_property"
      fid="f438"
      lineno="257"
      rv="None">
@@ -5937,7 +5937,7 @@
      </useargs>
   </use>
   <use id="_11884" name="gtk_container_child_get_property"
-     ponyname="gtk_container_child_get_property"
+     ponyname="child_get_property"
      fid="f438"
      lineno="262"
      rv="None">
@@ -5949,7 +5949,7 @@
      </useargs>
   </use>
   <use id="_11885" name="gtk_container_child_notify"
-     ponyname="gtk_container_child_notify"
+     ponyname="child_notify"
      fid="f438"
      lineno="268"
      rv="None">
@@ -5960,7 +5960,7 @@
      </useargs>
   </use>
   <use id="_11886" name="gtk_container_child_notify_by_pspec"
-     ponyname="gtk_container_child_notify_by_pspec"
+     ponyname="child_notify_by_pspec"
      fid="f438"
      lineno="273"
      rv="None">
@@ -5971,7 +5971,7 @@
      </useargs>
   </use>
   <use id="_11887" name="gtk_container_forall"
-     ponyname="gtk_container_forall"
+     ponyname="forall"
      fid="f438"
      lineno="292"
      rv="None">
@@ -5982,7 +5982,7 @@
      </useargs>
   </use>
   <use id="_11888" name="gtk_container_class_handle_border_width"
-     ponyname="gtk_container_class_handle_border_width"
+     ponyname="class_handle_border_width"
      fid="f438"
      lineno="297"
      rv="None">
@@ -5991,7 +5991,7 @@
      </useargs>
   </use>
   <use id="_11889" name="gtk_container_get_path_for_child"
-     ponyname="gtk_container_get_path_for_child"
+     ponyname="get_path_for_child"
      fid="f438"
      lineno="300"
      rv="NullablePointer[GtkWidgetPath]">
@@ -6068,7 +6068,7 @@
      rv="None">
      <useargs>
        <usearg name="bin" type="NullablePointer[GtkBin]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_11912" name="glib_autoptr_clear_GtkBin"
@@ -6276,7 +6276,7 @@
      rv="I32">
      <useargs>
        <usearg name="dialog" type="NullablePointer[GtkDialog]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12091" name="gtk_alternative_dialog_button_order"
@@ -7033,7 +7033,7 @@
      rv="None">
      <useargs>
        <usearg name="menu" type="NullablePointer[GtkMenu]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="widgetanchor" type="I32"/>
        <usearg name="menuanchor" type="I32"/>
        <usearg name="triggerevent" type="Pointer[None]"/>
@@ -7261,7 +7261,7 @@
      lineno="265"
      rv="NullablePointer[GList]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12241" name="gtk_menu_set_reserve_toggle_size"
@@ -7329,14 +7329,14 @@
      </useargs>
   </use>
   <use id="_12260" name="gtk_label_get_type"
-     ponyname="gtk_label_get_type"
+     ponyname="get_type"
      fid="f446"
      lineno="89"
      rv="U64">
      <useargs/>
   </use>
   <use id="_12261" name="gtk_label_new"
-     ponyname="gtk_label_new"
+     ponyname="gnew"
      fid="f446"
      lineno="91"
      rv="NullablePointer[GtkLabel]">
@@ -7345,7 +7345,7 @@
      </useargs>
   </use>
   <use id="_12262" name="gtk_label_new_with_mnemonic"
-     ponyname="gtk_label_new_with_mnemonic"
+     ponyname="new_with_mnemonic"
      fid="f446"
      lineno="93"
      rv="NullablePointer[GtkLabel]">
@@ -7354,7 +7354,7 @@
      </useargs>
   </use>
   <use id="_12263" name="gtk_label_set_text"
-     ponyname="gtk_label_set_text"
+     ponyname="set_text"
      fid="f446"
      lineno="95"
      rv="None">
@@ -7364,7 +7364,7 @@
      </useargs>
   </use>
   <use id="_12264" name="gtk_label_get_text"
-     ponyname="gtk_label_get_text"
+     ponyname="get_text"
      fid="f446"
      lineno="98"
      rv="String">
@@ -7373,7 +7373,7 @@
      </useargs>
   </use>
   <use id="_12265" name="gtk_label_set_attributes"
-     ponyname="gtk_label_set_attributes"
+     ponyname="set_attributes"
      fid="f446"
      lineno="100"
      rv="None">
@@ -7383,7 +7383,7 @@
      </useargs>
   </use>
   <use id="_12266" name="gtk_label_get_attributes"
-     ponyname="gtk_label_get_attributes"
+     ponyname="get_attributes"
      fid="f446"
      lineno="103"
      rv="NullablePointer[PangoAttrList]">
@@ -7392,7 +7392,7 @@
      </useargs>
   </use>
   <use id="_12267" name="gtk_label_set_label"
-     ponyname="gtk_label_set_label"
+     ponyname="set_label"
      fid="f446"
      lineno="105"
      rv="None">
@@ -7402,7 +7402,7 @@
      </useargs>
   </use>
   <use id="_12268" name="gtk_label_get_label"
-     ponyname="gtk_label_get_label"
+     ponyname="get_label"
      fid="f446"
      lineno="108"
      rv="String">
@@ -7411,7 +7411,7 @@
      </useargs>
   </use>
   <use id="_12269" name="gtk_label_set_markup"
-     ponyname="gtk_label_set_markup"
+     ponyname="set_markup"
      fid="f446"
      lineno="110"
      rv="None">
@@ -7421,7 +7421,7 @@
      </useargs>
   </use>
   <use id="_12270" name="gtk_label_set_use_markup"
-     ponyname="gtk_label_set_use_markup"
+     ponyname="set_use_markup"
      fid="f446"
      lineno="113"
      rv="None">
@@ -7431,7 +7431,7 @@
      </useargs>
   </use>
   <use id="_12271" name="gtk_label_get_use_markup"
-     ponyname="gtk_label_get_use_markup"
+     ponyname="get_use_markup"
      fid="f446"
      lineno="116"
      rv="I32">
@@ -7440,7 +7440,7 @@
      </useargs>
   </use>
   <use id="_12272" name="gtk_label_set_use_underline"
-     ponyname="gtk_label_set_use_underline"
+     ponyname="set_use_underline"
      fid="f446"
      lineno="118"
      rv="None">
@@ -7450,7 +7450,7 @@
      </useargs>
   </use>
   <use id="_12273" name="gtk_label_get_use_underline"
-     ponyname="gtk_label_get_use_underline"
+     ponyname="get_use_underline"
      fid="f446"
      lineno="121"
      rv="I32">
@@ -7459,7 +7459,7 @@
      </useargs>
   </use>
   <use id="_12274" name="gtk_label_set_markup_with_mnemonic"
-     ponyname="gtk_label_set_markup_with_mnemonic"
+     ponyname="set_markup_with_mnemonic"
      fid="f446"
      lineno="124"
      rv="None">
@@ -7469,7 +7469,7 @@
      </useargs>
   </use>
   <use id="_12275" name="gtk_label_get_mnemonic_keyval"
-     ponyname="gtk_label_get_mnemonic_keyval"
+     ponyname="get_mnemonic_keyval"
      fid="f446"
      lineno="127"
      rv="U32">
@@ -7478,17 +7478,17 @@
      </useargs>
   </use>
   <use id="_12276" name="gtk_label_set_mnemonic_widget"
-     ponyname="gtk_label_set_mnemonic_widget"
+     ponyname="set_mnemonic_widget"
      fid="f446"
      lineno="129"
      rv="None">
      <useargs>
        <usearg name="label" type="NullablePointer[GtkLabel]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12277" name="gtk_label_get_mnemonic_widget"
-     ponyname="gtk_label_get_mnemonic_widget"
+     ponyname="get_mnemonic_widget"
      fid="f446"
      lineno="132"
      rv="NullablePointer[GtkWidget]">
@@ -7497,7 +7497,7 @@
      </useargs>
   </use>
   <use id="_12278" name="gtk_label_set_text_with_mnemonic"
-     ponyname="gtk_label_set_text_with_mnemonic"
+     ponyname="set_text_with_mnemonic"
      fid="f446"
      lineno="134"
      rv="None">
@@ -7507,7 +7507,7 @@
      </useargs>
   </use>
   <use id="_12279" name="gtk_label_set_justify"
-     ponyname="gtk_label_set_justify"
+     ponyname="set_justify"
      fid="f446"
      lineno="137"
      rv="None">
@@ -7517,7 +7517,7 @@
      </useargs>
   </use>
   <use id="_12280" name="gtk_label_get_justify"
-     ponyname="gtk_label_get_justify"
+     ponyname="get_justify"
      fid="f446"
      lineno="140"
      rv="I32">
@@ -7526,7 +7526,7 @@
      </useargs>
   </use>
   <use id="_12281" name="gtk_label_set_ellipsize"
-     ponyname="gtk_label_set_ellipsize"
+     ponyname="set_ellipsize"
      fid="f446"
      lineno="142"
      rv="None">
@@ -7536,7 +7536,7 @@
      </useargs>
   </use>
   <use id="_12282" name="gtk_label_get_ellipsize"
-     ponyname="gtk_label_get_ellipsize"
+     ponyname="get_ellipsize"
      fid="f446"
      lineno="145"
      rv="I32">
@@ -7545,7 +7545,7 @@
      </useargs>
   </use>
   <use id="_12283" name="gtk_label_set_width_chars"
-     ponyname="gtk_label_set_width_chars"
+     ponyname="set_width_chars"
      fid="f446"
      lineno="147"
      rv="None">
@@ -7555,7 +7555,7 @@
      </useargs>
   </use>
   <use id="_12284" name="gtk_label_get_width_chars"
-     ponyname="gtk_label_get_width_chars"
+     ponyname="get_width_chars"
      fid="f446"
      lineno="150"
      rv="I32">
@@ -7564,7 +7564,7 @@
      </useargs>
   </use>
   <use id="_12285" name="gtk_label_set_max_width_chars"
-     ponyname="gtk_label_set_max_width_chars"
+     ponyname="set_max_width_chars"
      fid="f446"
      lineno="152"
      rv="None">
@@ -7574,7 +7574,7 @@
      </useargs>
   </use>
   <use id="_12286" name="gtk_label_get_max_width_chars"
-     ponyname="gtk_label_get_max_width_chars"
+     ponyname="get_max_width_chars"
      fid="f446"
      lineno="155"
      rv="I32">
@@ -7583,7 +7583,7 @@
      </useargs>
   </use>
   <use id="_12287" name="gtk_label_set_lines"
-     ponyname="gtk_label_set_lines"
+     ponyname="set_lines"
      fid="f446"
      lineno="157"
      rv="None">
@@ -7593,7 +7593,7 @@
      </useargs>
   </use>
   <use id="_12288" name="gtk_label_get_lines"
-     ponyname="gtk_label_get_lines"
+     ponyname="get_lines"
      fid="f446"
      lineno="160"
      rv="I32">
@@ -7602,7 +7602,7 @@
      </useargs>
   </use>
   <use id="_12289" name="gtk_label_set_pattern"
-     ponyname="gtk_label_set_pattern"
+     ponyname="set_pattern"
      fid="f446"
      lineno="162"
      rv="None">
@@ -7612,7 +7612,7 @@
      </useargs>
   </use>
   <use id="_12290" name="gtk_label_set_line_wrap"
-     ponyname="gtk_label_set_line_wrap"
+     ponyname="set_line_wrap"
      fid="f446"
      lineno="165"
      rv="None">
@@ -7622,7 +7622,7 @@
      </useargs>
   </use>
   <use id="_12291" name="gtk_label_get_line_wrap"
-     ponyname="gtk_label_get_line_wrap"
+     ponyname="get_line_wrap"
      fid="f446"
      lineno="168"
      rv="I32">
@@ -7631,7 +7631,7 @@
      </useargs>
   </use>
   <use id="_12292" name="gtk_label_set_line_wrap_mode"
-     ponyname="gtk_label_set_line_wrap_mode"
+     ponyname="set_line_wrap_mode"
      fid="f446"
      lineno="170"
      rv="None">
@@ -7641,7 +7641,7 @@
      </useargs>
   </use>
   <use id="_12293" name="gtk_label_get_line_wrap_mode"
-     ponyname="gtk_label_get_line_wrap_mode"
+     ponyname="get_line_wrap_mode"
      fid="f446"
      lineno="173"
      rv="I32">
@@ -7650,7 +7650,7 @@
      </useargs>
   </use>
   <use id="_12294" name="gtk_label_set_selectable"
-     ponyname="gtk_label_set_selectable"
+     ponyname="set_selectable"
      fid="f446"
      lineno="175"
      rv="None">
@@ -7660,7 +7660,7 @@
      </useargs>
   </use>
   <use id="_12295" name="gtk_label_get_selectable"
-     ponyname="gtk_label_get_selectable"
+     ponyname="get_selectable"
      fid="f446"
      lineno="178"
      rv="I32">
@@ -7669,7 +7669,7 @@
      </useargs>
   </use>
   <use id="_12296" name="gtk_label_set_angle"
-     ponyname="gtk_label_set_angle"
+     ponyname="set_angle"
      fid="f446"
      lineno="180"
      rv="None">
@@ -7679,7 +7679,7 @@
      </useargs>
   </use>
   <use id="_12297" name="gtk_label_get_angle"
-     ponyname="gtk_label_get_angle"
+     ponyname="get_angle"
      fid="f446"
      lineno="183"
      rv="F64">
@@ -7688,7 +7688,7 @@
      </useargs>
   </use>
   <use id="_12298" name="gtk_label_select_region"
-     ponyname="gtk_label_select_region"
+     ponyname="select_region"
      fid="f446"
      lineno="185"
      rv="None">
@@ -7699,18 +7699,18 @@
      </useargs>
   </use>
   <use id="_12299" name="gtk_label_get_selection_bounds"
-     ponyname="gtk_label_get_selection_bounds"
+     ponyname="get_selection_bounds"
      fid="f446"
      lineno="189"
      rv="I32">
      <useargs>
        <usearg name="label" type="NullablePointer[GtkLabel]"/>
        <usearg name="start" type="Pointer[I32]"/>
-       <usearg name="end" type="Pointer[I32]"/>
+       <usearg name="gend" type="Pointer[I32]"/>
      </useargs>
   </use>
   <use id="_12300" name="gtk_label_get_layout"
-     ponyname="gtk_label_get_layout"
+     ponyname="get_layout"
      fid="f446"
      lineno="194"
      rv="NullablePointer[PangoLayout]">
@@ -7719,7 +7719,7 @@
      </useargs>
   </use>
   <use id="_12301" name="gtk_label_get_layout_offsets"
-     ponyname="gtk_label_get_layout_offsets"
+     ponyname="get_layout_offsets"
      fid="f446"
      lineno="196"
      rv="None">
@@ -7730,7 +7730,7 @@
      </useargs>
   </use>
   <use id="_12302" name="gtk_label_set_single_line_mode"
-     ponyname="gtk_label_set_single_line_mode"
+     ponyname="set_single_line_mode"
      fid="f446"
      lineno="201"
      rv="None">
@@ -7740,7 +7740,7 @@
      </useargs>
   </use>
   <use id="_12303" name="gtk_label_get_single_line_mode"
-     ponyname="gtk_label_get_single_line_mode"
+     ponyname="get_single_line_mode"
      fid="f446"
      lineno="204"
      rv="I32">
@@ -7749,7 +7749,7 @@
      </useargs>
   </use>
   <use id="_12304" name="gtk_label_get_current_uri"
-     ponyname="gtk_label_get_current_uri"
+     ponyname="get_current_uri"
      fid="f446"
      lineno="207"
      rv="String">
@@ -7758,7 +7758,7 @@
      </useargs>
   </use>
   <use id="_12305" name="gtk_label_set_track_visited_links"
-     ponyname="gtk_label_set_track_visited_links"
+     ponyname="set_track_visited_links"
      fid="f446"
      lineno="209"
      rv="None">
@@ -7768,7 +7768,7 @@
      </useargs>
   </use>
   <use id="_12306" name="gtk_label_get_track_visited_links"
-     ponyname="gtk_label_get_track_visited_links"
+     ponyname="get_track_visited_links"
      fid="f446"
      lineno="212"
      rv="I32">
@@ -7777,7 +7777,7 @@
      </useargs>
   </use>
   <use id="_12307" name="gtk_label_set_xalign"
-     ponyname="gtk_label_set_xalign"
+     ponyname="set_xalign"
      fid="f446"
      lineno="215"
      rv="None">
@@ -7787,7 +7787,7 @@
      </useargs>
   </use>
   <use id="_12308" name="gtk_label_get_xalign"
-     ponyname="gtk_label_get_xalign"
+     ponyname="get_xalign"
      fid="f446"
      lineno="219"
      rv="F32">
@@ -7796,7 +7796,7 @@
      </useargs>
   </use>
   <use id="_12309" name="gtk_label_set_yalign"
-     ponyname="gtk_label_set_yalign"
+     ponyname="set_yalign"
      fid="f446"
      lineno="222"
      rv="None">
@@ -7806,7 +7806,7 @@
      </useargs>
   </use>
   <use id="_12310" name="gtk_label_get_yalign"
-     ponyname="gtk_label_get_yalign"
+     ponyname="get_yalign"
      fid="f446"
      lineno="226"
      rv="F32">
@@ -8198,7 +8198,7 @@
      rv="None">
      <useargs>
        <usearg name="accessible" type="NullablePointer[GtkAccessible]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12382" name="gtk_accessible_get_widget"
@@ -8575,7 +8575,7 @@
      rv="None">
      <useargs>
        <usearg name="box" type="NullablePointer[GtkBox]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12468" name="gtk_box_get_center_widget"
@@ -9390,7 +9390,7 @@
      rv="None">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumsize" type="Pointer[I32]"/>
        <usearg name="naturalsize" type="Pointer[I32]"/>
      </useargs>
@@ -9402,7 +9402,7 @@
      rv="None">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="width" type="I32"/>
        <usearg name="minimumheight" type="Pointer[I32]"/>
        <usearg name="naturalheight" type="Pointer[I32]"/>
@@ -9415,7 +9415,7 @@
      rv="None">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumsize" type="Pointer[I32]"/>
        <usearg name="naturalsize" type="Pointer[I32]"/>
      </useargs>
@@ -9427,7 +9427,7 @@
      rv="None">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="height" type="I32"/>
        <usearg name="minimumwidth" type="Pointer[I32]"/>
        <usearg name="naturalwidth" type="Pointer[I32]"/>
@@ -9440,7 +9440,7 @@
      rv="None">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumsize" type="NullablePointer[GtkRequisition]"/>
        <usearg name="naturalsize" type="NullablePointer[GtkRequisition]"/>
      </useargs>
@@ -9452,7 +9452,7 @@
      rv="None">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="alignedarea" type="NullablePointer[Cairorectangleint]"/>
@@ -9465,7 +9465,7 @@
      rv="None">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="xoffset" type="Pointer[I32]"/>
        <usearg name="yoffset" type="Pointer[I32]"/>
@@ -9481,7 +9481,7 @@
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
        <usearg name="cr" type="NullablePointer[Cairo]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="backgroundarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="flags" type="I32"/>
@@ -9495,7 +9495,7 @@
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
        <usearg name="event" type="Pointer[None]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="path" type="String"/>
        <usearg name="backgroundarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
@@ -9510,7 +9510,7 @@
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
        <usearg name="event" type="Pointer[None]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="path" type="String"/>
        <usearg name="backgroundarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
@@ -9662,7 +9662,7 @@
      rv="I32">
      <useargs>
        <usearg name="cell" type="NullablePointer[GtkCellRenderer]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cellstate" type="I32"/>
      </useargs>
   </use>
@@ -9813,7 +9813,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="backgroundarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="callback" type="Pointer[None]"/>
@@ -9828,7 +9828,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="event" type="Pointer[None]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="flags" type="I32"/>
@@ -9842,7 +9842,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cr" type="NullablePointer[Cairo]"/>
        <usearg name="backgroundarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
@@ -9858,7 +9858,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="renderer" type="NullablePointer[GtkCellRenderer]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="allocation" type="NullablePointer[Cairorectangleint]"/>
@@ -9872,7 +9872,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="x" type="I32"/>
        <usearg name="y" type="I32"/>
@@ -9915,7 +9915,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumwidth" type="Pointer[I32]"/>
        <usearg name="naturalwidth" type="Pointer[I32]"/>
      </useargs>
@@ -9928,7 +9928,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="width" type="I32"/>
        <usearg name="minimumheight" type="Pointer[I32]"/>
        <usearg name="naturalheight" type="Pointer[I32]"/>
@@ -9942,7 +9942,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="minimumheight" type="Pointer[I32]"/>
        <usearg name="naturalheight" type="Pointer[I32]"/>
      </useargs>
@@ -9955,7 +9955,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="height" type="I32"/>
        <usearg name="minimumwidth" type="Pointer[I32]"/>
        <usearg name="naturalwidth" type="Pointer[I32]"/>
@@ -10149,7 +10149,7 @@
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="context" type="NullablePointer[GtkCellAreaContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="editonly" type="I32"/>
@@ -10262,7 +10262,7 @@
      rv="I32">
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="renderer" type="NullablePointer[GtkCellRenderer]"/>
        <usearg name="event" type="Pointer[None]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
@@ -10286,7 +10286,7 @@
      rv="None">
      <useargs>
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="cellarea" type="NullablePointer[Cairorectangleint]"/>
        <usearg name="innerarea" type="NullablePointer[Cairorectangleint]"/>
      </useargs>
@@ -10300,7 +10300,7 @@
        <usearg name="area" type="NullablePointer[GtkCellArea]"/>
        <usearg name="renderer" type="NullablePointer[GtkCellRenderer]"/>
        <usearg name="orientation" type="I32"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="forsize" type="I32"/>
        <usearg name="minimumsize" type="Pointer[I32]"/>
        <usearg name="naturalsize" type="Pointer[I32]"/>
@@ -10770,7 +10770,7 @@
      rv="None">
      <useargs>
        <usearg name="treecolumn" type="NullablePointer[GtkTreeViewColumn]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12728" name="gtk_tree_view_column_get_widget"
@@ -11159,7 +11159,7 @@
      rv="String">
      <useargs>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_12798" name="gtk_text_iter_get_text"
@@ -11169,7 +11169,7 @@
      rv="String">
      <useargs>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_12799" name="gtk_text_iter_get_visible_slice"
@@ -11179,7 +11179,7 @@
      rv="String">
      <useargs>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_12800" name="gtk_text_iter_get_visible_text"
@@ -11189,7 +11189,7 @@
      rv="String">
      <useargs>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_12801" name="gtk_text_iter_get_pixbuf"
@@ -11926,7 +11926,7 @@
      <useargs>
        <usearg name="iter" type="NullablePointer[GtkTextIter]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_12878" name="gtk_text_iter_order"
@@ -12171,7 +12171,7 @@
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="iter" type="NullablePointer[GtkTextIter]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16299" name="gtk_text_buffer_insert_range_interactive"
@@ -12183,7 +12183,7 @@
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="iter" type="NullablePointer[GtkTextIter]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
        <usearg name="defaulteditable" type="I32"/>
      </useargs>
   </use>
@@ -12235,7 +12235,7 @@
      <useargs>
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16304" name="gtk_text_buffer_delete_interactive"
@@ -12270,7 +12270,7 @@
      <useargs>
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
        <usearg name="includehiddenchars" type="I32"/>
      </useargs>
   </use>
@@ -12282,7 +12282,7 @@
      <useargs>
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
        <usearg name="includehiddenchars" type="I32"/>
      </useargs>
   </use>
@@ -12441,7 +12441,7 @@
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="tag" type="NullablePointer[GtkTextTag]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16323" name="gtk_text_buffer_remove_tag"
@@ -12453,7 +12453,7 @@
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="tag" type="NullablePointer[GtkTextTag]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16324" name="gtk_text_buffer_apply_tag_by_name"
@@ -12465,7 +12465,7 @@
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="name" type="String"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16325" name="gtk_text_buffer_remove_tag_by_name"
@@ -12477,7 +12477,7 @@
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="name" type="String"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16326" name="gtk_text_buffer_remove_all_tags"
@@ -12488,7 +12488,7 @@
      <useargs>
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16327" name="gtk_text_buffer_create_tag"
@@ -12577,7 +12577,7 @@
      <useargs>
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16335" name="gtk_text_buffer_get_iter_at_mark"
@@ -12691,7 +12691,7 @@
      <useargs>
        <usearg name="buffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
      </useargs>
   </use>
   <use id="_16346" name="gtk_text_buffer_delete_selection"
@@ -12889,7 +12889,7 @@
      lineno="162"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="selection" type="NullablePointer[GdkAtom]"/>
        <usearg name="time" type="U32"/>
      </useargs>
@@ -12901,7 +12901,7 @@
      rv="I32">
      <useargs>
        <usearg name="display" type="NullablePointer[GdkDisplay]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="selection" type="NullablePointer[GdkAtom]"/>
        <usearg name="time" type="U32"/>
      </useargs>
@@ -12912,7 +12912,7 @@
      lineno="172"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="selection" type="NullablePointer[GdkAtom]"/>
        <usearg name="target" type="NullablePointer[GdkAtom]"/>
        <usearg name="info" type="U32"/>
@@ -12924,7 +12924,7 @@
      lineno="177"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="selection" type="NullablePointer[GdkAtom]"/>
        <usearg name="targets" type="NullablePointer[GtkTargetEntry]"/>
        <usearg name="ntargets" type="U32"/>
@@ -12936,7 +12936,7 @@
      lineno="182"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="selection" type="NullablePointer[GdkAtom]"/>
      </useargs>
   </use>
@@ -12946,7 +12946,7 @@
      lineno="185"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="selection" type="NullablePointer[GdkAtom]"/>
        <usearg name="target" type="NullablePointer[GdkAtom]"/>
        <usearg name="time" type="U32"/>
@@ -12958,7 +12958,7 @@
      lineno="190"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12908" name="gtk_selection_data_get_selection"
@@ -13263,7 +13263,7 @@
      lineno="43"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="context" type="NullablePointer[GdkDragContext]"/>
        <usearg name="target" type="NullablePointer[GdkAtom]"/>
        <usearg name="time" type="U32"/>
@@ -13296,7 +13296,7 @@
      lineno="57"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12943" name="gtk_drag_unhighlight"
@@ -13305,7 +13305,7 @@
      lineno="59"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_12944" name="gtk_drag_begin_with_coordinates"
@@ -13314,7 +13314,7 @@
      lineno="64"
      rv="NullablePointer[GdkDragContext]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="targets" type="NullablePointer[GtkTargetList]"/>
        <usearg name="actions" type="I32"/>
        <usearg name="button" type="I32"/>
@@ -13329,7 +13329,7 @@
      lineno="73"
      rv="NullablePointer[GdkDragContext]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="targets" type="NullablePointer[GtkTargetList]"/>
        <usearg name="actions" type="I32"/>
        <usearg name="button" type="I32"/>
@@ -13352,7 +13352,7 @@
      rv="None">
      <useargs>
        <usearg name="context" type="NullablePointer[GdkDragContext]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="hotx" type="I32"/>
        <usearg name="hoty" type="I32"/>
      </useargs>
@@ -13430,7 +13430,7 @@
      lineno="115"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="startx" type="I32"/>
        <usearg name="starty" type="I32"/>
        <usearg name="currentx" type="I32"/>
@@ -17774,14 +17774,14 @@
      </useargs>
   </use>
   <use id="_13496" name="gtk_button_box_get_type"
-     ponyname="gtk_button_box_get_type"
+     ponyname="box_get_type"
      fid="f488"
      lineno="104"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13497" name="gtk_button_box_new"
-     ponyname="gtk_button_box_new"
+     ponyname="box_new"
      fid="f488"
      lineno="106"
      rv="NullablePointer[GtkWidget]">
@@ -17790,62 +17790,62 @@
      </useargs>
   </use>
   <use id="_13498" name="gtk_button_box_get_layout"
-     ponyname="gtk_button_box_get_layout"
+     ponyname="box_get_layout"
      fid="f488"
      lineno="108"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkButtonBox]"/>
+       <usearg name="widget'" type="NullablePointer[GtkButtonBox]"/>
      </useargs>
   </use>
   <use id="_13499" name="gtk_button_box_set_layout"
-     ponyname="gtk_button_box_set_layout"
+     ponyname="box_set_layout"
      fid="f488"
      lineno="110"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkButtonBox]"/>
+       <usearg name="widget'" type="NullablePointer[GtkButtonBox]"/>
        <usearg name="layoutstyle" type="I32"/>
      </useargs>
   </use>
   <use id="_13500" name="gtk_button_box_get_child_secondary"
-     ponyname="gtk_button_box_get_child_secondary"
+     ponyname="box_get_child_secondary"
      fid="f488"
      lineno="113"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkButtonBox]"/>
+       <usearg name="widget'" type="NullablePointer[GtkButtonBox]"/>
        <usearg name="child" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_13501" name="gtk_button_box_set_child_secondary"
-     ponyname="gtk_button_box_set_child_secondary"
+     ponyname="box_set_child_secondary"
      fid="f488"
      lineno="116"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkButtonBox]"/>
+       <usearg name="widget'" type="NullablePointer[GtkButtonBox]"/>
        <usearg name="child" type="NullablePointer[GtkWidget]"/>
        <usearg name="issecondary" type="I32"/>
      </useargs>
   </use>
   <use id="_13502" name="gtk_button_box_get_child_non_homogeneous"
-     ponyname="gtk_button_box_get_child_non_homogeneous"
+     ponyname="box_get_child_non_homogeneous"
      fid="f488"
      lineno="120"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkButtonBox]"/>
+       <usearg name="widget'" type="NullablePointer[GtkButtonBox]"/>
        <usearg name="child" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_13503" name="gtk_button_box_set_child_non_homogeneous"
-     ponyname="gtk_button_box_set_child_non_homogeneous"
+     ponyname="box_set_child_non_homogeneous"
      fid="f488"
      lineno="123"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkButtonBox]"/>
+       <usearg name="widget'" type="NullablePointer[GtkButtonBox]"/>
        <usearg name="child" type="NullablePointer[GtkWidget]"/>
        <usearg name="nonhomogeneous" type="I32"/>
      </useargs>
@@ -18092,30 +18092,30 @@
      </useargs>
   </use>
   <use id="_13578" name="gtk_button_get_type"
-     ponyname="gtk_button_get_type"
+     ponyname="get_type"
      fid="f491"
      lineno="94"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13579" name="gtk_button_new"
-     ponyname="gtk_button_new"
+     ponyname="gnew"
      fid="f491"
      lineno="96"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkButton]">
      <useargs/>
   </use>
   <use id="_13580" name="gtk_button_new_with_label"
-     ponyname="gtk_button_new_with_label"
+     ponyname="new_with_label"
      fid="f491"
      lineno="98"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkButton]">
      <useargs>
        <usearg name="label" type="String"/>
      </useargs>
   </use>
   <use id="_13581" name="gtk_button_new_from_icon_name"
-     ponyname="gtk_button_new_from_icon_name"
+     ponyname="new_from_icon_name"
      fid="f491"
      lineno="100"
      rv="NullablePointer[GtkWidget]">
@@ -18125,25 +18125,25 @@
      </useargs>
   </use>
   <use id="_13582" name="gtk_button_new_from_stock"
-     ponyname="gtk_button_new_from_stock"
+     ponyname="new_from_stock"
      fid="f491"
      lineno="103"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkButton]">
      <useargs>
        <usearg name="stockid" type="String"/>
      </useargs>
   </use>
   <use id="_13583" name="gtk_button_new_with_mnemonic"
-     ponyname="gtk_button_new_with_mnemonic"
+     ponyname="new_with_mnemonic"
      fid="f491"
      lineno="105"
-     rv="NullablePointer[GtkWidget]">
+     rv="NullablePointer[GtkButton]">
      <useargs>
        <usearg name="label" type="String"/>
      </useargs>
   </use>
   <use id="_13584" name="gtk_button_clicked"
-     ponyname="gtk_button_clicked"
+     ponyname="clicked"
      fid="f491"
      lineno="107"
      rv="None">
@@ -18152,7 +18152,7 @@
      </useargs>
   </use>
   <use id="_13585" name="gtk_button_pressed"
-     ponyname="gtk_button_pressed"
+     ponyname="pressed"
      fid="f491"
      lineno="109"
      rv="None">
@@ -18161,7 +18161,7 @@
      </useargs>
   </use>
   <use id="_13586" name="gtk_button_released"
-     ponyname="gtk_button_released"
+     ponyname="released"
      fid="f491"
      lineno="111"
      rv="None">
@@ -18170,7 +18170,7 @@
      </useargs>
   </use>
   <use id="_13587" name="gtk_button_enter"
-     ponyname="gtk_button_enter"
+     ponyname="enter"
      fid="f491"
      lineno="113"
      rv="None">
@@ -18179,7 +18179,7 @@
      </useargs>
   </use>
   <use id="_13588" name="gtk_button_leave"
-     ponyname="gtk_button_leave"
+     ponyname="leave"
      fid="f491"
      lineno="115"
      rv="None">
@@ -18188,7 +18188,7 @@
      </useargs>
   </use>
   <use id="_13589" name="gtk_button_set_relief"
-     ponyname="gtk_button_set_relief"
+     ponyname="set_relief"
      fid="f491"
      lineno="118"
      rv="None">
@@ -18198,7 +18198,7 @@
      </useargs>
   </use>
   <use id="_13590" name="gtk_button_get_relief"
-     ponyname="gtk_button_get_relief"
+     ponyname="get_relief"
      fid="f491"
      lineno="121"
      rv="I32">
@@ -18207,7 +18207,7 @@
      </useargs>
   </use>
   <use id="_13591" name="gtk_button_set_label"
-     ponyname="gtk_button_set_label"
+     ponyname="set_label"
      fid="f491"
      lineno="123"
      rv="None">
@@ -18217,7 +18217,7 @@
      </useargs>
   </use>
   <use id="_13592" name="gtk_button_get_label"
-     ponyname="gtk_button_get_label"
+     ponyname="get_label"
      fid="f491"
      lineno="126"
      rv="String">
@@ -18226,7 +18226,7 @@
      </useargs>
   </use>
   <use id="_13593" name="gtk_button_set_use_underline"
-     ponyname="gtk_button_set_use_underline"
+     ponyname="set_use_underline"
      fid="f491"
      lineno="128"
      rv="None">
@@ -18236,7 +18236,7 @@
      </useargs>
   </use>
   <use id="_13594" name="gtk_button_get_use_underline"
-     ponyname="gtk_button_get_use_underline"
+     ponyname="get_use_underline"
      fid="f491"
      lineno="131"
      rv="I32">
@@ -18245,7 +18245,7 @@
      </useargs>
   </use>
   <use id="_13595" name="gtk_button_set_use_stock"
-     ponyname="gtk_button_set_use_stock"
+     ponyname="set_use_stock"
      fid="f491"
      lineno="133"
      rv="None">
@@ -18255,7 +18255,7 @@
      </useargs>
   </use>
   <use id="_13596" name="gtk_button_get_use_stock"
-     ponyname="gtk_button_get_use_stock"
+     ponyname="get_use_stock"
      fid="f491"
      lineno="136"
      rv="I32">
@@ -18264,7 +18264,7 @@
      </useargs>
   </use>
   <use id="_13597" name="gtk_button_set_focus_on_click"
-     ponyname="gtk_button_set_focus_on_click"
+     ponyname="set_focus_on_click"
      fid="f491"
      lineno="138"
      rv="None">
@@ -18274,7 +18274,7 @@
      </useargs>
   </use>
   <use id="_13598" name="gtk_button_get_focus_on_click"
-     ponyname="gtk_button_get_focus_on_click"
+     ponyname="get_focus_on_click"
      fid="f491"
      lineno="141"
      rv="I32">
@@ -18283,7 +18283,7 @@
      </useargs>
   </use>
   <use id="_13599" name="gtk_button_set_alignment"
-     ponyname="gtk_button_set_alignment"
+     ponyname="set_alignment"
      fid="f491"
      lineno="143"
      rv="None">
@@ -18294,7 +18294,7 @@
      </useargs>
   </use>
   <use id="_13600" name="gtk_button_get_alignment"
-     ponyname="gtk_button_get_alignment"
+     ponyname="get_alignment"
      fid="f491"
      lineno="147"
      rv="None">
@@ -18305,7 +18305,7 @@
      </useargs>
   </use>
   <use id="_13601" name="gtk_button_set_image"
-     ponyname="gtk_button_set_image"
+     ponyname="set_image"
      fid="f491"
      lineno="151"
      rv="None">
@@ -18315,7 +18315,7 @@
      </useargs>
   </use>
   <use id="_13602" name="gtk_button_get_image"
-     ponyname="gtk_button_get_image"
+     ponyname="get_image"
      fid="f491"
      lineno="154"
      rv="NullablePointer[GtkWidget]">
@@ -18324,7 +18324,7 @@
      </useargs>
   </use>
   <use id="_13603" name="gtk_button_set_image_position"
-     ponyname="gtk_button_set_image_position"
+     ponyname="set_image_position"
      fid="f491"
      lineno="156"
      rv="None">
@@ -18334,7 +18334,7 @@
      </useargs>
   </use>
   <use id="_13604" name="gtk_button_get_image_position"
-     ponyname="gtk_button_get_image_position"
+     ponyname="get_image_position"
      fid="f491"
      lineno="159"
      rv="I32">
@@ -18343,7 +18343,7 @@
      </useargs>
   </use>
   <use id="_13605" name="gtk_button_set_always_show_image"
-     ponyname="gtk_button_set_always_show_image"
+     ponyname="set_always_show_image"
      fid="f491"
      lineno="161"
      rv="None">
@@ -18353,7 +18353,7 @@
      </useargs>
   </use>
   <use id="_13606" name="gtk_button_get_always_show_image"
-     ponyname="gtk_button_get_always_show_image"
+     ponyname="get_always_show_image"
      fid="f491"
      lineno="164"
      rv="I32">
@@ -18362,7 +18362,7 @@
      </useargs>
   </use>
   <use id="_13607" name="gtk_button_get_event_window"
-     ponyname="gtk_button_get_event_window"
+     ponyname="get_event_window"
      fid="f491"
      lineno="167"
      rv="NullablePointer[GdkWindow]">
@@ -20392,7 +20392,7 @@
      lineno="70"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="targets" type="NullablePointer[GtkTargetEntry]"/>
        <usearg name="ntargets" type="I32"/>
@@ -20405,7 +20405,7 @@
      lineno="77"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="proxywindow" type="NullablePointer[GdkWindow]"/>
        <usearg name="protocol" type="I32"/>
        <usearg name="usecoordinates" type="I32"/>
@@ -20417,7 +20417,7 @@
      lineno="83"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_13992" name="gtk_drag_dest_find_target"
@@ -20426,7 +20426,7 @@
      lineno="86"
      rv="NullablePointer[GdkAtom]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="context" type="NullablePointer[GdkDragContext]"/>
        <usearg name="targetlist" type="NullablePointer[GtkTargetList]"/>
      </useargs>
@@ -20437,7 +20437,7 @@
      lineno="90"
      rv="NullablePointer[GtkTargetList]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_13994" name="gtk_drag_dest_set_target_list"
@@ -20446,7 +20446,7 @@
      lineno="92"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="targetlist" type="NullablePointer[GtkTargetList]"/>
      </useargs>
   </use>
@@ -20456,7 +20456,7 @@
      lineno="95"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_13996" name="gtk_drag_dest_add_image_targets"
@@ -20465,7 +20465,7 @@
      lineno="97"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_13997" name="gtk_drag_dest_add_uri_targets"
@@ -20474,7 +20474,7 @@
      lineno="99"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_13998" name="gtk_drag_dest_set_track_motion"
@@ -20483,7 +20483,7 @@
      lineno="102"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="trackmotion" type="I32"/>
      </useargs>
   </use>
@@ -20493,7 +20493,7 @@
      lineno="105"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14000" name="gtk_drag_source_set"
@@ -20502,7 +20502,7 @@
      lineno="41"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="startbuttonmask" type="I32"/>
        <usearg name="targets" type="NullablePointer[GtkTargetEntry]"/>
        <usearg name="ntargets" type="I32"/>
@@ -20515,7 +20515,7 @@
      lineno="48"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14002" name="gtk_drag_source_get_target_list"
@@ -20524,7 +20524,7 @@
      lineno="51"
      rv="NullablePointer[GtkTargetList]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14003" name="gtk_drag_source_set_target_list"
@@ -20533,7 +20533,7 @@
      lineno="53"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="targetlist" type="NullablePointer[GtkTargetList]"/>
      </useargs>
   </use>
@@ -20543,7 +20543,7 @@
      lineno="56"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14005" name="gtk_drag_source_add_image_targets"
@@ -20552,7 +20552,7 @@
      lineno="58"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14006" name="gtk_drag_source_add_uri_targets"
@@ -20561,7 +20561,7 @@
      lineno="60"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14007" name="gtk_drag_source_set_icon_pixbuf"
@@ -20570,7 +20570,7 @@
      lineno="63"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="pixbuf" type="NullablePointer[GdkPixbuf]"/>
      </useargs>
   </use>
@@ -20580,7 +20580,7 @@
      lineno="66"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="stockid" type="String"/>
      </useargs>
   </use>
@@ -20590,7 +20590,7 @@
      lineno="69"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="iconname" type="String"/>
      </useargs>
   </use>
@@ -20600,7 +20600,7 @@
      lineno="72"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="icon" type="NullablePointer[GIcon]"/>
      </useargs>
   </use>
@@ -20737,7 +20737,7 @@
      lineno="47"
      rv="NullablePointer[GtkEventController]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14045" name="gtk_event_controller_key_set_im_context"
@@ -20766,7 +20766,7 @@
      rv="I32">
      <useargs>
        <usearg name="controller" type="NullablePointer[GtkEventControllerKey]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14048" name="gtk_event_controller_key_get_group"
@@ -20791,7 +20791,7 @@
      lineno="46"
      rv="NullablePointer[GtkEventController]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14061" name="gtk_event_controller_scroll_get_type"
@@ -20807,7 +20807,7 @@
      lineno="69"
      rv="NullablePointer[GtkEventController]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -21028,7 +21028,7 @@
      rv="None">
      <useargs>
        <usearg name="fixed" type="NullablePointer[GtkFixed]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="x" type="I32"/>
        <usearg name="y" type="I32"/>
      </useargs>
@@ -21040,7 +21040,7 @@
      rv="None">
      <useargs>
        <usearg name="fixed" type="NullablePointer[GtkFixed]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="x" type="I32"/>
        <usearg name="y" type="I32"/>
      </useargs>
@@ -22501,7 +22501,7 @@
      rv="None">
      <useargs>
        <usearg name="box" type="NullablePointer[GtkFlowBox]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="position" type="I32"/>
      </useargs>
   </use>
@@ -23309,7 +23309,7 @@
      lineno="45"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14450" name="gtk_gesture_drag_get_start_point"
@@ -23347,7 +23347,7 @@
      lineno="45"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14462" name="gtk_gesture_multi_press_get_type"
@@ -23363,7 +23363,7 @@
      lineno="45"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14464" name="gtk_gesture_multi_press_set_area"
@@ -23399,7 +23399,7 @@
      lineno="45"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="orientation" type="I32"/>
      </useargs>
   </use>
@@ -23435,7 +23435,7 @@
      lineno="46"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14480" name="gtk_gesture_rotate_get_angle_delta"
@@ -23460,7 +23460,7 @@
      lineno="44"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14487" name="gtk_gesture_stylus_get_axis"
@@ -23507,7 +23507,7 @@
      lineno="46"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14496" name="gtk_gesture_swipe_get_velocity"
@@ -23534,7 +23534,7 @@
      lineno="46"
      rv="NullablePointer[GtkGesture]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_14503" name="gtk_gesture_zoom_get_scale_delta"
@@ -26755,7 +26755,7 @@
      lineno="170"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_15095" name="gtk_grab_get_current"
@@ -26771,7 +26771,7 @@
      lineno="174"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_15097" name="gtk_device_grab_add"
@@ -26780,7 +26780,7 @@
      lineno="177"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
        <usearg name="blockothers" type="I32"/>
      </useargs>
@@ -26791,7 +26791,7 @@
      lineno="181"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="device" type="NullablePointer[GdkDevice]"/>
      </useargs>
   </use>
@@ -26859,7 +26859,7 @@
      lineno="203"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="event" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -27083,7 +27083,7 @@
      rv="None">
      <useargs>
        <usearg name="popover" type="NullablePointer[GtkPopover]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_15143" name="gtk_popover_get_default_widget"
@@ -27321,7 +27321,7 @@
      rv="None">
      <useargs>
        <usearg name="sizegroup" type="NullablePointer[GtkSizeGroup]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_15181" name="gtk_size_group_remove_widget"
@@ -27331,7 +27331,7 @@
      rv="None">
      <useargs>
        <usearg name="sizegroup" type="NullablePointer[GtkSizeGroup]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_15182" name="gtk_size_group_get_widgets"
@@ -28462,7 +28462,7 @@
      rv="None">
      <useargs>
        <usearg name="notebook" type="NullablePointer[GtkNotebook]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="packtype" type="I32"/>
      </useargs>
   </use>
@@ -28545,7 +28545,7 @@
      rv="None">
      <useargs>
        <usearg name="overlay" type="NullablePointer[GtkOverlay]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_15370" name="gtk_overlay_reorder_overlay"
@@ -28566,7 +28566,7 @@
      rv="I32">
      <useargs>
        <usearg name="overlay" type="NullablePointer[GtkOverlay]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_15372" name="gtk_overlay_set_overlay_pass_through"
@@ -28576,7 +28576,7 @@
      rv="None">
      <useargs>
        <usearg name="overlay" type="NullablePointer[GtkOverlay]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="passthrough" type="I32"/>
      </useargs>
   </use>
@@ -34561,7 +34561,7 @@
        <usearg name="contentbuffer" type="NullablePointer[GtkTextBuffer]"/>
        <usearg name="format" type="NullablePointer[GdkAtom]"/>
        <usearg name="start" type="NullablePointer[GtkTextIter]"/>
-       <usearg name="end" type="NullablePointer[GtkTextIter]"/>
+       <usearg name="gend" type="NullablePointer[GtkTextIter]"/>
        <usearg name="length" type="Pointer[U64]"/>
      </useargs>
   </use>
@@ -35839,7 +35839,7 @@
      rv="None">
      <useargs>
        <usearg name="palette" type="NullablePointer[GtkToolPalette]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="targets" type="I32"/>
        <usearg name="actions" type="I32"/>
@@ -35998,7 +35998,7 @@
      lineno="41"
      rv="NullablePointer[GtkWidget]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="labelpattern" type="String"/>
        <usearg name="widgettype" type="U64"/>
      </useargs>
@@ -36041,7 +36041,7 @@
      lineno="56"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="percentage" type="F64"/>
      </useargs>
   </use>
@@ -36051,7 +36051,7 @@
      lineno="59"
      rv="F64">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_16554" name="gtk_test_spin_button_click"
@@ -36071,7 +36071,7 @@
      lineno="65"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_16556" name="gtk_test_widget_click"
@@ -36080,7 +36080,7 @@
      lineno="67"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="button" type="U32"/>
        <usearg name="modifiers" type="I32"/>
      </useargs>
@@ -36091,7 +36091,7 @@
      lineno="71"
      rv="I32">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="keyval" type="U32"/>
        <usearg name="modifiers" type="I32"/>
      </useargs>
@@ -36102,7 +36102,7 @@
      lineno="76"
      rv="None">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="string" type="String"/>
      </useargs>
   </use>
@@ -36112,7 +36112,7 @@
      lineno="79"
      rv="String">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_16560" name="gtk_test_find_sibling"
@@ -36131,7 +36131,7 @@
      lineno="86"
      rv="NullablePointer[GtkWidget]">
      <useargs>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
        <usearg name="labelpattern" type="String"/>
      </useargs>
   </use>
@@ -36662,7 +36662,7 @@
      <useargs/>
   </use>
   <use id="_16661" name="gtk_button_box_style_get_type"
-     ponyname="gtk_button_box_style_get_type"
+     ponyname="box_style_get_type"
      fid="f643"
      lineno="55"
      rv="U64">
@@ -37194,7 +37194,7 @@
      <useargs/>
   </use>
   <use id="_16737" name="gtk_button_role_get_type"
-     ponyname="gtk_button_role_get_type"
+     ponyname="role_get_type"
      fid="f643"
      lineno="251"
      rv="U64">
@@ -37643,7 +37643,7 @@
      rv="I32">
      <useargs>
        <usearg name="path" type="NullablePointer[GtkWidgetPath]"/>
-       <usearg name="widget" type="NullablePointer[GtkWidget]"/>
+       <usearg name="widget'" type="NullablePointer[GtkWidget]"/>
      </useargs>
   </use>
   <use id="_16805" name="gtk_widget_path_iter_get_object_type"
