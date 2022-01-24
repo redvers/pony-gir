@@ -123,7 +123,7 @@ struct GObject
   fun g_signal_connect_closure(instance: Pointer[None] tag, detailedsignal: String, closure: NullablePointer[GClosure] tag, after: I32): U64 =>
     @g_signal_connect_closure(instance, detailedsignal.cstring(), closure, after)
 
-  fun g_signal_connect_data(detailedsignal: String, chandler: GCallback, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
+  fun signal_connect_data(detailedsignal: String, chandler: GCallback, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
     @g_signal_connect_data(this, detailedsignal.cstring(), chandler, data, destroydata, connectflags)
 
   fun g_signal_handler_block(instance: Pointer[None] tag, handlerid: U64): None =>

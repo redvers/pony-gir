@@ -2221,7 +2221,7 @@
      </useargs>
   </use>
   <use id="_3509" name="g_signal_connect_data"
-     ponyname="g_signal_connect_data"
+     ponyname="signal_connect_data"
      fid="f136"
      lineno="404"
      rv="U64">
