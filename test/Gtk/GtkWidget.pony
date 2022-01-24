@@ -58,9 +58,9 @@ use @gtk_widget_set_accel_path[None](widget: GtkWidget tag, accelpath: Pointer[U
 use @gtk_widget_list_accel_closures[NullablePointer[GList]](widget: GtkWidget tag)
 use @gtk_widget_can_activate_accel[I32](widget: GtkWidget tag, signalid: U32)
 use @gtk_widget_mnemonic_activate[I32](widget: GtkWidget tag, groupcycling: I32)
-use @gtk_widget_event[I32](widget: GtkWidget tag, event: Pointer[None] tag)
-use @gtk_widget_send_expose[I32](widget: GtkWidget tag, event: Pointer[None] tag)
-use @gtk_widget_send_focus_change[I32](widget: GtkWidget tag, event: Pointer[None] tag)
+use @gtk_widget_event[I32](widget: GtkWidget tag, gevent: Pointer[None] tag)
+use @gtk_widget_send_expose[I32](widget: GtkWidget tag, gevent: Pointer[None] tag)
+use @gtk_widget_send_focus_change[I32](widget: GtkWidget tag, gevent: Pointer[None] tag)
 use @gtk_widget_activate[I32](widget: GtkWidget tag)
 use @gtk_widget_reparent[None](widget: GtkWidget tag, newparent: GtkWidget tag)
 use @gtk_widget_intersect[I32](widget: GtkWidget tag, area: NullablePointer[Cairorectangleint] tag, intersection: NullablePointer[Cairorectangleint] tag)
@@ -269,711 +269,711 @@ struct GtkWidget
   embed parent_instance: GObject = GObject // Typedef
   var priv: NullablePointer[GtkWidgetPrivate] = NullablePointer[GtkWidgetPrivate].none() // PointerType
 
-/*  fun gtk_widget_new(gtype: U64, firstpropertyname: String, ...): GtkWidget =>
+/*  fun new(gtype: U64, firstpropertyname: String, ...): GtkWidget =>
     @gtk_widget_new(gtype, firstpropertyname.cstring(), ...)
-*/  fun gtk_widget_get_parent(widget: GtkWidget tag): GtkWidget =>
+*/  fun get_parent(widget: GtkWidget tag): GtkWidget =>
     @gtk_widget_get_parent(widget)
-  fun gtk_widget_get_toplevel(widget: GtkWidget tag): GtkWidget =>
+  fun get_toplevel(widget: GtkWidget tag): GtkWidget =>
     @gtk_widget_get_toplevel(widget)
-  fun gtk_widget_get_ancestor(widget: GtkWidget tag, widgettype: U64): GtkWidget =>
+  fun get_ancestor(widget: GtkWidget tag, widgettype: U64): GtkWidget =>
     @gtk_widget_get_ancestor(widget, widgettype)
-  fun gtk_widget_get_type(): U64 =>
+  fun get_type(): U64 =>
     @gtk_widget_get_type()
 
-  fun gtk_widget_destroy(): None =>
+  fun destroy(): None =>
     @gtk_widget_destroy(this)
 
-  fun gtk_widget_unparent(): None =>
+  fun unparent(): None =>
     @gtk_widget_unparent(this)
 
-  fun gtk_widget_show(): None =>
+  fun show(): None =>
     @gtk_widget_show(this)
 
-  fun gtk_widget_hide(): None =>
+  fun hide(): None =>
     @gtk_widget_hide(this)
 
-  fun gtk_widget_show_now(): None =>
+  fun show_now(): None =>
     @gtk_widget_show_now(this)
 
-  fun gtk_widget_show_all(): None =>
+  fun show_all(): None =>
     @gtk_widget_show_all(this)
 
-  fun gtk_widget_set_no_show_all(noshowall: I32): None =>
+  fun set_no_show_all(noshowall: I32): None =>
     @gtk_widget_set_no_show_all(this, noshowall)
 
-  fun gtk_widget_get_no_show_all(): I32 =>
+  fun get_no_show_all(): I32 =>
     @gtk_widget_get_no_show_all(this)
 
-  fun gtk_widget_map(): None =>
+  fun map(): None =>
     @gtk_widget_map(this)
 
-  fun gtk_widget_unmap(): None =>
+  fun unmap(): None =>
     @gtk_widget_unmap(this)
 
-  fun gtk_widget_realize(): None =>
+  fun realize(): None =>
     @gtk_widget_realize(this)
 
-  fun gtk_widget_unrealize(): None =>
+  fun unrealize(): None =>
     @gtk_widget_unrealize(this)
 
-  fun gtk_widget_draw(cr: NullablePointer[Cairo] tag): None =>
+  fun draw(cr: NullablePointer[Cairo] tag): None =>
     @gtk_widget_draw(this, cr)
 
-  fun gtk_widget_queue_draw(): None =>
+  fun queue_draw(): None =>
     @gtk_widget_queue_draw(this)
 
-  fun gtk_widget_queue_draw_area(x: I32, y: I32, width: I32, height: I32): None =>
+  fun queue_draw_area(x: I32, y: I32, width: I32, height: I32): None =>
     @gtk_widget_queue_draw_area(this, x, y, width, height)
 
-  fun gtk_widget_queue_draw_region(region: NullablePointer[Cairoregion] tag): None =>
+  fun queue_draw_region(region: NullablePointer[Cairoregion] tag): None =>
     @gtk_widget_queue_draw_region(this, region)
 
-  fun gtk_widget_queue_resize(): None =>
+  fun queue_resize(): None =>
     @gtk_widget_queue_resize(this)
 
-  fun gtk_widget_queue_resize_no_redraw(): None =>
+  fun queue_resize_no_redraw(): None =>
     @gtk_widget_queue_resize_no_redraw(this)
 
-  fun gtk_widget_queue_allocate(): None =>
+  fun queue_allocate(): None =>
     @gtk_widget_queue_allocate(this)
 
-  fun gtk_widget_get_frame_clock(): NullablePointer[GdkFrameClock] =>
+  fun get_frame_clock(): NullablePointer[GdkFrameClock] =>
     @gtk_widget_get_frame_clock(this)
 
-  fun gtk_widget_size_request(requisition: NullablePointer[GtkRequisition] tag): None =>
+  fun size_request(requisition: NullablePointer[GtkRequisition] tag): None =>
     @gtk_widget_size_request(this, requisition)
 
-  fun gtk_widget_size_allocate(allocation: NullablePointer[Cairorectangleint] tag): None =>
+  fun size_allocate(allocation: NullablePointer[Cairorectangleint] tag): None =>
     @gtk_widget_size_allocate(this, allocation)
 
-  fun gtk_widget_size_allocate_with_baseline(allocation: NullablePointer[Cairorectangleint] tag, baseline: I32): None =>
+  fun size_allocate_with_baseline(allocation: NullablePointer[Cairorectangleint] tag, baseline: I32): None =>
     @gtk_widget_size_allocate_with_baseline(this, allocation, baseline)
 
-  fun gtk_widget_get_request_mode(): I32 =>
+  fun get_request_mode(): I32 =>
     @gtk_widget_get_request_mode(this)
 
-  fun gtk_widget_get_preferred_width(minimumwidth: Pointer[I32] tag, naturalwidth: Pointer[I32] tag): None =>
+  fun get_preferred_width(minimumwidth: Pointer[I32] tag, naturalwidth: Pointer[I32] tag): None =>
     @gtk_widget_get_preferred_width(this, minimumwidth, naturalwidth)
 
-  fun gtk_widget_get_preferred_height_for_width(width: I32, minimumheight: Pointer[I32] tag, naturalheight: Pointer[I32] tag): None =>
+  fun get_preferred_height_for_width(width: I32, minimumheight: Pointer[I32] tag, naturalheight: Pointer[I32] tag): None =>
     @gtk_widget_get_preferred_height_for_width(this, width, minimumheight, naturalheight)
 
-  fun gtk_widget_get_preferred_height(minimumheight: Pointer[I32] tag, naturalheight: Pointer[I32] tag): None =>
+  fun get_preferred_height(minimumheight: Pointer[I32] tag, naturalheight: Pointer[I32] tag): None =>
     @gtk_widget_get_preferred_height(this, minimumheight, naturalheight)
 
-  fun gtk_widget_get_preferred_width_for_height(height: I32, minimumwidth: Pointer[I32] tag, naturalwidth: Pointer[I32] tag): None =>
+  fun get_preferred_width_for_height(height: I32, minimumwidth: Pointer[I32] tag, naturalwidth: Pointer[I32] tag): None =>
     @gtk_widget_get_preferred_width_for_height(this, height, minimumwidth, naturalwidth)
 
-  fun gtk_widget_get_preferred_height_and_baseline_for_width(width: I32, minimumheight: Pointer[I32] tag, naturalheight: Pointer[I32] tag, minimumbaseline: Pointer[I32] tag, naturalbaseline: Pointer[I32] tag): None =>
+  fun get_preferred_height_and_baseline_for_width(width: I32, minimumheight: Pointer[I32] tag, naturalheight: Pointer[I32] tag, minimumbaseline: Pointer[I32] tag, naturalbaseline: Pointer[I32] tag): None =>
     @gtk_widget_get_preferred_height_and_baseline_for_width(this, width, minimumheight, naturalheight, minimumbaseline, naturalbaseline)
 
-  fun gtk_widget_get_preferred_size(minimumsize: NullablePointer[GtkRequisition] tag, naturalsize: NullablePointer[GtkRequisition] tag): None =>
+  fun get_preferred_size(minimumsize: NullablePointer[GtkRequisition] tag, naturalsize: NullablePointer[GtkRequisition] tag): None =>
     @gtk_widget_get_preferred_size(this, minimumsize, naturalsize)
 
-  fun gtk_widget_get_child_requisition(requisition: NullablePointer[GtkRequisition] tag): None =>
+  fun get_child_requisition(requisition: NullablePointer[GtkRequisition] tag): None =>
     @gtk_widget_get_child_requisition(this, requisition)
 
-  fun gtk_widget_add_accelerator(accelsignal: String, accelgroup: NullablePointer[GtkAccelGroup] tag, accelkey: U32, accelmods: I32, accelflags: I32): None =>
+  fun add_accelerator(accelsignal: String, accelgroup: NullablePointer[GtkAccelGroup] tag, accelkey: U32, accelmods: I32, accelflags: I32): None =>
     @gtk_widget_add_accelerator(this, accelsignal.cstring(), accelgroup, accelkey, accelmods, accelflags)
 
-  fun gtk_widget_remove_accelerator(accelgroup: NullablePointer[GtkAccelGroup] tag, accelkey: U32, accelmods: I32): I32 =>
+  fun remove_accelerator(accelgroup: NullablePointer[GtkAccelGroup] tag, accelkey: U32, accelmods: I32): I32 =>
     @gtk_widget_remove_accelerator(this, accelgroup, accelkey, accelmods)
 
-  fun gtk_widget_set_accel_path(accelpath: String, accelgroup: NullablePointer[GtkAccelGroup] tag): None =>
+  fun set_accel_path(accelpath: String, accelgroup: NullablePointer[GtkAccelGroup] tag): None =>
     @gtk_widget_set_accel_path(this, accelpath.cstring(), accelgroup)
 
-  fun gtk_widget_list_accel_closures(): NullablePointer[GList] =>
+  fun list_accel_closures(): NullablePointer[GList] =>
     @gtk_widget_list_accel_closures(this)
 
-  fun gtk_widget_can_activate_accel(signalid: U32): I32 =>
+  fun can_activate_accel(signalid: U32): I32 =>
     @gtk_widget_can_activate_accel(this, signalid)
 
-  fun gtk_widget_mnemonic_activate(groupcycling: I32): I32 =>
+  fun mnemonic_activate(groupcycling: I32): I32 =>
     @gtk_widget_mnemonic_activate(this, groupcycling)
 
-  fun gtk_widget_event(event: Pointer[None] tag): I32 =>
-    @gtk_widget_event(this, event)
+  fun event(gevent: Pointer[None] tag): I32 =>
+    @gtk_widget_event(this, gevent)
 
-  fun gtk_widget_send_expose(event: Pointer[None] tag): I32 =>
-    @gtk_widget_send_expose(this, event)
+  fun send_expose(gevent: Pointer[None] tag): I32 =>
+    @gtk_widget_send_expose(this, gevent)
 
-  fun gtk_widget_send_focus_change(event: Pointer[None] tag): I32 =>
-    @gtk_widget_send_focus_change(this, event)
+  fun send_focus_change(gevent: Pointer[None] tag): I32 =>
+    @gtk_widget_send_focus_change(this, gevent)
 
-  fun gtk_widget_activate(): I32 =>
+  fun activate(): I32 =>
     @gtk_widget_activate(this)
 
-  fun gtk_widget_reparent(newparent: GtkWidget tag): None =>
+  fun reparent(newparent: GtkWidget tag): None =>
     @gtk_widget_reparent(this, newparent)
 
-  fun gtk_widget_intersect(area: NullablePointer[Cairorectangleint] tag, intersection: NullablePointer[Cairorectangleint] tag): I32 =>
+  fun intersect(area: NullablePointer[Cairorectangleint] tag, intersection: NullablePointer[Cairorectangleint] tag): I32 =>
     @gtk_widget_intersect(this, area, intersection)
 
-  fun gtk_widget_region_intersect(region: NullablePointer[Cairoregion] tag): NullablePointer[Cairoregion] =>
+  fun region_intersect(region: NullablePointer[Cairoregion] tag): NullablePointer[Cairoregion] =>
     @gtk_widget_region_intersect(this, region)
 
-  fun gtk_widget_freeze_child_notify(): None =>
+  fun freeze_child_notify(): None =>
     @gtk_widget_freeze_child_notify(this)
 
-  fun gtk_widget_child_notify(childproperty: String): None =>
+  fun child_notify(childproperty: String): None =>
     @gtk_widget_child_notify(this, childproperty.cstring())
 
-  fun gtk_widget_thaw_child_notify(): None =>
+  fun thaw_child_notify(): None =>
     @gtk_widget_thaw_child_notify(this)
 
-  fun gtk_widget_set_can_focus(canfocus: I32): None =>
+  fun set_can_focus(canfocus: I32): None =>
     @gtk_widget_set_can_focus(this, canfocus)
 
-  fun gtk_widget_get_can_focus(): I32 =>
+  fun get_can_focus(): I32 =>
     @gtk_widget_get_can_focus(this)
 
-  fun gtk_widget_has_focus(): I32 =>
+  fun has_focus(): I32 =>
     @gtk_widget_has_focus(this)
 
-  fun gtk_widget_is_focus(): I32 =>
+  fun is_focus(): I32 =>
     @gtk_widget_is_focus(this)
 
-  fun gtk_widget_has_visible_focus(): I32 =>
+  fun has_visible_focus(): I32 =>
     @gtk_widget_has_visible_focus(this)
 
-  fun gtk_widget_grab_focus(): None =>
+  fun grab_focus(): None =>
     @gtk_widget_grab_focus(this)
 
-  fun gtk_widget_set_focus_on_click(focusonclick: I32): None =>
+  fun set_focus_on_click(focusonclick: I32): None =>
     @gtk_widget_set_focus_on_click(this, focusonclick)
 
-  fun gtk_widget_get_focus_on_click(): I32 =>
+  fun get_focus_on_click(): I32 =>
     @gtk_widget_get_focus_on_click(this)
 
-  fun gtk_widget_set_can_default(candefault: I32): None =>
+  fun set_can_default(candefault: I32): None =>
     @gtk_widget_set_can_default(this, candefault)
 
-  fun gtk_widget_get_can_default(): I32 =>
+  fun get_can_default(): I32 =>
     @gtk_widget_get_can_default(this)
 
-  fun gtk_widget_has_default(): I32 =>
+  fun has_default(): I32 =>
     @gtk_widget_has_default(this)
 
-  fun gtk_widget_grab_default(): None =>
+  fun grab_default(): None =>
     @gtk_widget_grab_default(this)
 
-  fun gtk_widget_set_receives_default(receivesdefault: I32): None =>
+  fun set_receives_default(receivesdefault: I32): None =>
     @gtk_widget_set_receives_default(this, receivesdefault)
 
-  fun gtk_widget_get_receives_default(): I32 =>
+  fun get_receives_default(): I32 =>
     @gtk_widget_get_receives_default(this)
 
-  fun gtk_widget_has_grab(): I32 =>
+  fun has_grab(): I32 =>
     @gtk_widget_has_grab(this)
 
-  fun gtk_widget_device_is_shadowed(device: NullablePointer[GdkDevice] tag): I32 =>
+  fun device_is_shadowed(device: NullablePointer[GdkDevice] tag): I32 =>
     @gtk_widget_device_is_shadowed(this, device)
 
-  fun gtk_widget_set_name(name: String): None =>
+  fun set_name(name: String): None =>
     @gtk_widget_set_name(this, name.cstring())
 
-  fun gtk_widget_get_name(): String =>
+  fun get_name(): String =>
     var pcstring: Pointer[U8] =  @gtk_widget_get_name(this)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_widget_set_state(state: I32): None =>
+  fun set_state(state: I32): None =>
     @gtk_widget_set_state(this, state)
 
-  fun gtk_widget_get_state(): I32 =>
+  fun get_state(): I32 =>
     @gtk_widget_get_state(this)
 
-  fun gtk_widget_set_state_flags(flags: I32, clear: I32): None =>
+  fun set_state_flags(flags: I32, clear: I32): None =>
     @gtk_widget_set_state_flags(this, flags, clear)
 
-  fun gtk_widget_unset_state_flags(flags: I32): None =>
+  fun unset_state_flags(flags: I32): None =>
     @gtk_widget_unset_state_flags(this, flags)
 
-  fun gtk_widget_get_state_flags(): I32 =>
+  fun get_state_flags(): I32 =>
     @gtk_widget_get_state_flags(this)
 
-  fun gtk_widget_set_sensitive(sensitive: I32): None =>
+  fun set_sensitive(sensitive: I32): None =>
     @gtk_widget_set_sensitive(this, sensitive)
 
-  fun gtk_widget_get_sensitive(): I32 =>
+  fun get_sensitive(): I32 =>
     @gtk_widget_get_sensitive(this)
 
-  fun gtk_widget_is_sensitive(): I32 =>
+  fun is_sensitive(): I32 =>
     @gtk_widget_is_sensitive(this)
 
-  fun gtk_widget_set_visible(visible: I32): None =>
+  fun set_visible(visible: I32): None =>
     @gtk_widget_set_visible(this, visible)
 
-  fun gtk_widget_get_visible(): I32 =>
+  fun get_visible(): I32 =>
     @gtk_widget_get_visible(this)
 
-  fun gtk_widget_is_visible(): I32 =>
+  fun is_visible(): I32 =>
     @gtk_widget_is_visible(this)
 
-  fun gtk_widget_set_has_window(haswindow: I32): None =>
+  fun set_has_window(haswindow: I32): None =>
     @gtk_widget_set_has_window(this, haswindow)
 
-  fun gtk_widget_get_has_window(): I32 =>
+  fun get_has_window(): I32 =>
     @gtk_widget_get_has_window(this)
 
-  fun gtk_widget_is_toplevel(): I32 =>
+  fun is_toplevel(): I32 =>
     @gtk_widget_is_toplevel(this)
 
-  fun gtk_widget_is_drawable(): I32 =>
+  fun is_drawable(): I32 =>
     @gtk_widget_is_drawable(this)
 
-  fun gtk_widget_set_realized(realized: I32): None =>
+  fun set_realized(realized: I32): None =>
     @gtk_widget_set_realized(this, realized)
 
-  fun gtk_widget_get_realized(): I32 =>
+  fun get_realized(): I32 =>
     @gtk_widget_get_realized(this)
 
-  fun gtk_widget_set_mapped(mapped: I32): None =>
+  fun set_mapped(mapped: I32): None =>
     @gtk_widget_set_mapped(this, mapped)
 
-  fun gtk_widget_get_mapped(): I32 =>
+  fun get_mapped(): I32 =>
     @gtk_widget_get_mapped(this)
 
-  fun gtk_widget_set_app_paintable(apppaintable: I32): None =>
+  fun set_app_paintable(apppaintable: I32): None =>
     @gtk_widget_set_app_paintable(this, apppaintable)
 
-  fun gtk_widget_get_app_paintable(): I32 =>
+  fun get_app_paintable(): I32 =>
     @gtk_widget_get_app_paintable(this)
 
-  fun gtk_widget_set_double_buffered(doublebuffered: I32): None =>
+  fun set_double_buffered(doublebuffered: I32): None =>
     @gtk_widget_set_double_buffered(this, doublebuffered)
 
-  fun gtk_widget_get_double_buffered(): I32 =>
+  fun get_double_buffered(): I32 =>
     @gtk_widget_get_double_buffered(this)
 
-  fun gtk_widget_set_redraw_on_allocate(redrawonallocate: I32): None =>
+  fun set_redraw_on_allocate(redrawonallocate: I32): None =>
     @gtk_widget_set_redraw_on_allocate(this, redrawonallocate)
 
-  fun gtk_widget_set_parent(parent: GtkWidget tag): None =>
+  fun set_parent(parent: GtkWidget tag): None =>
     @gtk_widget_set_parent(this, parent)
 
-  fun gtk_widget_set_parent_window(parentwindow: NullablePointer[GdkWindow] tag): None =>
+  fun set_parent_window(parentwindow: NullablePointer[GdkWindow] tag): None =>
     @gtk_widget_set_parent_window(this, parentwindow)
 
-  fun gtk_widget_get_parent_window(): NullablePointer[GdkWindow] =>
+  fun get_parent_window(): NullablePointer[GdkWindow] =>
     @gtk_widget_get_parent_window(this)
 
-  fun gtk_widget_set_child_visible(isvisible: I32): None =>
+  fun set_child_visible(isvisible: I32): None =>
     @gtk_widget_set_child_visible(this, isvisible)
 
-  fun gtk_widget_get_child_visible(): I32 =>
+  fun get_child_visible(): I32 =>
     @gtk_widget_get_child_visible(this)
 
-  fun gtk_widget_set_window(window: NullablePointer[GdkWindow] tag): None =>
+  fun set_window(window: NullablePointer[GdkWindow] tag): None =>
     @gtk_widget_set_window(this, window)
 
-  fun gtk_widget_get_window(): NullablePointer[GdkWindow] =>
+  fun get_window(): NullablePointer[GdkWindow] =>
     @gtk_widget_get_window(this)
 
-  fun gtk_widget_register_window(window: NullablePointer[GdkWindow] tag): None =>
+  fun register_window(window: NullablePointer[GdkWindow] tag): None =>
     @gtk_widget_register_window(this, window)
 
-  fun gtk_widget_unregister_window(window: NullablePointer[GdkWindow] tag): None =>
+  fun unregister_window(window: NullablePointer[GdkWindow] tag): None =>
     @gtk_widget_unregister_window(this, window)
 
-  fun gtk_widget_get_allocated_width(): I32 =>
+  fun get_allocated_width(): I32 =>
     @gtk_widget_get_allocated_width(this)
 
-  fun gtk_widget_get_allocated_height(): I32 =>
+  fun get_allocated_height(): I32 =>
     @gtk_widget_get_allocated_height(this)
 
-  fun gtk_widget_get_allocated_baseline(): I32 =>
+  fun get_allocated_baseline(): I32 =>
     @gtk_widget_get_allocated_baseline(this)
 
-  fun gtk_widget_get_allocated_size(allocation: NullablePointer[Cairorectangleint] tag, baseline: Pointer[I32] tag): None =>
+  fun get_allocated_size(allocation: NullablePointer[Cairorectangleint] tag, baseline: Pointer[I32] tag): None =>
     @gtk_widget_get_allocated_size(this, allocation, baseline)
 
-  fun gtk_widget_get_allocation(allocation: NullablePointer[Cairorectangleint] tag): None =>
+  fun get_allocation(allocation: NullablePointer[Cairorectangleint] tag): None =>
     @gtk_widget_get_allocation(this, allocation)
 
-  fun gtk_widget_set_allocation(allocation: NullablePointer[Cairorectangleint] tag): None =>
+  fun set_allocation(allocation: NullablePointer[Cairorectangleint] tag): None =>
     @gtk_widget_set_allocation(this, allocation)
 
-  fun gtk_widget_set_clip(clip: NullablePointer[Cairorectangleint] tag): None =>
+  fun set_clip(clip: NullablePointer[Cairorectangleint] tag): None =>
     @gtk_widget_set_clip(this, clip)
 
-  fun gtk_widget_get_clip(clip: NullablePointer[Cairorectangleint] tag): None =>
+  fun get_clip(clip: NullablePointer[Cairorectangleint] tag): None =>
     @gtk_widget_get_clip(this, clip)
 
-  fun gtk_widget_get_requisition(requisition: NullablePointer[GtkRequisition] tag): None =>
+  fun get_requisition(requisition: NullablePointer[GtkRequisition] tag): None =>
     @gtk_widget_get_requisition(this, requisition)
 
-  fun gtk_widget_child_focus(direction: I32): I32 =>
+  fun child_focus(direction: I32): I32 =>
     @gtk_widget_child_focus(this, direction)
 
-  fun gtk_widget_keynav_failed(direction: I32): I32 =>
+  fun keynav_failed(direction: I32): I32 =>
     @gtk_widget_keynav_failed(this, direction)
 
-  fun gtk_widget_error_bell(): None =>
+  fun error_bell(): None =>
     @gtk_widget_error_bell(this)
 
-  fun gtk_widget_set_size_request(width: I32, height: I32): None =>
+  fun set_size_request(width: I32, height: I32): None =>
     @gtk_widget_set_size_request(this, width, height)
 
-  fun gtk_widget_get_size_request(width: Pointer[I32] tag, height: Pointer[I32] tag): None =>
+  fun get_size_request(width: Pointer[I32] tag, height: Pointer[I32] tag): None =>
     @gtk_widget_get_size_request(this, width, height)
 
-  fun gtk_widget_set_events(events: I32): None =>
+  fun set_events(events: I32): None =>
     @gtk_widget_set_events(this, events)
 
-  fun gtk_widget_add_events(events: I32): None =>
+  fun add_events(events: I32): None =>
     @gtk_widget_add_events(this, events)
 
-  fun gtk_widget_set_device_events(device: NullablePointer[GdkDevice] tag, events: I32): None =>
+  fun set_device_events(device: NullablePointer[GdkDevice] tag, events: I32): None =>
     @gtk_widget_set_device_events(this, device, events)
 
-  fun gtk_widget_add_device_events(device: NullablePointer[GdkDevice] tag, events: I32): None =>
+  fun add_device_events(device: NullablePointer[GdkDevice] tag, events: I32): None =>
     @gtk_widget_add_device_events(this, device, events)
 
-  fun gtk_widget_set_opacity(opacity: F64): None =>
+  fun set_opacity(opacity: F64): None =>
     @gtk_widget_set_opacity(this, opacity)
 
-  fun gtk_widget_get_opacity(): F64 =>
+  fun get_opacity(): F64 =>
     @gtk_widget_get_opacity(this)
 
-  fun gtk_widget_set_device_enabled(device: NullablePointer[GdkDevice] tag, enabled: I32): None =>
+  fun set_device_enabled(device: NullablePointer[GdkDevice] tag, enabled: I32): None =>
     @gtk_widget_set_device_enabled(this, device, enabled)
 
-  fun gtk_widget_get_device_enabled(device: NullablePointer[GdkDevice] tag): I32 =>
+  fun get_device_enabled(device: NullablePointer[GdkDevice] tag): I32 =>
     @gtk_widget_get_device_enabled(this, device)
 
-  fun gtk_widget_get_visual(): NullablePointer[GdkVisual] =>
+  fun get_visual(): NullablePointer[GdkVisual] =>
     @gtk_widget_get_visual(this)
 
-  fun gtk_widget_set_visual(visual: NullablePointer[GdkVisual] tag): None =>
+  fun set_visual(visual: NullablePointer[GdkVisual] tag): None =>
     @gtk_widget_set_visual(this, visual)
 
-  fun gtk_widget_get_screen(): NullablePointer[GdkScreen] =>
+  fun get_screen(): NullablePointer[GdkScreen] =>
     @gtk_widget_get_screen(this)
 
-  fun gtk_widget_has_screen(): I32 =>
+  fun has_screen(): I32 =>
     @gtk_widget_has_screen(this)
 
-  fun gtk_widget_get_scale_factor(): I32 =>
+  fun get_scale_factor(): I32 =>
     @gtk_widget_get_scale_factor(this)
 
-  fun gtk_widget_get_display(): NullablePointer[GdkDisplay] =>
+  fun get_display(): NullablePointer[GdkDisplay] =>
     @gtk_widget_get_display(this)
 
-  fun gtk_widget_get_root_window(): NullablePointer[GdkWindow] =>
+  fun get_root_window(): NullablePointer[GdkWindow] =>
     @gtk_widget_get_root_window(this)
 
-  fun gtk_widget_get_settings(): NullablePointer[GtkSettings] =>
+  fun get_settings(): NullablePointer[GtkSettings] =>
     @gtk_widget_get_settings(this)
 
-  fun gtk_widget_get_clipboard(selection: NullablePointer[GdkAtom] tag): NullablePointer[GtkClipboard] =>
+  fun get_clipboard(selection: NullablePointer[GdkAtom] tag): NullablePointer[GtkClipboard] =>
     @gtk_widget_get_clipboard(this, selection)
 
-  fun gtk_widget_get_hexpand(): I32 =>
+  fun get_hexpand(): I32 =>
     @gtk_widget_get_hexpand(this)
 
-  fun gtk_widget_set_hexpand(expand: I32): None =>
+  fun set_hexpand(expand: I32): None =>
     @gtk_widget_set_hexpand(this, expand)
 
-  fun gtk_widget_get_hexpand_set(): I32 =>
+  fun get_hexpand_set(): I32 =>
     @gtk_widget_get_hexpand_set(this)
 
-  fun gtk_widget_set_hexpand_set(set: I32): None =>
+  fun set_hexpand_set(set: I32): None =>
     @gtk_widget_set_hexpand_set(this, set)
 
-  fun gtk_widget_get_vexpand(): I32 =>
+  fun get_vexpand(): I32 =>
     @gtk_widget_get_vexpand(this)
 
-  fun gtk_widget_set_vexpand(expand: I32): None =>
+  fun set_vexpand(expand: I32): None =>
     @gtk_widget_set_vexpand(this, expand)
 
-  fun gtk_widget_get_vexpand_set(): I32 =>
+  fun get_vexpand_set(): I32 =>
     @gtk_widget_get_vexpand_set(this)
 
-  fun gtk_widget_set_vexpand_set(set: I32): None =>
+  fun set_vexpand_set(set: I32): None =>
     @gtk_widget_set_vexpand_set(this, set)
 
-  fun gtk_widget_queue_compute_expand(): None =>
+  fun queue_compute_expand(): None =>
     @gtk_widget_queue_compute_expand(this)
 
-  fun gtk_widget_compute_expand(orientation: I32): I32 =>
+  fun compute_expand(orientation: I32): I32 =>
     @gtk_widget_compute_expand(this, orientation)
 
-  fun gtk_widget_get_support_multidevice(): I32 =>
+  fun get_support_multidevice(): I32 =>
     @gtk_widget_get_support_multidevice(this)
 
-  fun gtk_widget_set_support_multidevice(supportmultidevice: I32): None =>
+  fun set_support_multidevice(supportmultidevice: I32): None =>
     @gtk_widget_set_support_multidevice(this, supportmultidevice)
 
-  fun gtk_widget_class_set_accessible_type(widgetclass: NullablePointer[GtkWidgetClass] tag, gtype: U64): None =>
+  fun class_set_accessible_type(widgetclass: NullablePointer[GtkWidgetClass] tag, gtype: U64): None =>
     @gtk_widget_class_set_accessible_type(widgetclass, gtype)
 
-  fun gtk_widget_class_set_accessible_role(widgetclass: NullablePointer[GtkWidgetClass] tag, role: I32): None =>
+  fun class_set_accessible_role(widgetclass: NullablePointer[GtkWidgetClass] tag, role: I32): None =>
     @gtk_widget_class_set_accessible_role(widgetclass, role)
 
-  fun gtk_widget_get_accessible(): NullablePointer[AtkObject] =>
+  fun get_accessible(): NullablePointer[AtkObject] =>
     @gtk_widget_get_accessible(this)
 
-  fun gtk_widget_get_halign(): I32 =>
+  fun get_halign(): I32 =>
     @gtk_widget_get_halign(this)
 
-  fun gtk_widget_set_halign(align: I32): None =>
+  fun set_halign(align: I32): None =>
     @gtk_widget_set_halign(this, align)
 
-  fun gtk_widget_get_valign(): I32 =>
+  fun get_valign(): I32 =>
     @gtk_widget_get_valign(this)
 
-  fun gtk_widget_get_valign_with_baseline(): I32 =>
+  fun get_valign_with_baseline(): I32 =>
     @gtk_widget_get_valign_with_baseline(this)
 
-  fun gtk_widget_set_valign(align: I32): None =>
+  fun set_valign(align: I32): None =>
     @gtk_widget_set_valign(this, align)
 
-  fun gtk_widget_get_margin_left(): I32 =>
+  fun get_margin_left(): I32 =>
     @gtk_widget_get_margin_left(this)
 
-  fun gtk_widget_set_margin_left(margin: I32): None =>
+  fun set_margin_left(margin: I32): None =>
     @gtk_widget_set_margin_left(this, margin)
 
-  fun gtk_widget_get_margin_right(): I32 =>
+  fun get_margin_right(): I32 =>
     @gtk_widget_get_margin_right(this)
 
-  fun gtk_widget_set_margin_right(margin: I32): None =>
+  fun set_margin_right(margin: I32): None =>
     @gtk_widget_set_margin_right(this, margin)
 
-  fun gtk_widget_get_margin_start(): I32 =>
+  fun get_margin_start(): I32 =>
     @gtk_widget_get_margin_start(this)
 
-  fun gtk_widget_set_margin_start(margin: I32): None =>
+  fun set_margin_start(margin: I32): None =>
     @gtk_widget_set_margin_start(this, margin)
 
-  fun gtk_widget_get_margin_end(): I32 =>
+  fun get_margin_end(): I32 =>
     @gtk_widget_get_margin_end(this)
 
-  fun gtk_widget_set_margin_end(margin: I32): None =>
+  fun set_margin_end(margin: I32): None =>
     @gtk_widget_set_margin_end(this, margin)
 
-  fun gtk_widget_get_margin_top(): I32 =>
+  fun get_margin_top(): I32 =>
     @gtk_widget_get_margin_top(this)
 
-  fun gtk_widget_set_margin_top(margin: I32): None =>
+  fun set_margin_top(margin: I32): None =>
     @gtk_widget_set_margin_top(this, margin)
 
-  fun gtk_widget_get_margin_bottom(): I32 =>
+  fun get_margin_bottom(): I32 =>
     @gtk_widget_get_margin_bottom(this)
 
-  fun gtk_widget_set_margin_bottom(margin: I32): None =>
+  fun set_margin_bottom(margin: I32): None =>
     @gtk_widget_set_margin_bottom(this, margin)
 
-  fun gtk_widget_get_events(): I32 =>
+  fun get_events(): I32 =>
     @gtk_widget_get_events(this)
 
-  fun gtk_widget_get_device_events(device: NullablePointer[GdkDevice] tag): I32 =>
+  fun get_device_events(device: NullablePointer[GdkDevice] tag): I32 =>
     @gtk_widget_get_device_events(this, device)
 
-  fun gtk_widget_get_pointer(x: Pointer[I32] tag, y: Pointer[I32] tag): None =>
+  fun get_pointer(x: Pointer[I32] tag, y: Pointer[I32] tag): None =>
     @gtk_widget_get_pointer(this, x, y)
 
-  fun gtk_widget_is_ancestor(ancestor: GtkWidget tag): I32 =>
+  fun is_ancestor(ancestor: GtkWidget tag): I32 =>
     @gtk_widget_is_ancestor(this, ancestor)
 
-  fun gtk_widget_translate_coordinates(destwidget: GtkWidget tag, srcx: I32, srcy: I32, destx: Pointer[I32] tag, desty: Pointer[I32] tag): I32 =>
+  fun translate_coordinates(destwidget: GtkWidget tag, srcx: I32, srcy: I32, destx: Pointer[I32] tag, desty: Pointer[I32] tag): I32 =>
     @gtk_widget_translate_coordinates(this, destwidget, srcx, srcy, destx, desty)
 
-  fun gtk_widget_hide_on_delete(): I32 =>
+  fun hide_on_delete(): I32 =>
     @gtk_widget_hide_on_delete(this)
 
-  fun gtk_widget_override_color(state: I32, color: NullablePointer[GdkRGBA] tag): None =>
+  fun override_color(state: I32, color: NullablePointer[GdkRGBA] tag): None =>
     @gtk_widget_override_color(this, state, color)
 
-  fun gtk_widget_override_background_color(state: I32, color: NullablePointer[GdkRGBA] tag): None =>
+  fun override_background_color(state: I32, color: NullablePointer[GdkRGBA] tag): None =>
     @gtk_widget_override_background_color(this, state, color)
 
-  fun gtk_widget_override_font(fontdesc: NullablePointer[PangoFontDescription] tag): None =>
+  fun override_font(fontdesc: NullablePointer[PangoFontDescription] tag): None =>
     @gtk_widget_override_font(this, fontdesc)
 
-  fun gtk_widget_override_symbolic_color(name: String, color: NullablePointer[GdkRGBA] tag): None =>
+  fun override_symbolic_color(name: String, color: NullablePointer[GdkRGBA] tag): None =>
     @gtk_widget_override_symbolic_color(this, name.cstring(), color)
 
-  fun gtk_widget_override_cursor(cursor: NullablePointer[GdkRGBA] tag, secondarycursor: NullablePointer[GdkRGBA] tag): None =>
+  fun override_cursor(cursor: NullablePointer[GdkRGBA] tag, secondarycursor: NullablePointer[GdkRGBA] tag): None =>
     @gtk_widget_override_cursor(this, cursor, secondarycursor)
 
-  fun gtk_widget_reset_style(): None =>
+  fun reset_style(): None =>
     @gtk_widget_reset_style(this)
 
-  fun gtk_widget_create_pango_context(): NullablePointer[PangoContext] =>
+  fun create_pango_context(): NullablePointer[PangoContext] =>
     @gtk_widget_create_pango_context(this)
 
-  fun gtk_widget_get_pango_context(): NullablePointer[PangoContext] =>
+  fun get_pango_context(): NullablePointer[PangoContext] =>
     @gtk_widget_get_pango_context(this)
 
-  fun gtk_widget_set_font_options(options: NullablePointer[Cairofontoptions] tag): None =>
+  fun set_font_options(options: NullablePointer[Cairofontoptions] tag): None =>
     @gtk_widget_set_font_options(this, options)
 
-  fun gtk_widget_get_font_options(): NullablePointer[Cairofontoptions] =>
+  fun get_font_options(): NullablePointer[Cairofontoptions] =>
     @gtk_widget_get_font_options(this)
 
-  fun gtk_widget_create_pango_layout(text: String): NullablePointer[PangoLayout] =>
+  fun create_pango_layout(text: String): NullablePointer[PangoLayout] =>
     @gtk_widget_create_pango_layout(this, text.cstring())
 
-  fun gtk_widget_render_icon_pixbuf(stockid: String, size: I32): NullablePointer[GdkPixbuf] =>
+  fun render_icon_pixbuf(stockid: String, size: I32): NullablePointer[GdkPixbuf] =>
     @gtk_widget_render_icon_pixbuf(this, stockid.cstring(), size)
 
-  fun gtk_widget_set_composite_name(name: String): None =>
+  fun set_composite_name(name: String): None =>
     @gtk_widget_set_composite_name(this, name.cstring())
 
-  fun gtk_widget_get_composite_name(): String =>
+  fun get_composite_name(): String =>
     var pcstring: Pointer[U8] =  @gtk_widget_get_composite_name(this)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_widget_push_composite_child(): None =>
+  fun push_composite_child(): None =>
     @gtk_widget_push_composite_child()
 
-  fun gtk_widget_pop_composite_child(): None =>
+  fun pop_composite_child(): None =>
     @gtk_widget_pop_composite_child()
 
-  fun gtk_widget_class_install_style_property(klass: NullablePointer[GtkWidgetClass] tag, pspec: NullablePointer[GParamSpec] tag): None =>
+  fun class_install_style_property(klass: NullablePointer[GtkWidgetClass] tag, pspec: NullablePointer[GParamSpec] tag): None =>
     @gtk_widget_class_install_style_property(klass, pspec)
 
-  fun gtk_widget_class_install_style_property_parser(klass: NullablePointer[GtkWidgetClass] tag, pspec: NullablePointer[GParamSpec] tag, parser: Pointer[None] tag): None =>
+  fun class_install_style_property_parser(klass: NullablePointer[GtkWidgetClass] tag, pspec: NullablePointer[GParamSpec] tag, parser: Pointer[None] tag): None =>
     @gtk_widget_class_install_style_property_parser(klass, pspec, parser)
 
-  fun gtk_widget_class_find_style_property(klass: NullablePointer[GtkWidgetClass] tag, propertyname: String): NullablePointer[GParamSpec] =>
+  fun class_find_style_property(klass: NullablePointer[GtkWidgetClass] tag, propertyname: String): NullablePointer[GParamSpec] =>
     @gtk_widget_class_find_style_property(klass, propertyname.cstring())
 
-  fun gtk_widget_class_list_style_properties(klass: NullablePointer[GtkWidgetClass] tag, nproperties: Pointer[U32] tag): Array[NullablePointer[GParamSpec]] =>
+  fun class_list_style_properties(klass: NullablePointer[GtkWidgetClass] tag, nproperties: Pointer[U32] tag): Array[NullablePointer[GParamSpec]] =>
     @gtk_widget_class_list_style_properties(klass, nproperties)
 
-  fun gtk_widget_style_get_property(propertyname: String, value: NullablePointer[GValue] tag): None =>
+  fun style_get_property(propertyname: String, value: NullablePointer[GValue] tag): None =>
     @gtk_widget_style_get_property(this, propertyname.cstring(), value)
 
-/*  fun gtk_widget_style_get(firstpropertyname: String, ...): None =>
+/*  fun style_get(firstpropertyname: String, ...): None =>
     @gtk_widget_style_get(this, firstpropertyname.cstring(), ...)
 */
-  fun gtk_widget_set_direction(dir: I32): None =>
+  fun set_direction(dir: I32): None =>
     @gtk_widget_set_direction(this, dir)
 
-  fun gtk_widget_get_direction(): I32 =>
+  fun get_direction(): I32 =>
     @gtk_widget_get_direction(this)
 
-  fun gtk_widget_set_default_direction(dir: I32): None =>
+  fun set_default_direction(dir: I32): None =>
     @gtk_widget_set_default_direction(dir)
 
-  fun gtk_widget_get_default_direction(): I32 =>
+  fun get_default_direction(): I32 =>
     @gtk_widget_get_default_direction()
 
-  fun gtk_widget_is_composited(): I32 =>
+  fun is_composited(): I32 =>
     @gtk_widget_is_composited(this)
 
-  fun gtk_widget_shape_combine_region(region: NullablePointer[Cairoregion] tag): None =>
+  fun shape_combine_region(region: NullablePointer[Cairoregion] tag): None =>
     @gtk_widget_shape_combine_region(this, region)
 
-  fun gtk_widget_input_shape_combine_region(region: NullablePointer[Cairoregion] tag): None =>
+  fun input_shape_combine_region(region: NullablePointer[Cairoregion] tag): None =>
     @gtk_widget_input_shape_combine_region(this, region)
 
-  fun gtk_widget_list_mnemonic_labels(): NullablePointer[GList] =>
+  fun list_mnemonic_labels(): NullablePointer[GList] =>
     @gtk_widget_list_mnemonic_labels(this)
 
-  fun gtk_widget_add_mnemonic_label(label: GtkWidget tag): None =>
+  fun add_mnemonic_label(label: GtkWidget tag): None =>
     @gtk_widget_add_mnemonic_label(this, label)
 
-  fun gtk_widget_remove_mnemonic_label(label: GtkWidget tag): None =>
+  fun remove_mnemonic_label(label: GtkWidget tag): None =>
     @gtk_widget_remove_mnemonic_label(this, label)
 
-  fun gtk_widget_set_tooltip_window(customwindow: GtkWindow tag): None =>
+  fun set_tooltip_window(customwindow: GtkWindow tag): None =>
     @gtk_widget_set_tooltip_window(this, customwindow)
 
-  fun gtk_widget_get_tooltip_window(): GtkWindow =>
+  fun get_tooltip_window(): GtkWindow =>
     @gtk_widget_get_tooltip_window(this)
 
-  fun gtk_widget_trigger_tooltip_query(): None =>
+  fun trigger_tooltip_query(): None =>
     @gtk_widget_trigger_tooltip_query(this)
 
-  fun gtk_widget_set_tooltip_text(text: String): None =>
+  fun set_tooltip_text(text: String): None =>
     @gtk_widget_set_tooltip_text(this, text.cstring())
 
-  fun gtk_widget_get_tooltip_text(): String =>
+  fun get_tooltip_text(): String =>
     var pcstring: Pointer[U8] =  @gtk_widget_get_tooltip_text(this)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_widget_set_tooltip_markup(markup: String): None =>
+  fun set_tooltip_markup(markup: String): None =>
     @gtk_widget_set_tooltip_markup(this, markup.cstring())
 
-  fun gtk_widget_get_tooltip_markup(): String =>
+  fun get_tooltip_markup(): String =>
     var pcstring: Pointer[U8] =  @gtk_widget_get_tooltip_markup(this)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_widget_set_has_tooltip(hastooltip: I32): None =>
+  fun set_has_tooltip(hastooltip: I32): None =>
     @gtk_widget_set_has_tooltip(this, hastooltip)
 
-  fun gtk_widget_get_has_tooltip(): I32 =>
+  fun get_has_tooltip(): I32 =>
     @gtk_widget_get_has_tooltip(this)
 
-  fun gtk_widget_in_destruction(): I32 =>
+  fun in_destruction(): I32 =>
     @gtk_widget_in_destruction(this)
 
-  fun gtk_widget_get_style_context(): NullablePointer[GtkStyleContext] =>
+  fun get_style_context(): NullablePointer[GtkStyleContext] =>
     @gtk_widget_get_style_context(this)
 
-  fun gtk_widget_get_path(): NullablePointer[GtkWidgetPath] =>
+  fun get_path(): NullablePointer[GtkWidgetPath] =>
     @gtk_widget_get_path(this)
 
-  fun gtk_widget_class_set_css_name(widgetclass: NullablePointer[GtkWidgetClass] tag, name: String): None =>
+  fun class_set_css_name(widgetclass: NullablePointer[GtkWidgetClass] tag, name: String): None =>
     @gtk_widget_class_set_css_name(widgetclass, name.cstring())
 
-  fun gtk_widget_class_get_css_name(widgetclass: NullablePointer[GtkWidgetClass] tag): String =>
+  fun class_get_css_name(widgetclass: NullablePointer[GtkWidgetClass] tag): String =>
     var pcstring: Pointer[U8] =  @gtk_widget_class_get_css_name(widgetclass)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_widget_get_modifier_mask(intent: I32): I32 =>
+  fun get_modifier_mask(intent: I32): I32 =>
     @gtk_widget_get_modifier_mask(this, intent)
 
-  fun gtk_widget_insert_action_group(name: String, group: NullablePointer[GActionGroup] tag): None =>
+  fun insert_action_group(name: String, group: NullablePointer[GActionGroup] tag): None =>
     @gtk_widget_insert_action_group(this, name.cstring(), group)
 
-  fun gtk_widget_add_tick_callback(callback: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
+  fun add_tick_callback(callback: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
     @gtk_widget_add_tick_callback(this, callback, userdata, notify)
 
-  fun gtk_widget_remove_tick_callback(id: U32): None =>
+  fun remove_tick_callback(id: U32): None =>
     @gtk_widget_remove_tick_callback(this, id)
 
-  fun gtk_widget_init_template(): None =>
+  fun init_template(): None =>
     @gtk_widget_init_template(this)
 
-  fun gtk_widget_get_template_child(widgettype: U64, name: String): NullablePointer[GObject] =>
+  fun get_template_child(widgettype: U64, name: String): NullablePointer[GObject] =>
     @gtk_widget_get_template_child(this, widgettype, name.cstring())
 
-  fun gtk_widget_class_set_template(widgetclass: NullablePointer[GtkWidgetClass] tag, templatebytes: NullablePointer[GBytes] tag): None =>
+  fun class_set_template(widgetclass: NullablePointer[GtkWidgetClass] tag, templatebytes: NullablePointer[GBytes] tag): None =>
     @gtk_widget_class_set_template(widgetclass, templatebytes)
 
-  fun gtk_widget_class_set_template_from_resource(widgetclass: NullablePointer[GtkWidgetClass] tag, resourcename: String): None =>
+  fun class_set_template_from_resource(widgetclass: NullablePointer[GtkWidgetClass] tag, resourcename: String): None =>
     @gtk_widget_class_set_template_from_resource(widgetclass, resourcename.cstring())
 
-  fun gtk_widget_class_bind_template_callback_full(widgetclass: NullablePointer[GtkWidgetClass] tag, callbackname: String, callbacksymbol: Pointer[None] tag): None =>
+  fun class_bind_template_callback_full(widgetclass: NullablePointer[GtkWidgetClass] tag, callbackname: String, callbacksymbol: Pointer[None] tag): None =>
     @gtk_widget_class_bind_template_callback_full(widgetclass, callbackname.cstring(), callbacksymbol)
 
-  fun gtk_widget_class_set_connect_func(widgetclass: NullablePointer[GtkWidgetClass] tag, connectfunc: Pointer[None] tag, connectdata: Pointer[None] tag, connectdatadestroy: Pointer[None] tag): None =>
+  fun class_set_connect_func(widgetclass: NullablePointer[GtkWidgetClass] tag, connectfunc: Pointer[None] tag, connectdata: Pointer[None] tag, connectdatadestroy: Pointer[None] tag): None =>
     @gtk_widget_class_set_connect_func(widgetclass, connectfunc, connectdata, connectdatadestroy)
 
-  fun gtk_widget_class_bind_template_child_full(widgetclass: NullablePointer[GtkWidgetClass] tag, name: String, internalchild: I32, structoffset: I64): None =>
+  fun class_bind_template_child_full(widgetclass: NullablePointer[GtkWidgetClass] tag, name: String, internalchild: I32, structoffset: I64): None =>
     @gtk_widget_class_bind_template_child_full(widgetclass, name.cstring(), internalchild, structoffset)
 
-  fun gtk_widget_get_action_group(prefix: String): NullablePointer[GActionGroup] =>
+  fun get_action_group(prefix: String): NullablePointer[GActionGroup] =>
     @gtk_widget_get_action_group(this, prefix.cstring())
 
-  fun gtk_widget_list_action_prefixes(): Pointer[Pointer[U8]] =>
+  fun list_action_prefixes(): Pointer[Pointer[U8]] =>
     @gtk_widget_list_action_prefixes(this)
 
-  fun gtk_widget_set_font_map(fontmap: NullablePointer[PangoFontMap] tag): None =>
+  fun set_font_map(fontmap: NullablePointer[PangoFontMap] tag): None =>
     @gtk_widget_set_font_map(this, fontmap)
 
-  fun gtk_widget_get_font_map(): NullablePointer[PangoFontMap] =>
+  fun get_font_map(): NullablePointer[PangoFontMap] =>
     @gtk_widget_get_font_map(this)
 
-  fun gtk_widget_help_type_get_type(): U64 =>
+  fun help_type_get_type(): U64 =>
     @gtk_widget_help_type_get_type()
 

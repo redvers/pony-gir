@@ -157,375 +157,375 @@ struct GtkWindow
   embed bin: GtkBin = GtkBin // Typedef
   var priv: NullablePointer[GtkWindowPrivate] = NullablePointer[GtkWindowPrivate].none() // PointerType
 
-  fun gtk_window_new(gtype: I32): GtkWindow =>
+  fun gnew(gtype: I32): GtkWindow =>
     @gtk_window_new(gtype)
-  fun gtk_window_get_transient_for(window: GtkWindow tag): GtkWindow =>
+  fun get_transient_for(window: GtkWindow tag): GtkWindow =>
     @gtk_window_get_transient_for(window)
-  fun gtk_window_get_type(): U64 =>
+  fun get_type(): U64 =>
     @gtk_window_get_type()
 
-  fun gtk_window_set_title(title: String): None =>
+  fun set_title(title: String): None =>
     @gtk_window_set_title(this, title.cstring())
 
-  fun gtk_window_get_title(): String =>
+  fun get_title(): String =>
     var pcstring: Pointer[U8] =  @gtk_window_get_title(this)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_window_set_wmclass(wmclassname: String, wmclassclass: String): None =>
+  fun set_wmclass(wmclassname: String, wmclassclass: String): None =>
     @gtk_window_set_wmclass(this, wmclassname.cstring(), wmclassclass.cstring())
 
-  fun gtk_window_set_role(role: String): None =>
+  fun set_role(role: String): None =>
     @gtk_window_set_role(this, role.cstring())
 
-  fun gtk_window_set_startup_id(startupid: String): None =>
+  fun set_startup_id(startupid: String): None =>
     @gtk_window_set_startup_id(this, startupid.cstring())
 
-  fun gtk_window_get_role(): String =>
+  fun get_role(): String =>
     var pcstring: Pointer[U8] =  @gtk_window_get_role(this)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_window_add_accel_group(accelgroup: NullablePointer[GtkAccelGroup] tag): None =>
+  fun add_accel_group(accelgroup: NullablePointer[GtkAccelGroup] tag): None =>
     @gtk_window_add_accel_group(this, accelgroup)
 
-  fun gtk_window_remove_accel_group(accelgroup: NullablePointer[GtkAccelGroup] tag): None =>
+  fun remove_accel_group(accelgroup: NullablePointer[GtkAccelGroup] tag): None =>
     @gtk_window_remove_accel_group(this, accelgroup)
 
-  fun gtk_window_set_position(position: I32): None =>
+  fun set_position(position: I32): None =>
     @gtk_window_set_position(this, position)
 
-  fun gtk_window_activate_focus(): I32 =>
+  fun activate_focus(): I32 =>
     @gtk_window_activate_focus(this)
 
-  fun gtk_window_set_focus(focus: GtkWidget tag): None =>
+  fun set_focus(focus: GtkWidget tag): None =>
     @gtk_window_set_focus(this, focus)
 
-  fun gtk_window_get_focus(): GtkWidget =>
+  fun get_focus(): GtkWidget =>
     @gtk_window_get_focus(this)
 
-  fun gtk_window_set_default(defaultwidget: GtkWidget tag): None =>
+  fun set_default(defaultwidget: GtkWidget tag): None =>
     @gtk_window_set_default(this, defaultwidget)
 
-  fun gtk_window_get_default_widget(): GtkWidget =>
+  fun get_default_widget(): GtkWidget =>
     @gtk_window_get_default_widget(this)
 
-  fun gtk_window_activate_default(): I32 =>
+  fun activate_default(): I32 =>
     @gtk_window_activate_default(this)
 
-  fun gtk_window_set_transient_for(parent: GtkWindow tag): None =>
+  fun set_transient_for(parent: GtkWindow tag): None =>
     @gtk_window_set_transient_for(this, parent)
 
-  fun gtk_window_set_attached_to(attachwidget: GtkWidget tag): None =>
+  fun set_attached_to(attachwidget: GtkWidget tag): None =>
     @gtk_window_set_attached_to(this, attachwidget)
 
-  fun gtk_window_get_attached_to(): GtkWidget =>
+  fun get_attached_to(): GtkWidget =>
     @gtk_window_get_attached_to(this)
 
-  fun gtk_window_set_opacity(opacity: F64): None =>
+  fun set_opacity(opacity: F64): None =>
     @gtk_window_set_opacity(this, opacity)
 
-  fun gtk_window_get_opacity(): F64 =>
+  fun get_opacity(): F64 =>
     @gtk_window_get_opacity(this)
 
-  fun gtk_window_set_type_hint(hint: I32): None =>
+  fun set_type_hint(hint: I32): None =>
     @gtk_window_set_type_hint(this, hint)
 
-  fun gtk_window_get_type_hint(): I32 =>
+  fun get_type_hint(): I32 =>
     @gtk_window_get_type_hint(this)
 
-  fun gtk_window_set_skip_taskbar_hint(setting: I32): None =>
+  fun set_skip_taskbar_hint(setting: I32): None =>
     @gtk_window_set_skip_taskbar_hint(this, setting)
 
-  fun gtk_window_get_skip_taskbar_hint(): I32 =>
+  fun get_skip_taskbar_hint(): I32 =>
     @gtk_window_get_skip_taskbar_hint(this)
 
-  fun gtk_window_set_skip_pager_hint(setting: I32): None =>
+  fun set_skip_pager_hint(setting: I32): None =>
     @gtk_window_set_skip_pager_hint(this, setting)
 
-  fun gtk_window_get_skip_pager_hint(): I32 =>
+  fun get_skip_pager_hint(): I32 =>
     @gtk_window_get_skip_pager_hint(this)
 
-  fun gtk_window_set_urgency_hint(setting: I32): None =>
+  fun set_urgency_hint(setting: I32): None =>
     @gtk_window_set_urgency_hint(this, setting)
 
-  fun gtk_window_get_urgency_hint(): I32 =>
+  fun get_urgency_hint(): I32 =>
     @gtk_window_get_urgency_hint(this)
 
-  fun gtk_window_set_accept_focus(setting: I32): None =>
+  fun set_accept_focus(setting: I32): None =>
     @gtk_window_set_accept_focus(this, setting)
 
-  fun gtk_window_get_accept_focus(): I32 =>
+  fun get_accept_focus(): I32 =>
     @gtk_window_get_accept_focus(this)
 
-  fun gtk_window_set_focus_on_map(setting: I32): None =>
+  fun set_focus_on_map(setting: I32): None =>
     @gtk_window_set_focus_on_map(this, setting)
 
-  fun gtk_window_get_focus_on_map(): I32 =>
+  fun get_focus_on_map(): I32 =>
     @gtk_window_get_focus_on_map(this)
 
-  fun gtk_window_set_destroy_with_parent(setting: I32): None =>
+  fun set_destroy_with_parent(setting: I32): None =>
     @gtk_window_set_destroy_with_parent(this, setting)
 
-  fun gtk_window_get_destroy_with_parent(): I32 =>
+  fun get_destroy_with_parent(): I32 =>
     @gtk_window_get_destroy_with_parent(this)
 
-  fun gtk_window_set_hide_titlebar_when_maximized(setting: I32): None =>
+  fun set_hide_titlebar_when_maximized(setting: I32): None =>
     @gtk_window_set_hide_titlebar_when_maximized(this, setting)
 
-  fun gtk_window_get_hide_titlebar_when_maximized(): I32 =>
+  fun get_hide_titlebar_when_maximized(): I32 =>
     @gtk_window_get_hide_titlebar_when_maximized(this)
 
-  fun gtk_window_set_mnemonics_visible(setting: I32): None =>
+  fun set_mnemonics_visible(setting: I32): None =>
     @gtk_window_set_mnemonics_visible(this, setting)
 
-  fun gtk_window_get_mnemonics_visible(): I32 =>
+  fun get_mnemonics_visible(): I32 =>
     @gtk_window_get_mnemonics_visible(this)
 
-  fun gtk_window_set_focus_visible(setting: I32): None =>
+  fun set_focus_visible(setting: I32): None =>
     @gtk_window_set_focus_visible(this, setting)
 
-  fun gtk_window_get_focus_visible(): I32 =>
+  fun get_focus_visible(): I32 =>
     @gtk_window_get_focus_visible(this)
 
-  fun gtk_window_set_resizable(resizable: I32): None =>
+  fun set_resizable(resizable: I32): None =>
     @gtk_window_set_resizable(this, resizable)
 
-  fun gtk_window_get_resizable(): I32 =>
+  fun get_resizable(): I32 =>
     @gtk_window_get_resizable(this)
 
-  fun gtk_window_set_gravity(gravity: I32): None =>
+  fun set_gravity(gravity: I32): None =>
     @gtk_window_set_gravity(this, gravity)
 
-  fun gtk_window_get_gravity(): I32 =>
+  fun get_gravity(): I32 =>
     @gtk_window_get_gravity(this)
 
-  fun gtk_window_set_geometry_hints(geometrywidget: GtkWidget tag, geometry: NullablePointer[GdkGeometry] tag, geommask: I32): None =>
+  fun set_geometry_hints(geometrywidget: GtkWidget tag, geometry: NullablePointer[GdkGeometry] tag, geommask: I32): None =>
     @gtk_window_set_geometry_hints(this, geometrywidget, geometry, geommask)
 
-  fun gtk_window_set_screen(screen: NullablePointer[GdkScreen] tag): None =>
+  fun set_screen(screen: NullablePointer[GdkScreen] tag): None =>
     @gtk_window_set_screen(this, screen)
 
-  fun gtk_window_get_screen(): NullablePointer[GdkScreen] =>
+  fun get_screen(): NullablePointer[GdkScreen] =>
     @gtk_window_get_screen(this)
 
-  fun gtk_window_is_active(): I32 =>
+  fun is_active(): I32 =>
     @gtk_window_is_active(this)
 
-  fun gtk_window_has_toplevel_focus(): I32 =>
+  fun has_toplevel_focus(): I32 =>
     @gtk_window_has_toplevel_focus(this)
 
-  fun gtk_window_set_decorated(setting: I32): None =>
+  fun set_decorated(setting: I32): None =>
     @gtk_window_set_decorated(this, setting)
 
-  fun gtk_window_get_decorated(): I32 =>
+  fun get_decorated(): I32 =>
     @gtk_window_get_decorated(this)
 
-  fun gtk_window_set_deletable(setting: I32): None =>
+  fun set_deletable(setting: I32): None =>
     @gtk_window_set_deletable(this, setting)
 
-  fun gtk_window_get_deletable(): I32 =>
+  fun get_deletable(): I32 =>
     @gtk_window_get_deletable(this)
 
-  fun gtk_window_set_icon_list(list: NullablePointer[GList] tag): None =>
+  fun set_icon_list(list: NullablePointer[GList] tag): None =>
     @gtk_window_set_icon_list(this, list)
 
-  fun gtk_window_get_icon_list(): NullablePointer[GList] =>
+  fun get_icon_list(): NullablePointer[GList] =>
     @gtk_window_get_icon_list(this)
 
-  fun gtk_window_set_icon(icon: NullablePointer[GdkPixbuf] tag): None =>
+  fun set_icon(icon: NullablePointer[GdkPixbuf] tag): None =>
     @gtk_window_set_icon(this, icon)
 
-  fun gtk_window_set_icon_name(name: String): None =>
+  fun set_icon_name(name: String): None =>
     @gtk_window_set_icon_name(this, name.cstring())
 
-  fun gtk_window_set_icon_from_file(filename: String, err: Pointer[NullablePointer[GError]] tag): I32 =>
+  fun set_icon_from_file(filename: String, err: Pointer[NullablePointer[GError]] tag): I32 =>
     @gtk_window_set_icon_from_file(this, filename.cstring(), err)
 
-  fun gtk_window_get_icon(): NullablePointer[GdkPixbuf] =>
+  fun get_icon(): NullablePointer[GdkPixbuf] =>
     @gtk_window_get_icon(this)
 
-  fun gtk_window_get_icon_name(): String =>
+  fun get_icon_name(): String =>
     var pcstring: Pointer[U8] =  @gtk_window_get_icon_name(this)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_window_set_default_icon_list(list: NullablePointer[GList] tag): None =>
+  fun set_default_icon_list(list: NullablePointer[GList] tag): None =>
     @gtk_window_set_default_icon_list(list)
 
-  fun gtk_window_get_default_icon_list(): NullablePointer[GList] =>
+  fun get_default_icon_list(): NullablePointer[GList] =>
     @gtk_window_get_default_icon_list()
 
-  fun gtk_window_set_default_icon(icon: NullablePointer[GdkPixbuf] tag): None =>
+  fun set_default_icon(icon: NullablePointer[GdkPixbuf] tag): None =>
     @gtk_window_set_default_icon(icon)
 
-  fun gtk_window_set_default_icon_name(name: String): None =>
+  fun set_default_icon_name(name: String): None =>
     @gtk_window_set_default_icon_name(name.cstring())
 
-  fun gtk_window_get_default_icon_name(): String =>
+  fun get_default_icon_name(): String =>
     var pcstring: Pointer[U8] =  @gtk_window_get_default_icon_name()
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_window_set_default_icon_from_file(filename: String, err: Pointer[NullablePointer[GError]] tag): I32 =>
+  fun set_default_icon_from_file(filename: String, err: Pointer[NullablePointer[GError]] tag): I32 =>
     @gtk_window_set_default_icon_from_file(filename.cstring(), err)
 
-  fun gtk_window_set_auto_startup_notification(setting: I32): None =>
+  fun set_auto_startup_notification(setting: I32): None =>
     @gtk_window_set_auto_startup_notification(setting)
 
-  fun gtk_window_set_modal(modal: I32): None =>
+  fun set_modal(modal: I32): None =>
     @gtk_window_set_modal(this, modal)
 
-  fun gtk_window_get_modal(): I32 =>
+  fun get_modal(): I32 =>
     @gtk_window_get_modal(this)
 
-  fun gtk_window_list_toplevels(): NullablePointer[GList] =>
+  fun list_toplevels(): NullablePointer[GList] =>
     @gtk_window_list_toplevels()
 
-  fun gtk_window_set_has_user_ref_count(setting: I32): None =>
+  fun set_has_user_ref_count(setting: I32): None =>
     @gtk_window_set_has_user_ref_count(this, setting)
 
-  fun gtk_window_add_mnemonic(keyval: U32, target: GtkWidget tag): None =>
+  fun add_mnemonic(keyval: U32, target: GtkWidget tag): None =>
     @gtk_window_add_mnemonic(this, keyval, target)
 
-  fun gtk_window_remove_mnemonic(keyval: U32, target: GtkWidget tag): None =>
+  fun remove_mnemonic(keyval: U32, target: GtkWidget tag): None =>
     @gtk_window_remove_mnemonic(this, keyval, target)
 
-  fun gtk_window_mnemonic_activate(keyval: U32, modifier: I32): I32 =>
+  fun mnemonic_activate(keyval: U32, modifier: I32): I32 =>
     @gtk_window_mnemonic_activate(this, keyval, modifier)
 
-  fun gtk_window_set_mnemonic_modifier(modifier: I32): None =>
+  fun set_mnemonic_modifier(modifier: I32): None =>
     @gtk_window_set_mnemonic_modifier(this, modifier)
 
-  fun gtk_window_get_mnemonic_modifier(): I32 =>
+  fun get_mnemonic_modifier(): I32 =>
     @gtk_window_get_mnemonic_modifier(this)
 
-  fun gtk_window_activate_key(event: NullablePointer[GdkEventKey] tag): I32 =>
+  fun activate_key(event: NullablePointer[GdkEventKey] tag): I32 =>
     @gtk_window_activate_key(this, event)
 
-  fun gtk_window_propagate_key_event(event: NullablePointer[GdkEventKey] tag): I32 =>
+  fun propagate_key_event(event: NullablePointer[GdkEventKey] tag): I32 =>
     @gtk_window_propagate_key_event(this, event)
 
-  fun gtk_window_present(): None =>
+  fun present(): None =>
     @gtk_window_present(this)
 
-  fun gtk_window_present_with_time(timestamp: U32): None =>
+  fun present_with_time(timestamp: U32): None =>
     @gtk_window_present_with_time(this, timestamp)
 
-  fun gtk_window_iconify(): None =>
+  fun iconify(): None =>
     @gtk_window_iconify(this)
 
-  fun gtk_window_deiconify(): None =>
+  fun deiconify(): None =>
     @gtk_window_deiconify(this)
 
-  fun gtk_window_stick(): None =>
+  fun stick(): None =>
     @gtk_window_stick(this)
 
-  fun gtk_window_unstick(): None =>
+  fun unstick(): None =>
     @gtk_window_unstick(this)
 
-  fun gtk_window_maximize(): None =>
+  fun maximize(): None =>
     @gtk_window_maximize(this)
 
-  fun gtk_window_unmaximize(): None =>
+  fun unmaximize(): None =>
     @gtk_window_unmaximize(this)
 
-  fun gtk_window_fullscreen(): None =>
+  fun fullscreen(): None =>
     @gtk_window_fullscreen(this)
 
-  fun gtk_window_unfullscreen(): None =>
+  fun unfullscreen(): None =>
     @gtk_window_unfullscreen(this)
 
-  fun gtk_window_fullscreen_on_monitor(screen: NullablePointer[GdkScreen] tag, monitor: I32): None =>
+  fun fullscreen_on_monitor(screen: NullablePointer[GdkScreen] tag, monitor: I32): None =>
     @gtk_window_fullscreen_on_monitor(this, screen, monitor)
 
-  fun gtk_window_close(): None =>
+  fun close(): None =>
     @gtk_window_close(this)
 
-  fun gtk_window_set_keep_above(setting: I32): None =>
+  fun set_keep_above(setting: I32): None =>
     @gtk_window_set_keep_above(this, setting)
 
-  fun gtk_window_set_keep_below(setting: I32): None =>
+  fun set_keep_below(setting: I32): None =>
     @gtk_window_set_keep_below(this, setting)
 
-  fun gtk_window_begin_resize_drag(edge: I32, button: I32, rootx: I32, rooty: I32, timestamp: U32): None =>
+  fun begin_resize_drag(edge: I32, button: I32, rootx: I32, rooty: I32, timestamp: U32): None =>
     @gtk_window_begin_resize_drag(this, edge, button, rootx, rooty, timestamp)
 
-  fun gtk_window_begin_move_drag(button: I32, rootx: I32, rooty: I32, timestamp: U32): None =>
+  fun begin_move_drag(button: I32, rootx: I32, rooty: I32, timestamp: U32): None =>
     @gtk_window_begin_move_drag(this, button, rootx, rooty, timestamp)
 
-  fun gtk_window_set_default_size(width: I32, height: I32): None =>
+  fun set_default_size(width: I32, height: I32): None =>
     @gtk_window_set_default_size(this, width, height)
 
-  fun gtk_window_get_default_size(width: Pointer[I32] tag, height: Pointer[I32] tag): None =>
+  fun get_default_size(width: Pointer[I32] tag, height: Pointer[I32] tag): None =>
     @gtk_window_get_default_size(this, width, height)
 
-  fun gtk_window_resize(width: I32, height: I32): None =>
+  fun resize(width: I32, height: I32): None =>
     @gtk_window_resize(this, width, height)
 
-  fun gtk_window_get_size(width: Pointer[I32] tag, height: Pointer[I32] tag): None =>
+  fun get_size(width: Pointer[I32] tag, height: Pointer[I32] tag): None =>
     @gtk_window_get_size(this, width, height)
 
-  fun gtk_window_move(x: I32, y: I32): None =>
+  fun move(x: I32, y: I32): None =>
     @gtk_window_move(this, x, y)
 
-  fun gtk_window_get_position(rootx: Pointer[I32] tag, rooty: Pointer[I32] tag): None =>
+  fun get_position(rootx: Pointer[I32] tag, rooty: Pointer[I32] tag): None =>
     @gtk_window_get_position(this, rootx, rooty)
 
-  fun gtk_window_parse_geometry(geometry: String): I32 =>
+  fun parse_geometry(geometry: String): I32 =>
     @gtk_window_parse_geometry(this, geometry.cstring())
 
-  fun gtk_window_set_default_geometry(width: I32, height: I32): None =>
+  fun set_default_geometry(width: I32, height: I32): None =>
     @gtk_window_set_default_geometry(this, width, height)
 
-  fun gtk_window_resize_to_geometry(width: I32, height: I32): None =>
+  fun resize_to_geometry(width: I32, height: I32): None =>
     @gtk_window_resize_to_geometry(this, width, height)
 
-  fun gtk_window_get_group(): NullablePointer[GtkWindowGroup] =>
+  fun get_group(): NullablePointer[GtkWindowGroup] =>
     @gtk_window_get_group(this)
 
-  fun gtk_window_has_group(): I32 =>
+  fun has_group(): I32 =>
     @gtk_window_has_group(this)
 
-  fun gtk_window_reshow_with_initial_size(): None =>
+  fun reshow_with_initial_size(): None =>
     @gtk_window_reshow_with_initial_size(this)
 
-  fun gtk_window_get_window_type(): I32 =>
+  fun get_window_type(): I32 =>
     @gtk_window_get_window_type(this)
 
-  fun gtk_window_get_application(): NullablePointer[GtkApplication] =>
+  fun get_application(): NullablePointer[GtkApplication] =>
     @gtk_window_get_application(this)
 
-  fun gtk_window_set_application(application: NullablePointer[GtkApplication] tag): None =>
+  fun set_application(application: NullablePointer[GtkApplication] tag): None =>
     @gtk_window_set_application(this, application)
 
-  fun gtk_window_set_has_resize_grip(value: I32): None =>
+  fun set_has_resize_grip(value: I32): None =>
     @gtk_window_set_has_resize_grip(this, value)
 
-  fun gtk_window_get_has_resize_grip(): I32 =>
+  fun get_has_resize_grip(): I32 =>
     @gtk_window_get_has_resize_grip(this)
 
-  fun gtk_window_resize_grip_is_visible(): I32 =>
+  fun resize_grip_is_visible(): I32 =>
     @gtk_window_resize_grip_is_visible(this)
 
-  fun gtk_window_get_resize_grip_area(rect: NullablePointer[Cairorectangleint] tag): I32 =>
+  fun get_resize_grip_area(rect: NullablePointer[Cairorectangleint] tag): I32 =>
     @gtk_window_get_resize_grip_area(this, rect)
 
-  fun gtk_window_set_titlebar(titlebar: GtkWidget tag): None =>
+  fun set_titlebar(titlebar: GtkWidget tag): None =>
     @gtk_window_set_titlebar(this, titlebar)
 
-  fun gtk_window_get_titlebar(): GtkWidget =>
+  fun get_titlebar(): GtkWidget =>
     @gtk_window_get_titlebar(this)
 
-  fun gtk_window_is_maximized(): I32 =>
+  fun is_maximized(): I32 =>
     @gtk_window_is_maximized(this)
 
-  fun gtk_window_set_interactive_debugging(enable: I32): None =>
+  fun set_interactive_debugging(enable: I32): None =>
     @gtk_window_set_interactive_debugging(enable)
 
-  fun gtk_window_type_get_type(): U64 =>
+  fun type_get_type(): U64 =>
     @gtk_window_type_get_type()
 
-  fun gtk_window_position_get_type(): U64 =>
+  fun position_get_type(): U64 =>
     @gtk_window_position_get_type()
 

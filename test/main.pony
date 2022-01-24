@@ -28,11 +28,11 @@ actor Main
     env.out.print("Oof")
 
     Gtk.gtk_init(Pointer[I32], Pointer[Pointer[U8]])
-    let window: GtkWindow = GtkWindow.gtk_window_new(0)
-    window.gtk_window_set_title("Hello World")
-    var string: String val = recover val window.gtk_window_get_title().clone() end
+    let window: GtkWindow = GtkWindow.gnew(0)
+    window.set_title("Hello World")
+    var string: String val = recover val window.get_title().clone() end
     window.bin.container.widget.parent_instance.signal_connect_data("destroy", @{(): None => Gtk.gtk_main_quit()}, Pointer[None], Pointer[None], I32(0))
-    window.bin.container.widget.gtk_widget_show_all()
+    window.bin.container.widget.show_all()
 
     Gtk.gtk_main()
 
