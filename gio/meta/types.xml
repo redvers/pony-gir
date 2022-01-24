@@ -1171,13 +1171,13 @@
 
   <typedef name="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"
     embed="var"
-    ponytypein="NullablePointer[Array[NullablePointer[GSocketControlMessage]]] tag"
+    ponytypein="Pointer[Pointer[NullablePointer[GSocketControlMessage]]] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"
-    structtype="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"
-    structdef="NullablePointer[Array[NullablePointer[GSocketControlMessage]]].none()"
-    argtype="NullablePointer[Array[NullablePointer[GSocketControlMessage]]] tag"
-    rvtype="NullablePointer[Array[NullablePointer[GSocketControlMessage]]]"/>
+    ponytypeout="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
+    structtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
+    structdef="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"
+    argtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]] tag"
+    rvtype="Pointer[Pointer[NullablePointer[GSocketControlMessage]]]"/>
 
   <typedef name="NullablePointer[GInetAddressMaskPrivate]"
     embed="var"

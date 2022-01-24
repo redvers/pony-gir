@@ -724,7 +724,7 @@
 
   <struct name="GFileAttributeInfo" id="_4168" size="128" align="64" fid="f169" lineno="40">
     <field name="name" id="_9636" type="String" fieldid="_8093" offset="0" fid="f169" line="42"/>
-    <field name="type" id="_9637" type="I32" fieldid="_3941" offset="64" fid="f169" line="43"/>
+    <field name="gtype" id="_9637" type="I32" fieldid="_3941" offset="64" fid="f169" line="43"/>
     <field name="flags" id="_9638" type="I32" fieldid="_3943" offset="96" fid="f169" line="44"/>
   </struct>
 
