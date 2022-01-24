@@ -12,7 +12,7 @@
   <renderuse name="gtk_widget_show" render="0"/>
   <renderuse name="gtk_widget_hide" render="0"/>
   <renderuse name="gtk_widget_show_now" render="0"/>
-  <renderuse name="gtk_widget_show_all" render="0"/>
+  <renderuse name="gtk_widget_show_all" render="1"/>
   <renderuse name="gtk_widget_set_no_show_all" render="0"/>
   <renderuse name="gtk_widget_get_no_show_all" render="0"/>
   <renderuse name="gtk_widget_map" render="0"/>

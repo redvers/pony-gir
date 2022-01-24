@@ -22,7 +22,6 @@ use "lib:glib-2.0"
 
 use @gtk_init[None](argc: Pointer[I32], argv: Pointer[Pointer[U8]])
 use @gtk_main[None]()
-use @gtk_widget_show_all[None](widget: GtkWidget)
 
 actor Main
   new create(env: Env) =>
@@ -30,8 +29,11 @@ actor Main
 
     @gtk_init(Pointer[I32], Pointer[Pointer[U8]])
     let window: GtkWindow = GtkWindow.gtk_window_new(0)
+    window.gtk_window_set_title("Hello World")
+    var string: String val = recover val window.gtk_window_get_title().clone() end
+    env.out.print(string)
 
-//    window.show_all()
+    window.bin.container.widget.gtk_widget_show_all()
     @gtk_main()
 
 

@@ -40,3 +40,11 @@ struct GtkWindow
 
   fun gtk_window_new(gtype: I32): GtkWindow =>
     @gtk_window_new(gtype)
+  fun ref gtk_window_set_title(title: String): None =>
+    @gtk_window_set_title(this, title.cstring())
+
+  fun ref gtk_window_get_title(): String =>
+    var pcstring: Pointer[U8] =  @gtk_window_get_title(this)
+    let p: String iso = String.from_cstring(pcstring).clone()
+    consume p
+

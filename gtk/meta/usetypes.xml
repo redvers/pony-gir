@@ -751,13 +751,13 @@
 
   <typedef name="NullablePointer[GtkWidget]"
     embed="var"
-    ponytypein="NullablePointer[GtkWidget] tag"
+    ponytypein="GtkWidget tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GtkWidget]"
+    ponytypeout="GtkWidget"
     structtype="NullablePointer[GtkWidget]"
     structdef="NullablePointer[GtkWidget].none()"
-    argtype="NullablePointer[GtkWidget] tag"
-    rvtype="NullablePointer[GtkWidget]"/>
+    argtype="GtkWidget tag"
+    rvtype="GtkWidget"/>
 
   <typedef name="NullablePointer[GtkTreeStore]"
     embed="var"
