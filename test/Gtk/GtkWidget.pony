@@ -19,6 +19,7 @@ use "lib:cairo"
 use "lib:gdk_pixbuf-2.0"
 use "lib:glib-2.0"
 
+use @gtk_widget_new[NullablePointer[GtkWidget]](gtype: U64, firstpropertyname: Pointer[U8] tag, ...)
 
 
 /*
@@ -35,3 +36,6 @@ struct GtkWidget
   embed parent_instance: GObject = GObject // Typedef
   var priv: NullablePointer[GtkWidgetPrivate] = NullablePointer[GtkWidgetPrivate].none() // PointerType
 
+/*  fun gtk_widget_new(gtype: U64, firstpropertyname: String, ...): NullablePointer[GtkWidget] =>
+    @gtk_widget_new(gtype, firstpropertyname.cstring(), ...)
+*/

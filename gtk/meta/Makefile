@@ -28,7 +28,7 @@ codegenstructs:
 	sh -x mkstruct.sh _13523 GtkBuilderClass
 	sh -x mkstruct.sh _13525 GtkBuilderPrivate
 	sh -x mkstruct.sh _11056 GtkRequisition
-	sh -x mkstruct.sh _11068 GtkWidget
+	sh -x mkstruct.sh _11068 GtkWidget gtk_widget
 	sh -x mkstruct.sh _11536 GtkWidgetPrivate
 	sh -x mkstruct.sh _11538 GtkWidgetClass
 	sh -x mkstruct.sh _11540 GtkWidgetClassPrivate
