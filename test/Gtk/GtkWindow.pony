@@ -37,3 +37,6 @@ use @gtk_window_get_title[Pointer[U8]](window: GtkWindow)
 struct GtkWindow
   embed bin: GtkBin = GtkBin // Typedef
   var priv: NullablePointer[GtkWindowPrivate] = NullablePointer[GtkWindowPrivate].none() // PointerType
+
+  fun gtk_window_new(gtype: I32): GtkWindow =>
+    @gtk_window_new(gtype)

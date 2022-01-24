@@ -29,7 +29,7 @@ actor Main
     env.out.print("Oof")
 
     @gtk_init(Pointer[I32], Pointer[Pointer[U8]])
-//    let window: GtkWindow = GtkWindow.gnew(0)
+    let window: GtkWindow = GtkWindow.gtk_window_new(0)
 
 //    window.show_all()
     @gtk_main()
