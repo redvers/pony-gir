@@ -4,7 +4,7 @@ codegenstruct:
 	sh -x mkstruct.sh _3572 GObject g_object
 	sh -x mkstruct.sh _3243 GTypeClass
 	sh -x mkstruct.sh _3247 GTypeInstance
-	sh -x mkstruct.sh _3237 GValue
+	sh -x mkstruct.sh _3237 GValue g_value
 	sh -x mkstruct.sh _3245 GTypeInterface
 	sh -x mkstruct.sh _3574 GObjectClass
 	sh -x mkstruct.sh _3241 GTypePlugin
@@ -55,7 +55,7 @@ codegenstruct:
 	sh -x mkstruct.sh _3778 GTypeModule
 	sh -x mkstruct.sh _3780 GTypeModuleClass
 	sh -x mkstruct.sh _3799 GTypePluginClass
-	sh -x mkstruct.sh _3810 GValueArray
+	sh -x mkstruct.sh _3810 GValueArray g_value_array
 
 
 structmeta:

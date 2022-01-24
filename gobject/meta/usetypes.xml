@@ -121,13 +121,13 @@
 
   <typedef name="NullablePointer[GValue]"
     embed="var"
-    ponytypein="NullablePointer[GValue] tag"
+    ponytypein="GValue tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GValue]"
-    structtype="NullablePointer[GValue]"
-    structdef="NullablePointer[GValue].none()"
-    argtype="NullablePointer[GValue] tag"
-    rvtype="NullablePointer[GValue]"/>
+    ponytypeout="GValue"
+    structtype="GValue"
+    structdef="GValue"
+    argtype="GValue tag"
+    rvtype="GValue"/>
 
   <typedef name="NullablePointer[GTypeModule]"
     embed="var"
@@ -401,13 +401,13 @@
 
   <typedef name="NullablePointer[GValueArray]"
     embed="var"
-    ponytypein="NullablePointer[GValueArray] tag"
+    ponytypein="GValueArray tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GValueArray]"
-    structtype="NullablePointer[GValueArray]"
-    structdef="NullablePointer[GValueArray].none()"
-    argtype="NullablePointer[GValueArray] tag"
-    rvtype="NullablePointer[GValueArray]"/>
+    ponytypeout="GValueArray"
+    structtype="GValueArray"
+    structdef="GValueArray"
+    argtype="GValueArray tag"
+    rvtype="GValueArray"/>
 
   <typedef name="NullablePointer[GTypeInstance]"
     embed="var"

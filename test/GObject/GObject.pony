@@ -2,10 +2,10 @@ use "../Glib"
 
 use "lib:glib-2.0"
 
-use @g_signal_accumulator_first_wins[I32](ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: NullablePointer[GValue] tag, handlerreturn: NullablePointer[GValue] tag, dummy: Pointer[None] tag)
-use @g_signal_accumulator_true_handled[I32](ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: NullablePointer[GValue] tag, handlerreturn: NullablePointer[GValue] tag, dummy: Pointer[None] tag)
+use @g_signal_accumulator_first_wins[I32](ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: GValue tag, handlerreturn: GValue tag, dummy: Pointer[None] tag)
+use @g_signal_accumulator_true_handled[I32](ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: GValue tag, handlerreturn: GValue tag, dummy: Pointer[None] tag)
 use @g_signal_add_emission_hook[U64](signalid: U32, detail: U32, hookfunc: Pointer[None] tag, hookdata: Pointer[None] tag, datadestroy: Pointer[None] tag)
-use @g_signal_chain_from_overridden[None](instanceandparams: NullablePointer[GValue] tag, returnvalue: NullablePointer[GValue] tag)
+use @g_signal_chain_from_overridden[None](instanceandparams: GValue tag, returnvalue: GValue tag)
 use @g_signal_chain_from_overridden_handler[None](instance: Pointer[None] tag, ...)
 use @g_signal_connect_closure[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, closure: NullablePointer[GClosure] tag, after: I32)
 use @g_signal_connect_closure_by_id[U64](instance: Pointer[None] tag, signalid: U32, detail: U32, closure: NullablePointer[GClosure] tag, after: I32)
@@ -13,7 +13,7 @@ use @g_signal_connect_data[U64](instance: GObject tag, detailedsignal: Pointer[U
 use @g_signal_connect_object[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, gobject: Pointer[None] tag, connectflags: I32)
 use @g_signal_emit[None](instance: Pointer[None] tag, signalid: U32, detail: U32, ...)
 use @g_signal_emit_by_name[None](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, ...)
-use @g_signal_emitv[None](instanceandparams: NullablePointer[GValue] tag, signalid: U32, detail: U32, returnvalue: NullablePointer[GValue] tag)
+use @g_signal_emitv[None](instanceandparams: GValue tag, signalid: U32, detail: U32, returnvalue: GValue tag)
 use @g_signal_get_invocation_hint[NullablePointer[GSignalInvocationHint]](instance: Pointer[None] tag)
 use @g_signal_handler_block[None](instance: Pointer[None] tag, handlerid: U64)
 use @g_signal_handler_disconnect[None](instance: Pointer[None] tag, handlerid: U64)
@@ -54,13 +54,13 @@ use @g_object_force_floating[None](gobject: GObject tag)
 use @g_object_freeze_notify[None](gobject: GObject tag)
 use @g_object_get[None](gobject: Pointer[None] tag, firstpropertyname: Pointer[U8] tag, ...)
 use @g_object_get_data[Pointer[None]](gobject: GObject tag, key: Pointer[U8] tag)
-use @g_object_get_property[None](gobject: GObject tag, propertyname: Pointer[U8] tag, value: NullablePointer[GValue] tag)
+use @g_object_get_property[None](gobject: GObject tag, propertyname: Pointer[U8] tag, value: GValue tag)
 use @g_object_get_qdata[Pointer[None]](gobject: GObject tag, quark: U32)
 use @g_object_get_type[U64]()
-use @g_object_getv[None](gobject: GObject tag, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
+use @g_object_getv[None](gobject: GObject tag, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: GValue tag)
 use @g_object_is_floating[I32](gobject: Pointer[None] tag)
 use @g_object_new[GObject](objecttype: U64, firstpropertyname: Pointer[U8] tag, ...)
-use @g_object_new_with_properties[GObject](objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
+use @g_object_new_with_properties[GObject](objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: GValue tag)
 use @g_object_notify[None](gobject: GObject tag, propertyname: Pointer[U8] tag)
 use @g_object_notify_by_pspec[None](gobject: GObject tag, pspec: NullablePointer[GParamSpec] tag)
 use @g_object_ref[Pointer[None]](gobject: Pointer[None] tag)
@@ -73,10 +73,10 @@ use @g_object_run_dispose[None](gobject: GObject tag)
 use @g_object_set[None](gobject: Pointer[None] tag, firstpropertyname: Pointer[U8] tag, ...)
 use @g_object_set_data[None](gobject: GObject tag, key: Pointer[U8] tag, data: Pointer[None] tag)
 use @g_object_set_data_full[None](gobject: GObject tag, key: Pointer[U8] tag, data: Pointer[None] tag, destroy: Pointer[None] tag)
-use @g_object_set_property[None](gobject: GObject tag, propertyname: Pointer[U8] tag, value: NullablePointer[GValue] tag)
+use @g_object_set_property[None](gobject: GObject tag, propertyname: Pointer[U8] tag, value: GValue tag)
 use @g_object_set_qdata[None](gobject: GObject tag, quark: U32, data: Pointer[None] tag)
 use @g_object_set_qdata_full[None](gobject: GObject tag, quark: U32, data: Pointer[None] tag, destroy: Pointer[None] tag)
-use @g_object_setv[None](gobject: GObject tag, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: NullablePointer[GValue] tag)
+use @g_object_setv[None](gobject: GObject tag, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: GValue tag)
 use @g_object_steal_data[Pointer[None]](gobject: GObject tag, key: Pointer[U8] tag)
 use @g_object_steal_qdata[Pointer[None]](gobject: GObject tag, quark: U32)
 use @g_object_take_ref[Pointer[None]](gobject: Pointer[None] tag)
@@ -103,9 +103,9 @@ struct GObject
   var ref_count: U32 = U32(0) // Typedef
   var qdata: NullablePointer[GData] = NullablePointer[GData].none() // PointerType
 
-/*  fun new(objecttype: U64, firstpropertyname: String, ...): GObject =>
+/*  fun gnew(objecttype: U64, firstpropertyname: String, ...): GObject =>
     @g_object_new(objecttype, firstpropertyname.cstring(), ...)
-*/  fun new_with_properties(objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8]], values: NullablePointer[GValue] tag): GObject =>
+*/  fun new_with_properties(objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8]], values: GValue tag): GObject =>
     @g_object_new_with_properties(objecttype, nproperties, names, values)
   fun g_signal_type_cclosure_new(itype: U64, structoffset: U32): NullablePointer[GClosure] =>
     @g_signal_type_cclosure_new(itype, structoffset)
@@ -119,7 +119,7 @@ struct GObject
 /*  fun g_signal_new_class_handler(signalname: String, itype: U64, signalflags: I32, classhandler: Pointer[None] tag, accumulator: Pointer[None] tag, accudata: Pointer[None] tag, cmarshaller: Pointer[None] tag, returntype: U64, nparams: U32, ...): U32 =>
     @g_signal_new_class_handler(signalname.cstring(), itype, signalflags, classhandler, accumulator, accudata, cmarshaller, returntype, nparams, ...)
 */
-  fun g_signal_emitv(instanceandparams: NullablePointer[GValue] tag, signalid: U32, detail: U32, returnvalue: NullablePointer[GValue] tag): None =>
+  fun g_signal_emitv(instanceandparams: GValue tag, signalid: U32, detail: U32, returnvalue: GValue tag): None =>
     @g_signal_emitv(instanceandparams, signalid, detail, returnvalue)
 
 /*  fun g_signal_emit(instance: Pointer[None] tag, signalid: U32, detail: U32, ...): None =>
@@ -205,16 +205,16 @@ struct GObject
   fun g_signal_override_class_handler(signalname: String, instancetype: U64, classhandler: Pointer[None] tag): None =>
     @g_signal_override_class_handler(signalname.cstring(), instancetype, classhandler)
 
-  fun g_signal_chain_from_overridden(instanceandparams: NullablePointer[GValue] tag, returnvalue: NullablePointer[GValue] tag): None =>
+  fun g_signal_chain_from_overridden(instanceandparams: GValue tag, returnvalue: GValue tag): None =>
     @g_signal_chain_from_overridden(instanceandparams, returnvalue)
 
 /*  fun g_signal_chain_from_overridden_handler(instance: Pointer[None] tag, ...): None =>
     @g_signal_chain_from_overridden_handler(instance, ...)
 */
-  fun g_signal_accumulator_true_handled(ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: NullablePointer[GValue] tag, handlerreturn: NullablePointer[GValue] tag, dummy: Pointer[None] tag): I32 =>
+  fun g_signal_accumulator_true_handled(ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: GValue tag, handlerreturn: GValue tag, dummy: Pointer[None] tag): I32 =>
     @g_signal_accumulator_true_handled(ihint, returnaccu, handlerreturn, dummy)
 
-  fun g_signal_accumulator_first_wins(ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: NullablePointer[GValue] tag, handlerreturn: NullablePointer[GValue] tag, dummy: Pointer[None] tag): I32 =>
+  fun g_signal_accumulator_first_wins(ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: GValue tag, handlerreturn: GValue tag, dummy: Pointer[None] tag): I32 =>
     @g_signal_accumulator_first_wins(ihint, returnaccu, handlerreturn, dummy)
 
   fun g_signal_handlers_destroy(instance: Pointer[None] tag): None =>
@@ -235,16 +235,16 @@ struct GObject
 /*  fun disconnect(gobject: Pointer[None] tag, signalspec: String, ...): None =>
     @g_object_disconnect(gobject, signalspec.cstring(), ...)
 */
-  fun setv(nproperties: U32, names: Pointer[Pointer[U8]], values: NullablePointer[GValue] tag): None =>
+  fun setv(nproperties: U32, names: Pointer[Pointer[U8]], values: GValue tag): None =>
     @g_object_setv(this, nproperties, names, values)
 
-  fun getv(nproperties: U32, names: Pointer[Pointer[U8]], values: NullablePointer[GValue] tag): None =>
+  fun getv(nproperties: U32, names: Pointer[Pointer[U8]], values: GValue tag): None =>
     @g_object_getv(this, nproperties, names, values)
 
-  fun set_property(propertyname: String, value: NullablePointer[GValue] tag): None =>
+  fun set_property(propertyname: String, value: GValue tag): None =>
     @g_object_set_property(this, propertyname.cstring(), value)
 
-  fun get_property(propertyname: String, value: NullablePointer[GValue] tag): None =>
+  fun get_property(propertyname: String, value: GValue tag): None =>
     @g_object_get_property(this, propertyname.cstring(), value)
 
   fun freeze_notify(): None =>

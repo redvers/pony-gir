@@ -647,7 +647,7 @@
      </useargs>
   </use>
   <use id="_3342" name="g_value_init"
-     ponyname="g_value_init"
+     ponyname="init"
      fid="f132"
      lineno="133"
      rv="NullablePointer[GValue]">
@@ -657,7 +657,7 @@
      </useargs>
   </use>
   <use id="_3343" name="g_value_copy"
-     ponyname="g_value_copy"
+     ponyname="copy"
      fid="f132"
      lineno="136"
      rv="None">
@@ -667,7 +667,7 @@
      </useargs>
   </use>
   <use id="_3344" name="g_value_reset"
-     ponyname="g_value_reset"
+     ponyname="reset"
      fid="f132"
      lineno="139"
      rv="NullablePointer[GValue]">
@@ -676,7 +676,7 @@
      </useargs>
   </use>
   <use id="_3345" name="g_value_unset"
-     ponyname="g_value_unset"
+     ponyname="unset"
      fid="f132"
      lineno="141"
      rv="None">
@@ -685,7 +685,7 @@
      </useargs>
   </use>
   <use id="_3346" name="g_value_set_instance"
-     ponyname="g_value_set_instance"
+     ponyname="set_instance"
      fid="f132"
      lineno="143"
      rv="None">
@@ -695,7 +695,7 @@
      </useargs>
   </use>
   <use id="_3347" name="g_value_init_from_instance"
-     ponyname="g_value_init_from_instance"
+     ponyname="init_from_instance"
      fid="f132"
      lineno="146"
      rv="None">
@@ -705,7 +705,7 @@
      </useargs>
   </use>
   <use id="_3348" name="g_value_fits_pointer"
-     ponyname="g_value_fits_pointer"
+     ponyname="fits_pointer"
      fid="f132"
      lineno="152"
      rv="I32">
@@ -714,7 +714,7 @@
      </useargs>
   </use>
   <use id="_3349" name="g_value_peek_pointer"
-     ponyname="g_value_peek_pointer"
+     ponyname="peek_pointer"
      fid="f132"
      lineno="154"
      rv="Pointer[None]">
@@ -723,7 +723,7 @@
      </useargs>
   </use>
   <use id="_3350" name="g_value_type_compatible"
-     ponyname="g_value_type_compatible"
+     ponyname="type_compatible"
      fid="f132"
      lineno="159"
      rv="I32">
@@ -733,7 +733,7 @@
      </useargs>
   </use>
   <use id="_3351" name="g_value_type_transformable"
-     ponyname="g_value_type_transformable"
+     ponyname="type_transformable"
      fid="f132"
      lineno="162"
      rv="I32">
@@ -743,7 +743,7 @@
      </useargs>
   </use>
   <use id="_3352" name="g_value_transform"
-     ponyname="g_value_transform"
+     ponyname="transform"
      fid="f132"
      lineno="165"
      rv="I32">
@@ -753,7 +753,7 @@
      </useargs>
   </use>
   <use id="_3353" name="g_value_register_transform_func"
-     ponyname="g_value_register_transform_func"
+     ponyname="register_transform_func"
      fid="f132"
      lineno="168"
      rv="None">
@@ -932,7 +932,7 @@
      </useargs>
   </use>
   <use id="_3381" name="g_value_set_param"
-     ponyname="g_value_set_param"
+     ponyname="set_param"
      fid="f133"
      lineno="332"
      rv="None">
@@ -942,7 +942,7 @@
      </useargs>
   </use>
   <use id="_3382" name="g_value_get_param"
-     ponyname="g_value_get_param"
+     ponyname="get_param"
      fid="f133"
      lineno="335"
      rv="NullablePointer[GParamSpec]">
@@ -951,7 +951,7 @@
      </useargs>
   </use>
   <use id="_3383" name="g_value_dup_param"
-     ponyname="g_value_dup_param"
+     ponyname="dup_param"
      fid="f133"
      lineno="337"
      rv="NullablePointer[GParamSpec]">
@@ -960,7 +960,7 @@
      </useargs>
   </use>
   <use id="_3384" name="g_value_take_param"
-     ponyname="g_value_take_param"
+     ponyname="take_param"
      fid="f133"
      lineno="341"
      rv="None">
@@ -970,7 +970,7 @@
      </useargs>
   </use>
   <use id="_3385" name="g_value_set_param_take_ownership"
-     ponyname="g_value_set_param_take_ownership"
+     ponyname="set_param_take_ownership"
      fid="f133"
      lineno="344"
      rv="None">
@@ -2673,7 +2673,7 @@
      </useargs>
   </use>
   <use id="_3563" name="g_value_set_boxed"
-     ponyname="g_value_set_boxed"
+     ponyname="set_boxed"
      fid="f138"
      lineno="76"
      rv="None">
@@ -2683,7 +2683,7 @@
      </useargs>
   </use>
   <use id="_3564" name="g_value_set_static_boxed"
-     ponyname="g_value_set_static_boxed"
+     ponyname="set_static_boxed"
      fid="f138"
      lineno="79"
      rv="None">
@@ -2693,7 +2693,7 @@
      </useargs>
   </use>
   <use id="_3565" name="g_value_take_boxed"
-     ponyname="g_value_take_boxed"
+     ponyname="take_boxed"
      fid="f138"
      lineno="82"
      rv="None">
@@ -2703,7 +2703,7 @@
      </useargs>
   </use>
   <use id="_3566" name="g_value_set_boxed_take_ownership"
-     ponyname="g_value_set_boxed_take_ownership"
+     ponyname="set_boxed_take_ownership"
      fid="f138"
      lineno="85"
      rv="None">
@@ -2713,7 +2713,7 @@
      </useargs>
   </use>
   <use id="_3567" name="g_value_get_boxed"
-     ponyname="g_value_get_boxed"
+     ponyname="get_boxed"
      fid="f138"
      lineno="88"
      rv="Pointer[None]">
@@ -2722,7 +2722,7 @@
      </useargs>
   </use>
   <use id="_3568" name="g_value_dup_boxed"
-     ponyname="g_value_dup_boxed"
+     ponyname="dup_boxed"
      fid="f138"
      lineno="90"
      rv="Pointer[None]">
@@ -2749,7 +2749,7 @@
      <useargs/>
   </use>
   <use id="_3571" name="g_value_get_type"
-     ponyname="g_value_get_type"
+     ponyname="get_type"
      fid="f138"
      lineno="118"
      rv="U64">
@@ -2853,7 +2853,7 @@
      <useargs/>
   </use>
   <use id="_3594" name="g_object_new"
-     ponyname="new"
+     ponyname="gnew"
      fid="f139"
      lineno="427"
      rv="NullablePointer[GObject]">
@@ -3335,7 +3335,7 @@
      </useargs>
   </use>
   <use id="_3640" name="g_value_set_object"
-     ponyname="g_value_set_object"
+     ponyname="set_object"
      fid="f139"
      lineno="631"
      rv="None">
@@ -3345,7 +3345,7 @@
      </useargs>
   </use>
   <use id="_3641" name="g_value_get_object"
-     ponyname="g_value_get_object"
+     ponyname="get_object"
      fid="f139"
      lineno="634"
      rv="Pointer[None]">
@@ -3354,7 +3354,7 @@
      </useargs>
   </use>
   <use id="_3642" name="g_value_dup_object"
-     ponyname="g_value_dup_object"
+     ponyname="dup_object"
      fid="f139"
      lineno="636"
      rv="Pointer[None]">
@@ -3394,7 +3394,7 @@
      </useargs>
   </use>
   <use id="_3646" name="g_value_take_object"
-     ponyname="g_value_take_object"
+     ponyname="take_object"
      fid="f139"
      lineno="652"
      rv="None">
@@ -3404,7 +3404,7 @@
      </useargs>
   </use>
   <use id="_3647" name="g_value_set_object_take_ownership"
-     ponyname="g_value_set_object_take_ownership"
+     ponyname="set_object_take_ownership"
      fid="f139"
      lineno="655"
      rv="None">
@@ -3720,7 +3720,7 @@
      </useargs>
   </use>
   <use id="_3694" name="g_value_set_enum"
-     ponyname="g_value_set_enum"
+     ponyname="set_enum"
      fid="f141"
      lineno="243"
      rv="None">
@@ -3730,7 +3730,7 @@
      </useargs>
   </use>
   <use id="_3695" name="g_value_get_enum"
-     ponyname="g_value_get_enum"
+     ponyname="get_enum"
      fid="f141"
      lineno="246"
      rv="I32">
@@ -3739,7 +3739,7 @@
      </useargs>
   </use>
   <use id="_3696" name="g_value_set_flags"
-     ponyname="g_value_set_flags"
+     ponyname="set_flags"
      fid="f141"
      lineno="248"
      rv="None">
@@ -3749,7 +3749,7 @@
      </useargs>
   </use>
   <use id="_3697" name="g_value_get_flags"
-     ponyname="g_value_get_flags"
+     ponyname="get_flags"
      fid="f141"
      lineno="251"
      rv="U32">
@@ -4341,14 +4341,14 @@
      </useargs>
   </use>
   <use id="_3812" name="g_value_array_get_type"
-     ponyname="g_value_array_get_type"
+     ponyname="get_type"
      fid="f147"
      lineno="60"
      rv="U64">
      <useargs/>
   </use>
   <use id="_3813" name="g_value_array_get_nth"
-     ponyname="g_value_array_get_nth"
+     ponyname="get_nth"
      fid="f147"
      lineno="63"
      rv="NullablePointer[GValue]">
@@ -4358,7 +4358,7 @@
      </useargs>
   </use>
   <use id="_3814" name="g_value_array_new"
-     ponyname="g_value_array_new"
+     ponyname="gnew"
      fid="f147"
      lineno="67"
      rv="NullablePointer[GValueArray]">
@@ -4367,7 +4367,7 @@
      </useargs>
   </use>
   <use id="_3815" name="g_value_array_free"
-     ponyname="g_value_array_free"
+     ponyname="free"
      fid="f147"
      lineno="70"
      rv="None">
@@ -4376,7 +4376,7 @@
      </useargs>
   </use>
   <use id="_3816" name="g_value_array_copy"
-     ponyname="g_value_array_copy"
+     ponyname="copy"
      fid="f147"
      lineno="73"
      rv="NullablePointer[GValueArray]">
@@ -4385,7 +4385,7 @@
      </useargs>
   </use>
   <use id="_3817" name="g_value_array_prepend"
-     ponyname="g_value_array_prepend"
+     ponyname="prepend"
      fid="f147"
      lineno="76"
      rv="NullablePointer[GValueArray]">
@@ -4395,7 +4395,7 @@
      </useargs>
   </use>
   <use id="_3818" name="g_value_array_append"
-     ponyname="g_value_array_append"
+     ponyname="append"
      fid="f147"
      lineno="80"
      rv="NullablePointer[GValueArray]">
@@ -4405,7 +4405,7 @@
      </useargs>
   </use>
   <use id="_3819" name="g_value_array_insert"
-     ponyname="g_value_array_insert"
+     ponyname="insert"
      fid="f147"
      lineno="84"
      rv="NullablePointer[GValueArray]">
@@ -4416,7 +4416,7 @@
      </useargs>
   </use>
   <use id="_3820" name="g_value_array_remove"
-     ponyname="g_value_array_remove"
+     ponyname="remove"
      fid="f147"
      lineno="89"
      rv="NullablePointer[GValueArray]">
@@ -4426,7 +4426,7 @@
      </useargs>
   </use>
   <use id="_3821" name="g_value_array_sort"
-     ponyname="g_value_array_sort"
+     ponyname="sort"
      fid="f147"
      lineno="93"
      rv="NullablePointer[GValueArray]">
@@ -4436,7 +4436,7 @@
      </useargs>
   </use>
   <use id="_3822" name="g_value_array_sort_with_data"
-     ponyname="g_value_array_sort_with_data"
+     ponyname="sort_with_data"
      fid="f147"
      lineno="97"
      rv="NullablePointer[GValueArray]">
@@ -4447,7 +4447,7 @@
      </useargs>
   </use>
   <use id="_3823" name="g_value_set_char"
-     ponyname="g_value_set_char"
+     ponyname="set_char"
      fid="f148"
      lineno="192"
      rv="None">
@@ -4457,7 +4457,7 @@
      </useargs>
   </use>
   <use id="_3824" name="g_value_get_char"
-     ponyname="g_value_get_char"
+     ponyname="get_char"
      fid="f148"
      lineno="195"
      rv="U8">
@@ -4466,7 +4466,7 @@
      </useargs>
   </use>
   <use id="_3825" name="g_value_set_schar"
-     ponyname="g_value_set_schar"
+     ponyname="set_schar"
      fid="f148"
      lineno="197"
      rv="None">
@@ -4476,7 +4476,7 @@
      </useargs>
   </use>
   <use id="_3826" name="g_value_get_schar"
-     ponyname="g_value_get_schar"
+     ponyname="get_schar"
      fid="f148"
      lineno="200"
      rv="I8">
@@ -4485,7 +4485,7 @@
      </useargs>
   </use>
   <use id="_3827" name="g_value_set_uchar"
-     ponyname="g_value_set_uchar"
+     ponyname="set_uchar"
      fid="f148"
      lineno="202"
      rv="None">
@@ -4495,7 +4495,7 @@
      </useargs>
   </use>
   <use id="_3828" name="g_value_get_uchar"
-     ponyname="g_value_get_uchar"
+     ponyname="get_uchar"
      fid="f148"
      lineno="205"
      rv="U8">
@@ -4504,7 +4504,7 @@
      </useargs>
   </use>
   <use id="_3829" name="g_value_set_boolean"
-     ponyname="g_value_set_boolean"
+     ponyname="set_boolean"
      fid="f148"
      lineno="207"
      rv="None">
@@ -4514,7 +4514,7 @@
      </useargs>
   </use>
   <use id="_3830" name="g_value_get_boolean"
-     ponyname="g_value_get_boolean"
+     ponyname="get_boolean"
      fid="f148"
      lineno="210"
      rv="I32">
@@ -4523,7 +4523,7 @@
      </useargs>
   </use>
   <use id="_3831" name="g_value_set_int"
-     ponyname="g_value_set_int"
+     ponyname="set_int"
      fid="f148"
      lineno="212"
      rv="None">
@@ -4533,7 +4533,7 @@
      </useargs>
   </use>
   <use id="_3832" name="g_value_get_int"
-     ponyname="g_value_get_int"
+     ponyname="get_int"
      fid="f148"
      lineno="215"
      rv="I32">
@@ -4542,7 +4542,7 @@
      </useargs>
   </use>
   <use id="_3833" name="g_value_set_uint"
-     ponyname="g_value_set_uint"
+     ponyname="set_uint"
      fid="f148"
      lineno="217"
      rv="None">
@@ -4552,7 +4552,7 @@
      </useargs>
   </use>
   <use id="_3834" name="g_value_get_uint"
-     ponyname="g_value_get_uint"
+     ponyname="get_uint"
      fid="f148"
      lineno="220"
      rv="U32">
@@ -4561,7 +4561,7 @@
      </useargs>
   </use>
   <use id="_3835" name="g_value_set_long"
-     ponyname="g_value_set_long"
+     ponyname="set_long"
      fid="f148"
      lineno="222"
      rv="None">
@@ -4571,7 +4571,7 @@
      </useargs>
   </use>
   <use id="_3836" name="g_value_get_long"
-     ponyname="g_value_get_long"
+     ponyname="get_long"
      fid="f148"
      lineno="225"
      rv="I64">
@@ -4580,7 +4580,7 @@
      </useargs>
   </use>
   <use id="_3837" name="g_value_set_ulong"
-     ponyname="g_value_set_ulong"
+     ponyname="set_ulong"
      fid="f148"
      lineno="227"
      rv="None">
@@ -4590,7 +4590,7 @@
      </useargs>
   </use>
   <use id="_3838" name="g_value_get_ulong"
-     ponyname="g_value_get_ulong"
+     ponyname="get_ulong"
      fid="f148"
      lineno="230"
      rv="U64">
@@ -4599,7 +4599,7 @@
      </useargs>
   </use>
   <use id="_3839" name="g_value_set_int64"
-     ponyname="g_value_set_int64"
+     ponyname="set_int64"
      fid="f148"
      lineno="232"
      rv="None">
@@ -4609,7 +4609,7 @@
      </useargs>
   </use>
   <use id="_3840" name="g_value_get_int64"
-     ponyname="g_value_get_int64"
+     ponyname="get_int64"
      fid="f148"
      lineno="235"
      rv="I64">
@@ -4618,7 +4618,7 @@
      </useargs>
   </use>
   <use id="_3841" name="g_value_set_uint64"
-     ponyname="g_value_set_uint64"
+     ponyname="set_uint64"
      fid="f148"
      lineno="237"
      rv="None">
@@ -4628,7 +4628,7 @@
      </useargs>
   </use>
   <use id="_3842" name="g_value_get_uint64"
-     ponyname="g_value_get_uint64"
+     ponyname="get_uint64"
      fid="f148"
      lineno="240"
      rv="U64">
@@ -4637,7 +4637,7 @@
      </useargs>
   </use>
   <use id="_3843" name="g_value_set_float"
-     ponyname="g_value_set_float"
+     ponyname="set_float"
      fid="f148"
      lineno="242"
      rv="None">
@@ -4647,7 +4647,7 @@
      </useargs>
   </use>
   <use id="_3844" name="g_value_get_float"
-     ponyname="g_value_get_float"
+     ponyname="get_float"
      fid="f148"
      lineno="245"
      rv="F32">
@@ -4656,7 +4656,7 @@
      </useargs>
   </use>
   <use id="_3845" name="g_value_set_double"
-     ponyname="g_value_set_double"
+     ponyname="set_double"
      fid="f148"
      lineno="247"
      rv="None">
@@ -4666,7 +4666,7 @@
      </useargs>
   </use>
   <use id="_3846" name="g_value_get_double"
-     ponyname="g_value_get_double"
+     ponyname="get_double"
      fid="f148"
      lineno="250"
      rv="F64">
@@ -4675,7 +4675,7 @@
      </useargs>
   </use>
   <use id="_3847" name="g_value_set_string"
-     ponyname="g_value_set_string"
+     ponyname="set_string"
      fid="f148"
      lineno="252"
      rv="None">
@@ -4685,7 +4685,7 @@
      </useargs>
   </use>
   <use id="_3848" name="g_value_set_static_string"
-     ponyname="g_value_set_static_string"
+     ponyname="set_static_string"
      fid="f148"
      lineno="255"
      rv="None">
@@ -4695,7 +4695,7 @@
      </useargs>
   </use>
   <use id="_3849" name="g_value_set_interned_string"
-     ponyname="g_value_set_interned_string"
+     ponyname="set_interned_string"
      fid="f148"
      lineno="258"
      rv="None">
@@ -4705,7 +4705,7 @@
      </useargs>
   </use>
   <use id="_3850" name="g_value_get_string"
-     ponyname="g_value_get_string"
+     ponyname="get_string"
      fid="f148"
      lineno="261"
      rv="String">
@@ -4714,7 +4714,7 @@
      </useargs>
   </use>
   <use id="_3851" name="g_value_dup_string"
-     ponyname="g_value_dup_string"
+     ponyname="dup_string"
      fid="f148"
      lineno="263"
      rv="String">
@@ -4723,7 +4723,7 @@
      </useargs>
   </use>
   <use id="_3852" name="g_value_set_pointer"
-     ponyname="g_value_set_pointer"
+     ponyname="set_pointer"
      fid="f148"
      lineno="265"
      rv="None">
@@ -4733,7 +4733,7 @@
      </useargs>
   </use>
   <use id="_3853" name="g_value_get_pointer"
-     ponyname="g_value_get_pointer"
+     ponyname="get_pointer"
      fid="f148"
      lineno="268"
      rv="Pointer[None]">
@@ -4749,7 +4749,7 @@
      <useargs/>
   </use>
   <use id="_3855" name="g_value_set_gtype"
-     ponyname="g_value_set_gtype"
+     ponyname="set_gtype"
      fid="f148"
      lineno="272"
      rv="None">
@@ -4759,7 +4759,7 @@
      </useargs>
   </use>
   <use id="_3856" name="g_value_get_gtype"
-     ponyname="g_value_get_gtype"
+     ponyname="get_gtype"
      fid="f148"
      lineno="275"
      rv="U64">
@@ -4768,7 +4768,7 @@
      </useargs>
   </use>
   <use id="_3857" name="g_value_set_variant"
-     ponyname="g_value_set_variant"
+     ponyname="set_variant"
      fid="f148"
      lineno="277"
      rv="None">
@@ -4778,7 +4778,7 @@
      </useargs>
   </use>
   <use id="_3858" name="g_value_take_variant"
-     ponyname="g_value_take_variant"
+     ponyname="take_variant"
      fid="f148"
      lineno="280"
      rv="None">
@@ -4788,7 +4788,7 @@
      </useargs>
   </use>
   <use id="_3859" name="g_value_get_variant"
-     ponyname="g_value_get_variant"
+     ponyname="get_variant"
      fid="f148"
      lineno="283"
      rv="NullablePointer[GVariant]">
@@ -4797,7 +4797,7 @@
      </useargs>
   </use>
   <use id="_3860" name="g_value_dup_variant"
-     ponyname="g_value_dup_variant"
+     ponyname="dup_variant"
      fid="f148"
      lineno="285"
      rv="NullablePointer[GVariant]">
@@ -4824,7 +4824,7 @@
      </useargs>
   </use>
   <use id="_3863" name="g_value_take_string"
-     ponyname="g_value_take_string"
+     ponyname="take_string"
      fid="f148"
      lineno="298"
      rv="None">
@@ -4834,7 +4834,7 @@
      </useargs>
   </use>
   <use id="_3864" name="g_value_set_string_take_ownership"
-     ponyname="g_value_set_string_take_ownership"
+     ponyname="set_string_take_ownership"
      fid="f148"
      lineno="301"
      rv="None">

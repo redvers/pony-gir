@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/gobject.xml"/>
+<renders>
+  <renderuse name="g_value_array_append" render="1"/>
+  <renderuse name="g_value_array_copy" render="1"/>
+  <renderuse name="g_value_array_free" render="1"/>
+  <renderuse name="g_value_array_get_nth" render="1"/>
+  <renderuse name="g_value_array_get_type" render="1"/>
+  <renderuse name="g_value_array_insert" render="1"/>
+  <renderuse name="g_value_array_new" render="1"/>
+  <renderuse name="g_value_array_prepend" render="1"/>
+  <renderuse name="g_value_array_remove" render="1"/>
+  <renderuse name="g_value_array_sort" render="1"/>
+  <renderuse name="g_value_array_sort_with_data" render="1"/>
+</renders>
+</castxml2pony>
