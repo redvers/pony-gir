@@ -3,6 +3,9 @@
 <xi:include href="../usetypes.xml"/>
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
+<inherits>
+  <inherit name="GObject" ponyfn="gobject" path="parent_instance"/>
+</inherits>
 <renders>
   <renderuse name="gtk_widget_get_type" render="1"/>
   <renderuse name="gtk_widget_new" render="1"/>
@@ -198,7 +201,7 @@
   <renderuse name="gtk_widget_class_find_style_property" render="1"/>
   <renderuse name="gtk_widget_class_list_style_properties" render="1"/>
   <renderuse name="gtk_widget_style_get_property" render="1"/>
-  <renderuse name="gtk_widget_style_get_valist" render="1"/>
+  <renderuse name="gtk_widget_style_get_valist" render="0"/>
   <renderuse name="gtk_widget_style_get" render="1"/>
   <renderuse name="gtk_widget_set_direction" render="1"/>
   <renderuse name="gtk_widget_get_direction" render="1"/>

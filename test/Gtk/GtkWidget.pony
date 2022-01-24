@@ -22,6 +22,7 @@ use "lib:glib-2.0"
 use @gtk_widget_get_type[U64]()
 use @gtk_widget_new[GtkWidget](gtype: U64, firstpropertyname: Pointer[U8] tag, ...)
 use @gtk_widget_destroy[None](widget: GtkWidget tag)
+use @gtk_widget_destroyed[None](widget: GtkWidget tag, widgetpointer: Array[NullablePointer[GtkWidget]] tag)
 use @gtk_widget_unparent[None](widget: GtkWidget tag)
 use @gtk_widget_show[None](widget: GtkWidget tag)
 use @gtk_widget_hide[None](widget: GtkWidget tag)
@@ -282,6 +283,9 @@ struct GtkWidget
 
   fun destroy(): None =>
     @gtk_widget_destroy(this)
+
+  fun destroyed(widgetpointer: Array[NullablePointer[GtkWidget]] tag): None =>
+    @gtk_widget_destroyed(this, widgetpointer)
 
   fun unparent(): None =>
     @gtk_widget_unparent(this)
@@ -977,3 +981,5 @@ struct GtkWidget
   fun help_type_get_type(): U64 =>
     @gtk_widget_help_type_get_type()
 
+
+  fun ref gobject(): GObject => parent_instance
