@@ -21,7 +21,7 @@
 
   <typedef name="Array[String]"
     embed="var"
-    ponytypein="Array[String]"
+    ponytypein="Pointer[Pointer[U8]]"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
     structtype="Pointer[Pointer[U8]]"

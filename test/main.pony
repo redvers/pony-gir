@@ -28,6 +28,8 @@ actor Main
     env.out.print("Oof")
 
 		let app: GtkApplication = GtkApplication.gnew("me.evil.widgetfactory", 32)
+    app.gobject().signal_connect_data("activate", G_CALLBACK (activate), NULL);
+    app.gapplication().g_application_run(I32(0), Pointer[Pointer[U8]])
     /*
 
   app = gtk_application_new ("org.gtk.WidgetFactory4", G_APPLICATION_NON_UNIQUE);
@@ -38,7 +40,6 @@ actor Main
   action = g_action_map_lookup_action (G_ACTION_MAP (app), "wine");
   g_simple_action_set_enabled (G_SIMPLE_ACTION (action), FALSE);
 
-  g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);
 
   g_application_add_main_option (G_APPLICATION (app), "version", 0, 0, G_OPTION_ARG_NONE, "Show program version", NULL);
 

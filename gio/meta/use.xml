@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
-<xi:include href="./renderuse.xml"/>
-<xi:include href="./usetypes.xml"/>
-<xi:include href="./../../castxml-results/gio.xml"/>
-                    <uses>
-                      <use id="_1519" name="g_io_channel_init"
+<uses>
+  <use id="_1519" name="g_io_channel_init"
      ponyname="g_io_channel_init"
      fid="f85"
      lineno="159"
@@ -158,7 +154,7 @@
      <useargs>
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1534" name="g_io_channel_get_flags"
@@ -218,7 +214,7 @@
      <useargs>
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="encoding" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1540" name="g_io_channel_get_encoding"
@@ -256,7 +252,7 @@
      rv="I32">
      <useargs>
        <usearg name="channel" type="GIOChannel"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1544" name="g_io_channel_read_line"
@@ -269,7 +265,7 @@
        <usearg name="strreturn" type="Array[String]"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="terminatorpos" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1545" name="g_io_channel_read_line_string"
@@ -281,7 +277,7 @@
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="buffer" type="GString"/>
        <usearg name="terminatorpos" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1546" name="g_io_channel_read_to_end"
@@ -293,7 +289,7 @@
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="strreturn" type="Array[String]"/>
        <usearg name="length" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1547" name="g_io_channel_read_chars"
@@ -306,7 +302,7 @@
        <usearg name="buf" type="String"/>
        <usearg name="count" type="U64"/>
        <usearg name="bytesread" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1548" name="g_io_channel_read_unichar"
@@ -317,7 +313,7 @@
      <useargs>
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="thechar" type="Pointer[U32]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1549" name="g_io_channel_write_chars"
@@ -330,7 +326,7 @@
        <usearg name="buf" type="String"/>
        <usearg name="count" type="I64"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1550" name="g_io_channel_write_unichar"
@@ -341,7 +337,7 @@
      <useargs>
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="thechar" type="U32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1551" name="g_io_channel_seek_position"
@@ -353,7 +349,7 @@
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="offset" type="I64"/>
        <usearg name="type" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1552" name="g_io_channel_new_file"
@@ -364,7 +360,7 @@
      <useargs>
        <usearg name="filename" type="String"/>
        <usearg name="mode" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_1553" name="g_io_channel_error_quark"
@@ -417,7 +413,7 @@
        <usearg name="commandline" type="String"/>
        <usearg name="applicationname" type="String"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4439" name="g_app_info_dup"
@@ -511,7 +507,7 @@
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="files" type="GList"/>
        <usearg name="context" type="GAppLaunchContext"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4449" name="g_app_info_supports_uris"
@@ -541,7 +537,7 @@
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="uris" type="GList"/>
        <usearg name="context" type="GAppLaunchContext"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4452" name="g_app_info_launch_uris_async"
@@ -566,7 +562,7 @@
      <useargs>
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4454" name="g_app_info_should_show"
@@ -586,7 +582,7 @@
      <useargs>
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="contenttype" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4456" name="g_app_info_set_as_default_for_extension"
@@ -597,7 +593,7 @@
      <useargs>
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="extension" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4457" name="g_app_info_add_supports_type"
@@ -608,7 +604,7 @@
      <useargs>
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="contenttype" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4458" name="g_app_info_can_remove_supports_type"
@@ -628,7 +624,7 @@
      <useargs>
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="contenttype" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4460" name="g_app_info_get_supported_types"
@@ -666,7 +662,7 @@
      <useargs>
        <usearg name="appinfo" type="GAppInfo"/>
        <usearg name="contenttype" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4464" name="g_app_info_get_all"
@@ -739,7 +735,7 @@
      <useargs>
        <usearg name="uri" type="String"/>
        <usearg name="context" type="GAppLaunchContext"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4472" name="g_app_info_launch_default_for_uri_async"
@@ -762,7 +758,7 @@
      rv="I32">
      <useargs>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4474" name="g_app_launch_context_get_type"
@@ -940,7 +936,7 @@
        <usearg name="stream" type="GBufferedInputStream"/>
        <usearg name="count" type="I64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4612" name="g_buffered_input_stream_fill_async"
@@ -965,7 +961,7 @@
      <useargs>
        <usearg name="stream" type="GBufferedInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4614" name="g_buffered_input_stream_read_byte"
@@ -976,7 +972,7 @@
      <useargs>
        <usearg name="stream" type="GBufferedInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4661" name="g_buffered_output_stream_get_type"
@@ -1073,7 +1069,7 @@
      rv="I32">
      <useargs>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4679" name="g_cancellable_get_fd"
@@ -1292,7 +1288,7 @@
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4880" name="g_data_input_stream_read_int16"
@@ -1303,7 +1299,7 @@
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4881" name="g_data_input_stream_read_uint16"
@@ -1314,7 +1310,7 @@
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4882" name="g_data_input_stream_read_int32"
@@ -1325,7 +1321,7 @@
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4883" name="g_data_input_stream_read_uint32"
@@ -1336,7 +1332,7 @@
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4884" name="g_data_input_stream_read_int64"
@@ -1347,7 +1343,7 @@
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4885" name="g_data_input_stream_read_uint64"
@@ -1358,7 +1354,7 @@
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4886" name="g_data_input_stream_read_line"
@@ -1370,7 +1366,7 @@
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4887" name="g_data_input_stream_read_line_utf8"
@@ -1382,7 +1378,7 @@
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4888" name="g_data_input_stream_read_line_async"
@@ -1407,7 +1403,7 @@
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="length" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4890" name="g_data_input_stream_read_line_finish_utf8"
@@ -1419,7 +1415,7 @@
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="length" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4891" name="g_data_input_stream_read_until"
@@ -1432,7 +1428,7 @@
        <usearg name="stopchars" type="String"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4892" name="g_data_input_stream_read_until_async"
@@ -1458,7 +1454,7 @@
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="length" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4894" name="g_data_input_stream_read_upto"
@@ -1472,7 +1468,7 @@
        <usearg name="stopcharslen" type="I64"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4895" name="g_data_input_stream_read_upto_async"
@@ -1499,7 +1495,7 @@
        <usearg name="stream" type="GDataInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="length" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6405" name="g_simple_action_group_get_type"
@@ -1779,7 +1775,7 @@
      <useargs>
        <usearg name="application" type="GApplication"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4513" name="g_application_hold"
@@ -1912,7 +1908,7 @@
      rv="None">
      <useargs>
        <usearg name="application" type="GApplication"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject'" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
      </useargs>
   </use>
@@ -1923,7 +1919,7 @@
      rv="None">
      <useargs>
        <usearg name="application" type="GApplication"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject'" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
      </useargs>
   </use>
@@ -2526,7 +2522,7 @@
      <useargs>
        <usearg name="settings" type="GSettings"/>
        <usearg name="key" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject'" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
        <usearg name="flags" type="I32"/>
      </useargs>
@@ -2539,7 +2535,7 @@
      <useargs>
        <usearg name="settings" type="GSettings"/>
        <usearg name="key" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject'" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
        <usearg name="flags" type="I32"/>
        <usearg name="getmapping" type="Pointer[None]"/>
@@ -2556,7 +2552,7 @@
      <useargs>
        <usearg name="settings" type="GSettings"/>
        <usearg name="key" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject'" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
        <usearg name="inverted" type="I32"/>
      </useargs>
@@ -2567,7 +2563,7 @@
      lineno="330"
      rv="None">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject'" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
      </useargs>
   </use>
@@ -2608,7 +2604,7 @@
      <useargs>
        <usearg name="permission" type="GPermission"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6151" name="g_permission_acquire_async"
@@ -2631,7 +2627,7 @@
      <useargs>
        <usearg name="permission" type="GPermission"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6153" name="g_permission_release"
@@ -2642,7 +2638,7 @@
      <useargs>
        <usearg name="permission" type="GPermission"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6154" name="g_permission_release_async"
@@ -2665,7 +2661,7 @@
      <useargs>
        <usearg name="permission" type="GPermission"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6156" name="g_permission_get_allowed"
@@ -2905,7 +2901,7 @@
      <useargs>
        <usearg name="enumerator" type="GFileEnumerator"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5498" name="g_file_enumerator_close"
@@ -2916,7 +2912,7 @@
      <useargs>
        <usearg name="enumerator" type="GFileEnumerator"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5499" name="g_file_enumerator_next_files_async"
@@ -2941,7 +2937,7 @@
      <useargs>
        <usearg name="enumerator" type="GFileEnumerator"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5501" name="g_file_enumerator_close_async"
@@ -2965,7 +2961,7 @@
      <useargs>
        <usearg name="enumerator" type="GFileEnumerator"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5503" name="g_file_enumerator_is_closed"
@@ -3025,7 +3021,7 @@
        <usearg name="outinfo" type="GFileInfo"/>
        <usearg name="outchild" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5635" name="g_file_monitor_get_type"
@@ -3224,7 +3220,7 @@
        <usearg name="stream" type="GFileInputStream"/>
        <usearg name="attributes" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5602" name="g_file_input_stream_query_info_async"
@@ -3249,7 +3245,7 @@
      <useargs>
        <usearg name="stream" type="GFileInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5651" name="g_file_output_stream_get_type"
@@ -3268,7 +3264,7 @@
        <usearg name="stream" type="GFileOutputStream"/>
        <usearg name="attributes" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5653" name="g_file_output_stream_query_info_async"
@@ -3293,7 +3289,7 @@
      <useargs>
        <usearg name="stream" type="GFileOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5655" name="g_file_output_stream_get_etag"
@@ -3321,7 +3317,7 @@
        <usearg name="stream" type="GFileIOStream"/>
        <usearg name="attributes" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5628" name="g_file_io_stream_query_info_async"
@@ -3346,7 +3342,7 @@
      <useargs>
        <usearg name="stream" type="GFileIOStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5630" name="g_file_io_stream_get_etag"
@@ -3553,7 +3549,7 @@
      <useargs>
        <usearg name="addr" type="GInetAddress"/>
        <usearg name="length" type="U32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5686" name="g_inet_address_mask_new_from_string"
@@ -3563,7 +3559,7 @@
      rv="GInetAddressMask">
      <useargs>
        <usearg name="maskstring" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5687" name="g_inet_address_mask_to_string"
@@ -3719,7 +3715,7 @@
        <usearg name="buffer" type="Pointer[None]"/>
        <usearg name="count" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4575" name="g_input_stream_read_all"
@@ -3733,7 +3729,7 @@
        <usearg name="count" type="U64"/>
        <usearg name="bytesread" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4576" name="g_input_stream_read_bytes"
@@ -3745,7 +3741,7 @@
        <usearg name="stream" type="GInputStream"/>
        <usearg name="count" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4577" name="g_input_stream_skip"
@@ -3757,7 +3753,7 @@
        <usearg name="stream" type="GInputStream"/>
        <usearg name="count" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4578" name="g_input_stream_close"
@@ -3768,7 +3764,7 @@
      <useargs>
        <usearg name="stream" type="GInputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4579" name="g_input_stream_read_async"
@@ -3794,7 +3790,7 @@
      <useargs>
        <usearg name="stream" type="GInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4581" name="g_input_stream_read_all_async"
@@ -3821,7 +3817,7 @@
        <usearg name="stream" type="GInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="bytesread" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4583" name="g_input_stream_read_bytes_async"
@@ -3846,7 +3842,7 @@
      <useargs>
        <usearg name="stream" type="GInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4585" name="g_input_stream_skip_async"
@@ -3871,7 +3867,7 @@
      <useargs>
        <usearg name="stream" type="GInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4587" name="g_input_stream_close_async"
@@ -3895,7 +3891,7 @@
      <useargs>
        <usearg name="stream" type="GInputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4589" name="g_input_stream_is_closed"
@@ -3923,7 +3919,7 @@
      rv="I32">
      <useargs>
        <usearg name="stream" type="GInputStream"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4592" name="g_input_stream_clear_pending"
@@ -4291,7 +4287,7 @@
      <useargs>
        <usearg name="hostandport" type="String"/>
        <usearg name="defaultport" type="U16"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6106" name="g_network_address_parse_uri"
@@ -4302,7 +4298,7 @@
      <useargs>
        <usearg name="uri" type="String"/>
        <usearg name="defaultport" type="U16"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6107" name="g_network_address_get_hostname"
@@ -4413,7 +4409,7 @@
        <usearg name="buffer" type="Pointer[None]"/>
        <usearg name="count" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4621" name="g_output_stream_write_all"
@@ -4427,7 +4423,7 @@
        <usearg name="count" type="U64"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4622" name="g_output_stream_writev"
@@ -4441,7 +4437,7 @@
        <usearg name="nvectors" type="U64"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4623" name="g_output_stream_writev_all"
@@ -4455,7 +4451,7 @@
        <usearg name="nvectors" type="U64"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4624" name="g_output_stream_printf"
@@ -4467,7 +4463,7 @@
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
        <usearg name="format" type="String"/>
        <usearg name="parg5" type="..."/>
      </useargs>
@@ -4481,7 +4477,7 @@
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
        <usearg name="format" type="String"/>
        <usearg name="args" type="Valisttag"/>
      </useargs>
@@ -4495,7 +4491,7 @@
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="bytes" type="GBytes"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4627" name="g_output_stream_splice"
@@ -4508,7 +4504,7 @@
        <usearg name="source" type="GInputStream"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4628" name="g_output_stream_flush"
@@ -4519,7 +4515,7 @@
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4629" name="g_output_stream_close"
@@ -4530,7 +4526,7 @@
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4630" name="g_output_stream_write_async"
@@ -4556,7 +4552,7 @@
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4632" name="g_output_stream_write_all_async"
@@ -4583,7 +4579,7 @@
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4634" name="g_output_stream_writev_async"
@@ -4610,7 +4606,7 @@
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4636" name="g_output_stream_writev_all_async"
@@ -4637,7 +4633,7 @@
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4638" name="g_output_stream_write_bytes_async"
@@ -4662,7 +4658,7 @@
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4640" name="g_output_stream_splice_async"
@@ -4688,7 +4684,7 @@
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4642" name="g_output_stream_flush_async"
@@ -4712,7 +4708,7 @@
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4644" name="g_output_stream_close_async"
@@ -4736,7 +4732,7 @@
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4646" name="g_output_stream_is_closed"
@@ -4773,7 +4769,7 @@
      rv="I32">
      <useargs>
        <usearg name="stream" type="GOutputStream"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4650" name="g_output_stream_clear_pending"
@@ -4832,7 +4828,7 @@
      rv="I32">
      <useargs>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5615" name="g_io_stream_close"
@@ -4843,7 +4839,7 @@
      <useargs>
        <usearg name="stream" type="GIOStream"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5616" name="g_io_stream_close_async"
@@ -4867,7 +4863,7 @@
      <useargs>
        <usearg name="stream" type="GIOStream"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5618" name="g_io_stream_is_closed"
@@ -4895,7 +4891,7 @@
      rv="I32">
      <useargs>
        <usearg name="stream" type="GIOStream"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5621" name="g_io_stream_clear_pending"
@@ -4939,7 +4935,7 @@
        <usearg name="resolver" type="GResolver"/>
        <usearg name="hostname" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6256" name="g_resolver_lookup_by_name_async"
@@ -4963,7 +4959,7 @@
      <useargs>
        <usearg name="resolver" type="GResolver"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6258" name="g_resolver_lookup_by_name_with_flags_async"
@@ -4988,7 +4984,7 @@
      <useargs>
        <usearg name="resolver" type="GResolver"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6260" name="g_resolver_lookup_by_name_with_flags"
@@ -5001,7 +4997,7 @@
        <usearg name="hostname" type="String"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6261" name="g_resolver_free_addresses"
@@ -5022,7 +5018,7 @@
        <usearg name="resolver" type="GResolver"/>
        <usearg name="address" type="GInetAddress"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6263" name="g_resolver_lookup_by_address_async"
@@ -5046,7 +5042,7 @@
      <useargs>
        <usearg name="resolver" type="GResolver"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6265" name="g_resolver_lookup_service"
@@ -5060,7 +5056,7 @@
        <usearg name="protocol" type="String"/>
        <usearg name="domain" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6266" name="g_resolver_lookup_service_async"
@@ -5086,7 +5082,7 @@
      <useargs>
        <usearg name="resolver" type="GResolver"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6268" name="g_resolver_lookup_records"
@@ -5099,7 +5095,7 @@
        <usearg name="rrname" type="String"/>
        <usearg name="recordtype" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6269" name="g_resolver_lookup_records_async"
@@ -5124,7 +5120,7 @@
      <useargs>
        <usearg name="resolver" type="GResolver"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6271" name="g_resolver_free_targets"
@@ -5159,7 +5155,7 @@
        <usearg name="family" type="I32"/>
        <usearg name="type" type="I32"/>
        <usearg name="protocol" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6460" name="g_socket_new_from_fd"
@@ -5169,7 +5165,7 @@
      rv="GSocket">
      <useargs>
        <usearg name="fd" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6461" name="g_socket_get_fd"
@@ -5215,7 +5211,7 @@
      rv="GSocketAddress">
      <useargs>
        <usearg name="socket" type="GSocket"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6466" name="g_socket_get_remote_address"
@@ -5225,7 +5221,7 @@
      rv="GSocketAddress">
      <useargs>
        <usearg name="socket" type="GSocket"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6467" name="g_socket_set_blocking"
@@ -5398,7 +5394,7 @@
        <usearg name="socket" type="GSocket"/>
        <usearg name="address" type="GSocketAddress"/>
        <usearg name="allowreuse" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6485" name="g_socket_join_multicast_group"
@@ -5411,7 +5407,7 @@
        <usearg name="group" type="GInetAddress"/>
        <usearg name="sourcespecific" type="I32"/>
        <usearg name="iface" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6486" name="g_socket_leave_multicast_group"
@@ -5424,7 +5420,7 @@
        <usearg name="group" type="GInetAddress"/>
        <usearg name="sourcespecific" type="I32"/>
        <usearg name="iface" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6487" name="g_socket_join_multicast_group_ssm"
@@ -5437,7 +5433,7 @@
        <usearg name="group" type="GInetAddress"/>
        <usearg name="sourcespecific" type="GInetAddress"/>
        <usearg name="iface" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6488" name="g_socket_leave_multicast_group_ssm"
@@ -5450,7 +5446,7 @@
        <usearg name="group" type="GInetAddress"/>
        <usearg name="sourcespecific" type="GInetAddress"/>
        <usearg name="iface" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6489" name="g_socket_connect"
@@ -5462,7 +5458,7 @@
        <usearg name="socket" type="GSocket"/>
        <usearg name="address" type="GSocketAddress"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6490" name="g_socket_check_connect_result"
@@ -5472,7 +5468,7 @@
      rv="I32">
      <useargs>
        <usearg name="socket" type="GSocket"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6491" name="g_socket_get_available_bytes"
@@ -5503,7 +5499,7 @@
        <usearg name="socket" type="GSocket"/>
        <usearg name="condition" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6494" name="g_socket_condition_timed_wait"
@@ -5516,7 +5512,7 @@
        <usearg name="condition" type="I32"/>
        <usearg name="timeoutus" type="I64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6495" name="g_socket_accept"
@@ -5527,7 +5523,7 @@
      <useargs>
        <usearg name="socket" type="GSocket"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6496" name="g_socket_listen"
@@ -5537,7 +5533,7 @@
      rv="I32">
      <useargs>
        <usearg name="socket" type="GSocket"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6497" name="g_socket_receive"
@@ -5550,7 +5546,7 @@
        <usearg name="buffer" type="String"/>
        <usearg name="size" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6498" name="g_socket_receive_from"
@@ -5564,7 +5560,7 @@
        <usearg name="buffer" type="String"/>
        <usearg name="size" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6499" name="g_socket_send"
@@ -5577,7 +5573,7 @@
        <usearg name="buffer" type="String"/>
        <usearg name="size" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6500" name="g_socket_send_to"
@@ -5591,7 +5587,7 @@
        <usearg name="buffer" type="String"/>
        <usearg name="size" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6501" name="g_socket_receive_message"
@@ -5608,7 +5604,7 @@
        <usearg name="nummessages" type="Pointer[I32]"/>
        <usearg name="flags" type="Pointer[I32]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6502" name="g_socket_send_message"
@@ -5625,7 +5621,7 @@
        <usearg name="nummessages" type="I32"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6503" name="g_socket_receive_messages"
@@ -5639,7 +5635,7 @@
        <usearg name="nummessages" type="U32"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6504" name="g_socket_send_messages"
@@ -5653,7 +5649,7 @@
        <usearg name="nummessages" type="U32"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6505" name="g_socket_close"
@@ -5663,7 +5659,7 @@
      rv="I32">
      <useargs>
        <usearg name="socket" type="GSocket"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6506" name="g_socket_shutdown"
@@ -5675,7 +5671,7 @@
        <usearg name="socket" type="GSocket"/>
        <usearg name="shutdownread" type="I32"/>
        <usearg name="shutdownwrite" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6507" name="g_socket_is_closed"
@@ -5714,7 +5710,7 @@
      rv="GCredentials">
      <useargs>
        <usearg name="socket" type="GSocket"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6511" name="g_socket_receive_with_blocking"
@@ -5728,7 +5724,7 @@
        <usearg name="size" type="U64"/>
        <usearg name="blocking" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6512" name="g_socket_send_with_blocking"
@@ -5742,7 +5738,7 @@
        <usearg name="size" type="U64"/>
        <usearg name="blocking" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6513" name="g_socket_send_message_with_timeout"
@@ -5761,7 +5757,7 @@
        <usearg name="timeoutus" type="I64"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6514" name="g_socket_get_option"
@@ -5774,7 +5770,7 @@
        <usearg name="level" type="I32"/>
        <usearg name="optname" type="I32"/>
        <usearg name="value" type="Pointer[I32]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6515" name="g_socket_set_option"
@@ -5787,7 +5783,7 @@
        <usearg name="level" type="I32"/>
        <usearg name="optname" type="I32"/>
        <usearg name="value" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6578" name="g_socket_control_message_get_type"
@@ -6040,7 +6036,7 @@
        <usearg name="client" type="GSocketClient"/>
        <usearg name="connectable" type="GSocketConnectable"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6541" name="g_socket_client_connect_to_host"
@@ -6053,7 +6049,7 @@
        <usearg name="hostandport" type="String"/>
        <usearg name="defaultport" type="U16"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6542" name="g_socket_client_connect_to_service"
@@ -6066,7 +6062,7 @@
        <usearg name="domain" type="String"/>
        <usearg name="service" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6543" name="g_socket_client_connect_to_uri"
@@ -6079,7 +6075,7 @@
        <usearg name="uri" type="String"/>
        <usearg name="defaultport" type="U16"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6544" name="g_socket_client_connect_async"
@@ -6103,7 +6099,7 @@
      <useargs>
        <usearg name="client" type="GSocketClient"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6546" name="g_socket_client_connect_to_host_async"
@@ -6128,7 +6124,7 @@
      <useargs>
        <usearg name="client" type="GSocketClient"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6548" name="g_socket_client_connect_to_service_async"
@@ -6153,7 +6149,7 @@
      <useargs>
        <usearg name="client" type="GSocketClient"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6550" name="g_socket_client_connect_to_uri_async"
@@ -6178,7 +6174,7 @@
      <useargs>
        <usearg name="client" type="GSocketClient"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6552" name="g_socket_client_add_application_proxy"
@@ -6216,7 +6212,7 @@
        <usearg name="connection" type="GSocketConnection"/>
        <usearg name="address" type="GSocketAddress"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6566" name="g_socket_connection_connect_async"
@@ -6240,7 +6236,7 @@
      <useargs>
        <usearg name="connection" type="GSocketConnection"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6568" name="g_socket_connection_get_socket"
@@ -6259,7 +6255,7 @@
      rv="GSocketAddress">
      <useargs>
        <usearg name="connection" type="GSocketConnection"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6570" name="g_socket_connection_get_remote_address"
@@ -6269,7 +6265,7 @@
      rv="GSocketAddress">
      <useargs>
        <usearg name="connection" type="GSocketConnection"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6571" name="g_socket_connection_factory_register_type"
@@ -6337,7 +6333,7 @@
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="socket" type="GSocket"/>
        <usearg name="sourceobject" type="GObject"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6592" name="g_socket_listener_add_address"
@@ -6352,7 +6348,7 @@
        <usearg name="protocol" type="I32"/>
        <usearg name="sourceobject" type="GObject"/>
        <usearg name="effectiveaddress" type="GSocketAddress"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6593" name="g_socket_listener_add_inet_port"
@@ -6364,7 +6360,7 @@
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="port" type="U16"/>
        <usearg name="sourceobject" type="GObject"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6594" name="g_socket_listener_add_any_inet_port"
@@ -6375,7 +6371,7 @@
      <useargs>
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="sourceobject" type="GObject"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6595" name="g_socket_listener_accept_socket"
@@ -6387,7 +6383,7 @@
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="sourceobject" type="GObject"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6596" name="g_socket_listener_accept_socket_async"
@@ -6411,7 +6407,7 @@
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="sourceobject" type="GObject"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6598" name="g_socket_listener_accept"
@@ -6423,7 +6419,7 @@
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="sourceobject" type="GObject"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6599" name="g_socket_listener_accept_async"
@@ -6447,7 +6443,7 @@
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="sourceobject" type="GObject"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6601" name="g_socket_listener_close"
@@ -6535,7 +6531,7 @@
        <usearg name="address" type="GSocketAddress"/>
        <usearg name="dest" type="Pointer[None]"/>
        <usearg name="destlen" type="U64"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5699" name="g_socket_address_get_native_size"
@@ -6562,7 +6558,7 @@
      <useargs>
        <usearg name="enumerator" type="GSocketAddressEnumerator"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6226" name="g_socket_address_enumerator_next_async"
@@ -6585,7 +6581,7 @@
      <useargs>
        <usearg name="enumerator" type="GSocketAddressEnumerator"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6709" name="g_tcp_connection_get_type"
@@ -6671,7 +6667,7 @@
      <useargs>
        <usearg name="data" type="String"/>
        <usearg name="length" type="I64"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6765" name="g_tls_certificate_new_from_file"
@@ -6681,7 +6677,7 @@
      rv="GTlsCertificate">
      <useargs>
        <usearg name="file" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6766" name="g_tls_certificate_new_from_files"
@@ -6692,7 +6688,7 @@
      <useargs>
        <usearg name="certfile" type="String"/>
        <usearg name="keyfile" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6767" name="g_tls_certificate_new_from_pkcs11_uris"
@@ -6703,7 +6699,7 @@
      <useargs>
        <usearg name="pkcs11uri" type="String"/>
        <usearg name="privatekeypkcs11uri" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6768" name="g_tls_certificate_list_new_from_file"
@@ -6713,7 +6709,7 @@
      rv="GList">
      <useargs>
        <usearg name="file" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6769" name="g_tls_certificate_get_issuer"
@@ -6967,7 +6963,7 @@
        <usearg name="conn" type="GTlsConnection"/>
        <usearg name="type" type="I32"/>
        <usearg name="data" type="GByteArray"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6800" name="g_tls_connection_handshake"
@@ -6978,7 +6974,7 @@
      <useargs>
        <usearg name="conn" type="GTlsConnection"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6801" name="g_tls_connection_handshake_async"
@@ -7002,7 +6998,7 @@
      <useargs>
        <usearg name="conn" type="GTlsConnection"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6803" name="g_tls_connection_get_protocol_version"
@@ -7068,7 +7064,7 @@
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6826" name="g_tls_database_verify_chain_async"
@@ -7096,7 +7092,7 @@
      <useargs>
        <usearg name="self" type="GTlsDatabase"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6828" name="g_tls_database_create_certificate_handle"
@@ -7120,7 +7116,7 @@
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6830" name="g_tls_database_lookup_certificate_for_handle_async"
@@ -7146,7 +7142,7 @@
      <useargs>
        <usearg name="self" type="GTlsDatabase"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6832" name="g_tls_database_lookup_certificate_issuer"
@@ -7160,7 +7156,7 @@
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6833" name="g_tls_database_lookup_certificate_issuer_async"
@@ -7186,7 +7182,7 @@
      <useargs>
        <usearg name="self" type="GTlsDatabase"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6835" name="g_tls_database_lookup_certificates_issued_by"
@@ -7200,7 +7196,7 @@
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6836" name="g_tls_database_lookup_certificates_issued_by_async"
@@ -7226,7 +7222,7 @@
      <useargs>
        <usearg name="self" type="GTlsDatabase"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6846" name="g_tls_interaction_get_type"
@@ -7245,7 +7241,7 @@
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="password" type="GTlsPassword"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6848" name="g_tls_interaction_ask_password"
@@ -7257,7 +7253,7 @@
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="password" type="GTlsPassword"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6849" name="g_tls_interaction_ask_password_async"
@@ -7281,7 +7277,7 @@
      <useargs>
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6851" name="g_tls_interaction_invoke_request_certificate"
@@ -7294,7 +7290,7 @@
        <usearg name="connection" type="GTlsConnection"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6852" name="g_tls_interaction_request_certificate"
@@ -7307,7 +7303,7 @@
        <usearg name="connection" type="GTlsConnection"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6853" name="g_tls_interaction_request_certificate_async"
@@ -7332,7 +7328,7 @@
      <useargs>
        <usearg name="interaction" type="GTlsInteraction"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6859" name="g_tls_password_get_type"
@@ -7730,7 +7726,7 @@
      rv="GDBusProxy">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5203" name="g_dbus_proxy_new_sync"
@@ -7746,7 +7742,7 @@
        <usearg name="objectpath" type="String"/>
        <usearg name="interfacename" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5204" name="g_dbus_proxy_new_for_bus"
@@ -7773,7 +7769,7 @@
      rv="GDBusProxy">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5206" name="g_dbus_proxy_new_for_bus_sync"
@@ -7789,7 +7785,7 @@
        <usearg name="objectpath" type="String"/>
        <usearg name="interfacename" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5207" name="g_dbus_proxy_get_connection"
@@ -7938,7 +7934,7 @@
      <useargs>
        <usearg name="proxy" type="GDBusProxy"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5222" name="g_dbus_proxy_call_sync"
@@ -7953,7 +7949,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="timeoutmsec" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5223" name="g_dbus_proxy_call_with_unix_fd_list"
@@ -7982,7 +7978,7 @@
        <usearg name="proxy" type="GDBusProxy"/>
        <usearg name="outfdlist" type="GUnixFDList"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5225" name="g_dbus_proxy_call_with_unix_fd_list_sync"
@@ -7999,7 +7995,7 @@
        <usearg name="fdlist" type="GUnixFDList"/>
        <usearg name="outfdlist" type="GUnixFDList"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4983" name="g_dbus_error_quark"
@@ -8015,7 +8011,7 @@
      lineno="53"
      rv="I32">
      <useargs>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4985" name="g_dbus_error_get_remote_error"
@@ -8024,7 +8020,7 @@
      lineno="55"
      rv="String">
      <useargs>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4986" name="g_dbus_error_strip_remote_error"
@@ -8033,7 +8029,7 @@
      lineno="57"
      rv="I32">
      <useargs>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4987" name="g_dbus_error_register_error"
@@ -8086,7 +8082,7 @@
      lineno="93"
      rv="None">
      <useargs>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
        <usearg name="dbuserrorname" type="String"/>
        <usearg name="dbuserrormessage" type="String"/>
        <usearg name="format" type="String"/>
@@ -8099,7 +8095,7 @@
      lineno="99"
      rv="None">
      <useargs>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
        <usearg name="dbuserrorname" type="String"/>
        <usearg name="dbuserrormessage" type="String"/>
        <usearg name="format" type="String"/>
@@ -8112,7 +8108,7 @@
      lineno="105"
      rv="String">
      <useargs>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4928" name="g_dbus_connection_get_type"
@@ -8141,7 +8137,7 @@
      rv="GDBusConnection">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4931" name="g_bus_get_sync"
@@ -8152,7 +8148,7 @@
      <useargs>
        <usearg name="bustype" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4932" name="g_dbus_connection_new"
@@ -8177,7 +8173,7 @@
      rv="GDBusConnection">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4934" name="g_dbus_connection_new_sync"
@@ -8191,7 +8187,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="observer" type="GDBusAuthObserver"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4935" name="g_dbus_connection_new_for_address"
@@ -8215,7 +8211,7 @@
      rv="GDBusConnection">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4937" name="g_dbus_connection_new_for_address_sync"
@@ -8228,7 +8224,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="observer" type="GDBusAuthObserver"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4938" name="g_dbus_connection_start_message_processing"
@@ -8351,7 +8347,7 @@
      <useargs>
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4951" name="g_dbus_connection_close_sync"
@@ -8362,7 +8358,7 @@
      <useargs>
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4952" name="g_dbus_connection_flush"
@@ -8385,7 +8381,7 @@
      <useargs>
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4954" name="g_dbus_connection_flush_sync"
@@ -8396,7 +8392,7 @@
      <useargs>
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4955" name="g_dbus_connection_send_message"
@@ -8409,7 +8405,7 @@
        <usearg name="message" type="GDBusMessage"/>
        <usearg name="flags" type="I32"/>
        <usearg name="outserial" type="Pointer[U32]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4956" name="g_dbus_connection_send_message_with_reply"
@@ -8436,7 +8432,7 @@
      <useargs>
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4958" name="g_dbus_connection_send_message_with_reply_sync"
@@ -8451,7 +8447,7 @@
        <usearg name="timeoutmsec" type="I32"/>
        <usearg name="outserial" type="Pointer[U32]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4959" name="g_dbus_connection_emit_signal"
@@ -8466,7 +8462,7 @@
        <usearg name="interfacename" type="String"/>
        <usearg name="signalname" type="String"/>
        <usearg name="parameters" type="GVariant"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4960" name="g_dbus_connection_call"
@@ -8497,7 +8493,7 @@
      <useargs>
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4962" name="g_dbus_connection_call_sync"
@@ -8516,7 +8512,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="timeoutmsec" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4963" name="g_dbus_connection_call_with_unix_fd_list"
@@ -8549,7 +8545,7 @@
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="outfdlist" type="GUnixFDList"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4965" name="g_dbus_connection_call_with_unix_fd_list_sync"
@@ -8570,7 +8566,7 @@
        <usearg name="fdlist" type="GUnixFDList"/>
        <usearg name="outfdlist" type="GUnixFDList"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4969" name="g_dbus_connection_register_object"
@@ -8585,7 +8581,7 @@
        <usearg name="vtable" type="GDBusInterfaceVTable"/>
        <usearg name="userdata" type="Pointer[None]"/>
        <usearg name="userdatafreefunc" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4970" name="g_dbus_connection_register_object_with_closures"
@@ -8600,7 +8596,7 @@
        <usearg name="methodcallclosure" type="GClosure"/>
        <usearg name="getpropertyclosure" type="GClosure"/>
        <usearg name="setpropertyclosure" type="GClosure"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4971" name="g_dbus_connection_unregister_object"
@@ -8625,7 +8621,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="userdata" type="Pointer[None]"/>
        <usearg name="userdatafreefunc" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4976" name="g_dbus_connection_unregister_subtree"
@@ -8764,7 +8760,7 @@
      rv="GDBusNodeInfo">
      <useargs>
        <usearg name="xmldata" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5027" name="g_dbus_node_info_lookup_interface"
@@ -9034,7 +9030,7 @@
        <usearg name="interface" type="GDBusInterfaceSkeleton"/>
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="objectpath" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5013" name="g_dbus_interface_skeleton_unexport"
@@ -9115,7 +9111,7 @@
      lineno="80"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5192" name="g_dbus_object_skeleton_add_interface"
@@ -9124,7 +9120,7 @@
      lineno="82"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
        <usearg name="interface" type="GDBusInterfaceSkeleton"/>
      </useargs>
   </use>
@@ -9134,7 +9130,7 @@
      lineno="85"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
        <usearg name="interface" type="GDBusInterfaceSkeleton"/>
      </useargs>
   </use>
@@ -9144,7 +9140,7 @@
      lineno="88"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
        <usearg name="interfacename" type="String"/>
      </useargs>
   </use>
@@ -9154,7 +9150,7 @@
      lineno="91"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
        <usearg name="objectpath" type="String"/>
      </useargs>
   </use>
@@ -9216,7 +9212,7 @@
      rv="GDBusObjectManager">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5158" name="g_dbus_object_manager_client_new_sync"
@@ -9233,7 +9229,7 @@
        <usearg name="getproxytypeuserdata" type="Pointer[None]"/>
        <usearg name="getproxytypedestroynotify" type="Pointer[None]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5159" name="g_dbus_object_manager_client_new_for_bus"
@@ -9261,7 +9257,7 @@
      rv="GDBusObjectManager">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5161" name="g_dbus_object_manager_client_new_for_bus_sync"
@@ -9278,7 +9274,7 @@
        <usearg name="getproxytypeuserdata" type="Pointer[None]"/>
        <usearg name="getproxytypedestroynotify" type="Pointer[None]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5162" name="g_dbus_object_manager_client_get_connection"
@@ -9359,7 +9355,7 @@
      rv="None">
      <useargs>
        <usearg name="manager" type="GDBusObjectManagerServer"/>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5175" name="g_dbus_object_manager_server_export_uniquely"
@@ -9369,7 +9365,7 @@
      rv="None">
      <useargs>
        <usearg name="manager" type="GDBusObjectManagerServer"/>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5176" name="g_dbus_object_manager_server_is_exported"
@@ -9379,7 +9375,7 @@
      rv="I32">
      <useargs>
        <usearg name="manager" type="GDBusObjectManagerServer"/>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject'" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5177" name="g_dbus_object_manager_server_unexport"
@@ -9491,7 +9487,7 @@
        <usearg name="detailedname" type="String"/>
        <usearg name="actionname" type="Array[String]"/>
        <usearg name="targetvalue" type="GVariant"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4402" name="g_action_print_detailed_name"
@@ -9668,7 +9664,7 @@
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="objectpath" type="String"/>
        <usearg name="actiongroup" type="GActionGroup"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4421" name="g_dbus_connection_unexport_action_group"
@@ -9745,7 +9741,7 @@
      <useargs>
        <usearg name="initable" type="GInitable"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4550" name="g_initable_new"
@@ -9756,7 +9752,7 @@
      <useargs>
        <usearg name="objecttype" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="parg4" type="..."/>
      </useargs>
@@ -9771,7 +9767,7 @@
        <usearg name="nparameters" type="U32"/>
        <usearg name="parameters" type="GParameter"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4552" name="g_initable_new_valist"
@@ -9784,7 +9780,7 @@
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="varargs" type="Valisttag"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4555" name="g_async_initable_get_type"
@@ -9815,7 +9811,7 @@
      <useargs>
        <usearg name="initable" type="GAsyncInitable"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4558" name="g_async_initable_new_async"
@@ -9871,7 +9867,7 @@
      <useargs>
        <usearg name="initable" type="GAsyncInitable"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4564" name="g_async_result_get_type"
@@ -9906,7 +9902,7 @@
      rv="I32">
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4568" name="g_async_result_is_tagged"
@@ -9965,7 +9961,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="bytesread" type="Pointer[U64]"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4694" name="g_converter_reset"
@@ -9992,7 +9988,7 @@
      <useargs>
        <usearg name="tocharset" type="String"/>
        <usearg name="fromcharset" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4699" name="g_charset_converter_set_use_fallback"
@@ -10221,7 +10217,7 @@
      <useargs>
        <usearg name="credentials" type="GCredentials"/>
        <usearg name="othercredentials" type="GCredentials"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4858" name="g_credentials_get_unix_pid"
@@ -10231,7 +10227,7 @@
      rv="I32">
      <useargs>
        <usearg name="credentials" type="GCredentials"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4859" name="g_credentials_get_unix_user"
@@ -10241,7 +10237,7 @@
      rv="U32">
      <useargs>
        <usearg name="credentials" type="GCredentials"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4860" name="g_credentials_set_unix_user"
@@ -10252,7 +10248,7 @@
      <useargs>
        <usearg name="credentials" type="GCredentials"/>
        <usearg name="uid" type="U32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4863" name="g_datagram_based_get_type"
@@ -10274,7 +10270,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="timeout" type="I64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4865" name="g_datagram_based_send_messages"
@@ -10289,7 +10285,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="timeout" type="I64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4866" name="g_datagram_based_create_source"
@@ -10323,7 +10319,7 @@
        <usearg name="condition" type="I32"/>
        <usearg name="timeout" type="I64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4903" name="g_data_output_stream_get_type"
@@ -10370,7 +10366,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="data" type="U8"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4908" name="g_data_output_stream_put_int16"
@@ -10382,7 +10378,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="data" type="I16"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4909" name="g_data_output_stream_put_uint16"
@@ -10394,7 +10390,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="data" type="U16"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4910" name="g_data_output_stream_put_int32"
@@ -10406,7 +10402,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="data" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4911" name="g_data_output_stream_put_uint32"
@@ -10418,7 +10414,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="data" type="U32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4912" name="g_data_output_stream_put_int64"
@@ -10430,7 +10426,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="data" type="I64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4913" name="g_data_output_stream_put_uint64"
@@ -10442,7 +10438,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="data" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4914" name="g_data_output_stream_put_string"
@@ -10454,7 +10450,7 @@
        <usearg name="stream" type="GDataOutputStream"/>
        <usearg name="str" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4915" name="g_dbus_action_group_get_type"
@@ -10500,7 +10496,7 @@
      rv="I32">
      <useargs>
        <usearg name="string" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4920" name="g_dbus_address_get_stream"
@@ -10523,7 +10519,7 @@
      <useargs>
        <usearg name="res" type="GAsyncResult"/>
        <usearg name="outguid" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4922" name="g_dbus_address_get_stream_sync"
@@ -10535,7 +10531,7 @@
        <usearg name="address" type="String"/>
        <usearg name="outguid" type="Array[String]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4923" name="g_dbus_address_get_for_bus_sync"
@@ -10546,7 +10542,7 @@
      <useargs>
        <usearg name="bustype" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_4924" name="g_dbus_auth_observer_get_type"
@@ -10616,7 +10612,7 @@
      rv="None">
      <useargs>
        <usearg name="interface" type="GDBusInterface"/>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject'" type="GDBusObject"/>
      </useargs>
   </use>
   <use id="_5000" name="g_dbus_interface_dup_object"
@@ -10762,7 +10758,7 @@
      rv="GDBusMessage">
      <useargs>
        <usearg name="message" type="GDBusMessage"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5066" name="g_dbus_message_get_byte_order"
@@ -11098,7 +11094,7 @@
        <usearg name="blob" type="String"/>
        <usearg name="bloblen" type="U64"/>
        <usearg name="capabilities" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5101" name="g_dbus_message_bytes_needed"
@@ -11109,7 +11105,7 @@
      <useargs>
        <usearg name="blob" type="String"/>
        <usearg name="bloblen" type="U64"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5102" name="g_dbus_message_to_blob"
@@ -11121,7 +11117,7 @@
        <usearg name="message" type="GDBusMessage"/>
        <usearg name="outsize" type="Pointer[U64]"/>
        <usearg name="capabilities" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5103" name="g_dbus_message_to_gerror"
@@ -11131,7 +11127,7 @@
      rv="I32">
      <useargs>
        <usearg name="message" type="GDBusMessage"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5104" name="g_dbus_method_invocation_get_type"
@@ -11297,7 +11293,7 @@
      rv="None">
      <useargs>
        <usearg name="invocation" type="GDBusMethodInvocation"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5121" name="g_dbus_method_invocation_take_error"
@@ -11307,7 +11303,7 @@
      rv="None">
      <useargs>
        <usearg name="invocation" type="GDBusMethodInvocation"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5122" name="g_dbus_method_invocation_return_dbus_error"
@@ -11466,7 +11462,7 @@
      lineno="69"
      rv="String">
      <useargs>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject'" type="GDBusObject"/>
      </useargs>
   </use>
   <use id="_5142" name="g_dbus_object_get_interfaces"
@@ -11475,7 +11471,7 @@
      lineno="71"
      rv="GList">
      <useargs>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject'" type="GDBusObject"/>
      </useargs>
   </use>
   <use id="_5143" name="g_dbus_object_get_interface"
@@ -11484,7 +11480,7 @@
      lineno="73"
      rv="GDBusInterface">
      <useargs>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject'" type="GDBusObject"/>
        <usearg name="interfacename" type="String"/>
      </useargs>
   </use>
@@ -11552,7 +11548,7 @@
        <usearg name="guid" type="String"/>
        <usearg name="observer" type="GDBusAuthObserver"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5228" name="g_dbus_server_get_client_address"
@@ -11844,7 +11840,7 @@
      <useargs>
        <usearg name="drive" type="GDrive"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5262" name="g_drive_poll_for_media"
@@ -11867,7 +11863,7 @@
      <useargs>
        <usearg name="drive" type="GDrive"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5264" name="g_drive_get_identifier"
@@ -11938,7 +11934,7 @@
      <useargs>
        <usearg name="drive" type="GDrive"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5271" name="g_drive_can_stop"
@@ -11972,7 +11968,7 @@
      <useargs>
        <usearg name="drive" type="GDrive"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5274" name="g_drive_eject_with_operation"
@@ -11997,7 +11993,7 @@
      <useargs>
        <usearg name="drive" type="GDrive"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5276" name="g_drive_get_sort_key"
@@ -12137,7 +12133,7 @@
      <useargs>
        <usearg name="conn" type="GDtlsConnection"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5293" name="g_dtls_connection_handshake_async"
@@ -12161,7 +12157,7 @@
      <useargs>
        <usearg name="conn" type="GDtlsConnection"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5295" name="g_dtls_connection_shutdown"
@@ -12174,7 +12170,7 @@
        <usearg name="shutdownread" type="I32"/>
        <usearg name="shutdownwrite" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5296" name="g_dtls_connection_shutdown_async"
@@ -12200,7 +12196,7 @@
      <useargs>
        <usearg name="conn" type="GDtlsConnection"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5298" name="g_dtls_connection_close"
@@ -12211,7 +12207,7 @@
      <useargs>
        <usearg name="conn" type="GDtlsConnection"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5299" name="g_dtls_connection_close_async"
@@ -12235,7 +12231,7 @@
      <useargs>
        <usearg name="conn" type="GDtlsConnection"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5301" name="g_dtls_connection_emit_accept_certificate"
@@ -12277,7 +12273,7 @@
        <usearg name="conn" type="GDtlsConnection"/>
        <usearg name="type" type="I32"/>
        <usearg name="data" type="GByteArray"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5305" name="g_dtls_connection_get_protocol_version"
@@ -12313,7 +12309,7 @@
      <useargs>
        <usearg name="basesocket" type="GDatagramBased"/>
        <usearg name="serveridentity" type="GSocketConnectable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5311" name="g_dtls_client_connection_get_validation_flags"
@@ -12378,7 +12374,7 @@
      <useargs>
        <usearg name="basesocket" type="GDatagramBased"/>
        <usearg name="certificate" type="GTlsCertificate"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5322" name="g_icon_get_type"
@@ -12423,7 +12419,7 @@
      rv="GIcon">
      <useargs>
        <usearg name="str" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5327" name="g_icon_serialize"
@@ -12594,7 +12590,7 @@
      <useargs>
        <usearg name="tmpl" type="String"/>
        <usearg name="iostream" type="GFileIOStream"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5358" name="g_file_parse_name"
@@ -12726,7 +12722,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="displayname" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5372" name="g_file_has_prefix"
@@ -12795,7 +12791,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5379" name="g_file_read_async"
@@ -12819,7 +12815,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5381" name="g_file_append_to"
@@ -12831,7 +12827,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5382" name="g_file_create"
@@ -12843,7 +12839,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5383" name="g_file_replace"
@@ -12857,7 +12853,7 @@
        <usearg name="makebackup" type="I32"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5384" name="g_file_append_to_async"
@@ -12882,7 +12878,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5386" name="g_file_create_async"
@@ -12907,7 +12903,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5388" name="g_file_replace_async"
@@ -12934,7 +12930,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5390" name="g_file_open_readwrite"
@@ -12945,7 +12941,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5391" name="g_file_open_readwrite_async"
@@ -12969,7 +12965,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5393" name="g_file_create_readwrite"
@@ -12981,7 +12977,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5394" name="g_file_create_readwrite_async"
@@ -13006,7 +13002,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5396" name="g_file_replace_readwrite"
@@ -13020,7 +13016,7 @@
        <usearg name="makebackup" type="I32"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5397" name="g_file_replace_readwrite_async"
@@ -13047,7 +13043,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5399" name="g_file_query_exists"
@@ -13081,7 +13077,7 @@
        <usearg name="attributes" type="String"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5402" name="g_file_query_info_async"
@@ -13107,7 +13103,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5404" name="g_file_query_filesystem_info"
@@ -13119,7 +13115,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="attributes" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5405" name="g_file_query_filesystem_info_async"
@@ -13144,7 +13140,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5407" name="g_file_find_enclosing_mount"
@@ -13155,7 +13151,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5408" name="g_file_find_enclosing_mount_async"
@@ -13179,7 +13175,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5410" name="g_file_enumerate_children"
@@ -13192,7 +13188,7 @@
        <usearg name="attributes" type="String"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5411" name="g_file_enumerate_children_async"
@@ -13218,7 +13214,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5413" name="g_file_set_display_name"
@@ -13230,7 +13226,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="displayname" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5414" name="g_file_set_display_name_async"
@@ -13255,7 +13251,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5416" name="g_file_delete"
@@ -13266,7 +13262,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5417" name="g_file_delete_async"
@@ -13290,7 +13286,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5419" name="g_file_trash"
@@ -13301,7 +13297,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5420" name="g_file_trash_async"
@@ -13325,7 +13321,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5422" name="g_file_copy"
@@ -13340,7 +13336,7 @@
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="progresscallback" type="Pointer[None]"/>
        <usearg name="progresscallbackdata" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5423" name="g_file_copy_async"
@@ -13368,7 +13364,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5425" name="g_file_move"
@@ -13383,7 +13379,7 @@
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="progresscallback" type="Pointer[None]"/>
        <usearg name="progresscallbackdata" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5426" name="g_file_make_directory"
@@ -13394,7 +13390,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5427" name="g_file_make_directory_async"
@@ -13418,7 +13414,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5429" name="g_file_make_directory_with_parents"
@@ -13429,7 +13425,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5430" name="g_file_make_symbolic_link"
@@ -13441,7 +13437,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="symlinkvalue" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5431" name="g_file_query_settable_attributes"
@@ -13452,7 +13448,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5432" name="g_file_query_writable_namespaces"
@@ -13463,7 +13459,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5433" name="g_file_set_attribute"
@@ -13478,7 +13474,7 @@
        <usearg name="valuep" type="Pointer[None]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5434" name="g_file_set_attributes_from_info"
@@ -13491,7 +13487,7 @@
        <usearg name="info" type="GFileInfo"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5435" name="g_file_set_attributes_async"
@@ -13518,7 +13514,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="info" type="GFileInfo"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5437" name="g_file_set_attribute_string"
@@ -13532,7 +13528,7 @@
        <usearg name="value" type="String"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5438" name="g_file_set_attribute_byte_string"
@@ -13546,7 +13542,7 @@
        <usearg name="value" type="String"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5439" name="g_file_set_attribute_uint32"
@@ -13560,7 +13556,7 @@
        <usearg name="value" type="U32"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5440" name="g_file_set_attribute_int32"
@@ -13574,7 +13570,7 @@
        <usearg name="value" type="I32"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5441" name="g_file_set_attribute_uint64"
@@ -13588,7 +13584,7 @@
        <usearg name="value" type="U64"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5442" name="g_file_set_attribute_int64"
@@ -13602,7 +13598,7 @@
        <usearg name="value" type="I64"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5443" name="g_file_mount_enclosing_volume"
@@ -13627,7 +13623,7 @@
      <useargs>
        <usearg name="location" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5445" name="g_file_mount_mountable"
@@ -13652,7 +13648,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5447" name="g_file_unmount_mountable"
@@ -13676,7 +13672,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5449" name="g_file_unmount_mountable_with_operation"
@@ -13701,7 +13697,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5451" name="g_file_eject_mountable"
@@ -13725,7 +13721,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5453" name="g_file_eject_mountable_with_operation"
@@ -13750,7 +13746,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5455" name="g_file_build_attribute_list_for_copy"
@@ -13762,7 +13758,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5456" name="g_file_copy_attributes"
@@ -13775,7 +13771,7 @@
        <usearg name="destination" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5457" name="g_file_monitor_directory"
@@ -13787,7 +13783,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5458" name="g_file_monitor_file"
@@ -13799,7 +13795,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5459" name="g_file_monitor"
@@ -13811,7 +13807,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5460" name="g_file_measure_disk_usage"
@@ -13828,7 +13824,7 @@
        <usearg name="diskusage" type="Pointer[U64]"/>
        <usearg name="numdirs" type="Pointer[U64]"/>
        <usearg name="numfiles" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5461" name="g_file_measure_disk_usage_async"
@@ -13858,7 +13854,7 @@
        <usearg name="diskusage" type="Pointer[U64]"/>
        <usearg name="numdirs" type="Pointer[U64]"/>
        <usearg name="numfiles" type="Pointer[U64]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5463" name="g_file_start_mountable"
@@ -13883,7 +13879,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5465" name="g_file_stop_mountable"
@@ -13908,7 +13904,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5467" name="g_file_poll_mountable"
@@ -13931,7 +13927,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5469" name="g_file_query_default_handler"
@@ -13942,7 +13938,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5470" name="g_file_query_default_handler_async"
@@ -13966,7 +13962,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5472" name="g_file_load_contents"
@@ -13980,7 +13976,7 @@
        <usearg name="contents" type="Array[String]"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="etagout" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5473" name="g_file_load_contents_async"
@@ -14006,7 +14002,7 @@
        <usearg name="contents" type="Array[String]"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="etagout" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5475" name="g_file_load_partial_contents_async"
@@ -14033,7 +14029,7 @@
        <usearg name="contents" type="Array[String]"/>
        <usearg name="length" type="Pointer[U64]"/>
        <usearg name="etagout" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5477" name="g_file_replace_contents"
@@ -14050,7 +14046,7 @@
        <usearg name="flags" type="I32"/>
        <usearg name="newetag" type="Array[String]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5478" name="g_file_replace_contents_async"
@@ -14095,7 +14091,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="res" type="GAsyncResult"/>
        <usearg name="newetag" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5481" name="g_file_supports_thread_contexts"
@@ -14116,7 +14112,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="etagout" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5483" name="g_file_load_bytes_async"
@@ -14140,7 +14136,7 @@
        <usearg name="file" type="GFile"/>
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="etagout" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5511" name="g_file_icon_get_type"
@@ -16206,7 +16202,7 @@
        <usearg name="size" type="I32"/>
        <usearg name="type" type="Array[String]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5903" name="g_loadable_icon_load_async"
@@ -16231,7 +16227,7 @@
        <usearg name="icon" type="GLoadableIcon"/>
        <usearg name="res" type="GAsyncResult"/>
        <usearg name="type" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_5915" name="g_memory_monitor_get_type"
@@ -16691,7 +16687,7 @@
        <usearg name="connection" type="GDBusConnection"/>
        <usearg name="objectpath" type="String"/>
        <usearg name="menu" type="GMenuModel"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6021" name="g_dbus_connection_unexport_menu_model"
@@ -16822,7 +16818,7 @@
      <useargs>
        <usearg name="mount" type="GMount"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6037" name="g_mount_eject"
@@ -16846,7 +16842,7 @@
      <useargs>
        <usearg name="mount" type="GMount"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6039" name="g_mount_remount"
@@ -16871,7 +16867,7 @@
      <useargs>
        <usearg name="mount" type="GMount"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6041" name="g_mount_guess_content_type"
@@ -16895,7 +16891,7 @@
      <useargs>
        <usearg name="mount" type="GMount"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6043" name="g_mount_guess_content_type_sync"
@@ -16907,7 +16903,7 @@
        <usearg name="mount" type="GMount"/>
        <usearg name="forcerescan" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6044" name="g_mount_is_shadowed"
@@ -16959,7 +16955,7 @@
      <useargs>
        <usearg name="mount" type="GMount"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6049" name="g_mount_eject_with_operation"
@@ -16984,7 +16980,7 @@
      <useargs>
        <usearg name="mount" type="GMount"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6051" name="g_mount_get_sort_key"
@@ -17053,7 +17049,7 @@
        <usearg name="monitor" type="GNetworkMonitor"/>
        <usearg name="connectable" type="GSocketConnectable"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6118" name="g_network_monitor_can_reach_async"
@@ -17077,7 +17073,7 @@
      <useargs>
        <usearg name="monitor" type="GNetworkMonitor"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6131" name="g_notification_get_type"
@@ -17270,7 +17266,7 @@
        <usearg name="buffer" type="Pointer[None]"/>
        <usearg name="count" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6169" name="g_pollable_output_stream_get_type"
@@ -17318,7 +17314,7 @@
        <usearg name="buffer" type="Pointer[None]"/>
        <usearg name="count" type="U64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6174" name="g_pollable_output_stream_writev_nonblocking"
@@ -17332,7 +17328,7 @@
        <usearg name="nvectors" type="U64"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6175" name="g_pollable_source_new"
@@ -17366,7 +17362,7 @@
        <usearg name="count" type="U64"/>
        <usearg name="blocking" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6178" name="g_pollable_stream_write"
@@ -17380,7 +17376,7 @@
        <usearg name="count" type="U64"/>
        <usearg name="blocking" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6179" name="g_pollable_stream_write_all"
@@ -17395,7 +17391,7 @@
        <usearg name="blocking" type="I32"/>
        <usearg name="byteswritten" type="Pointer[U64]"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6180" name="g_power_profile_monitor_get_type"
@@ -17507,7 +17503,7 @@
      rv="GPropertyAction">
      <useargs>
        <usearg name="name" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject'" type="Pointer[None]"/>
        <usearg name="propertyname" type="String"/>
      </useargs>
   </use>
@@ -17537,7 +17533,7 @@
        <usearg name="connection" type="GIOStream"/>
        <usearg name="proxyaddress" type="GProxyAddress"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6206" name="g_proxy_connect_async"
@@ -17562,7 +17558,7 @@
      <useargs>
        <usearg name="proxy" type="GProxy"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6208" name="g_proxy_supports_hostname"
@@ -17606,7 +17602,7 @@
        <usearg name="resolver" type="GProxyResolver"/>
        <usearg name="uri" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6239" name="g_proxy_resolver_lookup_async"
@@ -17630,7 +17626,7 @@
      <useargs>
        <usearg name="resolver" type="GProxyResolver"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6243" name="g_remote_action_group_get_type"
@@ -17685,7 +17681,7 @@
      rv="GResource">
      <useargs>
        <usearg name="data" type="GBytes"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6278" name="g_resource_ref"
@@ -17713,7 +17709,7 @@
      rv="GResource">
      <useargs>
        <usearg name="filename" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6281" name="g_resource_open_stream"
@@ -17725,7 +17721,7 @@
        <usearg name="resource" type="GResource"/>
        <usearg name="path" type="String"/>
        <usearg name="lookupflags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6282" name="g_resource_lookup_data"
@@ -17737,7 +17733,7 @@
        <usearg name="resource" type="GResource"/>
        <usearg name="path" type="String"/>
        <usearg name="lookupflags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6283" name="g_resource_enumerate_children"
@@ -17749,7 +17745,7 @@
        <usearg name="resource" type="GResource"/>
        <usearg name="path" type="String"/>
        <usearg name="lookupflags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6284" name="g_resource_get_info"
@@ -17763,7 +17759,7 @@
        <usearg name="lookupflags" type="I32"/>
        <usearg name="size" type="Pointer[U64]"/>
        <usearg name="flags" type="Pointer[U32]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6285" name="g_resources_register"
@@ -17792,7 +17788,7 @@
      <useargs>
        <usearg name="path" type="String"/>
        <usearg name="lookupflags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6288" name="g_resources_lookup_data"
@@ -17803,7 +17799,7 @@
      <useargs>
        <usearg name="path" type="String"/>
        <usearg name="lookupflags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6289" name="g_resources_enumerate_children"
@@ -17814,7 +17810,7 @@
      <useargs>
        <usearg name="path" type="String"/>
        <usearg name="lookupflags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6290" name="g_resources_get_info"
@@ -17827,7 +17823,7 @@
        <usearg name="lookupflags" type="I32"/>
        <usearg name="size" type="Pointer[U64]"/>
        <usearg name="flags" type="Pointer[U32]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6291" name="g_static_resource_init"
@@ -17892,7 +17888,7 @@
        <usearg name="offset" type="I64"/>
        <usearg name="type" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6300" name="g_seekable_can_truncate"
@@ -17913,7 +17909,7 @@
        <usearg name="seekable" type="GSeekable"/>
        <usearg name="offset" type="I64"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6308" name="g_settings_schema_source_get_type"
@@ -17957,7 +17953,7 @@
        <usearg name="directory" type="String"/>
        <usearg name="parent" type="GSettingsSchemaSource"/>
        <usearg name="trusted" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6313" name="g_settings_schema_source_lookup"
@@ -18254,7 +18250,7 @@
        <usearg name="sourceobject" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6417" name="g_simple_async_result_new_take_error"
@@ -18266,7 +18262,7 @@
        <usearg name="sourceobject" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6418" name="g_simple_async_result_set_op_res_gpointer"
@@ -18393,7 +18389,7 @@
      rv="None">
      <useargs>
        <usearg name="simple" type="GSimpleAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6431" name="g_simple_async_result_take_error"
@@ -18403,7 +18399,7 @@
      rv="None">
      <useargs>
        <usearg name="simple" type="GSimpleAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6432" name="g_simple_async_result_propagate_error"
@@ -18459,7 +18455,7 @@
      lineno="140"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject'" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
        <usearg name="domain" type="U32"/>
@@ -18474,10 +18470,10 @@
      lineno="148"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject'" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6438" name="g_simple_async_report_take_gerror_in_idle"
@@ -18486,10 +18482,10 @@
      lineno="153"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject'" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6439" name="g_simple_io_stream_get_type"
@@ -18703,7 +18699,7 @@
      rv="GSubprocess">
      <useargs>
        <usearg name="flags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
        <usearg name="argv0" type="String"/>
        <usearg name="parg3" type="..."/>
      </useargs>
@@ -18716,7 +18712,7 @@
      <useargs>
        <usearg name="argv" type="Array[String]"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6623" name="g_subprocess_get_stdin_pipe"
@@ -18782,7 +18778,7 @@
      <useargs>
        <usearg name="subprocess" type="GSubprocess"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6630" name="g_subprocess_wait_async"
@@ -18805,7 +18801,7 @@
      <useargs>
        <usearg name="subprocess" type="GSubprocess"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6632" name="g_subprocess_wait_check"
@@ -18816,7 +18812,7 @@
      <useargs>
        <usearg name="subprocess" type="GSubprocess"/>
        <usearg name="cancellable" type="GCancellable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6633" name="g_subprocess_wait_check_async"
@@ -18839,7 +18835,7 @@
      <useargs>
        <usearg name="subprocess" type="GSubprocess"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6635" name="g_subprocess_get_status"
@@ -18907,7 +18903,7 @@
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="stdoutbuf" type="GBytes"/>
        <usearg name="stderrbuf" type="GBytes"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6642" name="g_subprocess_communicate_async"
@@ -18933,7 +18929,7 @@
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="stdoutbuf" type="GBytes"/>
        <usearg name="stderrbuf" type="GBytes"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6644" name="g_subprocess_communicate_utf8"
@@ -18947,7 +18943,7 @@
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="stdoutbuf" type="Array[String]"/>
        <usearg name="stderrbuf" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6645" name="g_subprocess_communicate_utf8_async"
@@ -18973,7 +18969,7 @@
        <usearg name="result" type="GAsyncResult"/>
        <usearg name="stdoutbuf" type="Array[String]"/>
        <usearg name="stderrbuf" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6647" name="g_subprocess_launcher_get_type"
@@ -18999,7 +18995,7 @@
      rv="GSubprocess">
      <useargs>
        <usearg name="self" type="GSubprocessLauncher"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
        <usearg name="argv0" type="String"/>
        <usearg name="parg3" type="..."/>
      </useargs>
@@ -19012,7 +19008,7 @@
      <useargs>
        <usearg name="self" type="GSubprocessLauncher"/>
        <usearg name="argv" type="Array[String]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6651" name="g_subprocess_launcher_set_environ"
@@ -19198,7 +19194,7 @@
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="callbackdata" type="Pointer[None]"/>
        <usearg name="sourcetag" type="Pointer[None]"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6671" name="g_task_report_new_error"
@@ -19438,7 +19434,7 @@
      rv="None">
      <useargs>
        <usearg name="task" type="GTask"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6696" name="g_task_return_new_error"
@@ -19480,7 +19476,7 @@
      rv="Pointer[None]">
      <useargs>
        <usearg name="task" type="GTask"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6700" name="g_task_propagate_boolean"
@@ -19490,7 +19486,7 @@
      rv="I32">
      <useargs>
        <usearg name="task" type="GTask"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6701" name="g_task_propagate_int"
@@ -19500,7 +19496,7 @@
      rv="I64">
      <useargs>
        <usearg name="task" type="GTask"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6702" name="g_task_propagate_value"
@@ -19511,7 +19507,7 @@
      <useargs>
        <usearg name="task" type="GTask"/>
        <usearg name="value" type="GValue"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6703" name="g_task_had_error"
@@ -19794,7 +19790,7 @@
      <useargs>
        <usearg name="baseiostream" type="GIOStream"/>
        <usearg name="serveridentity" type="GSocketConnectable"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6812" name="g_tls_client_connection_get_validation_flags"
@@ -19887,7 +19883,7 @@
      rv="GTlsDatabase">
      <useargs>
        <usearg name="anchors" type="String"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6872" name="g_tls_server_connection_get_type"
@@ -19905,7 +19901,7 @@
      <useargs>
        <usearg name="baseiostream" type="GIOStream"/>
        <usearg name="certificate" type="GTlsCertificate"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6889" name="g_volume_get_type"
@@ -20018,7 +20014,7 @@
      <useargs>
        <usearg name="volume" type="GVolume"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6901" name="g_volume_eject"
@@ -20042,7 +20038,7 @@
      <useargs>
        <usearg name="volume" type="GVolume"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6903" name="g_volume_get_identifier"
@@ -20095,7 +20091,7 @@
      <useargs>
        <usearg name="volume" type="GVolume"/>
        <usearg name="result" type="GAsyncResult"/>
-       <usearg name="error" type="GError"/>
+       <usearg name="gerror" type="GError"/>
      </useargs>
   </use>
   <use id="_6908" name="g_volume_get_sort_key"
@@ -26017,6 +26013,5 @@
      <useargs>
        <usearg name="q" type="GQueue"/>
      </useargs>
-  </use></uses>
-</castxml2pony>
-
+  </use>
+</uses>
