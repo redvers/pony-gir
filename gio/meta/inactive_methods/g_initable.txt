@@ -1,0 +1,5 @@
+g_initable_get_type
+g_initable_init
+g_initable_new
+g_initable_newv
+g_initable_new_valist

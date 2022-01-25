@@ -1,0 +1,2 @@
+g_data_stream_byte_order_get_type
+g_data_stream_newline_type_get_type

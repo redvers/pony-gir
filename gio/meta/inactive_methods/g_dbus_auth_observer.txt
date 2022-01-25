@@ -1,0 +1,4 @@
+g_dbus_auth_observer_allow_mechanism
+g_dbus_auth_observer_authorize_authenticated_peer
+g_dbus_auth_observer_get_type
+g_dbus_auth_observer_new

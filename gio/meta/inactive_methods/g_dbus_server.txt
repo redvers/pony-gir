@@ -1,0 +1,9 @@
+g_dbus_server_flags_get_type
+g_dbus_server_get_client_address
+g_dbus_server_get_flags
+g_dbus_server_get_guid
+g_dbus_server_get_type
+g_dbus_server_is_active
+g_dbus_server_new_sync
+g_dbus_server_start
+g_dbus_server_stop

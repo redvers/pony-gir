@@ -1,0 +1,6 @@
+g_proxy_resolver_get_default
+g_proxy_resolver_get_type
+g_proxy_resolver_is_supported
+g_proxy_resolver_lookup
+g_proxy_resolver_lookup_async
+g_proxy_resolver_lookup_finish

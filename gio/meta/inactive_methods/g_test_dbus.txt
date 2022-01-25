@@ -1,0 +1,10 @@
+g_test_dbus_add_service_dir
+g_test_dbus_down
+g_test_dbus_flags_get_type
+g_test_dbus_get_bus_address
+g_test_dbus_get_flags
+g_test_dbus_get_type
+g_test_dbus_new
+g_test_dbus_stop
+g_test_dbus_unset
+g_test_dbus_up

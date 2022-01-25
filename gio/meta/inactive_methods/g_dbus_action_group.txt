@@ -1,0 +1,2 @@
+g_dbus_action_group_get
+g_dbus_action_group_get_type

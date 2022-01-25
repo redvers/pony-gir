@@ -1,0 +1,2 @@
+g_file_attribute_status_get_type
+g_file_attribute_type_get_type

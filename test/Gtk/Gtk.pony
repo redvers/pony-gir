@@ -263,39 +263,39 @@ use @gtk_unit_get_type[U64]()
 use @gtk_wrap_mode_get_type[U64]()
 
 primitive Gtk
-  fun gtk_accelerator_valid(keyval: U32, modifiers: I32): I32 =>
+  fun valid(keyval: U32, modifiers: I32): I32 =>
     @gtk_accelerator_valid(keyval, modifiers)
 
-  fun gtk_accelerator_parse(accelerator: String, acceleratorkey: Pointer[U32] tag, acceleratormods: Pointer[I32] tag): None =>
+  fun parse(accelerator: String, acceleratorkey: Pointer[U32] tag, acceleratormods: Pointer[I32] tag): None =>
     @gtk_accelerator_parse(accelerator.cstring(), acceleratorkey, acceleratormods)
 
-  fun gtk_accelerator_parse_with_keycode(accelerator: String, acceleratorkey: Pointer[U32] tag, acceleratorcodes: NullablePointer[Pointer[U32]] tag, acceleratormods: Pointer[I32] tag): None =>
+  fun parse_with_keycode(accelerator: String, acceleratorkey: Pointer[U32] tag, acceleratorcodes: NullablePointer[Pointer[U32]] tag, acceleratormods: Pointer[I32] tag): None =>
     @gtk_accelerator_parse_with_keycode(accelerator.cstring(), acceleratorkey, acceleratorcodes, acceleratormods)
 
-  fun gtk_accelerator_name(acceleratorkey: U32, acceleratormods: I32): String =>
+  fun name(acceleratorkey: U32, acceleratormods: I32): String =>
     var pcstring: Pointer[U8] =  @gtk_accelerator_name(acceleratorkey, acceleratormods)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_accelerator_name_with_keycode(display: NullablePointer[GdkDisplay] tag, acceleratorkey: U32, keycode: U32, acceleratormods: I32): String =>
+  fun name_with_keycode(display: NullablePointer[GdkDisplay] tag, acceleratorkey: U32, keycode: U32, acceleratormods: I32): String =>
     var pcstring: Pointer[U8] =  @gtk_accelerator_name_with_keycode(display, acceleratorkey, keycode, acceleratormods)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_accelerator_get_label(acceleratorkey: U32, acceleratormods: I32): String =>
+  fun get_label(acceleratorkey: U32, acceleratormods: I32): String =>
     var pcstring: Pointer[U8] =  @gtk_accelerator_get_label(acceleratorkey, acceleratormods)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_accelerator_get_label_with_keycode(display: NullablePointer[GdkDisplay] tag, acceleratorkey: U32, keycode: U32, acceleratormods: I32): String =>
+  fun get_label_with_keycode(display: NullablePointer[GdkDisplay] tag, acceleratorkey: U32, keycode: U32, acceleratormods: I32): String =>
     var pcstring: Pointer[U8] =  @gtk_accelerator_get_label_with_keycode(display, acceleratorkey, keycode, acceleratormods)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun gtk_accelerator_set_default_mod_mask(defaultmodmask: I32): None =>
+  fun set_default_mod_mask(defaultmodmask: I32): None =>
     @gtk_accelerator_set_default_mod_mask(defaultmodmask)
 
-  fun gtk_accelerator_get_default_mod_mask(): I32 =>
+  fun get_default_mod_mask(): I32 =>
     @gtk_accelerator_get_default_mod_mask()
 
   fun gtk_cairo_should_draw_window(cr: NullablePointer[Cairo] tag, window: NullablePointer[GdkWindow] tag): I32 =>

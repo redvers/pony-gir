@@ -1,0 +1,4 @@
+g_dbus_annotation_info_get_type
+g_dbus_annotation_info_lookup
+g_dbus_annotation_info_ref
+g_dbus_annotation_info_unref

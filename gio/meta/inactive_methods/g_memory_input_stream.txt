@@ -1,0 +1,6 @@
+g_memory_input_stream_add_bytes
+g_memory_input_stream_add_data
+g_memory_input_stream_get_type
+g_memory_input_stream_new
+g_memory_input_stream_new_from_bytes
+g_memory_input_stream_new_from_data

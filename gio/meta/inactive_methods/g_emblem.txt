@@ -1,0 +1,6 @@
+g_emblem_get_icon
+g_emblem_get_origin
+g_emblem_get_type
+g_emblem_new
+g_emblem_new_with_origin
+g_emblem_origin_get_type

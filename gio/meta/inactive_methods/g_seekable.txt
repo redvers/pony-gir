@@ -1,0 +1,6 @@
+g_seekable_can_seek
+g_seekable_can_truncate
+g_seekable_get_type
+g_seekable_seek
+g_seekable_tell
+g_seekable_truncate

@@ -1,0 +1,7 @@
+g_network_service_get_domain
+g_network_service_get_protocol
+g_network_service_get_scheme
+g_network_service_get_service
+g_network_service_get_type
+g_network_service_new
+g_network_service_set_scheme

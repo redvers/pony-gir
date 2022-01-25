@@ -1,0 +1,4 @@
+g_io_scheduler_cancel_all_jobs
+g_io_scheduler_job_send_to_mainloop
+g_io_scheduler_job_send_to_mainloop_async
+g_io_scheduler_push_job

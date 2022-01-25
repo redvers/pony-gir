@@ -1,0 +1,3 @@
+g_dbus_method_info_get_type
+g_dbus_method_info_ref
+g_dbus_method_info_unref

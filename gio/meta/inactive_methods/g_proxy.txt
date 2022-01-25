@@ -1,0 +1,6 @@
+g_proxy_connect
+g_proxy_connect_async
+g_proxy_connect_finish
+g_proxy_get_default_for_protocol
+g_proxy_get_type
+g_proxy_supports_hostname

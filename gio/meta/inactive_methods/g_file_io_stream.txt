@@ -1,0 +1,5 @@
+g_file_io_stream_get_etag
+g_file_io_stream_get_type
+g_file_io_stream_query_info
+g_file_io_stream_query_info_async
+g_file_io_stream_query_info_finish

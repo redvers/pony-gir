@@ -1,0 +1,9 @@
+g_srv_target_copy
+g_srv_target_free
+g_srv_target_get_hostname
+g_srv_target_get_port
+g_srv_target_get_priority
+g_srv_target_get_type
+g_srv_target_get_weight
+g_srv_target_list_sort
+g_srv_target_new

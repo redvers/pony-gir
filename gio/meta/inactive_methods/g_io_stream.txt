@@ -1,0 +1,13 @@
+g_io_stream_clear_pending
+g_io_stream_close
+g_io_stream_close_async
+g_io_stream_close_finish
+g_io_stream_get_input_stream
+g_io_stream_get_output_stream
+g_io_stream_get_type
+g_io_stream_has_pending
+g_io_stream_is_closed
+g_io_stream_set_pending
+g_io_stream_splice_async
+g_io_stream_splice_finish
+g_io_stream_splice_flags_get_type

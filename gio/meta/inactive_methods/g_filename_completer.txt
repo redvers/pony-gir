@@ -1,0 +1,5 @@
+g_filename_completer_get_completions
+g_filename_completer_get_completion_suffix
+g_filename_completer_get_type
+g_filename_completer_new
+g_filename_completer_set_dirs_only

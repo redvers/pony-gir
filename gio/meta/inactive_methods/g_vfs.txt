@@ -1,0 +1,10 @@
+g_vfs_get_default
+g_vfs_get_file_for_path
+g_vfs_get_file_for_uri
+g_vfs_get_local
+g_vfs_get_supported_uri_schemes
+g_vfs_get_type
+g_vfs_is_active
+g_vfs_parse_name
+g_vfs_register_uri_scheme
+g_vfs_unregister_uri_scheme

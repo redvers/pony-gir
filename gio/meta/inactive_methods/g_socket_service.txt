@@ -1,0 +1,5 @@
+g_socket_service_get_type
+g_socket_service_is_active
+g_socket_service_new
+g_socket_service_start
+g_socket_service_stop

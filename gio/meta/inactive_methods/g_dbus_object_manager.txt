@@ -1,0 +1,5 @@
+g_dbus_object_manager_get_interface
+g_dbus_object_manager_get_object
+g_dbus_object_manager_get_object_path
+g_dbus_object_manager_get_objects
+g_dbus_object_manager_get_type

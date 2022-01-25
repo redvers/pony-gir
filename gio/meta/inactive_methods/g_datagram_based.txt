@@ -1,0 +1,6 @@
+g_datagram_based_condition_check
+g_datagram_based_condition_wait
+g_datagram_based_create_source
+g_datagram_based_get_type
+g_datagram_based_receive_messages
+g_datagram_based_send_messages

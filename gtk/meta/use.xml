@@ -169,7 +169,7 @@
      </useargs>
   </use>
   <use id="_11010" name="gtk_accelerator_valid"
-     ponyname="gtk_accelerator_valid"
+     ponyname="valid"
      fid="f393"
      lineno="199"
      rv="I32">
@@ -179,7 +179,7 @@
      </useargs>
   </use>
   <use id="_11011" name="gtk_accelerator_parse"
-     ponyname="gtk_accelerator_parse"
+     ponyname="parse"
      fid="f393"
      lineno="202"
      rv="None">
@@ -190,7 +190,7 @@
      </useargs>
   </use>
   <use id="_11012" name="gtk_accelerator_parse_with_keycode"
-     ponyname="gtk_accelerator_parse_with_keycode"
+     ponyname="parse_with_keycode"
      fid="f393"
      lineno="206"
      rv="None">
@@ -202,7 +202,7 @@
      </useargs>
   </use>
   <use id="_11013" name="gtk_accelerator_name"
-     ponyname="gtk_accelerator_name"
+     ponyname="name"
      fid="f393"
      lineno="211"
      rv="String">
@@ -212,7 +212,7 @@
      </useargs>
   </use>
   <use id="_11014" name="gtk_accelerator_name_with_keycode"
-     ponyname="gtk_accelerator_name_with_keycode"
+     ponyname="name_with_keycode"
      fid="f393"
      lineno="214"
      rv="String">
@@ -224,7 +224,7 @@
      </useargs>
   </use>
   <use id="_11015" name="gtk_accelerator_get_label"
-     ponyname="gtk_accelerator_get_label"
+     ponyname="get_label"
      fid="f393"
      lineno="219"
      rv="String">
@@ -234,7 +234,7 @@
      </useargs>
   </use>
   <use id="_11016" name="gtk_accelerator_get_label_with_keycode"
-     ponyname="gtk_accelerator_get_label_with_keycode"
+     ponyname="get_label_with_keycode"
      fid="f393"
      lineno="222"
      rv="String">
@@ -246,7 +246,7 @@
      </useargs>
   </use>
   <use id="_11017" name="gtk_accelerator_set_default_mod_mask"
-     ponyname="gtk_accelerator_set_default_mod_mask"
+     ponyname="set_default_mod_mask"
      fid="f393"
      lineno="227"
      rv="None">
@@ -255,7 +255,7 @@
      </useargs>
   </use>
   <use id="_11018" name="gtk_accelerator_get_default_mod_mask"
-     ponyname="gtk_accelerator_get_default_mod_mask"
+     ponyname="get_default_mod_mask"
      fid="f393"
      lineno="230"
      rv="I32">
@@ -5342,14 +5342,14 @@
      </useargs>
   </use>
   <use id="_11810" name="gtk_application_get_type"
-     ponyname="gtk_application_get_type"
+     ponyname="get_type"
      fid="f437"
      lineno="76"
      rv="U64">
      <useargs/>
   </use>
   <use id="_11811" name="gtk_application_new"
-     ponyname="gtk_application_new"
+     ponyname="gnew"
      fid="f437"
      lineno="79"
      rv="NullablePointer[GtkApplication]">
@@ -5359,7 +5359,7 @@
      </useargs>
   </use>
   <use id="_11812" name="gtk_application_add_window"
-     ponyname="gtk_application_add_window"
+     ponyname="add_window"
      fid="f437"
      lineno="83"
      rv="None">
@@ -5369,7 +5369,7 @@
      </useargs>
   </use>
   <use id="_11813" name="gtk_application_remove_window"
-     ponyname="gtk_application_remove_window"
+     ponyname="remove_window"
      fid="f437"
      lineno="87"
      rv="None">
@@ -5379,7 +5379,7 @@
      </useargs>
   </use>
   <use id="_11814" name="gtk_application_get_windows"
-     ponyname="gtk_application_get_windows"
+     ponyname="get_windows"
      fid="f437"
      lineno="90"
      rv="NullablePointer[GList]">
@@ -5388,7 +5388,7 @@
      </useargs>
   </use>
   <use id="_11815" name="gtk_application_get_app_menu"
-     ponyname="gtk_application_get_app_menu"
+     ponyname="get_app_menu"
      fid="f437"
      lineno="93"
      rv="NullablePointer[GMenuModel]">
@@ -5397,7 +5397,7 @@
      </useargs>
   </use>
   <use id="_11816" name="gtk_application_set_app_menu"
-     ponyname="gtk_application_set_app_menu"
+     ponyname="set_app_menu"
      fid="f437"
      lineno="95"
      rv="None">
@@ -5407,7 +5407,7 @@
      </useargs>
   </use>
   <use id="_11817" name="gtk_application_get_menubar"
-     ponyname="gtk_application_get_menubar"
+     ponyname="get_menubar"
      fid="f437"
      lineno="99"
      rv="NullablePointer[GMenuModel]">
@@ -5416,7 +5416,7 @@
      </useargs>
   </use>
   <use id="_11818" name="gtk_application_set_menubar"
-     ponyname="gtk_application_set_menubar"
+     ponyname="set_menubar"
      fid="f437"
      lineno="101"
      rv="None">
@@ -5426,7 +5426,7 @@
      </useargs>
   </use>
   <use id="_11819" name="gtk_application_add_accelerator"
-     ponyname="gtk_application_add_accelerator"
+     ponyname="add_accelerator"
      fid="f437"
      lineno="105"
      rv="None">
@@ -5438,7 +5438,7 @@
      </useargs>
   </use>
   <use id="_11820" name="gtk_application_remove_accelerator"
-     ponyname="gtk_application_remove_accelerator"
+     ponyname="remove_accelerator"
      fid="f437"
      lineno="111"
      rv="None">
@@ -5449,7 +5449,7 @@
      </useargs>
   </use>
   <use id="_11823" name="gtk_application_inhibit"
-     ponyname="gtk_application_inhibit"
+     ponyname="inhibit"
      fid="f437"
      lineno="124"
      rv="U32">
@@ -5461,7 +5461,7 @@
      </useargs>
   </use>
   <use id="_11824" name="gtk_application_uninhibit"
-     ponyname="gtk_application_uninhibit"
+     ponyname="uninhibit"
      fid="f437"
      lineno="129"
      rv="None">
@@ -5471,7 +5471,7 @@
      </useargs>
   </use>
   <use id="_11825" name="gtk_application_is_inhibited"
-     ponyname="gtk_application_is_inhibited"
+     ponyname="is_inhibited"
      fid="f437"
      lineno="132"
      rv="I32">
@@ -5481,7 +5481,7 @@
      </useargs>
   </use>
   <use id="_11826" name="gtk_application_get_window_by_id"
-     ponyname="gtk_application_get_window_by_id"
+     ponyname="get_window_by_id"
      fid="f437"
      lineno="136"
      rv="NullablePointer[GtkWindow]">
@@ -5491,7 +5491,7 @@
      </useargs>
   </use>
   <use id="_11827" name="gtk_application_get_active_window"
-     ponyname="gtk_application_get_active_window"
+     ponyname="get_active_window"
      fid="f437"
      lineno="140"
      rv="NullablePointer[GtkWindow]">
@@ -5500,7 +5500,7 @@
      </useargs>
   </use>
   <use id="_11828" name="gtk_application_list_action_descriptions"
-     ponyname="gtk_application_list_action_descriptions"
+     ponyname="list_action_descriptions"
      fid="f437"
      lineno="143"
      rv="Array[String]">
@@ -5509,7 +5509,7 @@
      </useargs>
   </use>
   <use id="_11829" name="gtk_application_get_accels_for_action"
-     ponyname="gtk_application_get_accels_for_action"
+     ponyname="get_accels_for_action"
      fid="f437"
      lineno="146"
      rv="Array[String]">
@@ -5519,7 +5519,7 @@
      </useargs>
   </use>
   <use id="_11830" name="gtk_application_get_actions_for_accel"
-     ponyname="gtk_application_get_actions_for_accel"
+     ponyname="get_actions_for_accel"
      fid="f437"
      lineno="149"
      rv="Array[String]">
@@ -5529,7 +5529,7 @@
      </useargs>
   </use>
   <use id="_11831" name="gtk_application_set_accels_for_action"
-     ponyname="gtk_application_set_accels_for_action"
+     ponyname="set_accels_for_action"
      fid="f437"
      lineno="154"
      rv="None">
@@ -5540,7 +5540,7 @@
      </useargs>
   </use>
   <use id="_11832" name="gtk_application_prefers_app_menu"
-     ponyname="gtk_application_prefers_app_menu"
+     ponyname="prefers_app_menu"
      fid="f437"
      lineno="159"
      rv="I32">
@@ -5549,7 +5549,7 @@
      </useargs>
   </use>
   <use id="_11833" name="gtk_application_get_menu_by_id"
-     ponyname="gtk_application_get_menu_by_id"
+     ponyname="get_menu_by_id"
      fid="f437"
      lineno="162"
      rv="NullablePointer[GMenu]">
@@ -17296,14 +17296,14 @@
      </useargs>
   </use>
   <use id="_13418" name="gtk_application_window_get_type"
-     ponyname="gtk_application_window_get_type"
+     ponyname="get_type"
      fid="f484"
      lineno="69"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13419" name="gtk_application_window_new"
-     ponyname="gtk_application_window_new"
+     ponyname="gnew"
      fid="f484"
      lineno="71"
      rv="NullablePointer[GtkWidget]">
@@ -17312,7 +17312,7 @@
      </useargs>
   </use>
   <use id="_13420" name="gtk_application_window_set_show_menubar"
-     ponyname="gtk_application_window_set_show_menubar"
+     ponyname="set_show_menubar"
      fid="f484"
      lineno="74"
      rv="None">
@@ -17322,7 +17322,7 @@
      </useargs>
   </use>
   <use id="_13421" name="gtk_application_window_get_show_menubar"
-     ponyname="gtk_application_window_get_show_menubar"
+     ponyname="get_show_menubar"
      fid="f484"
      lineno="77"
      rv="I32">
@@ -17331,7 +17331,7 @@
      </useargs>
   </use>
   <use id="_13422" name="gtk_application_window_get_id"
-     ponyname="gtk_application_window_get_id"
+     ponyname="get_id"
      fid="f484"
      lineno="80"
      rv="U32">
@@ -17340,7 +17340,7 @@
      </useargs>
   </use>
   <use id="_13423" name="gtk_application_window_set_help_overlay"
-     ponyname="gtk_application_window_set_help_overlay"
+     ponyname="set_help_overlay"
      fid="f484"
      lineno="83"
      rv="None">
@@ -17350,7 +17350,7 @@
      </useargs>
   </use>
   <use id="_13424" name="gtk_application_window_get_help_overlay"
-     ponyname="gtk_application_window_get_help_overlay"
+     ponyname="get_help_overlay"
      fid="f484"
      lineno="87"
      rv="NullablePointer[GtkShortcutsWindow]">
@@ -36648,7 +36648,7 @@
      <useargs/>
   </use>
   <use id="_16659" name="gtk_application_inhibit_flags_get_type"
-     ponyname="gtk_application_inhibit_flags_get_type"
+     ponyname="inhibit_flags_get_type"
      fid="f643"
      lineno="47"
      rv="U64">

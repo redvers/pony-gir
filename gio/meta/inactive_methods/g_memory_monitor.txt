@@ -1,0 +1,5 @@
+g_memory_monitor
+g_memory_monitor_dup_default
+g_memory_monitor_GET_IFACE
+g_memory_monitor_get_type
+g_memory_monitor_warning_level_get_type

@@ -45,7 +45,7 @@ codegenstructs:
 	sh -x mkstruct.sh _11919 GtkWindowClass
 	sh -x mkstruct.sh _11921 GtkWindowGeometryInfo
 	sh -x mkstruct.sh _11927 GtkWindowGroupPrivate
-	sh -x mkstruct.sh _11804 GtkApplication
+	sh -x mkstruct.sh _11804 GtkApplication gtk_application
 	sh -x mkstruct.sh _11806 GtkApplicationClass
 	sh -x mkstruct.sh _11808 GtkApplicationPrivate
 	sh -x mkstruct.sh _11843 GtkContainer gtk_container

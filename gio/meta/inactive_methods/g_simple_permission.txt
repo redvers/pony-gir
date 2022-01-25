@@ -1,0 +1,2 @@
+g_simple_permission_get_type
+g_simple_permission_new

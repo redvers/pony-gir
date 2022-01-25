@@ -1,0 +1,8 @@
+g_tls_authentication_mode_get_type
+g_tls_channel_binding_error_get_type
+g_tls_channel_binding_error_quark
+g_tls_channel_binding_type_get_type
+g_tls_error_get_type
+g_tls_error_quark
+g_tls_protocol_version_get_type
+g_tls_rehandshake_mode_get_type

@@ -1,0 +1,5 @@
+g_dbus_address_escape_value
+g_dbus_address_get_for_bus_sync
+g_dbus_address_get_stream
+g_dbus_address_get_stream_finish
+g_dbus_address_get_stream_sync

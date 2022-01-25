@@ -1,0 +1,5 @@
+g_power_profile_monitor
+g_power_profile_monitor_dup_default
+g_power_profile_monitor_GET_IFACE
+g_power_profile_monitor_get_power_saver_enabled
+g_power_profile_monitor_get_type

@@ -1,0 +1,11 @@
+g_list_store_append
+g_list_store_find
+g_list_store_find_with_equal_func
+g_list_store_get_type
+g_list_store_insert
+g_list_store_insert_sorted
+g_list_store_new
+g_list_store_remove
+g_list_store_remove_all
+g_list_store_sort
+g_list_store_splice

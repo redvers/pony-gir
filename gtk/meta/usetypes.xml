@@ -1411,13 +1411,13 @@
 
   <typedef name="Array[NullablePointer[GtkApplicationWindow]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GtkApplicationWindow]] tag"
+    ponytypein="Pointer[NullablePointer[GtkApplicationWindow]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GtkApplicationWindow]]"
-    structtype="Array[NullablePointer[GtkApplicationWindow]]"
-    structdef="Array[NullablePointer[GtkApplicationWindow]]"
-    argtype="Array[NullablePointer[GtkApplicationWindow]] tag"
-    rvtype="Array[NullablePointer[GtkApplicationWindow]]"/>
+    ponytypeout="Pointer[NullablePointer[GtkApplicationWindow]]"
+    structtype="Pointer[NullablePointer[GtkApplicationWindow]]"
+    structdef="Pointer[NullablePointer[GtkApplicationWindow]]"
+    argtype="Pointer[NullablePointer[GtkApplicationWindow]] tag"
+    rvtype="Pointer[NullablePointer[GtkApplicationWindow]]"/>
 
   <typedef name="NullablePointer[GtkEntryCompletion]"
     embed="var"
@@ -1481,13 +1481,13 @@
 
   <typedef name="NullablePointer[GtkApplication]"
     embed="var"
-    ponytypein="NullablePointer[GtkApplication] tag"
+    ponytypein="GtkApplication tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GtkApplication]"
-    structtype="NullablePointer[GtkApplication]"
-    structdef="NullablePointer[GtkApplication].none()"
-    argtype="NullablePointer[GtkApplication] tag"
-    rvtype="NullablePointer[GtkApplication]"/>
+    ponytypeout="GtkApplication"
+    structtype="GtkApplication"
+    structdef="GtkApplication"
+    argtype="GtkApplication tag"
+    rvtype="GtkApplication"/>
 
   <typedef name="Array[NullablePointer[GtkPlacesSidebar]]"
     embed="embed"
@@ -1561,13 +1561,13 @@
 
   <typedef name="Array[NullablePointer[GtkApplication]]"
     embed="embed"
-    ponytypein="Array[NullablePointer[GtkApplication]] tag"
+    ponytypein="Pointer[NullablePointer[GtkApplication]] tag"
     ponytypeinconv=""
-    ponytypeout="Array[NullablePointer[GtkApplication]]"
-    structtype="Array[NullablePointer[GtkApplication]]"
-    structdef="Array[NullablePointer[GtkApplication]]"
-    argtype="Array[NullablePointer[GtkApplication]] tag"
-    rvtype="Array[NullablePointer[GtkApplication]]"/>
+    ponytypeout="Pointer[NullablePointer[GtkApplication]]"
+    structtype="Pointer[NullablePointer[GtkApplication]]"
+    structdef="Pointer[NullablePointer[GtkApplication]]"
+    argtype="Pointer[NullablePointer[GtkApplication]] tag"
+    rvtype="Pointer[NullablePointer[GtkApplication]]"/>
 
   <typedef name="NullablePointer[GtkCellRenderer]"
     embed="var"

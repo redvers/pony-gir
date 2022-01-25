@@ -1,0 +1,2062 @@
+<typedefs>
+  <typedef name="String"
+    embed="var"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    embed="var"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="GAsyncResult"
+    embed="embed"
+    ponytypein="GAsyncResult tag"
+    ponytypeinconv=""
+    ponytypeout="GAsyncResult"
+    structtype="GAsyncResult"
+    structdef="GAsyncResult"
+    argtype="GAsyncResult tag"
+    rvtype="GAsyncResult"/>
+
+  <typedef name="GFilterInputStream"
+    embed="embed"
+    ponytypein="GFilterInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterInputStream"
+    structtype="GFilterInputStream"
+    structdef="GFilterInputStream"
+    argtype="GFilterInputStream tag"
+    rvtype="GFilterInputStream"/>
+
+  <typedef name="GFileMonitor"
+    embed="embed"
+    ponytypein="GFileMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GFileMonitor"
+    structtype="GFileMonitor"
+    structdef="GFileMonitor"
+    argtype="GFileMonitor tag"
+    rvtype="GFileMonitor"/>
+
+  <typedef name="GSocketControlMessage"
+    embed="embed"
+    ponytypein="GSocketControlMessage tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketControlMessage"
+    structtype="GSocketControlMessage"
+    structdef="GSocketControlMessage"
+    argtype="GSocketControlMessage tag"
+    rvtype="GSocketControlMessage"/>
+
+  <typedef name="GSocketAddressEnumerator"
+    embed="embed"
+    ponytypein="GSocketAddressEnumerator tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddressEnumerator"
+    structtype="GSocketAddressEnumerator"
+    structdef="GSocketAddressEnumerator"
+    argtype="GSocketAddressEnumerator tag"
+    rvtype="GSocketAddressEnumerator"/>
+
+  <typedef name="GVariant"
+    embed="embed"
+    ponytypein="GVariant tag"
+    ponytypeinconv=""
+    ponytypeout="GVariant"
+    structtype="GVariant"
+    structdef="GVariant"
+    argtype="GVariant tag"
+    rvtype="GVariant"/>
+
+  <typedef name="GClosure"
+    embed="embed"
+    ponytypein="GClosure tag"
+    ponytypeinconv=""
+    ponytypeout="GClosure"
+    structtype="GClosure"
+    structdef="GClosure"
+    argtype="GClosure tag"
+    rvtype="GClosure"/>
+
+  <typedef name="I64"
+    embed="var"
+    ponytypein="I64"
+    ponytypeinconv=""
+    ponytypeout="I64"
+    structtype="I64"
+    structdef="I64(0)"
+    argtype="I64"
+    rvtype="I64"/>
+
+  <typedef name="GFileEnumerator"
+    embed="embed"
+    ponytypein="GFileEnumerator tag"
+    ponytypeinconv=""
+    ponytypeout="GFileEnumerator"
+    structtype="GFileEnumerator"
+    structdef="GFileEnumerator"
+    argtype="GFileEnumerator tag"
+    rvtype="GFileEnumerator"/>
+
+  <typedef name="GApplication"
+    embed="embed"
+    ponytypein="GApplication tag"
+    ponytypeinconv=""
+    ponytypeout="GApplication"
+    structtype="GApplication"
+    structdef="GApplication"
+    argtype="GApplication tag"
+    rvtype="GApplication"/>
+
+  <typedef name="GFileOutputStream"
+    embed="embed"
+    ponytypein="GFileOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFileOutputStream"
+    structtype="GFileOutputStream"
+    structdef="GFileOutputStream"
+    argtype="GFileOutputStream tag"
+    rvtype="GFileOutputStream"/>
+
+  <typedef name="GInetSocketAddress"
+    embed="embed"
+    ponytypein="GInetSocketAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GInetSocketAddress"
+    structtype="GInetSocketAddress"
+    structdef="GInetSocketAddress"
+    argtype="GInetSocketAddress tag"
+    rvtype="GInetSocketAddress"/>
+
+  <typedef name="GActionMap"
+    embed="embed"
+    ponytypein="GActionMap tag"
+    ponytypeinconv=""
+    ponytypeout="GActionMap"
+    structtype="GActionMap"
+    structdef="GActionMap"
+    argtype="GActionMap tag"
+    rvtype="GActionMap"/>
+
+  <typedef name="GSimpleAsyncResult"
+    embed="embed"
+    ponytypein="GSimpleAsyncResult tag"
+    ponytypeinconv=""
+    ponytypeout="GSimpleAsyncResult"
+    structtype="GSimpleAsyncResult"
+    structdef="GSimpleAsyncResult"
+    argtype="GSimpleAsyncResult tag"
+    rvtype="GSimpleAsyncResult"/>
+
+  <typedef name="GInitable"
+    embed="embed"
+    ponytypein="GInitable tag"
+    ponytypeinconv=""
+    ponytypeout="GInitable"
+    structtype="GInitable"
+    structdef="GInitable"
+    argtype="GInitable tag"
+    rvtype="GInitable"/>
+
+  <typedef name="GUnixFDList"
+    embed="embed"
+    ponytypein="GUnixFDList tag"
+    ponytypeinconv=""
+    ponytypeout="GUnixFDList"
+    structtype="GUnixFDList"
+    structdef="GUnixFDList"
+    argtype="GUnixFDList tag"
+    rvtype="GUnixFDList"/>
+
+  <typedef name="GDBusObjectManager"
+    embed="embed"
+    ponytypein="GDBusObjectManager tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectManager"
+    structtype="GDBusObjectManager"
+    structdef="GDBusObjectManager"
+    argtype="GDBusObjectManager tag"
+    rvtype="GDBusObjectManager"/>
+
+  <typedef name="GMemoryOutputStream"
+    embed="embed"
+    ponytypein="GMemoryOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GMemoryOutputStream"
+    structtype="GMemoryOutputStream"
+    structdef="GMemoryOutputStream"
+    argtype="GMemoryOutputStream tag"
+    rvtype="GMemoryOutputStream"/>
+
+  <typedef name="GSubprocess"
+    embed="embed"
+    ponytypein="GSubprocess tag"
+    ponytypeinconv=""
+    ponytypeout="GSubprocess"
+    structtype="GSubprocess"
+    structdef="GSubprocess"
+    argtype="GSubprocess tag"
+    rvtype="GSubprocess"/>
+
+  <typedef name="GInputVector"
+    embed="embed"
+    ponytypein="GInputVector tag"
+    ponytypeinconv=""
+    ponytypeout="GInputVector"
+    structtype="GInputVector"
+    structdef="GInputVector"
+    argtype="GInputVector tag"
+    rvtype="GInputVector"/>
+
+  <typedef name="GTlsBackend"
+    embed="embed"
+    ponytypein="GTlsBackend tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsBackend"
+    structtype="GTlsBackend"
+    structdef="GTlsBackend"
+    argtype="GTlsBackend tag"
+    rvtype="GTlsBackend"/>
+
+  <typedef name="GVariantDict"
+    embed="embed"
+    ponytypein="GVariantDict tag"
+    ponytypeinconv=""
+    ponytypeout="GVariantDict"
+    structtype="GVariantDict"
+    structdef="GVariantDict"
+    argtype="GVariantDict tag"
+    rvtype="GVariantDict"/>
+
+  <typedef name="GTlsInteraction"
+    embed="embed"
+    ponytypein="GTlsInteraction tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsInteraction"
+    structtype="GTlsInteraction"
+    structdef="GTlsInteraction"
+    argtype="GTlsInteraction tag"
+    rvtype="GTlsInteraction"/>
+
+  <typedef name="GMenu"
+    embed="embed"
+    ponytypein="GMenu tag"
+    ponytypeinconv=""
+    ponytypeout="GMenu"
+    structtype="GMenu"
+    structdef="GMenu"
+    argtype="GMenu tag"
+    rvtype="GMenu"/>
+
+  <typedef name="GProxyAddressEnumerator"
+    embed="embed"
+    ponytypein="GProxyAddressEnumerator tag"
+    ponytypeinconv=""
+    ponytypeout="GProxyAddressEnumerator"
+    structtype="GProxyAddressEnumerator"
+    structdef="GProxyAddressEnumerator"
+    argtype="GProxyAddressEnumerator tag"
+    rvtype="GProxyAddressEnumerator"/>
+
+  <typedef name="GActionEntry"
+    embed="embed"
+    ponytypein="GActionEntry tag"
+    ponytypeinconv=""
+    ponytypeout="GActionEntry"
+    structtype="GActionEntry"
+    structdef="GActionEntry"
+    argtype="GActionEntry tag"
+    rvtype="GActionEntry"/>
+
+  <typedef name="GSocketAddress"
+    embed="embed"
+    ponytypein="GSocketAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddress"
+    structtype="GSocketAddress"
+    structdef="GSocketAddress"
+    argtype="GSocketAddress tag"
+    rvtype="GSocketAddress"/>
+
+  <typedef name="GIOStream"
+    embed="embed"
+    ponytypein="GIOStream tag"
+    ponytypeinconv=""
+    ponytypeout="GIOStream"
+    structtype="GIOStream"
+    structdef="GIOStream"
+    argtype="GIOStream tag"
+    rvtype="GIOStream"/>
+
+  <typedef name="GPollFD"
+    embed="embed"
+    ponytypein="GPollFD tag"
+    ponytypeinconv=""
+    ponytypeout="GPollFD"
+    structtype="GPollFD"
+    structdef="GPollFD"
+    argtype="GPollFD tag"
+    rvtype="GPollFD"/>
+
+  <typedef name="GPollableInputStream"
+    embed="embed"
+    ponytypein="GPollableInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GPollableInputStream"
+    structtype="GPollableInputStream"
+    structdef="GPollableInputStream"
+    argtype="GPollableInputStream tag"
+    rvtype="GPollableInputStream"/>
+
+  <typedef name="GOptionGroup"
+    embed="embed"
+    ponytypein="GOptionGroup tag"
+    ponytypeinconv=""
+    ponytypeout="GOptionGroup"
+    structtype="GOptionGroup"
+    structdef="GOptionGroup"
+    argtype="GOptionGroup tag"
+    rvtype="GOptionGroup"/>
+
+  <typedef name="GError"
+    embed="embed"
+    ponytypein="GError tag"
+    ponytypeinconv=""
+    ponytypeout="GError"
+    structtype="GError"
+    structdef="GError"
+    argtype="GError tag"
+    rvtype="GError"/>
+
+  <typedef name="GProxy"
+    embed="embed"
+    ponytypein="GProxy tag"
+    ponytypeinconv=""
+    ponytypeout="GProxy"
+    structtype="GProxy"
+    structdef="GProxy"
+    argtype="GProxy tag"
+    rvtype="GProxy"/>
+
+  <typedef name="GMenuModel"
+    embed="embed"
+    ponytypein="GMenuModel tag"
+    ponytypeinconv=""
+    ponytypeout="GMenuModel"
+    structtype="GMenuModel"
+    structdef="GMenuModel"
+    argtype="GMenuModel tag"
+    rvtype="GMenuModel"/>
+
+  <typedef name="F64"
+    embed="var"
+    ponytypein="F64"
+    ponytypeinconv=""
+    ponytypeout="F64"
+    structtype="F64"
+    structdef="F64(0)"
+    argtype="F64"
+    rvtype="F64"/>
+
+  <typedef name="GVolume"
+    embed="embed"
+    ponytypein="GVolume tag"
+    ponytypeinconv=""
+    ponytypeout="GVolume"
+    structtype="GVolume"
+    structdef="GVolume"
+    argtype="GVolume tag"
+    rvtype="GVolume"/>
+
+  <typedef name="GInetAddressMask"
+    embed="embed"
+    ponytypein="GInetAddressMask tag"
+    ponytypeinconv=""
+    ponytypeout="GInetAddressMask"
+    structtype="GInetAddressMask"
+    structdef="GInetAddressMask"
+    argtype="GInetAddressMask tag"
+    rvtype="GInetAddressMask"/>
+
+  <typedef name="GInputMessage"
+    embed="embed"
+    ponytypein="GInputMessage tag"
+    ponytypeinconv=""
+    ponytypeout="GInputMessage"
+    structtype="GInputMessage"
+    structdef="GInputMessage"
+    argtype="GInputMessage tag"
+    rvtype="GInputMessage"/>
+
+  <typedef name="I32"
+    embed="var"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="Pointer[U32]"
+    embed="var"
+    ponytypein="Pointer[U32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U32]"
+    structtype="Pointer[U32]"
+    structdef="Pointer[U32]"
+    argtype="Pointer[U32] tag"
+    rvtype="Pointer[U32]"/>
+
+  <typedef name="GDBusServer"
+    embed="embed"
+    ponytypein="GDBusServer tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusServer"
+    structtype="GDBusServer"
+    structdef="GDBusServer"
+    argtype="GDBusServer tag"
+    rvtype="GDBusServer"/>
+
+  <typedef name="GConverter"
+    embed="embed"
+    ponytypein="GConverter tag"
+    ponytypeinconv=""
+    ponytypeout="GConverter"
+    structtype="GConverter"
+    structdef="GConverter"
+    argtype="GConverter tag"
+    rvtype="GConverter"/>
+
+  <typedef name="GLoadableIcon"
+    embed="embed"
+    ponytypein="GLoadableIcon tag"
+    ponytypeinconv=""
+    ponytypeout="GLoadableIcon"
+    structtype="GLoadableIcon"
+    structdef="GLoadableIcon"
+    argtype="GLoadableIcon tag"
+    rvtype="GLoadableIcon"/>
+
+  <typedef name="GSocketListener"
+    embed="embed"
+    ponytypein="GSocketListener tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketListener"
+    structtype="GSocketListener"
+    structdef="GSocketListener"
+    argtype="GSocketListener tag"
+    rvtype="GSocketListener"/>
+
+  <typedef name="GSocket"
+    embed="embed"
+    ponytypein="GSocket tag"
+    ponytypeinconv=""
+    ponytypeout="GSocket"
+    structtype="GSocket"
+    structdef="GSocket"
+    argtype="GSocket tag"
+    rvtype="GSocket"/>
+
+  <typedef name="U16"
+    embed="var"
+    ponytypein="U16"
+    ponytypeinconv=""
+    ponytypeout="U16"
+    structtype="U16"
+    structdef="U16(0)"
+    argtype="U16"
+    rvtype="U16"/>
+
+  <typedef name="GSubprocessLauncher"
+    embed="embed"
+    ponytypein="GSubprocessLauncher tag"
+    ponytypeinconv=""
+    ponytypeout="GSubprocessLauncher"
+    structtype="GSubprocessLauncher"
+    structdef="GSubprocessLauncher"
+    argtype="GSubprocessLauncher tag"
+    rvtype="GSubprocessLauncher"/>
+
+  <typedef name="None"
+    embed="embed"
+    ponytypein="None tag"
+    ponytypeinconv=""
+    ponytypeout="None"
+    structtype="None"
+    structdef="None"
+    argtype="None tag"
+    rvtype="None"/>
+
+  <typedef name="Anon"
+    embed="embed"
+    ponytypein="Anon tag"
+    ponytypeinconv=""
+    ponytypeout="Anon"
+    structtype="Anon"
+    structdef="Anon"
+    argtype="Anon tag"
+    rvtype="Anon"/>
+
+  <typedef name="GNativeVolumeMonitor"
+    embed="embed"
+    ponytypein="GNativeVolumeMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GNativeVolumeMonitor"
+    structtype="GNativeVolumeMonitor"
+    structdef="GNativeVolumeMonitor"
+    argtype="GNativeVolumeMonitor tag"
+    rvtype="GNativeVolumeMonitor"/>
+
+  <typedef name="GFileIcon"
+    embed="embed"
+    ponytypein="GFileIcon tag"
+    ponytypeinconv=""
+    ponytypeout="GFileIcon"
+    structtype="GFileIcon"
+    structdef="GFileIcon"
+    argtype="GFileIcon tag"
+    rvtype="GFileIcon"/>
+
+  <typedef name="GDBusObjectProxy"
+    embed="embed"
+    ponytypein="GDBusObjectProxy tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectProxy"
+    structtype="GDBusObjectProxy"
+    structdef="GDBusObjectProxy"
+    argtype="GDBusObjectProxy tag"
+    rvtype="GDBusObjectProxy"/>
+
+  <typedef name="GListStore"
+    embed="embed"
+    ponytypein="GListStore tag"
+    ponytypeinconv=""
+    ponytypeout="GListStore"
+    structtype="GListStore"
+    structdef="GListStore"
+    argtype="GListStore tag"
+    rvtype="GListStore"/>
+
+  <typedef name="GFileInputStream"
+    embed="embed"
+    ponytypein="GFileInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFileInputStream"
+    structtype="GFileInputStream"
+    structdef="GFileInputStream"
+    argtype="GFileInputStream tag"
+    rvtype="GFileInputStream"/>
+
+  <typedef name="GSettingsSchemaKey"
+    embed="embed"
+    ponytypein="GSettingsSchemaKey tag"
+    ponytypeinconv=""
+    ponytypeout="GSettingsSchemaKey"
+    structtype="GSettingsSchemaKey"
+    structdef="GSettingsSchemaKey"
+    argtype="GSettingsSchemaKey tag"
+    rvtype="GSettingsSchemaKey"/>
+
+  <typedef name="GDBusArgInfo"
+    embed="embed"
+    ponytypein="GDBusArgInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusArgInfo"
+    structtype="GDBusArgInfo"
+    structdef="GDBusArgInfo"
+    argtype="GDBusArgInfo tag"
+    rvtype="GDBusArgInfo"/>
+
+  <typedef name="GSocketService"
+    embed="embed"
+    ponytypein="GSocketService tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketService"
+    structtype="GSocketService"
+    structdef="GSocketService"
+    argtype="GSocketService tag"
+    rvtype="GSocketService"/>
+
+  <typedef name="GConverterOutputStream"
+    embed="embed"
+    ponytypein="GConverterOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GConverterOutputStream"
+    structtype="GConverterOutputStream"
+    structdef="GConverterOutputStream"
+    argtype="GConverterOutputStream tag"
+    rvtype="GConverterOutputStream"/>
+
+  <typedef name="GSettingsSchemaSource"
+    embed="embed"
+    ponytypein="GSettingsSchemaSource tag"
+    ponytypeinconv=""
+    ponytypeout="GSettingsSchemaSource"
+    structtype="GSettingsSchemaSource"
+    structdef="GSettingsSchemaSource"
+    argtype="GSettingsSchemaSource tag"
+    rvtype="GSettingsSchemaSource"/>
+
+  <typedef name="GNetworkService"
+    embed="embed"
+    ponytypein="GNetworkService tag"
+    ponytypeinconv=""
+    ponytypeout="GNetworkService"
+    structtype="GNetworkService"
+    structdef="GNetworkService"
+    argtype="GNetworkService tag"
+    rvtype="GNetworkService"/>
+
+  <typedef name="GByteArray"
+    embed="embed"
+    ponytypein="GByteArray tag"
+    ponytypeinconv=""
+    ponytypeout="GByteArray"
+    structtype="GByteArray"
+    structdef="GByteArray"
+    argtype="GByteArray tag"
+    rvtype="GByteArray"/>
+
+  <typedef name="GFileAttributeInfoList"
+    embed="embed"
+    ponytypein="GFileAttributeInfoList tag"
+    ponytypeinconv=""
+    ponytypeout="GFileAttributeInfoList"
+    structtype="GFileAttributeInfoList"
+    structdef="GFileAttributeInfoList"
+    argtype="GFileAttributeInfoList tag"
+    rvtype="GFileAttributeInfoList"/>
+
+  <typedef name="U32"
+    embed="var"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="GSettings"
+    embed="embed"
+    ponytypein="GSettings tag"
+    ponytypeinconv=""
+    ponytypeout="GSettings"
+    structtype="GSettings"
+    structdef="GSettings"
+    argtype="GSettings tag"
+    rvtype="GSettings"/>
+
+  <typedef name="GTlsDatabase"
+    embed="embed"
+    ponytypein="GTlsDatabase tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsDatabase"
+    structtype="GTlsDatabase"
+    structdef="GTlsDatabase"
+    argtype="GTlsDatabase tag"
+    rvtype="GTlsDatabase"/>
+
+  <typedef name="GParameter"
+    embed="embed"
+    ponytypein="GParameter tag"
+    ponytypeinconv=""
+    ponytypeout="GParameter"
+    structtype="GParameter"
+    structdef="GParameter"
+    argtype="GParameter tag"
+    rvtype="GParameter"/>
+
+  <typedef name="GTlsConnection"
+    embed="embed"
+    ponytypein="GTlsConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsConnection"
+    structtype="GTlsConnection"
+    structdef="GTlsConnection"
+    argtype="GTlsConnection tag"
+    rvtype="GTlsConnection"/>
+
+  <typedef name="GTcpWrapperConnection"
+    embed="embed"
+    ponytypein="GTcpWrapperConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpWrapperConnection"
+    structtype="GTcpWrapperConnection"
+    structdef="GTcpWrapperConnection"
+    argtype="GTcpWrapperConnection tag"
+    rvtype="GTcpWrapperConnection"/>
+
+  <typedef name="GDBusNodeInfo"
+    embed="embed"
+    ponytypein="GDBusNodeInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusNodeInfo"
+    structtype="GDBusNodeInfo"
+    structdef="GDBusNodeInfo"
+    argtype="GDBusNodeInfo tag"
+    rvtype="GDBusNodeInfo"/>
+
+  <typedef name="..."
+    embed="embed"
+    ponytypein="... tag"
+    ponytypeinconv=""
+    ponytypeout="..."
+    structtype="..."
+    structdef="..."
+    argtype="... tag"
+    rvtype="..."/>
+
+  <typedef name="GAppLaunchContext"
+    embed="embed"
+    ponytypein="GAppLaunchContext tag"
+    ponytypeinconv=""
+    ponytypeout="GAppLaunchContext"
+    structtype="GAppLaunchContext"
+    structdef="GAppLaunchContext"
+    argtype="GAppLaunchContext tag"
+    rvtype="GAppLaunchContext"/>
+
+  <typedef name="GIOModule"
+    embed="embed"
+    ponytypein="GIOModule tag"
+    ponytypeinconv=""
+    ponytypeout="GIOModule"
+    structtype="GIOModule"
+    structdef="GIOModule"
+    argtype="GIOModule tag"
+    rvtype="GIOModule"/>
+
+  <typedef name="GPowerProfileMonitor"
+    embed="embed"
+    ponytypein="GPowerProfileMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GPowerProfileMonitor"
+    structtype="GPowerProfileMonitor"
+    structdef="GPowerProfileMonitor"
+    argtype="GPowerProfileMonitor tag"
+    rvtype="GPowerProfileMonitor"/>
+
+  <typedef name="GOutputVector"
+    embed="embed"
+    ponytypein="GOutputVector tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputVector"
+    structtype="GOutputVector"
+    structdef="GOutputVector"
+    argtype="GOutputVector tag"
+    rvtype="GOutputVector"/>
+
+  <typedef name="GBufferedOutputStream"
+    embed="embed"
+    ponytypein="GBufferedOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedOutputStream"
+    structtype="GBufferedOutputStream"
+    structdef="GBufferedOutputStream"
+    argtype="GBufferedOutputStream tag"
+    rvtype="GBufferedOutputStream"/>
+
+  <typedef name="GTlsFileDatabase"
+    embed="embed"
+    ponytypein="GTlsFileDatabase tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsFileDatabase"
+    structtype="GTlsFileDatabase"
+    structdef="GTlsFileDatabase"
+    argtype="GTlsFileDatabase tag"
+    rvtype="GTlsFileDatabase"/>
+
+  <typedef name="GDtlsConnection"
+    embed="embed"
+    ponytypein="GDtlsConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GDtlsConnection"
+    structtype="GDtlsConnection"
+    structdef="GDtlsConnection"
+    argtype="GDtlsConnection tag"
+    rvtype="GDtlsConnection"/>
+
+  <typedef name="GFileIOStream"
+    embed="embed"
+    ponytypein="GFileIOStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFileIOStream"
+    structtype="GFileIOStream"
+    structdef="GFileIOStream"
+    argtype="GFileIOStream tag"
+    rvtype="GFileIOStream"/>
+
+  <typedef name="GQueue"
+    embed="embed"
+    ponytypein="GQueue tag"
+    ponytypeinconv=""
+    ponytypeout="GQueue"
+    structtype="GQueue"
+    structdef="GQueue"
+    argtype="GQueue tag"
+    rvtype="GQueue"/>
+
+  <typedef name="GDBusSubtreeVTable"
+    embed="embed"
+    ponytypein="GDBusSubtreeVTable tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusSubtreeVTable"
+    structtype="GDBusSubtreeVTable"
+    structdef="GDBusSubtreeVTable"
+    argtype="GDBusSubtreeVTable tag"
+    rvtype="GDBusSubtreeVTable"/>
+
+  <typedef name="GCredentials"
+    embed="embed"
+    ponytypein="GCredentials tag"
+    ponytypeinconv=""
+    ponytypeout="GCredentials"
+    structtype="GCredentials"
+    structdef="GCredentials"
+    argtype="GCredentials tag"
+    rvtype="GCredentials"/>
+
+  <typedef name="GPollableOutputStream"
+    embed="embed"
+    ponytypein="GPollableOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GPollableOutputStream"
+    structtype="GPollableOutputStream"
+    structdef="GPollableOutputStream"
+    argtype="GPollableOutputStream tag"
+    rvtype="GPollableOutputStream"/>
+
+  <typedef name="GBufferedInputStream"
+    embed="embed"
+    ponytypein="GBufferedInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedInputStream"
+    structtype="GBufferedInputStream"
+    structdef="GBufferedInputStream"
+    argtype="GBufferedInputStream tag"
+    rvtype="GBufferedInputStream"/>
+
+  <typedef name="GSocketConnectable"
+    embed="embed"
+    ponytypein="GSocketConnectable tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketConnectable"
+    structtype="GSocketConnectable"
+    structdef="GSocketConnectable"
+    argtype="GSocketConnectable tag"
+    rvtype="GSocketConnectable"/>
+
+  <typedef name="GTestDBus"
+    embed="embed"
+    ponytypein="GTestDBus tag"
+    ponytypeinconv=""
+    ponytypeout="GTestDBus"
+    structtype="GTestDBus"
+    structdef="GTestDBus"
+    argtype="GTestDBus tag"
+    rvtype="GTestDBus"/>
+
+  <typedef name="GInetAddress"
+    embed="embed"
+    ponytypein="GInetAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GInetAddress"
+    structtype="GInetAddress"
+    structdef="GInetAddress"
+    argtype="GInetAddress tag"
+    rvtype="GInetAddress"/>
+
+  <typedef name="GDBusInterfaceVTable"
+    embed="embed"
+    ponytypein="GDBusInterfaceVTable tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusInterfaceVTable"
+    structtype="GDBusInterfaceVTable"
+    structdef="GDBusInterfaceVTable"
+    argtype="GDBusInterfaceVTable tag"
+    rvtype="GDBusInterfaceVTable"/>
+
+  <typedef name="GDBusAuthObserver"
+    embed="embed"
+    ponytypein="GDBusAuthObserver tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusAuthObserver"
+    structtype="GDBusAuthObserver"
+    structdef="GDBusAuthObserver"
+    argtype="GDBusAuthObserver tag"
+    rvtype="GDBusAuthObserver"/>
+
+  <typedef name="GIcon"
+    embed="embed"
+    ponytypein="GIcon tag"
+    ponytypeinconv=""
+    ponytypeout="GIcon"
+    structtype="GIcon"
+    structdef="GIcon"
+    argtype="GIcon tag"
+    rvtype="GIcon"/>
+
+  <typedef name="GBytes"
+    embed="embed"
+    ponytypein="GBytes tag"
+    ponytypeinconv=""
+    ponytypeout="GBytes"
+    structtype="GBytes"
+    structdef="GBytes"
+    argtype="GBytes tag"
+    rvtype="GBytes"/>
+
+  <typedef name="GSocketClient"
+    embed="embed"
+    ponytypein="GSocketClient tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketClient"
+    structtype="GSocketClient"
+    structdef="GSocketClient"
+    argtype="GSocketClient tag"
+    rvtype="GSocketClient"/>
+
+  <typedef name="GDBusPropertyInfo"
+    embed="embed"
+    ponytypein="GDBusPropertyInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusPropertyInfo"
+    structtype="GDBusPropertyInfo"
+    structdef="GDBusPropertyInfo"
+    argtype="GDBusPropertyInfo tag"
+    rvtype="GDBusPropertyInfo"/>
+
+  <typedef name="GListModel"
+    embed="embed"
+    ponytypein="GListModel tag"
+    ponytypeinconv=""
+    ponytypeout="GListModel"
+    structtype="GListModel"
+    structdef="GListModel"
+    argtype="GListModel tag"
+    rvtype="GListModel"/>
+
+  <typedef name="GThreadedSocketService"
+    embed="embed"
+    ponytypein="GThreadedSocketService tag"
+    ponytypeinconv=""
+    ponytypeout="GThreadedSocketService"
+    structtype="GThreadedSocketService"
+    structdef="GThreadedSocketService"
+    argtype="GThreadedSocketService tag"
+    rvtype="GThreadedSocketService"/>
+
+  <typedef name="GDBusObjectManagerServer"
+    embed="embed"
+    ponytypein="GDBusObjectManagerServer tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectManagerServer"
+    structtype="GDBusObjectManagerServer"
+    structdef="GDBusObjectManagerServer"
+    argtype="GDBusObjectManagerServer tag"
+    rvtype="GDBusObjectManagerServer"/>
+
+  <typedef name="GPermission"
+    embed="embed"
+    ponytypein="GPermission tag"
+    ponytypeinconv=""
+    ponytypeout="GPermission"
+    structtype="GPermission"
+    structdef="GPermission"
+    argtype="GPermission tag"
+    rvtype="GPermission"/>
+
+  <typedef name="GMainContext"
+    embed="embed"
+    ponytypein="GMainContext tag"
+    ponytypeinconv=""
+    ponytypeout="GMainContext"
+    structtype="GMainContext"
+    structdef="GMainContext"
+    argtype="GMainContext tag"
+    rvtype="GMainContext"/>
+
+  <typedef name="GFileAttributeMatcher"
+    embed="embed"
+    ponytypein="GFileAttributeMatcher tag"
+    ponytypeinconv=""
+    ponytypeout="GFileAttributeMatcher"
+    structtype="GFileAttributeMatcher"
+    structdef="GFileAttributeMatcher"
+    argtype="GFileAttributeMatcher tag"
+    rvtype="GFileAttributeMatcher"/>
+
+  <typedef name="GResource"
+    embed="embed"
+    ponytypein="GResource tag"
+    ponytypeinconv=""
+    ponytypeout="GResource"
+    structtype="GResource"
+    structdef="GResource"
+    argtype="GResource tag"
+    rvtype="GResource"/>
+
+  <typedef name="GDBusMethodInfo"
+    embed="embed"
+    ponytypein="GDBusMethodInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusMethodInfo"
+    structtype="GDBusMethodInfo"
+    structdef="GDBusMethodInfo"
+    argtype="GDBusMethodInfo tag"
+    rvtype="GDBusMethodInfo"/>
+
+  <typedef name="GMenuItem"
+    embed="embed"
+    ponytypein="GMenuItem tag"
+    ponytypeinconv=""
+    ponytypeout="GMenuItem"
+    structtype="GMenuItem"
+    structdef="GMenuItem"
+    argtype="GMenuItem tag"
+    rvtype="GMenuItem"/>
+
+  <typedef name="Pointer[I32]"
+    embed="var"
+    ponytypein="Pointer[I32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[I32]"
+    structtype="Pointer[I32]"
+    structdef="Pointer[I32]"
+    argtype="Pointer[I32] tag"
+    rvtype="Pointer[I32]"/>
+
+  <typedef name="GSettingsSchema"
+    embed="embed"
+    ponytypein="GSettingsSchema tag"
+    ponytypeinconv=""
+    ponytypeout="GSettingsSchema"
+    structtype="GSettingsSchema"
+    structdef="GSettingsSchema"
+    argtype="GSettingsSchema tag"
+    rvtype="GSettingsSchema"/>
+
+  <typedef name="GApplicationCommandLine"
+    embed="embed"
+    ponytypein="GApplicationCommandLine tag"
+    ponytypeinconv=""
+    ponytypeout="GApplicationCommandLine"
+    structtype="GApplicationCommandLine"
+    structdef="GApplicationCommandLine"
+    argtype="GApplicationCommandLine tag"
+    rvtype="GApplicationCommandLine"/>
+
+  <typedef name="GDBusMenuModel"
+    embed="embed"
+    ponytypein="GDBusMenuModel tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusMenuModel"
+    structtype="GDBusMenuModel"
+    structdef="GDBusMenuModel"
+    argtype="GDBusMenuModel tag"
+    rvtype="GDBusMenuModel"/>
+
+  <typedef name="GDBusSignalInfo"
+    embed="embed"
+    ponytypein="GDBusSignalInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusSignalInfo"
+    structtype="GDBusSignalInfo"
+    structdef="GDBusSignalInfo"
+    argtype="GDBusSignalInfo tag"
+    rvtype="GDBusSignalInfo"/>
+
+  <typedef name="GNotification"
+    embed="embed"
+    ponytypein="GNotification tag"
+    ponytypeinconv=""
+    ponytypeout="GNotification"
+    structtype="GNotification"
+    structdef="GNotification"
+    argtype="GNotification tag"
+    rvtype="GNotification"/>
+
+  <typedef name="GFilenameCompleter"
+    embed="embed"
+    ponytypein="GFilenameCompleter tag"
+    ponytypeinconv=""
+    ponytypeout="GFilenameCompleter"
+    structtype="GFilenameCompleter"
+    structdef="GFilenameCompleter"
+    argtype="GFilenameCompleter tag"
+    rvtype="GFilenameCompleter"/>
+
+  <typedef name="GList"
+    embed="embed"
+    ponytypein="GList tag"
+    ponytypeinconv=""
+    ponytypeout="GList"
+    structtype="GList"
+    structdef="GList"
+    argtype="GList tag"
+    rvtype="GList"/>
+
+  <typedef name="GConverterInputStream"
+    embed="embed"
+    ponytypein="GConverterInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GConverterInputStream"
+    structtype="GConverterInputStream"
+    structdef="GConverterInputStream"
+    argtype="GConverterInputStream tag"
+    rvtype="GConverterInputStream"/>
+
+  <typedef name="GProxyResolver"
+    embed="embed"
+    ponytypein="GProxyResolver tag"
+    ponytypeinconv=""
+    ponytypeout="GProxyResolver"
+    structtype="GProxyResolver"
+    structdef="GProxyResolver"
+    argtype="GProxyResolver tag"
+    rvtype="GProxyResolver"/>
+
+  <typedef name="GTimeVal"
+    embed="embed"
+    ponytypein="GTimeVal tag"
+    ponytypeinconv=""
+    ponytypeout="GTimeVal"
+    structtype="GTimeVal"
+    structdef="GTimeVal"
+    argtype="GTimeVal tag"
+    rvtype="GTimeVal"/>
+
+  <typedef name="GActionGroup"
+    embed="embed"
+    ponytypein="GActionGroup tag"
+    ponytypeinconv=""
+    ponytypeout="GActionGroup"
+    structtype="GActionGroup"
+    structdef="GActionGroup"
+    argtype="GActionGroup tag"
+    rvtype="GActionGroup"/>
+
+  <typedef name="GSrvTarget"
+    embed="embed"
+    ponytypein="GSrvTarget tag"
+    ponytypeinconv=""
+    ponytypeout="GSrvTarget"
+    structtype="GSrvTarget"
+    structdef="GSrvTarget"
+    argtype="GSrvTarget tag"
+    rvtype="GSrvTarget"/>
+
+  <typedef name="GMenuAttributeIter"
+    embed="embed"
+    ponytypein="GMenuAttributeIter tag"
+    ponytypeinconv=""
+    ponytypeout="GMenuAttributeIter"
+    structtype="GMenuAttributeIter"
+    structdef="GMenuAttributeIter"
+    argtype="GMenuAttributeIter tag"
+    rvtype="GMenuAttributeIter"/>
+
+  <typedef name="GOutputMessage"
+    embed="embed"
+    ponytypein="GOutputMessage tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputMessage"
+    structtype="GOutputMessage"
+    structdef="GOutputMessage"
+    argtype="GOutputMessage tag"
+    rvtype="GOutputMessage"/>
+
+  <typedef name="GCancellable"
+    embed="embed"
+    ponytypein="GCancellable tag"
+    ponytypeinconv=""
+    ponytypeout="GCancellable"
+    structtype="GCancellable"
+    structdef="GCancellable"
+    argtype="GCancellable tag"
+    rvtype="GCancellable"/>
+
+  <typedef name="Pointer[U64]"
+    embed="var"
+    ponytypein="Pointer[U64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U64]"
+    structtype="Pointer[U64]"
+    structdef="Pointer[U64]"
+    argtype="Pointer[U64] tag"
+    rvtype="Pointer[U64]"/>
+
+  <typedef name="GSimpleAction"
+    embed="embed"
+    ponytypein="GSimpleAction tag"
+    ponytypeinconv=""
+    ponytypeout="GSimpleAction"
+    structtype="GSimpleAction"
+    structdef="GSimpleAction"
+    argtype="GSimpleAction tag"
+    rvtype="GSimpleAction"/>
+
+  <typedef name="GSimpleActionGroup"
+    embed="embed"
+    ponytypein="GSimpleActionGroup tag"
+    ponytypeinconv=""
+    ponytypeout="GSimpleActionGroup"
+    structtype="GSimpleActionGroup"
+    structdef="GSimpleActionGroup"
+    argtype="GSimpleActionGroup tag"
+    rvtype="GSimpleActionGroup"/>
+
+  <typedef name="GEmblem"
+    embed="embed"
+    ponytypein="GEmblem tag"
+    ponytypeinconv=""
+    ponytypeout="GEmblem"
+    structtype="GEmblem"
+    structdef="GEmblem"
+    argtype="GEmblem tag"
+    rvtype="GEmblem"/>
+
+  <typedef name="GFile"
+    embed="embed"
+    ponytypein="GFile tag"
+    ponytypeinconv=""
+    ponytypeout="GFile"
+    structtype="GFile"
+    structdef="GFile"
+    argtype="GFile tag"
+    rvtype="GFile"/>
+
+  <typedef name="GDateTime"
+    embed="embed"
+    ponytypein="GDateTime tag"
+    ponytypeinconv=""
+    ponytypeout="GDateTime"
+    structtype="GDateTime"
+    structdef="GDateTime"
+    argtype="GDateTime tag"
+    rvtype="GDateTime"/>
+
+  <typedef name="GString"
+    embed="embed"
+    ponytypein="GString tag"
+    ponytypeinconv=""
+    ponytypeout="GString"
+    structtype="GString"
+    structdef="GString"
+    argtype="GString tag"
+    rvtype="GString"/>
+
+  <typedef name="GStaticResource"
+    embed="embed"
+    ponytypein="GStaticResource tag"
+    ponytypeinconv=""
+    ponytypeout="GStaticResource"
+    structtype="GStaticResource"
+    structdef="GStaticResource"
+    argtype="GStaticResource tag"
+    rvtype="GStaticResource"/>
+
+  <typedef name="GResolver"
+    embed="embed"
+    ponytypein="GResolver tag"
+    ponytypeinconv=""
+    ponytypeout="GResolver"
+    structtype="GResolver"
+    structdef="GResolver"
+    argtype="GResolver tag"
+    rvtype="GResolver"/>
+
+  <typedef name="GDBusConnection"
+    embed="embed"
+    ponytypein="GDBusConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusConnection"
+    structtype="GDBusConnection"
+    structdef="GDBusConnection"
+    argtype="GDBusConnection tag"
+    rvtype="GDBusConnection"/>
+
+  <typedef name="GPtrArray"
+    embed="embed"
+    ponytypein="GPtrArray tag"
+    ponytypeinconv=""
+    ponytypeout="GPtrArray"
+    structtype="GPtrArray"
+    structdef="GPtrArray"
+    argtype="GPtrArray tag"
+    rvtype="GPtrArray"/>
+
+  <typedef name="GDtlsClientConnection"
+    embed="embed"
+    ponytypein="GDtlsClientConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GDtlsClientConnection"
+    structtype="GDtlsClientConnection"
+    structdef="GDtlsClientConnection"
+    argtype="GDtlsClientConnection tag"
+    rvtype="GDtlsClientConnection"/>
+
+  <typedef name="Pointer[None]"
+    embed="var"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="GValue"
+    embed="embed"
+    ponytypein="GValue tag"
+    ponytypeinconv=""
+    ponytypeout="GValue"
+    structtype="GValue"
+    structdef="GValue"
+    argtype="GValue tag"
+    rvtype="GValue"/>
+
+  <typedef name="GFilterOutputStream"
+    embed="embed"
+    ponytypein="GFilterOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterOutputStream"
+    structtype="GFilterOutputStream"
+    structdef="GFilterOutputStream"
+    argtype="GFilterOutputStream tag"
+    rvtype="GFilterOutputStream"/>
+
+  <typedef name="GSimpleProxyResolver"
+    embed="embed"
+    ponytypein="GSimpleProxyResolver tag"
+    ponytypeinconv=""
+    ponytypeout="GSimpleProxyResolver"
+    structtype="GSimpleProxyResolver"
+    structdef="GSimpleProxyResolver"
+    argtype="GSimpleProxyResolver tag"
+    rvtype="GSimpleProxyResolver"/>
+
+  <typedef name="GDatagramBased"
+    embed="embed"
+    ponytypein="GDatagramBased tag"
+    ponytypeinconv=""
+    ponytypeout="GDatagramBased"
+    structtype="GDatagramBased"
+    structdef="GDatagramBased"
+    argtype="GDatagramBased tag"
+    rvtype="GDatagramBased"/>
+
+  <typedef name="GIOChannel"
+    embed="embed"
+    ponytypein="GIOChannel tag"
+    ponytypeinconv=""
+    ponytypeout="GIOChannel"
+    structtype="GIOChannel"
+    structdef="GIOChannel"
+    argtype="GIOChannel tag"
+    rvtype="GIOChannel"/>
+
+  <typedef name="GDBusActionGroup"
+    embed="embed"
+    ponytypein="GDBusActionGroup tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusActionGroup"
+    structtype="GDBusActionGroup"
+    structdef="GDBusActionGroup"
+    argtype="GDBusActionGroup tag"
+    rvtype="GDBusActionGroup"/>
+
+  <typedef name="GDBusAnnotationInfo"
+    embed="embed"
+    ponytypein="GDBusAnnotationInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusAnnotationInfo"
+    structtype="GDBusAnnotationInfo"
+    structdef="GDBusAnnotationInfo"
+    argtype="GDBusAnnotationInfo tag"
+    rvtype="GDBusAnnotationInfo"/>
+
+  <typedef name="GAppInfo"
+    embed="embed"
+    ponytypein="GAppInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GAppInfo"
+    structtype="GAppInfo"
+    structdef="GAppInfo"
+    argtype="GAppInfo tag"
+    rvtype="GAppInfo"/>
+
+  <typedef name="GFileInfo"
+    embed="embed"
+    ponytypein="GFileInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GFileInfo"
+    structtype="GFileInfo"
+    structdef="GFileInfo"
+    argtype="GFileInfo tag"
+    rvtype="GFileInfo"/>
+
+  <typedef name="GZlibCompressor"
+    embed="embed"
+    ponytypein="GZlibCompressor tag"
+    ponytypeinconv=""
+    ponytypeout="GZlibCompressor"
+    structtype="GZlibCompressor"
+    structdef="GZlibCompressor"
+    argtype="GZlibCompressor tag"
+    rvtype="GZlibCompressor"/>
+
+  <typedef name="GSimplePermission"
+    embed="embed"
+    ponytypein="GSimplePermission tag"
+    ponytypeinconv=""
+    ponytypeout="GSimplePermission"
+    structtype="GSimplePermission"
+    structdef="GSimplePermission"
+    argtype="GSimplePermission tag"
+    rvtype="GSimplePermission"/>
+
+  <typedef name="GPowerProfileMonitorInterface"
+    embed="embed"
+    ponytypein="GPowerProfileMonitorInterface tag"
+    ponytypeinconv=""
+    ponytypeout="GPowerProfileMonitorInterface"
+    structtype="GPowerProfileMonitorInterface"
+    structdef="GPowerProfileMonitorInterface"
+    argtype="GPowerProfileMonitorInterface tag"
+    rvtype="GPowerProfileMonitorInterface"/>
+
+  <typedef name="GMenuLinkIter"
+    embed="embed"
+    ponytypein="GMenuLinkIter tag"
+    ponytypeinconv=""
+    ponytypeout="GMenuLinkIter"
+    structtype="GMenuLinkIter"
+    structdef="GMenuLinkIter"
+    argtype="GMenuLinkIter tag"
+    rvtype="GMenuLinkIter"/>
+
+  <typedef name="GProxyAddress"
+    embed="embed"
+    ponytypein="GProxyAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GProxyAddress"
+    structtype="GProxyAddress"
+    structdef="GProxyAddress"
+    argtype="GProxyAddress tag"
+    rvtype="GProxyAddress"/>
+
+  <typedef name="GIOModuleScope"
+    embed="embed"
+    ponytypein="GIOModuleScope tag"
+    ponytypeinconv=""
+    ponytypeout="GIOModuleScope"
+    structtype="GIOModuleScope"
+    structdef="GIOModuleScope"
+    argtype="GIOModuleScope tag"
+    rvtype="GIOModuleScope"/>
+
+  <typedef name="GDBusInterfaceInfo"
+    embed="embed"
+    ponytypein="GDBusInterfaceInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusInterfaceInfo"
+    structtype="GDBusInterfaceInfo"
+    structdef="GDBusInterfaceInfo"
+    argtype="GDBusInterfaceInfo tag"
+    rvtype="GDBusInterfaceInfo"/>
+
+  <typedef name="GIOSchedulerJob"
+    embed="embed"
+    ponytypein="GIOSchedulerJob tag"
+    ponytypeinconv=""
+    ponytypeout="GIOSchedulerJob"
+    structtype="GIOSchedulerJob"
+    structdef="GIOSchedulerJob"
+    argtype="GIOSchedulerJob tag"
+    rvtype="GIOSchedulerJob"/>
+
+  <typedef name="GSocketConnection"
+    embed="embed"
+    ponytypein="GSocketConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketConnection"
+    structtype="GSocketConnection"
+    structdef="GSocketConnection"
+    argtype="GSocketConnection tag"
+    rvtype="GSocketConnection"/>
+
+  <typedef name="GMount"
+    embed="embed"
+    ponytypein="GMount tag"
+    ponytypeinconv=""
+    ponytypeout="GMount"
+    structtype="GMount"
+    structdef="GMount"
+    argtype="GMount tag"
+    rvtype="GMount"/>
+
+  <typedef name="GDBusObject"
+    embed="embed"
+    ponytypein="GDBusObject tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObject"
+    structtype="GDBusObject"
+    structdef="GDBusObject"
+    argtype="GDBusObject tag"
+    rvtype="GDBusObject"/>
+
+  <typedef name="GOutputStream"
+    embed="embed"
+    ponytypein="GOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputStream"
+    structtype="GOutputStream"
+    structdef="GOutputStream"
+    argtype="GOutputStream tag"
+    rvtype="GOutputStream"/>
+
+  <typedef name="GNetworkAddress"
+    embed="embed"
+    ponytypein="GNetworkAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GNetworkAddress"
+    structtype="GNetworkAddress"
+    structdef="GNetworkAddress"
+    argtype="GNetworkAddress tag"
+    rvtype="GNetworkAddress"/>
+
+  <typedef name="GMemoryMonitorInterface"
+    embed="embed"
+    ponytypein="GMemoryMonitorInterface tag"
+    ponytypeinconv=""
+    ponytypeout="GMemoryMonitorInterface"
+    structtype="GMemoryMonitorInterface"
+    structdef="GMemoryMonitorInterface"
+    argtype="GMemoryMonitorInterface tag"
+    rvtype="GMemoryMonitorInterface"/>
+
+  <typedef name="GTlsClientConnection"
+    embed="embed"
+    ponytypein="GTlsClientConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsClientConnection"
+    structtype="GTlsClientConnection"
+    structdef="GTlsClientConnection"
+    argtype="GTlsClientConnection tag"
+    rvtype="GTlsClientConnection"/>
+
+  <typedef name="GTask"
+    embed="embed"
+    ponytypein="GTask tag"
+    ponytypeinconv=""
+    ponytypeout="GTask"
+    structtype="GTask"
+    structdef="GTask"
+    argtype="GTask tag"
+    rvtype="GTask"/>
+
+  <typedef name="GTlsCertificate"
+    embed="embed"
+    ponytypein="GTlsCertificate tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsCertificate"
+    structtype="GTlsCertificate"
+    structdef="GTlsCertificate"
+    argtype="GTlsCertificate tag"
+    rvtype="GTlsCertificate"/>
+
+  <typedef name="I16"
+    embed="var"
+    ponytypein="I16"
+    ponytypeinconv=""
+    ponytypeout="I16"
+    structtype="I16"
+    structdef="I16(0)"
+    argtype="I16"
+    rvtype="I16"/>
+
+  <typedef name="GDataOutputStream"
+    embed="embed"
+    ponytypein="GDataOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GDataOutputStream"
+    structtype="GDataOutputStream"
+    structdef="GDataOutputStream"
+    argtype="GDataOutputStream tag"
+    rvtype="GDataOutputStream"/>
+
+  <typedef name="GDBusObjectManagerClient"
+    embed="embed"
+    ponytypein="GDBusObjectManagerClient tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectManagerClient"
+    structtype="GDBusObjectManagerClient"
+    structdef="GDBusObjectManagerClient"
+    argtype="GDBusObjectManagerClient tag"
+    rvtype="GDBusObjectManagerClient"/>
+
+  <typedef name="GVolumeMonitor"
+    embed="embed"
+    ponytypein="GVolumeMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GVolumeMonitor"
+    structtype="GVolumeMonitor"
+    structdef="GVolumeMonitor"
+    argtype="GVolumeMonitor tag"
+    rvtype="GVolumeMonitor"/>
+
+  <typedef name="GObject"
+    embed="embed"
+    ponytypein="GObject tag"
+    ponytypeinconv=""
+    ponytypeout="GObject"
+    structtype="GObject"
+    structdef="GObject"
+    argtype="GObject tag"
+    rvtype="GObject"/>
+
+  <typedef name="GDrive"
+    embed="embed"
+    ponytypein="GDrive tag"
+    ponytypeinconv=""
+    ponytypeout="GDrive"
+    structtype="GDrive"
+    structdef="GDrive"
+    argtype="GDrive tag"
+    rvtype="GDrive"/>
+
+  <typedef name="GOptionEntry"
+    embed="embed"
+    ponytypein="GOptionEntry tag"
+    ponytypeinconv=""
+    ponytypeout="GOptionEntry"
+    structtype="GOptionEntry"
+    structdef="GOptionEntry"
+    argtype="GOptionEntry tag"
+    rvtype="GOptionEntry"/>
+
+  <typedef name="GDBusObjectSkeleton"
+    embed="embed"
+    ponytypein="GDBusObjectSkeleton tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectSkeleton"
+    structtype="GDBusObjectSkeleton"
+    structdef="GDBusObjectSkeleton"
+    argtype="GDBusObjectSkeleton tag"
+    rvtype="GDBusObjectSkeleton"/>
+
+  <typedef name="GFileAttributeInfo"
+    embed="embed"
+    ponytypein="GFileAttributeInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GFileAttributeInfo"
+    structtype="GFileAttributeInfo"
+    structdef="GFileAttributeInfo"
+    argtype="GFileAttributeInfo tag"
+    rvtype="GFileAttributeInfo"/>
+
+  <typedef name="GSettingsBackend"
+    embed="embed"
+    ponytypein="GSettingsBackend tag"
+    ponytypeinconv=""
+    ponytypeout="GSettingsBackend"
+    structtype="GSettingsBackend"
+    structdef="GSettingsBackend"
+    argtype="GSettingsBackend tag"
+    rvtype="GSettingsBackend"/>
+
+  <typedef name="GDataInputStream"
+    embed="embed"
+    ponytypein="GDataInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GDataInputStream"
+    structtype="GDataInputStream"
+    structdef="GDataInputStream"
+    argtype="GDataInputStream tag"
+    rvtype="GDataInputStream"/>
+
+  <typedef name="GMemoryInputStream"
+    embed="embed"
+    ponytypein="GMemoryInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GMemoryInputStream"
+    structtype="GMemoryInputStream"
+    structdef="GMemoryInputStream"
+    argtype="GMemoryInputStream tag"
+    rvtype="GMemoryInputStream"/>
+
+  <typedef name="GTcpConnection"
+    embed="embed"
+    ponytypein="GTcpConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpConnection"
+    structtype="GTcpConnection"
+    structdef="GTcpConnection"
+    argtype="GTcpConnection tag"
+    rvtype="GTcpConnection"/>
+
+  <typedef name="GMountOperation"
+    embed="embed"
+    ponytypein="GMountOperation tag"
+    ponytypeinconv=""
+    ponytypeout="GMountOperation"
+    structtype="GMountOperation"
+    structdef="GMountOperation"
+    argtype="GMountOperation tag"
+    rvtype="GMountOperation"/>
+
+  <typedef name="GPropertyAction"
+    embed="embed"
+    ponytypein="GPropertyAction tag"
+    ponytypeinconv=""
+    ponytypeout="GPropertyAction"
+    structtype="GPropertyAction"
+    structdef="GPropertyAction"
+    argtype="GPropertyAction tag"
+    rvtype="GPropertyAction"/>
+
+  <typedef name="GTlsPassword"
+    embed="embed"
+    ponytypein="GTlsPassword tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsPassword"
+    structtype="GTlsPassword"
+    structdef="GTlsPassword"
+    argtype="GTlsPassword tag"
+    rvtype="GTlsPassword"/>
+
+  <typedef name="GDBusErrorEntry"
+    embed="embed"
+    ponytypein="GDBusErrorEntry tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusErrorEntry"
+    structtype="GDBusErrorEntry"
+    structdef="GDBusErrorEntry"
+    argtype="GDBusErrorEntry tag"
+    rvtype="GDBusErrorEntry"/>
+
+  <typedef name="Valisttag"
+    embed="embed"
+    ponytypein="Valisttag tag"
+    ponytypeinconv=""
+    ponytypeout="Valisttag"
+    structtype="Valisttag"
+    structdef="Valisttag"
+    argtype="Valisttag tag"
+    rvtype="Valisttag"/>
+
+  <typedef name="GZlibDecompressor"
+    embed="embed"
+    ponytypein="GZlibDecompressor tag"
+    ponytypeinconv=""
+    ponytypeout="GZlibDecompressor"
+    structtype="GZlibDecompressor"
+    structdef="GZlibDecompressor"
+    argtype="GZlibDecompressor tag"
+    rvtype="GZlibDecompressor"/>
+
+  <typedef name="GVariantType"
+    embed="embed"
+    ponytypein="GVariantType tag"
+    ponytypeinconv=""
+    ponytypeout="GVariantType"
+    structtype="GVariantType"
+    structdef="GVariantType"
+    argtype="GVariantType tag"
+    rvtype="GVariantType"/>
+
+  <typedef name="GVfs"
+    embed="embed"
+    ponytypein="GVfs tag"
+    ponytypeinconv=""
+    ponytypeout="GVfs"
+    structtype="GVfs"
+    structdef="GVfs"
+    argtype="GVfs tag"
+    rvtype="GVfs"/>
+
+  <typedef name="GDBusMessage"
+    embed="embed"
+    ponytypein="GDBusMessage tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusMessage"
+    structtype="GDBusMessage"
+    structdef="GDBusMessage"
+    argtype="GDBusMessage tag"
+    rvtype="GDBusMessage"/>
+
+  <typedef name="GDBusInterface"
+    embed="embed"
+    ponytypein="GDBusInterface tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusInterface"
+    structtype="GDBusInterface"
+    structdef="GDBusInterface"
+    argtype="GDBusInterface tag"
+    rvtype="GDBusInterface"/>
+
+  <typedef name="GTlsServerConnection"
+    embed="embed"
+    ponytypein="GTlsServerConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsServerConnection"
+    structtype="GTlsServerConnection"
+    structdef="GTlsServerConnection"
+    argtype="GTlsServerConnection tag"
+    rvtype="GTlsServerConnection"/>
+
+  <typedef name="U64"
+    embed="var"
+    ponytypein="U64"
+    ponytypeinconv=""
+    ponytypeout="U64"
+    structtype="U64"
+    structdef="U64(0)"
+    argtype="U64"
+    rvtype="U64"/>
+
+  <typedef name="GTypeClass"
+    embed="embed"
+    ponytypein="GTypeClass tag"
+    ponytypeinconv=""
+    ponytypeout="GTypeClass"
+    structtype="GTypeClass"
+    structdef="GTypeClass"
+    argtype="GTypeClass tag"
+    rvtype="GTypeClass"/>
+
+  <typedef name="GDBusMethodInvocation"
+    embed="embed"
+    ponytypein="GDBusMethodInvocation tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusMethodInvocation"
+    structtype="GDBusMethodInvocation"
+    structdef="GDBusMethodInvocation"
+    argtype="GDBusMethodInvocation tag"
+    rvtype="GDBusMethodInvocation"/>
+
+  <typedef name="GSource"
+    embed="embed"
+    ponytypein="GSource tag"
+    ponytypeinconv=""
+    ponytypeout="GSource"
+    structtype="GSource"
+    structdef="GSource"
+    argtype="GSource tag"
+    rvtype="GSource"/>
+
+  <typedef name="GNetworkMonitor"
+    embed="embed"
+    ponytypein="GNetworkMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GNetworkMonitor"
+    structtype="GNetworkMonitor"
+    structdef="GNetworkMonitor"
+    argtype="GNetworkMonitor tag"
+    rvtype="GNetworkMonitor"/>
+
+  <typedef name="GSeekable"
+    embed="embed"
+    ponytypein="GSeekable tag"
+    ponytypeinconv=""
+    ponytypeout="GSeekable"
+    structtype="GSeekable"
+    structdef="GSeekable"
+    argtype="GSeekable tag"
+    rvtype="GSeekable"/>
+
+  <typedef name="GAsyncInitable"
+    embed="embed"
+    ponytypein="GAsyncInitable tag"
+    ponytypeinconv=""
+    ponytypeout="GAsyncInitable"
+    structtype="GAsyncInitable"
+    structdef="GAsyncInitable"
+    argtype="GAsyncInitable tag"
+    rvtype="GAsyncInitable"/>
+
+  <typedef name="GInputStream"
+    embed="embed"
+    ponytypein="GInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GInputStream"
+    structtype="GInputStream"
+    structdef="GInputStream"
+    argtype="GInputStream tag"
+    rvtype="GInputStream"/>
+
+  <typedef name="GCharsetConverter"
+    embed="embed"
+    ponytypein="GCharsetConverter tag"
+    ponytypeinconv=""
+    ponytypeout="GCharsetConverter"
+    structtype="GCharsetConverter"
+    structdef="GCharsetConverter"
+    argtype="GCharsetConverter tag"
+    rvtype="GCharsetConverter"/>
+
+  <typedef name="GIOExtensionPoint"
+    embed="embed"
+    ponytypein="GIOExtensionPoint tag"
+    ponytypeinconv=""
+    ponytypeout="GIOExtensionPoint"
+    structtype="GIOExtensionPoint"
+    structdef="GIOExtensionPoint"
+    argtype="GIOExtensionPoint tag"
+    rvtype="GIOExtensionPoint"/>
+
+  <typedef name="GMemoryMonitor"
+    embed="embed"
+    ponytypein="GMemoryMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GMemoryMonitor"
+    structtype="GMemoryMonitor"
+    structdef="GMemoryMonitor"
+    argtype="GMemoryMonitor tag"
+    rvtype="GMemoryMonitor"/>
+
+  <typedef name="GRemoteActionGroup"
+    embed="embed"
+    ponytypein="GRemoteActionGroup tag"
+    ponytypeinconv=""
+    ponytypeout="GRemoteActionGroup"
+    structtype="GRemoteActionGroup"
+    structdef="GRemoteActionGroup"
+    argtype="GRemoteActionGroup tag"
+    rvtype="GRemoteActionGroup"/>
+
+  <typedef name="GAction"
+    embed="embed"
+    ponytypein="GAction tag"
+    ponytypeinconv=""
+    ponytypeout="GAction"
+    structtype="GAction"
+    structdef="GAction"
+    argtype="GAction tag"
+    rvtype="GAction"/>
+
+  <typedef name="GEmblemedIcon"
+    embed="embed"
+    ponytypein="GEmblemedIcon tag"
+    ponytypeinconv=""
+    ponytypeout="GEmblemedIcon"
+    structtype="GEmblemedIcon"
+    structdef="GEmblemedIcon"
+    argtype="GEmblemedIcon tag"
+    rvtype="GEmblemedIcon"/>
+
+  <typedef name="GDBusProxy"
+    embed="embed"
+    ponytypein="GDBusProxy tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusProxy"
+    structtype="GDBusProxy"
+    structdef="GDBusProxy"
+    argtype="GDBusProxy tag"
+    rvtype="GDBusProxy"/>
+
+  <typedef name="GListModelInterface"
+    embed="embed"
+    ponytypein="GListModelInterface tag"
+    ponytypeinconv=""
+    ponytypeout="GListModelInterface"
+    structtype="GListModelInterface"
+    structdef="GListModelInterface"
+    argtype="GListModelInterface tag"
+    rvtype="GListModelInterface"/>
+
+  <typedef name="GThemedIcon"
+    embed="embed"
+    ponytypein="GThemedIcon tag"
+    ponytypeinconv=""
+    ponytypeout="GThemedIcon"
+    structtype="GThemedIcon"
+    structdef="GThemedIcon"
+    argtype="GThemedIcon tag"
+    rvtype="GThemedIcon"/>
+
+  <typedef name="GSList"
+    embed="embed"
+    ponytypein="GSList tag"
+    ponytypeinconv=""
+    ponytypeout="GSList"
+    structtype="GSList"
+    structdef="GSList"
+    argtype="GSList tag"
+    rvtype="GSList"/>
+
+  <typedef name="U8"
+    embed="var"
+    ponytypein="U8"
+    ponytypeinconv=""
+    ponytypeout="U8"
+    structtype="U8"
+    structdef="U8(0)"
+    argtype="U8"
+    rvtype="U8"/>
+
+  <typedef name="GIOExtension"
+    embed="embed"
+    ponytypein="GIOExtension tag"
+    ponytypeinconv=""
+    ponytypeout="GIOExtension"
+    structtype="GIOExtension"
+    structdef="GIOExtension"
+    argtype="GIOExtension tag"
+    rvtype="GIOExtension"/>
+
+  <typedef name="GAppInfoMonitor"
+    embed="embed"
+    ponytypein="GAppInfoMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GAppInfoMonitor"
+    structtype="GAppInfoMonitor"
+    structdef="GAppInfoMonitor"
+    argtype="GAppInfoMonitor tag"
+    rvtype="GAppInfoMonitor"/>
+
+  <typedef name="GBytesIcon"
+    embed="embed"
+    ponytypein="GBytesIcon tag"
+    ponytypeinconv=""
+    ponytypeout="GBytesIcon"
+    structtype="GBytesIcon"
+    structdef="GBytesIcon"
+    argtype="GBytesIcon tag"
+    rvtype="GBytesIcon"/>
+
+  <typedef name="GDBusInterfaceSkeleton"
+    embed="embed"
+    ponytypein="GDBusInterfaceSkeleton tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusInterfaceSkeleton"
+    structtype="GDBusInterfaceSkeleton"
+    structdef="GDBusInterfaceSkeleton"
+    argtype="GDBusInterfaceSkeleton tag"
+    rvtype="GDBusInterfaceSkeleton"/>
+</typedefs>
+

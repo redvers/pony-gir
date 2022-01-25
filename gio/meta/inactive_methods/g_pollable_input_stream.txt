@@ -1,0 +1,5 @@
+g_pollable_input_stream_can_poll
+g_pollable_input_stream_create_source
+g_pollable_input_stream_get_type
+g_pollable_input_stream_is_readable
+g_pollable_input_stream_read_nonblocking

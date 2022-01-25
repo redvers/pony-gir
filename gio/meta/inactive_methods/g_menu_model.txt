@@ -1,0 +1,9 @@
+g_menu_model_get_item_attribute
+g_menu_model_get_item_attribute_value
+g_menu_model_get_item_link
+g_menu_model_get_n_items
+g_menu_model_get_type
+g_menu_model_is_mutable
+g_menu_model_items_changed
+g_menu_model_iterate_item_attributes
+g_menu_model_iterate_item_links

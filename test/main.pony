@@ -27,6 +27,33 @@ actor Main
   new create(env: Env) =>
     env.out.print("Oof")
 
+		let app: GtkApplication = GtkApplication.gnew("me.evil.widgetfactory", 32)
+    /*
+
+  app = gtk_application_new ("org.gtk.WidgetFactory4", G_APPLICATION_NON_UNIQUE);
+
+  g_action_map_add_action_entries (G_ACTION_MAP (app),
+                                   app_entries, G_N_ELEMENTS (app_entries),
+                                   app);
+  action = g_action_map_lookup_action (G_ACTION_MAP (app), "wine");
+  g_simple_action_set_enabled (G_SIMPLE_ACTION (action), FALSE);
+
+  g_signal_connect (app, "activate", G_CALLBACK (activate), NULL);
+
+  g_application_add_main_option (G_APPLICATION (app), "version", 0, 0, G_OPTION_ARG_NONE, "Show program version", NULL);
+
+  g_signal_connect (app, "handle-local-options", G_CALLBACK (local_options), NULL);
+  status = g_application_run (G_APPLICATION (app), argc, argv);
+  g_object_unref (app);
+
+  return status;
+}
+*/
+
+
+
+
+    /*
     Gtk.gtk_init(Pointer[I32], Pointer[Pointer[U8]])
     let window: GtkWindow = GtkWindow.gnew(0)
     let button: GtkButton = GtkButton.new_with_label("Hello World")
@@ -45,4 +72,4 @@ actor Main
 
 
 
-
+*/

@@ -1,0 +1,10 @@
+g_file_monitor
+g_file_monitor_cancel
+g_file_monitor_directory
+g_file_monitor_emit_event
+g_file_monitor_event_get_type
+g_file_monitor_file
+g_file_monitor_flags_get_type
+g_file_monitor_get_type
+g_file_monitor_is_cancelled
+g_file_monitor_set_rate_limit

@@ -1,0 +1,2 @@
+g_tls_file_database_get_type
+g_tls_file_database_new

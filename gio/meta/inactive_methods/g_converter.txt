@@ -1,0 +1,5 @@
+g_converter_convert
+g_converter_flags_get_type
+g_converter_get_type
+g_converter_reset
+g_converter_result_get_type
