@@ -636,7 +636,7 @@
   <renderuse name="X509_get_signature_info" render="0"/>
   <renderuse name="X509_get_signature_nid" render="0"/>
   <renderuse name="X509_get_signature_type" render="0"/>
-  <renderuse name="X509_get_subject_name" render="0"/>
+  <renderuse name="X509_get_subject_name" render="1"/>
   <renderuse name="X509_get_version" render="0"/>
   <renderuse name="X509_get_X509_PUBKEY" render="0"/>
   <renderuse name="X509_gmtime_adj" render="0"/>
@@ -712,7 +712,7 @@
   <renderuse name="X509_NAME_get_entry" render="0"/>
   <renderuse name="X509_NAME_get_index_by_NID" render="0"/>
   <renderuse name="X509_NAME_get_index_by_OBJ" render="0"/>
-  <renderuse name="X509_NAME_get_text_by_NID" render="0"/>
+  <renderuse name="X509_NAME_get_text_by_NID" render="1"/>
   <renderuse name="X509_NAME_get_text_by_OBJ" render="0"/>
   <renderuse name="X509_NAME_hash" render="0"/>
   <renderuse name="X509_NAME_hash_old" render="0"/>

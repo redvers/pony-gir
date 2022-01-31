@@ -11629,7 +11629,7 @@
      <useargs>
        <usearg name="name" type="X509namest"/>
        <usearg name="nid" type="I32"/>
-       <usearg name="buf" type="String"/>
+       <usearg name="buf" type="Pointer[U8]"/>
        <usearg name="len" type="I32"/>
      </useargs>
   </use>

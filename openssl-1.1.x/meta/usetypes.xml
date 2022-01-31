@@ -2931,13 +2931,13 @@
 
   <typedef name="X509namest"
     embed="embed"
-    ponytypein="X509namest tag"
+    ponytypein="NullablePointer[X509Name] tag"
     ponytypeinconv=""
-    ponytypeout="X509namest"
-    structtype="X509namest"
-    structdef="X509namest"
-    argtype="X509namest tag"
-    rvtype="X509namest"/>
+    ponytypeout="NullablePointer[X509Name]"
+    structtype="NullablePointer[X509Name]"
+    structdef="NullablePointer[X509Name].none()"
+    argtype="NullablePointer[X509Name] tag"
+    rvtype="NullablePointer[X509Name]"/>
 
   <typedef name="IPAddressFamilyst"
     embed="embed"

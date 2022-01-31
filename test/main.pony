@@ -37,7 +37,19 @@ bF3Iiu/C
     let rd: I32 = BIO.pony_BIO_write(bio, ponyiocert.cpointer(), ponyiocert.size().i32())
     if (rd != ponyiocert.size().i32()) then error end
 
-    PEM.pony_PEM_read_bio_X509(bio, NullablePointer[X509].none(), Pointer[None], Pointer[None])
+    let cert: NullablePointer[X509] = PEM.pony_PEM_read_bio_X509(bio, NullablePointer[X509].none(), Pointer[None], Pointer[None])
+    let sub: NullablePointer[X509Name] = X509.pony_X509_get_subject_name(cert)
+    let len: I32 = X509.pony_X509_NAME_get_text_by_NID(sub, I32(13), Pointer[U8], I32(0))
+    let str: String ref = recover String(len.usize()) end
+    X509.pony_X509_NAME_get_text_by_NID(sub, I32(13), str.cstring(), len+1)
+    str.recalc()
+    if (str.size() != len.usize()) then error end
+
+    env.out.print("Subject!: " + str.clone())
+
+
+
+
     else
       env.out.print("Error in here")
     end

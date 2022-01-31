@@ -199,7 +199,7 @@
 
   </struct>
 
-  <struct name="X509namest" id="_206" size="" align="" fid="f7" lineno="126">
+  <struct name="X509Name" id="_206" size="" align="" fid="f7" lineno="126">
 
   </struct>
 
