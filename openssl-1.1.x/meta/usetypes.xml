@@ -1901,13 +1901,13 @@
 
   <typedef name="Biost"
     embed="embed"
-    ponytypein="Biost tag"
+    ponytypein="BIO tag"
     ponytypeinconv=""
-    ponytypeout="Biost"
-    structtype="Biost"
-    structdef="Biost"
-    argtype="Biost tag"
-    rvtype="Biost"/>
+    ponytypeout="BIO"
+    structtype="BIO"
+    structdef="BIO"
+    argtype="BIO tag"
+    rvtype="BIO"/>
 
   <typedef name="EDIPartyNamest"
     embed="embed"
@@ -2051,13 +2051,13 @@
 
   <typedef name="Biomethodst"
     embed="embed"
-    ponytypein="Biomethodst tag"
+    ponytypein="BIOMethod tag"
     ponytypeinconv=""
-    ponytypeout="Biomethodst"
-    structtype="Biomethodst"
-    structdef="Biomethodst"
-    argtype="Biomethodst tag"
-    rvtype="Biomethodst"/>
+    ponytypeout="BIOMethod"
+    structtype="BIOMethod"
+    structdef="BIOMethod"
+    argtype="BIOMethod tag"
+    rvtype="BIOMethod"/>
 
   <typedef name="LhashstSSLSESSION"
     embed="embed"

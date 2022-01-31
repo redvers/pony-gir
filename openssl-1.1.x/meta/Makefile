@@ -1,3 +1,4 @@
 codegenstructs:
-	rm -f ../../test/openssl-1.1.x/*
-	sh -x mkstruct.sh _12159 GtkMisc
+	rm -f ../../test/Crypto/*
+	sh -x mkstruct.sh _136 BIO BIO
+	sh -x mkstruct.sh _1025 BIOMethod BIOMethod

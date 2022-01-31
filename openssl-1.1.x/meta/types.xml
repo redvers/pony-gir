@@ -271,13 +271,13 @@
 
   <typedef name="Biost"
     embed="embed"
-    ponytypein="Biost tag"
+    ponytypein="BIO tag"
     ponytypeinconv=""
-    ponytypeout="Biost"
-    structtype="Biost"
-    structdef="Biost"
-    argtype="Biost tag"
-    rvtype="Biost"/>
+    ponytypeout="BIO"
+    structtype="BIO"
+    structdef="BIO"
+    argtype="BIO tag"
+    rvtype="BIO"/>
 
   <typedef name="Asn1stringst"
     embed="embed"

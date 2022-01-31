@@ -2,7 +2,7 @@
 <castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
 <xi:include href="./types.xml"/>
 <xi:include href="./renderstructs.xml"/>
-<xi:include href="./ossl.xml"/>
+<xi:include href="./../../castxml-results/ossl.xml"/>
                     <structs>
                       <struct name="Anon" id="_41" size="64" align="32" fid="f1" lineno="155">
     <field name="__val" id="_7629" type="Pointer[I32]" fieldid="_9712" offset="0" fid="f1" line="155"/>
@@ -46,7 +46,7 @@
 
   </struct>
 
-  <struct name="Biost" id="_136" size="" align="" fid="f7" lineno="79">
+  <struct name="BIO" id="_136" size="" align="" fid="f7" lineno="79">
 
   </struct>
 
@@ -639,7 +639,7 @@
 
   </struct>
 
-  <struct name="Biomethodst" id="_1025" size="" align="" fid="f61" lineno="250">
+  <struct name="BIOMethod" id="_1025" size="" align="" fid="f61" lineno="250">
 
   </struct>
 
