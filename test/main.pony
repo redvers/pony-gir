@@ -32,6 +32,13 @@ qGC9qgInlv9t+SNfExIlvGoPVe02Rz4l3xvYkUNOiAxVXy24c1658nAmHCQXYJNT
 bF3Iiu/C
 -----END CERTIFICATE-----
 """
-
-    let bio: BIO = BIO.pony_BIO_new(BIO.pony_BIO_s_mem())
+    try
+    let bio: NullablePointer[BIO] = BIO.pony_BIO_new(BIO.pony_BIO_s_mem())
     let rd: I32 = BIO.pony_BIO_write(bio, ponyiocert.cpointer(), ponyiocert.size().i32())
+    if (rd != ponyiocert.size().i32()) then error end
+
+    PEM.pony_PEM_read_bio_X509(bio, NullablePointer[X509].none(), Pointer[None], Pointer[None])
+    else
+      env.out.print("Error in here")
+    end
+

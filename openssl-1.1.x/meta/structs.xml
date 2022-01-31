@@ -178,7 +178,7 @@
 
   </struct>
 
-  <struct name="X509st" id="_196" size="" align="" fid="f7" lineno="121">
+  <struct name="X509" id="_196" size="" align="" fid="f7" lineno="121">
 
   </struct>
 

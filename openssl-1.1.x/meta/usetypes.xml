@@ -21,7 +21,7 @@
 
   <typedef name="Array[String]"
     embed="var"
-    ponytypein="Array[String]"
+    ponytypein="Pointer[Pointer[U8]] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
     structtype="Pointer[Pointer[U8]]"
@@ -1901,13 +1901,13 @@
 
   <typedef name="Biost"
     embed="embed"
-    ponytypein="BIO tag"
+    ponytypein="NullablePointer[BIO] tag"
     ponytypeinconv=""
-    ponytypeout="BIO"
-    structtype="BIO"
-    structdef="BIO"
-    argtype="BIO tag"
-    rvtype="BIO"/>
+    ponytypeout="NullablePointer[BIO]"
+    structtype="NullablePointer[BIO]"
+    structdef="NullablePointer[BIO].none()"
+    argtype="NullablePointer[BIO] tag"
+    rvtype="NullablePointer[BIO]"/>
 
   <typedef name="EDIPartyNamest"
     embed="embed"
@@ -2051,13 +2051,13 @@
 
   <typedef name="Biomethodst"
     embed="embed"
-    ponytypein="BIOMethod tag"
+    ponytypein="NullablePointer[BIOMethod] tag"
     ponytypeinconv=""
-    ponytypeout="BIOMethod"
-    structtype="BIOMethod"
-    structdef="BIOMethod"
-    argtype="BIOMethod tag"
-    rvtype="BIOMethod"/>
+    ponytypeout="NullablePointer[BIOMethod]"
+    structtype="NullablePointer[BIOMethod]"
+    structdef="NullablePointer[BIOMethod].none()"
+    argtype="NullablePointer[BIOMethod] tag"
+    rvtype="NullablePointer[BIOMethod]"/>
 
   <typedef name="LhashstSSLSESSION"
     embed="embed"
@@ -2651,13 +2651,13 @@
 
   <typedef name="X509st"
     embed="embed"
-    ponytypein="X509st tag"
+    ponytypein="NullablePointer[X509] tag"
     ponytypeinconv=""
-    ponytypeout="X509st"
-    structtype="X509st"
-    structdef="X509st"
-    argtype="X509st tag"
-    rvtype="X509st"/>
+    ponytypeout="NullablePointer[X509]"
+    structtype="NullablePointer[X509]"
+    structdef="NullablePointer[X509].none()"
+    argtype="NullablePointer[X509] tag"
+    rvtype="NullablePointer[X509]"/>
 
   <typedef name="U64"
     embed="var"
