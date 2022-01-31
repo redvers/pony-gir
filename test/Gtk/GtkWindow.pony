@@ -129,8 +129,8 @@ use @gtk_window_get_group[NullablePointer[GtkWindowGroup]](window: GtkWindow tag
 use @gtk_window_has_group[I32](window: GtkWindow tag)
 use @gtk_window_reshow_with_initial_size[None](window: GtkWindow tag)
 use @gtk_window_get_window_type[I32](window: GtkWindow tag)
-use @gtk_window_get_application[NullablePointer[GtkApplication]](window: GtkWindow tag)
-use @gtk_window_set_application[None](window: GtkWindow tag, application: NullablePointer[GtkApplication] tag)
+use @gtk_window_get_application[GtkApplication](window: GtkWindow tag)
+use @gtk_window_set_application[None](window: GtkWindow tag, application: GtkApplication tag)
 use @gtk_window_set_has_resize_grip[None](window: GtkWindow tag, value: I32)
 use @gtk_window_get_has_resize_grip[I32](window: GtkWindow tag)
 use @gtk_window_resize_grip_is_visible[I32](window: GtkWindow tag)
@@ -493,10 +493,10 @@ struct GtkWindow
   fun get_window_type(): I32 =>
     @gtk_window_get_window_type(this)
 
-  fun get_application(): NullablePointer[GtkApplication] =>
+  fun get_application(): GtkApplication =>
     @gtk_window_get_application(this)
 
-  fun set_application(application: NullablePointer[GtkApplication] tag): None =>
+  fun set_application(application: GtkApplication tag): None =>
     @gtk_window_set_application(this, application)
 
   fun set_has_resize_grip(value: I32): None =>

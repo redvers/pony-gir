@@ -28,8 +28,21 @@ actor Main
     env.out.print("Oof")
 
 		let app: GtkApplication = GtkApplication.gnew("me.evil.widgetfactory", 32)
-    app.gobject().signal_connect_data("activate", G_CALLBACK (activate), NULL);
+    app.signal_connect[WidgetDemo]("activate", @{(gtkapp: GtkApplication, widgetdemo: WidgetDemo): None => widgetdemo.activate(gtkapp) }, WidgetDemo, Pointer[None], I32(0))
     app.gapplication().g_application_run(I32(0), Pointer[Pointer[U8]])
+
+    let q: Array[GtkWindow] = Array[GtkWindow]
+
+
+
+class WidgetDemo
+  var gtkapplication: GtkApplication = GtkApplication
+  new create() =>
+    None
+
+
+  fun ref activate(gtkapplication': GtkApplication): None =>
+    gtkapplication = gtkapplication'
     /*
 
   app = gtk_application_new ("org.gtk.WidgetFactory4", G_APPLICATION_NON_UNIQUE);

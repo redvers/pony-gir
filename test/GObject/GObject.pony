@@ -2,6 +2,7 @@ use "../Glib"
 
 use "lib:glib-2.0"
 
+use @g_signal_connect_data[U64](instance: GObject tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: Any, destroydata: Pointer[None] tag, connectflags: I32)
 use @g_signal_accumulator_first_wins[I32](ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: GValue tag, handlerreturn: GValue tag, dummy: Pointer[None] tag)
 use @g_signal_accumulator_true_handled[I32](ihint: NullablePointer[GSignalInvocationHint] tag, returnaccu: GValue tag, handlerreturn: GValue tag, dummy: Pointer[None] tag)
 use @g_signal_add_emission_hook[U64](signalid: U32, detail: U32, hookfunc: Pointer[None] tag, hookdata: Pointer[None] tag, datadestroy: Pointer[None] tag)
@@ -9,7 +10,6 @@ use @g_signal_chain_from_overridden[None](instanceandparams: GValue tag, returnv
 use @g_signal_chain_from_overridden_handler[None](instance: Pointer[None] tag, ...)
 use @g_signal_connect_closure[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, closure: NullablePointer[GClosure] tag, after: I32)
 use @g_signal_connect_closure_by_id[U64](instance: Pointer[None] tag, signalid: U32, detail: U32, closure: NullablePointer[GClosure] tag, after: I32)
-use @g_signal_connect_data[U64](instance: GObject tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32)
 use @g_signal_connect_object[U64](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, gobject: Pointer[None] tag, connectflags: I32)
 use @g_signal_emit[None](instance: Pointer[None] tag, signalid: U32, detail: U32, ...)
 use @g_signal_emit_by_name[None](instance: Pointer[None] tag, detailedsignal: Pointer[U8] tag, ...)
@@ -171,9 +171,6 @@ struct GObject
 
   fun connect_closure(instance: Pointer[None] tag, detailedsignal: String, closure: NullablePointer[GClosure] tag, after: I32): U64 =>
     @g_signal_connect_closure(instance, detailedsignal.cstring(), closure, after)
-
-  fun signal_connect_data(detailedsignal: String, chandler: GCallback, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
-    @g_signal_connect_data(this, detailedsignal.cstring(), chandler, data, destroydata, connectflags)
 
   fun handler_block(instance: Pointer[None] tag, handlerid: U64): None =>
     @g_signal_handler_block(instance, handlerid)
@@ -351,4 +348,9 @@ struct GObject
 
   fun bind_property_with_closures(source: Pointer[None] tag, sourceproperty: String, target: Pointer[None] tag, targetproperty: String, flags: I32, transformto: NullablePointer[GClosure] tag, transformfrom: NullablePointer[GClosure] tag): NullablePointer[GBinding] =>
     @g_object_bind_property_with_closures(source, sourceproperty.cstring(), target, targetproperty.cstring(), flags, transformto, transformfrom)
+
+
+  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(GObject, A): None}, data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
+    @g_signal_connect_data(this, detailedsignal.cstring(), chandler, data, destroydata, connectflags)
+
 

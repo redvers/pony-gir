@@ -4,6 +4,7 @@
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
 <inherits>
+  <inherit name="GObject" ponyfn="gobject" path="parent.parent_instance"/>
   <inherit name="GApplication" ponyfn="gapplication" path="parent"/>
 </inherits>
 <renders>

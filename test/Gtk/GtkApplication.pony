@@ -19,6 +19,7 @@ use "lib:cairo"
 use "lib:gdk_pixbuf-2.0"
 use "lib:glib-2.0"
 
+use @g_signal_connect_data[U64](instance: GtkApplication tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: Any, destroydata: Pointer[None] tag, connectflags: I32)
 use @gtk_application_get_type[U64]()
 use @gtk_application_new[GtkApplication](applicationid: Pointer[U8] tag, flags: I32)
 use @gtk_application_add_window[None](application: GtkApplication tag, window: GtkWindow tag)
@@ -127,4 +128,9 @@ struct GtkApplication
     @gtk_application_inhibit_flags_get_type()
 
 
+  fun ref gobject(): GObject => parent.parent_instance
   fun ref gapplication(): GApplication => parent
+  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(GtkApplication, A): None}, data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
+    @g_signal_connect_data(this, detailedsignal.cstring(), chandler, data, destroydata, connectflags)
+
+
