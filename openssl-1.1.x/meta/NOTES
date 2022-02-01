@@ -1,0 +1,47 @@
+  <Typedef id="_109" name="ASN1_INTEGER" type="_7643" context="_1" location="f7:40" file="f7" line="40"/>		Yes, integer is the same as the rest
+  <Typedef id="_110" name="ASN1_ENUMERATED" type="_7644" context="_1" location="f7:41" file="f7" line="41"/>
+  <Typedef id="_111" name="ASN1_BIT_STRING" type="_7644" context="_1" location="f7:42" file="f7" line="42"/>
+  <Typedef id="_112" name="ASN1_OCTET_STRING" type="_7644" context="_1" location="f7:43" file="f7" line="43"/>
+  <Typedef id="_113" name="ASN1_PRINTABLESTRING" type="_7644" context="_1" location="f7:44" file="f7" line="44"/>
+  <Typedef id="_114" name="ASN1_T61STRING" type="_7644" context="_1" location="f7:45" file="f7" line="45"/>
+  <Typedef id="_115" name="ASN1_IA5STRING" type="_7644" context="_1" location="f7:46" file="f7" line="46"/>
+  <Typedef id="_116" name="ASN1_GENERALSTRING" type="_7644" context="_1" location="f7:47" file="f7" line="47"/>
+  <Typedef id="_117" name="ASN1_UNIVERSALSTRING" type="_7644" context="_1" location="f7:48" file="f7" line="48"/>
+  <Typedef id="_118" name="ASN1_BMPSTRING" type="_7644" context="_1" location="f7:49" file="f7" line="49"/>
+  <Typedef id="_119" name="ASN1_UTCTIME" type="_7644" context="_1" location="f7:50" file="f7" line="50"/>
+  <Typedef id="_120" name="ASN1_TIME" type="_7644" context="_1" location="f7:51" file="f7" line="51"/>
+  <Typedef id="_121" name="ASN1_GENERALIZEDTIME" type="_7644" context="_1" location="f7:52" file="f7" line="52"/>
+  <Typedef id="_122" name="ASN1_VISIBLESTRING" type="_7644" context="_1" location="f7:53" file="f7" line="53"/>
+  <Typedef id="_123" name="ASN1_UTF8STRING" type="_7644" context="_1" location="f7:54" file="f7" line="54"/>
+  <Typedef id="_124" name="ASN1_STRING" type="_7644" context="_1" location="f7:55" file="f7" line="55"/>
+
+  <Typedef id="_125" name="ASN1_BOOLEAN" type="_7627" context="_1" location="f7:56" file="f7" line="56"/>
+  <Typedef id="_126" name="ASN1_NULL" type="_7627" context="_1" location="f7:57" file="f7" line="57"/>
+
+  <Typedef id="_128" name="ASN1_OBJECT" type="_7645" context="_1" location="f7:60" file="f7" line="60"/>
+
+  <Typedef id="_130" name="ASN1_ITEM" type="_7653" context="_1" location="f7:62" file="f7" line="62"/>
+
+  <Typedef id="_132" name="ASN1_PCTX" type="_7654" context="_1" location="f7:63" file="f7" line="63"/>
+
+  <Typedef id="_134" name="ASN1_SCTX" type="_7655" context="_1" location="f7:64" file="f7" line="64"/>
+
+  <Typedef id="_1428" name="ASN1_ENCODING" type="_8135" context="_1" location="f6:168" file="f6" line="168"/>
+
+  <Typedef id="_1430" name="ASN1_STRING_TABLE" type="_8141" context="_1" location="f6:192" file="f6" line="192"/>
+
+  <Typedef id="_1460" name="ASN1_TEMPLATE" type="_8153" context="_1" location="f6:210" file="f6" line="210"/>
+
+  <Typedef id="_1462" name="ASN1_TLC" type="_8160" context="_1" location="f6:211" file="f6" line="211"/>
+
+  <Typedef id="_1464" name="ASN1_VALUE" type="_8161" context="_1" location="f6:213" file="f6" line="213"/>
+
+  <Typedef id="_1467" name="ASN1_ITEM_EXP" type="_130c" context="_1" location="f6:318" file="f6" line="318"/>
+
+  <Typedef id="_1553" name="ASN1_TYPE" type="_8185" context="_1" location="f6:473" file="f6" line="473"/>
+
+  <Typedef id="_1582" name="ASN1_SEQUENCE_ANY" type="_8192" context="_1" location="f6:477" file="f6" line="477"/>
+
+  <Typedef id="_4481" name="ASN1_ADB_TABLE" type="_8875" context="_1" location="f8:481" file="f8" line="481"/>
+
+  <Typedef id="_4483" name="ASN1_ADB" type="_8883" context="_1" location="f8:482" file="f8" line="482"/>

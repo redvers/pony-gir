@@ -13,9 +13,9 @@
     <field name="rem" id="_7633" type="I64" fieldid="_7628" offset="64" fid="f5" line="274"/>
   </struct>
 
-  <struct name="Asn1stringst" id="_108" size="192" align="64" fid="f6" lineno="146">
+  <struct name="ASN1String" id="_108" size="192" align="64" fid="f6" lineno="146">
     <field name="length" id="_7639" type="I32" fieldid="_7627" offset="0" fid="f6" line="147"/>
-    <field name="type" id="_7640" type="I32" fieldid="_7627" offset="32" fid="f6" line="148"/>
+    <field name="otype" id="_7640" type="I32" fieldid="_7627" offset="32" fid="f6" line="148"/>
     <field name="data" id="_7641" type="String" fieldid="_7997" offset="64" fid="f6" line="149"/>
     <field name="flags" id="_7642" type="I64" fieldid="_7628" offset="128" fid="f6" line="155"/>
   </struct>
@@ -50,7 +50,7 @@
 
   </struct>
 
-  <struct name="Bignumst" id="_138" size="" align="" fid="f7" lineno="80">
+  <struct name="BIGNum" id="_138" size="" align="" fid="f7" lineno="80">
 
   </struct>
 
@@ -707,7 +707,7 @@
   </struct>
 
   <struct name="Asn1typest" id="_1552" size="128" align="64" fid="f6" lineno="444">
-    <field name="type" id="_8182" type="I32" fieldid="_7627" offset="0" fid="f6" line="445"/>
+    <field name="otype" id="_8182" type="I32" fieldid="_7627" offset="0" fid="f6" line="445"/>
     <field name="value" id="_8184" type="None" fieldid="_9845" offset="64" fid="f6" line="472"/>
   </struct>
 
@@ -726,7 +726,7 @@
   </struct>
 
   <struct name="Objnamest" id="_1891" size="192" align="64" fid="f67" lineno="35">
-    <field name="type" id="_8268" type="I32" fieldid="_7627" offset="0" fid="f67" line="36"/>
+    <field name="otype" id="_8268" type="I32" fieldid="_7627" offset="0" fid="f67" line="36"/>
     <field name="alias" id="_8269" type="I32" fieldid="_7627" offset="32" fid="f67" line="37"/>
     <field name="name" id="_8270" type="String" fieldid="_7635" offset="64" fid="f67" line="38"/>
     <field name="data" id="_8271" type="String" fieldid="_7635" offset="128" fid="f67" line="39"/>
@@ -932,7 +932,7 @@
   </struct>
 
   <struct name="Netscapecertificatesequence" id="_3247" size="128" align="64" fid="f12" lineno="272">
-    <field name="type" id="_8608" type="Asn1objectst" fieldid="_8205" offset="0" fid="f12" line="273"/>
+    <field name="otype" id="_8608" type="Asn1objectst" fieldid="_8205" offset="0" fid="f12" line="273"/>
     <field name="certs" id="_8609" type="StackstX509" fieldid="_8552" offset="64" fid="f12" line="274"/>
   </struct>
 
@@ -1078,7 +1078,7 @@
     <field name="length" id="_8765" type="I64" fieldid="_7628" offset="64" fid="f81" line="115"/>
     <field name="state" id="_8766" type="I32" fieldid="_7627" offset="128" fid="f81" line="119"/>
     <field name="detached" id="_8767" type="I32" fieldid="_7627" offset="160" fid="f81" line="120"/>
-    <field name="type" id="_8768" type="Asn1objectst" fieldid="_8205" offset="192" fid="f81" line="121"/>
+    <field name="otype" id="_8768" type="Asn1objectst" fieldid="_8205" offset="192" fid="f81" line="121"/>
     <field name="d" id="_8770" type="None" fieldid="_10040" offset="256" fid="f81" line="143"/>
   </struct>
 
@@ -1252,7 +1252,7 @@
   </struct>
 
   <struct name="GENERALNAMEst" id="_4785" size="128" align="64" fid="f13" lineno="123">
-    <field name="type" id="_9038" type="I32" fieldid="_7627" offset="0" fid="f13" line="133"/>
+    <field name="otype" id="_9038" type="I32" fieldid="_7627" offset="0" fid="f13" line="133"/>
     <field name="d" id="_9040" type="None" fieldid="_10120" offset="64" fid="f13" line="152"/>
   </struct>
 
@@ -1274,7 +1274,7 @@
   </struct>
 
   <struct name="DISTPOINTNAMEst" id="_4877" size="192" align="64" fid="f13" lineno="172">
-    <field name="type" id="_9067" type="I32" fieldid="_7627" offset="0" fid="f13" line="173"/>
+    <field name="otype" id="_9067" type="I32" fieldid="_7627" offset="0" fid="f13" line="173"/>
     <field name="name" id="_9069" type="None" fieldid="_10134" offset="64" fid="f13" line="177"/>
     <field name="dpname" id="_9070" type="X509namest" fieldid="_8526" offset="128" fid="f13" line="179"/>
   </struct>
@@ -1375,7 +1375,7 @@
   </struct>
 
   <struct name="ASIdOrRangest" id="_5374" size="128" align="64" fid="f13" lineno="732">
-    <field name="type" id="_9216" type="I32" fieldid="_7627" offset="0" fid="f13" line="733"/>
+    <field name="otype" id="_9216" type="I32" fieldid="_7627" offset="0" fid="f13" line="733"/>
     <field name="u" id="_9218" type="None" fieldid="_10173" offset="64" fid="f13" line="737"/>
   </struct>
 
@@ -1384,7 +1384,7 @@
   </struct>
 
   <struct name="ASIdentifierChoicest" id="_5405" size="128" align="64" fid="f13" lineno="746">
-    <field name="type" id="_9227" type="I32" fieldid="_7627" offset="0" fid="f13" line="747"/>
+    <field name="otype" id="_9227" type="I32" fieldid="_7627" offset="0" fid="f13" line="747"/>
     <field name="u" id="_9229" type="None" fieldid="_10180" offset="64" fid="f13" line="751"/>
   </struct>
 
@@ -1399,7 +1399,7 @@
   </struct>
 
   <struct name="IPAddressOrRangest" id="_5431" size="128" align="64" fid="f13" lineno="770">
-    <field name="type" id="_9244" type="I32" fieldid="_7627" offset="0" fid="f13" line="771"/>
+    <field name="otype" id="_9244" type="I32" fieldid="_7627" offset="0" fid="f13" line="771"/>
     <field name="u" id="_9246" type="None" fieldid="_10183" offset="64" fid="f13" line="775"/>
   </struct>
 
@@ -1408,7 +1408,7 @@
   </struct>
 
   <struct name="IPAddressChoicest" id="_5462" size="128" align="64" fid="f13" lineno="784">
-    <field name="type" id="_9255" type="I32" fieldid="_7627" offset="0" fid="f13" line="785"/>
+    <field name="otype" id="_9255" type="I32" fieldid="_7627" offset="0" fid="f13" line="785"/>
     <field name="u" id="_9257" type="None" fieldid="_10190" offset="64" fid="f13" line="789"/>
   </struct>
 

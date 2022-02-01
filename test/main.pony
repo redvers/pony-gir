@@ -1,3 +1,4 @@
+use "format"
 use "Crypto"
 
 actor Main
@@ -38,19 +39,78 @@ bF3Iiu/C
     if (rd != ponyiocert.size().i32()) then error end
 
     let cert: NullablePointer[X509] = PEM.pony_PEM_read_bio_X509(bio, NullablePointer[X509].none(), Pointer[None], Pointer[None])
-    let sub: NullablePointer[X509Name] = X509.pony_X509_get_subject_name(cert)
+    let subject: NullablePointer[X509Name] = X509.pony_X509_get_subject_name(cert)
+    env.out.print("Subject: " + x509name_to_string(subject)?)
+
+    let issuername: NullablePointer[X509Name] = X509.pony_X509_get_issuer_name(cert)
+    env.out.print("Subject: " + x509name_to_string(issuername)?)
+
+    let subjectkeyid: Array[U8] val = asn1string_copy_to_array(X509.pony_X509_get0_subject_key_id(cert))?
+		env.out.print("SubjectKeyID: " + _format_colon_hex(subjectkeyid)?)
+
+    let authoritykeyid: Array[U8] val = asn1string_copy_to_array(X509.pony_X509_get0_authority_key_id(cert))?
+		env.out.print("AuthorityKeyID: " + _format_colon_hex(authoritykeyid)?)
+
+    let sn: NullablePointer[ASN1String] = X509.pony_X509_get0_serialNumber(cert)
+    env.out.print("SerialNumber: " + integer_to_bignum_to_stringhex(sn)?)
+    env.out.print("SerialNumber: " + integer_to_bignum_to_stringdec(sn)?)
+
+    else
+      env.out.print("Error in here")
+    end
+
+
+
+
+  fun integer_to_bignum_to_stringhex(sn: NullablePointer[ASN1String]): String val ? =>
+    if (sn.is_none()) then error end
+    let bignum: NullablePointer[BIGNum] = ASN1String.pony_ASN1_INTEGER_to_BN(sn, NullablePointer[BIGNum].none())
+    if (bignum.is_none()) then error end
+    BIGNum.pony_BN_bn2hex(bignum)
+
+  fun integer_to_bignum_to_stringdec(sn: NullablePointer[ASN1String]): String val ? =>
+    if (sn.is_none()) then error end
+    let bignum: NullablePointer[BIGNum] = ASN1String.pony_ASN1_INTEGER_to_BN(sn, NullablePointer[BIGNum].none())
+    if (bignum.is_none()) then error end
+    BIGNum.pony_BN_bn2dec(bignum)
+
+
+
+
+  fun asn1string_copy_to_array(asn1str: NullablePointer[ASN1String]): Array[U8] val ? =>
+    if (asn1str.is_none()) then error end
+    recover val
+      let len: I32 = ASN1String.pony_ASN1_STRING_length(asn1str)
+      let osslptr: Pointer[U8] ref = ASN1String.pony_ASN1_STRING_get0_data(asn1str)
+
+      (Array[U8].from_cpointer(osslptr, len.usize())).clone()
+    end
+
+
+  fun _format_colon_hex(raw: Array[U8] val): String ? =>
+    var string: String trn = recover trn String end
+    var cnt: USize = 0
+    while (cnt < raw.size()) do
+      if (cnt > 0) then
+        string.append(":")
+      end
+      string.append(Format.int[U8](raw(cnt)? where width = 2, fmt = FormatHexBare, prec = 2))
+      cnt = cnt + 1
+    end
+    consume string
+
+
+
+
+
+  fun x509name_to_string(sub: NullablePointer[X509Name]): String val ? =>
     let len: I32 = X509.pony_X509_NAME_get_text_by_NID(sub, I32(13), Pointer[U8], I32(0))
     let str: String ref = recover String(len.usize()) end
     X509.pony_X509_NAME_get_text_by_NID(sub, I32(13), str.cstring(), len+1)
     str.recalc()
     if (str.size() != len.usize()) then error end
-
-    env.out.print("Subject!: " + str.clone())
-
+    str.clone()
 
 
 
-    else
-      env.out.print("Error in here")
-    end
 

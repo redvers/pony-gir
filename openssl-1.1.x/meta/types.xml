@@ -281,13 +281,13 @@
 
   <typedef name="Asn1stringst"
     embed="embed"
-    ponytypein="Asn1stringst tag"
+    ponytypein="NullablePointer[ASN1String] tag"
     ponytypeinconv=""
-    ponytypeout="Asn1stringst"
-    structtype="Asn1stringst"
-    structdef="Asn1stringst"
-    argtype="Asn1stringst tag"
-    rvtype="Asn1stringst"/>
+    ponytypeout="NullablePointer[ASN1String]"
+    structtype="NullablePointer[ASN1String]"
+    structdef="NullablePointer[ASN1String]"
+    argtype="NullablePointer[ASN1String] tag"
+    rvtype="NullablePointer[ASN1String]"/>
 
   <typedef name="Pointer[U8]"
     embed="var"

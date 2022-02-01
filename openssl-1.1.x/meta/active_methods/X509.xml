@@ -593,17 +593,17 @@
   <renderuse name="X509_find_by_subject" render="0"/>
   <renderuse name="X509_free" render="0"/>
   <renderuse name="X509_get0_authority_issuer" render="0"/>
-  <renderuse name="X509_get0_authority_key_id" render="0"/>
+  <renderuse name="X509_get0_authority_key_id" render="1"/>
   <renderuse name="X509_get0_authority_serial" render="0"/>
   <renderuse name="X509_get0_extensions" render="0"/>
-  <renderuse name="X509_get0_notAfter" render="0"/>
-  <renderuse name="X509_get0_notBefore" render="0"/>
+  <renderuse name="X509_get0_notAfter" render="1"/>
+  <renderuse name="X509_get0_notBefore" render="1"/>
   <renderuse name="X509_get0_pubkey" render="0"/>
   <renderuse name="X509_get0_pubkey_bitstr" render="0"/>
   <renderuse name="X509_get0_reject_objects" render="0"/>
-  <renderuse name="X509_get0_serialNumber" render="0"/>
+  <renderuse name="X509_get0_serialNumber" render="1"/>
   <renderuse name="X509_get0_signature" render="0"/>
-  <renderuse name="X509_get0_subject_key_id" render="0"/>
+  <renderuse name="X509_get0_subject_key_id" render="1"/>
   <renderuse name="X509_get0_tbs_sigalg" render="0"/>
   <renderuse name="X509_get0_trust_objects" render="0"/>
   <renderuse name="X509_get0_uids" render="0"/>
@@ -621,10 +621,10 @@
   <renderuse name="X509_get_ext_by_NID" render="0"/>
   <renderuse name="X509_get_ext_by_OBJ" render="0"/>
   <renderuse name="X509_get_ext_count" render="0"/>
-  <renderuse name="X509_get_ext_d2i" render="0"/>
+  <renderuse name="X509_get_ext_d2i" render="1"/>
   <renderuse name="X509_get_extended_key_usage" render="0"/>
   <renderuse name="X509_get_extension_flags" render="0"/>
-  <renderuse name="X509_get_issuer_name" render="0"/>
+  <renderuse name="X509_get_issuer_name" render="1"/>
   <renderuse name="X509_get_key_usage" render="0"/>
   <renderuse name="X509_getm_notAfter" render="0"/>
   <renderuse name="X509_getm_notBefore" render="0"/>

@@ -1393,7 +1393,7 @@
      rv="StackstASN1TYPE">
      <useargs>
        <usearg name="a" type="StackstASN1TYPE"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -1414,7 +1414,7 @@
      rv="StackstASN1TYPE">
      <useargs>
        <usearg name="a" type="StackstASN1TYPE"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -1451,7 +1451,7 @@
      rv="Asn1typest">
      <useargs>
        <usearg name="a" type="Asn1typest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -1921,7 +1921,7 @@
      ponyname="pony_ASN1_STRING_get0_data"
      fid="f6"
      lineno="555"
-     rv="String">
+     rv="Pointer[U8]">
      <useargs>
        <usearg name="x" type="Asn1stringst"/>
      </useargs>
@@ -1949,7 +1949,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2063,7 +2063,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2130,7 +2130,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2271,7 +2271,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2338,7 +2338,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2375,7 +2375,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2412,7 +2412,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2449,7 +2449,7 @@
      rv="Pointer[I32]">
      <useargs>
        <usearg name="a" type="Pointer[I32]"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2486,7 +2486,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2545,7 +2545,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2582,7 +2582,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2619,7 +2619,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2656,7 +2656,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2693,7 +2693,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2730,7 +2730,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2767,7 +2767,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2804,7 +2804,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2841,7 +2841,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -2878,7 +2878,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="a" type="Asn1stringst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -3357,7 +3357,7 @@
      <useargs>
        <usearg name="xnew" type="Pointer[None]"/>
        <usearg name="d2i" type="Pointer[None]"/>
-       <usearg name="in" type="IOFILE"/>
+       <usearg name="oin" type="IOFILE"/>
        <usearg name="x" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -3368,7 +3368,7 @@
      rv="Pointer[None]">
      <useargs>
        <usearg name="it" type="ASN1ITEMst"/>
-       <usearg name="in" type="IOFILE"/>
+       <usearg name="oin" type="IOFILE"/>
        <usearg name="x" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -3412,7 +3412,7 @@
      rv="I32">
      <useargs>
        <usearg name="out" type="Array[String]"/>
-       <usearg name="in" type="Asn1stringst"/>
+       <usearg name="oin" type="Asn1stringst"/>
      </useargs>
   </use>
   <use id="_1820" name="ASN1_d2i_bio"
@@ -3423,7 +3423,7 @@
      <useargs>
        <usearg name="xnew" type="Pointer[None]"/>
        <usearg name="d2i" type="Pointer[None]"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="x" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -3434,7 +3434,7 @@
      rv="Pointer[None]">
      <useargs>
        <usearg name="it" type="ASN1ITEMst"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="x" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -3678,7 +3678,7 @@
      rv="I32">
      <useargs>
        <usearg name="out" type="Asn1stringst"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="len" type="I32"/>
        <usearg name="inform" type="I32"/>
        <usearg name="mask" type="U64"/>
@@ -3691,7 +3691,7 @@
      rv="I32">
      <useargs>
        <usearg name="out" type="Asn1stringst"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="len" type="I32"/>
        <usearg name="inform" type="I32"/>
        <usearg name="mask" type="U64"/>
@@ -3706,7 +3706,7 @@
      rv="Asn1stringst">
      <useargs>
        <usearg name="out" type="Asn1stringst"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inlen" type="I32"/>
        <usearg name="inform" type="I32"/>
        <usearg name="nid" type="I32"/>
@@ -3767,7 +3767,7 @@
      rv="ASN1VALUEst">
      <useargs>
        <usearg name="val" type="ASN1VALUEst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
        <usearg name="it" type="ASN1ITEMst"/>
      </useargs>
@@ -4052,7 +4052,7 @@
      <useargs>
        <usearg name="out" type="Biost"/>
        <usearg name="val" type="ASN1VALUEst"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="flags" type="I32"/>
        <usearg name="it" type="ASN1ITEMst"/>
      </useargs>
@@ -4065,7 +4065,7 @@
      <useargs>
        <usearg name="out" type="Biost"/>
        <usearg name="val" type="ASN1VALUEst"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="flags" type="I32"/>
        <usearg name="hdr" type="String"/>
        <usearg name="it" type="ASN1ITEMst"/>
@@ -4104,7 +4104,7 @@
      lineno="877"
      rv="I32">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="out" type="Biost"/>
        <usearg name="flags" type="I32"/>
      </useargs>
@@ -4115,7 +4115,7 @@
      lineno="878"
      rv="I32">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="out" type="Biost"/>
      </useargs>
   </use>
@@ -4395,7 +4395,7 @@
      rv="I32">
      <useargs>
        <usearg name="pval" type="ASN1VALUEst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
        <usearg name="it" type="ASN1ITEMst"/>
        <usearg name="tag" type="I32"/>
@@ -4469,7 +4469,7 @@
      rv="None">
      <useargs>
        <usearg name="out" type="String"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="siz" type="U64"/>
      </useargs>
   </use>
@@ -4995,7 +4995,7 @@
      rv="Rsast">
      <useargs>
        <usearg name="a" type="Rsast"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -5016,7 +5016,7 @@
      rv="Rsast">
      <useargs>
        <usearg name="a" type="Rsast"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -5053,7 +5053,7 @@
      rv="Rsapssparamsst">
      <useargs>
        <usearg name="a" type="Rsapssparamsst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -5090,7 +5090,7 @@
      rv="Rsaoaepparamsst">
      <useargs>
        <usearg name="a" type="Rsaoaepparamsst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9216,7 +9216,7 @@
      rv="X509algorst">
      <useargs>
        <usearg name="a" type="X509algorst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9237,7 +9237,7 @@
      rv="StackstX509ALGOR">
      <useargs>
        <usearg name="a" type="StackstX509ALGOR"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9274,7 +9274,7 @@
      rv="X509valst">
      <useargs>
        <usearg name="a" type="X509valst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9311,7 +9311,7 @@
      rv="X509pubkeyst">
      <useargs>
        <usearg name="a" type="X509pubkeyst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9479,7 +9479,7 @@
      rv="X509sigst">
      <useargs>
        <usearg name="a" type="X509sigst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9538,7 +9538,7 @@
      rv="X509reqinfost">
      <useargs>
        <usearg name="a" type="X509reqinfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9575,7 +9575,7 @@
      rv="X509reqst">
      <useargs>
        <usearg name="a" type="X509reqst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9612,7 +9612,7 @@
      rv="X509attributesst">
      <useargs>
        <usearg name="a" type="X509attributesst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9660,7 +9660,7 @@
      rv="X509extensionst">
      <useargs>
        <usearg name="a" type="X509extensionst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9681,7 +9681,7 @@
      rv="StackstX509EXTENSION">
      <useargs>
        <usearg name="a" type="StackstX509EXTENSION"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9718,7 +9718,7 @@
      rv="X509nameentryst">
      <useargs>
        <usearg name="a" type="X509nameentryst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9755,7 +9755,7 @@
      rv="X509namest">
      <useargs>
        <usearg name="a" type="X509namest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9802,7 +9802,7 @@
      rv="X509cinfst">
      <useargs>
        <usearg name="a" type="X509cinfst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9839,7 +9839,7 @@
      rv="X509st">
      <useargs>
        <usearg name="a" type="X509st"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -9876,7 +9876,7 @@
      rv="X509certauxst">
      <useargs>
        <usearg name="a" type="X509certauxst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -10150,7 +10150,7 @@
      rv="X509revokedst">
      <useargs>
        <usearg name="a" type="X509revokedst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -10187,7 +10187,7 @@
      rv="X509crlinfost">
      <useargs>
        <usearg name="a" type="X509crlinfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -10224,7 +10224,7 @@
      rv="X509crlst">
      <useargs>
        <usearg name="a" type="X509crlst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -10309,7 +10309,7 @@
      rv="Netscapespkist">
      <useargs>
        <usearg name="a" type="Netscapespkist"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -10346,7 +10346,7 @@
      rv="Netscapespkacst">
      <useargs>
        <usearg name="a" type="Netscapespkacst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -10383,7 +10383,7 @@
      rv="Netscapecertificatesequence">
      <useargs>
        <usearg name="a" type="Netscapecertificatesequence"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -12657,7 +12657,7 @@
      rv="PBEPARAMst">
      <useargs>
        <usearg name="a" type="PBEPARAMst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -12694,7 +12694,7 @@
      rv="PBE2PARAMst">
      <useargs>
        <usearg name="a" type="PBE2PARAMst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -12731,7 +12731,7 @@
      rv="PBKDF2PARAMst">
      <useargs>
        <usearg name="a" type="PBKDF2PARAMst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -12768,7 +12768,7 @@
      rv="SCRYPTPARAMSst">
      <useargs>
        <usearg name="a" type="SCRYPTPARAMSst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -12884,7 +12884,7 @@
      rv="Pkcs8privkeyinfost">
      <useargs>
        <usearg name="a" type="Pkcs8privkeyinfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15410,7 +15410,7 @@
      rv="PROXYPOLICYst">
      <useargs>
        <usearg name="a" type="PROXYPOLICYst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15447,7 +15447,7 @@
      rv="PROXYCERTINFOEXTENSIONst">
      <useargs>
        <usearg name="a" type="PROXYCERTINFOEXTENSIONst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15715,7 +15715,7 @@
      rv="BASICCONSTRAINTSst">
      <useargs>
        <usearg name="a" type="BASICCONSTRAINTSst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15752,7 +15752,7 @@
      rv="SXNETst">
      <useargs>
        <usearg name="a" type="SXNETst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15789,7 +15789,7 @@
      rv="SXNETIDst">
      <useargs>
        <usearg name="a" type="SXNETIDst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15892,7 +15892,7 @@
      rv="AUTHORITYKEYIDst">
      <useargs>
        <usearg name="a" type="AUTHORITYKEYIDst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15929,7 +15929,7 @@
      rv="PKEYUSAGEPERIODst">
      <useargs>
        <usearg name="a" type="PKEYUSAGEPERIODst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -15966,7 +15966,7 @@
      rv="GENERALNAMEst">
      <useargs>
        <usearg name="a" type="GENERALNAMEst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16086,7 +16086,7 @@
      rv="StackstGENERALNAME">
      <useargs>
        <usearg name="a" type="StackstGENERALNAME"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16145,7 +16145,7 @@
      rv="OtherNamest">
      <useargs>
        <usearg name="a" type="OtherNamest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16182,7 +16182,7 @@
      rv="EDIPartyNamest">
      <useargs>
        <usearg name="a" type="EDIPartyNamest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16293,7 +16293,7 @@
      rv="StackstASN1OBJECT">
      <useargs>
        <usearg name="a" type="StackstASN1OBJECT"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16356,7 +16356,7 @@
      rv="StackstPOLICYINFO">
      <useargs>
        <usearg name="a" type="StackstPOLICYINFO"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16393,7 +16393,7 @@
      rv="POLICYINFOst">
      <useargs>
        <usearg name="a" type="POLICYINFOst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16430,7 +16430,7 @@
      rv="POLICYQUALINFOst">
      <useargs>
        <usearg name="a" type="POLICYQUALINFOst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16467,7 +16467,7 @@
      rv="USERNOTICEst">
      <useargs>
        <usearg name="a" type="USERNOTICEst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16504,7 +16504,7 @@
      rv="NOTICEREFst">
      <useargs>
        <usearg name="a" type="NOTICEREFst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16541,7 +16541,7 @@
      rv="StackstDISTPOINT">
      <useargs>
        <usearg name="a" type="StackstDISTPOINT"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16578,7 +16578,7 @@
      rv="DISTPOINTst">
      <useargs>
        <usearg name="a" type="DISTPOINTst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16615,7 +16615,7 @@
      rv="DISTPOINTNAMEst">
      <useargs>
        <usearg name="a" type="DISTPOINTNAMEst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16652,7 +16652,7 @@
      rv="ISSUINGDISTPOINTst">
      <useargs>
        <usearg name="a" type="ISSUINGDISTPOINTst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16719,7 +16719,7 @@
      rv="ACCESSDESCRIPTIONst">
      <useargs>
        <usearg name="a" type="ACCESSDESCRIPTIONst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -16756,7 +16756,7 @@
      rv="StackstACCESSDESCRIPTION">
      <useargs>
        <usearg name="a" type="StackstACCESSDESCRIPTION"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18217,7 +18217,7 @@
      rv="ASRangest">
      <useargs>
        <usearg name="a" type="ASRangest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18254,7 +18254,7 @@
      rv="ASIdOrRangest">
      <useargs>
        <usearg name="a" type="ASIdOrRangest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18291,7 +18291,7 @@
      rv="ASIdentifierChoicest">
      <useargs>
        <usearg name="a" type="ASIdentifierChoicest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18328,7 +18328,7 @@
      rv="ASIdentifiersst">
      <useargs>
        <usearg name="a" type="ASIdentifiersst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18827,7 +18827,7 @@
      rv="IPAddressRangest">
      <useargs>
        <usearg name="a" type="IPAddressRangest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18864,7 +18864,7 @@
      rv="IPAddressOrRangest">
      <useargs>
        <usearg name="a" type="IPAddressOrRangest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18901,7 +18901,7 @@
      rv="IPAddressChoicest">
      <useargs>
        <usearg name="a" type="IPAddressChoicest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -18938,7 +18938,7 @@
      rv="IPAddressFamilyst">
      <useargs>
        <usearg name="a" type="IPAddressFamilyst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -19401,7 +19401,7 @@
      rv="NamingAuthorityst">
      <useargs>
        <usearg name="a" type="NamingAuthorityst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -19438,7 +19438,7 @@
      rv="ProfessionInfost">
      <useargs>
        <usearg name="a" type="ProfessionInfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -19475,7 +19475,7 @@
      rv="Admissionsst">
      <useargs>
        <usearg name="a" type="Admissionsst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -19512,7 +19512,7 @@
      rv="AdmissionSyntaxst">
      <useargs>
        <usearg name="a" type="AdmissionSyntaxst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -24162,7 +24162,7 @@
      lineno="579"
      rv="Biost">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
      </useargs>
   </use>
   <use id="_1107" name="BIO_nread0"
@@ -27382,7 +27382,7 @@
      lineno="161"
      rv="I32">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
      </useargs>
   </use>
   <use id="_1918" name="OBJ_length"
@@ -28105,7 +28105,7 @@
      rv="I32">
      <useargs>
        <usearg name="out" type="Evpcipherctxst"/>
-       <usearg name="in" type="Evpcipherctxst"/>
+       <usearg name="oin" type="Evpcipherctxst"/>
      </useargs>
   </use>
   <use id="_2000" name="EVP_CIPHER_CTX_get_app_data"
@@ -28154,7 +28154,7 @@
      <useargs>
        <usearg name="c" type="Evpcipherctxst"/>
        <usearg name="out" type="String"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inl" type="U32"/>
      </useargs>
   </use>
@@ -28202,7 +28202,7 @@
      rv="I32">
      <useargs>
        <usearg name="out" type="Evpmdctxst"/>
-       <usearg name="in" type="Evpmdctxst"/>
+       <usearg name="oin" type="Evpmdctxst"/>
      </useargs>
   </use>
   <use id="_2010" name="EVP_MD_CTX_set_flags"
@@ -28289,7 +28289,7 @@
      rv="I32">
      <useargs>
        <usearg name="out" type="Evpmdctxst"/>
-       <usearg name="in" type="Evpmdctxst"/>
+       <usearg name="oin" type="Evpmdctxst"/>
      </useargs>
   </use>
   <use id="_2018" name="EVP_DigestInit"
@@ -28445,7 +28445,7 @@
        <usearg name="ctx" type="Evpcipherctxst"/>
        <usearg name="out" type="String"/>
        <usearg name="outl" type="Pointer[I32]"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inl" type="I32"/>
      </useargs>
   </use>
@@ -28505,7 +28505,7 @@
        <usearg name="ctx" type="Evpcipherctxst"/>
        <usearg name="out" type="String"/>
        <usearg name="outl" type="Pointer[I32]"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inl" type="I32"/>
      </useargs>
   </use>
@@ -28567,7 +28567,7 @@
        <usearg name="ctx" type="Evpcipherctxst"/>
        <usearg name="out" type="String"/>
        <usearg name="outl" type="Pointer[I32]"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inl" type="I32"/>
      </useargs>
   </use>
@@ -28795,7 +28795,7 @@
        <usearg name="ctx" type="EvpEncodeCtxst"/>
        <usearg name="out" type="String"/>
        <usearg name="outl" type="Pointer[I32]"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inl" type="I32"/>
      </useargs>
   </use>
@@ -28839,7 +28839,7 @@
        <usearg name="ctx" type="EvpEncodeCtxst"/>
        <usearg name="out" type="String"/>
        <usearg name="outl" type="Pointer[I32]"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inl" type="I32"/>
      </useargs>
   </use>
@@ -31613,7 +31613,7 @@
        <usearg name="ctx" type="Evppkeyctxst"/>
        <usearg name="out" type="String"/>
        <usearg name="outlen" type="Pointer[U64]"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inlen" type="U64"/>
      </useargs>
   </use>
@@ -31635,7 +31635,7 @@
        <usearg name="ctx" type="Evppkeyctxst"/>
        <usearg name="out" type="String"/>
        <usearg name="outlen" type="Pointer[U64]"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inlen" type="U64"/>
      </useargs>
   </use>
@@ -33183,7 +33183,7 @@
      rv="Ecgroupst">
      <useargs>
        <usearg name="parg0" type="Ecgroupst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -33556,7 +33556,7 @@
      rv="Eckeyst">
      <useargs>
        <usearg name="key" type="Eckeyst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -33577,7 +33577,7 @@
      rv="Eckeyst">
      <useargs>
        <usearg name="key" type="Eckeyst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -33598,7 +33598,7 @@
      rv="Eckeyst">
      <useargs>
        <usearg name="key" type="Eckeyst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39513,7 +39513,7 @@
      rv="Pkcs7issuerandserialst">
      <useargs>
        <usearg name="a" type="Pkcs7issuerandserialst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39596,7 +39596,7 @@
      <useargs>
        <usearg name="out" type="Biost"/>
        <usearg name="p7" type="Pkcs7st"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -39608,7 +39608,7 @@
      <useargs>
        <usearg name="out" type="Biost"/>
        <usearg name="p7" type="Pkcs7st"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -39635,7 +39635,7 @@
      rv="Pkcs7signerinfost">
      <useargs>
        <usearg name="a" type="Pkcs7signerinfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39672,7 +39672,7 @@
      rv="Pkcs7recipinfost">
      <useargs>
        <usearg name="a" type="Pkcs7recipinfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39709,7 +39709,7 @@
      rv="Pkcs7signedst">
      <useargs>
        <usearg name="a" type="Pkcs7signedst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39746,7 +39746,7 @@
      rv="Pkcs7enccontentst">
      <useargs>
        <usearg name="a" type="Pkcs7enccontentst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39783,7 +39783,7 @@
      rv="Pkcs7envelopedst">
      <useargs>
        <usearg name="a" type="Pkcs7envelopedst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39820,7 +39820,7 @@
      rv="Pkcs7signedandenvelopedst">
      <useargs>
        <usearg name="a" type="Pkcs7signedandenvelopedst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39857,7 +39857,7 @@
      rv="Pkcs7digestst">
      <useargs>
        <usearg name="a" type="Pkcs7digestst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39894,7 +39894,7 @@
      rv="Pkcs7encryptedst">
      <useargs>
        <usearg name="a" type="Pkcs7encryptedst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -39931,7 +39931,7 @@
      rv="Pkcs7st">
      <useargs>
        <usearg name="a" type="Pkcs7st"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -40393,7 +40393,7 @@
      rv="Pkcs7st">
      <useargs>
        <usearg name="certs" type="StackstX509"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="cipher" type="Evpcipherst"/>
        <usearg name="flags" type="I32"/>
      </useargs>
@@ -41943,7 +41943,7 @@
      lineno="362"
      rv="Evppkeyst">
      <useargs>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="length" type="I64"/>
      </useargs>
   </use>
@@ -41953,7 +41953,7 @@
      lineno="363"
      rv="Evppkeyst">
      <useargs>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="length" type="I64"/>
      </useargs>
   </use>
@@ -41963,7 +41963,7 @@
      lineno="364"
      rv="Evppkeyst">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
      </useargs>
   </use>
   <use id="_4475" name="b2i_PublicKey_bio"
@@ -41972,7 +41972,7 @@
      lineno="365"
      rv="Evppkeyst">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
      </useargs>
   </use>
   <use id="_4476" name="i2b_PrivateKey_bio"
@@ -42001,7 +42001,7 @@
      lineno="369"
      rv="Evppkeyst">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="cb" type="Pointer[None]"/>
        <usearg name="u" type="Pointer[None]"/>
      </useargs>
@@ -42213,7 +42213,7 @@
      lineno="44"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="key" type="Bfkeyst"/>
        <usearg name="enc" type="I32"/>
@@ -42225,7 +42225,7 @@
      lineno="46"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="length" type="I64"/>
        <usearg name="schedule" type="Bfkeyst"/>
@@ -42239,7 +42239,7 @@
      lineno="48"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="length" type="I64"/>
        <usearg name="schedule" type="Bfkeyst"/>
@@ -42254,7 +42254,7 @@
      lineno="51"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="length" type="I64"/>
        <usearg name="schedule" type="Bfkeyst"/>
@@ -43237,7 +43237,7 @@
      rv="CMSContentInfost">
      <useargs>
        <usearg name="a" type="CMSContentInfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -43274,7 +43274,7 @@
      rv="CMSReceiptRequestst">
      <useargs>
        <usearg name="a" type="CMSReceiptRequestst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -43449,7 +43449,7 @@
      <useargs>
        <usearg name="out" type="Biost"/>
        <usearg name="cms" type="CMSContentInfost"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -43461,7 +43461,7 @@
      <useargs>
        <usearg name="out" type="Biost"/>
        <usearg name="cms" type="CMSContentInfost"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -43542,7 +43542,7 @@
      lineno="112"
      rv="CMSContentInfost">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="flags" type="U32"/>
      </useargs>
   </use>
@@ -43564,7 +43564,7 @@
      lineno="116"
      rv="CMSContentInfost">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="md" type="Evpmdst"/>
        <usearg name="flags" type="U32"/>
      </useargs>
@@ -43589,7 +43589,7 @@
      lineno="123"
      rv="CMSContentInfost">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="cipher" type="Evpcipherst"/>
        <usearg name="key" type="String"/>
        <usearg name="keylen" type="U64"/>
@@ -43651,7 +43651,7 @@
      rv="CMSContentInfost">
      <useargs>
        <usearg name="certs" type="StackstX509"/>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="cipher" type="Evpcipherst"/>
        <usearg name="flags" type="U32"/>
      </useargs>
@@ -43913,7 +43913,7 @@
      lineno="204"
      rv="CMSContentInfost">
      <useargs>
-       <usearg name="in" type="Biost"/>
+       <usearg name="oin" type="Biost"/>
        <usearg name="compnid" type="I32"/>
        <usearg name="flags" type="U32"/>
      </useargs>
@@ -45478,7 +45478,7 @@
      rv="Sctst">
      <useargs>
        <usearg name="psct" type="Sctst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="U64"/>
      </useargs>
   </use>
@@ -45671,7 +45671,7 @@
      lineno="87"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="numbits" type="I32"/>
        <usearg name="length" type="I64"/>
@@ -45760,7 +45760,7 @@
      lineno="123"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="length" type="I64"/>
        <usearg name="ks1" type="DESks"/>
@@ -45777,7 +45777,7 @@
      lineno="127"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="numbits" type="I32"/>
        <usearg name="length" type="I64"/>
@@ -45794,7 +45794,7 @@
      lineno="131"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="length" type="I64"/>
        <usearg name="ks1" type="DESks"/>
@@ -45831,7 +45831,7 @@
      lineno="137"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="numbits" type="I32"/>
        <usearg name="length" type="I64"/>
@@ -45969,7 +45969,7 @@
      lineno="160"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="length" type="I64"/>
        <usearg name="schedule" type="DESks"/>
@@ -45984,7 +45984,7 @@
      lineno="163"
      rv="None">
      <useargs>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="out" type="String"/>
        <usearg name="length" type="I64"/>
        <usearg name="schedule" type="DESks"/>
@@ -50676,7 +50676,7 @@
      rv="Ocspsingleresponsest">
      <useargs>
        <usearg name="a" type="Ocspsingleresponsest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50713,7 +50713,7 @@
      rv="Ocspcertstatusst">
      <useargs>
        <usearg name="a" type="Ocspcertstatusst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50750,7 +50750,7 @@
      rv="Ocsprevokedinfost">
      <useargs>
        <usearg name="a" type="Ocsprevokedinfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50787,7 +50787,7 @@
      rv="Ocspbasicresponsest">
      <useargs>
        <usearg name="a" type="Ocspbasicresponsest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50824,7 +50824,7 @@
      rv="Ocspresponsedatast">
      <useargs>
        <usearg name="a" type="Ocspresponsedatast"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50861,7 +50861,7 @@
      rv="Ocspresponderidst">
      <useargs>
        <usearg name="a" type="Ocspresponderidst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50898,7 +50898,7 @@
      rv="Ocspresponsest">
      <useargs>
        <usearg name="a" type="Ocspresponsest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50935,7 +50935,7 @@
      rv="Ocsprespbytesst">
      <useargs>
        <usearg name="a" type="Ocsprespbytesst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -50972,7 +50972,7 @@
      rv="Ocsponerequestst">
      <useargs>
        <usearg name="a" type="Ocsponerequestst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -51009,7 +51009,7 @@
      rv="Ocspcertidst">
      <useargs>
        <usearg name="a" type="Ocspcertidst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -51046,7 +51046,7 @@
      rv="Ocsprequestst">
      <useargs>
        <usearg name="a" type="Ocsprequestst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -51083,7 +51083,7 @@
      rv="Ocspsignaturest">
      <useargs>
        <usearg name="a" type="Ocspsignaturest"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -51120,7 +51120,7 @@
      rv="Ocspreqinfost">
      <useargs>
        <usearg name="a" type="Ocspreqinfost"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -51157,7 +51157,7 @@
      rv="Ocspcrlidst">
      <useargs>
        <usearg name="a" type="Ocspcrlidst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -51194,7 +51194,7 @@
      rv="Ocspservicelocatorst">
      <useargs>
        <usearg name="a" type="Ocspservicelocatorst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -51909,7 +51909,7 @@
        <usearg name="algor" type="X509algorst"/>
        <usearg name="pass" type="String"/>
        <usearg name="passlen" type="I32"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inlen" type="I32"/>
        <usearg name="data" type="Array[String]"/>
        <usearg name="datalen" type="Pointer[I32]"/>
@@ -52138,7 +52138,7 @@
      rv="PKCS12st">
      <useargs>
        <usearg name="a" type="PKCS12st"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -52175,7 +52175,7 @@
      rv="PKCS12MACDATAst">
      <useargs>
        <usearg name="a" type="PKCS12MACDATAst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -52212,7 +52212,7 @@
      rv="PKCS12SAFEBAGst">
      <useargs>
        <usearg name="a" type="PKCS12SAFEBAGst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -52249,7 +52249,7 @@
      rv="Pkcs12bagst">
      <useargs>
        <usearg name="a" type="Pkcs12bagst"/>
-       <usearg name="in" type="Array[String]"/>
+       <usearg name="oin" type="Array[String]"/>
        <usearg name="len" type="I64"/>
      </useargs>
   </use>
@@ -52746,7 +52746,7 @@
        <usearg name="ctx" type="Compctxst"/>
        <usearg name="out" type="String"/>
        <usearg name="olen" type="I32"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="ilen" type="I32"/>
      </useargs>
   </use>
@@ -52759,7 +52759,7 @@
        <usearg name="ctx" type="Compctxst"/>
        <usearg name="out" type="String"/>
        <usearg name="olen" type="I32"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="ilen" type="I32"/>
      </useargs>
   </use>
@@ -53336,7 +53336,7 @@
      <useargs>
        <usearg name="out" type="Array[String]"/>
        <usearg name="outlen" type="String"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="inlen" type="U32"/>
        <usearg name="client" type="String"/>
        <usearg name="clientlen" type="U32"/>
@@ -55342,7 +55342,7 @@
      lineno="1665"
      rv="I32">
      <useargs>
-       <usearg name="in" type="Sslsessionst"/>
+       <usearg name="oin" type="Sslsessionst"/>
        <usearg name="pp" type="Array[String]"/>
      </useargs>
   </use>
@@ -57253,7 +57253,7 @@
      rv="I32">
      <useargs>
        <usearg name="sess" type="Sslsessionst"/>
-       <usearg name="in" type="String"/>
+       <usearg name="oin" type="String"/>
        <usearg name="len" type="U64"/>
      </useargs>
   </use>
