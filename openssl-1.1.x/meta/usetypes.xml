@@ -2671,13 +2671,13 @@
 
   <typedef name="Tm"
     embed="embed"
-    ponytypein="Tm tag"
+    ponytypein="NullablePointer[Tm] tag"
     ponytypeinconv=""
-    ponytypeout="Tm"
-    structtype="Tm"
-    structdef="Tm"
-    argtype="Tm tag"
-    rvtype="Tm"/>
+    ponytypeout="NullablePointer[Tm]"
+    structtype="NullablePointer[Tm]"
+    structdef="NullablePointer[Tm].none()"
+    argtype="NullablePointer[Tm] tag"
+    rvtype="NullablePointer[Tm]"/>
 
   <typedef name="POLICYINFOst"
     embed="embed"

@@ -1,6 +1,7 @@
 use "format"
 use "Crypto"
 
+use @mktime[I64](tm: NullablePointer[Tm])
 actor Main
   new create(env: Env) =>
     env.out.print("Test")
@@ -55,10 +56,40 @@ bF3Iiu/C
     env.out.print("SerialNumber: " + integer_to_bignum_to_stringhex(sn)?)
     env.out.print("SerialNumber: " + integer_to_bignum_to_stringdec(sn)?)
 
+    let notb4: NullablePointer[ASN1String] tag = X509.pony_X509_get0_notBefore(cert)
+    let i64: I64 = _asn1_time_to_posix(notb4)
+    env.out.print("Not before: " + i64.string())
+    env.out.print("Not before: " + asn1_time_to_string(notb4))
+
+    let notaft: NullablePointer[ASN1String] tag = X509.pony_X509_get0_notAfter(cert)
+    let ii64: I64 = _asn1_time_to_posix(notaft)
+    env.out.print("Not After: " + ii64.string())
+    env.out.print("Not After: " + asn1_time_to_string(notaft))
+
+
+
+
+
+
     else
       env.out.print("Error in here")
     end
 
+  fun _asn1_time_to_posix(asn1time: NullablePointer[ASN1String] tag): I64 =>
+    let tm: Tm = Tm
+    I64(1)
+    let tmnp: NullablePointer[Tm] = NullablePointer[Tm](tm)
+    ASN1String.pony_ASN1_TIME_to_tm(asn1time, tmnp)
+    @mktime(tmnp)
+
+  fun asn1_time_to_string(asn1time: NullablePointer[ASN1String] tag): String val =>
+    let bio: NullablePointer[BIO] tag = BIO.pony_BIO_new(BIO.pony_BIO_s_mem())
+    var ret: I32 = ASN1String.pony_ASN1_UTCTIME_print(bio, asn1time)
+    let date: String trn = recover trn "ZZZ ZZ ZZ ZZ ZZ ZZZZ ZZZZZZZZZ".clone() end
+
+    let len: I32 = BIO.pony_BIO_read(bio, date.cpointer(), date.size().i32())
+    date.trim_in_place(0, len.usize())
+    consume date
 
 
 
@@ -110,7 +141,5 @@ bF3Iiu/C
     str.recalc()
     if (str.size() != len.usize()) then error end
     str.clone()
-
-
 
 

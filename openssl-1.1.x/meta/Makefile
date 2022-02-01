@@ -1,4 +1,4 @@
-all:	clean asn1string bio x509 x509name biomethod pem bn
+all:	clean asn1string bio x509 x509name biomethod pem bn tm
 
 clean:
 	rm -f ../../test/Crypto/*
@@ -20,6 +20,9 @@ biomethod:
 
 bn:
 	sh -x mkstruct.sh _138 BIGNum BIGNum
+
+tm:
+	sh -x mkstruct.sh _487 Tm Tm
 
 pem:
 	sh -x mkprim.sh 0 PEM PEM

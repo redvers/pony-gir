@@ -162,12 +162,12 @@
   <renderuse name="ASN1_TIME_free" render="0"/>
   <renderuse name="ASN1_TIME_new" render="0"/>
   <renderuse name="ASN1_TIME_normalize" render="0"/>
-  <renderuse name="ASN1_TIME_print" render="0"/>
+  <renderuse name="ASN1_TIME_print" render="1"/>
   <renderuse name="ASN1_TIME_set" render="0"/>
   <renderuse name="ASN1_TIME_set_string" render="0"/>
   <renderuse name="ASN1_TIME_set_string_X509" render="0"/>
   <renderuse name="ASN1_TIME_to_generalizedtime" render="0"/>
-  <renderuse name="ASN1_TIME_to_tm" render="0"/>
+  <renderuse name="ASN1_TIME_to_tm" render="1"/>
   <renderuse name="ASN1_TYPE_cmp" render="0"/>
   <renderuse name="ASN1_TYPE_free" render="0"/>
   <renderuse name="ASN1_TYPE_get" render="0"/>
@@ -188,7 +188,7 @@
   <renderuse name="ASN1_UTCTIME_cmp_time_t" render="0"/>
   <renderuse name="ASN1_UTCTIME_free" render="0"/>
   <renderuse name="ASN1_UTCTIME_new" render="0"/>
-  <renderuse name="ASN1_UTCTIME_print" render="0"/>
+  <renderuse name="ASN1_UTCTIME_print" render="1"/>
   <renderuse name="ASN1_UTCTIME_set" render="0"/>
   <renderuse name="ASN1_UTCTIME_set_string" render="0"/>
   <renderuse name="ASN1_UTF8STRING_free" render="0"/>
