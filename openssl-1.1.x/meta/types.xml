@@ -171,13 +171,13 @@
 
   <typedef name="Asn1typest"
     embed="embed"
-    ponytypein="Asn1typest tag"
+    ponytypein="NullablePointer[ASN1Type] tag"
     ponytypeinconv=""
-    ponytypeout="Asn1typest"
-    structtype="Asn1typest"
-    structdef="Asn1typest"
-    argtype="Asn1typest tag"
-    rvtype="Asn1typest"/>
+    ponytypeout="NullablePointer[ASN1Type]"
+    structtype="NullablePointer[ASN1Type]"
+    structdef="NullablePointer[ASN1Type].none()"
+    argtype="NullablePointer[ASN1Type] tag"
+    rvtype="NullablePointer[ASN1Type]"/>
 
   <typedef name="Pointer[U64]"
     embed="var"
@@ -461,13 +461,13 @@
 
   <typedef name="Asn1objectst"
     embed="embed"
-    ponytypein="Asn1objectst tag"
+    ponytypein="NullablePointer[ASN1Object] tag"
     ponytypeinconv=""
-    ponytypeout="Asn1objectst"
-    structtype="Asn1objectst"
-    structdef="Asn1objectst"
-    argtype="Asn1objectst tag"
-    rvtype="Asn1objectst"/>
+    ponytypeout="NullablePointer[ASN1Object]"
+    structtype="NullablePointer[ASN1Object]"
+    structdef="NullablePointer[ASN1Object].none()"
+    argtype="NullablePointer[ASN1Object] tag"
+    rvtype="NullablePointer[ASN1Object]"/>
 
   <typedef name="Evppkeyst"
     embed="embed"

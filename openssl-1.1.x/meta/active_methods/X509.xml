@@ -60,27 +60,6 @@
   <renderuse name="i2d_X509_REVOKED" render="0"/>
   <renderuse name="i2d_X509_SIG" render="0"/>
   <renderuse name="i2d_X509_VAL" render="0"/>
-  <renderuse name="PEM_read_bio_X509" render="0"/>
-  <renderuse name="PEM_read_bio_X509_AUX" render="0"/>
-  <renderuse name="PEM_read_bio_X509_CRL" render="0"/>
-  <renderuse name="PEM_read_bio_X509_REQ" render="0"/>
-  <renderuse name="PEM_read_X509" render="0"/>
-  <renderuse name="PEM_read_X509_AUX" render="0"/>
-  <renderuse name="PEM_read_X509_CRL" render="0"/>
-  <renderuse name="PEM_read_X509_REQ" render="0"/>
-  <renderuse name="PEM_write_bio_X509" render="0"/>
-  <renderuse name="PEM_write_bio_X509_AUX" render="0"/>
-  <renderuse name="PEM_write_bio_X509_CRL" render="0"/>
-  <renderuse name="PEM_write_bio_X509_REQ" render="0"/>
-  <renderuse name="PEM_write_bio_X509_REQ_NEW" render="0"/>
-  <renderuse name="PEM_write_X509" render="0"/>
-  <renderuse name="PEM_write_X509_AUX" render="0"/>
-  <renderuse name="PEM_write_X509_CRL" render="0"/>
-  <renderuse name="PEM_write_X509_REQ" render="0"/>
-  <renderuse name="PEM_write_X509_REQ_NEW" render="0"/>
-  <renderuse name="PEM_X509_INFO_read" render="0"/>
-  <renderuse name="PEM_X509_INFO_read_bio" render="0"/>
-  <renderuse name="PEM_X509_INFO_write_bio" render="0"/>
   <renderuse name="sk_X509_ALGOR_deep_copy" render="0"/>
   <renderuse name="sk_X509_ALGOR_delete" render="0"/>
   <renderuse name="sk_X509_ALGOR_delete_ptr" render="0"/>
@@ -503,18 +482,18 @@
   <renderuse name="X509_ATTRIBUTE_new" render="0"/>
   <renderuse name="X509_ATTRIBUTE_set1_data" render="0"/>
   <renderuse name="X509_ATTRIBUTE_set1_object" render="0"/>
-  <renderuse name="X509_aux_print" render="0"/>
+  <renderuse name="X509_aux_print" render="1"/>
   <renderuse name="X509_CERT_AUX_free" render="0"/>
   <renderuse name="X509_CERT_AUX_new" render="0"/>
   <renderuse name="X509_certificate_type" render="0"/>
   <renderuse name="X509_chain_check_suiteb" render="0"/>
   <renderuse name="X509_chain_up_ref" render="0"/>
   <renderuse name="X509_check_akid" render="0"/>
-  <renderuse name="X509_check_ca" render="0"/>
-  <renderuse name="X509_check_email" render="0"/>
-  <renderuse name="X509_check_host" render="0"/>
-  <renderuse name="X509_check_ip" render="0"/>
-  <renderuse name="X509_check_ip_asc" render="0"/>
+  <renderuse name="X509_check_ca" render="1"/>
+  <renderuse name="X509_check_email" render="1"/>
+  <renderuse name="X509_check_host" render="1"/>
+  <renderuse name="X509_check_ip" render="1"/>
+  <renderuse name="X509_check_ip_asc" render="1"/>
   <renderuse name="X509_check_issued" render="0"/>
   <renderuse name="X509_check_private_key" render="0"/>
   <renderuse name="X509_check_purpose" render="0"/>
@@ -717,9 +696,9 @@
   <renderuse name="X509_NAME_hash" render="0"/>
   <renderuse name="X509_NAME_hash_old" render="0"/>
   <renderuse name="X509_NAME_new" render="0"/>
-  <renderuse name="X509_NAME_oneline" render="0"/>
-  <renderuse name="X509_NAME_print" render="0"/>
-  <renderuse name="X509_NAME_print_ex" render="0"/>
+  <renderuse name="X509_NAME_oneline" render="1"/>
+  <renderuse name="X509_NAME_print" render="1"/>
+  <renderuse name="X509_NAME_print_ex" render="1"/>
   <renderuse name="X509_NAME_print_ex_fp" render="0"/>
   <renderuse name="X509_NAME_set" render="0"/>
   <renderuse name="X509_new" render="0"/>
@@ -734,7 +713,7 @@
   <renderuse name="X509_OBJECT_set1_X509" render="0"/>
   <renderuse name="X509_OBJECT_set1_X509_CRL" render="0"/>
   <renderuse name="X509_OBJECT_up_ref_count" render="0"/>
-  <renderuse name="X509_ocspid_print" render="0"/>
+  <renderuse name="X509_ocspid_print" render="1"/>
   <renderuse name="X509_PKEY_free" render="0"/>
   <renderuse name="X509_PKEY_new" render="0"/>
   <renderuse name="X509_policy_check" render="0"/>
@@ -743,14 +722,14 @@
   <renderuse name="X509_policy_node_get0_parent" render="0"/>
   <renderuse name="X509_policy_node_get0_policy" render="0"/>
   <renderuse name="X509_policy_node_get0_qualifiers" render="0"/>
-  <renderuse name="X509_POLICY_NODE_print" render="0"/>
+  <renderuse name="X509_POLICY_NODE_print" render="1"/>
   <renderuse name="X509_policy_tree_free" render="0"/>
   <renderuse name="X509_policy_tree_get0_level" render="0"/>
   <renderuse name="X509_policy_tree_get0_policies" render="0"/>
   <renderuse name="X509_policy_tree_get0_user_policies" render="0"/>
   <renderuse name="X509_policy_tree_level_count" render="0"/>
-  <renderuse name="X509_print" render="0"/>
-  <renderuse name="X509_print_ex" render="0"/>
+  <renderuse name="X509_print" render="1"/>
+  <renderuse name="X509_print_ex" render="1"/>
   <renderuse name="X509_print_ex_fp" render="0"/>
   <renderuse name="X509_print_fp" render="0"/>
   <renderuse name="X509_pubkey_digest" render="0"/>
@@ -849,7 +828,7 @@
   <renderuse name="X509_SIG_INFO_set" render="0"/>
   <renderuse name="X509_sign" render="0"/>
   <renderuse name="X509_signature_dump" render="0"/>
-  <renderuse name="X509_signature_print" render="0"/>
+  <renderuse name="X509_signature_print" render="1"/>
   <renderuse name="X509_sign_ctx" render="0"/>
   <renderuse name="X509_SIG_new" render="0"/>
   <renderuse name="X509_STORE_add_cert" render="0"/>
@@ -1013,13 +992,13 @@
   <renderuse name="X509V3_EXT_CRL_add_conf" render="0"/>
   <renderuse name="X509V3_EXT_CRL_add_nconf" render="0"/>
   <renderuse name="X509V3_EXT_d2i" render="0"/>
-  <renderuse name="X509V3_extensions_print" render="0"/>
+  <renderuse name="X509V3_extensions_print" render="1"/>
   <renderuse name="X509V3_EXT_get" render="0"/>
   <renderuse name="X509V3_EXT_get_nid" render="0"/>
   <renderuse name="X509V3_EXT_i2d" render="0"/>
   <renderuse name="X509V3_EXT_nconf" render="0"/>
   <renderuse name="X509V3_EXT_nconf_nid" render="0"/>
-  <renderuse name="X509V3_EXT_print" render="0"/>
+  <renderuse name="X509V3_EXT_print" render="1"/>
   <renderuse name="X509V3_EXT_print_fp" render="0"/>
   <renderuse name="X509V3_EXT_REQ_add_conf" render="0"/>
   <renderuse name="X509V3_EXT_REQ_add_nconf" render="0"/>

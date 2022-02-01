@@ -20,7 +20,7 @@
     <field name="flags" id="_7642" type="I64" fieldid="_7628" offset="128" fid="f6" line="155"/>
   </struct>
 
-  <struct name="Asn1objectst" id="_127" size="" align="" fid="f7" lineno="60">
+  <struct name="ASN1Object" id="_127" size="" align="" fid="f7" lineno="60">
 
   </struct>
 
@@ -182,7 +182,7 @@
 
   </struct>
 
-  <struct name="X509algorst" id="_198" size="128" align="64" fid="f12" lineno="59">
+  <struct name="X509Algor" id="_198" size="128" align="64" fid="f12" lineno="59">
     <field name="algorithm" id="_7702" type="Asn1objectst" fieldid="_8205" offset="0" fid="f12" line="60"/>
     <field name="parameter" id="_7703" type="Asn1typest" fieldid="_8190" offset="64" fid="f12" line="61"/>
   </struct>
@@ -287,7 +287,7 @@
 
   </struct>
 
-  <struct name="X509POLICYNODEst" id="_246" size="" align="" fid="f7" lineno="154">
+  <struct name="X509PolicyNode" id="_246" size="" align="" fid="f7" lineno="154">
 
   </struct>
 
@@ -706,9 +706,9 @@
 
   </struct>
 
-  <struct name="Asn1typest" id="_1552" size="128" align="64" fid="f6" lineno="444">
+  <struct name="ASN1Type" id="_1552" size="128" align="64" fid="f6" lineno="444">
     <field name="otype" id="_8182" type="I32" fieldid="_7627" offset="0" fid="f6" line="445"/>
-    <field name="value" id="_8184" type="None" fieldid="_9845" offset="64" fid="f6" line="472"/>
+    <field name="value" id="_8184" type="U64" fieldid="_9845" offset="64" fid="f6" line="472"/>
   </struct>
 
   <struct name="StackstASN1TYPE" id="_1554" size="" align="" fid="f6" lineno="475">
@@ -835,11 +835,11 @@
 
   </struct>
 
-  <struct name="X509extensionst" id="_3026" size="" align="" fid="f12" lineno="81">
+  <struct name="X509Extension" id="_3026" size="" align="" fid="f12" lineno="81">
 
   </struct>
 
-  <struct name="StackstX509EXTENSION" id="_3028" size="" align="" fid="f12" lineno="83">
+  <struct name="StackX509Extension" id="_3028" size="" align="" fid="f12" lineno="83">
 
   </struct>
 

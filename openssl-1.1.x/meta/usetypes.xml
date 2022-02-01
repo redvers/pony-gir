@@ -911,13 +911,13 @@
 
   <typedef name="X509algorst"
     embed="embed"
-    ponytypein="X509algorst tag"
+    ponytypein="NullablePointer[X509Algor] tag"
     ponytypeinconv=""
-    ponytypeout="X509algorst"
-    structtype="X509algorst"
-    structdef="X509algorst"
-    argtype="X509algorst tag"
-    rvtype="X509algorst"/>
+    ponytypeout="NullablePointer[X509Algor]"
+    structtype="NullablePointer[X509Algor]"
+    structdef="NullablePointer[X509Algor].none()"
+    argtype="NullablePointer[X509Algor] tag"
+    rvtype="NullablePointer[X509Algor]"/>
 
   <typedef name="Evpcipherst"
     embed="embed"
@@ -1041,13 +1041,13 @@
 
   <typedef name="X509POLICYNODEst"
     embed="embed"
-    ponytypein="X509POLICYNODEst tag"
+    ponytypein="NullablePointer[X509PolicyNode] tag"
     ponytypeinconv=""
-    ponytypeout="X509POLICYNODEst"
-    structtype="X509POLICYNODEst"
-    structdef="X509POLICYNODEst"
-    argtype="X509POLICYNODEst tag"
-    rvtype="X509POLICYNODEst"/>
+    ponytypeout="NullablePointer[X509PolicyNode]"
+    structtype="NullablePointer[X509PolicyNode]"
+    structdef="NullablePointer[X509PolicyNode].none()"
+    argtype="NullablePointer[X509PolicyNode] tag"
+    rvtype="NullablePointer[X509PolicyNode]"/>
 
   <typedef name="Dsamethod"
     embed="embed"
@@ -2641,13 +2641,13 @@
 
   <typedef name="StackstX509EXTENSION"
     embed="embed"
-    ponytypein="StackstX509EXTENSION tag"
+    ponytypein="NullablePointer[StackX509Extension] tag"
     ponytypeinconv=""
-    ponytypeout="StackstX509EXTENSION"
-    structtype="StackstX509EXTENSION"
-    structdef="StackstX509EXTENSION"
-    argtype="StackstX509EXTENSION tag"
-    rvtype="StackstX509EXTENSION"/>
+    ponytypeout="NullablePointer[StackX509Extension]"
+    structtype="NullablePointer[StackX509Extension]"
+    structdef="NullablePointer[StackX509Extension].none()"
+    argtype="NullablePointer[StackX509Extension] tag"
+    rvtype="NullablePointer[StackX509Extension]"/>
 
   <typedef name="X509st"
     embed="embed"
@@ -2701,13 +2701,13 @@
 
   <typedef name="X509extensionst"
     embed="embed"
-    ponytypein="X509extensionst tag"
+    ponytypein="NullablePointer[X509Extension] tag"
     ponytypeinconv=""
-    ponytypeout="X509extensionst"
-    structtype="X509extensionst"
-    structdef="X509extensionst"
-    argtype="X509extensionst tag"
-    rvtype="X509extensionst"/>
+    ponytypeout="NullablePointer[X509Extension]"
+    structtype="NullablePointer[X509Extension]"
+    structdef="NullablePointer[X509Extension].none()"
+    argtype="NullablePointer[X509Extension] tag"
+    rvtype="NullablePointer[X509Extension]"/>
 
   <typedef name="Evppkeyst"
     embed="embed"
