@@ -1,7 +1,19 @@
-all:	clean asn1type asn1object asn1string bio x509 x509name biomethod pem bn tm x509policynode x509algor stackx509extension x509extension evp openssl
+all:	clean asn1type asn1object asn1string bio x509 x509name biomethod pem bn tm x509policynode x509algor stackx509extension x509extension evp openssl x509crl x509store stackx509object x509object
 
 clean:
 	rm -f ../../test/Crypto/*
+
+x509crl:
+	sh -x mkstruct.sh _200 X509CRL X509CRL
+
+x509object:
+	sh -x mkstruct.sh _214 X509Object X509Object
+
+stackx509object:
+	sh -x mkstruct.sh _3341 StackX509Object StackX509Object
+
+x509store:
+	sh -x mkstruct.sh _210 X509Store X509Store
 
 x509extension:
 	sh -x mkstruct.sh _3026 X509Extension X509Extension

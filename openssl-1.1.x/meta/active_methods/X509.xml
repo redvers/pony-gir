@@ -515,7 +515,7 @@
   <renderuse name="X509_CRL_free" render="0"/>
   <renderuse name="X509_CRL_get0_by_cert" render="0"/>
   <renderuse name="X509_CRL_get0_by_serial" render="0"/>
-  <renderuse name="X509_CRL_get0_extensions" render="0"/>
+  <renderuse name="X509_CRL_get0_extensions" render="1"/>
   <renderuse name="X509_CRL_get0_lastUpdate" render="0"/>
   <renderuse name="X509_CRL_get0_nextUpdate" render="0"/>
   <renderuse name="X509_CRL_get0_signature" render="0"/>
@@ -588,12 +588,12 @@
   <renderuse name="X509_get0_uids" render="0"/>
   <renderuse name="X509_get1_email" render="0"/>
   <renderuse name="X509_get1_ocsp" render="0"/>
-  <renderuse name="X509_get_default_cert_area" render="0"/>
-  <renderuse name="X509_get_default_cert_dir" render="0"/>
-  <renderuse name="X509_get_default_cert_dir_env" render="0"/>
-  <renderuse name="X509_get_default_cert_file" render="0"/>
-  <renderuse name="X509_get_default_cert_file_env" render="0"/>
-  <renderuse name="X509_get_default_private_dir" render="0"/>
+  <renderuse name="X509_get_default_cert_area" render="1"/>
+  <renderuse name="X509_get_default_cert_dir" render="1"/>
+  <renderuse name="X509_get_default_cert_dir_env" render="1"/>
+  <renderuse name="X509_get_default_cert_file" render="1"/>
+  <renderuse name="X509_get_default_cert_file_env" render="1"/>
+  <renderuse name="X509_get_default_private_dir" render="1"/>
   <renderuse name="X509_get_ex_data" render="0"/>
   <renderuse name="X509_get_ext" render="0"/>
   <renderuse name="X509_get_ext_by_critical" render="0"/>
@@ -703,7 +703,7 @@
   <renderuse name="X509_NAME_set" render="0"/>
   <renderuse name="X509_new" render="0"/>
   <renderuse name="X509_OBJECT_free" render="0"/>
-  <renderuse name="X509_OBJECT_get0_X509" render="0"/>
+  <renderuse name="X509_OBJECT_get0_X509" render="1"/>
   <renderuse name="X509_OBJECT_get0_X509_CRL" render="0"/>
   <renderuse name="X509_OBJECT_get_type" render="0"/>
   <renderuse name="X509_OBJECT_idx_by_subject" render="0"/>
@@ -892,7 +892,7 @@
   <renderuse name="X509_STORE_CTX_set_verify" render="0"/>
   <renderuse name="X509_STORE_CTX_set_verify_cb" render="0"/>
   <renderuse name="X509_STORE_free" render="0"/>
-  <renderuse name="X509_STORE_get0_objects" render="0"/>
+  <renderuse name="X509_STORE_get0_objects" render="1"/>
   <renderuse name="X509_STORE_get0_param" render="0"/>
   <renderuse name="X509_STORE_get_cert_crl" render="0"/>
   <renderuse name="X509_STORE_get_check_crl" render="0"/>
@@ -909,7 +909,7 @@
   <renderuse name="X509_STORE_get_verify_cb" render="0"/>
   <renderuse name="X509_STORE_load_locations" render="0"/>
   <renderuse name="X509_STORE_lock" render="0"/>
-  <renderuse name="X509_STORE_new" render="0"/>
+  <renderuse name="X509_STORE_new" render="1"/>
   <renderuse name="X509_STORE_set1_param" render="0"/>
   <renderuse name="X509_STORE_set_cert_crl" render="0"/>
   <renderuse name="X509_STORE_set_check_crl" render="0"/>
@@ -917,7 +917,7 @@
   <renderuse name="X509_STORE_set_check_policy" render="0"/>
   <renderuse name="X509_STORE_set_check_revocation" render="0"/>
   <renderuse name="X509_STORE_set_cleanup" render="0"/>
-  <renderuse name="X509_STORE_set_default_paths" render="0"/>
+  <renderuse name="X509_STORE_set_default_paths" render="1"/>
   <renderuse name="X509_STORE_set_depth" render="0"/>
   <renderuse name="X509_STORE_set_ex_data" render="0"/>
   <renderuse name="X509_STORE_set_flags" render="0"/>

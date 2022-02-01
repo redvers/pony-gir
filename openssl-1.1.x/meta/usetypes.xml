@@ -31,13 +31,13 @@
 
   <typedef name="X509objectst"
     embed="embed"
-    ponytypein="X509objectst tag"
+    ponytypein="NullablePointer[X509Object] tag"
     ponytypeinconv=""
-    ponytypeout="X509objectst"
-    structtype="X509objectst"
-    structdef="X509objectst"
-    argtype="X509objectst tag"
-    rvtype="X509objectst"/>
+    ponytypeout="NullablePointer[X509Object]"
+    structtype="NullablePointer[X509Object]"
+    structdef="NullablePointer[X509Object].none()"
+    argtype="NullablePointer[X509Object] tag"
+    rvtype="NullablePointer[X509Object]"/>
 
   <typedef name="X509POLICYLEVELst"
     embed="embed"
@@ -611,13 +611,13 @@
 
   <typedef name="StackstX509OBJECT"
     embed="embed"
-    ponytypein="StackstX509OBJECT tag"
+    ponytypein="NullablePointer[StackX509Object] tag"
     ponytypeinconv=""
-    ponytypeout="StackstX509OBJECT"
-    structtype="StackstX509OBJECT"
-    structdef="StackstX509OBJECT"
-    argtype="StackstX509OBJECT tag"
-    rvtype="StackstX509OBJECT"/>
+    ponytypeout="NullablePointer[StackX509Object]"
+    structtype="NullablePointer[StackX509Object]"
+    structdef="NullablePointer[StackX509Object].none()"
+    argtype="NullablePointer[StackX509Object] tag"
+    rvtype="NullablePointer[StackX509Object]"/>
 
   <typedef name="X509purposest"
     embed="embed"
@@ -861,13 +861,13 @@
 
   <typedef name="X509crlst"
     embed="embed"
-    ponytypein="X509crlst tag"
+    ponytypein="NullablePointer[X509CRL] tag"
     ponytypeinconv=""
-    ponytypeout="X509crlst"
-    structtype="X509crlst"
-    structdef="X509crlst"
-    argtype="X509crlst tag"
-    rvtype="X509crlst"/>
+    ponytypeout="NullablePointer[X509CRL]"
+    structtype="NullablePointer[X509CRL]"
+    structdef="NullablePointer[X509CRL].none()"
+    argtype="NullablePointer[X509CRL] tag"
+    rvtype="NullablePointer[X509CRL]"/>
 
   <typedef name="Pkcs7signerinfost"
     embed="embed"
@@ -2341,13 +2341,13 @@
 
   <typedef name="X509storest"
     embed="embed"
-    ponytypein="X509storest tag"
+    ponytypein="NullablePointer[X509Store] tag"
     ponytypeinconv=""
-    ponytypeout="X509storest"
-    structtype="X509storest"
-    structdef="X509storest"
-    argtype="X509storest tag"
-    rvtype="X509storest"/>
+    ponytypeout="NullablePointer[X509Store]"
+    structtype="NullablePointer[X509Store]"
+    structdef="NullablePointer[X509Store].none()"
+    argtype="NullablePointer[X509Store] tag"
+    rvtype="NullablePointer[X509Store]"/>
 
   <typedef name="PBKDF2PARAMst"
     embed="embed"

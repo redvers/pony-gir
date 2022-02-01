@@ -187,7 +187,7 @@
     <field name="parameter" id="_7703" type="Asn1typest" fieldid="_8190" offset="64" fid="f12" line="61"/>
   </struct>
 
-  <struct name="X509crlst" id="_200" size="" align="" fid="f7" lineno="123">
+  <struct name="X509CRL" id="_200" size="" align="" fid="f7" lineno="123">
 
   </struct>
 
@@ -207,7 +207,7 @@
 
   </struct>
 
-  <struct name="X509storest" id="_210" size="" align="" fid="f7" lineno="128">
+  <struct name="X509Store" id="_210" size="" align="" fid="f7" lineno="128">
 
   </struct>
 
@@ -215,7 +215,7 @@
 
   </struct>
 
-  <struct name="X509objectst" id="_214" size="" align="" fid="f7" lineno="131">
+  <struct name="X509Object" id="_214" size="" align="" fid="f7" lineno="131">
 
   </struct>
 
@@ -981,7 +981,7 @@
 
   </struct>
 
-  <struct name="StackstX509OBJECT" id="_3341" size="" align="" fid="f79" lineno="58">
+  <struct name="StackX509Object" id="_3341" size="" align="" fid="f79" lineno="58">
 
   </struct>
 

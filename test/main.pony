@@ -88,7 +88,11 @@ bF3Iiu/C
     env.out.print("mdlen: " + digestsz(0)?.string())
     env.out.print("sha1: " + OPENSSL.pony_OPENSSL_buf2hexstr(consume str, digestsz(0)?.i64()))
 
+// STORE stuff
+    let store: NullablePointer[X509Store] = X509.pony_X509_STORE_new()
+    if (store.is_none()) then error end
 
+    let objstack: NullablePointer[StackX509Object] = X509.pony_X509_STORE_get0_objects(store)
 
 
 
