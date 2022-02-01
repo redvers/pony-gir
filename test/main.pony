@@ -35,7 +35,7 @@ bF3Iiu/C
 -----END CERTIFICATE-----
 """
     try
-    let bio: NullablePointer[BIO] = BIO.pony_BIO_new(BIO.pony_BIO_s_mem())
+    var bio: NullablePointer[BIO] tag = new_memory_bio()
     let rd: I32 = BIO.pony_BIO_write(bio, ponyiocert.cpointer(), ponyiocert.size().i32())
     if (rd != ponyiocert.size().i32()) then error end
 
@@ -66,14 +66,47 @@ bF3Iiu/C
     env.out.print("Not After: " + ii64.string())
     env.out.print("Not After: " + asn1_time_to_string(notaft))
 
+    var extstk: NullablePointer[StackX509Extension] tag = X509.pony_X509_get0_extensions(cert)
+    bio = new_memory_bio()
 
+    X509.pony_X509V3_extensions_print(bio, "X509V3_extensions_print:", extstk, 0,0)
+    env.out.print(bio_to_string(bio))
 
+    env.out.print("check_ca: " + check_ca(cert).string())
+
+    bio = new_memory_bio()
+    X509.pony_X509_print(bio, cert)
+    env.out.print("X509_print:" + bio_to_string(bio))
+
+    // Easy check_host first:
+    if (let rv: I32 = X509.pony_X509_check_host(cert, "www.ponylang.io", 0, 0, Pointer[Pointer[U8]]); rv == 1) then env.out.print("www.ponylang.io is successfully matched") end
+    if (let rv: I32 = X509.pony_X509_check_host(cert, "www.ponylang.biff", 0, 0, Pointer[Pointer[U8]]); rv == 0) then env.out.print("www.ponylang.biff does not match") end
 
 
 
     else
       env.out.print("Error in here")
     end
+
+
+
+  fun check_ca(cert: NullablePointer[X509] tag): Bool =>
+    if (X509.pony_X509_check_ca(cert) == 0) then false else true end
+
+  fun bio_to_string(bio: NullablePointer[BIO] tag): String val =>
+    let retstr: Array[U8] val = recover val
+      var tarr: Array[U8] ref = Array[U8]
+      let buffer: Array[U8] ref = Array[U8].init(0, 1024)
+      var len: I32 = 0
+      while ((len = BIO.pony_BIO_read(bio, buffer.cpointer(), buffer.size().i32())); len > 0) do
+        buffer.copy_to(tarr, 0, tarr.size(), len.usize())
+      end
+      tarr
+    end
+    String.from_array(retstr)
+
+  fun new_memory_bio(): NullablePointer[BIO] tag =>
+    BIO.pony_BIO_new(BIO.pony_BIO_s_mem())
 
   fun _asn1_time_to_posix(asn1time: NullablePointer[ASN1String] tag): I64 =>
     let tm: Tm = Tm
@@ -83,13 +116,14 @@ bF3Iiu/C
     @mktime(tmnp)
 
   fun asn1_time_to_string(asn1time: NullablePointer[ASN1String] tag): String val =>
-    let bio: NullablePointer[BIO] tag = BIO.pony_BIO_new(BIO.pony_BIO_s_mem())
+    let bio: NullablePointer[BIO] tag = new_memory_bio()
     var ret: I32 = ASN1String.pony_ASN1_UTCTIME_print(bio, asn1time)
-    let date: String trn = recover trn "ZZZ ZZ ZZ ZZ ZZ ZZZZ ZZZZZZZZZ".clone() end
+    bio_to_string(bio)
+//    let date: String trn = recover trn "ZZZ ZZ ZZ ZZ ZZ ZZZZ ZZZZZZZZZ".clone() end
 
-    let len: I32 = BIO.pony_BIO_read(bio, date.cpointer(), date.size().i32())
-    date.trim_in_place(0, len.usize())
-    consume date
+//    let len: I32 = BIO.pony_BIO_read(bio, date.cpointer(), date.size().i32())
+//    date.trim_in_place(0, len.usize())
+//    consume date
 
 
 

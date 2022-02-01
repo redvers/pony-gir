@@ -574,7 +574,7 @@
   <renderuse name="X509_get0_authority_issuer" render="0"/>
   <renderuse name="X509_get0_authority_key_id" render="1"/>
   <renderuse name="X509_get0_authority_serial" render="0"/>
-  <renderuse name="X509_get0_extensions" render="0"/>
+  <renderuse name="X509_get0_extensions" render="1"/>
   <renderuse name="X509_get0_notAfter" render="1"/>
   <renderuse name="X509_get0_notBefore" render="1"/>
   <renderuse name="X509_get0_pubkey" render="0"/>
