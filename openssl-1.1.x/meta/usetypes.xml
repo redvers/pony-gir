@@ -2581,13 +2581,13 @@
 
   <typedef name="Evpmdst"
     embed="embed"
-    ponytypein="Evpmdst tag"
+    ponytypein="NullablePointer[EVPMD] tag"
     ponytypeinconv=""
-    ponytypeout="Evpmdst"
-    structtype="Evpmdst"
-    structdef="Evpmdst"
-    argtype="Evpmdst tag"
-    rvtype="Evpmdst"/>
+    ponytypeout="NullablePointer[EVPMD]"
+    structtype="NullablePointer[EVPMD]"
+    structdef="NullablePointer[EVPMD].none()"
+    argtype="NullablePointer[EVPMD] tag"
+    rvtype="NullablePointer[EVPMD]"/>
 
   <typedef name="Bnrecpctxst"
     embed="embed"

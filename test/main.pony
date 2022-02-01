@@ -82,6 +82,16 @@ bF3Iiu/C
     if (let rv: I32 = X509.pony_X509_check_host(cert, "www.ponylang.io", 0, 0, Pointer[Pointer[U8]]); rv == 1) then env.out.print("www.ponylang.io is successfully matched") end
     if (let rv: I32 = X509.pony_X509_check_host(cert, "www.ponylang.biff", 0, 0, Pointer[Pointer[U8]]); rv == 0) then env.out.print("www.ponylang.biff does not match") end
 
+    var str: String trn = recover trn String.from_iso_array(recover iso Array[U8].init(0, 64) end) end // EVP_MAX_MD_SIZE
+    var digestsz: Array[U32] = Array[U32].init(0,1)
+    X509.pony_X509_digest(cert, EVPMD.pony_EVP_sha1(), str.cpointer(), digestsz.cpointer())
+    env.out.print("mdlen: " + digestsz(0)?.string())
+    env.out.print("sha1: " + OPENSSL.pony_OPENSSL_buf2hexstr(consume str, digestsz(0)?.i64()))
+
+
+
+
+
 
 
     else

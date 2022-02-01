@@ -1,4 +1,4 @@
-all:	clean asn1type asn1object asn1string bio x509 x509name biomethod pem bn tm x509policynode x509algor stackx509extension x509extension
+all:	clean asn1type asn1object asn1string bio x509 x509name biomethod pem bn tm x509policynode x509algor stackx509extension x509extension evp openssl
 
 clean:
 	rm -f ../../test/Crypto/*
@@ -41,6 +41,12 @@ x509policynode:
 
 x509algor:
 	sh -x mkstruct.sh _198 X509Algor X509Algor
+
+evp:
+	sh -x mkstruct.sh _156 EVPMD EVPMD
+
+openssl:
+	sh -x mkprim.sh 0 OPENSSL OPENSSL
 
 pem:
 	sh -x mkprim.sh 0 PEM PEM

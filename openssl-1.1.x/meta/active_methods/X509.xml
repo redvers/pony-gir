@@ -554,7 +554,7 @@
   <renderuse name="X509_CRL_up_ref" render="0"/>
   <renderuse name="X509_CRL_verify" render="0"/>
   <renderuse name="X509_delete_ext" render="0"/>
-  <renderuse name="X509_digest" render="0"/>
+  <renderuse name="X509_digest" render="1"/>
   <renderuse name="X509_dup" render="0"/>
   <renderuse name="X509_email_free" render="0"/>
   <renderuse name="X509_EXTENSION_create_by_NID" render="0"/>
@@ -625,7 +625,7 @@
   <renderuse name="X509_issuer_and_serial_cmp" render="0"/>
   <renderuse name="X509_issuer_and_serial_hash" render="0"/>
   <renderuse name="X509_issuer_name_cmp" render="0"/>
-  <renderuse name="X509_issuer_name_hash" render="0"/>
+  <renderuse name="X509_issuer_name_hash" render="1"/>
   <renderuse name="X509_issuer_name_hash_old" render="0"/>
   <renderuse name="X509_keyid_get0" render="0"/>
   <renderuse name="X509_keyid_set1" render="0"/>
@@ -932,7 +932,7 @@
   <renderuse name="X509_STORE_unlock" render="0"/>
   <renderuse name="X509_STORE_up_ref" render="0"/>
   <renderuse name="X509_subject_name_cmp" render="0"/>
-  <renderuse name="X509_subject_name_hash" render="0"/>
+  <renderuse name="X509_subject_name_hash" render="1"/>
   <renderuse name="X509_subject_name_hash_old" render="0"/>
   <renderuse name="X509_supported_extension" render="0"/>
   <renderuse name="X509_time_adj" render="0"/>

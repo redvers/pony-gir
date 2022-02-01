@@ -8322,7 +8322,7 @@
      <useargs>
        <usearg name="data" type="X509st"/>
        <usearg name="otype" type="Evpmdst"/>
-       <usearg name="md" type="String"/>
+       <usearg name="md" type="Pointer[U8]"/>
        <usearg name="len" type="Pointer[U32]"/>
      </useargs>
   </use>
