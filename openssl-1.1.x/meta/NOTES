@@ -45,3 +45,8 @@
   <Typedef id="_4481" name="ASN1_ADB_TABLE" type="_8875" context="_1" location="f8:481" file="f8" line="481"/>
 
   <Typedef id="_4483" name="ASN1_ADB" type="_8883" context="_1" location="f8:482" file="f8" line="482"/>
+
+
+
+sk_X509_OBJECT_num
+sk_X509_OBJECT_pop

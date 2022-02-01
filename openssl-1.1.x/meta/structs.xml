@@ -241,8 +241,8 @@
 
   <struct name="V3extctx" id="_226" size="448" align="64" fid="f13" lineno="79">
     <field name="flags" id="_7718" type="I32" fieldid="_7627" offset="0" fid="f13" line="82"/>
-    <field name="issuer_cert" id="_7719" type="X509st" fieldid="_8551" offset="64" fid="f13" line="83"/>
-    <field name="subject_cert" id="_7720" type="X509st" fieldid="_8551" offset="128" fid="f13" line="84"/>
+    <field name="issuer_cert" id="_7719" type="X509" fieldid="_8551" offset="64" fid="f13" line="83"/>
+    <field name="subject_cert" id="_7720" type="X509" fieldid="_8551" offset="128" fid="f13" line="84"/>
     <field name="subject_req" id="_7721" type="X509reqst" fieldid="_8802" offset="192" fid="f13" line="85"/>
     <field name="crl" id="_7722" type="X509crlst" fieldid="_8577" offset="256" fid="f13" line="86"/>
     <field name="db_meth" id="_7723" type="X509V3CONFMETHODst" fieldid="_9717" offset="320" fid="f13" line="87"/>
@@ -908,7 +908,7 @@
   </struct>
 
   <struct name="X509infost" id="_3213" size="512" align="64" fid="f12" lineno="245">
-    <field name="x509" id="_8588" type="X509st" fieldid="_8551" offset="0" fid="f12" line="246"/>
+    <field name="x509" id="_8588" type="X509" fieldid="_8551" offset="0" fid="f12" line="246"/>
     <field name="crl" id="_8589" type="X509crlst" fieldid="_8577" offset="64" fid="f12" line="247"/>
     <field name="x_pkey" id="_8590" type="Privatekeyst" fieldid="_8847" offset="128" fid="f12" line="248"/>
     <field name="enc_cipher" id="_8591" type="Evpcipherinfost" fieldid="_1968" offset="192" fid="f12" line="249"/>
@@ -998,7 +998,7 @@
   </struct>
 
   <struct name="Pkcs7issuerandserialst" id="_3611" size="128" align="64" fid="f81" lineno="32">
-    <field name="issuer" id="_8702" type="X509namest" fieldid="_8526" offset="0" fid="f81" line="33"/>
+    <field name="issuer" id="_8702" type="X509Name" fieldid="_8526" offset="0" fid="f81" line="33"/>
     <field name="serial" id="_8703" type="Asn1stringst" fieldid="_8168" offset="64" fid="f81" line="34"/>
   </struct>
 
@@ -1022,7 +1022,7 @@
     <field name="issuer_and_serial" id="_8721" type="Pkcs7issuerandserialst" fieldid="_8778" offset="64" fid="f81" line="53"/>
     <field name="key_enc_algor" id="_8722" type="X509algorst" fieldid="_8130" offset="128" fid="f81" line="54"/>
     <field name="enc_key" id="_8723" type="Asn1stringst" fieldid="_8228" offset="192" fid="f81" line="55"/>
-    <field name="cert" id="_8724" type="X509st" fieldid="_8551" offset="256" fid="f81" line="56"/>
+    <field name="cert" id="_8724" type="X509" fieldid="_8551" offset="256" fid="f81" line="56"/>
   </struct>
 
   <struct name="StackstPKCS7RECIPINFO" id="_3645" size="" align="" fid="f81" lineno="59">
@@ -1276,7 +1276,7 @@
   <struct name="DISTPOINTNAMEst" id="_4877" size="192" align="64" fid="f13" lineno="172">
     <field name="otype" id="_9067" type="I32" fieldid="_7627" offset="0" fid="f13" line="173"/>
     <field name="name" id="_9069" type="None" fieldid="_10134" offset="64" fid="f13" line="177"/>
-    <field name="dpname" id="_9070" type="X509namest" fieldid="_8526" offset="128" fid="f13" line="179"/>
+    <field name="dpname" id="_9070" type="X509Name" fieldid="_8526" offset="128" fid="f13" line="179"/>
   </struct>
 
   <struct name="StackstDISTPOINT" id="_4879" size="" align="" fid="f13" lineno="203">

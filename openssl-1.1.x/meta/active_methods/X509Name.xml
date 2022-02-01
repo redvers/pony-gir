@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/ossl.xml"/>
+<renders>
+  <renderuse name="X509_NAME_get_text_by_NID" render="1"/>
+</renders>
+</castxml2pony>

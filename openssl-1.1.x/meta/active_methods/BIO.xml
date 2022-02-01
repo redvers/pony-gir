@@ -4,6 +4,20 @@
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/ossl.xml"/>
 <renders>
+  <renderuse name="PEM_read_bio" render="1"/>
+  <renderuse name="PEM_read_bio_X509" render="1"/>
+  <renderuse name="X509_aux_print" render="1"/>
+  <renderuse name="X509_NAME_print" render="1"/>
+  <renderuse name="X509_NAME_print_ex" render="1"/>
+  <renderuse name="X509_ocspid_print" render="1"/>
+  <renderuse name="X509_POLICY_NODE_print" render="1"/>
+  <renderuse name="X509_print" render="1"/>
+  <renderuse name="X509_print_ex" render="1"/>
+  <renderuse name="X509_signature_print" render="1"/>
+  <renderuse name="X509V3_extensions_print" render="1"/>
+  <renderuse name="X509V3_EXT_print" render="1"/>
+  <renderuse name="ASN1_TIME_print" render="1"/>
+  <renderuse name="ASN1_UTCTIME_print" render="1"/>
   <renderuse name="BIO_accept" render="0"/>
   <renderuse name="BIO_accept_ex" render="0"/>
   <renderuse name="BIO_ADDR_clear" render="0"/>
@@ -58,8 +72,8 @@
   <renderuse name="BIO_f_md" render="0"/>
   <renderuse name="BIO_f_nbio_test" render="0"/>
   <renderuse name="BIO_f_null" render="0"/>
-  <renderuse name="BIO_free" render="0"/>
-  <renderuse name="BIO_free_all" render="0"/>
+  <renderuse name="BIO_free" render="1"/>
+  <renderuse name="BIO_free_all" render="1"/>
   <renderuse name="BIO_f_reliable" render="0"/>
   <renderuse name="BIO_f_ssl" render="0"/>
   <renderuse name="BIO_get_accept_socket" render="0"/>

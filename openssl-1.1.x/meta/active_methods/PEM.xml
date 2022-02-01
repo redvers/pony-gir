@@ -17,7 +17,7 @@
   <renderuse name="PEM_get_EVP_CIPHER_INFO" render="0"/>
   <renderuse name="PEM_proc_type" render="0"/>
   <renderuse name="PEM_read" render="0"/>
-  <renderuse name="PEM_read_bio" render="1"/>
+  <renderuse name="PEM_read_bio" render="0"/>
   <renderuse name="PEM_read_bio_CMS" render="0"/>
   <renderuse name="PEM_read_bio_DHparams" render="0"/>
   <renderuse name="PEM_read_bio_DSAparams" render="0"/>
@@ -38,7 +38,7 @@
   <renderuse name="PEM_read_bio_RSA_PUBKEY" render="0"/>
   <renderuse name="PEM_read_bio_RSAPublicKey" render="0"/>
   <renderuse name="PEM_read_bio_SSL_SESSION" render="0"/>
-  <renderuse name="PEM_read_bio_X509" render="1"/>
+  <renderuse name="PEM_read_bio_X509" render="0"/>
   <renderuse name="PEM_read_bio_X509_AUX" render="0"/>
   <renderuse name="PEM_read_bio_X509_CRL" render="0"/>
   <renderuse name="PEM_read_bio_X509_REQ" render="0"/>

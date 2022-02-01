@@ -1,7 +1,7 @@
 use "format"
 use "Crypto"
 
-use @mktime[I64](tm: NullablePointer[Tm])
+use @mktime[I64](tm: Tm)
 actor Main
   new create(env: Env) =>
     env.out.print("Test")
@@ -35,64 +35,65 @@ bF3Iiu/C
 -----END CERTIFICATE-----
 """
     try
-    var bio: NullablePointer[BIO] tag = new_memory_bio()
-    let rd: I32 = BIO.pony_BIO_write(bio, ponyiocert.cpointer(), ponyiocert.size().i32())
+    var bio: BIO = new_memory_bio()
+    let rd: I32 = bio.pony_BIO_write(ponyiocert.cpointer(), ponyiocert.size().i32())
     if (rd != ponyiocert.size().i32()) then error end
 
-    let cert: NullablePointer[X509] = PEM.pony_PEM_read_bio_X509(bio, NullablePointer[X509].none(), Pointer[None], Pointer[None])
-    let subject: NullablePointer[X509Name] = X509.pony_X509_get_subject_name(cert)
+    let cert: X509 = bio.pony_PEM_read_bio_X509(0, Pointer[None], Pointer[None])
+    let subject: X509Name = cert.pony_X509_get_subject_name()
     env.out.print("Subject: " + x509name_to_string(subject)?)
 
-    let issuername: NullablePointer[X509Name] = X509.pony_X509_get_issuer_name(cert)
+    let issuername: X509Name = cert.pony_X509_get_issuer_name()
     env.out.print("Subject: " + x509name_to_string(issuername)?)
 
-    let subjectkeyid: Array[U8] val = asn1string_copy_to_array(X509.pony_X509_get0_subject_key_id(cert))?
+    let subjectkeyid: Array[U8] val = asn1string_copy_to_array(cert.pony_X509_get0_subject_key_id())?
 		env.out.print("SubjectKeyID: " + _format_colon_hex(subjectkeyid)?)
 
-    let authoritykeyid: Array[U8] val = asn1string_copy_to_array(X509.pony_X509_get0_authority_key_id(cert))?
+    let authoritykeyid: Array[U8] val = asn1string_copy_to_array(cert.pony_X509_get0_authority_key_id())?
 		env.out.print("AuthorityKeyID: " + _format_colon_hex(authoritykeyid)?)
 
-    let sn: NullablePointer[ASN1String] = X509.pony_X509_get0_serialNumber(cert)
-    env.out.print("SerialNumber: " + integer_to_bignum_to_stringhex(sn)?)
-    env.out.print("SerialNumber: " + integer_to_bignum_to_stringdec(sn)?)
+    let sn: ASN1String val = cert.pony_X509_get0_serialNumber()
+    env.out.print("SerialNumber: " + integer_to_bignum_to_stringhex(sn))
+    env.out.print("SerialNumber: " + integer_to_bignum_to_stringdec(sn))
 
-    let notb4: NullablePointer[ASN1String] tag = X509.pony_X509_get0_notBefore(cert)
+    let notb4: ASN1String val = cert.pony_X509_get0_notBefore()
     let i64: I64 = _asn1_time_to_posix(notb4)
     env.out.print("Not before: " + i64.string())
     env.out.print("Not before: " + asn1_time_to_string(notb4))
 
-    let notaft: NullablePointer[ASN1String] tag = X509.pony_X509_get0_notAfter(cert)
+    let notaft: ASN1String val = cert.pony_X509_get0_notAfter()
     let ii64: I64 = _asn1_time_to_posix(notaft)
     env.out.print("Not After: " + ii64.string())
     env.out.print("Not After: " + asn1_time_to_string(notaft))
 
-    var extstk: NullablePointer[StackX509Extension] tag = X509.pony_X509_get0_extensions(cert)
+    var extstk: StackX509Extension = cert.pony_X509_get0_extensions()
     bio = new_memory_bio()
 
-    X509.pony_X509V3_extensions_print(bio, "X509V3_extensions_print:", extstk, 0,0)
+    bio.pony_X509V3_extensions_print("X509V3_extensions_print:", extstk, 0,0)
     env.out.print(bio_to_string(bio))
 
-    env.out.print("check_ca: " + check_ca(cert).string())
+    env.out.print("check_ca: " + cert.pony_X509_check_ca().string())
 
     bio = new_memory_bio()
-    X509.pony_X509_print(bio, cert)
+    bio.pony_X509_print(cert)
     env.out.print("X509_print:" + bio_to_string(bio))
 
     // Easy check_host first:
-    if (let rv: I32 = X509.pony_X509_check_host(cert, "www.ponylang.io", 0, 0, Pointer[Pointer[U8]]); rv == 1) then env.out.print("www.ponylang.io is successfully matched") end
-    if (let rv: I32 = X509.pony_X509_check_host(cert, "www.ponylang.biff", 0, 0, Pointer[Pointer[U8]]); rv == 0) then env.out.print("www.ponylang.biff does not match") end
+    if (let rv: I32 = cert.pony_X509_check_host("www.ponylang.io", 0, 0, Pointer[Pointer[U8]]); rv == 1) then env.out.print("www.ponylang.io is successfully matched") end
+    if (let rv: I32 = cert.pony_X509_check_host("www.ponylang.biff", 0, 0, Pointer[Pointer[U8]]); rv == 0) then env.out.print("www.ponylang.biff does not match") end
 
     var str: String trn = recover trn String.from_iso_array(recover iso Array[U8].init(0, 64) end) end // EVP_MAX_MD_SIZE
     var digestsz: Array[U32] = Array[U32].init(0,1)
-    X509.pony_X509_digest(cert, EVPMD.pony_EVP_sha1(), str.cpointer(), digestsz.cpointer())
+    cert.pony_X509_digest(EVPMD.pony_EVP_sha1(), str.cpointer(), digestsz.cpointer())
     env.out.print("mdlen: " + digestsz(0)?.string())
     env.out.print("sha1: " + OPENSSL.pony_OPENSSL_buf2hexstr(consume str, digestsz(0)?.i64()))
 
 // STORE stuff
-    let store: NullablePointer[X509Store] = X509Store.pony_X509_STORE_new()
-    if (store.is_none()) then error end
+    let store: X509Store = X509Store.pony_X509_STORE_new()
+    store.pony_X509_STORE_set_default_paths()
 
-    let objstack: NullablePointer[StackX509Object] = X509Store.pony_X509_STORE_get0_objects(store)
+    let objstack: StackX509Object = store.pony_X509_STORE_get0_objects()
+//    env.out.print("Stack size: " + objstack.pony_sk_X509_OBJECT_num().string())
 
 
 
@@ -103,64 +104,45 @@ bF3Iiu/C
     end
 
 
-
-  fun check_ca(cert: NullablePointer[X509] tag): Bool =>
-    if (X509.pony_X509_check_ca(cert) == 0) then false else true end
-
-  fun bio_to_string(bio: NullablePointer[BIO] tag): String val =>
+  fun bio_to_string(bio: BIO): String val =>
     let retstr: Array[U8] val = recover val
       var tarr: Array[U8] ref = Array[U8]
       let buffer: Array[U8] ref = Array[U8].init(0, 1024)
       var len: I32 = 0
-      while ((len = BIO.pony_BIO_read(bio, buffer.cpointer(), buffer.size().i32())); len > 0) do
+      while ((len = bio.pony_BIO_read(buffer.cpointer(), buffer.size().i32())); len > 0) do
         buffer.copy_to(tarr, 0, tarr.size(), len.usize())
       end
       tarr
     end
     String.from_array(retstr)
 
-  fun new_memory_bio(): NullablePointer[BIO] tag =>
+  fun new_memory_bio(): BIO =>
     BIO.pony_BIO_new(BIO.pony_BIO_s_mem())
-
-  fun _asn1_time_to_posix(asn1time: NullablePointer[ASN1String] tag): I64 =>
+//
+  fun _asn1_time_to_posix(asn1time: ASN1String val): I64 =>
     let tm: Tm = Tm
     I64(1)
-    let tmnp: NullablePointer[Tm] = NullablePointer[Tm](tm)
-    ASN1String.pony_ASN1_TIME_to_tm(asn1time, tmnp)
-    @mktime(tmnp)
+    asn1time.pony_ASN1_TIME_to_tm(tm)
+    @mktime(tm)
 
-  fun asn1_time_to_string(asn1time: NullablePointer[ASN1String] tag): String val =>
-    let bio: NullablePointer[BIO] tag = new_memory_bio()
-    var ret: I32 = ASN1String.pony_ASN1_UTCTIME_print(bio, asn1time)
+  fun asn1_time_to_string(asn1time: ASN1String val): String val =>
+    let bio: BIO = new_memory_bio()
+    var ret: I32 = bio.pony_ASN1_UTCTIME_print(asn1time)
     bio_to_string(bio)
-//    let date: String trn = recover trn "ZZZ ZZ ZZ ZZ ZZ ZZZZ ZZZZZZZZZ".clone() end
 
-//    let len: I32 = BIO.pony_BIO_read(bio, date.cpointer(), date.size().i32())
-//    date.trim_in_place(0, len.usize())
-//    consume date
+  fun integer_to_bignum_to_stringhex(sn: ASN1String val): String val =>
+    let bignum: BIGNum = sn.pony_ASN1_INTEGER_to_BN(0)
+    bignum.pony_BN_bn2hex()
 
+  fun integer_to_bignum_to_stringdec(sn: ASN1String val): String val =>
+    let bignum: BIGNum = sn.pony_ASN1_INTEGER_to_BN(0)
+    bignum.pony_BN_bn2dec()
 
-
-  fun integer_to_bignum_to_stringhex(sn: NullablePointer[ASN1String]): String val ? =>
-    if (sn.is_none()) then error end
-    let bignum: NullablePointer[BIGNum] = ASN1String.pony_ASN1_INTEGER_to_BN(sn, NullablePointer[BIGNum].none())
-    if (bignum.is_none()) then error end
-    BIGNum.pony_BN_bn2hex(bignum)
-
-  fun integer_to_bignum_to_stringdec(sn: NullablePointer[ASN1String]): String val ? =>
-    if (sn.is_none()) then error end
-    let bignum: NullablePointer[BIGNum] = ASN1String.pony_ASN1_INTEGER_to_BN(sn, NullablePointer[BIGNum].none())
-    if (bignum.is_none()) then error end
-    BIGNum.pony_BN_bn2dec(bignum)
-
-
-
-
-  fun asn1string_copy_to_array(asn1str: NullablePointer[ASN1String]): Array[U8] val ? =>
-    if (asn1str.is_none()) then error end
+  fun asn1string_copy_to_array(asn1str: ASN1String val): Array[U8] val ? =>
+    if (NullablePointer[ASN1String val](asn1str).is_none()) then error end
     recover val
-      let len: I32 = ASN1String.pony_ASN1_STRING_length(asn1str)
-      let osslptr: Pointer[U8] ref = ASN1String.pony_ASN1_STRING_get0_data(asn1str)
+      let len: I32 = asn1str.pony_ASN1_STRING_length()
+      let osslptr: Pointer[U8] ref = asn1str.pony_ASN1_STRING_get0_data()
 
       (Array[U8].from_cpointer(osslptr, len.usize())).clone()
     end
@@ -178,16 +160,11 @@ bF3Iiu/C
     end
     consume string
 
-
-
-
-
-  fun x509name_to_string(sub: NullablePointer[X509Name]): String val ? =>
-    let len: I32 = X509.pony_X509_NAME_get_text_by_NID(sub, I32(13), Pointer[U8], I32(0))
+  fun x509name_to_string(sub: X509Name): String val ? =>
+    let len: I32 = sub.pony_X509_NAME_get_text_by_NID(I32(13), Pointer[U8], I32(0))
     let str: String ref = recover String(len.usize()) end
-    X509.pony_X509_NAME_get_text_by_NID(sub, I32(13), str.cstring(), len+1)
+    sub.pony_X509_NAME_get_text_by_NID(I32(13), str.cstring(), len+1)
     str.recalc()
     if (str.size() != len.usize()) then error end
     str.clone()
-
 
