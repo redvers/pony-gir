@@ -1,0 +1,6 @@
+
+fun pony_X509_EXTENSION_pop(): X509Extension =>
+  @OPENSSL_sk_pop(this)
+
+fun pony_X509_EXTENSION_num(): I32 =>
+  @OPENSSL_sk_num(this)

@@ -1,0 +1,6 @@
+
+fun pony_X509_OBJECT_pop(): X509Object =>
+  @OPENSSL_sk_pop(this)
+
+fun pony_X509_OBJECT_num(): I32 =>
+  @OPENSSL_sk_num(this)

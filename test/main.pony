@@ -1,5 +1,7 @@
 use "format"
 use "Crypto"
+use "Crypto/StackX509Object"
+use "Crypto/StackX509Extension"
 
 use @mktime[I64](tm: Tm)
 actor Main
@@ -93,8 +95,14 @@ bF3Iiu/C
     store.pony_X509_STORE_set_default_paths()
 
     let objstack: StackX509Object = store.pony_X509_STORE_get0_objects()
-//    env.out.print("Stack size: " + objstack.pony_sk_X509_OBJECT_num().string())
+    env.out.print("Stack size: " + objstack.pony_X509_OBJECT_num().string())
+    let x509o: X509Object = objstack.pony_X509_OBJECT_pop()
+    env.out.print("Object type: " + x509o.pony_X509_OBJECT_get_type().string())
+    let cert2: X509 = x509o.pony_X509_OBJECT_get0_X509()
 
+    bio = new_memory_bio()
+    bio.pony_X509_print(cert2)
+    env.out.print("X509_print:" + bio_to_string(bio))
 
 
 

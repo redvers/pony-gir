@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/ossl.xml"/>
+<renders>
+  <renderuse name="X509_OBJECT_free" render="1"/>
+  <renderuse name="X509_OBJECT_get0_X509" render="1"/>
+  <renderuse name="X509_OBJECT_get0_X509_CRL" render="1"/>
+  <renderuse name="X509_OBJECT_get_type" render="1"/>
+  <renderuse name="X509_OBJECT_idx_by_subject" render="1"/>
+  <renderuse name="X509_OBJECT_new" render="1"/>
+  <renderuse name="X509_OBJECT_retrieve_by_subject" render="1"/>
+  <renderuse name="X509_OBJECT_retrieve_match" render="1"/>
+  <renderuse name="X509_OBJECT_set1_X509" render="1"/>
+  <renderuse name="X509_OBJECT_set1_X509_CRL" render="1"/>
+  <renderuse name="X509_OBJECT_up_ref_count" render="1"/>
+</renders>
+</castxml2pony>

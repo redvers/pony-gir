@@ -29,7 +29,7 @@
     argtype="Pointer[Pointer[U8]] tag"
     rvtype="Pointer[Pointer[U8]]"/>
 
-  <typedef name="X509objectst"
+  <typedef name="X509Object"
     embed="embed"
     ponytypein="X509Object tag"
     ponytypeinconv=""

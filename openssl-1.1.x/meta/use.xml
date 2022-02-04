@@ -36477,7 +36477,7 @@
      ponyname="pony_sk_X509_OBJECT_value"
      fid="f79"
      lineno="58"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
        <usearg name="idx" type="I32"/>
@@ -36541,7 +36541,7 @@
      ponyname="pony_sk_X509_OBJECT_delete"
      fid="f79"
      lineno="58"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
        <usearg name="i" type="I32"/>
@@ -36551,10 +36551,10 @@
      ponyname="pony_sk_X509_OBJECT_delete_ptr"
      fid="f79"
      lineno="58"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
-       <usearg name="ptr" type="X509objectst"/>
+       <usearg name="ptr" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3355" name="sk_X509_OBJECT_push"
@@ -36564,7 +36564,7 @@
      rv="I32">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
-       <usearg name="ptr" type="X509objectst"/>
+       <usearg name="ptr" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3356" name="sk_X509_OBJECT_unshift"
@@ -36574,14 +36574,14 @@
      rv="I32">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
-       <usearg name="ptr" type="X509objectst"/>
+       <usearg name="ptr" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3357" name="sk_X509_OBJECT_pop"
      ponyname="pony_sk_X509_OBJECT_pop"
      fid="f79"
      lineno="58"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
      </useargs>
@@ -36590,7 +36590,7 @@
      ponyname="pony_sk_X509_OBJECT_shift"
      fid="f79"
      lineno="58"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
      </useargs>
@@ -36612,7 +36612,7 @@
      rv="I32">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
-       <usearg name="ptr" type="X509objectst"/>
+       <usearg name="ptr" type="X509Object"/>
        <usearg name="idx" type="I32"/>
      </useargs>
   </use>
@@ -36620,11 +36620,11 @@
      ponyname="pony_sk_X509_OBJECT_set"
      fid="f79"
      lineno="58"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
        <usearg name="idx" type="I32"/>
-       <usearg name="ptr" type="X509objectst"/>
+       <usearg name="ptr" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3362" name="sk_X509_OBJECT_find"
@@ -36634,7 +36634,7 @@
      rv="I32">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
-       <usearg name="ptr" type="X509objectst"/>
+       <usearg name="ptr" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3363" name="sk_X509_OBJECT_find_ex"
@@ -36644,7 +36644,7 @@
      rv="I32">
      <useargs>
        <usearg name="sk" type="StackX509Object"/>
-       <usearg name="ptr" type="X509objectst"/>
+       <usearg name="ptr" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3364" name="sk_X509_OBJECT_sort"
@@ -36961,7 +36961,7 @@
      ponyname="pony_X509_OBJECT_retrieve_by_subject"
      fid="f79"
      lineno="258"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="h" type="StackX509Object"/>
        <usearg name="otype" type="I32"/>
@@ -36972,10 +36972,10 @@
      ponyname="pony_X509_OBJECT_retrieve_match"
      fid="f79"
      lineno="261"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="h" type="StackX509Object"/>
-       <usearg name="x" type="X509objectst"/>
+       <usearg name="x" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3414" name="X509_OBJECT_up_ref_count"
@@ -36984,14 +36984,14 @@
      lineno="263"
      rv="I32">
      <useargs>
-       <usearg name="a" type="X509objectst"/>
+       <usearg name="a" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3415" name="X509_OBJECT_new"
      ponyname="pony_X509_OBJECT_new"
      fid="f79"
      lineno="264"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs/>
   </use>
   <use id="_3416" name="X509_OBJECT_free"
@@ -37000,7 +37000,7 @@
      lineno="265"
      rv="None">
      <useargs>
-       <usearg name="a" type="X509objectst"/>
+       <usearg name="a" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3417" name="X509_OBJECT_get_type"
@@ -37009,7 +37009,7 @@
      lineno="266"
      rv="I32">
      <useargs>
-       <usearg name="a" type="X509objectst"/>
+       <usearg name="a" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3418" name="X509_OBJECT_get0_X509"
@@ -37018,7 +37018,7 @@
      lineno="267"
      rv="X509">
      <useargs>
-       <usearg name="a" type="X509objectst"/>
+       <usearg name="a" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3419" name="X509_OBJECT_set1_X509"
@@ -37027,7 +37027,7 @@
      lineno="268"
      rv="I32">
      <useargs>
-       <usearg name="a" type="X509objectst"/>
+       <usearg name="a" type="X509Object"/>
        <usearg name="obj" type="X509"/>
      </useargs>
   </use>
@@ -37037,7 +37037,7 @@
      lineno="269"
      rv="X509crlst">
      <useargs>
-       <usearg name="a" type="X509objectst"/>
+       <usearg name="a" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3421" name="X509_OBJECT_set1_X509_CRL"
@@ -37046,7 +37046,7 @@
      lineno="270"
      rv="I32">
      <useargs>
-       <usearg name="a" type="X509objectst"/>
+       <usearg name="a" type="X509Object"/>
        <usearg name="obj" type="X509crlst"/>
      </useargs>
   </use>
@@ -37885,14 +37885,14 @@
        <usearg name="vs" type="X509storectxst"/>
        <usearg name="otype" type="I32"/>
        <usearg name="name" type="X509Name"/>
-       <usearg name="ret" type="X509objectst"/>
+       <usearg name="ret" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3516" name="X509_STORE_CTX_get_obj_by_subject"
      ponyname="pony_X509_STORE_CTX_get_obj_by_subject"
      fid="f79"
      lineno="456"
-     rv="X509objectst">
+     rv="X509Object">
      <useargs>
        <usearg name="vs" type="X509storectxst"/>
        <usearg name="otype" type="I32"/>
@@ -37981,7 +37981,7 @@
        <usearg name="ctx" type="X509lookupst"/>
        <usearg name="otype" type="I32"/>
        <usearg name="name" type="X509Name"/>
-       <usearg name="ret" type="X509objectst"/>
+       <usearg name="ret" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3525" name="X509_LOOKUP_by_issuer_serial"
@@ -37994,7 +37994,7 @@
        <usearg name="otype" type="I32"/>
        <usearg name="name" type="X509Name"/>
        <usearg name="serial" type="ASN1String"/>
-       <usearg name="ret" type="X509objectst"/>
+       <usearg name="ret" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3526" name="X509_LOOKUP_by_fingerprint"
@@ -38007,7 +38007,7 @@
        <usearg name="otype" type="I32"/>
        <usearg name="bytes" type="String"/>
        <usearg name="len" type="I32"/>
-       <usearg name="ret" type="X509objectst"/>
+       <usearg name="ret" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3527" name="X509_LOOKUP_by_alias"
@@ -38020,7 +38020,7 @@
        <usearg name="otype" type="I32"/>
        <usearg name="str" type="String"/>
        <usearg name="len" type="I32"/>
-       <usearg name="ret" type="X509objectst"/>
+       <usearg name="ret" type="X509Object"/>
      </useargs>
   </use>
   <use id="_3528" name="X509_LOOKUP_set_method_data"
