@@ -9,7 +9,7 @@
 </inherits>
 <renders>
   <renderuse name="gtk_widget_get_type" render="0"/>
-  <renderuse name="gtk_widget_new" render="0"/>
+  <constructor name="gtk_widget_new" render="1"/>
   <renderuse name="gtk_widget_destroy" render="0"/>
   <renderuse name="gtk_widget_destroyed" render="0"/>
   <renderuse name="gtk_widget_unparent" render="0"/>

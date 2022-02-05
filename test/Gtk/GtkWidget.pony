@@ -1,5 +1,5 @@
-//use "../Glib"
-//use "../GObject"
+use "../Glib"
+use "../GObject"
 //use "../Cairo"
 //use "../Atk"
 //use "../Pango"
@@ -20,12 +20,17 @@
 //use "lib:glib-2.0"
 
  
-class GtkWidget is (GtkWidgetInterface & GObjectInterface)
+class GtkWidget is GtkWidgetInterface
   var _obj: Pointer[GObject] tag
 
-  fun apply(): Pointer[GObject] =>
+  fun apply(): Pointer[GObject] tag =>
     _obj
 
-  new val createFromRef(oref: Pointer[GObjectREF] val) =>
+  new val createFromRef(oref: Pointer[GObject] tag) =>
     _obj = oref
+
+
+interface GtkWidgetInterface is GObjectInterface
+  fun apply(): Pointer[GObject] tag
   
+

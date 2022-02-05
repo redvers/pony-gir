@@ -5,7 +5,10 @@
 <xsl:param name="struct"/>
 <xsl:param name="debug"/>
 
-
+<xsl:template match="/castxml2pony/renders/constructor[@render='1']">
+  S
+</xsl:template>
+<!--
 <xsl:template match="/castxml2pony/uses/use[@rv=concat('NullablePointer[', $struct, ']')]">
   <xsl:variable name="fnname" select="./@name"/>
   <xsl:if test="/castxml2pony/renders/renderuse[@name=$fnname]">
@@ -15,6 +18,7 @@
   </xsl:if>
 </xsl:template>
 
+-->
 <xsl:template name="mainuse">
 <xsl:param name="n" />
 <xsl:param name="render" />
@@ -165,5 +169,6 @@
 
 <xsl:template match="prefix"></xsl:template>
 <xsl:template match="suffix"></xsl:template>
+<xsl:template match="text()"></xsl:template>
 
 </xsl:stylesheet>

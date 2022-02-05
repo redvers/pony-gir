@@ -1,5 +1,5 @@
-//use "../Glib"
-//use "../GObject"
+use "../Glib"
+use "../GObject"
 //use "../Cairo"
 //use "../Atk"
 //use "../Pango"

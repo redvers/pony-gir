@@ -6,7 +6,7 @@ use "GObject"
 //use "Harfbuzz"
 //use "Atk"
 //use "Gdk"
-//use "Gtk"
+use "Gtk"
 
 use "lib:gtk-3"
 use "lib:gdk-3"

@@ -6,14 +6,18 @@
 <xsl:param name="renderfields"/>
 
 <xsl:template match="/castxml2pony/structs/struct[@id=$struct]"> 
-class <xsl:value-of select="./@name"/> is (<xsl:value-of select="./@name"/>Interface &amp; <xsl:value-of select="./field[1]/@type"/>Interface)
+class <xsl:value-of select="./@name"/> is <xsl:value-of select="./@name"/>Interface
   var _obj: Pointer[GObject] tag
 
-  fun apply(): Pointer[GObject] =>
+  fun apply(): Pointer[GObject] tag =>
     _obj
 
-  new val createFromRef(oref: Pointer[GObjectREF] val) =>
+  new val createFromRef(oref: Pointer[GObject] tag) =>
     _obj = oref
+
+
+interface <xsl:value-of select="./@name"/>Interface<xsl:if test="./field[1]/@type ne 'GTypeInstance'"> is <xsl:value-of select="./field[1]/@type"/>Interface</xsl:if>
+  fun apply(): Pointer[GObject] tag
   <!--
 <xsl:if test="$renderfields='1'"><xsl:apply-templates select="./field" mode="generateField"/></xsl:if>
   -->
