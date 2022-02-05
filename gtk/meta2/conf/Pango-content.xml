@@ -1,251 +1,1272 @@
-<classes ns="Pango">
-  <alias name="Glyph" parent="" render="0"/>
-  <alias name="GlyphUnit" parent="" render="0"/>
-  <alias name="LayoutRun" parent="" render="0"/>
-  <bitfield name="FontMask" parent="" render="0"/>
-  <bitfield name="LayoutDeserializeFlags" parent="" render="0"/>
-  <bitfield name="LayoutSerializeFlags" parent="" render="0"/>
-  <bitfield name="ShapeFlags" parent="" render="0"/>
-  <bitfield name="ShowFlags" parent="" render="0"/>
-  <callback name="AttrDataCopyFunc" parent="" render="0"/>
-  <callback name="AttrFilterFunc" parent="" render="0"/>
-  <callback name="FontsetForeachFunc" parent="" render="0"/>
-  <class name="Context" parent="GObject.Object" render="0"/>
-  <class name="Coverage" parent="GObject.Object" render="0"/>
-  <class name="FontFace" parent="GObject.Object" render="0"/>
-  <class name="FontFamily" parent="GObject.Object" render="0"/>
-  <class name="FontMap" parent="GObject.Object" render="0"/>
-  <class name="Font" parent="GObject.Object" render="0"/>
-  <class name="Fontset" parent="GObject.Object" render="0"/>
-  <class name="FontsetSimple" parent="Fontset" render="0"/>
-  <class name="Layout" parent="GObject.Object" render="0"/>
-  <class name="Renderer" parent="GObject.Object" render="0"/>
-  <constant name="ANALYSIS_FLAG_CENTERED_BASELINE" parent="" render="0"/>
-  <constant name="ANALYSIS_FLAG_IS_ELLIPSIS" parent="" render="0"/>
-  <constant name="ANALYSIS_FLAG_NEED_HYPHEN" parent="" render="0"/>
-  <constant name="ATTR_INDEX_FROM_TEXT_BEGINNING" parent="" render="0"/>
-  <constant name="ATTR_INDEX_TO_TEXT_END" parent="" render="0"/>
-  <constant name="GLYPH_EMPTY" parent="" render="0"/>
-  <constant name="GLYPH_INVALID_INPUT" parent="" render="0"/>
-  <constant name="GLYPH_UNKNOWN_FLAG" parent="" render="0"/>
-  <constant name="SCALE" parent="" render="0"/>
-  <constant name="VERSION_MAJOR" parent="" render="0"/>
-  <constant name="VERSION_MICRO" parent="" render="0"/>
-  <constant name="VERSION_MINOR" parent="" render="0"/>
-  <constant name="VERSION_STRING" parent="" render="0"/>
-  <enumeration name="Alignment" parent="" render="0"/>
-  <enumeration name="AttrType" parent="" render="0"/>
-  <enumeration name="BaselineShift" parent="" render="0"/>
-  <enumeration name="BidiType" parent="" render="0"/>
-  <enumeration name="CoverageLevel" parent="" render="0"/>
-  <enumeration name="Direction" parent="" render="0"/>
-  <enumeration name="EllipsizeMode" parent="" render="0"/>
-  <enumeration name="FontScale" parent="" render="0"/>
-  <enumeration name="GravityHint" parent="" render="0"/>
-  <enumeration name="Gravity" parent="" render="0"/>
-  <enumeration name="LayoutDeserializeError" parent="" render="0"/>
-  <enumeration name="Overline" parent="" render="0"/>
-  <enumeration name="RenderPart" parent="" render="0"/>
-  <enumeration name="Script" parent="" render="0"/>
-  <enumeration name="Stretch" parent="" render="0"/>
-  <enumeration name="Style" parent="" render="0"/>
-  <enumeration name="TabAlign" parent="" render="0"/>
-  <enumeration name="TextTransform" parent="" render="0"/>
-  <enumeration name="Underline" parent="" render="0"/>
-  <enumeration name="Variant" parent="" render="0"/>
-  <enumeration name="Weight" parent="" render="0"/>
-  <enumeration name="WrapMode" parent="" render="0"/>
-  <function-macro name="ASCENT" parent="" render="0"/>
-  <function-macro name="CONTEXT_CLASS" parent="" render="0"/>
-  <function-macro name="CONTEXT_GET_CLASS" parent="" render="0"/>
-  <function-macro name="CONTEXT" parent="" render="0"/>
-  <function-macro name="DESCENT" parent="" render="0"/>
-  <function-macro name="FONT_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_FACE_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_FACE_GET_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_FACE" parent="" render="0"/>
-  <function-macro name="FONT_FAMILY_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_FAMILY_GET_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_FAMILY" parent="" render="0"/>
-  <function-macro name="FONT_GET_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_MAP_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_MAP_GET_CLASS" parent="" render="0"/>
-  <function-macro name="FONT_MAP" parent="" render="0"/>
-  <function-macro name="FONT" parent="" render="0"/>
-  <function-macro name="FONTSET_CLASS" parent="" render="0"/>
-  <function-macro name="FONTSET_GET_CLASS" parent="" render="0"/>
-  <function-macro name="FONTSET" parent="" render="0"/>
-  <function-macro name="FONTSET_SIMPLE" parent="" render="0"/>
-  <function-macro name="GET_UNKNOWN_GLYPH" parent="" render="0"/>
-  <function-macro name="GRAVITY_IS_IMPROPER" parent="" render="0"/>
-  <function-macro name="GRAVITY_IS_VERTICAL" parent="" render="0"/>
-  <function-macro name="IS_CONTEXT_CLASS" parent="" render="0"/>
-  <function-macro name="IS_CONTEXT" parent="" render="0"/>
-  <function-macro name="IS_FONT_CLASS" parent="" render="0"/>
-  <function-macro name="IS_FONT_FACE_CLASS" parent="" render="0"/>
-  <function-macro name="IS_FONT_FACE" parent="" render="0"/>
-  <function-macro name="IS_FONT_FAMILY_CLASS" parent="" render="0"/>
-  <function-macro name="IS_FONT_FAMILY" parent="" render="0"/>
-  <function-macro name="IS_FONT_MAP_CLASS" parent="" render="0"/>
-  <function-macro name="IS_FONT_MAP" parent="" render="0"/>
-  <function-macro name="IS_FONT" parent="" render="0"/>
-  <function-macro name="IS_FONTSET_CLASS" parent="" render="0"/>
-  <function-macro name="IS_FONTSET" parent="" render="0"/>
-  <function-macro name="IS_FONTSET_SIMPLE" parent="" render="0"/>
-  <function-macro name="IS_LAYOUT_CLASS" parent="" render="0"/>
-  <function-macro name="IS_LAYOUT" parent="" render="0"/>
-  <function-macro name="IS_RENDERER_CLASS" parent="" render="0"/>
-  <function-macro name="IS_RENDERER" parent="" render="0"/>
-  <function-macro name="LAYOUT_CLASS" parent="" render="0"/>
-  <function-macro name="LAYOUT_GET_CLASS" parent="" render="0"/>
-  <function-macro name="LAYOUT" parent="" render="0"/>
-  <function-macro name="LBEARING" parent="" render="0"/>
-  <function-macro name="PIXELS_CEIL" parent="" render="0"/>
-  <function-macro name="PIXELS_FLOOR" parent="" render="0"/>
-  <function-macro name="PIXELS" parent="" render="0"/>
-  <function-macro name="RBEARING" parent="" render="0"/>
-  <function-macro name="RENDERER_CLASS" parent="" render="0"/>
-  <function-macro name="RENDERER_GET_CLASS" parent="" render="0"/>
-  <function-macro name="RENDERER" parent="" render="0"/>
-  <function-macro name="UNITS_CEIL" parent="" render="0"/>
-  <function-macro name="UNITS_FLOOR" parent="" render="0"/>
-  <function-macro name="UNITS_ROUND" parent="" render="0"/>
-  <function-macro name="VERSION_CHECK" parent="" render="0"/>
-  <function-macro name="VERSION_ENCODE" parent="" render="0"/>
-  <function name="attr_allow_breaks_new" parent="" render="0"/>
-  <function name="attr_background_alpha_new" parent="" render="0"/>
-  <function name="attr_background_new" parent="" render="0"/>
-  <function name="attr_baseline_shift_new" parent="" render="0"/>
-  <function name="attr_break" parent="" render="0"/>
-  <function name="attr_fallback_new" parent="" render="0"/>
-  <function name="attr_family_new" parent="" render="0"/>
-  <function name="attr_font_desc_new" parent="" render="0"/>
-  <function name="attr_font_features_new" parent="" render="0"/>
-  <function name="attr_font_scale_new" parent="" render="0"/>
-  <function name="attr_foreground_alpha_new" parent="" render="0"/>
-  <function name="attr_foreground_new" parent="" render="0"/>
-  <function name="attr_gravity_hint_new" parent="" render="0"/>
-  <function name="attr_gravity_new" parent="" render="0"/>
-  <function name="attr_insert_hyphens_new" parent="" render="0"/>
-  <function name="attr_language_new" parent="" render="0"/>
-  <function name="attr_letter_spacing_new" parent="" render="0"/>
-  <function name="attr_line_height_new_absolute" parent="" render="0"/>
-  <function name="attr_line_height_new" parent="" render="0"/>
-  <function name="attr_list_from_string" parent="" render="0"/>
-  <function name="attr_overline_color_new" parent="" render="0"/>
-  <function name="attr_overline_new" parent="" render="0"/>
-  <function name="attr_rise_new" parent="" render="0"/>
-  <function name="attr_scale_new" parent="" render="0"/>
-  <function name="attr_sentence_new" parent="" render="0"/>
-  <function name="attr_shape_new" parent="" render="0"/>
-  <function name="attr_shape_new_with_data" parent="" render="0"/>
-  <function name="attr_show_new" parent="" render="0"/>
-  <function name="attr_size_new_absolute" parent="" render="0"/>
-  <function name="attr_size_new" parent="" render="0"/>
-  <function name="attr_stretch_new" parent="" render="0"/>
-  <function name="attr_strikethrough_color_new" parent="" render="0"/>
-  <function name="attr_strikethrough_new" parent="" render="0"/>
-  <function name="attr_style_new" parent="" render="0"/>
-  <function name="attr_text_transform_new" parent="" render="0"/>
-  <function name="attr_type_get_name" parent="" render="0"/>
-  <function name="attr_type_register" parent="" render="0"/>
-  <function name="attr_underline_color_new" parent="" render="0"/>
-  <function name="attr_underline_new" parent="" render="0"/>
-  <function name="attr_variant_new" parent="" render="0"/>
-  <function name="attr_weight_new" parent="" render="0"/>
-  <function name="attr_word_new" parent="" render="0"/>
-  <function name="bidi_type_for_unichar" parent="" render="0"/>
-  <function name="break" parent="" render="0"/>
-  <function name="default_break" parent="" render="0"/>
-  <function name="extents_to_pixels" parent="" render="0"/>
-  <function name="find_base_dir" parent="" render="0"/>
-  <function name="find_paragraph_boundary" parent="" render="0"/>
-  <function name="font_description_from_string" parent="" render="0"/>
-  <function name="get_log_attrs" parent="" render="0"/>
-  <function name="get_mirror_char" parent="" render="0"/>
-  <function name="gravity_get_for_matrix" parent="" render="0"/>
-  <function name="gravity_get_for_script_and_width" parent="" render="0"/>
-  <function name="gravity_get_for_script" parent="" render="0"/>
-  <function name="gravity_to_rotation" parent="" render="0"/>
-  <function name="is_zero_width" parent="" render="0"/>
-  <function name="itemize" parent="" render="0"/>
-  <function name="itemize_with_base_dir" parent="" render="0"/>
-  <function name="language_from_string" parent="" render="0"/>
-  <function name="language_get_default" parent="" render="0"/>
-  <function name="language_get_preferred" parent="" render="0"/>
-  <function name="layout_deserialize_error_quark" parent="" render="0"/>
-  <function name="log2vis_get_embedding_levels" parent="" render="0"/>
-  <function name="markup_parser_finish" parent="" render="0"/>
-  <function name="markup_parser_new" parent="" render="0"/>
-  <function name="parse_enum" parent="" render="0"/>
-  <function name="parse_markup" parent="" render="0"/>
-  <function name="parse_stretch" parent="" render="0"/>
-  <function name="parse_style" parent="" render="0"/>
-  <function name="parse_variant" parent="" render="0"/>
-  <function name="parse_weight" parent="" render="0"/>
-  <function name="quantize_line_geometry" parent="" render="0"/>
-  <function name="read_line" parent="" render="0"/>
-  <function name="reorder_items" parent="" render="0"/>
-  <function name="scan_int" parent="" render="0"/>
-  <function name="scan_string" parent="" render="0"/>
-  <function name="scan_word" parent="" render="0"/>
-  <function name="script_for_unichar" parent="" render="0"/>
-  <function name="script_get_sample_language" parent="" render="0"/>
-  <function name="shape_full" parent="" render="0"/>
-  <function name="shape_item" parent="" render="0"/>
-  <function name="shape" parent="" render="0"/>
-  <function name="shape_with_flags" parent="" render="0"/>
-  <function name="skip_space" parent="" render="0"/>
-  <function name="split_file_list" parent="" render="0"/>
-  <function name="tab_array_from_string" parent="" render="0"/>
-  <function name="tailor_break" parent="" render="0"/>
-  <function name="trim_string" parent="" render="0"/>
-  <function name="unichar_direction" parent="" render="0"/>
-  <function name="units_from_double" parent="" render="0"/>
-  <function name="units_to_double" parent="" render="0"/>
-  <function name="version_check" parent="" render="0"/>
-  <function name="version" parent="" render="0"/>
-  <function name="version_string" parent="" render="0"/>
-  <record name="Analysis" parent="" render="0"/>
-  <record name="AttrClass" parent="" render="0"/>
-  <record name="AttrColor" parent="" render="0"/>
-  <record name="AttrFloat" parent="" render="0"/>
-  <record name="AttrFontDesc" parent="" render="0"/>
-  <record name="AttrFontFeatures" parent="" render="0"/>
-  <record name="Attribute" parent="" render="0"/>
-  <record name="AttrInt" parent="" render="0"/>
-  <record name="AttrIterator" parent="" render="0"/>
-  <record name="AttrLanguage" parent="" render="0"/>
-  <record name="AttrList" parent="" render="0"/>
-  <record name="AttrShape" parent="" render="0"/>
-  <record name="AttrSize" parent="" render="0"/>
-  <record name="AttrString" parent="" render="0"/>
-  <record name="Color" parent="" render="0"/>
-  <record name="ContextClass" parent="" render="0"/>
-  <record name="FontClass" parent="" render="0"/>
-  <record name="FontDescription" parent="" render="0"/>
-  <record name="FontFaceClass" parent="" render="0"/>
-  <record name="FontFamilyClass" parent="" render="0"/>
-  <record name="FontMapClass" parent="" render="0"/>
-  <record name="FontMetrics" parent="" render="0"/>
-  <record name="FontsetClass" parent="" render="0"/>
-  <record name="FontsetSimpleClass" parent="" render="0"/>
-  <record name="GlyphGeometry" parent="" render="0"/>
-  <record name="GlyphInfo" parent="" render="0"/>
-  <record name="GlyphItemIter" parent="" render="0"/>
-  <record name="GlyphItem" parent="" render="0"/>
-  <record name="GlyphString" parent="" render="0"/>
-  <record name="GlyphVisAttr" parent="" render="0"/>
-  <record name="Item" parent="" render="0"/>
-  <record name="Language" parent="" render="0"/>
-  <record name="LayoutClass" parent="" render="0"/>
-  <record name="LayoutIter" parent="" render="0"/>
-  <record name="LayoutLine" parent="" render="0"/>
-  <record name="LogAttr" parent="" render="0"/>
-  <record name="Matrix" parent="" render="0"/>
-  <record name="Rectangle" parent="" render="0"/>
-  <record name="RendererClass" parent="" render="0"/>
-  <record name="RendererPrivate" parent="" render="0"/>
-  <record name="ScriptIter" parent="" render="0"/>
-  <record name="TabArray" parent="" render="0"/>
-</classes>
+<ns ns="Pango">
+  <alias name="Glyph" render="0">   </alias>
+  <alias name="GlyphUnit" render="0">   </alias>
+  <alias name="LayoutRun" render="0">   </alias>
+  <constant name="ANALYSIS_FLAG_CENTERED_BASELINE" ctype="PANGO_ANALYSIS_FLAG_CENTERED_BASELINE" value="1" render="0">  </constant>
+  <constant name="ANALYSIS_FLAG_IS_ELLIPSIS" ctype="PANGO_ANALYSIS_FLAG_IS_ELLIPSIS" value="2" render="0">  </constant>
+  <constant name="ANALYSIS_FLAG_NEED_HYPHEN" ctype="PANGO_ANALYSIS_FLAG_NEED_HYPHEN" value="4" render="0">  </constant>
+  <function-macro name="ASCENT" render="0">   </function-macro>
+  <constant name="ATTR_INDEX_FROM_TEXT_BEGINNING" ctype="PANGO_ATTR_INDEX_FROM_TEXT_BEGINNING" value="0" render="0">  </constant>
+  <constant name="ATTR_INDEX_TO_TEXT_END" ctype="PANGO_ATTR_INDEX_TO_TEXT_END" value="4294967295" render="0">  </constant>
+  <enumeration name="Alignment" render="0">     <member name="left" value="0" cid="PANGO_ALIGN_LEFT" glibnick="left" glibname="PANGO_ALIGN_LEFT"/>
+    <member name="center" value="1" cid="PANGO_ALIGN_CENTER" glibnick="center" glibname="PANGO_ALIGN_CENTER"/>
+    <member name="right" value="2" cid="PANGO_ALIGN_RIGHT" glibnick="right" glibname="PANGO_ALIGN_RIGHT"/>
+  </enumeration>
+  <record name="Analysis" gtypestructfor="" ctype="PangoAnalysis" render="0">
+    <field name="shape_engine"/>
+    <field name="lang_engine"/>
+    <field name="font"/>
+    <field name="level"/>
+    <field name="gravity"/>
+    <field name="flags"/>
+    <field name="script"/>
+    <field name="language"/>
+    <field name="extra_attrs"/>
+  </record>
+  <record name="AttrClass" gtypestructfor="" ctype="PangoAttrClass" render="0">
+    <field name="type"/>
+    <field name="copy"/>
+    <field name="destroy"/>
+    <field name="equal"/>
+  </record>
+  <record name="AttrColor" gtypestructfor="" ctype="PangoAttrColor" render="0">
+    <field name="attr"/>
+    <field name="color"/>
+  </record>
+  <callback name="AttrDataCopyFunc" ctype="PangoAttrDataCopyFunc" render="0">  </callback>
+  <callback name="AttrFilterFunc" ctype="PangoAttrFilterFunc" render="0">  </callback>
+  <record name="AttrFloat" gtypestructfor="" ctype="PangoAttrFloat" render="0">
+    <field name="attr"/>
+    <field name="value"/>
+  </record>
+  <record name="AttrFontDesc" gtypestructfor="" ctype="PangoAttrFontDesc" render="0">
+    <field name="attr"/>
+    <field name="desc"/>
+    <function name="new" cid="pango_attr_font_desc_new" render="0"/>
+  </record>
+  <record name="AttrFontFeatures" gtypestructfor="" ctype="PangoAttrFontFeatures" render="0">
+    <field name="attr"/>
+    <field name="features"/>
+    <function name="new" cid="pango_attr_font_features_new" render="0"/>
+  </record>
+  <record name="AttrInt" gtypestructfor="" ctype="PangoAttrInt" render="0">
+    <field name="attr"/>
+    <field name="value"/>
+  </record>
+  <record name="AttrIterator" gtypestructfor="" ctype="PangoAttrIterator" render="0">
+    <method name="copy" cid="pango_attr_iterator_copy" render="0"/>
+    <method name="destroy" cid="pango_attr_iterator_destroy" render="0"/>
+    <method name="get" cid="pango_attr_iterator_get" render="0"/>
+    <method name="get_attrs" cid="pango_attr_iterator_get_attrs" render="0"/>
+    <method name="get_font" cid="pango_attr_iterator_get_font" render="0"/>
+    <method name="next" cid="pango_attr_iterator_next" render="0"/>
+    <method name="range" cid="pango_attr_iterator_range" render="0"/>
+  </record>
+  <record name="AttrLanguage" gtypestructfor="" ctype="PangoAttrLanguage" render="0">
+    <field name="attr"/>
+    <field name="value"/>
+    <function name="new" cid="pango_attr_language_new" render="0"/>
+  </record>
+  <record name="AttrList" gtypestructfor="" ctype="PangoAttrList" render="0">
+    <constructor name="new" cid="pango_attr_list_new" render="0"/>
+    <method name="change" cid="pango_attr_list_change" render="0"/>
+    <method name="copy" cid="pango_attr_list_copy" render="0"/>
+    <method name="equal" cid="pango_attr_list_equal" render="0"/>
+    <method name="filter" cid="pango_attr_list_filter" render="0"/>
+    <method name="get_attributes" cid="pango_attr_list_get_attributes" render="0"/>
+    <method name="get_iterator" cid="pango_attr_list_get_iterator" render="0"/>
+    <method name="insert" cid="pango_attr_list_insert" render="0"/>
+    <method name="insert_before" cid="pango_attr_list_insert_before" render="0"/>
+    <method name="ref" cid="pango_attr_list_ref" render="0"/>
+    <method name="splice" cid="pango_attr_list_splice" render="0"/>
+    <method name="to_string" cid="pango_attr_list_to_string" render="0"/>
+    <method name="unref" cid="pango_attr_list_unref" render="0"/>
+    <method name="update" cid="pango_attr_list_update" render="0"/>
+    <function name="from_string" cid="pango_attr_list_from_string" render="0"/>
+  </record>
+  <record name="AttrShape" gtypestructfor="" ctype="PangoAttrShape" render="0">
+    <field name="attr"/>
+    <field name="ink_rect"/>
+    <field name="logical_rect"/>
+    <field name="data"/>
+    <field name="copy_func"/>
+    <field name="destroy_func"/>
+    <function name="new" cid="pango_attr_shape_new" render="0"/>
+    <function name="new_with_data" cid="pango_attr_shape_new_with_data" render="0"/>
+  </record>
+  <record name="AttrSize" gtypestructfor="" ctype="PangoAttrSize" render="0">
+    <field name="attr"/>
+    <field name="size"/>
+    <field name="absolute"/>
+    <function name="new" cid="pango_attr_size_new" render="0"/>
+    <function name="new_absolute" cid="pango_attr_size_new_absolute" render="0"/>
+  </record>
+  <record name="AttrString" gtypestructfor="" ctype="PangoAttrString" render="0">
+    <field name="attr"/>
+    <field name="value"/>
+  </record>
+  <enumeration name="AttrType" render="0">     <member name="invalid" value="0" cid="PANGO_ATTR_INVALID" glibnick="invalid" glibname="PANGO_ATTR_INVALID"/>
+    <member name="language" value="1" cid="PANGO_ATTR_LANGUAGE" glibnick="language" glibname="PANGO_ATTR_LANGUAGE"/>
+    <member name="family" value="2" cid="PANGO_ATTR_FAMILY" glibnick="family" glibname="PANGO_ATTR_FAMILY"/>
+    <member name="style" value="3" cid="PANGO_ATTR_STYLE" glibnick="style" glibname="PANGO_ATTR_STYLE"/>
+    <member name="weight" value="4" cid="PANGO_ATTR_WEIGHT" glibnick="weight" glibname="PANGO_ATTR_WEIGHT"/>
+    <member name="variant" value="5" cid="PANGO_ATTR_VARIANT" glibnick="variant" glibname="PANGO_ATTR_VARIANT"/>
+    <member name="stretch" value="6" cid="PANGO_ATTR_STRETCH" glibnick="stretch" glibname="PANGO_ATTR_STRETCH"/>
+    <member name="size" value="7" cid="PANGO_ATTR_SIZE" glibnick="size" glibname="PANGO_ATTR_SIZE"/>
+    <member name="font_desc" value="8" cid="PANGO_ATTR_FONT_DESC" glibnick="font-desc" glibname="PANGO_ATTR_FONT_DESC"/>
+    <member name="foreground" value="9" cid="PANGO_ATTR_FOREGROUND" glibnick="foreground" glibname="PANGO_ATTR_FOREGROUND"/>
+    <member name="background" value="10" cid="PANGO_ATTR_BACKGROUND" glibnick="background" glibname="PANGO_ATTR_BACKGROUND"/>
+    <member name="underline" value="11" cid="PANGO_ATTR_UNDERLINE" glibnick="underline" glibname="PANGO_ATTR_UNDERLINE"/>
+    <member name="strikethrough" value="12" cid="PANGO_ATTR_STRIKETHROUGH" glibnick="strikethrough" glibname="PANGO_ATTR_STRIKETHROUGH"/>
+    <member name="rise" value="13" cid="PANGO_ATTR_RISE" glibnick="rise" glibname="PANGO_ATTR_RISE"/>
+    <member name="shape" value="14" cid="PANGO_ATTR_SHAPE" glibnick="shape" glibname="PANGO_ATTR_SHAPE"/>
+    <member name="scale" value="15" cid="PANGO_ATTR_SCALE" glibnick="scale" glibname="PANGO_ATTR_SCALE"/>
+    <member name="fallback" value="16" cid="PANGO_ATTR_FALLBACK" glibnick="fallback" glibname="PANGO_ATTR_FALLBACK"/>
+    <member name="letter_spacing" value="17" cid="PANGO_ATTR_LETTER_SPACING" glibnick="letter-spacing" glibname="PANGO_ATTR_LETTER_SPACING"/>
+    <member name="underline_color" value="18" cid="PANGO_ATTR_UNDERLINE_COLOR" glibnick="underline-color" glibname="PANGO_ATTR_UNDERLINE_COLOR"/>
+    <member name="strikethrough_color" value="19" cid="PANGO_ATTR_STRIKETHROUGH_COLOR" glibnick="strikethrough-color" glibname="PANGO_ATTR_STRIKETHROUGH_COLOR"/>
+    <member name="absolute_size" value="20" cid="PANGO_ATTR_ABSOLUTE_SIZE" glibnick="absolute-size" glibname="PANGO_ATTR_ABSOLUTE_SIZE"/>
+    <member name="gravity" value="21" cid="PANGO_ATTR_GRAVITY" glibnick="gravity" glibname="PANGO_ATTR_GRAVITY"/>
+    <member name="gravity_hint" value="22" cid="PANGO_ATTR_GRAVITY_HINT" glibnick="gravity-hint" glibname="PANGO_ATTR_GRAVITY_HINT"/>
+    <member name="font_features" value="23" cid="PANGO_ATTR_FONT_FEATURES" glibnick="font-features" glibname="PANGO_ATTR_FONT_FEATURES"/>
+    <member name="foreground_alpha" value="24" cid="PANGO_ATTR_FOREGROUND_ALPHA" glibnick="foreground-alpha" glibname="PANGO_ATTR_FOREGROUND_ALPHA"/>
+    <member name="background_alpha" value="25" cid="PANGO_ATTR_BACKGROUND_ALPHA" glibnick="background-alpha" glibname="PANGO_ATTR_BACKGROUND_ALPHA"/>
+    <member name="allow_breaks" value="26" cid="PANGO_ATTR_ALLOW_BREAKS" glibnick="allow-breaks" glibname="PANGO_ATTR_ALLOW_BREAKS"/>
+    <member name="show" value="27" cid="PANGO_ATTR_SHOW" glibnick="show" glibname="PANGO_ATTR_SHOW"/>
+    <member name="insert_hyphens" value="28" cid="PANGO_ATTR_INSERT_HYPHENS" glibnick="insert-hyphens" glibname="PANGO_ATTR_INSERT_HYPHENS"/>
+    <member name="overline" value="29" cid="PANGO_ATTR_OVERLINE" glibnick="overline" glibname="PANGO_ATTR_OVERLINE"/>
+    <member name="overline_color" value="30" cid="PANGO_ATTR_OVERLINE_COLOR" glibnick="overline-color" glibname="PANGO_ATTR_OVERLINE_COLOR"/>
+    <member name="line_height" value="31" cid="PANGO_ATTR_LINE_HEIGHT" glibnick="line-height" glibname="PANGO_ATTR_LINE_HEIGHT"/>
+    <member name="absolute_line_height" value="32" cid="PANGO_ATTR_ABSOLUTE_LINE_HEIGHT" glibnick="absolute-line-height" glibname="PANGO_ATTR_ABSOLUTE_LINE_HEIGHT"/>
+    <member name="text_transform" value="33" cid="PANGO_ATTR_TEXT_TRANSFORM" glibnick="text-transform" glibname="PANGO_ATTR_TEXT_TRANSFORM"/>
+    <member name="word" value="34" cid="PANGO_ATTR_WORD" glibnick="word" glibname="PANGO_ATTR_WORD"/>
+    <member name="sentence" value="35" cid="PANGO_ATTR_SENTENCE" glibnick="sentence" glibname="PANGO_ATTR_SENTENCE"/>
+    <member name="baseline_shift" value="36" cid="PANGO_ATTR_BASELINE_SHIFT" glibnick="baseline-shift" glibname="PANGO_ATTR_BASELINE_SHIFT"/>
+    <member name="font_scale" value="37" cid="PANGO_ATTR_FONT_SCALE" glibnick="font-scale" glibname="PANGO_ATTR_FONT_SCALE"/>
+    <function name="get_name" cid="pango_attr_type_get_name" render="0"/>
+    <function name="register" cid="pango_attr_type_register" render="0"/>
+  </enumeration>
+  <record name="Attribute" gtypestructfor="" ctype="PangoAttribute" render="0">
+    <field name="klass"/>
+    <field name="start_index"/>
+    <field name="end_index"/>
+    <method name="as_color" cid="pango_attribute_as_color" render="0"/>
+    <method name="as_float" cid="pango_attribute_as_float" render="0"/>
+    <method name="as_font_desc" cid="pango_attribute_as_font_desc" render="0"/>
+    <method name="as_font_features" cid="pango_attribute_as_font_features" render="0"/>
+    <method name="as_int" cid="pango_attribute_as_int" render="0"/>
+    <method name="as_language" cid="pango_attribute_as_language" render="0"/>
+    <method name="as_shape" cid="pango_attribute_as_shape" render="0"/>
+    <method name="as_size" cid="pango_attribute_as_size" render="0"/>
+    <method name="as_string" cid="pango_attribute_as_string" render="0"/>
+    <method name="copy" cid="pango_attribute_copy" render="0"/>
+    <method name="destroy" cid="pango_attribute_destroy" render="0"/>
+    <method name="equal" cid="pango_attribute_equal" render="0"/>
+    <method name="init" cid="pango_attribute_init" render="0"/>
+  </record>
+  <enumeration name="BaselineShift" render="0">     <member name="none" value="0" cid="PANGO_BASELINE_SHIFT_NONE" glibnick="none" glibname="PANGO_BASELINE_SHIFT_NONE"/>
+    <member name="superscript" value="1" cid="PANGO_BASELINE_SHIFT_SUPERSCRIPT" glibnick="superscript" glibname="PANGO_BASELINE_SHIFT_SUPERSCRIPT"/>
+    <member name="subscript" value="2" cid="PANGO_BASELINE_SHIFT_SUBSCRIPT" glibnick="subscript" glibname="PANGO_BASELINE_SHIFT_SUBSCRIPT"/>
+  </enumeration>
+  <enumeration name="BidiType" render="0">     <member name="l" value="0" cid="PANGO_BIDI_TYPE_L" glibnick="l" glibname="PANGO_BIDI_TYPE_L"/>
+    <member name="lre" value="1" cid="PANGO_BIDI_TYPE_LRE" glibnick="lre" glibname="PANGO_BIDI_TYPE_LRE"/>
+    <member name="lro" value="2" cid="PANGO_BIDI_TYPE_LRO" glibnick="lro" glibname="PANGO_BIDI_TYPE_LRO"/>
+    <member name="r" value="3" cid="PANGO_BIDI_TYPE_R" glibnick="r" glibname="PANGO_BIDI_TYPE_R"/>
+    <member name="al" value="4" cid="PANGO_BIDI_TYPE_AL" glibnick="al" glibname="PANGO_BIDI_TYPE_AL"/>
+    <member name="rle" value="5" cid="PANGO_BIDI_TYPE_RLE" glibnick="rle" glibname="PANGO_BIDI_TYPE_RLE"/>
+    <member name="rlo" value="6" cid="PANGO_BIDI_TYPE_RLO" glibnick="rlo" glibname="PANGO_BIDI_TYPE_RLO"/>
+    <member name="pdf" value="7" cid="PANGO_BIDI_TYPE_PDF" glibnick="pdf" glibname="PANGO_BIDI_TYPE_PDF"/>
+    <member name="en" value="8" cid="PANGO_BIDI_TYPE_EN" glibnick="en" glibname="PANGO_BIDI_TYPE_EN"/>
+    <member name="es" value="9" cid="PANGO_BIDI_TYPE_ES" glibnick="es" glibname="PANGO_BIDI_TYPE_ES"/>
+    <member name="et" value="10" cid="PANGO_BIDI_TYPE_ET" glibnick="et" glibname="PANGO_BIDI_TYPE_ET"/>
+    <member name="an" value="11" cid="PANGO_BIDI_TYPE_AN" glibnick="an" glibname="PANGO_BIDI_TYPE_AN"/>
+    <member name="cs" value="12" cid="PANGO_BIDI_TYPE_CS" glibnick="cs" glibname="PANGO_BIDI_TYPE_CS"/>
+    <member name="nsm" value="13" cid="PANGO_BIDI_TYPE_NSM" glibnick="nsm" glibname="PANGO_BIDI_TYPE_NSM"/>
+    <member name="bn" value="14" cid="PANGO_BIDI_TYPE_BN" glibnick="bn" glibname="PANGO_BIDI_TYPE_BN"/>
+    <member name="b" value="15" cid="PANGO_BIDI_TYPE_B" glibnick="b" glibname="PANGO_BIDI_TYPE_B"/>
+    <member name="s" value="16" cid="PANGO_BIDI_TYPE_S" glibnick="s" glibname="PANGO_BIDI_TYPE_S"/>
+    <member name="ws" value="17" cid="PANGO_BIDI_TYPE_WS" glibnick="ws" glibname="PANGO_BIDI_TYPE_WS"/>
+    <member name="on" value="18" cid="PANGO_BIDI_TYPE_ON" glibnick="on" glibname="PANGO_BIDI_TYPE_ON"/>
+    <member name="lri" value="19" cid="PANGO_BIDI_TYPE_LRI" glibnick="lri" glibname="PANGO_BIDI_TYPE_LRI"/>
+    <member name="rli" value="20" cid="PANGO_BIDI_TYPE_RLI" glibnick="rli" glibname="PANGO_BIDI_TYPE_RLI"/>
+    <member name="fsi" value="21" cid="PANGO_BIDI_TYPE_FSI" glibnick="fsi" glibname="PANGO_BIDI_TYPE_FSI"/>
+    <member name="pdi" value="22" cid="PANGO_BIDI_TYPE_PDI" glibnick="pdi" glibname="PANGO_BIDI_TYPE_PDI"/>
+    <function name="for_unichar" cid="pango_bidi_type_for_unichar" render="0"/>
+  </enumeration>
+  <function-macro name="CONTEXT" render="0">   </function-macro>
+  <function-macro name="CONTEXT_CLASS" render="0">   </function-macro>
+  <function-macro name="CONTEXT_GET_CLASS" render="0">   </function-macro>
+  <record name="Color" gtypestructfor="" ctype="PangoColor" render="0">
+    <field name="red"/>
+    <field name="green"/>
+    <field name="blue"/>
+    <method name="copy" cid="pango_color_copy" render="0"/>
+    <method name="free" cid="pango_color_free" render="0"/>
+    <method name="parse" cid="pango_color_parse" render="0"/>
+    <method name="parse_with_alpha" cid="pango_color_parse_with_alpha" render="0"/>
+    <method name="to_string" cid="pango_color_to_string" render="0"/>
+  </record>
+  <class name="Context" ctype="PangoContext" parent="GObject.Object" render="0">
+    <constructor name="new" cid="pango_context_new" render="0"/>
+    <method name="changed" cid="pango_context_changed" render="0"/>
+    <method name="get_base_dir" cid="pango_context_get_base_dir" render="0"/>
+    <method name="get_base_gravity" cid="pango_context_get_base_gravity" render="0"/>
+    <method name="get_font_description" cid="pango_context_get_font_description" render="0"/>
+    <method name="get_font_map" cid="pango_context_get_font_map" render="0"/>
+    <method name="get_gravity" cid="pango_context_get_gravity" render="0"/>
+    <method name="get_gravity_hint" cid="pango_context_get_gravity_hint" render="0"/>
+    <method name="get_language" cid="pango_context_get_language" render="0"/>
+    <method name="get_matrix" cid="pango_context_get_matrix" render="0"/>
+    <method name="get_metrics" cid="pango_context_get_metrics" render="0"/>
+    <method name="get_round_glyph_positions" cid="pango_context_get_round_glyph_positions" render="0"/>
+    <method name="get_serial" cid="pango_context_get_serial" render="0"/>
+    <method name="list_families" cid="pango_context_list_families" render="0"/>
+    <method name="load_font" cid="pango_context_load_font" render="0"/>
+    <method name="load_fontset" cid="pango_context_load_fontset" render="0"/>
+    <method name="set_base_dir" cid="pango_context_set_base_dir" render="0"/>
+    <method name="set_base_gravity" cid="pango_context_set_base_gravity" render="0"/>
+    <method name="set_font_description" cid="pango_context_set_font_description" render="0"/>
+    <method name="set_font_map" cid="pango_context_set_font_map" render="0"/>
+    <method name="set_gravity_hint" cid="pango_context_set_gravity_hint" render="0"/>
+    <method name="set_language" cid="pango_context_set_language" render="0"/>
+    <method name="set_matrix" cid="pango_context_set_matrix" render="0"/>
+    <method name="set_round_glyph_positions" cid="pango_context_set_round_glyph_positions" render="0"/>
+  </class>
+  <record name="ContextClass" gtypestructfor="Context" ctype="PangoContextClass" render="0">
+  </record>
+  <class name="Coverage" ctype="PangoCoverage" parent="GObject.Object" render="0">
+    <constructor name="new" cid="pango_coverage_new" render="0"/>
+    <function name="from_bytes" cid="pango_coverage_from_bytes" render="0"/>
+    <method name="copy" cid="pango_coverage_copy" render="0"/>
+    <method name="get" cid="pango_coverage_get" render="0"/>
+    <method name="max" cid="pango_coverage_max" render="0"/>
+    <method name="ref" cid="pango_coverage_ref" render="0"/>
+    <method name="set" cid="pango_coverage_set" render="0"/>
+    <method name="to_bytes" cid="pango_coverage_to_bytes" render="0"/>
+    <method name="unref" cid="pango_coverage_unref" render="0"/>
+  </class>
+  <enumeration name="CoverageLevel" render="0">     <member name="none" value="0" cid="PANGO_COVERAGE_NONE" glibnick="none" glibname="PANGO_COVERAGE_NONE"/>
+    <member name="fallback" value="1" cid="PANGO_COVERAGE_FALLBACK" glibnick="fallback" glibname="PANGO_COVERAGE_FALLBACK"/>
+    <member name="approximate" value="2" cid="PANGO_COVERAGE_APPROXIMATE" glibnick="approximate" glibname="PANGO_COVERAGE_APPROXIMATE"/>
+    <member name="exact" value="3" cid="PANGO_COVERAGE_EXACT" glibnick="exact" glibname="PANGO_COVERAGE_EXACT"/>
+  </enumeration>
+  <function-macro name="DESCENT" render="0">   </function-macro>
+  <enumeration name="Direction" render="0">     <member name="ltr" value="0" cid="PANGO_DIRECTION_LTR" glibnick="ltr" glibname="PANGO_DIRECTION_LTR"/>
+    <member name="rtl" value="1" cid="PANGO_DIRECTION_RTL" glibnick="rtl" glibname="PANGO_DIRECTION_RTL"/>
+    <member name="ttb_ltr" value="2" cid="PANGO_DIRECTION_TTB_LTR" glibnick="ttb-ltr" glibname="PANGO_DIRECTION_TTB_LTR"/>
+    <member name="ttb_rtl" value="3" cid="PANGO_DIRECTION_TTB_RTL" glibnick="ttb-rtl" glibname="PANGO_DIRECTION_TTB_RTL"/>
+    <member name="weak_ltr" value="4" cid="PANGO_DIRECTION_WEAK_LTR" glibnick="weak-ltr" glibname="PANGO_DIRECTION_WEAK_LTR"/>
+    <member name="weak_rtl" value="5" cid="PANGO_DIRECTION_WEAK_RTL" glibnick="weak-rtl" glibname="PANGO_DIRECTION_WEAK_RTL"/>
+    <member name="neutral" value="6" cid="PANGO_DIRECTION_NEUTRAL" glibnick="neutral" glibname="PANGO_DIRECTION_NEUTRAL"/>
+  </enumeration>
+  <enumeration name="EllipsizeMode" render="0">     <member name="none" value="0" cid="PANGO_ELLIPSIZE_NONE" glibnick="none" glibname="PANGO_ELLIPSIZE_NONE"/>
+    <member name="start" value="1" cid="PANGO_ELLIPSIZE_START" glibnick="start" glibname="PANGO_ELLIPSIZE_START"/>
+    <member name="middle" value="2" cid="PANGO_ELLIPSIZE_MIDDLE" glibnick="middle" glibname="PANGO_ELLIPSIZE_MIDDLE"/>
+    <member name="end" value="3" cid="PANGO_ELLIPSIZE_END" glibnick="end" glibname="PANGO_ELLIPSIZE_END"/>
+  </enumeration>
+  <function-macro name="FONT" render="0">   </function-macro>
+  <function-macro name="FONTSET" render="0">   </function-macro>
+  <function-macro name="FONTSET_CLASS" render="0">   </function-macro>
+  <function-macro name="FONTSET_GET_CLASS" render="0">   </function-macro>
+  <function-macro name="FONTSET_SIMPLE" render="0">   </function-macro>
+  <function-macro name="FONT_CLASS" render="0">   </function-macro>
+  <function-macro name="FONT_FACE" render="0">   </function-macro>
+  <function-macro name="FONT_FACE_CLASS" render="0">   </function-macro>
+  <function-macro name="FONT_FACE_GET_CLASS" render="0">   </function-macro>
+  <function-macro name="FONT_FAMILY" render="0">   </function-macro>
+  <function-macro name="FONT_FAMILY_CLASS" render="0">   </function-macro>
+  <function-macro name="FONT_FAMILY_GET_CLASS" render="0">   </function-macro>
+  <function-macro name="FONT_GET_CLASS" render="0">   </function-macro>
+  <function-macro name="FONT_MAP" render="0">   </function-macro>
+  <function-macro name="FONT_MAP_CLASS" render="0">   </function-macro>
+  <function-macro name="FONT_MAP_GET_CLASS" render="0">   </function-macro>
+  <class name="Font" ctype="PangoFont" parent="GObject.Object" render="0">
+    <function name="descriptions_free" cid="pango_font_descriptions_free" render="0"/>
+    <function name="deserialize" cid="pango_font_deserialize" render="0"/>
+    <virtual-method name="create_hb_font" render="0"/>
+    <virtual-method name="describe" render="0"/>
+    <virtual-method name="describe_absolute" render="0"/>
+    <virtual-method name="get_coverage" render="0"/>
+    <virtual-method name="get_features" render="0"/>
+    <virtual-method name="get_font_map" render="0"/>
+    <virtual-method name="get_glyph_extents" render="0"/>
+    <virtual-method name="get_metrics" render="0"/>
+    <method name="describe" cid="pango_font_describe" render="0"/>
+    <method name="describe_with_absolute_size" cid="pango_font_describe_with_absolute_size" render="0"/>
+    <method name="get_coverage" cid="pango_font_get_coverage" render="0"/>
+    <method name="get_face" cid="pango_font_get_face" render="0"/>
+    <method name="get_features" cid="pango_font_get_features" render="0"/>
+    <method name="get_font_map" cid="pango_font_get_font_map" render="0"/>
+    <method name="get_glyph_extents" cid="pango_font_get_glyph_extents" render="0"/>
+    <method name="get_hb_font" cid="pango_font_get_hb_font" render="0"/>
+    <method name="get_languages" cid="pango_font_get_languages" render="0"/>
+    <method name="get_metrics" cid="pango_font_get_metrics" render="0"/>
+    <method name="has_char" cid="pango_font_has_char" render="0"/>
+    <method name="serialize" cid="pango_font_serialize" render="0"/>
+    <field name="parent_instance"/>
+  </class>
+  <record name="FontClass" gtypestructfor="Font" ctype="PangoFontClass" render="0">
+    <field name="parent_class"/>
+    <field name="describe"/>
+    <field name="get_coverage"/>
+    <field name="get_glyph_extents"/>
+    <field name="get_metrics"/>
+    <field name="get_font_map"/>
+    <field name="describe_absolute"/>
+    <field name="get_features"/>
+    <field name="create_hb_font"/>
+  </record>
+  <record name="FontDescription" gtypestructfor="" ctype="PangoFontDescription" render="0">
+    <constructor name="new" cid="pango_font_description_new" render="0"/>
+    <method name="better_match" cid="pango_font_description_better_match" render="0"/>
+    <method name="copy" cid="pango_font_description_copy" render="0"/>
+    <method name="copy_static" cid="pango_font_description_copy_static" render="0"/>
+    <method name="equal" cid="pango_font_description_equal" render="0"/>
+    <method name="free" cid="pango_font_description_free" render="0"/>
+    <method name="get_family" cid="pango_font_description_get_family" render="0"/>
+    <method name="get_gravity" cid="pango_font_description_get_gravity" render="0"/>
+    <method name="get_set_fields" cid="pango_font_description_get_set_fields" render="0"/>
+    <method name="get_size" cid="pango_font_description_get_size" render="0"/>
+    <method name="get_size_is_absolute" cid="pango_font_description_get_size_is_absolute" render="0"/>
+    <method name="get_stretch" cid="pango_font_description_get_stretch" render="0"/>
+    <method name="get_style" cid="pango_font_description_get_style" render="0"/>
+    <method name="get_variant" cid="pango_font_description_get_variant" render="0"/>
+    <method name="get_variations" cid="pango_font_description_get_variations" render="0"/>
+    <method name="get_weight" cid="pango_font_description_get_weight" render="0"/>
+    <method name="hash" cid="pango_font_description_hash" render="0"/>
+    <method name="merge" cid="pango_font_description_merge" render="0"/>
+    <method name="merge_static" cid="pango_font_description_merge_static" render="0"/>
+    <method name="set_absolute_size" cid="pango_font_description_set_absolute_size" render="0"/>
+    <method name="set_family" cid="pango_font_description_set_family" render="0"/>
+    <method name="set_family_static" cid="pango_font_description_set_family_static" render="0"/>
+    <method name="set_gravity" cid="pango_font_description_set_gravity" render="0"/>
+    <method name="set_size" cid="pango_font_description_set_size" render="0"/>
+    <method name="set_stretch" cid="pango_font_description_set_stretch" render="0"/>
+    <method name="set_style" cid="pango_font_description_set_style" render="0"/>
+    <method name="set_variant" cid="pango_font_description_set_variant" render="0"/>
+    <method name="set_variations" cid="pango_font_description_set_variations" render="0"/>
+    <method name="set_variations_static" cid="pango_font_description_set_variations_static" render="0"/>
+    <method name="set_weight" cid="pango_font_description_set_weight" render="0"/>
+    <method name="to_filename" cid="pango_font_description_to_filename" render="0"/>
+    <method name="to_string" cid="pango_font_description_to_string" render="0"/>
+    <method name="unset_fields" cid="pango_font_description_unset_fields" render="0"/>
+    <function name="from_string" cid="pango_font_description_from_string" render="0"/>
+  </record>
+  <class name="FontFace" ctype="PangoFontFace" parent="GObject.Object" render="0">
+    <virtual-method name="describe" render="0"/>
+    <virtual-method name="get_face_name" render="0"/>
+    <virtual-method name="get_family" render="0"/>
+    <virtual-method name="is_synthesized" render="0"/>
+    <virtual-method name="list_sizes" render="0"/>
+    <method name="describe" cid="pango_font_face_describe" render="0"/>
+    <method name="get_face_name" cid="pango_font_face_get_face_name" render="0"/>
+    <method name="get_family" cid="pango_font_face_get_family" render="0"/>
+    <method name="is_synthesized" cid="pango_font_face_is_synthesized" render="0"/>
+    <method name="list_sizes" cid="pango_font_face_list_sizes" render="0"/>
+    <field name="parent_instance"/>
+  </class>
+  <record name="FontFaceClass" gtypestructfor="FontFace" ctype="PangoFontFaceClass" render="0">
+    <field name="parent_class"/>
+    <field name="get_face_name"/>
+    <field name="describe"/>
+    <field name="list_sizes"/>
+    <field name="is_synthesized"/>
+    <field name="get_family"/>
+    <field name="_pango_reserved3"/>
+    <field name="_pango_reserved4"/>
+  </record>
+  <class name="FontFamily" ctype="PangoFontFamily" parent="GObject.Object" render="0">
+    <virtual-method name="get_face" render="0"/>
+    <virtual-method name="get_name" render="0"/>
+    <virtual-method name="is_monospace" render="0"/>
+    <virtual-method name="is_variable" render="0"/>
+    <virtual-method name="list_faces" render="0"/>
+    <method name="get_face" cid="pango_font_family_get_face" render="0"/>
+    <method name="get_name" cid="pango_font_family_get_name" render="0"/>
+    <method name="is_monospace" cid="pango_font_family_is_monospace" render="0"/>
+    <method name="is_variable" cid="pango_font_family_is_variable" render="0"/>
+    <method name="list_faces" cid="pango_font_family_list_faces" render="0"/>
+    <field name="parent_instance"/>
+  </class>
+  <record name="FontFamilyClass" gtypestructfor="FontFamily" ctype="PangoFontFamilyClass" render="0">
+    <field name="parent_class"/>
+    <field name="list_faces"/>
+    <field name="get_name"/>
+    <field name="is_monospace"/>
+    <field name="is_variable"/>
+    <field name="get_face"/>
+    <field name="_pango_reserved2"/>
+  </record>
+  <class name="FontMap" ctype="PangoFontMap" parent="GObject.Object" render="0">
+    <virtual-method name="changed" render="0"/>
+    <virtual-method name="get_face" render="0"/>
+    <virtual-method name="get_family" render="0"/>
+    <virtual-method name="get_serial" render="0"/>
+    <virtual-method name="list_families" render="0"/>
+    <virtual-method name="load_font" render="0"/>
+    <virtual-method name="load_fontset" render="0"/>
+    <method name="changed" cid="pango_font_map_changed" render="0"/>
+    <method name="create_context" cid="pango_font_map_create_context" render="0"/>
+    <method name="get_family" cid="pango_font_map_get_family" render="0"/>
+    <method name="get_serial" cid="pango_font_map_get_serial" render="0"/>
+    <method name="list_families" cid="pango_font_map_list_families" render="0"/>
+    <method name="load_font" cid="pango_font_map_load_font" render="0"/>
+    <method name="load_fontset" cid="pango_font_map_load_fontset" render="0"/>
+    <field name="parent_instance"/>
+  </class>
+  <record name="FontMapClass" gtypestructfor="FontMap" ctype="PangoFontMapClass" render="0">
+    <field name="parent_class"/>
+    <field name="load_font"/>
+    <field name="list_families"/>
+    <field name="load_fontset"/>
+    <field name="shape_engine_type"/>
+    <field name="get_serial"/>
+    <field name="changed"/>
+    <field name="get_family"/>
+    <field name="get_face"/>
+  </record>
+  <bitfield name="FontMask" glibtypename="PangoFontMask" ctype="PangoFontMask" render="0">
+    <member name="family" value="1" cid="PANGO_FONT_MASK_FAMILY" glibnick="family" glibname="PANGO_FONT_MASK_FAMILY"/>
+    <member name="style" value="2" cid="PANGO_FONT_MASK_STYLE" glibnick="style" glibname="PANGO_FONT_MASK_STYLE"/>
+    <member name="variant" value="4" cid="PANGO_FONT_MASK_VARIANT" glibnick="variant" glibname="PANGO_FONT_MASK_VARIANT"/>
+    <member name="weight" value="8" cid="PANGO_FONT_MASK_WEIGHT" glibnick="weight" glibname="PANGO_FONT_MASK_WEIGHT"/>
+    <member name="stretch" value="16" cid="PANGO_FONT_MASK_STRETCH" glibnick="stretch" glibname="PANGO_FONT_MASK_STRETCH"/>
+    <member name="size" value="32" cid="PANGO_FONT_MASK_SIZE" glibnick="size" glibname="PANGO_FONT_MASK_SIZE"/>
+    <member name="gravity" value="64" cid="PANGO_FONT_MASK_GRAVITY" glibnick="gravity" glibname="PANGO_FONT_MASK_GRAVITY"/>
+    <member name="variations" value="128" cid="PANGO_FONT_MASK_VARIATIONS" glibnick="variations" glibname="PANGO_FONT_MASK_VARIATIONS"/>
+  </bitfield>
+  <record name="FontMetrics" gtypestructfor="" ctype="PangoFontMetrics" render="0">
+    <field name="ref_count"/>
+    <field name="ascent"/>
+    <field name="descent"/>
+    <field name="height"/>
+    <field name="approximate_char_width"/>
+    <field name="approximate_digit_width"/>
+    <field name="underline_position"/>
+    <field name="underline_thickness"/>
+    <field name="strikethrough_position"/>
+    <field name="strikethrough_thickness"/>
+    <method name="get_approximate_char_width" cid="pango_font_metrics_get_approximate_char_width" render="0"/>
+    <method name="get_approximate_digit_width" cid="pango_font_metrics_get_approximate_digit_width" render="0"/>
+    <method name="get_ascent" cid="pango_font_metrics_get_ascent" render="0"/>
+    <method name="get_descent" cid="pango_font_metrics_get_descent" render="0"/>
+    <method name="get_height" cid="pango_font_metrics_get_height" render="0"/>
+    <method name="get_strikethrough_position" cid="pango_font_metrics_get_strikethrough_position" render="0"/>
+    <method name="get_strikethrough_thickness" cid="pango_font_metrics_get_strikethrough_thickness" render="0"/>
+    <method name="get_underline_position" cid="pango_font_metrics_get_underline_position" render="0"/>
+    <method name="get_underline_thickness" cid="pango_font_metrics_get_underline_thickness" render="0"/>
+    <method name="ref" cid="pango_font_metrics_ref" render="0"/>
+    <method name="unref" cid="pango_font_metrics_unref" render="0"/>
+  </record>
+  <enumeration name="FontScale" render="0">     <member name="none" value="0" cid="PANGO_FONT_SCALE_NONE" glibnick="none" glibname="PANGO_FONT_SCALE_NONE"/>
+    <member name="superscript" value="1" cid="PANGO_FONT_SCALE_SUPERSCRIPT" glibnick="superscript" glibname="PANGO_FONT_SCALE_SUPERSCRIPT"/>
+    <member name="subscript" value="2" cid="PANGO_FONT_SCALE_SUBSCRIPT" glibnick="subscript" glibname="PANGO_FONT_SCALE_SUBSCRIPT"/>
+    <member name="small_caps" value="3" cid="PANGO_FONT_SCALE_SMALL_CAPS" glibnick="small-caps" glibname="PANGO_FONT_SCALE_SMALL_CAPS"/>
+  </enumeration>
+  <class name="Fontset" ctype="PangoFontset" parent="GObject.Object" render="0">
+    <virtual-method name="foreach" render="0"/>
+    <virtual-method name="get_font" render="0"/>
+    <virtual-method name="get_language" render="0"/>
+    <virtual-method name="get_metrics" render="0"/>
+    <method name="foreach" cid="pango_fontset_foreach" render="0"/>
+    <method name="get_font" cid="pango_fontset_get_font" render="0"/>
+    <method name="get_metrics" cid="pango_fontset_get_metrics" render="0"/>
+    <field name="parent_instance"/>
+  </class>
+  <record name="FontsetClass" gtypestructfor="Fontset" ctype="PangoFontsetClass" render="0">
+    <field name="parent_class"/>
+    <field name="get_font"/>
+    <field name="get_metrics"/>
+    <field name="get_language"/>
+    <field name="foreach"/>
+    <field name="_pango_reserved1"/>
+    <field name="_pango_reserved2"/>
+    <field name="_pango_reserved3"/>
+    <field name="_pango_reserved4"/>
+  </record>
+  <callback name="FontsetForeachFunc" ctype="PangoFontsetForeachFunc" render="0">  </callback>
+  <class name="FontsetSimple" ctype="PangoFontsetSimple" parent="Fontset" render="0">
+    <constructor name="new" cid="pango_fontset_simple_new" render="0"/>
+    <method name="append" cid="pango_fontset_simple_append" render="0"/>
+    <method name="size" cid="pango_fontset_simple_size" render="0"/>
+  </class>
+  <record name="FontsetSimpleClass" gtypestructfor="FontsetSimple" ctype="PangoFontsetSimpleClass" render="0">
+  </record>
+  <function-macro name="GET_UNKNOWN_GLYPH" render="0">   </function-macro>
+  <constant name="GLYPH_EMPTY" ctype="PANGO_GLYPH_EMPTY" value="268435455" render="0">  </constant>
+  <constant name="GLYPH_INVALID_INPUT" ctype="PANGO_GLYPH_INVALID_INPUT" value="4294967295" render="0">  </constant>
+  <constant name="GLYPH_UNKNOWN_FLAG" ctype="PANGO_GLYPH_UNKNOWN_FLAG" value="268435456" render="0">  </constant>
+  <function-macro name="GRAVITY_IS_IMPROPER" render="0">   </function-macro>
+  <function-macro name="GRAVITY_IS_VERTICAL" render="0">   </function-macro>
+  <record name="GlyphGeometry" gtypestructfor="" ctype="PangoGlyphGeometry" render="0">
+    <field name="width"/>
+    <field name="x_offset"/>
+    <field name="y_offset"/>
+  </record>
+  <record name="GlyphInfo" gtypestructfor="" ctype="PangoGlyphInfo" render="0">
+    <field name="glyph"/>
+    <field name="geometry"/>
+    <field name="attr"/>
+  </record>
+  <record name="GlyphItem" gtypestructfor="" ctype="PangoGlyphItem" render="0">
+    <field name="item"/>
+    <field name="glyphs"/>
+    <field name="y_offset"/>
+    <field name="start_x_offset"/>
+    <field name="end_x_offset"/>
+    <method name="apply_attrs" cid="pango_glyph_item_apply_attrs" render="0"/>
+    <method name="copy" cid="pango_glyph_item_copy" render="0"/>
+    <method name="free" cid="pango_glyph_item_free" render="0"/>
+    <method name="get_logical_widths" cid="pango_glyph_item_get_logical_widths" render="0"/>
+    <method name="letter_space" cid="pango_glyph_item_letter_space" render="0"/>
+    <method name="split" cid="pango_glyph_item_split" render="0"/>
+  </record>
+  <record name="GlyphItemIter" gtypestructfor="" ctype="PangoGlyphItemIter" render="0">
+    <field name="glyph_item"/>
+    <field name="text"/>
+    <field name="start_glyph"/>
+    <field name="start_index"/>
+    <field name="start_char"/>
+    <field name="end_glyph"/>
+    <field name="end_index"/>
+    <field name="end_char"/>
+    <method name="copy" cid="pango_glyph_item_iter_copy" render="0"/>
+    <method name="free" cid="pango_glyph_item_iter_free" render="0"/>
+    <method name="init_end" cid="pango_glyph_item_iter_init_end" render="0"/>
+    <method name="init_start" cid="pango_glyph_item_iter_init_start" render="0"/>
+    <method name="next_cluster" cid="pango_glyph_item_iter_next_cluster" render="0"/>
+    <method name="prev_cluster" cid="pango_glyph_item_iter_prev_cluster" render="0"/>
+  </record>
+  <record name="GlyphString" gtypestructfor="" ctype="PangoGlyphString" render="0">
+    <field name="num_glyphs"/>
+    <field name="glyphs"/>
+    <field name="log_clusters"/>
+    <field name="space"/>
+    <constructor name="new" cid="pango_glyph_string_new" render="0"/>
+    <method name="copy" cid="pango_glyph_string_copy" render="0"/>
+    <method name="extents" cid="pango_glyph_string_extents" render="0"/>
+    <method name="extents_range" cid="pango_glyph_string_extents_range" render="0"/>
+    <method name="free" cid="pango_glyph_string_free" render="0"/>
+    <method name="get_logical_widths" cid="pango_glyph_string_get_logical_widths" render="0"/>
+    <method name="get_width" cid="pango_glyph_string_get_width" render="0"/>
+    <method name="index_to_x" cid="pango_glyph_string_index_to_x" render="0"/>
+    <method name="index_to_x_full" cid="pango_glyph_string_index_to_x_full" render="0"/>
+    <method name="set_size" cid="pango_glyph_string_set_size" render="0"/>
+    <method name="x_to_index" cid="pango_glyph_string_x_to_index" render="0"/>
+  </record>
+  <record name="GlyphVisAttr" gtypestructfor="" ctype="PangoGlyphVisAttr" render="0">
+    <field name="is_cluster_start"/>
+  </record>
+  <enumeration name="Gravity" render="0">     <member name="south" value="0" cid="PANGO_GRAVITY_SOUTH" glibnick="south" glibname="PANGO_GRAVITY_SOUTH"/>
+    <member name="east" value="1" cid="PANGO_GRAVITY_EAST" glibnick="east" glibname="PANGO_GRAVITY_EAST"/>
+    <member name="north" value="2" cid="PANGO_GRAVITY_NORTH" glibnick="north" glibname="PANGO_GRAVITY_NORTH"/>
+    <member name="west" value="3" cid="PANGO_GRAVITY_WEST" glibnick="west" glibname="PANGO_GRAVITY_WEST"/>
+    <member name="auto" value="4" cid="PANGO_GRAVITY_AUTO" glibnick="auto" glibname="PANGO_GRAVITY_AUTO"/>
+    <function name="get_for_matrix" cid="pango_gravity_get_for_matrix" render="0"/>
+    <function name="get_for_script" cid="pango_gravity_get_for_script" render="0"/>
+    <function name="get_for_script_and_width" cid="pango_gravity_get_for_script_and_width" render="0"/>
+    <function name="to_rotation" cid="pango_gravity_to_rotation" render="0"/>
+  </enumeration>
+  <enumeration name="GravityHint" render="0">     <member name="natural" value="0" cid="PANGO_GRAVITY_HINT_NATURAL" glibnick="natural" glibname="PANGO_GRAVITY_HINT_NATURAL"/>
+    <member name="strong" value="1" cid="PANGO_GRAVITY_HINT_STRONG" glibnick="strong" glibname="PANGO_GRAVITY_HINT_STRONG"/>
+    <member name="line" value="2" cid="PANGO_GRAVITY_HINT_LINE" glibnick="line" glibname="PANGO_GRAVITY_HINT_LINE"/>
+  </enumeration>
+  <function-macro name="IS_CONTEXT" render="0">   </function-macro>
+  <function-macro name="IS_CONTEXT_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_FONT" render="0">   </function-macro>
+  <function-macro name="IS_FONTSET" render="0">   </function-macro>
+  <function-macro name="IS_FONTSET_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_FONTSET_SIMPLE" render="0">   </function-macro>
+  <function-macro name="IS_FONT_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_FONT_FACE" render="0">   </function-macro>
+  <function-macro name="IS_FONT_FACE_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_FONT_FAMILY" render="0">   </function-macro>
+  <function-macro name="IS_FONT_FAMILY_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_FONT_MAP" render="0">   </function-macro>
+  <function-macro name="IS_FONT_MAP_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_LAYOUT" render="0">   </function-macro>
+  <function-macro name="IS_LAYOUT_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_RENDERER" render="0">   </function-macro>
+  <function-macro name="IS_RENDERER_CLASS" render="0">   </function-macro>
+  <record name="Item" gtypestructfor="" ctype="PangoItem" render="0">
+    <field name="offset"/>
+    <field name="length"/>
+    <field name="num_chars"/>
+    <field name="analysis"/>
+    <constructor name="new" cid="pango_item_new" render="0"/>
+    <method name="apply_attrs" cid="pango_item_apply_attrs" render="0"/>
+    <method name="copy" cid="pango_item_copy" render="0"/>
+    <method name="free" cid="pango_item_free" render="0"/>
+    <method name="split" cid="pango_item_split" render="0"/>
+  </record>
+  <function-macro name="LAYOUT" render="0">   </function-macro>
+  <function-macro name="LAYOUT_CLASS" render="0">   </function-macro>
+  <function-macro name="LAYOUT_GET_CLASS" render="0">   </function-macro>
+  <function-macro name="LBEARING" render="0">   </function-macro>
+  <record name="Language" gtypestructfor="" ctype="PangoLanguage" render="0">
+    <method name="get_sample_string" cid="pango_language_get_sample_string" render="0"/>
+    <method name="get_scripts" cid="pango_language_get_scripts" render="0"/>
+    <method name="includes_script" cid="pango_language_includes_script" render="0"/>
+    <method name="matches" cid="pango_language_matches" render="0"/>
+    <method name="to_string" cid="pango_language_to_string" render="0"/>
+    <function name="from_string" cid="pango_language_from_string" render="0"/>
+    <function name="get_default" cid="pango_language_get_default" render="0"/>
+    <function name="get_preferred" cid="pango_language_get_preferred" render="0"/>
+  </record>
+  <class name="Layout" ctype="PangoLayout" parent="GObject.Object" render="0">
+    <constructor name="new" cid="pango_layout_new" render="0"/>
+    <function name="deserialize" cid="pango_layout_deserialize" render="0"/>
+    <method name="context_changed" cid="pango_layout_context_changed" render="0"/>
+    <method name="copy" cid="pango_layout_copy" render="0"/>
+    <method name="get_alignment" cid="pango_layout_get_alignment" render="0"/>
+    <method name="get_attributes" cid="pango_layout_get_attributes" render="0"/>
+    <method name="get_auto_dir" cid="pango_layout_get_auto_dir" render="0"/>
+    <method name="get_baseline" cid="pango_layout_get_baseline" render="0"/>
+    <method name="get_caret_pos" cid="pango_layout_get_caret_pos" render="0"/>
+    <method name="get_character_count" cid="pango_layout_get_character_count" render="0"/>
+    <method name="get_context" cid="pango_layout_get_context" render="0"/>
+    <method name="get_cursor_pos" cid="pango_layout_get_cursor_pos" render="0"/>
+    <method name="get_direction" cid="pango_layout_get_direction" render="0"/>
+    <method name="get_ellipsize" cid="pango_layout_get_ellipsize" render="0"/>
+    <method name="get_extents" cid="pango_layout_get_extents" render="0"/>
+    <method name="get_font_description" cid="pango_layout_get_font_description" render="0"/>
+    <method name="get_height" cid="pango_layout_get_height" render="0"/>
+    <method name="get_indent" cid="pango_layout_get_indent" render="0"/>
+    <method name="get_iter" cid="pango_layout_get_iter" render="0"/>
+    <method name="get_justify" cid="pango_layout_get_justify" render="0"/>
+    <method name="get_justify_last_line" cid="pango_layout_get_justify_last_line" render="0"/>
+    <method name="get_line" cid="pango_layout_get_line" render="0"/>
+    <method name="get_line_count" cid="pango_layout_get_line_count" render="0"/>
+    <method name="get_line_readonly" cid="pango_layout_get_line_readonly" render="0"/>
+    <method name="get_line_spacing" cid="pango_layout_get_line_spacing" render="0"/>
+    <method name="get_lines" cid="pango_layout_get_lines" render="0"/>
+    <method name="get_lines_readonly" cid="pango_layout_get_lines_readonly" render="0"/>
+    <method name="get_log_attrs" cid="pango_layout_get_log_attrs" render="0"/>
+    <method name="get_log_attrs_readonly" cid="pango_layout_get_log_attrs_readonly" render="0"/>
+    <method name="get_pixel_extents" cid="pango_layout_get_pixel_extents" render="0"/>
+    <method name="get_pixel_size" cid="pango_layout_get_pixel_size" render="0"/>
+    <method name="get_serial" cid="pango_layout_get_serial" render="0"/>
+    <method name="get_single_paragraph_mode" cid="pango_layout_get_single_paragraph_mode" render="0"/>
+    <method name="get_size" cid="pango_layout_get_size" render="0"/>
+    <method name="get_spacing" cid="pango_layout_get_spacing" render="0"/>
+    <method name="get_tabs" cid="pango_layout_get_tabs" render="0"/>
+    <method name="get_text" cid="pango_layout_get_text" render="0"/>
+    <method name="get_unknown_glyphs_count" cid="pango_layout_get_unknown_glyphs_count" render="0"/>
+    <method name="get_width" cid="pango_layout_get_width" render="0"/>
+    <method name="get_wrap" cid="pango_layout_get_wrap" render="0"/>
+    <method name="index_to_line_x" cid="pango_layout_index_to_line_x" render="0"/>
+    <method name="index_to_pos" cid="pango_layout_index_to_pos" render="0"/>
+    <method name="is_ellipsized" cid="pango_layout_is_ellipsized" render="0"/>
+    <method name="is_wrapped" cid="pango_layout_is_wrapped" render="0"/>
+    <method name="move_cursor_visually" cid="pango_layout_move_cursor_visually" render="0"/>
+    <method name="serialize" cid="pango_layout_serialize" render="0"/>
+    <method name="set_alignment" cid="pango_layout_set_alignment" render="0"/>
+    <method name="set_attributes" cid="pango_layout_set_attributes" render="0"/>
+    <method name="set_auto_dir" cid="pango_layout_set_auto_dir" render="0"/>
+    <method name="set_ellipsize" cid="pango_layout_set_ellipsize" render="0"/>
+    <method name="set_font_description" cid="pango_layout_set_font_description" render="0"/>
+    <method name="set_height" cid="pango_layout_set_height" render="0"/>
+    <method name="set_indent" cid="pango_layout_set_indent" render="0"/>
+    <method name="set_justify" cid="pango_layout_set_justify" render="0"/>
+    <method name="set_justify_last_line" cid="pango_layout_set_justify_last_line" render="0"/>
+    <method name="set_line_spacing" cid="pango_layout_set_line_spacing" render="0"/>
+    <method name="set_markup" cid="pango_layout_set_markup" render="0"/>
+    <method name="set_markup_with_accel" cid="pango_layout_set_markup_with_accel" render="0"/>
+    <method name="set_single_paragraph_mode" cid="pango_layout_set_single_paragraph_mode" render="0"/>
+    <method name="set_spacing" cid="pango_layout_set_spacing" render="0"/>
+    <method name="set_tabs" cid="pango_layout_set_tabs" render="0"/>
+    <method name="set_text" cid="pango_layout_set_text" render="0"/>
+    <method name="set_width" cid="pango_layout_set_width" render="0"/>
+    <method name="set_wrap" cid="pango_layout_set_wrap" render="0"/>
+    <method name="write_to_file" cid="pango_layout_write_to_file" render="0"/>
+    <method name="xy_to_index" cid="pango_layout_xy_to_index" render="0"/>
+  </class>
+  <record name="LayoutClass" gtypestructfor="Layout" ctype="PangoLayoutClass" render="0">
+  </record>
+  <enumeration name="LayoutDeserializeError" render="0">     <member name="invalid" value="0" cid="PANGO_LAYOUT_DESERIALIZE_INVALID" glibnick="invalid" glibname="PANGO_LAYOUT_DESERIALIZE_INVALID"/>
+    <member name="invalid_value" value="1" cid="PANGO_LAYOUT_DESERIALIZE_INVALID_VALUE" glibnick="invalid-value" glibname="PANGO_LAYOUT_DESERIALIZE_INVALID_VALUE"/>
+    <member name="missing_value" value="2" cid="PANGO_LAYOUT_DESERIALIZE_MISSING_VALUE" glibnick="missing-value" glibname="PANGO_LAYOUT_DESERIALIZE_MISSING_VALUE"/>
+    <function name="quark" cid="pango_layout_deserialize_error_quark" render="0"/>
+  </enumeration>
+  <bitfield name="LayoutDeserializeFlags" glibtypename="PangoLayoutDeserializeFlags" ctype="PangoLayoutDeserializeFlags" render="0">
+    <member name="default" value="0" cid="PANGO_LAYOUT_DESERIALIZE_DEFAULT" glibnick="default" glibname="PANGO_LAYOUT_DESERIALIZE_DEFAULT"/>
+    <member name="context" value="1" cid="PANGO_LAYOUT_DESERIALIZE_CONTEXT" glibnick="context" glibname="PANGO_LAYOUT_DESERIALIZE_CONTEXT"/>
+  </bitfield>
+  <record name="LayoutIter" gtypestructfor="" ctype="PangoLayoutIter" render="0">
+    <method name="at_last_line" cid="pango_layout_iter_at_last_line" render="0"/>
+    <method name="copy" cid="pango_layout_iter_copy" render="0"/>
+    <method name="free" cid="pango_layout_iter_free" render="0"/>
+    <method name="get_baseline" cid="pango_layout_iter_get_baseline" render="0"/>
+    <method name="get_char_extents" cid="pango_layout_iter_get_char_extents" render="0"/>
+    <method name="get_cluster_extents" cid="pango_layout_iter_get_cluster_extents" render="0"/>
+    <method name="get_index" cid="pango_layout_iter_get_index" render="0"/>
+    <method name="get_layout" cid="pango_layout_iter_get_layout" render="0"/>
+    <method name="get_layout_extents" cid="pango_layout_iter_get_layout_extents" render="0"/>
+    <method name="get_line" cid="pango_layout_iter_get_line" render="0"/>
+    <method name="get_line_extents" cid="pango_layout_iter_get_line_extents" render="0"/>
+    <method name="get_line_readonly" cid="pango_layout_iter_get_line_readonly" render="0"/>
+    <method name="get_line_yrange" cid="pango_layout_iter_get_line_yrange" render="0"/>
+    <method name="get_run" cid="pango_layout_iter_get_run" render="0"/>
+    <method name="get_run_baseline" cid="pango_layout_iter_get_run_baseline" render="0"/>
+    <method name="get_run_extents" cid="pango_layout_iter_get_run_extents" render="0"/>
+    <method name="get_run_readonly" cid="pango_layout_iter_get_run_readonly" render="0"/>
+    <method name="next_char" cid="pango_layout_iter_next_char" render="0"/>
+    <method name="next_cluster" cid="pango_layout_iter_next_cluster" render="0"/>
+    <method name="next_line" cid="pango_layout_iter_next_line" render="0"/>
+    <method name="next_run" cid="pango_layout_iter_next_run" render="0"/>
+  </record>
+  <record name="LayoutLine" gtypestructfor="" ctype="PangoLayoutLine" render="0">
+    <field name="layout"/>
+    <field name="start_index"/>
+    <field name="length"/>
+    <field name="runs"/>
+    <field name="is_paragraph_start"/>
+    <field name="resolved_dir"/>
+    <method name="get_extents" cid="pango_layout_line_get_extents" render="0"/>
+    <method name="get_height" cid="pango_layout_line_get_height" render="0"/>
+    <method name="get_length" cid="pango_layout_line_get_length" render="0"/>
+    <method name="get_pixel_extents" cid="pango_layout_line_get_pixel_extents" render="0"/>
+    <method name="get_resolved_direction" cid="pango_layout_line_get_resolved_direction" render="0"/>
+    <method name="get_start_index" cid="pango_layout_line_get_start_index" render="0"/>
+    <method name="get_x_ranges" cid="pango_layout_line_get_x_ranges" render="0"/>
+    <method name="index_to_x" cid="pango_layout_line_index_to_x" render="0"/>
+    <method name="is_paragraph_start" cid="pango_layout_line_is_paragraph_start" render="0"/>
+    <method name="ref" cid="pango_layout_line_ref" render="0"/>
+    <method name="unref" cid="pango_layout_line_unref" render="0"/>
+    <method name="x_to_index" cid="pango_layout_line_x_to_index" render="0"/>
+  </record>
+  <bitfield name="LayoutSerializeFlags" glibtypename="PangoLayoutSerializeFlags" ctype="PangoLayoutSerializeFlags" render="0">
+    <member name="default" value="0" cid="PANGO_LAYOUT_SERIALIZE_DEFAULT" glibnick="default" glibname="PANGO_LAYOUT_SERIALIZE_DEFAULT"/>
+    <member name="context" value="1" cid="PANGO_LAYOUT_SERIALIZE_CONTEXT" glibnick="context" glibname="PANGO_LAYOUT_SERIALIZE_CONTEXT"/>
+    <member name="output" value="2" cid="PANGO_LAYOUT_SERIALIZE_OUTPUT" glibnick="output" glibname="PANGO_LAYOUT_SERIALIZE_OUTPUT"/>
+  </bitfield>
+  <record name="LogAttr" gtypestructfor="" ctype="PangoLogAttr" render="0">
+    <field name="is_line_break"/>
+    <field name="is_mandatory_break"/>
+    <field name="is_char_break"/>
+    <field name="is_white"/>
+    <field name="is_cursor_position"/>
+    <field name="is_word_start"/>
+    <field name="is_word_end"/>
+    <field name="is_sentence_boundary"/>
+    <field name="is_sentence_start"/>
+    <field name="is_sentence_end"/>
+    <field name="backspace_deletes_character"/>
+    <field name="is_expandable_space"/>
+    <field name="is_word_boundary"/>
+    <field name="break_inserts_hyphen"/>
+    <field name="break_removes_preceding"/>
+    <field name="reserved"/>
+  </record>
+  <record name="Matrix" gtypestructfor="" ctype="PangoMatrix" render="0">
+    <field name="xx"/>
+    <field name="xy"/>
+    <field name="yx"/>
+    <field name="yy"/>
+    <field name="x0"/>
+    <field name="y0"/>
+    <method name="concat" cid="pango_matrix_concat" render="0"/>
+    <method name="copy" cid="pango_matrix_copy" render="0"/>
+    <method name="free" cid="pango_matrix_free" render="0"/>
+    <method name="get_font_scale_factor" cid="pango_matrix_get_font_scale_factor" render="0"/>
+    <method name="get_font_scale_factors" cid="pango_matrix_get_font_scale_factors" render="0"/>
+    <method name="get_slant_ratio" cid="pango_matrix_get_slant_ratio" render="0"/>
+    <method name="rotate" cid="pango_matrix_rotate" render="0"/>
+    <method name="scale" cid="pango_matrix_scale" render="0"/>
+    <method name="transform_distance" cid="pango_matrix_transform_distance" render="0"/>
+    <method name="transform_pixel_rectangle" cid="pango_matrix_transform_pixel_rectangle" render="0"/>
+    <method name="transform_point" cid="pango_matrix_transform_point" render="0"/>
+    <method name="transform_rectangle" cid="pango_matrix_transform_rectangle" render="0"/>
+    <method name="translate" cid="pango_matrix_translate" render="0"/>
+  </record>
+  <enumeration name="Overline" render="0">     <member name="none" value="0" cid="PANGO_OVERLINE_NONE" glibnick="none" glibname="PANGO_OVERLINE_NONE"/>
+    <member name="single" value="1" cid="PANGO_OVERLINE_SINGLE" glibnick="single" glibname="PANGO_OVERLINE_SINGLE"/>
+  </enumeration>
+  <function-macro name="PIXELS" render="0">   </function-macro>
+  <function-macro name="PIXELS_CEIL" render="0">   </function-macro>
+  <function-macro name="PIXELS_FLOOR" render="0">   </function-macro>
+  <function-macro name="RBEARING" render="0">   </function-macro>
+  <function-macro name="RENDERER" render="0">   </function-macro>
+  <function-macro name="RENDERER_CLASS" render="0">   </function-macro>
+  <function-macro name="RENDERER_GET_CLASS" render="0">   </function-macro>
+  <record name="Rectangle" gtypestructfor="" ctype="PangoRectangle" render="0">
+    <field name="x"/>
+    <field name="y"/>
+    <field name="width"/>
+    <field name="height"/>
+  </record>
+  <enumeration name="RenderPart" render="0">     <member name="foreground" value="0" cid="PANGO_RENDER_PART_FOREGROUND" glibnick="foreground" glibname="PANGO_RENDER_PART_FOREGROUND"/>
+    <member name="background" value="1" cid="PANGO_RENDER_PART_BACKGROUND" glibnick="background" glibname="PANGO_RENDER_PART_BACKGROUND"/>
+    <member name="underline" value="2" cid="PANGO_RENDER_PART_UNDERLINE" glibnick="underline" glibname="PANGO_RENDER_PART_UNDERLINE"/>
+    <member name="strikethrough" value="3" cid="PANGO_RENDER_PART_STRIKETHROUGH" glibnick="strikethrough" glibname="PANGO_RENDER_PART_STRIKETHROUGH"/>
+    <member name="overline" value="4" cid="PANGO_RENDER_PART_OVERLINE" glibnick="overline" glibname="PANGO_RENDER_PART_OVERLINE"/>
+  </enumeration>
+  <class name="Renderer" ctype="PangoRenderer" parent="GObject.Object" render="0">
+    <virtual-method name="begin" render="0"/>
+    <virtual-method name="draw_error_underline" render="0"/>
+    <virtual-method name="draw_glyph" render="0"/>
+    <virtual-method name="draw_glyph_item" render="0"/>
+    <virtual-method name="draw_glyphs" render="0"/>
+    <virtual-method name="draw_rectangle" render="0"/>
+    <virtual-method name="draw_shape" render="0"/>
+    <virtual-method name="draw_trapezoid" render="0"/>
+    <virtual-method name="end" render="0"/>
+    <virtual-method name="part_changed" render="0"/>
+    <virtual-method name="prepare_run" render="0"/>
+    <method name="activate" cid="pango_renderer_activate" render="0"/>
+    <method name="deactivate" cid="pango_renderer_deactivate" render="0"/>
+    <method name="draw_error_underline" cid="pango_renderer_draw_error_underline" render="0"/>
+    <method name="draw_glyph" cid="pango_renderer_draw_glyph" render="0"/>
+    <method name="draw_glyph_item" cid="pango_renderer_draw_glyph_item" render="0"/>
+    <method name="draw_glyphs" cid="pango_renderer_draw_glyphs" render="0"/>
+    <method name="draw_layout" cid="pango_renderer_draw_layout" render="0"/>
+    <method name="draw_layout_line" cid="pango_renderer_draw_layout_line" render="0"/>
+    <method name="draw_rectangle" cid="pango_renderer_draw_rectangle" render="0"/>
+    <method name="draw_trapezoid" cid="pango_renderer_draw_trapezoid" render="0"/>
+    <method name="get_alpha" cid="pango_renderer_get_alpha" render="0"/>
+    <method name="get_color" cid="pango_renderer_get_color" render="0"/>
+    <method name="get_layout" cid="pango_renderer_get_layout" render="0"/>
+    <method name="get_layout_line" cid="pango_renderer_get_layout_line" render="0"/>
+    <method name="get_matrix" cid="pango_renderer_get_matrix" render="0"/>
+    <method name="part_changed" cid="pango_renderer_part_changed" render="0"/>
+    <method name="set_alpha" cid="pango_renderer_set_alpha" render="0"/>
+    <method name="set_color" cid="pango_renderer_set_color" render="0"/>
+    <method name="set_matrix" cid="pango_renderer_set_matrix" render="0"/>
+    <field name="parent_instance"/>
+    <field name="underline"/>
+    <field name="strikethrough"/>
+    <field name="active_count"/>
+    <field name="matrix"/>
+    <field name="priv"/>
+  </class>
+  <record name="RendererClass" gtypestructfor="Renderer" ctype="PangoRendererClass" render="0">
+    <field name="parent_class"/>
+    <field name="draw_glyphs"/>
+    <field name="draw_rectangle"/>
+    <field name="draw_error_underline"/>
+    <field name="draw_shape"/>
+    <field name="draw_trapezoid"/>
+    <field name="draw_glyph"/>
+    <field name="part_changed"/>
+    <field name="begin"/>
+    <field name="end"/>
+    <field name="prepare_run"/>
+    <field name="draw_glyph_item"/>
+    <field name="_pango_reserved2"/>
+    <field name="_pango_reserved3"/>
+    <field name="_pango_reserved4"/>
+  </record>
+  <record name="RendererPrivate" gtypestructfor="" ctype="PangoRendererPrivate" render="0">
+  </record>
+  <constant name="SCALE" ctype="PANGO_SCALE" value="1024" render="0">  </constant>
+  <enumeration name="Script" render="0">     <member name="invalid_code" value="-1" cid="PANGO_SCRIPT_INVALID_CODE" glibnick="invalid-code" glibname="PANGO_SCRIPT_INVALID_CODE"/>
+    <member name="common" value="0" cid="PANGO_SCRIPT_COMMON" glibnick="common" glibname="PANGO_SCRIPT_COMMON"/>
+    <member name="inherited" value="1" cid="PANGO_SCRIPT_INHERITED" glibnick="inherited" glibname="PANGO_SCRIPT_INHERITED"/>
+    <member name="arabic" value="2" cid="PANGO_SCRIPT_ARABIC" glibnick="arabic" glibname="PANGO_SCRIPT_ARABIC"/>
+    <member name="armenian" value="3" cid="PANGO_SCRIPT_ARMENIAN" glibnick="armenian" glibname="PANGO_SCRIPT_ARMENIAN"/>
+    <member name="bengali" value="4" cid="PANGO_SCRIPT_BENGALI" glibnick="bengali" glibname="PANGO_SCRIPT_BENGALI"/>
+    <member name="bopomofo" value="5" cid="PANGO_SCRIPT_BOPOMOFO" glibnick="bopomofo" glibname="PANGO_SCRIPT_BOPOMOFO"/>
+    <member name="cherokee" value="6" cid="PANGO_SCRIPT_CHEROKEE" glibnick="cherokee" glibname="PANGO_SCRIPT_CHEROKEE"/>
+    <member name="coptic" value="7" cid="PANGO_SCRIPT_COPTIC" glibnick="coptic" glibname="PANGO_SCRIPT_COPTIC"/>
+    <member name="cyrillic" value="8" cid="PANGO_SCRIPT_CYRILLIC" glibnick="cyrillic" glibname="PANGO_SCRIPT_CYRILLIC"/>
+    <member name="deseret" value="9" cid="PANGO_SCRIPT_DESERET" glibnick="deseret" glibname="PANGO_SCRIPT_DESERET"/>
+    <member name="devanagari" value="10" cid="PANGO_SCRIPT_DEVANAGARI" glibnick="devanagari" glibname="PANGO_SCRIPT_DEVANAGARI"/>
+    <member name="ethiopic" value="11" cid="PANGO_SCRIPT_ETHIOPIC" glibnick="ethiopic" glibname="PANGO_SCRIPT_ETHIOPIC"/>
+    <member name="georgian" value="12" cid="PANGO_SCRIPT_GEORGIAN" glibnick="georgian" glibname="PANGO_SCRIPT_GEORGIAN"/>
+    <member name="gothic" value="13" cid="PANGO_SCRIPT_GOTHIC" glibnick="gothic" glibname="PANGO_SCRIPT_GOTHIC"/>
+    <member name="greek" value="14" cid="PANGO_SCRIPT_GREEK" glibnick="greek" glibname="PANGO_SCRIPT_GREEK"/>
+    <member name="gujarati" value="15" cid="PANGO_SCRIPT_GUJARATI" glibnick="gujarati" glibname="PANGO_SCRIPT_GUJARATI"/>
+    <member name="gurmukhi" value="16" cid="PANGO_SCRIPT_GURMUKHI" glibnick="gurmukhi" glibname="PANGO_SCRIPT_GURMUKHI"/>
+    <member name="han" value="17" cid="PANGO_SCRIPT_HAN" glibnick="han" glibname="PANGO_SCRIPT_HAN"/>
+    <member name="hangul" value="18" cid="PANGO_SCRIPT_HANGUL" glibnick="hangul" glibname="PANGO_SCRIPT_HANGUL"/>
+    <member name="hebrew" value="19" cid="PANGO_SCRIPT_HEBREW" glibnick="hebrew" glibname="PANGO_SCRIPT_HEBREW"/>
+    <member name="hiragana" value="20" cid="PANGO_SCRIPT_HIRAGANA" glibnick="hiragana" glibname="PANGO_SCRIPT_HIRAGANA"/>
+    <member name="kannada" value="21" cid="PANGO_SCRIPT_KANNADA" glibnick="kannada" glibname="PANGO_SCRIPT_KANNADA"/>
+    <member name="katakana" value="22" cid="PANGO_SCRIPT_KATAKANA" glibnick="katakana" glibname="PANGO_SCRIPT_KATAKANA"/>
+    <member name="khmer" value="23" cid="PANGO_SCRIPT_KHMER" glibnick="khmer" glibname="PANGO_SCRIPT_KHMER"/>
+    <member name="lao" value="24" cid="PANGO_SCRIPT_LAO" glibnick="lao" glibname="PANGO_SCRIPT_LAO"/>
+    <member name="latin" value="25" cid="PANGO_SCRIPT_LATIN" glibnick="latin" glibname="PANGO_SCRIPT_LATIN"/>
+    <member name="malayalam" value="26" cid="PANGO_SCRIPT_MALAYALAM" glibnick="malayalam" glibname="PANGO_SCRIPT_MALAYALAM"/>
+    <member name="mongolian" value="27" cid="PANGO_SCRIPT_MONGOLIAN" glibnick="mongolian" glibname="PANGO_SCRIPT_MONGOLIAN"/>
+    <member name="myanmar" value="28" cid="PANGO_SCRIPT_MYANMAR" glibnick="myanmar" glibname="PANGO_SCRIPT_MYANMAR"/>
+    <member name="ogham" value="29" cid="PANGO_SCRIPT_OGHAM" glibnick="ogham" glibname="PANGO_SCRIPT_OGHAM"/>
+    <member name="old_italic" value="30" cid="PANGO_SCRIPT_OLD_ITALIC" glibnick="old-italic" glibname="PANGO_SCRIPT_OLD_ITALIC"/>
+    <member name="oriya" value="31" cid="PANGO_SCRIPT_ORIYA" glibnick="oriya" glibname="PANGO_SCRIPT_ORIYA"/>
+    <member name="runic" value="32" cid="PANGO_SCRIPT_RUNIC" glibnick="runic" glibname="PANGO_SCRIPT_RUNIC"/>
+    <member name="sinhala" value="33" cid="PANGO_SCRIPT_SINHALA" glibnick="sinhala" glibname="PANGO_SCRIPT_SINHALA"/>
+    <member name="syriac" value="34" cid="PANGO_SCRIPT_SYRIAC" glibnick="syriac" glibname="PANGO_SCRIPT_SYRIAC"/>
+    <member name="tamil" value="35" cid="PANGO_SCRIPT_TAMIL" glibnick="tamil" glibname="PANGO_SCRIPT_TAMIL"/>
+    <member name="telugu" value="36" cid="PANGO_SCRIPT_TELUGU" glibnick="telugu" glibname="PANGO_SCRIPT_TELUGU"/>
+    <member name="thaana" value="37" cid="PANGO_SCRIPT_THAANA" glibnick="thaana" glibname="PANGO_SCRIPT_THAANA"/>
+    <member name="thai" value="38" cid="PANGO_SCRIPT_THAI" glibnick="thai" glibname="PANGO_SCRIPT_THAI"/>
+    <member name="tibetan" value="39" cid="PANGO_SCRIPT_TIBETAN" glibnick="tibetan" glibname="PANGO_SCRIPT_TIBETAN"/>
+    <member name="canadian_aboriginal" value="40" cid="PANGO_SCRIPT_CANADIAN_ABORIGINAL" glibnick="canadian-aboriginal" glibname="PANGO_SCRIPT_CANADIAN_ABORIGINAL"/>
+    <member name="yi" value="41" cid="PANGO_SCRIPT_YI" glibnick="yi" glibname="PANGO_SCRIPT_YI"/>
+    <member name="tagalog" value="42" cid="PANGO_SCRIPT_TAGALOG" glibnick="tagalog" glibname="PANGO_SCRIPT_TAGALOG"/>
+    <member name="hanunoo" value="43" cid="PANGO_SCRIPT_HANUNOO" glibnick="hanunoo" glibname="PANGO_SCRIPT_HANUNOO"/>
+    <member name="buhid" value="44" cid="PANGO_SCRIPT_BUHID" glibnick="buhid" glibname="PANGO_SCRIPT_BUHID"/>
+    <member name="tagbanwa" value="45" cid="PANGO_SCRIPT_TAGBANWA" glibnick="tagbanwa" glibname="PANGO_SCRIPT_TAGBANWA"/>
+    <member name="braille" value="46" cid="PANGO_SCRIPT_BRAILLE" glibnick="braille" glibname="PANGO_SCRIPT_BRAILLE"/>
+    <member name="cypriot" value="47" cid="PANGO_SCRIPT_CYPRIOT" glibnick="cypriot" glibname="PANGO_SCRIPT_CYPRIOT"/>
+    <member name="limbu" value="48" cid="PANGO_SCRIPT_LIMBU" glibnick="limbu" glibname="PANGO_SCRIPT_LIMBU"/>
+    <member name="osmanya" value="49" cid="PANGO_SCRIPT_OSMANYA" glibnick="osmanya" glibname="PANGO_SCRIPT_OSMANYA"/>
+    <member name="shavian" value="50" cid="PANGO_SCRIPT_SHAVIAN" glibnick="shavian" glibname="PANGO_SCRIPT_SHAVIAN"/>
+    <member name="linear_b" value="51" cid="PANGO_SCRIPT_LINEAR_B" glibnick="linear-b" glibname="PANGO_SCRIPT_LINEAR_B"/>
+    <member name="tai_le" value="52" cid="PANGO_SCRIPT_TAI_LE" glibnick="tai-le" glibname="PANGO_SCRIPT_TAI_LE"/>
+    <member name="ugaritic" value="53" cid="PANGO_SCRIPT_UGARITIC" glibnick="ugaritic" glibname="PANGO_SCRIPT_UGARITIC"/>
+    <member name="new_tai_lue" value="54" cid="PANGO_SCRIPT_NEW_TAI_LUE" glibnick="new-tai-lue" glibname="PANGO_SCRIPT_NEW_TAI_LUE"/>
+    <member name="buginese" value="55" cid="PANGO_SCRIPT_BUGINESE" glibnick="buginese" glibname="PANGO_SCRIPT_BUGINESE"/>
+    <member name="glagolitic" value="56" cid="PANGO_SCRIPT_GLAGOLITIC" glibnick="glagolitic" glibname="PANGO_SCRIPT_GLAGOLITIC"/>
+    <member name="tifinagh" value="57" cid="PANGO_SCRIPT_TIFINAGH" glibnick="tifinagh" glibname="PANGO_SCRIPT_TIFINAGH"/>
+    <member name="syloti_nagri" value="58" cid="PANGO_SCRIPT_SYLOTI_NAGRI" glibnick="syloti-nagri" glibname="PANGO_SCRIPT_SYLOTI_NAGRI"/>
+    <member name="old_persian" value="59" cid="PANGO_SCRIPT_OLD_PERSIAN" glibnick="old-persian" glibname="PANGO_SCRIPT_OLD_PERSIAN"/>
+    <member name="kharoshthi" value="60" cid="PANGO_SCRIPT_KHAROSHTHI" glibnick="kharoshthi" glibname="PANGO_SCRIPT_KHAROSHTHI"/>
+    <member name="unknown" value="61" cid="PANGO_SCRIPT_UNKNOWN" glibnick="unknown" glibname="PANGO_SCRIPT_UNKNOWN"/>
+    <member name="balinese" value="62" cid="PANGO_SCRIPT_BALINESE" glibnick="balinese" glibname="PANGO_SCRIPT_BALINESE"/>
+    <member name="cuneiform" value="63" cid="PANGO_SCRIPT_CUNEIFORM" glibnick="cuneiform" glibname="PANGO_SCRIPT_CUNEIFORM"/>
+    <member name="phoenician" value="64" cid="PANGO_SCRIPT_PHOENICIAN" glibnick="phoenician" glibname="PANGO_SCRIPT_PHOENICIAN"/>
+    <member name="phags_pa" value="65" cid="PANGO_SCRIPT_PHAGS_PA" glibnick="phags-pa" glibname="PANGO_SCRIPT_PHAGS_PA"/>
+    <member name="nko" value="66" cid="PANGO_SCRIPT_NKO" glibnick="nko" glibname="PANGO_SCRIPT_NKO"/>
+    <member name="kayah_li" value="67" cid="PANGO_SCRIPT_KAYAH_LI" glibnick="kayah-li" glibname="PANGO_SCRIPT_KAYAH_LI"/>
+    <member name="lepcha" value="68" cid="PANGO_SCRIPT_LEPCHA" glibnick="lepcha" glibname="PANGO_SCRIPT_LEPCHA"/>
+    <member name="rejang" value="69" cid="PANGO_SCRIPT_REJANG" glibnick="rejang" glibname="PANGO_SCRIPT_REJANG"/>
+    <member name="sundanese" value="70" cid="PANGO_SCRIPT_SUNDANESE" glibnick="sundanese" glibname="PANGO_SCRIPT_SUNDANESE"/>
+    <member name="saurashtra" value="71" cid="PANGO_SCRIPT_SAURASHTRA" glibnick="saurashtra" glibname="PANGO_SCRIPT_SAURASHTRA"/>
+    <member name="cham" value="72" cid="PANGO_SCRIPT_CHAM" glibnick="cham" glibname="PANGO_SCRIPT_CHAM"/>
+    <member name="ol_chiki" value="73" cid="PANGO_SCRIPT_OL_CHIKI" glibnick="ol-chiki" glibname="PANGO_SCRIPT_OL_CHIKI"/>
+    <member name="vai" value="74" cid="PANGO_SCRIPT_VAI" glibnick="vai" glibname="PANGO_SCRIPT_VAI"/>
+    <member name="carian" value="75" cid="PANGO_SCRIPT_CARIAN" glibnick="carian" glibname="PANGO_SCRIPT_CARIAN"/>
+    <member name="lycian" value="76" cid="PANGO_SCRIPT_LYCIAN" glibnick="lycian" glibname="PANGO_SCRIPT_LYCIAN"/>
+    <member name="lydian" value="77" cid="PANGO_SCRIPT_LYDIAN" glibnick="lydian" glibname="PANGO_SCRIPT_LYDIAN"/>
+    <member name="batak" value="78" cid="PANGO_SCRIPT_BATAK" glibnick="batak" glibname="PANGO_SCRIPT_BATAK"/>
+    <member name="brahmi" value="79" cid="PANGO_SCRIPT_BRAHMI" glibnick="brahmi" glibname="PANGO_SCRIPT_BRAHMI"/>
+    <member name="mandaic" value="80" cid="PANGO_SCRIPT_MANDAIC" glibnick="mandaic" glibname="PANGO_SCRIPT_MANDAIC"/>
+    <member name="chakma" value="81" cid="PANGO_SCRIPT_CHAKMA" glibnick="chakma" glibname="PANGO_SCRIPT_CHAKMA"/>
+    <member name="meroitic_cursive" value="82" cid="PANGO_SCRIPT_MEROITIC_CURSIVE" glibnick="meroitic-cursive" glibname="PANGO_SCRIPT_MEROITIC_CURSIVE"/>
+    <member name="meroitic_hieroglyphs" value="83" cid="PANGO_SCRIPT_MEROITIC_HIEROGLYPHS" glibnick="meroitic-hieroglyphs" glibname="PANGO_SCRIPT_MEROITIC_HIEROGLYPHS"/>
+    <member name="miao" value="84" cid="PANGO_SCRIPT_MIAO" glibnick="miao" glibname="PANGO_SCRIPT_MIAO"/>
+    <member name="sharada" value="85" cid="PANGO_SCRIPT_SHARADA" glibnick="sharada" glibname="PANGO_SCRIPT_SHARADA"/>
+    <member name="sora_sompeng" value="86" cid="PANGO_SCRIPT_SORA_SOMPENG" glibnick="sora-sompeng" glibname="PANGO_SCRIPT_SORA_SOMPENG"/>
+    <member name="takri" value="87" cid="PANGO_SCRIPT_TAKRI" glibnick="takri" glibname="PANGO_SCRIPT_TAKRI"/>
+    <member name="bassa_vah" value="88" cid="PANGO_SCRIPT_BASSA_VAH" glibnick="bassa-vah" glibname="PANGO_SCRIPT_BASSA_VAH"/>
+    <member name="caucasian_albanian" value="89" cid="PANGO_SCRIPT_CAUCASIAN_ALBANIAN" glibnick="caucasian-albanian" glibname="PANGO_SCRIPT_CAUCASIAN_ALBANIAN"/>
+    <member name="duployan" value="90" cid="PANGO_SCRIPT_DUPLOYAN" glibnick="duployan" glibname="PANGO_SCRIPT_DUPLOYAN"/>
+    <member name="elbasan" value="91" cid="PANGO_SCRIPT_ELBASAN" glibnick="elbasan" glibname="PANGO_SCRIPT_ELBASAN"/>
+    <member name="grantha" value="92" cid="PANGO_SCRIPT_GRANTHA" glibnick="grantha" glibname="PANGO_SCRIPT_GRANTHA"/>
+    <member name="khojki" value="93" cid="PANGO_SCRIPT_KHOJKI" glibnick="khojki" glibname="PANGO_SCRIPT_KHOJKI"/>
+    <member name="khudawadi" value="94" cid="PANGO_SCRIPT_KHUDAWADI" glibnick="khudawadi" glibname="PANGO_SCRIPT_KHUDAWADI"/>
+    <member name="linear_a" value="95" cid="PANGO_SCRIPT_LINEAR_A" glibnick="linear-a" glibname="PANGO_SCRIPT_LINEAR_A"/>
+    <member name="mahajani" value="96" cid="PANGO_SCRIPT_MAHAJANI" glibnick="mahajani" glibname="PANGO_SCRIPT_MAHAJANI"/>
+    <member name="manichaean" value="97" cid="PANGO_SCRIPT_MANICHAEAN" glibnick="manichaean" glibname="PANGO_SCRIPT_MANICHAEAN"/>
+    <member name="mende_kikakui" value="98" cid="PANGO_SCRIPT_MENDE_KIKAKUI" glibnick="mende-kikakui" glibname="PANGO_SCRIPT_MENDE_KIKAKUI"/>
+    <member name="modi" value="99" cid="PANGO_SCRIPT_MODI" glibnick="modi" glibname="PANGO_SCRIPT_MODI"/>
+    <member name="mro" value="100" cid="PANGO_SCRIPT_MRO" glibnick="mro" glibname="PANGO_SCRIPT_MRO"/>
+    <member name="nabataean" value="101" cid="PANGO_SCRIPT_NABATAEAN" glibnick="nabataean" glibname="PANGO_SCRIPT_NABATAEAN"/>
+    <member name="old_north_arabian" value="102" cid="PANGO_SCRIPT_OLD_NORTH_ARABIAN" glibnick="old-north-arabian" glibname="PANGO_SCRIPT_OLD_NORTH_ARABIAN"/>
+    <member name="old_permic" value="103" cid="PANGO_SCRIPT_OLD_PERMIC" glibnick="old-permic" glibname="PANGO_SCRIPT_OLD_PERMIC"/>
+    <member name="pahawh_hmong" value="104" cid="PANGO_SCRIPT_PAHAWH_HMONG" glibnick="pahawh-hmong" glibname="PANGO_SCRIPT_PAHAWH_HMONG"/>
+    <member name="palmyrene" value="105" cid="PANGO_SCRIPT_PALMYRENE" glibnick="palmyrene" glibname="PANGO_SCRIPT_PALMYRENE"/>
+    <member name="pau_cin_hau" value="106" cid="PANGO_SCRIPT_PAU_CIN_HAU" glibnick="pau-cin-hau" glibname="PANGO_SCRIPT_PAU_CIN_HAU"/>
+    <member name="psalter_pahlavi" value="107" cid="PANGO_SCRIPT_PSALTER_PAHLAVI" glibnick="psalter-pahlavi" glibname="PANGO_SCRIPT_PSALTER_PAHLAVI"/>
+    <member name="siddham" value="108" cid="PANGO_SCRIPT_SIDDHAM" glibnick="siddham" glibname="PANGO_SCRIPT_SIDDHAM"/>
+    <member name="tirhuta" value="109" cid="PANGO_SCRIPT_TIRHUTA" glibnick="tirhuta" glibname="PANGO_SCRIPT_TIRHUTA"/>
+    <member name="warang_citi" value="110" cid="PANGO_SCRIPT_WARANG_CITI" glibnick="warang-citi" glibname="PANGO_SCRIPT_WARANG_CITI"/>
+    <member name="ahom" value="111" cid="PANGO_SCRIPT_AHOM" glibnick="ahom" glibname="PANGO_SCRIPT_AHOM"/>
+    <member name="anatolian_hieroglyphs" value="112" cid="PANGO_SCRIPT_ANATOLIAN_HIEROGLYPHS" glibnick="anatolian-hieroglyphs" glibname="PANGO_SCRIPT_ANATOLIAN_HIEROGLYPHS"/>
+    <member name="hatran" value="113" cid="PANGO_SCRIPT_HATRAN" glibnick="hatran" glibname="PANGO_SCRIPT_HATRAN"/>
+    <member name="multani" value="114" cid="PANGO_SCRIPT_MULTANI" glibnick="multani" glibname="PANGO_SCRIPT_MULTANI"/>
+    <member name="old_hungarian" value="115" cid="PANGO_SCRIPT_OLD_HUNGARIAN" glibnick="old-hungarian" glibname="PANGO_SCRIPT_OLD_HUNGARIAN"/>
+    <member name="signwriting" value="116" cid="PANGO_SCRIPT_SIGNWRITING" glibnick="signwriting" glibname="PANGO_SCRIPT_SIGNWRITING"/>
+    <function name="for_unichar" cid="pango_script_for_unichar" render="0"/>
+    <function name="get_sample_language" cid="pango_script_get_sample_language" render="0"/>
+  </enumeration>
+  <record name="ScriptIter" gtypestructfor="" ctype="PangoScriptIter" render="0">
+    <constructor name="new" cid="pango_script_iter_new" render="0"/>
+    <method name="free" cid="pango_script_iter_free" render="0"/>
+    <method name="get_range" cid="pango_script_iter_get_range" render="0"/>
+    <method name="next" cid="pango_script_iter_next" render="0"/>
+  </record>
+  <bitfield name="ShapeFlags" glibtypename="PangoShapeFlags" ctype="PangoShapeFlags" render="0">
+    <member name="none" value="0" cid="PANGO_SHAPE_NONE" glibnick="none" glibname="PANGO_SHAPE_NONE"/>
+    <member name="round_positions" value="1" cid="PANGO_SHAPE_ROUND_POSITIONS" glibnick="round-positions" glibname="PANGO_SHAPE_ROUND_POSITIONS"/>
+  </bitfield>
+  <bitfield name="ShowFlags" glibtypename="PangoShowFlags" ctype="PangoShowFlags" render="0">
+    <member name="none" value="0" cid="PANGO_SHOW_NONE" glibnick="none" glibname="PANGO_SHOW_NONE"/>
+    <member name="spaces" value="1" cid="PANGO_SHOW_SPACES" glibnick="spaces" glibname="PANGO_SHOW_SPACES"/>
+    <member name="line_breaks" value="2" cid="PANGO_SHOW_LINE_BREAKS" glibnick="line-breaks" glibname="PANGO_SHOW_LINE_BREAKS"/>
+    <member name="ignorables" value="4" cid="PANGO_SHOW_IGNORABLES" glibnick="ignorables" glibname="PANGO_SHOW_IGNORABLES"/>
+  </bitfield>
+  <enumeration name="Stretch" render="0">     <member name="ultra_condensed" value="0" cid="PANGO_STRETCH_ULTRA_CONDENSED" glibnick="ultra-condensed" glibname="PANGO_STRETCH_ULTRA_CONDENSED"/>
+    <member name="extra_condensed" value="1" cid="PANGO_STRETCH_EXTRA_CONDENSED" glibnick="extra-condensed" glibname="PANGO_STRETCH_EXTRA_CONDENSED"/>
+    <member name="condensed" value="2" cid="PANGO_STRETCH_CONDENSED" glibnick="condensed" glibname="PANGO_STRETCH_CONDENSED"/>
+    <member name="semi_condensed" value="3" cid="PANGO_STRETCH_SEMI_CONDENSED" glibnick="semi-condensed" glibname="PANGO_STRETCH_SEMI_CONDENSED"/>
+    <member name="normal" value="4" cid="PANGO_STRETCH_NORMAL" glibnick="normal" glibname="PANGO_STRETCH_NORMAL"/>
+    <member name="semi_expanded" value="5" cid="PANGO_STRETCH_SEMI_EXPANDED" glibnick="semi-expanded" glibname="PANGO_STRETCH_SEMI_EXPANDED"/>
+    <member name="expanded" value="6" cid="PANGO_STRETCH_EXPANDED" glibnick="expanded" glibname="PANGO_STRETCH_EXPANDED"/>
+    <member name="extra_expanded" value="7" cid="PANGO_STRETCH_EXTRA_EXPANDED" glibnick="extra-expanded" glibname="PANGO_STRETCH_EXTRA_EXPANDED"/>
+    <member name="ultra_expanded" value="8" cid="PANGO_STRETCH_ULTRA_EXPANDED" glibnick="ultra-expanded" glibname="PANGO_STRETCH_ULTRA_EXPANDED"/>
+  </enumeration>
+  <enumeration name="Style" render="0">     <member name="normal" value="0" cid="PANGO_STYLE_NORMAL" glibnick="normal" glibname="PANGO_STYLE_NORMAL"/>
+    <member name="oblique" value="1" cid="PANGO_STYLE_OBLIQUE" glibnick="oblique" glibname="PANGO_STYLE_OBLIQUE"/>
+    <member name="italic" value="2" cid="PANGO_STYLE_ITALIC" glibnick="italic" glibname="PANGO_STYLE_ITALIC"/>
+  </enumeration>
+  <enumeration name="TabAlign" render="0">     <member name="left" value="0" cid="PANGO_TAB_LEFT" glibnick="left" glibname="PANGO_TAB_LEFT"/>
+    <member name="right" value="1" cid="PANGO_TAB_RIGHT" glibnick="right" glibname="PANGO_TAB_RIGHT"/>
+    <member name="center" value="2" cid="PANGO_TAB_CENTER" glibnick="center" glibname="PANGO_TAB_CENTER"/>
+    <member name="decimal" value="3" cid="PANGO_TAB_DECIMAL" glibnick="decimal" glibname="PANGO_TAB_DECIMAL"/>
+  </enumeration>
+  <record name="TabArray" gtypestructfor="" ctype="PangoTabArray" render="0">
+    <constructor name="new" cid="pango_tab_array_new" render="0"/>
+    <constructor name="new_with_positions" cid="pango_tab_array_new_with_positions" render="0"/>
+    <method name="copy" cid="pango_tab_array_copy" render="0"/>
+    <method name="free" cid="pango_tab_array_free" render="0"/>
+    <method name="get_decimal_point" cid="pango_tab_array_get_decimal_point" render="0"/>
+    <method name="get_positions_in_pixels" cid="pango_tab_array_get_positions_in_pixels" render="0"/>
+    <method name="get_size" cid="pango_tab_array_get_size" render="0"/>
+    <method name="get_tab" cid="pango_tab_array_get_tab" render="0"/>
+    <method name="get_tabs" cid="pango_tab_array_get_tabs" render="0"/>
+    <method name="resize" cid="pango_tab_array_resize" render="0"/>
+    <method name="set_decimal_point" cid="pango_tab_array_set_decimal_point" render="0"/>
+    <method name="set_positions_in_pixels" cid="pango_tab_array_set_positions_in_pixels" render="0"/>
+    <method name="set_tab" cid="pango_tab_array_set_tab" render="0"/>
+    <method name="sort" cid="pango_tab_array_sort" render="0"/>
+    <method name="to_string" cid="pango_tab_array_to_string" render="0"/>
+    <function name="from_string" cid="pango_tab_array_from_string" render="0"/>
+  </record>
+  <enumeration name="TextTransform" render="0">     <member name="none" value="0" cid="PANGO_TEXT_TRANSFORM_NONE" glibnick="none" glibname="PANGO_TEXT_TRANSFORM_NONE"/>
+    <member name="lowercase" value="1" cid="PANGO_TEXT_TRANSFORM_LOWERCASE" glibnick="lowercase" glibname="PANGO_TEXT_TRANSFORM_LOWERCASE"/>
+    <member name="uppercase" value="2" cid="PANGO_TEXT_TRANSFORM_UPPERCASE" glibnick="uppercase" glibname="PANGO_TEXT_TRANSFORM_UPPERCASE"/>
+    <member name="capitalize" value="3" cid="PANGO_TEXT_TRANSFORM_CAPITALIZE" glibnick="capitalize" glibname="PANGO_TEXT_TRANSFORM_CAPITALIZE"/>
+  </enumeration>
+  <function-macro name="UNITS_CEIL" render="0">   </function-macro>
+  <function-macro name="UNITS_FLOOR" render="0">   </function-macro>
+  <function-macro name="UNITS_ROUND" render="0">   </function-macro>
+  <enumeration name="Underline" render="0">     <member name="none" value="0" cid="PANGO_UNDERLINE_NONE" glibnick="none" glibname="PANGO_UNDERLINE_NONE"/>
+    <member name="single" value="1" cid="PANGO_UNDERLINE_SINGLE" glibnick="single" glibname="PANGO_UNDERLINE_SINGLE"/>
+    <member name="double" value="2" cid="PANGO_UNDERLINE_DOUBLE" glibnick="double" glibname="PANGO_UNDERLINE_DOUBLE"/>
+    <member name="low" value="3" cid="PANGO_UNDERLINE_LOW" glibnick="low" glibname="PANGO_UNDERLINE_LOW"/>
+    <member name="error" value="4" cid="PANGO_UNDERLINE_ERROR" glibnick="error" glibname="PANGO_UNDERLINE_ERROR"/>
+    <member name="single_line" value="5" cid="PANGO_UNDERLINE_SINGLE_LINE" glibnick="single-line" glibname="PANGO_UNDERLINE_SINGLE_LINE"/>
+    <member name="double_line" value="6" cid="PANGO_UNDERLINE_DOUBLE_LINE" glibnick="double-line" glibname="PANGO_UNDERLINE_DOUBLE_LINE"/>
+    <member name="error_line" value="7" cid="PANGO_UNDERLINE_ERROR_LINE" glibnick="error-line" glibname="PANGO_UNDERLINE_ERROR_LINE"/>
+  </enumeration>
+  <function-macro name="VERSION_CHECK" render="0">   </function-macro>
+  <function-macro name="VERSION_ENCODE" render="0">   </function-macro>
+  <constant name="VERSION_MAJOR" ctype="PANGO_VERSION_MAJOR" value="1" render="0">  </constant>
+  <constant name="VERSION_MICRO" ctype="PANGO_VERSION_MICRO" value="3" render="0">  </constant>
+  <constant name="VERSION_MINOR" ctype="PANGO_VERSION_MINOR" value="50" render="0">  </constant>
+  <constant name="VERSION_STRING" ctype="PANGO_VERSION_STRING" value="1.50.3" render="0">  </constant>
+  <enumeration name="Variant" render="0">     <member name="normal" value="0" cid="PANGO_VARIANT_NORMAL" glibnick="normal" glibname="PANGO_VARIANT_NORMAL"/>
+    <member name="small_caps" value="1" cid="PANGO_VARIANT_SMALL_CAPS" glibnick="small-caps" glibname="PANGO_VARIANT_SMALL_CAPS"/>
+    <member name="all_small_caps" value="2" cid="PANGO_VARIANT_ALL_SMALL_CAPS" glibnick="all-small-caps" glibname="PANGO_VARIANT_ALL_SMALL_CAPS"/>
+    <member name="petite_caps" value="3" cid="PANGO_VARIANT_PETITE_CAPS" glibnick="petite-caps" glibname="PANGO_VARIANT_PETITE_CAPS"/>
+    <member name="all_petite_caps" value="4" cid="PANGO_VARIANT_ALL_PETITE_CAPS" glibnick="all-petite-caps" glibname="PANGO_VARIANT_ALL_PETITE_CAPS"/>
+    <member name="unicase" value="5" cid="PANGO_VARIANT_UNICASE" glibnick="unicase" glibname="PANGO_VARIANT_UNICASE"/>
+    <member name="title_caps" value="6" cid="PANGO_VARIANT_TITLE_CAPS" glibnick="title-caps" glibname="PANGO_VARIANT_TITLE_CAPS"/>
+  </enumeration>
+  <enumeration name="Weight" render="0">     <member name="thin" value="100" cid="PANGO_WEIGHT_THIN" glibnick="thin" glibname="PANGO_WEIGHT_THIN"/>
+    <member name="ultralight" value="200" cid="PANGO_WEIGHT_ULTRALIGHT" glibnick="ultralight" glibname="PANGO_WEIGHT_ULTRALIGHT"/>
+    <member name="light" value="300" cid="PANGO_WEIGHT_LIGHT" glibnick="light" glibname="PANGO_WEIGHT_LIGHT"/>
+    <member name="semilight" value="350" cid="PANGO_WEIGHT_SEMILIGHT" glibnick="semilight" glibname="PANGO_WEIGHT_SEMILIGHT"/>
+    <member name="book" value="380" cid="PANGO_WEIGHT_BOOK" glibnick="book" glibname="PANGO_WEIGHT_BOOK"/>
+    <member name="normal" value="400" cid="PANGO_WEIGHT_NORMAL" glibnick="normal" glibname="PANGO_WEIGHT_NORMAL"/>
+    <member name="medium" value="500" cid="PANGO_WEIGHT_MEDIUM" glibnick="medium" glibname="PANGO_WEIGHT_MEDIUM"/>
+    <member name="semibold" value="600" cid="PANGO_WEIGHT_SEMIBOLD" glibnick="semibold" glibname="PANGO_WEIGHT_SEMIBOLD"/>
+    <member name="bold" value="700" cid="PANGO_WEIGHT_BOLD" glibnick="bold" glibname="PANGO_WEIGHT_BOLD"/>
+    <member name="ultrabold" value="800" cid="PANGO_WEIGHT_ULTRABOLD" glibnick="ultrabold" glibname="PANGO_WEIGHT_ULTRABOLD"/>
+    <member name="heavy" value="900" cid="PANGO_WEIGHT_HEAVY" glibnick="heavy" glibname="PANGO_WEIGHT_HEAVY"/>
+    <member name="ultraheavy" value="1000" cid="PANGO_WEIGHT_ULTRAHEAVY" glibnick="ultraheavy" glibname="PANGO_WEIGHT_ULTRAHEAVY"/>
+  </enumeration>
+  <enumeration name="WrapMode" render="0">     <member name="word" value="0" cid="PANGO_WRAP_WORD" glibnick="word" glibname="PANGO_WRAP_WORD"/>
+    <member name="char" value="1" cid="PANGO_WRAP_CHAR" glibnick="char" glibname="PANGO_WRAP_CHAR"/>
+    <member name="word_char" value="2" cid="PANGO_WRAP_WORD_CHAR" glibnick="word-char" glibname="PANGO_WRAP_WORD_CHAR"/>
+  </enumeration>
+  <function name="attr_allow_breaks_new" cid="pango_attr_allow_breaks_new" render="0">
+  </function>
+  <function name="attr_background_alpha_new" cid="pango_attr_background_alpha_new" render="0">
+  </function>
+  <function name="attr_background_new" cid="pango_attr_background_new" render="0">
+  </function>
+  <function name="attr_baseline_shift_new" cid="pango_attr_baseline_shift_new" render="0">
+  </function>
+  <function name="attr_break" cid="pango_attr_break" render="0">
+  </function>
+  <function name="attr_fallback_new" cid="pango_attr_fallback_new" render="0">
+  </function>
+  <function name="attr_family_new" cid="pango_attr_family_new" render="0">
+  </function>
+  <function name="attr_font_desc_new" cid="pango_attr_font_desc_new" render="0">
+  </function>
+  <function name="attr_font_features_new" cid="pango_attr_font_features_new" render="0">
+  </function>
+  <function name="attr_font_scale_new" cid="pango_attr_font_scale_new" render="0">
+  </function>
+  <function name="attr_foreground_alpha_new" cid="pango_attr_foreground_alpha_new" render="0">
+  </function>
+  <function name="attr_foreground_new" cid="pango_attr_foreground_new" render="0">
+  </function>
+  <function name="attr_gravity_hint_new" cid="pango_attr_gravity_hint_new" render="0">
+  </function>
+  <function name="attr_gravity_new" cid="pango_attr_gravity_new" render="0">
+  </function>
+  <function name="attr_insert_hyphens_new" cid="pango_attr_insert_hyphens_new" render="0">
+  </function>
+  <function name="attr_language_new" cid="pango_attr_language_new" render="0">
+  </function>
+  <function name="attr_letter_spacing_new" cid="pango_attr_letter_spacing_new" render="0">
+  </function>
+  <function name="attr_line_height_new" cid="pango_attr_line_height_new" render="0">
+  </function>
+  <function name="attr_line_height_new_absolute" cid="pango_attr_line_height_new_absolute" render="0">
+  </function>
+  <function name="attr_list_from_string" cid="pango_attr_list_from_string" render="0">
+  </function>
+  <function name="attr_overline_color_new" cid="pango_attr_overline_color_new" render="0">
+  </function>
+  <function name="attr_overline_new" cid="pango_attr_overline_new" render="0">
+  </function>
+  <function name="attr_rise_new" cid="pango_attr_rise_new" render="0">
+  </function>
+  <function name="attr_scale_new" cid="pango_attr_scale_new" render="0">
+  </function>
+  <function name="attr_sentence_new" cid="pango_attr_sentence_new" render="0">
+  </function>
+  <function name="attr_shape_new" cid="pango_attr_shape_new" render="0">
+  </function>
+  <function name="attr_shape_new_with_data" cid="pango_attr_shape_new_with_data" render="0">
+  </function>
+  <function name="attr_show_new" cid="pango_attr_show_new" render="0">
+  </function>
+  <function name="attr_size_new" cid="pango_attr_size_new" render="0">
+  </function>
+  <function name="attr_size_new_absolute" cid="pango_attr_size_new_absolute" render="0">
+  </function>
+  <function name="attr_stretch_new" cid="pango_attr_stretch_new" render="0">
+  </function>
+  <function name="attr_strikethrough_color_new" cid="pango_attr_strikethrough_color_new" render="0">
+  </function>
+  <function name="attr_strikethrough_new" cid="pango_attr_strikethrough_new" render="0">
+  </function>
+  <function name="attr_style_new" cid="pango_attr_style_new" render="0">
+  </function>
+  <function name="attr_text_transform_new" cid="pango_attr_text_transform_new" render="0">
+  </function>
+  <function name="attr_type_get_name" cid="pango_attr_type_get_name" render="0">
+  </function>
+  <function name="attr_type_register" cid="pango_attr_type_register" render="0">
+  </function>
+  <function name="attr_underline_color_new" cid="pango_attr_underline_color_new" render="0">
+  </function>
+  <function name="attr_underline_new" cid="pango_attr_underline_new" render="0">
+  </function>
+  <function name="attr_variant_new" cid="pango_attr_variant_new" render="0">
+  </function>
+  <function name="attr_weight_new" cid="pango_attr_weight_new" render="0">
+  </function>
+  <function name="attr_word_new" cid="pango_attr_word_new" render="0">
+  </function>
+  <function name="bidi_type_for_unichar" cid="pango_bidi_type_for_unichar" render="0">
+  </function>
+  <function name="break" cid="pango_break" render="0">
+  </function>
+  <function name="default_break" cid="pango_default_break" render="0">
+  </function>
+  <function name="extents_to_pixels" cid="pango_extents_to_pixels" render="0">
+  </function>
+  <function name="find_base_dir" cid="pango_find_base_dir" render="0">
+  </function>
+  <function name="find_paragraph_boundary" cid="pango_find_paragraph_boundary" render="0">
+  </function>
+  <function name="font_description_from_string" cid="pango_font_description_from_string" render="0">
+  </function>
+  <function name="get_log_attrs" cid="pango_get_log_attrs" render="0">
+  </function>
+  <function name="get_mirror_char" cid="pango_get_mirror_char" render="0">
+  </function>
+  <function name="gravity_get_for_matrix" cid="pango_gravity_get_for_matrix" render="0">
+  </function>
+  <function name="gravity_get_for_script" cid="pango_gravity_get_for_script" render="0">
+  </function>
+  <function name="gravity_get_for_script_and_width" cid="pango_gravity_get_for_script_and_width" render="0">
+  </function>
+  <function name="gravity_to_rotation" cid="pango_gravity_to_rotation" render="0">
+  </function>
+  <function name="is_zero_width" cid="pango_is_zero_width" render="0">
+  </function>
+  <function name="itemize" cid="pango_itemize" render="0">
+  </function>
+  <function name="itemize_with_base_dir" cid="pango_itemize_with_base_dir" render="0">
+  </function>
+  <function name="language_from_string" cid="pango_language_from_string" render="0">
+  </function>
+  <function name="language_get_default" cid="pango_language_get_default" render="0">
+  </function>
+  <function name="language_get_preferred" cid="pango_language_get_preferred" render="0">
+  </function>
+  <function name="layout_deserialize_error_quark" cid="pango_layout_deserialize_error_quark" render="0">
+  </function>
+  <function name="log2vis_get_embedding_levels" cid="pango_log2vis_get_embedding_levels" render="0">
+  </function>
+  <function name="markup_parser_finish" cid="pango_markup_parser_finish" render="0">
+  </function>
+  <function name="markup_parser_new" cid="pango_markup_parser_new" render="0">
+  </function>
+  <function name="parse_enum" cid="pango_parse_enum" render="0">
+  </function>
+  <function name="parse_markup" cid="pango_parse_markup" render="0">
+  </function>
+  <function name="parse_stretch" cid="pango_parse_stretch" render="0">
+  </function>
+  <function name="parse_style" cid="pango_parse_style" render="0">
+  </function>
+  <function name="parse_variant" cid="pango_parse_variant" render="0">
+  </function>
+  <function name="parse_weight" cid="pango_parse_weight" render="0">
+  </function>
+  <function name="quantize_line_geometry" cid="pango_quantize_line_geometry" render="0">
+  </function>
+  <function name="read_line" cid="pango_read_line" render="0">
+  </function>
+  <function name="reorder_items" cid="pango_reorder_items" render="0">
+  </function>
+  <function name="scan_int" cid="pango_scan_int" render="0">
+  </function>
+  <function name="scan_string" cid="pango_scan_string" render="0">
+  </function>
+  <function name="scan_word" cid="pango_scan_word" render="0">
+  </function>
+  <function name="script_for_unichar" cid="pango_script_for_unichar" render="0">
+  </function>
+  <function name="script_get_sample_language" cid="pango_script_get_sample_language" render="0">
+  </function>
+  <function name="shape" cid="pango_shape" render="0">
+  </function>
+  <function name="shape_full" cid="pango_shape_full" render="0">
+  </function>
+  <function name="shape_item" cid="pango_shape_item" render="0">
+  </function>
+  <function name="shape_with_flags" cid="pango_shape_with_flags" render="0">
+  </function>
+  <function name="skip_space" cid="pango_skip_space" render="0">
+  </function>
+  <function name="split_file_list" cid="pango_split_file_list" render="0">
+  </function>
+  <function name="tab_array_from_string" cid="pango_tab_array_from_string" render="0">
+  </function>
+  <function name="tailor_break" cid="pango_tailor_break" render="0">
+  </function>
+  <function name="trim_string" cid="pango_trim_string" render="0">
+  </function>
+  <function name="unichar_direction" cid="pango_unichar_direction" render="0">
+  </function>
+  <function name="units_from_double" cid="pango_units_from_double" render="0">
+  </function>
+  <function name="units_to_double" cid="pango_units_to_double" render="0">
+  </function>
+  <function name="version" cid="pango_version" render="0">
+  </function>
+  <function name="version_check" cid="pango_version_check" render="0">
+  </function>
+  <function name="version_string" cid="pango_version_string" render="0">
+  </function>
+</ns>

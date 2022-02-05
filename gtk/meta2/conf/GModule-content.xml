@@ -1,12 +1,33 @@
-<classes ns="GModule">
-  <bitfield name="ModuleFlags" parent="" render="0"/>
-  <callback name="ModuleCheckInit" parent="" render="0"/>
-  <callback name="ModuleUnload" parent="" render="0"/>
-  <docsection name="modules" parent="" render="0"/>
-  <enumeration name="ModuleError" parent="" render="0"/>
-  <function name="module_build_path" parent="" render="0"/>
-  <function name="module_error" parent="" render="0"/>
-  <function name="module_error_quark" parent="" render="0"/>
-  <function name="module_supported" parent="" render="0"/>
-  <record name="Module" parent="" render="0"/>
-</classes>
+<ns ns="GModule">
+  <record name="Module" gtypestructfor="" ctype="GModule" render="0">
+    <method name="close" cid="g_module_close" render="0"/>
+    <method name="make_resident" cid="g_module_make_resident" render="0"/>
+    <method name="name" cid="g_module_name" render="0"/>
+    <method name="symbol" cid="g_module_symbol" render="0"/>
+    <function name="build_path" cid="g_module_build_path" render="0"/>
+    <function name="error" cid="g_module_error" render="0"/>
+    <function name="error_quark" cid="g_module_error_quark" render="0"/>
+    <function name="open" cid="g_module_open" render="0"/>
+    <function name="open_full" cid="g_module_open_full" render="0"/>
+    <function name="supported" cid="g_module_supported" render="0"/>
+  </record>
+  <callback name="ModuleCheckInit" ctype="GModuleCheckInit" render="0">  </callback>
+  <enumeration name="ModuleError" render="0">     <member name="failed" value="0" cid="G_MODULE_ERROR_FAILED" glibnick="" glibname=""/>
+    <member name="check_failed" value="1" cid="G_MODULE_ERROR_CHECK_FAILED" glibnick="" glibname=""/>
+  </enumeration>
+  <bitfield name="ModuleFlags" glibtypename="" ctype="GModuleFlags" render="0">
+    <member name="lazy" value="1" cid="G_MODULE_BIND_LAZY" glibnick="" glibname=""/>
+    <member name="local" value="2" cid="G_MODULE_BIND_LOCAL" glibnick="" glibname=""/>
+    <member name="mask" value="3" cid="G_MODULE_BIND_MASK" glibnick="" glibname=""/>
+  </bitfield>
+  <callback name="ModuleUnload" ctype="GModuleUnload" render="0">  </callback>
+  <function name="module_build_path" cid="g_module_build_path" render="0">
+  </function>
+  <function name="module_error" cid="g_module_error" render="0">
+  </function>
+  <function name="module_error_quark" cid="g_module_error_quark" render="0">
+  </function>
+  <function name="module_supported" cid="g_module_supported" render="0">
+  </function>
+  <docsection name="modules" render="0">   </docsection>
+</ns>

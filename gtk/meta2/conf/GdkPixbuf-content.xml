@@ -1,87 +1,309 @@
-<classes ns="GdkPixbuf">
-  <bitfield name="PixbufFormatFlags" parent="" render="0"/>
-  <callback name="PixbufDestroyNotify" parent="" render="0"/>
-  <callback name="PixbufModuleBeginLoadFunc" parent="" render="0"/>
-  <callback name="PixbufModuleFillInfoFunc" parent="" render="0"/>
-  <callback name="PixbufModuleFillVtableFunc" parent="" render="0"/>
-  <callback name="PixbufModuleIncrementLoadFunc" parent="" render="0"/>
-  <callback name="PixbufModuleLoadAnimationFunc" parent="" render="0"/>
-  <callback name="PixbufModuleLoadFunc" parent="" render="0"/>
-  <callback name="PixbufModuleLoadXpmDataFunc" parent="" render="0"/>
-  <callback name="PixbufModulePreparedFunc" parent="" render="0"/>
-  <callback name="PixbufModuleSaveCallbackFunc" parent="" render="0"/>
-  <callback name="PixbufModuleSaveFunc" parent="" render="0"/>
-  <callback name="PixbufModuleSaveOptionSupportedFunc" parent="" render="0"/>
-  <callback name="PixbufModuleSizeFunc" parent="" render="0"/>
-  <callback name="PixbufModuleStopLoadFunc" parent="" render="0"/>
-  <callback name="PixbufModuleUpdatedFunc" parent="" render="0"/>
-  <callback name="PixbufSaveFunc" parent="" render="0"/>
-  <class name="PixbufAnimationIter" parent="GObject.Object" render="0"/>
-  <class name="PixbufAnimation" parent="GObject.Object" render="0"/>
-  <class name="PixbufLoader" parent="GObject.Object" render="0"/>
-  <class name="PixbufNonAnim" parent="PixbufAnimation" render="0"/>
-  <class name="Pixbuf" parent="GObject.Object" render="0"/>
-  <class name="PixbufSimpleAnimIter" parent="PixbufAnimationIter" render="0"/>
-  <class name="PixbufSimpleAnim" parent="PixbufAnimation" render="0"/>
-  <constant name="PIXBUF_MAJOR" parent="" render="0"/>
-  <constant name="PIXBUF_MICRO" parent="" render="0"/>
-  <constant name="PIXBUF_MINOR" parent="" render="0"/>
-  <constant name="PIXBUF_VERSION" parent="" render="0"/>
-  <enumeration name="Colorspace" parent="" render="0"/>
-  <enumeration name="InterpType" parent="" render="0"/>
-  <enumeration name="PixbufAlphaMode" parent="" render="0"/>
-  <enumeration name="PixbufError" parent="" render="0"/>
-  <enumeration name="PixbufRotation" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_ANIMATION_CLASS" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_ANIMATION_ITER_CLASS" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_ANIMATION_ITER" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_ANIMATION" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_LOADER_CLASS" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_LOADER" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_SIMPLE_ANIM_CLASS" parent="" render="0"/>
-  <function-macro name="IS_PIXBUF_SIMPLE_ANIM" parent="" render="0"/>
-  <function-macro name="PIXBUF_ANIMATION_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_ANIMATION_GET_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_ANIMATION_ITER_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_ANIMATION_ITER_GET_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_ANIMATION_ITER" parent="" render="0"/>
-  <function-macro name="PIXBUF_ANIMATION" parent="" render="0"/>
-  <function-macro name="PIXBUF_CHECK_VERSION" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_0_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_10_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_12_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_14_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_16_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_18_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_20_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_22_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_24_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_26_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_28_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_2_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_30_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_32_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_34_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_36_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_38_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_40_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_4_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_6_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_DEPRECATED_IN_2_8_FOR" parent="" render="0"/>
-  <function-macro name="PIXBUF_LOADER_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_LOADER_GET_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_LOADER" parent="" render="0"/>
-  <function-macro name="PIXBUF" parent="" render="0"/>
-  <function-macro name="PIXBUF_SIMPLE_ANIM_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_SIMPLE_ANIM_GET_CLASS" parent="" render="0"/>
-  <function-macro name="PIXBUF_SIMPLE_ANIM" parent="" render="0"/>
-  <function name="pixbuf_error_quark" parent="" render="0"/>
-  <record name="PixbufAnimationClass" parent="" render="0"/>
-  <record name="PixbufAnimationIterClass" parent="" render="0"/>
-  <record name="PixbufFormat" parent="" render="0"/>
-  <record name="PixbufLoaderClass" parent="" render="0"/>
-  <record name="PixbufModule" parent="" render="0"/>
-  <record name="PixbufModulePattern" parent="" render="0"/>
-  <record name="PixbufSimpleAnimClass" parent="" render="0"/>
-</classes>
+<ns ns="GdkPixbuf">
+  <enumeration name="Colorspace" render="0">     <member name="rgb" value="0" cid="GDK_COLORSPACE_RGB" glibnick="rgb" glibname="GDK_COLORSPACE_RGB"/>
+  </enumeration>
+  <function-macro name="IS_PIXBUF" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_ANIMATION" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_ANIMATION_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_ANIMATION_ITER" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_ANIMATION_ITER_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_LOADER" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_LOADER_CLASS" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_SIMPLE_ANIM" render="0">   </function-macro>
+  <function-macro name="IS_PIXBUF_SIMPLE_ANIM_CLASS" render="0">   </function-macro>
+  <enumeration name="InterpType" render="0">     <member name="nearest" value="0" cid="GDK_INTERP_NEAREST" glibnick="nearest" glibname="GDK_INTERP_NEAREST"/>
+    <member name="tiles" value="1" cid="GDK_INTERP_TILES" glibnick="tiles" glibname="GDK_INTERP_TILES"/>
+    <member name="bilinear" value="2" cid="GDK_INTERP_BILINEAR" glibnick="bilinear" glibname="GDK_INTERP_BILINEAR"/>
+    <member name="hyper" value="3" cid="GDK_INTERP_HYPER" glibnick="hyper" glibname="GDK_INTERP_HYPER"/>
+  </enumeration>
+  <function-macro name="PIXBUF" render="0">   </function-macro>
+  <function-macro name="PIXBUF_ANIMATION" render="0">   </function-macro>
+  <function-macro name="PIXBUF_ANIMATION_CLASS" render="0">   </function-macro>
+  <function-macro name="PIXBUF_ANIMATION_GET_CLASS" render="0">   </function-macro>
+  <function-macro name="PIXBUF_ANIMATION_ITER" render="0">   </function-macro>
+  <function-macro name="PIXBUF_ANIMATION_ITER_CLASS" render="0">   </function-macro>
+  <function-macro name="PIXBUF_ANIMATION_ITER_GET_CLASS" render="0">   </function-macro>
+  <function-macro name="PIXBUF_CHECK_VERSION" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_0_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_10_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_12_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_14_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_16_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_18_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_20_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_22_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_24_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_26_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_28_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_2_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_30_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_32_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_34_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_36_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_38_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_40_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_4_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_6_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_DEPRECATED_IN_2_8_FOR" render="0">   </function-macro>
+  <function-macro name="PIXBUF_LOADER" render="0">   </function-macro>
+  <function-macro name="PIXBUF_LOADER_CLASS" render="0">   </function-macro>
+  <function-macro name="PIXBUF_LOADER_GET_CLASS" render="0">   </function-macro>
+  <constant name="PIXBUF_MAJOR" ctype="GDK_PIXBUF_MAJOR" value="2" render="0">  </constant>
+  <constant name="PIXBUF_MICRO" ctype="GDK_PIXBUF_MICRO" value="7" render="0">  </constant>
+  <constant name="PIXBUF_MINOR" ctype="GDK_PIXBUF_MINOR" value="42" render="0">  </constant>
+  <function-macro name="PIXBUF_SIMPLE_ANIM" render="0">   </function-macro>
+  <function-macro name="PIXBUF_SIMPLE_ANIM_CLASS" render="0">   </function-macro>
+  <function-macro name="PIXBUF_SIMPLE_ANIM_GET_CLASS" render="0">   </function-macro>
+  <constant name="PIXBUF_VERSION" ctype="GDK_PIXBUF_VERSION" value="2.42.7" render="0">  </constant>
+  <class name="Pixbuf" ctype="GdkPixbuf" parent="GObject.Object" render="0">
+    <implements name="Gio.Icon" render="0"/>
+    <implements name="Gio.LoadableIcon" render="0"/>
+    <constructor name="new" cid="gdk_pixbuf_new" render="0"/>
+    <constructor name="new_from_bytes" cid="gdk_pixbuf_new_from_bytes" render="0"/>
+    <constructor name="new_from_data" cid="gdk_pixbuf_new_from_data" render="0"/>
+    <constructor name="new_from_file" cid="gdk_pixbuf_new_from_file" render="0"/>
+    <constructor name="new_from_file_at_scale" cid="gdk_pixbuf_new_from_file_at_scale" render="0"/>
+    <constructor name="new_from_file_at_size" cid="gdk_pixbuf_new_from_file_at_size" render="0"/>
+    <constructor name="new_from_inline" cid="gdk_pixbuf_new_from_inline" render="0"/>
+    <constructor name="new_from_resource" cid="gdk_pixbuf_new_from_resource" render="0"/>
+    <constructor name="new_from_resource_at_scale" cid="gdk_pixbuf_new_from_resource_at_scale" render="0"/>
+    <constructor name="new_from_stream" cid="gdk_pixbuf_new_from_stream" render="0"/>
+    <constructor name="new_from_stream_at_scale" cid="gdk_pixbuf_new_from_stream_at_scale" render="0"/>
+    <constructor name="new_from_stream_finish" cid="gdk_pixbuf_new_from_stream_finish" render="0"/>
+    <constructor name="new_from_xpm_data" cid="gdk_pixbuf_new_from_xpm_data" render="0"/>
+    <function name="calculate_rowstride" cid="gdk_pixbuf_calculate_rowstride" render="0"/>
+    <function name="get_file_info" cid="gdk_pixbuf_get_file_info" render="0"/>
+    <function name="get_file_info_async" cid="gdk_pixbuf_get_file_info_async" render="0"/>
+    <function name="get_file_info_finish" cid="gdk_pixbuf_get_file_info_finish" render="0"/>
+    <function name="get_formats" cid="gdk_pixbuf_get_formats" render="0"/>
+    <function name="init_modules" cid="gdk_pixbuf_init_modules" render="0"/>
+    <function name="new_from_stream_async" cid="gdk_pixbuf_new_from_stream_async" render="0"/>
+    <function name="new_from_stream_at_scale_async" cid="gdk_pixbuf_new_from_stream_at_scale_async" render="0"/>
+    <function name="save_to_stream_finish" cid="gdk_pixbuf_save_to_stream_finish" render="0"/>
+    <method name="add_alpha" cid="gdk_pixbuf_add_alpha" render="0"/>
+    <method name="apply_embedded_orientation" cid="gdk_pixbuf_apply_embedded_orientation" render="0"/>
+    <method name="composite" cid="gdk_pixbuf_composite" render="0"/>
+    <method name="composite_color" cid="gdk_pixbuf_composite_color" render="0"/>
+    <method name="composite_color_simple" cid="gdk_pixbuf_composite_color_simple" render="0"/>
+    <method name="copy" cid="gdk_pixbuf_copy" render="0"/>
+    <method name="copy_area" cid="gdk_pixbuf_copy_area" render="0"/>
+    <method name="copy_options" cid="gdk_pixbuf_copy_options" render="0"/>
+    <method name="fill" cid="gdk_pixbuf_fill" render="0"/>
+    <method name="flip" cid="gdk_pixbuf_flip" render="0"/>
+    <method name="get_bits_per_sample" cid="gdk_pixbuf_get_bits_per_sample" render="0"/>
+    <method name="get_byte_length" cid="gdk_pixbuf_get_byte_length" render="0"/>
+    <method name="get_colorspace" cid="gdk_pixbuf_get_colorspace" render="0"/>
+    <method name="get_has_alpha" cid="gdk_pixbuf_get_has_alpha" render="0"/>
+    <method name="get_height" cid="gdk_pixbuf_get_height" render="0"/>
+    <method name="get_n_channels" cid="gdk_pixbuf_get_n_channels" render="0"/>
+    <method name="get_option" cid="gdk_pixbuf_get_option" render="0"/>
+    <method name="get_options" cid="gdk_pixbuf_get_options" render="0"/>
+    <method name="get_pixels" cid="gdk_pixbuf_get_pixels" render="0"/>
+    <method name="get_pixels_with_length" cid="gdk_pixbuf_get_pixels_with_length" render="0"/>
+    <method name="get_rowstride" cid="gdk_pixbuf_get_rowstride" render="0"/>
+    <method name="get_width" cid="gdk_pixbuf_get_width" render="0"/>
+    <method name="new_subpixbuf" cid="gdk_pixbuf_new_subpixbuf" render="0"/>
+    <method name="read_pixel_bytes" cid="gdk_pixbuf_read_pixel_bytes" render="0"/>
+    <method name="read_pixels" cid="gdk_pixbuf_read_pixels" render="0"/>
+    <method name="ref" cid="gdk_pixbuf_ref" render="0"/>
+    <method name="remove_option" cid="gdk_pixbuf_remove_option" render="0"/>
+    <method name="rotate_simple" cid="gdk_pixbuf_rotate_simple" render="0"/>
+    <method name="saturate_and_pixelate" cid="gdk_pixbuf_saturate_and_pixelate" render="0"/>
+    <method name="save" cid="gdk_pixbuf_save" render="0"/>
+    <method name="save_to_buffer" cid="gdk_pixbuf_save_to_buffer" render="0"/>
+    <method name="save_to_bufferv" cid="gdk_pixbuf_save_to_bufferv" render="0"/>
+    <method name="save_to_callback" cid="gdk_pixbuf_save_to_callback" render="0"/>
+    <method name="save_to_callbackv" cid="gdk_pixbuf_save_to_callbackv" render="0"/>
+    <method name="save_to_stream" cid="gdk_pixbuf_save_to_stream" render="0"/>
+    <method name="save_to_stream_async" cid="gdk_pixbuf_save_to_stream_async" render="0"/>
+    <method name="save_to_streamv" cid="gdk_pixbuf_save_to_streamv" render="0"/>
+    <method name="save_to_streamv_async" cid="gdk_pixbuf_save_to_streamv_async" render="0"/>
+    <method name="savev" cid="gdk_pixbuf_savev" render="0"/>
+    <method name="scale" cid="gdk_pixbuf_scale" render="0"/>
+    <method name="scale_simple" cid="gdk_pixbuf_scale_simple" render="0"/>
+    <method name="set_option" cid="gdk_pixbuf_set_option" render="0"/>
+    <method name="unref" cid="gdk_pixbuf_unref" render="0"/>
+    <property name="bits-per-sample" cid="" render="0"/>
+    <property name="colorspace" cid="" render="0"/>
+    <property name="has-alpha" cid="" render="0"/>
+    <property name="height" cid="" render="0"/>
+    <property name="n-channels" cid="" render="0"/>
+    <property name="pixel-bytes" cid="" render="0"/>
+    <property name="pixels" cid="" render="0"/>
+    <property name="rowstride" cid="" render="0"/>
+    <property name="width" cid="" render="0"/>
+  </class>
+  <enumeration name="PixbufAlphaMode" render="0">     <member name="bilevel" value="0" cid="GDK_PIXBUF_ALPHA_BILEVEL" glibnick="bilevel" glibname="GDK_PIXBUF_ALPHA_BILEVEL"/>
+    <member name="full" value="1" cid="GDK_PIXBUF_ALPHA_FULL" glibnick="full" glibname="GDK_PIXBUF_ALPHA_FULL"/>
+  </enumeration>
+  <class name="PixbufAnimation" ctype="GdkPixbufAnimation" parent="GObject.Object" render="0">
+    <constructor name="new_from_file" cid="gdk_pixbuf_animation_new_from_file" render="0"/>
+    <constructor name="new_from_resource" cid="gdk_pixbuf_animation_new_from_resource" render="0"/>
+    <constructor name="new_from_stream" cid="gdk_pixbuf_animation_new_from_stream" render="0"/>
+    <constructor name="new_from_stream_finish" cid="gdk_pixbuf_animation_new_from_stream_finish" render="0"/>
+    <function name="new_from_stream_async" cid="gdk_pixbuf_animation_new_from_stream_async" render="0"/>
+    <virtual-method name="get_iter" render="0"/>
+    <virtual-method name="get_size" render="0"/>
+    <virtual-method name="get_static_image" render="0"/>
+    <virtual-method name="is_static_image" render="0"/>
+    <method name="get_height" cid="gdk_pixbuf_animation_get_height" render="0"/>
+    <method name="get_iter" cid="gdk_pixbuf_animation_get_iter" render="0"/>
+    <method name="get_static_image" cid="gdk_pixbuf_animation_get_static_image" render="0"/>
+    <method name="get_width" cid="gdk_pixbuf_animation_get_width" render="0"/>
+    <method name="is_static_image" cid="gdk_pixbuf_animation_is_static_image" render="0"/>
+    <method name="ref" cid="gdk_pixbuf_animation_ref" render="0"/>
+    <method name="unref" cid="gdk_pixbuf_animation_unref" render="0"/>
+    <field name="parent_instance"/>
+  </class>
+  <record name="PixbufAnimationClass" gtypestructfor="PixbufAnimation" ctype="GdkPixbufAnimationClass" render="0">
+    <field name="parent_class"/>
+    <field name="is_static_image"/>
+    <field name="get_static_image"/>
+    <field name="get_size"/>
+    <field name="get_iter"/>
+  </record>
+  <class name="PixbufAnimationIter" ctype="GdkPixbufAnimationIter" parent="GObject.Object" render="0">
+    <virtual-method name="advance" render="0"/>
+    <virtual-method name="get_delay_time" render="0"/>
+    <virtual-method name="get_pixbuf" render="0"/>
+    <virtual-method name="on_currently_loading_frame" render="0"/>
+    <method name="advance" cid="gdk_pixbuf_animation_iter_advance" render="0"/>
+    <method name="get_delay_time" cid="gdk_pixbuf_animation_iter_get_delay_time" render="0"/>
+    <method name="get_pixbuf" cid="gdk_pixbuf_animation_iter_get_pixbuf" render="0"/>
+    <method name="on_currently_loading_frame" cid="gdk_pixbuf_animation_iter_on_currently_loading_frame" render="0"/>
+    <field name="parent_instance"/>
+  </class>
+  <record name="PixbufAnimationIterClass" gtypestructfor="PixbufAnimationIter" ctype="GdkPixbufAnimationIterClass" render="0">
+    <field name="parent_class"/>
+    <field name="get_delay_time"/>
+    <field name="get_pixbuf"/>
+    <field name="on_currently_loading_frame"/>
+    <field name="advance"/>
+  </record>
+  <callback name="PixbufDestroyNotify" ctype="GdkPixbufDestroyNotify" render="0">  </callback>
+  <enumeration name="PixbufError" render="0">     <member name="corrupt_image" value="0" cid="GDK_PIXBUF_ERROR_CORRUPT_IMAGE" glibnick="corrupt-image" glibname="GDK_PIXBUF_ERROR_CORRUPT_IMAGE"/>
+    <member name="insufficient_memory" value="1" cid="GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY" glibnick="insufficient-memory" glibname="GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY"/>
+    <member name="bad_option" value="2" cid="GDK_PIXBUF_ERROR_BAD_OPTION" glibnick="bad-option" glibname="GDK_PIXBUF_ERROR_BAD_OPTION"/>
+    <member name="unknown_type" value="3" cid="GDK_PIXBUF_ERROR_UNKNOWN_TYPE" glibnick="unknown-type" glibname="GDK_PIXBUF_ERROR_UNKNOWN_TYPE"/>
+    <member name="unsupported_operation" value="4" cid="GDK_PIXBUF_ERROR_UNSUPPORTED_OPERATION" glibnick="unsupported-operation" glibname="GDK_PIXBUF_ERROR_UNSUPPORTED_OPERATION"/>
+    <member name="failed" value="5" cid="GDK_PIXBUF_ERROR_FAILED" glibnick="failed" glibname="GDK_PIXBUF_ERROR_FAILED"/>
+    <member name="incomplete_animation" value="6" cid="GDK_PIXBUF_ERROR_INCOMPLETE_ANIMATION" glibnick="incomplete-animation" glibname="GDK_PIXBUF_ERROR_INCOMPLETE_ANIMATION"/>
+    <function name="quark" cid="gdk_pixbuf_error_quark" render="0"/>
+  </enumeration>
+  <record name="PixbufFormat" gtypestructfor="" ctype="GdkPixbufFormat" render="0">
+    <field name="name"/>
+    <field name="signature"/>
+    <field name="domain"/>
+    <field name="description"/>
+    <field name="mime_types"/>
+    <field name="extensions"/>
+    <field name="flags"/>
+    <field name="disabled"/>
+    <field name="license"/>
+    <method name="copy" cid="gdk_pixbuf_format_copy" render="0"/>
+    <method name="free" cid="gdk_pixbuf_format_free" render="0"/>
+    <method name="get_description" cid="gdk_pixbuf_format_get_description" render="0"/>
+    <method name="get_extensions" cid="gdk_pixbuf_format_get_extensions" render="0"/>
+    <method name="get_license" cid="gdk_pixbuf_format_get_license" render="0"/>
+    <method name="get_mime_types" cid="gdk_pixbuf_format_get_mime_types" render="0"/>
+    <method name="get_name" cid="gdk_pixbuf_format_get_name" render="0"/>
+    <method name="is_disabled" cid="gdk_pixbuf_format_is_disabled" render="0"/>
+    <method name="is_save_option_supported" cid="gdk_pixbuf_format_is_save_option_supported" render="0"/>
+    <method name="is_scalable" cid="gdk_pixbuf_format_is_scalable" render="0"/>
+    <method name="is_writable" cid="gdk_pixbuf_format_is_writable" render="0"/>
+    <method name="set_disabled" cid="gdk_pixbuf_format_set_disabled" render="0"/>
+  </record>
+  <bitfield name="PixbufFormatFlags" glibtypename="" ctype="GdkPixbufFormatFlags" render="0">
+    <member name="writable" value="1" cid="GDK_PIXBUF_FORMAT_WRITABLE" glibnick="" glibname=""/>
+    <member name="scalable" value="2" cid="GDK_PIXBUF_FORMAT_SCALABLE" glibnick="" glibname=""/>
+    <member name="threadsafe" value="4" cid="GDK_PIXBUF_FORMAT_THREADSAFE" glibnick="" glibname=""/>
+  </bitfield>
+  <class name="PixbufLoader" ctype="GdkPixbufLoader" parent="GObject.Object" render="0">
+    <constructor name="new" cid="gdk_pixbuf_loader_new" render="0"/>
+    <constructor name="new_with_mime_type" cid="gdk_pixbuf_loader_new_with_mime_type" render="0"/>
+    <constructor name="new_with_type" cid="gdk_pixbuf_loader_new_with_type" render="0"/>
+    <virtual-method name="area_prepared" render="0"/>
+    <virtual-method name="area_updated" render="0"/>
+    <virtual-method name="closed" render="0"/>
+    <virtual-method name="size_prepared" render="0"/>
+    <method name="close" cid="gdk_pixbuf_loader_close" render="0"/>
+    <method name="get_animation" cid="gdk_pixbuf_loader_get_animation" render="0"/>
+    <method name="get_format" cid="gdk_pixbuf_loader_get_format" render="0"/>
+    <method name="get_pixbuf" cid="gdk_pixbuf_loader_get_pixbuf" render="0"/>
+    <method name="set_size" cid="gdk_pixbuf_loader_set_size" render="0"/>
+    <method name="write" cid="gdk_pixbuf_loader_write" render="0"/>
+    <method name="write_bytes" cid="gdk_pixbuf_loader_write_bytes" render="0"/>
+    <field name="parent_instance"/>
+    <field name="priv"/>
+    <glibsignal name="area-prepared" when="last" render="0"/>
+    <glibsignal name="area-updated" when="last" render="0"/>
+    <glibsignal name="closed" when="last" render="0"/>
+    <glibsignal name="size-prepared" when="last" render="0"/>
+  </class>
+  <record name="PixbufLoaderClass" gtypestructfor="PixbufLoader" ctype="GdkPixbufLoaderClass" render="0">
+    <field name="parent_class"/>
+    <field name="size_prepared"/>
+    <field name="area_prepared"/>
+    <field name="area_updated"/>
+    <field name="closed"/>
+  </record>
+  <record name="PixbufModule" gtypestructfor="" ctype="GdkPixbufModule" render="0">
+    <field name="module_name"/>
+    <field name="module_path"/>
+    <field name="module"/>
+    <field name="info"/>
+    <field name="load"/>
+    <field name="load_xpm_data"/>
+    <field name="begin_load"/>
+    <field name="stop_load"/>
+    <field name="load_increment"/>
+    <field name="load_animation"/>
+    <field name="save"/>
+    <field name="save_to_callback"/>
+    <field name="is_save_option_supported"/>
+    <field name="_reserved1"/>
+    <field name="_reserved2"/>
+    <field name="_reserved3"/>
+    <field name="_reserved4"/>
+  </record>
+  <callback name="PixbufModuleBeginLoadFunc" ctype="GdkPixbufModuleBeginLoadFunc" render="0">  </callback>
+  <callback name="PixbufModuleFillInfoFunc" ctype="GdkPixbufModuleFillInfoFunc" render="0">  </callback>
+  <callback name="PixbufModuleFillVtableFunc" ctype="GdkPixbufModuleFillVtableFunc" render="0">  </callback>
+  <callback name="PixbufModuleIncrementLoadFunc" ctype="GdkPixbufModuleIncrementLoadFunc" render="0">  </callback>
+  <callback name="PixbufModuleLoadAnimationFunc" ctype="GdkPixbufModuleLoadAnimationFunc" render="0">  </callback>
+  <callback name="PixbufModuleLoadFunc" ctype="GdkPixbufModuleLoadFunc" render="0">  </callback>
+  <callback name="PixbufModuleLoadXpmDataFunc" ctype="GdkPixbufModuleLoadXpmDataFunc" render="0">  </callback>
+  <record name="PixbufModulePattern" gtypestructfor="" ctype="GdkPixbufModulePattern" render="0">
+    <field name="prefix"/>
+    <field name="mask"/>
+    <field name="relevance"/>
+  </record>
+  <callback name="PixbufModulePreparedFunc" ctype="GdkPixbufModulePreparedFunc" render="0">  </callback>
+  <callback name="PixbufModuleSaveCallbackFunc" ctype="GdkPixbufModuleSaveCallbackFunc" render="0">  </callback>
+  <callback name="PixbufModuleSaveFunc" ctype="GdkPixbufModuleSaveFunc" render="0">  </callback>
+  <callback name="PixbufModuleSaveOptionSupportedFunc" ctype="GdkPixbufModuleSaveOptionSupportedFunc" render="0">  </callback>
+  <callback name="PixbufModuleSizeFunc" ctype="GdkPixbufModuleSizeFunc" render="0">  </callback>
+  <callback name="PixbufModuleStopLoadFunc" ctype="GdkPixbufModuleStopLoadFunc" render="0">  </callback>
+  <callback name="PixbufModuleUpdatedFunc" ctype="GdkPixbufModuleUpdatedFunc" render="0">  </callback>
+  <class name="PixbufNonAnim" ctype="" parent="PixbufAnimation" render="0">
+    <constructor name="new" cid="gdk_pixbuf_non_anim_new" render="0"/>
+  </class>
+  <enumeration name="PixbufRotation" render="0">     <member name="none" value="0" cid="GDK_PIXBUF_ROTATE_NONE" glibnick="none" glibname="GDK_PIXBUF_ROTATE_NONE"/>
+    <member name="counterclockwise" value="90" cid="GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE" glibnick="counterclockwise" glibname="GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE"/>
+    <member name="upsidedown" value="180" cid="GDK_PIXBUF_ROTATE_UPSIDEDOWN" glibnick="upsidedown" glibname="GDK_PIXBUF_ROTATE_UPSIDEDOWN"/>
+    <member name="clockwise" value="270" cid="GDK_PIXBUF_ROTATE_CLOCKWISE" glibnick="clockwise" glibname="GDK_PIXBUF_ROTATE_CLOCKWISE"/>
+  </enumeration>
+  <callback name="PixbufSaveFunc" ctype="GdkPixbufSaveFunc" render="0">  </callback>
+  <class name="PixbufSimpleAnim" ctype="GdkPixbufSimpleAnim" parent="PixbufAnimation" render="0">
+    <constructor name="new" cid="gdk_pixbuf_simple_anim_new" render="0"/>
+    <method name="add_frame" cid="gdk_pixbuf_simple_anim_add_frame" render="0"/>
+    <method name="get_loop" cid="gdk_pixbuf_simple_anim_get_loop" render="0"/>
+    <method name="set_loop" cid="gdk_pixbuf_simple_anim_set_loop" render="0"/>
+    <property name="loop" cid="" render="0"/>
+  </class>
+  <record name="PixbufSimpleAnimClass" gtypestructfor="PixbufSimpleAnim" ctype="GdkPixbufSimpleAnimClass" render="0">
+  </record>
+  <class name="PixbufSimpleAnimIter" ctype="" parent="PixbufAnimationIter" render="0">
+  </class>
+  <function name="pixbuf_error_quark" cid="gdk_pixbuf_error_quark" render="0">
+  </function>
+</ns>

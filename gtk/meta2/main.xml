@@ -12,4 +12,16 @@
 <xi:include href="../../gir-files/GObject-2.0.gir"/>
 <xi:include href="../../gir-files/GLib-2.0.gir"/>
 
+
+<xi:include href="conf/Atk-content.xml"/>
+<xi:include href="conf/cairo-content.xml"/>
+<xi:include href="conf/Gdk-content.xml"/>
+<xi:include href="conf/GdkPixbuf-content.xml"/>
+<xi:include href="conf/Gio-content.xml"/>
+<xi:include href="conf/GLib-content.xml"/>
+<xi:include href="conf/GModule-content.xml"/>
+<xi:include href="conf/GObject-content.xml"/>
+<xi:include href="conf/Gtk-content.xml"/>
+<xi:include href="conf/HarfBuzz-content.xml"/>
+<xi:include href="conf/Pango-content.xml"/>
 </castxml2pony>

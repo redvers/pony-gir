@@ -1,37 +1,232 @@
-<classes ns="cairo">
-  <enumeration name="Antialias" parent="" render="0"/>
-  <enumeration name="Content" parent="" render="0"/>
-  <enumeration name="DeviceType" parent="" render="0"/>
-  <enumeration name="Extend" parent="" render="0"/>
-  <enumeration name="FillRule" parent="" render="0"/>
-  <enumeration name="Filter" parent="" render="0"/>
-  <enumeration name="FontSlant" parent="" render="0"/>
-  <enumeration name="FontType" parent="" render="0"/>
-  <enumeration name="FontWeight" parent="" render="0"/>
-  <enumeration name="Format" parent="" render="0"/>
-  <enumeration name="HintMetrics" parent="" render="0"/>
-  <enumeration name="HintStyle" parent="" render="0"/>
-  <enumeration name="LineCap" parent="" render="0"/>
-  <enumeration name="LineJoin" parent="" render="0"/>
-  <enumeration name="Operator" parent="" render="0"/>
-  <enumeration name="PathDataType" parent="" render="0"/>
-  <enumeration name="PatternType" parent="" render="0"/>
-  <enumeration name="RegionOverlap" parent="" render="0"/>
-  <enumeration name="Status" parent="" render="0"/>
-  <enumeration name="SubpixelOrder" parent="" render="0"/>
-  <enumeration name="SurfaceType" parent="" render="0"/>
-  <enumeration name="TextClusterFlags" parent="" render="0"/>
-  <function name="image_surface_create" parent="" render="0"/>
-  <record name="Context" parent="" render="0"/>
-  <record name="Device" parent="" render="0"/>
-  <record name="FontFace" parent="" render="0"/>
-  <record name="FontOptions" parent="" render="0"/>
-  <record name="Matrix" parent="" render="0"/>
-  <record name="Path" parent="" render="0"/>
-  <record name="Pattern" parent="" render="0"/>
-  <record name="RectangleInt" parent="" render="0"/>
-  <record name="Rectangle" parent="" render="0"/>
-  <record name="Region" parent="" render="0"/>
-  <record name="ScaledFont" parent="" render="0"/>
-  <record name="Surface" parent="" render="0"/>
-</classes>
+<ns ns="cairo">
+  <record name="Context" gtypestructfor="" ctype="cairo_t" render="0">
+  </record>
+  <record name="Device" gtypestructfor="" ctype="cairo_device_t" render="0">
+  </record>
+  <record name="Surface" gtypestructfor="" ctype="cairo_surface_t" render="0">
+  </record>
+  <record name="Matrix" gtypestructfor="" ctype="cairo_matrix_t" render="0">
+  </record>
+  <record name="Pattern" gtypestructfor="" ctype="cairo_pattern_t" render="0">
+  </record>
+  <record name="Region" gtypestructfor="" ctype="cairo_region_t" render="0">
+  </record>
+  <enumeration name="Status" render="0">     <member name="success" value="0" cid="CAIRO_STATUS_SUCCESS" glibnick="" glibname=""/>
+    <member name="no_memory" value="1" cid="CAIRO_STATUS_NO_MEMORY" glibnick="" glibname=""/>
+    <member name="invalid_restore" value="2" cid="CAIRO_STATUS_INVALID_RESTORE" glibnick="" glibname=""/>
+    <member name="invalid_pop_group" value="3" cid="CAIRO_STATUS_INVALID_POP_GROUP" glibnick="" glibname=""/>
+    <member name="no_current_point" value="4" cid="CAIRO_STATUS_NO_CURRENT_POINT" glibnick="" glibname=""/>
+    <member name="invalid_matrix" value="5" cid="CAIRO_STATUS_INVALID_MATRIX" glibnick="" glibname=""/>
+    <member name="invalid_status" value="6" cid="CAIRO_STATUS_INVALID_STATUS" glibnick="" glibname=""/>
+    <member name="null_pointer" value="7" cid="CAIRO_STATUS_NULL_POINTER" glibnick="" glibname=""/>
+    <member name="invalid_string" value="8" cid="CAIRO_STATUS_INVALID_STRING" glibnick="" glibname=""/>
+    <member name="invalid_path_data" value="9" cid="CAIRO_STATUS_INVALID_PATH_DATA" glibnick="" glibname=""/>
+    <member name="read_error" value="10" cid="CAIRO_STATUS_READ_ERROR" glibnick="" glibname=""/>
+    <member name="write_error" value="11" cid="CAIRO_STATUS_WRITE_ERROR" glibnick="" glibname=""/>
+    <member name="surface_finished" value="12" cid="CAIRO_STATUS_SURFACE_FINISHED" glibnick="" glibname=""/>
+    <member name="surface_type_mismatch" value="13" cid="CAIRO_STATUS_SURFACE_TYPE_MISMATCH" glibnick="" glibname=""/>
+    <member name="pattern_type_mismatch" value="14" cid="CAIRO_STATUS_PATTERN_TYPE_MISMATCH" glibnick="" glibname=""/>
+    <member name="invalid_content" value="15" cid="CAIRO_STATUS_INVALID_CONTENT" glibnick="" glibname=""/>
+    <member name="invalid_format" value="16" cid="CAIRO_STATUS_INVALID_FORMAT" glibnick="" glibname=""/>
+    <member name="invalid_visual" value="17" cid="CAIRO_STATUS_INVALID_VISUAL" glibnick="" glibname=""/>
+    <member name="file_not_found" value="18" cid="CAIRO_STATUS_FILE_NOT_FOUND" glibnick="" glibname=""/>
+    <member name="invalid_dash" value="19" cid="CAIRO_STATUS_INVALID_DASH" glibnick="" glibname=""/>
+    <member name="invalid_dsc_comment" value="20" cid="CAIRO_STATUS_INVALID_DSC_COMMENT" glibnick="" glibname=""/>
+    <member name="invalid_index" value="21" cid="CAIRO_STATUS_INVALID_INDEX" glibnick="" glibname=""/>
+    <member name="clip_not_representable" value="22" cid="CAIRO_STATUS_CLIP_NOT_REPRESENTABLE" glibnick="" glibname=""/>
+    <member name="temp_file_error" value="23" cid="CAIRO_STATUS_TEMP_FILE_ERROR" glibnick="" glibname=""/>
+    <member name="invalid_stride" value="24" cid="CAIRO_STATUS_INVALID_STRIDE" glibnick="" glibname=""/>
+    <member name="font_type_mismatch" value="25" cid="CAIRO_STATUS_FONT_TYPE_MISMATCH" glibnick="" glibname=""/>
+    <member name="user_font_immutable" value="26" cid="CAIRO_STATUS_USER_FONT_IMMUTABLE" glibnick="" glibname=""/>
+    <member name="user_font_error" value="27" cid="CAIRO_STATUS_USER_FONT_ERROR" glibnick="" glibname=""/>
+    <member name="negative_count" value="28" cid="CAIRO_STATUS_NEGATIVE_COUNT" glibnick="" glibname=""/>
+    <member name="invalid_clusters" value="29" cid="CAIRO_STATUS_INVALID_CLUSTERS" glibnick="" glibname=""/>
+    <member name="invalid_slant" value="30" cid="CAIRO_STATUS_INVALID_SLANT" glibnick="" glibname=""/>
+    <member name="invalid_weight" value="31" cid="CAIRO_STATUS_INVALID_WEIGHT" glibnick="" glibname=""/>
+    <member name="invalid_size" value="32" cid="CAIRO_STATUS_INVALID_SIZE" glibnick="" glibname=""/>
+    <member name="user_font_not_implemented" value="33" cid="CAIRO_STATUS_USER_FONT_NOT_IMPLEMENTED" glibnick="" glibname=""/>
+    <member name="device_type_mismatch" value="34" cid="CAIRO_STATUS_DEVICE_TYPE_MISMATCH" glibnick="" glibname=""/>
+    <member name="device_error" value="35" cid="CAIRO_STATUS_DEVICE_ERROR" glibnick="" glibname=""/>
+    <member name="invalid_mesh_construction" value="36" cid="CAIRO_STATUS_INVALID_MESH_CONSTRUCTION" glibnick="" glibname=""/>
+    <member name="device_finished" value="37" cid="CAIRO_STATUS_DEVICE_FINISHED" glibnick="" glibname=""/>
+    <member name="jbig2_global_missing" value="38" cid="CAIRO_STATUS_JBIG2_GLOBAL_MISSING" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="Content" render="0">     <member name="color" value="4096" cid="CAIRO_CONTENT_COLOR" glibnick="" glibname=""/>
+    <member name="alpha" value="8192" cid="CAIRO_CONTENT_ALPHA" glibnick="" glibname=""/>
+    <member name="color_alpha" value="12288" cid="CAIRO_CONTENT_COLOR_ALPHA" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="Operator" render="0">     <member name="clear" value="0" cid="CAIRO_OPERATOR_CLEAR" glibnick="" glibname=""/>
+    <member name="source" value="1" cid="CAIRO_OPERATOR_SOURCE" glibnick="" glibname=""/>
+    <member name="over" value="2" cid="CAIRO_OPERATOR_OVER" glibnick="" glibname=""/>
+    <member name="in" value="3" cid="CAIRO_OPERATOR_IN" glibnick="" glibname=""/>
+    <member name="out" value="4" cid="CAIRO_OPERATOR_OUT" glibnick="" glibname=""/>
+    <member name="atop" value="5" cid="CAIRO_OPERATOR_ATOP" glibnick="" glibname=""/>
+    <member name="dest" value="6" cid="CAIRO_OPERATOR_DEST" glibnick="" glibname=""/>
+    <member name="dest_over" value="7" cid="CAIRO_OPERATOR_DEST_OVER" glibnick="" glibname=""/>
+    <member name="dest_in" value="8" cid="CAIRO_OPERATOR_DEST_IN" glibnick="" glibname=""/>
+    <member name="dest_out" value="9" cid="CAIRO_OPERATOR_DEST_OUT" glibnick="" glibname=""/>
+    <member name="dest_atop" value="10" cid="CAIRO_OPERATOR_DEST_ATOP" glibnick="" glibname=""/>
+    <member name="xor" value="11" cid="CAIRO_OPERATOR_XOR" glibnick="" glibname=""/>
+    <member name="add" value="12" cid="CAIRO_OPERATOR_ADD" glibnick="" glibname=""/>
+    <member name="saturate" value="13" cid="CAIRO_OPERATOR_SATURATE" glibnick="" glibname=""/>
+    <member name="multiply" value="14" cid="CAIRO_OPERATOR_MULTIPLY" glibnick="" glibname=""/>
+    <member name="screen" value="15" cid="CAIRO_OPERATOR_SCREEN" glibnick="" glibname=""/>
+    <member name="overlay" value="16" cid="CAIRO_OPERATOR_OVERLAY" glibnick="" glibname=""/>
+    <member name="darken" value="17" cid="CAIRO_OPERATOR_DARKEN" glibnick="" glibname=""/>
+    <member name="lighten" value="18" cid="CAIRO_OPERATOR_LIGHTEN" glibnick="" glibname=""/>
+    <member name="color_dodge" value="19" cid="CAIRO_OPERATOR_COLOR_DODGE" glibnick="" glibname=""/>
+    <member name="color_burn" value="20" cid="CAIRO_OPERATOR_COLOR_BURN" glibnick="" glibname=""/>
+    <member name="hard_light" value="21" cid="CAIRO_OPERATOR_HARD_LIGHT" glibnick="" glibname=""/>
+    <member name="soft_light" value="22" cid="CAIRO_OPERATOR_SOFT_LIGHT" glibnick="" glibname=""/>
+    <member name="difference" value="23" cid="CAIRO_OPERATOR_DIFFERENCE" glibnick="" glibname=""/>
+    <member name="exclusion" value="24" cid="CAIRO_OPERATOR_EXCLUSION" glibnick="" glibname=""/>
+    <member name="hsl_hue" value="25" cid="CAIRO_OPERATOR_HSL_HUE" glibnick="" glibname=""/>
+    <member name="hsl_saturation" value="26" cid="CAIRO_OPERATOR_HSL_SATURATION" glibnick="" glibname=""/>
+    <member name="hsl_color" value="27" cid="CAIRO_OPERATOR_HSL_COLOR" glibnick="" glibname=""/>
+    <member name="hsl_luminosity" value="28" cid="CAIRO_OPERATOR_HSL_LUMINOSITY" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="Antialias" render="0">     <member name="default" value="0" cid="CAIRO_ANTIALIAS_DEFAULT" glibnick="" glibname=""/>
+    <member name="none" value="1" cid="CAIRO_ANTIALIAS_NONE" glibnick="" glibname=""/>
+    <member name="gray" value="2" cid="CAIRO_ANTIALIAS_GRAY" glibnick="" glibname=""/>
+    <member name="subpixel" value="3" cid="CAIRO_ANTIALIAS_SUBPIXEL" glibnick="" glibname=""/>
+    <member name="fast" value="4" cid="CAIRO_ANTIALIAS_FAST" glibnick="" glibname=""/>
+    <member name="good" value="5" cid="CAIRO_ANTIALIAS_GOOD" glibnick="" glibname=""/>
+    <member name="best" value="6" cid="CAIRO_ANTIALIAS_BEST" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="FillRule" render="0">     <member name="winding" value="0" cid="CAIRO_FILL_RULE_WINDING" glibnick="" glibname=""/>
+    <member name="even_odd" value="1" cid="CAIRO_FILL_RULE_EVEN_ODD" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="LineCap" render="0">     <member name="butt" value="0" cid="CAIRO_LINE_CAP_BUTT" glibnick="" glibname=""/>
+    <member name="round" value="1" cid="CAIRO_LINE_CAP_ROUND" glibnick="" glibname=""/>
+    <member name="square" value="2" cid="CAIRO_LINE_CAP_SQUARE" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="LineJoin" render="0">     <member name="miter" value="0" cid="CAIRO_LINE_JOIN_MITER" glibnick="" glibname=""/>
+    <member name="round" value="1" cid="CAIRO_LINE_JOIN_ROUND" glibnick="" glibname=""/>
+    <member name="bevel" value="2" cid="CAIRO_LINE_JOIN_BEVEL" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="TextClusterFlags" render="0">     <member name="backward" value="1" cid="CAIRO_TEXT_CLUSTER_FLAG_BACKWARD" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="FontSlant" render="0">     <member name="normal" value="0" cid="CAIRO_FONT_SLANT_NORMAL" glibnick="" glibname=""/>
+    <member name="italic" value="1" cid="CAIRO_FONT_SLANT_ITALIC" glibnick="" glibname=""/>
+    <member name="oblique" value="2" cid="CAIRO_FONT_SLANT_OBLIQUE" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="FontWeight" render="0">     <member name="normal" value="0" cid="CAIRO_FONT_WEIGHT_NORMAL" glibnick="" glibname=""/>
+    <member name="bold" value="1" cid="CAIRO_FONT_WEIGHT_BOLD" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="SubpixelOrder" render="0">     <member name="default" value="0" cid="CAIRO_SUBPIXEL_ORDER_DEFAULT" glibnick="" glibname=""/>
+    <member name="rgb" value="1" cid="CAIRO_SUBPIXEL_ORDER_RGB" glibnick="" glibname=""/>
+    <member name="bgr" value="2" cid="CAIRO_SUBPIXEL_ORDER_BGR" glibnick="" glibname=""/>
+    <member name="vrgb" value="3" cid="CAIRO_SUBPIXEL_ORDER_VRGB" glibnick="" glibname=""/>
+    <member name="vbgr" value="4" cid="CAIRO_SUBPIXEL_ORDER_VBGR" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="HintStyle" render="0">     <member name="default" value="0" cid="CAIRO_HINT_STYLE_DEFAULT" glibnick="" glibname=""/>
+    <member name="none" value="1" cid="CAIRO_HINT_STYLE_NONE" glibnick="" glibname=""/>
+    <member name="slight" value="2" cid="CAIRO_HINT_STYLE_SLIGHT" glibnick="" glibname=""/>
+    <member name="medium" value="3" cid="CAIRO_HINT_STYLE_MEDIUM" glibnick="" glibname=""/>
+    <member name="full" value="4" cid="CAIRO_HINT_STYLE_FULL" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="HintMetrics" render="0">     <member name="default" value="0" cid="CAIRO_HINT_METRICS_DEFAULT" glibnick="" glibname=""/>
+    <member name="off" value="1" cid="CAIRO_HINT_METRICS_OFF" glibnick="" glibname=""/>
+    <member name="on" value="2" cid="CAIRO_HINT_METRICS_ON" glibnick="" glibname=""/>
+  </enumeration>
+  <record name="FontOptions" gtypestructfor="" ctype="cairo_font_options_t" render="0">
+  </record>
+  <enumeration name="FontType" render="0">     <member name="toy" value="0" cid="CAIRO_FONT_TYPE_TOY" glibnick="" glibname=""/>
+    <member name="ft" value="1" cid="CAIRO_FONT_TYPE_FT" glibnick="" glibname=""/>
+    <member name="win32" value="2" cid="CAIRO_FONT_TYPE_WIN32" glibnick="" glibname=""/>
+    <member name="quartz" value="3" cid="CAIRO_FONT_TYPE_QUARTZ" glibnick="" glibname=""/>
+    <member name="user" value="4" cid="CAIRO_FONT_TYPE_USER" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="PathDataType" render="0">     <member name="move_to" value="0" cid="CAIRO_PATH_MOVE_TO" glibnick="" glibname=""/>
+    <member name="line_to" value="1" cid="CAIRO_PATH_LINE_TO" glibnick="" glibname=""/>
+    <member name="curve_to" value="2" cid="CAIRO_PATH_CURVE_TO" glibnick="" glibname=""/>
+    <member name="close_path" value="3" cid="CAIRO_PATH_CLOSE_PATH" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="DeviceType" render="0">     <member name="drm" value="0" cid="CAIRO_DEVICE_TYPE_DRM" glibnick="" glibname=""/>
+    <member name="gl" value="1" cid="CAIRO_DEVICE_TYPE_GL" glibnick="" glibname=""/>
+    <member name="script" value="2" cid="CAIRO_DEVICE_TYPE_SCRIPT" glibnick="" glibname=""/>
+    <member name="xcb" value="3" cid="CAIRO_DEVICE_TYPE_XCB" glibnick="" glibname=""/>
+    <member name="xlib" value="4" cid="CAIRO_DEVICE_TYPE_XLIB" glibnick="" glibname=""/>
+    <member name="xml" value="5" cid="CAIRO_DEVICE_TYPE_XML" glibnick="" glibname=""/>
+    <member name="cogl" value="6" cid="CAIRO_DEVICE_TYPE_COGL" glibnick="" glibname=""/>
+    <member name="win32" value="7" cid="CAIRO_DEVICE_TYPE_WIN32" glibnick="" glibname=""/>
+    <member name="invalid" value="-1" cid="CAIRO_DEVICE_TYPE_INVALID" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="SurfaceType" render="0">     <member name="image" value="0" cid="CAIRO_SURFACE_TYPE_IMAGE" glibnick="" glibname=""/>
+    <member name="pdf" value="1" cid="CAIRO_SURFACE_TYPE_PDF" glibnick="" glibname=""/>
+    <member name="ps" value="2" cid="CAIRO_SURFACE_TYPE_PS" glibnick="" glibname=""/>
+    <member name="xlib" value="3" cid="CAIRO_SURFACE_TYPE_XLIB" glibnick="" glibname=""/>
+    <member name="xcb" value="4" cid="CAIRO_SURFACE_TYPE_XCB" glibnick="" glibname=""/>
+    <member name="glitz" value="5" cid="CAIRO_SURFACE_TYPE_GLITZ" glibnick="" glibname=""/>
+    <member name="quartz" value="6" cid="CAIRO_SURFACE_TYPE_QUARTZ" glibnick="" glibname=""/>
+    <member name="win32" value="7" cid="CAIRO_SURFACE_TYPE_WIN32" glibnick="" glibname=""/>
+    <member name="beos" value="8" cid="CAIRO_SURFACE_TYPE_BEOS" glibnick="" glibname=""/>
+    <member name="directfb" value="9" cid="CAIRO_SURFACE_TYPE_DIRECTFB" glibnick="" glibname=""/>
+    <member name="svg" value="10" cid="CAIRO_SURFACE_TYPE_SVG" glibnick="" glibname=""/>
+    <member name="os2" value="11" cid="CAIRO_SURFACE_TYPE_OS2" glibnick="" glibname=""/>
+    <member name="win32_printing" value="12" cid="CAIRO_SURFACE_TYPE_WIN32_PRINTING" glibnick="" glibname=""/>
+    <member name="quartz_image" value="13" cid="CAIRO_SURFACE_TYPE_QUARTZ_IMAGE" glibnick="" glibname=""/>
+    <member name="script" value="14" cid="CAIRO_SURFACE_TYPE_SCRIPT" glibnick="" glibname=""/>
+    <member name="qt" value="15" cid="CAIRO_SURFACE_TYPE_QT" glibnick="" glibname=""/>
+    <member name="recording" value="16" cid="CAIRO_SURFACE_TYPE_RECORDING" glibnick="" glibname=""/>
+    <member name="vg" value="17" cid="CAIRO_SURFACE_TYPE_VG" glibnick="" glibname=""/>
+    <member name="gl" value="18" cid="CAIRO_SURFACE_TYPE_GL" glibnick="" glibname=""/>
+    <member name="drm" value="19" cid="CAIRO_SURFACE_TYPE_DRM" glibnick="" glibname=""/>
+    <member name="tee" value="20" cid="CAIRO_SURFACE_TYPE_TEE" glibnick="" glibname=""/>
+    <member name="xml" value="21" cid="CAIRO_SURFACE_TYPE_XML" glibnick="" glibname=""/>
+    <member name="skia" value="22" cid="CAIRO_SURFACE_TYPE_SKIA" glibnick="" glibname=""/>
+    <member name="subsurface" value="23" cid="CAIRO_SURFACE_TYPE_SUBSURFACE" glibnick="" glibname=""/>
+    <member name="cogl" value="24" cid="CAIRO_SURFACE_TYPE_COGL" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="Format" render="0">     <member name="invalid" value="-1" cid="CAIRO_FORMAT_INVALID" glibnick="" glibname=""/>
+    <member name="argb32" value="0" cid="CAIRO_FORMAT_ARGB32" glibnick="" glibname=""/>
+    <member name="rgb24" value="1" cid="CAIRO_FORMAT_RGB24" glibnick="" glibname=""/>
+    <member name="a8" value="2" cid="CAIRO_FORMAT_A8" glibnick="" glibname=""/>
+    <member name="a1" value="3" cid="CAIRO_FORMAT_A1" glibnick="" glibname=""/>
+    <member name="rgb16_565" value="4" cid="CAIRO_FORMAT_RGB16_565" glibnick="" glibname=""/>
+    <member name="rgb30" value="5" cid="CAIRO_FORMAT_RGB30" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="PatternType" render="0">     <member name="solid" value="0" cid="CAIRO_PATTERN_TYPE_SOLID" glibnick="" glibname=""/>
+    <member name="surface" value="1" cid="CAIRO_PATTERN_TYPE_SURFACE" glibnick="" glibname=""/>
+    <member name="linear" value="2" cid="CAIRO_PATTERN_TYPE_LINEAR" glibnick="" glibname=""/>
+    <member name="radial" value="3" cid="CAIRO_PATTERN_TYPE_RADIAL" glibnick="" glibname=""/>
+    <member name="mesh" value="4" cid="CAIRO_PATTERN_TYPE_MESH" glibnick="" glibname=""/>
+    <member name="raster_source" value="5" cid="CAIRO_PATTERN_TYPE_RASTER_SOURCE" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="Extend" render="0">     <member name="none" value="0" cid="CAIRO_EXTEND_NONE" glibnick="" glibname=""/>
+    <member name="repeat" value="1" cid="CAIRO_EXTEND_REPEAT" glibnick="" glibname=""/>
+    <member name="reflect" value="2" cid="CAIRO_EXTEND_REFLECT" glibnick="" glibname=""/>
+    <member name="pad" value="3" cid="CAIRO_EXTEND_PAD" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="Filter" render="0">     <member name="fast" value="0" cid="CAIRO_FILTER_FAST" glibnick="" glibname=""/>
+    <member name="good" value="1" cid="CAIRO_FILTER_GOOD" glibnick="" glibname=""/>
+    <member name="best" value="2" cid="CAIRO_FILTER_BEST" glibnick="" glibname=""/>
+    <member name="nearest" value="3" cid="CAIRO_FILTER_NEAREST" glibnick="" glibname=""/>
+    <member name="bilinear" value="4" cid="CAIRO_FILTER_BILINEAR" glibnick="" glibname=""/>
+    <member name="gaussian" value="5" cid="CAIRO_FILTER_GAUSSIAN" glibnick="" glibname=""/>
+  </enumeration>
+  <enumeration name="RegionOverlap" render="0">     <member name="in" value="0" cid="CAIRO_REGION_OVERLAP_IN" glibnick="" glibname=""/>
+    <member name="out" value="1" cid="CAIRO_REGION_OVERLAP_OUT" glibnick="" glibname=""/>
+    <member name="part" value="2" cid="CAIRO_REGION_OVERLAP_PART" glibnick="" glibname=""/>
+  </enumeration>
+  <record name="FontFace" gtypestructfor="" ctype="cairo_font_face_t" render="0">
+  </record>
+  <record name="ScaledFont" gtypestructfor="" ctype="cairo_scaled_font_t" render="0">
+  </record>
+  <record name="Path" gtypestructfor="" ctype="cairo_path_t" render="0">
+  </record>
+  <record name="Rectangle" gtypestructfor="" ctype="cairo_rectangle_t" render="0">
+    <field name="x"/>
+    <field name="y"/>
+    <field name="width"/>
+    <field name="height"/>
+  </record>
+  <record name="RectangleInt" gtypestructfor="" ctype="cairo_rectangle_int_t" render="0">
+    <field name="x"/>
+    <field name="y"/>
+    <field name="width"/>
+    <field name="height"/>
+  </record>
+  <function name="image_surface_create" cid="cairo_image_surface_create" render="0">
+  </function>
+</ns>
