@@ -1,0 +1,5 @@
+
+  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(GObject, A): None}, data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
+    @g_signal_connect_data(this, detailedsignal.cstring(), chandler, data, destroydata, connectflags)
+
+

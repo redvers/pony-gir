@@ -4,10 +4,10 @@
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/gobject.xml"/>
 <renders>
-  <renderuse name="g_type_plugin_complete_interface_info" render="1"/>
-  <renderuse name="g_type_plugin_complete_type_info" render="1"/>
-  <renderuse name="g_type_plugin_get_type" render="1"/>
-  <renderuse name="g_type_plugin_unuse" render="1"/>
-  <renderuse name="g_type_plugin_use" render="1"/>
+  <renderuse name="g_type_plugin_complete_interface_info" render="0"/>
+  <renderuse name="g_type_plugin_complete_type_info" render="0"/>
+  <renderuse name="g_type_plugin_get_type" render="0"/>
+  <renderuse name="g_type_plugin_unuse" render="0"/>
+  <renderuse name="g_type_plugin_use" render="0"/>
 </renders>
 </castxml2pony>

@@ -4,11 +4,11 @@
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/gobject.xml"/>
 <renders>
-  <renderuse name="g_flags_complete_type_info" render="1"/>
-  <renderuse name="g_flags_get_first_value" render="1"/>
-  <renderuse name="g_flags_get_value_by_name" render="1"/>
-  <renderuse name="g_flags_get_value_by_nick" render="1"/>
-  <renderuse name="g_flags_register_static" render="1"/>
-  <renderuse name="g_flags_to_string" render="1"/>
+  <renderuse name="g_flags_complete_type_info" render="0"/>
+  <renderuse name="g_flags_get_first_value" render="0"/>
+  <renderuse name="g_flags_get_value_by_name" render="0"/>
+  <renderuse name="g_flags_get_value_by_nick" render="0"/>
+  <renderuse name="g_flags_register_static" render="0"/>
+  <renderuse name="g_flags_to_string" render="0"/>
 </renders>
 </castxml2pony>

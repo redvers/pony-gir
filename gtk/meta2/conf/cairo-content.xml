@@ -1,0 +1,37 @@
+<classes ns="cairo">
+  <enumeration name="Antialias" parent="" render="0"/>
+  <enumeration name="Content" parent="" render="0"/>
+  <enumeration name="DeviceType" parent="" render="0"/>
+  <enumeration name="Extend" parent="" render="0"/>
+  <enumeration name="FillRule" parent="" render="0"/>
+  <enumeration name="Filter" parent="" render="0"/>
+  <enumeration name="FontSlant" parent="" render="0"/>
+  <enumeration name="FontType" parent="" render="0"/>
+  <enumeration name="FontWeight" parent="" render="0"/>
+  <enumeration name="Format" parent="" render="0"/>
+  <enumeration name="HintMetrics" parent="" render="0"/>
+  <enumeration name="HintStyle" parent="" render="0"/>
+  <enumeration name="LineCap" parent="" render="0"/>
+  <enumeration name="LineJoin" parent="" render="0"/>
+  <enumeration name="Operator" parent="" render="0"/>
+  <enumeration name="PathDataType" parent="" render="0"/>
+  <enumeration name="PatternType" parent="" render="0"/>
+  <enumeration name="RegionOverlap" parent="" render="0"/>
+  <enumeration name="Status" parent="" render="0"/>
+  <enumeration name="SubpixelOrder" parent="" render="0"/>
+  <enumeration name="SurfaceType" parent="" render="0"/>
+  <enumeration name="TextClusterFlags" parent="" render="0"/>
+  <function name="image_surface_create" parent="" render="0"/>
+  <record name="Context" parent="" render="0"/>
+  <record name="Device" parent="" render="0"/>
+  <record name="FontFace" parent="" render="0"/>
+  <record name="FontOptions" parent="" render="0"/>
+  <record name="Matrix" parent="" render="0"/>
+  <record name="Path" parent="" render="0"/>
+  <record name="Pattern" parent="" render="0"/>
+  <record name="RectangleInt" parent="" render="0"/>
+  <record name="Rectangle" parent="" render="0"/>
+  <record name="Region" parent="" render="0"/>
+  <record name="ScaledFont" parent="" render="0"/>
+  <record name="Surface" parent="" render="0"/>
+</classes>

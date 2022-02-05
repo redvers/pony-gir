@@ -1,0 +1,12 @@
+all:	
+	sh mkns Gtk
+	sh mkns Gdk
+	sh mkns GdkPixbuf
+	sh mkns GModule
+	sh mkns Gio
+	sh mkns Pango
+	sh mkns HarfBuzz
+	sh mkns cairo
+	sh mkns Atk
+	sh mkns GObject
+	sh mkns GLib

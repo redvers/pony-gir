@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../../gir-files/Gtk-3.0.gir"/>
+<xi:include href="../../gir-files/Gdk-3.0.gir"/>
+<xi:include href="../../gir-files/GdkPixbuf-2.0.gir"/>
+<xi:include href="../../gir-files/GModule-2.0.gir"/>
+<xi:include href="../../gir-files/Gio-2.0.gir"/>
+<xi:include href="../../gir-files/Pango-1.0.gir"/>
+<xi:include href="../../gir-files/HarfBuzz-0.0.gir"/>
+<xi:include href="../../gir-files/cairo-1.0.gir"/>
+<xi:include href="../../gir-files/Atk-1.0.gir"/>
+<xi:include href="../../gir-files/GObject-2.0.gir"/>
+<xi:include href="../../gir-files/GLib-2.0.gir"/>
+
+<xi:include href="conf/Atk-content.xml"/>
+<xi:include href="conf/cairo-content.xml"/>
+<xi:include href="conf/Gdk-content.xml"/>
+<xi:include href="conf/GdkPixbuf-content.xml"/>
+<xi:include href="conf/Gio-content.xml"/>
+<xi:include href="conf/GLib-content.xml"/>
+<xi:include href="conf/GModule-content.xml"/>
+<xi:include href="conf/GObject-content.xml"/>
+<xi:include href="conf/Gtk-content.xml"/>
+<xi:include href="conf/HarfBuzz-content.xml"/>
+<xi:include href="conf/Pango-content.xml"/>
+
+</castxml2pony>

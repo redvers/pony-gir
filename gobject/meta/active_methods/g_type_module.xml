@@ -4,13 +4,13 @@
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/gobject.xml"/>
 <renders>
-  <renderuse name="g_type_module_add_interface" render="1"/>
-  <renderuse name="g_type_module_get_type" render="1"/>
-  <renderuse name="g_type_module_register_enum" render="1"/>
-  <renderuse name="g_type_module_register_flags" render="1"/>
-  <renderuse name="g_type_module_register_type" render="1"/>
-  <renderuse name="g_type_module_set_name" render="1"/>
-  <renderuse name="g_type_module_unuse" render="1"/>
-  <renderuse name="g_type_module_use" render="1"/>
+  <renderuse name="g_type_module_add_interface" render="0"/>
+  <renderuse name="g_type_module_get_type" render="0"/>
+  <renderuse name="g_type_module_register_enum" render="0"/>
+  <renderuse name="g_type_module_register_flags" render="0"/>
+  <renderuse name="g_type_module_register_type" render="0"/>
+  <renderuse name="g_type_module_set_name" render="0"/>
+  <renderuse name="g_type_module_unuse" render="0"/>
+  <renderuse name="g_type_module_use" render="0"/>
 </renders>
 </castxml2pony> 

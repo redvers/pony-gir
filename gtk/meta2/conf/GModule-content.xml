@@ -1,0 +1,12 @@
+<classes ns="GModule">
+  <bitfield name="ModuleFlags" parent="" render="0"/>
+  <callback name="ModuleCheckInit" parent="" render="0"/>
+  <callback name="ModuleUnload" parent="" render="0"/>
+  <docsection name="modules" parent="" render="0"/>
+  <enumeration name="ModuleError" parent="" render="0"/>
+  <function name="module_build_path" parent="" render="0"/>
+  <function name="module_error" parent="" render="0"/>
+  <function name="module_error_quark" parent="" render="0"/>
+  <function name="module_supported" parent="" render="0"/>
+  <record name="Module" parent="" render="0"/>
+</classes>

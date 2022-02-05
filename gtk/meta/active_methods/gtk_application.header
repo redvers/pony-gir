@@ -1,0 +1,1 @@
+use @g_signal_connect_data[U64](instance: GtkApplication tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: Any, destroydata: Pointer[None] tag, connectflags: I32)

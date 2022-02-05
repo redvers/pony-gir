@@ -1,0 +1,5 @@
+echo -n '<classes ns="' > conf/$1-content.xml
+echo -n $1              >> conf/$1-content.xml
+echo '">'               >> conf/$1-content.xml
+saxon-he -xi src.xml xsl/findtl.xsl ns=$1 | sort >> conf/$1-content.xml
+echo '</classes>' >> conf/$1-content.xml
