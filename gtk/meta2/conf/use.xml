@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
-<xi:include href="./renderuse.xml"/>
-<xi:include href="./usetypes.xml"/>
-<xi:include href="./../../castxml-results/gtk-3.xml"/>
-                    <uses>
-                      <use id="_102" name="clock"
+<uses>
+  <use id="_102" name="clock"
      ponyname="clock"
      fid="f13"
      lineno="72"
@@ -128870,6 +128866,6 @@
      <useargs>
        <usearg name="q" type="GQueue"/>
      </useargs>
-  </use></uses>
-</castxml2pony>
+  </use>
+</uses>
 

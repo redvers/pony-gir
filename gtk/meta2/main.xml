@@ -24,4 +24,7 @@
 <xi:include href="conf/Gtk-content.xml"/>
 <xi:include href="conf/HarfBuzz-content.xml"/>
 <xi:include href="conf/Pango-content.xml"/>
+
+<xi:include href="conf/use.xml"/>
+<xi:include href="conf/usetypes.xml"/>
 </castxml2pony>

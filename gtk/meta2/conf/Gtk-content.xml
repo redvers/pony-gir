@@ -13074,7 +13074,7 @@
   </function>
   <function name="icon_theme_error_quark" cid="gtk_icon_theme_error_quark" render="0">
   </function>
-  <function name="init" cid="gtk_init" render="0">
+  <function name="init" cid="gtk_init" render="1">
   </function>
   <function name="init_check" cid="gtk_init_check" render="0">
   </function>
@@ -13084,7 +13084,7 @@
   </function>
   <function name="key_snooper_remove" cid="gtk_key_snooper_remove" render="0">
   </function>
-  <function name="main" cid="gtk_main" render="0">
+  <function name="main" cid="gtk_main" render="1">
   </function>
   <function name="main_do_event" cid="gtk_main_do_event" render="0">
   </function>

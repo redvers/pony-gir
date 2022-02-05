@@ -1,3 +1,8 @@
+
+all:
+	saxon-he -xi main.xml makebase.xsl ns=Gtk
+
+
 bitfields:	
 	find ../../test/* -name 'B*.pony' -exec rm -f {} \;
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gtk

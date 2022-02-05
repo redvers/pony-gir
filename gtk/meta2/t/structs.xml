@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
-<xi:include href="./types.xml"/>
-<xi:include href="./renderstructs.xml"/>
-<xi:include href="./../../castxml-results/gtk-3.xml"/>
-                    <structs>
-                      <struct name="Anon" id="_10" size="256" align="128" fid="f2" lineno="35">
+<structs>
+  <struct name="Anon" id="_10" size="256" align="128" fid="f2" lineno="35">
     <field name="__clang_max_align_nonce1" id="_19109" type="I64" fieldid="_19244" offset="0" fid="f2" line="36"/>
     <field name="__clang_max_align_nonce2" id="_19110" type="F128" fieldid="_19234" offset="128" fid="f2" line="38"/>
   </struct>
@@ -9514,5 +9509,3 @@
 
   </struct>
 </structs>
-</castxml2pony>
-
