@@ -80251,7 +80251,7 @@
      <useargs/>
   </use>
   <use id="_11934" name="gtk_window_new"
-     ponyname="gtk_window_new"
+     ponyname="gnew"
      fid="f403"
      lineno="147"
      rv="GtkWindow">
@@ -80260,7 +80260,7 @@
      </useargs>
   </use>
   <use id="_11935" name="gtk_window_set_title"
-     ponyname="gtk_window_set_title"
+     ponyname="set_title"
      fid="f403"
      lineno="149"
      rv="None">
@@ -80270,7 +80270,7 @@
      </useargs>
   </use>
   <use id="_11936" name="gtk_window_get_title"
-     ponyname="gtk_window_get_title"
+     ponyname="get_title"
      fid="f403"
      lineno="152"
      rv="String">
@@ -81086,7 +81086,7 @@
      </useargs>
   </use>
   <use id="_12022" name="gtk_window_fullscreen"
-     ponyname="gtk_window_fullscreen"
+     ponyname="fullscreen"
      fid="f403"
      lineno="387"
      rv="None">
@@ -81182,7 +81182,7 @@
      </useargs>
   </use>
   <use id="_12031" name="gtk_window_get_default_size"
-     ponyname="gtk_window_get_default_size"
+     ponyname="get_default_size"
      fid="f403"
      lineno="423"
      rv="None">
@@ -81362,7 +81362,7 @@
      </useargs>
   </use>
   <use id="_12049" name="gtk_window_set_titlebar"
-     ponyname="gtk_window_set_titlebar"
+     ponyname="set_titlebar"
      fid="f403"
      lineno="489"
      rv="None">
@@ -81372,7 +81372,7 @@
      </useargs>
   </use>
   <use id="_12050" name="gtk_window_get_titlebar"
-     ponyname="gtk_window_get_titlebar"
+     ponyname="get_titlebar"
      fid="f403"
      lineno="492"
      rv="GtkWidget">
