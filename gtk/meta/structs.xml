@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:c="http://www.gtk.org/introspection/c/1.0" xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
 <xi:include href="./types.xml"/>
 <xi:include href="./../../castxml-results/gtk-3.xml"/>
-                    <structs>
-                      <struct name="GtkAccelGroup" id="_10981" size="256" align="64" fid="f393" lineno="93">
+<structs>
+  <struct name="GtkAccelGroup" id="_10981" size="256" align="64" fid="f393" lineno="93">
     <field name="parent" id="_23487" type="GObject" fieldid="_3573" offset="0" fid="f393" line="95"/>
     <field name="priv" id="_23488" type="NullablePointer[GtkAccelGroupPrivate]" fieldid="_28085" offset="192" fid="f393" line="96"/>
   </struct>
