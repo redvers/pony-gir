@@ -22,7 +22,7 @@
     <property name="target" cid="" render="0"/>
     <property name="target-property" cid="" render="0"/>
   </class>
-  <bitfield name="BindingFlags" glibtypename="GBindingFlags" ctype="GBindingFlags" render="1">
+  <bitfield name="BindingFlags" glibtypename="GBindingFlags" ctype="GBindingFlags" render="0">
     <member name="default" value="0" cid="G_BINDING_DEFAULT" glibnick="default" glibname="G_BINDING_DEFAULT"/>
     <member name="bidirectional" value="1" cid="G_BINDING_BIDIRECTIONAL" glibnick="bidirectional" glibname="G_BINDING_BIDIRECTIONAL"/>
     <member name="sync_create" value="2" cid="G_BINDING_SYNC_CREATE" glibnick="sync-create" glibname="G_BINDING_SYNC_CREATE"/>
@@ -1005,7 +1005,7 @@
   </function>
   <function name="enum_to_string" cid="g_enum_to_string" render="0">
   </function>
-  <docsection name="enumerations_flags" render="1">   </docsection>
+  <docsection name="enumerations_flags" render="0">   </docsection>
   <function name="flags_complete_type_info" cid="g_flags_complete_type_info" render="0">
   </function>
   <function name="flags_get_first_value" cid="g_flags_get_first_value" render="0">
@@ -1237,7 +1237,7 @@
   </function>
   <function name="type_free_instance" cid="g_type_free_instance" render="0">
   </function>
-  <function name="type_from_name" cid="g_type_from_name" render="0">
+  <function name="type_from_name" cid="g_type_from_name" render="1">
   </function>
   <function name="type_fundamental" cid="g_type_fundamental" render="0">
   </function>
@@ -1269,7 +1269,7 @@
   </function>
   <function name="type_is_a" cid="g_type_is_a" render="0">
   </function>
-  <function name="type_name" cid="g_type_name" render="0">
+  <function name="type_name" cid="g_type_name" render="1">
   </function>
   <function name="type_name_from_class" cid="g_type_name_from_class" render="0">
   </function>

@@ -1,11 +1,12 @@
 
+use "Gtk"
+use "GObject"
 use "Atk"
 use "cairo"
 use "Gdk"
 use "GdkPixbuf"
 use "Gio"
 use "GModule"
-use "Gtk"
 //use "HarfBuzz"
 use "Pango"
 

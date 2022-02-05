@@ -4301,7 +4301,7 @@
      rv="I32">
      <useargs>
        <usearg name="tz" type="GTimeZone"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="time" type="I64"/>
      </useargs>
   </use>
@@ -4312,7 +4312,7 @@
      rv="I32">
      <useargs>
        <usearg name="tz" type="GTimeZone"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="time" type="Pointer[I64]"/>
      </useargs>
   </use>
@@ -10923,7 +10923,7 @@
      <useargs>
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="offset" type="I64"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_1525" name="g_io_channel_close"
@@ -11212,7 +11212,7 @@
      <useargs>
        <usearg name="channel" type="GIOChannel"/>
        <usearg name="offset" type="I64"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="error" type="GError"/>
      </useargs>
   </use>
@@ -12122,7 +12122,7 @@
      lineno="304"
      rv="None">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1656" name="g_variant_type_copy"
@@ -12131,7 +12131,7 @@
      lineno="306"
      rv="GVariantType">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1657" name="g_variant_type_new"
@@ -12149,7 +12149,7 @@
      lineno="312"
      rv="U64">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1659" name="g_variant_type_peek_string"
@@ -12158,7 +12158,7 @@
      lineno="314"
      rv="String">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1660" name="g_variant_type_dup_string"
@@ -12167,7 +12167,7 @@
      lineno="316"
      rv="String">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1661" name="g_variant_type_is_definite"
@@ -12176,7 +12176,7 @@
      lineno="320"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1662" name="g_variant_type_is_container"
@@ -12185,7 +12185,7 @@
      lineno="322"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1663" name="g_variant_type_is_basic"
@@ -12194,7 +12194,7 @@
      lineno="324"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1664" name="g_variant_type_is_maybe"
@@ -12203,7 +12203,7 @@
      lineno="326"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1665" name="g_variant_type_is_array"
@@ -12212,7 +12212,7 @@
      lineno="328"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1666" name="g_variant_type_is_tuple"
@@ -12221,7 +12221,7 @@
      lineno="330"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1667" name="g_variant_type_is_dict_entry"
@@ -12230,7 +12230,7 @@
      lineno="332"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1668" name="g_variant_type_is_variant"
@@ -12239,7 +12239,7 @@
      lineno="334"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1669" name="g_variant_type_hash"
@@ -12248,7 +12248,7 @@
      lineno="338"
      rv="U32">
      <useargs>
-       <usearg name="type" type="Pointer[None]"/>
+       <usearg name="gtype" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_1670" name="g_variant_type_equal"
@@ -12267,7 +12267,7 @@
      lineno="345"
      rv="I32">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
        <usearg name="supertype" type="GVariantType"/>
      </useargs>
   </use>
@@ -12277,7 +12277,7 @@
      lineno="350"
      rv="GVariantType">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1673" name="g_variant_type_first"
@@ -12286,7 +12286,7 @@
      lineno="352"
      rv="GVariantType">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1674" name="g_variant_type_next"
@@ -12295,7 +12295,7 @@
      lineno="354"
      rv="GVariantType">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1675" name="g_variant_type_n_items"
@@ -12304,7 +12304,7 @@
      lineno="356"
      rv="U64">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1676" name="g_variant_type_key"
@@ -12313,7 +12313,7 @@
      lineno="358"
      rv="GVariantType">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1677" name="g_variant_type_value"
@@ -12322,7 +12322,7 @@
      lineno="360"
      rv="GVariantType">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1678" name="g_variant_type_new_array"
@@ -12451,7 +12451,7 @@
      rv="I32">
      <useargs>
        <usearg name="value" type="GVariant"/>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1696" name="g_variant_is_container"
@@ -13109,7 +13109,7 @@
      lineno="257"
      rv="GVariant">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
        <usearg name="bytes" type="GBytes"/>
        <usearg name="trusted" type="I32"/>
      </useargs>
@@ -13120,7 +13120,7 @@
      lineno="261"
      rv="GVariant">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
        <usearg name="data" type="Pointer[None]"/>
        <usearg name="size" type="U64"/>
        <usearg name="trusted" type="I32"/>
@@ -13225,7 +13225,7 @@
      lineno="368"
      rv="GVariantBuilder">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1783" name="g_variant_builder_unref"
@@ -13253,7 +13253,7 @@
      rv="None">
      <useargs>
        <usearg name="builder" type="GVariantBuilder"/>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1786" name="g_variant_builder_end"
@@ -13281,7 +13281,7 @@
      rv="None">
      <useargs>
        <usearg name="builder" type="GVariantBuilder"/>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_1789" name="g_variant_builder_close"
@@ -13386,7 +13386,7 @@
      lineno="419"
      rv="GVariant">
      <useargs>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
        <usearg name="text" type="String"/>
        <usearg name="limit" type="String"/>
        <usearg name="endptr" type="Array[String]"/>
@@ -19409,7 +19409,7 @@
        <usearg name="name" type="String"/>
        <usearg name="atomsize" type="I32"/>
        <usearg name="areasize" type="U64"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_2527" name="g_mem_chunk_destroy"
@@ -20232,7 +20232,7 @@
      lineno="501"
      rv="I32">
      <useargs>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="oldtype" type="Pointer[I32]"/>
      </useargs>
   </use>
@@ -23312,7 +23312,7 @@
      lineno="716"
      rv="String">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3264" name="g_type_qname"
@@ -23321,7 +23321,7 @@
      lineno="718"
      rv="U32">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3265" name="g_type_from_name"
@@ -23339,7 +23339,7 @@
      lineno="722"
      rv="U64">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3267" name="g_type_depth"
@@ -23348,7 +23348,7 @@
      lineno="724"
      rv="U32">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3268" name="g_type_next_base"
@@ -23367,7 +23367,7 @@
      lineno="729"
      rv="I32">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="isatype" type="U64"/>
      </useargs>
   </use>
@@ -23377,7 +23377,7 @@
      lineno="732"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3271" name="g_type_class_peek"
@@ -23386,7 +23386,7 @@
      lineno="734"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3272" name="g_type_class_peek_static"
@@ -23395,7 +23395,7 @@
      lineno="736"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3273" name="g_type_class_unref"
@@ -23468,7 +23468,7 @@
      lineno="756"
      rv="Pointer[U64]">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="nchildren" type="Pointer[U32]"/>
      </useargs>
   </use>
@@ -23478,7 +23478,7 @@
      lineno="759"
      rv="Pointer[U64]">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="ninterfaces" type="Pointer[U32]"/>
      </useargs>
   </use>
@@ -23488,7 +23488,7 @@
      lineno="764"
      rv="None">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="quark" type="U32"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -23499,7 +23499,7 @@
      lineno="768"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="quark" type="U32"/>
      </useargs>
   </use>
@@ -23509,7 +23509,7 @@
      lineno="771"
      rv="None">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="query" type="GTypeQuery"/>
      </useargs>
   </use>
@@ -23519,7 +23519,7 @@
      lineno="775"
      rv="I32">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3299" name="g_type_register_static"
@@ -23700,7 +23700,7 @@
      lineno="1368"
      rv="None">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3316" name="g_type_get_type_registration_serial"
@@ -23716,7 +23716,7 @@
      lineno="2344"
      rv="GTypePlugin">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3318" name="g_type_interface_get_plugin"
@@ -23751,7 +23751,7 @@
      lineno="2353"
      rv="GTypeInstance">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3322" name="g_type_free_instance"
@@ -23818,7 +23818,7 @@
      lineno="2374"
      rv="GTypeValueTable">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3329" name="g_type_check_instance"
@@ -23886,7 +23886,7 @@
      lineno="2396"
      rv="I32">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3336" name="g_type_check_value"
@@ -23905,7 +23905,7 @@
      rv="I32">
      <useargs>
        <usearg name="value" type="GValue"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_3338" name="g_type_test_flags"
@@ -23914,7 +23914,7 @@
      lineno="2403"
      rv="I32">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="flags" type="U32"/>
      </useargs>
   </use>
@@ -27430,7 +27430,7 @@
        <usearg name="name" type="String"/>
        <usearg name="nick" type="String"/>
        <usearg name="blurb" type="String"/>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
        <usearg name="defaultvalue" type="GVariant"/>
        <usearg name="flags" type="I32"/>
      </useargs>
@@ -29328,7 +29328,7 @@
      rv="None">
      <useargs>
        <usearg name="stream" type="GDataInputStream"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_4878" name="g_data_input_stream_get_newline_type"
@@ -31260,7 +31260,7 @@
      <useargs>
        <usearg name="list" type="GFileAttributeInfoList"/>
        <usearg name="name" type="String"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -33213,7 +33213,7 @@
      rv="GSocket">
      <useargs>
        <usearg name="family" type="I32"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="protocol" type="I32"/>
        <usearg name="error" type="GError"/>
      </useargs>
@@ -33897,7 +33897,7 @@
      rv="GSocketControlMessage">
      <useargs>
        <usearg name="level" type="I32"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="size" type="U64"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -33951,7 +33951,7 @@
      rv="None">
      <useargs>
        <usearg name="client" type="GSocketClient"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_6526" name="g_socket_client_get_protocol"
@@ -34336,7 +34336,7 @@
      <useargs>
        <usearg name="gtype" type="U64"/>
        <usearg name="family" type="I32"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="protocol" type="I32"/>
      </useargs>
   </use>
@@ -34347,7 +34347,7 @@
      rv="U64">
      <useargs>
        <usearg name="family" type="I32"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="protocolid" type="I32"/>
      </useargs>
   </use>
@@ -34404,7 +34404,7 @@
      <useargs>
        <usearg name="listener" type="GSocketListener"/>
        <usearg name="address" type="GSocketAddress"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="protocol" type="I32"/>
        <usearg name="sourceobject" type="GObject"/>
        <usearg name="effectiveaddress" type="GSocketAddress"/>
@@ -35021,7 +35021,7 @@
      rv="I32">
      <useargs>
        <usearg name="conn" type="GTlsConnection"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="data" type="GByteArray"/>
        <usearg name="error" type="GError"/>
      </useargs>
@@ -38095,7 +38095,7 @@
      lineno="36"
      rv="I32">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="supertype" type="String"/>
      </useargs>
   </use>
@@ -38105,7 +38105,7 @@
      lineno="39"
      rv="I32">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="mimetype" type="String"/>
      </useargs>
   </use>
@@ -38115,7 +38115,7 @@
      lineno="42"
      rv="I32">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_4706" name="g_content_type_get_description"
@@ -38124,7 +38124,7 @@
      lineno="44"
      rv="String">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_4707" name="g_content_type_get_mime_type"
@@ -38133,7 +38133,7 @@
      lineno="46"
      rv="String">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_4708" name="g_content_type_get_icon"
@@ -38142,7 +38142,7 @@
      lineno="48"
      rv="GIcon">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_4709" name="g_content_type_get_symbolic_icon"
@@ -38151,7 +38151,7 @@
      lineno="50"
      rv="GIcon">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_4710" name="g_content_type_get_generic_icon_name"
@@ -38160,7 +38160,7 @@
      lineno="52"
      rv="String">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_4711" name="g_content_type_can_be_executable"
@@ -38169,7 +38169,7 @@
      lineno="55"
      rv="I32">
      <useargs>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_4712" name="g_content_type_from_mime_type"
@@ -38232,7 +38232,7 @@
      rv="I32">
      <useargs>
        <usearg name="name" type="String"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_4736" name="faccessat"
@@ -38243,7 +38243,7 @@
      <useargs>
        <usearg name="fd" type="I32"/>
        <usearg name="file" type="String"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="flag" type="I32"/>
      </useargs>
   </use>
@@ -39860,7 +39860,7 @@
      rv="None">
      <useargs>
        <usearg name="message" type="GDBusMessage"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_5070" name="g_dbus_message_get_flags"
@@ -40747,7 +40747,7 @@
      rv="GVariant">
      <useargs>
        <usearg name="gvalue" type="GValue"/>
-       <usearg name="type" type="GVariantType"/>
+       <usearg name="gtype" type="GVariantType"/>
      </useargs>
   </use>
   <use id="_5243" name="g_dbus_escape_object_path_bytestring"
@@ -41335,7 +41335,7 @@
      rv="I32">
      <useargs>
        <usearg name="conn" type="GDtlsConnection"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="data" type="GByteArray"/>
        <usearg name="error" type="GError"/>
      </useargs>
@@ -42534,7 +42534,7 @@
      <useargs>
        <usearg name="file" type="GFile"/>
        <usearg name="attribute" type="String"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="valuep" type="Pointer[None]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
@@ -43299,7 +43299,7 @@
      <useargs>
        <usearg name="info" type="GFileInfo"/>
        <usearg name="attribute" type="String"/>
-       <usearg name="type" type="Pointer[I32]"/>
+       <usearg name="gtype" type="Pointer[I32]"/>
        <usearg name="valuepp" type="Pointer[None]"/>
        <usearg name="status" type="Pointer[I32]"/>
      </useargs>
@@ -43453,7 +43453,7 @@
      <useargs>
        <usearg name="info" type="GFileInfo"/>
        <usearg name="attribute" type="String"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="valuep" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -43763,7 +43763,7 @@
      rv="None">
      <useargs>
        <usearg name="info" type="GFileInfo"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_5571" name="g_file_info_set_is_hidden"
@@ -44839,7 +44839,7 @@
      rv="None">
      <useargs>
        <usearg name="extensionpoint" type="GIOExtensionPoint"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_5827" name="g_io_extension_point_get_required_type"
@@ -44877,7 +44877,7 @@
      rv="GIOExtension">
      <useargs>
        <usearg name="extensionpointname" type="String"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="extensionname" type="String"/>
        <usearg name="priority" type="I32"/>
      </useargs>
@@ -45354,7 +45354,7 @@
      <useargs>
        <usearg name="icon" type="GLoadableIcon"/>
        <usearg name="size" type="I32"/>
-       <usearg name="type" type="Array[String]"/>
+       <usearg name="gtype" type="Array[String]"/>
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="error" type="GError"/>
      </useargs>
@@ -45380,7 +45380,7 @@
      <useargs>
        <usearg name="icon" type="GLoadableIcon"/>
        <usearg name="res" type="GAsyncResult"/>
-       <usearg name="type" type="Array[String]"/>
+       <usearg name="gtype" type="Array[String]"/>
        <usearg name="error" type="GError"/>
      </useargs>
   </use>
@@ -47040,7 +47040,7 @@
      <useargs>
        <usearg name="seekable" type="GSeekable"/>
        <usearg name="offset" type="I64"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="error" type="GError"/>
      </useargs>
@@ -59579,7 +59579,7 @@
      lineno="499"
      rv="String">
      <useargs>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_8729" name="pango_attribute_init"
@@ -60100,7 +60100,7 @@
      rv="PangoAttribute">
      <useargs>
        <usearg name="iterator" type="PangoAttrIterator"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_8786" name="pango_attr_iterator_get_font"
@@ -63136,7 +63136,7 @@
      lineno="52"
      rv="I32">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="str" type="String"/>
        <usearg name="value" type="Pointer[I32]"/>
        <usearg name="warn" type="I32"/>
@@ -67525,7 +67525,7 @@
      lineno="1463"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_9869" name="gdk_event_copy"
@@ -67910,7 +67910,7 @@
      rv="GList">
      <useargs>
        <usearg name="devicemanager" type="GdkDeviceManager"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_9909" name="gdk_device_manager_get_client_pointer"
@@ -71100,7 +71100,7 @@
      <useargs>
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="filename" type="String"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="error" type="GError"/>
        <usearg name="parg4" type="..."/>
      </useargs>
@@ -71113,7 +71113,7 @@
      <useargs>
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="filename" type="String"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="optionkeys" type="Array[String]"/>
        <usearg name="optionvalues" type="Array[String]"/>
        <usearg name="error" type="GError"/>
@@ -71128,7 +71128,7 @@
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="savefunc" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="error" type="GError"/>
        <usearg name="parg5" type="..."/>
      </useargs>
@@ -71142,7 +71142,7 @@
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="savefunc" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="optionkeys" type="Array[String]"/>
        <usearg name="optionvalues" type="Array[String]"/>
        <usearg name="error" type="GError"/>
@@ -71157,7 +71157,7 @@
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="buffer" type="Array[String]"/>
        <usearg name="buffersize" type="Pointer[U64]"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="error" type="GError"/>
        <usearg name="parg5" type="..."/>
      </useargs>
@@ -71171,7 +71171,7 @@
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="buffer" type="Array[String]"/>
        <usearg name="buffersize" type="Pointer[U64]"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="optionkeys" type="Array[String]"/>
        <usearg name="optionvalues" type="Array[String]"/>
        <usearg name="error" type="GError"/>
@@ -71247,7 +71247,7 @@
      <useargs>
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="stream" type="GOutputStream"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="error" type="GError"/>
        <usearg name="parg5" type="..."/>
@@ -71261,7 +71261,7 @@
      <useargs>
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="stream" type="GOutputStream"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="cancellable" type="GCancellable"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
@@ -71286,7 +71286,7 @@
      <useargs>
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="stream" type="GOutputStream"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="optionkeys" type="Array[String]"/>
        <usearg name="optionvalues" type="Array[String]"/>
        <usearg name="cancellable" type="GCancellable"/>
@@ -71302,7 +71302,7 @@
      <useargs>
        <usearg name="pixbuf" type="GdkPixbuf"/>
        <usearg name="stream" type="GOutputStream"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
        <usearg name="optionkeys" type="Array[String]"/>
        <usearg name="optionvalues" type="Array[String]"/>
        <usearg name="cancellable" type="GCancellable"/>
@@ -73989,7 +73989,7 @@
      <useargs>
        <usearg name="window" type="GdkWindow"/>
        <usearg name="property" type="GdkAtom"/>
-       <usearg name="type" type="GdkAtom"/>
+       <usearg name="gtype" type="GdkAtom"/>
        <usearg name="offset" type="U64"/>
        <usearg name="length" type="U64"/>
        <usearg name="pdelete" type="I32"/>
@@ -74007,7 +74007,7 @@
      <useargs>
        <usearg name="window" type="GdkWindow"/>
        <usearg name="property" type="GdkAtom"/>
-       <usearg name="type" type="GdkAtom"/>
+       <usearg name="gtype" type="GdkAtom"/>
        <usearg name="format" type="I32"/>
        <usearg name="mode" type="I32"/>
        <usearg name="data" type="String"/>
@@ -75955,7 +75955,7 @@
      rv="I32">
      <useargs>
        <usearg name="builder" type="GtkBuilder"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="string" type="String"/>
        <usearg name="value" type="GValue"/>
        <usearg name="error" type="GError"/>
@@ -76128,7 +76128,7 @@
        <usearg name="settings" type="GtkSettings"/>
        <usearg name="widgetpath" type="String"/>
        <usearg name="classpath" type="String"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_17210" name="gtk_rc_reparse_all_for_settings"
@@ -76319,7 +76319,7 @@
      lineno="615"
      rv="GtkWidget">
      <useargs>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="parg2" type="..."/>
      </useargs>
@@ -77742,7 +77742,7 @@
      rv="None">
      <useargs>
        <usearg name="widgetclass" type="GtkWidgetClass"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_11693" name="gtk_widget_class_set_accessible_role"
@@ -80256,7 +80256,7 @@
      lineno="147"
      rv="GtkWidget">
      <useargs>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11935" name="gtk_window_set_title"
@@ -81538,7 +81538,7 @@
      lineno="202"
      rv="String">
      <useargs>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11086" name="atk_state_type_for_name"
@@ -81983,7 +81983,7 @@
      rv="I32">
      <useargs>
        <usearg name="set" type="AtkStateSet"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11438" name="atk_state_set_add_states"
@@ -82013,7 +82013,7 @@
      rv="I32">
      <useargs>
        <usearg name="set" type="AtkStateSet"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11441" name="atk_state_set_contains_states"
@@ -82034,7 +82034,7 @@
      rv="I32">
      <useargs>
        <usearg name="set" type="AtkStateSet"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11443" name="atk_state_set_and_sets"
@@ -82435,7 +82435,7 @@
      rv="I32">
      <useargs>
        <usearg name="component" type="AtkComponent"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11210" name="atk_component_scroll_to_point"
@@ -82839,7 +82839,7 @@
        <usearg name="text" type="AtkText"/>
        <usearg name="startoffset" type="I32"/>
        <usearg name="endoffset" type="I32"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11269" name="atk_text_scroll_substring_to_point"
@@ -83422,7 +83422,7 @@
      rv="None">
      <useargs>
        <usearg name="registry" type="AtkRegistry"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
        <usearg name="factorytype" type="U64"/>
      </useargs>
   </use>
@@ -83433,7 +83433,7 @@
      rv="U64">
      <useargs>
        <usearg name="registry" type="AtkRegistry"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_11385" name="atk_registry_get_factory"
@@ -83443,7 +83443,7 @@
      rv="AtkObjectFactory">
      <useargs>
        <usearg name="registry" type="AtkRegistry"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_11386" name="atk_get_default_registry"
@@ -83475,7 +83475,7 @@
      lineno="68"
      rv="String">
      <useargs>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_11394" name="atk_relation_type_for_name"
@@ -88622,7 +88622,7 @@
      rv="None">
      <useargs>
        <usearg name="rendererclass" type="GtkCellRendererClass"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_12612" name="_gtk_cell_renderer_get_accessible_type"
@@ -89559,7 +89559,7 @@
      rv="None">
      <useargs>
        <usearg name="treecolumn" type="GtkTreeViewColumn"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_12711" name="gtk_tree_view_column_get_sizing"
@@ -91990,7 +91990,7 @@
      rv="None">
      <useargs>
        <usearg name="selectiondata" type="GtkSelectionData"/>
-       <usearg name="type" type="GdkAtom"/>
+       <usearg name="gtype" type="GdkAtom"/>
        <usearg name="format" type="I32"/>
        <usearg name="data" type="String"/>
        <usearg name="length" type="I32"/>
@@ -95505,7 +95505,7 @@
      rv="None">
      <useargs>
        <usearg name="selection" type="GtkTreeSelection"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_16601" name="gtk_tree_selection_get_mode"
@@ -96390,7 +96390,7 @@
      rv="None">
      <useargs>
        <usearg name="frame" type="GtkFrame"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_13440" name="gtk_frame_get_shadow_type"
@@ -96566,7 +96566,7 @@
      <useargs>
        <usearg name="assistant" type="GtkAssistant"/>
        <usearg name="page" type="GtkWidget"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_13473" name="gtk_assistant_get_page_type"
@@ -96953,7 +96953,7 @@
        <usearg name="buildable" type="GtkBuildable"/>
        <usearg name="builder" type="GtkBuilder"/>
        <usearg name="child" type="GObject"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_13565" name="gtk_buildable_set_buildable_property"
@@ -97692,7 +97692,7 @@
        <usearg name="buildable" type="GtkBuildable"/>
        <usearg name="builder" type="GtkBuilder"/>
        <usearg name="child" type="GObject"/>
-       <usearg name="type" type="String"/>
+       <usearg name="gtype" type="String"/>
      </useargs>
   </use>
   <use id="_13686" name="gtk_cell_renderer_text_get_type"
@@ -107366,7 +107366,7 @@
      <useargs>
        <usearg name="parent" type="GtkWindow"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="buttons" type="I32"/>
        <usearg name="messageformat" type="String"/>
        <usearg name="parg5" type="..."/>
@@ -107380,7 +107380,7 @@
      <useargs>
        <usearg name="parent" type="GtkWindow"/>
        <usearg name="flags" type="I32"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="buttons" type="I32"/>
        <usearg name="messageformat" type="String"/>
        <usearg name="parg5" type="..."/>
@@ -108133,7 +108133,7 @@
      rv="None">
      <useargs>
        <usearg name="controller" type="GtkPadController"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="index" type="I32"/>
        <usearg name="mode" type="I32"/>
        <usearg name="label" type="String"/>
@@ -112725,7 +112725,7 @@
      rv="None">
      <useargs>
        <usearg name="scrolledwindow" type="GtkScrolledWindow"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_16021" name="gtk_scrolled_window_get_shadow_type"
@@ -114379,7 +114379,7 @@
      rv="None">
      <useargs>
        <usearg name="textview" type="GtkTextView"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="size" type="I32"/>
      </useargs>
   </use>
@@ -114390,7 +114390,7 @@
      rv="I32">
      <useargs>
        <usearg name="textview" type="GtkTextView"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_16405" name="gtk_text_view_forward_display_line"
@@ -117010,7 +117010,7 @@
      rv="None">
      <useargs>
        <usearg name="viewport" type="GtkViewport"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_16784" name="gtk_viewport_get_shadow_type"
@@ -117129,7 +117129,7 @@
      rv="I32">
      <useargs>
        <usearg name="path" type="GtkWidgetPath"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_16802" name="gtk_widget_path_prepend_type"
@@ -117139,7 +117139,7 @@
      rv="None">
      <useargs>
        <usearg name="path" type="GtkWidgetPath"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_16803" name="gtk_widget_path_append_with_siblings"
@@ -117181,7 +117181,7 @@
      <useargs>
        <usearg name="path" type="GtkWidgetPath"/>
        <usearg name="pos" type="I32"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_16807" name="gtk_widget_path_iter_get_object_name"
@@ -117436,7 +117436,7 @@
      rv="I32">
      <useargs>
        <usearg name="path" type="GtkWidgetPath"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_16831" name="gtk_widget_path_has_parent"
@@ -117446,7 +117446,7 @@
      rv="I32">
      <useargs>
        <usearg name="path" type="GtkWidgetPath"/>
-       <usearg name="type" type="U64"/>
+       <usearg name="gtype" type="U64"/>
      </useargs>
   </use>
   <use id="_16845" name="gtk_arrow_get_type"
@@ -119051,7 +119051,7 @@
      rv="None">
      <useargs>
        <usearg name="handlebox" type="GtkHandleBox"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
      </useargs>
   </use>
   <use id="_17076" name="gtk_handle_box_get_shadow_type"
@@ -120624,7 +120624,7 @@
        <usearg name="path" type="String"/>
        <usearg name="name" type="String"/>
        <usearg name="action" type="String"/>
-       <usearg name="type" type="I32"/>
+       <usearg name="gtype" type="I32"/>
        <usearg name="top" type="I32"/>
      </useargs>
   </use>

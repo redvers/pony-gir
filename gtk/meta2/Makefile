@@ -1,4 +1,9 @@
 
+gobjectbase:
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject
+	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject
+	cat out/GObject/GObject-use.pony out/GObject/GObject-fn.pony > ../../test/GObject/GObject.pony
+
 gtkbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk
 	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
