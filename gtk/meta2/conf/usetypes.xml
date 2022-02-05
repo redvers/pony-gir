@@ -4246,8 +4246,8 @@
     ponytypeout="GtkWindow"
     structtype="GtkWindow"
     structdef="GtkWindow"
-    argtype="GtkWindow tag"
-    rvtype="GtkWindow"/>
+    argtype="Pointer[GObject] tag"
+    rvtype="Pointer[GObject] tag"/>
 
   <typedef name="GConverter"
     embed="embed"
@@ -6297,7 +6297,7 @@
     structtype="GObject"
     structdef="GObject"
     argtype="GObject tag"
-    rvtype="GObject"/>
+    rvtype="Pointer[GObject] tag"/>
 
   <typedef name="AtkSocket"
     embed="embed"
