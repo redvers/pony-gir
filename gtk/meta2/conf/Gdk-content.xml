@@ -39,7 +39,7 @@
     <member name="rotation" value="256" cid="GDK_AXIS_FLAG_ROTATION" glibnick="rotation" glibname="GDK_AXIS_FLAG_ROTATION"/>
     <member name="slider" value="512" cid="GDK_AXIS_FLAG_SLIDER" glibnick="slider" glibname="GDK_AXIS_FLAG_SLIDER"/>
   </bitfield>
-  <enumeration name="AxisUse" render="0">     <member name="ignore" value="0" cid="GDK_AXIS_IGNORE" glibnick="ignore" glibname="GDK_AXIS_IGNORE"/>
+  <enumeration name="AxisUse" render="1">     <member name="ignore" value="0" cid="GDK_AXIS_IGNORE" glibnick="ignore" glibname="GDK_AXIS_IGNORE"/>
     <member name="x" value="1" cid="GDK_AXIS_X" glibnick="x" glibname="GDK_AXIS_X"/>
     <member name="y" value="2" cid="GDK_AXIS_Y" glibnick="y" glibname="GDK_AXIS_Y"/>
     <member name="pressure" value="3" cid="GDK_AXIS_PRESSURE" glibnick="pressure" glibname="GDK_AXIS_PRESSURE"/>
@@ -54,7 +54,7 @@
   <constant name="BUTTON_MIDDLE" ctype="GDK_BUTTON_MIDDLE" value="2" render="0">  </constant>
   <constant name="BUTTON_PRIMARY" ctype="GDK_BUTTON_PRIMARY" value="1" render="0">  </constant>
   <constant name="BUTTON_SECONDARY" ctype="GDK_BUTTON_SECONDARY" value="3" render="0">  </constant>
-  <enumeration name="ByteOrder" render="0">     <member name="lsb_first" value="0" cid="GDK_LSB_FIRST" glibnick="lsb-first" glibname="GDK_LSB_FIRST"/>
+  <enumeration name="ByteOrder" render="1">     <member name="lsb_first" value="0" cid="GDK_LSB_FIRST" glibnick="lsb-first" glibname="GDK_LSB_FIRST"/>
     <member name="msb_first" value="1" cid="GDK_MSB_FIRST" glibnick="msb-first" glibname="GDK_MSB_FIRST"/>
   </enumeration>
   <constant name="CURRENT_TIME" ctype="GDK_CURRENT_TIME" value="0" render="0">  </constant>
@@ -71,7 +71,7 @@
     <method name="to_string" cid="gdk_color_to_string" render="0"/>
     <function name="parse" cid="gdk_color_parse" render="0"/>
   </record>
-  <enumeration name="CrossingMode" render="0">     <member name="normal" value="0" cid="GDK_CROSSING_NORMAL" glibnick="normal" glibname="GDK_CROSSING_NORMAL"/>
+  <enumeration name="CrossingMode" render="1">     <member name="normal" value="0" cid="GDK_CROSSING_NORMAL" glibnick="normal" glibname="GDK_CROSSING_NORMAL"/>
     <member name="grab" value="1" cid="GDK_CROSSING_GRAB" glibnick="grab" glibname="GDK_CROSSING_GRAB"/>
     <member name="ungrab" value="2" cid="GDK_CROSSING_UNGRAB" glibnick="ungrab" glibname="GDK_CROSSING_UNGRAB"/>
     <member name="gtk_grab" value="3" cid="GDK_CROSSING_GTK_GRAB" glibnick="gtk-grab" glibname="GDK_CROSSING_GTK_GRAB"/>
@@ -96,7 +96,7 @@
     <property name="cursor-type" cid="" render="0"/>
     <property name="display" cid="" render="0"/>
   </class>
-  <enumeration name="CursorType" render="0">     <member name="x_cursor" value="0" cid="GDK_X_CURSOR" glibnick="x-cursor" glibname="GDK_X_CURSOR"/>
+  <enumeration name="CursorType" render="1">     <member name="x_cursor" value="0" cid="GDK_X_CURSOR" glibnick="x-cursor" glibname="GDK_X_CURSOR"/>
     <member name="arrow" value="2" cid="GDK_ARROW" glibnick="arrow" glibname="GDK_ARROW"/>
     <member name="based_arrow_down" value="4" cid="GDK_BASED_ARROW_DOWN" glibnick="based-arrow-down" glibname="GDK_BASED_ARROW_DOWN"/>
     <member name="based_arrow_up" value="6" cid="GDK_BASED_ARROW_UP" glibnick="based-arrow-up" glibname="GDK_BASED_ARROW_UP"/>
@@ -268,7 +268,7 @@
     <method name="get_n_features" cid="gdk_device_pad_get_n_features" render="0"/>
     <method name="get_n_groups" cid="gdk_device_pad_get_n_groups" render="0"/>
   </interface>
-  <enumeration name="DevicePadFeature" render="0">     <member name="button" value="0" cid="GDK_DEVICE_PAD_FEATURE_BUTTON" glibnick="button" glibname="GDK_DEVICE_PAD_FEATURE_BUTTON"/>
+  <enumeration name="DevicePadFeature" render="1">     <member name="button" value="0" cid="GDK_DEVICE_PAD_FEATURE_BUTTON" glibnick="button" glibname="GDK_DEVICE_PAD_FEATURE_BUTTON"/>
     <member name="ring" value="1" cid="GDK_DEVICE_PAD_FEATURE_RING" glibnick="ring" glibname="GDK_DEVICE_PAD_FEATURE_RING"/>
     <member name="strip" value="2" cid="GDK_DEVICE_PAD_FEATURE_STRIP" glibnick="strip" glibname="GDK_DEVICE_PAD_FEATURE_STRIP"/>
   </enumeration>
@@ -283,7 +283,7 @@
     <property name="serial" cid="" render="0"/>
     <property name="tool-type" cid="" render="0"/>
   </class>
-  <enumeration name="DeviceToolType" render="0">     <member name="unknown" value="0" cid="GDK_DEVICE_TOOL_TYPE_UNKNOWN" glibnick="unknown" glibname="GDK_DEVICE_TOOL_TYPE_UNKNOWN"/>
+  <enumeration name="DeviceToolType" render="1">     <member name="unknown" value="0" cid="GDK_DEVICE_TOOL_TYPE_UNKNOWN" glibnick="unknown" glibname="GDK_DEVICE_TOOL_TYPE_UNKNOWN"/>
     <member name="pen" value="1" cid="GDK_DEVICE_TOOL_TYPE_PEN" glibnick="pen" glibname="GDK_DEVICE_TOOL_TYPE_PEN"/>
     <member name="eraser" value="2" cid="GDK_DEVICE_TOOL_TYPE_ERASER" glibnick="eraser" glibname="GDK_DEVICE_TOOL_TYPE_ERASER"/>
     <member name="brush" value="3" cid="GDK_DEVICE_TOOL_TYPE_BRUSH" glibnick="brush" glibname="GDK_DEVICE_TOOL_TYPE_BRUSH"/>
@@ -292,7 +292,7 @@
     <member name="mouse" value="6" cid="GDK_DEVICE_TOOL_TYPE_MOUSE" glibnick="mouse" glibname="GDK_DEVICE_TOOL_TYPE_MOUSE"/>
     <member name="lens" value="7" cid="GDK_DEVICE_TOOL_TYPE_LENS" glibnick="lens" glibname="GDK_DEVICE_TOOL_TYPE_LENS"/>
   </enumeration>
-  <enumeration name="DeviceType" render="0">     <member name="master" value="0" cid="GDK_DEVICE_TYPE_MASTER" glibnick="master" glibname="GDK_DEVICE_TYPE_MASTER"/>
+  <enumeration name="DeviceType" render="1">     <member name="master" value="0" cid="GDK_DEVICE_TYPE_MASTER" glibnick="master" glibname="GDK_DEVICE_TYPE_MASTER"/>
     <member name="slave" value="1" cid="GDK_DEVICE_TYPE_SLAVE" glibnick="slave" glibname="GDK_DEVICE_TYPE_SLAVE"/>
     <member name="floating" value="2" cid="GDK_DEVICE_TYPE_FLOATING" glibnick="floating" glibname="GDK_DEVICE_TYPE_FLOATING"/>
   </enumeration>
@@ -369,7 +369,7 @@
     <member name="private" value="16" cid="GDK_ACTION_PRIVATE" glibnick="private" glibname="GDK_ACTION_PRIVATE"/>
     <member name="ask" value="32" cid="GDK_ACTION_ASK" glibnick="ask" glibname="GDK_ACTION_ASK"/>
   </bitfield>
-  <enumeration name="DragCancelReason" render="0">     <member name="no_target" value="0" cid="GDK_DRAG_CANCEL_NO_TARGET" glibnick="no-target" glibname="GDK_DRAG_CANCEL_NO_TARGET"/>
+  <enumeration name="DragCancelReason" render="1">     <member name="no_target" value="0" cid="GDK_DRAG_CANCEL_NO_TARGET" glibnick="no-target" glibname="GDK_DRAG_CANCEL_NO_TARGET"/>
     <member name="user_cancelled" value="1" cid="GDK_DRAG_CANCEL_USER_CANCELLED" glibnick="user-cancelled" glibname="GDK_DRAG_CANCEL_USER_CANCELLED"/>
     <member name="error" value="2" cid="GDK_DRAG_CANCEL_ERROR" glibnick="error" glibname="GDK_DRAG_CANCEL_ERROR"/>
   </enumeration>
@@ -391,7 +391,7 @@
     <glibsignal name="dnd-finished" when="last" render="0"/>
     <glibsignal name="drop-performed" when="last" render="0"/>
   </class>
-  <enumeration name="DragProtocol" render="0">     <member name="none" value="0" cid="GDK_DRAG_PROTO_NONE" glibnick="none" glibname="GDK_DRAG_PROTO_NONE"/>
+  <enumeration name="DragProtocol" render="1">     <member name="none" value="0" cid="GDK_DRAG_PROTO_NONE" glibnick="none" glibname="GDK_DRAG_PROTO_NONE"/>
     <member name="motif" value="1" cid="GDK_DRAG_PROTO_MOTIF" glibnick="motif" glibname="GDK_DRAG_PROTO_MOTIF"/>
     <member name="xdnd" value="2" cid="GDK_DRAG_PROTO_XDND" glibnick="xdnd" glibname="GDK_DRAG_PROTO_XDND"/>
     <member name="rootwin" value="3" cid="GDK_DRAG_PROTO_ROOTWIN" glibnick="rootwin" glibname="GDK_DRAG_PROTO_ROOTWIN"/>
@@ -740,7 +740,7 @@
     <field name="y_root"/>
     <field name="state"/>
   </record>
-  <enumeration name="EventType" render="0">     <member name="nothing" value="-1" cid="GDK_NOTHING" glibnick="nothing" glibname="GDK_NOTHING"/>
+  <enumeration name="EventType" render="1">     <member name="nothing" value="-1" cid="GDK_NOTHING" glibnick="nothing" glibname="GDK_NOTHING"/>
     <member name="delete" value="0" cid="GDK_DELETE" glibnick="delete" glibname="GDK_DELETE"/>
     <member name="destroy" value="1" cid="GDK_DESTROY" glibnick="destroy" glibname="GDK_DESTROY"/>
     <member name="expose" value="2" cid="GDK_EXPOSE" glibnick="expose" glibname="GDK_EXPOSE"/>
@@ -809,7 +809,7 @@
   <function-macro name="FRAME_CLOCK_CLASS" render="0">   </function-macro>
   <function-macro name="FRAME_CLOCK_GET_CLASS" render="0">   </function-macro>
   <callback name="FilterFunc" ctype="GdkFilterFunc" render="0">  </callback>
-  <enumeration name="FilterReturn" render="0">     <member name="continue" value="0" cid="GDK_FILTER_CONTINUE" glibnick="continue" glibname="GDK_FILTER_CONTINUE"/>
+  <enumeration name="FilterReturn" render="1">     <member name="continue" value="0" cid="GDK_FILTER_CONTINUE" glibnick="continue" glibname="GDK_FILTER_CONTINUE"/>
     <member name="translate" value="1" cid="GDK_FILTER_TRANSLATE" glibnick="translate" glibname="GDK_FILTER_TRANSLATE"/>
     <member name="remove" value="2" cid="GDK_FILTER_REMOVE" glibnick="remove" glibname="GDK_FILTER_REMOVE"/>
   </enumeration>
@@ -855,7 +855,7 @@
     <method name="ref" cid="gdk_frame_timings_ref" render="0"/>
     <method name="unref" cid="gdk_frame_timings_unref" render="0"/>
   </record>
-  <enumeration name="FullscreenMode" render="0">     <member name="current_monitor" value="0" cid="GDK_FULLSCREEN_ON_CURRENT_MONITOR" glibnick="current-monitor" glibname="GDK_FULLSCREEN_ON_CURRENT_MONITOR"/>
+  <enumeration name="FullscreenMode" render="1">     <member name="current_monitor" value="0" cid="GDK_FULLSCREEN_ON_CURRENT_MONITOR" glibnick="current-monitor" glibname="GDK_FULLSCREEN_ON_CURRENT_MONITOR"/>
     <member name="all_monitors" value="1" cid="GDK_FULLSCREEN_ON_ALL_MONITORS" glibnick="all-monitors" glibname="GDK_FULLSCREEN_ON_ALL_MONITORS"/>
   </enumeration>
   <class name="GLContext" ctype="GdkGLContext" parent="GObject.Object" render="0">
@@ -880,7 +880,7 @@
     <property name="shared-context" cid="" render="0"/>
     <property name="window" cid="" render="0"/>
   </class>
-  <enumeration name="GLError" render="0">     <member name="not_available" value="0" cid="GDK_GL_ERROR_NOT_AVAILABLE" glibnick="not-available" glibname="GDK_GL_ERROR_NOT_AVAILABLE"/>
+  <enumeration name="GLError" render="1">     <member name="not_available" value="0" cid="GDK_GL_ERROR_NOT_AVAILABLE" glibnick="not-available" glibname="GDK_GL_ERROR_NOT_AVAILABLE"/>
     <member name="unsupported_format" value="1" cid="GDK_GL_ERROR_UNSUPPORTED_FORMAT" glibnick="unsupported-format" glibname="GDK_GL_ERROR_UNSUPPORTED_FORMAT"/>
     <member name="unsupported_profile" value="2" cid="GDK_GL_ERROR_UNSUPPORTED_PROFILE" glibnick="unsupported-profile" glibname="GDK_GL_ERROR_UNSUPPORTED_PROFILE"/>
     <function name="quark" cid="gdk_gl_error_quark" render="0"/>
@@ -899,18 +899,18 @@
     <field name="max_aspect"/>
     <field name="win_gravity"/>
   </record>
-  <enumeration name="GrabOwnership" render="0">     <member name="none" value="0" cid="GDK_OWNERSHIP_NONE" glibnick="none" glibname="GDK_OWNERSHIP_NONE"/>
+  <enumeration name="GrabOwnership" render="1">     <member name="none" value="0" cid="GDK_OWNERSHIP_NONE" glibnick="none" glibname="GDK_OWNERSHIP_NONE"/>
     <member name="window" value="1" cid="GDK_OWNERSHIP_WINDOW" glibnick="window" glibname="GDK_OWNERSHIP_WINDOW"/>
     <member name="application" value="2" cid="GDK_OWNERSHIP_APPLICATION" glibnick="application" glibname="GDK_OWNERSHIP_APPLICATION"/>
   </enumeration>
-  <enumeration name="GrabStatus" render="0">     <member name="success" value="0" cid="GDK_GRAB_SUCCESS" glibnick="success" glibname="GDK_GRAB_SUCCESS"/>
+  <enumeration name="GrabStatus" render="1">     <member name="success" value="0" cid="GDK_GRAB_SUCCESS" glibnick="success" glibname="GDK_GRAB_SUCCESS"/>
     <member name="already_grabbed" value="1" cid="GDK_GRAB_ALREADY_GRABBED" glibnick="already-grabbed" glibname="GDK_GRAB_ALREADY_GRABBED"/>
     <member name="invalid_time" value="2" cid="GDK_GRAB_INVALID_TIME" glibnick="invalid-time" glibname="GDK_GRAB_INVALID_TIME"/>
     <member name="not_viewable" value="3" cid="GDK_GRAB_NOT_VIEWABLE" glibnick="not-viewable" glibname="GDK_GRAB_NOT_VIEWABLE"/>
     <member name="frozen" value="4" cid="GDK_GRAB_FROZEN" glibnick="frozen" glibname="GDK_GRAB_FROZEN"/>
     <member name="failed" value="5" cid="GDK_GRAB_FAILED" glibnick="failed" glibname="GDK_GRAB_FAILED"/>
   </enumeration>
-  <enumeration name="Gravity" render="0">     <member name="north_west" value="1" cid="GDK_GRAVITY_NORTH_WEST" glibnick="north-west" glibname="GDK_GRAVITY_NORTH_WEST"/>
+  <enumeration name="Gravity" render="1">     <member name="north_west" value="1" cid="GDK_GRAVITY_NORTH_WEST" glibnick="north-west" glibname="GDK_GRAVITY_NORTH_WEST"/>
     <member name="north" value="2" cid="GDK_GRAVITY_NORTH" glibnick="north" glibname="GDK_GRAVITY_NORTH"/>
     <member name="north_east" value="3" cid="GDK_GRAVITY_NORTH_EAST" glibnick="north-east" glibname="GDK_GRAVITY_NORTH_EAST"/>
     <member name="west" value="4" cid="GDK_GRAVITY_WEST" glibnick="west" glibname="GDK_GRAVITY_WEST"/>
@@ -941,11 +941,11 @@
   <function-macro name="IS_VISUAL" render="0">   </function-macro>
   <function-macro name="IS_WINDOW" render="0">   </function-macro>
   <function-macro name="IS_WINDOW_CLASS" render="0">   </function-macro>
-  <enumeration name="InputMode" render="0">     <member name="disabled" value="0" cid="GDK_MODE_DISABLED" glibnick="disabled" glibname="GDK_MODE_DISABLED"/>
+  <enumeration name="InputMode" render="1">     <member name="disabled" value="0" cid="GDK_MODE_DISABLED" glibnick="disabled" glibname="GDK_MODE_DISABLED"/>
     <member name="screen" value="1" cid="GDK_MODE_SCREEN" glibnick="screen" glibname="GDK_MODE_SCREEN"/>
     <member name="window" value="2" cid="GDK_MODE_WINDOW" glibnick="window" glibname="GDK_MODE_WINDOW"/>
   </enumeration>
-  <enumeration name="InputSource" render="0">     <member name="mouse" value="0" cid="GDK_SOURCE_MOUSE" glibnick="mouse" glibname="GDK_SOURCE_MOUSE"/>
+  <enumeration name="InputSource" render="1">     <member name="mouse" value="0" cid="GDK_SOURCE_MOUSE" glibnick="mouse" glibname="GDK_SOURCE_MOUSE"/>
     <member name="pen" value="1" cid="GDK_SOURCE_PEN" glibnick="pen" glibname="GDK_SOURCE_PEN"/>
     <member name="eraser" value="2" cid="GDK_SOURCE_ERASER" glibnick="eraser" glibname="GDK_SOURCE_ERASER"/>
     <member name="cursor" value="3" cid="GDK_SOURCE_CURSOR" glibnick="cursor" glibname="GDK_SOURCE_CURSOR"/>
@@ -3264,7 +3264,7 @@
   <constant name="MICRO_VERSION" ctype="GDK_MICRO_VERSION" value="31" render="0">  </constant>
   <constant name="MINOR_VERSION" ctype="GDK_MINOR_VERSION" value="24" render="0">  </constant>
   <function-macro name="MONITOR" render="0">   </function-macro>
-  <enumeration name="ModifierIntent" render="0">     <member name="primary_accelerator" value="0" cid="GDK_MODIFIER_INTENT_PRIMARY_ACCELERATOR" glibnick="primary-accelerator" glibname="GDK_MODIFIER_INTENT_PRIMARY_ACCELERATOR"/>
+  <enumeration name="ModifierIntent" render="1">     <member name="primary_accelerator" value="0" cid="GDK_MODIFIER_INTENT_PRIMARY_ACCELERATOR" glibnick="primary-accelerator" glibname="GDK_MODIFIER_INTENT_PRIMARY_ACCELERATOR"/>
     <member name="context_menu" value="1" cid="GDK_MODIFIER_INTENT_CONTEXT_MENU" glibnick="context-menu" glibname="GDK_MODIFIER_INTENT_CONTEXT_MENU"/>
     <member name="extend_selection" value="2" cid="GDK_MODIFIER_INTENT_EXTEND_SELECTION" glibnick="extend-selection" glibname="GDK_MODIFIER_INTENT_EXTEND_SELECTION"/>
     <member name="modify_selection" value="3" cid="GDK_MODIFIER_INTENT_MODIFY_SELECTION" glibnick="modify-selection" glibname="GDK_MODIFIER_INTENT_MODIFY_SELECTION"/>
@@ -3332,14 +3332,14 @@
   </class>
   <record name="MonitorClass" gtypestructfor="Monitor" ctype="GdkMonitorClass" render="0">
   </record>
-  <enumeration name="NotifyType" render="0">     <member name="ancestor" value="0" cid="GDK_NOTIFY_ANCESTOR" glibnick="ancestor" glibname="GDK_NOTIFY_ANCESTOR"/>
+  <enumeration name="NotifyType" render="1">     <member name="ancestor" value="0" cid="GDK_NOTIFY_ANCESTOR" glibnick="ancestor" glibname="GDK_NOTIFY_ANCESTOR"/>
     <member name="virtual" value="1" cid="GDK_NOTIFY_VIRTUAL" glibnick="virtual" glibname="GDK_NOTIFY_VIRTUAL"/>
     <member name="inferior" value="2" cid="GDK_NOTIFY_INFERIOR" glibnick="inferior" glibname="GDK_NOTIFY_INFERIOR"/>
     <member name="nonlinear" value="3" cid="GDK_NOTIFY_NONLINEAR" glibnick="nonlinear" glibname="GDK_NOTIFY_NONLINEAR"/>
     <member name="nonlinear_virtual" value="4" cid="GDK_NOTIFY_NONLINEAR_VIRTUAL" glibnick="nonlinear-virtual" glibname="GDK_NOTIFY_NONLINEAR_VIRTUAL"/>
     <member name="unknown" value="5" cid="GDK_NOTIFY_UNKNOWN" glibnick="unknown" glibname="GDK_NOTIFY_UNKNOWN"/>
   </enumeration>
-  <enumeration name="OwnerChange" render="0">     <member name="new_owner" value="0" cid="GDK_OWNER_CHANGE_NEW_OWNER" glibnick="new-owner" glibname="GDK_OWNER_CHANGE_NEW_OWNER"/>
+  <enumeration name="OwnerChange" render="1">     <member name="new_owner" value="0" cid="GDK_OWNER_CHANGE_NEW_OWNER" glibnick="new-owner" glibname="GDK_OWNER_CHANGE_NEW_OWNER"/>
     <member name="destroy" value="1" cid="GDK_OWNER_CHANGE_DESTROY" glibnick="destroy" glibname="GDK_OWNER_CHANGE_DESTROY"/>
     <member name="close" value="2" cid="GDK_OWNER_CHANGE_CLOSE" glibnick="close" glibname="GDK_OWNER_CHANGE_CLOSE"/>
   </enumeration>
@@ -3350,11 +3350,11 @@
     <field name="x"/>
     <field name="y"/>
   </record>
-  <enumeration name="PropMode" render="0">     <member name="replace" value="0" cid="GDK_PROP_MODE_REPLACE" glibnick="replace" glibname="GDK_PROP_MODE_REPLACE"/>
+  <enumeration name="PropMode" render="1">     <member name="replace" value="0" cid="GDK_PROP_MODE_REPLACE" glibnick="replace" glibname="GDK_PROP_MODE_REPLACE"/>
     <member name="prepend" value="1" cid="GDK_PROP_MODE_PREPEND" glibnick="prepend" glibname="GDK_PROP_MODE_PREPEND"/>
     <member name="append" value="2" cid="GDK_PROP_MODE_APPEND" glibnick="append" glibname="GDK_PROP_MODE_APPEND"/>
   </enumeration>
-  <enumeration name="PropertyState" render="0">     <member name="new_value" value="0" cid="GDK_PROPERTY_NEW_VALUE" glibnick="new-value" glibname="GDK_PROPERTY_NEW_VALUE"/>
+  <enumeration name="PropertyState" render="1">     <member name="new_value" value="0" cid="GDK_PROPERTY_NEW_VALUE" glibnick="new-value" glibname="GDK_PROPERTY_NEW_VALUE"/>
     <member name="delete" value="1" cid="GDK_PROPERTY_DELETE" glibnick="delete" glibname="GDK_PROPERTY_DELETE"/>
   </enumeration>
   <record name="RGBA" gtypestructfor="" ctype="GdkRGBA" render="0">
@@ -3422,7 +3422,7 @@
     <glibsignal name="monitors-changed" when="last" render="0"/>
     <glibsignal name="size-changed" when="last" render="0"/>
   </class>
-  <enumeration name="ScrollDirection" render="0">     <member name="up" value="0" cid="GDK_SCROLL_UP" glibnick="up" glibname="GDK_SCROLL_UP"/>
+  <enumeration name="ScrollDirection" render="1">     <member name="up" value="0" cid="GDK_SCROLL_UP" glibnick="up" glibname="GDK_SCROLL_UP"/>
     <member name="down" value="1" cid="GDK_SCROLL_DOWN" glibnick="down" glibname="GDK_SCROLL_DOWN"/>
     <member name="left" value="2" cid="GDK_SCROLL_LEFT" glibnick="left" glibname="GDK_SCROLL_LEFT"/>
     <member name="right" value="3" cid="GDK_SCROLL_RIGHT" glibnick="right" glibname="GDK_SCROLL_RIGHT"/>
@@ -3453,17 +3453,17 @@
     <member name="all" value="15" cid="GDK_SEAT_CAPABILITY_ALL" glibnick="all" glibname="GDK_SEAT_CAPABILITY_ALL"/>
   </bitfield>
   <callback name="SeatGrabPrepareFunc" ctype="GdkSeatGrabPrepareFunc" render="0">  </callback>
-  <enumeration name="SettingAction" render="0">     <member name="new" value="0" cid="GDK_SETTING_ACTION_NEW" glibnick="new" glibname="GDK_SETTING_ACTION_NEW"/>
+  <enumeration name="SettingAction" render="1">     <member name="new" value="0" cid="GDK_SETTING_ACTION_NEW" glibnick="new" glibname="GDK_SETTING_ACTION_NEW"/>
     <member name="changed" value="1" cid="GDK_SETTING_ACTION_CHANGED" glibnick="changed" glibname="GDK_SETTING_ACTION_CHANGED"/>
     <member name="deleted" value="2" cid="GDK_SETTING_ACTION_DELETED" glibnick="deleted" glibname="GDK_SETTING_ACTION_DELETED"/>
   </enumeration>
-  <enumeration name="Status" render="0">     <member name="ok" value="0" cid="GDK_OK" glibnick="ok" glibname="GDK_OK"/>
+  <enumeration name="Status" render="1">     <member name="ok" value="0" cid="GDK_OK" glibnick="ok" glibname="GDK_OK"/>
     <member name="error" value="-1" cid="GDK_ERROR" glibnick="error" glibname="GDK_ERROR"/>
     <member name="error_param" value="-2" cid="GDK_ERROR_PARAM" glibnick="error-param" glibname="GDK_ERROR_PARAM"/>
     <member name="error_file" value="-3" cid="GDK_ERROR_FILE" glibnick="error-file" glibname="GDK_ERROR_FILE"/>
     <member name="error_mem" value="-4" cid="GDK_ERROR_MEM" glibnick="error-mem" glibname="GDK_ERROR_MEM"/>
   </enumeration>
-  <enumeration name="SubpixelLayout" render="0">     <member name="unknown" value="0" cid="GDK_SUBPIXEL_LAYOUT_UNKNOWN" glibnick="unknown" glibname="GDK_SUBPIXEL_LAYOUT_UNKNOWN"/>
+  <enumeration name="SubpixelLayout" render="1">     <member name="unknown" value="0" cid="GDK_SUBPIXEL_LAYOUT_UNKNOWN" glibnick="unknown" glibname="GDK_SUBPIXEL_LAYOUT_UNKNOWN"/>
     <member name="none" value="1" cid="GDK_SUBPIXEL_LAYOUT_NONE" glibnick="none" glibname="GDK_SUBPIXEL_LAYOUT_NONE"/>
     <member name="horizontal_rgb" value="2" cid="GDK_SUBPIXEL_LAYOUT_HORIZONTAL_RGB" glibnick="horizontal-rgb" glibname="GDK_SUBPIXEL_LAYOUT_HORIZONTAL_RGB"/>
     <member name="horizontal_bgr" value="3" cid="GDK_SUBPIXEL_LAYOUT_HORIZONTAL_BGR" glibnick="horizontal-bgr" glibname="GDK_SUBPIXEL_LAYOUT_HORIZONTAL_BGR"/>
@@ -3474,14 +3474,14 @@
     <field name="time"/>
     <field name="axes"/>
   </record>
-  <enumeration name="TouchpadGesturePhase" render="0">     <member name="begin" value="0" cid="GDK_TOUCHPAD_GESTURE_PHASE_BEGIN" glibnick="begin" glibname="GDK_TOUCHPAD_GESTURE_PHASE_BEGIN"/>
+  <enumeration name="TouchpadGesturePhase" render="1">     <member name="begin" value="0" cid="GDK_TOUCHPAD_GESTURE_PHASE_BEGIN" glibnick="begin" glibname="GDK_TOUCHPAD_GESTURE_PHASE_BEGIN"/>
     <member name="update" value="1" cid="GDK_TOUCHPAD_GESTURE_PHASE_UPDATE" glibnick="update" glibname="GDK_TOUCHPAD_GESTURE_PHASE_UPDATE"/>
     <member name="end" value="2" cid="GDK_TOUCHPAD_GESTURE_PHASE_END" glibnick="end" glibname="GDK_TOUCHPAD_GESTURE_PHASE_END"/>
     <member name="cancel" value="3" cid="GDK_TOUCHPAD_GESTURE_PHASE_CANCEL" glibnick="cancel" glibname="GDK_TOUCHPAD_GESTURE_PHASE_CANCEL"/>
   </enumeration>
   <function-macro name="UNAVAILABLE" render="0">   </function-macro>
   <function-macro name="VISUAL" render="0">   </function-macro>
-  <enumeration name="VisibilityState" render="0">     <member name="unobscured" value="0" cid="GDK_VISIBILITY_UNOBSCURED" glibnick="unobscured" glibname="GDK_VISIBILITY_UNOBSCURED"/>
+  <enumeration name="VisibilityState" render="1">     <member name="unobscured" value="0" cid="GDK_VISIBILITY_UNOBSCURED" glibnick="unobscured" glibname="GDK_VISIBILITY_UNOBSCURED"/>
     <member name="partial" value="1" cid="GDK_VISIBILITY_PARTIAL" glibnick="partial" glibname="GDK_VISIBILITY_PARTIAL"/>
     <member name="fully_obscured" value="2" cid="GDK_VISIBILITY_FULLY_OBSCURED" glibnick="fully-obscured" glibname="GDK_VISIBILITY_FULLY_OBSCURED"/>
   </enumeration>
@@ -3503,7 +3503,7 @@
     <method name="get_screen" cid="gdk_visual_get_screen" render="0"/>
     <method name="get_visual_type" cid="gdk_visual_get_visual_type" render="0"/>
   </class>
-  <enumeration name="VisualType" render="0">     <member name="static_gray" value="0" cid="GDK_VISUAL_STATIC_GRAY" glibnick="static-gray" glibname="GDK_VISUAL_STATIC_GRAY"/>
+  <enumeration name="VisualType" render="1">     <member name="static_gray" value="0" cid="GDK_VISUAL_STATIC_GRAY" glibnick="static-gray" glibname="GDK_VISUAL_STATIC_GRAY"/>
     <member name="grayscale" value="1" cid="GDK_VISUAL_GRAYSCALE" glibnick="grayscale" glibname="GDK_VISUAL_GRAYSCALE"/>
     <member name="static_color" value="2" cid="GDK_VISUAL_STATIC_COLOR" glibnick="static-color" glibname="GDK_VISUAL_STATIC_COLOR"/>
     <member name="pseudo_color" value="3" cid="GDK_VISUAL_PSEUDO_COLOR" glibnick="pseudo-color" glibname="GDK_VISUAL_PSEUDO_COLOR"/>
@@ -3746,7 +3746,7 @@
     <field name="_gdk_reserved7"/>
     <field name="_gdk_reserved8"/>
   </record>
-  <enumeration name="WindowEdge" render="0">     <member name="north_west" value="0" cid="GDK_WINDOW_EDGE_NORTH_WEST" glibnick="north-west" glibname="GDK_WINDOW_EDGE_NORTH_WEST"/>
+  <enumeration name="WindowEdge" render="1">     <member name="north_west" value="0" cid="GDK_WINDOW_EDGE_NORTH_WEST" glibnick="north-west" glibname="GDK_WINDOW_EDGE_NORTH_WEST"/>
     <member name="north" value="1" cid="GDK_WINDOW_EDGE_NORTH" glibnick="north" glibname="GDK_WINDOW_EDGE_NORTH"/>
     <member name="north_east" value="2" cid="GDK_WINDOW_EDGE_NORTH_EAST" glibnick="north-east" glibname="GDK_WINDOW_EDGE_NORTH_EAST"/>
     <member name="west" value="3" cid="GDK_WINDOW_EDGE_WEST" glibnick="west" glibname="GDK_WINDOW_EDGE_WEST"/>
@@ -3788,7 +3788,7 @@
     <member name="left_tiled" value="32768" cid="GDK_WINDOW_STATE_LEFT_TILED" glibnick="left-tiled" glibname="GDK_WINDOW_STATE_LEFT_TILED"/>
     <member name="left_resizable" value="65536" cid="GDK_WINDOW_STATE_LEFT_RESIZABLE" glibnick="left-resizable" glibname="GDK_WINDOW_STATE_LEFT_RESIZABLE"/>
   </bitfield>
-  <enumeration name="WindowType" render="0">     <member name="root" value="0" cid="GDK_WINDOW_ROOT" glibnick="root" glibname="GDK_WINDOW_ROOT"/>
+  <enumeration name="WindowType" render="1">     <member name="root" value="0" cid="GDK_WINDOW_ROOT" glibnick="root" glibname="GDK_WINDOW_ROOT"/>
     <member name="toplevel" value="1" cid="GDK_WINDOW_TOPLEVEL" glibnick="toplevel" glibname="GDK_WINDOW_TOPLEVEL"/>
     <member name="child" value="2" cid="GDK_WINDOW_CHILD" glibnick="child" glibname="GDK_WINDOW_CHILD"/>
     <member name="temp" value="3" cid="GDK_WINDOW_TEMP" glibnick="temp" glibname="GDK_WINDOW_TEMP"/>
@@ -3796,7 +3796,7 @@
     <member name="offscreen" value="5" cid="GDK_WINDOW_OFFSCREEN" glibnick="offscreen" glibname="GDK_WINDOW_OFFSCREEN"/>
     <member name="subsurface" value="6" cid="GDK_WINDOW_SUBSURFACE" glibnick="subsurface" glibname="GDK_WINDOW_SUBSURFACE"/>
   </enumeration>
-  <enumeration name="WindowTypeHint" render="0">     <member name="normal" value="0" cid="GDK_WINDOW_TYPE_HINT_NORMAL" glibnick="normal" glibname="GDK_WINDOW_TYPE_HINT_NORMAL"/>
+  <enumeration name="WindowTypeHint" render="1">     <member name="normal" value="0" cid="GDK_WINDOW_TYPE_HINT_NORMAL" glibnick="normal" glibname="GDK_WINDOW_TYPE_HINT_NORMAL"/>
     <member name="dialog" value="1" cid="GDK_WINDOW_TYPE_HINT_DIALOG" glibnick="dialog" glibname="GDK_WINDOW_TYPE_HINT_DIALOG"/>
     <member name="menu" value="2" cid="GDK_WINDOW_TYPE_HINT_MENU" glibnick="menu" glibname="GDK_WINDOW_TYPE_HINT_MENU"/>
     <member name="toolbar" value="3" cid="GDK_WINDOW_TYPE_HINT_TOOLBAR" glibnick="toolbar" glibname="GDK_WINDOW_TYPE_HINT_TOOLBAR"/>
@@ -3811,7 +3811,7 @@
     <member name="combo" value="12" cid="GDK_WINDOW_TYPE_HINT_COMBO" glibnick="combo" glibname="GDK_WINDOW_TYPE_HINT_COMBO"/>
     <member name="dnd" value="13" cid="GDK_WINDOW_TYPE_HINT_DND" glibnick="dnd" glibname="GDK_WINDOW_TYPE_HINT_DND"/>
   </enumeration>
-  <enumeration name="WindowWindowClass" render="0">     <member name="input_output" value="0" cid="GDK_INPUT_OUTPUT" glibnick="input-output" glibname="GDK_INPUT_OUTPUT"/>
+  <enumeration name="WindowWindowClass" render="1">     <member name="input_output" value="0" cid="GDK_INPUT_OUTPUT" glibnick="input-output" glibname="GDK_INPUT_OUTPUT"/>
     <member name="input_only" value="1" cid="GDK_INPUT_ONLY" glibnick="input-only" glibname="GDK_INPUT_ONLY"/>
   </enumeration>
   <function name="add_option_entries_libgtk_only" cid="gdk_add_option_entries_libgtk_only" render="0">

@@ -1,0 +1,31 @@
+
+primitive EcairoOperator
+  fun mclear(): ISize => 0
+  fun msource(): ISize => 1
+  fun mover(): ISize => 2
+  fun min(): ISize => 3
+  fun mout(): ISize => 4
+  fun matop(): ISize => 5
+  fun mdest(): ISize => 6
+  fun mdest_over(): ISize => 7
+  fun mdest_in(): ISize => 8
+  fun mdest_out(): ISize => 9
+  fun mdest_atop(): ISize => 10
+  fun mxor(): ISize => 11
+  fun madd(): ISize => 12
+  fun msaturate(): ISize => 13
+  fun mmultiply(): ISize => 14
+  fun mscreen(): ISize => 15
+  fun moverlay(): ISize => 16
+  fun mdarken(): ISize => 17
+  fun mlighten(): ISize => 18
+  fun mcolor_dodge(): ISize => 19
+  fun mcolor_burn(): ISize => 20
+  fun mhard_light(): ISize => 21
+  fun msoft_light(): ISize => 22
+  fun mdifference(): ISize => 23
+  fun mexclusion(): ISize => 24
+  fun mhsl_hue(): ISize => 25
+  fun mhsl_saturation(): ISize => 26
+  fun mhsl_color(): ISize => 27
+  fun mhsl_luminosity(): ISize => 28

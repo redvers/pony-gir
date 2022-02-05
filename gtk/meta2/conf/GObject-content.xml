@@ -1005,7 +1005,7 @@
   </function>
   <function name="enum_to_string" cid="g_enum_to_string" render="0">
   </function>
-  <docsection name="enumerations_flags" render="0">   </docsection>
+  <docsection name="enumerations_flags" render="1">   </docsection>
   <function name="flags_complete_type_info" cid="g_flags_complete_type_info" render="0">
   </function>
   <function name="flags_get_first_value" cid="g_flags_get_first_value" render="0">

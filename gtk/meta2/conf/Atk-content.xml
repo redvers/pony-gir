@@ -92,7 +92,7 @@
     <field name="scroll_to"/>
     <field name="scroll_to_point"/>
   </record>
-  <enumeration name="CoordType" render="0">     <member name="screen" value="0" cid="ATK_XY_SCREEN" glibnick="screen" glibname="ATK_XY_SCREEN"/>
+  <enumeration name="CoordType" render="1">     <member name="screen" value="0" cid="ATK_XY_SCREEN" glibnick="screen" glibname="ATK_XY_SCREEN"/>
     <member name="window" value="1" cid="ATK_XY_WINDOW" glibnick="window" glibname="ATK_XY_WINDOW"/>
     <member name="parent" value="2" cid="ATK_XY_PARENT" glibnick="parent" glibname="ATK_XY_PARENT"/>
   </enumeration>
@@ -341,12 +341,12 @@
     <field name="keycode"/>
     <field name="timestamp"/>
   </record>
-  <enumeration name="KeyEventType" render="0">     <member name="press" value="0" cid="ATK_KEY_EVENT_PRESS" glibnick="press" glibname="ATK_KEY_EVENT_PRESS"/>
+  <enumeration name="KeyEventType" render="1">     <member name="press" value="0" cid="ATK_KEY_EVENT_PRESS" glibnick="press" glibname="ATK_KEY_EVENT_PRESS"/>
     <member name="release" value="1" cid="ATK_KEY_EVENT_RELEASE" glibnick="release" glibname="ATK_KEY_EVENT_RELEASE"/>
     <member name="last_defined" value="2" cid="ATK_KEY_EVENT_LAST_DEFINED" glibnick="last-defined" glibname="ATK_KEY_EVENT_LAST_DEFINED"/>
   </enumeration>
   <callback name="KeySnoopFunc" ctype="AtkKeySnoopFunc" render="0">  </callback>
-  <enumeration name="Layer" render="0">     <member name="invalid" value="0" cid="ATK_LAYER_INVALID" glibnick="invalid" glibname="ATK_LAYER_INVALID"/>
+  <enumeration name="Layer" render="1">     <member name="invalid" value="0" cid="ATK_LAYER_INVALID" glibnick="invalid" glibname="ATK_LAYER_INVALID"/>
     <member name="background" value="1" cid="ATK_LAYER_BACKGROUND" glibnick="background" glibname="ATK_LAYER_BACKGROUND"/>
     <member name="canvas" value="2" cid="ATK_LAYER_CANVAS" glibnick="canvas" glibname="ATK_LAYER_CANVAS"/>
     <member name="widget" value="3" cid="ATK_LAYER_WIDGET" glibnick="widget" glibname="ATK_LAYER_WIDGET"/>
@@ -627,7 +627,7 @@
     <field name="pad1"/>
     <field name="pad2"/>
   </record>
-  <enumeration name="RelationType" render="0">     <member name="null" value="0" cid="ATK_RELATION_NULL" glibnick="null" glibname="ATK_RELATION_NULL"/>
+  <enumeration name="RelationType" render="1">     <member name="null" value="0" cid="ATK_RELATION_NULL" glibnick="null" glibname="ATK_RELATION_NULL"/>
     <member name="controlled_by" value="1" cid="ATK_RELATION_CONTROLLED_BY" glibnick="controlled-by" glibname="ATK_RELATION_CONTROLLED_BY"/>
     <member name="controller_for" value="2" cid="ATK_RELATION_CONTROLLER_FOR" glibnick="controller-for" glibname="ATK_RELATION_CONTROLLER_FOR"/>
     <member name="label_for" value="3" cid="ATK_RELATION_LABEL_FOR" glibnick="label-for" glibname="ATK_RELATION_LABEL_FOR"/>
@@ -653,7 +653,7 @@
     <function name="get_name" cid="atk_relation_type_get_name" render="0"/>
     <function name="register" cid="atk_relation_type_register" render="0"/>
   </enumeration>
-  <enumeration name="Role" render="0">     <member name="invalid" value="0" cid="ATK_ROLE_INVALID" glibnick="invalid" glibname="ATK_ROLE_INVALID"/>
+  <enumeration name="Role" render="1">     <member name="invalid" value="0" cid="ATK_ROLE_INVALID" glibnick="invalid" glibname="ATK_ROLE_INVALID"/>
     <member name="accelerator_label" value="1" cid="ATK_ROLE_ACCEL_LABEL" glibnick="accelerator-label" glibname="ATK_ROLE_ACCEL_LABEL"/>
     <member name="alert" value="2" cid="ATK_ROLE_ALERT" glibnick="alert" glibname="ATK_ROLE_ALERT"/>
     <member name="animation" value="3" cid="ATK_ROLE_ANIMATION" glibnick="animation" glibname="ATK_ROLE_ANIMATION"/>
@@ -796,7 +796,7 @@
   <function-macro name="STATE_SET_GET_CLASS" render="0">   </function-macro>
   <function-macro name="STREAMABLE_CONTENT" render="0">   </function-macro>
   <function-macro name="STREAMABLE_CONTENT_GET_IFACE" render="0">   </function-macro>
-  <enumeration name="ScrollType" render="0">     <member name="top_left" value="0" cid="ATK_SCROLL_TOP_LEFT" glibnick="top-left" glibname="ATK_SCROLL_TOP_LEFT"/>
+  <enumeration name="ScrollType" render="1">     <member name="top_left" value="0" cid="ATK_SCROLL_TOP_LEFT" glibnick="top-left" glibname="ATK_SCROLL_TOP_LEFT"/>
     <member name="bottom_right" value="1" cid="ATK_SCROLL_BOTTOM_RIGHT" glibnick="bottom-right" glibname="ATK_SCROLL_BOTTOM_RIGHT"/>
     <member name="top_edge" value="2" cid="ATK_SCROLL_TOP_EDGE" glibnick="top-edge" glibname="ATK_SCROLL_TOP_EDGE"/>
     <member name="bottom_edge" value="3" cid="ATK_SCROLL_BOTTOM_EDGE" glibnick="bottom-edge" glibname="ATK_SCROLL_BOTTOM_EDGE"/>
@@ -862,7 +862,7 @@
   <record name="StateSetClass" gtypestructfor="StateSet" ctype="AtkStateSetClass" render="0">
     <field name="parent"/>
   </record>
-  <enumeration name="StateType" render="0">     <member name="invalid" value="0" cid="ATK_STATE_INVALID" glibnick="invalid" glibname="ATK_STATE_INVALID"/>
+  <enumeration name="StateType" render="1">     <member name="invalid" value="0" cid="ATK_STATE_INVALID" glibnick="invalid" glibname="ATK_STATE_INVALID"/>
     <member name="active" value="1" cid="ATK_STATE_ACTIVE" glibnick="active" glibname="ATK_STATE_ACTIVE"/>
     <member name="armed" value="2" cid="ATK_STATE_ARMED" glibnick="armed" glibname="ATK_STATE_ARMED"/>
     <member name="busy" value="3" cid="ATK_STATE_BUSY" glibnick="busy" glibname="ATK_STATE_BUSY"/>
@@ -1130,7 +1130,7 @@
     <glibsignal name="text-remove" when="last" render="0"/>
     <glibsignal name="text-selection-changed" when="last" render="0"/>
   </interface>
-  <enumeration name="TextAttribute" render="0">     <member name="invalid" value="0" cid="ATK_TEXT_ATTR_INVALID" glibnick="invalid" glibname="ATK_TEXT_ATTR_INVALID"/>
+  <enumeration name="TextAttribute" render="1">     <member name="invalid" value="0" cid="ATK_TEXT_ATTR_INVALID" glibnick="invalid" glibname="ATK_TEXT_ATTR_INVALID"/>
     <member name="left_margin" value="1" cid="ATK_TEXT_ATTR_LEFT_MARGIN" glibnick="left-margin" glibname="ATK_TEXT_ATTR_LEFT_MARGIN"/>
     <member name="right_margin" value="2" cid="ATK_TEXT_ATTR_RIGHT_MARGIN" glibnick="right-margin" glibname="ATK_TEXT_ATTR_RIGHT_MARGIN"/>
     <member name="indent" value="3" cid="ATK_TEXT_ATTR_INDENT" glibnick="indent" glibname="ATK_TEXT_ATTR_INDENT"/>
@@ -1165,7 +1165,7 @@
     <function name="get_value" cid="atk_text_attribute_get_value" render="0"/>
     <function name="register" cid="atk_text_attribute_register" render="0"/>
   </enumeration>
-  <enumeration name="TextBoundary" render="0">     <member name="char" value="0" cid="ATK_TEXT_BOUNDARY_CHAR" glibnick="char" glibname="ATK_TEXT_BOUNDARY_CHAR"/>
+  <enumeration name="TextBoundary" render="1">     <member name="char" value="0" cid="ATK_TEXT_BOUNDARY_CHAR" glibnick="char" glibname="ATK_TEXT_BOUNDARY_CHAR"/>
     <member name="word_start" value="1" cid="ATK_TEXT_BOUNDARY_WORD_START" glibnick="word-start" glibname="ATK_TEXT_BOUNDARY_WORD_START"/>
     <member name="word_end" value="2" cid="ATK_TEXT_BOUNDARY_WORD_END" glibnick="word-end" glibname="ATK_TEXT_BOUNDARY_WORD_END"/>
     <member name="sentence_start" value="3" cid="ATK_TEXT_BOUNDARY_SENTENCE_START" glibnick="sentence-start" glibname="ATK_TEXT_BOUNDARY_SENTENCE_START"/>
@@ -1173,12 +1173,12 @@
     <member name="line_start" value="5" cid="ATK_TEXT_BOUNDARY_LINE_START" glibnick="line-start" glibname="ATK_TEXT_BOUNDARY_LINE_START"/>
     <member name="line_end" value="6" cid="ATK_TEXT_BOUNDARY_LINE_END" glibnick="line-end" glibname="ATK_TEXT_BOUNDARY_LINE_END"/>
   </enumeration>
-  <enumeration name="TextClipType" render="0">     <member name="none" value="0" cid="ATK_TEXT_CLIP_NONE" glibnick="none" glibname="ATK_TEXT_CLIP_NONE"/>
+  <enumeration name="TextClipType" render="1">     <member name="none" value="0" cid="ATK_TEXT_CLIP_NONE" glibnick="none" glibname="ATK_TEXT_CLIP_NONE"/>
     <member name="min" value="1" cid="ATK_TEXT_CLIP_MIN" glibnick="min" glibname="ATK_TEXT_CLIP_MIN"/>
     <member name="max" value="2" cid="ATK_TEXT_CLIP_MAX" glibnick="max" glibname="ATK_TEXT_CLIP_MAX"/>
     <member name="both" value="3" cid="ATK_TEXT_CLIP_BOTH" glibnick="both" glibname="ATK_TEXT_CLIP_BOTH"/>
   </enumeration>
-  <enumeration name="TextGranularity" render="0">     <member name="char" value="0" cid="ATK_TEXT_GRANULARITY_CHAR" glibnick="char" glibname="ATK_TEXT_GRANULARITY_CHAR"/>
+  <enumeration name="TextGranularity" render="1">     <member name="char" value="0" cid="ATK_TEXT_GRANULARITY_CHAR" glibnick="char" glibname="ATK_TEXT_GRANULARITY_CHAR"/>
     <member name="word" value="1" cid="ATK_TEXT_GRANULARITY_WORD" glibnick="word" glibname="ATK_TEXT_GRANULARITY_WORD"/>
     <member name="sentence" value="2" cid="ATK_TEXT_GRANULARITY_SENTENCE" glibnick="sentence" glibname="ATK_TEXT_GRANULARITY_SENTENCE"/>
     <member name="line" value="3" cid="ATK_TEXT_GRANULARITY_LINE" glibnick="line" glibname="ATK_TEXT_GRANULARITY_LINE"/>
@@ -1280,7 +1280,7 @@
     <field name="get_sub_ranges"/>
     <field name="set_value"/>
   </record>
-  <enumeration name="ValueType" render="0">     <member name="very_weak" value="0" cid="ATK_VALUE_VERY_WEAK" glibnick="very-weak" glibname="ATK_VALUE_VERY_WEAK"/>
+  <enumeration name="ValueType" render="1">     <member name="very_weak" value="0" cid="ATK_VALUE_VERY_WEAK" glibnick="very-weak" glibname="ATK_VALUE_VERY_WEAK"/>
     <member name="weak" value="1" cid="ATK_VALUE_WEAK" glibnick="weak" glibname="ATK_VALUE_WEAK"/>
     <member name="acceptable" value="2" cid="ATK_VALUE_ACCEPTABLE" glibnick="acceptable" glibname="ATK_VALUE_ACCEPTABLE"/>
     <member name="strong" value="3" cid="ATK_VALUE_STRONG" glibnick="strong" glibname="ATK_VALUE_STRONG"/>

@@ -52,7 +52,7 @@
     <field name="disable"/>
     <field name="reserved"/>
   </record>
-  <enumeration name="aat_layout_feature_selector_t" render="0">     <member name="invalid" value="65535" cid="HB_AAT_LAYOUT_FEATURE_SELECTOR_INVALID" glibnick="invalid" glibname="HB_AAT_LAYOUT_FEATURE_SELECTOR_INVALID"/>
+  <enumeration name="aat_layout_feature_selector_t" render="1">     <member name="invalid" value="65535" cid="HB_AAT_LAYOUT_FEATURE_SELECTOR_INVALID" glibnick="invalid" glibname="HB_AAT_LAYOUT_FEATURE_SELECTOR_INVALID"/>
     <member name="all_type_features_on" value="0" cid="HB_AAT_LAYOUT_FEATURE_SELECTOR_ALL_TYPE_FEATURES_ON" glibnick="all-type-features-on" glibname="HB_AAT_LAYOUT_FEATURE_SELECTOR_ALL_TYPE_FEATURES_ON"/>
     <member name="all_type_features_off" value="1" cid="HB_AAT_LAYOUT_FEATURE_SELECTOR_ALL_TYPE_FEATURES_OFF" glibnick="all-type-features-off" glibname="HB_AAT_LAYOUT_FEATURE_SELECTOR_ALL_TYPE_FEATURES_OFF"/>
     <member name="required_ligatures_on" value="0" cid="HB_AAT_LAYOUT_FEATURE_SELECTOR_REQUIRED_LIGATURES_ON" glibnick="required-ligatures-on" glibname="HB_AAT_LAYOUT_FEATURE_SELECTOR_REQUIRED_LIGATURES_ON"/>
@@ -308,7 +308,7 @@
   </function>
   <function name="aat_layout_feature_type_get_selector_infos" cid="hb_aat_layout_feature_type_get_selector_infos" render="0">
   </function>
-  <enumeration name="aat_layout_feature_type_t" render="0">     <member name="invalid" value="65535" cid="HB_AAT_LAYOUT_FEATURE_TYPE_INVALID" glibnick="invalid" glibname="HB_AAT_LAYOUT_FEATURE_TYPE_INVALID"/>
+  <enumeration name="aat_layout_feature_type_t" render="1">     <member name="invalid" value="65535" cid="HB_AAT_LAYOUT_FEATURE_TYPE_INVALID" glibnick="invalid" glibname="HB_AAT_LAYOUT_FEATURE_TYPE_INVALID"/>
     <member name="all_typographic" value="0" cid="HB_AAT_LAYOUT_FEATURE_TYPE_ALL_TYPOGRAPHIC" glibnick="all-typographic" glibname="HB_AAT_LAYOUT_FEATURE_TYPE_ALL_TYPOGRAPHIC"/>
     <member name="ligatures" value="1" cid="HB_AAT_LAYOUT_FEATURE_TYPE_LIGATURES" glibnick="ligatures" glibname="HB_AAT_LAYOUT_FEATURE_TYPE_LIGATURES"/>
     <member name="curisve_connection" value="2" cid="HB_AAT_LAYOUT_FEATURE_TYPE_CURISVE_CONNECTION" glibnick="curisve-connection" glibname="HB_AAT_LAYOUT_FEATURE_TYPE_CURISVE_CONNECTION"/>
@@ -409,12 +409,12 @@
   </function>
   <function name="buffer_clear_contents" cid="hb_buffer_clear_contents" render="0">
   </function>
-  <enumeration name="buffer_cluster_level_t" render="0">     <member name="monotone_graphemes" value="0" cid="HB_BUFFER_CLUSTER_LEVEL_MONOTONE_GRAPHEMES" glibnick="monotone-graphemes" glibname="HB_BUFFER_CLUSTER_LEVEL_MONOTONE_GRAPHEMES"/>
+  <enumeration name="buffer_cluster_level_t" render="1">     <member name="monotone_graphemes" value="0" cid="HB_BUFFER_CLUSTER_LEVEL_MONOTONE_GRAPHEMES" glibnick="monotone-graphemes" glibname="HB_BUFFER_CLUSTER_LEVEL_MONOTONE_GRAPHEMES"/>
     <member name="monotone_characters" value="1" cid="HB_BUFFER_CLUSTER_LEVEL_MONOTONE_CHARACTERS" glibnick="monotone-characters" glibname="HB_BUFFER_CLUSTER_LEVEL_MONOTONE_CHARACTERS"/>
     <member name="characters" value="2" cid="HB_BUFFER_CLUSTER_LEVEL_CHARACTERS" glibnick="characters" glibname="HB_BUFFER_CLUSTER_LEVEL_CHARACTERS"/>
     <member name="default" value="0" cid="HB_BUFFER_CLUSTER_LEVEL_DEFAULT" glibnick="default" glibname="HB_BUFFER_CLUSTER_LEVEL_DEFAULT"/>
   </enumeration>
-  <enumeration name="buffer_content_type_t" render="0">     <member name="invalid" value="0" cid="HB_BUFFER_CONTENT_TYPE_INVALID" glibnick="invalid" glibname="HB_BUFFER_CONTENT_TYPE_INVALID"/>
+  <enumeration name="buffer_content_type_t" render="1">     <member name="invalid" value="0" cid="HB_BUFFER_CONTENT_TYPE_INVALID" glibnick="invalid" glibname="HB_BUFFER_CONTENT_TYPE_INVALID"/>
     <member name="unicode" value="1" cid="HB_BUFFER_CONTENT_TYPE_UNICODE" glibnick="unicode" glibname="HB_BUFFER_CONTENT_TYPE_UNICODE"/>
     <member name="glyphs" value="2" cid="HB_BUFFER_CONTENT_TYPE_GLYPHS" glibnick="glyphs" glibname="HB_BUFFER_CONTENT_TYPE_GLYPHS"/>
   </enumeration>
@@ -509,7 +509,7 @@
   </bitfield>
   <function name="buffer_serialize_format_from_string" cid="hb_buffer_serialize_format_from_string" render="0">
   </function>
-  <enumeration name="buffer_serialize_format_t" render="0">     <member name="text" value="1413830740" cid="HB_BUFFER_SERIALIZE_FORMAT_TEXT" glibnick="text" glibname="HB_BUFFER_SERIALIZE_FORMAT_TEXT"/>
+  <enumeration name="buffer_serialize_format_t" render="1">     <member name="text" value="1413830740" cid="HB_BUFFER_SERIALIZE_FORMAT_TEXT" glibnick="text" glibname="HB_BUFFER_SERIALIZE_FORMAT_TEXT"/>
     <member name="json" value="1246973774" cid="HB_BUFFER_SERIALIZE_FORMAT_JSON" glibnick="json" glibname="HB_BUFFER_SERIALIZE_FORMAT_JSON"/>
     <member name="invalid" value="0" cid="HB_BUFFER_SERIALIZE_FORMAT_INVALID" glibnick="invalid" glibname="HB_BUFFER_SERIALIZE_FORMAT_INVALID"/>
   </enumeration>
@@ -560,7 +560,7 @@
   <callback name="destroy_func_t" ctype="hb_destroy_func_t" render="0">  </callback>
   <function name="direction_from_string" cid="hb_direction_from_string" render="0">
   </function>
-  <enumeration name="direction_t" render="0">     <member name="invalid" value="0" cid="HB_DIRECTION_INVALID" glibnick="invalid" glibname="HB_DIRECTION_INVALID"/>
+  <enumeration name="direction_t" render="1">     <member name="invalid" value="0" cid="HB_DIRECTION_INVALID" glibnick="invalid" glibname="HB_DIRECTION_INVALID"/>
     <member name="ltr" value="4" cid="HB_DIRECTION_LTR" glibnick="ltr" glibname="HB_DIRECTION_LTR"/>
     <member name="rtl" value="5" cid="HB_DIRECTION_RTL" glibnick="rtl" glibname="HB_DIRECTION_RTL"/>
     <member name="ttb" value="6" cid="HB_DIRECTION_TTB" glibnick="ttb" glibname="HB_DIRECTION_TTB"/>
@@ -932,7 +932,7 @@
   </function>
   <record name="map_t" gtypestructfor="" ctype="hb_map_t" render="0">
   </record>
-  <enumeration name="memory_mode_t" render="0">     <member name="duplicate" value="0" cid="HB_MEMORY_MODE_DUPLICATE" glibnick="duplicate" glibname="HB_MEMORY_MODE_DUPLICATE"/>
+  <enumeration name="memory_mode_t" render="1">     <member name="duplicate" value="0" cid="HB_MEMORY_MODE_DUPLICATE" glibnick="duplicate" glibname="HB_MEMORY_MODE_DUPLICATE"/>
     <member name="readonly" value="1" cid="HB_MEMORY_MODE_READONLY" glibnick="readonly" glibname="HB_MEMORY_MODE_READONLY"/>
     <member name="writable" value="2" cid="HB_MEMORY_MODE_WRITABLE" glibnick="writable" glibname="HB_MEMORY_MODE_WRITABLE"/>
     <member name="readonly_may_make_writable" value="3" cid="HB_MEMORY_MODE_READONLY_MAY_MAKE_WRITABLE" glibnick="readonly-may-make-writable" glibname="HB_MEMORY_MODE_READONLY_MAY_MAKE_WRITABLE"/>
@@ -972,7 +972,7 @@
   </function>
   <function name="ot_font_set_funcs" cid="hb_ot_font_set_funcs" render="0">
   </function>
-  <enumeration name="ot_layout_baseline_tag_t" render="0">     <member name="roman" value="1919905134" cid="HB_OT_LAYOUT_BASELINE_TAG_ROMAN" glibnick="roman" glibname="HB_OT_LAYOUT_BASELINE_TAG_ROMAN"/>
+  <enumeration name="ot_layout_baseline_tag_t" render="1">     <member name="roman" value="1919905134" cid="HB_OT_LAYOUT_BASELINE_TAG_ROMAN" glibnick="roman" glibname="HB_OT_LAYOUT_BASELINE_TAG_ROMAN"/>
     <member name="hanging" value="1751215719" cid="HB_OT_LAYOUT_BASELINE_TAG_HANGING" glibnick="hanging" glibname="HB_OT_LAYOUT_BASELINE_TAG_HANGING"/>
     <member name="ideo_face_bottom_or_left" value="1768121954" cid="HB_OT_LAYOUT_BASELINE_TAG_IDEO_FACE_BOTTOM_OR_LEFT" glibnick="ideo-face-bottom-or-left" glibname="HB_OT_LAYOUT_BASELINE_TAG_IDEO_FACE_BOTTOM_OR_LEFT"/>
     <member name="ideo_face_top_or_right" value="1768121972" cid="HB_OT_LAYOUT_BASELINE_TAG_IDEO_FACE_TOP_OR_RIGHT" glibnick="ideo-face-top-or-right" glibname="HB_OT_LAYOUT_BASELINE_TAG_IDEO_FACE_TOP_OR_RIGHT"/>
@@ -1004,7 +1004,7 @@
   </function>
   <function name="ot_layout_get_size_params" cid="hb_ot_layout_get_size_params" render="0">
   </function>
-  <enumeration name="ot_layout_glyph_class_t" render="0">     <member name="unclassified" value="0" cid="HB_OT_LAYOUT_GLYPH_CLASS_UNCLASSIFIED" glibnick="unclassified" glibname="HB_OT_LAYOUT_GLYPH_CLASS_UNCLASSIFIED"/>
+  <enumeration name="ot_layout_glyph_class_t" render="1">     <member name="unclassified" value="0" cid="HB_OT_LAYOUT_GLYPH_CLASS_UNCLASSIFIED" glibnick="unclassified" glibname="HB_OT_LAYOUT_GLYPH_CLASS_UNCLASSIFIED"/>
     <member name="base_glyph" value="1" cid="HB_OT_LAYOUT_GLYPH_CLASS_BASE_GLYPH" glibnick="base-glyph" glibname="HB_OT_LAYOUT_GLYPH_CLASS_BASE_GLYPH"/>
     <member name="ligature" value="2" cid="HB_OT_LAYOUT_GLYPH_CLASS_LIGATURE" glibnick="ligature" glibname="HB_OT_LAYOUT_GLYPH_CLASS_LIGATURE"/>
     <member name="mark" value="3" cid="HB_OT_LAYOUT_GLYPH_CLASS_MARK" glibnick="mark" glibname="HB_OT_LAYOUT_GLYPH_CLASS_MARK"/>
@@ -1057,7 +1057,7 @@
   </function>
   <function name="ot_layout_table_select_script" cid="hb_ot_layout_table_select_script" render="0">
   </function>
-  <enumeration name="ot_math_constant_t" render="0">     <member name="script_percent_scale_down" value="0" cid="HB_OT_MATH_CONSTANT_SCRIPT_PERCENT_SCALE_DOWN" glibnick="script-percent-scale-down" glibname="HB_OT_MATH_CONSTANT_SCRIPT_PERCENT_SCALE_DOWN"/>
+  <enumeration name="ot_math_constant_t" render="1">     <member name="script_percent_scale_down" value="0" cid="HB_OT_MATH_CONSTANT_SCRIPT_PERCENT_SCALE_DOWN" glibnick="script-percent-scale-down" glibname="HB_OT_MATH_CONSTANT_SCRIPT_PERCENT_SCALE_DOWN"/>
     <member name="script_script_percent_scale_down" value="1" cid="HB_OT_MATH_CONSTANT_SCRIPT_SCRIPT_PERCENT_SCALE_DOWN" glibnick="script-script-percent-scale-down" glibname="HB_OT_MATH_CONSTANT_SCRIPT_SCRIPT_PERCENT_SCALE_DOWN"/>
     <member name="delimited_sub_formula_min_height" value="2" cid="HB_OT_MATH_CONSTANT_DELIMITED_SUB_FORMULA_MIN_HEIGHT" glibnick="delimited-sub-formula-min-height" glibname="HB_OT_MATH_CONSTANT_DELIMITED_SUB_FORMULA_MIN_HEIGHT"/>
     <member name="display_operator_min_height" value="3" cid="HB_OT_MATH_CONSTANT_DISPLAY_OPERATOR_MIN_HEIGHT" glibnick="display-operator-min-height" glibname="HB_OT_MATH_CONSTANT_DISPLAY_OPERATOR_MIN_HEIGHT"/>
@@ -1146,7 +1146,7 @@
   </function>
   <function name="ot_math_is_glyph_extended_shape" cid="hb_ot_math_is_glyph_extended_shape" render="0">
   </function>
-  <enumeration name="ot_math_kern_t" render="0">     <member name="top_right" value="0" cid="HB_OT_MATH_KERN_TOP_RIGHT" glibnick="top-right" glibname="HB_OT_MATH_KERN_TOP_RIGHT"/>
+  <enumeration name="ot_math_kern_t" render="1">     <member name="top_right" value="0" cid="HB_OT_MATH_KERN_TOP_RIGHT" glibnick="top-right" glibname="HB_OT_MATH_KERN_TOP_RIGHT"/>
     <member name="top_left" value="1" cid="HB_OT_MATH_KERN_TOP_LEFT" glibnick="top-left" glibname="HB_OT_MATH_KERN_TOP_LEFT"/>
     <member name="bottom_right" value="2" cid="HB_OT_MATH_KERN_BOTTOM_RIGHT" glibnick="bottom-right" glibname="HB_OT_MATH_KERN_BOTTOM_RIGHT"/>
     <member name="bottom_left" value="3" cid="HB_OT_MATH_KERN_BOTTOM_LEFT" glibnick="bottom-left" glibname="HB_OT_MATH_KERN_BOTTOM_LEFT"/>
@@ -1155,7 +1155,7 @@
   </function>
   <function name="ot_meta_reference_entry" cid="hb_ot_meta_reference_entry" render="0">
   </function>
-  <enumeration name="ot_meta_tag_t" render="0">     <member name="design_languages" value="1684827751" cid="HB_OT_META_TAG_DESIGN_LANGUAGES" glibnick="design-languages" glibname="HB_OT_META_TAG_DESIGN_LANGUAGES"/>
+  <enumeration name="ot_meta_tag_t" render="1">     <member name="design_languages" value="1684827751" cid="HB_OT_META_TAG_DESIGN_LANGUAGES" glibnick="design-languages" glibname="HB_OT_META_TAG_DESIGN_LANGUAGES"/>
     <member name="supported_languages" value="1936485991" cid="HB_OT_META_TAG_SUPPORTED_LANGUAGES" glibnick="supported-languages" glibname="HB_OT_META_TAG_SUPPORTED_LANGUAGES"/>
   </enumeration>
   <function name="ot_metrics_get_position" cid="hb_ot_metrics_get_position" render="0">
@@ -1166,7 +1166,7 @@
   </function>
   <function name="ot_metrics_get_y_variation" cid="hb_ot_metrics_get_y_variation" render="0">
   </function>
-  <enumeration name="ot_metrics_tag_t" render="0">     <member name="horizontal_ascender" value="1751216995" cid="HB_OT_METRICS_TAG_HORIZONTAL_ASCENDER" glibnick="horizontal-ascender" glibname="HB_OT_METRICS_TAG_HORIZONTAL_ASCENDER"/>
+  <enumeration name="ot_metrics_tag_t" render="1">     <member name="horizontal_ascender" value="1751216995" cid="HB_OT_METRICS_TAG_HORIZONTAL_ASCENDER" glibnick="horizontal-ascender" glibname="HB_OT_METRICS_TAG_HORIZONTAL_ASCENDER"/>
     <member name="horizontal_descender" value="1751413603" cid="HB_OT_METRICS_TAG_HORIZONTAL_DESCENDER" glibnick="horizontal-descender" glibname="HB_OT_METRICS_TAG_HORIZONTAL_DESCENDER"/>
     <member name="horizontal_line_gap" value="1751934832" cid="HB_OT_METRICS_TAG_HORIZONTAL_LINE_GAP" glibnick="horizontal-line-gap" glibname="HB_OT_METRICS_TAG_HORIZONTAL_LINE_GAP"/>
     <member name="horizontal_clipping_ascent" value="1751346273" cid="HB_OT_METRICS_TAG_HORIZONTAL_CLIPPING_ASCENT" glibnick="horizontal-clipping-ascent" glibname="HB_OT_METRICS_TAG_HORIZONTAL_CLIPPING_ASCENT"/>
@@ -1275,7 +1275,7 @@
   </function>
   <function name="script_get_horizontal_direction" cid="hb_script_get_horizontal_direction" render="0">
   </function>
-  <enumeration name="script_t" render="0">     <member name="common" value="1517910393" cid="HB_SCRIPT_COMMON" glibnick="common" glibname="HB_SCRIPT_COMMON"/>
+  <enumeration name="script_t" render="1">     <member name="common" value="1517910393" cid="HB_SCRIPT_COMMON" glibnick="common" glibname="HB_SCRIPT_COMMON"/>
     <member name="inherited" value="1516858984" cid="HB_SCRIPT_INHERITED" glibnick="inherited" glibname="HB_SCRIPT_INHERITED"/>
     <member name="unknown" value="1517976186" cid="HB_SCRIPT_UNKNOWN" glibnick="unknown" glibname="HB_SCRIPT_UNKNOWN"/>
     <member name="arabic" value="1098015074" cid="HB_SCRIPT_ARABIC" glibnick="arabic" glibname="HB_SCRIPT_ARABIC"/>
@@ -1546,7 +1546,7 @@
   </record>
   <function name="style_get_value" cid="hb_style_get_value" render="0">
   </function>
-  <enumeration name="style_tag_t" render="0">     <member name="italic" value="1769234796" cid="HB_STYLE_TAG_ITALIC" glibnick="italic" glibname="HB_STYLE_TAG_ITALIC"/>
+  <enumeration name="style_tag_t" render="1">     <member name="italic" value="1769234796" cid="HB_STYLE_TAG_ITALIC" glibnick="italic" glibname="HB_STYLE_TAG_ITALIC"/>
     <member name="optical_size" value="1869640570" cid="HB_STYLE_TAG_OPTICAL_SIZE" glibnick="optical-size" glibname="HB_STYLE_TAG_OPTICAL_SIZE"/>
     <member name="slant_angle" value="1936486004" cid="HB_STYLE_TAG_SLANT_ANGLE" glibnick="slant-angle" glibname="HB_STYLE_TAG_SLANT_ANGLE"/>
     <member name="slant_ratio" value="1399615092" cid="HB_STYLE_TAG_SLANT_RATIO" glibnick="slant-ratio" glibname="HB_STYLE_TAG_SLANT_RATIO"/>
@@ -1560,7 +1560,7 @@
   <function name="unicode_combining_class" cid="hb_unicode_combining_class" render="0">
   </function>
   <callback name="unicode_combining_class_func_t" ctype="hb_unicode_combining_class_func_t" render="0">  </callback>
-  <enumeration name="unicode_combining_class_t" render="0">     <member name="not_reordered" value="0" cid="HB_UNICODE_COMBINING_CLASS_NOT_REORDERED" glibnick="not-reordered" glibname="HB_UNICODE_COMBINING_CLASS_NOT_REORDERED"/>
+  <enumeration name="unicode_combining_class_t" render="1">     <member name="not_reordered" value="0" cid="HB_UNICODE_COMBINING_CLASS_NOT_REORDERED" glibnick="not-reordered" glibname="HB_UNICODE_COMBINING_CLASS_NOT_REORDERED"/>
     <member name="overlay" value="1" cid="HB_UNICODE_COMBINING_CLASS_OVERLAY" glibnick="overlay" glibname="HB_UNICODE_COMBINING_CLASS_OVERLAY"/>
     <member name="nukta" value="7" cid="HB_UNICODE_COMBINING_CLASS_NUKTA" glibnick="nukta" glibname="HB_UNICODE_COMBINING_CLASS_NUKTA"/>
     <member name="kana_voicing" value="8" cid="HB_UNICODE_COMBINING_CLASS_KANA_VOICING" glibnick="kana-voicing" glibname="HB_UNICODE_COMBINING_CLASS_KANA_VOICING"/>
@@ -1671,7 +1671,7 @@
   <function name="unicode_general_category" cid="hb_unicode_general_category" render="0">
   </function>
   <callback name="unicode_general_category_func_t" ctype="hb_unicode_general_category_func_t" render="0">  </callback>
-  <enumeration name="unicode_general_category_t" render="0">     <member name="control" value="0" cid="HB_UNICODE_GENERAL_CATEGORY_CONTROL" glibnick="control" glibname="HB_UNICODE_GENERAL_CATEGORY_CONTROL"/>
+  <enumeration name="unicode_general_category_t" render="1">     <member name="control" value="0" cid="HB_UNICODE_GENERAL_CATEGORY_CONTROL" glibnick="control" glibname="HB_UNICODE_GENERAL_CATEGORY_CONTROL"/>
     <member name="format" value="1" cid="HB_UNICODE_GENERAL_CATEGORY_FORMAT" glibnick="format" glibname="HB_UNICODE_GENERAL_CATEGORY_FORMAT"/>
     <member name="unassigned" value="2" cid="HB_UNICODE_GENERAL_CATEGORY_UNASSIGNED" glibnick="unassigned" glibname="HB_UNICODE_GENERAL_CATEGORY_UNASSIGNED"/>
     <member name="private_use" value="3" cid="HB_UNICODE_GENERAL_CATEGORY_PRIVATE_USE" glibnick="private-use" glibname="HB_UNICODE_GENERAL_CATEGORY_PRIVATE_USE"/>

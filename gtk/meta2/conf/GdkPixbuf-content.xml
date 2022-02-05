@@ -1,5 +1,5 @@
 <ns ns="GdkPixbuf">
-  <enumeration name="Colorspace" render="0">     <member name="rgb" value="0" cid="GDK_COLORSPACE_RGB" glibnick="rgb" glibname="GDK_COLORSPACE_RGB"/>
+  <enumeration name="Colorspace" render="1">     <member name="rgb" value="0" cid="GDK_COLORSPACE_RGB" glibnick="rgb" glibname="GDK_COLORSPACE_RGB"/>
   </enumeration>
   <function-macro name="IS_PIXBUF" render="0">   </function-macro>
   <function-macro name="IS_PIXBUF_ANIMATION" render="0">   </function-macro>
@@ -10,7 +10,7 @@
   <function-macro name="IS_PIXBUF_LOADER_CLASS" render="0">   </function-macro>
   <function-macro name="IS_PIXBUF_SIMPLE_ANIM" render="0">   </function-macro>
   <function-macro name="IS_PIXBUF_SIMPLE_ANIM_CLASS" render="0">   </function-macro>
-  <enumeration name="InterpType" render="0">     <member name="nearest" value="0" cid="GDK_INTERP_NEAREST" glibnick="nearest" glibname="GDK_INTERP_NEAREST"/>
+  <enumeration name="InterpType" render="1">     <member name="nearest" value="0" cid="GDK_INTERP_NEAREST" glibnick="nearest" glibname="GDK_INTERP_NEAREST"/>
     <member name="tiles" value="1" cid="GDK_INTERP_TILES" glibnick="tiles" glibname="GDK_INTERP_TILES"/>
     <member name="bilinear" value="2" cid="GDK_INTERP_BILINEAR" glibnick="bilinear" glibname="GDK_INTERP_BILINEAR"/>
     <member name="hyper" value="3" cid="GDK_INTERP_HYPER" glibnick="hyper" glibname="GDK_INTERP_HYPER"/>
@@ -132,7 +132,7 @@
     <property name="rowstride" cid="" render="0"/>
     <property name="width" cid="" render="0"/>
   </class>
-  <enumeration name="PixbufAlphaMode" render="0">     <member name="bilevel" value="0" cid="GDK_PIXBUF_ALPHA_BILEVEL" glibnick="bilevel" glibname="GDK_PIXBUF_ALPHA_BILEVEL"/>
+  <enumeration name="PixbufAlphaMode" render="1">     <member name="bilevel" value="0" cid="GDK_PIXBUF_ALPHA_BILEVEL" glibnick="bilevel" glibname="GDK_PIXBUF_ALPHA_BILEVEL"/>
     <member name="full" value="1" cid="GDK_PIXBUF_ALPHA_FULL" glibnick="full" glibname="GDK_PIXBUF_ALPHA_FULL"/>
   </enumeration>
   <class name="PixbufAnimation" ctype="GdkPixbufAnimation" parent="GObject.Object" render="0">
@@ -180,7 +180,7 @@
     <field name="advance"/>
   </record>
   <callback name="PixbufDestroyNotify" ctype="GdkPixbufDestroyNotify" render="0">  </callback>
-  <enumeration name="PixbufError" render="0">     <member name="corrupt_image" value="0" cid="GDK_PIXBUF_ERROR_CORRUPT_IMAGE" glibnick="corrupt-image" glibname="GDK_PIXBUF_ERROR_CORRUPT_IMAGE"/>
+  <enumeration name="PixbufError" render="1">     <member name="corrupt_image" value="0" cid="GDK_PIXBUF_ERROR_CORRUPT_IMAGE" glibnick="corrupt-image" glibname="GDK_PIXBUF_ERROR_CORRUPT_IMAGE"/>
     <member name="insufficient_memory" value="1" cid="GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY" glibnick="insufficient-memory" glibname="GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY"/>
     <member name="bad_option" value="2" cid="GDK_PIXBUF_ERROR_BAD_OPTION" glibnick="bad-option" glibname="GDK_PIXBUF_ERROR_BAD_OPTION"/>
     <member name="unknown_type" value="3" cid="GDK_PIXBUF_ERROR_UNKNOWN_TYPE" glibnick="unknown-type" glibname="GDK_PIXBUF_ERROR_UNKNOWN_TYPE"/>
@@ -287,7 +287,7 @@
   <class name="PixbufNonAnim" ctype="" parent="PixbufAnimation" render="0">
     <constructor name="new" cid="gdk_pixbuf_non_anim_new" render="0"/>
   </class>
-  <enumeration name="PixbufRotation" render="0">     <member name="none" value="0" cid="GDK_PIXBUF_ROTATE_NONE" glibnick="none" glibname="GDK_PIXBUF_ROTATE_NONE"/>
+  <enumeration name="PixbufRotation" render="1">     <member name="none" value="0" cid="GDK_PIXBUF_ROTATE_NONE" glibnick="none" glibname="GDK_PIXBUF_ROTATE_NONE"/>
     <member name="counterclockwise" value="90" cid="GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE" glibnick="counterclockwise" glibname="GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE"/>
     <member name="upsidedown" value="180" cid="GDK_PIXBUF_ROTATE_UPSIDEDOWN" glibnick="upsidedown" glibname="GDK_PIXBUF_ROTATE_UPSIDEDOWN"/>
     <member name="clockwise" value="270" cid="GDK_PIXBUF_ROTATE_CLOCKWISE" glibnick="clockwise" glibname="GDK_PIXBUF_ROTATE_CLOCKWISE"/>

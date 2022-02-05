@@ -512,7 +512,7 @@
     <member name="none" value="0" cid="G_BUS_NAME_WATCHER_FLAGS_NONE" glibnick="none" glibname="G_BUS_NAME_WATCHER_FLAGS_NONE"/>
     <member name="auto_start" value="1" cid="G_BUS_NAME_WATCHER_FLAGS_AUTO_START" glibnick="auto-start" glibname="G_BUS_NAME_WATCHER_FLAGS_AUTO_START"/>
   </bitfield>
-  <enumeration name="BusType" render="0">     <member name="starter" value="-1" cid="G_BUS_TYPE_STARTER" glibnick="starter" glibname="G_BUS_TYPE_STARTER"/>
+  <enumeration name="BusType" render="1">     <member name="starter" value="-1" cid="G_BUS_TYPE_STARTER" glibnick="starter" glibname="G_BUS_TYPE_STARTER"/>
     <member name="none" value="0" cid="G_BUS_TYPE_NONE" glibnick="none" glibname="G_BUS_TYPE_NONE"/>
     <member name="system" value="1" cid="G_BUS_TYPE_SYSTEM" glibnick="system" glibname="G_BUS_TYPE_SYSTEM"/>
     <member name="session" value="2" cid="G_BUS_TYPE_SESSION" glibnick="session" glibname="G_BUS_TYPE_SESSION"/>
@@ -638,7 +638,7 @@
   </record>
   <record name="ConverterOutputStreamPrivate" gtypestructfor="" ctype="GConverterOutputStreamPrivate" render="0">
   </record>
-  <enumeration name="ConverterResult" render="0">     <member name="error" value="0" cid="G_CONVERTER_ERROR" glibnick="error" glibname="G_CONVERTER_ERROR"/>
+  <enumeration name="ConverterResult" render="1">     <member name="error" value="0" cid="G_CONVERTER_ERROR" glibnick="error" glibname="G_CONVERTER_ERROR"/>
     <member name="converted" value="1" cid="G_CONVERTER_CONVERTED" glibnick="converted" glibname="G_CONVERTER_CONVERTED"/>
     <member name="finished" value="2" cid="G_CONVERTER_FINISHED" glibnick="finished" glibname="G_CONVERTER_FINISHED"/>
     <member name="flushed" value="3" cid="G_CONVERTER_FLUSHED" glibnick="flushed" glibname="G_CONVERTER_FLUSHED"/>
@@ -655,7 +655,7 @@
   </class>
   <record name="CredentialsClass" gtypestructfor="Credentials" ctype="GCredentialsClass" render="0">
   </record>
-  <enumeration name="CredentialsType" render="0">     <member name="invalid" value="0" cid="G_CREDENTIALS_TYPE_INVALID" glibnick="invalid" glibname="G_CREDENTIALS_TYPE_INVALID"/>
+  <enumeration name="CredentialsType" render="1">     <member name="invalid" value="0" cid="G_CREDENTIALS_TYPE_INVALID" glibnick="invalid" glibname="G_CREDENTIALS_TYPE_INVALID"/>
     <member name="linux_ucred" value="1" cid="G_CREDENTIALS_TYPE_LINUX_UCRED" glibnick="linux-ucred" glibname="G_CREDENTIALS_TYPE_LINUX_UCRED"/>
     <member name="freebsd_cmsgcred" value="2" cid="G_CREDENTIALS_TYPE_FREEBSD_CMSGCRED" glibnick="freebsd-cmsgcred" glibname="G_CREDENTIALS_TYPE_FREEBSD_CMSGCRED"/>
     <member name="openbsd_sockpeercred" value="3" cid="G_CREDENTIALS_TYPE_OPENBSD_SOCKPEERCRED" glibnick="openbsd-sockpeercred" glibname="G_CREDENTIALS_TYPE_OPENBSD_SOCKPEERCRED"/>
@@ -814,7 +814,7 @@
     <member name="delay_message_processing" value="16" cid="G_DBUS_CONNECTION_FLAGS_DELAY_MESSAGE_PROCESSING" glibnick="delay-message-processing" glibname="G_DBUS_CONNECTION_FLAGS_DELAY_MESSAGE_PROCESSING"/>
     <member name="authentication_require_same_user" value="32" cid="G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_REQUIRE_SAME_USER" glibnick="authentication-require-same-user" glibname="G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_REQUIRE_SAME_USER"/>
   </bitfield>
-  <enumeration name="DBusError" render="0">     <member name="failed" value="0" cid="G_DBUS_ERROR_FAILED" glibnick="failed" glibname="G_DBUS_ERROR_FAILED"/>
+  <enumeration name="DBusError" render="1">     <member name="failed" value="0" cid="G_DBUS_ERROR_FAILED" glibnick="failed" glibname="G_DBUS_ERROR_FAILED"/>
     <member name="no_memory" value="1" cid="G_DBUS_ERROR_NO_MEMORY" glibnick="no-memory" glibname="G_DBUS_ERROR_NO_MEMORY"/>
     <member name="service_unknown" value="2" cid="G_DBUS_ERROR_SERVICE_UNKNOWN" glibnick="service-unknown" glibname="G_DBUS_ERROR_SERVICE_UNKNOWN"/>
     <member name="name_has_no_owner" value="3" cid="G_DBUS_ERROR_NAME_HAS_NO_OWNER" glibnick="name-has-no-owner" glibname="G_DBUS_ERROR_NAME_HAS_NO_OWNER"/>
@@ -1012,7 +1012,7 @@
     <method name="to_gerror" cid="g_dbus_message_to_gerror" render="0"/>
     <property name="locked" cid="" render="0"/>
   </class>
-  <enumeration name="DBusMessageByteOrder" render="0">     <member name="big_endian" value="66" cid="G_DBUS_MESSAGE_BYTE_ORDER_BIG_ENDIAN" glibnick="big-endian" glibname="G_DBUS_MESSAGE_BYTE_ORDER_BIG_ENDIAN"/>
+  <enumeration name="DBusMessageByteOrder" render="1">     <member name="big_endian" value="66" cid="G_DBUS_MESSAGE_BYTE_ORDER_BIG_ENDIAN" glibnick="big-endian" glibname="G_DBUS_MESSAGE_BYTE_ORDER_BIG_ENDIAN"/>
     <member name="little_endian" value="108" cid="G_DBUS_MESSAGE_BYTE_ORDER_LITTLE_ENDIAN" glibnick="little-endian" glibname="G_DBUS_MESSAGE_BYTE_ORDER_LITTLE_ENDIAN"/>
   </enumeration>
   <callback name="DBusMessageFilterFunction" ctype="GDBusMessageFilterFunction" render="0">  </callback>
@@ -1022,7 +1022,7 @@
     <member name="no_auto_start" value="2" cid="G_DBUS_MESSAGE_FLAGS_NO_AUTO_START" glibnick="no-auto-start" glibname="G_DBUS_MESSAGE_FLAGS_NO_AUTO_START"/>
     <member name="allow_interactive_authorization" value="4" cid="G_DBUS_MESSAGE_FLAGS_ALLOW_INTERACTIVE_AUTHORIZATION" glibnick="allow-interactive-authorization" glibname="G_DBUS_MESSAGE_FLAGS_ALLOW_INTERACTIVE_AUTHORIZATION"/>
   </bitfield>
-  <enumeration name="DBusMessageHeaderField" render="0">     <member name="invalid" value="0" cid="G_DBUS_MESSAGE_HEADER_FIELD_INVALID" glibnick="invalid" glibname="G_DBUS_MESSAGE_HEADER_FIELD_INVALID"/>
+  <enumeration name="DBusMessageHeaderField" render="1">     <member name="invalid" value="0" cid="G_DBUS_MESSAGE_HEADER_FIELD_INVALID" glibnick="invalid" glibname="G_DBUS_MESSAGE_HEADER_FIELD_INVALID"/>
     <member name="path" value="1" cid="G_DBUS_MESSAGE_HEADER_FIELD_PATH" glibnick="path" glibname="G_DBUS_MESSAGE_HEADER_FIELD_PATH"/>
     <member name="interface" value="2" cid="G_DBUS_MESSAGE_HEADER_FIELD_INTERFACE" glibnick="interface" glibname="G_DBUS_MESSAGE_HEADER_FIELD_INTERFACE"/>
     <member name="member" value="3" cid="G_DBUS_MESSAGE_HEADER_FIELD_MEMBER" glibnick="member" glibname="G_DBUS_MESSAGE_HEADER_FIELD_MEMBER"/>
@@ -1033,7 +1033,7 @@
     <member name="signature" value="8" cid="G_DBUS_MESSAGE_HEADER_FIELD_SIGNATURE" glibnick="signature" glibname="G_DBUS_MESSAGE_HEADER_FIELD_SIGNATURE"/>
     <member name="num_unix_fds" value="9" cid="G_DBUS_MESSAGE_HEADER_FIELD_NUM_UNIX_FDS" glibnick="num-unix-fds" glibname="G_DBUS_MESSAGE_HEADER_FIELD_NUM_UNIX_FDS"/>
   </enumeration>
-  <enumeration name="DBusMessageType" render="0">     <member name="invalid" value="0" cid="G_DBUS_MESSAGE_TYPE_INVALID" glibnick="invalid" glibname="G_DBUS_MESSAGE_TYPE_INVALID"/>
+  <enumeration name="DBusMessageType" render="1">     <member name="invalid" value="0" cid="G_DBUS_MESSAGE_TYPE_INVALID" glibnick="invalid" glibname="G_DBUS_MESSAGE_TYPE_INVALID"/>
     <member name="method_call" value="1" cid="G_DBUS_MESSAGE_TYPE_METHOD_CALL" glibnick="method-call" glibname="G_DBUS_MESSAGE_TYPE_METHOD_CALL"/>
     <member name="method_return" value="2" cid="G_DBUS_MESSAGE_TYPE_METHOD_RETURN" glibnick="method-return" glibname="G_DBUS_MESSAGE_TYPE_METHOD_RETURN"/>
     <member name="error" value="3" cid="G_DBUS_MESSAGE_TYPE_ERROR" glibnick="error" glibname="G_DBUS_MESSAGE_TYPE_ERROR"/>
@@ -1439,11 +1439,11 @@
   </record>
   <record name="DataOutputStreamPrivate" gtypestructfor="" ctype="GDataOutputStreamPrivate" render="0">
   </record>
-  <enumeration name="DataStreamByteOrder" render="0">     <member name="big_endian" value="0" cid="G_DATA_STREAM_BYTE_ORDER_BIG_ENDIAN" glibnick="big-endian" glibname="G_DATA_STREAM_BYTE_ORDER_BIG_ENDIAN"/>
+  <enumeration name="DataStreamByteOrder" render="1">     <member name="big_endian" value="0" cid="G_DATA_STREAM_BYTE_ORDER_BIG_ENDIAN" glibnick="big-endian" glibname="G_DATA_STREAM_BYTE_ORDER_BIG_ENDIAN"/>
     <member name="little_endian" value="1" cid="G_DATA_STREAM_BYTE_ORDER_LITTLE_ENDIAN" glibnick="little-endian" glibname="G_DATA_STREAM_BYTE_ORDER_LITTLE_ENDIAN"/>
     <member name="host_endian" value="2" cid="G_DATA_STREAM_BYTE_ORDER_HOST_ENDIAN" glibnick="host-endian" glibname="G_DATA_STREAM_BYTE_ORDER_HOST_ENDIAN"/>
   </enumeration>
-  <enumeration name="DataStreamNewlineType" render="0">     <member name="lf" value="0" cid="G_DATA_STREAM_NEWLINE_TYPE_LF" glibnick="lf" glibname="G_DATA_STREAM_NEWLINE_TYPE_LF"/>
+  <enumeration name="DataStreamNewlineType" render="1">     <member name="lf" value="0" cid="G_DATA_STREAM_NEWLINE_TYPE_LF" glibnick="lf" glibname="G_DATA_STREAM_NEWLINE_TYPE_LF"/>
     <member name="cr" value="1" cid="G_DATA_STREAM_NEWLINE_TYPE_CR" glibnick="cr" glibname="G_DATA_STREAM_NEWLINE_TYPE_CR"/>
     <member name="cr_lf" value="2" cid="G_DATA_STREAM_NEWLINE_TYPE_CR_LF" glibnick="cr-lf" glibname="G_DATA_STREAM_NEWLINE_TYPE_CR_LF"/>
     <member name="any" value="3" cid="G_DATA_STREAM_NEWLINE_TYPE_ANY" glibnick="any" glibname="G_DATA_STREAM_NEWLINE_TYPE_ANY"/>
@@ -1610,7 +1610,7 @@
   <bitfield name="DriveStartFlags" glibtypename="GDriveStartFlags" ctype="GDriveStartFlags" render="0">
     <member name="none" value="0" cid="G_DRIVE_START_NONE" glibnick="none" glibname="G_DRIVE_START_NONE"/>
   </bitfield>
-  <enumeration name="DriveStartStopType" render="0">     <member name="unknown" value="0" cid="G_DRIVE_START_STOP_TYPE_UNKNOWN" glibnick="unknown" glibname="G_DRIVE_START_STOP_TYPE_UNKNOWN"/>
+  <enumeration name="DriveStartStopType" render="1">     <member name="unknown" value="0" cid="G_DRIVE_START_STOP_TYPE_UNKNOWN" glibnick="unknown" glibname="G_DRIVE_START_STOP_TYPE_UNKNOWN"/>
     <member name="shutdown" value="1" cid="G_DRIVE_START_STOP_TYPE_SHUTDOWN" glibnick="shutdown" glibname="G_DRIVE_START_STOP_TYPE_SHUTDOWN"/>
     <member name="network" value="2" cid="G_DRIVE_START_STOP_TYPE_NETWORK" glibnick="network" glibname="G_DRIVE_START_STOP_TYPE_NETWORK"/>
     <member name="multidisk" value="3" cid="G_DRIVE_START_STOP_TYPE_MULTIDISK" glibnick="multidisk" glibname="G_DRIVE_START_STOP_TYPE_MULTIDISK"/>
@@ -1721,7 +1721,7 @@
   </class>
   <record name="EmblemClass" gtypestructfor="Emblem" ctype="GEmblemClass" render="0">
   </record>
-  <enumeration name="EmblemOrigin" render="0">     <member name="unknown" value="0" cid="G_EMBLEM_ORIGIN_UNKNOWN" glibnick="unknown" glibname="G_EMBLEM_ORIGIN_UNKNOWN"/>
+  <enumeration name="EmblemOrigin" render="1">     <member name="unknown" value="0" cid="G_EMBLEM_ORIGIN_UNKNOWN" glibnick="unknown" glibname="G_EMBLEM_ORIGIN_UNKNOWN"/>
     <member name="device" value="1" cid="G_EMBLEM_ORIGIN_DEVICE" glibnick="device" glibname="G_EMBLEM_ORIGIN_DEVICE"/>
     <member name="livemetadata" value="2" cid="G_EMBLEM_ORIGIN_LIVEMETADATA" glibnick="livemetadata" glibname="G_EMBLEM_ORIGIN_LIVEMETADATA"/>
     <member name="tag" value="3" cid="G_EMBLEM_ORIGIN_TAG" glibnick="tag" glibname="G_EMBLEM_ORIGIN_TAG"/>
@@ -2117,11 +2117,11 @@
     <method name="to_string" cid="g_file_attribute_matcher_to_string" render="0"/>
     <method name="unref" cid="g_file_attribute_matcher_unref" render="0"/>
   </record>
-  <enumeration name="FileAttributeStatus" render="0">     <member name="unset" value="0" cid="G_FILE_ATTRIBUTE_STATUS_UNSET" glibnick="unset" glibname="G_FILE_ATTRIBUTE_STATUS_UNSET"/>
+  <enumeration name="FileAttributeStatus" render="1">     <member name="unset" value="0" cid="G_FILE_ATTRIBUTE_STATUS_UNSET" glibnick="unset" glibname="G_FILE_ATTRIBUTE_STATUS_UNSET"/>
     <member name="set" value="1" cid="G_FILE_ATTRIBUTE_STATUS_SET" glibnick="set" glibname="G_FILE_ATTRIBUTE_STATUS_SET"/>
     <member name="error_setting" value="2" cid="G_FILE_ATTRIBUTE_STATUS_ERROR_SETTING" glibnick="error-setting" glibname="G_FILE_ATTRIBUTE_STATUS_ERROR_SETTING"/>
   </enumeration>
-  <enumeration name="FileAttributeType" render="0">     <member name="invalid" value="0" cid="G_FILE_ATTRIBUTE_TYPE_INVALID" glibnick="invalid" glibname="G_FILE_ATTRIBUTE_TYPE_INVALID"/>
+  <enumeration name="FileAttributeType" render="1">     <member name="invalid" value="0" cid="G_FILE_ATTRIBUTE_TYPE_INVALID" glibnick="invalid" glibname="G_FILE_ATTRIBUTE_TYPE_INVALID"/>
     <member name="string" value="1" cid="G_FILE_ATTRIBUTE_TYPE_STRING" glibnick="string" glibname="G_FILE_ATTRIBUTE_TYPE_STRING"/>
     <member name="byte_string" value="2" cid="G_FILE_ATTRIBUTE_TYPE_BYTE_STRING" glibnick="byte-string" glibname="G_FILE_ATTRIBUTE_TYPE_BYTE_STRING"/>
     <member name="boolean" value="3" cid="G_FILE_ATTRIBUTE_TYPE_BOOLEAN" glibnick="boolean" glibname="G_FILE_ATTRIBUTE_TYPE_BOOLEAN"/>
@@ -2479,7 +2479,7 @@
     <field name="_g_reserved4"/>
     <field name="_g_reserved5"/>
   </record>
-  <enumeration name="FileMonitorEvent" render="0">     <member name="changed" value="0" cid="G_FILE_MONITOR_EVENT_CHANGED" glibnick="changed" glibname="G_FILE_MONITOR_EVENT_CHANGED"/>
+  <enumeration name="FileMonitorEvent" render="1">     <member name="changed" value="0" cid="G_FILE_MONITOR_EVENT_CHANGED" glibnick="changed" glibname="G_FILE_MONITOR_EVENT_CHANGED"/>
     <member name="changes_done_hint" value="1" cid="G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT" glibnick="changes-done-hint" glibname="G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT"/>
     <member name="deleted" value="2" cid="G_FILE_MONITOR_EVENT_DELETED" glibnick="deleted" glibname="G_FILE_MONITOR_EVENT_DELETED"/>
     <member name="created" value="3" cid="G_FILE_MONITOR_EVENT_CREATED" glibnick="created" glibname="G_FILE_MONITOR_EVENT_CREATED"/>
@@ -2543,7 +2543,7 @@
     <member name="nofollow_symlinks" value="1" cid="G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS" glibnick="nofollow-symlinks" glibname="G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS"/>
   </bitfield>
   <callback name="FileReadMoreCallback" ctype="GFileReadMoreCallback" render="0">  </callback>
-  <enumeration name="FileType" render="0">     <member name="unknown" value="0" cid="G_FILE_TYPE_UNKNOWN" glibnick="unknown" glibname="G_FILE_TYPE_UNKNOWN"/>
+  <enumeration name="FileType" render="1">     <member name="unknown" value="0" cid="G_FILE_TYPE_UNKNOWN" glibnick="unknown" glibname="G_FILE_TYPE_UNKNOWN"/>
     <member name="regular" value="1" cid="G_FILE_TYPE_REGULAR" glibnick="regular" glibname="G_FILE_TYPE_REGULAR"/>
     <member name="directory" value="2" cid="G_FILE_TYPE_DIRECTORY" glibnick="directory" glibname="G_FILE_TYPE_DIRECTORY"/>
     <member name="symbolic_link" value="3" cid="G_FILE_TYPE_SYMBOLIC_LINK" glibnick="symbolic-link" glibname="G_FILE_TYPE_SYMBOLIC_LINK"/>
@@ -2566,7 +2566,7 @@
     <field name="_g_reserved2"/>
     <field name="_g_reserved3"/>
   </record>
-  <enumeration name="FilesystemPreviewType" render="0">     <member name="if_always" value="0" cid="G_FILESYSTEM_PREVIEW_TYPE_IF_ALWAYS" glibnick="if-always" glibname="G_FILESYSTEM_PREVIEW_TYPE_IF_ALWAYS"/>
+  <enumeration name="FilesystemPreviewType" render="1">     <member name="if_always" value="0" cid="G_FILESYSTEM_PREVIEW_TYPE_IF_ALWAYS" glibnick="if-always" glibname="G_FILESYSTEM_PREVIEW_TYPE_IF_ALWAYS"/>
     <member name="if_local" value="1" cid="G_FILESYSTEM_PREVIEW_TYPE_IF_LOCAL" glibnick="if-local" glibname="G_FILESYSTEM_PREVIEW_TYPE_IF_LOCAL"/>
     <member name="never" value="2" cid="G_FILESYSTEM_PREVIEW_TYPE_NEVER" glibnick="never" glibname="G_FILESYSTEM_PREVIEW_TYPE_NEVER"/>
   </enumeration>
@@ -2616,7 +2616,7 @@
   <function-macro name="INPUT_STREAM" render="0">   </function-macro>
   <function-macro name="INPUT_STREAM_CLASS" render="0">   </function-macro>
   <function-macro name="INPUT_STREAM_GET_CLASS" render="0">   </function-macro>
-  <enumeration name="IOErrorEnum" render="0">     <member name="failed" value="0" cid="G_IO_ERROR_FAILED" glibnick="failed" glibname="G_IO_ERROR_FAILED"/>
+  <enumeration name="IOErrorEnum" render="1">     <member name="failed" value="0" cid="G_IO_ERROR_FAILED" glibnick="failed" glibname="G_IO_ERROR_FAILED"/>
     <member name="not_found" value="1" cid="G_IO_ERROR_NOT_FOUND" glibnick="not-found" glibname="G_IO_ERROR_NOT_FOUND"/>
     <member name="exists" value="2" cid="G_IO_ERROR_EXISTS" glibnick="exists" glibname="G_IO_ERROR_EXISTS"/>
     <member name="is_directory" value="3" cid="G_IO_ERROR_IS_DIRECTORY" glibnick="is-directory" glibname="G_IO_ERROR_IS_DIRECTORY"/>
@@ -2694,7 +2694,7 @@
     <method name="free" cid="g_io_module_scope_free" render="0"/>
     <function name="new" cid="g_io_module_scope_new" render="0"/>
   </record>
-  <enumeration name="IOModuleScopeFlags" render="0">     <member name="none" value="0" cid="G_IO_MODULE_SCOPE_NONE" glibnick="none" glibname="G_IO_MODULE_SCOPE_NONE"/>
+  <enumeration name="IOModuleScopeFlags" render="1">     <member name="none" value="0" cid="G_IO_MODULE_SCOPE_NONE" glibnick="none" glibname="G_IO_MODULE_SCOPE_NONE"/>
     <member name="block_duplicates" value="1" cid="G_IO_MODULE_SCOPE_BLOCK_DUPLICATES" glibnick="block-duplicates" glibname="G_IO_MODULE_SCOPE_BLOCK_DUPLICATES"/>
   </enumeration>
   <record name="IOSchedulerJob" gtypestructfor="" ctype="GIOSchedulerJob" render="0">
@@ -3279,7 +3279,7 @@
     <field name="g_iface"/>
     <field name="low_memory_warning"/>
   </record>
-  <enumeration name="MemoryMonitorWarningLevel" render="0">     <member name="low" value="50" cid="G_MEMORY_MONITOR_WARNING_LEVEL_LOW" glibnick="low" glibname="G_MEMORY_MONITOR_WARNING_LEVEL_LOW"/>
+  <enumeration name="MemoryMonitorWarningLevel" render="1">     <member name="low" value="50" cid="G_MEMORY_MONITOR_WARNING_LEVEL_LOW" glibnick="low" glibname="G_MEMORY_MONITOR_WARNING_LEVEL_LOW"/>
     <member name="medium" value="100" cid="G_MEMORY_MONITOR_WARNING_LEVEL_MEDIUM" glibnick="medium" glibname="G_MEMORY_MONITOR_WARNING_LEVEL_MEDIUM"/>
     <member name="critical" value="255" cid="G_MEMORY_MONITOR_WARNING_LEVEL_CRITICAL" glibnick="critical" glibname="G_MEMORY_MONITOR_WARNING_LEVEL_CRITICAL"/>
   </enumeration>
@@ -3568,7 +3568,7 @@
   </record>
   <record name="MountOperationPrivate" gtypestructfor="" ctype="GMountOperationPrivate" render="0">
   </record>
-  <enumeration name="MountOperationResult" render="0">     <member name="handled" value="0" cid="G_MOUNT_OPERATION_HANDLED" glibnick="handled" glibname="G_MOUNT_OPERATION_HANDLED"/>
+  <enumeration name="MountOperationResult" render="1">     <member name="handled" value="0" cid="G_MOUNT_OPERATION_HANDLED" glibnick="handled" glibname="G_MOUNT_OPERATION_HANDLED"/>
     <member name="aborted" value="1" cid="G_MOUNT_OPERATION_ABORTED" glibnick="aborted" glibname="G_MOUNT_OPERATION_ABORTED"/>
     <member name="unhandled" value="2" cid="G_MOUNT_OPERATION_UNHANDLED" glibnick="unhandled" glibname="G_MOUNT_OPERATION_UNHANDLED"/>
   </enumeration>
@@ -3630,7 +3630,7 @@
   </record>
   <record name="NetworkAddressPrivate" gtypestructfor="" ctype="GNetworkAddressPrivate" render="0">
   </record>
-  <enumeration name="NetworkConnectivity" render="0">     <member name="local" value="1" cid="G_NETWORK_CONNECTIVITY_LOCAL" glibnick="local" glibname="G_NETWORK_CONNECTIVITY_LOCAL"/>
+  <enumeration name="NetworkConnectivity" render="1">     <member name="local" value="1" cid="G_NETWORK_CONNECTIVITY_LOCAL" glibnick="local" glibname="G_NETWORK_CONNECTIVITY_LOCAL"/>
     <member name="limited" value="2" cid="G_NETWORK_CONNECTIVITY_LIMITED" glibnick="limited" glibname="G_NETWORK_CONNECTIVITY_LIMITED"/>
     <member name="portal" value="3" cid="G_NETWORK_CONNECTIVITY_PORTAL" glibnick="portal" glibname="G_NETWORK_CONNECTIVITY_PORTAL"/>
     <member name="full" value="4" cid="G_NETWORK_CONNECTIVITY_FULL" glibnick="full" glibname="G_NETWORK_CONNECTIVITY_FULL"/>
@@ -3694,7 +3694,7 @@
     <method name="set_title" cid="g_notification_set_title" render="0"/>
     <method name="set_urgent" cid="g_notification_set_urgent" render="0"/>
   </class>
-  <enumeration name="NotificationPriority" render="0">     <member name="normal" value="0" cid="G_NOTIFICATION_PRIORITY_NORMAL" glibnick="normal" glibname="G_NOTIFICATION_PRIORITY_NORMAL"/>
+  <enumeration name="NotificationPriority" render="1">     <member name="normal" value="0" cid="G_NOTIFICATION_PRIORITY_NORMAL" glibnick="normal" glibname="G_NOTIFICATION_PRIORITY_NORMAL"/>
     <member name="low" value="1" cid="G_NOTIFICATION_PRIORITY_LOW" glibnick="low" glibname="G_NOTIFICATION_PRIORITY_LOW"/>
     <member name="high" value="2" cid="G_NOTIFICATION_PRIORITY_HIGH" glibnick="high" glibname="G_NOTIFICATION_PRIORITY_HIGH"/>
     <member name="urgent" value="3" cid="G_NOTIFICATION_PRIORITY_URGENT" glibnick="urgent" glibname="G_NOTIFICATION_PRIORITY_URGENT"/>
@@ -3817,7 +3817,7 @@
   <function-macro name="PROXY_RESOLVER" render="0">   </function-macro>
   <constant name="PROXY_RESOLVER_EXTENSION_POINT_NAME" ctype="G_PROXY_RESOLVER_EXTENSION_POINT_NAME" value="gio-proxy-resolver" render="0">  </constant>
   <function-macro name="PROXY_RESOLVER_GET_IFACE" render="0">   </function-macro>
-  <enumeration name="PasswordSave" render="0">     <member name="never" value="0" cid="G_PASSWORD_SAVE_NEVER" glibnick="never" glibname="G_PASSWORD_SAVE_NEVER"/>
+  <enumeration name="PasswordSave" render="1">     <member name="never" value="0" cid="G_PASSWORD_SAVE_NEVER" glibnick="never" glibname="G_PASSWORD_SAVE_NEVER"/>
     <member name="for_session" value="1" cid="G_PASSWORD_SAVE_FOR_SESSION" glibnick="for-session" glibname="G_PASSWORD_SAVE_FOR_SESSION"/>
     <member name="permanently" value="2" cid="G_PASSWORD_SAVE_PERMANENTLY" glibnick="permanently" glibname="G_PASSWORD_SAVE_PERMANENTLY"/>
   </enumeration>
@@ -3893,7 +3893,7 @@
     <field name="write_nonblocking"/>
     <field name="writev_nonblocking"/>
   </record>
-  <enumeration name="PollableReturn" render="0">     <member name="failed" value="0" cid="G_POLLABLE_RETURN_FAILED" glibnick="failed" glibname="G_POLLABLE_RETURN_FAILED"/>
+  <enumeration name="PollableReturn" render="1">     <member name="failed" value="0" cid="G_POLLABLE_RETURN_FAILED" glibnick="failed" glibname="G_POLLABLE_RETURN_FAILED"/>
     <member name="ok" value="1" cid="G_POLLABLE_RETURN_OK" glibnick="ok" glibname="G_POLLABLE_RETURN_OK"/>
     <member name="would_block" value="-27" cid="G_POLLABLE_RETURN_WOULD_BLOCK" glibnick="would-block" glibname="G_POLLABLE_RETURN_WOULD_BLOCK"/>
   </enumeration>
@@ -4073,7 +4073,7 @@
     <field name="lookup_by_name_with_flags_finish"/>
     <field name="lookup_by_name_with_flags"/>
   </record>
-  <enumeration name="ResolverError" render="0">     <member name="not_found" value="0" cid="G_RESOLVER_ERROR_NOT_FOUND" glibnick="not-found" glibname="G_RESOLVER_ERROR_NOT_FOUND"/>
+  <enumeration name="ResolverError" render="1">     <member name="not_found" value="0" cid="G_RESOLVER_ERROR_NOT_FOUND" glibnick="not-found" glibname="G_RESOLVER_ERROR_NOT_FOUND"/>
     <member name="temporary_failure" value="1" cid="G_RESOLVER_ERROR_TEMPORARY_FAILURE" glibnick="temporary-failure" glibname="G_RESOLVER_ERROR_TEMPORARY_FAILURE"/>
     <member name="internal" value="2" cid="G_RESOLVER_ERROR_INTERNAL" glibnick="internal" glibname="G_RESOLVER_ERROR_INTERNAL"/>
     <function name="quark" cid="g_resolver_error_quark" render="0"/>
@@ -4085,7 +4085,7 @@
   </bitfield>
   <record name="ResolverPrivate" gtypestructfor="" ctype="GResolverPrivate" render="0">
   </record>
-  <enumeration name="ResolverRecordType" render="0">     <member name="srv" value="1" cid="G_RESOLVER_RECORD_SRV" glibnick="srv" glibname="G_RESOLVER_RECORD_SRV"/>
+  <enumeration name="ResolverRecordType" render="1">     <member name="srv" value="1" cid="G_RESOLVER_RECORD_SRV" glibnick="srv" glibname="G_RESOLVER_RECORD_SRV"/>
     <member name="mx" value="2" cid="G_RESOLVER_RECORD_MX" glibnick="mx" glibname="G_RESOLVER_RECORD_MX"/>
     <member name="txt" value="3" cid="G_RESOLVER_RECORD_TXT" glibnick="txt" glibname="G_RESOLVER_RECORD_TXT"/>
     <member name="soa" value="4" cid="G_RESOLVER_RECORD_SOA" glibnick="soa" glibname="G_RESOLVER_RECORD_SOA"/>
@@ -4103,7 +4103,7 @@
     <method name="unref" cid="g_resource_unref" render="0"/>
     <function name="load" cid="g_resource_load" render="0"/>
   </record>
-  <enumeration name="ResourceError" render="0">     <member name="not_found" value="0" cid="G_RESOURCE_ERROR_NOT_FOUND" glibnick="not-found" glibname="G_RESOURCE_ERROR_NOT_FOUND"/>
+  <enumeration name="ResourceError" render="1">     <member name="not_found" value="0" cid="G_RESOURCE_ERROR_NOT_FOUND" glibnick="not-found" glibname="G_RESOURCE_ERROR_NOT_FOUND"/>
     <member name="internal" value="1" cid="G_RESOURCE_ERROR_INTERNAL" glibnick="internal" glibname="G_RESOURCE_ERROR_INTERNAL"/>
     <function name="quark" cid="g_resource_error_quark" render="0"/>
   </enumeration>
@@ -4608,7 +4608,7 @@
     <field name="_g_reserved3"/>
     <field name="_g_reserved4"/>
   </record>
-  <enumeration name="SocketClientEvent" render="0">     <member name="resolving" value="0" cid="G_SOCKET_CLIENT_RESOLVING" glibnick="resolving" glibname="G_SOCKET_CLIENT_RESOLVING"/>
+  <enumeration name="SocketClientEvent" render="1">     <member name="resolving" value="0" cid="G_SOCKET_CLIENT_RESOLVING" glibnick="resolving" glibname="G_SOCKET_CLIENT_RESOLVING"/>
     <member name="resolved" value="1" cid="G_SOCKET_CLIENT_RESOLVED" glibnick="resolved" glibname="G_SOCKET_CLIENT_RESOLVED"/>
     <member name="connecting" value="2" cid="G_SOCKET_CLIENT_CONNECTING" glibnick="connecting" glibname="G_SOCKET_CLIENT_CONNECTING"/>
     <member name="connected" value="3" cid="G_SOCKET_CLIENT_CONNECTED" glibnick="connected" glibname="G_SOCKET_CLIENT_CONNECTED"/>
@@ -4686,7 +4686,7 @@
   </record>
   <record name="SocketControlMessagePrivate" gtypestructfor="" ctype="GSocketControlMessagePrivate" render="0">
   </record>
-  <enumeration name="SocketFamily" render="0">     <member name="invalid" value="0" cid="G_SOCKET_FAMILY_INVALID" glibnick="invalid" glibname="G_SOCKET_FAMILY_INVALID"/>
+  <enumeration name="SocketFamily" render="1">     <member name="invalid" value="0" cid="G_SOCKET_FAMILY_INVALID" glibnick="invalid" glibname="G_SOCKET_FAMILY_INVALID"/>
     <member name="unix" value="1" cid="G_SOCKET_FAMILY_UNIX" glibnick="unix" glibname="G_SOCKET_FAMILY_UNIX"/>
     <member name="ipv4" value="2" cid="G_SOCKET_FAMILY_IPV4" glibnick="ipv4" glibname="G_SOCKET_FAMILY_IPV4"/>
     <member name="ipv6" value="10" cid="G_SOCKET_FAMILY_IPV6" glibnick="ipv6" glibname="G_SOCKET_FAMILY_IPV6"/>
@@ -4722,7 +4722,7 @@
     <field name="_g_reserved5"/>
     <field name="_g_reserved6"/>
   </record>
-  <enumeration name="SocketListenerEvent" render="0">     <member name="binding" value="0" cid="G_SOCKET_LISTENER_BINDING" glibnick="binding" glibname="G_SOCKET_LISTENER_BINDING"/>
+  <enumeration name="SocketListenerEvent" render="1">     <member name="binding" value="0" cid="G_SOCKET_LISTENER_BINDING" glibnick="binding" glibname="G_SOCKET_LISTENER_BINDING"/>
     <member name="bound" value="1" cid="G_SOCKET_LISTENER_BOUND" glibnick="bound" glibname="G_SOCKET_LISTENER_BOUND"/>
     <member name="listening" value="2" cid="G_SOCKET_LISTENER_LISTENING" glibnick="listening" glibname="G_SOCKET_LISTENER_LISTENING"/>
     <member name="listened" value="3" cid="G_SOCKET_LISTENER_LISTENED" glibnick="listened" glibname="G_SOCKET_LISTENER_LISTENED"/>
@@ -4737,7 +4737,7 @@
   </bitfield>
   <record name="SocketPrivate" gtypestructfor="" ctype="GSocketPrivate" render="0">
   </record>
-  <enumeration name="SocketProtocol" render="0">     <member name="unknown" value="-1" cid="G_SOCKET_PROTOCOL_UNKNOWN" glibnick="unknown" glibname="G_SOCKET_PROTOCOL_UNKNOWN"/>
+  <enumeration name="SocketProtocol" render="1">     <member name="unknown" value="-1" cid="G_SOCKET_PROTOCOL_UNKNOWN" glibnick="unknown" glibname="G_SOCKET_PROTOCOL_UNKNOWN"/>
     <member name="default" value="0" cid="G_SOCKET_PROTOCOL_DEFAULT" glibnick="default" glibname="G_SOCKET_PROTOCOL_DEFAULT"/>
     <member name="tcp" value="6" cid="G_SOCKET_PROTOCOL_TCP" glibnick="tcp" glibname="G_SOCKET_PROTOCOL_TCP"/>
     <member name="udp" value="17" cid="G_SOCKET_PROTOCOL_UDP" glibnick="udp" glibname="G_SOCKET_PROTOCOL_UDP"/>
@@ -4767,7 +4767,7 @@
   <record name="SocketServicePrivate" gtypestructfor="" ctype="GSocketServicePrivate" render="0">
   </record>
   <callback name="SocketSourceFunc" ctype="GSocketSourceFunc" render="0">  </callback>
-  <enumeration name="SocketType" render="0">     <member name="invalid" value="0" cid="G_SOCKET_TYPE_INVALID" glibnick="invalid" glibname="G_SOCKET_TYPE_INVALID"/>
+  <enumeration name="SocketType" render="1">     <member name="invalid" value="0" cid="G_SOCKET_TYPE_INVALID" glibnick="invalid" glibname="G_SOCKET_TYPE_INVALID"/>
     <member name="stream" value="1" cid="G_SOCKET_TYPE_STREAM" glibnick="stream" glibname="G_SOCKET_TYPE_STREAM"/>
     <member name="datagram" value="2" cid="G_SOCKET_TYPE_DATAGRAM" glibnick="datagram" glibname="G_SOCKET_TYPE_DATAGRAM"/>
     <member name="seqpacket" value="3" cid="G_SOCKET_TYPE_SEQPACKET" glibnick="seqpacket" glibname="G_SOCKET_TYPE_SEQPACKET"/>
@@ -5014,7 +5014,7 @@
   </record>
   <record name="ThreadedSocketServicePrivate" gtypestructfor="" ctype="GThreadedSocketServicePrivate" render="0">
   </record>
-  <enumeration name="TlsAuthenticationMode" render="0">     <member name="none" value="0" cid="G_TLS_AUTHENTICATION_NONE" glibnick="none" glibname="G_TLS_AUTHENTICATION_NONE"/>
+  <enumeration name="TlsAuthenticationMode" render="1">     <member name="none" value="0" cid="G_TLS_AUTHENTICATION_NONE" glibnick="none" glibname="G_TLS_AUTHENTICATION_NONE"/>
     <member name="requested" value="1" cid="G_TLS_AUTHENTICATION_REQUESTED" glibnick="requested" glibname="G_TLS_AUTHENTICATION_REQUESTED"/>
     <member name="required" value="2" cid="G_TLS_AUTHENTICATION_REQUIRED" glibnick="required" glibname="G_TLS_AUTHENTICATION_REQUIRED"/>
   </enumeration>
@@ -5094,16 +5094,16 @@
   </bitfield>
   <record name="TlsCertificatePrivate" gtypestructfor="" ctype="GTlsCertificatePrivate" render="0">
   </record>
-  <enumeration name="TlsCertificateRequestFlags" render="0">     <member name="none" value="0" cid="G_TLS_CERTIFICATE_REQUEST_NONE" glibnick="none" glibname="G_TLS_CERTIFICATE_REQUEST_NONE"/>
+  <enumeration name="TlsCertificateRequestFlags" render="1">     <member name="none" value="0" cid="G_TLS_CERTIFICATE_REQUEST_NONE" glibnick="none" glibname="G_TLS_CERTIFICATE_REQUEST_NONE"/>
   </enumeration>
-  <enumeration name="TlsChannelBindingError" render="0">     <member name="not_implemented" value="0" cid="G_TLS_CHANNEL_BINDING_ERROR_NOT_IMPLEMENTED" glibnick="not-implemented" glibname="G_TLS_CHANNEL_BINDING_ERROR_NOT_IMPLEMENTED"/>
+  <enumeration name="TlsChannelBindingError" render="1">     <member name="not_implemented" value="0" cid="G_TLS_CHANNEL_BINDING_ERROR_NOT_IMPLEMENTED" glibnick="not-implemented" glibname="G_TLS_CHANNEL_BINDING_ERROR_NOT_IMPLEMENTED"/>
     <member name="invalid_state" value="1" cid="G_TLS_CHANNEL_BINDING_ERROR_INVALID_STATE" glibnick="invalid-state" glibname="G_TLS_CHANNEL_BINDING_ERROR_INVALID_STATE"/>
     <member name="not_available" value="2" cid="G_TLS_CHANNEL_BINDING_ERROR_NOT_AVAILABLE" glibnick="not-available" glibname="G_TLS_CHANNEL_BINDING_ERROR_NOT_AVAILABLE"/>
     <member name="not_supported" value="3" cid="G_TLS_CHANNEL_BINDING_ERROR_NOT_SUPPORTED" glibnick="not-supported" glibname="G_TLS_CHANNEL_BINDING_ERROR_NOT_SUPPORTED"/>
     <member name="general_error" value="4" cid="G_TLS_CHANNEL_BINDING_ERROR_GENERAL_ERROR" glibnick="general-error" glibname="G_TLS_CHANNEL_BINDING_ERROR_GENERAL_ERROR"/>
     <function name="quark" cid="g_tls_channel_binding_error_quark" render="0"/>
   </enumeration>
-  <enumeration name="TlsChannelBindingType" render="0">     <member name="unique" value="0" cid="G_TLS_CHANNEL_BINDING_TLS_UNIQUE" glibnick="unique" glibname="G_TLS_CHANNEL_BINDING_TLS_UNIQUE"/>
+  <enumeration name="TlsChannelBindingType" render="1">     <member name="unique" value="0" cid="G_TLS_CHANNEL_BINDING_TLS_UNIQUE" glibnick="unique" glibname="G_TLS_CHANNEL_BINDING_TLS_UNIQUE"/>
     <member name="server_end_point" value="1" cid="G_TLS_CHANNEL_BINDING_TLS_SERVER_END_POINT" glibnick="server-end-point" glibname="G_TLS_CHANNEL_BINDING_TLS_SERVER_END_POINT"/>
   </enumeration>
   <interface name="TlsClientConnection" render="0">     <prerequisite name="TlsConnection" render="0"/>
@@ -5232,7 +5232,7 @@
     <field name="lookup_certificates_issued_by_finish"/>
     <field name="padding"/>
   </record>
-  <enumeration name="TlsDatabaseLookupFlags" render="0">     <member name="none" value="0" cid="G_TLS_DATABASE_LOOKUP_NONE" glibnick="none" glibname="G_TLS_DATABASE_LOOKUP_NONE"/>
+  <enumeration name="TlsDatabaseLookupFlags" render="1">     <member name="none" value="0" cid="G_TLS_DATABASE_LOOKUP_NONE" glibnick="none" glibname="G_TLS_DATABASE_LOOKUP_NONE"/>
     <member name="keypair" value="1" cid="G_TLS_DATABASE_LOOKUP_KEYPAIR" glibnick="keypair" glibname="G_TLS_DATABASE_LOOKUP_KEYPAIR"/>
   </enumeration>
   <record name="TlsDatabasePrivate" gtypestructfor="" ctype="GTlsDatabasePrivate" render="0">
@@ -5240,7 +5240,7 @@
   <bitfield name="TlsDatabaseVerifyFlags" glibtypename="GTlsDatabaseVerifyFlags" ctype="GTlsDatabaseVerifyFlags" render="0">
     <member name="none" value="0" cid="G_TLS_DATABASE_VERIFY_NONE" glibnick="none" glibname="G_TLS_DATABASE_VERIFY_NONE"/>
   </bitfield>
-  <enumeration name="TlsError" render="0">     <member name="unavailable" value="0" cid="G_TLS_ERROR_UNAVAILABLE" glibnick="unavailable" glibname="G_TLS_ERROR_UNAVAILABLE"/>
+  <enumeration name="TlsError" render="1">     <member name="unavailable" value="0" cid="G_TLS_ERROR_UNAVAILABLE" glibnick="unavailable" glibname="G_TLS_ERROR_UNAVAILABLE"/>
     <member name="misc" value="1" cid="G_TLS_ERROR_MISC" glibnick="misc" glibname="G_TLS_ERROR_MISC"/>
     <member name="bad_certificate" value="2" cid="G_TLS_ERROR_BAD_CERTIFICATE" glibnick="bad-certificate" glibname="G_TLS_ERROR_BAD_CERTIFICATE"/>
     <member name="not_tls" value="3" cid="G_TLS_ERROR_NOT_TLS" glibnick="not-tls" glibname="G_TLS_ERROR_NOT_TLS"/>
@@ -5288,7 +5288,7 @@
   </record>
   <record name="TlsInteractionPrivate" gtypestructfor="" ctype="GTlsInteractionPrivate" render="0">
   </record>
-  <enumeration name="TlsInteractionResult" render="0">     <member name="unhandled" value="0" cid="G_TLS_INTERACTION_UNHANDLED" glibnick="unhandled" glibname="G_TLS_INTERACTION_UNHANDLED"/>
+  <enumeration name="TlsInteractionResult" render="1">     <member name="unhandled" value="0" cid="G_TLS_INTERACTION_UNHANDLED" glibnick="unhandled" glibname="G_TLS_INTERACTION_UNHANDLED"/>
     <member name="handled" value="1" cid="G_TLS_INTERACTION_HANDLED" glibnick="handled" glibname="G_TLS_INTERACTION_HANDLED"/>
     <member name="failed" value="2" cid="G_TLS_INTERACTION_FAILED" glibnick="failed" glibname="G_TLS_INTERACTION_FAILED"/>
   </enumeration>
@@ -5330,7 +5330,7 @@
   </bitfield>
   <record name="TlsPasswordPrivate" gtypestructfor="" ctype="GTlsPasswordPrivate" render="0">
   </record>
-  <enumeration name="TlsProtocolVersion" render="0">     <member name="unknown" value="0" cid="G_TLS_PROTOCOL_VERSION_UNKNOWN" glibnick="unknown" glibname="G_TLS_PROTOCOL_VERSION_UNKNOWN"/>
+  <enumeration name="TlsProtocolVersion" render="1">     <member name="unknown" value="0" cid="G_TLS_PROTOCOL_VERSION_UNKNOWN" glibnick="unknown" glibname="G_TLS_PROTOCOL_VERSION_UNKNOWN"/>
     <member name="ssl_3_0" value="1" cid="G_TLS_PROTOCOL_VERSION_SSL_3_0" glibnick="ssl-3-0" glibname="G_TLS_PROTOCOL_VERSION_SSL_3_0"/>
     <member name="tls_1_0" value="2" cid="G_TLS_PROTOCOL_VERSION_TLS_1_0" glibnick="tls-1-0" glibname="G_TLS_PROTOCOL_VERSION_TLS_1_0"/>
     <member name="tls_1_1" value="3" cid="G_TLS_PROTOCOL_VERSION_TLS_1_1" glibnick="tls-1-1" glibname="G_TLS_PROTOCOL_VERSION_TLS_1_1"/>
@@ -5339,7 +5339,7 @@
     <member name="dtls_1_0" value="201" cid="G_TLS_PROTOCOL_VERSION_DTLS_1_0" glibnick="dtls-1-0" glibname="G_TLS_PROTOCOL_VERSION_DTLS_1_0"/>
     <member name="dtls_1_2" value="202" cid="G_TLS_PROTOCOL_VERSION_DTLS_1_2" glibnick="dtls-1-2" glibname="G_TLS_PROTOCOL_VERSION_DTLS_1_2"/>
   </enumeration>
-  <enumeration name="TlsRehandshakeMode" render="0">     <member name="never" value="0" cid="G_TLS_REHANDSHAKE_NEVER" glibnick="never" glibname="G_TLS_REHANDSHAKE_NEVER"/>
+  <enumeration name="TlsRehandshakeMode" render="1">     <member name="never" value="0" cid="G_TLS_REHANDSHAKE_NEVER" glibnick="never" glibname="G_TLS_REHANDSHAKE_NEVER"/>
     <member name="safely" value="1" cid="G_TLS_REHANDSHAKE_SAFELY" glibnick="safely" glibname="G_TLS_REHANDSHAKE_SAFELY"/>
     <member name="unsafely" value="2" cid="G_TLS_REHANDSHAKE_UNSAFELY" glibnick="unsafely" glibname="G_TLS_REHANDSHAKE_UNSAFELY"/>
   </enumeration>
@@ -5538,7 +5538,7 @@
   </record>
   <record name="UnixSocketAddressPrivate" gtypestructfor="" ctype="GUnixSocketAddressPrivate" render="0">
   </record>
-  <enumeration name="UnixSocketAddressType" render="0">     <member name="invalid" value="0" cid="G_UNIX_SOCKET_ADDRESS_INVALID" glibnick="invalid" glibname="G_UNIX_SOCKET_ADDRESS_INVALID"/>
+  <enumeration name="UnixSocketAddressType" render="1">     <member name="invalid" value="0" cid="G_UNIX_SOCKET_ADDRESS_INVALID" glibnick="invalid" glibname="G_UNIX_SOCKET_ADDRESS_INVALID"/>
     <member name="anonymous" value="1" cid="G_UNIX_SOCKET_ADDRESS_ANONYMOUS" glibnick="anonymous" glibname="G_UNIX_SOCKET_ADDRESS_ANONYMOUS"/>
     <member name="path" value="2" cid="G_UNIX_SOCKET_ADDRESS_PATH" glibnick="path" glibname="G_UNIX_SOCKET_ADDRESS_PATH"/>
     <member name="abstract" value="3" cid="G_UNIX_SOCKET_ADDRESS_ABSTRACT" glibnick="abstract" glibname="G_UNIX_SOCKET_ADDRESS_ABSTRACT"/>
@@ -5757,7 +5757,7 @@
   <record name="ZlibCompressorClass" gtypestructfor="ZlibCompressor" ctype="GZlibCompressorClass" render="0">
     <field name="parent_class"/>
   </record>
-  <enumeration name="ZlibCompressorFormat" render="0">     <member name="zlib" value="0" cid="G_ZLIB_COMPRESSOR_FORMAT_ZLIB" glibnick="zlib" glibname="G_ZLIB_COMPRESSOR_FORMAT_ZLIB"/>
+  <enumeration name="ZlibCompressorFormat" render="1">     <member name="zlib" value="0" cid="G_ZLIB_COMPRESSOR_FORMAT_ZLIB" glibnick="zlib" glibname="G_ZLIB_COMPRESSOR_FORMAT_ZLIB"/>
     <member name="gzip" value="1" cid="G_ZLIB_COMPRESSOR_FORMAT_GZIP" glibnick="gzip" glibname="G_ZLIB_COMPRESSOR_FORMAT_GZIP"/>
     <member name="raw" value="2" cid="G_ZLIB_COMPRESSOR_FORMAT_RAW" glibnick="raw" glibname="G_ZLIB_COMPRESSOR_FORMAT_RAW"/>
   </enumeration>

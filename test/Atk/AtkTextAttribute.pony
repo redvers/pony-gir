@@ -1,0 +1,32 @@
+
+primitive EAtkTextAttribute
+  fun minvalid(): ISize => 0
+  fun mleft_margin(): ISize => 1
+  fun mright_margin(): ISize => 2
+  fun mindent(): ISize => 3
+  fun minvisible(): ISize => 4
+  fun meditable(): ISize => 5
+  fun mpixels_above_lines(): ISize => 6
+  fun mpixels_below_lines(): ISize => 7
+  fun mpixels_inside_wrap(): ISize => 8
+  fun mbg_full_height(): ISize => 9
+  fun mrise(): ISize => 10
+  fun munderline(): ISize => 11
+  fun mstrikethrough(): ISize => 12
+  fun msize(): ISize => 13
+  fun mscale(): ISize => 14
+  fun mweight(): ISize => 15
+  fun mlanguage(): ISize => 16
+  fun mfamily_name(): ISize => 17
+  fun mbg_color(): ISize => 18
+  fun mfg_color(): ISize => 19
+  fun mbg_stipple(): ISize => 20
+  fun mfg_stipple(): ISize => 21
+  fun mwrap_mode(): ISize => 22
+  fun mdirection(): ISize => 23
+  fun mjustification(): ISize => 24
+  fun mstretch(): ISize => 25
+  fun mvariant(): ISize => 26
+  fun mstyle(): ISize => 27
+  fun mtext_position(): ISize => 28
+  fun mlast_defined(): ISize => 29

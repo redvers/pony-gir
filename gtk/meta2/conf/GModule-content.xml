@@ -12,7 +12,7 @@
     <function name="supported" cid="g_module_supported" render="0"/>
   </record>
   <callback name="ModuleCheckInit" ctype="GModuleCheckInit" render="0">  </callback>
-  <enumeration name="ModuleError" render="0">     <member name="failed" value="0" cid="G_MODULE_ERROR_FAILED" glibnick="" glibname=""/>
+  <enumeration name="ModuleError" render="1">     <member name="failed" value="0" cid="G_MODULE_ERROR_FAILED" glibnick="" glibname=""/>
     <member name="check_failed" value="1" cid="G_MODULE_ERROR_CHECK_FAILED" glibnick="" glibname=""/>
   </enumeration>
   <bitfield name="ModuleFlags" glibtypename="" ctype="GModuleFlags" render="0">
