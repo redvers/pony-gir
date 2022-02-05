@@ -1,4 +1,9 @@
 
+gtkclass:
+	saxon-he -xi main.xml xsl/makeclassuse.xsl ns=Gtk class=GtkWindow
+#	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
+#	cat out/Gtk/Gtk-use.pony out/Gtk/Gtk-fn.pony > ../../test/Gtk/Gtk.pony
+
 gobjectbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject
 	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject

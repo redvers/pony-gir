@@ -80254,7 +80254,7 @@
      ponyname="gtk_window_new"
      fid="f403"
      lineno="147"
-     rv="GtkWidget">
+     rv="GtkWindow">
      <useargs>
        <usearg name="gtype" type="I32"/>
      </useargs>

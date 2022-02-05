@@ -12046,7 +12046,7 @@
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_widget_new" render="0"/>
     <function name="get_default_direction" cid="gtk_widget_get_default_direction" render="0"/>
-    <function name="get_default_style" cid="gtk_widget_get_default_style" render="0"/>
+    <function name="get_default_style" cid="gtk_widget_get_default_style" render="1"/>
     <function name="pop_composite_child" cid="gtk_widget_pop_composite_child" render="0"/>
     <function name="push_composite_child" cid="gtk_widget_push_composite_child" render="0"/>
     <function name="set_default_direction" cid="gtk_widget_set_default_direction" render="0"/>
@@ -12145,7 +12145,7 @@
     <method name="compute_expand" cid="gtk_widget_compute_expand" render="0"/>
     <method name="create_pango_context" cid="gtk_widget_create_pango_context" render="0"/>
     <method name="create_pango_layout" cid="gtk_widget_create_pango_layout" render="0"/>
-    <method name="destroy" cid="gtk_widget_destroy" render="0"/>
+    <method name="destroy" cid="gtk_widget_destroy" render="1"/>
     <method name="destroyed" cid="gtk_widget_destroyed" render="0"/>
     <method name="device_is_shadowed" cid="gtk_widget_device_is_shadowed" render="0"/>
     <method name="drag_begin" cid="gtk_drag_begin" render="0"/>
@@ -12666,10 +12666,10 @@
   </record>
   <record name="WidgetPrivate" gtypestructfor="" ctype="GtkWidgetPrivate" render="0">
   </record>
-  <class name="Window" ctype="GtkWindow" parent="GtkBin" render="0">
+  <class name="Window" ctype="GtkWindow" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
-    <constructor name="new" cid="gtk_window_new" render="0"/>
+    <constructor name="new" cid="gtk_window_new" render="1"/>
     <function name="get_default_icon_list" cid="gtk_window_get_default_icon_list" render="0"/>
     <function name="get_default_icon_name" cid="gtk_window_get_default_icon_name" render="0"/>
     <function name="list_toplevels" cid="gtk_window_list_toplevels" render="0"/>
@@ -12678,7 +12678,7 @@
     <function name="set_default_icon_from_file" cid="gtk_window_set_default_icon_from_file" render="0"/>
     <function name="set_default_icon_list" cid="gtk_window_set_default_icon_list" render="0"/>
     <function name="set_default_icon_name" cid="gtk_window_set_default_icon_name" render="0"/>
-    <function name="set_interactive_debugging" cid="gtk_window_set_interactive_debugging" render="0"/>
+    <function name="set_interactive_debugging" cid="gtk_window_set_interactive_debugging" render="1"/>
     <virtual-method name="activate_default" render="0"/>
     <virtual-method name="activate_focus" render="0"/>
     <virtual-method name="enable_debugging" render="0"/>
@@ -12693,13 +12693,13 @@
     <method name="begin_resize_drag" cid="gtk_window_begin_resize_drag" render="0"/>
     <method name="close" cid="gtk_window_close" render="0"/>
     <method name="deiconify" cid="gtk_window_deiconify" render="0"/>
-    <method name="fullscreen" cid="gtk_window_fullscreen" render="0"/>
+    <method name="fullscreen" cid="gtk_window_fullscreen" render="1"/>
     <method name="fullscreen_on_monitor" cid="gtk_window_fullscreen_on_monitor" render="0"/>
     <method name="get_accept_focus" cid="gtk_window_get_accept_focus" render="0"/>
     <method name="get_application" cid="gtk_window_get_application" render="0"/>
     <method name="get_attached_to" cid="gtk_window_get_attached_to" render="0"/>
     <method name="get_decorated" cid="gtk_window_get_decorated" render="0"/>
-    <method name="get_default_size" cid="gtk_window_get_default_size" render="0"/>
+    <method name="get_default_size" cid="gtk_window_get_default_size" render="1"/>
     <method name="get_default_widget" cid="gtk_window_get_default_widget" render="0"/>
     <method name="get_deletable" cid="gtk_window_get_deletable" render="0"/>
     <method name="get_destroy_with_parent" cid="gtk_window_get_destroy_with_parent" render="0"/>
@@ -12725,7 +12725,7 @@
     <method name="get_size" cid="gtk_window_get_size" render="0"/>
     <method name="get_skip_pager_hint" cid="gtk_window_get_skip_pager_hint" render="0"/>
     <method name="get_skip_taskbar_hint" cid="gtk_window_get_skip_taskbar_hint" render="0"/>
-    <method name="get_title" cid="gtk_window_get_title" render="0"/>
+    <method name="get_title" cid="gtk_window_get_title" render="1"/>
     <method name="get_titlebar" cid="gtk_window_get_titlebar" render="0"/>
     <method name="get_transient_for" cid="gtk_window_get_transient_for" render="0"/>
     <method name="get_type_hint" cid="gtk_window_get_type_hint" render="0"/>
@@ -12783,7 +12783,7 @@
     <method name="set_skip_pager_hint" cid="gtk_window_set_skip_pager_hint" render="0"/>
     <method name="set_skip_taskbar_hint" cid="gtk_window_set_skip_taskbar_hint" render="0"/>
     <method name="set_startup_id" cid="gtk_window_set_startup_id" render="0"/>
-    <method name="set_title" cid="gtk_window_set_title" render="0"/>
+    <method name="set_title" cid="gtk_window_set_title" render="1"/>
     <method name="set_titlebar" cid="gtk_window_set_titlebar" render="0"/>
     <method name="set_transient_for" cid="gtk_window_set_transient_for" render="0"/>
     <method name="set_type_hint" cid="gtk_window_set_type_hint" render="0"/>
