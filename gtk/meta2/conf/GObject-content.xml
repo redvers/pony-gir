@@ -259,8 +259,8 @@
   <function-macro name="OBJECT_TYPE_NAME" render="0">   </function-macro>
   <function-macro name="OBJECT_WARN_INVALID_PROPERTY_ID" render="0">   </function-macro>
   <function-macro name="OBJECT_WARN_INVALID_PSPEC" render="0">   </function-macro>
-  <class name="Object" ctype="GObject" parent="" render="0">
-    <constructor name="new" cid="g_object_new" render="0"/>
+  <class name="Object" ctype="GObject" parent="" render="1">
+    <constructor name="new" cid="g_object_new" render="1"/>
     <constructor name="new_valist" cid="g_object_new_valist" render="0"/>
     <constructor name="new_with_properties" cid="g_object_new_with_properties" render="0"/>
     <constructor name="newv" cid="g_object_newv" render="0"/>
@@ -280,7 +280,7 @@
     <method name="bind_property" cid="g_object_bind_property" render="0"/>
     <method name="bind_property_full" cid="g_object_bind_property_full" render="0"/>
     <method name="bind_property_with_closures" cid="g_object_bind_property_with_closures" render="0"/>
-    <method name="connect" cid="g_object_connect" render="0"/>
+    <method name="connect" cid="g_object_connect" render="1"/>
     <method name="disconnect" cid="g_object_disconnect" render="0"/>
     <method name="dup_data" cid="g_object_dup_data" render="0"/>
     <method name="dup_qdata" cid="g_object_dup_qdata" render="0"/>

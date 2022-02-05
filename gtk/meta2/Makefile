@@ -13,5 +13,5 @@ enumerations:
 
 clean:
 	mv ../../test/main.pony ../../test/main-ponyx
-	find ../../test/* -name '*.pony' -exec rm -f {} \;
+	find ../../test/* -name 'E*.pony' -exec rm -f {} \;
 	mv ../../test/main-ponyx ../../test/main.pony

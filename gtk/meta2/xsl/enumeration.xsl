@@ -7,7 +7,7 @@
 <xsl:param name="class"/>
 
 <xsl:template match="/castxml2pony/ns[@ns=$ns]/enumeration[@render='1']">
-  <xsl:result-document href="../../test/{concat($ns, '/', $ns, @name)}.pony" method="text">
+  <xsl:result-document href="../../test/{concat($ns, '/E', $ns, @name)}.pony" method="text">
 primitive E<xsl:value-of select="$ns"/><xsl:value-of select="@name"/>
 <xsl:for-each select="./member">
   fun m<xsl:value-of select="@name"/>(): ISize => <xsl:value-of select="@value"/>
