@@ -191,7 +191,7 @@
     <method name="supports_files" cid="g_app_info_supports_files" render="0"/>
     <method name="supports_uris" cid="g_app_info_supports_uris" render="0"/>
   </interface>
-  <bitfield name="AppInfoCreateFlags" glibtypename="GAppInfoCreateFlags" ctype="GAppInfoCreateFlags" render="0">
+  <bitfield name="AppInfoCreateFlags" glibtypename="GAppInfoCreateFlags" ctype="GAppInfoCreateFlags" render="1">
     <member name="none" value="0" cid="G_APP_INFO_CREATE_NONE" glibnick="none" glibname="G_APP_INFO_CREATE_NONE"/>
     <member name="needs_terminal" value="1" cid="G_APP_INFO_CREATE_NEEDS_TERMINAL" glibnick="needs-terminal" glibname="G_APP_INFO_CREATE_NEEDS_TERMINAL"/>
     <member name="supports_uris" value="2" cid="G_APP_INFO_CREATE_SUPPORTS_URIS" glibnick="supports-uris" glibname="G_APP_INFO_CREATE_SUPPORTS_URIS"/>
@@ -386,7 +386,7 @@
   </record>
   <record name="ApplicationCommandLinePrivate" gtypestructfor="" ctype="GApplicationCommandLinePrivate" render="0">
   </record>
-  <bitfield name="ApplicationFlags" glibtypename="GApplicationFlags" ctype="GApplicationFlags" render="0">
+  <bitfield name="ApplicationFlags" glibtypename="GApplicationFlags" ctype="GApplicationFlags" render="1">
     <member name="flags_none" value="0" cid="G_APPLICATION_FLAGS_NONE" glibnick="flags-none" glibname="G_APPLICATION_FLAGS_NONE"/>
     <member name="is_service" value="1" cid="G_APPLICATION_IS_SERVICE" glibnick="is-service" glibname="G_APPLICATION_IS_SERVICE"/>
     <member name="is_launcher" value="2" cid="G_APPLICATION_IS_LAUNCHER" glibnick="is-launcher" glibname="G_APPLICATION_IS_LAUNCHER"/>
@@ -400,7 +400,7 @@
   </bitfield>
   <record name="ApplicationPrivate" gtypestructfor="" ctype="GApplicationPrivate" render="0">
   </record>
-  <bitfield name="AskPasswordFlags" glibtypename="GAskPasswordFlags" ctype="GAskPasswordFlags" render="0">
+  <bitfield name="AskPasswordFlags" glibtypename="GAskPasswordFlags" ctype="GAskPasswordFlags" render="1">
     <member name="need_password" value="1" cid="G_ASK_PASSWORD_NEED_PASSWORD" glibnick="need-password" glibname="G_ASK_PASSWORD_NEED_PASSWORD"/>
     <member name="need_username" value="2" cid="G_ASK_PASSWORD_NEED_USERNAME" glibnick="need-username" glibname="G_ASK_PASSWORD_NEED_USERNAME"/>
     <member name="need_domain" value="4" cid="G_ASK_PASSWORD_NEED_DOMAIN" glibnick="need-domain" glibname="G_ASK_PASSWORD_NEED_DOMAIN"/>
@@ -501,14 +501,14 @@
   <callback name="BusNameAcquiredCallback" ctype="GBusNameAcquiredCallback" render="0">  </callback>
   <callback name="BusNameAppearedCallback" ctype="GBusNameAppearedCallback" render="0">  </callback>
   <callback name="BusNameLostCallback" ctype="GBusNameLostCallback" render="0">  </callback>
-  <bitfield name="BusNameOwnerFlags" glibtypename="GBusNameOwnerFlags" ctype="GBusNameOwnerFlags" render="0">
+  <bitfield name="BusNameOwnerFlags" glibtypename="GBusNameOwnerFlags" ctype="GBusNameOwnerFlags" render="1">
     <member name="none" value="0" cid="G_BUS_NAME_OWNER_FLAGS_NONE" glibnick="none" glibname="G_BUS_NAME_OWNER_FLAGS_NONE"/>
     <member name="allow_replacement" value="1" cid="G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT" glibnick="allow-replacement" glibname="G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT"/>
     <member name="replace" value="2" cid="G_BUS_NAME_OWNER_FLAGS_REPLACE" glibnick="replace" glibname="G_BUS_NAME_OWNER_FLAGS_REPLACE"/>
     <member name="do_not_queue" value="4" cid="G_BUS_NAME_OWNER_FLAGS_DO_NOT_QUEUE" glibnick="do-not-queue" glibname="G_BUS_NAME_OWNER_FLAGS_DO_NOT_QUEUE"/>
   </bitfield>
   <callback name="BusNameVanishedCallback" ctype="GBusNameVanishedCallback" render="0">  </callback>
-  <bitfield name="BusNameWatcherFlags" glibtypename="GBusNameWatcherFlags" ctype="GBusNameWatcherFlags" render="0">
+  <bitfield name="BusNameWatcherFlags" glibtypename="GBusNameWatcherFlags" ctype="GBusNameWatcherFlags" render="1">
     <member name="none" value="0" cid="G_BUS_NAME_WATCHER_FLAGS_NONE" glibnick="none" glibname="G_BUS_NAME_WATCHER_FLAGS_NONE"/>
     <member name="auto_start" value="1" cid="G_BUS_NAME_WATCHER_FLAGS_AUTO_START" glibnick="auto-start" glibname="G_BUS_NAME_WATCHER_FLAGS_AUTO_START"/>
   </bitfield>
@@ -592,7 +592,7 @@
     <method name="convert" cid="g_converter_convert" render="0"/>
     <method name="reset" cid="g_converter_reset" render="0"/>
   </interface>
-  <bitfield name="ConverterFlags" glibtypename="GConverterFlags" ctype="GConverterFlags" render="0">
+  <bitfield name="ConverterFlags" glibtypename="GConverterFlags" ctype="GConverterFlags" render="1">
     <member name="none" value="0" cid="G_CONVERTER_NO_FLAGS" glibnick="none" glibname="G_CONVERTER_NO_FLAGS"/>
     <member name="input_at_end" value="1" cid="G_CONVERTER_INPUT_AT_END" glibnick="input-at-end" glibname="G_CONVERTER_INPUT_AT_END"/>
     <member name="flush" value="2" cid="G_CONVERTER_FLUSH" glibnick="flush" glibname="G_CONVERTER_FLUSH"/>
@@ -735,12 +735,12 @@
     <glibsignal name="allow-mechanism" when="last" render="0"/>
     <glibsignal name="authorize-authenticated-peer" when="last" render="0"/>
   </class>
-  <bitfield name="DBusCallFlags" glibtypename="GDBusCallFlags" ctype="GDBusCallFlags" render="0">
+  <bitfield name="DBusCallFlags" glibtypename="GDBusCallFlags" ctype="GDBusCallFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_CALL_FLAGS_NONE" glibnick="none" glibname="G_DBUS_CALL_FLAGS_NONE"/>
     <member name="no_auto_start" value="1" cid="G_DBUS_CALL_FLAGS_NO_AUTO_START" glibnick="no-auto-start" glibname="G_DBUS_CALL_FLAGS_NO_AUTO_START"/>
     <member name="allow_interactive_authorization" value="2" cid="G_DBUS_CALL_FLAGS_ALLOW_INTERACTIVE_AUTHORIZATION" glibnick="allow-interactive-authorization" glibname="G_DBUS_CALL_FLAGS_ALLOW_INTERACTIVE_AUTHORIZATION"/>
   </bitfield>
-  <bitfield name="DBusCapabilityFlags" glibtypename="GDBusCapabilityFlags" ctype="GDBusCapabilityFlags" render="0">
+  <bitfield name="DBusCapabilityFlags" glibtypename="GDBusCapabilityFlags" ctype="GDBusCapabilityFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_CAPABILITY_FLAGS_NONE" glibnick="none" glibname="G_DBUS_CAPABILITY_FLAGS_NONE"/>
     <member name="unix_fd_passing" value="1" cid="G_DBUS_CAPABILITY_FLAGS_UNIX_FD_PASSING" glibnick="unix-fd-passing" glibname="G_DBUS_CAPABILITY_FLAGS_UNIX_FD_PASSING"/>
   </bitfield>
@@ -805,7 +805,7 @@
     <property name="unique-name" cid="" render="0"/>
     <glibsignal name="closed" when="last" render="0"/>
   </class>
-  <bitfield name="DBusConnectionFlags" glibtypename="GDBusConnectionFlags" ctype="GDBusConnectionFlags" render="0">
+  <bitfield name="DBusConnectionFlags" glibtypename="GDBusConnectionFlags" ctype="GDBusConnectionFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_CONNECTION_FLAGS_NONE" glibnick="none" glibname="G_DBUS_CONNECTION_FLAGS_NONE"/>
     <member name="authentication_client" value="1" cid="G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_CLIENT" glibnick="authentication-client" glibname="G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_CLIENT"/>
     <member name="authentication_server" value="2" cid="G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_SERVER" glibnick="authentication-server" glibname="G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_SERVER"/>
@@ -945,7 +945,7 @@
     <field name="g_authorize_method"/>
     <field name="signal_padding"/>
   </record>
-  <bitfield name="DBusInterfaceSkeletonFlags" glibtypename="GDBusInterfaceSkeletonFlags" ctype="GDBusInterfaceSkeletonFlags" render="0">
+  <bitfield name="DBusInterfaceSkeletonFlags" glibtypename="GDBusInterfaceSkeletonFlags" ctype="GDBusInterfaceSkeletonFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_INTERFACE_SKELETON_FLAGS_NONE" glibnick="none" glibname="G_DBUS_INTERFACE_SKELETON_FLAGS_NONE"/>
     <member name="handle_method_invocations_in_thread" value="1" cid="G_DBUS_INTERFACE_SKELETON_FLAGS_HANDLE_METHOD_INVOCATIONS_IN_THREAD" glibnick="handle-method-invocations-in-thread" glibname="G_DBUS_INTERFACE_SKELETON_FLAGS_HANDLE_METHOD_INVOCATIONS_IN_THREAD"/>
   </bitfield>
@@ -1016,7 +1016,7 @@
     <member name="little_endian" value="108" cid="G_DBUS_MESSAGE_BYTE_ORDER_LITTLE_ENDIAN" glibnick="little-endian" glibname="G_DBUS_MESSAGE_BYTE_ORDER_LITTLE_ENDIAN"/>
   </enumeration>
   <callback name="DBusMessageFilterFunction" ctype="GDBusMessageFilterFunction" render="0">  </callback>
-  <bitfield name="DBusMessageFlags" glibtypename="GDBusMessageFlags" ctype="GDBusMessageFlags" render="0">
+  <bitfield name="DBusMessageFlags" glibtypename="GDBusMessageFlags" ctype="GDBusMessageFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_MESSAGE_FLAGS_NONE" glibnick="none" glibname="G_DBUS_MESSAGE_FLAGS_NONE"/>
     <member name="no_reply_expected" value="1" cid="G_DBUS_MESSAGE_FLAGS_NO_REPLY_EXPECTED" glibnick="no-reply-expected" glibname="G_DBUS_MESSAGE_FLAGS_NO_REPLY_EXPECTED"/>
     <member name="no_auto_start" value="2" cid="G_DBUS_MESSAGE_FLAGS_NO_AUTO_START" glibnick="no-auto-start" glibname="G_DBUS_MESSAGE_FLAGS_NO_AUTO_START"/>
@@ -1152,7 +1152,7 @@
     <field name="interface_proxy_properties_changed"/>
     <field name="padding"/>
   </record>
-  <bitfield name="DBusObjectManagerClientFlags" glibtypename="GDBusObjectManagerClientFlags" ctype="GDBusObjectManagerClientFlags" render="0">
+  <bitfield name="DBusObjectManagerClientFlags" glibtypename="GDBusObjectManagerClientFlags" ctype="GDBusObjectManagerClientFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_OBJECT_MANAGER_CLIENT_FLAGS_NONE" glibnick="none" glibname="G_DBUS_OBJECT_MANAGER_CLIENT_FLAGS_NONE"/>
     <member name="do_not_auto_start" value="1" cid="G_DBUS_OBJECT_MANAGER_CLIENT_FLAGS_DO_NOT_AUTO_START" glibnick="do-not-auto-start" glibname="G_DBUS_OBJECT_MANAGER_CLIENT_FLAGS_DO_NOT_AUTO_START"/>
   </bitfield>
@@ -1234,7 +1234,7 @@
     <method name="ref" cid="g_dbus_property_info_ref" render="0"/>
     <method name="unref" cid="g_dbus_property_info_unref" render="0"/>
   </record>
-  <bitfield name="DBusPropertyInfoFlags" glibtypename="GDBusPropertyInfoFlags" ctype="GDBusPropertyInfoFlags" render="0">
+  <bitfield name="DBusPropertyInfoFlags" glibtypename="GDBusPropertyInfoFlags" ctype="GDBusPropertyInfoFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_PROPERTY_INFO_FLAGS_NONE" glibnick="none" glibname="G_DBUS_PROPERTY_INFO_FLAGS_NONE"/>
     <member name="readable" value="1" cid="G_DBUS_PROPERTY_INFO_FLAGS_READABLE" glibnick="readable" glibname="G_DBUS_PROPERTY_INFO_FLAGS_READABLE"/>
     <member name="writable" value="2" cid="G_DBUS_PROPERTY_INFO_FLAGS_WRITABLE" glibnick="writable" glibname="G_DBUS_PROPERTY_INFO_FLAGS_WRITABLE"/>
@@ -1290,7 +1290,7 @@
     <field name="g_signal"/>
     <field name="padding"/>
   </record>
-  <bitfield name="DBusProxyFlags" glibtypename="GDBusProxyFlags" ctype="GDBusProxyFlags" render="0">
+  <bitfield name="DBusProxyFlags" glibtypename="GDBusProxyFlags" ctype="GDBusProxyFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_PROXY_FLAGS_NONE" glibnick="none" glibname="G_DBUS_PROXY_FLAGS_NONE"/>
     <member name="do_not_load_properties" value="1" cid="G_DBUS_PROXY_FLAGS_DO_NOT_LOAD_PROPERTIES" glibnick="do-not-load-properties" glibname="G_DBUS_PROXY_FLAGS_DO_NOT_LOAD_PROPERTIES"/>
     <member name="do_not_connect_signals" value="2" cid="G_DBUS_PROXY_FLAGS_DO_NOT_CONNECT_SIGNALS" glibnick="do-not-connect-signals" glibname="G_DBUS_PROXY_FLAGS_DO_NOT_CONNECT_SIGNALS"/>
@@ -1302,7 +1302,7 @@
   <record name="DBusProxyPrivate" gtypestructfor="" ctype="GDBusProxyPrivate" render="0">
   </record>
   <callback name="DBusProxyTypeFunc" ctype="GDBusProxyTypeFunc" render="0">  </callback>
-  <bitfield name="DBusSendMessageFlags" glibtypename="GDBusSendMessageFlags" ctype="GDBusSendMessageFlags" render="0">
+  <bitfield name="DBusSendMessageFlags" glibtypename="GDBusSendMessageFlags" ctype="GDBusSendMessageFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_SEND_MESSAGE_FLAGS_NONE" glibnick="none" glibname="G_DBUS_SEND_MESSAGE_FLAGS_NONE"/>
     <member name="preserve_serial" value="1" cid="G_DBUS_SEND_MESSAGE_FLAGS_PRESERVE_SERIAL" glibnick="preserve-serial" glibname="G_DBUS_SEND_MESSAGE_FLAGS_PRESERVE_SERIAL"/>
   </bitfield>
@@ -1323,14 +1323,14 @@
     <property name="guid" cid="" render="0"/>
     <glibsignal name="new-connection" when="last" render="0"/>
   </class>
-  <bitfield name="DBusServerFlags" glibtypename="GDBusServerFlags" ctype="GDBusServerFlags" render="0">
+  <bitfield name="DBusServerFlags" glibtypename="GDBusServerFlags" ctype="GDBusServerFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_SERVER_FLAGS_NONE" glibnick="none" glibname="G_DBUS_SERVER_FLAGS_NONE"/>
     <member name="run_in_thread" value="1" cid="G_DBUS_SERVER_FLAGS_RUN_IN_THREAD" glibnick="run-in-thread" glibname="G_DBUS_SERVER_FLAGS_RUN_IN_THREAD"/>
     <member name="authentication_allow_anonymous" value="2" cid="G_DBUS_SERVER_FLAGS_AUTHENTICATION_ALLOW_ANONYMOUS" glibnick="authentication-allow-anonymous" glibname="G_DBUS_SERVER_FLAGS_AUTHENTICATION_ALLOW_ANONYMOUS"/>
     <member name="authentication_require_same_user" value="4" cid="G_DBUS_SERVER_FLAGS_AUTHENTICATION_REQUIRE_SAME_USER" glibnick="authentication-require-same-user" glibname="G_DBUS_SERVER_FLAGS_AUTHENTICATION_REQUIRE_SAME_USER"/>
   </bitfield>
   <callback name="DBusSignalCallback" ctype="GDBusSignalCallback" render="0">  </callback>
-  <bitfield name="DBusSignalFlags" glibtypename="GDBusSignalFlags" ctype="GDBusSignalFlags" render="0">
+  <bitfield name="DBusSignalFlags" glibtypename="GDBusSignalFlags" ctype="GDBusSignalFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_SIGNAL_FLAGS_NONE" glibnick="none" glibname="G_DBUS_SIGNAL_FLAGS_NONE"/>
     <member name="no_match_rule" value="1" cid="G_DBUS_SIGNAL_FLAGS_NO_MATCH_RULE" glibnick="no-match-rule" glibname="G_DBUS_SIGNAL_FLAGS_NO_MATCH_RULE"/>
     <member name="match_arg0_namespace" value="2" cid="G_DBUS_SIGNAL_FLAGS_MATCH_ARG0_NAMESPACE" glibnick="match-arg0-namespace" glibname="G_DBUS_SIGNAL_FLAGS_MATCH_ARG0_NAMESPACE"/>
@@ -1346,7 +1346,7 @@
   </record>
   <callback name="DBusSubtreeDispatchFunc" ctype="GDBusSubtreeDispatchFunc" render="0">  </callback>
   <callback name="DBusSubtreeEnumerateFunc" ctype="GDBusSubtreeEnumerateFunc" render="0">  </callback>
-  <bitfield name="DBusSubtreeFlags" glibtypename="GDBusSubtreeFlags" ctype="GDBusSubtreeFlags" render="0">
+  <bitfield name="DBusSubtreeFlags" glibtypename="GDBusSubtreeFlags" ctype="GDBusSubtreeFlags" render="1">
     <member name="none" value="0" cid="G_DBUS_SUBTREE_FLAGS_NONE" glibnick="none" glibname="G_DBUS_SUBTREE_FLAGS_NONE"/>
     <member name="dispatch_to_unenumerated_nodes" value="1" cid="G_DBUS_SUBTREE_FLAGS_DISPATCH_TO_UNENUMERATED_NODES" glibnick="dispatch-to-unenumerated-nodes" glibname="G_DBUS_SUBTREE_FLAGS_DISPATCH_TO_UNENUMERATED_NODES"/>
   </bitfield>
@@ -1607,7 +1607,7 @@
     <field name="get_symbolic_icon"/>
     <field name="is_removable"/>
   </record>
-  <bitfield name="DriveStartFlags" glibtypename="GDriveStartFlags" ctype="GDriveStartFlags" render="0">
+  <bitfield name="DriveStartFlags" glibtypename="GDriveStartFlags" ctype="GDriveStartFlags" render="1">
     <member name="none" value="0" cid="G_DRIVE_START_NONE" glibnick="none" glibname="G_DRIVE_START_NONE"/>
   </bitfield>
   <enumeration name="DriveStartStopType" render="1">     <member name="unknown" value="0" cid="G_DRIVE_START_STOP_TYPE_UNKNOWN" glibnick="unknown" glibname="G_DRIVE_START_STOP_TYPE_UNKNOWN"/>
@@ -2091,7 +2091,7 @@
     <field name="type"/>
     <field name="flags"/>
   </record>
-  <bitfield name="FileAttributeInfoFlags" glibtypename="GFileAttributeInfoFlags" ctype="GFileAttributeInfoFlags" render="0">
+  <bitfield name="FileAttributeInfoFlags" glibtypename="GFileAttributeInfoFlags" ctype="GFileAttributeInfoFlags" render="1">
     <member name="none" value="0" cid="G_FILE_ATTRIBUTE_INFO_NONE" glibnick="none" glibname="G_FILE_ATTRIBUTE_INFO_NONE"/>
     <member name="copy_with_file" value="1" cid="G_FILE_ATTRIBUTE_INFO_COPY_WITH_FILE" glibnick="copy-with-file" glibname="G_FILE_ATTRIBUTE_INFO_COPY_WITH_FILE"/>
     <member name="copy_when_moved" value="2" cid="G_FILE_ATTRIBUTE_INFO_COPY_WHEN_MOVED" glibnick="copy-when-moved" glibname="G_FILE_ATTRIBUTE_INFO_COPY_WHEN_MOVED"/>
@@ -2132,7 +2132,7 @@
     <member name="object" value="8" cid="G_FILE_ATTRIBUTE_TYPE_OBJECT" glibnick="object" glibname="G_FILE_ATTRIBUTE_TYPE_OBJECT"/>
     <member name="stringv" value="9" cid="G_FILE_ATTRIBUTE_TYPE_STRINGV" glibnick="stringv" glibname="G_FILE_ATTRIBUTE_TYPE_STRINGV"/>
   </enumeration>
-  <bitfield name="FileCopyFlags" glibtypename="GFileCopyFlags" ctype="GFileCopyFlags" render="0">
+  <bitfield name="FileCopyFlags" glibtypename="GFileCopyFlags" ctype="GFileCopyFlags" render="1">
     <member name="none" value="0" cid="G_FILE_COPY_NONE" glibnick="none" glibname="G_FILE_COPY_NONE"/>
     <member name="overwrite" value="1" cid="G_FILE_COPY_OVERWRITE" glibnick="overwrite" glibname="G_FILE_COPY_OVERWRITE"/>
     <member name="backup" value="2" cid="G_FILE_COPY_BACKUP" glibnick="backup" glibname="G_FILE_COPY_BACKUP"/>
@@ -2141,7 +2141,7 @@
     <member name="no_fallback_for_move" value="16" cid="G_FILE_COPY_NO_FALLBACK_FOR_MOVE" glibnick="no-fallback-for-move" glibname="G_FILE_COPY_NO_FALLBACK_FOR_MOVE"/>
     <member name="target_default_perms" value="32" cid="G_FILE_COPY_TARGET_DEFAULT_PERMS" glibnick="target-default-perms" glibname="G_FILE_COPY_TARGET_DEFAULT_PERMS"/>
   </bitfield>
-  <bitfield name="FileCreateFlags" glibtypename="GFileCreateFlags" ctype="GFileCreateFlags" render="0">
+  <bitfield name="FileCreateFlags" glibtypename="GFileCreateFlags" ctype="GFileCreateFlags" render="1">
     <member name="none" value="0" cid="G_FILE_CREATE_NONE" glibnick="none" glibname="G_FILE_CREATE_NONE"/>
     <member name="private" value="1" cid="G_FILE_CREATE_PRIVATE" glibnick="private" glibname="G_FILE_CREATE_PRIVATE"/>
     <member name="replace_destination" value="2" cid="G_FILE_CREATE_REPLACE_DESTINATION" glibnick="replace-destination" glibname="G_FILE_CREATE_REPLACE_DESTINATION"/>
@@ -2449,7 +2449,7 @@
   </record>
   <record name="FileInputStreamPrivate" gtypestructfor="" ctype="GFileInputStreamPrivate" render="0">
   </record>
-  <bitfield name="FileMeasureFlags" glibtypename="GFileMeasureFlags" ctype="GFileMeasureFlags" render="0">
+  <bitfield name="FileMeasureFlags" glibtypename="GFileMeasureFlags" ctype="GFileMeasureFlags" render="1">
     <member name="none" value="0" cid="G_FILE_MEASURE_NONE" glibnick="none" glibname="G_FILE_MEASURE_NONE"/>
     <member name="report_any_error" value="2" cid="G_FILE_MEASURE_REPORT_ANY_ERROR" glibnick="report-any-error" glibname="G_FILE_MEASURE_REPORT_ANY_ERROR"/>
     <member name="apparent_size" value="4" cid="G_FILE_MEASURE_APPARENT_SIZE" glibnick="apparent-size" glibname="G_FILE_MEASURE_APPARENT_SIZE"/>
@@ -2491,7 +2491,7 @@
     <member name="moved_in" value="9" cid="G_FILE_MONITOR_EVENT_MOVED_IN" glibnick="moved-in" glibname="G_FILE_MONITOR_EVENT_MOVED_IN"/>
     <member name="moved_out" value="10" cid="G_FILE_MONITOR_EVENT_MOVED_OUT" glibnick="moved-out" glibname="G_FILE_MONITOR_EVENT_MOVED_OUT"/>
   </enumeration>
-  <bitfield name="FileMonitorFlags" glibtypename="GFileMonitorFlags" ctype="GFileMonitorFlags" render="0">
+  <bitfield name="FileMonitorFlags" glibtypename="GFileMonitorFlags" ctype="GFileMonitorFlags" render="1">
     <member name="none" value="0" cid="G_FILE_MONITOR_NONE" glibnick="none" glibname="G_FILE_MONITOR_NONE"/>
     <member name="watch_mounts" value="1" cid="G_FILE_MONITOR_WATCH_MOUNTS" glibnick="watch-mounts" glibname="G_FILE_MONITOR_WATCH_MOUNTS"/>
     <member name="send_moved" value="2" cid="G_FILE_MONITOR_SEND_MOVED" glibnick="send-moved" glibname="G_FILE_MONITOR_SEND_MOVED"/>
@@ -2538,7 +2538,7 @@
   <record name="FileOutputStreamPrivate" gtypestructfor="" ctype="GFileOutputStreamPrivate" render="0">
   </record>
   <callback name="FileProgressCallback" ctype="GFileProgressCallback" render="0">  </callback>
-  <bitfield name="FileQueryInfoFlags" glibtypename="GFileQueryInfoFlags" ctype="GFileQueryInfoFlags" render="0">
+  <bitfield name="FileQueryInfoFlags" glibtypename="GFileQueryInfoFlags" ctype="GFileQueryInfoFlags" render="1">
     <member name="none" value="0" cid="G_FILE_QUERY_INFO_NONE" glibnick="none" glibname="G_FILE_QUERY_INFO_NONE"/>
     <member name="nofollow_symlinks" value="1" cid="G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS" glibnick="nofollow-symlinks" glibname="G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS"/>
   </bitfield>
@@ -2747,7 +2747,7 @@
   </record>
   <record name="IOStreamPrivate" gtypestructfor="" ctype="GIOStreamPrivate" render="0">
   </record>
-  <bitfield name="IOStreamSpliceFlags" glibtypename="GIOStreamSpliceFlags" ctype="GIOStreamSpliceFlags" render="0">
+  <bitfield name="IOStreamSpliceFlags" glibtypename="GIOStreamSpliceFlags" ctype="GIOStreamSpliceFlags" render="1">
     <member name="none" value="0" cid="G_IO_STREAM_SPLICE_NONE" glibnick="none" glibname="G_IO_STREAM_SPLICE_NONE"/>
     <member name="close_stream1" value="1" cid="G_IO_STREAM_SPLICE_CLOSE_STREAM1" glibnick="close-stream1" glibname="G_IO_STREAM_SPLICE_CLOSE_STREAM1"/>
     <member name="close_stream2" value="2" cid="G_IO_STREAM_SPLICE_CLOSE_STREAM2" glibnick="close-stream2" glibname="G_IO_STREAM_SPLICE_CLOSE_STREAM2"/>
@@ -3500,7 +3500,7 @@
     <field name="get_sort_key"/>
     <field name="get_symbolic_icon"/>
   </record>
-  <bitfield name="MountMountFlags" glibtypename="GMountMountFlags" ctype="GMountMountFlags" render="0">
+  <bitfield name="MountMountFlags" glibtypename="GMountMountFlags" ctype="GMountMountFlags" render="1">
     <member name="none" value="0" cid="G_MOUNT_MOUNT_NONE" glibnick="none" glibname="G_MOUNT_MOUNT_NONE"/>
   </bitfield>
   <class name="MountOperation" ctype="GMountOperation" parent="GObject.Object" render="0">
@@ -3572,7 +3572,7 @@
     <member name="aborted" value="1" cid="G_MOUNT_OPERATION_ABORTED" glibnick="aborted" glibname="G_MOUNT_OPERATION_ABORTED"/>
     <member name="unhandled" value="2" cid="G_MOUNT_OPERATION_UNHANDLED" glibnick="unhandled" glibname="G_MOUNT_OPERATION_UNHANDLED"/>
   </enumeration>
-  <bitfield name="MountUnmountFlags" glibtypename="GMountUnmountFlags" ctype="GMountUnmountFlags" render="0">
+  <bitfield name="MountUnmountFlags" glibtypename="GMountUnmountFlags" ctype="GMountUnmountFlags" render="1">
     <member name="none" value="0" cid="G_MOUNT_UNMOUNT_NONE" glibnick="none" glibname="G_MOUNT_UNMOUNT_NONE"/>
     <member name="force" value="1" cid="G_MOUNT_UNMOUNT_FORCE" glibnick="force" glibname="G_MOUNT_UNMOUNT_FORCE"/>
   </bitfield>
@@ -3785,7 +3785,7 @@
   </record>
   <record name="OutputStreamPrivate" gtypestructfor="" ctype="GOutputStreamPrivate" render="0">
   </record>
-  <bitfield name="OutputStreamSpliceFlags" glibtypename="GOutputStreamSpliceFlags" ctype="GOutputStreamSpliceFlags" render="0">
+  <bitfield name="OutputStreamSpliceFlags" glibtypename="GOutputStreamSpliceFlags" ctype="GOutputStreamSpliceFlags" render="1">
     <member name="none" value="0" cid="G_OUTPUT_STREAM_SPLICE_NONE" glibnick="none" glibname="G_OUTPUT_STREAM_SPLICE_NONE"/>
     <member name="close_source" value="1" cid="G_OUTPUT_STREAM_SPLICE_CLOSE_SOURCE" glibnick="close-source" glibname="G_OUTPUT_STREAM_SPLICE_CLOSE_SOURCE"/>
     <member name="close_target" value="2" cid="G_OUTPUT_STREAM_SPLICE_CLOSE_TARGET" glibnick="close-target" glibname="G_OUTPUT_STREAM_SPLICE_CLOSE_TARGET"/>
@@ -4078,7 +4078,7 @@
     <member name="internal" value="2" cid="G_RESOLVER_ERROR_INTERNAL" glibnick="internal" glibname="G_RESOLVER_ERROR_INTERNAL"/>
     <function name="quark" cid="g_resolver_error_quark" render="0"/>
   </enumeration>
-  <bitfield name="ResolverNameLookupFlags" glibtypename="GResolverNameLookupFlags" ctype="GResolverNameLookupFlags" render="0">
+  <bitfield name="ResolverNameLookupFlags" glibtypename="GResolverNameLookupFlags" ctype="GResolverNameLookupFlags" render="1">
     <member name="default" value="0" cid="G_RESOLVER_NAME_LOOKUP_FLAGS_DEFAULT" glibnick="default" glibname="G_RESOLVER_NAME_LOOKUP_FLAGS_DEFAULT"/>
     <member name="ipv4_only" value="1" cid="G_RESOLVER_NAME_LOOKUP_FLAGS_IPV4_ONLY" glibnick="ipv4-only" glibname="G_RESOLVER_NAME_LOOKUP_FLAGS_IPV4_ONLY"/>
     <member name="ipv6_only" value="2" cid="G_RESOLVER_NAME_LOOKUP_FLAGS_IPV6_ONLY" glibnick="ipv6-only" glibname="G_RESOLVER_NAME_LOOKUP_FLAGS_IPV6_ONLY"/>
@@ -4107,11 +4107,11 @@
     <member name="internal" value="1" cid="G_RESOURCE_ERROR_INTERNAL" glibnick="internal" glibname="G_RESOURCE_ERROR_INTERNAL"/>
     <function name="quark" cid="g_resource_error_quark" render="0"/>
   </enumeration>
-  <bitfield name="ResourceFlags" glibtypename="GResourceFlags" ctype="GResourceFlags" render="0">
+  <bitfield name="ResourceFlags" glibtypename="GResourceFlags" ctype="GResourceFlags" render="1">
     <member name="none" value="0" cid="G_RESOURCE_FLAGS_NONE" glibnick="none" glibname="G_RESOURCE_FLAGS_NONE"/>
     <member name="compressed" value="1" cid="G_RESOURCE_FLAGS_COMPRESSED" glibnick="compressed" glibname="G_RESOURCE_FLAGS_COMPRESSED"/>
   </bitfield>
-  <bitfield name="ResourceLookupFlags" glibtypename="GResourceLookupFlags" ctype="GResourceLookupFlags" render="0">
+  <bitfield name="ResourceLookupFlags" glibtypename="GResourceLookupFlags" ctype="GResourceLookupFlags" render="1">
     <member name="none" value="0" cid="G_RESOURCE_LOOKUP_FLAGS_NONE" glibnick="none" glibname="G_RESOURCE_LOOKUP_FLAGS_NONE"/>
   </bitfield>
   <function-macro name="SEEKABLE" render="0">   </function-macro>
@@ -4290,7 +4290,7 @@
   </record>
   <record name="SettingsBackendPrivate" gtypestructfor="" ctype="GSettingsBackendPrivate" render="0">
   </record>
-  <bitfield name="SettingsBindFlags" glibtypename="GSettingsBindFlags" ctype="GSettingsBindFlags" render="0">
+  <bitfield name="SettingsBindFlags" glibtypename="GSettingsBindFlags" ctype="GSettingsBindFlags" render="1">
     <member name="default" value="0" cid="G_SETTINGS_BIND_DEFAULT" glibnick="default" glibname="G_SETTINGS_BIND_DEFAULT"/>
     <member name="get" value="1" cid="G_SETTINGS_BIND_GET" glibnick="get" glibname="G_SETTINGS_BIND_GET"/>
     <member name="set" value="2" cid="G_SETTINGS_BIND_SET" glibnick="set" glibname="G_SETTINGS_BIND_SET"/>
@@ -4729,7 +4729,7 @@
   </enumeration>
   <record name="SocketListenerPrivate" gtypestructfor="" ctype="GSocketListenerPrivate" render="0">
   </record>
-  <bitfield name="SocketMsgFlags" glibtypename="GSocketMsgFlags" ctype="GSocketMsgFlags" render="0">
+  <bitfield name="SocketMsgFlags" glibtypename="GSocketMsgFlags" ctype="GSocketMsgFlags" render="1">
     <member name="none" value="0" cid="G_SOCKET_MSG_NONE" glibnick="none" glibname="G_SOCKET_MSG_NONE"/>
     <member name="oob" value="1" cid="G_SOCKET_MSG_OOB" glibnick="oob" glibname="G_SOCKET_MSG_OOB"/>
     <member name="peek" value="2" cid="G_SOCKET_MSG_PEEK" glibnick="peek" glibname="G_SOCKET_MSG_PEEK"/>
@@ -4823,7 +4823,7 @@
     <property name="argv" cid="" render="0"/>
     <property name="flags" cid="" render="0"/>
   </class>
-  <bitfield name="SubprocessFlags" glibtypename="GSubprocessFlags" ctype="GSubprocessFlags" render="0">
+  <bitfield name="SubprocessFlags" glibtypename="GSubprocessFlags" ctype="GSubprocessFlags" render="1">
     <member name="none" value="0" cid="G_SUBPROCESS_FLAGS_NONE" glibnick="none" glibname="G_SUBPROCESS_FLAGS_NONE"/>
     <member name="stdin_pipe" value="1" cid="G_SUBPROCESS_FLAGS_STDIN_PIPE" glibnick="stdin-pipe" glibname="G_SUBPROCESS_FLAGS_STDIN_PIPE"/>
     <member name="stdin_inherit" value="2" cid="G_SUBPROCESS_FLAGS_STDIN_INHERIT" glibnick="stdin-inherit" glibname="G_SUBPROCESS_FLAGS_STDIN_INHERIT"/>
@@ -4978,7 +4978,7 @@
     <method name="up" cid="g_test_dbus_up" render="0"/>
     <property name="flags" cid="" render="0"/>
   </class>
-  <bitfield name="TestDBusFlags" glibtypename="GTestDBusFlags" ctype="GTestDBusFlags" render="0">
+  <bitfield name="TestDBusFlags" glibtypename="GTestDBusFlags" ctype="GTestDBusFlags" render="1">
     <member name="none" value="0" cid="G_TEST_DBUS_NONE" glibnick="none" glibname="G_TEST_DBUS_NONE"/>
   </bitfield>
   <class name="ThemedIcon" ctype="GThemedIcon" parent="GObject.Object" render="0">
@@ -5082,7 +5082,7 @@
     <field name="verify"/>
     <field name="padding"/>
   </record>
-  <bitfield name="TlsCertificateFlags" glibtypename="GTlsCertificateFlags" ctype="GTlsCertificateFlags" render="0">
+  <bitfield name="TlsCertificateFlags" glibtypename="GTlsCertificateFlags" ctype="GTlsCertificateFlags" render="1">
     <member name="unknown_ca" value="1" cid="G_TLS_CERTIFICATE_UNKNOWN_CA" glibnick="unknown-ca" glibname="G_TLS_CERTIFICATE_UNKNOWN_CA"/>
     <member name="bad_identity" value="2" cid="G_TLS_CERTIFICATE_BAD_IDENTITY" glibnick="bad-identity" glibname="G_TLS_CERTIFICATE_BAD_IDENTITY"/>
     <member name="not_activated" value="4" cid="G_TLS_CERTIFICATE_NOT_ACTIVATED" glibnick="not-activated" glibname="G_TLS_CERTIFICATE_NOT_ACTIVATED"/>
@@ -5237,7 +5237,7 @@
   </enumeration>
   <record name="TlsDatabasePrivate" gtypestructfor="" ctype="GTlsDatabasePrivate" render="0">
   </record>
-  <bitfield name="TlsDatabaseVerifyFlags" glibtypename="GTlsDatabaseVerifyFlags" ctype="GTlsDatabaseVerifyFlags" render="0">
+  <bitfield name="TlsDatabaseVerifyFlags" glibtypename="GTlsDatabaseVerifyFlags" ctype="GTlsDatabaseVerifyFlags" render="1">
     <member name="none" value="0" cid="G_TLS_DATABASE_VERIFY_NONE" glibnick="none" glibname="G_TLS_DATABASE_VERIFY_NONE"/>
   </bitfield>
   <enumeration name="TlsError" render="1">     <member name="unavailable" value="0" cid="G_TLS_ERROR_UNAVAILABLE" glibnick="unavailable" glibname="G_TLS_ERROR_UNAVAILABLE"/>
@@ -5319,7 +5319,7 @@
     <field name="get_default_warning"/>
     <field name="padding"/>
   </record>
-  <bitfield name="TlsPasswordFlags" glibtypename="GTlsPasswordFlags" ctype="GTlsPasswordFlags" render="0">
+  <bitfield name="TlsPasswordFlags" glibtypename="GTlsPasswordFlags" ctype="GTlsPasswordFlags" render="1">
     <member name="none" value="0" cid="G_TLS_PASSWORD_NONE" glibnick="none" glibname="G_TLS_PASSWORD_NONE"/>
     <member name="retry" value="2" cid="G_TLS_PASSWORD_RETRY" glibnick="retry" glibname="G_TLS_PASSWORD_RETRY"/>
     <member name="many_tries" value="4" cid="G_TLS_PASSWORD_MANY_TRIES" glibnick="many-tries" glibname="G_TLS_PASSWORD_MANY_TRIES"/>

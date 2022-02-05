@@ -425,7 +425,7 @@
     <field name="get_family"/>
     <field name="get_face"/>
   </record>
-  <bitfield name="FontMask" glibtypename="PangoFontMask" ctype="PangoFontMask" render="0">
+  <bitfield name="FontMask" glibtypename="PangoFontMask" ctype="PangoFontMask" render="1">
     <member name="family" value="1" cid="PANGO_FONT_MASK_FAMILY" glibnick="family" glibname="PANGO_FONT_MASK_FAMILY"/>
     <member name="style" value="2" cid="PANGO_FONT_MASK_STYLE" glibnick="style" glibname="PANGO_FONT_MASK_STYLE"/>
     <member name="variant" value="4" cid="PANGO_FONT_MASK_VARIANT" glibnick="variant" glibname="PANGO_FONT_MASK_VARIANT"/>
@@ -688,7 +688,7 @@
     <member name="missing_value" value="2" cid="PANGO_LAYOUT_DESERIALIZE_MISSING_VALUE" glibnick="missing-value" glibname="PANGO_LAYOUT_DESERIALIZE_MISSING_VALUE"/>
     <function name="quark" cid="pango_layout_deserialize_error_quark" render="0"/>
   </enumeration>
-  <bitfield name="LayoutDeserializeFlags" glibtypename="PangoLayoutDeserializeFlags" ctype="PangoLayoutDeserializeFlags" render="0">
+  <bitfield name="LayoutDeserializeFlags" glibtypename="PangoLayoutDeserializeFlags" ctype="PangoLayoutDeserializeFlags" render="1">
     <member name="default" value="0" cid="PANGO_LAYOUT_DESERIALIZE_DEFAULT" glibnick="default" glibname="PANGO_LAYOUT_DESERIALIZE_DEFAULT"/>
     <member name="context" value="1" cid="PANGO_LAYOUT_DESERIALIZE_CONTEXT" glibnick="context" glibname="PANGO_LAYOUT_DESERIALIZE_CONTEXT"/>
   </bitfield>
@@ -735,7 +735,7 @@
     <method name="unref" cid="pango_layout_line_unref" render="0"/>
     <method name="x_to_index" cid="pango_layout_line_x_to_index" render="0"/>
   </record>
-  <bitfield name="LayoutSerializeFlags" glibtypename="PangoLayoutSerializeFlags" ctype="PangoLayoutSerializeFlags" render="0">
+  <bitfield name="LayoutSerializeFlags" glibtypename="PangoLayoutSerializeFlags" ctype="PangoLayoutSerializeFlags" render="1">
     <member name="default" value="0" cid="PANGO_LAYOUT_SERIALIZE_DEFAULT" glibnick="default" glibname="PANGO_LAYOUT_SERIALIZE_DEFAULT"/>
     <member name="context" value="1" cid="PANGO_LAYOUT_SERIALIZE_CONTEXT" glibnick="context" glibname="PANGO_LAYOUT_SERIALIZE_CONTEXT"/>
     <member name="output" value="2" cid="PANGO_LAYOUT_SERIALIZE_OUTPUT" glibnick="output" glibname="PANGO_LAYOUT_SERIALIZE_OUTPUT"/>
@@ -986,11 +986,11 @@
     <method name="get_range" cid="pango_script_iter_get_range" render="0"/>
     <method name="next" cid="pango_script_iter_next" render="0"/>
   </record>
-  <bitfield name="ShapeFlags" glibtypename="PangoShapeFlags" ctype="PangoShapeFlags" render="0">
+  <bitfield name="ShapeFlags" glibtypename="PangoShapeFlags" ctype="PangoShapeFlags" render="1">
     <member name="none" value="0" cid="PANGO_SHAPE_NONE" glibnick="none" glibname="PANGO_SHAPE_NONE"/>
     <member name="round_positions" value="1" cid="PANGO_SHAPE_ROUND_POSITIONS" glibnick="round-positions" glibname="PANGO_SHAPE_ROUND_POSITIONS"/>
   </bitfield>
-  <bitfield name="ShowFlags" glibtypename="PangoShowFlags" ctype="PangoShowFlags" render="0">
+  <bitfield name="ShowFlags" glibtypename="PangoShowFlags" ctype="PangoShowFlags" render="1">
     <member name="none" value="0" cid="PANGO_SHOW_NONE" glibnick="none" glibname="PANGO_SHOW_NONE"/>
     <member name="spaces" value="1" cid="PANGO_SHOW_SPACES" glibnick="spaces" glibname="PANGO_SHOW_SPACES"/>
     <member name="line_breaks" value="2" cid="PANGO_SHOW_LINE_BREAKS" glibnick="line-breaks" glibname="PANGO_SHOW_LINE_BREAKS"/>

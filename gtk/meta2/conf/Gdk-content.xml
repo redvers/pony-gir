@@ -2,7 +2,7 @@
   <alias name="XEvent" render="0">   </alias>
   <function-macro name="APP_LAUNCH_CONTEXT" render="0">   </function-macro>
   <function-macro name="ATOM_TO_POINTER" render="0">   </function-macro>
-  <bitfield name="AnchorHints" glibtypename="GdkAnchorHints" ctype="GdkAnchorHints" render="0">
+  <bitfield name="AnchorHints" glibtypename="GdkAnchorHints" ctype="GdkAnchorHints" render="1">
     <member name="flip_x" value="1" cid="GDK_ANCHOR_FLIP_X" glibnick="flip-x" glibname="GDK_ANCHOR_FLIP_X"/>
     <member name="flip_y" value="2" cid="GDK_ANCHOR_FLIP_Y" glibnick="flip-y" glibname="GDK_ANCHOR_FLIP_Y"/>
     <member name="slide_x" value="4" cid="GDK_ANCHOR_SLIDE_X" glibnick="slide-x" glibname="GDK_ANCHOR_SLIDE_X"/>
@@ -28,7 +28,7 @@
     <function name="intern" cid="gdk_atom_intern" render="0"/>
     <function name="intern_static_string" cid="gdk_atom_intern_static_string" render="0"/>
   </record>
-  <bitfield name="AxisFlags" glibtypename="GdkAxisFlags" ctype="GdkAxisFlags" render="0">
+  <bitfield name="AxisFlags" glibtypename="GdkAxisFlags" ctype="GdkAxisFlags" render="1">
     <member name="x" value="2" cid="GDK_AXIS_FLAG_X" glibnick="x" glibname="GDK_AXIS_FLAG_X"/>
     <member name="y" value="4" cid="GDK_AXIS_FLAG_Y" glibnick="y" glibname="GDK_AXIS_FLAG_Y"/>
     <member name="pressure" value="8" cid="GDK_AXIS_FLAG_PRESSURE" glibnick="pressure" glibname="GDK_AXIS_FLAG_PRESSURE"/>
@@ -361,7 +361,7 @@
     <property name="default-display" cid="" render="0"/>
     <glibsignal name="display-opened" when="last" render="0"/>
   </class>
-  <bitfield name="DragAction" glibtypename="GdkDragAction" ctype="GdkDragAction" render="0">
+  <bitfield name="DragAction" glibtypename="GdkDragAction" ctype="GdkDragAction" render="1">
     <member name="default" value="1" cid="GDK_ACTION_DEFAULT" glibnick="default" glibname="GDK_ACTION_DEFAULT"/>
     <member name="copy" value="2" cid="GDK_ACTION_COPY" glibnick="copy" glibname="GDK_ACTION_COPY"/>
     <member name="move" value="4" cid="GDK_ACTION_MOVE" glibnick="move" glibname="GDK_ACTION_MOVE"/>
@@ -564,7 +564,7 @@
     <field name="group"/>
     <field name="is_modifier"/>
   </record>
-  <bitfield name="EventMask" glibtypename="GdkEventMask" ctype="GdkEventMask" render="0">
+  <bitfield name="EventMask" glibtypename="GdkEventMask" ctype="GdkEventMask" render="1">
     <member name="exposure_mask" value="2" cid="GDK_EXPOSURE_MASK" glibnick="exposure-mask" glibname="GDK_EXPOSURE_MASK"/>
     <member name="pointer_motion_mask" value="4" cid="GDK_POINTER_MOTION_MASK" glibnick="pointer-motion-mask" glibname="GDK_POINTER_MOTION_MASK"/>
     <member name="pointer_motion_hint_mask" value="8" cid="GDK_POINTER_MOTION_HINT_MASK" glibnick="pointer-motion-hint-mask" glibname="GDK_POINTER_MOTION_HINT_MASK"/>
@@ -833,7 +833,7 @@
   </class>
   <record name="FrameClockClass" gtypestructfor="FrameClock" ctype="GdkFrameClockClass" render="0">
   </record>
-  <bitfield name="FrameClockPhase" glibtypename="GdkFrameClockPhase" ctype="GdkFrameClockPhase" render="0">
+  <bitfield name="FrameClockPhase" glibtypename="GdkFrameClockPhase" ctype="GdkFrameClockPhase" render="1">
     <member name="none" value="0" cid="GDK_FRAME_CLOCK_PHASE_NONE" glibnick="none" glibname="GDK_FRAME_CLOCK_PHASE_NONE"/>
     <member name="flush_events" value="1" cid="GDK_FRAME_CLOCK_PHASE_FLUSH_EVENTS" glibnick="flush-events" glibname="GDK_FRAME_CLOCK_PHASE_FLUSH_EVENTS"/>
     <member name="before_paint" value="2" cid="GDK_FRAME_CLOCK_PHASE_BEFORE_PAINT" glibnick="before-paint" glibname="GDK_FRAME_CLOCK_PHASE_BEFORE_PAINT"/>
@@ -3272,7 +3272,7 @@
     <member name="shift_group" value="5" cid="GDK_MODIFIER_INTENT_SHIFT_GROUP" glibnick="shift-group" glibname="GDK_MODIFIER_INTENT_SHIFT_GROUP"/>
     <member name="default_mod_mask" value="6" cid="GDK_MODIFIER_INTENT_DEFAULT_MOD_MASK" glibnick="default-mod-mask" glibname="GDK_MODIFIER_INTENT_DEFAULT_MOD_MASK"/>
   </enumeration>
-  <bitfield name="ModifierType" glibtypename="GdkModifierType" ctype="GdkModifierType" render="0">
+  <bitfield name="ModifierType" glibtypename="GdkModifierType" ctype="GdkModifierType" render="1">
     <member name="shift_mask" value="1" cid="GDK_SHIFT_MASK" glibnick="shift-mask" glibname="GDK_SHIFT_MASK"/>
     <member name="lock_mask" value="2" cid="GDK_LOCK_MASK" glibnick="lock-mask" glibname="GDK_LOCK_MASK"/>
     <member name="control_mask" value="4" cid="GDK_CONTROL_MASK" glibnick="control-mask" glibname="GDK_CONTROL_MASK"/>
@@ -3443,7 +3443,7 @@
     <glibsignal name="tool-added" when="last" render="0"/>
     <glibsignal name="tool-removed" when="last" render="0"/>
   </class>
-  <bitfield name="SeatCapabilities" glibtypename="GdkSeatCapabilities" ctype="GdkSeatCapabilities" render="0">
+  <bitfield name="SeatCapabilities" glibtypename="GdkSeatCapabilities" ctype="GdkSeatCapabilities" render="1">
     <member name="none" value="0" cid="GDK_SEAT_CAPABILITY_NONE" glibnick="none" glibname="GDK_SEAT_CAPABILITY_NONE"/>
     <member name="pointer" value="1" cid="GDK_SEAT_CAPABILITY_POINTER" glibnick="pointer" glibname="GDK_SEAT_CAPABILITY_POINTER"/>
     <member name="touch" value="2" cid="GDK_SEAT_CAPABILITY_TOUCH" glibnick="touch" glibname="GDK_SEAT_CAPABILITY_TOUCH"/>
@@ -3513,7 +3513,7 @@
   <function-macro name="WINDOW" render="0">   </function-macro>
   <function-macro name="WINDOW_CLASS" render="0">   </function-macro>
   <function-macro name="WINDOW_GET_CLASS" render="0">   </function-macro>
-  <bitfield name="WMDecoration" glibtypename="GdkWMDecoration" ctype="GdkWMDecoration" render="0">
+  <bitfield name="WMDecoration" glibtypename="GdkWMDecoration" ctype="GdkWMDecoration" render="1">
     <member name="all" value="1" cid="GDK_DECOR_ALL" glibnick="all" glibname="GDK_DECOR_ALL"/>
     <member name="border" value="2" cid="GDK_DECOR_BORDER" glibnick="border" glibname="GDK_DECOR_BORDER"/>
     <member name="resizeh" value="4" cid="GDK_DECOR_RESIZEH" glibnick="resizeh" glibname="GDK_DECOR_RESIZEH"/>
@@ -3522,7 +3522,7 @@
     <member name="minimize" value="32" cid="GDK_DECOR_MINIMIZE" glibnick="minimize" glibname="GDK_DECOR_MINIMIZE"/>
     <member name="maximize" value="64" cid="GDK_DECOR_MAXIMIZE" glibnick="maximize" glibname="GDK_DECOR_MAXIMIZE"/>
   </bitfield>
-  <bitfield name="WMFunction" glibtypename="GdkWMFunction" ctype="GdkWMFunction" render="0">
+  <bitfield name="WMFunction" glibtypename="GdkWMFunction" ctype="GdkWMFunction" render="1">
     <member name="all" value="1" cid="GDK_FUNC_ALL" glibnick="all" glibname="GDK_FUNC_ALL"/>
     <member name="resize" value="2" cid="GDK_FUNC_RESIZE" glibnick="resize" glibname="GDK_FUNC_RESIZE"/>
     <member name="move" value="4" cid="GDK_FUNC_MOVE" glibnick="move" glibname="GDK_FUNC_MOVE"/>
@@ -3720,7 +3720,7 @@
     <field name="override_redirect"/>
     <field name="type_hint"/>
   </record>
-  <bitfield name="WindowAttributesType" glibtypename="GdkWindowAttributesType" ctype="GdkWindowAttributesType" render="0">
+  <bitfield name="WindowAttributesType" glibtypename="GdkWindowAttributesType" ctype="GdkWindowAttributesType" render="1">
     <member name="title" value="2" cid="GDK_WA_TITLE" glibnick="title" glibname="GDK_WA_TITLE"/>
     <member name="x" value="4" cid="GDK_WA_X" glibnick="x" glibname="GDK_WA_X"/>
     <member name="y" value="8" cid="GDK_WA_Y" glibnick="y" glibname="GDK_WA_Y"/>
@@ -3755,7 +3755,7 @@
     <member name="south" value="6" cid="GDK_WINDOW_EDGE_SOUTH" glibnick="south" glibname="GDK_WINDOW_EDGE_SOUTH"/>
     <member name="south_east" value="7" cid="GDK_WINDOW_EDGE_SOUTH_EAST" glibnick="south-east" glibname="GDK_WINDOW_EDGE_SOUTH_EAST"/>
   </enumeration>
-  <bitfield name="WindowHints" glibtypename="GdkWindowHints" ctype="GdkWindowHints" render="0">
+  <bitfield name="WindowHints" glibtypename="GdkWindowHints" ctype="GdkWindowHints" render="1">
     <member name="pos" value="1" cid="GDK_HINT_POS" glibnick="pos" glibname="GDK_HINT_POS"/>
     <member name="min_size" value="2" cid="GDK_HINT_MIN_SIZE" glibnick="min-size" glibname="GDK_HINT_MIN_SIZE"/>
     <member name="max_size" value="4" cid="GDK_HINT_MAX_SIZE" glibnick="max-size" glibname="GDK_HINT_MAX_SIZE"/>
@@ -3769,7 +3769,7 @@
   <callback name="WindowInvalidateHandlerFunc" ctype="GdkWindowInvalidateHandlerFunc" render="0">  </callback>
   <record name="WindowRedirect" gtypestructfor="" ctype="GdkWindowRedirect" render="0">
   </record>
-  <bitfield name="WindowState" glibtypename="GdkWindowState" ctype="GdkWindowState" render="0">
+  <bitfield name="WindowState" glibtypename="GdkWindowState" ctype="GdkWindowState" render="1">
     <member name="withdrawn" value="1" cid="GDK_WINDOW_STATE_WITHDRAWN" glibnick="withdrawn" glibname="GDK_WINDOW_STATE_WITHDRAWN"/>
     <member name="iconified" value="2" cid="GDK_WINDOW_STATE_ICONIFIED" glibnick="iconified" glibname="GDK_WINDOW_STATE_ICONIFIED"/>
     <member name="maximized" value="4" cid="GDK_WINDOW_STATE_MAXIMIZED" glibnick="maximized" glibname="GDK_WINDOW_STATE_MAXIMIZED"/>

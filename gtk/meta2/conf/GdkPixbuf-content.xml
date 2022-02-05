@@ -212,7 +212,7 @@
     <method name="is_writable" cid="gdk_pixbuf_format_is_writable" render="0"/>
     <method name="set_disabled" cid="gdk_pixbuf_format_set_disabled" render="0"/>
   </record>
-  <bitfield name="PixbufFormatFlags" glibtypename="" ctype="GdkPixbufFormatFlags" render="0">
+  <bitfield name="PixbufFormatFlags" glibtypename="" ctype="GdkPixbufFormatFlags" render="1">
     <member name="writable" value="1" cid="GDK_PIXBUF_FORMAT_WRITABLE" glibnick="" glibname=""/>
     <member name="scalable" value="2" cid="GDK_PIXBUF_FORMAT_SCALABLE" glibnick="" glibname=""/>
     <member name="threadsafe" value="4" cid="GDK_PIXBUF_FORMAT_THREADSAFE" glibnick="" glibname=""/>

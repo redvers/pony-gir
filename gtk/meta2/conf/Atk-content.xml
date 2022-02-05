@@ -242,7 +242,7 @@
     <field name="parent"/>
     <field name="get_hyperlink"/>
   </record>
-  <bitfield name="HyperlinkStateFlags" glibtypename="AtkHyperlinkStateFlags" ctype="AtkHyperlinkStateFlags" render="0">
+  <bitfield name="HyperlinkStateFlags" glibtypename="AtkHyperlinkStateFlags" ctype="AtkHyperlinkStateFlags" render="1">
     <member name="inline" value="1" cid="ATK_HYPERLINK_IS_INLINE" glibnick="inline" glibname="ATK_HYPERLINK_IS_INLINE"/>
   </bitfield>
   <interface name="Hypertext" render="0">     <virtual-method name="get_link" render="0"/>

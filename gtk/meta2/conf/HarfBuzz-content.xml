@@ -428,7 +428,7 @@
   </function>
   <function name="buffer_diff" cid="hb_buffer_diff" render="0">
   </function>
-  <bitfield name="buffer_diff_flags_t" glibtypename="hb_buffer_diff_flags_t" ctype="hb_buffer_diff_flags_t" render="0">
+  <bitfield name="buffer_diff_flags_t" glibtypename="hb_buffer_diff_flags_t" ctype="hb_buffer_diff_flags_t" render="1">
     <member name="equal" value="0" cid="HB_BUFFER_DIFF_FLAG_EQUAL" glibnick="equal" glibname="HB_BUFFER_DIFF_FLAG_EQUAL"/>
     <member name="content_type_mismatch" value="1" cid="HB_BUFFER_DIFF_FLAG_CONTENT_TYPE_MISMATCH" glibnick="content-type-mismatch" glibname="HB_BUFFER_DIFF_FLAG_CONTENT_TYPE_MISMATCH"/>
     <member name="length_mismatch" value="2" cid="HB_BUFFER_DIFF_FLAG_LENGTH_MISMATCH" glibnick="length-mismatch" glibname="HB_BUFFER_DIFF_FLAG_LENGTH_MISMATCH"/>
@@ -439,7 +439,7 @@
     <member name="glyph_flags_mismatch" value="64" cid="HB_BUFFER_DIFF_FLAG_GLYPH_FLAGS_MISMATCH" glibnick="glyph-flags-mismatch" glibname="HB_BUFFER_DIFF_FLAG_GLYPH_FLAGS_MISMATCH"/>
     <member name="position_mismatch" value="128" cid="HB_BUFFER_DIFF_FLAG_POSITION_MISMATCH" glibnick="position-mismatch" glibname="HB_BUFFER_DIFF_FLAG_POSITION_MISMATCH"/>
   </bitfield>
-  <bitfield name="buffer_flags_t" glibtypename="hb_buffer_flags_t" ctype="hb_buffer_flags_t" render="0">
+  <bitfield name="buffer_flags_t" glibtypename="hb_buffer_flags_t" ctype="hb_buffer_flags_t" render="1">
     <member name="default" value="0" cid="HB_BUFFER_FLAG_DEFAULT" glibnick="default" glibname="HB_BUFFER_FLAG_DEFAULT"/>
     <member name="bot" value="1" cid="HB_BUFFER_FLAG_BOT" glibnick="bot" glibname="HB_BUFFER_FLAG_BOT"/>
     <member name="eot" value="2" cid="HB_BUFFER_FLAG_EOT" glibnick="eot" glibname="HB_BUFFER_FLAG_EOT"/>
@@ -498,7 +498,7 @@
   </function>
   <function name="buffer_serialize" cid="hb_buffer_serialize" render="0">
   </function>
-  <bitfield name="buffer_serialize_flags_t" glibtypename="hb_buffer_serialize_flags_t" ctype="hb_buffer_serialize_flags_t" render="0">
+  <bitfield name="buffer_serialize_flags_t" glibtypename="hb_buffer_serialize_flags_t" ctype="hb_buffer_serialize_flags_t" render="1">
     <member name="default" value="0" cid="HB_BUFFER_SERIALIZE_FLAG_DEFAULT" glibnick="default" glibname="HB_BUFFER_SERIALIZE_FLAG_DEFAULT"/>
     <member name="no_clusters" value="1" cid="HB_BUFFER_SERIALIZE_FLAG_NO_CLUSTERS" glibnick="no-clusters" glibname="HB_BUFFER_SERIALIZE_FLAG_NO_CLUSTERS"/>
     <member name="no_positions" value="2" cid="HB_BUFFER_SERIALIZE_FLAG_NO_POSITIONS" glibnick="no-positions" glibname="HB_BUFFER_SERIALIZE_FLAG_NO_POSITIONS"/>
@@ -846,7 +846,7 @@
     <field name="width"/>
     <field name="height"/>
   </record>
-  <bitfield name="glyph_flags_t" glibtypename="hb_glyph_flags_t" ctype="hb_glyph_flags_t" render="0">
+  <bitfield name="glyph_flags_t" glibtypename="hb_glyph_flags_t" ctype="hb_glyph_flags_t" render="1">
     <member name="unsafe_to_break" value="1" cid="HB_GLYPH_FLAG_UNSAFE_TO_BREAK" glibnick="unsafe-to-break" glibname="HB_GLYPH_FLAG_UNSAFE_TO_BREAK"/>
     <member name="defined" value="1" cid="HB_GLYPH_FLAG_DEFINED" glibnick="defined" glibname="HB_GLYPH_FLAG_DEFINED"/>
   </bitfield>
@@ -957,7 +957,7 @@
   </record>
   <function name="ot_color_palette_color_get_name_id" cid="hb_ot_color_palette_color_get_name_id" render="0">
   </function>
-  <bitfield name="ot_color_palette_flags_t" glibtypename="hb_ot_color_palette_flags_t" ctype="hb_ot_color_palette_flags_t" render="0">
+  <bitfield name="ot_color_palette_flags_t" glibtypename="hb_ot_color_palette_flags_t" ctype="hb_ot_color_palette_flags_t" render="1">
     <member name="default" value="0" cid="HB_OT_COLOR_PALETTE_FLAG_DEFAULT" glibnick="default" glibname="HB_OT_COLOR_PALETTE_FLAG_DEFAULT"/>
     <member name="usable_with_light_background" value="1" cid="HB_OT_COLOR_PALETTE_FLAG_USABLE_WITH_LIGHT_BACKGROUND" glibnick="usable-with-light-background" glibname="HB_OT_COLOR_PALETTE_FLAG_USABLE_WITH_LIGHT_BACKGROUND"/>
     <member name="usable_with_dark_background" value="2" cid="HB_OT_COLOR_PALETTE_FLAG_USABLE_WITH_DARK_BACKGROUND" glibnick="usable-with-dark-background" glibname="HB_OT_COLOR_PALETTE_FLAG_USABLE_WITH_DARK_BACKGROUND"/>
@@ -1128,7 +1128,7 @@
   </function>
   <function name="ot_math_get_min_connector_overlap" cid="hb_ot_math_get_min_connector_overlap" render="0">
   </function>
-  <bitfield name="ot_math_glyph_part_flags_t" glibtypename="hb_ot_math_glyph_part_flags_t" ctype="hb_ot_math_glyph_part_flags_t" render="0">
+  <bitfield name="ot_math_glyph_part_flags_t" glibtypename="hb_ot_math_glyph_part_flags_t" ctype="hb_ot_math_glyph_part_flags_t" render="1">
     <member name="extender" value="1" cid="HB_OT_MATH_GLYPH_PART_FLAG_EXTENDER" glibnick="extender" glibname="HB_OT_MATH_GLYPH_PART_FLAG_EXTENDER"/>
   </bitfield>
   <record name="ot_math_glyph_part_t" gtypestructfor="" ctype="hb_ot_math_glyph_part_t" render="0">
@@ -1224,7 +1224,7 @@
   </function>
   <function name="ot_tags_to_script_and_language" cid="hb_ot_tags_to_script_and_language" render="0">
   </function>
-  <bitfield name="ot_var_axis_flags_t" glibtypename="hb_ot_var_axis_flags_t" ctype="hb_ot_var_axis_flags_t" render="0">
+  <bitfield name="ot_var_axis_flags_t" glibtypename="hb_ot_var_axis_flags_t" ctype="hb_ot_var_axis_flags_t" render="1">
     <member name="hidden" value="1" cid="HB_OT_VAR_AXIS_FLAG_HIDDEN" glibnick="hidden" glibname="HB_OT_VAR_AXIS_FLAG_HIDDEN"/>
   </bitfield>
   <record name="ot_var_axis_info_t" gtypestructfor="" ctype="hb_ot_var_axis_info_t" render="0">

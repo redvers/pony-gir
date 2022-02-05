@@ -15,7 +15,7 @@
   <enumeration name="ModuleError" render="1">     <member name="failed" value="0" cid="G_MODULE_ERROR_FAILED" glibnick="" glibname=""/>
     <member name="check_failed" value="1" cid="G_MODULE_ERROR_CHECK_FAILED" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="ModuleFlags" glibtypename="" ctype="GModuleFlags" render="0">
+  <bitfield name="ModuleFlags" glibtypename="" ctype="GModuleFlags" render="1">
     <member name="lazy" value="1" cid="G_MODULE_BIND_LAZY" glibnick="" glibname=""/>
     <member name="local" value="2" cid="G_MODULE_BIND_LOCAL" glibnick="" glibname=""/>
     <member name="mask" value="3" cid="G_MODULE_BIND_MASK" glibnick="" glibname=""/>

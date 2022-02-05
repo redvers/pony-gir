@@ -41,7 +41,7 @@
     <function name="steal" cid="g_array_steal" render="0"/>
     <function name="unref" cid="g_array_unref" render="0"/>
   </record>
-  <bitfield name="AsciiType" glibtypename="" ctype="GAsciiType" render="0">
+  <bitfield name="AsciiType" glibtypename="" ctype="GAsciiType" render="1">
     <member name="alnum" value="1" cid="G_ASCII_ALNUM" glibnick="" glibname=""/>
     <member name="alpha" value="2" cid="G_ASCII_ALPHA" glibnick="" glibname=""/>
     <member name="cntrl" value="4" cid="G_ASCII_CNTRL" glibnick="" glibname=""/>
@@ -545,13 +545,13 @@
     <member name="nosys" value="23" cid="G_FILE_ERROR_NOSYS" glibnick="" glibname=""/>
     <member name="failed" value="24" cid="G_FILE_ERROR_FAILED" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="FileSetContentsFlags" glibtypename="" ctype="GFileSetContentsFlags" render="0">
+  <bitfield name="FileSetContentsFlags" glibtypename="" ctype="GFileSetContentsFlags" render="1">
     <member name="none" value="0" cid="G_FILE_SET_CONTENTS_NONE" glibnick="" glibname=""/>
     <member name="consistent" value="1" cid="G_FILE_SET_CONTENTS_CONSISTENT" glibnick="" glibname=""/>
     <member name="durable" value="2" cid="G_FILE_SET_CONTENTS_DURABLE" glibnick="" glibname=""/>
     <member name="only_existing" value="4" cid="G_FILE_SET_CONTENTS_ONLY_EXISTING" glibnick="" glibname=""/>
   </bitfield>
-  <bitfield name="FileTest" glibtypename="" ctype="GFileTest" render="0">
+  <bitfield name="FileTest" glibtypename="" ctype="GFileTest" render="1">
     <member name="is_regular" value="1" cid="G_FILE_TEST_IS_REGULAR" glibnick="" glibname=""/>
     <member name="is_symlink" value="2" cid="G_FILE_TEST_IS_SYMLINK" glibnick="" glibname=""/>
     <member name="is_dir" value="4" cid="G_FILE_TEST_IS_DIR" glibnick="" glibname=""/>
@@ -561,7 +561,7 @@
   <union name="FloatIEEE754" render="0">     <field name="v_float"/>
     <record name="mpn" render="0"/>
   </union>
-  <bitfield name="FormatSizeFlags" glibtypename="" ctype="GFormatSizeFlags" render="0">
+  <bitfield name="FormatSizeFlags" glibtypename="" ctype="GFormatSizeFlags" render="1">
     <member name="default" value="0" cid="G_FORMAT_SIZE_DEFAULT" glibnick="" glibname=""/>
     <member name="long_format" value="1" cid="G_FORMAT_SIZE_LONG_FORMAT" glibnick="" glibname=""/>
     <member name="iec_units" value="2" cid="G_FORMAT_SIZE_IEC_UNITS" glibnick="" glibname=""/>
@@ -694,7 +694,7 @@
   <callback name="HookCompareFunc" ctype="GHookCompareFunc" render="0">  </callback>
   <callback name="HookFinalizeFunc" ctype="GHookFinalizeFunc" render="0">  </callback>
   <callback name="HookFindFunc" ctype="GHookFindFunc" render="0">  </callback>
-  <bitfield name="HookFlagMask" glibtypename="" ctype="GHookFlagMask" render="0">
+  <bitfield name="HookFlagMask" glibtypename="" ctype="GHookFlagMask" render="1">
     <member name="active" value="1" cid="G_HOOK_FLAG_ACTIVE" glibnick="" glibname=""/>
     <member name="in_call" value="2" cid="G_HOOK_FLAG_IN_CALL" glibnick="" glibname=""/>
     <member name="mask" value="15" cid="G_HOOK_FLAG_MASK" glibnick="" glibname=""/>
@@ -790,7 +790,7 @@
     <member name="pipe" value="7" cid="G_IO_CHANNEL_ERROR_PIPE" glibnick="" glibname=""/>
     <member name="failed" value="8" cid="G_IO_CHANNEL_ERROR_FAILED" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="IOCondition" glibtypename="GIOCondition" ctype="GIOCondition" render="0">
+  <bitfield name="IOCondition" glibtypename="GIOCondition" ctype="GIOCondition" render="1">
     <member name="in" value="1" cid="G_IO_IN" glibnick="in" glibname="G_IO_IN"/>
     <member name="out" value="4" cid="G_IO_OUT" glibnick="out" glibname="G_IO_OUT"/>
     <member name="pri" value="2" cid="G_IO_PRI" glibnick="pri" glibname="G_IO_PRI"/>
@@ -803,7 +803,7 @@
     <member name="inval" value="2" cid="G_IO_ERROR_INVAL" glibnick="" glibname=""/>
     <member name="unknown" value="3" cid="G_IO_ERROR_UNKNOWN" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="IOFlags" glibtypename="" ctype="GIOFlags" render="0">
+  <bitfield name="IOFlags" glibtypename="" ctype="GIOFlags" render="1">
     <member name="append" value="1" cid="G_IO_FLAG_APPEND" glibnick="" glibname=""/>
     <member name="nonblock" value="2" cid="G_IO_FLAG_NONBLOCK" glibnick="" glibname=""/>
     <member name="is_readable" value="4" cid="G_IO_FLAG_IS_READABLE" glibnick="" glibname=""/>
@@ -915,7 +915,7 @@
     <member name="group_not_found" value="4" cid="G_KEY_FILE_ERROR_GROUP_NOT_FOUND" glibnick="" glibname=""/>
     <member name="invalid_value" value="5" cid="G_KEY_FILE_ERROR_INVALID_VALUE" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="KeyFileFlags" glibtypename="" ctype="GKeyFileFlags" render="0">
+  <bitfield name="KeyFileFlags" glibtypename="" ctype="GKeyFileFlags" render="1">
     <member name="none" value="0" cid="G_KEY_FILE_NONE" glibnick="" glibname=""/>
     <member name="keep_comments" value="1" cid="G_KEY_FILE_KEEP_COMMENTS" glibnick="" glibname=""/>
     <member name="keep_translations" value="2" cid="G_KEY_FILE_KEEP_TRANSLATIONS" glibnick="" glibname=""/>
@@ -976,7 +976,7 @@
     <field name="length"/>
   </record>
   <callback name="LogFunc" ctype="GLogFunc" render="0">  </callback>
-  <bitfield name="LogLevelFlags" glibtypename="" ctype="GLogLevelFlags" render="0">
+  <bitfield name="LogLevelFlags" glibtypename="" ctype="GLogLevelFlags" render="1">
     <member name="flag_recursion" value="1" cid="G_LOG_FLAG_RECURSION" glibnick="" glibname=""/>
     <member name="flag_fatal" value="2" cid="G_LOG_FLAG_FATAL" glibnick="" glibname=""/>
     <member name="level_error" value="4" cid="G_LOG_LEVEL_ERROR" glibnick="" glibname=""/>
@@ -1038,7 +1038,7 @@
     <function name="get_thread_default" cid="g_main_context_get_thread_default" render="0"/>
     <function name="ref_thread_default" cid="g_main_context_ref_thread_default" render="0"/>
   </record>
-  <bitfield name="MainContextFlags" glibtypename="" ctype="GMainContextFlags" render="0">
+  <bitfield name="MainContextFlags" glibtypename="" ctype="GMainContextFlags" render="1">
     <member name="none" value="0" cid="G_MAIN_CONTEXT_FLAGS_NONE" glibnick="" glibname=""/>
     <member name="ownerless_polling" value="1" cid="G_MAIN_CONTEXT_FLAGS_OWNERLESS_POLLING" glibnick="" glibname=""/>
   </bitfield>
@@ -1061,7 +1061,7 @@
     <method name="ref" cid="g_mapped_file_ref" render="0"/>
     <method name="unref" cid="g_mapped_file_unref" render="0"/>
   </record>
-  <bitfield name="MarkupCollectType" glibtypename="" ctype="GMarkupCollectType" render="0">
+  <bitfield name="MarkupCollectType" glibtypename="" ctype="GMarkupCollectType" render="1">
     <member name="invalid" value="0" cid="G_MARKUP_COLLECT_INVALID" glibnick="" glibname=""/>
     <member name="string" value="1" cid="G_MARKUP_COLLECT_STRING" glibnick="" glibname=""/>
     <member name="strdup" value="2" cid="G_MARKUP_COLLECT_STRDUP" glibnick="" glibname=""/>
@@ -1091,7 +1091,7 @@
     <method name="ref" cid="g_markup_parse_context_ref" render="0"/>
     <method name="unref" cid="g_markup_parse_context_unref" render="0"/>
   </record>
-  <bitfield name="MarkupParseFlags" glibtypename="" ctype="GMarkupParseFlags" render="0">
+  <bitfield name="MarkupParseFlags" glibtypename="" ctype="GMarkupParseFlags" render="1">
     <member name="do_not_use_this_unsupported_flag" value="1" cid="G_MARKUP_DO_NOT_USE_THIS_UNSUPPORTED_FLAG" glibnick="" glibname=""/>
     <member name="treat_cdata_as_text" value="2" cid="G_MARKUP_TREAT_CDATA_AS_TEXT" glibnick="" glibname=""/>
     <member name="prefix_error_position" value="4" cid="G_MARKUP_PREFIX_ERROR_POSITION" glibnick="" glibname=""/>
@@ -1247,7 +1247,7 @@
     <member name="failed" value="2" cid="G_OPTION_ERROR_FAILED" glibnick="" glibname=""/>
   </enumeration>
   <callback name="OptionErrorFunc" ctype="GOptionErrorFunc" render="0">  </callback>
-  <bitfield name="OptionFlags" glibtypename="" ctype="GOptionFlags" render="0">
+  <bitfield name="OptionFlags" glibtypename="" ctype="GOptionFlags" render="1">
     <member name="none" value="0" cid="G_OPTION_FLAG_NONE" glibnick="" glibname=""/>
     <member name="hidden" value="1" cid="G_OPTION_FLAG_HIDDEN" glibnick="" glibname=""/>
     <member name="in_main" value="2" cid="G_OPTION_FLAG_IN_MAIN" glibnick="" glibname=""/>
@@ -1445,7 +1445,7 @@
     <function name="match_simple" cid="g_regex_match_simple" render="0"/>
     <function name="split_simple" cid="g_regex_split_simple" render="0"/>
   </record>
-  <bitfield name="RegexCompileFlags" glibtypename="" ctype="GRegexCompileFlags" render="0">
+  <bitfield name="RegexCompileFlags" glibtypename="" ctype="GRegexCompileFlags" render="1">
     <member name="caseless" value="1" cid="G_REGEX_CASELESS" glibnick="" glibname=""/>
     <member name="multiline" value="2" cid="G_REGEX_MULTILINE" glibnick="" glibname=""/>
     <member name="dotall" value="4" cid="G_REGEX_DOTALL" glibnick="" glibname=""/>
@@ -1524,7 +1524,7 @@
     <member name="character_value_too_large" value="176" cid="G_REGEX_ERROR_CHARACTER_VALUE_TOO_LARGE" glibnick="" glibname=""/>
   </enumeration>
   <callback name="RegexEvalCallback" ctype="GRegexEvalCallback" render="0">  </callback>
-  <bitfield name="RegexMatchFlags" glibtypename="" ctype="GRegexMatchFlags" render="0">
+  <bitfield name="RegexMatchFlags" glibtypename="" ctype="GRegexMatchFlags" render="1">
     <member name="anchored" value="16" cid="G_REGEX_MATCH_ANCHORED" glibnick="" glibname=""/>
     <member name="notbol" value="128" cid="G_REGEX_MATCH_NOTBOL" glibnick="" glibname=""/>
     <member name="noteol" value="256" cid="G_REGEX_MATCH_NOTEOL" glibnick="" glibname=""/>
@@ -1820,7 +1820,7 @@
     <member name="libbad" value="18" cid="G_SPAWN_ERROR_LIBBAD" glibnick="" glibname=""/>
     <member name="failed" value="19" cid="G_SPAWN_ERROR_FAILED" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="SpawnFlags" glibtypename="" ctype="GSpawnFlags" render="0">
+  <bitfield name="SpawnFlags" glibtypename="" ctype="GSpawnFlags" render="1">
     <member name="default" value="0" cid="G_SPAWN_DEFAULT" glibnick="" glibname=""/>
     <member name="leave_descriptors_open" value="1" cid="G_SPAWN_LEAVE_DESCRIPTORS_OPEN" glibnick="" glibname=""/>
     <member name="do_not_reap_child" value="2" cid="G_SPAWN_DO_NOT_REAP_CHILD" glibnick="" glibname=""/>
@@ -1950,7 +1950,7 @@
     <member name="failure" value="2" cid="G_TEST_RUN_FAILURE" glibnick="" glibname=""/>
     <member name="incomplete" value="3" cid="G_TEST_RUN_INCOMPLETE" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="TestSubprocessFlags" glibtypename="" ctype="GTestSubprocessFlags" render="0">
+  <bitfield name="TestSubprocessFlags" glibtypename="" ctype="GTestSubprocessFlags" render="1">
     <member name="stdin" value="1" cid="G_TEST_SUBPROCESS_INHERIT_STDIN" glibnick="" glibname=""/>
     <member name="stdout" value="2" cid="G_TEST_SUBPROCESS_INHERIT_STDOUT" glibnick="" glibname=""/>
     <member name="stderr" value="4" cid="G_TEST_SUBPROCESS_INHERIT_STDERR" glibnick="" glibname=""/>
@@ -1960,7 +1960,7 @@
     <method name="add_suite" cid="g_test_suite_add_suite" render="0"/>
     <method name="free" cid="g_test_suite_free" render="0"/>
   </record>
-  <bitfield name="TestTrapFlags" glibtypename="" ctype="GTestTrapFlags" render="0">
+  <bitfield name="TestTrapFlags" glibtypename="" ctype="GTestTrapFlags" render="1">
     <member name="silence_stdout" value="128" cid="G_TEST_TRAP_SILENCE_STDOUT" glibnick="" glibname=""/>
     <member name="silence_stderr" value="256" cid="G_TEST_TRAP_SILENCE_STDERR" glibnick="" glibname=""/>
     <member name="inherit_stdin" value="512" cid="G_TEST_TRAP_INHERIT_STDIN" glibnick="" glibname=""/>
@@ -2081,7 +2081,7 @@
     <function name="pop" cid="g_trash_stack_pop" render="0"/>
     <function name="push" cid="g_trash_stack_push" render="0"/>
   </record>
-  <bitfield name="TraverseFlags" glibtypename="" ctype="GTraverseFlags" render="0">
+  <bitfield name="TraverseFlags" glibtypename="" ctype="GTraverseFlags" render="1">
     <member name="leaves" value="1" cid="G_TRAVERSE_LEAVES" glibnick="" glibname=""/>
     <member name="non_leaves" value="2" cid="G_TRAVERSE_NON_LEAVES" glibnick="" glibname=""/>
     <member name="all" value="3" cid="G_TRAVERSE_ALL" glibnick="" glibname=""/>
@@ -2432,7 +2432,7 @@
     <member name="bad_query" value="8" cid="G_URI_ERROR_BAD_QUERY" glibnick="" glibname=""/>
     <member name="bad_fragment" value="9" cid="G_URI_ERROR_BAD_FRAGMENT" glibnick="" glibname=""/>
   </enumeration>
-  <bitfield name="UriFlags" glibtypename="" ctype="GUriFlags" render="0">
+  <bitfield name="UriFlags" glibtypename="" ctype="GUriFlags" render="1">
     <member name="none" value="0" cid="G_URI_FLAGS_NONE" glibnick="" glibname=""/>
     <member name="parse_relaxed" value="1" cid="G_URI_FLAGS_PARSE_RELAXED" glibnick="" glibname=""/>
     <member name="has_password" value="2" cid="G_URI_FLAGS_HAS_PASSWORD" glibnick="" glibname=""/>
@@ -2444,7 +2444,7 @@
     <member name="encoded_fragment" value="128" cid="G_URI_FLAGS_ENCODED_FRAGMENT" glibnick="" glibname=""/>
     <member name="scheme_normalize" value="256" cid="G_URI_FLAGS_SCHEME_NORMALIZE" glibnick="" glibname=""/>
   </bitfield>
-  <bitfield name="UriHideFlags" glibtypename="" ctype="GUriHideFlags" render="0">
+  <bitfield name="UriHideFlags" glibtypename="" ctype="GUriHideFlags" render="1">
     <member name="none" value="0" cid="G_URI_HIDE_NONE" glibnick="" glibname=""/>
     <member name="userinfo" value="1" cid="G_URI_HIDE_USERINFO" glibnick="" glibname=""/>
     <member name="password" value="2" cid="G_URI_HIDE_PASSWORD" glibnick="" glibname=""/>
@@ -2452,7 +2452,7 @@
     <member name="query" value="8" cid="G_URI_HIDE_QUERY" glibnick="" glibname=""/>
     <member name="fragment" value="16" cid="G_URI_HIDE_FRAGMENT" glibnick="" glibname=""/>
   </bitfield>
-  <bitfield name="UriParamsFlags" glibtypename="" ctype="GUriParamsFlags" render="0">
+  <bitfield name="UriParamsFlags" glibtypename="" ctype="GUriParamsFlags" render="1">
     <member name="none" value="0" cid="G_URI_PARAMS_NONE" glibnick="" glibname=""/>
     <member name="case_insensitive" value="1" cid="G_URI_PARAMS_CASE_INSENSITIVE" glibnick="" glibname=""/>
     <member name="www_form" value="2" cid="G_URI_PARAMS_WWW_FORM" glibnick="" glibname=""/>

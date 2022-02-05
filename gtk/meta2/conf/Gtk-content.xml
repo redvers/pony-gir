@@ -129,7 +129,7 @@
   </record>
   <record name="AboutDialogPrivate" gtypestructfor="" ctype="GtkAboutDialogPrivate" render="0">
   </record>
-  <bitfield name="AccelFlags" glibtypename="GtkAccelFlags" ctype="GtkAccelFlags" render="0">
+  <bitfield name="AccelFlags" glibtypename="GtkAccelFlags" ctype="GtkAccelFlags" render="1">
     <member name="visible" value="1" cid="GTK_ACCEL_VISIBLE" glibnick="visible" glibname="GTK_ACCEL_VISIBLE"/>
     <member name="locked" value="2" cid="GTK_ACCEL_LOCKED" glibnick="locked" glibname="GTK_ACCEL_LOCKED"/>
     <member name="mask" value="7" cid="GTK_ACCEL_MASK" glibnick="mask" glibname="GTK_ACCEL_MASK"/>
@@ -665,7 +665,7 @@
     <field name="window_removed"/>
     <field name="padding"/>
   </record>
-  <bitfield name="ApplicationInhibitFlags" glibtypename="GtkApplicationInhibitFlags" ctype="GtkApplicationInhibitFlags" render="0">
+  <bitfield name="ApplicationInhibitFlags" glibtypename="GtkApplicationInhibitFlags" ctype="GtkApplicationInhibitFlags" render="1">
     <member name="logout" value="1" cid="GTK_APPLICATION_INHIBIT_LOGOUT" glibnick="logout" glibname="GTK_APPLICATION_INHIBIT_LOGOUT"/>
     <member name="switch" value="2" cid="GTK_APPLICATION_INHIBIT_SWITCH" glibnick="switch" glibname="GTK_APPLICATION_INHIBIT_SWITCH"/>
     <member name="suspend" value="4" cid="GTK_APPLICATION_INHIBIT_SUSPEND" glibnick="suspend" glibname="GTK_APPLICATION_INHIBIT_SUSPEND"/>
@@ -821,7 +821,7 @@
   </enumeration>
   <record name="AssistantPrivate" gtypestructfor="" ctype="GtkAssistantPrivate" render="0">
   </record>
-  <bitfield name="AttachOptions" glibtypename="GtkAttachOptions" ctype="GtkAttachOptions" render="0">
+  <bitfield name="AttachOptions" glibtypename="GtkAttachOptions" ctype="GtkAttachOptions" render="1">
     <member name="expand" value="1" cid="GTK_EXPAND" glibnick="expand" glibname="GTK_EXPAND"/>
     <member name="shrink" value="2" cid="GTK_SHRINK" glibnick="shrink" glibname="GTK_SHRINK"/>
     <member name="fill" value="4" cid="GTK_FILL" glibnick="fill" glibname="GTK_FILL"/>
@@ -1365,7 +1365,7 @@
     <field name="_gtk_reserved4"/>
   </record>
   <callback name="CalendarDetailFunc" ctype="GtkCalendarDetailFunc" render="0">  </callback>
-  <bitfield name="CalendarDisplayOptions" glibtypename="GtkCalendarDisplayOptions" ctype="GtkCalendarDisplayOptions" render="0">
+  <bitfield name="CalendarDisplayOptions" glibtypename="GtkCalendarDisplayOptions" ctype="GtkCalendarDisplayOptions" render="1">
     <member name="show_heading" value="1" cid="GTK_CALENDAR_SHOW_HEADING" glibnick="show-heading" glibname="GTK_CALENDAR_SHOW_HEADING"/>
     <member name="show_day_names" value="2" cid="GTK_CALENDAR_SHOW_DAY_NAMES" glibnick="show-day-names" glibname="GTK_CALENDAR_SHOW_DAY_NAMES"/>
     <member name="no_month_change" value="4" cid="GTK_CALENDAR_NO_MONTH_CHANGE" glibnick="no-month-change" glibname="GTK_CALENDAR_NO_MONTH_CHANGE"/>
@@ -1863,7 +1863,7 @@
   </record>
   <record name="CellRendererSpinnerPrivate" gtypestructfor="" ctype="GtkCellRendererSpinnerPrivate" render="0">
   </record>
-  <bitfield name="CellRendererState" glibtypename="GtkCellRendererState" ctype="GtkCellRendererState" render="0">
+  <bitfield name="CellRendererState" glibtypename="GtkCellRendererState" ctype="GtkCellRendererState" render="1">
     <member name="selected" value="1" cid="GTK_CELL_RENDERER_SELECTED" glibnick="selected" glibname="GTK_CELL_RENDERER_SELECTED"/>
     <member name="prelit" value="2" cid="GTK_CELL_RENDERER_PRELIT" glibnick="prelit" glibname="GTK_CELL_RENDERER_PRELIT"/>
     <member name="insensitive" value="4" cid="GTK_CELL_RENDERER_INSENSITIVE" glibnick="insensitive" glibname="GTK_CELL_RENDERER_INSENSITIVE"/>
@@ -2585,7 +2585,7 @@
   <function-macro name="DRAWING_AREA" render="0">   </function-macro>
   <function-macro name="DRAWING_AREA_CLASS" render="0">   </function-macro>
   <function-macro name="DRAWING_AREA_GET_CLASS" render="0">   </function-macro>
-  <bitfield name="DebugFlag" glibtypename="GtkDebugFlag" ctype="GtkDebugFlag" render="0">
+  <bitfield name="DebugFlag" glibtypename="GtkDebugFlag" ctype="GtkDebugFlag" render="1">
     <member name="misc" value="1" cid="GTK_DEBUG_MISC" glibnick="misc" glibname="GTK_DEBUG_MISC"/>
     <member name="plugsocket" value="2" cid="GTK_DEBUG_PLUGSOCKET" glibnick="plugsocket" glibname="GTK_DEBUG_PLUGSOCKET"/>
     <member name="text" value="4" cid="GTK_DEBUG_TEXT" glibnick="text" glibname="GTK_DEBUG_TEXT"/>
@@ -2618,7 +2618,7 @@
     <member name="paragraphs" value="6" cid="GTK_DELETE_PARAGRAPHS" glibnick="paragraphs" glibname="GTK_DELETE_PARAGRAPHS"/>
     <member name="whitespace" value="7" cid="GTK_DELETE_WHITESPACE" glibnick="whitespace" glibname="GTK_DELETE_WHITESPACE"/>
   </enumeration>
-  <bitfield name="DestDefaults" glibtypename="GtkDestDefaults" ctype="GtkDestDefaults" render="0">
+  <bitfield name="DestDefaults" glibtypename="GtkDestDefaults" ctype="GtkDestDefaults" render="1">
     <member name="motion" value="1" cid="GTK_DEST_DEFAULT_MOTION" glibnick="motion" glibname="GTK_DEST_DEFAULT_MOTION"/>
     <member name="highlight" value="2" cid="GTK_DEST_DEFAULT_HIGHLIGHT" glibnick="highlight" glibname="GTK_DEST_DEFAULT_HIGHLIGHT"/>
     <member name="drop" value="4" cid="GTK_DEST_DEFAULT_DROP" glibnick="drop" glibname="GTK_DEST_DEFAULT_DROP"/>
@@ -2660,7 +2660,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <bitfield name="DialogFlags" glibtypename="GtkDialogFlags" ctype="GtkDialogFlags" render="0">
+  <bitfield name="DialogFlags" glibtypename="GtkDialogFlags" ctype="GtkDialogFlags" render="1">
     <member name="modal" value="1" cid="GTK_DIALOG_MODAL" glibnick="modal" glibname="GTK_DIALOG_MODAL"/>
     <member name="destroy_with_parent" value="2" cid="GTK_DIALOG_DESTROY_WITH_PARENT" glibnick="destroy-with-parent" glibname="GTK_DIALOG_DESTROY_WITH_PARENT"/>
     <member name="use_header_bar" value="4" cid="GTK_DIALOG_USE_HEADER_BAR" glibnick="use-header-bar" glibname="GTK_DIALOG_USE_HEADER_BAR"/>
@@ -3155,7 +3155,7 @@
   </class>
   <record name="EventControllerScrollClass" gtypestructfor="EventControllerScroll" ctype="GtkEventControllerScrollClass" render="0">
   </record>
-  <bitfield name="EventControllerScrollFlags" glibtypename="GtkEventControllerScrollFlags" ctype="GtkEventControllerScrollFlags" render="0">
+  <bitfield name="EventControllerScrollFlags" glibtypename="GtkEventControllerScrollFlags" ctype="GtkEventControllerScrollFlags" render="1">
     <member name="none" value="0" cid="GTK_EVENT_CONTROLLER_SCROLL_NONE" glibnick="none" glibname="GTK_EVENT_CONTROLLER_SCROLL_NONE"/>
     <member name="vertical" value="1" cid="GTK_EVENT_CONTROLLER_SCROLL_VERTICAL" glibnick="vertical" glibname="GTK_EVENT_CONTROLLER_SCROLL_VERTICAL"/>
     <member name="horizontal" value="2" cid="GTK_EVENT_CONTROLLER_SCROLL_HORIZONTAL" glibnick="horizontal" glibname="GTK_EVENT_CONTROLLER_SCROLL_HORIZONTAL"/>
@@ -3492,7 +3492,7 @@
     <method name="set_name" cid="gtk_file_filter_set_name" render="0"/>
     <method name="to_gvariant" cid="gtk_file_filter_to_gvariant" render="0"/>
   </class>
-  <bitfield name="FileFilterFlags" glibtypename="GtkFileFilterFlags" ctype="GtkFileFilterFlags" render="0">
+  <bitfield name="FileFilterFlags" glibtypename="GtkFileFilterFlags" ctype="GtkFileFilterFlags" render="1">
     <member name="filename" value="1" cid="GTK_FILE_FILTER_FILENAME" glibnick="filename" glibname="GTK_FILE_FILTER_FILENAME"/>
     <member name="uri" value="2" cid="GTK_FILE_FILTER_URI" glibnick="uri" glibname="GTK_FILE_FILTER_URI"/>
     <member name="display_name" value="4" cid="GTK_FILE_FILTER_DISPLAY_NAME" glibnick="display-name" glibname="GTK_FILE_FILTER_DISPLAY_NAME"/>
@@ -3746,7 +3746,7 @@
     <field name="get_font_map"/>
     <field name="padding"/>
   </record>
-  <bitfield name="FontChooserLevel" glibtypename="GtkFontChooserLevel" ctype="GtkFontChooserLevel" render="0">
+  <bitfield name="FontChooserLevel" glibtypename="GtkFontChooserLevel" ctype="GtkFontChooserLevel" render="1">
     <member name="family" value="0" cid="GTK_FONT_CHOOSER_LEVEL_FAMILY" glibnick="family" glibname="GTK_FONT_CHOOSER_LEVEL_FAMILY"/>
     <member name="style" value="1" cid="GTK_FONT_CHOOSER_LEVEL_STYLE" glibnick="style" glibname="GTK_FONT_CHOOSER_LEVEL_STYLE"/>
     <member name="size" value="2" cid="GTK_FONT_CHOOSER_LEVEL_SIZE" glibnick="size" glibname="GTK_FONT_CHOOSER_LEVEL_SIZE"/>
@@ -5071,7 +5071,7 @@
   </class>
   <record name="IconInfoClass" gtypestructfor="IconInfo" ctype="GtkIconInfoClass" render="0">
   </record>
-  <bitfield name="IconLookupFlags" glibtypename="GtkIconLookupFlags" ctype="GtkIconLookupFlags" render="0">
+  <bitfield name="IconLookupFlags" glibtypename="GtkIconLookupFlags" ctype="GtkIconLookupFlags" render="1">
     <member name="no_svg" value="1" cid="GTK_ICON_LOOKUP_NO_SVG" glibnick="no-svg" glibname="GTK_ICON_LOOKUP_NO_SVG"/>
     <member name="force_svg" value="2" cid="GTK_ICON_LOOKUP_FORCE_SVG" glibnick="force-svg" glibname="GTK_ICON_LOOKUP_FORCE_SVG"/>
     <member name="use_builtin" value="4" cid="GTK_ICON_LOOKUP_USE_BUILTIN" glibnick="use-builtin" glibname="GTK_ICON_LOOKUP_USE_BUILTIN"/>
@@ -5481,7 +5481,7 @@
   </record>
   <record name="InfoBarPrivate" gtypestructfor="" ctype="GtkInfoBarPrivate" render="0">
   </record>
-  <bitfield name="InputHints" glibtypename="GtkInputHints" ctype="GtkInputHints" render="0">
+  <bitfield name="InputHints" glibtypename="GtkInputHints" ctype="GtkInputHints" render="1">
     <member name="none" value="0" cid="GTK_INPUT_HINT_NONE" glibnick="none" glibname="GTK_INPUT_HINT_NONE"/>
     <member name="spellcheck" value="1" cid="GTK_INPUT_HINT_SPELLCHECK" glibnick="spellcheck" glibname="GTK_INPUT_HINT_SPELLCHECK"/>
     <member name="no_spellcheck" value="2" cid="GTK_INPUT_HINT_NO_SPELLCHECK" glibnick="no-spellcheck" glibname="GTK_INPUT_HINT_NO_SPELLCHECK"/>
@@ -5527,7 +5527,7 @@
   </record>
   <record name="InvisiblePrivate" gtypestructfor="" ctype="GtkInvisiblePrivate" render="0">
   </record>
-  <bitfield name="JunctionSides" glibtypename="GtkJunctionSides" ctype="GtkJunctionSides" render="0">
+  <bitfield name="JunctionSides" glibtypename="GtkJunctionSides" ctype="GtkJunctionSides" render="1">
     <member name="none" value="0" cid="GTK_JUNCTION_NONE" glibnick="none" glibname="GTK_JUNCTION_NONE"/>
     <member name="corner_topleft" value="1" cid="GTK_JUNCTION_CORNER_TOPLEFT" glibnick="corner-topleft" glibname="GTK_JUNCTION_CORNER_TOPLEFT"/>
     <member name="corner_topright" value="2" cid="GTK_JUNCTION_CORNER_TOPRIGHT" glibnick="corner-topright" glibname="GTK_JUNCTION_CORNER_TOPRIGHT"/>
@@ -7046,7 +7046,7 @@
     <member name="widget_class" value="1" cid="GTK_PATH_WIDGET_CLASS" glibnick="widget-class" glibname="GTK_PATH_WIDGET_CLASS"/>
     <member name="class" value="2" cid="GTK_PATH_CLASS" glibnick="class" glibname="GTK_PATH_CLASS"/>
   </enumeration>
-  <bitfield name="PlacesOpenFlags" glibtypename="GtkPlacesOpenFlags" ctype="GtkPlacesOpenFlags" render="0">
+  <bitfield name="PlacesOpenFlags" glibtypename="GtkPlacesOpenFlags" ctype="GtkPlacesOpenFlags" render="1">
     <member name="normal" value="1" cid="GTK_PLACES_OPEN_NORMAL" glibnick="normal" glibname="GTK_PLACES_OPEN_NORMAL"/>
     <member name="new_tab" value="2" cid="GTK_PLACES_OPEN_NEW_TAB" glibnick="new-tab" glibname="GTK_PLACES_OPEN_NEW_TAB"/>
     <member name="new_window" value="4" cid="GTK_PLACES_OPEN_NEW_WINDOW" glibnick="new-window" glibname="GTK_PLACES_OPEN_NEW_WINDOW"/>
@@ -7799,7 +7799,7 @@
   </record>
   <record name="RcContext" gtypestructfor="" ctype="GtkRcContext" render="0">
   </record>
-  <bitfield name="RcFlags" glibtypename="GtkRcFlags" ctype="GtkRcFlags" render="0">
+  <bitfield name="RcFlags" glibtypename="GtkRcFlags" ctype="GtkRcFlags" render="1">
     <member name="fg" value="1" cid="GTK_RC_FG" glibnick="fg" glibname="GTK_RC_FG"/>
     <member name="bg" value="2" cid="GTK_RC_BG" glibnick="bg" glibname="GTK_RC_BG"/>
     <member name="text" value="4" cid="GTK_RC_TEXT" glibnick="text" glibname="GTK_RC_TEXT"/>
@@ -8074,7 +8074,7 @@
     <method name="get_needed" cid="gtk_recent_filter_get_needed" render="0"/>
     <method name="set_name" cid="gtk_recent_filter_set_name" render="0"/>
   </class>
-  <bitfield name="RecentFilterFlags" glibtypename="GtkRecentFilterFlags" ctype="GtkRecentFilterFlags" render="0">
+  <bitfield name="RecentFilterFlags" glibtypename="GtkRecentFilterFlags" ctype="GtkRecentFilterFlags" render="1">
     <member name="uri" value="1" cid="GTK_RECENT_FILTER_URI" glibnick="uri" glibname="GTK_RECENT_FILTER_URI"/>
     <member name="display_name" value="2" cid="GTK_RECENT_FILTER_DISPLAY_NAME" glibnick="display-name" glibname="GTK_RECENT_FILTER_DISPLAY_NAME"/>
     <member name="mime_type" value="4" cid="GTK_RECENT_FILTER_MIME_TYPE" glibnick="mime-type" glibname="GTK_RECENT_FILTER_MIME_TYPE"/>
@@ -8162,7 +8162,7 @@
     <member name="lru" value="2" cid="GTK_RECENT_SORT_LRU" glibnick="lru" glibname="GTK_RECENT_SORT_LRU"/>
     <member name="custom" value="3" cid="GTK_RECENT_SORT_CUSTOM" glibnick="custom" glibname="GTK_RECENT_SORT_CUSTOM"/>
   </enumeration>
-  <bitfield name="RegionFlags" glibtypename="GtkRegionFlags" ctype="GtkRegionFlags" render="0">
+  <bitfield name="RegionFlags" glibtypename="GtkRegionFlags" ctype="GtkRegionFlags" render="1">
     <member name="even" value="1" cid="GTK_REGION_EVEN" glibnick="even" glibname="GTK_REGION_EVEN"/>
     <member name="odd" value="2" cid="GTK_REGION_ODD" glibnick="odd" glibname="GTK_REGION_ODD"/>
     <member name="first" value="4" cid="GTK_REGION_FIRST" glibnick="first" glibname="GTK_REGION_FIRST"/>
@@ -9434,7 +9434,7 @@
     <member name="over_left_right" value="18" cid="GTK_STACK_TRANSITION_TYPE_OVER_LEFT_RIGHT" glibnick="over-left-right" glibname="GTK_STACK_TRANSITION_TYPE_OVER_LEFT_RIGHT"/>
     <member name="over_right_left" value="19" cid="GTK_STACK_TRANSITION_TYPE_OVER_RIGHT_LEFT" glibnick="over-right-left" glibname="GTK_STACK_TRANSITION_TYPE_OVER_RIGHT_LEFT"/>
   </enumeration>
-  <bitfield name="StateFlags" glibtypename="GtkStateFlags" ctype="GtkStateFlags" render="0">
+  <bitfield name="StateFlags" glibtypename="GtkStateFlags" ctype="GtkStateFlags" render="1">
     <member name="normal" value="0" cid="GTK_STATE_FLAG_NORMAL" glibnick="normal" glibname="GTK_STATE_FLAG_NORMAL"/>
     <member name="active" value="1" cid="GTK_STATE_FLAG_ACTIVE" glibnick="active" glibname="GTK_STATE_FLAG_ACTIVE"/>
     <member name="prelight" value="2" cid="GTK_STATE_FLAG_PRELIGHT" glibnick="prelight" glibname="GTK_STATE_FLAG_PRELIGHT"/>
@@ -9773,7 +9773,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <bitfield name="StyleContextPrintFlags" glibtypename="GtkStyleContextPrintFlags" ctype="GtkStyleContextPrintFlags" render="0">
+  <bitfield name="StyleContextPrintFlags" glibtypename="GtkStyleContextPrintFlags" ctype="GtkStyleContextPrintFlags" render="1">
     <member name="none" value="0" cid="GTK_STYLE_CONTEXT_PRINT_NONE" glibnick="none" glibname="GTK_STYLE_CONTEXT_PRINT_NONE"/>
     <member name="recurse" value="1" cid="GTK_STYLE_CONTEXT_PRINT_RECURSE" glibnick="recurse" glibname="GTK_STYLE_CONTEXT_PRINT_RECURSE"/>
     <member name="show_style" value="2" cid="GTK_STYLE_CONTEXT_PRINT_SHOW_STYLE" glibnick="show-style" glibname="GTK_STYLE_CONTEXT_PRINT_SHOW_STYLE"/>
@@ -10043,7 +10043,7 @@
     <method name="copy" cid="gtk_target_entry_copy" render="0"/>
     <method name="free" cid="gtk_target_entry_free" render="0"/>
   </record>
-  <bitfield name="TargetFlags" glibtypename="GtkTargetFlags" ctype="GtkTargetFlags" render="0">
+  <bitfield name="TargetFlags" glibtypename="GtkTargetFlags" ctype="GtkTargetFlags" render="1">
     <member name="same_app" value="1" cid="GTK_TARGET_SAME_APP" glibnick="same-app" glibname="GTK_TARGET_SAME_APP"/>
     <member name="same_widget" value="2" cid="GTK_TARGET_SAME_WIDGET" glibnick="same-widget" glibname="GTK_TARGET_SAME_WIDGET"/>
     <member name="other_app" value="4" cid="GTK_TARGET_OTHER_APP" glibnick="other-app" glibname="GTK_TARGET_OTHER_APP"/>
@@ -10429,7 +10429,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <bitfield name="TextSearchFlags" glibtypename="GtkTextSearchFlags" ctype="GtkTextSearchFlags" render="0">
+  <bitfield name="TextSearchFlags" glibtypename="GtkTextSearchFlags" ctype="GtkTextSearchFlags" render="1">
     <member name="visible_only" value="1" cid="GTK_TEXT_SEARCH_VISIBLE_ONLY" glibnick="visible-only" glibname="GTK_TEXT_SEARCH_VISIBLE_ONLY"/>
     <member name="text_only" value="2" cid="GTK_TEXT_SEARCH_TEXT_ONLY" glibnick="text-only" glibname="GTK_TEXT_SEARCH_TEXT_ONLY"/>
     <member name="case_insensitive" value="4" cid="GTK_TEXT_SEARCH_CASE_INSENSITIVE" glibnick="case-insensitive" glibname="GTK_TEXT_SEARCH_CASE_INSENSITIVE"/>
@@ -11087,7 +11087,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <bitfield name="ToolPaletteDragTargets" glibtypename="GtkToolPaletteDragTargets" ctype="GtkToolPaletteDragTargets" render="0">
+  <bitfield name="ToolPaletteDragTargets" glibtypename="GtkToolPaletteDragTargets" ctype="GtkToolPaletteDragTargets" render="1">
     <member name="items" value="1" cid="GTK_TOOL_PALETTE_DRAG_ITEMS" glibnick="items" glibname="GTK_TOOL_PALETTE_DRAG_ITEMS"/>
     <member name="groups" value="2" cid="GTK_TOOL_PALETTE_DRAG_GROUPS" glibnick="groups" glibname="GTK_TOOL_PALETTE_DRAG_GROUPS"/>
   </bitfield>
@@ -11323,7 +11323,7 @@
   <record name="TreeModelFilterPrivate" gtypestructfor="" ctype="GtkTreeModelFilterPrivate" render="0">
   </record>
   <callback name="TreeModelFilterVisibleFunc" ctype="GtkTreeModelFilterVisibleFunc" render="0">  </callback>
-  <bitfield name="TreeModelFlags" glibtypename="GtkTreeModelFlags" ctype="GtkTreeModelFlags" render="0">
+  <bitfield name="TreeModelFlags" glibtypename="GtkTreeModelFlags" ctype="GtkTreeModelFlags" render="1">
     <member name="iters_persist" value="1" cid="GTK_TREE_MODEL_ITERS_PERSIST" glibnick="iters-persist" glibname="GTK_TREE_MODEL_ITERS_PERSIST"/>
     <member name="list_only" value="2" cid="GTK_TREE_MODEL_LIST_ONLY" glibnick="list-only" glibname="GTK_TREE_MODEL_LIST_ONLY"/>
   </bitfield>
@@ -11875,7 +11875,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <bitfield name="UIManagerItemType" glibtypename="GtkUIManagerItemType" ctype="GtkUIManagerItemType" render="0">
+  <bitfield name="UIManagerItemType" glibtypename="GtkUIManagerItemType" ctype="GtkUIManagerItemType" render="1">
     <member name="auto" value="0" cid="GTK_UI_MANAGER_AUTO" glibnick="auto" glibname="GTK_UI_MANAGER_AUTO"/>
     <member name="menubar" value="1" cid="GTK_UI_MANAGER_MENUBAR" glibnick="menubar" glibname="GTK_UI_MANAGER_MENUBAR"/>
     <member name="menu" value="2" cid="GTK_UI_MANAGER_MENU" glibnick="menu" glibname="GTK_UI_MANAGER_MENU"/>

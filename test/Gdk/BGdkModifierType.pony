@@ -1,0 +1,34 @@
+
+primitive BGdkModifierType
+  fun mshift_mask(): ISize => 1
+  fun mlock_mask(): ISize => 2
+  fun mcontrol_mask(): ISize => 4
+  fun mmod1_mask(): ISize => 8
+  fun mmod2_mask(): ISize => 16
+  fun mmod3_mask(): ISize => 32
+  fun mmod4_mask(): ISize => 64
+  fun mmod5_mask(): ISize => 128
+  fun mbutton1_mask(): ISize => 256
+  fun mbutton2_mask(): ISize => 512
+  fun mbutton3_mask(): ISize => 1024
+  fun mbutton4_mask(): ISize => 2048
+  fun mbutton5_mask(): ISize => 4096
+  fun mmodifier_reserved_13_mask(): ISize => 8192
+  fun mmodifier_reserved_14_mask(): ISize => 16384
+  fun mmodifier_reserved_15_mask(): ISize => 32768
+  fun mmodifier_reserved_16_mask(): ISize => 65536
+  fun mmodifier_reserved_17_mask(): ISize => 131072
+  fun mmodifier_reserved_18_mask(): ISize => 262144
+  fun mmodifier_reserved_19_mask(): ISize => 524288
+  fun mmodifier_reserved_20_mask(): ISize => 1048576
+  fun mmodifier_reserved_21_mask(): ISize => 2097152
+  fun mmodifier_reserved_22_mask(): ISize => 4194304
+  fun mmodifier_reserved_23_mask(): ISize => 8388608
+  fun mmodifier_reserved_24_mask(): ISize => 16777216
+  fun mmodifier_reserved_25_mask(): ISize => 33554432
+  fun msuper_mask(): ISize => 67108864
+  fun mhyper_mask(): ISize => 134217728
+  fun mmeta_mask(): ISize => 268435456
+  fun mmodifier_reserved_29_mask(): ISize => 536870912
+  fun mrelease_mask(): ISize => 1073741824
+  fun mmodifier_mask(): ISize => 1543512063

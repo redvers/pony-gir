@@ -1,4 +1,19 @@
+bitfields:	
+	find ../../test/* -name 'B*.pony' -exec rm -f {} \;
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gtk
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=Atk
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=cairo
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gdk
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=GdkPixbuf
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gio
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=GLib
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=GModule
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=GObject
+#	saxon-he -xi main.xml xsl/bitfield.xsl ns=HarfBuzz
+	saxon-he -xi main.xml xsl/bitfield.xsl ns=Pango
+
 enumerations:	
+	find ../../test/* -name 'E*.pony' -exec rm -f {} \;
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=Gtk
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=Atk
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=cairo

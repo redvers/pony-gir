@@ -22,7 +22,7 @@
     <property name="target" cid="" render="0"/>
     <property name="target-property" cid="" render="0"/>
   </class>
-  <bitfield name="BindingFlags" glibtypename="GBindingFlags" ctype="GBindingFlags" render="0">
+  <bitfield name="BindingFlags" glibtypename="GBindingFlags" ctype="GBindingFlags" render="1">
     <member name="default" value="0" cid="G_BINDING_DEFAULT" glibnick="default" glibname="G_BINDING_DEFAULT"/>
     <member name="bidirectional" value="1" cid="G_BINDING_BIDIRECTIONAL" glibnick="bidirectional" glibname="G_BINDING_BIDIRECTIONAL"/>
     <member name="sync_create" value="2" cid="G_BINDING_SYNC_CREATE" glibnick="sync-create" glibname="G_BINDING_SYNC_CREATE"/>
@@ -127,7 +127,7 @@
     <field name="data"/>
     <field name="notify"/>
   </record>
-  <bitfield name="ConnectFlags" glibtypename="" ctype="GConnectFlags" render="0">
+  <bitfield name="ConnectFlags" glibtypename="" ctype="GConnectFlags" render="1">
     <member name="after" value="1" cid="G_CONNECT_AFTER" glibnick="" glibname=""/>
     <member name="swapped" value="2" cid="G_CONNECT_SWAPPED" glibnick="" glibname=""/>
   </bitfield>
@@ -384,7 +384,7 @@
   <function-macro name="PRIVATE_FIELD" render="0">   </function-macro>
   <function-macro name="PRIVATE_FIELD_P" render="0">   </function-macro>
   <function-macro name="PRIVATE_OFFSET" render="0">   </function-macro>
-  <bitfield name="ParamFlags" glibtypename="" ctype="GParamFlags" render="0">
+  <bitfield name="ParamFlags" glibtypename="" ctype="GParamFlags" render="1">
     <member name="readable" value="1" cid="G_PARAM_READABLE" glibnick="" glibname=""/>
     <member name="writable" value="2" cid="G_PARAM_WRITABLE" glibnick="" glibname=""/>
     <member name="readwrite" value="3" cid="G_PARAM_READWRITE" glibnick="" glibname=""/>
@@ -585,7 +585,7 @@
   <constant name="SIGNAL_MATCH_MASK" ctype="G_SIGNAL_MATCH_MASK" value="63" render="0">  </constant>
   <callback name="SignalAccumulator" ctype="GSignalAccumulator" render="0">  </callback>
   <callback name="SignalEmissionHook" ctype="GSignalEmissionHook" render="0">  </callback>
-  <bitfield name="SignalFlags" glibtypename="" ctype="GSignalFlags" render="0">
+  <bitfield name="SignalFlags" glibtypename="" ctype="GSignalFlags" render="1">
     <member name="run_first" value="1" cid="G_SIGNAL_RUN_FIRST" glibnick="" glibname=""/>
     <member name="run_last" value="2" cid="G_SIGNAL_RUN_LAST" glibnick="" glibname=""/>
     <member name="run_cleanup" value="4" cid="G_SIGNAL_RUN_CLEANUP" glibnick="" glibname=""/>
@@ -602,7 +602,7 @@
     <field name="detail"/>
     <field name="run_type"/>
   </record>
-  <bitfield name="SignalMatchType" glibtypename="" ctype="GSignalMatchType" render="0">
+  <bitfield name="SignalMatchType" glibtypename="" ctype="GSignalMatchType" render="1">
     <member name="id" value="1" cid="G_SIGNAL_MATCH_ID" glibnick="" glibname=""/>
     <member name="detail" value="2" cid="G_SIGNAL_MATCH_DETAIL" glibnick="" glibname=""/>
     <member name="closure" value="4" cid="G_SIGNAL_MATCH_CLOSURE" glibnick="" glibname=""/>
@@ -684,19 +684,19 @@
     <function name="ref" cid="g_type_class_ref" render="0"/>
   </record>
   <callback name="TypeClassCacheFunc" ctype="GTypeClassCacheFunc" render="0">  </callback>
-  <bitfield name="TypeDebugFlags" glibtypename="" ctype="GTypeDebugFlags" render="0">
+  <bitfield name="TypeDebugFlags" glibtypename="" ctype="GTypeDebugFlags" render="1">
     <member name="none" value="0" cid="G_TYPE_DEBUG_NONE" glibnick="" glibname=""/>
     <member name="objects" value="1" cid="G_TYPE_DEBUG_OBJECTS" glibnick="" glibname=""/>
     <member name="signals" value="2" cid="G_TYPE_DEBUG_SIGNALS" glibnick="" glibname=""/>
     <member name="instance_count" value="4" cid="G_TYPE_DEBUG_INSTANCE_COUNT" glibnick="" glibname=""/>
     <member name="mask" value="7" cid="G_TYPE_DEBUG_MASK" glibnick="" glibname=""/>
   </bitfield>
-  <bitfield name="TypeFlags" glibtypename="" ctype="GTypeFlags" render="0">
+  <bitfield name="TypeFlags" glibtypename="" ctype="GTypeFlags" render="1">
     <member name="abstract" value="16" cid="G_TYPE_FLAG_ABSTRACT" glibnick="" glibname=""/>
     <member name="value_abstract" value="32" cid="G_TYPE_FLAG_VALUE_ABSTRACT" glibnick="" glibname=""/>
     <member name="final" value="64" cid="G_TYPE_FLAG_FINAL" glibnick="" glibname=""/>
   </bitfield>
-  <bitfield name="TypeFundamentalFlags" glibtypename="" ctype="GTypeFundamentalFlags" render="0">
+  <bitfield name="TypeFundamentalFlags" glibtypename="" ctype="GTypeFundamentalFlags" render="1">
     <member name="classed" value="1" cid="G_TYPE_FLAG_CLASSED" glibnick="" glibname=""/>
     <member name="instantiatable" value="2" cid="G_TYPE_FLAG_INSTANTIATABLE" glibnick="" glibname=""/>
     <member name="derivable" value="4" cid="G_TYPE_FLAG_DERIVABLE" glibnick="" glibname=""/>
