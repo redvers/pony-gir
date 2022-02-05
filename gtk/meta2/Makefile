@@ -1,6 +1,7 @@
 
 all:
-	saxon-he -xi main.xml makebase.xsl ns=Gtk
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk
+	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
 
 
 bitfields:	
