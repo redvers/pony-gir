@@ -12969,7 +12969,7 @@
   </function>
   <function name="cairo_transform_to_window" cid="gtk_cairo_transform_to_window" render="0">
   </function>
-  <function name="check_version" cid="gtk_check_version" render="0">
+  <function name="check_version" cid="gtk_check_version" render="1">
   </function>
   <function name="css_provider_error_quark" cid="gtk_css_provider_error_quark" render="0">
   </function>
@@ -13003,9 +13003,9 @@
   </function>
   <function name="draw_insertion_cursor" cid="gtk_draw_insertion_cursor" render="0">
   </function>
-  <function name="events_pending" cid="gtk_events_pending" render="0">
+  <function name="events_pending" cid="gtk_events_pending" render="1">
   </function>
-  <function name="false" cid="gtk_false" render="0">
+  <function name="false" cid="gtk_false" render="1">
   </function>
   <function name="file_chooser_error_quark" cid="gtk_file_chooser_error_quark" render="0">
   </function>
@@ -13020,7 +13020,7 @@
   </function>
   <function name="get_current_event_time" cid="gtk_get_current_event_time" render="0">
   </function>
-  <function name="get_debug_flags" cid="gtk_get_debug_flags" render="0">
+  <function name="get_debug_flags" cid="gtk_get_debug_flags" render="1">
   </function>
   <function name="get_default_language" cid="gtk_get_default_language" render="0">
   </function>
@@ -13030,11 +13030,11 @@
   </function>
   <function name="get_locale_direction" cid="gtk_get_locale_direction" render="0">
   </function>
-  <function name="get_major_version" cid="gtk_get_major_version" render="0">
+  <function name="get_major_version" cid="gtk_get_major_version" render="1">
   </function>
-  <function name="get_micro_version" cid="gtk_get_micro_version" render="0">
+  <function name="get_micro_version" cid="gtk_get_micro_version" render="1">
   </function>
-  <function name="get_minor_version" cid="gtk_get_minor_version" render="0">
+  <function name="get_minor_version" cid="gtk_get_minor_version" render="1">
   </function>
   <function name="get_option_group" cid="gtk_get_option_group" render="0">
   </function>
@@ -13060,11 +13060,11 @@
   <docsection name="gtkstock" render="0">   </docsection>
   <docsection name="gtktreednd" render="0">   </docsection>
   <docsection name="gtkvbbox" render="0">   </docsection>
-  <function name="icon_size_from_name" cid="gtk_icon_size_from_name" render="0">
+  <function name="icon_size_from_name" cid="gtk_icon_size_from_name" render="1">
   </function>
-  <function name="icon_size_get_name" cid="gtk_icon_size_get_name" render="0">
+  <function name="icon_size_get_name" cid="gtk_icon_size_get_name" render="1">
   </function>
-  <function name="icon_size_lookup" cid="gtk_icon_size_lookup" render="0">
+  <function name="icon_size_lookup" cid="gtk_icon_size_lookup" render="1">
   </function>
   <function name="icon_size_lookup_for_settings" cid="gtk_icon_size_lookup_for_settings" render="0">
   </function>
@@ -13086,15 +13086,15 @@
   </function>
   <function name="main" cid="gtk_main" render="1">
   </function>
-  <function name="main_do_event" cid="gtk_main_do_event" render="0">
+  <function name="main_do_event" cid="gtk_main_do_event" render="1">
   </function>
-  <function name="main_iteration" cid="gtk_main_iteration" render="0">
+  <function name="main_iteration" cid="gtk_main_iteration" render="1">
   </function>
-  <function name="main_iteration_do" cid="gtk_main_iteration_do" render="0">
+  <function name="main_iteration_do" cid="gtk_main_iteration_do" render="1">
   </function>
-  <function name="main_level" cid="gtk_main_level" render="0">
+  <function name="main_level" cid="gtk_main_level" render="1">
   </function>
-  <function name="main_quit" cid="gtk_main_quit" render="0">
+  <function name="main_quit" cid="gtk_main_quit" render="1">
   </function>
   <function name="paint_arrow" cid="gtk_paint_arrow" render="0">
   </function>

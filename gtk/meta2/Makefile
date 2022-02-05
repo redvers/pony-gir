@@ -1,7 +1,8 @@
 
-all:
+gtkbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk
 	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
+	cat out/Gtk/Gtk-use.pony out/Gtk/Gtk-fn.pony > ../../test/Gtk/Gtk.pony
 
 
 bitfields:	
