@@ -25,5 +25,6 @@ interface <xsl:value-of select="./@name"/>Interface<xsl:if test="./field[1]/@typ
 
 <xsl:template match="prefix"></xsl:template>
 <xsl:template match="suffix"></xsl:template>
+<xsl:template match="text()"></xsl:template>
 
 </xsl:stylesheet>

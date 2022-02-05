@@ -34,3 +34,5 @@ interface GtkWidgetInterface is GObjectInterface
   fun apply(): Pointer[GObject] tag
   
 
+
+  S
