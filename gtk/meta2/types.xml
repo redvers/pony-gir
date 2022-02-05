@@ -1,0 +1,4542 @@
+<typedefs>
+  <typedef name="String"
+    embed="var"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    embed="var"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="GTlsCertificatePrivate"
+    embed="embed"
+    ponytypein="GTlsCertificatePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsCertificatePrivate"
+    structtype="GTlsCertificatePrivate"
+    structdef="GTlsCertificatePrivate"
+    argtype="GTlsCertificatePrivate tag"
+    rvtype="GTlsCertificatePrivate"/>
+
+  <typedef name="Pthreadinternallist"
+    embed="embed"
+    ponytypein="Pthreadinternallist tag"
+    ponytypeinconv=""
+    ponytypeout="Pthreadinternallist"
+    structtype="Pthreadinternallist"
+    structdef="Pthreadinternallist"
+    argtype="Pthreadinternallist tag"
+    rvtype="Pthreadinternallist"/>
+
+  <typedef name="GClosure"
+    embed="embed"
+    ponytypein="GClosure tag"
+    ponytypeinconv=""
+    ponytypeout="GClosure"
+    structtype="GClosure"
+    structdef="GClosure"
+    argtype="GClosure tag"
+    rvtype="GClosure"/>
+
+  <typedef name="GtkBoxClass"
+    embed="embed"
+    ponytypein="GtkBoxClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBoxClass"
+    structtype="GtkBoxClass"
+    structdef="GtkBoxClass"
+    argtype="GtkBoxClass tag"
+    rvtype="GtkBoxClass"/>
+
+  <typedef name="GProxyAddressPrivate"
+    embed="embed"
+    ponytypein="GProxyAddressPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GProxyAddressPrivate"
+    structtype="GProxyAddressPrivate"
+    structdef="GProxyAddressPrivate"
+    argtype="GProxyAddressPrivate tag"
+    rvtype="GProxyAddressPrivate"/>
+
+  <typedef name="GtkCellRendererProgressPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererProgressPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererProgressPrivate"
+    structtype="GtkCellRendererProgressPrivate"
+    structdef="GtkCellRendererProgressPrivate"
+    argtype="GtkCellRendererProgressPrivate tag"
+    rvtype="GtkCellRendererProgressPrivate"/>
+
+  <typedef name="GTlsDatabasePrivate"
+    embed="embed"
+    ponytypein="GTlsDatabasePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsDatabasePrivate"
+    structtype="GTlsDatabasePrivate"
+    structdef="GTlsDatabasePrivate"
+    argtype="GTlsDatabasePrivate tag"
+    rvtype="GTlsDatabasePrivate"/>
+
+  <typedef name="GtkWidgetPrivate"
+    embed="embed"
+    ponytypein="GtkWidgetPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWidgetPrivate"
+    structtype="GtkWidgetPrivate"
+    structdef="GtkWidgetPrivate"
+    argtype="GtkWidgetPrivate tag"
+    rvtype="GtkWidgetPrivate"/>
+
+  <typedef name="GInetSocketAddress"
+    embed="embed"
+    ponytypein="GInetSocketAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GInetSocketAddress"
+    structtype="GInetSocketAddress"
+    structdef="GInetSocketAddress"
+    argtype="GInetSocketAddress tag"
+    rvtype="GInetSocketAddress"/>
+
+  <typedef name="GtkMenu"
+    embed="embed"
+    ponytypein="GtkMenu tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenu"
+    structtype="GtkMenu"
+    structdef="GtkMenu"
+    argtype="GtkMenu tag"
+    rvtype="GtkMenu"/>
+
+  <typedef name="GFileInputStreamPrivate"
+    embed="embed"
+    ponytypein="GFileInputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GFileInputStreamPrivate"
+    structtype="GFileInputStreamPrivate"
+    structdef="GFileInputStreamPrivate"
+    argtype="GFileInputStreamPrivate tag"
+    rvtype="GFileInputStreamPrivate"/>
+
+  <typedef name="GtkCalendarPrivate"
+    embed="embed"
+    ponytypein="GtkCalendarPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCalendarPrivate"
+    structtype="GtkCalendarPrivate"
+    structdef="GtkCalendarPrivate"
+    argtype="GtkCalendarPrivate tag"
+    rvtype="GtkCalendarPrivate"/>
+
+  <typedef name="GSocketServicePrivate"
+    embed="embed"
+    ponytypein="GSocketServicePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketServicePrivate"
+    structtype="GSocketServicePrivate"
+    structdef="GSocketServicePrivate"
+    argtype="GSocketServicePrivate tag"
+    rvtype="GSocketServicePrivate"/>
+
+  <typedef name="GtkScrolledWindowPrivate"
+    embed="embed"
+    ponytypein="GtkScrolledWindowPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScrolledWindowPrivate"
+    structtype="GtkScrolledWindowPrivate"
+    structdef="GtkScrolledWindowPrivate"
+    argtype="GtkScrolledWindowPrivate tag"
+    rvtype="GtkScrolledWindowPrivate"/>
+
+  <typedef name="GParamSpec"
+    embed="embed"
+    ponytypein="GParamSpec tag"
+    ponytypeinconv=""
+    ponytypeout="GParamSpec"
+    structtype="GParamSpec"
+    structdef="GParamSpec"
+    argtype="GParamSpec tag"
+    rvtype="GParamSpec"/>
+
+  <typedef name="GtkFileChooserWidgetPrivate"
+    embed="embed"
+    ponytypein="GtkFileChooserWidgetPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFileChooserWidgetPrivate"
+    structtype="GtkFileChooserWidgetPrivate"
+    structdef="GtkFileChooserWidgetPrivate"
+    argtype="GtkFileChooserWidgetPrivate tag"
+    rvtype="GtkFileChooserWidgetPrivate"/>
+
+  <typedef name="GtkSwitchPrivate"
+    embed="embed"
+    ponytypein="GtkSwitchPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSwitchPrivate"
+    structtype="GtkSwitchPrivate"
+    structdef="GtkSwitchPrivate"
+    argtype="GtkSwitchPrivate tag"
+    rvtype="GtkSwitchPrivate"/>
+
+  <typedef name="GInputVector"
+    embed="embed"
+    ponytypein="GInputVector tag"
+    ponytypeinconv=""
+    ponytypeout="GInputVector"
+    structtype="GInputVector"
+    structdef="GInputVector"
+    argtype="GInputVector tag"
+    rvtype="GInputVector"/>
+
+  <typedef name="GtkLabel"
+    embed="embed"
+    ponytypein="GtkLabel tag"
+    ponytypeinconv=""
+    ponytypeout="GtkLabel"
+    structtype="GtkLabel"
+    structdef="GtkLabel"
+    argtype="GtkLabel tag"
+    rvtype="GtkLabel"/>
+
+  <typedef name="GFileMonitorPrivate"
+    embed="embed"
+    ponytypein="GFileMonitorPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GFileMonitorPrivate"
+    structtype="GFileMonitorPrivate"
+    structdef="GFileMonitorPrivate"
+    argtype="GFileMonitorPrivate tag"
+    rvtype="GFileMonitorPrivate"/>
+
+  <typedef name="GdkColor"
+    embed="embed"
+    ponytypein="GdkColor tag"
+    ponytypeinconv=""
+    ponytypeout="GdkColor"
+    structtype="GdkColor"
+    structdef="GdkColor"
+    argtype="GdkColor tag"
+    rvtype="GdkColor"/>
+
+  <typedef name="PangoEngineLang"
+    embed="embed"
+    ponytypein="PangoEngineLang tag"
+    ponytypeinconv=""
+    ponytypeout="PangoEngineLang"
+    structtype="PangoEngineLang"
+    structdef="PangoEngineLang"
+    argtype="PangoEngineLang tag"
+    rvtype="PangoEngineLang"/>
+
+  <typedef name="GHook"
+    embed="embed"
+    ponytypein="GHook tag"
+    ponytypeinconv=""
+    ponytypeout="GHook"
+    structtype="GHook"
+    structdef="GHook"
+    argtype="GHook tag"
+    rvtype="GHook"/>
+
+  <typedef name="GInetSocketAddressClass"
+    embed="embed"
+    ponytypein="GInetSocketAddressClass tag"
+    ponytypeinconv=""
+    ponytypeout="GInetSocketAddressClass"
+    structtype="GInetSocketAddressClass"
+    structdef="GInetSocketAddressClass"
+    argtype="GInetSocketAddressClass tag"
+    rvtype="GInetSocketAddressClass"/>
+
+  <typedef name="GtkIconThemePrivate"
+    embed="embed"
+    ponytypein="GtkIconThemePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkIconThemePrivate"
+    structtype="GtkIconThemePrivate"
+    structdef="GtkIconThemePrivate"
+    argtype="GtkIconThemePrivate tag"
+    rvtype="GtkIconThemePrivate"/>
+
+  <typedef name="GMemoryInputStreamPrivate"
+    embed="embed"
+    ponytypein="GMemoryInputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GMemoryInputStreamPrivate"
+    structtype="GMemoryInputStreamPrivate"
+    structdef="GMemoryInputStreamPrivate"
+    argtype="GMemoryInputStreamPrivate tag"
+    rvtype="GMemoryInputStreamPrivate"/>
+
+  <typedef name="GtkButtonBoxClass"
+    embed="embed"
+    ponytypein="GtkButtonBoxClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkButtonBoxClass"
+    structtype="GtkButtonBoxClass"
+    structdef="GtkButtonBoxClass"
+    argtype="GtkButtonBoxClass tag"
+    rvtype="GtkButtonBoxClass"/>
+
+  <typedef name="GtkCellAreaClass"
+    embed="embed"
+    ponytypein="GtkCellAreaClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellAreaClass"
+    structtype="GtkCellAreaClass"
+    structdef="GtkCellAreaClass"
+    argtype="GtkCellAreaClass tag"
+    rvtype="GtkCellAreaClass"/>
+
+  <typedef name="GFilterOutputStreamClass"
+    embed="embed"
+    ponytypein="GFilterOutputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterOutputStreamClass"
+    structtype="GFilterOutputStreamClass"
+    structdef="GFilterOutputStreamClass"
+    argtype="GFilterOutputStreamClass tag"
+    rvtype="GFilterOutputStreamClass"/>
+
+  <typedef name="GtkBinPrivate"
+    embed="embed"
+    ponytypein="GtkBinPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBinPrivate"
+    structtype="GtkBinPrivate"
+    structdef="GtkBinPrivate"
+    argtype="GtkBinPrivate tag"
+    rvtype="GtkBinPrivate"/>
+
+  <typedef name="F64"
+    embed="var"
+    ponytypein="F64"
+    ponytypeinconv=""
+    ponytypeout="F64"
+    structtype="F64"
+    structdef="F64(0)"
+    argtype="F64"
+    rvtype="F64"/>
+
+  <typedef name="GObjectClass"
+    embed="embed"
+    ponytypein="GObjectClass tag"
+    ponytypeinconv=""
+    ponytypeout="GObjectClass"
+    structtype="GObjectClass"
+    structdef="GObjectClass"
+    argtype="GObjectClass tag"
+    rvtype="GObjectClass"/>
+
+  <typedef name="GtkPanedPrivate"
+    embed="embed"
+    ponytypein="GtkPanedPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkPanedPrivate"
+    structtype="GtkPanedPrivate"
+    structdef="GtkPanedPrivate"
+    argtype="GtkPanedPrivate tag"
+    rvtype="GtkPanedPrivate"/>
+
+  <typedef name="GtkCellAreaBoxPrivate"
+    embed="embed"
+    ponytypein="GtkCellAreaBoxPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellAreaBoxPrivate"
+    structtype="GtkCellAreaBoxPrivate"
+    structdef="GtkCellAreaBoxPrivate"
+    argtype="GtkCellAreaBoxPrivate tag"
+    rvtype="GtkCellAreaBoxPrivate"/>
+
+  <typedef name="GtkColorButtonPrivate"
+    embed="embed"
+    ponytypein="GtkColorButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkColorButtonPrivate"
+    structtype="GtkColorButtonPrivate"
+    structdef="GtkColorButtonPrivate"
+    argtype="GtkColorButtonPrivate tag"
+    rvtype="GtkColorButtonPrivate"/>
+
+  <typedef name="GtkLockButtonPrivate"
+    embed="embed"
+    ponytypein="GtkLockButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkLockButtonPrivate"
+    structtype="GtkLockButtonPrivate"
+    structdef="GtkLockButtonPrivate"
+    argtype="GtkLockButtonPrivate tag"
+    rvtype="GtkLockButtonPrivate"/>
+
+  <typedef name="GSocketClientPrivate"
+    embed="embed"
+    ponytypein="GSocketClientPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketClientPrivate"
+    structtype="GSocketClientPrivate"
+    structdef="GSocketClientPrivate"
+    argtype="GSocketClientPrivate tag"
+    rvtype="GSocketClientPrivate"/>
+
+  <typedef name="GtkToggleActionClass"
+    embed="embed"
+    ponytypein="GtkToggleActionClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleActionClass"
+    structtype="GtkToggleActionClass"
+    structdef="GtkToggleActionClass"
+    argtype="GtkToggleActionClass tag"
+    rvtype="GtkToggleActionClass"/>
+
+  <typedef name="GtkBinClass"
+    embed="embed"
+    ponytypein="GtkBinClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBinClass"
+    structtype="GtkBinClass"
+    structdef="GtkBinClass"
+    argtype="GtkBinClass tag"
+    rvtype="GtkBinClass"/>
+
+  <typedef name="GCancellablePrivate"
+    embed="embed"
+    ponytypein="GCancellablePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GCancellablePrivate"
+    structtype="GCancellablePrivate"
+    structdef="GCancellablePrivate"
+    argtype="GCancellablePrivate tag"
+    rvtype="GCancellablePrivate"/>
+
+  <typedef name="GdkRGBA"
+    embed="embed"
+    ponytypein="GdkRGBA tag"
+    ponytypeinconv=""
+    ponytypeout="GdkRGBA"
+    structtype="GdkRGBA"
+    structdef="GdkRGBA"
+    argtype="GdkRGBA tag"
+    rvtype="GdkRGBA"/>
+
+  <typedef name="IOFILE"
+    embed="embed"
+    ponytypein="IOFILE tag"
+    ponytypeinconv=""
+    ponytypeout="IOFILE"
+    structtype="IOFILE"
+    structdef="IOFILE"
+    argtype="IOFILE tag"
+    rvtype="IOFILE"/>
+
+  <typedef name="GtkCheckButtonClass"
+    embed="embed"
+    ponytypein="GtkCheckButtonClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCheckButtonClass"
+    structtype="GtkCheckButtonClass"
+    structdef="GtkCheckButtonClass"
+    argtype="GtkCheckButtonClass tag"
+    rvtype="GtkCheckButtonClass"/>
+
+  <typedef name="GtkAction"
+    embed="embed"
+    ponytypein="GtkAction tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAction"
+    structtype="GtkAction"
+    structdef="GtkAction"
+    argtype="GtkAction tag"
+    rvtype="GtkAction"/>
+
+  <typedef name="GIOFuncs"
+    embed="embed"
+    ponytypein="GIOFuncs tag"
+    ponytypeinconv=""
+    ponytypeout="GIOFuncs"
+    structtype="GIOFuncs"
+    structdef="GIOFuncs"
+    argtype="GIOFuncs tag"
+    rvtype="GIOFuncs"/>
+
+  <typedef name="Anon"
+    embed="embed"
+    ponytypein="Anon tag"
+    ponytypeinconv=""
+    ponytypeout="Anon"
+    structtype="Anon"
+    structdef="Anon"
+    argtype="Anon tag"
+    rvtype="Anon"/>
+
+  <typedef name="GScannerConfig"
+    embed="embed"
+    ponytypein="GScannerConfig tag"
+    ponytypeinconv=""
+    ponytypeout="GScannerConfig"
+    structtype="GScannerConfig"
+    structdef="GScannerConfig"
+    argtype="GScannerConfig tag"
+    rvtype="GScannerConfig"/>
+
+  <typedef name="GTrashStack"
+    embed="embed"
+    ponytypein="GTrashStack tag"
+    ponytypeinconv=""
+    ponytypeout="GTrashStack"
+    structtype="GTrashStack"
+    structdef="GTrashStack"
+    argtype="GTrashStack tag"
+    rvtype="GTrashStack"/>
+
+  <typedef name="GVolumeMonitorClass"
+    embed="embed"
+    ponytypein="GVolumeMonitorClass tag"
+    ponytypeinconv=""
+    ponytypeout="GVolumeMonitorClass"
+    structtype="GVolumeMonitorClass"
+    structdef="GVolumeMonitorClass"
+    argtype="GVolumeMonitorClass tag"
+    rvtype="GVolumeMonitorClass"/>
+
+  <typedef name="GSocketListenerClass"
+    embed="embed"
+    ponytypein="GSocketListenerClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketListenerClass"
+    structtype="GSocketListenerClass"
+    structdef="GSocketListenerClass"
+    argtype="GSocketListenerClass tag"
+    rvtype="GSocketListenerClass"/>
+
+  <typedef name="GSimpleActionGroupPrivate"
+    embed="embed"
+    ponytypein="GSimpleActionGroupPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSimpleActionGroupPrivate"
+    structtype="GSimpleActionGroupPrivate"
+    structdef="GSimpleActionGroupPrivate"
+    argtype="GSimpleActionGroupPrivate tag"
+    rvtype="GSimpleActionGroupPrivate"/>
+
+  <typedef name="GtkDialog"
+    embed="embed"
+    ponytypein="GtkDialog tag"
+    ponytypeinconv=""
+    ponytypeout="GtkDialog"
+    structtype="GtkDialog"
+    structdef="GtkDialog"
+    argtype="GtkDialog tag"
+    rvtype="GtkDialog"/>
+
+  <typedef name="GtkSeparatorPrivate"
+    embed="embed"
+    ponytypein="GtkSeparatorPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSeparatorPrivate"
+    structtype="GtkSeparatorPrivate"
+    structdef="GtkSeparatorPrivate"
+    argtype="GtkSeparatorPrivate tag"
+    rvtype="GtkSeparatorPrivate"/>
+
+  <typedef name="GInetAddressMaskPrivate"
+    embed="embed"
+    ponytypein="GInetAddressMaskPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GInetAddressMaskPrivate"
+    structtype="GInetAddressMaskPrivate"
+    structdef="GInetAddressMaskPrivate"
+    argtype="GInetAddressMaskPrivate tag"
+    rvtype="GInetAddressMaskPrivate"/>
+
+  <typedef name="GtkTreeViewPrivate"
+    embed="embed"
+    ponytypein="GtkTreeViewPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTreeViewPrivate"
+    structtype="GtkTreeViewPrivate"
+    structdef="GtkTreeViewPrivate"
+    argtype="GtkTreeViewPrivate tag"
+    rvtype="GtkTreeViewPrivate"/>
+
+  <typedef name="GtkCellRendererTextClass"
+    embed="embed"
+    ponytypein="GtkCellRendererTextClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererTextClass"
+    structtype="GtkCellRendererTextClass"
+    structdef="GtkCellRendererTextClass"
+    argtype="GtkCellRendererTextClass tag"
+    rvtype="GtkCellRendererTextClass"/>
+
+  <typedef name="GtkIMContext"
+    embed="embed"
+    ponytypein="GtkIMContext tag"
+    ponytypeinconv=""
+    ponytypeout="GtkIMContext"
+    structtype="GtkIMContext"
+    structdef="GtkIMContext"
+    argtype="GtkIMContext tag"
+    rvtype="GtkIMContext"/>
+
+  <typedef name="GtkComboBox"
+    embed="embed"
+    ponytypein="GtkComboBox tag"
+    ponytypeinconv=""
+    ponytypeout="GtkComboBox"
+    structtype="GtkComboBox"
+    structdef="GtkComboBox"
+    argtype="GtkComboBox tag"
+    rvtype="GtkComboBox"/>
+
+  <typedef name="GSocketService"
+    embed="embed"
+    ponytypein="GSocketService tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketService"
+    structtype="GSocketService"
+    structdef="GSocketService"
+    argtype="GSocketService tag"
+    rvtype="GSocketService"/>
+
+  <typedef name="GInetSocketAddressPrivate"
+    embed="embed"
+    ponytypein="GInetSocketAddressPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GInetSocketAddressPrivate"
+    structtype="GInetSocketAddressPrivate"
+    structdef="GInetSocketAddressPrivate"
+    argtype="GInetSocketAddressPrivate tag"
+    rvtype="GInetSocketAddressPrivate"/>
+
+  <typedef name="GtkCellAreaContextPrivate"
+    embed="embed"
+    ponytypein="GtkCellAreaContextPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellAreaContextPrivate"
+    structtype="GtkCellAreaContextPrivate"
+    structdef="GtkCellAreaContextPrivate"
+    argtype="GtkCellAreaContextPrivate tag"
+    rvtype="GtkCellAreaContextPrivate"/>
+
+  <typedef name="GSocketConnectionClass"
+    embed="embed"
+    ponytypein="GSocketConnectionClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketConnectionClass"
+    structtype="GSocketConnectionClass"
+    structdef="GSocketConnectionClass"
+    argtype="GSocketConnectionClass tag"
+    rvtype="GSocketConnectionClass"/>
+
+  <typedef name="GtkLabelClass"
+    embed="embed"
+    ponytypein="GtkLabelClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkLabelClass"
+    structtype="GtkLabelClass"
+    structdef="GtkLabelClass"
+    argtype="GtkLabelClass tag"
+    rvtype="GtkLabelClass"/>
+
+  <typedef name="GMenuAttributeIterPrivate"
+    embed="embed"
+    ponytypein="GMenuAttributeIterPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GMenuAttributeIterPrivate"
+    structtype="GMenuAttributeIterPrivate"
+    structdef="GMenuAttributeIterPrivate"
+    argtype="GMenuAttributeIterPrivate tag"
+    rvtype="GMenuAttributeIterPrivate"/>
+
+  <typedef name="GSocketControlMessagePrivate"
+    embed="embed"
+    ponytypein="GSocketControlMessagePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketControlMessagePrivate"
+    structtype="GSocketControlMessagePrivate"
+    structdef="GSocketControlMessagePrivate"
+    argtype="GSocketControlMessagePrivate tag"
+    rvtype="GSocketControlMessagePrivate"/>
+
+  <typedef name="GtkMenuToolButtonPrivate"
+    embed="embed"
+    ponytypein="GtkMenuToolButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuToolButtonPrivate"
+    structtype="GtkMenuToolButtonPrivate"
+    structdef="GtkMenuToolButtonPrivate"
+    argtype="GtkMenuToolButtonPrivate tag"
+    rvtype="GtkMenuToolButtonPrivate"/>
+
+  <typedef name="U32"
+    embed="var"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="GtkFontSelectionPrivate"
+    embed="embed"
+    ponytypein="GtkFontSelectionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFontSelectionPrivate"
+    structtype="GtkFontSelectionPrivate"
+    structdef="GtkFontSelectionPrivate"
+    argtype="GtkFontSelectionPrivate tag"
+    rvtype="GtkFontSelectionPrivate"/>
+
+  <typedef name="GFileOutputStreamPrivate"
+    embed="embed"
+    ponytypein="GFileOutputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GFileOutputStreamPrivate"
+    structtype="GFileOutputStreamPrivate"
+    structdef="GFileOutputStreamPrivate"
+    argtype="GFileOutputStreamPrivate tag"
+    rvtype="GFileOutputStreamPrivate"/>
+
+  <typedef name="GtkMenuShell"
+    embed="embed"
+    ponytypein="GtkMenuShell tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuShell"
+    structtype="GtkMenuShell"
+    structdef="GtkMenuShell"
+    argtype="GtkMenuShell tag"
+    rvtype="GtkMenuShell"/>
+
+  <typedef name="GInetAddressPrivate"
+    embed="embed"
+    ponytypein="GInetAddressPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GInetAddressPrivate"
+    structtype="GInetAddressPrivate"
+    structdef="GInetAddressPrivate"
+    argtype="GInetAddressPrivate tag"
+    rvtype="GInetAddressPrivate"/>
+
+  <typedef name="GtkMiscClass"
+    embed="embed"
+    ponytypein="GtkMiscClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMiscClass"
+    structtype="GtkMiscClass"
+    structdef="GtkMiscClass"
+    argtype="GtkMiscClass tag"
+    rvtype="GtkMiscClass"/>
+
+  <typedef name="GtkLayoutPrivate"
+    embed="embed"
+    ponytypein="GtkLayoutPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkLayoutPrivate"
+    structtype="GtkLayoutPrivate"
+    structdef="GtkLayoutPrivate"
+    argtype="GtkLayoutPrivate tag"
+    rvtype="GtkLayoutPrivate"/>
+
+  <typedef name="GNetworkServicePrivate"
+    embed="embed"
+    ponytypein="GNetworkServicePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GNetworkServicePrivate"
+    structtype="GNetworkServicePrivate"
+    structdef="GNetworkServicePrivate"
+    argtype="GNetworkServicePrivate tag"
+    rvtype="GNetworkServicePrivate"/>
+
+  <typedef name="GtkTreeViewColumnPrivate"
+    embed="embed"
+    ponytypein="GtkTreeViewColumnPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTreeViewColumnPrivate"
+    structtype="GtkTreeViewColumnPrivate"
+    structdef="GtkTreeViewColumnPrivate"
+    argtype="GtkTreeViewColumnPrivate tag"
+    rvtype="GtkTreeViewColumnPrivate"/>
+
+  <typedef name="GtkGridPrivate"
+    embed="embed"
+    ponytypein="GtkGridPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkGridPrivate"
+    structtype="GtkGridPrivate"
+    structdef="GtkGridPrivate"
+    argtype="GtkGridPrivate tag"
+    rvtype="GtkGridPrivate"/>
+
+  <typedef name="GtkAccelGroupPrivate"
+    embed="embed"
+    ponytypein="GtkAccelGroupPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAccelGroupPrivate"
+    structtype="GtkAccelGroupPrivate"
+    structdef="GtkAccelGroupPrivate"
+    argtype="GtkAccelGroupPrivate tag"
+    rvtype="GtkAccelGroupPrivate"/>
+
+  <typedef name="GOutputVector"
+    embed="embed"
+    ponytypein="GOutputVector tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputVector"
+    structtype="GOutputVector"
+    structdef="GOutputVector"
+    argtype="GOutputVector tag"
+    rvtype="GOutputVector"/>
+
+  <typedef name="GTlsInteractionPrivate"
+    embed="embed"
+    ponytypein="GTlsInteractionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsInteractionPrivate"
+    structtype="GTlsInteractionPrivate"
+    structdef="GTlsInteractionPrivate"
+    argtype="GTlsInteractionPrivate tag"
+    rvtype="GTlsInteractionPrivate"/>
+
+  <typedef name="GtkRadioMenuItemPrivate"
+    embed="embed"
+    ponytypein="GtkRadioMenuItemPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRadioMenuItemPrivate"
+    structtype="GtkRadioMenuItemPrivate"
+    structdef="GtkRadioMenuItemPrivate"
+    argtype="GtkRadioMenuItemPrivate tag"
+    rvtype="GtkRadioMenuItemPrivate"/>
+
+  <typedef name="GtkCellRendererPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererPrivate"
+    structtype="GtkCellRendererPrivate"
+    structdef="GtkCellRendererPrivate"
+    argtype="GtkCellRendererPrivate tag"
+    rvtype="GtkCellRendererPrivate"/>
+
+  <typedef name="GOutputStreamClass"
+    embed="embed"
+    ponytypein="GOutputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputStreamClass"
+    structtype="GOutputStreamClass"
+    structdef="GOutputStreamClass"
+    argtype="GOutputStreamClass tag"
+    rvtype="GOutputStreamClass"/>
+
+  <typedef name="GtkMenuBarPrivate"
+    embed="embed"
+    ponytypein="GtkMenuBarPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuBarPrivate"
+    structtype="GtkMenuBarPrivate"
+    structdef="GtkMenuBarPrivate"
+    argtype="GtkMenuBarPrivate tag"
+    rvtype="GtkMenuBarPrivate"/>
+
+  <typedef name="GDBusObjectProxyPrivate"
+    embed="embed"
+    ponytypein="GDBusObjectProxyPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectProxyPrivate"
+    structtype="GDBusObjectProxyPrivate"
+    structdef="GDBusObjectProxyPrivate"
+    argtype="GDBusObjectProxyPrivate tag"
+    rvtype="GDBusObjectProxyPrivate"/>
+
+  <typedef name="GdkDragContext"
+    embed="embed"
+    ponytypein="GdkDragContext tag"
+    ponytypeinconv=""
+    ponytypeout="GdkDragContext"
+    structtype="GdkDragContext"
+    structdef="GdkDragContext"
+    argtype="GdkDragContext tag"
+    rvtype="GdkDragContext"/>
+
+  <typedef name="GtkSettingsPrivate"
+    embed="embed"
+    ponytypein="GtkSettingsPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSettingsPrivate"
+    structtype="GtkSettingsPrivate"
+    structdef="GtkSettingsPrivate"
+    argtype="GtkSettingsPrivate tag"
+    rvtype="GtkSettingsPrivate"/>
+
+  <typedef name="GtkButtonBox"
+    embed="embed"
+    ponytypein="GtkButtonBox tag"
+    ponytypeinconv=""
+    ponytypeout="GtkButtonBox"
+    structtype="GtkButtonBox"
+    structdef="GtkButtonBox"
+    argtype="GtkButtonBox tag"
+    rvtype="GtkButtonBox"/>
+
+  <typedef name="GtkPopoverPrivate"
+    embed="embed"
+    ponytypein="GtkPopoverPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkPopoverPrivate"
+    structtype="GtkPopoverPrivate"
+    structdef="GtkPopoverPrivate"
+    argtype="GtkPopoverPrivate tag"
+    rvtype="GtkPopoverPrivate"/>
+
+  <typedef name="GtkToggleToolButtonClass"
+    embed="embed"
+    ponytypein="GtkToggleToolButtonClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleToolButtonClass"
+    structtype="GtkToggleToolButtonClass"
+    structdef="GtkToggleToolButtonClass"
+    argtype="GtkToggleToolButtonClass tag"
+    rvtype="GtkToggleToolButtonClass"/>
+
+  <typedef name="GtkColorSelectionPrivate"
+    embed="embed"
+    ponytypein="GtkColorSelectionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkColorSelectionPrivate"
+    structtype="GtkColorSelectionPrivate"
+    structdef="GtkColorSelectionPrivate"
+    argtype="GtkColorSelectionPrivate tag"
+    rvtype="GtkColorSelectionPrivate"/>
+
+  <typedef name="Pointer[U8]"
+    embed="var"
+    ponytypein="Pointer[U8] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U8]"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]"/>
+
+  <typedef name="GtkPrintOperationPrivate"
+    embed="embed"
+    ponytypein="GtkPrintOperationPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkPrintOperationPrivate"
+    structtype="GtkPrintOperationPrivate"
+    structdef="GtkPrintOperationPrivate"
+    argtype="GtkPrintOperationPrivate tag"
+    rvtype="GtkPrintOperationPrivate"/>
+
+  <typedef name="GtkToggleToolButton"
+    embed="embed"
+    ponytypein="GtkToggleToolButton tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleToolButton"
+    structtype="GtkToggleToolButton"
+    structdef="GtkToggleToolButton"
+    argtype="GtkToggleToolButton tag"
+    rvtype="GtkToggleToolButton"/>
+
+  <typedef name="Libcfpstate"
+    embed="embed"
+    ponytypein="Libcfpstate tag"
+    ponytypeinconv=""
+    ponytypeout="Libcfpstate"
+    structtype="Libcfpstate"
+    structdef="Libcfpstate"
+    argtype="Libcfpstate tag"
+    rvtype="Libcfpstate"/>
+
+  <typedef name="GDBusPropertyInfo"
+    embed="embed"
+    ponytypein="GDBusPropertyInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusPropertyInfo"
+    structtype="GDBusPropertyInfo"
+    structdef="GDBusPropertyInfo"
+    argtype="GDBusPropertyInfo tag"
+    rvtype="GDBusPropertyInfo"/>
+
+  <typedef name="GtkMenuItemClass"
+    embed="embed"
+    ponytypein="GtkMenuItemClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuItemClass"
+    structtype="GtkMenuItemClass"
+    structdef="GtkMenuItemClass"
+    argtype="GtkMenuItemClass tag"
+    rvtype="GtkMenuItemClass"/>
+
+  <typedef name="GtkCellRendererPixbufPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererPixbufPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererPixbufPrivate"
+    structtype="GtkCellRendererPixbufPrivate"
+    structdef="GtkCellRendererPixbufPrivate"
+    argtype="GtkCellRendererPixbufPrivate tag"
+    rvtype="GtkCellRendererPixbufPrivate"/>
+
+  <typedef name="Fpstate"
+    embed="embed"
+    ponytypein="Fpstate tag"
+    ponytypeinconv=""
+    ponytypeout="Fpstate"
+    structtype="Fpstate"
+    structdef="Fpstate"
+    argtype="Fpstate tag"
+    rvtype="Fpstate"/>
+
+  <typedef name="AtkObject"
+    embed="embed"
+    ponytypein="AtkObject tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObject"
+    structtype="AtkObject"
+    structdef="AtkObject"
+    argtype="AtkObject tag"
+    rvtype="AtkObject"/>
+
+  <typedef name="GtkStylePropertiesPrivate"
+    embed="embed"
+    ponytypein="GtkStylePropertiesPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkStylePropertiesPrivate"
+    structtype="GtkStylePropertiesPrivate"
+    structdef="GtkStylePropertiesPrivate"
+    argtype="GtkStylePropertiesPrivate tag"
+    rvtype="GtkStylePropertiesPrivate"/>
+
+  <typedef name="GtkToggleToolButtonPrivate"
+    embed="embed"
+    ponytypein="GtkToggleToolButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleToolButtonPrivate"
+    structtype="GtkToggleToolButtonPrivate"
+    structdef="GtkToggleToolButtonPrivate"
+    argtype="GtkToggleToolButtonPrivate tag"
+    rvtype="GtkToggleToolButtonPrivate"/>
+
+  <typedef name="GResource"
+    embed="embed"
+    ponytypein="GResource tag"
+    ponytypeinconv=""
+    ponytypeout="GResource"
+    structtype="GResource"
+    structdef="GResource"
+    argtype="GResource tag"
+    rvtype="GResource"/>
+
+  <typedef name="GDBusMethodInfo"
+    embed="embed"
+    ponytypein="GDBusMethodInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusMethodInfo"
+    structtype="GDBusMethodInfo"
+    structdef="GDBusMethodInfo"
+    argtype="GDBusMethodInfo tag"
+    rvtype="GDBusMethodInfo"/>
+
+  <typedef name="AtkObjectClass"
+    embed="embed"
+    ponytypein="AtkObjectClass tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObjectClass"
+    structtype="AtkObjectClass"
+    structdef="AtkObjectClass"
+    argtype="AtkObjectClass tag"
+    rvtype="AtkObjectClass"/>
+
+  <typedef name="Pointer[I32]"
+    embed="var"
+    ponytypein="Pointer[I32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[I32]"
+    structtype="Pointer[I32]"
+    structdef="Pointer[I32]"
+    argtype="Pointer[I32] tag"
+    rvtype="Pointer[I32]"/>
+
+  <typedef name="GtkFontChooserDialogPrivate"
+    embed="embed"
+    ponytypein="GtkFontChooserDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFontChooserDialogPrivate"
+    structtype="GtkFontChooserDialogPrivate"
+    structdef="GtkFontChooserDialogPrivate"
+    argtype="GtkFontChooserDialogPrivate tag"
+    rvtype="GtkFontChooserDialogPrivate"/>
+
+  <typedef name="GtkSeparatorClass"
+    embed="embed"
+    ponytypein="GtkSeparatorClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSeparatorClass"
+    structtype="GtkSeparatorClass"
+    structdef="GtkSeparatorClass"
+    argtype="GtkSeparatorClass tag"
+    rvtype="GtkSeparatorClass"/>
+
+  <typedef name="GTypeValueTable"
+    embed="embed"
+    ponytypein="GTypeValueTable tag"
+    ponytypeinconv=""
+    ponytypeout="GTypeValueTable"
+    structtype="GTypeValueTable"
+    structdef="GTypeValueTable"
+    argtype="GTypeValueTable tag"
+    rvtype="GTypeValueTable"/>
+
+  <typedef name="GtkAppChooserWidgetPrivate"
+    embed="embed"
+    ponytypein="GtkAppChooserWidgetPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAppChooserWidgetPrivate"
+    structtype="GtkAppChooserWidgetPrivate"
+    structdef="GtkAppChooserWidgetPrivate"
+    argtype="GtkAppChooserWidgetPrivate tag"
+    rvtype="GtkAppChooserWidgetPrivate"/>
+
+  <typedef name="GDataInputStreamPrivate"
+    embed="embed"
+    ponytypein="GDataInputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDataInputStreamPrivate"
+    structtype="GDataInputStreamPrivate"
+    structdef="GDataInputStreamPrivate"
+    argtype="GDataInputStreamPrivate tag"
+    rvtype="GDataInputStreamPrivate"/>
+
+  <typedef name="GInputStreamClass"
+    embed="embed"
+    ponytypein="GInputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GInputStreamClass"
+    structtype="GInputStreamClass"
+    structdef="GInputStreamClass"
+    argtype="GInputStreamClass tag"
+    rvtype="GInputStreamClass"/>
+
+  <typedef name="AtkObjectFactory"
+    embed="embed"
+    ponytypein="AtkObjectFactory tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObjectFactory"
+    structtype="AtkObjectFactory"
+    structdef="AtkObjectFactory"
+    argtype="AtkObjectFactory tag"
+    rvtype="AtkObjectFactory"/>
+
+  <typedef name="GtkColorChooserWidgetPrivate"
+    embed="embed"
+    ponytypein="GtkColorChooserWidgetPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkColorChooserWidgetPrivate"
+    structtype="GtkColorChooserWidgetPrivate"
+    structdef="GtkColorChooserWidgetPrivate"
+    argtype="GtkColorChooserWidgetPrivate tag"
+    rvtype="GtkColorChooserWidgetPrivate"/>
+
+  <typedef name="GtkDialogClass"
+    embed="embed"
+    ponytypein="GtkDialogClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkDialogClass"
+    structtype="GtkDialogClass"
+    structdef="GtkDialogClass"
+    argtype="GtkDialogClass tag"
+    rvtype="GtkDialogClass"/>
+
+  <typedef name="GtkTextViewPrivate"
+    embed="embed"
+    ponytypein="GtkTextViewPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTextViewPrivate"
+    structtype="GtkTextViewPrivate"
+    structdef="GtkTextViewPrivate"
+    argtype="GtkTextViewPrivate tag"
+    rvtype="GtkTextViewPrivate"/>
+
+  <typedef name="GDBusSignalInfo"
+    embed="embed"
+    ponytypein="GDBusSignalInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusSignalInfo"
+    structtype="GDBusSignalInfo"
+    structdef="GDBusSignalInfo"
+    argtype="GDBusSignalInfo tag"
+    rvtype="GDBusSignalInfo"/>
+
+  <typedef name="GtkMountOperationPrivate"
+    embed="embed"
+    ponytypein="GtkMountOperationPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMountOperationPrivate"
+    structtype="GtkMountOperationPrivate"
+    structdef="GtkMountOperationPrivate"
+    argtype="GtkMountOperationPrivate tag"
+    rvtype="GtkMountOperationPrivate"/>
+
+  <typedef name="GtkRadioActionPrivate"
+    embed="embed"
+    ponytypein="GtkRadioActionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRadioActionPrivate"
+    structtype="GtkRadioActionPrivate"
+    structdef="GtkRadioActionPrivate"
+    argtype="GtkRadioActionPrivate tag"
+    rvtype="GtkRadioActionPrivate"/>
+
+  <typedef name="Pointer[Libcfpxreg]"
+    embed="var"
+    ponytypein="Pointer[Libcfpxreg] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Libcfpxreg]"
+    structtype="Pointer[Libcfpxreg]"
+    structdef="Pointer[Libcfpxreg]"
+    argtype="Pointer[Libcfpxreg] tag"
+    rvtype="Pointer[Libcfpxreg]"/>
+
+  <typedef name="Hblanguageimplt"
+    embed="embed"
+    ponytypein="Hblanguageimplt tag"
+    ponytypeinconv=""
+    ponytypeout="Hblanguageimplt"
+    structtype="Hblanguageimplt"
+    structdef="Hblanguageimplt"
+    argtype="Hblanguageimplt tag"
+    rvtype="Hblanguageimplt"/>
+
+  <typedef name="GtkThemingEnginePrivate"
+    embed="embed"
+    ponytypein="GtkThemingEnginePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkThemingEnginePrivate"
+    structtype="GtkThemingEnginePrivate"
+    structdef="GtkThemingEnginePrivate"
+    argtype="GtkThemingEnginePrivate tag"
+    rvtype="GtkThemingEnginePrivate"/>
+
+  <typedef name="GList"
+    embed="embed"
+    ponytypein="GList tag"
+    ponytypeinconv=""
+    ponytypeout="GList"
+    structtype="GList"
+    structdef="GList"
+    argtype="GList tag"
+    rvtype="GList"/>
+
+  <typedef name="PangoItem"
+    embed="embed"
+    ponytypein="PangoItem tag"
+    ponytypeinconv=""
+    ponytypeout="PangoItem"
+    structtype="PangoItem"
+    structdef="PangoItem"
+    argtype="PangoItem tag"
+    rvtype="PangoItem"/>
+
+  <typedef name="GPermissionPrivate"
+    embed="embed"
+    ponytypein="GPermissionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GPermissionPrivate"
+    structtype="GPermissionPrivate"
+    structdef="GPermissionPrivate"
+    argtype="GPermissionPrivate tag"
+    rvtype="GPermissionPrivate"/>
+
+  <typedef name="PangoRendererPrivate"
+    embed="embed"
+    ponytypein="PangoRendererPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="PangoRendererPrivate"
+    structtype="PangoRendererPrivate"
+    structdef="PangoRendererPrivate"
+    argtype="PangoRendererPrivate tag"
+    rvtype="PangoRendererPrivate"/>
+
+  <typedef name="GApplicationPrivate"
+    embed="embed"
+    ponytypein="GApplicationPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GApplicationPrivate"
+    structtype="GApplicationPrivate"
+    structdef="GApplicationPrivate"
+    argtype="GApplicationPrivate tag"
+    rvtype="GApplicationPrivate"/>
+
+  <typedef name="GtkInvisiblePrivate"
+    embed="embed"
+    ponytypein="GtkInvisiblePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkInvisiblePrivate"
+    structtype="GtkInvisiblePrivate"
+    structdef="GtkInvisiblePrivate"
+    argtype="GtkInvisiblePrivate tag"
+    rvtype="GtkInvisiblePrivate"/>
+
+  <typedef name="GtkHSVPrivate"
+    embed="embed"
+    ponytypein="GtkHSVPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkHSVPrivate"
+    structtype="GtkHSVPrivate"
+    structdef="GtkHSVPrivate"
+    argtype="GtkHSVPrivate tag"
+    rvtype="GtkHSVPrivate"/>
+
+  <typedef name="GSettingsPrivate"
+    embed="embed"
+    ponytypein="GSettingsPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSettingsPrivate"
+    structtype="GSettingsPrivate"
+    structdef="GSettingsPrivate"
+    argtype="GSettingsPrivate tag"
+    rvtype="GSettingsPrivate"/>
+
+  <typedef name="GtkToolItemClass"
+    embed="embed"
+    ponytypein="GtkToolItemClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolItemClass"
+    structtype="GtkToolItemClass"
+    structdef="GtkToolItemClass"
+    argtype="GtkToolItemClass tag"
+    rvtype="GtkToolItemClass"/>
+
+  <typedef name="GtkRange"
+    embed="embed"
+    ponytypein="GtkRange tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRange"
+    structtype="GtkRange"
+    structdef="GtkRange"
+    argtype="GtkRange tag"
+    rvtype="GtkRange"/>
+
+  <typedef name="PangoEngine"
+    embed="embed"
+    ponytypein="PangoEngine tag"
+    ponytypeinconv=""
+    ponytypeout="PangoEngine"
+    structtype="PangoEngine"
+    structdef="PangoEngine"
+    argtype="PangoEngine tag"
+    rvtype="PangoEngine"/>
+
+  <typedef name="GtkScaleButton"
+    embed="embed"
+    ponytypein="GtkScaleButton tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScaleButton"
+    structtype="GtkScaleButton"
+    structdef="GtkScaleButton"
+    argtype="GtkScaleButton tag"
+    rvtype="GtkScaleButton"/>
+
+  <typedef name="GtkActionGroupPrivate"
+    embed="embed"
+    ponytypein="GtkActionGroupPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkActionGroupPrivate"
+    structtype="GtkActionGroupPrivate"
+    structdef="GtkActionGroupPrivate"
+    argtype="GtkActionGroupPrivate tag"
+    rvtype="GtkActionGroupPrivate"/>
+
+  <typedef name="GdkVisual"
+    embed="embed"
+    ponytypein="GdkVisual tag"
+    ponytypeinconv=""
+    ponytypeout="GdkVisual"
+    structtype="GdkVisual"
+    structdef="GdkVisual"
+    argtype="GdkVisual tag"
+    rvtype="GdkVisual"/>
+
+  <typedef name="PangoGlyphInfo"
+    embed="embed"
+    ponytypein="PangoGlyphInfo tag"
+    ponytypeinconv=""
+    ponytypeout="PangoGlyphInfo"
+    structtype="PangoGlyphInfo"
+    structdef="PangoGlyphInfo"
+    argtype="PangoGlyphInfo tag"
+    rvtype="PangoGlyphInfo"/>
+
+  <typedef name="GNetworkAddressPrivate"
+    embed="embed"
+    ponytypein="GNetworkAddressPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GNetworkAddressPrivate"
+    structtype="GNetworkAddressPrivate"
+    structdef="GNetworkAddressPrivate"
+    argtype="GNetworkAddressPrivate tag"
+    rvtype="GNetworkAddressPrivate"/>
+
+  <typedef name="GtkScale"
+    embed="embed"
+    ponytypein="GtkScale tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScale"
+    structtype="GtkScale"
+    structdef="GtkScale"
+    argtype="GtkScale tag"
+    rvtype="GtkScale"/>
+
+  <typedef name="GtkCellRendererClass"
+    embed="embed"
+    ponytypein="GtkCellRendererClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererClass"
+    structtype="GtkCellRendererClass"
+    structdef="GtkCellRendererClass"
+    argtype="GtkCellRendererClass tag"
+    rvtype="GtkCellRendererClass"/>
+
+  <typedef name="GtkCheckMenuItem"
+    embed="embed"
+    ponytypein="GtkCheckMenuItem tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCheckMenuItem"
+    structtype="GtkCheckMenuItem"
+    structdef="GtkCheckMenuItem"
+    argtype="GtkCheckMenuItem tag"
+    rvtype="GtkCheckMenuItem"/>
+
+  <typedef name="GtkTreeSelectionPrivate"
+    embed="embed"
+    ponytypein="GtkTreeSelectionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTreeSelectionPrivate"
+    structtype="GtkTreeSelectionPrivate"
+    structdef="GtkTreeSelectionPrivate"
+    argtype="GtkTreeSelectionPrivate tag"
+    rvtype="GtkTreeSelectionPrivate"/>
+
+  <typedef name="PangoAnalysis"
+    embed="embed"
+    ponytypein="PangoAnalysis tag"
+    ponytypeinconv=""
+    ponytypeout="PangoAnalysis"
+    structtype="PangoAnalysis"
+    structdef="PangoAnalysis"
+    argtype="PangoAnalysis tag"
+    rvtype="PangoAnalysis"/>
+
+  <typedef name="GProxyAddressEnumeratorPrivate"
+    embed="embed"
+    ponytypein="GProxyAddressEnumeratorPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GProxyAddressEnumeratorPrivate"
+    structtype="GProxyAddressEnumeratorPrivate"
+    structdef="GProxyAddressEnumeratorPrivate"
+    argtype="GProxyAddressEnumeratorPrivate tag"
+    rvtype="GProxyAddressEnumeratorPrivate"/>
+
+  <typedef name="GtkAppChooserDialogPrivate"
+    embed="embed"
+    ponytypein="GtkAppChooserDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAppChooserDialogPrivate"
+    structtype="GtkAppChooserDialogPrivate"
+    structdef="GtkAppChooserDialogPrivate"
+    argtype="GtkAppChooserDialogPrivate tag"
+    rvtype="GtkAppChooserDialogPrivate"/>
+
+  <typedef name="GString"
+    embed="embed"
+    ponytypein="GString tag"
+    ponytypeinconv=""
+    ponytypeout="GString"
+    structtype="GString"
+    structdef="GString"
+    argtype="GString tag"
+    rvtype="GString"/>
+
+  <typedef name="GStaticResource"
+    embed="embed"
+    ponytypein="GStaticResource tag"
+    ponytypeinconv=""
+    ponytypeout="GStaticResource"
+    structtype="GStaticResource"
+    structdef="GStaticResource"
+    argtype="GStaticResource tag"
+    rvtype="GStaticResource"/>
+
+  <typedef name="GtkNotebookPrivate"
+    embed="embed"
+    ponytypein="GtkNotebookPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkNotebookPrivate"
+    structtype="GtkNotebookPrivate"
+    structdef="GtkNotebookPrivate"
+    argtype="GtkNotebookPrivate tag"
+    rvtype="GtkNotebookPrivate"/>
+
+  <typedef name="GtkInfoBarPrivate"
+    embed="embed"
+    ponytypein="GtkInfoBarPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkInfoBarPrivate"
+    structtype="GtkInfoBarPrivate"
+    structdef="GtkInfoBarPrivate"
+    argtype="GtkInfoBarPrivate tag"
+    rvtype="GtkInfoBarPrivate"/>
+
+  <typedef name="AtkTextRectangle"
+    embed="embed"
+    ponytypein="AtkTextRectangle tag"
+    ponytypeinconv=""
+    ponytypeout="AtkTextRectangle"
+    structtype="AtkTextRectangle"
+    structdef="AtkTextRectangle"
+    argtype="AtkTextRectangle tag"
+    rvtype="AtkTextRectangle"/>
+
+  <typedef name="GtkEntry"
+    embed="embed"
+    ponytypein="GtkEntry tag"
+    ponytypeinconv=""
+    ponytypeout="GtkEntry"
+    structtype="GtkEntry"
+    structdef="GtkEntry"
+    argtype="GtkEntry tag"
+    rvtype="GtkEntry"/>
+
+  <typedef name="GtkToolItemPrivate"
+    embed="embed"
+    ponytypein="GtkToolItemPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolItemPrivate"
+    structtype="GtkToolItemPrivate"
+    structdef="GtkToolItemPrivate"
+    argtype="GtkToolItemPrivate tag"
+    rvtype="GtkToolItemPrivate"/>
+
+  <typedef name="GtkToggleActionPrivate"
+    embed="embed"
+    ponytypein="GtkToggleActionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleActionPrivate"
+    structtype="GtkToggleActionPrivate"
+    structdef="GtkToggleActionPrivate"
+    argtype="GtkToggleActionPrivate tag"
+    rvtype="GtkToggleActionPrivate"/>
+
+  <typedef name="GtkActionClass"
+    embed="embed"
+    ponytypein="GtkActionClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkActionClass"
+    structtype="GtkActionClass"
+    structdef="GtkActionClass"
+    argtype="GtkActionClass tag"
+    rvtype="GtkActionClass"/>
+
+  <typedef name="Pointer[None]"
+    embed="var"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="GtkCellRendererAccelPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererAccelPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererAccelPrivate"
+    structtype="GtkCellRendererAccelPrivate"
+    structdef="GtkCellRendererAccelPrivate"
+    argtype="GtkCellRendererAccelPrivate tag"
+    rvtype="GtkCellRendererAccelPrivate"/>
+
+  <typedef name="GdkCursor"
+    embed="embed"
+    ponytypein="GdkCursor tag"
+    ponytypeinconv=""
+    ponytypeout="GdkCursor"
+    structtype="GdkCursor"
+    structdef="GdkCursor"
+    argtype="GdkCursor tag"
+    rvtype="GdkCursor"/>
+
+  <typedef name="GFileIOStreamPrivate"
+    embed="embed"
+    ponytypein="GFileIOStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GFileIOStreamPrivate"
+    structtype="GFileIOStreamPrivate"
+    structdef="GFileIOStreamPrivate"
+    argtype="GFileIOStreamPrivate tag"
+    rvtype="GFileIOStreamPrivate"/>
+
+  <typedef name="GtkLinkButtonPrivate"
+    embed="embed"
+    ponytypein="GtkLinkButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkLinkButtonPrivate"
+    structtype="GtkLinkButtonPrivate"
+    structdef="GtkLinkButtonPrivate"
+    argtype="GtkLinkButtonPrivate tag"
+    rvtype="GtkLinkButtonPrivate"/>
+
+  <typedef name="Pointer[Localedata]"
+    embed="var"
+    ponytypein="Pointer[Localedata] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Localedata]"
+    structtype="Pointer[Localedata]"
+    structdef="Pointer[Localedata]"
+    argtype="Pointer[Localedata] tag"
+    rvtype="Pointer[Localedata]"/>
+
+  <typedef name="GtkToolButtonClass"
+    embed="embed"
+    ponytypein="GtkToolButtonClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolButtonClass"
+    structtype="GtkToolButtonClass"
+    structdef="GtkToolButtonClass"
+    argtype="GtkToolButtonClass tag"
+    rvtype="GtkToolButtonClass"/>
+
+  <typedef name="GFilterOutputStream"
+    embed="embed"
+    ponytypein="GFilterOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterOutputStream"
+    structtype="GFilterOutputStream"
+    structdef="GFilterOutputStream"
+    argtype="GFilterOutputStream tag"
+    rvtype="GFilterOutputStream"/>
+
+  <typedef name="GtkAboutDialogPrivate"
+    embed="embed"
+    ponytypein="GtkAboutDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAboutDialogPrivate"
+    structtype="GtkAboutDialogPrivate"
+    structdef="GtkAboutDialogPrivate"
+    argtype="GtkAboutDialogPrivate tag"
+    rvtype="GtkAboutDialogPrivate"/>
+
+  <typedef name="GEmblemedIconPrivate"
+    embed="embed"
+    ponytypein="GEmblemedIconPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GEmblemedIconPrivate"
+    structtype="GEmblemedIconPrivate"
+    structdef="GEmblemedIconPrivate"
+    argtype="GEmblemedIconPrivate tag"
+    rvtype="GEmblemedIconPrivate"/>
+
+  <typedef name="GTcpWrapperConnectionPrivate"
+    embed="embed"
+    ponytypein="GTcpWrapperConnectionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpWrapperConnectionPrivate"
+    structtype="GTcpWrapperConnectionPrivate"
+    structdef="GTcpWrapperConnectionPrivate"
+    argtype="GTcpWrapperConnectionPrivate tag"
+    rvtype="GTcpWrapperConnectionPrivate"/>
+
+  <typedef name="GDBusAnnotationInfo"
+    embed="embed"
+    ponytypein="GDBusAnnotationInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusAnnotationInfo"
+    structtype="GDBusAnnotationInfo"
+    structdef="GDBusAnnotationInfo"
+    argtype="GDBusAnnotationInfo tag"
+    rvtype="GDBusAnnotationInfo"/>
+
+  <typedef name="GtkApplicationWindowPrivate"
+    embed="embed"
+    ponytypein="GtkApplicationWindowPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkApplicationWindowPrivate"
+    structtype="GtkApplicationWindowPrivate"
+    structdef="GtkApplicationWindowPrivate"
+    argtype="GtkApplicationWindowPrivate tag"
+    rvtype="GtkApplicationWindowPrivate"/>
+
+  <typedef name="GNativeSocketAddressPrivate"
+    embed="embed"
+    ponytypein="GNativeSocketAddressPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GNativeSocketAddressPrivate"
+    structtype="GNativeSocketAddressPrivate"
+    structdef="GNativeSocketAddressPrivate"
+    argtype="GNativeSocketAddressPrivate tag"
+    rvtype="GNativeSocketAddressPrivate"/>
+
+  <typedef name="GFilterInputStreamClass"
+    embed="embed"
+    ponytypein="GFilterInputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterInputStreamClass"
+    structtype="GFilterInputStreamClass"
+    structdef="GFilterInputStreamClass"
+    argtype="GFilterInputStreamClass tag"
+    rvtype="GFilterInputStreamClass"/>
+
+  <typedef name="GFlagsValue"
+    embed="embed"
+    ponytypein="GFlagsValue tag"
+    ponytypeinconv=""
+    ponytypeout="GFlagsValue"
+    structtype="GFlagsValue"
+    structdef="GFlagsValue"
+    argtype="GFlagsValue tag"
+    rvtype="GFlagsValue"/>
+
+  <typedef name="GtkAdjustmentPrivate"
+    embed="embed"
+    ponytypein="GtkAdjustmentPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAdjustmentPrivate"
+    structtype="GtkAdjustmentPrivate"
+    structdef="GtkAdjustmentPrivate"
+    argtype="GtkAdjustmentPrivate tag"
+    rvtype="GtkAdjustmentPrivate"/>
+
+  <typedef name="GtkCellAreaPrivate"
+    embed="embed"
+    ponytypein="GtkCellAreaPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellAreaPrivate"
+    structtype="GtkCellAreaPrivate"
+    structdef="GtkCellAreaPrivate"
+    argtype="GtkCellAreaPrivate tag"
+    rvtype="GtkCellAreaPrivate"/>
+
+  <typedef name="GEnumClass"
+    embed="embed"
+    ponytypein="GEnumClass tag"
+    ponytypeinconv=""
+    ponytypeout="GEnumClass"
+    structtype="GEnumClass"
+    structdef="GEnumClass"
+    argtype="GEnumClass tag"
+    rvtype="GEnumClass"/>
+
+  <typedef name="GdkDevice"
+    embed="embed"
+    ponytypein="GdkDevice tag"
+    ponytypeinconv=""
+    ponytypeout="GdkDevice"
+    structtype="GdkDevice"
+    structdef="GdkDevice"
+    argtype="GdkDevice tag"
+    rvtype="GdkDevice"/>
+
+  <typedef name="GtkCellViewPrivate"
+    embed="embed"
+    ponytypein="GtkCellViewPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellViewPrivate"
+    structtype="GtkCellViewPrivate"
+    structdef="GtkCellViewPrivate"
+    argtype="GtkCellViewPrivate tag"
+    rvtype="GtkCellViewPrivate"/>
+
+  <typedef name="GBufferedInputStreamClass"
+    embed="embed"
+    ponytypein="GBufferedInputStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedInputStreamClass"
+    structtype="GBufferedInputStreamClass"
+    structdef="GBufferedInputStreamClass"
+    argtype="GBufferedInputStreamClass tag"
+    rvtype="GBufferedInputStreamClass"/>
+
+  <typedef name="GSocketConnection"
+    embed="embed"
+    ponytypein="GSocketConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketConnection"
+    structtype="GSocketConnection"
+    structdef="GSocketConnection"
+    argtype="GSocketConnection tag"
+    rvtype="GSocketConnection"/>
+
+  <typedef name="PangoGlyphString"
+    embed="embed"
+    ponytypein="PangoGlyphString tag"
+    ponytypeinconv=""
+    ponytypeout="PangoGlyphString"
+    structtype="PangoGlyphString"
+    structdef="PangoGlyphString"
+    argtype="PangoGlyphString tag"
+    rvtype="PangoGlyphString"/>
+
+  <typedef name="GClosureNotifyData"
+    embed="embed"
+    ponytypein="GClosureNotifyData tag"
+    ponytypeinconv=""
+    ponytypeout="GClosureNotifyData"
+    structtype="GClosureNotifyData"
+    structdef="GClosureNotifyData"
+    argtype="GClosureNotifyData tag"
+    rvtype="GClosureNotifyData"/>
+
+  <typedef name="GDBusObjectManagerServerPrivate"
+    embed="embed"
+    ponytypein="GDBusObjectManagerServerPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectManagerServerPrivate"
+    structtype="GDBusObjectManagerServerPrivate"
+    structdef="GDBusObjectManagerServerPrivate"
+    argtype="GDBusObjectManagerServerPrivate tag"
+    rvtype="GDBusObjectManagerServerPrivate"/>
+
+  <typedef name="GtkSizeGroupPrivate"
+    embed="embed"
+    ponytypein="GtkSizeGroupPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSizeGroupPrivate"
+    structtype="GtkSizeGroupPrivate"
+    structdef="GtkSizeGroupPrivate"
+    argtype="GtkSizeGroupPrivate tag"
+    rvtype="GtkSizeGroupPrivate"/>
+
+  <typedef name="GtkFontChooserWidgetPrivate"
+    embed="embed"
+    ponytypein="GtkFontChooserWidgetPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFontChooserWidgetPrivate"
+    structtype="GtkFontChooserWidgetPrivate"
+    structdef="GtkFontChooserWidgetPrivate"
+    argtype="GtkFontChooserWidgetPrivate tag"
+    rvtype="GtkFontChooserWidgetPrivate"/>
+
+  <typedef name="GtkContainerClass"
+    embed="embed"
+    ponytypein="GtkContainerClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkContainerClass"
+    structtype="GtkContainerClass"
+    structdef="GtkContainerClass"
+    argtype="GtkContainerClass tag"
+    rvtype="GtkContainerClass"/>
+
+  <typedef name="GTypeInstance"
+    embed="embed"
+    ponytypein="GTypeInstance tag"
+    ponytypeinconv=""
+    ponytypeout="GTypeInstance"
+    structtype="GTypeInstance"
+    structdef="GTypeInstance"
+    argtype="GTypeInstance tag"
+    rvtype="GTypeInstance"/>
+
+  <typedef name="GtkMenuClass"
+    embed="embed"
+    ponytypein="GtkMenuClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuClass"
+    structtype="GtkMenuClass"
+    structdef="GtkMenuClass"
+    argtype="GtkMenuClass tag"
+    rvtype="GtkMenuClass"/>
+
+  <typedef name="GSourceCallbackFuncs"
+    embed="embed"
+    ponytypein="GSourceCallbackFuncs tag"
+    ponytypeinconv=""
+    ponytypeout="GSourceCallbackFuncs"
+    structtype="GSourceCallbackFuncs"
+    structdef="GSourceCallbackFuncs"
+    argtype="GSourceCallbackFuncs tag"
+    rvtype="GSourceCallbackFuncs"/>
+
+  <typedef name="GOutputStream"
+    embed="embed"
+    ponytypein="GOutputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputStream"
+    structtype="GOutputStream"
+    structdef="GOutputStream"
+    argtype="GOutputStream tag"
+    rvtype="GOutputStream"/>
+
+  <typedef name="GtkScrollbar"
+    embed="embed"
+    ponytypein="GtkScrollbar tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScrollbar"
+    structtype="GtkScrollbar"
+    structdef="GtkScrollbar"
+    argtype="GtkScrollbar tag"
+    rvtype="GtkScrollbar"/>
+
+  <typedef name="GdkAtom"
+    embed="embed"
+    ponytypein="GdkAtom tag"
+    ponytypeinconv=""
+    ponytypeout="GdkAtom"
+    structtype="GdkAtom"
+    structdef="GdkAtom"
+    argtype="GdkAtom tag"
+    rvtype="GdkAtom"/>
+
+  <typedef name="GtkIMContextClass"
+    embed="embed"
+    ponytypein="GtkIMContextClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkIMContextClass"
+    structtype="GtkIMContextClass"
+    structdef="GtkIMContextClass"
+    argtype="GtkIMContextClass tag"
+    rvtype="GtkIMContextClass"/>
+
+  <typedef name="GTypeInterface"
+    embed="embed"
+    ponytypein="GTypeInterface tag"
+    ponytypeinconv=""
+    ponytypeout="GTypeInterface"
+    structtype="GTypeInterface"
+    structdef="GTypeInterface"
+    argtype="GTypeInterface tag"
+    rvtype="GTypeInterface"/>
+
+  <typedef name="I16"
+    embed="var"
+    ponytypein="I16"
+    ponytypeinconv=""
+    ponytypeout="I16"
+    structtype="I16"
+    structdef="I16(0)"
+    argtype="I16"
+    rvtype="I16"/>
+
+  <typedef name="PangoColor"
+    embed="embed"
+    ponytypein="PangoColor tag"
+    ponytypeinconv=""
+    ponytypeout="PangoColor"
+    structtype="PangoColor"
+    structdef="PangoColor"
+    argtype="PangoColor tag"
+    rvtype="PangoColor"/>
+
+  <typedef name="GVolumeMonitor"
+    embed="embed"
+    ponytypein="GVolumeMonitor tag"
+    ponytypeinconv=""
+    ponytypeout="GVolumeMonitor"
+    structtype="GVolumeMonitor"
+    structdef="GVolumeMonitor"
+    argtype="GVolumeMonitor tag"
+    rvtype="GVolumeMonitor"/>
+
+  <typedef name="GSocketServiceClass"
+    embed="embed"
+    ponytypein="GSocketServiceClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketServiceClass"
+    structtype="GSocketServiceClass"
+    structdef="GSocketServiceClass"
+    argtype="GSocketServiceClass tag"
+    rvtype="GSocketServiceClass"/>
+
+  <typedef name="GArray"
+    embed="embed"
+    ponytypein="GArray tag"
+    ponytypeinconv=""
+    ponytypeout="GArray"
+    structtype="GArray"
+    structdef="GArray"
+    argtype="GArray tag"
+    rvtype="GArray"/>
+
+  <typedef name="GFileAttributeInfo"
+    embed="embed"
+    ponytypein="GFileAttributeInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GFileAttributeInfo"
+    structtype="GFileAttributeInfo"
+    structdef="GFileAttributeInfo"
+    argtype="GFileAttributeInfo tag"
+    rvtype="GFileAttributeInfo"/>
+
+  <typedef name="GtkTextTagTablePrivate"
+    embed="embed"
+    ponytypein="GtkTextTagTablePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTextTagTablePrivate"
+    structtype="GtkTextTagTablePrivate"
+    structdef="GtkTextTagTablePrivate"
+    argtype="GtkTextTagTablePrivate tag"
+    rvtype="GtkTextTagTablePrivate"/>
+
+  <typedef name="GtkFixedPrivate"
+    embed="embed"
+    ponytypein="GtkFixedPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFixedPrivate"
+    structtype="GtkFixedPrivate"
+    structdef="GtkFixedPrivate"
+    argtype="GtkFixedPrivate tag"
+    rvtype="GtkFixedPrivate"/>
+
+  <typedef name="IOwidedata"
+    embed="embed"
+    ponytypein="IOwidedata tag"
+    ponytypeinconv=""
+    ponytypeout="IOwidedata"
+    structtype="IOwidedata"
+    structdef="IOwidedata"
+    argtype="IOwidedata tag"
+    rvtype="IOwidedata"/>
+
+  <typedef name="GtkStatusbarPrivate"
+    embed="embed"
+    ponytypein="GtkStatusbarPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkStatusbarPrivate"
+    structtype="GtkStatusbarPrivate"
+    structdef="GtkStatusbarPrivate"
+    argtype="GtkStatusbarPrivate tag"
+    rvtype="GtkStatusbarPrivate"/>
+
+  <typedef name="GTcpConnection"
+    embed="embed"
+    ponytypein="GTcpConnection tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpConnection"
+    structtype="GTcpConnection"
+    structdef="GTcpConnection"
+    argtype="GTcpConnection tag"
+    rvtype="GTcpConnection"/>
+
+  <typedef name="GtkTreeModelSortPrivate"
+    embed="embed"
+    ponytypein="GtkTreeModelSortPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTreeModelSortPrivate"
+    structtype="GtkTreeModelSortPrivate"
+    structdef="GtkTreeModelSortPrivate"
+    argtype="GtkTreeModelSortPrivate tag"
+    rvtype="GtkTreeModelSortPrivate"/>
+
+  <typedef name="GtkSeparator"
+    embed="embed"
+    ponytypein="GtkSeparator tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSeparator"
+    structtype="GtkSeparator"
+    structdef="GtkSeparator"
+    argtype="GtkSeparator tag"
+    rvtype="GtkSeparator"/>
+
+  <typedef name="Xsavehdr"
+    embed="embed"
+    ponytypein="Xsavehdr tag"
+    ponytypeinconv=""
+    ponytypeout="Xsavehdr"
+    structtype="Xsavehdr"
+    structdef="Xsavehdr"
+    argtype="Xsavehdr tag"
+    rvtype="Xsavehdr"/>
+
+  <typedef name="AtkObjectFactoryClass"
+    embed="embed"
+    ponytypein="AtkObjectFactoryClass tag"
+    ponytypeinconv=""
+    ponytypeout="AtkObjectFactoryClass"
+    structtype="AtkObjectFactoryClass"
+    structdef="AtkObjectFactoryClass"
+    argtype="AtkObjectFactoryClass tag"
+    rvtype="AtkObjectFactoryClass"/>
+
+  <typedef name="GConverterInputStreamPrivate"
+    embed="embed"
+    ponytypein="GConverterInputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GConverterInputStreamPrivate"
+    structtype="GConverterInputStreamPrivate"
+    structdef="GConverterInputStreamPrivate"
+    argtype="GConverterInputStreamPrivate tag"
+    rvtype="GConverterInputStreamPrivate"/>
+
+  <typedef name="GSocketAddressClass"
+    embed="embed"
+    ponytypein="GSocketAddressClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddressClass"
+    structtype="GSocketAddressClass"
+    structdef="GSocketAddressClass"
+    argtype="GSocketAddressClass tag"
+    rvtype="GSocketAddressClass"/>
+
+  <typedef name="IOcodecvt"
+    embed="embed"
+    ponytypein="IOcodecvt tag"
+    ponytypeinconv=""
+    ponytypeout="IOcodecvt"
+    structtype="IOcodecvt"
+    structdef="IOcodecvt"
+    argtype="IOcodecvt tag"
+    rvtype="IOcodecvt"/>
+
+  <typedef name="GtkExpanderPrivate"
+    embed="embed"
+    ponytypein="GtkExpanderPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkExpanderPrivate"
+    structtype="GtkExpanderPrivate"
+    structdef="GtkExpanderPrivate"
+    argtype="GtkExpanderPrivate tag"
+    rvtype="GtkExpanderPrivate"/>
+
+  <typedef name="I8"
+    embed="var"
+    ponytypein="I8"
+    ponytypeinconv=""
+    ponytypeout="I8"
+    structtype="I8"
+    structdef="I8(0)"
+    argtype="I8"
+    rvtype="I8"/>
+
+  <typedef name="GtkBindingEntry"
+    embed="embed"
+    ponytypein="GtkBindingEntry tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBindingEntry"
+    structtype="GtkBindingEntry"
+    structdef="GtkBindingEntry"
+    argtype="GtkBindingEntry tag"
+    rvtype="GtkBindingEntry"/>
+
+  <typedef name="GVariantType"
+    embed="embed"
+    ponytypein="GVariantType tag"
+    ponytypeinconv=""
+    ponytypeout="GVariantType"
+    structtype="GVariantType"
+    structdef="GVariantType"
+    argtype="GVariantType tag"
+    rvtype="GVariantType"/>
+
+  <typedef name="GBufferedInputStreamPrivate"
+    embed="embed"
+    ponytypein="GBufferedInputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedInputStreamPrivate"
+    structtype="GBufferedInputStreamPrivate"
+    structdef="GBufferedInputStreamPrivate"
+    argtype="GBufferedInputStreamPrivate tag"
+    rvtype="GBufferedInputStreamPrivate"/>
+
+  <typedef name="GtkFramePrivate"
+    embed="embed"
+    ponytypein="GtkFramePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFramePrivate"
+    structtype="GtkFramePrivate"
+    structdef="GtkFramePrivate"
+    argtype="GtkFramePrivate tag"
+    rvtype="GtkFramePrivate"/>
+
+  <typedef name="GtkBindingSet"
+    embed="embed"
+    ponytypein="GtkBindingSet tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBindingSet"
+    structtype="GtkBindingSet"
+    structdef="GtkBindingSet"
+    argtype="GtkBindingSet tag"
+    rvtype="GtkBindingSet"/>
+
+  <typedef name="PangoFont"
+    embed="embed"
+    ponytypein="PangoFont tag"
+    ponytypeinconv=""
+    ponytypeout="PangoFont"
+    structtype="PangoFont"
+    structdef="PangoFont"
+    argtype="PangoFont tag"
+    rvtype="PangoFont"/>
+
+  <typedef name="U64"
+    embed="var"
+    ponytypein="U64"
+    ponytypeinconv=""
+    ponytypeout="U64"
+    structtype="U64"
+    structdef="U64(0)"
+    argtype="U64"
+    rvtype="U64"/>
+
+  <typedef name="GTypeClass"
+    embed="embed"
+    ponytypein="GTypeClass tag"
+    ponytypeinconv=""
+    ponytypeout="GTypeClass"
+    structtype="GTypeClass"
+    structdef="GTypeClass"
+    argtype="GTypeClass tag"
+    rvtype="GTypeClass"/>
+
+  <typedef name="PangoGlyphGeometry"
+    embed="embed"
+    ponytypein="PangoGlyphGeometry tag"
+    ponytypeinconv=""
+    ponytypeout="PangoGlyphGeometry"
+    structtype="PangoGlyphGeometry"
+    structdef="PangoGlyphGeometry"
+    argtype="PangoGlyphGeometry tag"
+    rvtype="PangoGlyphGeometry"/>
+
+  <typedef name="PangoLayout"
+    embed="embed"
+    ponytypein="PangoLayout tag"
+    ponytypeinconv=""
+    ponytypeout="PangoLayout"
+    structtype="PangoLayout"
+    structdef="PangoLayout"
+    argtype="PangoLayout tag"
+    rvtype="PangoLayout"/>
+
+  <typedef name="GIConv"
+    embed="embed"
+    ponytypein="GIConv tag"
+    ponytypeinconv=""
+    ponytypeout="GIConv"
+    structtype="GIConv"
+    structdef="GIConv"
+    argtype="GIConv tag"
+    rvtype="GIConv"/>
+
+  <typedef name="GSource"
+    embed="embed"
+    ponytypein="GSource tag"
+    ponytypeinconv=""
+    ponytypeout="GSource"
+    structtype="GSource"
+    structdef="GSource"
+    argtype="GSource tag"
+    rvtype="GSource"/>
+
+  <typedef name="GtkTextTagPrivate"
+    embed="embed"
+    ponytypein="GtkTextTagPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTextTagPrivate"
+    structtype="GtkTextTagPrivate"
+    structdef="GtkTextTagPrivate"
+    argtype="GtkTextTagPrivate tag"
+    rvtype="GtkTextTagPrivate"/>
+
+  <typedef name="GtkCellArea"
+    embed="embed"
+    ponytypein="GtkCellArea tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellArea"
+    structtype="GtkCellArea"
+    structdef="GtkCellArea"
+    argtype="GtkCellArea tag"
+    rvtype="GtkCellArea"/>
+
+  <typedef name="GCond"
+    embed="embed"
+    ponytypein="GCond tag"
+    ponytypeinconv=""
+    ponytypeout="GCond"
+    structtype="GCond"
+    structdef="GCond"
+    argtype="GCond tag"
+    rvtype="GCond"/>
+
+  <typedef name="GtkCellRendererText"
+    embed="embed"
+    ponytypein="GtkCellRendererText tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererText"
+    structtype="GtkCellRendererText"
+    structdef="GtkCellRendererText"
+    argtype="GtkCellRendererText tag"
+    rvtype="GtkCellRendererText"/>
+
+  <typedef name="GtkRecentChooserMenuPrivate"
+    embed="embed"
+    ponytypein="GtkRecentChooserMenuPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRecentChooserMenuPrivate"
+    structtype="GtkRecentChooserMenuPrivate"
+    structdef="GtkRecentChooserMenuPrivate"
+    argtype="GtkRecentChooserMenuPrivate tag"
+    rvtype="GtkRecentChooserMenuPrivate"/>
+
+  <typedef name="GtkMenuPrivate"
+    embed="embed"
+    ponytypein="GtkMenuPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuPrivate"
+    structtype="GtkMenuPrivate"
+    structdef="GtkMenuPrivate"
+    argtype="GtkMenuPrivate tag"
+    rvtype="GtkMenuPrivate"/>
+
+  <typedef name="GtkRecentActionPrivate"
+    embed="embed"
+    ponytypein="GtkRecentActionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRecentActionPrivate"
+    structtype="GtkRecentActionPrivate"
+    structdef="GtkRecentActionPrivate"
+    argtype="GtkRecentActionPrivate tag"
+    rvtype="GtkRecentActionPrivate"/>
+
+  <typedef name="GApplicationCommandLinePrivate"
+    embed="embed"
+    ponytypein="GApplicationCommandLinePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GApplicationCommandLinePrivate"
+    structtype="GApplicationCommandLinePrivate"
+    structdef="GApplicationCommandLinePrivate"
+    argtype="GApplicationCommandLinePrivate tag"
+    rvtype="GApplicationCommandLinePrivate"/>
+
+  <typedef name="GtkToolItemGroupPrivate"
+    embed="embed"
+    ponytypein="GtkToolItemGroupPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolItemGroupPrivate"
+    structtype="GtkToolItemGroupPrivate"
+    structdef="GtkToolItemGroupPrivate"
+    argtype="GtkToolItemGroupPrivate tag"
+    rvtype="GtkToolItemGroupPrivate"/>
+
+  <typedef name="GEmblemedIcon"
+    embed="embed"
+    ponytypein="GEmblemedIcon tag"
+    ponytypeinconv=""
+    ponytypeout="GEmblemedIcon"
+    structtype="GEmblemedIcon"
+    structdef="GEmblemedIcon"
+    argtype="GEmblemedIcon tag"
+    rvtype="GEmblemedIcon"/>
+
+  <typedef name="GtkMenuShellClass"
+    embed="embed"
+    ponytypein="GtkMenuShellClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuShellClass"
+    structtype="GtkMenuShellClass"
+    structdef="GtkMenuShellClass"
+    argtype="GtkMenuShellClass tag"
+    rvtype="GtkMenuShellClass"/>
+
+  <typedef name="U8"
+    embed="var"
+    ponytypein="U8"
+    ponytypeinconv=""
+    ponytypeout="U8"
+    structtype="U8"
+    structdef="U8(0)"
+    argtype="U8"
+    rvtype="U8"/>
+
+  <typedef name="GdkEventSequence"
+    embed="embed"
+    ponytypein="GdkEventSequence tag"
+    ponytypeinconv=""
+    ponytypeout="GdkEventSequence"
+    structtype="GdkEventSequence"
+    structdef="GdkEventSequence"
+    argtype="GdkEventSequence tag"
+    rvtype="GdkEventSequence"/>
+
+  <typedef name="GtkNativeDialogClass"
+    embed="embed"
+    ponytypein="GtkNativeDialogClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkNativeDialogClass"
+    structtype="GtkNativeDialogClass"
+    structdef="GtkNativeDialogClass"
+    argtype="GtkNativeDialogClass tag"
+    rvtype="GtkNativeDialogClass"/>
+
+  <typedef name="GtkAppChooserButtonPrivate"
+    embed="embed"
+    ponytypein="GtkAppChooserButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAppChooserButtonPrivate"
+    structtype="GtkAppChooserButtonPrivate"
+    structdef="GtkAppChooserButtonPrivate"
+    argtype="GtkAppChooserButtonPrivate tag"
+    rvtype="GtkAppChooserButtonPrivate"/>
+
+  <typedef name="GFilterInputStream"
+    embed="embed"
+    ponytypein="GFilterInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GFilterInputStream"
+    structtype="GFilterInputStream"
+    structdef="GFilterInputStream"
+    argtype="GFilterInputStream tag"
+    rvtype="GFilterInputStream"/>
+
+  <typedef name="GSocketControlMessage"
+    embed="embed"
+    ponytypein="GSocketControlMessage tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketControlMessage"
+    structtype="GSocketControlMessage"
+    structdef="GSocketControlMessage"
+    argtype="GSocketControlMessage tag"
+    rvtype="GSocketControlMessage"/>
+
+  <typedef name="GtkCellRenderer"
+    embed="embed"
+    ponytypein="GtkCellRenderer tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRenderer"
+    structtype="GtkCellRenderer"
+    structdef="GtkCellRenderer"
+    argtype="GtkCellRenderer tag"
+    rvtype="GtkCellRenderer"/>
+
+  <typedef name="GSocketAddressEnumerator"
+    embed="embed"
+    ponytypein="GSocketAddressEnumerator tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddressEnumerator"
+    structtype="GSocketAddressEnumerator"
+    structdef="GSocketAddressEnumerator"
+    argtype="GSocketAddressEnumerator tag"
+    rvtype="GSocketAddressEnumerator"/>
+
+  <typedef name="GVariant"
+    embed="embed"
+    ponytypein="GVariant tag"
+    ponytypeinconv=""
+    ponytypeout="GVariant"
+    structtype="GVariant"
+    structdef="GVariant"
+    argtype="GVariant tag"
+    rvtype="GVariant"/>
+
+  <typedef name="I64"
+    embed="var"
+    ponytypein="I64"
+    ponytypeinconv=""
+    ponytypeout="I64"
+    structtype="I64"
+    structdef="I64(0)"
+    argtype="I64"
+    rvtype="I64"/>
+
+  <typedef name="GApplication"
+    embed="embed"
+    ponytypein="GApplication tag"
+    ponytypeinconv=""
+    ponytypeout="GApplication"
+    structtype="GApplication"
+    structdef="GApplication"
+    argtype="GApplication tag"
+    rvtype="GApplication"/>
+
+  <typedef name="GInputStreamPrivate"
+    embed="embed"
+    ponytypein="GInputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GInputStreamPrivate"
+    structtype="GInputStreamPrivate"
+    structdef="GInputStreamPrivate"
+    argtype="GInputStreamPrivate tag"
+    rvtype="GInputStreamPrivate"/>
+
+  <typedef name="GThreadedSocketServicePrivate"
+    embed="embed"
+    ponytypein="GThreadedSocketServicePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GThreadedSocketServicePrivate"
+    structtype="GThreadedSocketServicePrivate"
+    structdef="GThreadedSocketServicePrivate"
+    argtype="GThreadedSocketServicePrivate tag"
+    rvtype="GThreadedSocketServicePrivate"/>
+
+  <typedef name="GtkRcStyle"
+    embed="embed"
+    ponytypein="GtkRcStyle tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRcStyle"
+    structtype="GtkRcStyle"
+    structdef="GtkRcStyle"
+    argtype="GtkRcStyle tag"
+    rvtype="GtkRcStyle"/>
+
+  <typedef name="F128"
+    embed="var"
+    ponytypein="F128"
+    ponytypeinconv=""
+    ponytypeout="F128"
+    structtype="F128"
+    structdef="F128(0)"
+    argtype="F128"
+    rvtype="F128"/>
+
+  <typedef name="GtkFrame"
+    embed="embed"
+    ponytypein="GtkFrame tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFrame"
+    structtype="GtkFrame"
+    structdef="GtkFrame"
+    argtype="GtkFrame tag"
+    rvtype="GtkFrame"/>
+
+  <typedef name="GtkStatusIconPrivate"
+    embed="embed"
+    ponytypein="GtkStatusIconPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkStatusIconPrivate"
+    structtype="GtkStatusIconPrivate"
+    structdef="GtkStatusIconPrivate"
+    argtype="GtkStatusIconPrivate tag"
+    rvtype="GtkStatusIconPrivate"/>
+
+  <typedef name="GDBusObjectSkeletonPrivate"
+    embed="embed"
+    ponytypein="GDBusObjectSkeletonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectSkeletonPrivate"
+    structtype="GDBusObjectSkeletonPrivate"
+    structdef="GDBusObjectSkeletonPrivate"
+    argtype="GDBusObjectSkeletonPrivate tag"
+    rvtype="GDBusObjectSkeletonPrivate"/>
+
+  <typedef name="GtkButton"
+    embed="embed"
+    ponytypein="GtkButton tag"
+    ponytypeinconv=""
+    ponytypeout="GtkButton"
+    structtype="GtkButton"
+    structdef="GtkButton"
+    argtype="GtkButton tag"
+    rvtype="GtkButton"/>
+
+  <typedef name="GtkScalePrivate"
+    embed="embed"
+    ponytypein="GtkScalePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScalePrivate"
+    structtype="GtkScalePrivate"
+    structdef="GtkScalePrivate"
+    argtype="GtkScalePrivate tag"
+    rvtype="GtkScalePrivate"/>
+
+  <typedef name="GtkIconFactoryPrivate"
+    embed="embed"
+    ponytypein="GtkIconFactoryPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkIconFactoryPrivate"
+    structtype="GtkIconFactoryPrivate"
+    structdef="GtkIconFactoryPrivate"
+    argtype="GtkIconFactoryPrivate tag"
+    rvtype="GtkIconFactoryPrivate"/>
+
+  <typedef name="GSocketPrivate"
+    embed="embed"
+    ponytypein="GSocketPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketPrivate"
+    structtype="GSocketPrivate"
+    structdef="GSocketPrivate"
+    argtype="GSocketPrivate tag"
+    rvtype="GSocketPrivate"/>
+
+  <typedef name="GtkEntryPrivate"
+    embed="embed"
+    ponytypein="GtkEntryPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkEntryPrivate"
+    structtype="GtkEntryPrivate"
+    structdef="GtkEntryPrivate"
+    argtype="GtkEntryPrivate tag"
+    rvtype="GtkEntryPrivate"/>
+
+  <typedef name="GtkToolButton"
+    embed="embed"
+    ponytypein="GtkToolButton tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolButton"
+    structtype="GtkToolButton"
+    structdef="GtkToolButton"
+    argtype="GtkToolButton tag"
+    rvtype="GtkToolButton"/>
+
+  <typedef name="GtkMenuItemPrivate"
+    embed="embed"
+    ponytypein="GtkMenuItemPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuItemPrivate"
+    structtype="GtkMenuItemPrivate"
+    structdef="GtkMenuItemPrivate"
+    argtype="GtkMenuItemPrivate tag"
+    rvtype="GtkMenuItemPrivate"/>
+
+  <typedef name="GtkCellRendererSpinPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererSpinPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererSpinPrivate"
+    structtype="GtkCellRendererSpinPrivate"
+    structdef="GtkCellRendererSpinPrivate"
+    argtype="GtkCellRendererSpinPrivate tag"
+    rvtype="GtkCellRendererSpinPrivate"/>
+
+  <typedef name="GApplicationClass"
+    embed="embed"
+    ponytypein="GApplicationClass tag"
+    ponytypeinconv=""
+    ponytypeout="GApplicationClass"
+    structtype="GApplicationClass"
+    structdef="GApplicationClass"
+    argtype="GApplicationClass tag"
+    rvtype="GApplicationClass"/>
+
+  <typedef name="GSocketAddress"
+    embed="embed"
+    ponytypein="GSocketAddress tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddress"
+    structtype="GSocketAddress"
+    structdef="GSocketAddress"
+    argtype="GSocketAddress tag"
+    rvtype="GSocketAddress"/>
+
+  <typedef name="GDataOutputStreamPrivate"
+    embed="embed"
+    ponytypein="GDataOutputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDataOutputStreamPrivate"
+    structtype="GDataOutputStreamPrivate"
+    structdef="GDataOutputStreamPrivate"
+    argtype="GDataOutputStreamPrivate tag"
+    rvtype="GDataOutputStreamPrivate"/>
+
+  <typedef name="Pointer[Libcxmmreg]"
+    embed="var"
+    ponytypein="Pointer[Libcxmmreg] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Libcxmmreg]"
+    structtype="Pointer[Libcxmmreg]"
+    structdef="Pointer[Libcxmmreg]"
+    argtype="Pointer[Libcxmmreg] tag"
+    rvtype="Pointer[Libcxmmreg]"/>
+
+  <typedef name="GIOStream"
+    embed="embed"
+    ponytypein="GIOStream tag"
+    ponytypeinconv=""
+    ponytypeout="GIOStream"
+    structtype="GIOStream"
+    structdef="GIOStream"
+    argtype="GIOStream tag"
+    rvtype="GIOStream"/>
+
+  <typedef name="GtkButtonPrivate"
+    embed="embed"
+    ponytypein="GtkButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkButtonPrivate"
+    structtype="GtkButtonPrivate"
+    structdef="GtkButtonPrivate"
+    argtype="GtkButtonPrivate tag"
+    rvtype="GtkButtonPrivate"/>
+
+  <typedef name="Cairorectangleint"
+    embed="embed"
+    ponytypein="Cairorectangleint tag"
+    ponytypeinconv=""
+    ponytypeout="Cairorectangleint"
+    structtype="Cairorectangleint"
+    structdef="Cairorectangleint"
+    argtype="Cairorectangleint tag"
+    rvtype="Cairorectangleint"/>
+
+  <typedef name="GtkWindow"
+    embed="embed"
+    ponytypein="GtkWindow tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWindow"
+    structtype="GtkWindow"
+    structdef="GtkWindow"
+    argtype="GtkWindow tag"
+    rvtype="GtkWindow"/>
+
+  <typedef name="I32"
+    embed="var"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="GBufferedOutputStreamPrivate"
+    embed="embed"
+    ponytypein="GBufferedOutputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedOutputStreamPrivate"
+    structtype="GBufferedOutputStreamPrivate"
+    structdef="GBufferedOutputStreamPrivate"
+    argtype="GBufferedOutputStreamPrivate tag"
+    rvtype="GBufferedOutputStreamPrivate"/>
+
+  <typedef name="Pointer[U32]"
+    embed="var"
+    ponytypein="Pointer[U32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U32]"
+    structtype="Pointer[U32]"
+    structdef="Pointer[U32]"
+    argtype="Pointer[U32] tag"
+    rvtype="Pointer[U32]"/>
+
+  <typedef name="GtkTreeStorePrivate"
+    embed="embed"
+    ponytypein="GtkTreeStorePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTreeStorePrivate"
+    structtype="GtkTreeStorePrivate"
+    structdef="GtkTreeStorePrivate"
+    argtype="GtkTreeStorePrivate tag"
+    rvtype="GtkTreeStorePrivate"/>
+
+  <typedef name="GHashTable"
+    embed="embed"
+    ponytypein="GHashTable tag"
+    ponytypeinconv=""
+    ponytypeout="GHashTable"
+    structtype="GHashTable"
+    structdef="GHashTable"
+    argtype="GHashTable tag"
+    rvtype="GHashTable"/>
+
+  <typedef name="GSocketListener"
+    embed="embed"
+    ponytypein="GSocketListener tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketListener"
+    structtype="GSocketListener"
+    structdef="GSocketListener"
+    argtype="GSocketListener tag"
+    rvtype="GSocketListener"/>
+
+  <typedef name="GSocketListenerPrivate"
+    embed="embed"
+    ponytypein="GSocketListenerPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketListenerPrivate"
+    structtype="GSocketListenerPrivate"
+    structdef="GSocketListenerPrivate"
+    argtype="GSocketListenerPrivate tag"
+    rvtype="GSocketListenerPrivate"/>
+
+  <typedef name="PangoMatrix"
+    embed="embed"
+    ponytypein="PangoMatrix tag"
+    ponytypeinconv=""
+    ponytypeout="PangoMatrix"
+    structtype="PangoMatrix"
+    structdef="PangoMatrix"
+    argtype="PangoMatrix tag"
+    rvtype="PangoMatrix"/>
+
+  <typedef name="GtkAccelLabelPrivate"
+    embed="embed"
+    ponytypein="GtkAccelLabelPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAccelLabelPrivate"
+    structtype="GtkAccelLabelPrivate"
+    structdef="GtkAccelLabelPrivate"
+    argtype="GtkAccelLabelPrivate tag"
+    rvtype="GtkAccelLabelPrivate"/>
+
+  <typedef name="GtkEntryClass"
+    embed="embed"
+    ponytypein="GtkEntryClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkEntryClass"
+    structtype="GtkEntryClass"
+    structdef="GtkEntryClass"
+    argtype="GtkEntryClass tag"
+    rvtype="GtkEntryClass"/>
+
+  <typedef name="U16"
+    embed="var"
+    ponytypein="U16"
+    ponytypeinconv=""
+    ponytypeout="U16"
+    structtype="U16"
+    structdef="U16(0)"
+    argtype="U16"
+    rvtype="U16"/>
+
+  <typedef name="GtkWindowGroupPrivate"
+    embed="embed"
+    ponytypein="GtkWindowGroupPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWindowGroupPrivate"
+    structtype="GtkWindowGroupPrivate"
+    structdef="GtkWindowGroupPrivate"
+    argtype="GtkWindowGroupPrivate tag"
+    rvtype="GtkWindowGroupPrivate"/>
+
+  <typedef name="None"
+    embed="embed"
+    ponytypein="None tag"
+    ponytypeinconv=""
+    ponytypeout="None"
+    structtype="None"
+    structdef="None"
+    argtype="None tag"
+    rvtype="None"/>
+
+  <typedef name="GtkSpinButtonPrivate"
+    embed="embed"
+    ponytypein="GtkSpinButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSpinButtonPrivate"
+    structtype="GtkSpinButtonPrivate"
+    structdef="GtkSpinButtonPrivate"
+    argtype="GtkSpinButtonPrivate tag"
+    rvtype="GtkSpinButtonPrivate"/>
+
+  <typedef name="GtkApplicationPrivate"
+    embed="embed"
+    ponytypein="GtkApplicationPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkApplicationPrivate"
+    structtype="GtkApplicationPrivate"
+    structdef="GtkApplicationPrivate"
+    argtype="GtkApplicationPrivate tag"
+    rvtype="GtkApplicationPrivate"/>
+
+  <typedef name="GtkRangeClass"
+    embed="embed"
+    ponytypein="GtkRangeClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRangeClass"
+    structtype="GtkRangeClass"
+    structdef="GtkRangeClass"
+    argtype="GtkRangeClass tag"
+    rvtype="GtkRangeClass"/>
+
+  <typedef name="Pointer[Cairopattern]"
+    embed="var"
+    ponytypein="Pointer[Cairopattern] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Cairopattern]"
+    structtype="Pointer[Cairopattern]"
+    structdef="Pointer[Cairopattern]"
+    argtype="Pointer[Cairopattern] tag"
+    rvtype="Pointer[Cairopattern]"/>
+
+  <typedef name="GtkScaleClass"
+    embed="embed"
+    ponytypein="GtkScaleClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScaleClass"
+    structtype="GtkScaleClass"
+    structdef="GtkScaleClass"
+    argtype="GtkScaleClass tag"
+    rvtype="GtkScaleClass"/>
+
+  <typedef name="Pointer[U16]"
+    embed="var"
+    ponytypein="Pointer[U16] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U16]"
+    structtype="Pointer[U16]"
+    structdef="Pointer[U16]"
+    argtype="Pointer[U16] tag"
+    rvtype="Pointer[U16]"/>
+
+  <typedef name="Pointer[Fpxreg]"
+    embed="var"
+    ponytypein="Pointer[Fpxreg] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Fpxreg]"
+    structtype="Pointer[Fpxreg]"
+    structdef="Pointer[Fpxreg]"
+    argtype="Pointer[Fpxreg] tag"
+    rvtype="Pointer[Fpxreg]"/>
+
+  <typedef name="GtkAccelKey"
+    embed="embed"
+    ponytypein="GtkAccelKey tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAccelKey"
+    structtype="GtkAccelKey"
+    structdef="GtkAccelKey"
+    argtype="GtkAccelKey tag"
+    rvtype="GtkAccelKey"/>
+
+  <typedef name="GtkIMContextSimplePrivate"
+    embed="embed"
+    ponytypein="GtkIMContextSimplePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkIMContextSimplePrivate"
+    structtype="GtkIMContextSimplePrivate"
+    structdef="GtkIMContextSimplePrivate"
+    argtype="GtkIMContextSimplePrivate tag"
+    rvtype="GtkIMContextSimplePrivate"/>
+
+  <typedef name="GtkEntryCompletionPrivate"
+    embed="embed"
+    ponytypein="GtkEntryCompletionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkEntryCompletionPrivate"
+    structtype="GtkEntryCompletionPrivate"
+    structdef="GtkEntryCompletionPrivate"
+    argtype="GtkEntryCompletionPrivate tag"
+    rvtype="GtkEntryCompletionPrivate"/>
+
+  <typedef name="Pthreadcleanupbuffer"
+    embed="embed"
+    ponytypein="Pthreadcleanupbuffer tag"
+    ponytypeinconv=""
+    ponytypeout="Pthreadcleanupbuffer"
+    structtype="Pthreadcleanupbuffer"
+    structdef="Pthreadcleanupbuffer"
+    argtype="Pthreadcleanupbuffer tag"
+    rvtype="Pthreadcleanupbuffer"/>
+
+  <typedef name="GtkMiscPrivate"
+    embed="embed"
+    ponytypein="GtkMiscPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMiscPrivate"
+    structtype="GtkMiscPrivate"
+    structdef="GtkMiscPrivate"
+    argtype="GtkMiscPrivate tag"
+    rvtype="GtkMiscPrivate"/>
+
+  <typedef name="GDBusArgInfo"
+    embed="embed"
+    ponytypein="GDBusArgInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusArgInfo"
+    structtype="GDBusArgInfo"
+    structdef="GDBusArgInfo"
+    argtype="GDBusArgInfo tag"
+    rvtype="GDBusArgInfo"/>
+
+  <typedef name="GdkWindow"
+    embed="embed"
+    ponytypein="GdkWindow tag"
+    ponytypeinconv=""
+    ponytypeout="GdkWindow"
+    structtype="GdkWindow"
+    structdef="GdkWindow"
+    argtype="GdkWindow tag"
+    rvtype="GdkWindow"/>
+
+  <typedef name="GtkViewportPrivate"
+    embed="embed"
+    ponytypein="GtkViewportPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkViewportPrivate"
+    structtype="GtkViewportPrivate"
+    structdef="GtkViewportPrivate"
+    argtype="GtkViewportPrivate tag"
+    rvtype="GtkViewportPrivate"/>
+
+  <typedef name="GtkWidgetClass"
+    embed="embed"
+    ponytypein="GtkWidgetClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWidgetClass"
+    structtype="GtkWidgetClass"
+    structdef="GtkWidgetClass"
+    argtype="GtkWidgetClass tag"
+    rvtype="GtkWidgetClass"/>
+
+  <typedef name="Pthreadinternalslist"
+    embed="embed"
+    ponytypein="Pthreadinternalslist tag"
+    ponytypeinconv=""
+    ponytypeout="Pthreadinternalslist"
+    structtype="Pthreadinternalslist"
+    structdef="Pthreadinternalslist"
+    argtype="Pthreadinternalslist tag"
+    rvtype="Pthreadinternalslist"/>
+
+  <typedef name="GData"
+    embed="embed"
+    ponytypein="GData tag"
+    ponytypeinconv=""
+    ponytypeout="GData"
+    structtype="GData"
+    structdef="GData"
+    argtype="GData tag"
+    rvtype="GData"/>
+
+  <typedef name="GtkOverlayPrivate"
+    embed="embed"
+    ponytypein="GtkOverlayPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkOverlayPrivate"
+    structtype="GtkOverlayPrivate"
+    structdef="GtkOverlayPrivate"
+    argtype="GtkOverlayPrivate tag"
+    rvtype="GtkOverlayPrivate"/>
+
+  <typedef name="GConverterOutputStreamPrivate"
+    embed="embed"
+    ponytypein="GConverterOutputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GConverterOutputStreamPrivate"
+    structtype="GConverterOutputStreamPrivate"
+    structdef="GConverterOutputStreamPrivate"
+    argtype="GConverterOutputStreamPrivate tag"
+    rvtype="GConverterOutputStreamPrivate"/>
+
+  <typedef name="GtkUIManagerPrivate"
+    embed="embed"
+    ponytypein="GtkUIManagerPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkUIManagerPrivate"
+    structtype="GtkUIManagerPrivate"
+    structdef="GtkUIManagerPrivate"
+    argtype="GtkUIManagerPrivate tag"
+    rvtype="GtkUIManagerPrivate"/>
+
+  <typedef name="GOutputStreamPrivate"
+    embed="embed"
+    ponytypein="GOutputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GOutputStreamPrivate"
+    structtype="GOutputStreamPrivate"
+    structdef="GOutputStreamPrivate"
+    argtype="GOutputStreamPrivate tag"
+    rvtype="GOutputStreamPrivate"/>
+
+  <typedef name="GDBusNodeInfo"
+    embed="embed"
+    ponytypein="GDBusNodeInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusNodeInfo"
+    structtype="GDBusNodeInfo"
+    structdef="GDBusNodeInfo"
+    argtype="GDBusNodeInfo tag"
+    rvtype="GDBusNodeInfo"/>
+
+  <typedef name="GtkProgressBarPrivate"
+    embed="embed"
+    ponytypein="GtkProgressBarPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkProgressBarPrivate"
+    structtype="GtkProgressBarPrivate"
+    structdef="GtkProgressBarPrivate"
+    argtype="GtkProgressBarPrivate tag"
+    rvtype="GtkProgressBarPrivate"/>
+
+  <typedef name="GtkDialogPrivate"
+    embed="embed"
+    ponytypein="GtkDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkDialogPrivate"
+    structtype="GtkDialogPrivate"
+    structdef="GtkDialogPrivate"
+    argtype="GtkDialogPrivate tag"
+    rvtype="GtkDialogPrivate"/>
+
+  <typedef name="Cairoregion"
+    embed="embed"
+    ponytypein="Cairoregion tag"
+    ponytypeinconv=""
+    ponytypeout="Cairoregion"
+    structtype="Cairoregion"
+    structdef="Cairoregion"
+    argtype="Cairoregion tag"
+    rvtype="Cairoregion"/>
+
+  <typedef name="GSourceFuncs"
+    embed="embed"
+    ponytypein="GSourceFuncs tag"
+    ponytypeinconv=""
+    ponytypeout="GSourceFuncs"
+    structtype="GSourceFuncs"
+    structdef="GSourceFuncs"
+    argtype="GSourceFuncs tag"
+    rvtype="GSourceFuncs"/>
+
+  <typedef name="GtkCheckMenuItemClass"
+    embed="embed"
+    ponytypein="GtkCheckMenuItemClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCheckMenuItemClass"
+    structtype="GtkCheckMenuItemClass"
+    structdef="GtkCheckMenuItemClass"
+    argtype="GtkCheckMenuItemClass tag"
+    rvtype="GtkCheckMenuItemClass"/>
+
+  <typedef name="GtkActionPrivate"
+    embed="embed"
+    ponytypein="GtkActionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkActionPrivate"
+    structtype="GtkActionPrivate"
+    structdef="GtkActionPrivate"
+    argtype="GtkActionPrivate tag"
+    rvtype="GtkActionPrivate"/>
+
+  <typedef name="PangoAttrClass"
+    embed="embed"
+    ponytypein="PangoAttrClass tag"
+    ponytypeinconv=""
+    ponytypeout="PangoAttrClass"
+    structtype="PangoAttrClass"
+    structdef="PangoAttrClass"
+    argtype="PangoAttrClass tag"
+    rvtype="PangoAttrClass"/>
+
+  <typedef name="GtkComboBoxTextPrivate"
+    embed="embed"
+    ponytypein="GtkComboBoxTextPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkComboBoxTextPrivate"
+    structtype="GtkComboBoxTextPrivate"
+    structdef="GtkComboBoxTextPrivate"
+    argtype="GtkComboBoxTextPrivate tag"
+    rvtype="GtkComboBoxTextPrivate"/>
+
+  <typedef name="GtkBindingSignal"
+    embed="embed"
+    ponytypein="GtkBindingSignal tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBindingSignal"
+    structtype="GtkBindingSignal"
+    structdef="GtkBindingSignal"
+    argtype="GtkBindingSignal tag"
+    rvtype="GtkBindingSignal"/>
+
+  <typedef name="GDBusInterfaceSkeletonPrivate"
+    embed="embed"
+    ponytypein="GDBusInterfaceSkeletonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusInterfaceSkeletonPrivate"
+    structtype="GDBusInterfaceSkeletonPrivate"
+    structdef="GDBusInterfaceSkeletonPrivate"
+    argtype="GDBusInterfaceSkeletonPrivate tag"
+    rvtype="GDBusInterfaceSkeletonPrivate"/>
+
+  <typedef name="GtkImageMenuItemPrivate"
+    embed="embed"
+    ponytypein="GtkImageMenuItemPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkImageMenuItemPrivate"
+    structtype="GtkImageMenuItemPrivate"
+    structdef="GtkImageMenuItemPrivate"
+    argtype="GtkImageMenuItemPrivate tag"
+    rvtype="GtkImageMenuItemPrivate"/>
+
+  <typedef name="GtkButtonClass"
+    embed="embed"
+    ponytypein="GtkButtonClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkButtonClass"
+    structtype="GtkButtonClass"
+    structdef="GtkButtonClass"
+    argtype="GtkButtonClass tag"
+    rvtype="GtkButtonClass"/>
+
+  <typedef name="GtkBin"
+    embed="embed"
+    ponytypein="GtkBin tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBin"
+    structtype="GtkBin"
+    structdef="GtkBin"
+    argtype="GtkBin tag"
+    rvtype="GtkBin"/>
+
+  <typedef name="Pointer[F128]"
+    embed="var"
+    ponytypein="Pointer[F128] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[F128]"
+    structtype="Pointer[F128]"
+    structdef="Pointer[F128]"
+    argtype="Pointer[F128] tag"
+    rvtype="Pointer[F128]"/>
+
+  <typedef name="GtkCheckButton"
+    embed="embed"
+    ponytypein="GtkCheckButton tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCheckButton"
+    structtype="GtkCheckButton"
+    structdef="GtkCheckButton"
+    argtype="GtkCheckButton tag"
+    rvtype="GtkCheckButton"/>
+
+  <typedef name="GtkRecentChooserDialogPrivate"
+    embed="embed"
+    ponytypein="GtkRecentChooserDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRecentChooserDialogPrivate"
+    structtype="GtkRecentChooserDialogPrivate"
+    structdef="GtkRecentChooserDialogPrivate"
+    argtype="GtkRecentChooserDialogPrivate tag"
+    rvtype="GtkRecentChooserDialogPrivate"/>
+
+  <typedef name="GBufferedInputStream"
+    embed="embed"
+    ponytypein="GBufferedInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GBufferedInputStream"
+    structtype="GBufferedInputStream"
+    structdef="GBufferedInputStream"
+    argtype="GBufferedInputStream tag"
+    rvtype="GBufferedInputStream"/>
+
+  <typedef name="GtkContainerPrivate"
+    embed="embed"
+    ponytypein="GtkContainerPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkContainerPrivate"
+    structtype="GtkContainerPrivate"
+    structdef="GtkContainerPrivate"
+    argtype="GtkContainerPrivate tag"
+    rvtype="GtkContainerPrivate"/>
+
+  <typedef name="GtkAccessiblePrivate"
+    embed="embed"
+    ponytypein="GtkAccessiblePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAccessiblePrivate"
+    structtype="GtkAccessiblePrivate"
+    structdef="GtkAccessiblePrivate"
+    argtype="GtkAccessiblePrivate tag"
+    rvtype="GtkAccessiblePrivate"/>
+
+  <typedef name="GSimpleProxyResolverPrivate"
+    embed="embed"
+    ponytypein="GSimpleProxyResolverPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSimpleProxyResolverPrivate"
+    structtype="GSimpleProxyResolverPrivate"
+    structdef="GSimpleProxyResolverPrivate"
+    argtype="GSimpleProxyResolverPrivate tag"
+    rvtype="GSimpleProxyResolverPrivate"/>
+
+  <typedef name="GNode"
+    embed="embed"
+    ponytypein="GNode tag"
+    ponytypeinconv=""
+    ponytypeout="GNode"
+    structtype="GNode"
+    structdef="GNode"
+    argtype="GNode tag"
+    rvtype="GNode"/>
+
+  <typedef name="GtkMenuItem"
+    embed="embed"
+    ponytypein="GtkMenuItem tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuItem"
+    structtype="GtkMenuItem"
+    structdef="GtkMenuItem"
+    argtype="GtkMenuItem tag"
+    rvtype="GtkMenuItem"/>
+
+  <typedef name="Pointer[I64]"
+    embed="var"
+    ponytypein="Pointer[I64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[I64]"
+    structtype="Pointer[I64]"
+    structdef="Pointer[I64]"
+    argtype="Pointer[I64] tag"
+    rvtype="Pointer[I64]"/>
+
+  <typedef name="GtkFileChooserButtonPrivate"
+    embed="embed"
+    ponytypein="GtkFileChooserButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFileChooserButtonPrivate"
+    structtype="GtkFileChooserButtonPrivate"
+    structdef="GtkFileChooserButtonPrivate"
+    argtype="GtkFileChooserButtonPrivate tag"
+    rvtype="GtkFileChooserButtonPrivate"/>
+
+  <typedef name="PangoTabArray"
+    embed="embed"
+    ponytypein="PangoTabArray tag"
+    ponytypeinconv=""
+    ponytypeout="PangoTabArray"
+    structtype="PangoTabArray"
+    structdef="PangoTabArray"
+    argtype="PangoTabArray tag"
+    rvtype="PangoTabArray"/>
+
+  <typedef name="GtkScaleButtonPrivate"
+    embed="embed"
+    ponytypein="GtkScaleButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScaleButtonPrivate"
+    structtype="GtkScaleButtonPrivate"
+    structdef="GtkScaleButtonPrivate"
+    argtype="GtkScaleButtonPrivate tag"
+    rvtype="GtkScaleButtonPrivate"/>
+
+  <typedef name="GtkAlignmentPrivate"
+    embed="embed"
+    ponytypein="GtkAlignmentPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAlignmentPrivate"
+    structtype="GtkAlignmentPrivate"
+    structdef="GtkAlignmentPrivate"
+    argtype="GtkAlignmentPrivate tag"
+    rvtype="GtkAlignmentPrivate"/>
+
+  <typedef name="GMainContext"
+    embed="embed"
+    ponytypein="GMainContext tag"
+    ponytypeinconv=""
+    ponytypeout="GMainContext"
+    structtype="GMainContext"
+    structdef="GMainContext"
+    argtype="GMainContext tag"
+    rvtype="GMainContext"/>
+
+  <typedef name="PangoEngineScriptInfo"
+    embed="embed"
+    ponytypein="PangoEngineScriptInfo tag"
+    ponytypeinconv=""
+    ponytypeout="PangoEngineScriptInfo"
+    structtype="PangoEngineScriptInfo"
+    structdef="PangoEngineScriptInfo"
+    argtype="PangoEngineScriptInfo tag"
+    rvtype="PangoEngineScriptInfo"/>
+
+  <typedef name="GtkTearoffMenuItemPrivate"
+    embed="embed"
+    ponytypein="GtkTearoffMenuItemPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTearoffMenuItemPrivate"
+    structtype="GtkTearoffMenuItemPrivate"
+    structdef="GtkTearoffMenuItemPrivate"
+    argtype="GtkTearoffMenuItemPrivate tag"
+    rvtype="GtkTearoffMenuItemPrivate"/>
+
+  <typedef name="GtkToolPalettePrivate"
+    embed="embed"
+    ponytypein="GtkToolPalettePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolPalettePrivate"
+    structtype="GtkToolPalettePrivate"
+    structdef="GtkToolPalettePrivate"
+    argtype="GtkToolPalettePrivate tag"
+    rvtype="GtkToolPalettePrivate"/>
+
+  <typedef name="GtkCellRendererClassPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererClassPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererClassPrivate"
+    structtype="GtkCellRendererClassPrivate"
+    structdef="GtkCellRendererClassPrivate"
+    argtype="GtkCellRendererClassPrivate tag"
+    rvtype="GtkCellRendererClassPrivate"/>
+
+  <typedef name="Pointer[GdkColor]"
+    embed="var"
+    ponytypein="Pointer[GdkColor] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[GdkColor]"
+    structtype="Pointer[GdkColor]"
+    structdef="Pointer[GdkColor]"
+    argtype="Pointer[GdkColor] tag"
+    rvtype="Pointer[GdkColor]"/>
+
+  <typedef name="GDBusProxyPrivate"
+    embed="embed"
+    ponytypein="GDBusProxyPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusProxyPrivate"
+    structtype="GDBusProxyPrivate"
+    structdef="GDBusProxyPrivate"
+    argtype="GDBusProxyPrivate tag"
+    rvtype="GDBusProxyPrivate"/>
+
+  <typedef name="GMemoryOutputStreamPrivate"
+    embed="embed"
+    ponytypein="GMemoryOutputStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GMemoryOutputStreamPrivate"
+    structtype="GMemoryOutputStreamPrivate"
+    structdef="GMemoryOutputStreamPrivate"
+    argtype="GMemoryOutputStreamPrivate tag"
+    rvtype="GMemoryOutputStreamPrivate"/>
+
+  <typedef name="GtkWindowPrivate"
+    embed="embed"
+    ponytypein="GtkWindowPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWindowPrivate"
+    structtype="GtkWindowPrivate"
+    structdef="GtkWindowPrivate"
+    argtype="GtkWindowPrivate tag"
+    rvtype="GtkWindowPrivate"/>
+
+  <typedef name="Pointer[String]"
+    embed="var"
+    ponytypein="Pointer[String] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[String]"
+    structtype="Pointer[String]"
+    structdef="Pointer[String]"
+    argtype="Pointer[String] tag"
+    rvtype="Pointer[String]"/>
+
+  <typedef name="F32"
+    embed="var"
+    ponytypein="F32"
+    ponytypeinconv=""
+    ponytypeout="F32"
+    structtype="F32"
+    structdef="F32(0)"
+    argtype="F32"
+    rvtype="F32"/>
+
+  <typedef name="GMountOperationPrivate"
+    embed="embed"
+    ponytypein="GMountOperationPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GMountOperationPrivate"
+    structtype="GMountOperationPrivate"
+    structdef="GMountOperationPrivate"
+    argtype="GMountOperationPrivate tag"
+    rvtype="GMountOperationPrivate"/>
+
+  <typedef name="GtkBox"
+    embed="embed"
+    ponytypein="GtkBox tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBox"
+    structtype="GtkBox"
+    structdef="GtkBox"
+    argtype="GtkBox tag"
+    rvtype="GtkBox"/>
+
+  <typedef name="GtkToolButtonPrivate"
+    embed="embed"
+    ponytypein="GtkToolButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolButtonPrivate"
+    structtype="GtkToolButtonPrivate"
+    structdef="GtkToolButtonPrivate"
+    argtype="GtkToolButtonPrivate tag"
+    rvtype="GtkToolButtonPrivate"/>
+
+  <typedef name="GtkMessageDialogPrivate"
+    embed="embed"
+    ponytypein="GtkMessageDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMessageDialogPrivate"
+    structtype="GtkMessageDialogPrivate"
+    structdef="GtkMessageDialogPrivate"
+    argtype="GtkMessageDialogPrivate tag"
+    rvtype="GtkMessageDialogPrivate"/>
+
+  <typedef name="GTlsConnectionPrivate"
+    embed="embed"
+    ponytypein="GTlsConnectionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsConnectionPrivate"
+    structtype="GTlsConnectionPrivate"
+    structdef="GTlsConnectionPrivate"
+    argtype="GTlsConnectionPrivate tag"
+    rvtype="GTlsConnectionPrivate"/>
+
+  <typedef name="GtkToggleAction"
+    embed="embed"
+    ponytypein="GtkToggleAction tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleAction"
+    structtype="GtkToggleAction"
+    structdef="GtkToggleAction"
+    argtype="GtkToggleAction tag"
+    rvtype="GtkToggleAction"/>
+
+  <typedef name="PangoGlyphVisAttr"
+    embed="embed"
+    ponytypein="PangoGlyphVisAttr tag"
+    ponytypeinconv=""
+    ponytypeout="PangoGlyphVisAttr"
+    structtype="PangoGlyphVisAttr"
+    structdef="PangoGlyphVisAttr"
+    argtype="PangoGlyphVisAttr tag"
+    rvtype="PangoGlyphVisAttr"/>
+
+  <typedef name="GtkCellRendererSpinnerPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererSpinnerPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererSpinnerPrivate"
+    structtype="GtkCellRendererSpinnerPrivate"
+    structdef="GtkCellRendererSpinnerPrivate"
+    argtype="GtkCellRendererSpinnerPrivate tag"
+    rvtype="GtkCellRendererSpinnerPrivate"/>
+
+  <typedef name="GtkNumerableIconPrivate"
+    embed="embed"
+    ponytypein="GtkNumerableIconPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkNumerableIconPrivate"
+    structtype="GtkNumerableIconPrivate"
+    structdef="GtkNumerableIconPrivate"
+    argtype="GtkNumerableIconPrivate tag"
+    rvtype="GtkNumerableIconPrivate"/>
+
+  <typedef name="GMountOperationClass"
+    embed="embed"
+    ponytypein="GMountOperationClass tag"
+    ponytypeinconv=""
+    ponytypeout="GMountOperationClass"
+    structtype="GMountOperationClass"
+    structdef="GMountOperationClass"
+    argtype="GMountOperationClass tag"
+    rvtype="GMountOperationClass"/>
+
+  <typedef name="GtkContainer"
+    embed="embed"
+    ponytypein="GtkContainer tag"
+    ponytypeinconv=""
+    ponytypeout="GtkContainer"
+    structtype="GtkContainer"
+    structdef="GtkContainer"
+    argtype="GtkContainer tag"
+    rvtype="GtkContainer"/>
+
+  <typedef name="GtkCellRendererTogglePrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererTogglePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererTogglePrivate"
+    structtype="GtkCellRendererTogglePrivate"
+    structdef="GtkCellRendererTogglePrivate"
+    argtype="GtkCellRendererTogglePrivate tag"
+    rvtype="GtkCellRendererTogglePrivate"/>
+
+  <typedef name="GtkPanedClass"
+    embed="embed"
+    ponytypein="GtkPanedClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkPanedClass"
+    structtype="GtkPanedClass"
+    structdef="GtkPanedClass"
+    argtype="GtkPanedClass tag"
+    rvtype="GtkPanedClass"/>
+
+  <typedef name="Pointer[GdkRGBA]"
+    embed="var"
+    ponytypein="Pointer[GdkRGBA] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[GdkRGBA]"
+    structtype="Pointer[GdkRGBA]"
+    structdef="Pointer[GdkRGBA]"
+    argtype="Pointer[GdkRGBA] tag"
+    rvtype="Pointer[GdkRGBA]"/>
+
+  <typedef name="GtkListStorePrivate"
+    embed="embed"
+    ponytypein="GtkListStorePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkListStorePrivate"
+    structtype="GtkListStorePrivate"
+    structdef="GtkListStorePrivate"
+    argtype="GtkListStorePrivate tag"
+    rvtype="GtkListStorePrivate"/>
+
+  <typedef name="GtkEntryBufferPrivate"
+    embed="embed"
+    ponytypein="GtkEntryBufferPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkEntryBufferPrivate"
+    structtype="GtkEntryBufferPrivate"
+    structdef="GtkEntryBufferPrivate"
+    argtype="GtkEntryBufferPrivate tag"
+    rvtype="GtkEntryBufferPrivate"/>
+
+  <typedef name="GtkBuilderPrivate"
+    embed="embed"
+    ponytypein="GtkBuilderPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBuilderPrivate"
+    structtype="GtkBuilderPrivate"
+    structdef="GtkBuilderPrivate"
+    argtype="GtkBuilderPrivate tag"
+    rvtype="GtkBuilderPrivate"/>
+
+  <typedef name="GResolverPrivate"
+    embed="embed"
+    ponytypein="GResolverPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GResolverPrivate"
+    structtype="GResolverPrivate"
+    structdef="GResolverPrivate"
+    argtype="GResolverPrivate tag"
+    rvtype="GResolverPrivate"/>
+
+  <typedef name="GtkMisc"
+    embed="embed"
+    ponytypein="GtkMisc tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMisc"
+    structtype="GtkMisc"
+    structdef="GtkMisc"
+    argtype="GtkMisc tag"
+    rvtype="GtkMisc"/>
+
+  <typedef name="GtkToolbarPrivate"
+    embed="embed"
+    ponytypein="GtkToolbarPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolbarPrivate"
+    structtype="GtkToolbarPrivate"
+    structdef="GtkToolbarPrivate"
+    argtype="GtkToolbarPrivate tag"
+    rvtype="GtkToolbarPrivate"/>
+
+  <typedef name="GTcpConnectionClass"
+    embed="embed"
+    ponytypein="GTcpConnectionClass tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpConnectionClass"
+    structtype="GTcpConnectionClass"
+    structdef="GTcpConnectionClass"
+    argtype="GTcpConnectionClass tag"
+    rvtype="GTcpConnectionClass"/>
+
+  <typedef name="GtkWidgetClassPrivate"
+    embed="embed"
+    ponytypein="GtkWidgetClassPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWidgetClassPrivate"
+    structtype="GtkWidgetClassPrivate"
+    structdef="GtkWidgetClassPrivate"
+    argtype="GtkWidgetClassPrivate tag"
+    rvtype="GtkWidgetClassPrivate"/>
+
+  <typedef name="GtkSeparatorToolItemPrivate"
+    embed="embed"
+    ponytypein="GtkSeparatorToolItemPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSeparatorToolItemPrivate"
+    structtype="GtkSeparatorToolItemPrivate"
+    structdef="GtkSeparatorToolItemPrivate"
+    argtype="GtkSeparatorToolItemPrivate tag"
+    rvtype="GtkSeparatorToolItemPrivate"/>
+
+  <typedef name="GEnumValue"
+    embed="embed"
+    ponytypein="GEnumValue tag"
+    ponytypeinconv=""
+    ponytypeout="GEnumValue"
+    structtype="GEnumValue"
+    structdef="GEnumValue"
+    argtype="GEnumValue tag"
+    rvtype="GEnumValue"/>
+
+  <typedef name="Pointer[U64]"
+    embed="var"
+    ponytypein="Pointer[U64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U64]"
+    structtype="Pointer[U64]"
+    structdef="Pointer[U64]"
+    argtype="Pointer[U64] tag"
+    rvtype="Pointer[U64]"/>
+
+  <typedef name="GtkCheckMenuItemPrivate"
+    embed="embed"
+    ponytypein="GtkCheckMenuItemPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCheckMenuItemPrivate"
+    structtype="GtkCheckMenuItemPrivate"
+    structdef="GtkCheckMenuItemPrivate"
+    argtype="GtkCheckMenuItemPrivate tag"
+    rvtype="GtkCheckMenuItemPrivate"/>
+
+  <typedef name="GEmblemedIconClass"
+    embed="embed"
+    ponytypein="GEmblemedIconClass tag"
+    ponytypeinconv=""
+    ponytypeout="GEmblemedIconClass"
+    structtype="GEmblemedIconClass"
+    structdef="GEmblemedIconClass"
+    argtype="GEmblemedIconClass tag"
+    rvtype="GEmblemedIconClass"/>
+
+  <typedef name="GMenuModelPrivate"
+    embed="embed"
+    ponytypein="GMenuModelPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GMenuModelPrivate"
+    structtype="GMenuModelPrivate"
+    structdef="GMenuModelPrivate"
+    argtype="GMenuModelPrivate tag"
+    rvtype="GMenuModelPrivate"/>
+
+  <typedef name="GtkRecentChooserWidgetPrivate"
+    embed="embed"
+    ponytypein="GtkRecentChooserWidgetPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRecentChooserWidgetPrivate"
+    structtype="GtkRecentChooserWidgetPrivate"
+    structdef="GtkRecentChooserWidgetPrivate"
+    argtype="GtkRecentChooserWidgetPrivate tag"
+    rvtype="GtkRecentChooserWidgetPrivate"/>
+
+  <typedef name="GTlsPasswordPrivate"
+    embed="embed"
+    ponytypein="GTlsPasswordPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GTlsPasswordPrivate"
+    structtype="GTlsPasswordPrivate"
+    structdef="GTlsPasswordPrivate"
+    argtype="GTlsPasswordPrivate tag"
+    rvtype="GTlsPasswordPrivate"/>
+
+  <typedef name="GtkFontButtonPrivate"
+    embed="embed"
+    ponytypein="GtkFontButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFontButtonPrivate"
+    structtype="GtkFontButtonPrivate"
+    structdef="GtkFontButtonPrivate"
+    argtype="GtkFontButtonPrivate tag"
+    rvtype="GtkFontButtonPrivate"/>
+
+  <typedef name="PangoEngineShape"
+    embed="embed"
+    ponytypein="PangoEngineShape tag"
+    ponytypeinconv=""
+    ponytypeout="PangoEngineShape"
+    structtype="PangoEngineShape"
+    structdef="PangoEngineShape"
+    argtype="PangoEngineShape tag"
+    rvtype="PangoEngineShape"/>
+
+  <typedef name="GtkEventBoxPrivate"
+    embed="embed"
+    ponytypein="GtkEventBoxPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkEventBoxPrivate"
+    structtype="GtkEventBoxPrivate"
+    structdef="GtkEventBoxPrivate"
+    argtype="GtkEventBoxPrivate tag"
+    rvtype="GtkEventBoxPrivate"/>
+
+  <typedef name="GtkCssProviderPrivate"
+    embed="embed"
+    ponytypein="GtkCssProviderPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCssProviderPrivate"
+    structtype="GtkCssProviderPrivate"
+    structdef="GtkCssProviderPrivate"
+    argtype="GtkCssProviderPrivate tag"
+    rvtype="GtkCssProviderPrivate"/>
+
+  <typedef name="AtkRelationSet"
+    embed="embed"
+    ponytypein="AtkRelationSet tag"
+    ponytypeinconv=""
+    ponytypeout="AtkRelationSet"
+    structtype="AtkRelationSet"
+    structdef="AtkRelationSet"
+    argtype="AtkRelationSet tag"
+    rvtype="AtkRelationSet"/>
+
+  <typedef name="GPtrArray"
+    embed="embed"
+    ponytypein="GPtrArray tag"
+    ponytypeinconv=""
+    ponytypeout="GPtrArray"
+    structtype="GPtrArray"
+    structdef="GPtrArray"
+    argtype="GPtrArray tag"
+    rvtype="GPtrArray"/>
+
+  <typedef name="GtkToggleButtonClass"
+    embed="embed"
+    ponytypein="GtkToggleButtonClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleButtonClass"
+    structtype="GtkToggleButtonClass"
+    structdef="GtkToggleButtonClass"
+    argtype="GtkToggleButtonClass tag"
+    rvtype="GtkToggleButtonClass"/>
+
+  <typedef name="GtkHandleBoxPrivate"
+    embed="embed"
+    ponytypein="GtkHandleBoxPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkHandleBoxPrivate"
+    structtype="GtkHandleBoxPrivate"
+    structdef="GtkHandleBoxPrivate"
+    argtype="GtkHandleBoxPrivate tag"
+    rvtype="GtkHandleBoxPrivate"/>
+
+  <typedef name="GtkRecentManagerPrivate"
+    embed="embed"
+    ponytypein="GtkRecentManagerPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRecentManagerPrivate"
+    structtype="GtkRecentManagerPrivate"
+    structdef="GtkRecentManagerPrivate"
+    argtype="GtkRecentManagerPrivate tag"
+    rvtype="GtkRecentManagerPrivate"/>
+
+  <typedef name="Pointer[Xmmreg]"
+    embed="var"
+    ponytypein="Pointer[Xmmreg] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Xmmreg]"
+    structtype="Pointer[Xmmreg]"
+    structdef="Pointer[Xmmreg]"
+    argtype="Pointer[Xmmreg] tag"
+    rvtype="Pointer[Xmmreg]"/>
+
+  <typedef name="GSocketConnectionPrivate"
+    embed="embed"
+    ponytypein="GSocketConnectionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketConnectionPrivate"
+    structtype="GSocketConnectionPrivate"
+    structdef="GSocketConnectionPrivate"
+    argtype="GSocketConnectionPrivate tag"
+    rvtype="GSocketConnectionPrivate"/>
+
+  <typedef name="GtkToggleButtonPrivate"
+    embed="embed"
+    ponytypein="GtkToggleButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleButtonPrivate"
+    structtype="GtkToggleButtonPrivate"
+    structdef="GtkToggleButtonPrivate"
+    argtype="GtkToggleButtonPrivate tag"
+    rvtype="GtkToggleButtonPrivate"/>
+
+  <typedef name="GDBusObjectManagerClientPrivate"
+    embed="embed"
+    ponytypein="GDBusObjectManagerClientPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusObjectManagerClientPrivate"
+    structtype="GDBusObjectManagerClientPrivate"
+    structdef="GDBusObjectManagerClientPrivate"
+    argtype="GDBusObjectManagerClientPrivate tag"
+    rvtype="GDBusObjectManagerClientPrivate"/>
+
+  <typedef name="GtkPopoverClass"
+    embed="embed"
+    ponytypein="GtkPopoverClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkPopoverClass"
+    structtype="GtkPopoverClass"
+    structdef="GtkPopoverClass"
+    argtype="GtkPopoverClass tag"
+    rvtype="GtkPopoverClass"/>
+
+  <typedef name="GValue"
+    embed="embed"
+    ponytypein="GValue tag"
+    ponytypeinconv=""
+    ponytypeout="GValue"
+    structtype="GValue"
+    structdef="GValue"
+    argtype="GValue tag"
+    rvtype="GValue"/>
+
+  <typedef name="GtkImagePrivate"
+    embed="embed"
+    ponytypein="GtkImagePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkImagePrivate"
+    structtype="GtkImagePrivate"
+    structdef="GtkImagePrivate"
+    argtype="GtkImagePrivate tag"
+    rvtype="GtkImagePrivate"/>
+
+  <typedef name="GtkStyleContextPrivate"
+    embed="embed"
+    ponytypein="GtkStyleContextPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkStyleContextPrivate"
+    structtype="GtkStyleContextPrivate"
+    structdef="GtkStyleContextPrivate"
+    argtype="GtkStyleContextPrivate tag"
+    rvtype="GtkStyleContextPrivate"/>
+
+  <typedef name="GtkCellRendererTextPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererTextPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererTextPrivate"
+    structtype="GtkCellRendererTextPrivate"
+    structdef="GtkCellRendererTextPrivate"
+    argtype="GtkCellRendererTextPrivate tag"
+    rvtype="GtkCellRendererTextPrivate"/>
+
+  <typedef name="GtkButtonBoxPrivate"
+    embed="embed"
+    ponytypein="GtkButtonBoxPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkButtonBoxPrivate"
+    structtype="GtkButtonBoxPrivate"
+    structdef="GtkButtonBoxPrivate"
+    argtype="GtkButtonBoxPrivate tag"
+    rvtype="GtkButtonBoxPrivate"/>
+
+  <typedef name="GtkFrameClass"
+    embed="embed"
+    ponytypein="GtkFrameClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFrameClass"
+    structtype="GtkFrameClass"
+    structdef="GtkFrameClass"
+    argtype="GtkFrameClass tag"
+    rvtype="GtkFrameClass"/>
+
+  <typedef name="GtkMenuButtonPrivate"
+    embed="embed"
+    ponytypein="GtkMenuButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuButtonPrivate"
+    structtype="GtkMenuButtonPrivate"
+    structdef="GtkMenuButtonPrivate"
+    argtype="GtkMenuButtonPrivate tag"
+    rvtype="GtkMenuButtonPrivate"/>
+
+  <typedef name="GtkBoxPrivate"
+    embed="embed"
+    ponytypein="GtkBoxPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBoxPrivate"
+    structtype="GtkBoxPrivate"
+    structdef="GtkBoxPrivate"
+    argtype="GtkBoxPrivate tag"
+    rvtype="GtkBoxPrivate"/>
+
+  <typedef name="GtkRadioButtonPrivate"
+    embed="embed"
+    ponytypein="GtkRadioButtonPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRadioButtonPrivate"
+    structtype="GtkRadioButtonPrivate"
+    structdef="GtkRadioButtonPrivate"
+    argtype="GtkRadioButtonPrivate tag"
+    rvtype="GtkRadioButtonPrivate"/>
+
+  <typedef name="GtkColorChooserDialogPrivate"
+    embed="embed"
+    ponytypein="GtkColorChooserDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkColorChooserDialogPrivate"
+    structtype="GtkColorChooserDialogPrivate"
+    structdef="GtkColorChooserDialogPrivate"
+    argtype="GtkColorChooserDialogPrivate tag"
+    rvtype="GtkColorChooserDialogPrivate"/>
+
+  <typedef name="Pointer[Pointer[None]]"
+    embed="var"
+    ponytypein="Pointer[Pointer[None]] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[None]]"
+    structtype="Pointer[Pointer[None]]"
+    structdef="Pointer[Pointer[None]]"
+    argtype="Pointer[Pointer[None]] tag"
+    rvtype="Pointer[Pointer[None]]"/>
+
+  <typedef name="GtkScaleButtonClass"
+    embed="embed"
+    ponytypein="GtkScaleButtonClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScaleButtonClass"
+    structtype="GtkScaleButtonClass"
+    structdef="GtkScaleButtonClass"
+    argtype="GtkScaleButtonClass tag"
+    rvtype="GtkScaleButtonClass"/>
+
+  <typedef name="GSocketAddressEnumeratorClass"
+    embed="embed"
+    ponytypein="GSocketAddressEnumeratorClass tag"
+    ponytypeinconv=""
+    ponytypeout="GSocketAddressEnumeratorClass"
+    structtype="GSocketAddressEnumeratorClass"
+    structdef="GSocketAddressEnumeratorClass"
+    argtype="GSocketAddressEnumeratorClass tag"
+    rvtype="GSocketAddressEnumeratorClass"/>
+
+  <typedef name="GIOStreamPrivate"
+    embed="embed"
+    ponytypein="GIOStreamPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GIOStreamPrivate"
+    structtype="GIOStreamPrivate"
+    structdef="GIOStreamPrivate"
+    argtype="GIOStreamPrivate tag"
+    rvtype="GIOStreamPrivate"/>
+
+  <typedef name="Ucontextt"
+    embed="embed"
+    ponytypein="Ucontextt tag"
+    ponytypeinconv=""
+    ponytypeout="Ucontextt"
+    structtype="Ucontextt"
+    structdef="Ucontextt"
+    argtype="Ucontextt tag"
+    rvtype="Ucontextt"/>
+
+  <typedef name="GDBusInterfaceInfo"
+    embed="embed"
+    ponytypein="GDBusInterfaceInfo tag"
+    ponytypeinconv=""
+    ponytypeout="GDBusInterfaceInfo"
+    structtype="GDBusInterfaceInfo"
+    structdef="GDBusInterfaceInfo"
+    argtype="GDBusInterfaceInfo tag"
+    rvtype="GDBusInterfaceInfo"/>
+
+  <typedef name="GtkIconViewPrivate"
+    embed="embed"
+    ponytypein="GtkIconViewPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkIconViewPrivate"
+    structtype="GtkIconViewPrivate"
+    structdef="GtkIconViewPrivate"
+    argtype="GtkIconViewPrivate tag"
+    rvtype="GtkIconViewPrivate"/>
+
+  <typedef name="GtkLevelBarPrivate"
+    embed="embed"
+    ponytypein="GtkLevelBarPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkLevelBarPrivate"
+    structtype="GtkLevelBarPrivate"
+    structdef="GtkLevelBarPrivate"
+    argtype="GtkLevelBarPrivate tag"
+    rvtype="GtkLevelBarPrivate"/>
+
+  <typedef name="GtkWindowClass"
+    embed="embed"
+    ponytypein="GtkWindowClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWindowClass"
+    structtype="GtkWindowClass"
+    structdef="GtkWindowClass"
+    argtype="GtkWindowClass tag"
+    rvtype="GtkWindowClass"/>
+
+  <typedef name="GFileEnumeratorPrivate"
+    embed="embed"
+    ponytypein="GFileEnumeratorPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GFileEnumeratorPrivate"
+    structtype="GFileEnumeratorPrivate"
+    structdef="GFileEnumeratorPrivate"
+    argtype="GFileEnumeratorPrivate tag"
+    rvtype="GFileEnumeratorPrivate"/>
+
+  <typedef name="GtkArrowPrivate"
+    embed="embed"
+    ponytypein="GtkArrowPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkArrowPrivate"
+    structtype="GtkArrowPrivate"
+    structdef="GtkArrowPrivate"
+    argtype="GtkArrowPrivate tag"
+    rvtype="GtkArrowPrivate"/>
+
+  <typedef name="GtkCellRendererComboPrivate"
+    embed="embed"
+    ponytypein="GtkCellRendererComboPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkCellRendererComboPrivate"
+    structtype="GtkCellRendererComboPrivate"
+    structdef="GtkCellRendererComboPrivate"
+    argtype="GtkCellRendererComboPrivate tag"
+    rvtype="GtkCellRendererComboPrivate"/>
+
+  <typedef name="GtkIMMulticontextPrivate"
+    embed="embed"
+    ponytypein="GtkIMMulticontextPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkIMMulticontextPrivate"
+    structtype="GtkIMMulticontextPrivate"
+    structdef="GtkIMMulticontextPrivate"
+    argtype="GtkIMMulticontextPrivate tag"
+    rvtype="GtkIMMulticontextPrivate"/>
+
+  <typedef name="PangoFontDescription"
+    embed="embed"
+    ponytypein="PangoFontDescription tag"
+    ponytypeinconv=""
+    ponytypeout="PangoFontDescription"
+    structtype="PangoFontDescription"
+    structdef="PangoFontDescription"
+    argtype="PangoFontDescription tag"
+    rvtype="PangoFontDescription"/>
+
+  <typedef name="GtkRangePrivate"
+    embed="embed"
+    ponytypein="GtkRangePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkRangePrivate"
+    structtype="GtkRangePrivate"
+    structdef="GtkRangePrivate"
+    argtype="GtkRangePrivate tag"
+    rvtype="GtkRangePrivate"/>
+
+  <typedef name="GtkScrollbarClass"
+    embed="embed"
+    ponytypein="GtkScrollbarClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkScrollbarClass"
+    structtype="GtkScrollbarClass"
+    structdef="GtkScrollbarClass"
+    argtype="GtkScrollbarClass tag"
+    rvtype="GtkScrollbarClass"/>
+
+  <typedef name="GtkTextBufferPrivate"
+    embed="embed"
+    ponytypein="GtkTextBufferPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTextBufferPrivate"
+    structtype="GtkTextBufferPrivate"
+    structdef="GtkTextBufferPrivate"
+    argtype="GtkTextBufferPrivate tag"
+    rvtype="GtkTextBufferPrivate"/>
+
+  <typedef name="Cairorectangle"
+    embed="embed"
+    ponytypein="Cairorectangle tag"
+    ponytypeinconv=""
+    ponytypeout="Cairorectangle"
+    structtype="Cairorectangle"
+    structdef="Cairorectangle"
+    argtype="Cairorectangle tag"
+    rvtype="Cairorectangle"/>
+
+  <typedef name="GObject"
+    embed="embed"
+    ponytypein="GObject tag"
+    ponytypeinconv=""
+    ponytypeout="GObject"
+    structtype="GObject"
+    structdef="GObject"
+    argtype="GObject tag"
+    rvtype="GObject"/>
+
+  <typedef name="GtkAssistantPrivate"
+    embed="embed"
+    ponytypein="GtkAssistantPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAssistantPrivate"
+    structtype="GtkAssistantPrivate"
+    structdef="GtkAssistantPrivate"
+    argtype="GtkAssistantPrivate tag"
+    rvtype="GtkAssistantPrivate"/>
+
+  <typedef name="GtkBindingArg"
+    embed="embed"
+    ponytypein="GtkBindingArg tag"
+    ponytypeinconv=""
+    ponytypeout="GtkBindingArg"
+    structtype="GtkBindingArg"
+    structdef="GtkBindingArg"
+    argtype="GtkBindingArg tag"
+    rvtype="GtkBindingArg"/>
+
+  <typedef name="PangoAttribute"
+    embed="embed"
+    ponytypein="PangoAttribute tag"
+    ponytypeinconv=""
+    ponytypeout="PangoAttribute"
+    structtype="PangoAttribute"
+    structdef="PangoAttribute"
+    argtype="PangoAttribute tag"
+    rvtype="PangoAttribute"/>
+
+  <typedef name="GtkAspectFramePrivate"
+    embed="embed"
+    ponytypein="GtkAspectFramePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkAspectFramePrivate"
+    structtype="GtkAspectFramePrivate"
+    structdef="GtkAspectFramePrivate"
+    argtype="GtkAspectFramePrivate tag"
+    rvtype="GtkAspectFramePrivate"/>
+
+  <typedef name="GtkSpinnerPrivate"
+    embed="embed"
+    ponytypein="GtkSpinnerPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkSpinnerPrivate"
+    structtype="GtkSpinnerPrivate"
+    structdef="GtkSpinnerPrivate"
+    argtype="GtkSpinnerPrivate tag"
+    rvtype="GtkSpinnerPrivate"/>
+
+  <typedef name="GtkColorSelectionDialogPrivate"
+    embed="embed"
+    ponytypein="GtkColorSelectionDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkColorSelectionDialogPrivate"
+    structtype="GtkColorSelectionDialogPrivate"
+    structdef="GtkColorSelectionDialogPrivate"
+    argtype="GtkColorSelectionDialogPrivate tag"
+    rvtype="GtkColorSelectionDialogPrivate"/>
+
+  <typedef name="GMountOperation"
+    embed="embed"
+    ponytypein="GMountOperation tag"
+    ponytypeinconv=""
+    ponytypeout="GMountOperation"
+    structtype="GMountOperation"
+    structdef="GMountOperation"
+    argtype="GMountOperation tag"
+    rvtype="GMountOperation"/>
+
+  <typedef name="GtkFontSelectionDialogPrivate"
+    embed="embed"
+    ponytypein="GtkFontSelectionDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFontSelectionDialogPrivate"
+    structtype="GtkFontSelectionDialogPrivate"
+    structdef="GtkFontSelectionDialogPrivate"
+    argtype="GtkFontSelectionDialogPrivate tag"
+    rvtype="GtkFontSelectionDialogPrivate"/>
+
+  <typedef name="GtkMenuShellPrivate"
+    embed="embed"
+    ponytypein="GtkMenuShellPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkMenuShellPrivate"
+    structtype="GtkMenuShellPrivate"
+    structdef="GtkMenuShellPrivate"
+    argtype="GtkMenuShellPrivate tag"
+    rvtype="GtkMenuShellPrivate"/>
+
+  <typedef name="GtkTreeModelFilterPrivate"
+    embed="embed"
+    ponytypein="GtkTreeModelFilterPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTreeModelFilterPrivate"
+    structtype="GtkTreeModelFilterPrivate"
+    structdef="GtkTreeModelFilterPrivate"
+    argtype="GtkTreeModelFilterPrivate tag"
+    rvtype="GtkTreeModelFilterPrivate"/>
+
+  <typedef name="GFlagsClass"
+    embed="embed"
+    ponytypein="GFlagsClass tag"
+    ponytypeinconv=""
+    ponytypeout="GFlagsClass"
+    structtype="GFlagsClass"
+    structdef="GFlagsClass"
+    argtype="GFlagsClass tag"
+    rvtype="GFlagsClass"/>
+
+  <typedef name="GAppLaunchContextPrivate"
+    embed="embed"
+    ponytypein="GAppLaunchContextPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GAppLaunchContextPrivate"
+    structtype="GAppLaunchContextPrivate"
+    structdef="GAppLaunchContextPrivate"
+    argtype="GAppLaunchContextPrivate tag"
+    rvtype="GAppLaunchContextPrivate"/>
+
+  <typedef name="GMenuLinkIterPrivate"
+    embed="embed"
+    ponytypein="GMenuLinkIterPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GMenuLinkIterPrivate"
+    structtype="GMenuLinkIterPrivate"
+    structdef="GMenuLinkIterPrivate"
+    argtype="GMenuLinkIterPrivate tag"
+    rvtype="GMenuLinkIterPrivate"/>
+
+  <typedef name="PangoLanguage"
+    embed="embed"
+    ponytypein="PangoLanguage tag"
+    ponytypeinconv=""
+    ponytypeout="PangoLanguage"
+    structtype="PangoLanguage"
+    structdef="PangoLanguage"
+    argtype="PangoLanguage tag"
+    rvtype="PangoLanguage"/>
+
+  <typedef name="GtkFileChooserDialogPrivate"
+    embed="embed"
+    ponytypein="GtkFileChooserDialogPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkFileChooserDialogPrivate"
+    structtype="GtkFileChooserDialogPrivate"
+    structdef="GtkFileChooserDialogPrivate"
+    argtype="GtkFileChooserDialogPrivate tag"
+    rvtype="GtkFileChooserDialogPrivate"/>
+
+  <typedef name="PangoRectangle"
+    embed="embed"
+    ponytypein="PangoRectangle tag"
+    ponytypeinconv=""
+    ponytypeout="PangoRectangle"
+    structtype="PangoRectangle"
+    structdef="PangoRectangle"
+    argtype="PangoRectangle tag"
+    rvtype="PangoRectangle"/>
+
+  <typedef name="GtkPaned"
+    embed="embed"
+    ponytypein="GtkPaned tag"
+    ponytypeinconv=""
+    ponytypeout="GtkPaned"
+    structtype="GtkPaned"
+    structdef="GtkPaned"
+    argtype="GtkPaned tag"
+    rvtype="GtkPaned"/>
+
+  <typedef name="GtkToolItem"
+    embed="embed"
+    ponytypein="GtkToolItem tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToolItem"
+    structtype="GtkToolItem"
+    structdef="GtkToolItem"
+    argtype="GtkToolItem tag"
+    rvtype="GtkToolItem"/>
+
+  <typedef name="Pointer[Anon]"
+    embed="var"
+    ponytypein="Pointer[Anon] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Anon]"
+    structtype="Pointer[Anon]"
+    structdef="Pointer[Anon]"
+    argtype="Pointer[Anon] tag"
+    rvtype="Pointer[Anon]"/>
+
+  <typedef name="GInputStream"
+    embed="embed"
+    ponytypein="GInputStream tag"
+    ponytypeinconv=""
+    ponytypeout="GInputStream"
+    structtype="GInputStream"
+    structdef="GInputStream"
+    argtype="GInputStream tag"
+    rvtype="GInputStream"/>
+
+  <typedef name="GSourcePrivate"
+    embed="embed"
+    ponytypein="GSourcePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GSourcePrivate"
+    structtype="GSourcePrivate"
+    structdef="GSourcePrivate"
+    argtype="GSourcePrivate tag"
+    rvtype="GSourcePrivate"/>
+
+  <typedef name="GTcpConnectionPrivate"
+    embed="embed"
+    ponytypein="GTcpConnectionPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GTcpConnectionPrivate"
+    structtype="GTcpConnectionPrivate"
+    structdef="GTcpConnectionPrivate"
+    argtype="GTcpConnectionPrivate tag"
+    rvtype="GTcpConnectionPrivate"/>
+
+  <typedef name="Pointer[F64]"
+    embed="var"
+    ponytypein="Pointer[F64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[F64]"
+    structtype="Pointer[F64]"
+    structdef="Pointer[F64]"
+    argtype="Pointer[F64] tag"
+    rvtype="Pointer[F64]"/>
+
+  <typedef name="IOmarker"
+    embed="embed"
+    ponytypein="IOmarker tag"
+    ponytypeinconv=""
+    ponytypeout="IOmarker"
+    structtype="IOmarker"
+    structdef="IOmarker"
+    argtype="IOmarker tag"
+    rvtype="IOmarker"/>
+
+  <typedef name="GtkComboBoxPrivate"
+    embed="embed"
+    ponytypein="GtkComboBoxPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkComboBoxPrivate"
+    structtype="GtkComboBoxPrivate"
+    structdef="GtkComboBoxPrivate"
+    argtype="GtkComboBoxPrivate tag"
+    rvtype="GtkComboBoxPrivate"/>
+
+  <typedef name="Timespec"
+    embed="embed"
+    ponytypein="Timespec tag"
+    ponytypeinconv=""
+    ponytypeout="Timespec"
+    structtype="Timespec"
+    structdef="Timespec"
+    argtype="Timespec tag"
+    rvtype="Timespec"/>
+
+  <typedef name="PangoGlyphItem"
+    embed="embed"
+    ponytypein="PangoGlyphItem tag"
+    ponytypeinconv=""
+    ponytypeout="PangoGlyphItem"
+    structtype="PangoGlyphItem"
+    structdef="PangoGlyphItem"
+    argtype="PangoGlyphItem tag"
+    rvtype="PangoGlyphItem"/>
+
+  <typedef name="GtkToggleButton"
+    embed="embed"
+    ponytypein="GtkToggleButton tag"
+    ponytypeinconv=""
+    ponytypeout="GtkToggleButton"
+    structtype="GtkToggleButton"
+    structdef="GtkToggleButton"
+    argtype="GtkToggleButton tag"
+    rvtype="GtkToggleButton"/>
+
+  <typedef name="PangoEngineClass"
+    embed="embed"
+    ponytypein="PangoEngineClass tag"
+    ponytypeinconv=""
+    ponytypeout="PangoEngineClass"
+    structtype="PangoEngineClass"
+    structdef="PangoEngineClass"
+    argtype="PangoEngineClass tag"
+    rvtype="PangoEngineClass"/>
+
+  <typedef name="GtkTablePrivate"
+    embed="embed"
+    ponytypein="GtkTablePrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTablePrivate"
+    structtype="GtkTablePrivate"
+    structdef="GtkTablePrivate"
+    argtype="GtkTablePrivate tag"
+    rvtype="GtkTablePrivate"/>
+
+  <typedef name="GIOStreamClass"
+    embed="embed"
+    ponytypein="GIOStreamClass tag"
+    ponytypeinconv=""
+    ponytypeout="GIOStreamClass"
+    structtype="GIOStreamClass"
+    structdef="GIOStreamClass"
+    argtype="GIOStreamClass tag"
+    rvtype="GIOStreamClass"/>
+
+  <typedef name="GtkLabelPrivate"
+    embed="embed"
+    ponytypein="GtkLabelPrivate tag"
+    ponytypeinconv=""
+    ponytypeout="GtkLabelPrivate"
+    structtype="GtkLabelPrivate"
+    structdef="GtkLabelPrivate"
+    argtype="GtkLabelPrivate tag"
+    rvtype="GtkLabelPrivate"/>
+
+  <typedef name="Ymmhstate"
+    embed="embed"
+    ponytypein="Ymmhstate tag"
+    ponytypeinconv=""
+    ponytypeout="Ymmhstate"
+    structtype="Ymmhstate"
+    structdef="Ymmhstate"
+    argtype="Ymmhstate tag"
+    rvtype="Ymmhstate"/>
+
+  <typedef name="GSList"
+    embed="embed"
+    ponytypein="GSList tag"
+    ponytypeinconv=""
+    ponytypeout="GSList"
+    structtype="GSList"
+    structdef="GSList"
+    argtype="GSList tag"
+    rvtype="GSList"/>
+
+  <typedef name="GtkTextAppearance"
+    embed="embed"
+    ponytypein="GtkTextAppearance tag"
+    ponytypeinconv=""
+    ponytypeout="GtkTextAppearance"
+    structtype="GtkTextAppearance"
+    structdef="GtkTextAppearance"
+    argtype="GtkTextAppearance tag"
+    rvtype="GtkTextAppearance"/>
+
+  <typedef name="GtkWidget"
+    embed="embed"
+    ponytypein="GtkWidget tag"
+    ponytypeinconv=""
+    ponytypeout="GtkWidget"
+    structtype="GtkWidget"
+    structdef="GtkWidget"
+    argtype="GtkWidget tag"
+    rvtype="GtkWidget"/>
+
+  <typedef name="GtkComboBoxClass"
+    embed="embed"
+    ponytypein="GtkComboBoxClass tag"
+    ponytypeinconv=""
+    ponytypeout="GtkComboBoxClass"
+    structtype="GtkComboBoxClass"
+    structdef="GtkComboBoxClass"
+    argtype="GtkComboBoxClass tag"
+    rvtype="GtkComboBoxClass"/>
+</typedefs>
+
