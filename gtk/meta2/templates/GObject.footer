@@ -1,5 +1,5 @@
-  fun signal_connect(detailedsignal: String, chandler: Pointer[None] tag, data: Pointer[None] tag) =>
-    @g_signal_connect_data(apply(), detailedsignal.cstring(), Pointer[None], Pointer[None], Pointer[None], I32(0))
+  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(GObjectStruct, A): None}, data: A) =>
+    @g_signal_connect_data(apply(), detailedsignal.cstring(), chandler, data, Pointer[None], I32(0))
 
   fun pony_type(): String val ? =>
     let id: U64 = apply().apply()?.g_type_instance.g_class.apply()?.g_type

@@ -1,5 +1,5 @@
 use @g_type_name[Pointer[U8] ref](gtype: U64)
-use @g_signal_connect_data[U64](instance: NullablePointer[GObjectStruct] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Pointer[None] tag, destroydata: Pointer[None] tag, connectflags: I32)
+use @g_signal_connect_data[U64](instance: NullablePointer[GObjectStruct] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any, destroydata: Pointer[None] tag, connectflags: I32)
 // Constructors
 // Methods
 use @g_object_get_data[Pointer[None]](gobject: NullablePointer[GObjectStruct] tag, key: Pointer[U8] tag)
@@ -24,8 +24,8 @@ interface GObjectInterface
   fun g_object_set_data(key: String, data: Pointer[None] tag): None =>
     @g_object_set_data(apply(), key.cstring(), data)
 
-  fun signal_connect(detailedsignal: String, chandler: Pointer[None] tag, data: Pointer[None] tag) =>
-    @g_signal_connect_data(apply(), detailedsignal.cstring(), Pointer[None], Pointer[None], Pointer[None], I32(0))
+  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(GObjectStruct, A): None}, data: A) =>
+    @g_signal_connect_data(apply(), detailedsignal.cstring(), chandler, data, Pointer[None], I32(0))
 
   fun pony_type(): String val ? =>
     let id: U64 = apply().apply()?.g_type_instance.g_class.apply()?.g_type

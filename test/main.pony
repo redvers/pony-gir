@@ -5,6 +5,7 @@ use @gtk_button_get_type[U64]()
 use @gtk_window_get_type_hint[I32](window: NullablePointer[GObjectStruct] tag)
 
 use @gtk_widget_get_name[Pointer[U8] ref](name: NullablePointer[GObjectStruct] tag)
+use @printf[I32](fmt: Pointer[U8] tag, ...)
 
 use "Gtk"
 use "G"
@@ -26,6 +27,7 @@ actor Main
     let button: GtkButton = GtkButton.new_with_label("Press Me")
 
     window.add(button)
+    window.signal_connect[String]("destroy", @{(obj: GObjectStruct, data: String): None => @printf(data.cstring())}, "Hello World")
     window.set_title("Hello World")
     window.show_all()
 
@@ -41,4 +43,4 @@ actor Main
 //    env.out.print(recover val String.from_cstring(@gtk_widget_get_name(button.apply())) end)
 
 
-//    Gtk.main()
+    Gtk.main()
