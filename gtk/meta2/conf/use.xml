@@ -76362,7 +76362,7 @@
      </useargs>
   </use>
   <use id="_11551" name="gtk_widget_hide"
-     ponyname="gtk_widget_hide"
+     ponyname="hide"
      fid="f399"
      lineno="628"
      rv="None">
@@ -76371,7 +76371,7 @@
      </useargs>
   </use>
   <use id="_11552" name="gtk_widget_show_now"
-     ponyname="gtk_widget_show_now"
+     ponyname="show_now"
      fid="f399"
      lineno="630"
      rv="None">
@@ -76380,7 +76380,7 @@
      </useargs>
   </use>
   <use id="_11553" name="gtk_widget_show_all"
-     ponyname="gtk_widget_show_all"
+     ponyname="show_all"
      fid="f399"
      lineno="632"
      rv="None">
@@ -80251,7 +80251,7 @@
      <useargs/>
   </use>
   <use id="_11934" name="gtk_window_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f403"
      lineno="147"
      rv="GtkWindow">
@@ -84518,7 +84518,7 @@
      </useargs>
   </use>
   <use id="_11854" name="gtk_container_add"
-     ponyname="gtk_container_add"
+     ponyname="add"
      fid="f438"
      lineno="149"
      rv="None">
@@ -84941,10 +84941,10 @@
      <useargs/>
   </use>
   <use id="_11906" name="gtk_bin_get_child"
-     ponyname="gtk_bin_get_child"
+     ponyname="get_child"
      fid="f439"
      lineno="79"
-     rv="GtkWidget">
+     rv="GObject">
      <useargs>
        <usearg name="bin" type="GtkBin"/>
      </useargs>
@@ -99320,14 +99320,14 @@
      </useargs>
   </use>
   <use id="_13985" name="gtk_get_debug_flags"
-     ponyname="gtk_get_debug_flags"
+     ponyname="get_debug_flags"
      fid="f517"
      lineno="78"
      rv="U32">
      <useargs/>
   </use>
   <use id="_13986" name="gtk_set_debug_flags"
-     ponyname="gtk_set_debug_flags"
+     ponyname="set_debug_flags"
      fid="f517"
      lineno="80"
      rv="None">
@@ -103112,7 +103112,7 @@
      </useargs>
   </use>
   <use id="_14591" name="gtk_icon_size_lookup"
-     ponyname="gtk_icon_size_lookup"
+     ponyname="icon_size_lookup"
      fid="f553"
      lineno="111"
      rv="I32">
@@ -103123,7 +103123,7 @@
      </useargs>
   </use>
   <use id="_14592" name="gtk_icon_size_lookup_for_settings"
-     ponyname="gtk_icon_size_lookup_for_settings"
+     ponyname="icon_size_lookup_for_settings"
      fid="f553"
      lineno="116"
      rv="I32">
@@ -103156,7 +103156,7 @@
      </useargs>
   </use>
   <use id="_14595" name="gtk_icon_size_from_name"
-     ponyname="gtk_icon_size_from_name"
+     ponyname="icon_size_from_name"
      fid="f553"
      lineno="129"
      rv="I32">
@@ -103165,7 +103165,7 @@
      </useargs>
   </use>
   <use id="_14596" name="gtk_icon_size_get_name"
-     ponyname="gtk_icon_size_get_name"
+     ponyname="icon_size_get_name"
      fid="f553"
      lineno="131"
      rv="String">
@@ -103174,7 +103174,7 @@
      </useargs>
   </use>
   <use id="_14597" name="gtk_icon_set_get_type"
-     ponyname="gtk_icon_set_get_type"
+     ponyname="icon_set_get_type"
      fid="f553"
      lineno="136"
      rv="U64">
@@ -106080,42 +106080,42 @@
      </useargs>
   </use>
   <use id="_15071" name="gtk_get_major_version"
-     ponyname="gtk_get_major_version"
+     ponyname="get_major_version"
      fid="f569"
      lineno="71"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15072" name="gtk_get_minor_version"
-     ponyname="gtk_get_minor_version"
+     ponyname="get_minor_version"
      fid="f569"
      lineno="73"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15073" name="gtk_get_micro_version"
-     ponyname="gtk_get_micro_version"
+     ponyname="get_micro_version"
      fid="f569"
      lineno="75"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15074" name="gtk_get_binary_age"
-     ponyname="gtk_get_binary_age"
+     ponyname="get_binary_age"
      fid="f569"
      lineno="77"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15075" name="gtk_get_interface_age"
-     ponyname="gtk_get_interface_age"
+     ponyname="get_interface_age"
      fid="f569"
      lineno="79"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15076" name="gtk_check_version"
-     ponyname="gtk_check_version"
+     ponyname="check_version"
      fid="f569"
      lineno="88"
      rv="String">
@@ -106136,7 +106136,7 @@
      </useargs>
   </use>
   <use id="_15078" name="gtk_init"
-     ponyname="gtk_init"
+     ponyname="init"
      fid="f569"
      lineno="101"
      rv="None">
@@ -106146,7 +106146,7 @@
      </useargs>
   </use>
   <use id="_15079" name="gtk_init_check"
-     ponyname="gtk_init_check"
+     ponyname="init_check"
      fid="f569"
      lineno="105"
      rv="I32">
@@ -106156,7 +106156,7 @@
      </useargs>
   </use>
   <use id="_15080" name="gtk_init_with_args"
-     ponyname="gtk_init_with_args"
+     ponyname="init_with_args"
      fid="f569"
      lineno="109"
      rv="I32">
@@ -106170,7 +106170,7 @@
      </useargs>
   </use>
   <use id="_15081" name="gtk_get_option_group"
-     ponyname="gtk_get_option_group"
+     ponyname="get_option_group"
      fid="f569"
      lineno="117"
      rv="GOptionGroup">
@@ -106179,35 +106179,35 @@
      </useargs>
   </use>
   <use id="_15082" name="gtk_disable_setlocale"
-     ponyname="gtk_disable_setlocale"
+     ponyname="disable_setlocale"
      fid="f569"
      lineno="143"
      rv="None">
      <useargs/>
   </use>
   <use id="_15083" name="gtk_get_default_language"
-     ponyname="gtk_get_default_language"
+     ponyname="get_default_language"
      fid="f569"
      lineno="145"
      rv="PangoLanguage">
      <useargs/>
   </use>
   <use id="_15084" name="gtk_get_locale_direction"
-     ponyname="gtk_get_locale_direction"
+     ponyname="get_locale_direction"
      fid="f569"
      lineno="147"
      rv="I32">
      <useargs/>
   </use>
   <use id="_15085" name="gtk_events_pending"
-     ponyname="gtk_events_pending"
+     ponyname="events_pending"
      fid="f569"
      lineno="149"
      rv="I32">
      <useargs/>
   </use>
   <use id="_15086" name="gtk_main_do_event"
-     ponyname="gtk_main_do_event"
+     ponyname="main_do_event"
      fid="f569"
      lineno="152"
      rv="None">
@@ -106216,35 +106216,35 @@
      </useargs>
   </use>
   <use id="_15087" name="gtk_main"
-     ponyname="gtk_main"
+     ponyname="main"
      fid="f569"
      lineno="154"
      rv="None">
      <useargs/>
   </use>
   <use id="_15088" name="gtk_main_level"
-     ponyname="gtk_main_level"
+     ponyname="main_level"
      fid="f569"
      lineno="156"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15089" name="gtk_main_quit"
-     ponyname="gtk_main_quit"
+     ponyname="main_quit"
      fid="f569"
      lineno="158"
      rv="None">
      <useargs/>
   </use>
   <use id="_15090" name="gtk_main_iteration"
-     ponyname="gtk_main_iteration"
+     ponyname="main_iteration"
      fid="f569"
      lineno="160"
      rv="I32">
      <useargs/>
   </use>
   <use id="_15091" name="gtk_main_iteration_do"
-     ponyname="gtk_main_iteration_do"
+     ponyname="main_iteration_do"
      fid="f569"
      lineno="162"
      rv="I32">
@@ -106267,7 +106267,7 @@
      <useargs/>
   </use>
   <use id="_15094" name="gtk_grab_add"
-     ponyname="gtk_grab_add"
+     ponyname="grab_add"
      fid="f569"
      lineno="170"
      rv="None">
@@ -106276,14 +106276,14 @@
      </useargs>
   </use>
   <use id="_15095" name="gtk_grab_get_current"
-     ponyname="gtk_grab_get_current"
+     ponyname="grab_get_current"
      fid="f569"
      lineno="172"
      rv="GtkWidget">
      <useargs/>
   </use>
   <use id="_15096" name="gtk_grab_remove"
-     ponyname="gtk_grab_remove"
+     ponyname="grab_remove"
      fid="f569"
      lineno="174"
      rv="None">
@@ -106292,7 +106292,7 @@
      </useargs>
   </use>
   <use id="_15097" name="gtk_device_grab_add"
-     ponyname="gtk_device_grab_add"
+     ponyname="device_grab_add"
      fid="f569"
      lineno="177"
      rv="None">
@@ -106303,7 +106303,7 @@
      </useargs>
   </use>
   <use id="_15098" name="gtk_device_grab_remove"
-     ponyname="gtk_device_grab_remove"
+     ponyname="device_grab_remove"
      fid="f569"
      lineno="181"
      rv="None">
@@ -106313,7 +106313,7 @@
      </useargs>
   </use>
   <use id="_15099" name="gtk_key_snooper_install"
-     ponyname="gtk_key_snooper_install"
+     ponyname="key_snooper_install"
      fid="f569"
      lineno="185"
      rv="U32">
@@ -106323,7 +106323,7 @@
      </useargs>
   </use>
   <use id="_15100" name="gtk_key_snooper_remove"
-     ponyname="gtk_key_snooper_remove"
+     ponyname="key_snooper_remove"
      fid="f569"
      lineno="188"
      rv="None">
@@ -106332,21 +106332,21 @@
      </useargs>
   </use>
   <use id="_15101" name="gtk_get_current_event"
-     ponyname="gtk_get_current_event"
+     ponyname="get_current_event"
      fid="f569"
      lineno="191"
      rv="Pointer[None]">
      <useargs/>
   </use>
   <use id="_15102" name="gtk_get_current_event_time"
-     ponyname="gtk_get_current_event_time"
+     ponyname="get_current_event_time"
      fid="f569"
      lineno="193"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15103" name="gtk_get_current_event_state"
-     ponyname="gtk_get_current_event_state"
+     ponyname="get_current_event_state"
      fid="f569"
      lineno="195"
      rv="I32">
@@ -106355,14 +106355,14 @@
      </useargs>
   </use>
   <use id="_15104" name="gtk_get_current_event_device"
-     ponyname="gtk_get_current_event_device"
+     ponyname="get_current_event_device"
      fid="f569"
      lineno="197"
      rv="GdkDevice">
      <useargs/>
   </use>
   <use id="_15105" name="gtk_get_event_widget"
-     ponyname="gtk_get_event_widget"
+     ponyname="get_event_widget"
      fid="f569"
      lineno="200"
      rv="GtkWidget">
@@ -106371,7 +106371,7 @@
      </useargs>
   </use>
   <use id="_15106" name="gtk_propagate_event"
-     ponyname="gtk_propagate_event"
+     ponyname="propagate_event"
      fid="f569"
      lineno="203"
      rv="None">
@@ -116312,7 +116312,7 @@
      <useargs/>
   </use>
   <use id="_16680" name="gtk_icon_size_get_type"
-     ponyname="gtk_icon_size_get_type"
+     ponyname="icon_size_get_type"
      fid="f643"
      lineno="117"
      rv="U64">

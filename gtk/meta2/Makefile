@@ -1,10 +1,18 @@
 
 gtkclass:
-#	saxon-he -xi main.xml xsl/makeclassuse.xsl ns=Gtk class=GtkWindow
-#	saxon-he -xi main.xml xsl/makeconstructors.xsl ns=Gtk class=GtkWindow
-	saxon-he -xi main.xml xsl/makemethods.xsl ns=Gtk class=GtkWindow
-#	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
-#	cat out/Gtk/Gtk-use.pony out/Gtk/Gtk-fn.pony > ../../test/Gtk/Gtk.pony
+	sh -x mkclass Gtk GtkWindow
+	sh -x mkclass Gtk GtkBin
+	sh -x mkclass Gtk GtkContainer
+	sh -x mkclass Gtk GtkWidget
+	cp out/Gtk/* ../../test/Gtk/
+	rm ../../test/Gtk/*fn.pony
+	rm ../../test/Gtk/*use.pony
+#	cp out/GObject/* ../../test/GObject/
+#	saxon-he -xi main.xml xsl/makeclassuse.xsl ns=Gtk class=GtkWindow > out/Gtk/GtkWindow.pony
+#	saxon-he -xi main.xml xsl/makeconstructors.xsl ns=Gtk class=GtkWindow >> out/Gtk/GtkWindow.pony
+#	saxon-he -xi main.xml xsl/makemethods.xsl ns=Gtk class=GtkWindow >> out/Gtk/GtkWindow.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
+	cat out/Gtk/Gtk-use.pony out/Gtk/Gtk-fn.pony > ../../test/Gtk/Gtk.pony
 
 gobjectbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject

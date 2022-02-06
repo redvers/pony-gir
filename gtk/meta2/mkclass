@@ -1,0 +1,6 @@
+
+saxon-he -xi main.xml xsl/makeclassuse.xsl ns=$1 class=$2 > out/$1/$2.pony
+echo 'use "../GObject"' >> out/$1/$2.pony
+saxon-he -xi main.xml xsl/makeconstructors.xsl ns=$1 class=$2 >> out/$1/$2.pony
+saxon-he -xi main.xml xsl/makemethods.xsl ns=$1 class=$2 >> out/$1/$2.pony
+

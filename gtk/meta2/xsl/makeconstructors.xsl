@@ -7,12 +7,19 @@
 <xsl:param name="debug"/>
 
 <xsl:template match="/castxml2pony">
+
+class <xsl:value-of select="$class"/> is <xsl:value-of select="$class"/>Interface<xsl:text>
+  var _ptr: Pointer[GObject] tag
+
+</xsl:text>
 <!--<xsl:result-document href="out/{concat($ns, '/', $ns, $class)}-use.pony" method="text"> -->
-<xsl:text>// Constructors&#10;</xsl:text>
 <xsl:for-each select="/castxml2pony/ns[@ns=$ns]/class[@ctype=$class]/constructor[@render='1']">
   <xsl:variable name="fnname" select="./@cid"/>
   <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="1"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
 </xsl:for-each>
+  new from_ptr(ptr: Pointer[GObject] tag) => _ptr = ptr
+
+  fun apply(): Pointer[GObject] tag => _ptr
 <!--
 <xsl:text>// Methods&#10;</xsl:text>
 <xsl:for-each select="/castxml2pony/ns[@ns=$ns]/class[@ctype=$class]/method[@render='1']">

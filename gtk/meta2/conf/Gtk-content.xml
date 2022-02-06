@@ -856,10 +856,10 @@
     <member name="center" value="1" cid="GTK_BASELINE_POSITION_CENTER" glibnick="center" glibname="GTK_BASELINE_POSITION_CENTER"/>
     <member name="bottom" value="2" cid="GTK_BASELINE_POSITION_BOTTOM" glibnick="bottom" glibname="GTK_BASELINE_POSITION_BOTTOM"/>
   </enumeration>
-  <class name="Bin" ctype="GtkBin" parent="GtkContainer" render="0">
+  <class name="Bin" ctype="GtkBin" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
-    <method name="get_child" cid="gtk_bin_get_child" render="0"/>
+    <method name="get_child" cid="gtk_bin_get_child" render="1"/>
     <field name="container"/>
     <field name="priv"/>
   </class>
@@ -2407,7 +2407,7 @@
   </record>
   <record name="ComboBoxTextPrivate" gtypestructfor="" ctype="GtkComboBoxTextPrivate" render="0">
   </record>
-  <class name="Container" ctype="GtkContainer" parent="GtkWidget" render="0">
+  <class name="Container" ctype="GtkContainer" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <virtual-method name="add" render="0"/>
@@ -2420,7 +2420,7 @@
     <virtual-method name="remove" render="0"/>
     <virtual-method name="set_child_property" render="0"/>
     <virtual-method name="set_focus_child" render="0"/>
-    <method name="add" cid="gtk_container_add" render="0"/>
+    <method name="add" cid="gtk_container_add" render="1"/>
     <method name="add_with_properties" cid="gtk_container_add_with_properties" render="0"/>
     <method name="check_resize" cid="gtk_container_check_resize" render="0"/>
     <method name="child_get" cid="gtk_container_child_get" render="0"/>
@@ -12046,7 +12046,7 @@
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_widget_new" render="0"/>
     <function name="get_default_direction" cid="gtk_widget_get_default_direction" render="0"/>
-    <function name="get_default_style" cid="gtk_widget_get_default_style" render="1"/>
+    <function name="get_default_style" cid="gtk_widget_get_default_style" render="0"/>
     <function name="pop_composite_child" cid="gtk_widget_pop_composite_child" render="0"/>
     <function name="push_composite_child" cid="gtk_widget_push_composite_child" render="0"/>
     <function name="set_default_direction" cid="gtk_widget_set_default_direction" render="0"/>
@@ -12378,7 +12378,7 @@
     <method name="set_window" cid="gtk_widget_set_window" render="0"/>
     <method name="shape_combine_region" cid="gtk_widget_shape_combine_region" render="0"/>
     <method name="show" cid="gtk_widget_show" render="0"/>
-    <method name="show_all" cid="gtk_widget_show_all" render="0"/>
+    <method name="show_all" cid="gtk_widget_show_all" render="1"/>
     <method name="show_now" cid="gtk_widget_show_now" render="0"/>
     <method name="size_allocate" cid="gtk_widget_size_allocate" render="0"/>
     <method name="size_allocate_with_baseline" cid="gtk_widget_size_allocate_with_baseline" render="0"/>
