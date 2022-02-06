@@ -3,18 +3,22 @@ use "../G"
 use "lib:gtk-3"
 // Constructors
 // Methods
-use @gtk_bin_get_child[Pointer[GObject] tag](bin: Pointer[GObject] tag)
+use @gtk_bin_get_child[NullablePointer[GObjectStruct] val](bin: NullablePointer[GObjectStruct] tag)
 // Functions
 
 
 class GtkBin is GtkBinInterface
-  var _ptr: Pointer[GObject] tag
+  var _ptr: NullablePointer[GObjectStruct] val
 
 
-  new from_ptr(ptr: Pointer[GObject] tag) => _ptr = ptr
+  new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr
 
-  fun apply(): Pointer[GObject] tag => _ptr
+  fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
 interface GtkBinInterface is GtkContainerInterface
-  fun apply(): Pointer[GObject] tag
+  fun apply(): NullablePointer[GObjectStruct] val
+
+  fun get_child(): GObject =>
+    var ptr: NullablePointer[GObjectStruct] val =  @gtk_bin_get_child(apply())
+    GObject.from_ptr(ptr)
 

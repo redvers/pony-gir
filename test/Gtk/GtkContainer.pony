@@ -3,20 +3,20 @@ use "../G"
 use "lib:gtk-3"
 // Constructors
 // Methods
-use @gtk_container_add[None](container: Pointer[GObject] tag, widget: Pointer[GObject] tag)
+use @gtk_container_add[None](container: NullablePointer[GObjectStruct] tag, widget: NullablePointer[GObjectStruct] tag)
 // Functions
 
 
 class GtkContainer is GtkContainerInterface
-  var _ptr: Pointer[GObject] tag
+  var _ptr: NullablePointer[GObjectStruct] val
 
 
-  new from_ptr(ptr: Pointer[GObject] tag) => _ptr = ptr
+  new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr
 
-  fun apply(): Pointer[GObject] tag => _ptr
+  fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
 interface GtkContainerInterface is GtkWidgetInterface
-  fun apply(): Pointer[GObject] tag
+  fun apply(): NullablePointer[GObjectStruct] val
 
   fun add(widget: GtkWidgetInterface): None =>
     @gtk_container_add(apply(), widget.apply())

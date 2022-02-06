@@ -2,18 +2,18 @@ use "../G"
 
 use "lib:gtk-3"
 // Constructors
-use @gtk_button_new[Pointer[GObject] tag]()
-use @gtk_button_new_from_icon_name[Pointer[GObject] tag](iconname: Pointer[U8] tag, size: I32)
-use @gtk_button_new_from_stock[Pointer[GObject] tag](stockid: Pointer[U8] tag)
-use @gtk_button_new_with_label[Pointer[GObject] tag](label: Pointer[U8] tag)
-use @gtk_button_new_with_mnemonic[Pointer[GObject] tag](label: Pointer[U8] tag)
+use @gtk_button_new[NullablePointer[GObjectStruct] val]()
+use @gtk_button_new_from_icon_name[NullablePointer[GObjectStruct] val](iconname: Pointer[U8] tag, size: I32)
+use @gtk_button_new_from_stock[NullablePointer[GObjectStruct] val](stockid: Pointer[U8] tag)
+use @gtk_button_new_with_label[NullablePointer[GObjectStruct] val](label: Pointer[U8] tag)
+use @gtk_button_new_with_mnemonic[NullablePointer[GObjectStruct] val](label: Pointer[U8] tag)
 // Methods
-use @gtk_button_clicked[None](button: Pointer[GObject] tag)
+use @gtk_button_clicked[None](button: NullablePointer[GObjectStruct] tag)
 // Functions
 
 
 class GtkButton is GtkButtonInterface
-  var _ptr: Pointer[GObject] tag
+  var _ptr: NullablePointer[GObjectStruct] val
 
   new create() =>
     _ptr = @gtk_button_new()
@@ -26,12 +26,12 @@ class GtkButton is GtkButtonInterface
   new new_with_mnemonic(label: String) =>
     _ptr = @gtk_button_new_with_mnemonic(label.cstring())
 
-  new from_ptr(ptr: Pointer[GObject] tag) => _ptr = ptr
+  new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr
 
-  fun apply(): Pointer[GObject] tag => _ptr
+  fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
 interface GtkButtonInterface is GtkBinInterface
-  fun apply(): Pointer[GObject] tag
+  fun apply(): NullablePointer[GObjectStruct] val
 
   fun clicked(): None =>
     @gtk_button_clicked(apply())

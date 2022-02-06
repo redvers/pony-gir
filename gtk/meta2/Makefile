@@ -1,4 +1,4 @@
-all:	gbase
+all:	gtkclass
 
 gtkclass:
 	sh -x mkclass Gtk Button Gtk

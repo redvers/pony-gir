@@ -3,21 +3,21 @@ use "../G"
 use "lib:gtk-3"
 // Constructors
 // Methods
-use @gtk_widget_destroy[None](widget: Pointer[GObject] tag)
-use @gtk_widget_show_all[None](widget: Pointer[GObject] tag)
+use @gtk_widget_destroy[None](widget: NullablePointer[GObjectStruct] tag)
+use @gtk_widget_show_all[None](widget: NullablePointer[GObjectStruct] tag)
 // Functions
 
 
 class GtkWidget is GtkWidgetInterface
-  var _ptr: Pointer[GObject] tag
+  var _ptr: NullablePointer[GObjectStruct] val
 
 
-  new from_ptr(ptr: Pointer[GObject] tag) => _ptr = ptr
+  new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr
 
-  fun apply(): Pointer[GObject] tag => _ptr
+  fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
 interface GtkWidgetInterface is GObjectInterface
-  fun apply(): Pointer[GObject] tag
+  fun apply(): NullablePointer[GObjectStruct] val
 
   fun gtk_widget_destroy(): None =>
     @gtk_widget_destroy(apply())

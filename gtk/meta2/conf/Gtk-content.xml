@@ -12729,7 +12729,6 @@
     <method name="get_titlebar" cid="gtk_window_get_titlebar" render="0"/>
     <method name="get_transient_for" cid="gtk_window_get_transient_for" render="0"/>
     <method name="get_type_hint" cid="gtk_window_get_type_hint" render="1"/>
-    <method name="get_type_once" cid="gtk_window_get_type_once" render="1"/>
     <method name="get_type" cid="gtk_window_get_type" render="1"/>
     <method name="get_urgency_hint" cid="gtk_window_get_urgency_hint" render="0"/>
     <method name="get_window_type" cid="gtk_window_get_window_type" render="0"/>

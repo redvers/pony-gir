@@ -1,2 +1,17 @@
   fun signal_connect(detailedsignal: String, chandler: Pointer[None] tag, data: Pointer[None] tag) =>
     @g_signal_connect_data(apply(), detailedsignal.cstring(), Pointer[None], Pointer[None], Pointer[None], I32(0))
+
+  fun pony_type(): String val ? =>
+    let id: U64 = apply().apply()?.g_type_instance.g_class.apply()?.g_type
+    recover val String.from_cstring(@g_type_name(id)) end
+
+struct GObjectStruct
+  embed g_type_instance: GTypeInstance = GTypeInstance
+  var ref_count: U32 = U32(0)
+  var qdata: Pointer[None] = Pointer[None]
+
+struct GTypeInstance
+  var g_class: NullablePointer[GTypeClass] = NullablePointer[GTypeClass].none()
+
+struct GTypeClass
+  var g_type: U64 = U64(0)
