@@ -14,6 +14,8 @@ actor Main
   new create(env: Env) =>
     Gtk.init(Pointer[I32], Pointer[Pointer[U8]])
     let window: GtkWindow = GtkWindow(EGtkWindowType.mtoplevel().i32())
+    let button: GtkButton = GtkButton.new_with_label("Press Me")
+    window.add(button)
     window.set_title("Hello World")
     window.show_all()
 

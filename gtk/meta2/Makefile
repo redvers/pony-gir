@@ -1,5 +1,6 @@
 
 gtkclass:
+	sh -x mkclass Gtk GtkButton
 	sh -x mkclass Gtk GtkWindow
 	sh -x mkclass Gtk GtkBin
 	sh -x mkclass Gtk GtkContainer

@@ -18,6 +18,6 @@ class GtkContainer is GtkContainerInterface
 interface GtkContainerInterface is GtkWidgetInterface
   fun apply(): Pointer[GObject] tag
 
-  fun add(widget: GtkWidget): None =>
+  fun add(widget: GtkWidgetInterface): None =>
     @gtk_container_add(apply(), widget.apply())
 

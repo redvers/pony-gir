@@ -96723,14 +96723,14 @@
      </useargs>
   </use>
   <use id="_13496" name="gtk_button_box_get_type"
-     ponyname="gtk_button_box_get_type"
+     ponyname="get_type"
      fid="f488"
      lineno="104"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13497" name="gtk_button_box_new"
-     ponyname="gtk_button_box_new"
+     ponyname="create"
      fid="f488"
      lineno="106"
      rv="GtkWidget">
@@ -96739,7 +96739,7 @@
      </useargs>
   </use>
   <use id="_13498" name="gtk_button_box_get_layout"
-     ponyname="gtk_button_box_get_layout"
+     ponyname="get_layout"
      fid="f488"
      lineno="108"
      rv="I32">
@@ -96748,7 +96748,7 @@
      </useargs>
   </use>
   <use id="_13499" name="gtk_button_box_set_layout"
-     ponyname="gtk_button_box_set_layout"
+     ponyname="set_layout"
      fid="f488"
      lineno="110"
      rv="None">
@@ -96758,7 +96758,7 @@
      </useargs>
   </use>
   <use id="_13500" name="gtk_button_box_get_child_secondary"
-     ponyname="gtk_button_box_get_child_secondary"
+     ponyname="get_child_secondary"
      fid="f488"
      lineno="113"
      rv="I32">
@@ -96768,7 +96768,7 @@
      </useargs>
   </use>
   <use id="_13501" name="gtk_button_box_set_child_secondary"
-     ponyname="gtk_button_box_set_child_secondary"
+     ponyname="set_child_secondary"
      fid="f488"
      lineno="116"
      rv="None">
@@ -96779,7 +96779,7 @@
      </useargs>
   </use>
   <use id="_13502" name="gtk_button_box_get_child_non_homogeneous"
-     ponyname="gtk_button_box_get_child_non_homogeneous"
+     ponyname="get_child_non_homogeneous"
      fid="f488"
      lineno="120"
      rv="I32">
@@ -96789,7 +96789,7 @@
      </useargs>
   </use>
   <use id="_13503" name="gtk_button_box_set_child_non_homogeneous"
-     ponyname="gtk_button_box_set_child_non_homogeneous"
+     ponyname="set_child_non_homogeneous"
      fid="f488"
      lineno="123"
      rv="None">
@@ -97041,21 +97041,21 @@
      </useargs>
   </use>
   <use id="_13578" name="gtk_button_get_type"
-     ponyname="gtk_button_get_type"
+     ponyname="get_type"
      fid="f491"
      lineno="94"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13579" name="gtk_button_new"
-     ponyname="gtk_button_new"
+     ponyname="create"
      fid="f491"
      lineno="96"
      rv="GtkWidget">
      <useargs/>
   </use>
   <use id="_13580" name="gtk_button_new_with_label"
-     ponyname="gtk_button_new_with_label"
+     ponyname="new_with_label"
      fid="f491"
      lineno="98"
      rv="GtkWidget">
@@ -97064,7 +97064,7 @@
      </useargs>
   </use>
   <use id="_13581" name="gtk_button_new_from_icon_name"
-     ponyname="gtk_button_new_from_icon_name"
+     ponyname="new_from_icon_name"
      fid="f491"
      lineno="100"
      rv="GtkWidget">
@@ -97074,7 +97074,7 @@
      </useargs>
   </use>
   <use id="_13582" name="gtk_button_new_from_stock"
-     ponyname="gtk_button_new_from_stock"
+     ponyname="new_from_stock"
      fid="f491"
      lineno="103"
      rv="GtkWidget">
@@ -97083,7 +97083,7 @@
      </useargs>
   </use>
   <use id="_13583" name="gtk_button_new_with_mnemonic"
-     ponyname="gtk_button_new_with_mnemonic"
+     ponyname="new_with_mnemonic"
      fid="f491"
      lineno="105"
      rv="GtkWidget">
@@ -97092,7 +97092,7 @@
      </useargs>
   </use>
   <use id="_13584" name="gtk_button_clicked"
-     ponyname="gtk_button_clicked"
+     ponyname="clicked"
      fid="f491"
      lineno="107"
      rv="None">
@@ -97101,7 +97101,7 @@
      </useargs>
   </use>
   <use id="_13585" name="gtk_button_pressed"
-     ponyname="gtk_button_pressed"
+     ponyname="pressed"
      fid="f491"
      lineno="109"
      rv="None">
@@ -97110,7 +97110,7 @@
      </useargs>
   </use>
   <use id="_13586" name="gtk_button_released"
-     ponyname="gtk_button_released"
+     ponyname="released"
      fid="f491"
      lineno="111"
      rv="None">
@@ -97119,7 +97119,7 @@
      </useargs>
   </use>
   <use id="_13587" name="gtk_button_enter"
-     ponyname="gtk_button_enter"
+     ponyname="enter"
      fid="f491"
      lineno="113"
      rv="None">
@@ -97128,7 +97128,7 @@
      </useargs>
   </use>
   <use id="_13588" name="gtk_button_leave"
-     ponyname="gtk_button_leave"
+     ponyname="leave"
      fid="f491"
      lineno="115"
      rv="None">
@@ -97137,7 +97137,7 @@
      </useargs>
   </use>
   <use id="_13589" name="gtk_button_set_relief"
-     ponyname="gtk_button_set_relief"
+     ponyname="set_relief"
      fid="f491"
      lineno="118"
      rv="None">
@@ -97147,7 +97147,7 @@
      </useargs>
   </use>
   <use id="_13590" name="gtk_button_get_relief"
-     ponyname="gtk_button_get_relief"
+     ponyname="get_relief"
      fid="f491"
      lineno="121"
      rv="I32">
@@ -97156,7 +97156,7 @@
      </useargs>
   </use>
   <use id="_13591" name="gtk_button_set_label"
-     ponyname="gtk_button_set_label"
+     ponyname="set_label"
      fid="f491"
      lineno="123"
      rv="None">
@@ -97166,7 +97166,7 @@
      </useargs>
   </use>
   <use id="_13592" name="gtk_button_get_label"
-     ponyname="gtk_button_get_label"
+     ponyname="get_label"
      fid="f491"
      lineno="126"
      rv="String">
@@ -97175,7 +97175,7 @@
      </useargs>
   </use>
   <use id="_13593" name="gtk_button_set_use_underline"
-     ponyname="gtk_button_set_use_underline"
+     ponyname="set_use_underline"
      fid="f491"
      lineno="128"
      rv="None">
@@ -97185,7 +97185,7 @@
      </useargs>
   </use>
   <use id="_13594" name="gtk_button_get_use_underline"
-     ponyname="gtk_button_get_use_underline"
+     ponyname="get_use_underline"
      fid="f491"
      lineno="131"
      rv="I32">
@@ -97194,7 +97194,7 @@
      </useargs>
   </use>
   <use id="_13595" name="gtk_button_set_use_stock"
-     ponyname="gtk_button_set_use_stock"
+     ponyname="set_use_stock"
      fid="f491"
      lineno="133"
      rv="None">
@@ -97204,7 +97204,7 @@
      </useargs>
   </use>
   <use id="_13596" name="gtk_button_get_use_stock"
-     ponyname="gtk_button_get_use_stock"
+     ponyname="get_use_stock"
      fid="f491"
      lineno="136"
      rv="I32">
@@ -97213,7 +97213,7 @@
      </useargs>
   </use>
   <use id="_13597" name="gtk_button_set_focus_on_click"
-     ponyname="gtk_button_set_focus_on_click"
+     ponyname="set_focus_on_click"
      fid="f491"
      lineno="138"
      rv="None">
@@ -97223,7 +97223,7 @@
      </useargs>
   </use>
   <use id="_13598" name="gtk_button_get_focus_on_click"
-     ponyname="gtk_button_get_focus_on_click"
+     ponyname="get_focus_on_click"
      fid="f491"
      lineno="141"
      rv="I32">
@@ -97232,7 +97232,7 @@
      </useargs>
   </use>
   <use id="_13599" name="gtk_button_set_alignment"
-     ponyname="gtk_button_set_alignment"
+     ponyname="set_alignment"
      fid="f491"
      lineno="143"
      rv="None">
@@ -97243,7 +97243,7 @@
      </useargs>
   </use>
   <use id="_13600" name="gtk_button_get_alignment"
-     ponyname="gtk_button_get_alignment"
+     ponyname="get_alignment"
      fid="f491"
      lineno="147"
      rv="None">
@@ -97254,7 +97254,7 @@
      </useargs>
   </use>
   <use id="_13601" name="gtk_button_set_image"
-     ponyname="gtk_button_set_image"
+     ponyname="set_image"
      fid="f491"
      lineno="151"
      rv="None">
@@ -97264,7 +97264,7 @@
      </useargs>
   </use>
   <use id="_13602" name="gtk_button_get_image"
-     ponyname="gtk_button_get_image"
+     ponyname="get_image"
      fid="f491"
      lineno="154"
      rv="GtkWidget">
@@ -97273,7 +97273,7 @@
      </useargs>
   </use>
   <use id="_13603" name="gtk_button_set_image_position"
-     ponyname="gtk_button_set_image_position"
+     ponyname="set_image_position"
      fid="f491"
      lineno="156"
      rv="None">
@@ -97283,7 +97283,7 @@
      </useargs>
   </use>
   <use id="_13604" name="gtk_button_get_image_position"
-     ponyname="gtk_button_get_image_position"
+     ponyname="get_image_position"
      fid="f491"
      lineno="159"
      rv="I32">
@@ -97292,7 +97292,7 @@
      </useargs>
   </use>
   <use id="_13605" name="gtk_button_set_always_show_image"
-     ponyname="gtk_button_set_always_show_image"
+     ponyname="set_always_show_image"
      fid="f491"
      lineno="161"
      rv="None">
@@ -97302,7 +97302,7 @@
      </useargs>
   </use>
   <use id="_13606" name="gtk_button_get_always_show_image"
-     ponyname="gtk_button_get_always_show_image"
+     ponyname="get_always_show_image"
      fid="f491"
      lineno="164"
      rv="I32">
@@ -97311,7 +97311,7 @@
      </useargs>
   </use>
   <use id="_13607" name="gtk_button_get_event_window"
-     ponyname="gtk_button_get_event_window"
+     ponyname="get_event_window"
      fid="f491"
      lineno="167"
      rv="GdkWindow">
@@ -116179,7 +116179,7 @@
      <useargs/>
   </use>
   <use id="_16661" name="gtk_button_box_style_get_type"
-     ponyname="gtk_button_box_style_get_type"
+     ponyname="style_get_type"
      fid="f643"
      lineno="55"
      rv="U64">
@@ -116711,7 +116711,7 @@
      <useargs/>
   </use>
   <use id="_16737" name="gtk_button_role_get_type"
-     ponyname="gtk_button_role_get_type"
+     ponyname="role_get_type"
      fid="f643"
      lineno="251"
      rv="U64">

@@ -1080,18 +1080,18 @@
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
     <implements name="Buildable" render="0"/>
-    <constructor name="new" cid="gtk_button_new" render="0"/>
-    <constructor name="new_from_icon_name" cid="gtk_button_new_from_icon_name" render="0"/>
-    <constructor name="new_from_stock" cid="gtk_button_new_from_stock" render="0"/>
-    <constructor name="new_with_label" cid="gtk_button_new_with_label" render="0"/>
-    <constructor name="new_with_mnemonic" cid="gtk_button_new_with_mnemonic" render="0"/>
+    <constructor name="new" cid="gtk_button_new" render="1"/>
+    <constructor name="new_from_icon_name" cid="gtk_button_new_from_icon_name" render="1"/>
+    <constructor name="new_from_stock" cid="gtk_button_new_from_stock" render="1"/>
+    <constructor name="new_with_label" cid="gtk_button_new_with_label" render="1"/>
+    <constructor name="new_with_mnemonic" cid="gtk_button_new_with_mnemonic" render="1"/>
     <virtual-method name="activate" render="0"/>
     <virtual-method name="clicked" render="0"/>
     <virtual-method name="enter" render="0"/>
     <virtual-method name="leave" render="0"/>
     <virtual-method name="pressed" render="0"/>
     <virtual-method name="released" render="0"/>
-    <method name="clicked" cid="gtk_button_clicked" render="0"/>
+    <method name="clicked" cid="gtk_button_clicked" render="1"/>
     <method name="enter" cid="gtk_button_enter" render="0"/>
     <method name="get_alignment" cid="gtk_button_get_alignment" render="0"/>
     <method name="get_always_show_image" cid="gtk_button_get_always_show_image" render="0"/>

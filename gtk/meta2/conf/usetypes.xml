@@ -21,11 +21,13 @@
   </ponytypeconvout>
 </typedef>    
 
-<typedef name="GtkWindow"    ponytypein="GtkWindow tag"     ponytypeinconv=""     ponytypeout="GtkWindow"     structtype="GtkWindow"     structdef="GtkWindow"                 argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
-<typedef name="GtkBin"       ponytypein="GtkBin tag"     ponytypeinconv=""     ponytypeout="GtkBin"     structtype="GtkBin"     structdef="GtkBin"                             argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
-<typedef name="GtkContainer" ponytypein="GtkContainer tag"     ponytypeinconv=""     ponytypeout="GtkContainer"     structtype="GtkContainer"     structdef="GtkContainer"     argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
-<typedef name="GtkWidget"    ponytypein="GtkWidget"     ponytypeinconv=".apply()"     ponytypeout="GtkWidget"     structtype="GtkWidget"     structdef="GtkWidget"                 argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
-<typedef name="GObject"          ponytypein="GObject"     ponytypeinconv=".apply()"     ponytypeout="GObject"     structtype="GObject"     structdef="GObject"     argtype="GObject tag"     rvtype="Pointer[GObject] tag">
+<typedef name="GtkWindow"    ponytypein="GtkWindow tag"      ponytypeinconv=".apply()" ponytypeout="GtkWindow"    structtype="GtkWindow"    structdef="GtkWindow"    argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
+<typedef name="GtkBin"       ponytypein="GtkBin tag"         ponytypeinconv=".apply()" ponytypeout="GtkBin"       structtype="GtkBin"       structdef="GtkBin"       argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
+<typedef name="GtkContainer" ponytypein="GtkContainer tag"   ponytypeinconv=".apply()" ponytypeout="GtkContainer" structtype="GtkContainer" structdef="GtkContainer" argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
+<typedef name="GtkWidget"    ponytypein="GtkWidgetInterface" ponytypeinconv=".apply()" ponytypeout="GtkWidget"    structtype="GtkWidget"    structdef="GtkWidget"    argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
+<typedef name="GtkButton"    ponytypein="GtkButton tag"      ponytypeinconv=".apply()" ponytypeout="GtkButton"    structtype="GtkButton"    structdef="GtkButton"    argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
+
+<typedef name="GObject"      ponytypein="GObject"            ponytypeinconv=".apply()" ponytypeout="GObject"      structtype="GObject"      structdef="GObject"      argtype="GObject tag"          rvtype="Pointer[GObject] tag">
   <ponytypeconvout>
     <prefixs>
       <prefix>var ptr: Pointer[GObject] tag = </prefix>
@@ -425,7 +427,6 @@
 <typedef name="GtkBuildable"          ponytypein="GtkBuildable tag"     ponytypeinconv=""     ponytypeout="GtkBuildable"     structtype="GtkBuildable"     structdef="GtkBuildable"     argtype="GtkBuildable tag"     rvtype="GtkBuildable"/>    
 <typedef name="GtkBuilder"          ponytypein="GtkBuilder tag"     ponytypeinconv=""     ponytypeout="GtkBuilder"     structtype="GtkBuilder"     structdef="GtkBuilder"     argtype="GtkBuilder tag"     rvtype="GtkBuilder"/>    
 <typedef name="GtkButtonBox"          ponytypein="GtkButtonBox tag"     ponytypeinconv=""     ponytypeout="GtkButtonBox"     structtype="GtkButtonBox"     structdef="GtkButtonBox"     argtype="GtkButtonBox tag"     rvtype="GtkButtonBox"/>    
-<typedef name="GtkButton"          ponytypein="GtkButton tag"     ponytypeinconv=""     ponytypeout="GtkButton"     structtype="GtkButton"     structdef="GtkButton"     argtype="GtkButton tag"     rvtype="GtkButton"/>    
 <typedef name="GtkCalendar"          ponytypein="GtkCalendar tag"     ponytypeinconv=""     ponytypeout="GtkCalendar"     structtype="GtkCalendar"     structdef="GtkCalendar"     argtype="GtkCalendar tag"     rvtype="GtkCalendar"/>    
 <typedef name="GtkCellAreaBox"          ponytypein="GtkCellAreaBox tag"     ponytypeinconv=""     ponytypeout="GtkCellAreaBox"     structtype="GtkCellAreaBox"     structdef="GtkCellAreaBox"     argtype="GtkCellAreaBox tag"     rvtype="GtkCellAreaBox"/>    
 <typedef name="GtkCellAreaClass"          ponytypein="GtkCellAreaClass tag"     ponytypeinconv=""     ponytypeout="GtkCellAreaClass"     structtype="GtkCellAreaClass"     structdef="GtkCellAreaClass"     argtype="GtkCellAreaClass tag"     rvtype="GtkCellAreaClass"/>    
