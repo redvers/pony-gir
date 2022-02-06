@@ -27,7 +27,8 @@ actor Main
     let button: GtkButton = GtkButton.new_with_label("Press Me")
 
     window.add(button)
-    window.signal_connect[String]("destroy", @{(obj: GObjectStruct, data: String): None => @printf(data.cstring())}, "Hello World")
+    button.signal_connect[String]("clicked", Main~button_clicked(), "Hello World\n")
+    window.signal_connect[String]("destroy", @{(obj: NullablePointer[GObjectStruct] val, data: String): None => Gtk.main_quit()}, "")
     window.set_title("Hello World")
     window.show_all()
 
@@ -44,3 +45,10 @@ actor Main
 
 
     Gtk.main()
+
+  fun @button_clicked(obj: NullablePointer[GObjectStruct] val, data: String): None =>
+    @printf(data.cstring())
+    try
+    @printf(GObject.from_ptr(obj).pony_type()?.cstring())
+    end
+

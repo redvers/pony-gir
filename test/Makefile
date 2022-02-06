@@ -1,3 +1,3 @@
 all:
 	ponyc -d .
-	./test
+	./test --ponyminthreads 2

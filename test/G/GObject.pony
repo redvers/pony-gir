@@ -24,7 +24,7 @@ interface GObjectInterface
   fun g_object_set_data(key: String, data: Pointer[None] tag): None =>
     @g_object_set_data(apply(), key.cstring(), data)
 
-  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(GObjectStruct, A): None}, data: A) =>
+  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(NullablePointer[GObjectStruct] val, A): None}, data: A) =>
     @g_signal_connect_data(apply(), detailedsignal.cstring(), chandler, data, Pointer[None], I32(0))
 
   fun pony_type(): String val ? =>
