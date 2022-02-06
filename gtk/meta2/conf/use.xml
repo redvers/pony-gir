@@ -26193,7 +26193,7 @@
      lineno="450"
      rv="None">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="parg2" type="..."/>
      </useargs>
@@ -26204,7 +26204,7 @@
      lineno="454"
      rv="None">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="parg2" type="..."/>
      </useargs>
@@ -26215,7 +26215,7 @@
      lineno="458"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="signalspec" type="String"/>
        <usearg name="parg2" type="..."/>
      </useargs>
@@ -26226,7 +26226,7 @@
      lineno="462"
      rv="None">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="signalspec" type="String"/>
        <usearg name="parg2" type="..."/>
      </useargs>
@@ -26237,7 +26237,7 @@
      lineno="466"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="nproperties" type="U32"/>
        <usearg name="names" type="Array[String]"/>
        <usearg name="values" type="GValue"/>
@@ -26249,7 +26249,7 @@
      lineno="471"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="varargs" type="Valisttag"/>
      </useargs>
@@ -26260,7 +26260,7 @@
      lineno="475"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="nproperties" type="U32"/>
        <usearg name="names" type="Array[String]"/>
        <usearg name="values" type="GValue"/>
@@ -26272,7 +26272,7 @@
      lineno="480"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="firstpropertyname" type="String"/>
        <usearg name="varargs" type="Valisttag"/>
      </useargs>
@@ -26283,7 +26283,7 @@
      lineno="484"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="propertyname" type="String"/>
        <usearg name="value" type="GValue"/>
      </useargs>
@@ -26294,7 +26294,7 @@
      lineno="488"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="propertyname" type="String"/>
        <usearg name="value" type="GValue"/>
      </useargs>
@@ -26305,7 +26305,7 @@
      lineno="492"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3609" name="g_object_notify"
@@ -26314,7 +26314,7 @@
      lineno="494"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="propertyname" type="String"/>
      </useargs>
   </use>
@@ -26324,7 +26324,7 @@
      lineno="497"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="pspec" type="GParamSpec"/>
      </useargs>
   </use>
@@ -26334,7 +26334,7 @@
      lineno="500"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3612" name="g_object_is_floating"
@@ -26343,7 +26343,7 @@
      lineno="502"
      rv="I32">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3613" name="g_object_ref_sink"
@@ -26352,7 +26352,7 @@
      lineno="504"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3614" name="g_object_take_ref"
@@ -26361,7 +26361,7 @@
      lineno="506"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3615" name="g_object_ref"
@@ -26370,7 +26370,7 @@
      lineno="508"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3616" name="g_object_unref"
@@ -26379,7 +26379,7 @@
      lineno="510"
      rv="None">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3617" name="g_object_weak_ref"
@@ -26388,7 +26388,7 @@
      lineno="512"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="notify" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -26399,7 +26399,7 @@
      lineno="516"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="notify" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -26410,7 +26410,7 @@
      lineno="520"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="weakpointerlocation" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -26420,7 +26420,7 @@
      lineno="523"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="weakpointerlocation" type="Pointer[None]"/>
      </useargs>
   </use>
@@ -26430,7 +26430,7 @@
      lineno="551"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="notify" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -26441,7 +26441,7 @@
      lineno="555"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="notify" type="Pointer[None]"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -26452,7 +26452,7 @@
      lineno="560"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="quark" type="U32"/>
      </useargs>
   </use>
@@ -26462,7 +26462,7 @@
      lineno="563"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="quark" type="U32"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -26473,7 +26473,7 @@
      lineno="567"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="quark" type="U32"/>
        <usearg name="data" type="Pointer[None]"/>
        <usearg name="destroy" type="Pointer[None]"/>
@@ -26485,7 +26485,7 @@
      lineno="572"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="quark" type="U32"/>
      </useargs>
   </use>
@@ -26495,7 +26495,7 @@
      lineno="576"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="quark" type="U32"/>
        <usearg name="dupfunc" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
@@ -26507,7 +26507,7 @@
      lineno="581"
      rv="I32">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="quark" type="U32"/>
        <usearg name="oldval" type="Pointer[None]"/>
        <usearg name="newval" type="Pointer[None]"/>
@@ -26521,7 +26521,7 @@
      lineno="589"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="key" type="String"/>
      </useargs>
   </use>
@@ -26531,7 +26531,7 @@
      lineno="592"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="key" type="String"/>
        <usearg name="data" type="Pointer[None]"/>
      </useargs>
@@ -26542,7 +26542,7 @@
      lineno="596"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="key" type="String"/>
        <usearg name="data" type="Pointer[None]"/>
        <usearg name="destroy" type="Pointer[None]"/>
@@ -26554,7 +26554,7 @@
      lineno="601"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="key" type="String"/>
      </useargs>
   </use>
@@ -26564,7 +26564,7 @@
      lineno="605"
      rv="Pointer[None]">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="key" type="String"/>
        <usearg name="dupfunc" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
@@ -26576,7 +26576,7 @@
      lineno="610"
      rv="I32">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="key" type="String"/>
        <usearg name="oldval" type="Pointer[None]"/>
        <usearg name="newval" type="Pointer[None]"/>
@@ -26590,7 +26590,7 @@
      lineno="619"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="closure" type="GClosure"/>
      </useargs>
   </use>
@@ -26601,7 +26601,7 @@
      rv="GClosure">
      <useargs>
        <usearg name="callbackfunc" type="Pointer[None]"/>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3638" name="g_cclosure_new_object_swap"
@@ -26611,7 +26611,7 @@
      rv="GClosure">
      <useargs>
        <usearg name="callbackfunc" type="Pointer[None]"/>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3639" name="g_closure_new_object"
@@ -26621,7 +26621,7 @@
      rv="GClosure">
      <useargs>
        <usearg name="sizeofclosure" type="U32"/>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3640" name="g_value_set_object"
@@ -26671,7 +26671,7 @@
      lineno="646"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3645" name="g_object_run_dispose"
@@ -26680,7 +26680,7 @@
      lineno="648"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3646" name="g_value_take_object"
@@ -26738,7 +26738,7 @@
      lineno="795"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_3652" name="g_clear_weak_pointer"
@@ -26767,7 +26767,7 @@
      rv="None">
      <useargs>
        <usearg name="weakref" type="Anon"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3657" name="g_weak_ref_clear"
@@ -26795,7 +26795,7 @@
      rv="None">
      <useargs>
        <usearg name="weakref" type="Anon"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
      </useargs>
   </use>
   <use id="_3665" name="g_binding_flags_get_type"
@@ -29968,7 +29968,7 @@
      rv="None">
      <useargs>
        <usearg name="application" type="GApplication"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
      </useargs>
   </use>
@@ -29979,7 +29979,7 @@
      rv="None">
      <useargs>
        <usearg name="application" type="GApplication"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
      </useargs>
   </use>
@@ -30582,7 +30582,7 @@
      <useargs>
        <usearg name="settings" type="GSettings"/>
        <usearg name="key" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
        <usearg name="flags" type="I32"/>
      </useargs>
@@ -30595,7 +30595,7 @@
      <useargs>
        <usearg name="settings" type="GSettings"/>
        <usearg name="key" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
        <usearg name="flags" type="I32"/>
        <usearg name="getmapping" type="Pointer[None]"/>
@@ -30612,7 +30612,7 @@
      <useargs>
        <usearg name="settings" type="GSettings"/>
        <usearg name="key" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
        <usearg name="inverted" type="I32"/>
      </useargs>
@@ -30623,7 +30623,7 @@
      lineno="330"
      rv="None">
      <useargs>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="property" type="String"/>
      </useargs>
   </use>
@@ -37171,7 +37171,7 @@
      lineno="80"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5192" name="g_dbus_object_skeleton_add_interface"
@@ -37180,7 +37180,7 @@
      lineno="82"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
        <usearg name="interface" type="GDBusInterfaceSkeleton"/>
      </useargs>
   </use>
@@ -37190,7 +37190,7 @@
      lineno="85"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
        <usearg name="interface" type="GDBusInterfaceSkeleton"/>
      </useargs>
   </use>
@@ -37200,7 +37200,7 @@
      lineno="88"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
        <usearg name="interfacename" type="String"/>
      </useargs>
   </use>
@@ -37210,7 +37210,7 @@
      lineno="91"
      rv="None">
      <useargs>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
        <usearg name="objectpath" type="String"/>
      </useargs>
   </use>
@@ -37415,7 +37415,7 @@
      rv="None">
      <useargs>
        <usearg name="manager" type="GDBusObjectManagerServer"/>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5175" name="g_dbus_object_manager_server_export_uniquely"
@@ -37425,7 +37425,7 @@
      rv="None">
      <useargs>
        <usearg name="manager" type="GDBusObjectManagerServer"/>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5176" name="g_dbus_object_manager_server_is_exported"
@@ -37435,7 +37435,7 @@
      rv="I32">
      <useargs>
        <usearg name="manager" type="GDBusObjectManagerServer"/>
-       <usearg name="object" type="GDBusObjectSkeleton"/>
+       <usearg name="gobject" type="GDBusObjectSkeleton"/>
      </useargs>
   </use>
   <use id="_5177" name="g_dbus_object_manager_server_unexport"
@@ -39676,7 +39676,7 @@
      rv="None">
      <useargs>
        <usearg name="interface" type="GDBusInterface"/>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject" type="GDBusObject"/>
      </useargs>
   </use>
   <use id="_5000" name="g_dbus_interface_dup_object"
@@ -40526,7 +40526,7 @@
      lineno="69"
      rv="String">
      <useargs>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject" type="GDBusObject"/>
      </useargs>
   </use>
   <use id="_5142" name="g_dbus_object_get_interfaces"
@@ -40535,7 +40535,7 @@
      lineno="71"
      rv="GList">
      <useargs>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject" type="GDBusObject"/>
      </useargs>
   </use>
   <use id="_5143" name="g_dbus_object_get_interface"
@@ -40544,7 +40544,7 @@
      lineno="73"
      rv="GDBusInterface">
      <useargs>
-       <usearg name="object" type="GDBusObject"/>
+       <usearg name="gobject" type="GDBusObject"/>
        <usearg name="interfacename" type="String"/>
      </useargs>
   </use>
@@ -46657,7 +46657,7 @@
      rv="GPropertyAction">
      <useargs>
        <usearg name="name" type="String"/>
-       <usearg name="object" type="Pointer[None]"/>
+       <usearg name="gobject" type="Pointer[None]"/>
        <usearg name="propertyname" type="String"/>
      </useargs>
   </use>
@@ -47609,7 +47609,7 @@
      lineno="140"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
        <usearg name="domain" type="U32"/>
@@ -47624,7 +47624,7 @@
      lineno="148"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
        <usearg name="error" type="GError"/>
@@ -47636,7 +47636,7 @@
      lineno="153"
      rv="None">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="callback" type="Pointer[None]"/>
        <usearg name="userdata" type="Pointer[None]"/>
        <usearg name="error" type="GError"/>
@@ -75295,7 +75295,7 @@
      rv="None">
      <useargs>
        <usearg name="accelgroup" type="GtkAccelGroup"/>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_11005" name="_gtk_accel_group_detach"
@@ -75305,7 +75305,7 @@
      rv="None">
      <useargs>
        <usearg name="accelgroup" type="GtkAccelGroup"/>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_11006" name="gtk_accel_groups_activate"
@@ -75314,7 +75314,7 @@
      lineno="184"
      rv="I32">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="accelkey" type="U32"/>
        <usearg name="accelmods" type="I32"/>
      </useargs>
@@ -75325,7 +75325,7 @@
      lineno="188"
      rv="GSList">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_11008" name="gtk_accel_group_find"
@@ -75882,7 +75882,7 @@
      <useargs>
        <usearg name="builder" type="GtkBuilder"/>
        <usearg name="name" type="String"/>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_13541" name="gtk_builder_connect_signals"
@@ -81796,7 +81796,7 @@
      lineno="776"
      rv="I32">
      <useargs>
-       <usearg name="object" type="AtkObject"/>
+       <usearg name="gobject" type="AtkObject"/>
        <usearg name="relationship" type="I32"/>
        <usearg name="target" type="AtkObject"/>
      </useargs>
@@ -81807,7 +81807,7 @@
      lineno="780"
      rv="I32">
      <useargs>
-       <usearg name="object" type="AtkObject"/>
+       <usearg name="gobject" type="AtkObject"/>
        <usearg name="relationship" type="I32"/>
        <usearg name="target" type="AtkObject"/>
      </useargs>
@@ -82184,7 +82184,7 @@
      lineno="200"
      rv="None">
      <useargs>
-       <usearg name="object" type="AtkObject"/>
+       <usearg name="gobject" type="AtkObject"/>
      </useargs>
   </use>
   <use id="_11175" name="atk_add_global_event_listener"
@@ -96832,7 +96832,7 @@
      lineno="151"
      rv="I32">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="keyval" type="U32"/>
        <usearg name="modifiers" type="I32"/>
      </useargs>
@@ -96843,7 +96843,7 @@
      lineno="155"
      rv="I32">
      <useargs>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
        <usearg name="event" type="GdkEventKey"/>
      </useargs>
   </use>
@@ -96856,7 +96856,7 @@
        <usearg name="bindingset" type="GtkBindingSet"/>
        <usearg name="keyval" type="U32"/>
        <usearg name="modifiers" type="I32"/>
-       <usearg name="object" type="GObject"/>
+       <usearg name="gobject" type="GObject"/>
      </useargs>
   </use>
   <use id="_13518" name="gtk_binding_entry_skip"

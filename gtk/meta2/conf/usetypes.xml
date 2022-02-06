@@ -27,7 +27,7 @@
 <typedef name="GtkWidget"    ponytypein="GtkWidgetInterface" ponytypeinconv=".apply()" ponytypeout="GtkWidget"    structtype="GtkWidget"    structdef="GtkWidget"    argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
 <typedef name="GtkButton"    ponytypein="GtkButton tag"      ponytypeinconv=".apply()" ponytypeout="GtkButton"    structtype="GtkButton"    structdef="GtkButton"    argtype="Pointer[GObject] tag" rvtype="Pointer[GObject] tag"/>    
 
-<typedef name="GObject"      ponytypein="GObject"            ponytypeinconv=".apply()" ponytypeout="GObject"      structtype="GObject"      structdef="GObject"      argtype="GObject tag"          rvtype="Pointer[GObject] tag">
+<typedef name="GObject"      ponytypein="GObject"            ponytypeinconv=".apply()" ponytypeout="GObject"      structtype="GObject"      structdef="GObject"      argtype="Pointer[GObject] tag"          rvtype="Pointer[GObject] tag">
   <ponytypeconvout>
     <prefixs>
       <prefix>var ptr: Pointer[GObject] tag = </prefix>

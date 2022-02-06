@@ -1,0 +1,2 @@
+  fun signal_connect(detailedsignal: String, chandler: Pointer[None] tag, data: Pointer[None] tag) =>
+    @g_signal_connect_data(apply(), detailedsignal.cstring(), Pointer[None], Pointer[None], Pointer[None], I32(0))

@@ -287,7 +287,7 @@
     <method name="force_floating" cid="g_object_force_floating" render="0"/>
     <method name="freeze_notify" cid="g_object_freeze_notify" render="0"/>
     <method name="get" cid="g_object_get" render="0"/>
-    <method name="get_data" cid="g_object_get_data" render="0"/>
+    <method name="get_data" cid="g_object_get_data" render="1"/>
     <method name="get_property" cid="g_object_get_property" render="0"/>
     <method name="get_qdata" cid="g_object_get_qdata" render="0"/>
     <method name="get_valist" cid="g_object_get_valist" render="0"/>
@@ -303,7 +303,7 @@
     <method name="replace_qdata" cid="g_object_replace_qdata" render="0"/>
     <method name="run_dispose" cid="g_object_run_dispose" render="0"/>
     <method name="set" cid="g_object_set" render="0"/>
-    <method name="set_data" cid="g_object_set_data" render="0"/>
+    <method name="set_data" cid="g_object_set_data" render="1"/>
     <method name="set_data_full" cid="g_object_set_data_full" render="0"/>
     <method name="set_property" cid="g_object_set_property" render="0"/>
     <method name="set_qdata" cid="g_object_set_qdata" render="0"/>

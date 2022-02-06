@@ -5,7 +5,10 @@ gtkclass:
 	sh -x mkclass Gtk GtkBin
 	sh -x mkclass Gtk GtkContainer
 	sh -x mkclass Gtk GtkWidget
+	sh -x mkclass GObject GObject
+	rm ../../test/GObject/GObject.pony
 	cp out/Gtk/* ../../test/Gtk/
+	cp out/GObject/GObject.pony ../../test/GObject/
 	rm ../../test/Gtk/*fn.pony
 	rm ../../test/Gtk/*use.pony
 #	cp out/GObject/* ../../test/GObject/
@@ -15,10 +18,10 @@ gtkclass:
 	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
 	cat out/Gtk/Gtk-use.pony out/Gtk/Gtk-fn.pony > ../../test/Gtk/Gtk.pony
 
-gobjectbase:
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject
-	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject
-	cat out/GObject/GObject-use.pony out/GObject/GObject-fn.pony > ../../test/GObject/GObject.pony
+#gobjectbase:
+#	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject
+#	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject
+#	cat out/GObject/GObject-use.pony out/GObject/GObject-fn.pony > ../../test/GObject/GObject.pony
 
 gtkbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk

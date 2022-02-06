@@ -4,8 +4,8 @@ if test -f "templates/$1.header"; then
   cat templates/$1.header                                     >> out/$1/$2.pony
 fi
 
-if test -f "templates/$2.header"; then
-  cat templates/$2.header                                     >> out/$1/$2.pony
+if test -f "templates/$1$2.header"; then
+  cat templates/$1$2.header                                   >> out/$1/$2.pony
 fi
 
 saxon-he -xi main.xml xsl/makeclassuse.xsl ns=$1 class=$2     >> out/$1/$2.pony
@@ -16,6 +16,6 @@ if test -f "templates/$1.footer"; then
   cat templates/$1.footer                                     >> out/$1/$2.pony
 fi
 
-if test -f "templates/$2.footer"; then
-  cat templates/$2.footer                                     >> out/$1/$2.pony
+if test -f "templates/$1$2.footer"; then
+  cat templates/$1$2.footer                                   >> out/$1/$2.pony
 fi
