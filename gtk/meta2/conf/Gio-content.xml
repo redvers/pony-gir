@@ -261,7 +261,7 @@
   </record>
   <record name="AppLaunchContextPrivate" gtypestructfor="" ctype="GAppLaunchContextPrivate" render="0">
   </record>
-  <class name="Application" ctype="GApplication" parent="GObject.Object" render="0">
+  <class name="Application" ctype="GApplication" parent="GObject" render="1">
     <implements name="ActionGroup" render="0"/>
     <implements name="ActionMap" render="0"/>
     <constructor name="new" cid="g_application_new" render="0"/>

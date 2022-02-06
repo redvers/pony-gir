@@ -64,7 +64,7 @@
   <function-macro name="ASSISTANT" render="0">   </function-macro>
   <function-macro name="ASSISTANT_CLASS" render="0">   </function-macro>
   <function-macro name="ASSISTANT_GET_CLASS" render="0">   </function-macro>
-  <class name="AboutDialog" ctype="GtkAboutDialog" parent="GtkDialog" render="0">
+  <class name="AboutDialog" ctype="GtkAboutDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_about_dialog_new" render="0"/>
@@ -134,7 +134,7 @@
     <member name="locked" value="2" cid="GTK_ACCEL_LOCKED" glibnick="locked" glibname="GTK_ACCEL_LOCKED"/>
     <member name="mask" value="7" cid="GTK_ACCEL_MASK" glibnick="mask" glibname="GTK_ACCEL_MASK"/>
   </bitfield>
-  <class name="AccelGroup" ctype="GtkAccelGroup" parent="GtkGObject.Object" render="0">
+  <class name="AccelGroup" ctype="GtkAccelGroup" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_accel_group_new" render="0"/>
     <function name="from_accel_closure" cid="gtk_accel_group_from_accel_closure" render="0"/>
     <virtual-method name="accel_changed" render="0"/>
@@ -178,7 +178,7 @@
     <field name="accel_mods"/>
     <field name="accel_flags"/>
   </record>
-  <class name="AccelLabel" ctype="GtkAccelLabel" parent="GtkLabel" render="0">
+  <class name="AccelLabel" ctype="GtkAccelLabel" parent="GtkLabel" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_accel_label_new" render="0"/>
@@ -209,7 +209,7 @@
   </record>
   <record name="AccelLabelPrivate" gtypestructfor="" ctype="GtkAccelLabelPrivate" render="0">
   </record>
-  <class name="AccelMap" ctype="GtkAccelMap" parent="GtkGObject.Object" render="0">
+  <class name="AccelMap" ctype="GtkAccelMap" parent="GtkGObject.Object" render="1">
     <function name="add_entry" cid="gtk_accel_map_add_entry" render="0"/>
     <function name="add_filter" cid="gtk_accel_map_add_filter" render="0"/>
     <function name="change_entry" cid="gtk_accel_map_change_entry" render="0"/>
@@ -229,7 +229,7 @@
   <record name="AccelMapClass" gtypestructfor="AccelMap" ctype="GtkAccelMapClass" render="0">
   </record>
   <callback name="AccelMapForeach" ctype="GtkAccelMapForeach" render="0">  </callback>
-  <class name="Accessible" ctype="GtkAccessible" parent="GtkAtk.Object" render="0">
+  <class name="Accessible" ctype="GtkAccessible" parent="GtkAtk.Object" render="1">
     <virtual-method name="connect_widget_destroyed" render="0"/>
     <virtual-method name="widget_set" render="0"/>
     <virtual-method name="widget_unset" render="0"/>
@@ -250,7 +250,7 @@
   </record>
   <record name="AccessiblePrivate" gtypestructfor="" ctype="GtkAccessiblePrivate" render="0">
   </record>
-  <class name="Action" ctype="GtkAction" parent="GtkGObject.Object" render="0">
+  <class name="Action" ctype="GtkAction" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_action_new" render="0"/>
     <virtual-method name="activate" render="0"/>
@@ -320,7 +320,7 @@
     <field name="private_data"/>
     <glibsignal name="activate" when="first" render="0"/>
   </class>
-  <class name="ActionBar" ctype="GtkActionBar" parent="GtkBin" render="0">
+  <class name="ActionBar" ctype="GtkActionBar" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_action_bar_new" render="0"/>
@@ -362,7 +362,7 @@
     <field name="tooltip"/>
     <field name="callback"/>
   </record>
-  <class name="ActionGroup" ctype="GtkActionGroup" parent="GtkGObject.Object" render="0">
+  <class name="ActionGroup" ctype="GtkActionGroup" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_action_group_new" render="0"/>
     <virtual-method name="get_action" render="0"/>
@@ -447,7 +447,7 @@
     <field name="update"/>
     <field name="sync_action_properties"/>
   </record>
-  <class name="Adjustment" ctype="GtkAdjustment" parent="GtkGObject.InitiallyUnowned" render="0">
+  <class name="Adjustment" ctype="GtkAdjustment" parent="GtkGObject.InitiallyUnowned" render="1">
     <constructor name="new" cid="gtk_adjustment_new" render="0"/>
     <virtual-method name="changed" render="0"/>
     <virtual-method name="value_changed" render="0"/>
@@ -496,7 +496,7 @@
     <member name="center" value="3" cid="GTK_ALIGN_CENTER" glibnick="center" glibname="GTK_ALIGN_CENTER"/>
     <member name="baseline" value="4" cid="GTK_ALIGN_BASELINE" glibnick="baseline" glibname="GTK_ALIGN_BASELINE"/>
   </enumeration>
-  <class name="Alignment" ctype="GtkAlignment" parent="GtkBin" render="0">
+  <class name="Alignment" ctype="GtkAlignment" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_alignment_new" render="0"/>
@@ -529,7 +529,7 @@
     <method name="refresh" cid="gtk_app_chooser_refresh" render="0"/>
     <property name="content-type" cid="" render="0"/>
   </interface>
-  <class name="AppChooserButton" ctype="GtkAppChooserButton" parent="GtkComboBox" render="0">
+  <class name="AppChooserButton" ctype="GtkAppChooserButton" parent="GtkComboBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="AppChooser" render="0"/>
     <implements name="Buildable" render="0"/>
@@ -560,7 +560,7 @@
   </record>
   <record name="AppChooserButtonPrivate" gtypestructfor="" ctype="GtkAppChooserButtonPrivate" render="0">
   </record>
-  <class name="AppChooserDialog" ctype="GtkAppChooserDialog" parent="GtkDialog" render="0">
+  <class name="AppChooserDialog" ctype="GtkAppChooserDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="AppChooser" render="0"/>
     <implements name="Buildable" render="0"/>
@@ -580,7 +580,7 @@
   </record>
   <record name="AppChooserDialogPrivate" gtypestructfor="" ctype="GtkAppChooserDialogPrivate" render="0">
   </record>
-  <class name="AppChooserWidget" ctype="GtkAppChooserWidget" parent="GtkBox" render="0">
+  <class name="AppChooserWidget" ctype="GtkAppChooserWidget" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="AppChooser" render="0"/>
     <implements name="Buildable" render="0"/>
@@ -622,7 +622,7 @@
   </record>
   <record name="AppChooserWidgetPrivate" gtypestructfor="" ctype="GtkAppChooserWidgetPrivate" render="0">
   </record>
-  <class name="Application" ctype="GtkApplication" parent="GtkGio.Application" render="0">
+  <class name="Application" ctype="GtkApplication" parent="GApplication" render="1">
     <implements name="Gio.ActionGroup" render="0"/>
     <implements name="Gio.ActionMap" render="0"/>
     <constructor name="new" cid="gtk_application_new" render="0"/>
@@ -673,7 +673,7 @@
   </bitfield>
   <record name="ApplicationPrivate" gtypestructfor="" ctype="GtkApplicationPrivate" render="0">
   </record>
-  <class name="ApplicationWindow" ctype="GtkApplicationWindow" parent="GtkWindow" render="0">
+  <class name="ApplicationWindow" ctype="GtkApplicationWindow" parent="GtkWindow" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Gio.ActionGroup" render="0"/>
     <implements name="Gio.ActionMap" render="0"/>
@@ -694,7 +694,7 @@
   </record>
   <record name="ApplicationWindowPrivate" gtypestructfor="" ctype="GtkApplicationWindowPrivate" render="0">
   </record>
-  <class name="Arrow" ctype="GtkArrow" parent="GtkMisc" render="0">
+  <class name="Arrow" ctype="GtkArrow" parent="GtkMisc" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_arrow_new" render="0"/>
@@ -704,7 +704,7 @@
     <field name="misc"/>
     <field name="priv"/>
   </class>
-  <class name="ArrowAccessible" ctype="GtkArrowAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="ArrowAccessible" ctype="GtkArrowAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
     <field name="parent"/>
@@ -734,7 +734,7 @@
     <member name="right" value="3" cid="GTK_ARROW_RIGHT" glibnick="right" glibname="GTK_ARROW_RIGHT"/>
     <member name="none" value="4" cid="GTK_ARROW_NONE" glibnick="none" glibname="GTK_ARROW_NONE"/>
   </enumeration>
-  <class name="AspectFrame" ctype="GtkAspectFrame" parent="GtkFrame" render="0">
+  <class name="AspectFrame" ctype="GtkAspectFrame" parent="GtkFrame" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_aspect_frame_new" render="0"/>
@@ -755,7 +755,7 @@
   </record>
   <record name="AspectFramePrivate" gtypestructfor="" ctype="GtkAspectFramePrivate" render="0">
   </record>
-  <class name="Assistant" ctype="GtkAssistant" parent="GtkWindow" render="0">
+  <class name="Assistant" ctype="GtkAssistant" parent="GtkWindow" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_assistant_new" render="0"/>
@@ -913,7 +913,7 @@
     <field name="n_args"/>
     <field name="args"/>
   </record>
-  <class name="BooleanCellAccessible" ctype="GtkBooleanCellAccessible" parent="GtkRendererCellAccessible" render="0">
+  <class name="BooleanCellAccessible" ctype="GtkBooleanCellAccessible" parent="GtkRendererCellAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.TableCell" render="0"/>
@@ -945,7 +945,7 @@
     <member name="groove" value="8" cid="GTK_BORDER_STYLE_GROOVE" glibnick="groove" glibname="GTK_BORDER_STYLE_GROOVE"/>
     <member name="ridge" value="9" cid="GTK_BORDER_STYLE_RIDGE" glibnick="ridge" glibname="GTK_BORDER_STYLE_RIDGE"/>
   </enumeration>
-  <class name="Box" ctype="GtkBox" parent="GtkContainer" render="0">
+  <class name="Box" ctype="GtkBox" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -1012,7 +1012,7 @@
     <field name="parser_finished"/>
     <field name="get_internal_child"/>
   </record>
-  <class name="Builder" ctype="GtkBuilder" parent="GtkGObject.Object" render="0">
+  <class name="Builder" ctype="GtkBuilder" parent="GObject" render="1">
     <constructor name="new" cid="gtk_builder_new" render="0"/>
     <constructor name="new_from_file" cid="gtk_builder_new_from_file" render="0"/>
     <constructor name="new_from_resource" cid="gtk_builder_new_from_resource" render="0"/>
@@ -1075,7 +1075,7 @@
   </enumeration>
   <record name="BuilderPrivate" gtypestructfor="" ctype="GtkBuilderPrivate" render="0">
   </record>
-  <class name="Button" ctype="GtkButton" parent="GtkBin" render="0">
+  <class name="Button" ctype="GtkButton" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -1133,7 +1133,7 @@
     <glibsignal name="pressed" when="first" render="0"/>
     <glibsignal name="released" when="first" render="0"/>
   </class>
-  <class name="ButtonAccessible" ctype="GtkButtonAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="ButtonAccessible" ctype="GtkButtonAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
@@ -1145,7 +1145,7 @@
   </record>
   <record name="ButtonAccessiblePrivate" gtypestructfor="" ctype="GtkButtonAccessiblePrivate" render="0">
   </record>
-  <class name="ButtonBox" ctype="GtkButtonBox" parent="GtkBox" render="0">
+  <class name="ButtonBox" ctype="GtkButtonBox" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -1305,7 +1305,7 @@
   <function-macro name="CSS_PROVIDER" render="0">   </function-macro>
   <function-macro name="CSS_PROVIDER_CLASS" render="0">   </function-macro>
   <function-macro name="CSS_PROVIDER_GET_CLASS" render="0">   </function-macro>
-  <class name="Calendar" ctype="GtkCalendar" parent="GtkWidget" render="0">
+  <class name="Calendar" ctype="GtkCalendar" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_calendar_new" render="0"/>
@@ -1375,7 +1375,7 @@
   <record name="CalendarPrivate" gtypestructfor="" ctype="GtkCalendarPrivate" render="0">
   </record>
   <callback name="Callback" ctype="GtkCallback" render="0">  </callback>
-  <class name="CellAccessible" ctype="GtkCellAccessible" parent="GtkAccessible" render="0">
+  <class name="CellAccessible" ctype="GtkCellAccessible" parent="GtkAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.TableCell" render="0"/>
@@ -1430,7 +1430,7 @@
   <record name="CellAccessiblePrivate" gtypestructfor="" ctype="GtkCellAccessiblePrivate" render="0">
   </record>
   <callback name="CellAllocCallback" ctype="GtkCellAllocCallback" render="0">  </callback>
-  <class name="CellArea" ctype="GtkCellArea" parent="GtkGObject.InitiallyUnowned" render="0">
+  <class name="CellArea" ctype="GtkCellArea" parent="GtkGObject.InitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <virtual-method name="activate" render="0"/>
@@ -1506,7 +1506,7 @@
     <glibsignal name="focus-changed" when="first" render="0"/>
     <glibsignal name="remove-editable" when="first" render="0"/>
   </class>
-  <class name="CellAreaBox" ctype="GtkCellAreaBox" parent="GtkCellArea" render="0">
+  <class name="CellAreaBox" ctype="GtkCellAreaBox" parent="GtkCellArea" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -1561,7 +1561,7 @@
     <method name="install_cell_property" cid="gtk_cell_area_class_install_cell_property" render="0"/>
     <method name="list_cell_properties" cid="gtk_cell_area_class_list_cell_properties" render="0"/>
   </record>
-  <class name="CellAreaContext" ctype="GtkCellAreaContext" parent="GtkGObject.Object" render="0">
+  <class name="CellAreaContext" ctype="GtkCellAreaContext" parent="GtkGObject.Object" render="1">
     <virtual-method name="allocate" render="0"/>
     <virtual-method name="get_preferred_height_for_width" render="0"/>
     <virtual-method name="get_preferred_width_for_height" render="0"/>
@@ -1652,7 +1652,7 @@
     <field name="get_cells"/>
     <field name="get_area"/>
   </record>
-  <class name="CellRenderer" ctype="GtkCellRenderer" parent="GtkGObject.InitiallyUnowned" render="0">
+  <class name="CellRenderer" ctype="GtkCellRenderer" parent="GtkGObject.InitiallyUnowned" render="1">
     <virtual-method name="activate" render="0"/>
     <virtual-method name="editing_canceled" render="0"/>
     <virtual-method name="editing_started" render="0"/>
@@ -1710,7 +1710,7 @@
     <glibsignal name="editing-canceled" when="first" render="0"/>
     <glibsignal name="editing-started" when="first" render="0"/>
   </class>
-  <class name="CellRendererAccel" ctype="GtkCellRendererAccel" parent="GtkCellRendererText" render="0">
+  <class name="CellRendererAccel" ctype="GtkCellRendererAccel" parent="GtkCellRendererText" render="1">
     <constructor name="new" cid="gtk_cell_renderer_accel_new" render="0"/>
     <virtual-method name="accel_cleared" render="0"/>
     <virtual-method name="accel_edited" render="0"/>
@@ -1760,7 +1760,7 @@
   </record>
   <record name="CellRendererClassPrivate" gtypestructfor="" ctype="GtkCellRendererClassPrivate" render="0">
   </record>
-  <class name="CellRendererCombo" ctype="GtkCellRendererCombo" parent="GtkCellRendererText" render="0">
+  <class name="CellRendererCombo" ctype="GtkCellRendererCombo" parent="GtkCellRendererText" render="1">
     <constructor name="new" cid="gtk_cell_renderer_combo_new" render="0"/>
     <property name="has-entry" cid="" render="0"/>
     <property name="model" cid="" render="0"/>
@@ -1782,7 +1782,7 @@
     <member name="activatable" value="1" cid="GTK_CELL_RENDERER_MODE_ACTIVATABLE" glibnick="activatable" glibname="GTK_CELL_RENDERER_MODE_ACTIVATABLE"/>
     <member name="editable" value="2" cid="GTK_CELL_RENDERER_MODE_EDITABLE" glibnick="editable" glibname="GTK_CELL_RENDERER_MODE_EDITABLE"/>
   </enumeration>
-  <class name="CellRendererPixbuf" ctype="GtkCellRendererPixbuf" parent="GtkCellRenderer" render="0">
+  <class name="CellRendererPixbuf" ctype="GtkCellRendererPixbuf" parent="GtkCellRenderer" render="1">
     <constructor name="new" cid="gtk_cell_renderer_pixbuf_new" render="0"/>
     <property name="follow-state" cid="" render="0"/>
     <property name="gicon" cid="" render="0"/>
@@ -1808,7 +1808,7 @@
   </record>
   <record name="CellRendererPrivate" gtypestructfor="" ctype="GtkCellRendererPrivate" render="0">
   </record>
-  <class name="CellRendererProgress" ctype="GtkCellRendererProgress" parent="GtkCellRenderer" render="0">
+  <class name="CellRendererProgress" ctype="GtkCellRendererProgress" parent="GtkCellRenderer" render="1">
     <implements name="Orientable" render="0"/>
     <constructor name="new" cid="gtk_cell_renderer_progress_new" render="0"/>
     <property name="inverted" cid="" render="0"/>
@@ -1829,7 +1829,7 @@
   </record>
   <record name="CellRendererProgressPrivate" gtypestructfor="" ctype="GtkCellRendererProgressPrivate" render="0">
   </record>
-  <class name="CellRendererSpin" ctype="GtkCellRendererSpin" parent="GtkCellRendererText" render="0">
+  <class name="CellRendererSpin" ctype="GtkCellRendererSpin" parent="GtkCellRendererText" render="1">
     <constructor name="new" cid="gtk_cell_renderer_spin_new" render="0"/>
     <property name="adjustment" cid="" render="0"/>
     <property name="climb-rate" cid="" render="0"/>
@@ -1846,7 +1846,7 @@
   </record>
   <record name="CellRendererSpinPrivate" gtypestructfor="" ctype="GtkCellRendererSpinPrivate" render="0">
   </record>
-  <class name="CellRendererSpinner" ctype="GtkCellRendererSpinner" parent="GtkCellRenderer" render="0">
+  <class name="CellRendererSpinner" ctype="GtkCellRendererSpinner" parent="GtkCellRenderer" render="1">
     <constructor name="new" cid="gtk_cell_renderer_spinner_new" render="0"/>
     <property name="active" cid="" render="0"/>
     <property name="pulse" cid="" render="0"/>
@@ -1872,7 +1872,7 @@
     <member name="expandable" value="32" cid="GTK_CELL_RENDERER_EXPANDABLE" glibnick="expandable" glibname="GTK_CELL_RENDERER_EXPANDABLE"/>
     <member name="expanded" value="64" cid="GTK_CELL_RENDERER_EXPANDED" glibnick="expanded" glibname="GTK_CELL_RENDERER_EXPANDED"/>
   </bitfield>
-  <class name="CellRendererText" ctype="GtkCellRendererText" parent="GtkCellRenderer" render="0">
+  <class name="CellRendererText" ctype="GtkCellRendererText" parent="GtkCellRenderer" render="1">
     <constructor name="new" cid="gtk_cell_renderer_text_new" render="0"/>
     <virtual-method name="edited" render="0"/>
     <method name="set_fixed_height_from_font" cid="gtk_cell_renderer_text_set_fixed_height_from_font" render="0"/>
@@ -1938,7 +1938,7 @@
   </record>
   <record name="CellRendererTextPrivate" gtypestructfor="" ctype="GtkCellRendererTextPrivate" render="0">
   </record>
-  <class name="CellRendererToggle" ctype="GtkCellRendererToggle" parent="GtkCellRenderer" render="0">
+  <class name="CellRendererToggle" ctype="GtkCellRendererToggle" parent="GtkCellRenderer" render="1">
     <constructor name="new" cid="gtk_cell_renderer_toggle_new" render="0"/>
     <virtual-method name="toggled" render="0"/>
     <method name="get_activatable" cid="gtk_cell_renderer_toggle_get_activatable" render="0"/>
@@ -1966,7 +1966,7 @@
   </record>
   <record name="CellRendererTogglePrivate" gtypestructfor="" ctype="GtkCellRendererTogglePrivate" render="0">
   </record>
-  <class name="CellView" ctype="GtkCellView" parent="GtkWidget" render="0">
+  <class name="CellView" ctype="GtkCellView" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
@@ -2008,7 +2008,7 @@
   </record>
   <record name="CellViewPrivate" gtypestructfor="" ctype="GtkCellViewPrivate" render="0">
   </record>
-  <class name="CheckButton" ctype="GtkCheckButton" parent="GtkToggleButton" render="0">
+  <class name="CheckButton" ctype="GtkCheckButton" parent="GtkToggleButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -2027,7 +2027,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="CheckMenuItem" ctype="GtkCheckMenuItem" parent="GtkMenuItem" render="0">
+  <class name="CheckMenuItem" ctype="GtkCheckMenuItem" parent="GtkMenuItem" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -2051,7 +2051,7 @@
     <field name="priv"/>
     <glibsignal name="toggled" when="first" render="0"/>
   </class>
-  <class name="CheckMenuItemAccessible" ctype="GtkCheckMenuItemAccessible" parent="GtkMenuItemAccessible" render="0">
+  <class name="CheckMenuItemAccessible" ctype="GtkCheckMenuItemAccessible" parent="GtkMenuItemAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
@@ -2074,7 +2074,7 @@
   </record>
   <record name="CheckMenuItemPrivate" gtypestructfor="" ctype="GtkCheckMenuItemPrivate" render="0">
   </record>
-  <class name="Clipboard" ctype="GtkClipboard" parent="GtkGObject.Object" render="0">
+  <class name="Clipboard" ctype="GtkClipboard" parent="GtkGObject.Object" render="1">
     <function name="get" cid="gtk_clipboard_get" render="0"/>
     <function name="get_default" cid="gtk_clipboard_get_default" render="0"/>
     <function name="get_for_display" cid="gtk_clipboard_get_for_display" render="0"/>
@@ -2115,7 +2115,7 @@
   <callback name="ClipboardTargetsReceivedFunc" ctype="GtkClipboardTargetsReceivedFunc" render="0">  </callback>
   <callback name="ClipboardTextReceivedFunc" ctype="GtkClipboardTextReceivedFunc" render="0">  </callback>
   <callback name="ClipboardURIReceivedFunc" ctype="GtkClipboardURIReceivedFunc" render="0">  </callback>
-  <class name="ColorButton" ctype="GtkColorButton" parent="GtkButton" render="0">
+  <class name="ColorButton" ctype="GtkColorButton" parent="GtkButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -2168,7 +2168,7 @@
     <property name="use-alpha" cid="" render="0"/>
     <glibsignal name="color-activated" when="first" render="0"/>
   </interface>
-  <class name="ColorChooserDialog" ctype="GtkColorChooserDialog" parent="GtkDialog" render="0">
+  <class name="ColorChooserDialog" ctype="GtkColorChooserDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="ColorChooser" render="0"/>
@@ -2194,7 +2194,7 @@
     <field name="color_activated"/>
     <field name="padding"/>
   </record>
-  <class name="ColorChooserWidget" ctype="GtkColorChooserWidget" parent="GtkBox" render="0">
+  <class name="ColorChooserWidget" ctype="GtkColorChooserWidget" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="ColorChooser" render="0"/>
@@ -2217,7 +2217,7 @@
   </record>
   <record name="ColorChooserWidgetPrivate" gtypestructfor="" ctype="GtkColorChooserWidgetPrivate" render="0">
   </record>
-  <class name="ColorSelection" ctype="GtkColorSelection" parent="GtkBox" render="0">
+  <class name="ColorSelection" ctype="GtkColorSelection" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -2262,7 +2262,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="ColorSelectionDialog" ctype="GtkColorSelectionDialog" parent="GtkDialog" render="0">
+  <class name="ColorSelectionDialog" ctype="GtkColorSelectionDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_color_selection_dialog_new" render="0"/>
@@ -2285,7 +2285,7 @@
   </record>
   <record name="ColorSelectionPrivate" gtypestructfor="" ctype="GtkColorSelectionPrivate" render="0">
   </record>
-  <class name="ComboBox" ctype="GtkComboBox" parent="GtkBin" render="0">
+  <class name="ComboBox" ctype="GtkComboBox" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="CellEditable" render="0"/>
@@ -2357,7 +2357,7 @@
     <glibsignal name="popdown" when="last" render="0"/>
     <glibsignal name="popup" when="last" render="0"/>
   </class>
-  <class name="ComboBoxAccessible" ctype="GtkComboBoxAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="ComboBoxAccessible" ctype="GtkComboBoxAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
@@ -2379,7 +2379,7 @@
   </record>
   <record name="ComboBoxPrivate" gtypestructfor="" ctype="GtkComboBoxPrivate" render="0">
   </record>
-  <class name="ComboBoxText" ctype="GtkComboBoxText" parent="GtkComboBox" render="0">
+  <class name="ComboBoxText" ctype="GtkComboBoxText" parent="GtkComboBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="CellEditable" render="0"/>
@@ -2463,7 +2463,7 @@
     <glibsignal name="remove" when="first" render="0"/>
     <glibsignal name="set-focus-child" when="first" render="0"/>
   </class>
-  <class name="ContainerAccessible" ctype="GtkContainerAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="ContainerAccessible" ctype="GtkContainerAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
     <field name="priv"/>
@@ -2475,7 +2475,7 @@
   </record>
   <record name="ContainerAccessiblePrivate" gtypestructfor="" ctype="GtkContainerAccessiblePrivate" render="0">
   </record>
-  <class name="ContainerCellAccessible" ctype="GtkContainerCellAccessible" parent="GtkCellAccessible" render="0">
+  <class name="ContainerCellAccessible" ctype="GtkContainerCellAccessible" parent="GtkCellAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.TableCell" render="0"/>
@@ -2525,7 +2525,7 @@
     <member name="top_right" value="2" cid="GTK_CORNER_TOP_RIGHT" glibnick="top-right" glibname="GTK_CORNER_TOP_RIGHT"/>
     <member name="bottom_right" value="3" cid="GTK_CORNER_BOTTOM_RIGHT" glibnick="bottom-right" glibname="GTK_CORNER_BOTTOM_RIGHT"/>
   </enumeration>
-  <class name="CssProvider" ctype="GtkCssProvider" parent="GtkGObject.Object" render="0">
+  <class name="CssProvider" ctype="GtkCssProvider" parent="GtkGObject.Object" render="1">
     <implements name="StyleProvider" render="0"/>
     <constructor name="new" cid="gtk_css_provider_new" render="0"/>
     <function name="get_default" cid="gtk_css_provider_get_default" render="0"/>
@@ -2624,7 +2624,7 @@
     <member name="drop" value="4" cid="GTK_DEST_DEFAULT_DROP" glibnick="drop" glibname="GTK_DEST_DEFAULT_DROP"/>
     <member name="all" value="7" cid="GTK_DEST_DEFAULT_ALL" glibnick="all" glibname="GTK_DEST_DEFAULT_ALL"/>
   </bitfield>
-  <class name="Dialog" ctype="GtkDialog" parent="GtkWindow" render="0">
+  <class name="Dialog" ctype="GtkDialog" parent="GtkWindow" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_dialog_new" render="0"/>
@@ -2681,7 +2681,7 @@
     <member name="grab_broken" value="4" cid="GTK_DRAG_RESULT_GRAB_BROKEN" glibnick="grab-broken" glibname="GTK_DRAG_RESULT_GRAB_BROKEN"/>
     <member name="gerror" value="5" cid="GTK_DRAG_RESULT_ERROR" glibnick="error" glibname="GTK_DRAG_RESULT_ERROR"/>
   </enumeration>
-  <class name="DrawingArea" ctype="GtkDrawingArea" parent="GtkWidget" render="0">
+  <class name="DrawingArea" ctype="GtkDrawingArea" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_drawing_area_new" render="0"/>
@@ -2770,7 +2770,7 @@
     <field name="set_position"/>
     <field name="get_position"/>
   </record>
-  <class name="Entry" ctype="GtkEntry" parent="GtkWidget" render="0">
+  <class name="Entry" ctype="GtkEntry" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="CellEditable" render="0"/>
@@ -2932,7 +2932,7 @@
     <glibsignal name="preedit-changed" when="last" render="0"/>
     <glibsignal name="toggle-overwrite" when="last" render="0"/>
   </class>
-  <class name="EntryAccessible" ctype="GtkEntryAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="EntryAccessible" ctype="GtkEntryAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.EditableText" render="0"/>
@@ -2945,7 +2945,7 @@
   </record>
   <record name="EntryAccessiblePrivate" gtypestructfor="" ctype="GtkEntryAccessiblePrivate" render="0">
   </record>
-  <class name="EntryBuffer" ctype="GtkEntryBuffer" parent="GtkGObject.Object" render="0">
+  <class name="EntryBuffer" ctype="GtkEntryBuffer" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_entry_buffer_new" render="0"/>
     <virtual-method name="delete_text" render="0"/>
     <virtual-method name="deleted_text" render="0"/>
@@ -3012,7 +3012,7 @@
     <field name="_gtk_reserved5"/>
     <field name="_gtk_reserved6"/>
   </record>
-  <class name="EntryCompletion" ctype="GtkEntryCompletion" parent="GtkGObject.Object" render="0">
+  <class name="EntryCompletion" ctype="GtkEntryCompletion" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <constructor name="new" cid="gtk_entry_completion_new" render="0"/>
@@ -3078,7 +3078,7 @@
   <callback name="EntryCompletionMatchFunc" ctype="GtkEntryCompletionMatchFunc" render="0">  </callback>
   <record name="EntryCompletionPrivate" gtypestructfor="" ctype="GtkEntryCompletionPrivate" render="0">
   </record>
-  <class name="EntryIconAccessible" ctype="" parent="GtkAtk.Object" render="0">
+  <class name="EntryIconAccessible" ctype="" parent="GtkAtk.Object" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
   </class>
@@ -3087,7 +3087,7 @@
   </enumeration>
   <record name="EntryPrivate" gtypestructfor="" ctype="GtkEntryPrivate" render="0">
   </record>
-  <class name="EventBox" ctype="GtkEventBox" parent="GtkBin" render="0">
+  <class name="EventBox" ctype="GtkEventBox" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_event_box_new" render="0"/>
@@ -3109,7 +3109,7 @@
   </record>
   <record name="EventBoxPrivate" gtypestructfor="" ctype="GtkEventBoxPrivate" render="0">
   </record>
-  <class name="EventController" ctype="GtkEventController" parent="GtkGObject.Object" render="0">
+  <class name="EventController" ctype="GtkEventController" parent="GtkGObject.Object" render="1">
     <method name="get_propagation_phase" cid="gtk_event_controller_get_propagation_phase" render="0"/>
     <method name="get_widget" cid="gtk_event_controller_get_widget" render="0"/>
     <method name="handle_event" cid="gtk_event_controller_handle_event" render="0"/>
@@ -3120,7 +3120,7 @@
   </class>
   <record name="EventControllerClass" gtypestructfor="EventController" ctype="GtkEventControllerClass" render="0">
   </record>
-  <class name="EventControllerKey" ctype="GtkEventControllerKey" parent="GtkEventController" render="0">
+  <class name="EventControllerKey" ctype="GtkEventControllerKey" parent="GtkEventController" render="1">
     <constructor name="new" cid="gtk_event_controller_key_new" render="0"/>
     <method name="forward" cid="gtk_event_controller_key_forward" render="0"/>
     <method name="get_group" cid="gtk_event_controller_key_get_group" render="0"/>
@@ -3135,7 +3135,7 @@
   </class>
   <record name="EventControllerKeyClass" gtypestructfor="EventControllerKey" ctype="GtkEventControllerKeyClass" render="0">
   </record>
-  <class name="EventControllerMotion" ctype="GtkEventControllerMotion" parent="GtkEventController" render="0">
+  <class name="EventControllerMotion" ctype="GtkEventControllerMotion" parent="GtkEventController" render="1">
     <constructor name="new" cid="gtk_event_controller_motion_new" render="0"/>
     <glibsignal name="enter" when="first" render="0"/>
     <glibsignal name="leave" when="first" render="0"/>
@@ -3143,7 +3143,7 @@
   </class>
   <record name="EventControllerMotionClass" gtypestructfor="EventControllerMotion" ctype="GtkEventControllerMotionClass" render="0">
   </record>
-  <class name="EventControllerScroll" ctype="GtkEventControllerScroll" parent="GtkEventController" render="0">
+  <class name="EventControllerScroll" ctype="GtkEventControllerScroll" parent="GtkEventController" render="1">
     <constructor name="new" cid="gtk_event_controller_scroll_new" render="0"/>
     <method name="get_flags" cid="gtk_event_controller_scroll_get_flags" render="0"/>
     <method name="set_flags" cid="gtk_event_controller_scroll_set_flags" render="0"/>
@@ -3167,7 +3167,7 @@
     <member name="claimed" value="1" cid="GTK_EVENT_SEQUENCE_CLAIMED" glibnick="claimed" glibname="GTK_EVENT_SEQUENCE_CLAIMED"/>
     <member name="denied" value="2" cid="GTK_EVENT_SEQUENCE_DENIED" glibnick="denied" glibname="GTK_EVENT_SEQUENCE_DENIED"/>
   </enumeration>
-  <class name="Expander" ctype="GtkExpander" parent="GtkBin" render="0">
+  <class name="Expander" ctype="GtkExpander" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_expander_new" render="0"/>
@@ -3201,7 +3201,7 @@
     <field name="priv"/>
     <glibsignal name="activate" when="last" render="0"/>
   </class>
-  <class name="ExpanderAccessible" ctype="GtkExpanderAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="ExpanderAccessible" ctype="GtkExpanderAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
@@ -3364,7 +3364,7 @@
     <member name="select_folder" value="2" cid="GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER" glibnick="select-folder" glibname="GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER"/>
     <member name="create_folder" value="3" cid="GTK_FILE_CHOOSER_ACTION_CREATE_FOLDER" glibnick="create-folder" glibname="GTK_FILE_CHOOSER_ACTION_CREATE_FOLDER"/>
   </enumeration>
-  <class name="FileChooserButton" ctype="GtkFileChooserButton" parent="GtkBox" render="0">
+  <class name="FileChooserButton" ctype="GtkFileChooserButton" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="FileChooser" render="0"/>
@@ -3399,7 +3399,7 @@
     <member name="accept_filename" value="1" cid="GTK_FILE_CHOOSER_CONFIRMATION_ACCEPT_FILENAME" glibnick="accept-filename" glibname="GTK_FILE_CHOOSER_CONFIRMATION_ACCEPT_FILENAME"/>
     <member name="select_again" value="2" cid="GTK_FILE_CHOOSER_CONFIRMATION_SELECT_AGAIN" glibnick="select-again" glibname="GTK_FILE_CHOOSER_CONFIRMATION_SELECT_AGAIN"/>
   </enumeration>
-  <class name="FileChooserDialog" ctype="GtkFileChooserDialog" parent="GtkDialog" render="0">
+  <class name="FileChooserDialog" ctype="GtkFileChooserDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="FileChooser" render="0"/>
@@ -3422,7 +3422,7 @@
     <member name="incomplete_hostname" value="3" cid="GTK_FILE_CHOOSER_ERROR_INCOMPLETE_HOSTNAME" glibnick="incomplete-hostname" glibname="GTK_FILE_CHOOSER_ERROR_INCOMPLETE_HOSTNAME"/>
     <function name="quark" cid="gtk_file_chooser_error_quark" render="0"/>
   </enumeration>
-  <class name="FileChooserNative" ctype="GtkFileChooserNative" parent="GtkNativeDialog" render="0">
+  <class name="FileChooserNative" ctype="GtkFileChooserNative" parent="GtkNativeDialog" render="1">
     <implements name="FileChooser" render="0"/>
     <constructor name="new" cid="gtk_file_chooser_native_new" render="0"/>
     <method name="get_accept_label" cid="gtk_file_chooser_native_get_accept_label" render="0"/>
@@ -3435,7 +3435,7 @@
   <record name="FileChooserNativeClass" gtypestructfor="FileChooserNative" ctype="GtkFileChooserNativeClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="FileChooserWidget" ctype="GtkFileChooserWidget" parent="GtkBox" render="0">
+  <class name="FileChooserWidget" ctype="GtkFileChooserWidget" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="FileChooser" render="0"/>
@@ -3458,7 +3458,7 @@
     <glibsignal name="show-hidden" when="first" render="0"/>
     <glibsignal name="up-folder" when="first" render="0"/>
   </class>
-  <class name="FileChooserWidgetAccessible" ctype="GtkFileChooserWidgetAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="FileChooserWidgetAccessible" ctype="GtkFileChooserWidgetAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
@@ -3478,7 +3478,7 @@
   </record>
   <record name="FileChooserWidgetPrivate" gtypestructfor="" ctype="GtkFileChooserWidgetPrivate" render="0">
   </record>
-  <class name="FileFilter" ctype="GtkFileFilter" parent="GtkGObject.InitiallyUnowned" render="0">
+  <class name="FileFilter" ctype="GtkFileFilter" parent="GtkGObject.InitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_file_filter_new" render="0"/>
     <constructor name="new_from_gvariant" cid="gtk_file_filter_new_from_gvariant" render="0"/>
@@ -3506,7 +3506,7 @@
     <field name="display_name"/>
     <field name="mime_type"/>
   </record>
-  <class name="Fixed" ctype="GtkFixed" parent="GtkContainer" render="0">
+  <class name="Fixed" ctype="GtkFixed" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_fixed_new" render="0"/>
@@ -3529,7 +3529,7 @@
   </record>
   <record name="FixedPrivate" gtypestructfor="" ctype="GtkFixedPrivate" render="0">
   </record>
-  <class name="FlowBox" ctype="GtkFlowBox" parent="GtkContainer" render="0">
+  <class name="FlowBox" ctype="GtkFlowBox" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -3587,7 +3587,7 @@
     <glibsignal name="toggle-cursor-child" when="last" render="0"/>
     <glibsignal name="unselect-all" when="last" render="0"/>
   </class>
-  <class name="FlowBoxAccessible" ctype="GtkFlowBoxAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="FlowBoxAccessible" ctype="GtkFlowBoxAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
     <field name="parent"/>
@@ -3598,7 +3598,7 @@
   </record>
   <record name="FlowBoxAccessiblePrivate" gtypestructfor="" ctype="GtkFlowBoxAccessiblePrivate" render="0">
   </record>
-  <class name="FlowBoxChild" ctype="GtkFlowBoxChild" parent="GtkBin" render="0">
+  <class name="FlowBoxChild" ctype="GtkFlowBoxChild" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_flow_box_child_new" render="0"/>
@@ -3609,7 +3609,7 @@
     <field name="parent_instance"/>
     <glibsignal name="activate" when="first" render="0"/>
   </class>
-  <class name="FlowBoxChildAccessible" ctype="GtkFlowBoxChildAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="FlowBoxChildAccessible" ctype="GtkFlowBoxChildAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
   </class>
@@ -3642,7 +3642,7 @@
   <callback name="FlowBoxFilterFunc" ctype="GtkFlowBoxFilterFunc" render="0">  </callback>
   <callback name="FlowBoxForeachFunc" ctype="GtkFlowBoxForeachFunc" render="0">  </callback>
   <callback name="FlowBoxSortFunc" ctype="GtkFlowBoxSortFunc" render="0">  </callback>
-  <class name="FontButton" ctype="GtkFontButton" parent="GtkButton" render="0">
+  <class name="FontButton" ctype="GtkFontButton" parent="GtkButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -3718,7 +3718,7 @@
     <property name="show-preview-entry" cid="" render="0"/>
     <glibsignal name="font-activated" when="first" render="0"/>
   </interface>
-  <class name="FontChooserDialog" ctype="GtkFontChooserDialog" parent="GtkDialog" render="0">
+  <class name="FontChooserDialog" ctype="GtkFontChooserDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="FontChooser" render="0"/>
@@ -3753,7 +3753,7 @@
     <member name="variations" value="4" cid="GTK_FONT_CHOOSER_LEVEL_VARIATIONS" glibnick="variations" glibname="GTK_FONT_CHOOSER_LEVEL_VARIATIONS"/>
     <member name="features" value="8" cid="GTK_FONT_CHOOSER_LEVEL_FEATURES" glibnick="features" glibname="GTK_FONT_CHOOSER_LEVEL_FEATURES"/>
   </bitfield>
-  <class name="FontChooserWidget" ctype="GtkFontChooserWidget" parent="GtkBox" render="0">
+  <class name="FontChooserWidget" ctype="GtkFontChooserWidget" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="FontChooser" render="0"/>
@@ -3777,7 +3777,7 @@
   <record name="FontChooserWidgetPrivate" gtypestructfor="" ctype="GtkFontChooserWidgetPrivate" render="0">
   </record>
   <callback name="FontFilterFunc" ctype="GtkFontFilterFunc" render="0">  </callback>
-  <class name="FontSelection" ctype="GtkFontSelection" parent="GtkBox" render="0">
+  <class name="FontSelection" ctype="GtkFontSelection" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -3806,7 +3806,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="FontSelectionDialog" ctype="GtkFontSelectionDialog" parent="GtkDialog" render="0">
+  <class name="FontSelectionDialog" ctype="GtkFontSelectionDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_font_selection_dialog_new" render="0"/>
@@ -3831,7 +3831,7 @@
   </record>
   <record name="FontSelectionPrivate" gtypestructfor="" ctype="GtkFontSelectionPrivate" render="0">
   </record>
-  <class name="Frame" ctype="GtkFrame" parent="GtkBin" render="0">
+  <class name="Frame" ctype="GtkFrame" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_frame_new" render="0"/>
@@ -3852,7 +3852,7 @@
     <field name="bin"/>
     <field name="priv"/>
   </class>
-  <class name="FrameAccessible" ctype="GtkFrameAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="FrameAccessible" ctype="GtkFrameAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
     <field name="priv"/>
@@ -3902,7 +3902,7 @@
   <function-macro name="GESTURE_ZOOM" render="0">   </function-macro>
   <function-macro name="GESTURE_ZOOM_CLASS" render="0">   </function-macro>
   <function-macro name="GESTURE_ZOOM_GET_CLASS" render="0">   </function-macro>
-  <class name="GLArea" ctype="GtkGLArea" parent="GtkWidget" render="0">
+  <class name="GLArea" ctype="GtkGLArea" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_gl_area_new" render="0"/>
@@ -3951,7 +3951,7 @@
   <function-macro name="GRID" render="0">   </function-macro>
   <function-macro name="GRID_CLASS" render="0">   </function-macro>
   <function-macro name="GRID_GET_CLASS" render="0">   </function-macro>
-  <class name="Gesture" ctype="GtkGesture" parent="GtkEventController" render="0">
+  <class name="Gesture" ctype="GtkGesture" parent="GtkEventController" render="1">
     <method name="get_bounding_box" cid="gtk_gesture_get_bounding_box" render="0"/>
     <method name="get_bounding_box_center" cid="gtk_gesture_get_bounding_box_center" render="0"/>
     <method name="get_device" cid="gtk_gesture_get_device" render="0"/>
@@ -3981,7 +3981,7 @@
   </class>
   <record name="GestureClass" gtypestructfor="Gesture" ctype="GtkGestureClass" render="0">
   </record>
-  <class name="GestureDrag" ctype="GtkGestureDrag" parent="GtkGestureSingle" render="0">
+  <class name="GestureDrag" ctype="GtkGestureDrag" parent="GtkGestureSingle" render="1">
     <constructor name="new" cid="gtk_gesture_drag_new" render="0"/>
     <method name="get_offset" cid="gtk_gesture_drag_get_offset" render="0"/>
     <method name="get_start_point" cid="gtk_gesture_drag_get_start_point" render="0"/>
@@ -3991,7 +3991,7 @@
   </class>
   <record name="GestureDragClass" gtypestructfor="GestureDrag" ctype="GtkGestureDragClass" render="0">
   </record>
-  <class name="GestureLongPress" ctype="GtkGestureLongPress" parent="GtkGestureSingle" render="0">
+  <class name="GestureLongPress" ctype="GtkGestureLongPress" parent="GtkGestureSingle" render="1">
     <constructor name="new" cid="gtk_gesture_long_press_new" render="0"/>
     <property name="delay-factor" cid="" render="0"/>
     <glibsignal name="cancelled" when="last" render="0"/>
@@ -3999,7 +3999,7 @@
   </class>
   <record name="GestureLongPressClass" gtypestructfor="GestureLongPress" ctype="GtkGestureLongPressClass" render="0">
   </record>
-  <class name="GestureMultiPress" ctype="GtkGestureMultiPress" parent="GtkGestureSingle" render="0">
+  <class name="GestureMultiPress" ctype="GtkGestureMultiPress" parent="GtkGestureSingle" render="1">
     <constructor name="new" cid="gtk_gesture_multi_press_new" render="0"/>
     <method name="get_area" cid="gtk_gesture_multi_press_get_area" render="0"/>
     <method name="set_area" cid="gtk_gesture_multi_press_set_area" render="0"/>
@@ -4009,7 +4009,7 @@
   </class>
   <record name="GestureMultiPressClass" gtypestructfor="GestureMultiPress" ctype="GtkGestureMultiPressClass" render="0">
   </record>
-  <class name="GesturePan" ctype="GtkGesturePan" parent="GtkGestureDrag" render="0">
+  <class name="GesturePan" ctype="GtkGesturePan" parent="GtkGestureDrag" render="1">
     <constructor name="new" cid="gtk_gesture_pan_new" render="0"/>
     <method name="get_orientation" cid="gtk_gesture_pan_get_orientation" render="0"/>
     <method name="set_orientation" cid="gtk_gesture_pan_set_orientation" render="0"/>
@@ -4018,14 +4018,14 @@
   </class>
   <record name="GesturePanClass" gtypestructfor="GesturePan" ctype="GtkGesturePanClass" render="0">
   </record>
-  <class name="GestureRotate" ctype="GtkGestureRotate" parent="GtkGesture" render="0">
+  <class name="GestureRotate" ctype="GtkGestureRotate" parent="GtkGesture" render="1">
     <constructor name="new" cid="gtk_gesture_rotate_new" render="0"/>
     <method name="get_angle_delta" cid="gtk_gesture_rotate_get_angle_delta" render="0"/>
     <glibsignal name="angle-changed" when="first" render="0"/>
   </class>
   <record name="GestureRotateClass" gtypestructfor="GestureRotate" ctype="GtkGestureRotateClass" render="0">
   </record>
-  <class name="GestureSingle" ctype="GtkGestureSingle" parent="GtkGesture" render="0">
+  <class name="GestureSingle" ctype="GtkGestureSingle" parent="GtkGesture" render="1">
     <method name="get_button" cid="gtk_gesture_single_get_button" render="0"/>
     <method name="get_current_button" cid="gtk_gesture_single_get_current_button" render="0"/>
     <method name="get_current_sequence" cid="gtk_gesture_single_get_current_sequence" render="0"/>
@@ -4040,7 +4040,7 @@
   </class>
   <record name="GestureSingleClass" gtypestructfor="GestureSingle" ctype="GtkGestureSingleClass" render="0">
   </record>
-  <class name="GestureStylus" ctype="GtkGestureStylus" parent="GtkGestureSingle" render="0">
+  <class name="GestureStylus" ctype="GtkGestureStylus" parent="GtkGestureSingle" render="1">
     <constructor name="new" cid="gtk_gesture_stylus_new" render="0"/>
     <method name="get_axes" cid="gtk_gesture_stylus_get_axes" render="0"/>
     <method name="get_axis" cid="gtk_gesture_stylus_get_axis" render="0"/>
@@ -4052,14 +4052,14 @@
   </class>
   <record name="GestureStylusClass" gtypestructfor="GestureStylus" ctype="GtkGestureStylusClass" render="0">
   </record>
-  <class name="GestureSwipe" ctype="GtkGestureSwipe" parent="GtkGestureSingle" render="0">
+  <class name="GestureSwipe" ctype="GtkGestureSwipe" parent="GtkGestureSingle" render="1">
     <constructor name="new" cid="gtk_gesture_swipe_new" render="0"/>
     <method name="get_velocity" cid="gtk_gesture_swipe_get_velocity" render="0"/>
     <glibsignal name="swipe" when="last" render="0"/>
   </class>
   <record name="GestureSwipeClass" gtypestructfor="GestureSwipe" ctype="GtkGestureSwipeClass" render="0">
   </record>
-  <class name="GestureZoom" ctype="GtkGestureZoom" parent="GtkGesture" render="0">
+  <class name="GestureZoom" ctype="GtkGestureZoom" parent="GtkGesture" render="1">
     <constructor name="new" cid="gtk_gesture_zoom_new" render="0"/>
     <method name="get_scale_delta" cid="gtk_gesture_zoom_get_scale_delta" render="0"/>
     <glibsignal name="scale-changed" when="first" render="0"/>
@@ -4076,7 +4076,7 @@
     <method name="to_string" cid="gtk_gradient_to_string" render="0"/>
     <method name="unref" cid="gtk_gradient_unref" render="0"/>
   </record>
-  <class name="Grid" ctype="GtkGrid" parent="GtkContainer" render="0">
+  <class name="Grid" ctype="GtkGrid" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -4131,7 +4131,7 @@
   <function-macro name="HBUTTON_BOX" render="0">   </function-macro>
   <function-macro name="HBUTTON_BOX_CLASS" render="0">   </function-macro>
   <function-macro name="HBUTTON_BOX_GET_CLASS" render="0">   </function-macro>
-  <class name="HBox" ctype="GtkHBox" parent="GtkBox" render="0">
+  <class name="HBox" ctype="GtkHBox" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -4141,7 +4141,7 @@
   <record name="HBoxClass" gtypestructfor="HBox" ctype="GtkHBoxClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="HButtonBox" ctype="GtkHButtonBox" parent="GtkButtonBox" render="0">
+  <class name="HButtonBox" ctype="GtkHButtonBox" parent="GtkButtonBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -4160,7 +4160,7 @@
   <function-macro name="HPANED" render="0">   </function-macro>
   <function-macro name="HPANED_CLASS" render="0">   </function-macro>
   <function-macro name="HPANED_GET_CLASS" render="0">   </function-macro>
-  <class name="HPaned" ctype="GtkHPaned" parent="GtkPaned" render="0">
+  <class name="HPaned" ctype="GtkHPaned" parent="GtkPaned" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -4179,7 +4179,7 @@
   <function-macro name="HSEPARATOR" render="0">   </function-macro>
   <function-macro name="HSEPARATOR_CLASS" render="0">   </function-macro>
   <function-macro name="HSEPARATOR_GET_CLASS" render="0">   </function-macro>
-  <class name="HSV" ctype="GtkHSV" parent="GtkWidget" render="0">
+  <class name="HSV" ctype="GtkHSV" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_hsv_new" render="0"/>
@@ -4209,7 +4209,7 @@
   </record>
   <function-macro name="HSV_CLASS" render="0">   </function-macro>
   <function-macro name="HSV_GET_CLASS" render="0">   </function-macro>
-  <class name="HScale" ctype="GtkHScale" parent="GtkScale" render="0">
+  <class name="HScale" ctype="GtkHScale" parent="GtkScale" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -4220,7 +4220,7 @@
   <record name="HScaleClass" gtypestructfor="HScale" ctype="GtkHScaleClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="HScrollbar" ctype="GtkHScrollbar" parent="GtkScrollbar" render="0">
+  <class name="HScrollbar" ctype="GtkHScrollbar" parent="GtkScrollbar" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -4230,7 +4230,7 @@
   <record name="HScrollbarClass" gtypestructfor="HScrollbar" ctype="GtkHScrollbarClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="HSeparator" ctype="GtkHSeparator" parent="GtkSeparator" render="0">
+  <class name="HSeparator" ctype="GtkHSeparator" parent="GtkSeparator" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -4240,7 +4240,7 @@
   <record name="HSeparatorClass" gtypestructfor="HSeparator" ctype="GtkHSeparatorClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="HandleBox" ctype="GtkHandleBox" parent="GtkBin" render="0">
+  <class name="HandleBox" ctype="GtkHandleBox" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_handle_box_new" render="0"/>
@@ -4274,7 +4274,7 @@
   </record>
   <record name="HandleBoxPrivate" gtypestructfor="" ctype="GtkHandleBoxPrivate" render="0">
   </record>
-  <class name="HeaderBar" ctype="GtkHeaderBar" parent="GtkContainer" render="0">
+  <class name="HeaderBar" ctype="GtkHeaderBar" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_header_bar_new" render="0"/>
@@ -4302,7 +4302,7 @@
     <property name="title" cid="" render="0"/>
     <field name="container"/>
   </class>
-  <class name="HeaderBarAccessible" ctype="GtkHeaderBarAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="HeaderBarAccessible" ctype="GtkHeaderBarAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
   </class>
@@ -4347,7 +4347,7 @@
   <function-macro name="IMAGE_MENU_ITEM" render="0">   </function-macro>
   <function-macro name="IMAGE_MENU_ITEM_CLASS" render="0">   </function-macro>
   <function-macro name="IMAGE_MENU_ITEM_GET_CLASS" render="0">   </function-macro>
-  <class name="IMContext" ctype="GtkIMContext" parent="GtkGObject.Object" render="0">
+  <class name="IMContext" ctype="GtkIMContext" parent="GtkGObject.Object" render="1">
     <virtual-method name="commit" render="0"/>
     <virtual-method name="delete_surrounding" render="0"/>
     <virtual-method name="filter_keypress" render="0"/>
@@ -4417,7 +4417,7 @@
     <field name="domain_dirname"/>
     <field name="default_locales"/>
   </record>
-  <class name="IMContextSimple" ctype="GtkIMContextSimple" parent="GtkIMContext" render="0">
+  <class name="IMContextSimple" ctype="GtkIMContextSimple" parent="GtkIMContext" render="1">
     <constructor name="new" cid="gtk_im_context_simple_new" render="0"/>
     <method name="add_compose_file" cid="gtk_im_context_simple_add_compose_file" render="0"/>
     <method name="add_table" cid="gtk_im_context_simple_add_table" render="0"/>
@@ -4429,7 +4429,7 @@
   </record>
   <record name="IMContextSimplePrivate" gtypestructfor="" ctype="GtkIMContextSimplePrivate" render="0">
   </record>
-  <class name="IMMulticontext" ctype="GtkIMMulticontext" parent="GtkIMContext" render="0">
+  <class name="IMMulticontext" ctype="GtkIMMulticontext" parent="GtkIMContext" render="1">
     <constructor name="new" cid="gtk_im_multicontext_new" render="0"/>
     <method name="append_menuitems" cid="gtk_im_multicontext_append_menuitems" render="0"/>
     <method name="get_context_id" cid="gtk_im_multicontext_get_context_id" render="0"/>
@@ -5024,7 +5024,7 @@
   <function-macro name="IS_WINDOW_CLASS" render="0">   </function-macro>
   <function-macro name="IS_WINDOW_GROUP" render="0">   </function-macro>
   <function-macro name="IS_WINDOW_GROUP_CLASS" render="0">   </function-macro>
-  <class name="IconFactory" ctype="GtkIconFactory" parent="GtkGObject.Object" render="0">
+  <class name="IconFactory" ctype="GtkIconFactory" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_icon_factory_new" render="0"/>
     <function name="lookup_default" cid="gtk_icon_factory_lookup_default" render="0"/>
@@ -5044,7 +5044,7 @@
   </record>
   <record name="IconFactoryPrivate" gtypestructfor="" ctype="GtkIconFactoryPrivate" render="0">
   </record>
-  <class name="IconInfo" ctype="GtkIconInfo" parent="GtkGObject.Object" render="0">
+  <class name="IconInfo" ctype="GtkIconInfo" parent="GtkGObject.Object" render="1">
     <constructor name="new_for_pixbuf" cid="gtk_icon_info_new_for_pixbuf" render="0"/>
     <method name="copy" cid="gtk_icon_info_copy" render="0"/>
     <method name="free" cid="gtk_icon_info_free" render="0"/>
@@ -5131,7 +5131,7 @@
     <method name="set_state" cid="gtk_icon_source_set_state" render="0"/>
     <method name="set_state_wildcarded" cid="gtk_icon_source_set_state_wildcarded" render="0"/>
   </record>
-  <class name="IconTheme" ctype="GtkIconTheme" parent="GtkGObject.Object" render="0">
+  <class name="IconTheme" ctype="GtkIconTheme" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_icon_theme_new" render="0"/>
     <function name="add_builtin_icon" cid="gtk_icon_theme_add_builtin_icon" render="0"/>
     <function name="get_default" cid="gtk_icon_theme_get_default" render="0"/>
@@ -5177,7 +5177,7 @@
   </enumeration>
   <record name="IconThemePrivate" gtypestructfor="" ctype="GtkIconThemePrivate" render="0">
   </record>
-  <class name="IconView" ctype="GtkIconView" parent="GtkContainer" render="0">
+  <class name="IconView" ctype="GtkIconView" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
@@ -5282,7 +5282,7 @@
     <glibsignal name="toggle-cursor-item" when="last" render="0"/>
     <glibsignal name="unselect-all" when="last" render="0"/>
   </class>
-  <class name="IconViewAccessible" ctype="GtkIconViewAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="IconViewAccessible" ctype="GtkIconViewAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
     <field name="parent"/>
@@ -5318,7 +5318,7 @@
   <callback name="IconViewForeachFunc" ctype="GtkIconViewForeachFunc" render="0">  </callback>
   <record name="IconViewPrivate" gtypestructfor="" ctype="GtkIconViewPrivate" render="0">
   </record>
-  <class name="Image" ctype="GtkImage" parent="GtkMisc" render="0">
+  <class name="Image" ctype="GtkImage" parent="GtkMisc" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_image_new" render="0"/>
@@ -5366,7 +5366,7 @@
     <field name="misc"/>
     <field name="priv"/>
   </class>
-  <class name="ImageAccessible" ctype="GtkImageAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="ImageAccessible" ctype="GtkImageAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
     <field name="parent"/>
@@ -5377,7 +5377,7 @@
   </record>
   <record name="ImageAccessiblePrivate" gtypestructfor="" ctype="GtkImageAccessiblePrivate" render="0">
   </record>
-  <class name="ImageCellAccessible" ctype="GtkImageCellAccessible" parent="GtkRendererCellAccessible" render="0">
+  <class name="ImageCellAccessible" ctype="GtkImageCellAccessible" parent="GtkRendererCellAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
@@ -5397,7 +5397,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="ImageMenuItem" ctype="GtkImageMenuItem" parent="GtkMenuItem" render="0">
+  <class name="ImageMenuItem" ctype="GtkImageMenuItem" parent="GtkMenuItem" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -5440,7 +5440,7 @@
     <member name="gicon" value="6" cid="GTK_IMAGE_GICON" glibnick="gicon" glibname="GTK_IMAGE_GICON"/>
     <member name="surface" value="7" cid="GTK_IMAGE_SURFACE" glibnick="surface" glibname="GTK_IMAGE_SURFACE"/>
   </enumeration>
-  <class name="InfoBar" ctype="GtkInfoBar" parent="GtkBox" render="0">
+  <class name="InfoBar" ctype="GtkInfoBar" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -5507,7 +5507,7 @@
     <member name="pin" value="9" cid="GTK_INPUT_PURPOSE_PIN" glibnick="pin" glibname="GTK_INPUT_PURPOSE_PIN"/>
     <member name="terminal" value="10" cid="GTK_INPUT_PURPOSE_TERMINAL" glibnick="terminal" glibname="GTK_INPUT_PURPOSE_TERMINAL"/>
   </enumeration>
-  <class name="Invisible" ctype="GtkInvisible" parent="GtkWidget" render="0">
+  <class name="Invisible" ctype="GtkInvisible" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_invisible_new" render="0"/>
@@ -5589,7 +5589,7 @@
   <function-macro name="LOCK_BUTTON_ACCESSIBLE_GET_CLASS" render="0">   </function-macro>
   <function-macro name="LOCK_BUTTON_CLASS" render="0">   </function-macro>
   <function-macro name="LOCK_BUTTON_GET_CLASS" render="0">   </function-macro>
-  <class name="Label" ctype="GtkLabel" parent="GtkMisc" render="0">
+  <class name="Label" ctype="GtkLabel" parent="GtkMisc" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_label_new" render="0"/>
@@ -5676,7 +5676,7 @@
     <glibsignal name="move-cursor" when="last" render="0"/>
     <glibsignal name="populate-popup" when="last" render="0"/>
   </class>
-  <class name="LabelAccessible" ctype="GtkLabelAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="LabelAccessible" ctype="GtkLabelAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Hypertext" render="0"/>
     <implements name="Atk.Text" render="0"/>
@@ -5707,7 +5707,7 @@
   </record>
   <record name="LabelSelectionInfo" gtypestructfor="" ctype="GtkLabelSelectionInfo" render="0">
   </record>
-  <class name="Layout" ctype="GtkLayout" parent="GtkContainer" render="0">
+  <class name="Layout" ctype="GtkLayout" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Scrollable" render="0"/>
@@ -5735,7 +5735,7 @@
   </record>
   <record name="LayoutPrivate" gtypestructfor="" ctype="GtkLayoutPrivate" render="0">
   </record>
-  <class name="LevelBar" ctype="GtkLevelBar" parent="GtkWidget" render="0">
+  <class name="LevelBar" ctype="GtkLevelBar" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -5764,7 +5764,7 @@
     <field name="priv"/>
     <glibsignal name="offset-changed" when="first" render="0"/>
   </class>
-  <class name="LevelBarAccessible" ctype="GtkLevelBarAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="LevelBarAccessible" ctype="GtkLevelBarAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Value" render="0"/>
     <field name="parent"/>
@@ -5804,7 +5804,7 @@
     <member name="apache_2_0" value="16" cid="GTK_LICENSE_APACHE_2_0" glibnick="apache-2-0" glibname="GTK_LICENSE_APACHE_2_0"/>
     <member name="mpl_2_0" value="17" cid="GTK_LICENSE_MPL_2_0" glibnick="mpl-2-0" glibname="GTK_LICENSE_MPL_2_0"/>
   </enumeration>
-  <class name="LinkButton" ctype="GtkLinkButton" parent="GtkButton" render="0">
+  <class name="LinkButton" ctype="GtkLinkButton" parent="GtkButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -5822,7 +5822,7 @@
     <field name="priv"/>
     <glibsignal name="activate-link" when="last" render="0"/>
   </class>
-  <class name="LinkButtonAccessible" ctype="GtkLinkButtonAccessible" parent="GtkButtonAccessible" render="0">
+  <class name="LinkButtonAccessible" ctype="GtkLinkButtonAccessible" parent="GtkButtonAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.HyperlinkImpl" render="0"/>
@@ -5845,7 +5845,7 @@
   </record>
   <record name="LinkButtonPrivate" gtypestructfor="" ctype="GtkLinkButtonPrivate" render="0">
   </record>
-  <class name="ListBox" ctype="GtkListBox" parent="GtkContainer" render="0">
+  <class name="ListBox" ctype="GtkListBox" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_list_box_new" render="0"/>
@@ -5896,7 +5896,7 @@
     <glibsignal name="toggle-cursor-row" when="last" render="0"/>
     <glibsignal name="unselect-all" when="last" render="0"/>
   </class>
-  <class name="ListBoxAccessible" ctype="GtkListBoxAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="ListBoxAccessible" ctype="GtkListBoxAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
     <field name="parent"/>
@@ -5924,7 +5924,7 @@
   <callback name="ListBoxCreateWidgetFunc" ctype="GtkListBoxCreateWidgetFunc" render="0">  </callback>
   <callback name="ListBoxFilterFunc" ctype="GtkListBoxFilterFunc" render="0">  </callback>
   <callback name="ListBoxForeachFunc" ctype="GtkListBoxForeachFunc" render="0">  </callback>
-  <class name="ListBoxRow" ctype="GtkListBoxRow" parent="GtkBin" render="0">
+  <class name="ListBoxRow" ctype="GtkListBoxRow" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Buildable" render="0"/>
@@ -5944,7 +5944,7 @@
     <field name="parent_instance"/>
     <glibsignal name="activate" when="first" render="0"/>
   </class>
-  <class name="ListBoxRowAccessible" ctype="GtkListBoxRowAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="ListBoxRowAccessible" ctype="GtkListBoxRowAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
   </class>
@@ -5959,7 +5959,7 @@
   </record>
   <callback name="ListBoxSortFunc" ctype="GtkListBoxSortFunc" render="0">  </callback>
   <callback name="ListBoxUpdateHeaderFunc" ctype="GtkListBoxUpdateHeaderFunc" render="0">  </callback>
-  <class name="ListStore" ctype="GtkListStore" parent="GtkGObject.Object" render="0">
+  <class name="ListStore" ctype="GtkListStore" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="TreeDragDest" render="0"/>
     <implements name="TreeDragSource" render="0"/>
@@ -5998,7 +5998,7 @@
   </record>
   <record name="ListStorePrivate" gtypestructfor="" ctype="GtkListStorePrivate" render="0">
   </record>
-  <class name="LockButton" ctype="GtkLockButton" parent="GtkButton" render="0">
+  <class name="LockButton" ctype="GtkLockButton" parent="GtkButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -6015,7 +6015,7 @@
     <field name="parent"/>
     <field name="priv"/>
   </class>
-  <class name="LockButtonAccessible" ctype="GtkLockButtonAccessible" parent="GtkButtonAccessible" render="0">
+  <class name="LockButtonAccessible" ctype="GtkLockButtonAccessible" parent="GtkButtonAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
@@ -6084,7 +6084,7 @@
   <function-macro name="MOUNT_OPERATION" render="0">   </function-macro>
   <function-macro name="MOUNT_OPERATION_CLASS" render="0">   </function-macro>
   <function-macro name="MOUNT_OPERATION_GET_CLASS" render="0">   </function-macro>
-  <class name="Menu" ctype="GtkMenu" parent="GtkMenuShell" render="0">
+  <class name="Menu" ctype="GtkMenu" parent="GtkMenuShell" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_menu_new" render="0"/>
@@ -6135,7 +6135,7 @@
     <glibsignal name="move-scroll" when="last" render="0"/>
     <glibsignal name="popped-up" when="first" render="0"/>
   </class>
-  <class name="MenuAccessible" ctype="GtkMenuAccessible" parent="GtkMenuShellAccessible" render="0">
+  <class name="MenuAccessible" ctype="GtkMenuAccessible" parent="GtkMenuShellAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
     <field name="parent"/>
@@ -6146,7 +6146,7 @@
   </record>
   <record name="MenuAccessiblePrivate" gtypestructfor="" ctype="GtkMenuAccessiblePrivate" render="0">
   </record>
-  <class name="MenuBar" ctype="GtkMenuBar" parent="GtkMenuShell" render="0">
+  <class name="MenuBar" ctype="GtkMenuBar" parent="GtkMenuShell" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_menu_bar_new" render="0"/>
@@ -6169,7 +6169,7 @@
   </record>
   <record name="MenuBarPrivate" gtypestructfor="" ctype="GtkMenuBarPrivate" render="0">
   </record>
-  <class name="MenuButton" ctype="GtkMenuButton" parent="GtkToggleButton" render="0">
+  <class name="MenuButton" ctype="GtkMenuButton" parent="GtkToggleButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -6196,7 +6196,7 @@
     <field name="parent"/>
     <field name="priv"/>
   </class>
-  <class name="MenuButtonAccessible" ctype="GtkMenuButtonAccessible" parent="GtkToggleButtonAccessible" render="0">
+  <class name="MenuButtonAccessible" ctype="GtkMenuButtonAccessible" parent="GtkToggleButtonAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
@@ -6230,7 +6230,7 @@
     <member name="next" value="2" cid="GTK_MENU_DIR_NEXT" glibnick="next" glibname="GTK_MENU_DIR_NEXT"/>
     <member name="prev" value="3" cid="GTK_MENU_DIR_PREV" glibnick="prev" glibname="GTK_MENU_DIR_PREV"/>
   </enumeration>
-  <class name="MenuItem" ctype="GtkMenuItem" parent="GtkBin" render="0">
+  <class name="MenuItem" ctype="GtkMenuItem" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -6277,7 +6277,7 @@
     <glibsignal name="toggle-size-allocate" when="first" render="0"/>
     <glibsignal name="toggle-size-request" when="first" render="0"/>
   </class>
-  <class name="MenuItemAccessible" ctype="GtkMenuItemAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="MenuItemAccessible" ctype="GtkMenuItemAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
@@ -6310,7 +6310,7 @@
   <callback name="MenuPositionFunc" ctype="GtkMenuPositionFunc" render="0">  </callback>
   <record name="MenuPrivate" gtypestructfor="" ctype="GtkMenuPrivate" render="0">
   </record>
-  <class name="MenuShell" ctype="GtkMenuShell" parent="GtkContainer" render="0">
+  <class name="MenuShell" ctype="GtkMenuShell" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <virtual-method name="activate_current" render="0"/>
@@ -6348,7 +6348,7 @@
     <glibsignal name="move-selected" when="last" render="0"/>
     <glibsignal name="selection-done" when="first" render="0"/>
   </class>
-  <class name="MenuShellAccessible" ctype="GtkMenuShellAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="MenuShellAccessible" ctype="GtkMenuShellAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
     <field name="parent"/>
@@ -6378,7 +6378,7 @@
   </record>
   <record name="MenuShellPrivate" gtypestructfor="" ctype="GtkMenuShellPrivate" render="0">
   </record>
-  <class name="MenuToolButton" ctype="GtkMenuToolButton" parent="GtkToolButton" render="0">
+  <class name="MenuToolButton" ctype="GtkMenuToolButton" parent="GtkToolButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -6405,7 +6405,7 @@
   </record>
   <record name="MenuToolButtonPrivate" gtypestructfor="" ctype="GtkMenuToolButtonPrivate" render="0">
   </record>
-  <class name="MessageDialog" ctype="GtkMessageDialog" parent="GtkDialog" render="0">
+  <class name="MessageDialog" ctype="GtkMessageDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_message_dialog_new" render="0"/>
@@ -6442,7 +6442,7 @@
     <member name="gerror" value="3" cid="GTK_MESSAGE_ERROR" glibnick="error" glibname="GTK_MESSAGE_ERROR"/>
     <member name="other" value="4" cid="GTK_MESSAGE_OTHER" glibnick="other" glibname="GTK_MESSAGE_OTHER"/>
   </enumeration>
-  <class name="Misc" ctype="GtkMisc" parent="GtkWidget" render="0">
+  <class name="Misc" ctype="GtkMisc" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <method name="get_alignment" cid="gtk_misc_get_alignment" render="0"/>
@@ -6465,7 +6465,7 @@
   </record>
   <record name="MiscPrivate" gtypestructfor="" ctype="GtkMiscPrivate" render="0">
   </record>
-  <class name="ModelButton" ctype="GtkModelButton" parent="GtkButton" render="0">
+  <class name="ModelButton" ctype="GtkModelButton" parent="GtkButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -6483,7 +6483,7 @@
   </class>
   <callback name="ModuleDisplayInitFunc" ctype="GtkModuleDisplayInitFunc" render="0">  </callback>
   <callback name="ModuleInitFunc" ctype="GtkModuleInitFunc" render="0">  </callback>
-  <class name="MountOperation" ctype="GtkMountOperation" parent="GtkGio.MountOperation" render="0">
+  <class name="MountOperation" ctype="GtkMountOperation" parent="GtkGio.MountOperation" render="1">
     <constructor name="new" cid="gtk_mount_operation_new" render="0"/>
     <method name="get_parent" cid="gtk_mount_operation_get_parent" render="0"/>
     <method name="get_screen" cid="gtk_mount_operation_get_screen" render="0"/>
@@ -6529,7 +6529,7 @@
   <function-macro name="NUMERABLE_ICON" render="0">   </function-macro>
   <function-macro name="NUMERABLE_ICON_CLASS" render="0">   </function-macro>
   <function-macro name="NUMERABLE_ICON_GET_CLASS" render="0">   </function-macro>
-  <class name="NativeDialog" ctype="GtkNativeDialog" parent="GtkGObject.Object" render="0">
+  <class name="NativeDialog" ctype="GtkNativeDialog" parent="GtkGObject.Object" render="1">
     <virtual-method name="hide" render="0"/>
     <virtual-method name="response" render="0"/>
     <virtual-method name="show" render="0"/>
@@ -6561,7 +6561,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="Notebook" ctype="GtkNotebook" parent="GtkContainer" render="0">
+  <class name="Notebook" ctype="GtkNotebook" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_notebook_new" render="0"/>
@@ -6640,7 +6640,7 @@
     <glibsignal name="select-page" when="last" render="0"/>
     <glibsignal name="switch-page" when="last" render="0"/>
   </class>
-  <class name="NotebookAccessible" ctype="GtkNotebookAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="NotebookAccessible" ctype="GtkNotebookAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
     <field name="parent"/>
@@ -6673,7 +6673,7 @@
     <field name="_gtk_reserved7"/>
     <field name="_gtk_reserved8"/>
   </record>
-  <class name="NotebookPageAccessible" ctype="GtkNotebookPageAccessible" parent="GtkAtk.Object" render="0">
+  <class name="NotebookPageAccessible" ctype="GtkNotebookPageAccessible" parent="GtkAtk.Object" render="1">
     <implements name="Atk.Component" render="0"/>
     <constructor name="new" cid="gtk_notebook_page_accessible_new" render="0"/>
     <method name="invalidate" cid="gtk_notebook_page_accessible_invalidate" render="0"/>
@@ -6699,7 +6699,7 @@
     <member name="btlr" value="6" cid="GTK_NUMBER_UP_LAYOUT_BOTTOM_TO_TOP_LEFT_TO_RIGHT" glibnick="btlr" glibname="GTK_NUMBER_UP_LAYOUT_BOTTOM_TO_TOP_LEFT_TO_RIGHT"/>
     <member name="btrl" value="7" cid="GTK_NUMBER_UP_LAYOUT_BOTTOM_TO_TOP_RIGHT_TO_LEFT" glibnick="btrl" glibname="GTK_NUMBER_UP_LAYOUT_BOTTOM_TO_TOP_RIGHT_TO_LEFT"/>
   </enumeration>
-  <class name="NumerableIcon" ctype="GtkNumerableIcon" parent="GtkGio.EmblemedIcon" render="0">
+  <class name="NumerableIcon" ctype="GtkNumerableIcon" parent="GtkGio.EmblemedIcon" render="1">
     <implements name="Gio.Icon" render="0"/>
     <function name="new" cid="gtk_numerable_icon_new" render="0"/>
     <function name="new_with_style_context" cid="gtk_numerable_icon_new_with_style_context" render="0"/>
@@ -6736,7 +6736,7 @@
   <function-macro name="OVERLAY" render="0">   </function-macro>
   <function-macro name="OVERLAY_CLASS" render="0">   </function-macro>
   <function-macro name="OVERLAY_GET_CLASS" render="0">   </function-macro>
-  <class name="OffscreenWindow" ctype="GtkOffscreenWindow" parent="GtkWindow" render="0">
+  <class name="OffscreenWindow" ctype="GtkOffscreenWindow" parent="GtkWindow" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_offscreen_window_new" render="0"/>
@@ -6761,7 +6761,7 @@
   <enumeration name="Orientation"  render="1">     <member name="horizontal" value="0" cid="GTK_ORIENTATION_HORIZONTAL" glibnick="horizontal" glibname="GTK_ORIENTATION_HORIZONTAL"/>
     <member name="vertical" value="1" cid="GTK_ORIENTATION_VERTICAL" glibnick="vertical" glibname="GTK_ORIENTATION_VERTICAL"/>
   </enumeration>
-  <class name="Overlay" ctype="GtkOverlay" parent="GtkBin" render="0">
+  <class name="Overlay" ctype="GtkOverlay" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_overlay_new" render="0"/>
@@ -6889,7 +6889,7 @@
     <member name="ring" value="1" cid="GTK_PAD_ACTION_RING" glibnick="ring" glibname="GTK_PAD_ACTION_RING"/>
     <member name="strip" value="2" cid="GTK_PAD_ACTION_STRIP" glibnick="strip" glibname="GTK_PAD_ACTION_STRIP"/>
   </enumeration>
-  <class name="PadController" ctype="GtkPadController" parent="GtkEventController" render="0">
+  <class name="PadController" ctype="GtkPadController" parent="GtkEventController" render="1">
     <constructor name="new" cid="gtk_pad_controller_new" render="0"/>
     <method name="set_action" cid="gtk_pad_controller_set_action" render="0"/>
     <method name="set_action_entries" cid="gtk_pad_controller_set_action_entries" render="0"/>
@@ -6911,7 +6911,7 @@
     <member name="even" value="1" cid="GTK_PAGE_SET_EVEN" glibnick="even" glibname="GTK_PAGE_SET_EVEN"/>
     <member name="odd" value="2" cid="GTK_PAGE_SET_ODD" glibnick="odd" glibname="GTK_PAGE_SET_ODD"/>
   </enumeration>
-  <class name="PageSetup" ctype="GtkPageSetup" parent="GtkGObject.Object" render="0">
+  <class name="PageSetup" ctype="GtkPageSetup" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_page_setup_new" render="0"/>
     <constructor name="new_from_file" cid="gtk_page_setup_new_from_file" render="0"/>
     <constructor name="new_from_gvariant" cid="gtk_page_setup_new_from_gvariant" render="0"/>
@@ -6946,7 +6946,7 @@
     <member name="up" value="2" cid="GTK_PAN_DIRECTION_UP" glibnick="up" glibname="GTK_PAN_DIRECTION_UP"/>
     <member name="down" value="3" cid="GTK_PAN_DIRECTION_DOWN" glibnick="down" glibname="GTK_PAN_DIRECTION_DOWN"/>
   </enumeration>
-  <class name="Paned" ctype="GtkPaned" parent="GtkContainer" render="0">
+  <class name="Paned" ctype="GtkPaned" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -6982,7 +6982,7 @@
     <glibsignal name="move-handle" when="last" render="0"/>
     <glibsignal name="toggle-handle-focus" when="last" render="0"/>
   </class>
-  <class name="PanedAccessible" ctype="GtkPanedAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="PanedAccessible" ctype="GtkPanedAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Value" render="0"/>
     <field name="parent"/>
@@ -7051,7 +7051,7 @@
     <member name="new_tab" value="2" cid="GTK_PLACES_OPEN_NEW_TAB" glibnick="new-tab" glibname="GTK_PLACES_OPEN_NEW_TAB"/>
     <member name="new_window" value="4" cid="GTK_PLACES_OPEN_NEW_WINDOW" glibnick="new-window" glibname="GTK_PLACES_OPEN_NEW_WINDOW"/>
   </bitfield>
-  <class name="PlacesSidebar" ctype="GtkPlacesSidebar" parent="GtkScrolledWindow" render="0">
+  <class name="PlacesSidebar" ctype="GtkPlacesSidebar" parent="GtkScrolledWindow" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_places_sidebar_new" render="0"/>
@@ -7107,7 +7107,7 @@
   </class>
   <record name="PlacesSidebarClass" gtypestructfor="PlacesSidebar" ctype="GtkPlacesSidebarClass" render="0">
   </record>
-  <class name="Plug" ctype="GtkPlug" parent="GtkWindow" render="0">
+  <class name="Plug" ctype="GtkPlug" parent="GtkWindow" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_plug_new" render="0"/>
@@ -7124,7 +7124,7 @@
     <field name="priv"/>
     <glibsignal name="embedded" when="last" render="0"/>
   </class>
-  <class name="PlugAccessible" ctype="GtkPlugAccessible" parent="GtkWindowAccessible" render="0">
+  <class name="PlugAccessible" ctype="GtkPlugAccessible" parent="GtkWindowAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Window" render="0"/>
     <method name="get_id" cid="gtk_plug_accessible_get_id" render="0"/>
@@ -7151,7 +7151,7 @@
     <member name="never" value="2" cid="GTK_POLICY_NEVER" glibnick="never" glibname="GTK_POLICY_NEVER"/>
     <member name="external" value="3" cid="GTK_POLICY_EXTERNAL" glibnick="external" glibname="GTK_POLICY_EXTERNAL"/>
   </enumeration>
-  <class name="Popover" ctype="GtkPopover" parent="GtkBin" render="0">
+  <class name="Popover" ctype="GtkPopover" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_popover_new" render="0"/>
@@ -7184,7 +7184,7 @@
     <field name="priv"/>
     <glibsignal name="closed" when="last" render="0"/>
   </class>
-  <class name="PopoverAccessible" ctype="GtkPopoverAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="PopoverAccessible" ctype="GtkPopoverAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
   </class>
@@ -7199,7 +7199,7 @@
   <enumeration name="PopoverConstraint"  render="1">     <member name="none" value="0" cid="GTK_POPOVER_CONSTRAINT_NONE" glibnick="none" glibname="GTK_POPOVER_CONSTRAINT_NONE"/>
     <member name="window" value="1" cid="GTK_POPOVER_CONSTRAINT_WINDOW" glibnick="window" glibname="GTK_POPOVER_CONSTRAINT_WINDOW"/>
   </enumeration>
-  <class name="PopoverMenu" ctype="GtkPopoverMenu" parent="GtkPopover" render="0">
+  <class name="PopoverMenu" ctype="GtkPopoverMenu" parent="GtkPopover" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_popover_menu_new" render="0"/>
@@ -7217,7 +7217,7 @@
     <member name="top" value="2" cid="GTK_POS_TOP" glibnick="top" glibname="GTK_POS_TOP"/>
     <member name="bottom" value="3" cid="GTK_POS_BOTTOM" glibnick="bottom" glibname="GTK_POS_BOTTOM"/>
   </enumeration>
-  <class name="PrintContext" ctype="GtkPrintContext" parent="GtkGObject.Object" render="0">
+  <class name="PrintContext" ctype="GtkPrintContext" parent="GtkGObject.Object" render="1">
     <method name="create_pango_context" cid="gtk_print_context_create_pango_context" render="0"/>
     <method name="create_pango_layout" cid="gtk_print_context_create_pango_layout" render="0"/>
     <method name="get_cairo_context" cid="gtk_print_context_get_cairo_context" render="0"/>
@@ -7240,7 +7240,7 @@
     <member name="invalid_file" value="3" cid="GTK_PRINT_ERROR_INVALID_FILE" glibnick="invalid-file" glibname="GTK_PRINT_ERROR_INVALID_FILE"/>
     <function name="quark" cid="gtk_print_error_quark" render="0"/>
   </enumeration>
-  <class name="PrintOperation" ctype="GtkPrintOperation" parent="GtkGObject.Object" render="0">
+  <class name="PrintOperation" ctype="GtkPrintOperation" parent="GtkGObject.Object" render="1">
     <implements name="PrintOperationPreview" render="0"/>
     <constructor name="new" cid="gtk_print_operation_new" render="0"/>
     <virtual-method name="begin_print" render="0"/>
@@ -7386,7 +7386,7 @@
     <member name="high" value="2" cid="GTK_PRINT_QUALITY_HIGH" glibnick="high" glibname="GTK_PRINT_QUALITY_HIGH"/>
     <member name="draft" value="3" cid="GTK_PRINT_QUALITY_DRAFT" glibnick="draft" glibname="GTK_PRINT_QUALITY_DRAFT"/>
   </enumeration>
-  <class name="PrintSettings" ctype="GtkPrintSettings" parent="GtkGObject.Object" render="0">
+  <class name="PrintSettings" ctype="GtkPrintSettings" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_print_settings_new" render="0"/>
     <constructor name="new_from_file" cid="gtk_print_settings_new_from_file" render="0"/>
     <constructor name="new_from_gvariant" cid="gtk_print_settings_new_from_gvariant" render="0"/>
@@ -7475,7 +7475,7 @@
     <member name="finished" value="7" cid="GTK_PRINT_STATUS_FINISHED" glibnick="finished" glibname="GTK_PRINT_STATUS_FINISHED"/>
     <member name="finished_aborted" value="8" cid="GTK_PRINT_STATUS_FINISHED_ABORTED" glibnick="finished-aborted" glibname="GTK_PRINT_STATUS_FINISHED_ABORTED"/>
   </enumeration>
-  <class name="ProgressBar" ctype="GtkProgressBar" parent="GtkWidget" render="0">
+  <class name="ProgressBar" ctype="GtkProgressBar" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -7502,7 +7502,7 @@
     <field name="parent"/>
     <field name="priv"/>
   </class>
-  <class name="ProgressBarAccessible" ctype="GtkProgressBarAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="ProgressBarAccessible" ctype="GtkProgressBarAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Value" render="0"/>
     <field name="parent"/>
@@ -7578,7 +7578,7 @@
   <function-macro name="REVEALER" render="0">   </function-macro>
   <function-macro name="REVEALER_CLASS" render="0">   </function-macro>
   <function-macro name="REVEALER_GET_CLASS" render="0">   </function-macro>
-  <class name="RadioAction" ctype="GtkRadioAction" parent="GtkToggleAction" render="0">
+  <class name="RadioAction" ctype="GtkRadioAction" parent="GtkToggleAction" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_radio_action_new" render="0"/>
     <virtual-method name="changed" render="0"/>
@@ -7612,7 +7612,7 @@
   </record>
   <record name="RadioActionPrivate" gtypestructfor="" ctype="GtkRadioActionPrivate" render="0">
   </record>
-  <class name="RadioButton" ctype="GtkRadioButton" parent="GtkCheckButton" render="0">
+  <class name="RadioButton" ctype="GtkRadioButton" parent="GtkCheckButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -7632,7 +7632,7 @@
     <field name="priv"/>
     <glibsignal name="group-changed" when="first" render="0"/>
   </class>
-  <class name="RadioButtonAccessible" ctype="GtkRadioButtonAccessible" parent="GtkToggleButtonAccessible" render="0">
+  <class name="RadioButtonAccessible" ctype="GtkRadioButtonAccessible" parent="GtkToggleButtonAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
@@ -7654,7 +7654,7 @@
   </record>
   <record name="RadioButtonPrivate" gtypestructfor="" ctype="GtkRadioButtonPrivate" render="0">
   </record>
-  <class name="RadioMenuItem" ctype="GtkRadioMenuItem" parent="GtkCheckMenuItem" render="0">
+  <class name="RadioMenuItem" ctype="GtkRadioMenuItem" parent="GtkCheckMenuItem" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -7674,7 +7674,7 @@
     <field name="priv"/>
     <glibsignal name="group-changed" when="first" render="0"/>
   </class>
-  <class name="RadioMenuItemAccessible" ctype="GtkRadioMenuItemAccessible" parent="GtkCheckMenuItemAccessible" render="0">
+  <class name="RadioMenuItemAccessible" ctype="GtkRadioMenuItemAccessible" parent="GtkCheckMenuItemAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
@@ -7696,7 +7696,7 @@
   </record>
   <record name="RadioMenuItemPrivate" gtypestructfor="" ctype="GtkRadioMenuItemPrivate" render="0">
   </record>
-  <class name="RadioToolButton" ctype="GtkRadioToolButton" parent="GtkToggleToolButton" render="0">
+  <class name="RadioToolButton" ctype="GtkRadioToolButton" parent="GtkToggleToolButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -7717,7 +7717,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="Range" ctype="GtkRange" parent="GtkWidget" render="0">
+  <class name="Range" ctype="GtkRange" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -7770,7 +7770,7 @@
     <glibsignal name="move-slider" when="last" render="0"/>
     <glibsignal name="value-changed" when="last" render="0"/>
   </class>
-  <class name="RangeAccessible" ctype="GtkRangeAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="RangeAccessible" ctype="GtkRangeAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Value" render="0"/>
     <field name="parent"/>
@@ -7817,7 +7817,7 @@
     <function name="parse_requisition" cid="gtk_rc_property_parse_requisition" render="0"/>
   </record>
   <callback name="RcPropertyParser" ctype="GtkRcPropertyParser" render="0">  </callback>
-  <class name="RcStyle" ctype="GtkRcStyle" parent="GtkGObject.Object" render="0">
+  <class name="RcStyle" ctype="GtkRcStyle" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_rc_style_new" render="0"/>
     <virtual-method name="create_rc_style" render="0"/>
     <virtual-method name="create_style" render="0"/>
@@ -7892,7 +7892,7 @@
     <member name="unbind" value="308" cid="GTK_RC_TOKEN_UNBIND" glibnick="unbind" glibname="GTK_RC_TOKEN_UNBIND"/>
     <member name="last" value="309" cid="GTK_RC_TOKEN_LAST" glibnick="last" glibname="GTK_RC_TOKEN_LAST"/>
   </enumeration>
-  <class name="RecentAction" ctype="GtkRecentAction" parent="GtkAction" render="0">
+  <class name="RecentAction" ctype="GtkRecentAction" parent="GtkAction" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="RecentChooser" render="0"/>
     <constructor name="new" cid="gtk_recent_action_new" render="0"/>
@@ -7970,7 +7970,7 @@
     <glibsignal name="item-activated" when="last" render="0"/>
     <glibsignal name="selection-changed" when="last" render="0"/>
   </interface>
-  <class name="RecentChooserDialog" ctype="GtkRecentChooserDialog" parent="GtkDialog" render="0">
+  <class name="RecentChooserDialog" ctype="GtkRecentChooserDialog" parent="GtkDialog" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="RecentChooser" render="0"/>
@@ -8009,7 +8009,7 @@
     <field name="item_activated"/>
     <field name="selection_changed"/>
   </record>
-  <class name="RecentChooserMenu" ctype="GtkRecentChooserMenu" parent="GtkMenu" render="0">
+  <class name="RecentChooserMenu" ctype="GtkRecentChooserMenu" parent="GtkMenu" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Activatable" render="0"/>
     <implements name="Buildable" render="0"/>
@@ -8031,7 +8031,7 @@
   </record>
   <record name="RecentChooserMenuPrivate" gtypestructfor="" ctype="GtkRecentChooserMenuPrivate" render="0">
   </record>
-  <class name="RecentChooserWidget" ctype="GtkRecentChooserWidget" parent="GtkBox" render="0">
+  <class name="RecentChooserWidget" ctype="GtkRecentChooserWidget" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -8059,7 +8059,7 @@
     <field name="groups"/>
     <field name="is_private"/>
   </record>
-  <class name="RecentFilter" ctype="GtkRecentFilter" parent="GtkGObject.InitiallyUnowned" render="0">
+  <class name="RecentFilter" ctype="GtkRecentFilter" parent="GtkGObject.InitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_recent_filter_new" render="0"/>
     <method name="add_age" cid="gtk_recent_filter_add_age" render="0"/>
@@ -8119,7 +8119,7 @@
     <method name="ref" cid="gtk_recent_info_ref" render="0"/>
     <method name="unref" cid="gtk_recent_info_unref" render="0"/>
   </record>
-  <class name="RecentManager" ctype="GtkRecentManager" parent="GtkGObject.Object" render="0">
+  <class name="RecentManager" ctype="GtkRecentManager" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_recent_manager_new" render="0"/>
     <function name="get_default" cid="gtk_recent_manager_get_default" render="0"/>
     <virtual-method name="changed" render="0"/>
@@ -8174,7 +8174,7 @@
     <member name="half" value="1" cid="GTK_RELIEF_HALF" glibnick="half" glibname="GTK_RELIEF_HALF"/>
     <member name="none" value="2" cid="GTK_RELIEF_NONE" glibnick="none" glibname="GTK_RELIEF_NONE"/>
   </enumeration>
-  <class name="RendererCellAccessible" ctype="GtkRendererCellAccessible" parent="GtkCellAccessible" render="0">
+  <class name="RendererCellAccessible" ctype="GtkRendererCellAccessible" parent="GtkCellAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.TableCell" render="0"/>
@@ -8216,7 +8216,7 @@
     <member name="apply" value="-10" cid="GTK_RESPONSE_APPLY" glibnick="apply" glibname="GTK_RESPONSE_APPLY"/>
     <member name="help" value="-11" cid="GTK_RESPONSE_HELP" glibnick="help" glibname="GTK_RESPONSE_HELP"/>
   </enumeration>
-  <class name="Revealer" ctype="GtkRevealer" parent="GtkBin" render="0">
+  <class name="Revealer" ctype="GtkRevealer" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_revealer_new" render="0"/>
@@ -8567,7 +8567,7 @@
   <function-macro name="SWITCH_ACCESSIBLE_GET_CLASS" render="0">   </function-macro>
   <function-macro name="SWITCH_CLASS" render="0">   </function-macro>
   <function-macro name="SWITCH_GET_CLASS" render="0">   </function-macro>
-  <class name="Scale" ctype="GtkScale" parent="GtkRange" render="0">
+  <class name="Scale" ctype="GtkScale" parent="GtkRange" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -8596,7 +8596,7 @@
     <field name="priv"/>
     <glibsignal name="format-value" when="last" render="0"/>
   </class>
-  <class name="ScaleAccessible" ctype="GtkScaleAccessible" parent="GtkRangeAccessible" render="0">
+  <class name="ScaleAccessible" ctype="GtkScaleAccessible" parent="GtkRangeAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Value" render="0"/>
     <field name="parent"/>
@@ -8607,7 +8607,7 @@
   </record>
   <record name="ScaleAccessiblePrivate" gtypestructfor="" ctype="GtkScaleAccessiblePrivate" render="0">
   </record>
-  <class name="ScaleButton" ctype="GtkScaleButton" parent="GtkButton" render="0">
+  <class name="ScaleButton" ctype="GtkScaleButton" parent="GtkButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -8633,7 +8633,7 @@
     <glibsignal name="popup" when="last" render="0"/>
     <glibsignal name="value-changed" when="last" render="0"/>
   </class>
-  <class name="ScaleButtonAccessible" ctype="GtkScaleButtonAccessible" parent="GtkButtonAccessible" render="0">
+  <class name="ScaleButtonAccessible" ctype="GtkScaleButtonAccessible" parent="GtkButtonAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
@@ -8714,7 +8714,7 @@
   <enumeration name="ScrollablePolicy"  render="1">     <member name="minimum" value="0" cid="GTK_SCROLL_MINIMUM" glibnick="minimum" glibname="GTK_SCROLL_MINIMUM"/>
     <member name="natural" value="1" cid="GTK_SCROLL_NATURAL" glibnick="natural" glibname="GTK_SCROLL_NATURAL"/>
   </enumeration>
-  <class name="Scrollbar" ctype="GtkScrollbar" parent="GtkRange" render="0">
+  <class name="Scrollbar" ctype="GtkScrollbar" parent="GtkRange" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -8728,7 +8728,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="ScrolledWindow" ctype="GtkScrolledWindow" parent="GtkBin" render="0">
+  <class name="ScrolledWindow" ctype="GtkScrolledWindow" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_scrolled_window_new" render="0"/>
@@ -8788,7 +8788,7 @@
     <glibsignal name="move-focus-out" when="last" render="0"/>
     <glibsignal name="scroll-child" when="last" render="0"/>
   </class>
-  <class name="ScrolledWindowAccessible" ctype="GtkScrolledWindowAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="ScrolledWindowAccessible" ctype="GtkScrolledWindowAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
     <field name="priv"/>
@@ -8810,7 +8810,7 @@
   </record>
   <record name="ScrolledWindowPrivate" gtypestructfor="" ctype="GtkScrolledWindowPrivate" render="0">
   </record>
-  <class name="SearchBar" ctype="GtkSearchBar" parent="GtkBin" render="0">
+  <class name="SearchBar" ctype="GtkSearchBar" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_search_bar_new" render="0"/>
@@ -8831,7 +8831,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="SearchEntry" ctype="GtkSearchEntry" parent="GtkEntry" render="0">
+  <class name="SearchEntry" ctype="GtkSearchEntry" parent="GtkEntry" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="CellEditable" render="0"/>
@@ -8888,7 +8888,7 @@
     <member name="on" value="1" cid="GTK_SENSITIVITY_ON" glibnick="on" glibname="GTK_SENSITIVITY_ON"/>
     <member name="off" value="2" cid="GTK_SENSITIVITY_OFF" glibnick="off" glibname="GTK_SENSITIVITY_OFF"/>
   </enumeration>
-  <class name="Separator" ctype="GtkSeparator" parent="GtkWidget" render="0">
+  <class name="Separator" ctype="GtkSeparator" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -8903,7 +8903,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="SeparatorMenuItem" ctype="GtkSeparatorMenuItem" parent="GtkMenuItem" render="0">
+  <class name="SeparatorMenuItem" ctype="GtkSeparatorMenuItem" parent="GtkMenuItem" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -8920,7 +8920,7 @@
   </record>
   <record name="SeparatorPrivate" gtypestructfor="" ctype="GtkSeparatorPrivate" render="0">
   </record>
-  <class name="SeparatorToolItem" ctype="GtkSeparatorToolItem" parent="GtkToolItem" render="0">
+  <class name="SeparatorToolItem" ctype="GtkSeparatorToolItem" parent="GtkToolItem" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Activatable" render="0"/>
     <implements name="Buildable" render="0"/>
@@ -8940,7 +8940,7 @@
   </record>
   <record name="SeparatorToolItemPrivate" gtypestructfor="" ctype="GtkSeparatorToolItemPrivate" render="0">
   </record>
-  <class name="Settings" ctype="GtkSettings" parent="GtkGObject.Object" render="0">
+  <class name="Settings" ctype="GtkSettings" parent="GtkGObject.Object" render="1">
     <implements name="StyleProvider" render="0"/>
     <function name="get_default" cid="gtk_settings_get_default" render="0"/>
     <function name="get_for_screen" cid="gtk_settings_get_for_screen" render="0"/>
@@ -9058,7 +9058,7 @@
     <member name="etched_in" value="3" cid="GTK_SHADOW_ETCHED_IN" glibnick="etched-in" glibname="GTK_SHADOW_ETCHED_IN"/>
     <member name="etched_out" value="4" cid="GTK_SHADOW_ETCHED_OUT" glibnick="etched-out" glibname="GTK_SHADOW_ETCHED_OUT"/>
   </enumeration>
-  <class name="ShortcutLabel" ctype="GtkShortcutLabel" parent="GtkBox" render="0">
+  <class name="ShortcutLabel" ctype="GtkShortcutLabel" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -9081,7 +9081,7 @@
     <member name="gesture_two_finger_swipe_right" value="6" cid="GTK_SHORTCUT_GESTURE_TWO_FINGER_SWIPE_RIGHT" glibnick="gesture-two-finger-swipe-right" glibname="GTK_SHORTCUT_GESTURE_TWO_FINGER_SWIPE_RIGHT"/>
     <member name="gesture" value="7" cid="GTK_SHORTCUT_GESTURE" glibnick="gesture" glibname="GTK_SHORTCUT_GESTURE"/>
   </enumeration>
-  <class name="ShortcutsGroup" ctype="GtkShortcutsGroup" parent="GtkBox" render="0">
+  <class name="ShortcutsGroup" ctype="GtkShortcutsGroup" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -9093,7 +9093,7 @@
   </class>
   <record name="ShortcutsGroupClass" gtypestructfor="ShortcutsGroup" ctype="GtkShortcutsGroupClass" render="0">
   </record>
-  <class name="ShortcutsSection" ctype="GtkShortcutsSection" parent="GtkBox" render="0">
+  <class name="ShortcutsSection" ctype="GtkShortcutsSection" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -9105,7 +9105,7 @@
   </class>
   <record name="ShortcutsSectionClass" gtypestructfor="ShortcutsSection" ctype="GtkShortcutsSectionClass" render="0">
   </record>
-  <class name="ShortcutsShortcut" ctype="GtkShortcutsShortcut" parent="GtkBox" render="0">
+  <class name="ShortcutsShortcut" ctype="GtkShortcutsShortcut" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -9123,7 +9123,7 @@
   </class>
   <record name="ShortcutsShortcutClass" gtypestructfor="ShortcutsShortcut" ctype="GtkShortcutsShortcutClass" render="0">
   </record>
-  <class name="ShortcutsWindow" ctype="GtkShortcutsWindow" parent="GtkWindow" render="0">
+  <class name="ShortcutsWindow" ctype="GtkShortcutsWindow" parent="GtkWindow" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <virtual-method name="close" render="0"/>
@@ -9139,7 +9139,7 @@
     <field name="close"/>
     <field name="search"/>
   </record>
-  <class name="SizeGroup" ctype="GtkSizeGroup" parent="GtkGObject.Object" render="0">
+  <class name="SizeGroup" ctype="GtkSizeGroup" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_size_group_new" render="0"/>
     <method name="add_widget" cid="gtk_size_group_add_widget" render="0"/>
@@ -9172,7 +9172,7 @@
     <member name="width_for_height" value="1" cid="GTK_SIZE_REQUEST_WIDTH_FOR_HEIGHT" glibnick="width-for-height" glibname="GTK_SIZE_REQUEST_WIDTH_FOR_HEIGHT"/>
     <member name="constant_size" value="2" cid="GTK_SIZE_REQUEST_CONSTANT_SIZE" glibnick="constant-size" glibname="GTK_SIZE_REQUEST_CONSTANT_SIZE"/>
   </enumeration>
-  <class name="Socket" ctype="GtkSocket" parent="GtkContainer" render="0">
+  <class name="Socket" ctype="GtkSocket" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_socket_new" render="0"/>
@@ -9186,7 +9186,7 @@
     <glibsignal name="plug-added" when="last" render="0"/>
     <glibsignal name="plug-removed" when="last" render="0"/>
   </class>
-  <class name="SocketAccessible" ctype="GtkSocketAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="SocketAccessible" ctype="GtkSocketAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <method name="embed" cid="gtk_socket_accessible_embed" render="0"/>
     <field name="parent"/>
@@ -9211,7 +9211,7 @@
   <enumeration name="SortType"  render="1">     <member name="ascending" value="0" cid="GTK_SORT_ASCENDING" glibnick="ascending" glibname="GTK_SORT_ASCENDING"/>
     <member name="descending" value="1" cid="GTK_SORT_DESCENDING" glibnick="descending" glibname="GTK_SORT_DESCENDING"/>
   </enumeration>
-  <class name="SpinButton" ctype="GtkSpinButton" parent="GtkEntry" render="0">
+  <class name="SpinButton" ctype="GtkSpinButton" parent="GtkEntry" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="CellEditable" render="0"/>
@@ -9262,7 +9262,7 @@
     <glibsignal name="value-changed" when="last" render="0"/>
     <glibsignal name="wrapped" when="last" render="0"/>
   </class>
-  <class name="SpinButtonAccessible" ctype="GtkSpinButtonAccessible" parent="GtkEntryAccessible" render="0">
+  <class name="SpinButtonAccessible" ctype="GtkSpinButtonAccessible" parent="GtkEntryAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.EditableText" render="0"/>
@@ -9301,7 +9301,7 @@
     <member name="gend" value="5" cid="GTK_SPIN_END" glibnick="end" glibname="GTK_SPIN_END"/>
     <member name="user_defined" value="6" cid="GTK_SPIN_USER_DEFINED" glibnick="user-defined" glibname="GTK_SPIN_USER_DEFINED"/>
   </enumeration>
-  <class name="Spinner" ctype="GtkSpinner" parent="GtkWidget" render="0">
+  <class name="Spinner" ctype="GtkSpinner" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_spinner_new" render="0"/>
@@ -9311,7 +9311,7 @@
     <field name="parent"/>
     <field name="priv"/>
   </class>
-  <class name="SpinnerAccessible" ctype="GtkSpinnerAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="SpinnerAccessible" ctype="GtkSpinnerAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
     <field name="parent"/>
@@ -9331,7 +9331,7 @@
   </record>
   <record name="SpinnerPrivate" gtypestructfor="" ctype="GtkSpinnerPrivate" render="0">
   </record>
-  <class name="Stack" ctype="GtkStack" parent="GtkContainer" render="0">
+  <class name="Stack" ctype="GtkStack" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_stack_new" render="0"/>
@@ -9367,7 +9367,7 @@
     <property name="visible-child-name" cid="" render="0"/>
     <field name="parent_instance"/>
   </class>
-  <class name="StackAccessible" ctype="GtkStackAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="StackAccessible" ctype="GtkStackAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
   </class>
@@ -9377,7 +9377,7 @@
   <record name="StackClass" gtypestructfor="Stack" ctype="GtkStackClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="StackSidebar" ctype="GtkStackSidebar" parent="GtkBin" render="0">
+  <class name="StackSidebar" ctype="GtkStackSidebar" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_stack_sidebar_new" render="0"/>
@@ -9395,7 +9395,7 @@
   </record>
   <record name="StackSidebarPrivate" gtypestructfor="" ctype="GtkStackSidebarPrivate" render="0">
   </record>
-  <class name="StackSwitcher" ctype="GtkStackSwitcher" parent="GtkBox" render="0">
+  <class name="StackSwitcher" ctype="GtkStackSwitcher" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -9458,7 +9458,7 @@
     <member name="inconsistent" value="5" cid="GTK_STATE_INCONSISTENT" glibnick="inconsistent" glibname="GTK_STATE_INCONSISTENT"/>
     <member name="focused" value="6" cid="GTK_STATE_FOCUSED" glibnick="focused" glibname="GTK_STATE_FOCUSED"/>
   </enumeration>
-  <class name="StatusIcon" ctype="GtkStatusIcon" parent="GtkGObject.Object" render="0">
+  <class name="StatusIcon" ctype="GtkStatusIcon" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_status_icon_new" render="0"/>
     <constructor name="new_from_file" cid="gtk_status_icon_new_from_file" render="0"/>
     <constructor name="new_from_gicon" cid="gtk_status_icon_new_from_gicon" render="0"/>
@@ -9541,7 +9541,7 @@
   </record>
   <record name="StatusIconPrivate" gtypestructfor="" ctype="GtkStatusIconPrivate" render="0">
   </record>
-  <class name="Statusbar" ctype="GtkStatusbar" parent="GtkBox" render="0">
+  <class name="Statusbar" ctype="GtkStatusbar" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -9559,7 +9559,7 @@
     <glibsignal name="text-popped" when="last" render="0"/>
     <glibsignal name="text-pushed" when="last" render="0"/>
   </class>
-  <class name="StatusbarAccessible" ctype="GtkStatusbarAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="StatusbarAccessible" ctype="GtkStatusbarAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
     <field name="priv"/>
@@ -9590,7 +9590,7 @@
     <method name="copy" cid="gtk_stock_item_copy" render="0"/>
     <method name="free" cid="gtk_stock_item_free" render="0"/>
   </record>
-  <class name="Style" ctype="GtkStyle" parent="GtkGObject.Object" render="0">
+  <class name="Style" ctype="GtkStyle" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_style_new" render="0"/>
     <virtual-method name="clone" render="0"/>
     <virtual-method name="copy" render="0"/>
@@ -9698,7 +9698,7 @@
     <field name="_gtk_reserved10"/>
     <field name="_gtk_reserved11"/>
   </record>
-  <class name="StyleContext" ctype="GtkStyleContext" parent="GtkGObject.Object" render="0">
+  <class name="StyleContext" ctype="GtkStyleContext" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_style_context_new" render="0"/>
     <function name="add_provider_for_screen" cid="gtk_style_context_add_provider_for_screen" render="0"/>
     <function name="remove_provider_for_screen" cid="gtk_style_context_remove_provider_for_screen" render="0"/>
@@ -9780,7 +9780,7 @@
   </bitfield>
   <record name="StyleContextPrivate" gtypestructfor="" ctype="GtkStyleContextPrivate" render="0">
   </record>
-  <class name="StyleProperties" ctype="GtkStyleProperties" parent="GtkGObject.Object" render="0">
+  <class name="StyleProperties" ctype="GtkStyleProperties" parent="GtkGObject.Object" render="1">
     <implements name="StyleProvider" render="0"/>
     <constructor name="new" cid="gtk_style_properties_new" render="0"/>
     <function name="lookup_property" cid="gtk_style_properties_lookup_property" render="0"/>
@@ -9822,7 +9822,7 @@
     <field name="get_style_property"/>
     <field name="get_icon_factory"/>
   </record>
-  <class name="Switch" ctype="GtkSwitch" parent="GtkWidget" render="0">
+  <class name="Switch" ctype="GtkSwitch" parent="GtkWidget" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -9841,7 +9841,7 @@
     <glibsignal name="activate" when="first" render="0"/>
     <glibsignal name="state-set" when="last" render="0"/>
   </class>
-  <class name="SwitchAccessible" ctype="GtkSwitchAccessible" parent="GtkWidgetAccessible" render="0">
+  <class name="SwitchAccessible" ctype="GtkSwitchAccessible" parent="GtkWidgetAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
@@ -9975,7 +9975,7 @@
   <function-macro name="TREE_VIEW_COLUMN_CLASS" render="0">   </function-macro>
   <function-macro name="TREE_VIEW_COLUMN_GET_CLASS" render="0">   </function-macro>
   <function-macro name="TREE_VIEW_GET_CLASS" render="0">   </function-macro>
-  <class name="Table" ctype="GtkTable" parent="GtkContainer" render="0">
+  <class name="Table" ctype="GtkTable" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_table_new" render="0"/>
@@ -10067,7 +10067,7 @@
     <field name="flags"/>
     <field name="info"/>
   </record>
-  <class name="TearoffMenuItem" ctype="GtkTearoffMenuItem" parent="GtkMenuItem" render="0">
+  <class name="TearoffMenuItem" ctype="GtkTearoffMenuItem" parent="GtkMenuItem" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -10128,7 +10128,7 @@
   </record>
   <record name="TextBTree" gtypestructfor="" ctype="GtkTextBTree" render="0">
   </record>
-  <class name="TextBuffer" ctype="GtkTextBuffer" parent="GtkGObject.Object" render="0">
+  <class name="TextBuffer" ctype="GtkTextBuffer" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_text_buffer_new" render="0"/>
     <virtual-method name="apply_tag" render="0"/>
     <virtual-method name="begin_user_action" render="0"/>
@@ -10266,7 +10266,7 @@
     <member name="rich_text" value="-2" cid="GTK_TEXT_BUFFER_TARGET_INFO_RICH_TEXT" glibnick="rich-text" glibname="GTK_TEXT_BUFFER_TARGET_INFO_RICH_TEXT"/>
     <member name="text" value="-3" cid="GTK_TEXT_BUFFER_TARGET_INFO_TEXT" glibnick="text" glibname="GTK_TEXT_BUFFER_TARGET_INFO_TEXT"/>
   </enumeration>
-  <class name="TextCellAccessible" ctype="GtkTextCellAccessible" parent="GtkRendererCellAccessible" render="0">
+  <class name="TextCellAccessible" ctype="GtkTextCellAccessible" parent="GtkRendererCellAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.TableCell" render="0"/>
@@ -10280,7 +10280,7 @@
   <record name="TextCellAccessiblePrivate" gtypestructfor="" ctype="GtkTextCellAccessiblePrivate" render="0">
   </record>
   <callback name="TextCharPredicate" ctype="GtkTextCharPredicate" render="0">  </callback>
-  <class name="TextChildAnchor" ctype="GtkTextChildAnchor" parent="GtkGObject.Object" render="0">
+  <class name="TextChildAnchor" ctype="GtkTextChildAnchor" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_text_child_anchor_new" render="0"/>
     <method name="get_deleted" cid="gtk_text_child_anchor_get_deleted" render="0"/>
     <method name="get_widgets" cid="gtk_text_child_anchor_get_widgets" render="0"/>
@@ -10409,7 +10409,7 @@
     <method name="starts_word" cid="gtk_text_iter_starts_word" render="0"/>
     <method name="toggles_tag" cid="gtk_text_iter_toggles_tag" render="0"/>
   </record>
-  <class name="TextMark" ctype="GtkTextMark" parent="GtkGObject.Object" render="0">
+  <class name="TextMark" ctype="GtkTextMark" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_text_mark_new" render="0"/>
     <method name="get_buffer" cid="gtk_text_mark_get_buffer" render="0"/>
     <method name="get_deleted" cid="gtk_text_mark_get_deleted" render="0"/>
@@ -10434,7 +10434,7 @@
     <member name="text_only" value="2" cid="GTK_TEXT_SEARCH_TEXT_ONLY" glibnick="text-only" glibname="GTK_TEXT_SEARCH_TEXT_ONLY"/>
     <member name="case_insensitive" value="4" cid="GTK_TEXT_SEARCH_CASE_INSENSITIVE" glibnick="case-insensitive" glibname="GTK_TEXT_SEARCH_CASE_INSENSITIVE"/>
   </bitfield>
-  <class name="TextTag" ctype="GtkTextTag" parent="GtkGObject.Object" render="0">
+  <class name="TextTag" ctype="GtkTextTag" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_text_tag_new" render="0"/>
     <virtual-method name="event" render="0"/>
     <method name="changed" cid="gtk_text_tag_changed" render="0"/>
@@ -10529,7 +10529,7 @@
   </record>
   <record name="TextTagPrivate" gtypestructfor="" ctype="GtkTextTagPrivate" render="0">
   </record>
-  <class name="TextTagTable" ctype="GtkTextTagTable" parent="GtkGObject.Object" render="0">
+  <class name="TextTagTable" ctype="GtkTextTagTable" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_text_tag_table_new" render="0"/>
     <virtual-method name="tag_added" render="0"/>
@@ -10559,7 +10559,7 @@
   <callback name="TextTagTableForeach" ctype="GtkTextTagTableForeach" render="0">  </callback>
   <record name="TextTagTablePrivate" gtypestructfor="" ctype="GtkTextTagTablePrivate" render="0">
   </record>
-  <class name="TextView" ctype="GtkTextView" parent="GtkContainer" render="0">
+  <class name="TextView" ctype="GtkTextView" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Scrollable" render="0"/>
@@ -10690,7 +10690,7 @@
     <glibsignal name="toggle-cursor-visible" when="last" render="0"/>
     <glibsignal name="toggle-overwrite" when="last" render="0"/>
   </class>
-  <class name="TextViewAccessible" ctype="GtkTextViewAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="TextViewAccessible" ctype="GtkTextViewAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.EditableText" render="0"/>
     <implements name="Atk.StreamableContent" render="0"/>
@@ -10741,7 +10741,7 @@
   </enumeration>
   <record name="ThemeEngine" gtypestructfor="" ctype="GtkThemeEngine" render="0">
   </record>
-  <class name="ThemingEngine" ctype="GtkThemingEngine" parent="GtkGObject.Object" render="0">
+  <class name="ThemingEngine" ctype="GtkThemingEngine" parent="GtkGObject.Object" render="1">
     <function name="load" cid="gtk_theming_engine_load" render="0"/>
     <function name="register_property" cid="gtk_theming_engine_register_property" render="0"/>
     <virtual-method name="render_activity" render="0"/>
@@ -10811,7 +10811,7 @@
   <record name="ThemingEnginePrivate" gtypestructfor="" ctype="GtkThemingEnginePrivate" render="0">
   </record>
   <callback name="TickCallback" ctype="GtkTickCallback" render="0">  </callback>
-  <class name="ToggleAction" ctype="GtkToggleAction" parent="GtkAction" render="0">
+  <class name="ToggleAction" ctype="GtkToggleAction" parent="GtkAction" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_toggle_action_new" render="0"/>
     <virtual-method name="toggled" render="0"/>
@@ -10845,7 +10845,7 @@
   </record>
   <record name="ToggleActionPrivate" gtypestructfor="" ctype="GtkToggleActionPrivate" render="0">
   </record>
-  <class name="ToggleButton" ctype="GtkToggleButton" parent="GtkButton" render="0">
+  <class name="ToggleButton" ctype="GtkToggleButton" parent="GtkButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -10868,7 +10868,7 @@
     <field name="priv"/>
     <glibsignal name="toggled" when="first" render="0"/>
   </class>
-  <class name="ToggleButtonAccessible" ctype="GtkToggleButtonAccessible" parent="GtkButtonAccessible" render="0">
+  <class name="ToggleButtonAccessible" ctype="GtkToggleButtonAccessible" parent="GtkButtonAccessible" render="1">
     <implements name="Atk.Action" render="0"/>
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Image" render="0"/>
@@ -10890,7 +10890,7 @@
   </record>
   <record name="ToggleButtonPrivate" gtypestructfor="" ctype="GtkToggleButtonPrivate" render="0">
   </record>
-  <class name="ToggleToolButton" ctype="GtkToggleToolButton" parent="GtkToolButton" render="0">
+  <class name="ToggleToolButton" ctype="GtkToggleToolButton" parent="GtkToolButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -10915,7 +10915,7 @@
   </record>
   <record name="ToggleToolButtonPrivate" gtypestructfor="" ctype="GtkToggleToolButtonPrivate" render="0">
   </record>
-  <class name="ToolButton" ctype="GtkToolButton" parent="GtkToolItem" render="0">
+  <class name="ToolButton" ctype="GtkToolButton" parent="GtkToolItem" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -10956,7 +10956,7 @@
   </record>
   <record name="ToolButtonPrivate" gtypestructfor="" ctype="GtkToolButtonPrivate" render="0">
   </record>
-  <class name="ToolItem" ctype="GtkToolItem" parent="GtkBin" render="0">
+  <class name="ToolItem" ctype="GtkToolItem" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Activatable" render="0"/>
     <implements name="Buildable" render="0"/>
@@ -11007,7 +11007,7 @@
     <field name="_gtk_reserved3"/>
     <field name="_gtk_reserved4"/>
   </record>
-  <class name="ToolItemGroup" ctype="GtkToolItemGroup" parent="GtkContainer" render="0">
+  <class name="ToolItemGroup" ctype="GtkToolItemGroup" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="ToolShell" render="0"/>
@@ -11047,7 +11047,7 @@
   </record>
   <record name="ToolItemPrivate" gtypestructfor="" ctype="GtkToolItemPrivate" render="0">
   </record>
-  <class name="ToolPalette" ctype="GtkToolPalette" parent="GtkContainer" render="0">
+  <class name="ToolPalette" ctype="GtkToolPalette" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11125,7 +11125,7 @@
     <field name="get_ellipsize_mode"/>
     <field name="get_text_size_group"/>
   </record>
-  <class name="Toolbar" ctype="GtkToolbar" parent="GtkContainer" render="0">
+  <class name="Toolbar" ctype="GtkToolbar" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11180,7 +11180,7 @@
     <member name="both" value="2" cid="GTK_TOOLBAR_BOTH" glibnick="both" glibname="GTK_TOOLBAR_BOTH"/>
     <member name="both_horiz" value="3" cid="GTK_TOOLBAR_BOTH_HORIZ" glibnick="both-horiz" glibname="GTK_TOOLBAR_BOTH_HORIZ"/>
   </enumeration>
-  <class name="Tooltip" ctype="GtkTooltip" parent="GtkGObject.Object" render="0">
+  <class name="Tooltip" ctype="GtkTooltip" parent="GtkGObject.Object" render="1">
     <function name="trigger_tooltip_query" cid="gtk_tooltip_trigger_tooltip_query" render="0"/>
     <method name="set_custom" cid="gtk_tooltip_set_custom" render="0"/>
     <method name="set_icon" cid="gtk_tooltip_set_icon" render="0"/>
@@ -11191,7 +11191,7 @@
     <method name="set_text" cid="gtk_tooltip_set_text" render="0"/>
     <method name="set_tip_area" cid="gtk_tooltip_set_tip_area" render="0"/>
   </class>
-  <class name="ToplevelAccessible" ctype="GtkToplevelAccessible" parent="GtkAtk.Object" render="0">
+  <class name="ToplevelAccessible" ctype="GtkToplevelAccessible" parent="GtkAtk.Object" render="1">
     <method name="get_children" cid="gtk_toplevel_accessible_get_children" render="0"/>
     <field name="parent"/>
     <field name="priv"/>
@@ -11290,7 +11290,7 @@
     <glibsignal name="row-inserted" when="first" render="0"/>
     <glibsignal name="rows-reordered" when="first" render="0"/>
   </interface>
-  <class name="TreeModelFilter" ctype="GtkTreeModelFilter" parent="GtkGObject.Object" render="0">
+  <class name="TreeModelFilter" ctype="GtkTreeModelFilter" parent="GtkGObject.Object" render="1">
     <implements name="TreeDragSource" render="0"/>
     <implements name="TreeModel" render="0"/>
     <virtual-method name="modify" render="0"/>
@@ -11351,7 +11351,7 @@
     <field name="ref_node"/>
     <field name="unref_node"/>
   </record>
-  <class name="TreeModelSort" ctype="GtkTreeModelSort" parent="GtkGObject.Object" render="0">
+  <class name="TreeModelSort" ctype="GtkTreeModelSort" parent="GtkGObject.Object" render="1">
     <implements name="TreeDragSource" render="0"/>
     <implements name="TreeModel" render="0"/>
     <implements name="TreeSortable" render="0"/>
@@ -11411,7 +11411,7 @@
     <function name="inserted" cid="gtk_tree_row_reference_inserted" render="0"/>
     <function name="reordered" cid="gtk_tree_row_reference_reordered" render="0"/>
   </record>
-  <class name="TreeSelection" ctype="GtkTreeSelection" parent="GtkGObject.Object" render="0">
+  <class name="TreeSelection" ctype="GtkTreeSelection" parent="GtkGObject.Object" render="1">
     <virtual-method name="changed" render="0"/>
     <method name="count_selected_rows" cid="gtk_tree_selection_count_selected_rows" render="0"/>
     <method name="get_mode" cid="gtk_tree_selection_get_mode" render="0"/>
@@ -11474,7 +11474,7 @@
     <field name="set_default_sort_func"/>
     <field name="has_default_sort_func"/>
   </record>
-  <class name="TreeStore" ctype="GtkTreeStore" parent="GtkGObject.Object" render="0">
+  <class name="TreeStore" ctype="GtkTreeStore" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="TreeDragDest" render="0"/>
     <implements name="TreeDragSource" render="0"/>
@@ -11515,7 +11515,7 @@
   </record>
   <record name="TreeStorePrivate" gtypestructfor="" ctype="GtkTreeStorePrivate" render="0">
   </record>
-  <class name="TreeView" ctype="GtkTreeView" parent="GtkContainer" render="0">
+  <class name="TreeView" ctype="GtkTreeView" parent="GtkContainer" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Scrollable" render="0"/>
@@ -11671,7 +11671,7 @@
     <glibsignal name="toggle-cursor-row" when="last" render="0"/>
     <glibsignal name="unselect-all" when="last" render="0"/>
   </class>
-  <class name="TreeViewAccessible" ctype="GtkTreeViewAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="TreeViewAccessible" ctype="GtkTreeViewAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Selection" render="0"/>
     <implements name="Atk.Table" render="0"/>
@@ -11710,7 +11710,7 @@
     <field name="_gtk_reserved7"/>
     <field name="_gtk_reserved8"/>
   </record>
-  <class name="TreeViewColumn" ctype="GtkTreeViewColumn" parent="GtkGObject.InitiallyUnowned" render="0">
+  <class name="TreeViewColumn" ctype="GtkTreeViewColumn" parent="GtkGObject.InitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <constructor name="new" cid="gtk_tree_view_column_new" render="0"/>
@@ -11821,7 +11821,7 @@
   <callback name="TreeViewRowSeparatorFunc" ctype="GtkTreeViewRowSeparatorFunc" render="0">  </callback>
   <callback name="TreeViewSearchEqualFunc" ctype="GtkTreeViewSearchEqualFunc" render="0">  </callback>
   <callback name="TreeViewSearchPositionFunc" ctype="GtkTreeViewSearchPositionFunc" render="0">  </callback>
-  <class name="UIManager" ctype="GtkUIManager" parent="GtkGObject.Object" render="0">
+  <class name="UIManager" ctype="GtkUIManager" parent="GtkGObject.Object" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_ui_manager_new" render="0"/>
     <virtual-method name="actions_changed" render="0"/>
@@ -11904,7 +11904,7 @@
   <function-macro name="VBUTTON_BOX" render="0">   </function-macro>
   <function-macro name="VBUTTON_BOX_CLASS" render="0">   </function-macro>
   <function-macro name="VBUTTON_BOX_GET_CLASS" render="0">   </function-macro>
-  <class name="VBox" ctype="GtkVBox" parent="GtkBox" render="0">
+  <class name="VBox" ctype="GtkVBox" parent="GtkBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11914,7 +11914,7 @@
   <record name="VBoxClass" gtypestructfor="VBox" ctype="GtkVBoxClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="VButtonBox" ctype="GtkVButtonBox" parent="GtkButtonBox" render="0">
+  <class name="VButtonBox" ctype="GtkVButtonBox" parent="GtkButtonBox" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11933,7 +11933,7 @@
   <function-macro name="VPANED" render="0">   </function-macro>
   <function-macro name="VPANED_CLASS" render="0">   </function-macro>
   <function-macro name="VPANED_GET_CLASS" render="0">   </function-macro>
-  <class name="VPaned" ctype="GtkVPaned" parent="GtkPaned" render="0">
+  <class name="VPaned" ctype="GtkVPaned" parent="GtkPaned" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11952,7 +11952,7 @@
   <function-macro name="VSEPARATOR" render="0">   </function-macro>
   <function-macro name="VSEPARATOR_CLASS" render="0">   </function-macro>
   <function-macro name="VSEPARATOR_GET_CLASS" render="0">   </function-macro>
-  <class name="VScale" ctype="GtkVScale" parent="GtkScale" render="0">
+  <class name="VScale" ctype="GtkVScale" parent="GtkScale" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11963,7 +11963,7 @@
   <record name="VScaleClass" gtypestructfor="VScale" ctype="GtkVScaleClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="VScrollbar" ctype="GtkVScrollbar" parent="GtkScrollbar" render="0">
+  <class name="VScrollbar" ctype="GtkVScrollbar" parent="GtkScrollbar" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11973,7 +11973,7 @@
   <record name="VScrollbarClass" gtypestructfor="VScrollbar" ctype="GtkVScrollbarClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="VSeparator" ctype="GtkVSeparator" parent="GtkSeparator" render="0">
+  <class name="VSeparator" ctype="GtkVSeparator" parent="GtkSeparator" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Orientable" render="0"/>
@@ -11983,7 +11983,7 @@
   <record name="VSeparatorClass" gtypestructfor="VSeparator" ctype="GtkVSeparatorClass" render="0">
     <field name="parent_class"/>
   </record>
-  <class name="Viewport" ctype="GtkViewport" parent="GtkBin" render="0">
+  <class name="Viewport" ctype="GtkViewport" parent="GtkBin" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Buildable" render="0"/>
     <implements name="Scrollable" render="0"/>
@@ -12009,7 +12009,7 @@
   </record>
   <record name="ViewportPrivate" gtypestructfor="" ctype="GtkViewportPrivate" render="0">
   </record>
-  <class name="VolumeButton" ctype="GtkVolumeButton" parent="GtkScaleButton" render="0">
+  <class name="VolumeButton" ctype="GtkVolumeButton" parent="GtkScaleButton" render="1">
     <implements name="Atk.ImplementorIface" render="0"/>
     <implements name="Actionable" render="0"/>
     <implements name="Activatable" render="0"/>
@@ -12506,7 +12506,7 @@
     <glibsignal name="visibility-notify-event" when="last" render="0"/>
     <glibsignal name="window-state-event" when="last" render="0"/>
   </class>
-  <class name="WidgetAccessible" ctype="GtkWidgetAccessible" parent="GtkAccessible" render="0">
+  <class name="WidgetAccessible" ctype="GtkWidgetAccessible" parent="GtkAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <field name="parent"/>
     <field name="priv"/>
@@ -12835,7 +12835,7 @@
     <glibsignal name="keys-changed" when="first" render="0"/>
     <glibsignal name="set-focus" when="last" render="0"/>
   </class>
-  <class name="WindowAccessible" ctype="GtkWindowAccessible" parent="GtkContainerAccessible" render="0">
+  <class name="WindowAccessible" ctype="GtkWindowAccessible" parent="GtkContainerAccessible" render="1">
     <implements name="Atk.Component" render="0"/>
     <implements name="Atk.Window" render="0"/>
     <field name="parent"/>
@@ -12859,7 +12859,7 @@
   </record>
   <record name="WindowGeometryInfo" gtypestructfor="" ctype="GtkWindowGeometryInfo" render="0">
   </record>
-  <class name="WindowGroup" ctype="GtkWindowGroup" parent="GtkGObject.Object" render="0">
+  <class name="WindowGroup" ctype="GtkWindowGroup" parent="GtkGObject.Object" render="1">
     <constructor name="new" cid="gtk_window_group_new" render="0"/>
     <method name="add_window" cid="gtk_window_group_add_window" render="0"/>
     <method name="get_current_device_grab" cid="gtk_window_group_get_current_device_grab" render="0"/>
