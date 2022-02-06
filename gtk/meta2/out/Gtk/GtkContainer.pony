@@ -1,8 +1,10 @@
+use "../GObject"
+
+use "lib:gtk-3"
 // Constructors
 // Methods
 use @gtk_container_add[None](container: Pointer[GObject] tag, widget: Pointer[GObject] tag)
 // Functions
-use "../GObject"
 
 
 class GtkContainer is GtkContainerInterface

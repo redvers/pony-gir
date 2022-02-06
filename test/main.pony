@@ -10,8 +10,6 @@ use "GObject"
 //use "HarfBuzz"
 //use "Pango"
 
-use "lib:gtk-3"
-
 actor Main
   new create(env: Env) =>
     Gtk.init(Pointer[I32], Pointer[Pointer[U8]])

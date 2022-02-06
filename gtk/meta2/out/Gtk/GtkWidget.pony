@@ -1,9 +1,11 @@
+use "../GObject"
+
+use "lib:gtk-3"
 // Constructors
 // Methods
 use @gtk_widget_destroy[None](widget: Pointer[GObject] tag)
 use @gtk_widget_show_all[None](widget: Pointer[GObject] tag)
 // Functions
-use "../GObject"
 
 
 class GtkWidget is GtkWidgetInterface

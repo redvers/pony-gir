@@ -1,8 +1,10 @@
+use "../GObject"
+
+use "lib:gtk-3"
 // Constructors
 // Methods
 use @gtk_bin_get_child[Pointer[GObject] tag](bin: Pointer[GObject] tag)
 // Functions
-use "../GObject"
 
 
 class GtkBin is GtkBinInterface

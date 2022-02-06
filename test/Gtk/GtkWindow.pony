@@ -1,3 +1,6 @@
+use "../GObject"
+
+use "lib:gtk-3"
 // Constructors
 use @gtk_window_new[Pointer[GObject] tag](gtype: I32)
 // Methods
@@ -7,7 +10,6 @@ use @gtk_window_get_title[Pointer[U8]](window: Pointer[GObject] tag)
 use @gtk_window_set_title[None](window: Pointer[GObject] tag, title: Pointer[U8] tag)
 // Functions
 use @gtk_window_set_interactive_debugging[None](enable: I32)
-use "../GObject"
 
 
 class GtkWindow is GtkWindowInterface
