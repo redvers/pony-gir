@@ -1,8 +1,10 @@
-all:	gtkclass
+all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 g10
 
-gtkclass:
+g0:
 	sh -x mkclass GObject Object G
 	sh -x mkclass Gio Application G
+
+g1:
 	sh -x mkclass Gtk AboutDialog Gtk
 #	sh -x mkclass Gtk AccelGroup Gtk
 #	sh -x mkclass Gtk AccelLabel Gtk
@@ -17,15 +19,21 @@ gtkclass:
 #	sh -x mkclass Gtk AppChooserDialog Gtk
 #	sh -x mkclass Gtk AppChooserWidget Gtk
 	sh -x mkclass Gtk Application Gtk
+
+g2:
 	sh -x mkclass Gtk ApplicationWindow Gtk
 #	sh -x mkclass Gtk Arrow Gtk
 #	sh -x mkclass Gtk ArrowAccessible Gtk
 #	sh -x mkclass Gtk AspectFrame Gtk
 #	sh -x mkclass Gtk Assistant Gtk
 	sh -x mkclass Gtk Bin Gtk
+
+g3:
 #	sh -x mkclass Gtk BooleanCellAccessible Gtk
 	sh -x mkclass Gtk Box Gtk
 	sh -x mkclass Gtk Builder Gtk
+
+g4:
 	sh -x mkclass Gtk Button Gtk
 #	sh -x mkclass Gtk ButtonAccessible Gtk
 	sh -x mkclass Gtk ButtonBox Gtk
@@ -56,6 +64,8 @@ gtkclass:
 #	sh -x mkclass Gtk ComboBox Gtk
 #	sh -x mkclass Gtk ComboBoxAccessible Gtk
 #	sh -x mkclass Gtk ComboBoxText Gtk
+
+g5:
 	sh -x mkclass Gtk Container Gtk
 #	sh -x mkclass Gtk ContainerAccessible Gtk
 #	sh -x mkclass Gtk ContainerCellAccessible Gtk
@@ -90,6 +100,8 @@ gtkclass:
 #	sh -x mkclass Gtk FontChooserWidget Gtk
 #	sh -x mkclass Gtk FontSelection Gtk
 #	sh -x mkclass Gtk FontSelectionDialog Gtk
+
+g6:
 	sh -x mkclass Gtk Frame Gtk
 #	sh -x mkclass Gtk FrameAccessible Gtk
 #	sh -x mkclass Gtk GLArea Gtk
@@ -105,6 +117,8 @@ gtkclass:
 #	sh -x mkclass Gtk GestureZoom Gtk
 #	sh -x mkclass Gtk Grid Gtk
 	sh -x mkclass Gtk HBox Gtk
+
+g7:
 	sh -x mkclass Gtk HButtonBox Gtk
 	sh -x mkclass Gtk HPaned Gtk
 #	sh -x mkclass Gtk HSV Gtk
@@ -123,6 +137,9 @@ gtkclass:
 #	sh -x mkclass Gtk IconView Gtk
 #	sh -x mkclass Gtk IconViewAccessible Gtk
 #	sh -x mkclass Gtk Image Gtk
+
+
+g8:
 #	sh -x mkclass Gtk ImageAccessible Gtk
 #	sh -x mkclass Gtk ImageCellAccessible Gtk
 #	sh -x mkclass Gtk ImageMenuItem Gtk
@@ -165,6 +182,8 @@ gtkclass:
 #	sh -x mkclass Gtk Overlay Gtk
 #	sh -x mkclass Gtk PadController Gtk
 #	sh -x mkclass Gtk PageSetup Gtk
+
+g9:
 	sh -x mkclass Gtk Paned Gtk
 #	sh -x mkclass Gtk PanedAccessible Gtk
 #	sh -x mkclass Gtk PlacesSidebar Gtk
@@ -270,6 +289,8 @@ gtkclass:
 #	sh -x mkclass Gtk VSeparator Gtk
 #	sh -x mkclass Gtk Viewport Gtk
 #	sh -x mkclass Gtk VolumeButton Gtk
+
+g10:
 	sh -x mkclass Gtk Widget Gtk
 #	sh -x mkclass Gtk WidgetAccessible Gtk
 	sh -x mkclass Gtk Window Gtk
