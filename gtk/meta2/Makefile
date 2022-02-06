@@ -1,61 +1,52 @@
+all:	gbase
 
 gtkclass:
-	sh -x mkclass Gtk GtkButton
-	sh -x mkclass Gtk GtkWindow
-	sh -x mkclass Gtk GtkBin
-	sh -x mkclass Gtk GtkContainer
-	sh -x mkclass Gtk GtkWidget
-	sh -x mkclass GObject GObject
-	rm ../../test/GObject/GObject.pony
-	cp out/Gtk/* ../../test/Gtk/
-	cp out/GObject/GObject.pony ../../test/GObject/
-	rm ../../test/Gtk/*fn.pony
-	rm ../../test/Gtk/*use.pony
-#	cp out/GObject/* ../../test/GObject/
-#	saxon-he -xi main.xml xsl/makeclassuse.xsl ns=Gtk class=GtkWindow > out/Gtk/GtkWindow.pony
-#	saxon-he -xi main.xml xsl/makeconstructors.xsl ns=Gtk class=GtkWindow >> out/Gtk/GtkWindow.pony
-#	saxon-he -xi main.xml xsl/makemethods.xsl ns=Gtk class=GtkWindow >> out/Gtk/GtkWindow.pony
-	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
-	cat out/Gtk/Gtk-use.pony out/Gtk/Gtk-fn.pony > ../../test/Gtk/Gtk.pony
+	sh -x mkclass Gtk Button Gtk
+	sh -x mkclass Gtk Window Gtk
+	sh -x mkclass Gtk Bin Gtk
+	sh -x mkclass Gtk Container Gtk
+	sh -x mkclass Gtk Widget Gtk
+	sh -x mkclass GObject Object G
 
-#gobjectbase:
-#	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject
+gbase:
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gio
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GLib
 #	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject
 #	cat out/GObject/GObject-use.pony out/GObject/GObject-fn.pony > ../../test/GObject/GObject.pony
 
 gtkbase:
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk
-	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk
-	cat out/Gtk/Gtk-use.pony out/Gtk/Gtk-fn.pony > ../../test/Gtk/Gtk.pony
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk > ../../test/Gtk/Gtk.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk   >> ../../test/Gtk/Gtk.pony
 
 
 bitfields:	
 	find ../../test/* -name 'B*.pony' -exec rm -f {} \;
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gtk
-	saxon-he -xi main.xml xsl/bitfield.xsl ns=Atk
-	saxon-he -xi main.xml xsl/bitfield.xsl ns=cairo
+#	saxon-he -xi main.xml xsl/bitfield.xsl ns=Atk
+#	saxon-he -xi main.xml xsl/bitfield.xsl ns=cairo
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gdk
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=GdkPixbuf
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gio
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=GLib
-	saxon-he -xi main.xml xsl/bitfield.xsl ns=GModule
+#	saxon-he -xi main.xml xsl/bitfield.xsl ns=GModule
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=GObject
 #	saxon-he -xi main.xml xsl/bitfield.xsl ns=HarfBuzz
-	saxon-he -xi main.xml xsl/bitfield.xsl ns=Pango
+#	saxon-he -xi main.xml xsl/bitfield.xsl ns=Pango
 
 enumerations:	
 	find ../../test/* -name 'E*.pony' -exec rm -f {} \;
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=Gtk
-	saxon-he -xi main.xml xsl/enumeration.xsl ns=Atk
-	saxon-he -xi main.xml xsl/enumeration.xsl ns=cairo
+#	saxon-he -xi main.xml xsl/enumeration.xsl ns=Atk
+#	saxon-he -xi main.xml xsl/enumeration.xsl ns=cairo
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=Gdk
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=GdkPixbuf
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=Gio
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=GLib
-	saxon-he -xi main.xml xsl/enumeration.xsl ns=GModule
+#	saxon-he -xi main.xml xsl/enumeration.xsl ns=GModule
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=GObject
 #	saxon-he -xi main.xml xsl/enumeration.xsl ns=HarfBuzz
-	saxon-he -xi main.xml xsl/enumeration.xsl ns=Pango
+#	saxon-he -xi main.xml xsl/enumeration.xsl ns=Pango
 
 clean:
 	mv ../../test/main.pony ../../test/main-ponyx

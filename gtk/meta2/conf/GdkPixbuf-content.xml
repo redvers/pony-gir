@@ -1,4 +1,4 @@
-<ns ns="GdkPixbuf">
+<ns ns="GdkPixbuf" p="Gdk">
   <enumeration name="Colorspace" render="1">     <member name="rgb" value="0" cid="GDK_COLORSPACE_RGB" glibnick="rgb" glibname="GDK_COLORSPACE_RGB"/>
   </enumeration>
   <function-macro name="IS_PIXBUF" render="0">   </function-macro>

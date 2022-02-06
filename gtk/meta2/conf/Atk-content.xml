@@ -1,4 +1,4 @@
-<ns ns="Atk">
+<ns ns="Atk" p="Atk">
   <alias name="AttributeSet" render="0">   </alias>
   <alias name="State" render="0">   </alias>
   <function-macro name="ACTION" render="0">   </function-macro>

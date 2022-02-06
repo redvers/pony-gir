@@ -1,4 +1,4 @@
-<ns ns="GLib">
+<ns ns="GLib" p="G">
   <alias name="DateDay" render="0">   </alias>
   <alias name="DateYear" render="0">   </alias>
   <alias name="MainContextPusher" render="0">   </alias>
@@ -791,7 +791,7 @@
     <member name="failed" value="8" cid="G_IO_CHANNEL_ERROR_FAILED" glibnick="" glibname=""/>
   </enumeration>
   <bitfield name="IOCondition" glibtypename="GIOCondition" ctype="GIOCondition" render="1">
-    <member name="in" value="1" cid="G_IO_IN" glibnick="in" glibname="G_IO_IN"/>
+    <member name="gin" value="1" cid="G_IO_IN" glibnick="in" glibname="G_IO_IN"/>
     <member name="out" value="4" cid="G_IO_OUT" glibnick="out" glibname="G_IO_OUT"/>
     <member name="pri" value="2" cid="G_IO_PRI" glibnick="pri" glibname="G_IO_PRI"/>
     <member name="err" value="8" cid="G_IO_ERR" glibnick="err" glibname="G_IO_ERR"/>
@@ -825,7 +825,7 @@
     <field name="io_set_flags"/>
     <field name="io_get_flags"/>
   </record>
-  <enumeration name="IOStatus" render="0">     <member name="error" value="0" cid="G_IO_STATUS_ERROR" glibnick="" glibname=""/>
+  <enumeration name="IOStatus" render="0">     <member name="gerror" value="0" cid="G_IO_STATUS_ERROR" glibnick="" glibname=""/>
     <member name="normal" value="1" cid="G_IO_STATUS_NORMAL" glibnick="" glibname=""/>
     <member name="eof" value="2" cid="G_IO_STATUS_EOF" glibnick="" glibname=""/>
     <member name="again" value="3" cid="G_IO_STATUS_AGAIN" glibnick="" glibname=""/>
@@ -1102,7 +1102,7 @@
     <field name="end_element"/>
     <field name="text"/>
     <field name="passthrough"/>
-    <field name="error"/>
+    <field name="gerror"/>
   </record>
   <record name="MatchInfo" gtypestructfor="" ctype="GMatchInfo" render="0">
     <method name="expand_references" cid="g_match_info_expand_references" render="0"/>
@@ -1625,7 +1625,7 @@
     <method name="cur_value" cid="g_scanner_cur_value" render="0"/>
     <method name="destroy" cid="g_scanner_destroy" render="0"/>
     <method name="eof" cid="g_scanner_eof" render="0"/>
-    <method name="error" cid="g_scanner_error" render="0"/>
+    <method name="gerror" cid="g_scanner_error" render="0"/>
     <method name="get_next_token" cid="g_scanner_get_next_token" render="0"/>
     <method name="input_file" cid="g_scanner_input_file" render="0"/>
     <method name="input_text" cid="g_scanner_input_text" render="0"/>
@@ -1673,7 +1673,7 @@
   <callback name="ScannerMsgFunc" ctype="GScannerMsgFunc" render="0">  </callback>
   <enumeration name="SeekType" render="0">     <member name="cur" value="0" cid="G_SEEK_CUR" glibnick="" glibname=""/>
     <member name="set" value="1" cid="G_SEEK_SET" glibnick="" glibname=""/>
-    <member name="end" value="2" cid="G_SEEK_END" glibnick="" glibname=""/>
+    <member name="gend" value="2" cid="G_SEEK_END" glibnick="" glibname=""/>
   </enumeration>
   <record name="Sequence" gtypestructfor="" ctype="GSequence" render="0">
     <method name="append" cid="g_sequence_append" render="0"/>
@@ -1933,7 +1933,7 @@
     <method name="free" cid="g_test_log_msg_free" render="0"/>
   </record>
   <enumeration name="TestLogType" render="0">     <member name="none" value="0" cid="G_TEST_LOG_NONE" glibnick="" glibname=""/>
-    <member name="error" value="1" cid="G_TEST_LOG_ERROR" glibnick="" glibname=""/>
+    <member name="gerror" value="1" cid="G_TEST_LOG_ERROR" glibnick="" glibname=""/>
     <member name="start_binary" value="2" cid="G_TEST_LOG_START_BINARY" glibnick="" glibname=""/>
     <member name="list_case" value="3" cid="G_TEST_LOG_LIST_CASE" glibnick="" glibname=""/>
     <member name="skip_case" value="4" cid="G_TEST_LOG_SKIP_CASE" glibnick="" glibname=""/>
@@ -2046,7 +2046,7 @@
     <member name="equal_sign" value="61" cid="G_TOKEN_EQUAL_SIGN" glibnick="" glibname=""/>
     <member name="comma" value="44" cid="G_TOKEN_COMMA" glibnick="" glibname=""/>
     <member name="none" value="256" cid="G_TOKEN_NONE" glibnick="" glibname=""/>
-    <member name="error" value="257" cid="G_TOKEN_ERROR" glibnick="" glibname=""/>
+    <member name="gerror" value="257" cid="G_TOKEN_ERROR" glibnick="" glibname=""/>
     <member name="char" value="258" cid="G_TOKEN_CHAR" glibnick="" glibname=""/>
     <member name="binary" value="259" cid="G_TOKEN_BINARY" glibnick="" glibname=""/>
     <member name="octal" value="260" cid="G_TOKEN_OCTAL" glibnick="" glibname=""/>
@@ -3307,7 +3307,7 @@
   </function>
   <function name="main_current_source" cid="g_main_current_source" render="0">
   </function>
-  <function name="main_depth" cid="g_main_depth" render="0">
+  <function name="main_depth" cid="g_main_depth" render="1">
   </function>
   <function name="malloc" cid="g_malloc" render="0">
   </function>

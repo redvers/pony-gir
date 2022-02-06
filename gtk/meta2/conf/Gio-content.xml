@@ -1,4 +1,4 @@
-<ns ns="Gio">
+<ns ns="Gio" p="G">
   <function-macro name="ACTION" render="0">   </function-macro>
   <function-macro name="ACTION_GET_IFACE" render="0">   </function-macro>
   <function-macro name="ACTION_GROUP" render="0">   </function-macro>
@@ -638,7 +638,7 @@
   </record>
   <record name="ConverterOutputStreamPrivate" gtypestructfor="" ctype="GConverterOutputStreamPrivate" render="0">
   </record>
-  <enumeration name="ConverterResult" render="1">     <member name="error" value="0" cid="G_CONVERTER_ERROR" glibnick="error" glibname="G_CONVERTER_ERROR"/>
+  <enumeration name="ConverterResult" render="1">     <member name="gerror" value="0" cid="G_CONVERTER_ERROR" glibnick="error" glibname="G_CONVERTER_ERROR"/>
     <member name="converted" value="1" cid="G_CONVERTER_CONVERTED" glibnick="converted" glibname="G_CONVERTER_CONVERTED"/>
     <member name="finished" value="2" cid="G_CONVERTER_FINISHED" glibnick="finished" glibname="G_CONVERTER_FINISHED"/>
     <member name="flushed" value="3" cid="G_CONVERTER_FLUSHED" glibnick="flushed" glibname="G_CONVERTER_FLUSHED"/>
@@ -1024,7 +1024,7 @@
   </bitfield>
   <enumeration name="DBusMessageHeaderField" render="1">     <member name="invalid" value="0" cid="G_DBUS_MESSAGE_HEADER_FIELD_INVALID" glibnick="invalid" glibname="G_DBUS_MESSAGE_HEADER_FIELD_INVALID"/>
     <member name="path" value="1" cid="G_DBUS_MESSAGE_HEADER_FIELD_PATH" glibnick="path" glibname="G_DBUS_MESSAGE_HEADER_FIELD_PATH"/>
-    <member name="interface" value="2" cid="G_DBUS_MESSAGE_HEADER_FIELD_INTERFACE" glibnick="interface" glibname="G_DBUS_MESSAGE_HEADER_FIELD_INTERFACE"/>
+    <member name="ginterface" value="2" cid="G_DBUS_MESSAGE_HEADER_FIELD_INTERFACE" glibnick="interface" glibname="G_DBUS_MESSAGE_HEADER_FIELD_INTERFACE"/>
     <member name="member" value="3" cid="G_DBUS_MESSAGE_HEADER_FIELD_MEMBER" glibnick="member" glibname="G_DBUS_MESSAGE_HEADER_FIELD_MEMBER"/>
     <member name="error_name" value="4" cid="G_DBUS_MESSAGE_HEADER_FIELD_ERROR_NAME" glibnick="error-name" glibname="G_DBUS_MESSAGE_HEADER_FIELD_ERROR_NAME"/>
     <member name="reply_serial" value="5" cid="G_DBUS_MESSAGE_HEADER_FIELD_REPLY_SERIAL" glibnick="reply-serial" glibname="G_DBUS_MESSAGE_HEADER_FIELD_REPLY_SERIAL"/>
@@ -1036,7 +1036,7 @@
   <enumeration name="DBusMessageType" render="1">     <member name="invalid" value="0" cid="G_DBUS_MESSAGE_TYPE_INVALID" glibnick="invalid" glibname="G_DBUS_MESSAGE_TYPE_INVALID"/>
     <member name="method_call" value="1" cid="G_DBUS_MESSAGE_TYPE_METHOD_CALL" glibnick="method-call" glibname="G_DBUS_MESSAGE_TYPE_METHOD_CALL"/>
     <member name="method_return" value="2" cid="G_DBUS_MESSAGE_TYPE_METHOD_RETURN" glibnick="method-return" glibname="G_DBUS_MESSAGE_TYPE_METHOD_RETURN"/>
-    <member name="error" value="3" cid="G_DBUS_MESSAGE_TYPE_ERROR" glibnick="error" glibname="G_DBUS_MESSAGE_TYPE_ERROR"/>
+    <member name="gerror" value="3" cid="G_DBUS_MESSAGE_TYPE_ERROR" glibnick="error" glibname="G_DBUS_MESSAGE_TYPE_ERROR"/>
     <member name="signal" value="4" cid="G_DBUS_MESSAGE_TYPE_SIGNAL" glibnick="signal" glibname="G_DBUS_MESSAGE_TYPE_SIGNAL"/>
   </enumeration>
   <record name="DBusMethodInfo" gtypestructfor="" ctype="GDBusMethodInfo" render="0">
@@ -1724,7 +1724,7 @@
   <enumeration name="EmblemOrigin" render="1">     <member name="unknown" value="0" cid="G_EMBLEM_ORIGIN_UNKNOWN" glibnick="unknown" glibname="G_EMBLEM_ORIGIN_UNKNOWN"/>
     <member name="device" value="1" cid="G_EMBLEM_ORIGIN_DEVICE" glibnick="device" glibname="G_EMBLEM_ORIGIN_DEVICE"/>
     <member name="livemetadata" value="2" cid="G_EMBLEM_ORIGIN_LIVEMETADATA" glibnick="livemetadata" glibname="G_EMBLEM_ORIGIN_LIVEMETADATA"/>
-    <member name="tag" value="3" cid="G_EMBLEM_ORIGIN_TAG" glibnick="tag" glibname="G_EMBLEM_ORIGIN_TAG"/>
+    <member name="gtag" value="3" cid="G_EMBLEM_ORIGIN_TAG" glibnick="tag" glibname="G_EMBLEM_ORIGIN_TAG"/>
   </enumeration>
   <class name="EmblemedIcon" ctype="GEmblemedIcon" parent="GObject.Object" render="0">
     <implements name="Icon" render="0"/>
@@ -2129,7 +2129,7 @@
     <member name="int32" value="5" cid="G_FILE_ATTRIBUTE_TYPE_INT32" glibnick="int32" glibname="G_FILE_ATTRIBUTE_TYPE_INT32"/>
     <member name="uint64" value="6" cid="G_FILE_ATTRIBUTE_TYPE_UINT64" glibnick="uint64" glibname="G_FILE_ATTRIBUTE_TYPE_UINT64"/>
     <member name="int64" value="7" cid="G_FILE_ATTRIBUTE_TYPE_INT64" glibnick="int64" glibname="G_FILE_ATTRIBUTE_TYPE_INT64"/>
-    <member name="object" value="8" cid="G_FILE_ATTRIBUTE_TYPE_OBJECT" glibnick="object" glibname="G_FILE_ATTRIBUTE_TYPE_OBJECT"/>
+    <member name="gobject" value="8" cid="G_FILE_ATTRIBUTE_TYPE_OBJECT" glibnick="object" glibname="G_FILE_ATTRIBUTE_TYPE_OBJECT"/>
     <member name="stringv" value="9" cid="G_FILE_ATTRIBUTE_TYPE_STRINGV" glibnick="stringv" glibname="G_FILE_ATTRIBUTE_TYPE_STRINGV"/>
   </enumeration>
   <bitfield name="FileCopyFlags" glibtypename="GFileCopyFlags" ctype="GFileCopyFlags" render="1">
@@ -3912,7 +3912,7 @@
     <property name="enabled" cid="" render="0"/>
     <property name="invert-boolean" cid="" render="0"/>
     <property name="name" cid="" render="0"/>
-    <property name="object" cid="" render="0"/>
+    <property name="gobject" cid="" render="0"/>
     <property name="parameter-type" cid="" render="0"/>
     <property name="property-name" cid="" render="0"/>
     <property name="state" cid="" render="0"/>
@@ -5771,7 +5771,7 @@
   <record name="ZlibDecompressorClass" gtypestructfor="ZlibDecompressor" ctype="GZlibDecompressorClass" render="0">
     <field name="parent_class"/>
   </record>
-  <function name="action_name_is_valid" cid="g_action_name_is_valid" render="0">
+  <function name="action_name_is_valid" cid="g_action_name_is_valid" render="1">
   </function>
   <function name="action_parse_detailed_name" cid="g_action_parse_detailed_name" render="0">
   </function>

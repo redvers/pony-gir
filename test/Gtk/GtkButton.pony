@@ -1,4 +1,4 @@
-use "../GObject"
+use "../G"
 
 use "lib:gtk-3"
 // Constructors

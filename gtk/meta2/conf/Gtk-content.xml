@@ -1,4 +1,4 @@
-<ns ns="Gtk">
+<ns ns="Gtk" p ="Gtk">
   <alias name="Allocation" render="0">   </alias>
   <alias name="Stock" render="0">   </alias>
   <function-macro name="ABOUT_DIALOG" render="0">   </function-macro>
@@ -492,7 +492,7 @@
   </record>
   <enumeration name="Align" render="1">     <member name="fill" value="0" cid="GTK_ALIGN_FILL" glibnick="fill" glibname="GTK_ALIGN_FILL"/>
     <member name="start" value="1" cid="GTK_ALIGN_START" glibnick="start" glibname="GTK_ALIGN_START"/>
-    <member name="end" value="2" cid="GTK_ALIGN_END" glibnick="end" glibname="GTK_ALIGN_END"/>
+    <member name="gend" value="2" cid="GTK_ALIGN_END" glibnick="end" glibname="GTK_ALIGN_END"/>
     <member name="center" value="3" cid="GTK_ALIGN_CENTER" glibnick="center" glibname="GTK_ALIGN_CENTER"/>
     <member name="baseline" value="4" cid="GTK_ALIGN_BASELINE" glibnick="baseline" glibname="GTK_ALIGN_BASELINE"/>
   </enumeration>
@@ -724,7 +724,7 @@
   </record>
   <enumeration name="ArrowPlacement"  render="1">     <member name="both" value="0" cid="GTK_ARROWS_BOTH" glibnick="both" glibname="GTK_ARROWS_BOTH"/>
     <member name="start" value="1" cid="GTK_ARROWS_START" glibnick="start" glibname="GTK_ARROWS_START"/>
-    <member name="end" value="2" cid="GTK_ARROWS_END" glibnick="end" glibname="GTK_ARROWS_END"/>
+    <member name="gend" value="2" cid="GTK_ARROWS_END" glibnick="end" glibname="GTK_ARROWS_END"/>
   </enumeration>
   <record name="ArrowPrivate" gtypestructfor="" ctype="GtkArrowPrivate" render="0">
   </record>
@@ -1172,7 +1172,7 @@
   <enumeration name="ButtonBoxStyle"  render="1">     <member name="spread" value="1" cid="GTK_BUTTONBOX_SPREAD" glibnick="spread" glibname="GTK_BUTTONBOX_SPREAD"/>
     <member name="edge" value="2" cid="GTK_BUTTONBOX_EDGE" glibnick="edge" glibname="GTK_BUTTONBOX_EDGE"/>
     <member name="start" value="3" cid="GTK_BUTTONBOX_START" glibnick="start" glibname="GTK_BUTTONBOX_START"/>
-    <member name="end" value="4" cid="GTK_BUTTONBOX_END" glibnick="end" glibname="GTK_BUTTONBOX_END"/>
+    <member name="gend" value="4" cid="GTK_BUTTONBOX_END" glibnick="end" glibname="GTK_BUTTONBOX_END"/>
     <member name="center" value="5" cid="GTK_BUTTONBOX_CENTER" glibnick="center" glibname="GTK_BUTTONBOX_CENTER"/>
     <member name="expand" value="6" cid="GTK_BUTTONBOX_EXPAND" glibnick="expand" glibname="GTK_BUTTONBOX_EXPAND"/>
   </enumeration>
@@ -2679,7 +2679,7 @@
     <member name="user_cancelled" value="2" cid="GTK_DRAG_RESULT_USER_CANCELLED" glibnick="user-cancelled" glibname="GTK_DRAG_RESULT_USER_CANCELLED"/>
     <member name="timeout_expired" value="3" cid="GTK_DRAG_RESULT_TIMEOUT_EXPIRED" glibnick="timeout-expired" glibname="GTK_DRAG_RESULT_TIMEOUT_EXPIRED"/>
     <member name="grab_broken" value="4" cid="GTK_DRAG_RESULT_GRAB_BROKEN" glibnick="grab-broken" glibname="GTK_DRAG_RESULT_GRAB_BROKEN"/>
-    <member name="error" value="5" cid="GTK_DRAG_RESULT_ERROR" glibnick="error" glibname="GTK_DRAG_RESULT_ERROR"/>
+    <member name="gerror" value="5" cid="GTK_DRAG_RESULT_ERROR" glibnick="error" glibname="GTK_DRAG_RESULT_ERROR"/>
   </enumeration>
   <class name="DrawingArea" ctype="GtkDrawingArea" parent="GtkWidget" render="0">
     <implements name="Atk.ImplementorIface" render="0"/>
@@ -3975,7 +3975,7 @@
     <property name="window" cid="" render="0"/>
     <glibsignal name="begin" when="last" render="0"/>
     <glibsignal name="cancel" when="last" render="0"/>
-    <glibsignal name="end" when="last" render="0"/>
+    <glibsignal name="gend" when="last" render="0"/>
     <glibsignal name="sequence-state-changed" when="last" render="0"/>
     <glibsignal name="update" when="last" render="0"/>
   </class>
@@ -6439,7 +6439,7 @@
   <enumeration name="MessageType"  render="1">     <member name="info" value="0" cid="GTK_MESSAGE_INFO" glibnick="info" glibname="GTK_MESSAGE_INFO"/>
     <member name="warning" value="1" cid="GTK_MESSAGE_WARNING" glibnick="warning" glibname="GTK_MESSAGE_WARNING"/>
     <member name="question" value="2" cid="GTK_MESSAGE_QUESTION" glibnick="question" glibname="GTK_MESSAGE_QUESTION"/>
-    <member name="error" value="3" cid="GTK_MESSAGE_ERROR" glibnick="error" glibname="GTK_MESSAGE_ERROR"/>
+    <member name="gerror" value="3" cid="GTK_MESSAGE_ERROR" glibnick="error" glibname="GTK_MESSAGE_ERROR"/>
     <member name="other" value="4" cid="GTK_MESSAGE_OTHER" glibnick="other" glibname="GTK_MESSAGE_OTHER"/>
   </enumeration>
   <class name="Misc" ctype="GtkMisc" parent="GtkWidget" render="0">
@@ -6876,7 +6876,7 @@
     <member name="btt" value="3" cid="GTK_PACK_DIRECTION_BTT" glibnick="btt" glibname="GTK_PACK_DIRECTION_BTT"/>
   </enumeration>
   <enumeration name="PackType"  render="1">     <member name="start" value="0" cid="GTK_PACK_START" glibnick="start" glibname="GTK_PACK_START"/>
-    <member name="end" value="1" cid="GTK_PACK_END" glibnick="end" glibname="GTK_PACK_END"/>
+    <member name="gend" value="1" cid="GTK_PACK_END" glibnick="end" glibname="GTK_PACK_END"/>
   </enumeration>
   <record name="PadActionEntry" gtypestructfor="" ctype="GtkPadActionEntry" render="0">
     <field name="type"/>
@@ -6905,7 +6905,7 @@
   </enumeration>
   <record name="PageRange" gtypestructfor="" ctype="GtkPageRange" render="0">
     <field name="start"/>
-    <field name="end"/>
+    <field name="gend"/>
   </record>
   <enumeration name="PageSet"  render="1">     <member name="all" value="0" cid="GTK_PAGE_SET_ALL" glibnick="all" glibname="GTK_PAGE_SET_ALL"/>
     <member name="even" value="1" cid="GTK_PAGE_SET_EVEN" glibnick="even" glibname="GTK_PAGE_SET_EVEN"/>
@@ -7044,7 +7044,7 @@
   </enumeration>
   <enumeration name="PathType"  render="1">     <member name="widget" value="0" cid="GTK_PATH_WIDGET" glibnick="widget" glibname="GTK_PATH_WIDGET"/>
     <member name="widget_class" value="1" cid="GTK_PATH_WIDGET_CLASS" glibnick="widget-class" glibname="GTK_PATH_WIDGET_CLASS"/>
-    <member name="class" value="2" cid="GTK_PATH_CLASS" glibnick="class" glibname="GTK_PATH_CLASS"/>
+    <member name="gclass" value="2" cid="GTK_PATH_CLASS" glibnick="class" glibname="GTK_PATH_CLASS"/>
   </enumeration>
   <bitfield name="PlacesOpenFlags" glibtypename="GtkPlacesOpenFlags" ctype="GtkPlacesOpenFlags" render="1">
     <member name="normal" value="1" cid="GTK_PLACES_OPEN_NORMAL" glibnick="normal" glibname="GTK_PLACES_OPEN_NORMAL"/>
@@ -7371,7 +7371,7 @@
   </record>
   <record name="PrintOperationPrivate" gtypestructfor="" ctype="GtkPrintOperationPrivate" render="0">
   </record>
-  <enumeration name="PrintOperationResult"  render="1">     <member name="error" value="0" cid="GTK_PRINT_OPERATION_RESULT_ERROR" glibnick="error" glibname="GTK_PRINT_OPERATION_RESULT_ERROR"/>
+  <enumeration name="PrintOperationResult"  render="1">     <member name="gerror" value="0" cid="GTK_PRINT_OPERATION_RESULT_ERROR" glibnick="error" glibname="GTK_PRINT_OPERATION_RESULT_ERROR"/>
     <member name="apply" value="1" cid="GTK_PRINT_OPERATION_RESULT_APPLY" glibnick="apply" glibname="GTK_PRINT_OPERATION_RESULT_APPLY"/>
     <member name="cancel" value="2" cid="GTK_PRINT_OPERATION_RESULT_CANCEL" glibnick="cancel" glibname="GTK_PRINT_OPERATION_RESULT_CANCEL"/>
     <member name="in_progress" value="3" cid="GTK_PRINT_OPERATION_RESULT_IN_PROGRESS" glibnick="in-progress" glibname="GTK_PRINT_OPERATION_RESULT_IN_PROGRESS"/>
@@ -7874,7 +7874,7 @@
     <member name="bind" value="290" cid="GTK_RC_TOKEN_BIND" glibnick="bind" glibname="GTK_RC_TOKEN_BIND"/>
     <member name="widget" value="291" cid="GTK_RC_TOKEN_WIDGET" glibnick="widget" glibname="GTK_RC_TOKEN_WIDGET"/>
     <member name="widget_class" value="292" cid="GTK_RC_TOKEN_WIDGET_CLASS" glibnick="widget-class" glibname="GTK_RC_TOKEN_WIDGET_CLASS"/>
-    <member name="class" value="293" cid="GTK_RC_TOKEN_CLASS" glibnick="class" glibname="GTK_RC_TOKEN_CLASS"/>
+    <member name="gclass" value="293" cid="GTK_RC_TOKEN_CLASS" glibnick="class" glibname="GTK_RC_TOKEN_CLASS"/>
     <member name="lowest" value="294" cid="GTK_RC_TOKEN_LOWEST" glibnick="lowest" glibname="GTK_RC_TOKEN_LOWEST"/>
     <member name="gtk" value="295" cid="GTK_RC_TOKEN_GTK" glibnick="gtk" glibname="GTK_RC_TOKEN_GTK"/>
     <member name="application" value="296" cid="GTK_RC_TOKEN_APPLICATION" glibnick="application" glibname="GTK_RC_TOKEN_APPLICATION"/>
@@ -8690,7 +8690,7 @@
     <member name="page_left" value="12" cid="GTK_SCROLL_PAGE_LEFT" glibnick="page-left" glibname="GTK_SCROLL_PAGE_LEFT"/>
     <member name="page_right" value="13" cid="GTK_SCROLL_PAGE_RIGHT" glibnick="page-right" glibname="GTK_SCROLL_PAGE_RIGHT"/>
     <member name="start" value="14" cid="GTK_SCROLL_START" glibnick="start" glibname="GTK_SCROLL_START"/>
-    <member name="end" value="15" cid="GTK_SCROLL_END" glibnick="end" glibname="GTK_SCROLL_END"/>
+    <member name="gend" value="15" cid="GTK_SCROLL_END" glibnick="end" glibname="GTK_SCROLL_END"/>
   </enumeration>
   <interface name="Scrollable" render="0">     <virtual-method name="get_border" render="0"/>
     <method name="get_border" cid="gtk_scrollable_get_border" render="0"/>
@@ -9053,7 +9053,7 @@
     <field name="value"/>
   </record>
   <enumeration name="ShadowType"  render="1">     <member name="none" value="0" cid="GTK_SHADOW_NONE" glibnick="none" glibname="GTK_SHADOW_NONE"/>
-    <member name="in" value="1" cid="GTK_SHADOW_IN" glibnick="in" glibname="GTK_SHADOW_IN"/>
+    <member name="gin" value="1" cid="GTK_SHADOW_IN" glibnick="in" glibname="GTK_SHADOW_IN"/>
     <member name="out" value="2" cid="GTK_SHADOW_OUT" glibnick="out" glibname="GTK_SHADOW_OUT"/>
     <member name="etched_in" value="3" cid="GTK_SHADOW_ETCHED_IN" glibnick="etched-in" glibname="GTK_SHADOW_ETCHED_IN"/>
     <member name="etched_out" value="4" cid="GTK_SHADOW_ETCHED_OUT" glibnick="etched-out" glibname="GTK_SHADOW_ETCHED_OUT"/>
@@ -9298,7 +9298,7 @@
     <member name="page_forward" value="2" cid="GTK_SPIN_PAGE_FORWARD" glibnick="page-forward" glibname="GTK_SPIN_PAGE_FORWARD"/>
     <member name="page_backward" value="3" cid="GTK_SPIN_PAGE_BACKWARD" glibnick="page-backward" glibname="GTK_SPIN_PAGE_BACKWARD"/>
     <member name="home" value="4" cid="GTK_SPIN_HOME" glibnick="home" glibname="GTK_SPIN_HOME"/>
-    <member name="end" value="5" cid="GTK_SPIN_END" glibnick="end" glibname="GTK_SPIN_END"/>
+    <member name="gend" value="5" cid="GTK_SPIN_END" glibnick="end" glibname="GTK_SPIN_END"/>
     <member name="user_defined" value="6" cid="GTK_SPIN_USER_DEFINED" glibnick="user-defined" glibname="GTK_SPIN_USER_DEFINED"/>
   </enumeration>
   <class name="Spinner" ctype="GtkSpinner" parent="GtkWidget" render="0">
@@ -12728,7 +12728,9 @@
     <method name="get_title" cid="gtk_window_get_title" render="1"/>
     <method name="get_titlebar" cid="gtk_window_get_titlebar" render="0"/>
     <method name="get_transient_for" cid="gtk_window_get_transient_for" render="0"/>
-    <method name="get_type_hint" cid="gtk_window_get_type_hint" render="0"/>
+    <method name="get_type_hint" cid="gtk_window_get_type_hint" render="1"/>
+    <method name="get_type_once" cid="gtk_window_get_type_once" render="1"/>
+    <method name="get_type" cid="gtk_window_get_type" render="1"/>
     <method name="get_urgency_hint" cid="gtk_window_get_urgency_hint" render="0"/>
     <method name="get_window_type" cid="gtk_window_get_window_type" render="0"/>
     <method name="has_group" cid="gtk_window_has_group" render="0"/>

@@ -1,4 +1,4 @@
-<ns ns="Pango">
+<ns ns="Pango" p="Pango">
   <alias name="Glyph" render="0">   </alias>
   <alias name="GlyphUnit" render="0">   </alias>
   <alias name="LayoutRun" render="0">   </alias>

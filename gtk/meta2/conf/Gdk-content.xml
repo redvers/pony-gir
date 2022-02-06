@@ -1,4 +1,4 @@
-<ns ns="Gdk">
+<ns ns="Gdk" p="Gdk">
   <alias name="XEvent" render="0">   </alias>
   <function-macro name="APP_LAUNCH_CONTEXT" render="0">   </function-macro>
   <function-macro name="ATOM_TO_POINTER" render="0">   </function-macro>
@@ -540,7 +540,7 @@
     <field name="type"/>
     <field name="window"/>
     <field name="send_event"/>
-    <field name="in"/>
+    <field name="gin"/>
   </record>
   <callback name="EventFunc" ctype="GdkEventFunc" render="0">  </callback>
   <record name="EventGrabBroken" gtypestructfor="" ctype="GdkEventGrabBroken" render="0">
@@ -3476,7 +3476,7 @@
   </record>
   <enumeration name="TouchpadGesturePhase" render="1">     <member name="begin" value="0" cid="GDK_TOUCHPAD_GESTURE_PHASE_BEGIN" glibnick="begin" glibname="GDK_TOUCHPAD_GESTURE_PHASE_BEGIN"/>
     <member name="update" value="1" cid="GDK_TOUCHPAD_GESTURE_PHASE_UPDATE" glibnick="update" glibname="GDK_TOUCHPAD_GESTURE_PHASE_UPDATE"/>
-    <member name="end" value="2" cid="GDK_TOUCHPAD_GESTURE_PHASE_END" glibnick="end" glibname="GDK_TOUCHPAD_GESTURE_PHASE_END"/>
+    <member name="gend" value="2" cid="GDK_TOUCHPAD_GESTURE_PHASE_END" glibnick="end" glibname="GDK_TOUCHPAD_GESTURE_PHASE_END"/>
     <member name="cancel" value="3" cid="GDK_TOUCHPAD_GESTURE_PHASE_CANCEL" glibnick="cancel" glibname="GDK_TOUCHPAD_GESTURE_PHASE_CANCEL"/>
   </enumeration>
   <function-macro name="UNAVAILABLE" render="0">   </function-macro>

@@ -1,4 +1,4 @@
-<ns ns="GModule">
+<ns ns="GModule" p="G">
   <record name="Module" gtypestructfor="" ctype="GModule" render="0">
     <method name="close" cid="g_module_close" render="0"/>
     <method name="make_resident" cid="g_module_make_resident" render="0"/>

@@ -1,0 +1,34 @@
+
+primitive GdkModifierType
+  fun shift_mask(): U32 => 1
+  fun lock_mask(): U32 => 2
+  fun control_mask(): U32 => 4
+  fun mod1_mask(): U32 => 8
+  fun mod2_mask(): U32 => 16
+  fun mod3_mask(): U32 => 32
+  fun mod4_mask(): U32 => 64
+  fun mod5_mask(): U32 => 128
+  fun button1_mask(): U32 => 256
+  fun button2_mask(): U32 => 512
+  fun button3_mask(): U32 => 1024
+  fun button4_mask(): U32 => 2048
+  fun button5_mask(): U32 => 4096
+  fun modifier_reserved_13_mask(): U32 => 8192
+  fun modifier_reserved_14_mask(): U32 => 16384
+  fun modifier_reserved_15_mask(): U32 => 32768
+  fun modifier_reserved_16_mask(): U32 => 65536
+  fun modifier_reserved_17_mask(): U32 => 131072
+  fun modifier_reserved_18_mask(): U32 => 262144
+  fun modifier_reserved_19_mask(): U32 => 524288
+  fun modifier_reserved_20_mask(): U32 => 1048576
+  fun modifier_reserved_21_mask(): U32 => 2097152
+  fun modifier_reserved_22_mask(): U32 => 4194304
+  fun modifier_reserved_23_mask(): U32 => 8388608
+  fun modifier_reserved_24_mask(): U32 => 16777216
+  fun modifier_reserved_25_mask(): U32 => 33554432
+  fun super_mask(): U32 => 67108864
+  fun hyper_mask(): U32 => 134217728
+  fun meta_mask(): U32 => 268435456
+  fun modifier_reserved_29_mask(): U32 => 536870912
+  fun release_mask(): U32 => 1073741824
+  fun modifier_mask(): U32 => 1543512063

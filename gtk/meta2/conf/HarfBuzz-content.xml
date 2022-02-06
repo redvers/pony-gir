@@ -1,4 +1,4 @@
-<ns ns="HarfBuzz">
+<ns ns="HarfBuzz" p="HB">
   <alias name="bool_t" render="0">   </alias>
   <alias name="codepoint_t" render="0">   </alias>
   <alias name="color_t" render="0">   </alias>

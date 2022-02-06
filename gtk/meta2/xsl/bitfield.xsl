@@ -7,10 +7,11 @@
 <xsl:param name="class"/>
 
 <xsl:template match="/castxml2pony/ns[@ns=$ns]/bitfield[@render='1']">
-  <xsl:result-document href="../../test/{concat($ns, '/B', $ns, @name)}.pony" method="text">
-primitive B<xsl:value-of select="$ns"/><xsl:value-of select="@name"/>
+  <xsl:variable name="p" select="/castxml2pony/ns[@ns=$ns]/@p"/>
+  <xsl:result-document href="../../test/{concat($p, '/', $p, @name)}.pony" method="text">
+primitive <xsl:value-of select="$p"/><xsl:value-of select="@name"/>
 <xsl:for-each select="./member">
-  fun m<xsl:value-of select="@name"/>(): ISize => <xsl:value-of select="@value"/>
+  fun <xsl:value-of select="@name"/>(): U32 => <xsl:value-of select="@value"/>
 </xsl:for-each>
 </xsl:result-document>
 </xsl:template>

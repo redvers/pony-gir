@@ -1,4 +1,4 @@
-use "../GObject"
+use "../G"
 
 use "lib:gtk-3"
 // Constructors
@@ -17,8 +17,4 @@ class GtkBin is GtkBinInterface
 
 interface GtkBinInterface is GtkContainerInterface
   fun apply(): Pointer[GObject] tag
-
-  fun get_child(): GObject =>
-    var ptr: Pointer[GObject] tag =  @gtk_bin_get_child(apply())
-    GObject.from_ptr(ptr)
 

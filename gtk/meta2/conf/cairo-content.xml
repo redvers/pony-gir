@@ -1,4 +1,4 @@
-<ns ns="cairo">
+<ns ns="cairo" p="Cairo">
   <record name="Context" gtypestructfor="" ctype="cairo_t" render="0">
   </record>
   <record name="Device" gtypestructfor="" ctype="cairo_device_t" render="0">
