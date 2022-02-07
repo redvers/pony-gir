@@ -1,22 +1,22 @@
-rm -f ../../test/$3/$3$2.pony
-mkdir -p ../../test/$3
+rm -f ../../test/Gtk/$3$2.pony
+mkdir -p ../../test/Gtk
 
 if test -f "templates/$3.header"; then
-  cat templates/$3.header                                     >> ../../test/$3/$3$2.pony
+  cat templates/$3.header                                     >> ../../test/Gtk/$3$2.pony
 fi
 
 if test -f "templates/$3$2.header"; then
-  cat templates/$3$2.header                                   >> ../../test/$3/$3$2.pony
+  cat templates/$3$2.header                                   >> ../../test/Gtk/$3$2.pony
 fi
 
-saxon-he -xi main.xml xsl/makeclassuse.xsl ns=$1 class=$3$2     >> ../../test/$3/$3$2.pony
-saxon-he -xi main.xml xsl/makeconstructors.xsl ns=$1 class=$3$2 >> ../../test/$3/$3$2.pony
-saxon-he -xi main.xml xsl/makemethods.xsl ns=$1 class=$3$2      >> ../../test/$3/$3$2.pony
+saxon-he -xi main.xml xsl/makeclassuse.xsl ns=$1 class=$3$2     >> ../../test/Gtk/$3$2.pony
+saxon-he -xi main.xml xsl/makeconstructors.xsl ns=$1 class=$3$2 >> ../../test/Gtk/$3$2.pony
+saxon-he -xi main.xml xsl/makemethods.xsl ns=$1 class=$3$2      >> ../../test/Gtk/$3$2.pony
 
 if test -f "templates/$3.footer"; then
-  cat templates/$3.footer                                     >> ../../test/$3/$3$2.pony
+  cat templates/$3.footer                                     >> ../../test/Gtk/$3$2.pony
 fi
 
 if test -f "templates/$3$2.footer"; then
-  cat templates/$3$2.footer                                   >> ../../test/$3/$3$2.pony
+  cat templates/$3$2.footer                                   >> ../../test/Gtk/$3$2.pony
 fi

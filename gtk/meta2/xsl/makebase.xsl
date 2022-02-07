@@ -7,8 +7,8 @@
 <xsl:param name="debug"/>
 
 <xsl:template match="/castxml2pony">
-<!--<xsl:result-document href="out/{concat($ns, '/', $ns)}-fn.pony" method="text"> -->
-  <xsl:text>primitive </xsl:text><xsl:value-of select="$ns"/><xsl:text>&#10;</xsl:text>
+<!--<xsl:result-document href="out/{concat($ns, '/', $ns)}-fn.pony" method="text"> 
+  <xsl:text>primitive </xsl:text><xsl:value-of select="$ns"/><xsl:text>&#10;</xsl:text> -->
   <xsl:for-each select="/castxml2pony/ns[@ns=$ns]/function[@render='1']">
     <xsl:variable name="fnname" select="@cid"/>
     <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="@render"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>

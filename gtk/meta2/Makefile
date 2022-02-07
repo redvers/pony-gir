@@ -1,4 +1,4 @@
-all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9
+all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 gbase gtkbase bitfields enumerations
 
 g0:
 	sh mkclass GObject Object G
@@ -304,14 +304,19 @@ g9:
 #	sh mkclass GdkPixbuf Pixbuf Gdk
 
 gbase:
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gio
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GLib
-#	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject
+	rm -f ../../test/G/G.pony
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject >> ../../test/G/G.pony
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gio     >> ../../test/G/G.pony
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GLib    >> ../../test/G/G.pony
+	echo 'primitive G'                                   >> ../../test/G/G.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject    >> ../../test/G/G.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=Gio        >> ../../test/G/G.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=GLib       >> ../../test/G/G.pony
 #	cat out/GObject/GObject-use.pony out/GObject/GObject-fn.pony > ../../test/GObject/GObject.pony
 
 gtkbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk > ../../test/Gtk/Gtk.pony
+	echo 'primitive Gtk'                            >> ../../test/Gtk/Gtk.pony
 	saxon-he -xi main.xml xsl/makebase.xsl ns=Gtk   >> ../../test/Gtk/Gtk.pony
 
 

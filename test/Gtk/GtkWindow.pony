@@ -75,7 +75,6 @@ use @gtk_window_set_gravity[None](window: NullablePointer[GObjectStruct] tag, gr
 use @gtk_window_set_has_resize_grip[None](window: NullablePointer[GObjectStruct] tag, value: I32)
 use @gtk_window_set_has_user_ref_count[None](window: NullablePointer[GObjectStruct] tag, setting: I32)
 use @gtk_window_set_hide_titlebar_when_maximized[None](window: NullablePointer[GObjectStruct] tag, setting: I32)
-use @gtk_window_set_icon_from_file[I32](window: NullablePointer[GObjectStruct] tag, filename: Pointer[U8] tag, err: GError tag)
 use @gtk_window_set_icon_name[None](window: NullablePointer[GObjectStruct] tag, name: Pointer[U8] tag)
 use @gtk_window_set_keep_above[None](window: NullablePointer[GObjectStruct] tag, setting: I32)
 use @gtk_window_set_keep_below[None](window: NullablePointer[GObjectStruct] tag, setting: I32)
@@ -330,9 +329,6 @@ interface GtkWindowInterface is GtkBinInterface
 
   fun gtk_window_set_hide_titlebar_when_maximized(setting: I32): None =>
     @gtk_window_set_hide_titlebar_when_maximized(apply(), setting)
-
-  fun gtk_window_set_icon_from_file(filename: String, err: GError tag): I32 =>
-    @gtk_window_set_icon_from_file(apply(), filename.cstring(), err)
 
   fun gtk_window_set_icon_name(name: String): None =>
     @gtk_window_set_icon_name(apply(), name.cstring())

@@ -12768,7 +12768,7 @@
     <method name="set_has_user_ref_count" cid="gtk_window_set_has_user_ref_count" render="1"/>
     <method name="set_hide_titlebar_when_maximized" cid="gtk_window_set_hide_titlebar_when_maximized" render="1"/>
     <method name="set_icon" cid="gtk_window_set_icon" render="0"/>
-    <method name="set_icon_from_file" cid="gtk_window_set_icon_from_file" render="1"/>
+    <method name="set_icon_from_file" cid="gtk_window_set_icon_from_file" render="0"/>
     <method name="set_icon_list" cid="gtk_window_set_icon_list" render="0"/>
     <method name="set_icon_name" cid="gtk_window_set_icon_name" render="1"/>
     <method name="set_keep_above" cid="gtk_window_set_keep_above" render="1"/>

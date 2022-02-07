@@ -1207,21 +1207,21 @@
   </function>
   <function name="type_check_instance_is_fundamentally_a" cid="g_type_check_instance_is_fundamentally_a" render="0">
   </function>
-  <function name="type_check_is_value_type" cid="g_type_check_is_value_type" render="1">
+  <function name="type_check_is_value_type" cid="g_type_check_is_value_type" render="0">
   </function>
-  <function name="type_check_value" cid="g_type_check_value" render="1">
+  <function name="type_check_value" cid="g_type_check_value" render="0">
   </function>
-  <function name="type_check_value_holds" cid="g_type_check_value_holds" render="1">
+  <function name="type_check_value_holds" cid="g_type_check_value_holds" render="0">
   </function>
-  <function name="type_children" cid="g_type_children" render="1">
+  <function name="type_children" cid="g_type_children" render="0">
   </function>
   <function name="type_class_adjust_private_offset" cid="g_type_class_adjust_private_offset" render="0">
   </function>
   <function name="type_class_peek" cid="g_type_class_peek" render="1">
   </function>
-  <function name="type_class_peek_static" cid="g_type_class_peek_static" render="1">
+  <function name="type_class_peek_static" cid="g_type_class_peek_static" render="0">
   </function>
-  <function name="type_class_ref" cid="g_type_class_ref" render="1">
+  <function name="type_class_ref" cid="g_type_class_ref" render="0">
   </function>
   <function name="type_create_instance" cid="g_type_create_instance" render="0">
   </function>
@@ -1233,7 +1233,7 @@
   </function>
   <function name="type_depth" cid="g_type_depth" render="1">
   </function>
-  <function name="type_ensure" cid="g_type_ensure" render="1">
+  <function name="type_ensure" cid="g_type_ensure" render="0">
   </function>
   <function name="type_free_instance" cid="g_type_free_instance" render="0">
   </function>
@@ -1267,21 +1267,21 @@
   </function>
   <function name="type_interfaces" cid="g_type_interfaces" render="0">
   </function>
-  <function name="type_is_a" cid="g_type_is_a" render="1">
+  <function name="type_is_a" cid="g_type_is_a" render="0">
   </function>
   <function name="type_name" cid="g_type_name" render="1">
   </function>
-  <function name="type_name_from_class" cid="g_type_name_from_class" render="1">
+  <function name="type_name_from_class" cid="g_type_name_from_class" render="0">
   </function>
-  <function name="type_name_from_instance" cid="g_type_name_from_instance" render="1">
+  <function name="type_name_from_instance" cid="g_type_name_from_instance" render="0">
   </function>
   <function name="type_next_base" cid="g_type_next_base" render="0">
   </function>
-  <function name="type_parent" cid="g_type_parent" render="1">
+  <function name="type_parent" cid="g_type_parent" render="0">
   </function>
   <function name="type_qname" cid="g_type_qname" render="0">
   </function>
-  <function name="type_query" cid="g_type_query" render="1">
+  <function name="type_query" cid="g_type_query" render="0">
   </function>
   <function name="type_register_dynamic" cid="g_type_register_dynamic" render="0">
   </function>
@@ -1304,7 +1304,7 @@
   <docsection name="value_arrays" render="0">   </docsection>
   <function name="value_register_transform_func" cid="g_value_register_transform_func" render="0">
   </function>
-  <function name="value_type_compatible" cid="g_value_type_compatible" render="1">
+  <function name="value_type_compatible" cid="g_value_type_compatible" render="0">
   </function>
   <function name="value_type_transformable" cid="g_value_type_transformable" render="0">
   </function>

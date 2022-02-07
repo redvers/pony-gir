@@ -25,7 +25,7 @@ actor Main
     Gtk.init(Pointer[I32], Pointer[Pointer[U8]])
     let window: GtkWindow = GtkWindow(GtkWindowType.toplevel())
     let button: GtkButton = GtkButton.new_with_label("Press Me")
-/*
+
     window.add(button)
     button.signal_connect[String]("clicked", Main~button_clicked(), "Hello World\n")
     window.signal_connect[String]("destroy", @{(obj: NullablePointer[GObjectStruct] val, data: String): None => Gtk.main_quit()}, "")
@@ -38,11 +38,6 @@ actor Main
     else
       env.out.print("OOf")
     end
-//    env.out.print(recover val String.from_cstring(@g_type_name(@gtk_window_get_type())) end)
-//    env.out.print(@gtk_window_get_type().string())
-//    env.out.print(recover val String.from_cstring(@gtk_widget_get_name(window.apply())) end)
-//    env.out.print(recover val String.from_cstring(@gtk_widget_get_name(button.apply())) end)
-
 
     Gtk.main()
 
@@ -51,4 +46,3 @@ actor Main
     try
     @printf(GObject.from_ptr(obj).pony_type()?.cstring())
     end
-*/
