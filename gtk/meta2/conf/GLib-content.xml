@@ -2691,728 +2691,728 @@
   <constant name="WIN32_MSG_HANDLE" ctype="G_WIN32_MSG_HANDLE" value="19981206" render="0">  </constant>
   <function name="access" cid="g_access" render="0">
   </function>
-  <function-macro name="alloca" render="0">   </function-macro>
-  <function-macro name="alloca0" render="0">   </function-macro>
-  <docsection name="arcbox" render="0">   </docsection>
-  <function-macro name="array_append_val" render="0">   </function-macro>
-  <function-macro name="array_index" render="0">   </function-macro>
-  <function-macro name="array_insert_val" render="0">   </function-macro>
-  <function-macro name="array_prepend_val" render="0">   </function-macro>
-  <docsection name="arrays" render="0">   </docsection>
-  <docsection name="arrays_byte" render="0">   </docsection>
-  <docsection name="arrays_pointer" render="0">   </docsection>
-  <function name="ascii_digit_value" cid="g_ascii_digit_value" render="0">
+  <function-macro name="alloca" render="1">   </function-macro>
+  <function-macro name="alloca0" render="1">   </function-macro>
+  <docsection name="arcbox" render="1">   </docsection>
+  <function-macro name="array_append_val" render="1">   </function-macro>
+  <function-macro name="array_index" render="1">   </function-macro>
+  <function-macro name="array_insert_val" render="1">   </function-macro>
+  <function-macro name="array_prepend_val" render="1">   </function-macro>
+  <docsection name="arrays" render="1">   </docsection>
+  <docsection name="arrays_byte" render="1">   </docsection>
+  <docsection name="arrays_pointer" render="1">   </docsection>
+  <function name="ascii_digit_value" cid="g_ascii_digit_value" render="1">
   </function>
-  <function name="ascii_dtostr" cid="g_ascii_dtostr" render="0">
+  <function name="ascii_dtostr" cid="g_ascii_dtostr" render="1">
   </function>
-  <function name="ascii_formatd" cid="g_ascii_formatd" render="0">
+  <function name="ascii_formatd" cid="g_ascii_formatd" render="1">
   </function>
-  <function-macro name="ascii_isalnum" render="0">   </function-macro>
-  <function-macro name="ascii_isalpha" render="0">   </function-macro>
-  <function-macro name="ascii_iscntrl" render="0">   </function-macro>
-  <function-macro name="ascii_isdigit" render="0">   </function-macro>
-  <function-macro name="ascii_isgraph" render="0">   </function-macro>
-  <function-macro name="ascii_islower" render="0">   </function-macro>
-  <function-macro name="ascii_isprint" render="0">   </function-macro>
-  <function-macro name="ascii_ispunct" render="0">   </function-macro>
-  <function-macro name="ascii_isspace" render="0">   </function-macro>
-  <function-macro name="ascii_isupper" render="0">   </function-macro>
-  <function-macro name="ascii_isxdigit" render="0">   </function-macro>
-  <function name="ascii_strcasecmp" cid="g_ascii_strcasecmp" render="0">
+  <function-macro name="ascii_isalnum" render="1">   </function-macro>
+  <function-macro name="ascii_isalpha" render="1">   </function-macro>
+  <function-macro name="ascii_iscntrl" render="1">   </function-macro>
+  <function-macro name="ascii_isdigit" render="1">   </function-macro>
+  <function-macro name="ascii_isgraph" render="1">   </function-macro>
+  <function-macro name="ascii_islower" render="1">   </function-macro>
+  <function-macro name="ascii_isprint" render="1">   </function-macro>
+  <function-macro name="ascii_ispunct" render="1">   </function-macro>
+  <function-macro name="ascii_isspace" render="1">   </function-macro>
+  <function-macro name="ascii_isupper" render="1">   </function-macro>
+  <function-macro name="ascii_isxdigit" render="1">   </function-macro>
+  <function name="ascii_strcasecmp" cid="g_ascii_strcasecmp" render="1">
   </function>
-  <function name="ascii_strdown" cid="g_ascii_strdown" render="0">
+  <function name="ascii_strdown" cid="g_ascii_strdown" render="1">
   </function>
-  <function name="ascii_string_to_signed" cid="g_ascii_string_to_signed" render="0">
+  <function name="ascii_string_to_signed" cid="g_ascii_string_to_signed" render="1">
   </function>
-  <function name="ascii_string_to_unsigned" cid="g_ascii_string_to_unsigned" render="0">
+  <function name="ascii_string_to_unsigned" cid="g_ascii_string_to_unsigned" render="1">
   </function>
-  <function name="ascii_strncasecmp" cid="g_ascii_strncasecmp" render="0">
+  <function name="ascii_strncasecmp" cid="g_ascii_strncasecmp" render="1">
   </function>
-  <function name="ascii_strtod" cid="g_ascii_strtod" render="0">
+  <function name="ascii_strtod" cid="g_ascii_strtod" render="1">
   </function>
-  <function name="ascii_strtoll" cid="g_ascii_strtoll" render="0">
+  <function name="ascii_strtoll" cid="g_ascii_strtoll" render="1">
   </function>
-  <function name="ascii_strtoull" cid="g_ascii_strtoull" render="0">
+  <function name="ascii_strtoull" cid="g_ascii_strtoull" render="1">
   </function>
-  <function name="ascii_strup" cid="g_ascii_strup" render="0">
+  <function name="ascii_strup" cid="g_ascii_strup" render="1">
   </function>
-  <function name="ascii_tolower" cid="g_ascii_tolower" render="0">
+  <function name="ascii_tolower" cid="g_ascii_tolower" render="1">
   </function>
-  <function name="ascii_toupper" cid="g_ascii_toupper" render="0">
+  <function name="ascii_toupper" cid="g_ascii_toupper" render="1">
   </function>
-  <function name="ascii_xdigit_value" cid="g_ascii_xdigit_value" render="0">
+  <function name="ascii_xdigit_value" cid="g_ascii_xdigit_value" render="1">
   </function>
-  <function-macro name="assert" render="0">   </function-macro>
-  <function-macro name="assert_cmpfloat" render="0">   </function-macro>
-  <function-macro name="assert_cmpfloat_with_epsilon" render="0">   </function-macro>
-  <function-macro name="assert_cmphex" render="0">   </function-macro>
-  <function-macro name="assert_cmpint" render="0">   </function-macro>
-  <function-macro name="assert_cmpmem" render="0">   </function-macro>
-  <function-macro name="assert_cmpstr" render="0">   </function-macro>
-  <function-macro name="assert_cmpstrv" render="0">   </function-macro>
-  <function-macro name="assert_cmpuint" render="0">   </function-macro>
-  <function-macro name="assert_cmpvariant" render="0">   </function-macro>
-  <function-macro name="assert_error" render="0">   </function-macro>
-  <function-macro name="assert_false" render="0">   </function-macro>
-  <function-macro name="assert_no_errno" render="0">   </function-macro>
-  <function-macro name="assert_no_error" render="0">   </function-macro>
-  <function-macro name="assert_nonnull" render="0">   </function-macro>
-  <function-macro name="assert_null" render="0">   </function-macro>
-  <function-macro name="assert_true" render="0">   </function-macro>
-  <function name="assert_warning" cid="g_assert_warning" render="0">
+  <function-macro name="assert" render="1">   </function-macro>
+  <function-macro name="assert_cmpfloat" render="1">   </function-macro>
+  <function-macro name="assert_cmpfloat_with_epsilon" render="1">   </function-macro>
+  <function-macro name="assert_cmphex" render="1">   </function-macro>
+  <function-macro name="assert_cmpint" render="1">   </function-macro>
+  <function-macro name="assert_cmpmem" render="1">   </function-macro>
+  <function-macro name="assert_cmpstr" render="1">   </function-macro>
+  <function-macro name="assert_cmpstrv" render="1">   </function-macro>
+  <function-macro name="assert_cmpuint" render="1">   </function-macro>
+  <function-macro name="assert_cmpvariant" render="1">   </function-macro>
+  <function-macro name="assert_error" render="1">   </function-macro>
+  <function-macro name="assert_false" render="1">   </function-macro>
+  <function-macro name="assert_no_errno" render="1">   </function-macro>
+  <function-macro name="assert_no_error" render="1">   </function-macro>
+  <function-macro name="assert_nonnull" render="1">   </function-macro>
+  <function-macro name="assert_null" render="1">   </function-macro>
+  <function-macro name="assert_true" render="1">   </function-macro>
+  <function name="assert_warning" cid="g_assert_warning" render="1">
   </function>
-  <function name="assertion_message" cid="g_assertion_message" render="0">
+  <function name="assertion_message" cid="g_assertion_message" render="1">
   </function>
   <function name="assertion_message_cmpnum" cid="g_assertion_message_cmpnum" render="0">
   </function>
-  <function name="assertion_message_cmpstr" cid="g_assertion_message_cmpstr" render="0">
+  <function name="assertion_message_cmpstr" cid="g_assertion_message_cmpstr" render="1">
   </function>
-  <function name="assertion_message_cmpstrv" cid="g_assertion_message_cmpstrv" render="0">
+  <function name="assertion_message_cmpstrv" cid="g_assertion_message_cmpstrv" render="1">
   </function>
-  <function name="assertion_message_error" cid="g_assertion_message_error" render="0">
+  <function name="assertion_message_error" cid="g_assertion_message_error" render="1">
   </function>
-  <function name="assertion_message_expr" cid="g_assertion_message_expr" render="0">
+  <function name="assertion_message_expr" cid="g_assertion_message_expr" render="1">
   </function>
-  <docsection name="async_queues" render="0">   </docsection>
-  <function name="atexit" cid="g_atexit" render="0">
+  <docsection name="async_queues" render="1">   </docsection>
+  <function name="atexit" cid="g_atexit" render="1">
   </function>
-  <function name="atomic_int_add" cid="g_atomic_int_add" render="0">
+  <function name="atomic_int_add" cid="g_atomic_int_add" render="1">
   </function>
-  <function name="atomic_int_and" cid="g_atomic_int_and" render="0">
+  <function name="atomic_int_and" cid="g_atomic_int_and" render="1">
   </function>
-  <function name="atomic_int_compare_and_exchange" cid="g_atomic_int_compare_and_exchange" render="0">
+  <function name="atomic_int_compare_and_exchange" cid="g_atomic_int_compare_and_exchange" render="1">
   </function>
-  <function name="atomic_int_dec_and_test" cid="g_atomic_int_dec_and_test" render="0">
+  <function name="atomic_int_dec_and_test" cid="g_atomic_int_dec_and_test" render="1">
   </function>
-  <function name="atomic_int_exchange_and_add" cid="g_atomic_int_exchange_and_add" render="0">
+  <function name="atomic_int_exchange_and_add" cid="g_atomic_int_exchange_and_add" render="1">
   </function>
-  <function name="atomic_int_get" cid="g_atomic_int_get" render="0">
+  <function name="atomic_int_get" cid="g_atomic_int_get" render="1">
   </function>
-  <function name="atomic_int_inc" cid="g_atomic_int_inc" render="0">
+  <function name="atomic_int_inc" cid="g_atomic_int_inc" render="1">
   </function>
-  <function name="atomic_int_or" cid="g_atomic_int_or" render="0">
+  <function name="atomic_int_or" cid="g_atomic_int_or" render="1">
   </function>
-  <function name="atomic_int_set" cid="g_atomic_int_set" render="0">
+  <function name="atomic_int_set" cid="g_atomic_int_set" render="1">
   </function>
-  <function name="atomic_int_xor" cid="g_atomic_int_xor" render="0">
+  <function name="atomic_int_xor" cid="g_atomic_int_xor" render="1">
   </function>
-  <docsection name="atomic_operations" render="0">   </docsection>
-  <function name="atomic_pointer_add" cid="g_atomic_pointer_add" render="0">
+  <docsection name="atomic_operations" render="1">   </docsection>
+  <function name="atomic_pointer_add" cid="g_atomic_pointer_add" render="1">
   </function>
-  <function name="atomic_pointer_and" cid="g_atomic_pointer_and" render="0">
+  <function name="atomic_pointer_and" cid="g_atomic_pointer_and" render="1">
   </function>
-  <function name="atomic_pointer_compare_and_exchange" cid="g_atomic_pointer_compare_and_exchange" render="0">
+  <function name="atomic_pointer_compare_and_exchange" cid="g_atomic_pointer_compare_and_exchange" render="1">
   </function>
-  <function name="atomic_pointer_get" cid="g_atomic_pointer_get" render="0">
+  <function name="atomic_pointer_get" cid="g_atomic_pointer_get" render="1">
   </function>
-  <function name="atomic_pointer_or" cid="g_atomic_pointer_or" render="0">
+  <function name="atomic_pointer_or" cid="g_atomic_pointer_or" render="1">
   </function>
-  <function name="atomic_pointer_set" cid="g_atomic_pointer_set" render="0">
+  <function name="atomic_pointer_set" cid="g_atomic_pointer_set" render="1">
   </function>
-  <function name="atomic_pointer_xor" cid="g_atomic_pointer_xor" render="0">
+  <function name="atomic_pointer_xor" cid="g_atomic_pointer_xor" render="1">
   </function>
-  <function name="atomic_rc_box_acquire" cid="g_atomic_rc_box_acquire" render="0">
+  <function name="atomic_rc_box_acquire" cid="g_atomic_rc_box_acquire" render="1">
   </function>
-  <function name="atomic_rc_box_alloc" cid="g_atomic_rc_box_alloc" render="0">
+  <function name="atomic_rc_box_alloc" cid="g_atomic_rc_box_alloc" render="1">
   </function>
-  <function name="atomic_rc_box_alloc0" cid="g_atomic_rc_box_alloc0" render="0">
+  <function name="atomic_rc_box_alloc0" cid="g_atomic_rc_box_alloc0" render="1">
   </function>
-  <function name="atomic_rc_box_dup" cid="g_atomic_rc_box_dup" render="0">
+  <function name="atomic_rc_box_dup" cid="g_atomic_rc_box_dup" render="1">
   </function>
-  <function name="atomic_rc_box_get_size" cid="g_atomic_rc_box_get_size" render="0">
+  <function name="atomic_rc_box_get_size" cid="g_atomic_rc_box_get_size" render="1">
   </function>
-  <function-macro name="atomic_rc_box_new" render="0">   </function-macro>
-  <function-macro name="atomic_rc_box_new0" render="0">   </function-macro>
-  <function name="atomic_rc_box_release" cid="g_atomic_rc_box_release" render="0">
+  <function-macro name="atomic_rc_box_new" render="1">   </function-macro>
+  <function-macro name="atomic_rc_box_new0" render="1">   </function-macro>
+  <function name="atomic_rc_box_release" cid="g_atomic_rc_box_release" render="1">
   </function>
-  <function name="atomic_rc_box_release_full" cid="g_atomic_rc_box_release_full" render="0">
+  <function name="atomic_rc_box_release_full" cid="g_atomic_rc_box_release_full" render="1">
   </function>
-  <function name="atomic_ref_count_compare" cid="g_atomic_ref_count_compare" render="0">
+  <function name="atomic_ref_count_compare" cid="g_atomic_ref_count_compare" render="1">
   </function>
-  <function name="atomic_ref_count_dec" cid="g_atomic_ref_count_dec" render="0">
+  <function name="atomic_ref_count_dec" cid="g_atomic_ref_count_dec" render="1">
   </function>
-  <function name="atomic_ref_count_inc" cid="g_atomic_ref_count_inc" render="0">
+  <function name="atomic_ref_count_inc" cid="g_atomic_ref_count_inc" render="1">
   </function>
-  <function name="atomic_ref_count_init" cid="g_atomic_ref_count_init" render="0">
+  <function name="atomic_ref_count_init" cid="g_atomic_ref_count_init" render="1">
   </function>
-  <docsection name="base64" render="0">   </docsection>
-  <function name="base64_decode" cid="g_base64_decode" render="0">
+  <docsection name="base64" render="1">   </docsection>
+  <function name="base64_decode" cid="g_base64_decode" render="1">
   </function>
-  <function name="base64_decode_inplace" cid="g_base64_decode_inplace" render="0">
+  <function name="base64_decode_inplace" cid="g_base64_decode_inplace" render="1">
   </function>
-  <function name="base64_decode_step" cid="g_base64_decode_step" render="0">
+  <function name="base64_decode_step" cid="g_base64_decode_step" render="1">
   </function>
-  <function name="base64_encode" cid="g_base64_encode" render="0">
+  <function name="base64_encode" cid="g_base64_encode" render="1">
   </function>
-  <function name="base64_encode_close" cid="g_base64_encode_close" render="0">
+  <function name="base64_encode_close" cid="g_base64_encode_close" render="1">
   </function>
-  <function name="base64_encode_step" cid="g_base64_encode_step" render="0">
+  <function name="base64_encode_step" cid="g_base64_encode_step" render="1">
   </function>
-  <function name="basename" cid="g_basename" render="0">
+  <function name="basename" cid="g_basename" render="1">
   </function>
-  <function name="bit_lock" cid="g_bit_lock" render="0">
+  <function name="bit_lock" cid="g_bit_lock" render="1">
   </function>
-  <function name="bit_nth_lsf" cid="g_bit_nth_lsf" render="0">
+  <function name="bit_nth_lsf" cid="g_bit_nth_lsf" render="1">
   </function>
-  <function name="bit_nth_msf" cid="g_bit_nth_msf" render="0">
+  <function name="bit_nth_msf" cid="g_bit_nth_msf" render="1">
   </function>
-  <function name="bit_storage" cid="g_bit_storage" render="0">
+  <function name="bit_storage" cid="g_bit_storage" render="1">
   </function>
-  <function name="bit_trylock" cid="g_bit_trylock" render="0">
+  <function name="bit_trylock" cid="g_bit_trylock" render="1">
   </function>
-  <function name="bit_unlock" cid="g_bit_unlock" render="0">
+  <function name="bit_unlock" cid="g_bit_unlock" render="1">
   </function>
-  <function name="bookmark_file_error_quark" cid="g_bookmark_file_error_quark" render="0">
+  <function name="bookmark_file_error_quark" cid="g_bookmark_file_error_quark" render="1">
   </function>
-  <docsection name="bookmarkfile" render="0">   </docsection>
+  <docsection name="bookmarkfile" render="1">   </docsection>
   <function name="build_filename" cid="g_build_filename" render="0">
   </function>
-  <function name="build_filename_valist" cid="g_build_filename_valist" render="0">
+  <function name="build_filename_valist" cid="g_build_filename_valist" render="1">
   </function>
-  <function name="build_filenamev" cid="g_build_filenamev" render="0">
+  <function name="build_filenamev" cid="g_build_filenamev" render="1">
   </function>
   <function name="build_path" cid="g_build_path" render="0">
   </function>
-  <function name="build_pathv" cid="g_build_pathv" render="0">
+  <function name="build_pathv" cid="g_build_pathv" render="1">
   </function>
-  <function name="byte_array_free" cid="g_byte_array_free" render="0">
+  <function name="byte_array_free" cid="g_byte_array_free" render="1">
   </function>
-  <function name="byte_array_free_to_bytes" cid="g_byte_array_free_to_bytes" render="0">
+  <function name="byte_array_free_to_bytes" cid="g_byte_array_free_to_bytes" render="1">
   </function>
-  <function name="byte_array_new" cid="g_byte_array_new" render="0">
+  <function name="byte_array_new" cid="g_byte_array_new" render="1">
   </function>
-  <function name="byte_array_new_take" cid="g_byte_array_new_take" render="0">
+  <function name="byte_array_new_take" cid="g_byte_array_new_take" render="1">
   </function>
-  <function name="byte_array_steal" cid="g_byte_array_steal" render="0">
+  <function name="byte_array_steal" cid="g_byte_array_steal" render="1">
   </function>
-  <function name="byte_array_unref" cid="g_byte_array_unref" render="0">
+  <function name="byte_array_unref" cid="g_byte_array_unref" render="1">
   </function>
-  <docsection name="byte_order" render="0">   </docsection>
-  <function name="canonicalize_filename" cid="g_canonicalize_filename" render="0">
+  <docsection name="byte_order" render="1">   </docsection>
+  <function name="canonicalize_filename" cid="g_canonicalize_filename" render="1">
   </function>
   <function name="chdir" cid="g_chdir" render="0">
   </function>
-  <function name="check_version" cid="glib_check_version" render="0">
+  <function name="check_version" cid="glib_check_version" render="1">
   </function>
-  <docsection name="checkedmath" render="0">   </docsection>
-  <docsection name="checksum" render="0">   </docsection>
-  <function name="checksum_type_get_length" cid="g_checksum_type_get_length" render="0">
+  <docsection name="checkedmath" render="1">   </docsection>
+  <docsection name="checksum" render="1">   </docsection>
+  <function name="checksum_type_get_length" cid="g_checksum_type_get_length" render="1">
   </function>
-  <function name="child_watch_add" cid="g_child_watch_add" render="0">
+  <function name="child_watch_add" cid="g_child_watch_add" render="1">
   </function>
-  <function name="child_watch_add_full" cid="g_child_watch_add_full" render="0">
+  <function name="child_watch_add_full" cid="g_child_watch_add_full" render="1">
   </function>
-  <function name="child_watch_source_new" cid="g_child_watch_source_new" render="0">
+  <function name="child_watch_source_new" cid="g_child_watch_source_new" render="1">
   </function>
-  <function name="clear_error" cid="g_clear_error" render="0">
+  <function name="clear_error" cid="g_clear_error" render="1">
   </function>
-  <function name="clear_handle_id" cid="g_clear_handle_id" render="0">
+  <function name="clear_handle_id" cid="g_clear_handle_id" render="1">
   </function>
-  <function name="clear_list" cid="g_clear_list" render="0">
+  <function name="clear_list" cid="g_clear_list" render="1">
   </function>
-  <function name="clear_pointer" cid="g_clear_pointer" render="0">
+  <function name="clear_pointer" cid="g_clear_pointer" render="1">
   </function>
-  <function name="clear_slist" cid="g_clear_slist" render="0">
+  <function name="clear_slist" cid="g_clear_slist" render="1">
   </function>
   <function name="close" cid="g_close" render="0">
   </function>
-  <function name="compute_checksum_for_bytes" cid="g_compute_checksum_for_bytes" render="0">
+  <function name="compute_checksum_for_bytes" cid="g_compute_checksum_for_bytes" render="1">
   </function>
-  <function name="compute_checksum_for_data" cid="g_compute_checksum_for_data" render="0">
+  <function name="compute_checksum_for_data" cid="g_compute_checksum_for_data" render="1">
   </function>
-  <function name="compute_checksum_for_string" cid="g_compute_checksum_for_string" render="0">
+  <function name="compute_checksum_for_string" cid="g_compute_checksum_for_string" render="1">
   </function>
-  <function name="compute_hmac_for_bytes" cid="g_compute_hmac_for_bytes" render="0">
+  <function name="compute_hmac_for_bytes" cid="g_compute_hmac_for_bytes" render="1">
   </function>
-  <function name="compute_hmac_for_data" cid="g_compute_hmac_for_data" render="0">
+  <function name="compute_hmac_for_data" cid="g_compute_hmac_for_data" render="1">
   </function>
-  <function name="compute_hmac_for_string" cid="g_compute_hmac_for_string" render="0">
+  <function name="compute_hmac_for_string" cid="g_compute_hmac_for_string" render="1">
   </function>
-  <docsection name="conversions" render="0">   </docsection>
-  <function name="convert" cid="g_convert" render="0">
+  <docsection name="conversions" render="1">   </docsection>
+  <function name="convert" cid="g_convert" render="1">
   </function>
-  <function name="convert_error_quark" cid="g_convert_error_quark" render="0">
+  <function name="convert_error_quark" cid="g_convert_error_quark" render="1">
   </function>
-  <function name="convert_with_fallback" cid="g_convert_with_fallback" render="0">
+  <function name="convert_with_fallback" cid="g_convert_with_fallback" render="1">
   </function>
-  <function name="convert_with_iconv" cid="g_convert_with_iconv" render="0">
+  <function name="convert_with_iconv" cid="g_convert_with_iconv" render="1">
   </function>
-  <docsection name="datalist" render="0">   </docsection>
-  <function name="datalist_clear" cid="g_datalist_clear" render="0">
+  <docsection name="datalist" render="1">   </docsection>
+  <function name="datalist_clear" cid="g_datalist_clear" render="1">
   </function>
-  <function name="datalist_foreach" cid="g_datalist_foreach" render="0">
+  <function name="datalist_foreach" cid="g_datalist_foreach" render="1">
   </function>
-  <function name="datalist_get_data" cid="g_datalist_get_data" render="0">
+  <function name="datalist_get_data" cid="g_datalist_get_data" render="1">
   </function>
-  <function name="datalist_get_flags" cid="g_datalist_get_flags" render="0">
+  <function name="datalist_get_flags" cid="g_datalist_get_flags" render="1">
   </function>
-  <function name="datalist_id_dup_data" cid="g_datalist_id_dup_data" render="0">
+  <function name="datalist_id_dup_data" cid="g_datalist_id_dup_data" render="1">
   </function>
-  <function name="datalist_id_get_data" cid="g_datalist_id_get_data" render="0">
+  <function name="datalist_id_get_data" cid="g_datalist_id_get_data" render="1">
   </function>
-  <function-macro name="datalist_id_remove_data" render="0">   </function-macro>
-  <function name="datalist_id_remove_no_notify" cid="g_datalist_id_remove_no_notify" render="0">
+  <function-macro name="datalist_id_remove_data" render="1">   </function-macro>
+  <function name="datalist_id_remove_no_notify" cid="g_datalist_id_remove_no_notify" render="1">
   </function>
-  <function name="datalist_id_replace_data" cid="g_datalist_id_replace_data" render="0">
+  <function name="datalist_id_replace_data" cid="g_datalist_id_replace_data" render="1">
   </function>
-  <function-macro name="datalist_id_set_data" render="0">   </function-macro>
-  <function name="datalist_id_set_data_full" cid="g_datalist_id_set_data_full" render="0">
+  <function-macro name="datalist_id_set_data" render="1">   </function-macro>
+  <function name="datalist_id_set_data_full" cid="g_datalist_id_set_data_full" render="1">
   </function>
-  <function name="datalist_init" cid="g_datalist_init" render="0">
+  <function name="datalist_init" cid="g_datalist_init" render="1">
   </function>
-  <function-macro name="datalist_remove_data" render="0">   </function-macro>
-  <function-macro name="datalist_remove_no_notify" render="0">   </function-macro>
-  <function-macro name="datalist_set_data" render="0">   </function-macro>
-  <function-macro name="datalist_set_data_full" render="0">   </function-macro>
-  <function name="datalist_set_flags" cid="g_datalist_set_flags" render="0">
+  <function-macro name="datalist_remove_data" render="1">   </function-macro>
+  <function-macro name="datalist_remove_no_notify" render="1">   </function-macro>
+  <function-macro name="datalist_set_data" render="1">   </function-macro>
+  <function-macro name="datalist_set_data_full" render="1">   </function-macro>
+  <function name="datalist_set_flags" cid="g_datalist_set_flags" render="1">
   </function>
-  <function name="datalist_unset_flags" cid="g_datalist_unset_flags" render="0">
+  <function name="datalist_unset_flags" cid="g_datalist_unset_flags" render="1">
   </function>
-  <function name="dataset_destroy" cid="g_dataset_destroy" render="0">
+  <function name="dataset_destroy" cid="g_dataset_destroy" render="1">
   </function>
-  <function name="dataset_foreach" cid="g_dataset_foreach" render="0">
+  <function name="dataset_foreach" cid="g_dataset_foreach" render="1">
   </function>
-  <function-macro name="dataset_get_data" render="0">   </function-macro>
-  <function name="dataset_id_get_data" cid="g_dataset_id_get_data" render="0">
+  <function-macro name="dataset_get_data" render="1">   </function-macro>
+  <function name="dataset_id_get_data" cid="g_dataset_id_get_data" render="1">
   </function>
-  <function-macro name="dataset_id_remove_data" render="0">   </function-macro>
-  <function name="dataset_id_remove_no_notify" cid="g_dataset_id_remove_no_notify" render="0">
+  <function-macro name="dataset_id_remove_data" render="1">   </function-macro>
+  <function name="dataset_id_remove_no_notify" cid="g_dataset_id_remove_no_notify" render="1">
   </function>
-  <function-macro name="dataset_id_set_data" render="0">   </function-macro>
-  <function name="dataset_id_set_data_full" cid="g_dataset_id_set_data_full" render="0">
+  <function-macro name="dataset_id_set_data" render="1">   </function-macro>
+  <function name="dataset_id_set_data_full" cid="g_dataset_id_set_data_full" render="1">
   </function>
-  <function-macro name="dataset_remove_data" render="0">   </function-macro>
-  <function-macro name="dataset_remove_no_notify" render="0">   </function-macro>
-  <function-macro name="dataset_set_data" render="0">   </function-macro>
-  <function-macro name="dataset_set_data_full" render="0">   </function-macro>
-  <docsection name="datasets" render="0">   </docsection>
-  <docsection name="date" render="0">   </docsection>
-  <docsection name="date-time" render="0">   </docsection>
-  <function name="date_get_days_in_month" cid="g_date_get_days_in_month" render="0">
+  <function-macro name="dataset_remove_data" render="1">   </function-macro>
+  <function-macro name="dataset_remove_no_notify" render="1">   </function-macro>
+  <function-macro name="dataset_set_data" render="1">   </function-macro>
+  <function-macro name="dataset_set_data_full" render="1">   </function-macro>
+  <docsection name="datasets" render="1">   </docsection>
+  <docsection name="date" render="1">   </docsection>
+  <docsection name="date-time" render="1">   </docsection>
+  <function name="date_get_days_in_month" cid="g_date_get_days_in_month" render="1">
   </function>
-  <function name="date_get_monday_weeks_in_year" cid="g_date_get_monday_weeks_in_year" render="0">
+  <function name="date_get_monday_weeks_in_year" cid="g_date_get_monday_weeks_in_year" render="1">
   </function>
-  <function name="date_get_sunday_weeks_in_year" cid="g_date_get_sunday_weeks_in_year" render="0">
+  <function name="date_get_sunday_weeks_in_year" cid="g_date_get_sunday_weeks_in_year" render="1">
   </function>
-  <function name="date_is_leap_year" cid="g_date_is_leap_year" render="0">
+  <function name="date_is_leap_year" cid="g_date_is_leap_year" render="1">
   </function>
-  <function name="date_strftime" cid="g_date_strftime" render="0">
+  <function name="date_strftime" cid="g_date_strftime" render="1">
   </function>
-  <function name="date_valid_day" cid="g_date_valid_day" render="0">
+  <function name="date_valid_day" cid="g_date_valid_day" render="1">
   </function>
-  <function name="date_valid_dmy" cid="g_date_valid_dmy" render="0">
+  <function name="date_valid_dmy" cid="g_date_valid_dmy" render="1">
   </function>
-  <function name="date_valid_julian" cid="g_date_valid_julian" render="0">
+  <function name="date_valid_julian" cid="g_date_valid_julian" render="1">
   </function>
-  <function name="date_valid_month" cid="g_date_valid_month" render="0">
+  <function name="date_valid_month" cid="g_date_valid_month" render="1">
   </function>
-  <function name="date_valid_weekday" cid="g_date_valid_weekday" render="0">
+  <function name="date_valid_weekday" cid="g_date_valid_weekday" render="1">
   </function>
-  <function name="date_valid_year" cid="g_date_valid_year" render="0">
+  <function name="date_valid_year" cid="g_date_valid_year" render="1">
   </function>
-  <function name="dcgettext" cid="g_dcgettext" render="0">
+  <function name="dcgettext" cid="g_dcgettext" render="1">
   </function>
-  <function name="dgettext" cid="g_dgettext" render="0">
+  <function name="dgettext" cid="g_dgettext" render="1">
   </function>
-  <function name="dir_make_tmp" cid="g_dir_make_tmp" render="0">
+  <function name="dir_make_tmp" cid="g_dir_make_tmp" render="1">
   </function>
-  <function name="direct_equal" cid="g_direct_equal" render="0">
+  <function name="direct_equal" cid="g_direct_equal" render="1">
   </function>
-  <function name="direct_hash" cid="g_direct_hash" render="0">
+  <function name="direct_hash" cid="g_direct_hash" render="1">
   </function>
-  <function name="dngettext" cid="g_dngettext" render="0">
+  <function name="dngettext" cid="g_dngettext" render="1">
   </function>
-  <function name="double_equal" cid="g_double_equal" render="0">
+  <function name="double_equal" cid="g_double_equal" render="1">
   </function>
-  <function name="double_hash" cid="g_double_hash" render="0">
+  <function name="double_hash" cid="g_double_hash" render="1">
   </function>
-  <function name="dpgettext" cid="g_dpgettext" render="0">
+  <function name="dpgettext" cid="g_dpgettext" render="1">
   </function>
-  <function name="dpgettext2" cid="g_dpgettext2" render="0">
+  <function name="dpgettext2" cid="g_dpgettext2" render="1">
   </function>
-  <function name="environ_getenv" cid="g_environ_getenv" render="0">
+  <function name="environ_getenv" cid="g_environ_getenv" render="1">
   </function>
-  <function name="environ_setenv" cid="g_environ_setenv" render="0">
+  <function name="environ_setenv" cid="g_environ_setenv" render="1">
   </function>
-  <function name="environ_unsetenv" cid="g_environ_unsetenv" render="0">
+  <function name="environ_unsetenv" cid="g_environ_unsetenv" render="1">
   </function>
-  <docsection name="error_reporting" render="0">   </docsection>
-  <function name="file_error_from_errno" cid="g_file_error_from_errno" render="0">
+  <docsection name="error_reporting" render="1">   </docsection>
+  <function name="file_error_from_errno" cid="g_file_error_from_errno" render="1">
   </function>
-  <function name="file_error_quark" cid="g_file_error_quark" render="0">
+  <function name="file_error_quark" cid="g_file_error_quark" render="1">
   </function>
-  <function name="file_get_contents" cid="g_file_get_contents" render="0">
+  <function name="file_get_contents" cid="g_file_get_contents" render="1">
   </function>
-  <function name="file_open_tmp" cid="g_file_open_tmp" render="0">
+  <function name="file_open_tmp" cid="g_file_open_tmp" render="1">
   </function>
-  <function name="file_read_link" cid="g_file_read_link" render="0">
+  <function name="file_read_link" cid="g_file_read_link" render="1">
   </function>
-  <function name="file_set_contents" cid="g_file_set_contents" render="0">
+  <function name="file_set_contents" cid="g_file_set_contents" render="1">
   </function>
-  <function name="file_set_contents_full" cid="g_file_set_contents_full" render="0">
+  <function name="file_set_contents_full" cid="g_file_set_contents_full" render="1">
   </function>
-  <function name="file_test" cid="g_file_test" render="0">
+  <function name="file_test" cid="g_file_test" render="1">
   </function>
-  <function name="filename_display_basename" cid="g_filename_display_basename" render="0">
+  <function name="filename_display_basename" cid="g_filename_display_basename" render="1">
   </function>
-  <function name="filename_display_name" cid="g_filename_display_name" render="0">
+  <function name="filename_display_name" cid="g_filename_display_name" render="1">
   </function>
-  <function name="filename_from_uri" cid="g_filename_from_uri" render="0">
+  <function name="filename_from_uri" cid="g_filename_from_uri" render="1">
   </function>
-  <function name="filename_from_utf8" cid="g_filename_from_utf8" render="0">
+  <function name="filename_from_utf8" cid="g_filename_from_utf8" render="1">
   </function>
-  <function name="filename_to_uri" cid="g_filename_to_uri" render="0">
+  <function name="filename_to_uri" cid="g_filename_to_uri" render="1">
   </function>
-  <function name="filename_to_utf8" cid="g_filename_to_utf8" render="0">
+  <function name="filename_to_utf8" cid="g_filename_to_utf8" render="1">
   </function>
-  <docsection name="fileutils" render="0">   </docsection>
-  <function name="find_program_in_path" cid="g_find_program_in_path" render="0">
+  <docsection name="fileutils" render="1">   </docsection>
+  <function name="find_program_in_path" cid="g_find_program_in_path" render="1">
   </function>
-  <function name="format_size" cid="g_format_size" render="0">
+  <function name="format_size" cid="g_format_size" render="1">
   </function>
-  <function name="format_size_for_display" cid="g_format_size_for_display" render="0">
+  <function name="format_size_for_display" cid="g_format_size_for_display" render="1">
   </function>
-  <function name="format_size_full" cid="g_format_size_full" render="0">
+  <function name="format_size_full" cid="g_format_size_full" render="1">
   </function>
   <function name="fprintf" cid="g_fprintf" render="0">
   </function>
-  <function name="free" cid="g_free" render="0">
+  <function name="free" cid="g_free" render="1">
   </function>
-  <function name="get_application_name" cid="g_get_application_name" render="0">
+  <function name="get_application_name" cid="g_get_application_name" render="1">
   </function>
-  <function name="get_charset" cid="g_get_charset" render="0">
+  <function name="get_charset" cid="g_get_charset" render="1">
   </function>
-  <function name="get_codeset" cid="g_get_codeset" render="0">
+  <function name="get_codeset" cid="g_get_codeset" render="1">
   </function>
-  <function name="get_console_charset" cid="g_get_console_charset" render="0">
+  <function name="get_console_charset" cid="g_get_console_charset" render="1">
   </function>
-  <function name="get_current_dir" cid="g_get_current_dir" render="0">
+  <function name="get_current_dir" cid="g_get_current_dir" render="1">
   </function>
-  <function name="get_current_time" cid="g_get_current_time" render="0">
+  <function name="get_current_time" cid="g_get_current_time" render="1">
   </function>
-  <function name="get_environ" cid="g_get_environ" render="0">
+  <function name="get_environ" cid="g_get_environ" render="1">
   </function>
-  <function name="get_filename_charsets" cid="g_get_filename_charsets" render="0">
+  <function name="get_filename_charsets" cid="g_get_filename_charsets" render="1">
   </function>
-  <function name="get_home_dir" cid="g_get_home_dir" render="0">
+  <function name="get_home_dir" cid="g_get_home_dir" render="1">
   </function>
-  <function name="get_host_name" cid="g_get_host_name" render="0">
+  <function name="get_host_name" cid="g_get_host_name" render="1">
   </function>
-  <function name="get_language_names" cid="g_get_language_names" render="0">
+  <function name="get_language_names" cid="g_get_language_names" render="1">
   </function>
-  <function name="get_language_names_with_category" cid="g_get_language_names_with_category" render="0">
+  <function name="get_language_names_with_category" cid="g_get_language_names_with_category" render="1">
   </function>
-  <function name="get_locale_variants" cid="g_get_locale_variants" render="0">
+  <function name="get_locale_variants" cid="g_get_locale_variants" render="1">
   </function>
-  <function name="get_monotonic_time" cid="g_get_monotonic_time" render="0">
+  <function name="get_monotonic_time" cid="g_get_monotonic_time" render="1">
   </function>
-  <function name="get_num_processors" cid="g_get_num_processors" render="0">
+  <function name="get_num_processors" cid="g_get_num_processors" render="1">
   </function>
-  <function name="get_os_info" cid="g_get_os_info" render="0">
+  <function name="get_os_info" cid="g_get_os_info" render="1">
   </function>
-  <function name="get_prgname" cid="g_get_prgname" render="0">
+  <function name="get_prgname" cid="g_get_prgname" render="1">
   </function>
-  <function name="get_real_name" cid="g_get_real_name" render="0">
+  <function name="get_real_name" cid="g_get_real_name" render="1">
   </function>
-  <function name="get_real_time" cid="g_get_real_time" render="0">
+  <function name="get_real_time" cid="g_get_real_time" render="1">
   </function>
-  <function name="get_system_config_dirs" cid="g_get_system_config_dirs" render="0">
+  <function name="get_system_config_dirs" cid="g_get_system_config_dirs" render="1">
   </function>
-  <function name="get_system_data_dirs" cid="g_get_system_data_dirs" render="0">
+  <function name="get_system_data_dirs" cid="g_get_system_data_dirs" render="1">
   </function>
-  <function name="get_tmp_dir" cid="g_get_tmp_dir" render="0">
+  <function name="get_tmp_dir" cid="g_get_tmp_dir" render="1">
   </function>
-  <function name="get_user_cache_dir" cid="g_get_user_cache_dir" render="0">
+  <function name="get_user_cache_dir" cid="g_get_user_cache_dir" render="1">
   </function>
-  <function name="get_user_config_dir" cid="g_get_user_config_dir" render="0">
+  <function name="get_user_config_dir" cid="g_get_user_config_dir" render="1">
   </function>
-  <function name="get_user_data_dir" cid="g_get_user_data_dir" render="0">
+  <function name="get_user_data_dir" cid="g_get_user_data_dir" render="1">
   </function>
-  <function name="get_user_name" cid="g_get_user_name" render="0">
+  <function name="get_user_name" cid="g_get_user_name" render="1">
   </function>
-  <function name="get_user_runtime_dir" cid="g_get_user_runtime_dir" render="0">
+  <function name="get_user_runtime_dir" cid="g_get_user_runtime_dir" render="1">
   </function>
-  <function name="get_user_special_dir" cid="g_get_user_special_dir" render="0">
+  <function name="get_user_special_dir" cid="g_get_user_special_dir" render="1">
   </function>
   <function name="get_user_state_dir" cid="g_get_user_state_dir" render="0">
   </function>
-  <function name="getenv" cid="g_getenv" render="0">
+  <function name="getenv" cid="g_getenv" render="1">
   </function>
-  <docsection name="ghostutils" render="0">   </docsection>
-  <docsection name="gunix" render="0">   </docsection>
-  <function name="hash_table_add" cid="g_hash_table_add" render="0">
+  <docsection name="ghostutils" render="1">   </docsection>
+  <docsection name="gunix" render="1">   </docsection>
+  <function name="hash_table_add" cid="g_hash_table_add" render="1">
   </function>
-  <function name="hash_table_contains" cid="g_hash_table_contains" render="0">
+  <function name="hash_table_contains" cid="g_hash_table_contains" render="1">
   </function>
-  <function name="hash_table_destroy" cid="g_hash_table_destroy" render="0">
+  <function name="hash_table_destroy" cid="g_hash_table_destroy" render="1">
   </function>
-  <function-macro name="hash_table_freeze" render="0">   </function-macro>
-  <function name="hash_table_insert" cid="g_hash_table_insert" render="0">
+  <function-macro name="hash_table_freeze" render="1">   </function-macro>
+  <function name="hash_table_insert" cid="g_hash_table_insert" render="1">
   </function>
-  <function name="hash_table_lookup" cid="g_hash_table_lookup" render="0">
+  <function name="hash_table_lookup" cid="g_hash_table_lookup" render="1">
   </function>
-  <function name="hash_table_lookup_extended" cid="g_hash_table_lookup_extended" render="0">
+  <function name="hash_table_lookup_extended" cid="g_hash_table_lookup_extended" render="1">
   </function>
-  <function name="hash_table_remove" cid="g_hash_table_remove" render="0">
+  <function name="hash_table_remove" cid="g_hash_table_remove" render="1">
   </function>
-  <function name="hash_table_remove_all" cid="g_hash_table_remove_all" render="0">
+  <function name="hash_table_remove_all" cid="g_hash_table_remove_all" render="1">
   </function>
-  <function name="hash_table_replace" cid="g_hash_table_replace" render="0">
+  <function name="hash_table_replace" cid="g_hash_table_replace" render="1">
   </function>
-  <function name="hash_table_size" cid="g_hash_table_size" render="0">
+  <function name="hash_table_size" cid="g_hash_table_size" render="1">
   </function>
-  <function name="hash_table_steal" cid="g_hash_table_steal" render="0">
+  <function name="hash_table_steal" cid="g_hash_table_steal" render="1">
   </function>
-  <function name="hash_table_steal_all" cid="g_hash_table_steal_all" render="0">
+  <function name="hash_table_steal_all" cid="g_hash_table_steal_all" render="1">
   </function>
-  <function name="hash_table_steal_extended" cid="g_hash_table_steal_extended" render="0">
+  <function name="hash_table_steal_extended" cid="g_hash_table_steal_extended" render="1">
   </function>
-  <function-macro name="hash_table_thaw" render="0">   </function-macro>
-  <function name="hash_table_unref" cid="g_hash_table_unref" render="0">
+  <function-macro name="hash_table_thaw" render="1">   </function-macro>
+  <function name="hash_table_unref" cid="g_hash_table_unref" render="1">
   </function>
-  <docsection name="hash_tables" render="0">   </docsection>
-  <docsection name="hmac" render="0">   </docsection>
-  <function-macro name="hook_append" render="0">   </function-macro>
-  <function name="hook_destroy" cid="g_hook_destroy" render="0">
+  <docsection name="hash_tables" render="1">   </docsection>
+  <docsection name="hmac" render="1">   </docsection>
+  <function-macro name="hook_append" render="1">   </function-macro>
+  <function name="hook_destroy" cid="g_hook_destroy" render="1">
   </function>
-  <function name="hook_destroy_link" cid="g_hook_destroy_link" render="0">
+  <function name="hook_destroy_link" cid="g_hook_destroy_link" render="1">
   </function>
-  <function name="hook_free" cid="g_hook_free" render="0">
+  <function name="hook_free" cid="g_hook_free" render="1">
   </function>
-  <function name="hook_insert_before" cid="g_hook_insert_before" render="0">
+  <function name="hook_insert_before" cid="g_hook_insert_before" render="1">
   </function>
-  <function name="hook_prepend" cid="g_hook_prepend" render="0">
+  <function name="hook_prepend" cid="g_hook_prepend" render="1">
   </function>
-  <function name="hook_unref" cid="g_hook_unref" render="0">
+  <function name="hook_unref" cid="g_hook_unref" render="1">
   </function>
-  <docsection name="hooks" render="0">   </docsection>
-  <function name="hostname_is_ascii_encoded" cid="g_hostname_is_ascii_encoded" render="0">
+  <docsection name="hooks" render="1">   </docsection>
+  <function name="hostname_is_ascii_encoded" cid="g_hostname_is_ascii_encoded" render="1">
   </function>
-  <function name="hostname_is_ip_address" cid="g_hostname_is_ip_address" render="0">
+  <function name="hostname_is_ip_address" cid="g_hostname_is_ip_address" render="1">
   </function>
-  <function name="hostname_is_non_ascii" cid="g_hostname_is_non_ascii" render="0">
+  <function name="hostname_is_non_ascii" cid="g_hostname_is_non_ascii" render="1">
   </function>
-  <function name="hostname_to_ascii" cid="g_hostname_to_ascii" render="0">
+  <function name="hostname_to_ascii" cid="g_hostname_to_ascii" render="1">
   </function>
-  <function name="hostname_to_unicode" cid="g_hostname_to_unicode" render="0">
+  <function name="hostname_to_unicode" cid="g_hostname_to_unicode" render="1">
   </function>
-  <function-macro name="htonl" render="0">   </function-macro>
-  <function-macro name="htons" render="0">   </function-macro>
-  <docsection name="i18n" render="0">   </docsection>
-  <function name="iconv" cid="g_iconv" render="0">
+  <function-macro name="htonl" render="1">   </function-macro>
+  <function-macro name="htons" render="1">   </function-macro>
+  <docsection name="i18n" render="1">   </docsection>
+  <function name="iconv" cid="g_iconv" render="1">
   </function>
-  <function name="iconv_open" cid="g_iconv_open" render="0">
+  <function name="iconv_open" cid="g_iconv_open" render="1">
   </function>
-  <function name="idle_add" cid="g_idle_add" render="0">
+  <function name="idle_add" cid="g_idle_add" render="1">
   </function>
-  <function name="idle_add_full" cid="g_idle_add_full" render="0">
+  <function name="idle_add_full" cid="g_idle_add_full" render="1">
   </function>
-  <function name="idle_remove_by_data" cid="g_idle_remove_by_data" render="0">
+  <function name="idle_remove_by_data" cid="g_idle_remove_by_data" render="1">
   </function>
-  <function name="idle_source_new" cid="g_idle_source_new" render="0">
+  <function name="idle_source_new" cid="g_idle_source_new" render="1">
   </function>
-  <function name="int64_equal" cid="g_int64_equal" render="0">
+  <function name="int64_equal" cid="g_int64_equal" render="1">
   </function>
-  <function name="int64_hash" cid="g_int64_hash" render="0">
+  <function name="int64_hash" cid="g_int64_hash" render="1">
   </function>
-  <function name="int_equal" cid="g_int_equal" render="0">
+  <function name="int_equal" cid="g_int_equal" render="1">
   </function>
-  <function name="int_hash" cid="g_int_hash" render="0">
+  <function name="int_hash" cid="g_int_hash" render="1">
   </function>
-  <function name="intern_static_string" cid="g_intern_static_string" render="0">
+  <function name="intern_static_string" cid="g_intern_static_string" render="1">
   </function>
-  <function name="intern_string" cid="g_intern_string" render="0">
+  <function name="intern_string" cid="g_intern_string" render="1">
   </function>
-  <function name="io_add_watch" cid="g_io_add_watch" render="0">
+  <function name="io_add_watch" cid="g_io_add_watch" render="1">
   </function>
-  <function name="io_add_watch_full" cid="g_io_add_watch_full" render="0">
+  <function name="io_add_watch_full" cid="g_io_add_watch_full" render="1">
   </function>
-  <function name="io_channel_error_from_errno" cid="g_io_channel_error_from_errno" render="0">
+  <function name="io_channel_error_from_errno" cid="g_io_channel_error_from_errno" render="1">
   </function>
-  <function name="io_channel_error_quark" cid="g_io_channel_error_quark" render="0">
+  <function name="io_channel_error_quark" cid="g_io_channel_error_quark" render="1">
   </function>
-  <function name="io_create_watch" cid="g_io_create_watch" render="0">
+  <function name="io_create_watch" cid="g_io_create_watch" render="1">
   </function>
-  <docsection name="iochannels" render="0">   </docsection>
-  <function name="key_file_error_quark" cid="g_key_file_error_quark" render="0">
+  <docsection name="iochannels" render="1">   </docsection>
+  <function name="key_file_error_quark" cid="g_key_file_error_quark" render="1">
   </function>
-  <docsection name="keyfile" render="0">   </docsection>
-  <docsection name="linked_lists_double" render="0">   </docsection>
-  <docsection name="linked_lists_single" render="0">   </docsection>
-  <function-macro name="list_next" render="0">   </function-macro>
-  <function-macro name="list_previous" render="0">   </function-macro>
-  <function name="listenv" cid="g_listenv" render="0">
+  <docsection name="keyfile" render="1">   </docsection>
+  <docsection name="linked_lists_double" render="1">   </docsection>
+  <docsection name="linked_lists_single" render="1">   </docsection>
+  <function-macro name="list_next" render="1">   </function-macro>
+  <function-macro name="list_previous" render="1">   </function-macro>
+  <function name="listenv" cid="g_listenv" render="1">
   </function>
-  <function name="locale_from_utf8" cid="g_locale_from_utf8" render="0">
+  <function name="locale_from_utf8" cid="g_locale_from_utf8" render="1">
   </function>
-  <function name="locale_to_utf8" cid="g_locale_to_utf8" render="0">
+  <function name="locale_to_utf8" cid="g_locale_to_utf8" render="1">
   </function>
   <function name="log" cid="g_log" render="0">
   </function>
-  <function name="log_default_handler" cid="g_log_default_handler" render="0">
+  <function name="log_default_handler" cid="g_log_default_handler" render="1">
   </function>
-  <function name="log_remove_handler" cid="g_log_remove_handler" render="0">
+  <function name="log_remove_handler" cid="g_log_remove_handler" render="1">
   </function>
-  <function name="log_set_always_fatal" cid="g_log_set_always_fatal" render="0">
+  <function name="log_set_always_fatal" cid="g_log_set_always_fatal" render="1">
   </function>
-  <function name="log_set_default_handler" cid="g_log_set_default_handler" render="0">
+  <function name="log_set_default_handler" cid="g_log_set_default_handler" render="1">
   </function>
-  <function name="log_set_fatal_mask" cid="g_log_set_fatal_mask" render="0">
+  <function name="log_set_fatal_mask" cid="g_log_set_fatal_mask" render="1">
   </function>
-  <function name="log_set_handler" cid="g_log_set_handler" render="0">
+  <function name="log_set_handler" cid="g_log_set_handler" render="1">
   </function>
-  <function name="log_set_handler_full" cid="g_log_set_handler_full" render="0">
+  <function name="log_set_handler_full" cid="g_log_set_handler_full" render="1">
   </function>
-  <function name="log_set_writer_func" cid="g_log_set_writer_func" render="0">
+  <function name="log_set_writer_func" cid="g_log_set_writer_func" render="1">
   </function>
   <function name="log_structured" cid="g_log_structured" render="0">
   </function>
-  <function name="log_structured_array" cid="g_log_structured_array" render="0">
+  <function name="log_structured_array" cid="g_log_structured_array" render="1">
   </function>
   <function name="log_structured_standard" cid="g_log_structured_standard" render="0">
   </function>
-  <function name="log_variant" cid="g_log_variant" render="0">
+  <function name="log_variant" cid="g_log_variant" render="1">
   </function>
-  <function name="log_writer_default" cid="g_log_writer_default" render="0">
+  <function name="log_writer_default" cid="g_log_writer_default" render="1">
   </function>
-  <function name="log_writer_default_set_use_stderr" cid="g_log_writer_default_set_use_stderr" render="0">
+  <function name="log_writer_default_set_use_stderr" cid="g_log_writer_default_set_use_stderr" render="1">
   </function>
-  <function name="log_writer_default_would_drop" cid="g_log_writer_default_would_drop" render="0">
+  <function name="log_writer_default_would_drop" cid="g_log_writer_default_would_drop" render="1">
   </function>
-  <function name="log_writer_format_fields" cid="g_log_writer_format_fields" render="0">
+  <function name="log_writer_format_fields" cid="g_log_writer_format_fields" render="1">
   </function>
-  <function name="log_writer_is_journald" cid="g_log_writer_is_journald" render="0">
+  <function name="log_writer_is_journald" cid="g_log_writer_is_journald" render="1">
   </function>
-  <function name="log_writer_journald" cid="g_log_writer_journald" render="0">
+  <function name="log_writer_journald" cid="g_log_writer_journald" render="1">
   </function>
-  <function name="log_writer_standard_streams" cid="g_log_writer_standard_streams" render="0">
+  <function name="log_writer_standard_streams" cid="g_log_writer_standard_streams" render="1">
   </function>
-  <function name="log_writer_supports_color" cid="g_log_writer_supports_color" render="0">
+  <function name="log_writer_supports_color" cid="g_log_writer_supports_color" render="1">
   </function>
-  <function name="logv" cid="g_logv" render="0">
+  <function name="logv" cid="g_logv" render="1">
   </function>
-  <function-macro name="macro__has_attribute" render="0">   </function-macro>
-  <constant name="macro__has_attribute___noreturn__" ctype="g_macro__has_attribute___noreturn__" value="0" render="0">  </constant>
-  <function-macro name="macro__has_builtin" render="0">   </function-macro>
-  <function-macro name="macro__has_extension" render="0">   </function-macro>
-  <function-macro name="macro__has_feature" render="0">   </function-macro>
-  <docsection name="macros" render="0">   </docsection>
-  <docsection name="macros_misc" render="0">   </docsection>
-  <docsection name="main" render="0">   </docsection>
-  <function name="main_context_default" cid="g_main_context_default" render="0">
+  <function-macro name="macro__has_attribute" render="1">   </function-macro>
+  <constant name="macro__has_attribute___noreturn__" ctype="g_macro__has_attribute___noreturn__" value="0" render="1">  </constant>
+  <function-macro name="macro__has_builtin" render="1">   </function-macro>
+  <function-macro name="macro__has_extension" render="1">   </function-macro>
+  <function-macro name="macro__has_feature" render="1">   </function-macro>
+  <docsection name="macros" render="1">   </docsection>
+  <docsection name="macros_misc" render="1">   </docsection>
+  <docsection name="main" render="1">   </docsection>
+  <function name="main_context_default" cid="g_main_context_default" render="1">
   </function>
-  <function name="main_context_get_thread_default" cid="g_main_context_get_thread_default" render="0">
+  <function name="main_context_get_thread_default" cid="g_main_context_get_thread_default" render="1">
   </function>
-  <function name="main_context_ref_thread_default" cid="g_main_context_ref_thread_default" render="0">
+  <function name="main_context_ref_thread_default" cid="g_main_context_ref_thread_default" render="1">
   </function>
-  <function name="main_current_source" cid="g_main_current_source" render="0">
+  <function name="main_current_source" cid="g_main_current_source" render="1">
   </function>
   <function name="main_depth" cid="g_main_depth" render="1">
   </function>
-  <function name="malloc" cid="g_malloc" render="0">
+  <function name="malloc" cid="g_malloc" render="1">
   </function>
-  <function name="malloc0" cid="g_malloc0" render="0">
+  <function name="malloc0" cid="g_malloc0" render="1">
   </function>
-  <function name="malloc0_n" cid="g_malloc0_n" render="0">
+  <function name="malloc0_n" cid="g_malloc0_n" render="1">
   </function>
-  <function name="malloc_n" cid="g_malloc_n" render="0">
+  <function name="malloc_n" cid="g_malloc_n" render="1">
   </function>
-  <docsection name="markup" render="0">   </docsection>
+  <docsection name="markup" render="1">   </docsection>
   <function name="markup_collect_attributes" cid="g_markup_collect_attributes" render="0">
   </function>
-  <function name="markup_error_quark" cid="g_markup_error_quark" render="0">
+  <function name="markup_error_quark" cid="g_markup_error_quark" render="1">
   </function>
-  <function name="markup_escape_text" cid="g_markup_escape_text" render="0">
+  <function name="markup_escape_text" cid="g_markup_escape_text" render="1">
   </function>
   <function name="markup_printf_escaped" cid="g_markup_printf_escaped" render="0">
   </function>
-  <function name="markup_vprintf_escaped" cid="g_markup_vprintf_escaped" render="0">
+  <function name="markup_vprintf_escaped" cid="g_markup_vprintf_escaped" render="1">
   </function>
-  <function name="mem_is_system_malloc" cid="g_mem_is_system_malloc" render="0">
+  <function name="mem_is_system_malloc" cid="g_mem_is_system_malloc" render="1">
   </function>
-  <function name="mem_profile" cid="g_mem_profile" render="0">
+  <function name="mem_profile" cid="g_mem_profile" render="1">
   </function>
-  <function name="mem_set_vtable" cid="g_mem_set_vtable" render="0">
+  <function name="mem_set_vtable" cid="g_mem_set_vtable" render="1">
   </function>
-  <function name="memdup" cid="g_memdup" render="0">
+  <function name="memdup" cid="g_memdup" render="1">
   </function>
-  <function name="memdup2" cid="g_memdup2" render="0">
+  <function name="memdup2" cid="g_memdup2" render="1">
   </function>
-  <function-macro name="memmove" render="0">   </function-macro>
-  <docsection name="memory" render="0">   </docsection>
-  <docsection name="memory_slices" render="0">   </docsection>
-  <docsection name="messages" render="0">   </docsection>
-  <docsection name="misc_utils" render="0">   </docsection>
-  <function name="mkdir_with_parents" cid="g_mkdir_with_parents" render="0">
+  <function-macro name="memmove" render="1">   </function-macro>
+  <docsection name="memory" render="1">   </docsection>
+  <docsection name="memory_slices" render="1">   </docsection>
+  <docsection name="messages" render="1">   </docsection>
+  <docsection name="misc_utils" render="1">   </docsection>
+  <function name="mkdir_with_parents" cid="g_mkdir_with_parents" render="1">
   </function>
-  <function name="mkdtemp" cid="g_mkdtemp" render="0">
+  <function name="mkdtemp" cid="g_mkdtemp" render="1">
   </function>
-  <function name="mkdtemp_full" cid="g_mkdtemp_full" render="0">
+  <function name="mkdtemp_full" cid="g_mkdtemp_full" render="1">
   </function>
-  <function name="mkstemp" cid="g_mkstemp" render="0">
+  <function name="mkstemp" cid="g_mkstemp" render="1">
   </function>
-  <function name="mkstemp_full" cid="g_mkstemp_full" render="0">
+  <function name="mkstemp_full" cid="g_mkstemp_full" render="1">
   </function>
-  <function-macro name="new" render="0">   </function-macro>
-  <function-macro name="new0" render="0">   </function-macro>
-  <function-macro name="newa" render="0">   </function-macro>
-  <function-macro name="newa0" render="0">   </function-macro>
-  <function-macro name="node_append" render="0">   </function-macro>
-  <function-macro name="node_append_data" render="0">   </function-macro>
-  <function-macro name="node_first_child" render="0">   </function-macro>
-  <function-macro name="node_insert_data" render="0">   </function-macro>
-  <function-macro name="node_insert_data_after" render="0">   </function-macro>
-  <function-macro name="node_insert_data_before" render="0">   </function-macro>
-  <function-macro name="node_next_sibling" render="0">   </function-macro>
-  <function-macro name="node_prepend_data" render="0">   </function-macro>
-  <function-macro name="node_prev_sibling" render="0">   </function-macro>
-  <function-macro name="ntohl" render="0">   </function-macro>
-  <function-macro name="ntohs" render="0">   </function-macro>
-  <function name="nullify_pointer" cid="g_nullify_pointer" render="0">
+  <function-macro name="new" render="1">   </function-macro>
+  <function-macro name="new0" render="1">   </function-macro>
+  <function-macro name="newa" render="1">   </function-macro>
+  <function-macro name="newa0" render="1">   </function-macro>
+  <function-macro name="node_append" render="1">   </function-macro>
+  <function-macro name="node_append_data" render="1">   </function-macro>
+  <function-macro name="node_first_child" render="1">   </function-macro>
+  <function-macro name="node_insert_data" render="1">   </function-macro>
+  <function-macro name="node_insert_data_after" render="1">   </function-macro>
+  <function-macro name="node_insert_data_before" render="1">   </function-macro>
+  <function-macro name="node_next_sibling" render="1">   </function-macro>
+  <function-macro name="node_prepend_data" render="1">   </function-macro>
+  <function-macro name="node_prev_sibling" render="1">   </function-macro>
+  <function-macro name="ntohl" render="1">   </function-macro>
+  <function-macro name="ntohs" render="1">   </function-macro>
+  <function name="nullify_pointer" cid="g_nullify_pointer" render="1">
   </function>
-  <function name="number_parser_error_quark" cid="g_number_parser_error_quark" render="0">
+  <function name="number_parser_error_quark" cid="g_number_parser_error_quark" render="1">
   </function>
-  <docsection name="numerical" render="0">   </docsection>
-  <function name="on_error_query" cid="g_on_error_query" render="0">
+  <docsection name="numerical" render="1">   </docsection>
+  <function name="on_error_query" cid="g_on_error_query" render="1">
   </function>
-  <function name="on_error_stack_trace" cid="g_on_error_stack_trace" render="0">
+  <function name="on_error_stack_trace" cid="g_on_error_stack_trace" render="1">
   </function>
-  <function-macro name="once" render="0">   </function-macro>
-  <function name="once_init_enter" cid="g_once_init_enter" render="0">
+  <function-macro name="once" render="1">   </function-macro>
+  <function name="once_init_enter" cid="g_once_init_enter" render="1">
   </function>
-  <function name="once_init_leave" cid="g_once_init_leave" render="0">
+  <function name="once_init_leave" cid="g_once_init_leave" render="1">
   </function>
-  <docsection name="option" render="0">   </docsection>
-  <function name="option_error_quark" cid="g_option_error_quark" render="0">
+  <docsection name="option" render="1">   </docsection>
+  <function name="option_error_quark" cid="g_option_error_quark" render="1">
   </function>
-  <function name="parse_debug_string" cid="g_parse_debug_string" render="0">
+  <function name="parse_debug_string" cid="g_parse_debug_string" render="1">
   </function>
-  <function name="path_get_basename" cid="g_path_get_basename" render="0">
+  <function name="path_get_basename" cid="g_path_get_basename" render="1">
   </function>
-  <function name="path_get_dirname" cid="g_path_get_dirname" render="0">
+  <function name="path_get_dirname" cid="g_path_get_dirname" render="1">
   </function>
-  <function name="path_is_absolute" cid="g_path_is_absolute" render="0">
+  <function name="path_is_absolute" cid="g_path_is_absolute" render="1">
   </function>
-  <function name="path_skip_root" cid="g_path_skip_root" render="0">
+  <function name="path_skip_root" cid="g_path_skip_root" render="1">
   </function>
-  <function name="pattern_match" cid="g_pattern_match" render="0">
+  <function name="pattern_match" cid="g_pattern_match" render="1">
   </function>
-  <function name="pattern_match_simple" cid="g_pattern_match_simple" render="0">
+  <function name="pattern_match_simple" cid="g_pattern_match_simple" render="1">
   </function>
-  <function name="pattern_match_string" cid="g_pattern_match_string" render="0">
+  <function name="pattern_match_string" cid="g_pattern_match_string" render="1">
   </function>
-  <docsection name="patterns" render="0">   </docsection>
-  <function name="pointer_bit_lock" cid="g_pointer_bit_lock" render="0">
+  <docsection name="patterns" render="1">   </docsection>
+  <function name="pointer_bit_lock" cid="g_pointer_bit_lock" render="1">
   </function>
-  <function name="pointer_bit_trylock" cid="g_pointer_bit_trylock" render="0">
+  <function name="pointer_bit_trylock" cid="g_pointer_bit_trylock" render="1">
   </function>
-  <function name="pointer_bit_unlock" cid="g_pointer_bit_unlock" render="0">
+  <function name="pointer_bit_unlock" cid="g_pointer_bit_unlock" render="1">
   </function>
-  <function name="poll" cid="g_poll" render="0">
+  <function name="poll" cid="g_poll" render="1">
   </function>
   <function name="prefix_error" cid="g_prefix_error" render="0">
   </function>
-  <function name="prefix_error_literal" cid="g_prefix_error_literal" render="0">
+  <function name="prefix_error_literal" cid="g_prefix_error_literal" render="1">
   </function>
   <function name="print" cid="g_print" render="0">
   </function>
@@ -3420,315 +3420,315 @@
   </function>
   <function name="printf" cid="g_printf" render="0">
   </function>
-  <function name="printf_string_upper_bound" cid="g_printf_string_upper_bound" render="0">
+  <function name="printf_string_upper_bound" cid="g_printf_string_upper_bound" render="1">
   </function>
-  <function name="propagate_error" cid="g_propagate_error" render="0">
+  <function name="propagate_error" cid="g_propagate_error" render="1">
   </function>
   <function name="propagate_prefixed_error" cid="g_propagate_prefixed_error" render="0">
   </function>
-  <function name="ptr_array_find" cid="g_ptr_array_find" render="0">
+  <function name="ptr_array_find" cid="g_ptr_array_find" render="1">
   </function>
-  <function name="ptr_array_find_with_equal_func" cid="g_ptr_array_find_with_equal_func" render="0">
+  <function name="ptr_array_find_with_equal_func" cid="g_ptr_array_find_with_equal_func" render="1">
   </function>
-  <function-macro name="ptr_array_index" render="0">   </function-macro>
-  <function name="qsort_with_data" cid="g_qsort_with_data" render="0">
+  <function-macro name="ptr_array_index" render="1">   </function-macro>
+  <function name="qsort_with_data" cid="g_qsort_with_data" render="1">
   </function>
-  <function name="quark_from_static_string" cid="g_quark_from_static_string" render="0">
+  <function name="quark_from_static_string" cid="g_quark_from_static_string" render="1">
   </function>
-  <function name="quark_from_string" cid="g_quark_from_string" render="0">
+  <function name="quark_from_string" cid="g_quark_from_string" render="1">
   </function>
-  <function name="quark_to_string" cid="g_quark_to_string" render="0">
+  <function name="quark_to_string" cid="g_quark_to_string" render="1">
   </function>
-  <function name="quark_try_string" cid="g_quark_try_string" render="0">
+  <function name="quark_try_string" cid="g_quark_try_string" render="1">
   </function>
-  <docsection name="quarks" render="0">   </docsection>
-  <docsection name="queue" render="0">   </docsection>
-  <function-macro name="rand_boolean" render="0">   </function-macro>
-  <function name="random_double" cid="g_random_double" render="0">
+  <docsection name="quarks" render="1">   </docsection>
+  <docsection name="queue" render="1">   </docsection>
+  <function-macro name="rand_boolean" render="1">   </function-macro>
+  <function name="random_double" cid="g_random_double" render="1">
   </function>
-  <function name="random_double_range" cid="g_random_double_range" render="0">
+  <function name="random_double_range" cid="g_random_double_range" render="1">
   </function>
-  <function name="random_int" cid="g_random_int" render="0">
+  <function name="random_int" cid="g_random_int" render="1">
   </function>
-  <function name="random_int_range" cid="g_random_int_range" render="0">
+  <function name="random_int_range" cid="g_random_int_range" render="1">
   </function>
-  <docsection name="random_numbers" render="0">   </docsection>
-  <function name="random_set_seed" cid="g_random_set_seed" render="0">
+  <docsection name="random_numbers" render="1">   </docsection>
+  <function name="random_set_seed" cid="g_random_set_seed" render="1">
   </function>
-  <function name="rc_box_acquire" cid="g_rc_box_acquire" render="0">
+  <function name="rc_box_acquire" cid="g_rc_box_acquire" render="1">
   </function>
-  <function name="rc_box_alloc" cid="g_rc_box_alloc" render="0">
+  <function name="rc_box_alloc" cid="g_rc_box_alloc" render="1">
   </function>
-  <function name="rc_box_alloc0" cid="g_rc_box_alloc0" render="0">
+  <function name="rc_box_alloc0" cid="g_rc_box_alloc0" render="1">
   </function>
-  <function name="rc_box_dup" cid="g_rc_box_dup" render="0">
+  <function name="rc_box_dup" cid="g_rc_box_dup" render="1">
   </function>
-  <function name="rc_box_get_size" cid="g_rc_box_get_size" render="0">
+  <function name="rc_box_get_size" cid="g_rc_box_get_size" render="1">
   </function>
-  <function-macro name="rc_box_new" render="0">   </function-macro>
-  <function-macro name="rc_box_new0" render="0">   </function-macro>
-  <function name="rc_box_release" cid="g_rc_box_release" render="0">
+  <function-macro name="rc_box_new" render="1">   </function-macro>
+  <function-macro name="rc_box_new0" render="1">   </function-macro>
+  <function name="rc_box_release" cid="g_rc_box_release" render="1">
   </function>
-  <function name="rc_box_release_full" cid="g_rc_box_release_full" render="0">
+  <function name="rc_box_release_full" cid="g_rc_box_release_full" render="1">
   </function>
-  <docsection name="rcbox" render="0">   </docsection>
-  <function name="realloc" cid="g_realloc" render="0">
+  <docsection name="rcbox" render="1">   </docsection>
+  <function name="realloc" cid="g_realloc" render="1">
   </function>
-  <function name="realloc_n" cid="g_realloc_n" render="0">
+  <function name="realloc_n" cid="g_realloc_n" render="1">
   </function>
-  <function name="ref_count_compare" cid="g_ref_count_compare" render="0">
+  <function name="ref_count_compare" cid="g_ref_count_compare" render="1">
   </function>
-  <function name="ref_count_dec" cid="g_ref_count_dec" render="0">
+  <function name="ref_count_dec" cid="g_ref_count_dec" render="1">
   </function>
-  <function name="ref_count_inc" cid="g_ref_count_inc" render="0">
+  <function name="ref_count_inc" cid="g_ref_count_inc" render="1">
   </function>
-  <function name="ref_count_init" cid="g_ref_count_init" render="0">
+  <function name="ref_count_init" cid="g_ref_count_init" render="1">
   </function>
-  <function name="ref_string_acquire" cid="g_ref_string_acquire" render="0">
+  <function name="ref_string_acquire" cid="g_ref_string_acquire" render="1">
   </function>
-  <function name="ref_string_length" cid="g_ref_string_length" render="0">
+  <function name="ref_string_length" cid="g_ref_string_length" render="1">
   </function>
-  <function name="ref_string_new" cid="g_ref_string_new" render="0">
+  <function name="ref_string_new" cid="g_ref_string_new" render="1">
   </function>
-  <function name="ref_string_new_intern" cid="g_ref_string_new_intern" render="0">
+  <function name="ref_string_new_intern" cid="g_ref_string_new_intern" render="1">
   </function>
-  <function name="ref_string_new_len" cid="g_ref_string_new_len" render="0">
+  <function name="ref_string_new_len" cid="g_ref_string_new_len" render="1">
   </function>
-  <function name="ref_string_release" cid="g_ref_string_release" render="0">
+  <function name="ref_string_release" cid="g_ref_string_release" render="1">
   </function>
-  <docsection name="refcount" render="0">   </docsection>
-  <docsection name="refstring" render="0">   </docsection>
-  <function name="regex_check_replacement" cid="g_regex_check_replacement" render="0">
+  <docsection name="refcount" render="1">   </docsection>
+  <docsection name="refstring" render="1">   </docsection>
+  <function name="regex_check_replacement" cid="g_regex_check_replacement" render="1">
   </function>
-  <function name="regex_error_quark" cid="g_regex_error_quark" render="0">
+  <function name="regex_error_quark" cid="g_regex_error_quark" render="1">
   </function>
-  <function name="regex_escape_nul" cid="g_regex_escape_nul" render="0">
+  <function name="regex_escape_nul" cid="g_regex_escape_nul" render="1">
   </function>
-  <function name="regex_escape_string" cid="g_regex_escape_string" render="0">
+  <function name="regex_escape_string" cid="g_regex_escape_string" render="1">
   </function>
-  <function name="regex_match_simple" cid="g_regex_match_simple" render="0">
+  <function name="regex_match_simple" cid="g_regex_match_simple" render="1">
   </function>
-  <function name="regex_split_simple" cid="g_regex_split_simple" render="0">
+  <function name="regex_split_simple" cid="g_regex_split_simple" render="1">
   </function>
-  <function name="reload_user_special_dirs_cache" cid="g_reload_user_special_dirs_cache" render="0">
+  <function name="reload_user_special_dirs_cache" cid="g_reload_user_special_dirs_cache" render="1">
   </function>
-  <function-macro name="renew" render="0">   </function-macro>
-  <function-macro name="return_if_fail" render="0">   </function-macro>
-  <function name="return_if_fail_warning" cid="g_return_if_fail_warning" render="0">
+  <function-macro name="renew" render="1">   </function-macro>
+  <function-macro name="return_if_fail" render="1">   </function-macro>
+  <function name="return_if_fail_warning" cid="g_return_if_fail_warning" render="1">
   </function>
-  <function-macro name="return_val_if_fail" render="0">   </function-macro>
-  <function-macro name="return_val_if_reached" render="0">   </function-macro>
+  <function-macro name="return_val_if_fail" render="1">   </function-macro>
+  <function-macro name="return_val_if_reached" render="1">   </function-macro>
   <function name="rmdir" cid="g_rmdir" render="0">
   </function>
-  <docsection name="scanner" render="0">   </docsection>
-  <function-macro name="scanner_add_symbol" render="0">   </function-macro>
-  <function-macro name="scanner_foreach_symbol" render="0">   </function-macro>
-  <function-macro name="scanner_freeze_symbol_table" render="0">   </function-macro>
-  <function-macro name="scanner_remove_symbol" render="0">   </function-macro>
-  <function-macro name="scanner_thaw_symbol_table" render="0">   </function-macro>
-  <docsection name="sequence" render="0">   </docsection>
-  <function name="sequence_get" cid="g_sequence_get" render="0">
+  <docsection name="scanner" render="1">   </docsection>
+  <function-macro name="scanner_add_symbol" render="1">   </function-macro>
+  <function-macro name="scanner_foreach_symbol" render="1">   </function-macro>
+  <function-macro name="scanner_freeze_symbol_table" render="1">   </function-macro>
+  <function-macro name="scanner_remove_symbol" render="1">   </function-macro>
+  <function-macro name="scanner_thaw_symbol_table" render="1">   </function-macro>
+  <docsection name="sequence" render="1">   </docsection>
+  <function name="sequence_get" cid="g_sequence_get" render="1">
   </function>
-  <function name="sequence_insert_before" cid="g_sequence_insert_before" render="0">
+  <function name="sequence_insert_before" cid="g_sequence_insert_before" render="1">
   </function>
-  <function name="sequence_move" cid="g_sequence_move" render="0">
+  <function name="sequence_move" cid="g_sequence_move" render="1">
   </function>
-  <function name="sequence_move_range" cid="g_sequence_move_range" render="0">
+  <function name="sequence_move_range" cid="g_sequence_move_range" render="1">
   </function>
-  <function name="sequence_range_get_midpoint" cid="g_sequence_range_get_midpoint" render="0">
+  <function name="sequence_range_get_midpoint" cid="g_sequence_range_get_midpoint" render="1">
   </function>
-  <function name="sequence_remove" cid="g_sequence_remove" render="0">
+  <function name="sequence_remove" cid="g_sequence_remove" render="1">
   </function>
-  <function name="sequence_remove_range" cid="g_sequence_remove_range" render="0">
+  <function name="sequence_remove_range" cid="g_sequence_remove_range" render="1">
   </function>
-  <function name="sequence_set" cid="g_sequence_set" render="0">
+  <function name="sequence_set" cid="g_sequence_set" render="1">
   </function>
-  <function name="sequence_swap" cid="g_sequence_swap" render="0">
+  <function name="sequence_swap" cid="g_sequence_swap" render="1">
   </function>
-  <function name="set_application_name" cid="g_set_application_name" render="0">
+  <function name="set_application_name" cid="g_set_application_name" render="1">
   </function>
   <function name="set_error" cid="g_set_error" render="0">
   </function>
-  <function name="set_error_literal" cid="g_set_error_literal" render="0">
+  <function name="set_error_literal" cid="g_set_error_literal" render="1">
   </function>
-  <function name="set_prgname" cid="g_set_prgname" render="0">
+  <function name="set_prgname" cid="g_set_prgname" render="1">
   </function>
-  <function name="set_print_handler" cid="g_set_print_handler" render="0">
+  <function name="set_print_handler" cid="g_set_print_handler" render="1">
   </function>
-  <function name="set_printerr_handler" cid="g_set_printerr_handler" render="0">
+  <function name="set_printerr_handler" cid="g_set_printerr_handler" render="1">
   </function>
-  <function name="setenv" cid="g_setenv" render="0">
+  <function name="setenv" cid="g_setenv" render="1">
   </function>
-  <docsection name="shell" render="0">   </docsection>
-  <function name="shell_error_quark" cid="g_shell_error_quark" render="0">
+  <docsection name="shell" render="1">   </docsection>
+  <function name="shell_error_quark" cid="g_shell_error_quark" render="1">
   </function>
-  <function name="shell_parse_argv" cid="g_shell_parse_argv" render="0">
+  <function name="shell_parse_argv" cid="g_shell_parse_argv" render="1">
   </function>
-  <function name="shell_quote" cid="g_shell_quote" render="0">
+  <function name="shell_quote" cid="g_shell_quote" render="1">
   </function>
-  <function name="shell_unquote" cid="g_shell_unquote" render="0">
+  <function name="shell_unquote" cid="g_shell_unquote" render="1">
   </function>
-  <function-macro name="size_checked_add" render="0">   </function-macro>
-  <function-macro name="size_checked_mul" render="0">   </function-macro>
-  <function name="slice_alloc" cid="g_slice_alloc" render="0">
+  <function-macro name="size_checked_add" render="1">   </function-macro>
+  <function-macro name="size_checked_mul" render="1">   </function-macro>
+  <function name="slice_alloc" cid="g_slice_alloc" render="1">
   </function>
-  <function name="slice_alloc0" cid="g_slice_alloc0" render="0">
+  <function name="slice_alloc0" cid="g_slice_alloc0" render="1">
   </function>
-  <function name="slice_copy" cid="g_slice_copy" render="0">
+  <function name="slice_copy" cid="g_slice_copy" render="1">
   </function>
-  <function-macro name="slice_dup" render="0">   </function-macro>
-  <function-macro name="slice_free" render="0">   </function-macro>
-  <function name="slice_free1" cid="g_slice_free1" render="0">
+  <function-macro name="slice_dup" render="1">   </function-macro>
+  <function-macro name="slice_free" render="1">   </function-macro>
+  <function name="slice_free1" cid="g_slice_free1" render="1">
   </function>
-  <function-macro name="slice_free_chain" render="0">   </function-macro>
-  <function name="slice_free_chain_with_offset" cid="g_slice_free_chain_with_offset" render="0">
+  <function-macro name="slice_free_chain" render="1">   </function-macro>
+  <function name="slice_free_chain_with_offset" cid="g_slice_free_chain_with_offset" render="1">
   </function>
-  <function name="slice_get_config" cid="g_slice_get_config" render="0">
+  <function name="slice_get_config" cid="g_slice_get_config" render="1">
   </function>
-  <function name="slice_get_config_state" cid="g_slice_get_config_state" render="0">
+  <function name="slice_get_config_state" cid="g_slice_get_config_state" render="1">
   </function>
-  <function-macro name="slice_new" render="0">   </function-macro>
-  <function-macro name="slice_new0" render="0">   </function-macro>
-  <function name="slice_set_config" cid="g_slice_set_config" render="0">
+  <function-macro name="slice_new" render="1">   </function-macro>
+  <function-macro name="slice_new0" render="1">   </function-macro>
+  <function name="slice_set_config" cid="g_slice_set_config" render="1">
   </function>
-  <function-macro name="slist_next" render="0">   </function-macro>
+  <function-macro name="slist_next" render="1">   </function-macro>
   <function name="snprintf" cid="g_snprintf" render="0">
   </function>
-  <function name="source_remove" cid="g_source_remove" render="0">
+  <function name="source_remove" cid="g_source_remove" render="1">
   </function>
-  <function name="source_remove_by_funcs_user_data" cid="g_source_remove_by_funcs_user_data" render="0">
+  <function name="source_remove_by_funcs_user_data" cid="g_source_remove_by_funcs_user_data" render="1">
   </function>
-  <function name="source_remove_by_user_data" cid="g_source_remove_by_user_data" render="0">
+  <function name="source_remove_by_user_data" cid="g_source_remove_by_user_data" render="1">
   </function>
-  <function name="source_set_name_by_id" cid="g_source_set_name_by_id" render="0">
+  <function name="source_set_name_by_id" cid="g_source_set_name_by_id" render="1">
   </function>
-  <function name="spaced_primes_closest" cid="g_spaced_primes_closest" render="0">
+  <function name="spaced_primes_closest" cid="g_spaced_primes_closest" render="1">
   </function>
-  <docsection name="spawn" render="0">   </docsection>
-  <function name="spawn_async" cid="g_spawn_async" render="0">
+  <docsection name="spawn" render="1">   </docsection>
+  <function name="spawn_async" cid="g_spawn_async" render="1">
   </function>
-  <function name="spawn_async_with_fds" cid="g_spawn_async_with_fds" render="0">
+  <function name="spawn_async_with_fds" cid="g_spawn_async_with_fds" render="1">
   </function>
-  <function name="spawn_async_with_pipes" cid="g_spawn_async_with_pipes" render="0">
+  <function name="spawn_async_with_pipes" cid="g_spawn_async_with_pipes" render="1">
   </function>
-  <function name="spawn_async_with_pipes_and_fds" cid="g_spawn_async_with_pipes_and_fds" render="0">
+  <function name="spawn_async_with_pipes_and_fds" cid="g_spawn_async_with_pipes_and_fds" render="1">
   </function>
-  <function name="spawn_check_exit_status" cid="g_spawn_check_exit_status" render="0">
+  <function name="spawn_check_exit_status" cid="g_spawn_check_exit_status" render="1">
   </function>
-  <function name="spawn_check_wait_status" cid="g_spawn_check_wait_status" render="0">
+  <function name="spawn_check_wait_status" cid="g_spawn_check_wait_status" render="1">
   </function>
-  <function name="spawn_close_pid" cid="g_spawn_close_pid" render="0">
+  <function name="spawn_close_pid" cid="g_spawn_close_pid" render="1">
   </function>
-  <function name="spawn_command_line_async" cid="g_spawn_command_line_async" render="0">
+  <function name="spawn_command_line_async" cid="g_spawn_command_line_async" render="1">
   </function>
-  <function name="spawn_command_line_sync" cid="g_spawn_command_line_sync" render="0">
+  <function name="spawn_command_line_sync" cid="g_spawn_command_line_sync" render="1">
   </function>
-  <function name="spawn_error_quark" cid="g_spawn_error_quark" render="0">
+  <function name="spawn_error_quark" cid="g_spawn_error_quark" render="1">
   </function>
-  <function name="spawn_exit_error_quark" cid="g_spawn_exit_error_quark" render="0">
+  <function name="spawn_exit_error_quark" cid="g_spawn_exit_error_quark" render="1">
   </function>
-  <function name="spawn_sync" cid="g_spawn_sync" render="0">
+  <function name="spawn_sync" cid="g_spawn_sync" render="1">
   </function>
   <function name="sprintf" cid="g_sprintf" render="0">
   </function>
-  <function-macro name="steal_pointer" render="0">   </function-macro>
-  <function name="stpcpy" cid="g_stpcpy" render="0">
+  <function-macro name="steal_pointer" render="1">   </function-macro>
+  <function name="stpcpy" cid="g_stpcpy" render="1">
   </function>
-  <function name="str_equal" cid="g_str_equal" render="0">
+  <function name="str_equal" cid="g_str_equal" render="1">
   </function>
-  <function name="str_has_prefix" cid="g_str_has_prefix" render="0">
+  <function name="str_has_prefix" cid="g_str_has_prefix" render="1">
   </function>
-  <function name="str_has_suffix" cid="g_str_has_suffix" render="0">
+  <function name="str_has_suffix" cid="g_str_has_suffix" render="1">
   </function>
-  <function name="str_hash" cid="g_str_hash" render="0">
+  <function name="str_hash" cid="g_str_hash" render="1">
   </function>
-  <function name="str_is_ascii" cid="g_str_is_ascii" render="0">
+  <function name="str_is_ascii" cid="g_str_is_ascii" render="1">
   </function>
-  <function name="str_match_string" cid="g_str_match_string" render="0">
+  <function name="str_match_string" cid="g_str_match_string" render="1">
   </function>
-  <function name="str_to_ascii" cid="g_str_to_ascii" render="0">
+  <function name="str_to_ascii" cid="g_str_to_ascii" render="1">
   </function>
-  <function name="str_tokenize_and_fold" cid="g_str_tokenize_and_fold" render="0">
+  <function name="str_tokenize_and_fold" cid="g_str_tokenize_and_fold" render="1">
   </function>
-  <function name="strcanon" cid="g_strcanon" render="0">
+  <function name="strcanon" cid="g_strcanon" render="1">
   </function>
-  <function name="strcasecmp" cid="g_strcasecmp" render="0">
+  <function name="strcasecmp" cid="g_strcasecmp" render="1">
   </function>
-  <function name="strchomp" cid="g_strchomp" render="0">
+  <function name="strchomp" cid="g_strchomp" render="1">
   </function>
-  <function name="strchug" cid="g_strchug" render="0">
+  <function name="strchug" cid="g_strchug" render="1">
   </function>
-  <function name="strcmp0" cid="g_strcmp0" render="0">
+  <function name="strcmp0" cid="g_strcmp0" render="1">
   </function>
-  <function name="strcompress" cid="g_strcompress" render="0">
+  <function name="strcompress" cid="g_strcompress" render="1">
   </function>
   <function name="strconcat" cid="g_strconcat" render="0">
   </function>
-  <function name="strdelimit" cid="g_strdelimit" render="0">
+  <function name="strdelimit" cid="g_strdelimit" render="1">
   </function>
-  <function name="strdown" cid="g_strdown" render="0">
+  <function name="strdown" cid="g_strdown" render="1">
   </function>
-  <function name="strdup" cid="g_strdup" render="0">
+  <function name="strdup" cid="g_strdup" render="1">
   </function>
   <function name="strdup_printf" cid="g_strdup_printf" render="0">
   </function>
-  <function name="strdup_vprintf" cid="g_strdup_vprintf" render="0">
+  <function name="strdup_vprintf" cid="g_strdup_vprintf" render="1">
   </function>
-  <function name="strdupv" cid="g_strdupv" render="0">
+  <function name="strdupv" cid="g_strdupv" render="1">
   </function>
-  <function name="strerror" cid="g_strerror" render="0">
+  <function name="strerror" cid="g_strerror" render="1">
   </function>
-  <function name="strescape" cid="g_strescape" render="0">
+  <function name="strescape" cid="g_strescape" render="1">
   </function>
-  <function name="strfreev" cid="g_strfreev" render="0">
+  <function name="strfreev" cid="g_strfreev" render="1">
   </function>
-  <docsection name="string_chunks" render="0">   </docsection>
-  <docsection name="string_utils" render="0">   </docsection>
-  <docsection name="strings" render="0">   </docsection>
-  <function name="strip_context" cid="g_strip_context" render="0">
+  <docsection name="string_chunks" render="1">   </docsection>
+  <docsection name="string_utils" render="1">   </docsection>
+  <docsection name="strings" render="1">   </docsection>
+  <function name="strip_context" cid="g_strip_context" render="1">
   </function>
   <function name="strjoin" cid="g_strjoin" render="0">
   </function>
-  <function name="strjoinv" cid="g_strjoinv" render="0">
+  <function name="strjoinv" cid="g_strjoinv" render="1">
   </function>
-  <function name="strlcat" cid="g_strlcat" render="0">
+  <function name="strlcat" cid="g_strlcat" render="1">
   </function>
-  <function name="strlcpy" cid="g_strlcpy" render="0">
+  <function name="strlcpy" cid="g_strlcpy" render="1">
   </function>
-  <function name="strncasecmp" cid="g_strncasecmp" render="0">
+  <function name="strncasecmp" cid="g_strncasecmp" render="1">
   </function>
-  <function name="strndup" cid="g_strndup" render="0">
+  <function name="strndup" cid="g_strndup" render="1">
   </function>
-  <function name="strnfill" cid="g_strnfill" render="0">
+  <function name="strnfill" cid="g_strnfill" render="1">
   </function>
-  <function name="strreverse" cid="g_strreverse" render="0">
+  <function name="strreverse" cid="g_strreverse" render="1">
   </function>
-  <function name="strrstr" cid="g_strrstr" render="0">
+  <function name="strrstr" cid="g_strrstr" render="1">
   </function>
-  <function name="strrstr_len" cid="g_strrstr_len" render="0">
+  <function name="strrstr_len" cid="g_strrstr_len" render="1">
   </function>
-  <function name="strsignal" cid="g_strsignal" render="0">
+  <function name="strsignal" cid="g_strsignal" render="1">
   </function>
-  <function name="strsplit" cid="g_strsplit" render="0">
+  <function name="strsplit" cid="g_strsplit" render="1">
   </function>
-  <function name="strsplit_set" cid="g_strsplit_set" render="0">
+  <function name="strsplit_set" cid="g_strsplit_set" render="1">
   </function>
-  <function name="strstr_len" cid="g_strstr_len" render="0">
+  <function name="strstr_len" cid="g_strstr_len" render="1">
   </function>
-  <function-macro name="strstrip" render="0">   </function-macro>
-  <function name="strtod" cid="g_strtod" render="0">
+  <function-macro name="strstrip" render="1">   </function-macro>
+  <function name="strtod" cid="g_strtod" render="1">
   </function>
-  <function name="strup" cid="g_strup" render="0">
+  <function name="strup" cid="g_strup" render="1">
   </function>
-  <function name="strv_contains" cid="g_strv_contains" render="0">
+  <function name="strv_contains" cid="g_strv_contains" render="1">
   </function>
-  <function name="strv_equal" cid="g_strv_equal" render="0">
+  <function name="strv_equal" cid="g_strv_equal" render="1">
   </function>
-  <function name="strv_get_type" cid="g_strv_get_type" render="0">
+  <function name="strv_get_type" cid="g_strv_get_type" render="1">
   </function>
-  <function name="strv_length" cid="g_strv_length" render="0">
+  <function name="strv_length" cid="g_strv_length" render="1">
   </function>
-  <function-macro name="test_add" render="0">   </function-macro>
+  <function-macro name="test_add" render="1">   </function-macro>
   <function name="test_add_data_func" cid="g_test_add_data_func" render="0">
   </function>
   <function name="test_add_data_func_full" cid="g_test_add_data_func_full" render="0">
@@ -3831,153 +3831,153 @@
   <function name="test_trap_subprocess" cid="g_test_trap_subprocess" render="0">
   </function>
   <docsection name="testing" render="0">   </docsection>
-  <function name="thread_error_quark" cid="g_thread_error_quark" render="0">
+  <function name="thread_error_quark" cid="g_thread_error_quark" render="1">
   </function>
-  <function name="thread_exit" cid="g_thread_exit" render="0">
+  <function name="thread_exit" cid="g_thread_exit" render="1">
   </function>
-  <function name="thread_pool_get_max_idle_time" cid="g_thread_pool_get_max_idle_time" render="0">
+  <function name="thread_pool_get_max_idle_time" cid="g_thread_pool_get_max_idle_time" render="1">
   </function>
-  <function name="thread_pool_get_max_unused_threads" cid="g_thread_pool_get_max_unused_threads" render="0">
+  <function name="thread_pool_get_max_unused_threads" cid="g_thread_pool_get_max_unused_threads" render="1">
   </function>
-  <function name="thread_pool_get_num_unused_threads" cid="g_thread_pool_get_num_unused_threads" render="0">
+  <function name="thread_pool_get_num_unused_threads" cid="g_thread_pool_get_num_unused_threads" render="1">
   </function>
-  <function name="thread_pool_set_max_idle_time" cid="g_thread_pool_set_max_idle_time" render="0">
+  <function name="thread_pool_set_max_idle_time" cid="g_thread_pool_set_max_idle_time" render="1">
   </function>
-  <function name="thread_pool_set_max_unused_threads" cid="g_thread_pool_set_max_unused_threads" render="0">
+  <function name="thread_pool_set_max_unused_threads" cid="g_thread_pool_set_max_unused_threads" render="1">
   </function>
-  <function name="thread_pool_stop_unused_threads" cid="g_thread_pool_stop_unused_threads" render="0">
+  <function name="thread_pool_stop_unused_threads" cid="g_thread_pool_stop_unused_threads" render="1">
   </function>
-  <docsection name="thread_pools" render="0">   </docsection>
-  <function name="thread_self" cid="g_thread_self" render="0">
+  <docsection name="thread_pools" render="1">   </docsection>
+  <function name="thread_self" cid="g_thread_self" render="1">
   </function>
-  <function name="thread_yield" cid="g_thread_yield" render="0">
+  <function name="thread_yield" cid="g_thread_yield" render="1">
   </function>
-  <docsection name="threads" render="0">   </docsection>
-  <function name="time_val_from_iso8601" cid="g_time_val_from_iso8601" render="0">
+  <docsection name="threads" render="1">   </docsection>
+  <function name="time_val_from_iso8601" cid="g_time_val_from_iso8601" render="1">
   </function>
-  <function name="timeout_add" cid="g_timeout_add" render="0">
+  <function name="timeout_add" cid="g_timeout_add" render="1">
   </function>
-  <function name="timeout_add_full" cid="g_timeout_add_full" render="0">
+  <function name="timeout_add_full" cid="g_timeout_add_full" render="1">
   </function>
-  <function name="timeout_add_seconds" cid="g_timeout_add_seconds" render="0">
+  <function name="timeout_add_seconds" cid="g_timeout_add_seconds" render="1">
   </function>
-  <function name="timeout_add_seconds_full" cid="g_timeout_add_seconds_full" render="0">
+  <function name="timeout_add_seconds_full" cid="g_timeout_add_seconds_full" render="1">
   </function>
-  <function name="timeout_source_new" cid="g_timeout_source_new" render="0">
+  <function name="timeout_source_new" cid="g_timeout_source_new" render="1">
   </function>
-  <function name="timeout_source_new_seconds" cid="g_timeout_source_new_seconds" render="0">
+  <function name="timeout_source_new_seconds" cid="g_timeout_source_new_seconds" render="1">
   </function>
-  <docsection name="timers" render="0">   </docsection>
-  <docsection name="timezone" render="0">   </docsection>
-  <docsection name="trash_stack" render="0">   </docsection>
-  <function name="trash_stack_height" cid="g_trash_stack_height" render="0">
+  <docsection name="timers" render="1">   </docsection>
+  <docsection name="timezone" render="1">   </docsection>
+  <docsection name="trash_stack" render="1">   </docsection>
+  <function name="trash_stack_height" cid="g_trash_stack_height" render="1">
   </function>
-  <function name="trash_stack_peek" cid="g_trash_stack_peek" render="0">
+  <function name="trash_stack_peek" cid="g_trash_stack_peek" render="1">
   </function>
-  <function name="trash_stack_pop" cid="g_trash_stack_pop" render="0">
+  <function name="trash_stack_pop" cid="g_trash_stack_pop" render="1">
   </function>
-  <function name="trash_stack_push" cid="g_trash_stack_push" render="0">
+  <function name="trash_stack_push" cid="g_trash_stack_push" render="1">
   </function>
-  <docsection name="trees-binary" render="0">   </docsection>
-  <docsection name="trees-nary" render="0">   </docsection>
-  <function name="try_malloc" cid="g_try_malloc" render="0">
+  <docsection name="trees-binary" render="1">   </docsection>
+  <docsection name="trees-nary" render="1">   </docsection>
+  <function name="try_malloc" cid="g_try_malloc" render="1">
   </function>
-  <function name="try_malloc0" cid="g_try_malloc0" render="0">
+  <function name="try_malloc0" cid="g_try_malloc0" render="1">
   </function>
-  <function name="try_malloc0_n" cid="g_try_malloc0_n" render="0">
+  <function name="try_malloc0_n" cid="g_try_malloc0_n" render="1">
   </function>
-  <function name="try_malloc_n" cid="g_try_malloc_n" render="0">
+  <function name="try_malloc_n" cid="g_try_malloc_n" render="1">
   </function>
-  <function-macro name="try_new" render="0">   </function-macro>
-  <function-macro name="try_new0" render="0">   </function-macro>
-  <function name="try_realloc" cid="g_try_realloc" render="0">
+  <function-macro name="try_new" render="1">   </function-macro>
+  <function-macro name="try_new0" render="1">   </function-macro>
+  <function name="try_realloc" cid="g_try_realloc" render="1">
   </function>
-  <function name="try_realloc_n" cid="g_try_realloc_n" render="0">
+  <function name="try_realloc_n" cid="g_try_realloc_n" render="1">
   </function>
-  <function-macro name="try_renew" render="0">   </function-macro>
-  <docsection name="type_conversion" render="0">   </docsection>
-  <function-macro name="typeof" render="0">   </function-macro>
-  <docsection name="types" render="0">   </docsection>
-  <function name="ucs4_to_utf16" cid="g_ucs4_to_utf16" render="0">
+  <function-macro name="try_renew" render="1">   </function-macro>
+  <docsection name="type_conversion" render="1">   </docsection>
+  <function-macro name="typeof" render="1">   </function-macro>
+  <docsection name="types" render="1">   </docsection>
+  <function name="ucs4_to_utf16" cid="g_ucs4_to_utf16" render="1">
   </function>
-  <function name="ucs4_to_utf8" cid="g_ucs4_to_utf8" render="0">
+  <function name="ucs4_to_utf8" cid="g_ucs4_to_utf8" render="1">
   </function>
-  <function-macro name="uint64_checked_add" render="0">   </function-macro>
-  <function-macro name="uint64_checked_mul" render="0">   </function-macro>
-  <function-macro name="uint_checked_add" render="0">   </function-macro>
-  <function-macro name="uint_checked_mul" render="0">   </function-macro>
-  <function name="unichar_break_type" cid="g_unichar_break_type" render="0">
+  <function-macro name="uint64_checked_add" render="1">   </function-macro>
+  <function-macro name="uint64_checked_mul" render="1">   </function-macro>
+  <function-macro name="uint_checked_add" render="1">   </function-macro>
+  <function-macro name="uint_checked_mul" render="1">   </function-macro>
+  <function name="unichar_break_type" cid="g_unichar_break_type" render="1">
   </function>
-  <function name="unichar_combining_class" cid="g_unichar_combining_class" render="0">
+  <function name="unichar_combining_class" cid="g_unichar_combining_class" render="1">
   </function>
-  <function name="unichar_compose" cid="g_unichar_compose" render="0">
+  <function name="unichar_compose" cid="g_unichar_compose" render="1">
   </function>
-  <function name="unichar_decompose" cid="g_unichar_decompose" render="0">
+  <function name="unichar_decompose" cid="g_unichar_decompose" render="1">
   </function>
-  <function name="unichar_digit_value" cid="g_unichar_digit_value" render="0">
+  <function name="unichar_digit_value" cid="g_unichar_digit_value" render="1">
   </function>
-  <function name="unichar_fully_decompose" cid="g_unichar_fully_decompose" render="0">
+  <function name="unichar_fully_decompose" cid="g_unichar_fully_decompose" render="1">
   </function>
-  <function name="unichar_get_mirror_char" cid="g_unichar_get_mirror_char" render="0">
+  <function name="unichar_get_mirror_char" cid="g_unichar_get_mirror_char" render="1">
   </function>
-  <function name="unichar_get_script" cid="g_unichar_get_script" render="0">
+  <function name="unichar_get_script" cid="g_unichar_get_script" render="1">
   </function>
-  <function name="unichar_isalnum" cid="g_unichar_isalnum" render="0">
+  <function name="unichar_isalnum" cid="g_unichar_isalnum" render="1">
   </function>
-  <function name="unichar_isalpha" cid="g_unichar_isalpha" render="0">
+  <function name="unichar_isalpha" cid="g_unichar_isalpha" render="1">
   </function>
-  <function name="unichar_iscntrl" cid="g_unichar_iscntrl" render="0">
+  <function name="unichar_iscntrl" cid="g_unichar_iscntrl" render="1">
   </function>
-  <function name="unichar_isdefined" cid="g_unichar_isdefined" render="0">
+  <function name="unichar_isdefined" cid="g_unichar_isdefined" render="1">
   </function>
-  <function name="unichar_isdigit" cid="g_unichar_isdigit" render="0">
+  <function name="unichar_isdigit" cid="g_unichar_isdigit" render="1">
   </function>
-  <function name="unichar_isgraph" cid="g_unichar_isgraph" render="0">
+  <function name="unichar_isgraph" cid="g_unichar_isgraph" render="1">
   </function>
-  <function name="unichar_islower" cid="g_unichar_islower" render="0">
+  <function name="unichar_islower" cid="g_unichar_islower" render="1">
   </function>
-  <function name="unichar_ismark" cid="g_unichar_ismark" render="0">
+  <function name="unichar_ismark" cid="g_unichar_ismark" render="1">
   </function>
-  <function name="unichar_isprint" cid="g_unichar_isprint" render="0">
+  <function name="unichar_isprint" cid="g_unichar_isprint" render="1">
   </function>
-  <function name="unichar_ispunct" cid="g_unichar_ispunct" render="0">
+  <function name="unichar_ispunct" cid="g_unichar_ispunct" render="1">
   </function>
-  <function name="unichar_isspace" cid="g_unichar_isspace" render="0">
+  <function name="unichar_isspace" cid="g_unichar_isspace" render="1">
   </function>
-  <function name="unichar_istitle" cid="g_unichar_istitle" render="0">
+  <function name="unichar_istitle" cid="g_unichar_istitle" render="1">
   </function>
-  <function name="unichar_isupper" cid="g_unichar_isupper" render="0">
+  <function name="unichar_isupper" cid="g_unichar_isupper" render="1">
   </function>
-  <function name="unichar_iswide" cid="g_unichar_iswide" render="0">
+  <function name="unichar_iswide" cid="g_unichar_iswide" render="1">
   </function>
-  <function name="unichar_iswide_cjk" cid="g_unichar_iswide_cjk" render="0">
+  <function name="unichar_iswide_cjk" cid="g_unichar_iswide_cjk" render="1">
   </function>
-  <function name="unichar_isxdigit" cid="g_unichar_isxdigit" render="0">
+  <function name="unichar_isxdigit" cid="g_unichar_isxdigit" render="1">
   </function>
-  <function name="unichar_iszerowidth" cid="g_unichar_iszerowidth" render="0">
+  <function name="unichar_iszerowidth" cid="g_unichar_iszerowidth" render="1">
   </function>
-  <function name="unichar_to_utf8" cid="g_unichar_to_utf8" render="0">
+  <function name="unichar_to_utf8" cid="g_unichar_to_utf8" render="1">
   </function>
-  <function name="unichar_tolower" cid="g_unichar_tolower" render="0">
+  <function name="unichar_tolower" cid="g_unichar_tolower" render="1">
   </function>
-  <function name="unichar_totitle" cid="g_unichar_totitle" render="0">
+  <function name="unichar_totitle" cid="g_unichar_totitle" render="1">
   </function>
-  <function name="unichar_toupper" cid="g_unichar_toupper" render="0">
+  <function name="unichar_toupper" cid="g_unichar_toupper" render="1">
   </function>
-  <function name="unichar_type" cid="g_unichar_type" render="0">
+  <function name="unichar_type" cid="g_unichar_type" render="1">
   </function>
-  <function name="unichar_validate" cid="g_unichar_validate" render="0">
+  <function name="unichar_validate" cid="g_unichar_validate" render="1">
   </function>
-  <function name="unichar_xdigit_value" cid="g_unichar_xdigit_value" render="0">
+  <function name="unichar_xdigit_value" cid="g_unichar_xdigit_value" render="1">
   </function>
-  <docsection name="unicode" render="0">   </docsection>
-  <function name="unicode_canonical_decomposition" cid="g_unicode_canonical_decomposition" render="0">
+  <docsection name="unicode" render="1">   </docsection>
+  <function name="unicode_canonical_decomposition" cid="g_unicode_canonical_decomposition" render="1">
   </function>
-  <function name="unicode_canonical_ordering" cid="g_unicode_canonical_ordering" render="0">
+  <function name="unicode_canonical_ordering" cid="g_unicode_canonical_ordering" render="1">
   </function>
-  <function name="unicode_script_from_iso15924" cid="g_unicode_script_from_iso15924" render="0">
+  <function name="unicode_script_from_iso15924" cid="g_unicode_script_from_iso15924" render="1">
   </function>
-  <function name="unicode_script_to_iso15924" cid="g_unicode_script_to_iso15924" render="0">
+  <function name="unicode_script_to_iso15924" cid="g_unicode_script_to_iso15924" render="1">
   </function>
   <function name="unix_error_quark" cid="g_unix_error_quark" render="0">
   </function>
@@ -4001,147 +4001,147 @@
   </function>
   <function name="unlink" cid="g_unlink" render="0">
   </function>
-  <function name="unsetenv" cid="g_unsetenv" render="0">
+  <function name="unsetenv" cid="g_unsetenv" render="1">
   </function>
-  <function name="uri_build" cid="g_uri_build" render="0">
+  <function name="uri_build" cid="g_uri_build" render="1">
   </function>
-  <function name="uri_build_with_user" cid="g_uri_build_with_user" render="0">
+  <function name="uri_build_with_user" cid="g_uri_build_with_user" render="1">
   </function>
-  <function name="uri_error_quark" cid="g_uri_error_quark" render="0">
+  <function name="uri_error_quark" cid="g_uri_error_quark" render="1">
   </function>
-  <function name="uri_escape_bytes" cid="g_uri_escape_bytes" render="0">
+  <function name="uri_escape_bytes" cid="g_uri_escape_bytes" render="1">
   </function>
-  <function name="uri_escape_string" cid="g_uri_escape_string" render="0">
+  <function name="uri_escape_string" cid="g_uri_escape_string" render="1">
   </function>
-  <function name="uri_is_valid" cid="g_uri_is_valid" render="0">
+  <function name="uri_is_valid" cid="g_uri_is_valid" render="1">
   </function>
-  <function name="uri_join" cid="g_uri_join" render="0">
+  <function name="uri_join" cid="g_uri_join" render="1">
   </function>
-  <function name="uri_join_with_user" cid="g_uri_join_with_user" render="0">
+  <function name="uri_join_with_user" cid="g_uri_join_with_user" render="1">
   </function>
-  <function name="uri_list_extract_uris" cid="g_uri_list_extract_uris" render="0">
+  <function name="uri_list_extract_uris" cid="g_uri_list_extract_uris" render="1">
   </function>
-  <function name="uri_parse" cid="g_uri_parse" render="0">
+  <function name="uri_parse" cid="g_uri_parse" render="1">
   </function>
-  <function name="uri_parse_params" cid="g_uri_parse_params" render="0">
+  <function name="uri_parse_params" cid="g_uri_parse_params" render="1">
   </function>
-  <function name="uri_parse_scheme" cid="g_uri_parse_scheme" render="0">
+  <function name="uri_parse_scheme" cid="g_uri_parse_scheme" render="1">
   </function>
-  <function name="uri_peek_scheme" cid="g_uri_peek_scheme" render="0">
+  <function name="uri_peek_scheme" cid="g_uri_peek_scheme" render="1">
   </function>
-  <function name="uri_resolve_relative" cid="g_uri_resolve_relative" render="0">
+  <function name="uri_resolve_relative" cid="g_uri_resolve_relative" render="1">
   </function>
-  <function name="uri_split" cid="g_uri_split" render="0">
+  <function name="uri_split" cid="g_uri_split" render="1">
   </function>
-  <function name="uri_split_network" cid="g_uri_split_network" render="0">
+  <function name="uri_split_network" cid="g_uri_split_network" render="1">
   </function>
-  <function name="uri_split_with_user" cid="g_uri_split_with_user" render="0">
+  <function name="uri_split_with_user" cid="g_uri_split_with_user" render="1">
   </function>
-  <function name="uri_unescape_bytes" cid="g_uri_unescape_bytes" render="0">
+  <function name="uri_unescape_bytes" cid="g_uri_unescape_bytes" render="1">
   </function>
-  <function name="uri_unescape_segment" cid="g_uri_unescape_segment" render="0">
+  <function name="uri_unescape_segment" cid="g_uri_unescape_segment" render="1">
   </function>
-  <function name="uri_unescape_string" cid="g_uri_unescape_string" render="0">
+  <function name="uri_unescape_string" cid="g_uri_unescape_string" render="1">
   </function>
-  <function name="usleep" cid="g_usleep" render="0">
+  <function name="usleep" cid="g_usleep" render="1">
   </function>
-  <function name="utf16_to_ucs4" cid="g_utf16_to_ucs4" render="0">
+  <function name="utf16_to_ucs4" cid="g_utf16_to_ucs4" render="1">
   </function>
-  <function name="utf16_to_utf8" cid="g_utf16_to_utf8" render="0">
+  <function name="utf16_to_utf8" cid="g_utf16_to_utf8" render="1">
   </function>
-  <function name="utf8_casefold" cid="g_utf8_casefold" render="0">
+  <function name="utf8_casefold" cid="g_utf8_casefold" render="1">
   </function>
-  <function name="utf8_collate" cid="g_utf8_collate" render="0">
+  <function name="utf8_collate" cid="g_utf8_collate" render="1">
   </function>
-  <function name="utf8_collate_key" cid="g_utf8_collate_key" render="0">
+  <function name="utf8_collate_key" cid="g_utf8_collate_key" render="1">
   </function>
-  <function name="utf8_collate_key_for_filename" cid="g_utf8_collate_key_for_filename" render="0">
+  <function name="utf8_collate_key_for_filename" cid="g_utf8_collate_key_for_filename" render="1">
   </function>
-  <function name="utf8_find_next_char" cid="g_utf8_find_next_char" render="0">
+  <function name="utf8_find_next_char" cid="g_utf8_find_next_char" render="1">
   </function>
-  <function name="utf8_find_prev_char" cid="g_utf8_find_prev_char" render="0">
+  <function name="utf8_find_prev_char" cid="g_utf8_find_prev_char" render="1">
   </function>
-  <function name="utf8_get_char" cid="g_utf8_get_char" render="0">
+  <function name="utf8_get_char" cid="g_utf8_get_char" render="1">
   </function>
-  <function name="utf8_get_char_validated" cid="g_utf8_get_char_validated" render="0">
+  <function name="utf8_get_char_validated" cid="g_utf8_get_char_validated" render="1">
   </function>
-  <function name="utf8_make_valid" cid="g_utf8_make_valid" render="0">
+  <function name="utf8_make_valid" cid="g_utf8_make_valid" render="1">
   </function>
-  <function-macro name="utf8_next_char" render="0">   </function-macro>
-  <function name="utf8_normalize" cid="g_utf8_normalize" render="0">
+  <function-macro name="utf8_next_char" render="1">   </function-macro>
+  <function name="utf8_normalize" cid="g_utf8_normalize" render="1">
   </function>
-  <function name="utf8_offset_to_pointer" cid="g_utf8_offset_to_pointer" render="0">
+  <function name="utf8_offset_to_pointer" cid="g_utf8_offset_to_pointer" render="1">
   </function>
-  <function name="utf8_pointer_to_offset" cid="g_utf8_pointer_to_offset" render="0">
+  <function name="utf8_pointer_to_offset" cid="g_utf8_pointer_to_offset" render="1">
   </function>
-  <function name="utf8_prev_char" cid="g_utf8_prev_char" render="0">
+  <function name="utf8_prev_char" cid="g_utf8_prev_char" render="1">
   </function>
-  <function name="utf8_strchr" cid="g_utf8_strchr" render="0">
+  <function name="utf8_strchr" cid="g_utf8_strchr" render="1">
   </function>
-  <function name="utf8_strdown" cid="g_utf8_strdown" render="0">
+  <function name="utf8_strdown" cid="g_utf8_strdown" render="1">
   </function>
-  <function name="utf8_strlen" cid="g_utf8_strlen" render="0">
+  <function name="utf8_strlen" cid="g_utf8_strlen" render="1">
   </function>
-  <function name="utf8_strncpy" cid="g_utf8_strncpy" render="0">
+  <function name="utf8_strncpy" cid="g_utf8_strncpy" render="1">
   </function>
-  <function name="utf8_strrchr" cid="g_utf8_strrchr" render="0">
+  <function name="utf8_strrchr" cid="g_utf8_strrchr" render="1">
   </function>
-  <function name="utf8_strreverse" cid="g_utf8_strreverse" render="0">
+  <function name="utf8_strreverse" cid="g_utf8_strreverse" render="1">
   </function>
-  <function name="utf8_strup" cid="g_utf8_strup" render="0">
+  <function name="utf8_strup" cid="g_utf8_strup" render="1">
   </function>
-  <function name="utf8_substring" cid="g_utf8_substring" render="0">
+  <function name="utf8_substring" cid="g_utf8_substring" render="1">
   </function>
-  <function name="utf8_to_ucs4" cid="g_utf8_to_ucs4" render="0">
+  <function name="utf8_to_ucs4" cid="g_utf8_to_ucs4" render="1">
   </function>
-  <function name="utf8_to_ucs4_fast" cid="g_utf8_to_ucs4_fast" render="0">
+  <function name="utf8_to_ucs4_fast" cid="g_utf8_to_ucs4_fast" render="1">
   </function>
-  <function name="utf8_to_utf16" cid="g_utf8_to_utf16" render="0">
+  <function name="utf8_to_utf16" cid="g_utf8_to_utf16" render="1">
   </function>
-  <function name="utf8_validate" cid="g_utf8_validate" render="0">
+  <function name="utf8_validate" cid="g_utf8_validate" render="1">
   </function>
-  <function name="utf8_validate_len" cid="g_utf8_validate_len" render="0">
+  <function name="utf8_validate_len" cid="g_utf8_validate_len" render="1">
   </function>
-  <docsection name="uuid" render="0">   </docsection>
-  <function name="uuid_string_is_valid" cid="g_uuid_string_is_valid" render="0">
+  <docsection name="uuid" render="1">   </docsection>
+  <function name="uuid_string_is_valid" cid="g_uuid_string_is_valid" render="1">
   </function>
-  <function name="uuid_string_random" cid="g_uuid_string_random" render="0">
+  <function name="uuid_string_random" cid="g_uuid_string_random" render="1">
   </function>
-  <function name="variant_get_gtype" cid="g_variant_get_gtype" render="0">
+  <function name="variant_get_gtype" cid="g_variant_get_gtype" render="1">
   </function>
-  <function name="variant_is_object_path" cid="g_variant_is_object_path" render="0">
+  <function name="variant_is_object_path" cid="g_variant_is_object_path" render="1">
   </function>
-  <function name="variant_is_signature" cid="g_variant_is_signature" render="0">
+  <function name="variant_is_signature" cid="g_variant_is_signature" render="1">
   </function>
-  <function name="variant_parse" cid="g_variant_parse" render="0">
+  <function name="variant_parse" cid="g_variant_parse" render="1">
   </function>
-  <function name="variant_parse_error_print_context" cid="g_variant_parse_error_print_context" render="0">
+  <function name="variant_parse_error_print_context" cid="g_variant_parse_error_print_context" render="1">
   </function>
-  <function name="variant_parse_error_quark" cid="g_variant_parse_error_quark" render="0">
+  <function name="variant_parse_error_quark" cid="g_variant_parse_error_quark" render="1">
   </function>
-  <function name="variant_parser_get_error_quark" cid="g_variant_parser_get_error_quark" render="0">
+  <function name="variant_parser_get_error_quark" cid="g_variant_parser_get_error_quark" render="1">
   </function>
   <function name="variant_type_checked_" cid="g_variant_type_checked_" render="0">
   </function>
   <function name="variant_type_string_get_depth_" cid="g_variant_type_string_get_depth_" render="0">
   </function>
-  <function name="variant_type_string_is_valid" cid="g_variant_type_string_is_valid" render="0">
+  <function name="variant_type_string_is_valid" cid="g_variant_type_string_is_valid" render="1">
   </function>
-  <function name="variant_type_string_scan" cid="g_variant_type_string_scan" render="0">
+  <function name="variant_type_string_scan" cid="g_variant_type_string_scan" render="1">
   </function>
   <function name="vasprintf" cid="g_vasprintf" render="0">
   </function>
-  <docsection name="version" render="0">   </docsection>
+  <docsection name="version" render="1">   </docsection>
   <function name="vfprintf" cid="g_vfprintf" render="0">
   </function>
   <function name="vprintf" cid="g_vprintf" render="0">
   </function>
-  <function name="vsnprintf" cid="g_vsnprintf" render="0">
+  <function name="vsnprintf" cid="g_vsnprintf" render="1">
   </function>
   <function name="vsprintf" cid="g_vsprintf" render="0">
   </function>
-  <function-macro name="warn_if_fail" render="0">   </function-macro>
-  <function name="warn_message" cid="g_warn_message" render="0">
+  <function-macro name="warn_if_fail" render="1">   </function-macro>
+  <function name="warn_message" cid="g_warn_message" render="1">
   </function>
   <docsection name="warnings" render="0">   </docsection>
   <docsection name="windows" render="0">   </docsection>
