@@ -5386,7 +5386,7 @@
      </useargs>
   </use>
   <use id="_841" name="g_bytes_new"
-     ponyname="g_bytes_new"
+     ponyname="create"
      fid="f61"
      lineno="35"
      rv="GBytes">

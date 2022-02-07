@@ -1,11 +1,9 @@
+// Constructors
+// Methods
+
+class GVariant
+  var _ptr: Pointer[GVariant] tag = Pointer[GVariant]
 
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gvariant.h:
-  Original Name: _GVariant
-  Struct Size (bits):  
-  Struct Align (bits): 
+  fun apply(): Pointer[GVariant] tag => _ptr
 
-  Fields (Offset in bits):
-*/
-struct GVariant

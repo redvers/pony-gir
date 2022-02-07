@@ -1,3 +1,32 @@
+t:
+	sh mknonclass GLib HookList G
+	sh mknonclass GLib Hook G
+	sh mknonclass GLib HashTable G
+	sh mknonclass GLib TimeVal G
+	sh mknonclass GLib Date G
+	sh mknonclass GLib Data G
+	sh mknonclass GLib List G
+	sh mknonclass GLib IConv G
+	sh mknonclass GLib SList G
+	sh mknonclass GLib Source G
+	sh mknonclass GLib Bytes G
+	sh mknonclass GLib ByteArray G
+	sh mknonclass GLib Error G
+	sh mknonclass GLib IOChannel G
+	sh mknonclass GLib LogField G
+	sh mknonclass GLib Variant G
+	sh mknonclass GLib MainContext G
+	sh mknonclass GLib MemVTable G
+	sh mknonclass GLib DebugKey G
+	sh mknonclass GLib PatternSpec G
+	sh mknonclass GLib PollFD G
+	sh mknonclass GLib PtrArray G
+	sh mknonclass GLib SourceFuncs G
+	sh mknonclass GLib Thread G
+	sh mknonclass GLib TrashStack G
+	sh mknonclass GLib Uri G
+	sh mknonclass GLib VariantType G
+
 all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 gbase gtkbase bitfields enumerations
 
 

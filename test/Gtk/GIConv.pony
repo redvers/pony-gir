@@ -1,11 +1,9 @@
+// Constructors
+// Methods
+
+class GIConv
+  var _ptr: Pointer[GIConv] tag = Pointer[GIConv]
 
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gconvert.h:
-  Original Name: _GIConv
-  Struct Size (bits):  
-  Struct Align (bits): 
+  fun apply(): Pointer[GIConv] tag => _ptr
 
-  Fields (Offset in bits):
-*/
-struct GIConv

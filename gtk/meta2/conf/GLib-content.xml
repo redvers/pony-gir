@@ -27,7 +27,7 @@
     <function name="free" cid="g_array_free" render="0"/>
     <function name="get_element_size" cid="g_array_get_element_size" render="0"/>
     <function name="insert_vals" cid="g_array_insert_vals" render="0"/>
-    <function name="new" cid="g_array_new" render="0"/>
+    <function name="create" cid="g_array_new" render="0"/>
     <function name="prepend_vals" cid="g_array_prepend_vals" render="0"/>
     <function name="ref" cid="g_array_ref" render="0"/>
     <function name="remove_index" cid="g_array_remove_index" render="0"/>
@@ -165,12 +165,12 @@
     <function name="unref" cid="g_byte_array_unref" render="0"/>
   </record>
   <record name="Bytes" gtypestructfor="" ctype="GBytes" render="1">
-    <constructor name="new" cid="g_bytes_new" render="0"/>
+    <constructor name="new" cid="g_bytes_new" render="1"/>
     <constructor name="new_static" cid="g_bytes_new_static" render="0"/>
     <constructor name="new_take" cid="g_bytes_new_take" render="0"/>
     <constructor name="new_with_free_func" cid="g_bytes_new_with_free_func" render="0"/>
     <method name="compare" cid="g_bytes_compare" render="0"/>
-    <method name="equal" cid="g_bytes_equal" render="0"/>
+    <method name="equal" cid="g_bytes_equal" render="1"/>
     <method name="get_data" cid="g_bytes_get_data" render="0"/>
     <method name="get_region" cid="g_bytes_get_region" render="0"/>
     <method name="get_size" cid="g_bytes_get_size" render="0"/>

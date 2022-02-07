@@ -1,11 +1,9 @@
+// Constructors
+// Methods
+
+class GHashTable
+  var _ptr: Pointer[GHashTable] tag = Pointer[GHashTable]
 
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/ghash.h:
-  Original Name: _GHashTable
-  Struct Size (bits):  
-  Struct Align (bits): 
+  fun apply(): Pointer[GHashTable] tag => _ptr
 
-  Fields (Offset in bits):
-*/
-struct GHashTable

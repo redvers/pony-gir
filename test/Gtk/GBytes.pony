@@ -1,11 +1,16 @@
+// Constructors
+use @g_bytes_new[Pointer[GBytes] tag](data: Pointer[None] tag, size: U64)
+// Methods
+use @g_bytes_equal[I32](bytes1: Pointer[None] tag, bytes2: Pointer[None] tag)
 
+class GBytes
+  var _ptr: Pointer[GBytes] tag = Pointer[GBytes]
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/garray.h:
-  Original Name: _GBytes
-  Struct Size (bits):  
-  Struct Align (bits): 
+  new create(data: Pointer[None] tag, size: U64) =>
+    _ptr = @g_bytes_new(data, size)
 
-  Fields (Offset in bits):
-*/
-struct GBytes
+  fun apply(): Pointer[GBytes] tag => _ptr
+
+  fun g_bytes_equal(bytes1: Pointer[None] tag, bytes2: Pointer[None] tag): I32 =>
+    @g_bytes_equal(bytes1, bytes2)
+

@@ -1,11 +1,9 @@
+// Constructors
+// Methods
+
+class GMainContext
+  var _ptr: Pointer[GMainContext] tag = Pointer[GMainContext]
 
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gmain.h:
-  Original Name: _GMainContext
-  Struct Size (bits):  
-  Struct Align (bits): 
+  fun apply(): Pointer[GMainContext] tag => _ptr
 
-  Fields (Offset in bits):
-*/
-struct GMainContext

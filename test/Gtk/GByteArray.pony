@@ -1,15 +1,9 @@
+// Constructors
+// Methods
+
+class GByteArray
+  var _ptr: Pointer[GByteArray] tag = Pointer[GByteArray]
 
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/garray.h:
-  Original Name: _GByteArray
-  Struct Size (bits):  128
-  Struct Align (bits): 64
+  fun apply(): Pointer[GByteArray] tag => _ptr
 
-  Fields (Offset in bits):
-     000000: [PointerType size=64]->[FundamentalType(unsigned char) size=8]: data  
-     000064: [FundamentalType(unsigned int) size=32]: len  
-*/
-struct GByteArray
-  var data: Pointer[U8] = Pointer[U8] // PointerType
-  var len: U32 = U32(0) // Typedef

@@ -1,11 +1,9 @@
+// Constructors
+// Methods
+
+class GData
+  var _ptr: Pointer[GData] tag = Pointer[GData]
 
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gdataset.h:
-  Original Name: _GData
-  Struct Size (bits):  
-  Struct Align (bits): 
+  fun apply(): Pointer[GData] tag => _ptr
 
-  Fields (Offset in bits):
-*/
-struct GData
