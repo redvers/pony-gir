@@ -37,6 +37,17 @@ class <xsl:value-of select="$class"/> is <xsl:value-of select="$class"/>Interfac
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
+<xsl:choose>
+  <xsl:when test="/castxml2pony/ns[@ns=$ns]/class[@ctype=$class]/@parent eq ''">interface <xsl:value-of select="$class"/>Interface</xsl:when>
+  <xsl:otherwise>interface <xsl:value-of select="$class"/>Interface is <xsl:value-of select="/castxml2pony/ns[@ns=$ns]/class[@ctype=$class]/@parent"/>Interface</xsl:otherwise>
+</xsl:choose>
+<!--<xsl:result-document href="out/{concat($ns, '/', $ns, $class)}-use.pony" method="text"> -->
+<xsl:text>&#10;  fun apply(): NullablePointer[GObjectStruct] val&#10;&#10;</xsl:text>
+<xsl:for-each select="/castxml2pony/ns[@ns=$ns]/class[@ctype=$class]/method[@render='1']">
+  <xsl:variable name="fnname" select="./@cid"/>
+  <xsl:call-template name="mainusemethods"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
+</xsl:for-each>
+
 </xsl:template>
 
 </xsl:stylesheet>
