@@ -1092,29 +1092,29 @@
     <virtual-method name="pressed" render="0"/>
     <virtual-method name="released" render="0"/>
     <method name="clicked" cid="gtk_button_clicked" render="1"/>
-    <method name="enter" cid="gtk_button_enter" render="0"/>
-    <method name="get_alignment" cid="gtk_button_get_alignment" render="0"/>
-    <method name="get_always_show_image" cid="gtk_button_get_always_show_image" render="0"/>
+    <method name="enter" cid="gtk_button_enter" render="1"/>
+    <method name="get_alignment" cid="gtk_button_get_alignment" render="1"/>
+    <method name="get_always_show_image" cid="gtk_button_get_always_show_image" render="1"/>
     <method name="get_event_window" cid="gtk_button_get_event_window" render="0"/>
-    <method name="get_focus_on_click" cid="gtk_button_get_focus_on_click" render="0"/>
-    <method name="get_image" cid="gtk_button_get_image" render="0"/>
-    <method name="get_image_position" cid="gtk_button_get_image_position" render="0"/>
-    <method name="get_label" cid="gtk_button_get_label" render="0"/>
-    <method name="get_relief" cid="gtk_button_get_relief" render="0"/>
-    <method name="get_use_stock" cid="gtk_button_get_use_stock" render="0"/>
-    <method name="get_use_underline" cid="gtk_button_get_use_underline" render="0"/>
-    <method name="leave" cid="gtk_button_leave" render="0"/>
-    <method name="pressed" cid="gtk_button_pressed" render="0"/>
-    <method name="released" cid="gtk_button_released" render="0"/>
-    <method name="set_alignment" cid="gtk_button_set_alignment" render="0"/>
-    <method name="set_always_show_image" cid="gtk_button_set_always_show_image" render="0"/>
-    <method name="set_focus_on_click" cid="gtk_button_set_focus_on_click" render="0"/>
-    <method name="set_image" cid="gtk_button_set_image" render="0"/>
-    <method name="set_image_position" cid="gtk_button_set_image_position" render="0"/>
-    <method name="set_label" cid="gtk_button_set_label" render="0"/>
-    <method name="set_relief" cid="gtk_button_set_relief" render="0"/>
-    <method name="set_use_stock" cid="gtk_button_set_use_stock" render="0"/>
-    <method name="set_use_underline" cid="gtk_button_set_use_underline" render="0"/>
+    <method name="get_focus_on_click" cid="gtk_button_get_focus_on_click" render="1"/>
+    <method name="get_image" cid="gtk_button_get_image" render="1"/>
+    <method name="get_image_position" cid="gtk_button_get_image_position" render="1"/>
+    <method name="get_label" cid="gtk_button_get_label" render="1"/>
+    <method name="get_relief" cid="gtk_button_get_relief" render="1"/>
+    <method name="get_use_stock" cid="gtk_button_get_use_stock" render="1"/>
+    <method name="get_use_underline" cid="gtk_button_get_use_underline" render="1"/>
+    <method name="leave" cid="gtk_button_leave" render="1"/>
+    <method name="pressed" cid="gtk_button_pressed" render="1"/>
+    <method name="released" cid="gtk_button_released" render="1"/>
+    <method name="set_alignment" cid="gtk_button_set_alignment" render="1"/>
+    <method name="set_always_show_image" cid="gtk_button_set_always_show_image" render="1"/>
+    <method name="set_focus_on_click" cid="gtk_button_set_focus_on_click" render="1"/>
+    <method name="set_image" cid="gtk_button_set_image" render="1"/>
+    <method name="set_image_position" cid="gtk_button_set_image_position" render="1"/>
+    <method name="set_label" cid="gtk_button_set_label" render="1"/>
+    <method name="set_relief" cid="gtk_button_set_relief" render="1"/>
+    <method name="set_use_stock" cid="gtk_button_set_use_stock" render="1"/>
+    <method name="set_use_underline" cid="gtk_button_set_use_underline" render="1"/>
     <property name="always-show-image" cid="" render="0"/>
     <property name="image" cid="" render="0"/>
     <property name="image-position" cid="" render="0"/>

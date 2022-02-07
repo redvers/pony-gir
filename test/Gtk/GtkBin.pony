@@ -19,6 +19,6 @@ interface GtkBinInterface is GtkContainerInterface
   fun apply(): NullablePointer[GObjectStruct] val
 
   fun get_child(): GObject =>
-    var ptr: NullablePointer[GObjectStruct] val =  @gtk_bin_get_child(apply())
-    GObject.from_ptr(ptr)
+    let p: NullablePointer[GObjectStruct] val = @gtk_bin_get_child(apply())
+    GObject.from_ptr(p)
 

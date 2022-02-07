@@ -249,6 +249,12 @@
 <xsl:if test="name($varargs)='Ellipsis'">/*</xsl:if>
 <xsl:if test="$render='0'"><xsl:text>/*
 </xsl:text></xsl:if><xsl:text>  fun </xsl:text><xsl:value-of select="$n/@ponyname"/>(<xsl:value-of select="$args"/>): <xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$rrv]/@ponytypeout"/> =>
+<xsl:choose>
+  <xsl:when test="/castxml2pony/typedefs/typedef[@name=$rrv]/@auto eq 'true'">
+    <xsl:text>    let p: NullablePointer[GObjectStruct] val =</xsl:text> @<xsl:value-of select="$n/@name"/>(<xsl:value-of select="$cargs"/>)<xsl:text>&#10;    </xsl:text>
+    <xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$rrv]/@ponytypeout"/>.from_ptr(p)<xsl:text>&#10;</xsl:text>
+</xsl:when>
+  <xsl:otherwise>
 <xsl:variable name="pfix">
 <xsl:apply-templates select="/castxml2pony/typedefs/typedef[@name=$rrv]/ponytypeconvout/prefixs/prefix" mode="perline"/>
 </xsl:variable>
@@ -258,6 +264,8 @@
 
 <xsl:if test="$pfix=''"><xsl:text>   </xsl:text></xsl:if><xsl:value-of select="$pfix"/> @<xsl:value-of select="$n/@name"/>(<xsl:value-of select="$cargs"/>)
 <xsl:value-of select="$sfix"/>
+  </xsl:otherwise>
+</xsl:choose>
 <xsl:if test="$render='0'"><xsl:text>*/
 </xsl:text></xsl:if>
 <xsl:if test="name($varargs)='Ellipsis'">*/</xsl:if>

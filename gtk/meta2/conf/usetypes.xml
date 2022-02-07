@@ -21,13 +21,14 @@
   </ponytypeconvout>
 </typedef>    
 
-<typedef name="GtkWindow"    ponytypein="GtkWindow tag"      ponytypeinconv=".apply()" ponytypeout="GtkWindow"    structtype="GtkWindow"    structdef="GtkWindow"    argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val"/>    
-<typedef name="GtkBin"       ponytypein="GtkBin tag"         ponytypeinconv=".apply()" ponytypeout="GtkBin"       structtype="GtkBin"       structdef="GtkBin"       argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val"/>    
-<typedef name="GtkContainer" ponytypein="GtkContainer tag"   ponytypeinconv=".apply()" ponytypeout="GtkContainer" structtype="GtkContainer" structdef="GtkContainer" argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val"/>    
-<typedef name="GtkWidget"    ponytypein="GtkWidgetInterface" ponytypeinconv=".apply()" ponytypeout="GtkWidget"    structtype="GtkWidget"    structdef="GtkWidget"    argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val"/>    
-<typedef name="GtkButton"    ponytypein="GtkButton tag"      ponytypeinconv=".apply()" ponytypeout="GtkButton"    structtype="GtkButton"    structdef="GtkButton"    argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val"/>    
+<typedef name="GtkWindow"    ponytypein="GtkWindow tag"      ponytypeinconv=".apply()" ponytypeout="GtkWindow"    structtype="GtkWindow"    structdef="GtkWindow"    argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val" auto="true"/>
+<typedef name="GtkBin"       ponytypein="GtkBin tag"         ponytypeinconv=".apply()" ponytypeout="GtkBin"       structtype="GtkBin"       structdef="GtkBin"       argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val" auto="true"/>
+<typedef name="GtkContainer" ponytypein="GtkContainer tag"   ponytypeinconv=".apply()" ponytypeout="GtkContainer" structtype="GtkContainer" structdef="GtkContainer" argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val" auto="true"/>
+<typedef name="GtkWidget"    ponytypein="GtkWidgetInterface" ponytypeinconv=".apply()" ponytypeout="GtkWidget"    structtype="GtkWidget"    structdef="GtkWidget"    argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val" auto="true"/>
+<typedef name="GtkButton"    ponytypein="GtkButton tag"      ponytypeinconv=".apply()" ponytypeout="GtkButton"    structtype="GtkButton"    structdef="GtkButton"    argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val" auto="true"/>
 
-<typedef name="GObject"      ponytypein="GObject"            ponytypeinconv=".apply()" ponytypeout="GObject"      structtype="GObject"      structdef="GObject"      argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val">
+<typedef name="GObject"      ponytypein="GObject"            ponytypeinconv=".apply()" ponytypeout="GObject"      structtype="GObject"      structdef="GObject"      argtype="NullablePointer[GObjectStruct] tag" rvtype="NullablePointer[GObjectStruct] val" auto="true"/>
+  <!--
   <ponytypeconvout>
     <prefixs>
       <prefix>var ptr: NullablePointer[GObjectStruct] val = </prefix>
@@ -38,7 +39,7 @@
   </ponytypeconvout>
 </typedef>    
 
-
+  -->
 
 
 
