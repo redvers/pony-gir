@@ -67,9 +67,6 @@ use @g_bit_storage[U32](number: U64)
 use @g_bit_trylock[I32](address: Pointer[I32] tag, lockbit: I32)
 use @g_bit_unlock[None](address: Pointer[I32] tag, lockbit: I32)
 use @g_bookmark_file_error_quark[U32]()
-use @g_build_filename_valist[Pointer[U8]](firstelement: Pointer[U8] tag, args: Pointer[Valisttag] tag)
-use @g_build_filenamev[Pointer[U8]](args: Pointer[Pointer[U8]] tag)
-use @g_build_pathv[Pointer[U8]](separator: Pointer[U8] tag, args: Pointer[Pointer[U8]] tag)
 use @g_byte_array_free[Pointer[U8]](array: GByteArray tag, freesegment: I32)
 use @g_byte_array_free_to_bytes[GBytes](array: GByteArray tag)
 use @g_byte_array_new[GByteArray]()
@@ -250,7 +247,6 @@ use @g_log_writer_is_journald[I32](outputfd: I32)
 use @g_log_writer_journald[I32](loglevel: I32, fields: GLogField tag, nfields: U64, userdata: Pointer[None] tag)
 use @g_log_writer_standard_streams[I32](loglevel: I32, fields: GLogField tag, nfields: U64, userdata: Pointer[None] tag)
 use @g_log_writer_supports_color[I32](outputfd: I32)
-use @g_logv[None](logdomain: Pointer[U8] tag, loglevel: I32, format: Pointer[U8] tag, args: Valisttag tag)
 use @g_main_context_default[GMainContext]()
 use @g_main_context_get_thread_default[GMainContext]()
 use @g_main_context_ref_thread_default[GMainContext]()
@@ -262,7 +258,6 @@ use @g_malloc0_n[Pointer[None]](nblocks: U64, nblockbytes: U64)
 use @g_malloc_n[Pointer[None]](nblocks: U64, nblockbytes: U64)
 use @g_markup_error_quark[U32]()
 use @g_markup_escape_text[Pointer[U8]](text: Pointer[U8] tag, length: I64)
-use @g_markup_vprintf_escaped[Pointer[U8]](format: Pointer[U8] tag, args: Valisttag tag)
 use @g_mem_is_system_malloc[I32]()
 use @g_mem_profile[None]()
 use @g_mem_set_vtable[None](vtable: GMemVTable tag)
@@ -293,7 +288,6 @@ use @g_pointer_bit_trylock[I32](address: Pointer[None] tag, lockbit: I32)
 use @g_pointer_bit_unlock[None](address: Pointer[None] tag, lockbit: I32)
 use @g_poll[I32](fds: GPollFD tag, nfds: U32, timeout: I32)
 use @g_prefix_error_literal[None](err: GError tag, prefix: Pointer[U8] tag)
-use @g_printf_string_upper_bound[U64](format: Pointer[U8] tag, args: Valisttag tag)
 use @g_propagate_error[None](dest: GError tag, src: GError tag)
 use @g_ptr_array_find[I32](haystack: GPtrArray tag, needle: Pointer[None] tag, index: Pointer[U32] tag)
 use @g_ptr_array_find_with_equal_func[I32](haystack: GPtrArray tag, needle: Pointer[None] tag, equalfunc: Pointer[None] tag, index: Pointer[U32] tag)
@@ -334,15 +328,6 @@ use @g_regex_match_simple[I32](pattern: Pointer[U8] tag, string: Pointer[U8] tag
 use @g_regex_split_simple[Pointer[Pointer[U8]]](pattern: Pointer[U8] tag, string: Pointer[U8] tag, compileoptions: I32, matchoptions: I32)
 use @g_reload_user_special_dirs_cache[None]()
 use @g_return_if_fail_warning[None](logdomain: Pointer[U8] tag, prettyfunction: Pointer[U8] tag, expression: Pointer[U8] tag)
-use @g_sequence_get[Pointer[None]](iter: GSequenceNode tag)
-use @g_sequence_insert_before[GSequenceNode](iter: GSequenceNode tag, data: Pointer[None] tag)
-use @g_sequence_move[None](src: GSequenceNode tag, dest: GSequenceNode tag)
-use @g_sequence_move_range[None](dest: GSequenceNode tag, begin: GSequenceNode tag, gend: GSequenceNode tag)
-use @g_sequence_range_get_midpoint[GSequenceNode](begin: GSequenceNode tag, gend: GSequenceNode tag)
-use @g_sequence_remove[None](iter: GSequenceNode tag)
-use @g_sequence_remove_range[None](begin: GSequenceNode tag, gend: GSequenceNode tag)
-use @g_sequence_set[None](iter: GSequenceNode tag, data: Pointer[None] tag)
-use @g_sequence_swap[None](a: GSequenceNode tag, b: GSequenceNode tag)
 use @g_set_application_name[None](applicationname: Pointer[U8] tag)
 use @g_set_error_literal[None](err: GError tag, domain: U32, code: I32, message: Pointer[U8] tag)
 use @g_set_prgname[None](prgname: Pointer[U8] tag)
@@ -396,13 +381,9 @@ use @g_strcompress[Pointer[U8]](source: Pointer[U8] tag)
 use @g_strdelimit[Pointer[U8]](string: Pointer[U8] tag, delimiters: Pointer[U8] tag, newdelimiter: U8)
 use @g_strdown[Pointer[U8]](string: Pointer[U8] tag)
 use @g_strdup[Pointer[U8]](str: Pointer[U8] tag)
-use @g_strdup_vprintf[Pointer[U8]](format: Pointer[U8] tag, args: Valisttag tag)
-use @g_strdupv[Pointer[Pointer[U8]]](strarray: Pointer[Pointer[U8]] tag)
 use @g_strerror[Pointer[U8]](errnum: I32)
 use @g_strescape[Pointer[U8]](source: Pointer[U8] tag, exceptions: Pointer[U8] tag)
-use @g_strfreev[None](strarray: Pointer[Pointer[U8]] tag)
 use @g_strip_context[Pointer[U8]](msgid: Pointer[U8] tag, msgval: Pointer[U8] tag)
-use @g_strjoinv[Pointer[U8]](separator: Pointer[U8] tag, strarray: Pointer[Pointer[U8]] tag)
 use @g_strlcat[U64](dest: Pointer[U8] tag, src: Pointer[U8] tag, destsize: U64)
 use @g_strlcpy[U64](dest: Pointer[U8] tag, src: Pointer[U8] tag, destsize: U64)
 use @g_strncasecmp[I32](s1: Pointer[U8] tag, s2: Pointer[U8] tag, n: U32)
@@ -547,7 +528,6 @@ use @g_variant_parse_error_quark[U32]()
 use @g_variant_parser_get_error_quark[U32]()
 use @g_variant_type_string_is_valid[I32](typestring: Pointer[U8] tag)
 use @g_variant_type_string_scan[I32](string: Pointer[U8] tag, limit: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag)
-use @g_vsnprintf[I32](string: Pointer[U8] tag, n: U64, format: Pointer[U8] tag, args: Valisttag tag)
 use @g_warn_message[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, warnexpr: Pointer[U8] tag)
 primitive G
   fun g_type_class_peek(gtype: U64): Pointer[None] =>
@@ -774,21 +754,6 @@ primitive G
 
   fun g_bookmark_file_error_quark(): U32 =>
     @g_bookmark_file_error_quark()
-
-  fun g_build_filename_valist(firstelement: String, args: Pointer[Valisttag] tag): String =>
-    var pcstring: Pointer[U8] =  @g_build_filename_valist(firstelement.cstring(), args)
-    let p: String iso = String.from_cstring(pcstring).clone()
-    consume p
-
-  fun g_build_filenamev(args: Pointer[Pointer[U8]] tag): String =>
-    var pcstring: Pointer[U8] =  @g_build_filenamev(args)
-    let p: String iso = String.from_cstring(pcstring).clone()
-    consume p
-
-  fun g_build_pathv(separator: String, args: Pointer[Pointer[U8]] tag): String =>
-    var pcstring: Pointer[U8] =  @g_build_pathv(separator.cstring(), args)
-    let p: String iso = String.from_cstring(pcstring).clone()
-    consume p
 
   fun g_byte_array_free(array: GByteArray, freesegment: I32): String =>
     var pcstring: Pointer[U8] =  @g_byte_array_free(array, freesegment)
@@ -1438,9 +1403,6 @@ primitive G
   fun g_log_writer_supports_color(outputfd: I32): I32 =>
     @g_log_writer_supports_color(outputfd)
 
-  fun g_logv(logdomain: String, loglevel: I32, format: String, args: Valisttag): None =>
-    @g_logv(logdomain.cstring(), loglevel, format.cstring(), args)
-
   fun g_main_context_default(): GMainContext =>
     @g_main_context_default()
 
@@ -1473,11 +1435,6 @@ primitive G
 
   fun g_markup_escape_text(text: String, length: I64): String =>
     var pcstring: Pointer[U8] =  @g_markup_escape_text(text.cstring(), length)
-    let p: String iso = String.from_cstring(pcstring).clone()
-    consume p
-
-  fun g_markup_vprintf_escaped(format: String, args: Valisttag): String =>
-    var pcstring: Pointer[U8] =  @g_markup_vprintf_escaped(format.cstring(), args)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -1580,9 +1537,6 @@ primitive G
 
   fun g_prefix_error_literal(err: GError, prefix: String): None =>
     @g_prefix_error_literal(err, prefix.cstring())
-
-  fun g_printf_string_upper_bound(format: String, args: Valisttag): U64 =>
-    @g_printf_string_upper_bound(format.cstring(), args)
 
   fun g_propagate_error(dest: GError, src: GError): None =>
     @g_propagate_error(dest, src)
@@ -1717,33 +1671,6 @@ primitive G
 
   fun g_return_if_fail_warning(logdomain: String, prettyfunction: String, expression: String): None =>
     @g_return_if_fail_warning(logdomain.cstring(), prettyfunction.cstring(), expression.cstring())
-
-  fun g_sequence_get(iter: GSequenceNode): Pointer[None] =>
-    @g_sequence_get(iter)
-
-  fun g_sequence_insert_before(iter: GSequenceNode, data: Pointer[None] tag): GSequenceNode =>
-    @g_sequence_insert_before(iter, data)
-
-  fun g_sequence_move(src: GSequenceNode, dest: GSequenceNode): None =>
-    @g_sequence_move(src, dest)
-
-  fun g_sequence_move_range(dest: GSequenceNode, begin: GSequenceNode, gend: GSequenceNode): None =>
-    @g_sequence_move_range(dest, begin, gend)
-
-  fun g_sequence_range_get_midpoint(begin: GSequenceNode, gend: GSequenceNode): GSequenceNode =>
-    @g_sequence_range_get_midpoint(begin, gend)
-
-  fun g_sequence_remove(iter: GSequenceNode): None =>
-    @g_sequence_remove(iter)
-
-  fun g_sequence_remove_range(begin: GSequenceNode, gend: GSequenceNode): None =>
-    @g_sequence_remove_range(begin, gend)
-
-  fun g_sequence_set(iter: GSequenceNode, data: Pointer[None] tag): None =>
-    @g_sequence_set(iter, data)
-
-  fun g_sequence_swap(a: GSequenceNode, b: GSequenceNode): None =>
-    @g_sequence_swap(a, b)
 
   fun g_set_application_name(applicationname: String): None =>
     @g_set_application_name(applicationname.cstring())
@@ -1926,14 +1853,6 @@ primitive G
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun g_strdup_vprintf(format: String, args: Valisttag): String =>
-    var pcstring: Pointer[U8] =  @g_strdup_vprintf(format.cstring(), args)
-    let p: String iso = String.from_cstring(pcstring).clone()
-    consume p
-
-  fun g_strdupv(strarray: Pointer[Pointer[U8]] tag): Pointer[Pointer[U8]] =>
-    @g_strdupv(strarray)
-
   fun g_strerror(errnum: I32): String =>
     var pcstring: Pointer[U8] =  @g_strerror(errnum)
     let p: String iso = String.from_cstring(pcstring).clone()
@@ -1944,16 +1863,8 @@ primitive G
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun g_strfreev(strarray: Pointer[Pointer[U8]] tag): None =>
-    @g_strfreev(strarray)
-
   fun g_strip_context(msgid: String, msgval: String): String =>
     var pcstring: Pointer[U8] =  @g_strip_context(msgid.cstring(), msgval.cstring())
-    let p: String iso = String.from_cstring(pcstring).clone()
-    consume p
-
-  fun g_strjoinv(separator: String, strarray: Pointer[Pointer[U8]] tag): String =>
-    var pcstring: Pointer[U8] =  @g_strjoinv(separator.cstring(), strarray)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -2462,9 +2373,6 @@ primitive G
 
   fun g_variant_type_string_scan(string: String, limit: String, endptr: Pointer[Pointer[U8]] tag): I32 =>
     @g_variant_type_string_scan(string.cstring(), limit.cstring(), endptr)
-
-  fun g_vsnprintf(string: String, n: U64, format: String, args: Valisttag): I32 =>
-    @g_vsnprintf(string.cstring(), n, format.cstring(), args)
 
   fun g_warn_message(domain: String, file: String, line: I32, func: String, warnexpr: String): None =>
     @g_warn_message(domain.cstring(), file.cstring(), line, func.cstring(), warnexpr.cstring())

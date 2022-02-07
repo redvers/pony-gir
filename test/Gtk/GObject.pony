@@ -40,3 +40,4 @@ struct GTypeInstance
 
 struct GTypeClass
   var g_type: U64 = U64(0)
+

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../conf/glib-struct-types.xml"/>
+  <xi:include href="../conf/GLib-content.xml"/>
+<xi:include href="../../../castxml-results/glib.xml"/>
+                    <structs>
+                      <struct name="GTimeVal" id="_173" size="128" align="64" fid="f16" lineno="547">
+    <field name="tv_sec" id="_3322" type="I64" fieldid="_140" offset="0" fid="f16" line="549"/>
+    <field name="tv_usec" id="_3323" type="I64" fieldid="_140" offset="64" fid="f16" line="550"/>
+  </struct>
+
+  <struct name="Anon" id="_3315" size="64" align="32" fid="f16" lineno="514">
+    <field name="mantissa_low" id="_4312" type="U32" fieldid="_146" offset="0" fid="f16" line="515"/>
+    <field name="mantissa_high" id="_4313" type="U32" fieldid="_146" offset="32" fid="f16" line="516"/>
+    <field name="biased_exponent" id="_4314" type="U32" fieldid="_146" offset="52" fid="f16" line="517"/>
+    <field name="sign" id="_4315" type="U32" fieldid="_146" offset="63" fid="f16" line="518"/>
+  </struct>
+
+  <struct name="Anon" id="_3319" size="32" align="32" fid="f16" lineno="505">
+    <field name="mantissa" id="_4317" type="U32" fieldid="_146" offset="0" fid="f16" line="506"/>
+    <field name="biased_exponent" id="_4318" type="U32" fieldid="_146" offset="23" fid="f16" line="507"/>
+    <field name="sign" id="_4319" type="U32" fieldid="_146" offset="31" fid="f16" line="508"/>
+  </struct>
+
+  <struct name="GBytes" id="_177" size="" align="" fid="f17" lineno="36">
+
+  </struct>
+
+  <struct name="GArray" id="_179" size="128" align="64" fid="f17" lineno="41">
+    <field name="data" id="_3326" type="String" fieldid="_3337" offset="0" fid="f17" line="43"/>
+    <field name="len" id="_3327" type="U32" fieldid="_146" offset="64" fid="f17" line="44"/>
+  </struct>
+
+  <struct name="GByteArray" id="_181" size="128" align="64" fid="f17" lineno="47">
+    <field name="data" id="_3329" type="String" fieldid="_3342" offset="0" fid="f17" line="49"/>
+    <field name="len" id="_3330" type="U32" fieldid="_146" offset="64" fid="f17" line="50"/>
+  </struct>
+
+  <struct name="GPtrArray" id="_183" size="128" align="64" fid="f17" lineno="53">
+    <field name="pdata" id="_3332" type="NullablePointer[Pointer[None]]" fieldid="_3340" offset="0" fid="f17" line="55"/>
+    <field name="len" id="_3333" type="U32" fieldid="_146" offset="64" fid="f17" line="56"/>
+  </struct>
+
+  <struct name="GError" id="_273" size="128" align="64" fid="f21" lineno="43">
+    <field name="domain" id="_3351" type="U32" fieldid="_266" offset="0" fid="f21" line="45"/>
+    <field name="code" id="_3352" type="I32" fieldid="_141" offset="32" fid="f21" line="46"/>
+    <field name="message" id="_3353" type="String" fieldid="_3337" offset="64" fid="f21" line="47"/>
+  </struct>
+
+  <struct name="GDebugKey" id="_313" size="128" align="64" fid="f22" lineno="275">
+    <field name="key" id="_3363" type="String" fieldid="_3350" offset="0" fid="f22" line="277"/>
+    <field name="value" id="_3364" type="U32" fieldid="_146" offset="64" fid="f22" line="278"/>
+  </struct>
+
+  <struct name="GRecMutex" id="_538" size="128" align="64" fid="f38" lineno="79">
+    <field name="p" id="_3498" type="Pointer[None]" fieldid="_149" offset="0" fid="f38" line="82"/>
+    <field name="i" id="_3499" type="Pointer[U32]" fieldid="_4351" offset="64" fid="f38" line="83"/>
+  </struct>
+
+  <struct name="GRWLock" id="_540" size="128" align="64" fid="f38" lineno="65">
+    <field name="p" id="_3501" type="Pointer[None]" fieldid="_149" offset="0" fid="f38" line="68"/>
+    <field name="i" id="_3502" type="Pointer[U32]" fieldid="_4351" offset="64" fid="f38" line="69"/>
+  </struct>
+
+  <struct name="GCond" id="_542" size="128" align="64" fid="f38" lineno="72">
+    <field name="p" id="_3504" type="Pointer[None]" fieldid="_149" offset="0" fid="f38" line="75"/>
+    <field name="i" id="_3505" type="Pointer[U32]" fieldid="_4351" offset="64" fid="f38" line="76"/>
+  </struct>
+
+  <struct name="GPrivate" id="_544" size="256" align="64" fid="f38" lineno="87">
+    <field name="p" id="_3507" type="Pointer[None]" fieldid="_149" offset="0" fid="f38" line="90"/>
+    <field name="notify" id="_3508" type="Pointer[None]" fieldid="_154" offset="64" fid="f38" line="91"/>
+    <field name="future" id="_3509" type="Pointer[Pointer[None]]" fieldid="_4352" offset="128" fid="f38" line="92"/>
+  </struct>
+
+  <struct name="GOnce" id="_546" size="128" align="64" fid="f38" lineno="103">
+    <field name="status" id="_3511" type="I32" fieldid="_549v" offset="0" fid="f38" line="105"/>
+    <field name="retval" id="_3512" type="Pointer[None]" fieldid="_149v" offset="64" fid="f38" line="106"/>
+  </struct>
+
+  <struct name="GThread" id="_534" size="192" align="64" fid="f39" lineno="46">
+    <field name="func" id="_3490" type="Pointer[None]" fieldid="_533" offset="0" fid="f39" line="49"/>
+    <field name="data" id="_3491" type="Pointer[None]" fieldid="_149" offset="64" fid="f39" line="50"/>
+    <field name="joinable" id="_3492" type="I32" fieldid="_142" offset="128" fid="f39" line="51"/>
+    <field name="priority" id="_3493" type="I32" fieldid="_2583" offset="160" fid="f39" line="52"/>
+  </struct>
+
+  <struct name="GThreadFunctions" id="_2584" size="1344" align="64" fid="f39" lineno="56">
+    <field name="mutex_new" id="_4144" type="Pointer[None]" fieldid="_4470" offset="0" fid="f39" line="58"/>
+    <field name="mutex_lock" id="_4145" type="Pointer[None]" fieldid="_4471" offset="64" fid="f39" line="59"/>
+    <field name="mutex_trylock" id="_4146" type="Pointer[None]" fieldid="_4472" offset="128" fid="f39" line="60"/>
+    <field name="mutex_unlock" id="_4147" type="Pointer[None]" fieldid="_4471" offset="192" fid="f39" line="61"/>
+    <field name="mutex_free" id="_4148" type="Pointer[None]" fieldid="_4471" offset="256" fid="f39" line="62"/>
+    <field name="cond_new" id="_4149" type="Pointer[None]" fieldid="_4473" offset="320" fid="f39" line="63"/>
+    <field name="cond_signal" id="_4150" type="Pointer[None]" fieldid="_4474" offset="384" fid="f39" line="64"/>
+    <field name="cond_broadcast" id="_4151" type="Pointer[None]" fieldid="_4474" offset="448" fid="f39" line="65"/>
+    <field name="cond_wait" id="_4152" type="Pointer[None]" fieldid="_4475" offset="512" fid="f39" line="66"/>
+    <field name="cond_timed_wait" id="_4153" type="Pointer[None]" fieldid="_4476" offset="576" fid="f39" line="68"/>
+    <field name="cond_free" id="_4154" type="Pointer[None]" fieldid="_4474" offset="640" fid="f39" line="71"/>
+    <field name="private_new" id="_4155" type="Pointer[None]" fieldid="_4477" offset="704" fid="f39" line="72"/>
+    <field name="private_get" id="_4156" type="Pointer[None]" fieldid="_4478" offset="768" fid="f39" line="73"/>
+    <field name="private_set" id="_4157" type="Pointer[None]" fieldid="_4479" offset="832" fid="f39" line="74"/>
+    <field name="thread_create" id="_4158" type="Pointer[None]" fieldid="_4480" offset="896" fid="f39" line="76"/>
+    <field name="thread_yield" id="_4159" type="Pointer[None]" fieldid="_3368" offset="960" fid="f39" line="84"/>
+    <field name="thread_join" id="_4160" type="Pointer[None]" fieldid="_3302" offset="1024" fid="f39" line="85"/>
+    <field name="thread_exit" id="_4161" type="Pointer[None]" fieldid="_3368" offset="1088" fid="f39" line="86"/>
+    <field name="thread_set_priority" id="_4162" type="Pointer[None]" fieldid="_4481" offset="1152" fid="f39" line="87"/>
+    <field name="thread_self" id="_4163" type="Pointer[None]" fieldid="_3302" offset="1216" fid="f39" line="89"/>
+    <field name="thread_equal" id="_4164" type="Pointer[None]" fieldid="_4482" offset="1280" fid="f39" line="90"/>
+  </struct>
+
+  <struct name="Anon" id="_2728" size="384" align="64" fid="f39" lineno="133">
+    <field name="mutex" id="_4212" type="Pointer[None]" fieldid="_3516" offset="0" fid="f39" line="135"/>
+    <field name="unused" id="_4213" type="None" fieldid="_433" offset="64" fid="f39" line="138"/>
+  </struct>
+
+  <struct name="GStaticRecMutex" id="_2733" size="512" align="64" fid="f39" lineno="157">
+    <field name="mutex" id="_4216" type="Anon" fieldid="_2729" offset="0" fid="f39" line="160"/>
+    <field name="depth" id="_4217" type="U32" fieldid="_146" offset="384" fid="f39" line="161"/>
+    <field name="unused" id="_4219" type="None" fieldid="_4496" offset="448" fid="f39" line="171"/>
+  </struct>
+
+  <struct name="GStaticRWLock" id="_2742" size="640" align="64" fid="f39" lineno="198">
+    <field name="mutex" id="_4222" type="Anon" fieldid="_2729" offset="0" fid="f39" line="201"/>
+    <field name="read_cond" id="_4223" type="NullablePointer[GCond]" fieldid="_3519" offset="384" fid="f39" line="202"/>
+    <field name="write_cond" id="_4224" type="NullablePointer[GCond]" fieldid="_3519" offset="448" fid="f39" line="203"/>
+    <field name="read_counter" id="_4225" type="U32" fieldid="_146" offset="512" fid="f39" line="204"/>
+    <field name="have_writer" id="_4226" type="I32" fieldid="_142" offset="544" fid="f39" line="205"/>
+    <field name="want_to_read" id="_4227" type="U32" fieldid="_146" offset="576" fid="f39" line="206"/>
+    <field name="want_to_write" id="_4228" type="U32" fieldid="_146" offset="608" fid="f39" line="207"/>
+  </struct>
+
+  <struct name="GStaticPrivate" id="_2753" size="32" align="32" fid="f39" lineno="240">
+    <field name="index" id="_4231" type="U32" fieldid="_146" offset="0" fid="f39" line="243"/>
+  </struct>
+
+  <struct name="GAsyncQueue" id="_601" size="" align="" fid="f40" lineno="36">
+
+  </struct>
+
+  <struct name="GTimeZone" id="_719" size="" align="" fid="f58" lineno="32">
+
+  </struct>
+
+  <struct name="GDateTime" id="_737" size="" align="" fid="f59" lineno="96">
+
+  </struct>
+
+  <struct name="GBookmarkFile" id="_792" size="" align="" fid="f60" lineno="78">
+
+  </struct>
+
+  <struct name="GChecksum" id="_864" size="" align="" fid="f63" lineno="65">
+
+  </struct>
+
+  <struct name="GIConv" id="_880" size="" align="" fid="f64" lineno="83">
+
+  </struct>
+
+  <struct name="GData" id="_898" size="" align="" fid="f65" lineno="36">
+
+  </struct>
+
+  <struct name="GDate" id="_922" size="64" align="32" fid="f66" lineno="99">
+    <field name="julian_days" id="_3681" type="U32" fieldid="_146" offset="0" fid="f66" line="101"/>
+    <field name="julian" id="_3682" type="U32" fieldid="_146" offset="32" fid="f66" line="107"/>
+    <field name="dmy" id="_3683" type="U32" fieldid="_146" offset="33" fid="f66" line="108"/>
+    <field name="day" id="_3684" type="U32" fieldid="_146" offset="34" fid="f66" line="111"/>
+    <field name="month" id="_3685" type="U32" fieldid="_146" offset="40" fid="f66" line="112"/>
+    <field name="year" id="_3686" type="U32" fieldid="_146" offset="44" fid="f66" line="113"/>
+  </struct>
+
+  <struct name="GDir" id="_995" size="" align="" fid="f69" lineno="37">
+
+  </struct>
+
+  <struct name="GMemVTable" id="_1047" size="384" align="64" fid="f73" lineno="369">
+    <field name="malloc" id="_3713" type="Pointer[None]" fieldid="_4406" offset="0" fid="f73" line="370"/>
+    <field name="realloc" id="_3714" type="Pointer[None]" fieldid="_4407" offset="64" fid="f73" line="371"/>
+    <field name="free" id="_3715" type="Pointer[None]" fieldid="_3302" offset="128" fid="f73" line="373"/>
+    <field name="calloc" id="_3716" type="Pointer[None]" fieldid="_4408" offset="192" fid="f73" line="375"/>
+    <field name="try_malloc" id="_3717" type="Pointer[None]" fieldid="_4406" offset="256" fid="f73" line="377"/>
+    <field name="try_realloc" id="_3718" type="Pointer[None]" fieldid="_4407" offset="320" fid="f73" line="378"/>
+  </struct>
+
+  <struct name="GNode" id="_1069" size="320" align="64" fid="f74" lineno="65">
+    <field name="data" id="_3721" type="Pointer[None]" fieldid="_149" offset="0" fid="f74" line="67"/>
+    <field name="next" id="_3722" type="NullablePointer[GNode]" fieldid="_3731" offset="64" fid="f74" line="68"/>
+    <field name="prev" id="_3723" type="NullablePointer[GNode]" fieldid="_3731" offset="128" fid="f74" line="69"/>
+    <field name="parent" id="_3724" type="NullablePointer[GNode]" fieldid="_3731" offset="192" fid="f74" line="70"/>
+    <field name="children" id="_3725" type="NullablePointer[GNode]" fieldid="_3731" offset="256" fid="f74" line="71"/>
+  </struct>
+
+  <struct name="GList" id="_1103" size="192" align="64" fid="f75" lineno="39">
+    <field name="data" id="_3732" type="Pointer[None]" fieldid="_149" offset="0" fid="f75" line="41"/>
+    <field name="next" id="_3733" type="NullablePointer[GList]" fieldid="_3736" offset="64" fid="f75" line="42"/>
+    <field name="prev" id="_3734" type="NullablePointer[GList]" fieldid="_3736" offset="128" fid="f75" line="43"/>
+  </struct>
+
+  <struct name="GHashTable" id="_1138" size="" align="" fid="f76" lineno="37">
+
+  </struct>
+
+  <struct name="GHashTableIter" id="_1141" size="320" align="64" fid="f76" lineno="45">
+    <field name="dummy1" id="_3740" type="Pointer[None]" fieldid="_149" offset="0" fid="f76" line="48"/>
+    <field name="dummy2" id="_3741" type="Pointer[None]" fieldid="_149" offset="64" fid="f76" line="49"/>
+    <field name="dummy3" id="_3742" type="Pointer[None]" fieldid="_149" offset="128" fid="f76" line="50"/>
+    <field name="dummy4" id="_3743" type="I32" fieldid="_3243" offset="192" fid="f76" line="51"/>
+    <field name="dummy5" id="_3744" type="I32" fieldid="_142" offset="224" fid="f76" line="52"/>
+    <field name="dummy6" id="_3745" type="Pointer[None]" fieldid="_149" offset="256" fid="f76" line="53"/>
+  </struct>
+
+  <struct name="GHmac" id="_1183" size="" align="" fid="f77" lineno="40">
+
+  </struct>
+
+  <struct name="GHook" id="_1195" size="512" align="64" fid="f78" lineno="73">
+    <field name="data" id="_3752" type="Pointer[None]" fieldid="_149" offset="0" fid="f78" line="75"/>
+    <field name="next" id="_3753" type="NullablePointer[GHook]" fieldid="_3776" offset="64" fid="f78" line="76"/>
+    <field name="prev" id="_3754" type="NullablePointer[GHook]" fieldid="_3776" offset="128" fid="f78" line="77"/>
+    <field name="ref_count" id="_3755" type="U32" fieldid="_146" offset="192" fid="f78" line="78"/>
+    <field name="hook_id" id="_3756" type="U64" fieldid="_145" offset="256" fid="f78" line="79"/>
+    <field name="flags" id="_3757" type="U32" fieldid="_146" offset="320" fid="f78" line="80"/>
+    <field name="func" id="_3758" type="Pointer[None]" fieldid="_149" offset="384" fid="f78" line="81"/>
+    <field name="destroy" id="_3759" type="Pointer[None]" fieldid="_154" offset="448" fid="f78" line="82"/>
+  </struct>
+
+  <struct name="GHookList" id="_1197" size="448" align="64" fid="f78" lineno="63">
+    <field name="seq_id" id="_3761" type="U64" fieldid="_145" offset="0" fid="f78" line="65"/>
+    <field name="hook_size" id="_3762" type="U32" fieldid="_146" offset="64" fid="f78" line="66"/>
+    <field name="is_setup" id="_3763" type="U32" fieldid="_146" offset="80" fid="f78" line="67"/>
+    <field name="hooks" id="_3764" type="NullablePointer[GHook]" fieldid="_3776" offset="128" fid="f78" line="68"/>
+    <field name="dummy3" id="_3765" type="Pointer[None]" fieldid="_149" offset="192" fid="f78" line="69"/>
+    <field name="finalize_hook" id="_3766" type="Pointer[None]" fieldid="_1205" offset="256" fid="f78" line="70"/>
+    <field name="dummy" id="_3767" type="Pointer[Pointer[None]]" fieldid="_4352" offset="320" fid="f78" line="71"/>
+  </struct>
+
+  <struct name="GPollFD" id="_1236" size="64" align="32" fid="f80" lineno="91">
+    <field name="fd" id="_3777" type="I32" fieldid="_141" offset="0" fid="f80" line="98"/>
+    <field name="events" id="_3778" type="U16" fieldid="_144" offset="32" fid="f80" line="100"/>
+    <field name="revents" id="_3779" type="U16" fieldid="_144" offset="48" fid="f80" line="101"/>
+  </struct>
+
+  <struct name="GSList" id="_1240" size="128" align="64" fid="f81" lineno="39">
+    <field name="data" id="_3783" type="Pointer[None]" fieldid="_149" offset="0" fid="f81" line="41"/>
+    <field name="next" id="_3784" type="NullablePointer[GSList]" fieldid="_3786" offset="64" fid="f81" line="42"/>
+  </struct>
+
+  <struct name="GMainContext" id="_1274" size="" align="" fid="f82" lineno="48">
+
+  </struct>
+
+  <struct name="GMainLoop" id="_1276" size="" align="" fid="f82" lineno="56">
+
+  </struct>
+
+  <struct name="GSource" id="_1278" size="768" align="64" fid="f82" lineno="225">
+    <field name="callback_data" id="_3791" type="Pointer[None]" fieldid="_149" offset="0" fid="f82" line="228"/>
+    <field name="callback_funcs" id="_3792" type="NullablePointer[GSourceCallbackFuncs]" fieldid="_3824" offset="64" fid="f82" line="229"/>
+    <field name="source_funcs" id="_3793" type="NullablePointer[GSourceFuncs]" fieldid="_4418" offset="128" fid="f82" line="231"/>
+    <field name="ref_count" id="_3794" type="U32" fieldid="_146" offset="192" fid="f82" line="232"/>
+    <field name="context" id="_3795" type="NullablePointer[GMainContext]" fieldid="_3819" offset="256" fid="f82" line="234"/>
+    <field name="priority" id="_3796" type="I32" fieldid="_141" offset="320" fid="f82" line="236"/>
+    <field name="flags" id="_3797" type="U32" fieldid="_146" offset="352" fid="f82" line="237"/>
+    <field name="source_id" id="_3798" type="U32" fieldid="_146" offset="384" fid="f82" line="238"/>
+    <field name="poll_fds" id="_3799" type="NullablePointer[GSList]" fieldid="_3786" offset="448" fid="f82" line="240"/>
+    <field name="prev" id="_3800" type="NullablePointer[GSource]" fieldid="_3820" offset="512" fid="f82" line="242"/>
+    <field name="next" id="_3801" type="NullablePointer[GSource]" fieldid="_3820" offset="576" fid="f82" line="243"/>
+    <field name="name" id="_3802" type="String" fieldid="_3239" offset="640" fid="f82" line="245"/>
+    <field name="priv" id="_3803" type="NullablePointer[GSourcePrivate]" fieldid="_4419" offset="704" fid="f82" line="247"/>
+  </struct>
+
+  <struct name="GSourcePrivate" id="_1280" size="" align="" fid="f82" lineno="65">
+
+  </struct>
+
+  <struct name="GSourceCallbackFuncs" id="_1282" size="192" align="64" fid="f82" lineno="250">
+    <field name="gref" id="_3806" type="Pointer[None]" fieldid="_3302" offset="0" fid="f82" line="252"/>
+    <field name="unref" id="_3807" type="Pointer[None]" fieldid="_3302" offset="64" fid="f82" line="253"/>
+    <field name="get" id="_3808" type="Pointer[None]" fieldid="_4420" offset="128" fid="f82" line="254"/>
+  </struct>
+
+  <struct name="GSourceFuncs" id="_1284" size="384" align="64" fid="f82" lineno="268">
+    <field name="prepare" id="_3810" type="Pointer[None]" fieldid="_4421" offset="0" fid="f82" line="270"/>
+    <field name="check" id="_3811" type="Pointer[None]" fieldid="_4422" offset="64" fid="f82" line="272"/>
+    <field name="dispatch" id="_3812" type="Pointer[None]" fieldid="_4423" offset="128" fid="f82" line="273"/>
+    <field name="finalize" id="_3813" type="Pointer[None]" fieldid="_3818" offset="192" fid="f82" line="276"/>
+    <field name="closure_callback" id="_3814" type="Pointer[None]" fieldid="_1286" offset="256" fid="f82" line="280"/>
+    <field name="closure_marshal" id="_3815" type="Pointer[None]" fieldid="_1289" offset="320" fid="f82" line="281"/>
+  </struct>
+
+  <struct name="GString" id="_1466" size="192" align="64" fid="f84" lineno="41">
+    <field name="str" id="_3835" type="String" fieldid="_3337" offset="0" fid="f84" line="43"/>
+    <field name="len" id="_3836" type="U64" fieldid="_21" offset="64" fid="f84" line="44"/>
+    <field name="allocated_len" id="_3837" type="U64" fieldid="_21" offset="128" fid="f84" line="45"/>
+  </struct>
+
+  <struct name="GIOChannel" id="_1504" size="896" align="64" fid="f85" lineno="97">
+    <field name="ref_count" id="_3841" type="I32" fieldid="_141" offset="0" fid="f85" line="100"/>
+    <field name="funcs" id="_3842" type="NullablePointer[GIOFuncs]" fieldid="_4427" offset="64" fid="f85" line="101"/>
+    <field name="encoding" id="_3843" type="String" fieldid="_3337" offset="128" fid="f85" line="103"/>
+    <field name="read_cd" id="_3844" type="NullablePointer[GIConv]" fieldid="_881" offset="192" fid="f85" line="104"/>
+    <field name="write_cd" id="_3845" type="NullablePointer[GIConv]" fieldid="_881" offset="256" fid="f85" line="105"/>
+    <field name="line_term" id="_3846" type="String" fieldid="_3337" offset="320" fid="f85" line="106"/>
+    <field name="line_term_len" id="_3847" type="U32" fieldid="_146" offset="384" fid="f85" line="107"/>
+    <field name="buf_size" id="_3848" type="U64" fieldid="_21" offset="448" fid="f85" line="109"/>
+    <field name="read_buf" id="_3849" type="NullablePointer[GString]" fieldid="_3839" offset="512" fid="f85" line="110"/>
+    <field name="encoded_read_buf" id="_3850" type="NullablePointer[GString]" fieldid="_3839" offset="576" fid="f85" line="111"/>
+    <field name="write_buf" id="_3851" type="NullablePointer[GString]" fieldid="_3839" offset="640" fid="f85" line="112"/>
+    <field name="partial_write_buf" id="_3852" type="Pointer[U8]" fieldid="_4428" offset="704" fid="f85" line="113"/>
+    <field name="use_buffer" id="_3853" type="U32" fieldid="_146" offset="752" fid="f85" line="117"/>
+    <field name="do_encode" id="_3854" type="U32" fieldid="_146" offset="753" fid="f85" line="118"/>
+    <field name="close_on_unref" id="_3855" type="U32" fieldid="_146" offset="754" fid="f85" line="119"/>
+    <field name="is_readable" id="_3856" type="U32" fieldid="_146" offset="755" fid="f85" line="120"/>
+    <field name="is_writeable" id="_3857" type="U32" fieldid="_146" offset="756" fid="f85" line="121"/>
+    <field name="is_seekable" id="_3858" type="U32" fieldid="_146" offset="757" fid="f85" line="122"/>
+    <field name="reserved1" id="_3859" type="Pointer[None]" fieldid="_149" offset="768" fid="f85" line="124"/>
+    <field name="reserved2" id="_3860" type="Pointer[None]" fieldid="_149" offset="832" fid="f85" line="125"/>
+  </struct>
+
+  <struct name="GIOFuncs" id="_1506" size="512" align="64" fid="f85" lineno="131">
+    <field name="io_read" id="_3862" type="Pointer[None]" fieldid="_4429" offset="0" fid="f85" line="133"/>
+    <field name="io_write" id="_3863" type="Pointer[None]" fieldid="_4430" offset="64" fid="f85" line="138"/>
+    <field name="io_seek" id="_3864" type="Pointer[None]" fieldid="_4431" offset="128" fid="f85" line="143"/>
+    <field name="io_close" id="_3865" type="Pointer[None]" fieldid="_4432" offset="192" fid="f85" line="147"/>
+    <field name="io_create_watch" id="_3866" type="Pointer[None]" fieldid="_4433" offset="256" fid="f85" line="149"/>
+    <field name="io_free" id="_3867" type="Pointer[None]" fieldid="_4434" offset="320" fid="f85" line="151"/>
+    <field name="io_set_flags" id="_3868" type="Pointer[None]" fieldid="_4435" offset="384" fid="f85" line="152"/>
+    <field name="io_get_flags" id="_3869" type="Pointer[None]" fieldid="_4436" offset="448" fid="f85" line="155"/>
+  </struct>
+
+  <struct name="GKeyFile" id="_1561" size="" align="" fid="f86" lineno="48">
+
+  </struct>
+
+  <struct name="GMappedFile" id="_1614" size="" align="" fid="f87" lineno="32">
+
+  </struct>
+
+  <struct name="GMarkupParseContext" id="_1629" size="" align="" fid="f88" lineno="112">
+
+  </struct>
+
+  <struct name="GMarkupParser" id="_1631" size="320" align="64" fid="f88" lineno="143">
+    <field name="start_element" id="_3893" type="Pointer[None]" fieldid="_4438" offset="0" fid="f88" line="146"/>
+    <field name="end_element" id="_3894" type="Pointer[None]" fieldid="_4439" offset="64" fid="f88" line="154"/>
+    <field name="text" id="_3895" type="Pointer[None]" fieldid="_4440" offset="128" fid="f88" line="161"/>
+    <field name="passthrough" id="_3896" type="Pointer[None]" fieldid="_4440" offset="192" fid="f88" line="172"/>
+    <field name="gerror" id="_3897" type="Pointer[None]" fieldid="_4441" offset="256" fid="f88" line="181"/>
+  </struct>
+
+  <struct name="GVariantType" id="_1651" size="" align="" fid="f89" lineno="41">
+
+  </struct>
+
+  <struct name="GVariant" id="_1684" size="" align="" fid="f90" lineno="34">
+
+  </struct>
+
+  <struct name="GVariantIter" id="_1766" size="1024" align="64" fid="f90" lineno="269">
+    <field name="x" id="_3911" type="Pointer[U64]" fieldid="_4442" offset="0" fid="f90" line="271"/>
+  </struct>
+
+  <struct name="GVariantBuilder" id="_1776" size="1024" align="64" fid="f90" lineno="298">
+    <field name="u" id="_3915" type="U64" fieldid="_4446" offset="0" fid="f90" line="308"/>
+  </struct>
+
+  <struct name="GVariantDict" id="_1803" size="1024" align="64" fid="f90" lineno="440">
+    <field name="u" id="_3920" type="U64" fieldid="_4450" offset="0" fid="f90" line="450"/>
+  </struct>
+
+  <struct name="Anon" id="_4443" size="1024" align="64" fid="f90" lineno="302">
+    <field name="partial_magic" id="_4570" type="U64" fieldid="_21" offset="0" fid="f90" line="303"/>
+    <field name="gtype" id="_4571" type="NullablePointer[GVariantType]" fieldid="_3905" offset="64" fid="f90" line="304"/>
+    <field name="y" id="_4572" type="Pointer[U64]" fieldid="_4600" offset="128" fid="f90" line="305"/>
+  </struct>
+
+  <struct name="Anon" id="_4447" size="1024" align="64" fid="f90" lineno="444">
+    <field name="asv" id="_4574" type="NullablePointer[GVariant]" fieldid="_3909" offset="0" fid="f90" line="445"/>
+    <field name="partial_magic" id="_4575" type="U64" fieldid="_21" offset="64" fid="f90" line="446"/>
+    <field name="y" id="_4576" type="Pointer[U64]" fieldid="_4600" offset="128" fid="f90" line="447"/>
+  </struct>
+
+  <struct name="GLogField" id="_1832" size="192" align="64" fid="f91" lineno="157">
+    <field name="key" id="_3926" type="String" fieldid="_3350" offset="0" fid="f91" line="159"/>
+    <field name="value" id="_3927" type="Pointer[None]" fieldid="_150" offset="64" fid="f91" line="160"/>
+    <field name="length" id="_3928" type="I64" fieldid="_20" offset="128" fid="f91" line="161"/>
+  </struct>
+
+  <struct name="GOptionContext" id="_1857" size="" align="" fid="f92" lineno="38">
+
+  </struct>
+
+  <struct name="GOptionGroup" id="_1859" size="" align="" fid="f92" lineno="51">
+
+  </struct>
+
+  <struct name="GOptionEntry" id="_1861" size="384" align="64" fid="f92" lineno="258">
+    <field name="long_name" id="_3935" type="String" fieldid="_3350" offset="0" fid="f92" line="260"/>
+    <field name="short_name" id="_3936" type="U8" fieldid="_138" offset="64" fid="f92" line="261"/>
+    <field name="flags" id="_3937" type="I32" fieldid="_141" offset="96" fid="f92" line="262"/>
+    <field name="arg" id="_3938" type="I32" fieldid="_1866" offset="128" fid="f92" line="264"/>
+    <field name="arg_data" id="_3939" type="Pointer[None]" fieldid="_149" offset="192" fid="f92" line="265"/>
+    <field name="description" id="_3940" type="String" fieldid="_3350" offset="256" fid="f92" line="267"/>
+    <field name="arg_description" id="_3941" type="String" fieldid="_3350" offset="320" fid="f92" line="268"/>
+  </struct>
+
+  <struct name="GPatternSpec" id="_1903" size="" align="" fid="f93" lineno="30">
+
+  </struct>
+
+  <struct name="GQueue" id="_1916" size="192" align="64" fid="f96" lineno="47">
+    <field name="head" id="_3955" type="NullablePointer[GList]" fieldid="_3736" offset="0" fid="f96" line="49"/>
+    <field name="tail" id="_3956" type="NullablePointer[GList]" fieldid="_3736" offset="64" fid="f96" line="50"/>
+    <field name="length" id="_3957" type="U32" fieldid="_146" offset="128" fid="f96" line="51"/>
+  </struct>
+
+  <struct name="GRand" id="_1961" size="" align="" fid="f97" lineno="36">
+
+  </struct>
+
+  <struct name="GRegex" id="_2015" size="" align="" fid="f101" lineno="413">
+
+  </struct>
+
+  <struct name="GMatchInfo" id="_2017" size="" align="" fid="f101" lineno="422">
+
+  </struct>
+
+  <struct name="GScanner" id="_2060" size="1152" align="64" fid="f102" lineno="169">
+    <field name="user_data" id="_3976" type="Pointer[None]" fieldid="_149" offset="0" fid="f102" line="172"/>
+    <field name="max_parse_errors" id="_3977" type="U32" fieldid="_146" offset="64" fid="f102" line="173"/>
+    <field name="parse_errors" id="_3978" type="U32" fieldid="_146" offset="96" fid="f102" line="176"/>
+    <field name="input_name" id="_3979" type="String" fieldid="_3350" offset="128" fid="f102" line="179"/>
+    <field name="qdata" id="_3980" type="NullablePointer[GData]" fieldid="_4399" offset="192" fid="f102" line="182"/>
+    <field name="config" id="_3981" type="NullablePointer[GScannerConfig]" fieldid="_4458" offset="256" fid="f102" line="185"/>
+    <field name="token" id="_3982" type="I32" fieldid="_2070" offset="320" fid="f102" line="188"/>
+    <field name="value" id="_3983" type="U64" fieldid="_2065" offset="384" fid="f102" line="189"/>
+    <field name="line" id="_3984" type="U32" fieldid="_146" offset="448" fid="f102" line="190"/>
+    <field name="position" id="_3985" type="U32" fieldid="_146" offset="480" fid="f102" line="191"/>
+    <field name="next_token" id="_3986" type="I32" fieldid="_2070" offset="512" fid="f102" line="194"/>
+    <field name="next_value" id="_3987" type="U64" fieldid="_2065" offset="576" fid="f102" line="195"/>
+    <field name="next_line" id="_3988" type="U32" fieldid="_146" offset="640" fid="f102" line="196"/>
+    <field name="next_position" id="_3989" type="U32" fieldid="_146" offset="672" fid="f102" line="197"/>
+    <field name="symbol_table" id="_3990" type="NullablePointer[GHashTable]" fieldid="_3747" offset="704" fid="f102" line="201"/>
+    <field name="input_fd" id="_3991" type="I32" fieldid="_141" offset="768" fid="f102" line="202"/>
+    <field name="text" id="_3992" type="String" fieldid="_3350" offset="832" fid="f102" line="203"/>
+    <field name="text_end" id="_3993" type="String" fieldid="_3350" offset="896" fid="f102" line="204"/>
+    <field name="buffer" id="_3994" type="String" fieldid="_3337" offset="960" fid="f102" line="205"/>
+    <field name="scope_id" id="_3995" type="U32" fieldid="_146" offset="1024" fid="f102" line="206"/>
+    <field name="msg_handler" id="_3996" type="Pointer[None]" fieldid="_2066" offset="1088" fid="f102" line="210"/>
+  </struct>
+
+  <struct name="GScannerConfig" id="_2062" size="320" align="64" fid="f102" lineno="127">
+    <field name="cset_skip_characters" id="_3998" type="String" fieldid="_3337" offset="0" fid="f102" line="131"/>
+    <field name="cset_identifier_first" id="_3999" type="String" fieldid="_3337" offset="64" fid="f102" line="132"/>
+    <field name="cset_identifier_nth" id="_4000" type="String" fieldid="_3337" offset="128" fid="f102" line="133"/>
+    <field name="cpair_comment_single" id="_4001" type="String" fieldid="_3337" offset="192" fid="f102" line="134"/>
+    <field name="case_sensitive" id="_4002" type="U32" fieldid="_146" offset="256" fid="f102" line="138"/>
+    <field name="skip_comment_multi" id="_4003" type="U32" fieldid="_146" offset="257" fid="f102" line="143"/>
+    <field name="skip_comment_single" id="_4004" type="U32" fieldid="_146" offset="258" fid="f102" line="144"/>
+    <field name="scan_comment_multi" id="_4005" type="U32" fieldid="_146" offset="259" fid="f102" line="145"/>
+    <field name="scan_identifier" id="_4006" type="U32" fieldid="_146" offset="260" fid="f102" line="146"/>
+    <field name="scan_identifier_1char" id="_4007" type="U32" fieldid="_146" offset="261" fid="f102" line="147"/>
+    <field name="scan_identifier_NULL" id="_4008" type="U32" fieldid="_146" offset="262" fid="f102" line="148"/>
+    <field name="scan_symbols" id="_4009" type="U32" fieldid="_146" offset="263" fid="f102" line="149"/>
+    <field name="scan_binary" id="_4010" type="U32" fieldid="_146" offset="264" fid="f102" line="150"/>
+    <field name="scan_octal" id="_4011" type="U32" fieldid="_146" offset="265" fid="f102" line="151"/>
+    <field name="scan_float" id="_4012" type="U32" fieldid="_146" offset="266" fid="f102" line="152"/>
+    <field name="scan_hex" id="_4013" type="U32" fieldid="_146" offset="267" fid="f102" line="153"/>
+    <field name="scan_hex_dollar" id="_4014" type="U32" fieldid="_146" offset="268" fid="f102" line="154"/>
+    <field name="scan_string_sq" id="_4015" type="U32" fieldid="_146" offset="269" fid="f102" line="155"/>
+    <field name="scan_string_dq" id="_4016" type="U32" fieldid="_146" offset="270" fid="f102" line="156"/>
+    <field name="numbers_2_int" id="_4017" type="U32" fieldid="_146" offset="271" fid="f102" line="157"/>
+    <field name="int_2_float" id="_4018" type="U32" fieldid="_146" offset="272" fid="f102" line="158"/>
+    <field name="identifier_2_string" id="_4019" type="U32" fieldid="_146" offset="273" fid="f102" line="159"/>
+    <field name="char_2_token" id="_4020" type="U32" fieldid="_146" offset="274" fid="f102" line="160"/>
+    <field name="symbol_2_token" id="_4021" type="U32" fieldid="_146" offset="275" fid="f102" line="161"/>
+    <field name="scope_0_fallback" id="_4022" type="U32" fieldid="_146" offset="276" fid="f102" line="162"/>
+    <field name="store_int64" id="_4023" type="U32" fieldid="_146" offset="277" fid="f102" line="163"/>
+    <field name="padding_dummy" id="_4024" type="U32" fieldid="_146" offset="288" fid="f102" line="166"/>
+  </struct>
+
+  <struct name="GSequence" id="_2092" size="" align="" fid="f103" lineno="30">
+
+  </struct>
+
+  <struct name="GSequenceNode" id="_2094" size="" align="" fid="f103" lineno="31">
+
+  </struct>
+
+  <struct name="GStringChunk" id="_2284" size="" align="" fid="f110" lineno="36">
+
+  </struct>
+
+  <struct name="GStrvBuilder" id="_2292" size="" align="" fid="f111" lineno="39">
+
+  </struct>
+
+  <struct name="GTestCase" id="_2302" size="" align="" fid="f113" lineno="35">
+
+  </struct>
+
+  <struct name="GTestSuite" id="_2304" size="" align="" fid="f113" lineno="36">
+
+  </struct>
+
+  <struct name="Anon" id="_2364" size="192" align="32" fid="f113" lineno="589">
+    <field name="test_initialized" id="_4072" type="I32" fieldid="_142" offset="0" fid="f113" line="590"/>
+    <field name="test_quick" id="_4073" type="I32" fieldid="_142" offset="32" fid="f113" line="591"/>
+    <field name="test_perf" id="_4074" type="I32" fieldid="_142" offset="64" fid="f113" line="592"/>
+    <field name="test_verbose" id="_4075" type="I32" fieldid="_142" offset="96" fid="f113" line="593"/>
+    <field name="test_quiet" id="_4076" type="I32" fieldid="_142" offset="128" fid="f113" line="594"/>
+    <field name="test_undefined" id="_4077" type="I32" fieldid="_142" offset="160" fid="f113" line="595"/>
+  </struct>
+
+  <struct name="Anon" id="_2371" size="256" align="64" fid="f113" lineno="622">
+    <field name="log_type" id="_4082" type="I32" fieldid="_2370" offset="0" fid="f113" line="623"/>
+    <field name="n_strings" id="_4083" type="U32" fieldid="_146" offset="32" fid="f113" line="624"/>
+    <field name="strings" id="_4084" type="Array[String]" fieldid="_3665" offset="64" fid="f113" line="625"/>
+    <field name="n_nums" id="_4085" type="U32" fieldid="_146" offset="128" fid="f113" line="626"/>
+    <field name="nums" id="_4086" type="Pointer[F128]" fieldid="_4463" offset="192" fid="f113" line="627"/>
+  </struct>
+
+  <struct name="Anon" id="_2373" size="128" align="64" fid="f113" lineno="629">
+    <field name="data" id="_4088" type="NullablePointer[GString]" fieldid="_3839" offset="0" fid="f113" line="631"/>
+    <field name="msgs" id="_4089" type="NullablePointer[GSList]" fieldid="_3786" offset="64" fid="f113" line="632"/>
+  </struct>
+
+  <struct name="GThreadPool" id="_2390" size="192" align="64" fid="f114" lineno="41">
+    <field name="func" id="_4095" type="Pointer[None]" fieldid="_155" offset="0" fid="f114" line="43"/>
+    <field name="user_data" id="_4096" type="Pointer[None]" fieldid="_149" offset="64" fid="f114" line="44"/>
+    <field name="exclusive" id="_4097" type="I32" fieldid="_142" offset="128" fid="f114" line="45"/>
+  </struct>
+
+  <struct name="GTimer" id="_2408" size="" align="" fid="f115" lineno="40">
+
+  </struct>
+
+  <struct name="GTrashStack" id="_2422" size="64" align="64" fid="f116" lineno="39">
+    <field name="next" id="_4103" type="NullablePointer[GTrashStack]" fieldid="_4465" offset="0" fid="f116" line="41"/>
+  </struct>
+
+  <struct name="GTree" id="_2428" size="" align="" fid="f117" lineno="38">
+
+  </struct>
+
+  <struct name="GTreeNode" id="_2430" size="" align="" fid="f117" lineno="47">
+
+  </struct>
+
+  <struct name="GUri" id="_2465" size="" align="" fid="f118" lineno="31">
+
+  </struct>
+
+  <struct name="GUriParamsIter" id="_2500" size="2240" align="64" fid="f118" lineno="273">
+    <field name="dummy0" id="_4116" type="I32" fieldid="_141" offset="0" fid="f118" line="276"/>
+    <field name="dummy1" id="_4117" type="Pointer[None]" fieldid="_149" offset="64" fid="f118" line="277"/>
+    <field name="dummy2" id="_4118" type="Pointer[None]" fieldid="_149" offset="128" fid="f118" line="278"/>
+    <field name="dummy3" id="_4119" type="Pointer[U8]" fieldid="_4467" offset="192" fid="f118" line="279"/>
+  </struct>
+
+  <struct name="GAllocator" id="_2522" size="" align="" fid="f121" lineno="27">
+
+  </struct>
+
+  <struct name="GMemChunk" id="_2524" size="" align="" fid="f121" lineno="28">
+
+  </struct>
+
+  <struct name="GCache" id="_2544" size="" align="" fid="f122" lineno="36">
+
+  </struct>
+
+  <struct name="GCompletion" id="_2555" size="320" align="64" fid="f123" lineno="47">
+    <field name="items" id="_4129" type="NullablePointer[GList]" fieldid="_3736" offset="0" fid="f123" line="49"/>
+    <field name="func" id="_4130" type="Pointer[None]" fieldid="_2557" offset="64" fid="f123" line="50"/>
+    <field name="prefix" id="_4131" type="String" fieldid="_3337" offset="128" fid="f123" line="52"/>
+    <field name="cache" id="_4132" type="NullablePointer[GList]" fieldid="_3736" offset="192" fid="f123" line="53"/>
+    <field name="strncmp_func" id="_4133" type="Pointer[None]" fieldid="_2558" offset="256" fid="f123" line="54"/>
+  </struct>
+
+  <struct name="GRelation" id="_2567" size="" align="" fid="f124" lineno="36">
+
+  </struct>
+
+  <struct name="GTuples" id="_2569" size="32" align="32" fid="f124" lineno="39">
+    <field name="len" id="_4139" type="U32" fieldid="_146" offset="0" fid="f124" line="41"/>
+  </struct>
+</structs>
+</castxml2pony>
+
