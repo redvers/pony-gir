@@ -1,301 +1,301 @@
-all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 g10
+all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9
 
 g0:
 	sh -x mkclass GObject Object G
 	sh -x mkclass Gio Application G
-
-g1:
+#	sh -x mkclass Gdk EventKey Gdk
+#	sh -x mkclass Gdk Screen Gdk
 	sh -x mkclass Gtk AboutDialog Gtk
-#	sh -x mkclass Gtk AccelGroup Gtk
-#	sh -x mkclass Gtk AccelLabel Gtk
-#	sh -x mkclass Gtk AccelMap Gtk
+	sh -x mkclass Gtk AccelGroup Gtk
+	sh -x mkclass Gtk AccelLabel Gtk
+	sh -x mkclass Gtk AccelMap Gtk
 #	sh -x mkclass Gtk Accessible Gtk
-#	sh -x mkclass Gtk Action Gtk
-#	sh -x mkclass Gtk ActionBar Gtk
-#	sh -x mkclass Gtk ActionGroup Gtk
-#	sh -x mkclass Gtk Adjustment Gtk
-#	sh -x mkclass Gtk Alignment Gtk
-#	sh -x mkclass Gtk AppChooserButton Gtk
-#	sh -x mkclass Gtk AppChooserDialog Gtk
-#	sh -x mkclass Gtk AppChooserWidget Gtk
+	sh -x mkclass Gtk Action Gtk
+	sh -x mkclass Gtk ActionBar Gtk
+	sh -x mkclass Gtk ActionGroup Gtk
+	sh -x mkclass Gtk Adjustment Gtk
+	sh -x mkclass Gtk Alignment Gtk
+	sh -x mkclass Gtk AppChooserButton Gtk
+	sh -x mkclass Gtk AppChooserDialog Gtk
+	sh -x mkclass Gtk AppChooserWidget Gtk
 	sh -x mkclass Gtk Application Gtk
-
-g2:
 	sh -x mkclass Gtk ApplicationWindow Gtk
-#	sh -x mkclass Gtk Arrow Gtk
+	sh -x mkclass Gtk Arrow Gtk
 #	sh -x mkclass Gtk ArrowAccessible Gtk
-#	sh -x mkclass Gtk AspectFrame Gtk
-#	sh -x mkclass Gtk Assistant Gtk
+	sh -x mkclass Gtk AspectFrame Gtk
+	sh -x mkclass Gtk Assistant Gtk
 	sh -x mkclass Gtk Bin Gtk
-
-g3:
 #	sh -x mkclass Gtk BooleanCellAccessible Gtk
 	sh -x mkclass Gtk Box Gtk
 	sh -x mkclass Gtk Builder Gtk
-
-g4:
 	sh -x mkclass Gtk Button Gtk
 #	sh -x mkclass Gtk ButtonAccessible Gtk
 	sh -x mkclass Gtk ButtonBox Gtk
-#	sh -x mkclass Gtk Calendar Gtk
-#	sh -x mkclass Gtk CellAccessible Gtk
-#	sh -x mkclass Gtk CellArea Gtk
-#	sh -x mkclass Gtk CellAreaBox Gtk
-#	sh -x mkclass Gtk CellAreaContext Gtk
-#	sh -x mkclass Gtk CellRenderer Gtk
-#	sh -x mkclass Gtk CellRendererAccel Gtk
-#	sh -x mkclass Gtk CellRendererCombo Gtk
-#	sh -x mkclass Gtk CellRendererPixbuf Gtk
-#	sh -x mkclass Gtk CellRendererProgress Gtk
-#	sh -x mkclass Gtk CellRendererSpin Gtk
-#	sh -x mkclass Gtk CellRendererSpinner Gtk
-#	sh -x mkclass Gtk CellRendererText Gtk
-#	sh -x mkclass Gtk CellRendererToggle Gtk
-#	sh -x mkclass Gtk CellView Gtk
-#	sh -x mkclass Gtk CheckButton Gtk
-#	sh -x mkclass Gtk CheckMenuItem Gtk
-#	sh -x mkclass Gtk CheckMenuItemAccessible Gtk
-#	sh -x mkclass Gtk Clipboard Gtk
-#	sh -x mkclass Gtk ColorButton Gtk
-#	sh -x mkclass Gtk ColorChooserDialog Gtk
-#	sh -x mkclass Gtk ColorChooserWidget Gtk
-#	sh -x mkclass Gtk ColorSelection Gtk
-#	sh -x mkclass Gtk ColorSelectionDialog Gtk
-#	sh -x mkclass Gtk ComboBox Gtk
-#	sh -x mkclass Gtk ComboBoxAccessible Gtk
-#	sh -x mkclass Gtk ComboBoxText Gtk
+	sh -x mkclass Gtk Calendar Gtk
 
-g5:
+g1:
+#	sh -x mkclass Gtk CellAccessible Gtk
+	sh -x mkclass Gtk CellArea Gtk
+	sh -x mkclass Gtk CellAreaBox Gtk
+	sh -x mkclass Gtk CellAreaContext Gtk
+	sh -x mkclass Gtk CellRenderer Gtk
+	sh -x mkclass Gtk CellRendererAccel Gtk
+	sh -x mkclass Gtk CellRendererCombo Gtk
+	sh -x mkclass Gtk CellRendererPixbuf Gtk
+	sh -x mkclass Gtk CellRendererProgress Gtk
+	sh -x mkclass Gtk CellRendererSpin Gtk
+	sh -x mkclass Gtk CellRendererSpinner Gtk
+	sh -x mkclass Gtk CellRendererText Gtk
+	sh -x mkclass Gtk CellRendererToggle Gtk
+	sh -x mkclass Gtk CellView Gtk
+	sh -x mkclass Gtk CheckButton Gtk
+	sh -x mkclass Gtk CheckMenuItem Gtk
+#	sh -x mkclass Gtk CheckMenuItemAccessible Gtk
+	sh -x mkclass Gtk Clipboard Gtk
+	sh -x mkclass Gtk ColorButton Gtk
+	sh -x mkclass Gtk ColorChooserDialog Gtk
+	sh -x mkclass Gtk ColorChooserWidget Gtk
+	sh -x mkclass Gtk ColorSelection Gtk
+	sh -x mkclass Gtk ColorSelectionDialog Gtk
+	sh -x mkclass Gtk ComboBox Gtk
+#	sh -x mkclass Gtk ComboBoxAccessible Gtk
+	sh -x mkclass Gtk ComboBoxText Gtk
 	sh -x mkclass Gtk Container Gtk
 #	sh -x mkclass Gtk ContainerAccessible Gtk
 #	sh -x mkclass Gtk ContainerCellAccessible Gtk
-#	sh -x mkclass Gtk CssProvider Gtk
-	sh -x mkclass Gtk Dialog Gtk
-#	sh -x mkclass Gtk DrawingArea Gtk
-#	sh -x mkclass Gtk Entry Gtk
-#	sh -x mkclass Gtk EntryAccessible Gtk
-#	sh -x mkclass Gtk EntryBuffer Gtk
-#	sh -x mkclass Gtk EntryCompletion Gtk
-#	sh -x mkclass Gtk EntryIconAccessible Gtk
-#	sh -x mkclass Gtk EventBox Gtk
-#	sh -x mkclass Gtk EventController Gtk
-#	sh -x mkclass Gtk EventControllerKey Gtk
-#	sh -x mkclass Gtk EventControllerMotion Gtk
-#	sh -x mkclass Gtk EventControllerScroll Gtk
-#	sh -x mkclass Gtk Expander Gtk
-#	sh -x mkclass Gtk ExpanderAccessible Gtk
-#	sh -x mkclass Gtk FileChooserButton Gtk
-#	sh -x mkclass Gtk FileChooserDialog Gtk
-#	sh -x mkclass Gtk FileChooserNative Gtk
-#	sh -x mkclass Gtk FileChooserWidget Gtk
-#	sh -x mkclass Gtk FileChooserWidgetAccessible Gtk
-#	sh -x mkclass Gtk FileFilter Gtk
-#	sh -x mkclass Gtk Fixed Gtk
-#	sh -x mkclass Gtk FlowBox Gtk
-#	sh -x mkclass Gtk FlowBoxAccessible Gtk
-#	sh -x mkclass Gtk FlowBoxChild Gtk
-#	sh -x mkclass Gtk FlowBoxChildAccessible Gtk
-#	sh -x mkclass Gtk FontButton Gtk
-#	sh -x mkclass Gtk FontChooserDialog Gtk
-#	sh -x mkclass Gtk FontChooserWidget Gtk
-#	sh -x mkclass Gtk FontSelection Gtk
-#	sh -x mkclass Gtk FontSelectionDialog Gtk
+	sh -x mkclass Gtk CssProvider Gtk
 
-g6:
+g2:
+	sh -x mkclass Gtk Dialog Gtk
+	sh -x mkclass Gtk DrawingArea Gtk
+	sh -x mkclass Gtk Entry Gtk
+#	sh -x mkclass Gtk EntryAccessible Gtk
+	sh -x mkclass Gtk EntryBuffer Gtk
+	sh -x mkclass Gtk EntryCompletion Gtk
+#	sh -x mkclass Gtk EntryIconAccessible Gtk
+	sh -x mkclass Gtk EventBox Gtk
+	sh -x mkclass Gtk EventController Gtk
+	sh -x mkclass Gtk EventControllerKey Gtk
+	sh -x mkclass Gtk EventControllerMotion Gtk
+	sh -x mkclass Gtk EventControllerScroll Gtk
+	sh -x mkclass Gtk Expander Gtk
+#	sh -x mkclass Gtk ExpanderAccessible Gtk
+	sh -x mkclass Gtk FileChooserButton Gtk
+	sh -x mkclass Gtk FileChooserDialog Gtk
+	sh -x mkclass Gtk FileChooserNative Gtk
+	sh -x mkclass Gtk FileChooserWidget Gtk
+#	sh -x mkclass Gtk FileChooserWidgetAccessible Gtk
+	sh -x mkclass Gtk FileFilter Gtk
+	sh -x mkclass Gtk Fixed Gtk
+	sh -x mkclass Gtk FlowBox Gtk
+#	sh -x mkclass Gtk FlowBoxAccessible Gtk
+	sh -x mkclass Gtk FlowBoxChild Gtk
+#	sh -x mkclass Gtk FlowBoxChildAccessible Gtk
+	sh -x mkclass Gtk FontButton Gtk
+	sh -x mkclass Gtk FontChooserDialog Gtk
+	sh -x mkclass Gtk FontChooserWidget Gtk
+	sh -x mkclass Gtk FontSelection Gtk
+	sh -x mkclass Gtk FontSelectionDialog Gtk
+
+g3:
 	sh -x mkclass Gtk Frame Gtk
 #	sh -x mkclass Gtk FrameAccessible Gtk
-#	sh -x mkclass Gtk GLArea Gtk
-#	sh -x mkclass Gtk Gesture Gtk
-#	sh -x mkclass Gtk GestureDrag Gtk
-#	sh -x mkclass Gtk GestureLongPress Gtk
-#	sh -x mkclass Gtk GestureMultiPress Gtk
-#	sh -x mkclass Gtk GesturePan Gtk
-#	sh -x mkclass Gtk GestureRotate Gtk
-#	sh -x mkclass Gtk GestureSingle Gtk
-#	sh -x mkclass Gtk GestureStylus Gtk
-#	sh -x mkclass Gtk GestureSwipe Gtk
-#	sh -x mkclass Gtk GestureZoom Gtk
-#	sh -x mkclass Gtk Grid Gtk
+	sh -x mkclass Gtk GLArea Gtk
+	sh -x mkclass Gtk Gesture Gtk
+	sh -x mkclass Gtk GestureDrag Gtk
+	sh -x mkclass Gtk GestureLongPress Gtk
+	sh -x mkclass Gtk GestureMultiPress Gtk
+	sh -x mkclass Gtk GesturePan Gtk
+	sh -x mkclass Gtk GestureRotate Gtk
+	sh -x mkclass Gtk GestureSingle Gtk
+	sh -x mkclass Gtk GestureStylus Gtk
+	sh -x mkclass Gtk GestureSwipe Gtk
+	sh -x mkclass Gtk GestureZoom Gtk
+	sh -x mkclass Gtk Grid Gtk
 	sh -x mkclass Gtk HBox Gtk
-
-g7:
 	sh -x mkclass Gtk HButtonBox Gtk
 	sh -x mkclass Gtk HPaned Gtk
-#	sh -x mkclass Gtk HSV Gtk
-#	sh -x mkclass Gtk HScale Gtk
-#	sh -x mkclass Gtk HScrollbar Gtk
-#	sh -x mkclass Gtk HSeparator Gtk
-#	sh -x mkclass Gtk HandleBox Gtk
-#	sh -x mkclass Gtk HeaderBar Gtk
+	sh -x mkclass Gtk HSV Gtk
+	sh -x mkclass Gtk HScale Gtk
+	sh -x mkclass Gtk HScrollbar Gtk
+	sh -x mkclass Gtk HSeparator Gtk
+	sh -x mkclass Gtk HandleBox Gtk
+	sh -x mkclass Gtk HeaderBar Gtk
 #	sh -x mkclass Gtk HeaderBarAccessible Gtk
-#	sh -x mkclass Gtk IMContext Gtk
-#	sh -x mkclass Gtk IMContextSimple Gtk
-#	sh -x mkclass Gtk IMMulticontext Gtk
-#	sh -x mkclass Gtk IconFactory Gtk
-#	sh -x mkclass Gtk IconInfo Gtk
-#	sh -x mkclass Gtk IconTheme Gtk
-#	sh -x mkclass Gtk IconView Gtk
+	sh -x mkclass Gtk IMContext Gtk
+	sh -x mkclass Gtk IMContextSimple Gtk
+	sh -x mkclass Gtk IMMulticontext Gtk
+	sh -x mkclass Gtk IconFactory Gtk
+	sh -x mkclass Gtk IconInfo Gtk
+	sh -x mkclass Gtk IconTheme Gtk
+
+g4:
+	sh -x mkclass Gtk IconView Gtk
 #	sh -x mkclass Gtk IconViewAccessible Gtk
-#	sh -x mkclass Gtk Image Gtk
-
-
-g8:
+	sh -x mkclass Gtk Image Gtk
 #	sh -x mkclass Gtk ImageAccessible Gtk
 #	sh -x mkclass Gtk ImageCellAccessible Gtk
-#	sh -x mkclass Gtk ImageMenuItem Gtk
-#	sh -x mkclass Gtk InfoBar Gtk
-#	sh -x mkclass Gtk Invisible Gtk
+	sh -x mkclass Gtk ImageMenuItem Gtk
+	sh -x mkclass Gtk InfoBar Gtk
+	sh -x mkclass Gtk Invisible Gtk
 	sh -x mkclass Gtk Label Gtk
 #	sh -x mkclass Gtk LabelAccessible Gtk
-#	sh -x mkclass Gtk Layout Gtk
-#	sh -x mkclass Gtk LevelBar Gtk
+	sh -x mkclass Gtk Layout Gtk
+	sh -x mkclass Gtk LevelBar Gtk
 #	sh -x mkclass Gtk LevelBarAccessible Gtk
-#	sh -x mkclass Gtk LinkButton Gtk
+	sh -x mkclass Gtk LinkButton Gtk
 #	sh -x mkclass Gtk LinkButtonAccessible Gtk
-#	sh -x mkclass Gtk ListBox Gtk
+	sh -x mkclass Gtk ListBox Gtk
 #	sh -x mkclass Gtk ListBoxAccessible Gtk
-#	sh -x mkclass Gtk ListBoxRow Gtk
+	sh -x mkclass Gtk ListBoxRow Gtk
 #	sh -x mkclass Gtk ListBoxRowAccessible Gtk
-#	sh -x mkclass Gtk ListStore Gtk
-#	sh -x mkclass Gtk LockButton Gtk
+	sh -x mkclass Gtk ListStore Gtk
+	sh -x mkclass Gtk LockButton Gtk
 #	sh -x mkclass Gtk LockButtonAccessible Gtk
-#	sh -x mkclass Gtk Menu Gtk
+	sh -x mkclass Gtk Menu Gtk
 #	sh -x mkclass Gtk MenuAccessible Gtk
-#	sh -x mkclass Gtk MenuBar Gtk
-#	sh -x mkclass Gtk MenuButton Gtk
+	sh -x mkclass Gtk MenuBar Gtk
+	sh -x mkclass Gtk MenuButton Gtk
 #	sh -x mkclass Gtk MenuButtonAccessible Gtk
-#	sh -x mkclass Gtk MenuItem Gtk
+	sh -x mkclass Gtk MenuItem Gtk
 #	sh -x mkclass Gtk MenuItemAccessible Gtk
-#	sh -x mkclass Gtk MenuShell Gtk
+	sh -x mkclass Gtk MenuShell Gtk
+
+g5:
 #	sh -x mkclass Gtk MenuShellAccessible Gtk
-#	sh -x mkclass Gtk MenuToolButton Gtk
-#	sh -x mkclass Gtk MessageDialog Gtk
+	sh -x mkclass Gtk MenuToolButton Gtk
+	sh -x mkclass Gtk MessageDialog Gtk
 	sh -x mkclass Gtk Misc Gtk
-#	sh -x mkclass Gtk ModelButton Gtk
+	sh -x mkclass Gtk ModelButton Gtk
 #	sh -x mkclass Gtk MountOperation Gtk
-#	sh -x mkclass Gtk NativeDialog Gtk
-#	sh -x mkclass Gtk Notebook Gtk
+	sh -x mkclass Gtk NativeDialog Gtk
+	sh -x mkclass Gtk Notebook Gtk
 #	sh -x mkclass Gtk NotebookAccessible Gtk
 #	sh -x mkclass Gtk NotebookPageAccessible Gtk
 #	sh -x mkclass Gtk NumerableIcon Gtk
-#	sh -x mkclass Gtk OffscreenWindow Gtk
-#	sh -x mkclass Gtk Overlay Gtk
-#	sh -x mkclass Gtk PadController Gtk
-#	sh -x mkclass Gtk PageSetup Gtk
-
-g9:
+	sh -x mkclass Gtk OffscreenWindow Gtk
+	sh -x mkclass Gtk Overlay Gtk
+	sh -x mkclass Gtk PadController Gtk
+	sh -x mkclass Gtk PageSetup Gtk
 	sh -x mkclass Gtk Paned Gtk
 #	sh -x mkclass Gtk PanedAccessible Gtk
-#	sh -x mkclass Gtk PlacesSidebar Gtk
-#	sh -x mkclass Gtk Plug Gtk
+	sh -x mkclass Gtk PlacesSidebar Gtk
+	sh -x mkclass Gtk Plug Gtk
 #	sh -x mkclass Gtk PlugAccessible Gtk
-#	sh -x mkclass Gtk Popover Gtk
+	sh -x mkclass Gtk Popover Gtk
 #	sh -x mkclass Gtk PopoverAccessible Gtk
-#	sh -x mkclass Gtk PopoverMenu Gtk
-#	sh -x mkclass Gtk PrintContext Gtk
-#	sh -x mkclass Gtk PrintOperation Gtk
-#	sh -x mkclass Gtk PrintSettings Gtk
-#	sh -x mkclass Gtk ProgressBar Gtk
+	sh -x mkclass Gtk PopoverMenu Gtk
+	sh -x mkclass Gtk PrintContext Gtk
+	sh -x mkclass Gtk PrintOperation Gtk
+	sh -x mkclass Gtk PrintSettings Gtk
+	sh -x mkclass Gtk ProgressBar Gtk
 #	sh -x mkclass Gtk ProgressBarAccessible Gtk
-#	sh -x mkclass Gtk RadioAction Gtk
-#	sh -x mkclass Gtk RadioButton Gtk
-#	sh -x mkclass Gtk RadioButtonAccessible Gtk
-#	sh -x mkclass Gtk RadioMenuItem Gtk
-#	sh -x mkclass Gtk RadioMenuItemAccessible Gtk
-#	sh -x mkclass Gtk RadioToolButton Gtk
-#	sh -x mkclass Gtk Range Gtk
-#	sh -x mkclass Gtk RangeAccessible Gtk
-#	sh -x mkclass Gtk RcStyle Gtk
-#	sh -x mkclass Gtk RecentAction Gtk
-#	sh -x mkclass Gtk RecentChooserDialog Gtk
-#	sh -x mkclass Gtk RecentChooserMenu Gtk
-#	sh -x mkclass Gtk RecentChooserWidget Gtk
-#	sh -x mkclass Gtk RecentFilter Gtk
-#	sh -x mkclass Gtk RecentManager Gtk
-#	sh -x mkclass Gtk RendererCellAccessible Gtk
-#	sh -x mkclass Gtk Revealer Gtk
-#	sh -x mkclass Gtk Scale Gtk
-#	sh -x mkclass Gtk ScaleAccessible Gtk
-#	sh -x mkclass Gtk ScaleButton Gtk
-#	sh -x mkclass Gtk ScaleButtonAccessible Gtk
-#	sh -x mkclass Gtk Scrollbar Gtk
-#	sh -x mkclass Gtk ScrolledWindow Gtk
-#	sh -x mkclass Gtk ScrolledWindowAccessible Gtk
-#	sh -x mkclass Gtk SearchBar Gtk
-#	sh -x mkclass Gtk SearchEntry Gtk
-#	sh -x mkclass Gtk Separator Gtk
-#	sh -x mkclass Gtk SeparatorMenuItem Gtk
-#	sh -x mkclass Gtk SeparatorToolItem Gtk
-#	sh -x mkclass Gtk Settings Gtk
-#	sh -x mkclass Gtk ShortcutLabel Gtk
-#	sh -x mkclass Gtk ShortcutsGroup Gtk
-#	sh -x mkclass Gtk ShortcutsSection Gtk
-#	sh -x mkclass Gtk ShortcutsShortcut Gtk
-#	sh -x mkclass Gtk ShortcutsWindow Gtk
-#	sh -x mkclass Gtk SizeGroup Gtk
-#	sh -x mkclass Gtk Socket Gtk
-#	sh -x mkclass Gtk SocketAccessible Gtk
-#	sh -x mkclass Gtk SpinButton Gtk
-#	sh -x mkclass Gtk SpinButtonAccessible Gtk
-#	sh -x mkclass Gtk Spinner Gtk
-#	sh -x mkclass Gtk SpinnerAccessible Gtk
-#	sh -x mkclass Gtk Stack Gtk
-#	sh -x mkclass Gtk StackAccessible Gtk
-#	sh -x mkclass Gtk StackSidebar Gtk
-#	sh -x mkclass Gtk StackSwitcher Gtk
-#	sh -x mkclass Gtk StatusIcon Gtk
-#	sh -x mkclass Gtk Statusbar Gtk
-#	sh -x mkclass Gtk StatusbarAccessible Gtk
-#	sh -x mkclass Gtk Style Gtk
-#	sh -x mkclass Gtk StyleContext Gtk
-#	sh -x mkclass Gtk StyleProperties Gtk
-#	sh -x mkclass Gtk Switch Gtk
-#	sh -x mkclass Gtk SwitchAccessible Gtk
-#	sh -x mkclass Gtk Table Gtk
-#	sh -x mkclass Gtk TearoffMenuItem Gtk
-#	sh -x mkclass Gtk TextBuffer Gtk
-#	sh -x mkclass Gtk TextCellAccessible Gtk
-#	sh -x mkclass Gtk TextChildAnchor Gtk
-#	sh -x mkclass Gtk TextMark Gtk
-#	sh -x mkclass Gtk TextTag Gtk
-#	sh -x mkclass Gtk TextTagTable Gtk
-#	sh -x mkclass Gtk TextView Gtk
-#	sh -x mkclass Gtk TextViewAccessible Gtk
-#	sh -x mkclass Gtk ThemingEngine Gtk
-#	sh -x mkclass Gtk ToggleAction Gtk
-#	sh -x mkclass Gtk ToggleButton Gtk
-#	sh -x mkclass Gtk ToggleButtonAccessible Gtk
-#	sh -x mkclass Gtk ToggleToolButton Gtk
-#	sh -x mkclass Gtk ToolButton Gtk
-#	sh -x mkclass Gtk ToolItem Gtk
-#	sh -x mkclass Gtk ToolItemGroup Gtk
-#	sh -x mkclass Gtk ToolPalette Gtk
-#	sh -x mkclass Gtk Toolbar Gtk
-#	sh -x mkclass Gtk Tooltip Gtk
-#	sh -x mkclass Gtk ToplevelAccessible Gtk
-#	sh -x mkclass Gtk TreeModelFilter Gtk
-#	sh -x mkclass Gtk TreeModelSort Gtk
-#	sh -x mkclass Gtk TreeSelection Gtk
-#	sh -x mkclass Gtk TreeStore Gtk
-#	sh -x mkclass Gtk TreeView Gtk
-#	sh -x mkclass Gtk TreeViewAccessible Gtk
-#	sh -x mkclass Gtk TreeViewColumn Gtk
-#	sh -x mkclass Gtk UIManager Gtk
-	sh -x mkclass Gtk VBox Gtk
-#	sh -x mkclass Gtk VButtonBox Gtk
-#	sh -x mkclass Gtk VPaned Gtk
-#	sh -x mkclass Gtk VScale Gtk
-#	sh -x mkclass Gtk VScrollbar Gtk
-#	sh -x mkclass Gtk VSeparator Gtk
-#	sh -x mkclass Gtk Viewport Gtk
-#	sh -x mkclass Gtk VolumeButton Gtk
+	sh -x mkclass Gtk RadioAction Gtk
+	sh -x mkclass Gtk RadioButton Gtk
 
-g10:
+g6:
+#	sh -x mkclass Gtk RadioButtonAccessible Gtk
+	sh -x mkclass Gtk RadioMenuItem Gtk
+#	sh -x mkclass Gtk RadioMenuItemAccessible Gtk
+	sh -x mkclass Gtk RadioToolButton Gtk
+	sh -x mkclass Gtk Range Gtk
+#	sh -x mkclass Gtk RangeAccessible Gtk
+	sh -x mkclass Gtk RcStyle Gtk
+	sh -x mkclass Gtk RecentAction Gtk
+	sh -x mkclass Gtk RecentChooserDialog Gtk
+	sh -x mkclass Gtk RecentChooserMenu Gtk
+	sh -x mkclass Gtk RecentChooserWidget Gtk
+	sh -x mkclass Gtk RecentFilter Gtk
+	sh -x mkclass Gtk RecentManager Gtk
+#	sh -x mkclass Gtk RendererCellAccessible Gtk
+	sh -x mkclass Gtk Revealer Gtk
+	sh -x mkclass Gtk Scale Gtk
+#	sh -x mkclass Gtk ScaleAccessible Gtk
+	sh -x mkclass Gtk ScaleButton Gtk
+#	sh -x mkclass Gtk ScaleButtonAccessible Gtk
+	sh -x mkclass Gtk Scrollbar Gtk
+	sh -x mkclass Gtk ScrolledWindow Gtk
+#	sh -x mkclass Gtk ScrolledWindowAccessible Gtk
+	sh -x mkclass Gtk SearchBar Gtk
+	sh -x mkclass Gtk SearchEntry Gtk
+	sh -x mkclass Gtk Separator Gtk
+	sh -x mkclass Gtk SeparatorMenuItem Gtk
+	sh -x mkclass Gtk SeparatorToolItem Gtk
+	sh -x mkclass Gtk Settings Gtk
+	sh -x mkclass Gtk ShortcutLabel Gtk
+	sh -x mkclass Gtk ShortcutsGroup Gtk
+
+g7:
+	sh -x mkclass Gtk ShortcutsSection Gtk
+	sh -x mkclass Gtk ShortcutsShortcut Gtk
+	sh -x mkclass Gtk ShortcutsWindow Gtk
+	sh -x mkclass Gtk SizeGroup Gtk
+	sh -x mkclass Gtk Socket Gtk
+#	sh -x mkclass Gtk SocketAccessible Gtk
+	sh -x mkclass Gtk SpinButton Gtk
+#	sh -x mkclass Gtk SpinButtonAccessible Gtk
+	sh -x mkclass Gtk Spinner Gtk
+#	sh -x mkclass Gtk SpinnerAccessible Gtk
+	sh -x mkclass Gtk Stack Gtk
+#	sh -x mkclass Gtk StackAccessible Gtk
+	sh -x mkclass Gtk StackSidebar Gtk
+	sh -x mkclass Gtk StackSwitcher Gtk
+	sh -x mkclass Gtk StatusIcon Gtk
+	sh -x mkclass Gtk Statusbar Gtk
+#	sh -x mkclass Gtk StatusbarAccessible Gtk
+	sh -x mkclass Gtk Style Gtk
+	sh -x mkclass Gtk StyleContext Gtk
+	sh -x mkclass Gtk StyleProperties Gtk
+	sh -x mkclass Gtk Switch Gtk
+#	sh -x mkclass Gtk SwitchAccessible Gtk
+	sh -x mkclass Gtk Table Gtk
+	sh -x mkclass Gtk TearoffMenuItem Gtk
+	sh -x mkclass Gtk TextBuffer Gtk
+#	sh -x mkclass Gtk TextCellAccessible Gtk
+	sh -x mkclass Gtk TextChildAnchor Gtk
+	sh -x mkclass Gtk TextMark Gtk
+	sh -x mkclass Gtk TextTag Gtk
+	sh -x mkclass Gtk TextTagTable Gtk
+
+g8:
+	sh -x mkclass Gtk TextView Gtk
+#	sh -x mkclass Gtk TextViewAccessible Gtk
+	sh -x mkclass Gtk ThemingEngine Gtk
+	sh -x mkclass Gtk ToggleAction Gtk
+	sh -x mkclass Gtk ToggleButton Gtk
+#	sh -x mkclass Gtk ToggleButtonAccessible Gtk
+	sh -x mkclass Gtk ToggleToolButton Gtk
+	sh -x mkclass Gtk ToolButton Gtk
+	sh -x mkclass Gtk ToolItem Gtk
+	sh -x mkclass Gtk ToolItemGroup Gtk
+	sh -x mkclass Gtk ToolPalette Gtk
+	sh -x mkclass Gtk Toolbar Gtk
+	sh -x mkclass Gtk Tooltip Gtk
+#	sh -x mkclass Gtk ToplevelAccessible Gtk
+	sh -x mkclass Gtk TreeModelFilter Gtk
+	sh -x mkclass Gtk TreeModelSort Gtk
+	sh -x mkclass Gtk TreeSelection Gtk
+	sh -x mkclass Gtk TreeStore Gtk
+	sh -x mkclass Gtk TreeView Gtk
+	sh -x mkclass Gtk TreeViewAccessible Gtk
+	sh -x mkclass Gtk TreeViewColumn Gtk
+	sh -x mkclass Gtk UIManager Gtk
+	sh -x mkclass Gtk VBox Gtk
+	sh -x mkclass Gtk VButtonBox Gtk
+	sh -x mkclass Gtk VPaned Gtk
+	sh -x mkclass Gtk VScale Gtk
+	sh -x mkclass Gtk VScrollbar Gtk
+	sh -x mkclass Gtk VSeparator Gtk
+	sh -x mkclass Gtk Viewport Gtk
+	sh -x mkclass Gtk VolumeButton Gtk
+
+g9:
 	sh -x mkclass Gtk Widget Gtk
 #	sh -x mkclass Gtk WidgetAccessible Gtk
 	sh -x mkclass Gtk Window Gtk
 #	sh -x mkclass Gtk WindowAccessible Gtk
-#	sh -x mkclass Gtk WindowGroup Gtk
+	sh -x mkclass Gtk WindowGroup Gtk
+#	sh -x mkclass GdkPixbuf Pixbuf Gdk
 
 gbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject

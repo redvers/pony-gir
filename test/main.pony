@@ -25,7 +25,7 @@ actor Main
     Gtk.init(Pointer[I32], Pointer[Pointer[U8]])
     let window: GtkWindow = GtkWindow(GtkWindowType.toplevel())
     let button: GtkButton = GtkButton.new_with_label("Press Me")
-
+/*
     window.add(button)
     button.signal_connect[String]("clicked", Main~button_clicked(), "Hello World\n")
     window.signal_connect[String]("destroy", @{(obj: NullablePointer[GObjectStruct] val, data: String): None => Gtk.main_quit()}, "")
@@ -51,4 +51,4 @@ actor Main
     try
     @printf(GObject.from_ptr(obj).pony_type()?.cstring())
     end
-
+*/

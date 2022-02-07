@@ -134,7 +134,7 @@
     <member name="locked" value="2" cid="GTK_ACCEL_LOCKED" glibnick="locked" glibname="GTK_ACCEL_LOCKED"/>
     <member name="mask" value="7" cid="GTK_ACCEL_MASK" glibnick="mask" glibname="GTK_ACCEL_MASK"/>
   </bitfield>
-  <class name="AccelGroup" ctype="GtkAccelGroup" parent="GtkGObject.Object" render="1">
+  <class name="AccelGroup" ctype="GtkAccelGroup" parent="GObject" render="1">
     <constructor name="new" cid="gtk_accel_group_new" render="0"/>
     <function name="from_accel_closure" cid="gtk_accel_group_from_accel_closure" render="0"/>
     <virtual-method name="accel_changed" render="0"/>
@@ -209,7 +209,7 @@
   </record>
   <record name="AccelLabelPrivate" gtypestructfor="" ctype="GtkAccelLabelPrivate" render="0">
   </record>
-  <class name="AccelMap" ctype="GtkAccelMap" parent="GtkGObject.Object" render="1">
+  <class name="AccelMap" ctype="GtkAccelMap" parent="GObject" render="1">
     <function name="add_entry" cid="gtk_accel_map_add_entry" render="0"/>
     <function name="add_filter" cid="gtk_accel_map_add_filter" render="0"/>
     <function name="change_entry" cid="gtk_accel_map_change_entry" render="0"/>
@@ -250,7 +250,7 @@
   </record>
   <record name="AccessiblePrivate" gtypestructfor="" ctype="GtkAccessiblePrivate" render="0">
   </record>
-  <class name="Action" ctype="GtkAction" parent="GtkGObject.Object" render="1">
+  <class name="Action" ctype="GtkAction" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_action_new" render="0"/>
     <virtual-method name="activate" render="0"/>
@@ -362,7 +362,7 @@
     <field name="tooltip"/>
     <field name="callback"/>
   </record>
-  <class name="ActionGroup" ctype="GtkActionGroup" parent="GtkGObject.Object" render="1">
+  <class name="ActionGroup" ctype="GtkActionGroup" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_action_group_new" render="0"/>
     <virtual-method name="get_action" render="0"/>
@@ -447,7 +447,7 @@
     <field name="update"/>
     <field name="sync_action_properties"/>
   </record>
-  <class name="Adjustment" ctype="GtkAdjustment" parent="GtkGObject.InitiallyUnowned" render="1">
+  <class name="Adjustment" ctype="GtkAdjustment" parent="GInitiallyUnowned" render="1">
     <constructor name="new" cid="gtk_adjustment_new" render="0"/>
     <virtual-method name="changed" render="0"/>
     <virtual-method name="value_changed" render="0"/>
@@ -1430,7 +1430,7 @@
   <record name="CellAccessiblePrivate" gtypestructfor="" ctype="GtkCellAccessiblePrivate" render="0">
   </record>
   <callback name="CellAllocCallback" ctype="GtkCellAllocCallback" render="0">  </callback>
-  <class name="CellArea" ctype="GtkCellArea" parent="GtkGObject.InitiallyUnowned" render="1">
+  <class name="CellArea" ctype="GtkCellArea" parent="GInitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <virtual-method name="activate" render="0"/>
@@ -1561,7 +1561,7 @@
     <method name="install_cell_property" cid="gtk_cell_area_class_install_cell_property" render="0"/>
     <method name="list_cell_properties" cid="gtk_cell_area_class_list_cell_properties" render="0"/>
   </record>
-  <class name="CellAreaContext" ctype="GtkCellAreaContext" parent="GtkGObject.Object" render="1">
+  <class name="CellAreaContext" ctype="GtkCellAreaContext" parent="GObject" render="1">
     <virtual-method name="allocate" render="0"/>
     <virtual-method name="get_preferred_height_for_width" render="0"/>
     <virtual-method name="get_preferred_width_for_height" render="0"/>
@@ -1652,7 +1652,7 @@
     <field name="get_cells"/>
     <field name="get_area"/>
   </record>
-  <class name="CellRenderer" ctype="GtkCellRenderer" parent="GtkGObject.InitiallyUnowned" render="1">
+  <class name="CellRenderer" ctype="GtkCellRenderer" parent="GInitiallyUnowned" render="1">
     <virtual-method name="activate" render="0"/>
     <virtual-method name="editing_canceled" render="0"/>
     <virtual-method name="editing_started" render="0"/>
@@ -2074,7 +2074,7 @@
   </record>
   <record name="CheckMenuItemPrivate" gtypestructfor="" ctype="GtkCheckMenuItemPrivate" render="0">
   </record>
-  <class name="Clipboard" ctype="GtkClipboard" parent="GtkGObject.Object" render="1">
+  <class name="Clipboard" ctype="GtkClipboard" parent="GObject" render="1">
     <function name="get" cid="gtk_clipboard_get" render="0"/>
     <function name="get_default" cid="gtk_clipboard_get_default" render="0"/>
     <function name="get_for_display" cid="gtk_clipboard_get_for_display" render="0"/>
@@ -2525,7 +2525,7 @@
     <member name="top_right" value="2" cid="GTK_CORNER_TOP_RIGHT" glibnick="top-right" glibname="GTK_CORNER_TOP_RIGHT"/>
     <member name="bottom_right" value="3" cid="GTK_CORNER_BOTTOM_RIGHT" glibnick="bottom-right" glibname="GTK_CORNER_BOTTOM_RIGHT"/>
   </enumeration>
-  <class name="CssProvider" ctype="GtkCssProvider" parent="GtkGObject.Object" render="1">
+  <class name="CssProvider" ctype="GtkCssProvider" parent="GObject" render="1">
     <implements name="StyleProvider" render="0"/>
     <constructor name="new" cid="gtk_css_provider_new" render="0"/>
     <function name="get_default" cid="gtk_css_provider_get_default" render="0"/>
@@ -2945,7 +2945,7 @@
   </record>
   <record name="EntryAccessiblePrivate" gtypestructfor="" ctype="GtkEntryAccessiblePrivate" render="0">
   </record>
-  <class name="EntryBuffer" ctype="GtkEntryBuffer" parent="GtkGObject.Object" render="1">
+  <class name="EntryBuffer" ctype="GtkEntryBuffer" parent="GObject" render="1">
     <constructor name="new" cid="gtk_entry_buffer_new" render="0"/>
     <virtual-method name="delete_text" render="0"/>
     <virtual-method name="deleted_text" render="0"/>
@@ -3012,7 +3012,7 @@
     <field name="_gtk_reserved5"/>
     <field name="_gtk_reserved6"/>
   </record>
-  <class name="EntryCompletion" ctype="GtkEntryCompletion" parent="GtkGObject.Object" render="1">
+  <class name="EntryCompletion" ctype="GtkEntryCompletion" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <constructor name="new" cid="gtk_entry_completion_new" render="0"/>
@@ -3109,7 +3109,7 @@
   </record>
   <record name="EventBoxPrivate" gtypestructfor="" ctype="GtkEventBoxPrivate" render="0">
   </record>
-  <class name="EventController" ctype="GtkEventController" parent="GtkGObject.Object" render="1">
+  <class name="EventController" ctype="GtkEventController" parent="GObject" render="1">
     <method name="get_propagation_phase" cid="gtk_event_controller_get_propagation_phase" render="0"/>
     <method name="get_widget" cid="gtk_event_controller_get_widget" render="0"/>
     <method name="handle_event" cid="gtk_event_controller_handle_event" render="0"/>
@@ -3478,7 +3478,7 @@
   </record>
   <record name="FileChooserWidgetPrivate" gtypestructfor="" ctype="GtkFileChooserWidgetPrivate" render="0">
   </record>
-  <class name="FileFilter" ctype="GtkFileFilter" parent="GtkGObject.InitiallyUnowned" render="1">
+  <class name="FileFilter" ctype="GtkFileFilter" parent="GInitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_file_filter_new" render="0"/>
     <constructor name="new_from_gvariant" cid="gtk_file_filter_new_from_gvariant" render="0"/>
@@ -4347,7 +4347,7 @@
   <function-macro name="IMAGE_MENU_ITEM" render="0">   </function-macro>
   <function-macro name="IMAGE_MENU_ITEM_CLASS" render="0">   </function-macro>
   <function-macro name="IMAGE_MENU_ITEM_GET_CLASS" render="0">   </function-macro>
-  <class name="IMContext" ctype="GtkIMContext" parent="GtkGObject.Object" render="1">
+  <class name="IMContext" ctype="GtkIMContext" parent="GObject" render="1">
     <virtual-method name="commit" render="0"/>
     <virtual-method name="delete_surrounding" render="0"/>
     <virtual-method name="filter_keypress" render="0"/>
@@ -5024,7 +5024,7 @@
   <function-macro name="IS_WINDOW_CLASS" render="0">   </function-macro>
   <function-macro name="IS_WINDOW_GROUP" render="0">   </function-macro>
   <function-macro name="IS_WINDOW_GROUP_CLASS" render="0">   </function-macro>
-  <class name="IconFactory" ctype="GtkIconFactory" parent="GtkGObject.Object" render="1">
+  <class name="IconFactory" ctype="GtkIconFactory" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_icon_factory_new" render="0"/>
     <function name="lookup_default" cid="gtk_icon_factory_lookup_default" render="0"/>
@@ -5044,7 +5044,7 @@
   </record>
   <record name="IconFactoryPrivate" gtypestructfor="" ctype="GtkIconFactoryPrivate" render="0">
   </record>
-  <class name="IconInfo" ctype="GtkIconInfo" parent="GtkGObject.Object" render="1">
+  <class name="IconInfo" ctype="GtkIconInfo" parent="GObject" render="1">
     <constructor name="new_for_pixbuf" cid="gtk_icon_info_new_for_pixbuf" render="0"/>
     <method name="copy" cid="gtk_icon_info_copy" render="0"/>
     <method name="free" cid="gtk_icon_info_free" render="0"/>
@@ -5131,7 +5131,7 @@
     <method name="set_state" cid="gtk_icon_source_set_state" render="0"/>
     <method name="set_state_wildcarded" cid="gtk_icon_source_set_state_wildcarded" render="0"/>
   </record>
-  <class name="IconTheme" ctype="GtkIconTheme" parent="GtkGObject.Object" render="1">
+  <class name="IconTheme" ctype="GtkIconTheme" parent="GObject" render="1">
     <constructor name="new" cid="gtk_icon_theme_new" render="0"/>
     <function name="add_builtin_icon" cid="gtk_icon_theme_add_builtin_icon" render="0"/>
     <function name="get_default" cid="gtk_icon_theme_get_default" render="0"/>
@@ -5959,7 +5959,7 @@
   </record>
   <callback name="ListBoxSortFunc" ctype="GtkListBoxSortFunc" render="0">  </callback>
   <callback name="ListBoxUpdateHeaderFunc" ctype="GtkListBoxUpdateHeaderFunc" render="0">  </callback>
-  <class name="ListStore" ctype="GtkListStore" parent="GtkGObject.Object" render="1">
+  <class name="ListStore" ctype="GtkListStore" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="TreeDragDest" render="0"/>
     <implements name="TreeDragSource" render="0"/>
@@ -6529,7 +6529,7 @@
   <function-macro name="NUMERABLE_ICON" render="0">   </function-macro>
   <function-macro name="NUMERABLE_ICON_CLASS" render="0">   </function-macro>
   <function-macro name="NUMERABLE_ICON_GET_CLASS" render="0">   </function-macro>
-  <class name="NativeDialog" ctype="GtkNativeDialog" parent="GtkGObject.Object" render="1">
+  <class name="NativeDialog" ctype="GtkNativeDialog" parent="GObject" render="1">
     <virtual-method name="hide" render="0"/>
     <virtual-method name="response" render="0"/>
     <virtual-method name="show" render="0"/>
@@ -6911,7 +6911,7 @@
     <member name="even" value="1" cid="GTK_PAGE_SET_EVEN" glibnick="even" glibname="GTK_PAGE_SET_EVEN"/>
     <member name="odd" value="2" cid="GTK_PAGE_SET_ODD" glibnick="odd" glibname="GTK_PAGE_SET_ODD"/>
   </enumeration>
-  <class name="PageSetup" ctype="GtkPageSetup" parent="GtkGObject.Object" render="1">
+  <class name="PageSetup" ctype="GtkPageSetup" parent="GObject" render="1">
     <constructor name="new" cid="gtk_page_setup_new" render="0"/>
     <constructor name="new_from_file" cid="gtk_page_setup_new_from_file" render="0"/>
     <constructor name="new_from_gvariant" cid="gtk_page_setup_new_from_gvariant" render="0"/>
@@ -7217,7 +7217,7 @@
     <member name="top" value="2" cid="GTK_POS_TOP" glibnick="top" glibname="GTK_POS_TOP"/>
     <member name="bottom" value="3" cid="GTK_POS_BOTTOM" glibnick="bottom" glibname="GTK_POS_BOTTOM"/>
   </enumeration>
-  <class name="PrintContext" ctype="GtkPrintContext" parent="GtkGObject.Object" render="1">
+  <class name="PrintContext" ctype="GtkPrintContext" parent="GObject" render="1">
     <method name="create_pango_context" cid="gtk_print_context_create_pango_context" render="0"/>
     <method name="create_pango_layout" cid="gtk_print_context_create_pango_layout" render="0"/>
     <method name="get_cairo_context" cid="gtk_print_context_get_cairo_context" render="0"/>
@@ -7240,7 +7240,7 @@
     <member name="invalid_file" value="3" cid="GTK_PRINT_ERROR_INVALID_FILE" glibnick="invalid-file" glibname="GTK_PRINT_ERROR_INVALID_FILE"/>
     <function name="quark" cid="gtk_print_error_quark" render="0"/>
   </enumeration>
-  <class name="PrintOperation" ctype="GtkPrintOperation" parent="GtkGObject.Object" render="1">
+  <class name="PrintOperation" ctype="GtkPrintOperation" parent="GObject" render="1">
     <implements name="PrintOperationPreview" render="0"/>
     <constructor name="new" cid="gtk_print_operation_new" render="0"/>
     <virtual-method name="begin_print" render="0"/>
@@ -7386,7 +7386,7 @@
     <member name="high" value="2" cid="GTK_PRINT_QUALITY_HIGH" glibnick="high" glibname="GTK_PRINT_QUALITY_HIGH"/>
     <member name="draft" value="3" cid="GTK_PRINT_QUALITY_DRAFT" glibnick="draft" glibname="GTK_PRINT_QUALITY_DRAFT"/>
   </enumeration>
-  <class name="PrintSettings" ctype="GtkPrintSettings" parent="GtkGObject.Object" render="1">
+  <class name="PrintSettings" ctype="GtkPrintSettings" parent="GObject" render="1">
     <constructor name="new" cid="gtk_print_settings_new" render="0"/>
     <constructor name="new_from_file" cid="gtk_print_settings_new_from_file" render="0"/>
     <constructor name="new_from_gvariant" cid="gtk_print_settings_new_from_gvariant" render="0"/>
@@ -7817,7 +7817,7 @@
     <function name="parse_requisition" cid="gtk_rc_property_parse_requisition" render="0"/>
   </record>
   <callback name="RcPropertyParser" ctype="GtkRcPropertyParser" render="0">  </callback>
-  <class name="RcStyle" ctype="GtkRcStyle" parent="GtkGObject.Object" render="1">
+  <class name="RcStyle" ctype="GtkRcStyle" parent="GObject" render="1">
     <constructor name="new" cid="gtk_rc_style_new" render="0"/>
     <virtual-method name="create_rc_style" render="0"/>
     <virtual-method name="create_style" render="0"/>
@@ -8059,7 +8059,7 @@
     <field name="groups"/>
     <field name="is_private"/>
   </record>
-  <class name="RecentFilter" ctype="GtkRecentFilter" parent="GtkGObject.InitiallyUnowned" render="1">
+  <class name="RecentFilter" ctype="GtkRecentFilter" parent="GInitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_recent_filter_new" render="0"/>
     <method name="add_age" cid="gtk_recent_filter_add_age" render="0"/>
@@ -8119,7 +8119,7 @@
     <method name="ref" cid="gtk_recent_info_ref" render="0"/>
     <method name="unref" cid="gtk_recent_info_unref" render="0"/>
   </record>
-  <class name="RecentManager" ctype="GtkRecentManager" parent="GtkGObject.Object" render="1">
+  <class name="RecentManager" ctype="GtkRecentManager" parent="GObject" render="1">
     <constructor name="new" cid="gtk_recent_manager_new" render="0"/>
     <function name="get_default" cid="gtk_recent_manager_get_default" render="0"/>
     <virtual-method name="changed" render="0"/>
@@ -8940,7 +8940,7 @@
   </record>
   <record name="SeparatorToolItemPrivate" gtypestructfor="" ctype="GtkSeparatorToolItemPrivate" render="0">
   </record>
-  <class name="Settings" ctype="GtkSettings" parent="GtkGObject.Object" render="1">
+  <class name="Settings" ctype="GtkSettings" parent="GObject" render="1">
     <implements name="StyleProvider" render="0"/>
     <function name="get_default" cid="gtk_settings_get_default" render="0"/>
     <function name="get_for_screen" cid="gtk_settings_get_for_screen" render="0"/>
@@ -9139,7 +9139,7 @@
     <field name="close"/>
     <field name="search"/>
   </record>
-  <class name="SizeGroup" ctype="GtkSizeGroup" parent="GtkGObject.Object" render="1">
+  <class name="SizeGroup" ctype="GtkSizeGroup" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_size_group_new" render="0"/>
     <method name="add_widget" cid="gtk_size_group_add_widget" render="0"/>
@@ -9458,7 +9458,7 @@
     <member name="inconsistent" value="5" cid="GTK_STATE_INCONSISTENT" glibnick="inconsistent" glibname="GTK_STATE_INCONSISTENT"/>
     <member name="focused" value="6" cid="GTK_STATE_FOCUSED" glibnick="focused" glibname="GTK_STATE_FOCUSED"/>
   </enumeration>
-  <class name="StatusIcon" ctype="GtkStatusIcon" parent="GtkGObject.Object" render="1">
+  <class name="StatusIcon" ctype="GtkStatusIcon" parent="GObject" render="1">
     <constructor name="new" cid="gtk_status_icon_new" render="0"/>
     <constructor name="new_from_file" cid="gtk_status_icon_new_from_file" render="0"/>
     <constructor name="new_from_gicon" cid="gtk_status_icon_new_from_gicon" render="0"/>
@@ -9590,7 +9590,7 @@
     <method name="copy" cid="gtk_stock_item_copy" render="0"/>
     <method name="free" cid="gtk_stock_item_free" render="0"/>
   </record>
-  <class name="Style" ctype="GtkStyle" parent="GtkGObject.Object" render="1">
+  <class name="Style" ctype="GtkStyle" parent="GObject" render="1">
     <constructor name="new" cid="gtk_style_new" render="0"/>
     <virtual-method name="clone" render="0"/>
     <virtual-method name="copy" render="0"/>
@@ -9698,7 +9698,7 @@
     <field name="_gtk_reserved10"/>
     <field name="_gtk_reserved11"/>
   </record>
-  <class name="StyleContext" ctype="GtkStyleContext" parent="GtkGObject.Object" render="1">
+  <class name="StyleContext" ctype="GtkStyleContext" parent="GObject" render="1">
     <constructor name="new" cid="gtk_style_context_new" render="0"/>
     <function name="add_provider_for_screen" cid="gtk_style_context_add_provider_for_screen" render="0"/>
     <function name="remove_provider_for_screen" cid="gtk_style_context_remove_provider_for_screen" render="0"/>
@@ -9780,7 +9780,7 @@
   </bitfield>
   <record name="StyleContextPrivate" gtypestructfor="" ctype="GtkStyleContextPrivate" render="0">
   </record>
-  <class name="StyleProperties" ctype="GtkStyleProperties" parent="GtkGObject.Object" render="1">
+  <class name="StyleProperties" ctype="GtkStyleProperties" parent="GObject" render="1">
     <implements name="StyleProvider" render="0"/>
     <constructor name="new" cid="gtk_style_properties_new" render="0"/>
     <function name="lookup_property" cid="gtk_style_properties_lookup_property" render="0"/>
@@ -10128,7 +10128,7 @@
   </record>
   <record name="TextBTree" gtypestructfor="" ctype="GtkTextBTree" render="0">
   </record>
-  <class name="TextBuffer" ctype="GtkTextBuffer" parent="GtkGObject.Object" render="1">
+  <class name="TextBuffer" ctype="GtkTextBuffer" parent="GObject" render="1">
     <constructor name="new" cid="gtk_text_buffer_new" render="0"/>
     <virtual-method name="apply_tag" render="0"/>
     <virtual-method name="begin_user_action" render="0"/>
@@ -10280,7 +10280,7 @@
   <record name="TextCellAccessiblePrivate" gtypestructfor="" ctype="GtkTextCellAccessiblePrivate" render="0">
   </record>
   <callback name="TextCharPredicate" ctype="GtkTextCharPredicate" render="0">  </callback>
-  <class name="TextChildAnchor" ctype="GtkTextChildAnchor" parent="GtkGObject.Object" render="1">
+  <class name="TextChildAnchor" ctype="GtkTextChildAnchor" parent="GObject" render="1">
     <constructor name="new" cid="gtk_text_child_anchor_new" render="0"/>
     <method name="get_deleted" cid="gtk_text_child_anchor_get_deleted" render="0"/>
     <method name="get_widgets" cid="gtk_text_child_anchor_get_widgets" render="0"/>
@@ -10409,7 +10409,7 @@
     <method name="starts_word" cid="gtk_text_iter_starts_word" render="0"/>
     <method name="toggles_tag" cid="gtk_text_iter_toggles_tag" render="0"/>
   </record>
-  <class name="TextMark" ctype="GtkTextMark" parent="GtkGObject.Object" render="1">
+  <class name="TextMark" ctype="GtkTextMark" parent="GObject" render="1">
     <constructor name="new" cid="gtk_text_mark_new" render="0"/>
     <method name="get_buffer" cid="gtk_text_mark_get_buffer" render="0"/>
     <method name="get_deleted" cid="gtk_text_mark_get_deleted" render="0"/>
@@ -10434,7 +10434,7 @@
     <member name="text_only" value="2" cid="GTK_TEXT_SEARCH_TEXT_ONLY" glibnick="text-only" glibname="GTK_TEXT_SEARCH_TEXT_ONLY"/>
     <member name="case_insensitive" value="4" cid="GTK_TEXT_SEARCH_CASE_INSENSITIVE" glibnick="case-insensitive" glibname="GTK_TEXT_SEARCH_CASE_INSENSITIVE"/>
   </bitfield>
-  <class name="TextTag" ctype="GtkTextTag" parent="GtkGObject.Object" render="1">
+  <class name="TextTag" ctype="GtkTextTag" parent="GObject" render="1">
     <constructor name="new" cid="gtk_text_tag_new" render="0"/>
     <virtual-method name="event" render="0"/>
     <method name="changed" cid="gtk_text_tag_changed" render="0"/>
@@ -10529,7 +10529,7 @@
   </record>
   <record name="TextTagPrivate" gtypestructfor="" ctype="GtkTextTagPrivate" render="0">
   </record>
-  <class name="TextTagTable" ctype="GtkTextTagTable" parent="GtkGObject.Object" render="1">
+  <class name="TextTagTable" ctype="GtkTextTagTable" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_text_tag_table_new" render="0"/>
     <virtual-method name="tag_added" render="0"/>
@@ -10741,7 +10741,7 @@
   </enumeration>
   <record name="ThemeEngine" gtypestructfor="" ctype="GtkThemeEngine" render="0">
   </record>
-  <class name="ThemingEngine" ctype="GtkThemingEngine" parent="GtkGObject.Object" render="1">
+  <class name="ThemingEngine" ctype="GtkThemingEngine" parent="GObject" render="1">
     <function name="load" cid="gtk_theming_engine_load" render="0"/>
     <function name="register_property" cid="gtk_theming_engine_register_property" render="0"/>
     <virtual-method name="render_activity" render="0"/>
@@ -11180,7 +11180,7 @@
     <member name="both" value="2" cid="GTK_TOOLBAR_BOTH" glibnick="both" glibname="GTK_TOOLBAR_BOTH"/>
     <member name="both_horiz" value="3" cid="GTK_TOOLBAR_BOTH_HORIZ" glibnick="both-horiz" glibname="GTK_TOOLBAR_BOTH_HORIZ"/>
   </enumeration>
-  <class name="Tooltip" ctype="GtkTooltip" parent="GtkGObject.Object" render="1">
+  <class name="Tooltip" ctype="GtkTooltip" parent="GObject" render="1">
     <function name="trigger_tooltip_query" cid="gtk_tooltip_trigger_tooltip_query" render="0"/>
     <method name="set_custom" cid="gtk_tooltip_set_custom" render="0"/>
     <method name="set_icon" cid="gtk_tooltip_set_icon" render="0"/>
@@ -11290,7 +11290,7 @@
     <glibsignal name="row-inserted" when="first" render="0"/>
     <glibsignal name="rows-reordered" when="first" render="0"/>
   </interface>
-  <class name="TreeModelFilter" ctype="GtkTreeModelFilter" parent="GtkGObject.Object" render="1">
+  <class name="TreeModelFilter" ctype="GtkTreeModelFilter" parent="GObject" render="1">
     <implements name="TreeDragSource" render="0"/>
     <implements name="TreeModel" render="0"/>
     <virtual-method name="modify" render="0"/>
@@ -11351,7 +11351,7 @@
     <field name="ref_node"/>
     <field name="unref_node"/>
   </record>
-  <class name="TreeModelSort" ctype="GtkTreeModelSort" parent="GtkGObject.Object" render="1">
+  <class name="TreeModelSort" ctype="GtkTreeModelSort" parent="GObject" render="1">
     <implements name="TreeDragSource" render="0"/>
     <implements name="TreeModel" render="0"/>
     <implements name="TreeSortable" render="0"/>
@@ -11411,7 +11411,7 @@
     <function name="inserted" cid="gtk_tree_row_reference_inserted" render="0"/>
     <function name="reordered" cid="gtk_tree_row_reference_reordered" render="0"/>
   </record>
-  <class name="TreeSelection" ctype="GtkTreeSelection" parent="GtkGObject.Object" render="1">
+  <class name="TreeSelection" ctype="GtkTreeSelection" parent="GObject" render="1">
     <virtual-method name="changed" render="0"/>
     <method name="count_selected_rows" cid="gtk_tree_selection_count_selected_rows" render="0"/>
     <method name="get_mode" cid="gtk_tree_selection_get_mode" render="0"/>
@@ -11474,7 +11474,7 @@
     <field name="set_default_sort_func"/>
     <field name="has_default_sort_func"/>
   </record>
-  <class name="TreeStore" ctype="GtkTreeStore" parent="GtkGObject.Object" render="1">
+  <class name="TreeStore" ctype="GtkTreeStore" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="TreeDragDest" render="0"/>
     <implements name="TreeDragSource" render="0"/>
@@ -11710,7 +11710,7 @@
     <field name="_gtk_reserved7"/>
     <field name="_gtk_reserved8"/>
   </record>
-  <class name="TreeViewColumn" ctype="GtkTreeViewColumn" parent="GtkGObject.InitiallyUnowned" render="1">
+  <class name="TreeViewColumn" ctype="GtkTreeViewColumn" parent="GInitiallyUnowned" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <constructor name="new" cid="gtk_tree_view_column_new" render="0"/>
@@ -11821,7 +11821,7 @@
   <callback name="TreeViewRowSeparatorFunc" ctype="GtkTreeViewRowSeparatorFunc" render="0">  </callback>
   <callback name="TreeViewSearchEqualFunc" ctype="GtkTreeViewSearchEqualFunc" render="0">  </callback>
   <callback name="TreeViewSearchPositionFunc" ctype="GtkTreeViewSearchPositionFunc" render="0">  </callback>
-  <class name="UIManager" ctype="GtkUIManager" parent="GtkGObject.Object" render="1">
+  <class name="UIManager" ctype="GtkUIManager" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_ui_manager_new" render="0"/>
     <virtual-method name="actions_changed" render="0"/>
@@ -12684,116 +12684,116 @@
     <virtual-method name="enable_debugging" render="0"/>
     <virtual-method name="keys_changed" render="0"/>
     <virtual-method name="set_focus" render="0"/>
-    <method name="activate_default" cid="gtk_window_activate_default" render="0"/>
-    <method name="activate_focus" cid="gtk_window_activate_focus" render="0"/>
-    <method name="activate_key" cid="gtk_window_activate_key" render="0"/>
-    <method name="add_accel_group" cid="gtk_window_add_accel_group" render="0"/>
-    <method name="add_mnemonic" cid="gtk_window_add_mnemonic" render="0"/>
-    <method name="begin_move_drag" cid="gtk_window_begin_move_drag" render="0"/>
-    <method name="begin_resize_drag" cid="gtk_window_begin_resize_drag" render="0"/>
-    <method name="close" cid="gtk_window_close" render="0"/>
-    <method name="deiconify" cid="gtk_window_deiconify" render="0"/>
+    <method name="activate_default" cid="gtk_window_activate_default" render="1"/>
+    <method name="activate_focus" cid="gtk_window_activate_focus" render="1"/>
+    <method name="activate_key" cid="gtk_window_activate_key" render="1"/>
+    <method name="add_accel_group" cid="gtk_window_add_accel_group" render="1"/>
+    <method name="add_mnemonic" cid="gtk_window_add_mnemonic" render="1"/>
+    <method name="begin_move_drag" cid="gtk_window_begin_move_drag" render="1"/>
+    <method name="begin_resize_drag" cid="gtk_window_begin_resize_drag" render="1"/>
+    <method name="close" cid="gtk_window_close" render="1"/>
+    <method name="deiconify" cid="gtk_window_deiconify" render="1"/>
     <method name="fullscreen" cid="gtk_window_fullscreen" render="1"/>
-    <method name="fullscreen_on_monitor" cid="gtk_window_fullscreen_on_monitor" render="0"/>
-    <method name="get_accept_focus" cid="gtk_window_get_accept_focus" render="0"/>
-    <method name="get_application" cid="gtk_window_get_application" render="0"/>
-    <method name="get_attached_to" cid="gtk_window_get_attached_to" render="0"/>
-    <method name="get_decorated" cid="gtk_window_get_decorated" render="0"/>
+    <method name="fullscreen_on_monitor" cid="gtk_window_fullscreen_on_monitor" render="1"/>
+    <method name="get_accept_focus" cid="gtk_window_get_accept_focus" render="1"/>
+    <method name="get_application" cid="gtk_window_get_application" render="1"/>
+    <method name="get_attached_to" cid="gtk_window_get_attached_to" render="1"/>
+    <method name="get_decorated" cid="gtk_window_get_decorated" render="1"/>
     <method name="get_default_size" cid="gtk_window_get_default_size" render="1"/>
-    <method name="get_default_widget" cid="gtk_window_get_default_widget" render="0"/>
-    <method name="get_deletable" cid="gtk_window_get_deletable" render="0"/>
-    <method name="get_destroy_with_parent" cid="gtk_window_get_destroy_with_parent" render="0"/>
-    <method name="get_focus" cid="gtk_window_get_focus" render="0"/>
-    <method name="get_focus_on_map" cid="gtk_window_get_focus_on_map" render="0"/>
-    <method name="get_focus_visible" cid="gtk_window_get_focus_visible" render="0"/>
-    <method name="get_gravity" cid="gtk_window_get_gravity" render="0"/>
-    <method name="get_group" cid="gtk_window_get_group" render="0"/>
-    <method name="get_has_resize_grip" cid="gtk_window_get_has_resize_grip" render="0"/>
-    <method name="get_hide_titlebar_when_maximized" cid="gtk_window_get_hide_titlebar_when_maximized" render="0"/>
-    <method name="get_icon" cid="gtk_window_get_icon" render="0"/>
-    <method name="get_icon_list" cid="gtk_window_get_icon_list" render="0"/>
-    <method name="get_icon_name" cid="gtk_window_get_icon_name" render="0"/>
-    <method name="get_mnemonic_modifier" cid="gtk_window_get_mnemonic_modifier" render="0"/>
-    <method name="get_mnemonics_visible" cid="gtk_window_get_mnemonics_visible" render="0"/>
-    <method name="get_modal" cid="gtk_window_get_modal" render="0"/>
-    <method name="get_opacity" cid="gtk_window_get_opacity" render="0"/>
-    <method name="get_position" cid="gtk_window_get_position" render="0"/>
-    <method name="get_resizable" cid="gtk_window_get_resizable" render="0"/>
-    <method name="get_resize_grip_area" cid="gtk_window_get_resize_grip_area" render="0"/>
-    <method name="get_role" cid="gtk_window_get_role" render="0"/>
-    <method name="get_screen" cid="gtk_window_get_screen" render="0"/>
-    <method name="get_size" cid="gtk_window_get_size" render="0"/>
-    <method name="get_skip_pager_hint" cid="gtk_window_get_skip_pager_hint" render="0"/>
-    <method name="get_skip_taskbar_hint" cid="gtk_window_get_skip_taskbar_hint" render="0"/>
+    <method name="get_default_widget" cid="gtk_window_get_default_widget" render="1"/>
+    <method name="get_deletable" cid="gtk_window_get_deletable" render="1"/>
+    <method name="get_destroy_with_parent" cid="gtk_window_get_destroy_with_parent" render="1"/>
+    <method name="get_focus" cid="gtk_window_get_focus" render="1"/>
+    <method name="get_focus_on_map" cid="gtk_window_get_focus_on_map" render="1"/>
+    <method name="get_focus_visible" cid="gtk_window_get_focus_visible" render="1"/>
+    <method name="get_gravity" cid="gtk_window_get_gravity" render="1"/>
+    <method name="get_group" cid="gtk_window_get_group" render="1"/>
+    <method name="get_has_resize_grip" cid="gtk_window_get_has_resize_grip" render="1"/>
+    <method name="get_hide_titlebar_when_maximized" cid="gtk_window_get_hide_titlebar_when_maximized" render="1"/>
+    <method name="get_icon" cid="gtk_window_get_icon" render="1"/>
+    <method name="get_icon_list" cid="gtk_window_get_icon_list" render="1"/>
+    <method name="get_icon_name" cid="gtk_window_get_icon_name" render="1"/>
+    <method name="get_mnemonic_modifier" cid="gtk_window_get_mnemonic_modifier" render="1"/>
+    <method name="get_mnemonics_visible" cid="gtk_window_get_mnemonics_visible" render="1"/>
+    <method name="get_modal" cid="gtk_window_get_modal" render="1"/>
+    <method name="get_opacity" cid="gtk_window_get_opacity" render="1"/>
+    <method name="get_position" cid="gtk_window_get_position" render="1"/>
+    <method name="get_resizable" cid="gtk_window_get_resizable" render="1"/>
+    <method name="get_resize_grip_area" cid="gtk_window_get_resize_grip_area" render="1"/>
+    <method name="get_role" cid="gtk_window_get_role" render="1"/>
+    <method name="get_screen" cid="gtk_window_get_screen" render="1"/>
+    <method name="get_size" cid="gtk_window_get_size" render="1"/>
+    <method name="get_skip_pager_hint" cid="gtk_window_get_skip_pager_hint" render="1"/>
+    <method name="get_skip_taskbar_hint" cid="gtk_window_get_skip_taskbar_hint" render="1"/>
     <method name="get_title" cid="gtk_window_get_title" render="1"/>
-    <method name="get_titlebar" cid="gtk_window_get_titlebar" render="0"/>
-    <method name="get_transient_for" cid="gtk_window_get_transient_for" render="0"/>
+    <method name="get_titlebar" cid="gtk_window_get_titlebar" render="1"/>
+    <method name="get_transient_for" cid="gtk_window_get_transient_for" render="1"/>
     <method name="get_type_hint" cid="gtk_window_get_type_hint" render="1"/>
     <method name="get_type" cid="gtk_window_get_type" render="1"/>
-    <method name="get_urgency_hint" cid="gtk_window_get_urgency_hint" render="0"/>
-    <method name="get_window_type" cid="gtk_window_get_window_type" render="0"/>
-    <method name="has_group" cid="gtk_window_has_group" render="0"/>
-    <method name="has_toplevel_focus" cid="gtk_window_has_toplevel_focus" render="0"/>
-    <method name="iconify" cid="gtk_window_iconify" render="0"/>
-    <method name="is_active" cid="gtk_window_is_active" render="0"/>
-    <method name="is_maximized" cid="gtk_window_is_maximized" render="0"/>
-    <method name="maximize" cid="gtk_window_maximize" render="0"/>
-    <method name="mnemonic_activate" cid="gtk_window_mnemonic_activate" render="0"/>
-    <method name="move" cid="gtk_window_move" render="0"/>
-    <method name="parse_geometry" cid="gtk_window_parse_geometry" render="0"/>
-    <method name="present" cid="gtk_window_present" render="0"/>
-    <method name="present_with_time" cid="gtk_window_present_with_time" render="0"/>
-    <method name="propagate_key_event" cid="gtk_window_propagate_key_event" render="0"/>
-    <method name="remove_accel_group" cid="gtk_window_remove_accel_group" render="0"/>
-    <method name="remove_mnemonic" cid="gtk_window_remove_mnemonic" render="0"/>
-    <method name="reshow_with_initial_size" cid="gtk_window_reshow_with_initial_size" render="0"/>
-    <method name="resize" cid="gtk_window_resize" render="0"/>
-    <method name="resize_grip_is_visible" cid="gtk_window_resize_grip_is_visible" render="0"/>
-    <method name="resize_to_geometry" cid="gtk_window_resize_to_geometry" render="0"/>
-    <method name="set_accept_focus" cid="gtk_window_set_accept_focus" render="0"/>
-    <method name="set_application" cid="gtk_window_set_application" render="0"/>
-    <method name="set_attached_to" cid="gtk_window_set_attached_to" render="0"/>
-    <method name="set_decorated" cid="gtk_window_set_decorated" render="0"/>
-    <method name="set_default" cid="gtk_window_set_default" render="0"/>
-    <method name="set_default_geometry" cid="gtk_window_set_default_geometry" render="0"/>
-    <method name="set_default_size" cid="gtk_window_set_default_size" render="0"/>
-    <method name="set_deletable" cid="gtk_window_set_deletable" render="0"/>
-    <method name="set_destroy_with_parent" cid="gtk_window_set_destroy_with_parent" render="0"/>
-    <method name="set_focus" cid="gtk_window_set_focus" render="0"/>
-    <method name="set_focus_on_map" cid="gtk_window_set_focus_on_map" render="0"/>
-    <method name="set_focus_visible" cid="gtk_window_set_focus_visible" render="0"/>
-    <method name="set_geometry_hints" cid="gtk_window_set_geometry_hints" render="0"/>
-    <method name="set_gravity" cid="gtk_window_set_gravity" render="0"/>
-    <method name="set_has_resize_grip" cid="gtk_window_set_has_resize_grip" render="0"/>
-    <method name="set_has_user_ref_count" cid="gtk_window_set_has_user_ref_count" render="0"/>
-    <method name="set_hide_titlebar_when_maximized" cid="gtk_window_set_hide_titlebar_when_maximized" render="0"/>
-    <method name="set_icon" cid="gtk_window_set_icon" render="0"/>
-    <method name="set_icon_from_file" cid="gtk_window_set_icon_from_file" render="0"/>
-    <method name="set_icon_list" cid="gtk_window_set_icon_list" render="0"/>
-    <method name="set_icon_name" cid="gtk_window_set_icon_name" render="0"/>
-    <method name="set_keep_above" cid="gtk_window_set_keep_above" render="0"/>
-    <method name="set_keep_below" cid="gtk_window_set_keep_below" render="0"/>
-    <method name="set_mnemonic_modifier" cid="gtk_window_set_mnemonic_modifier" render="0"/>
-    <method name="set_mnemonics_visible" cid="gtk_window_set_mnemonics_visible" render="0"/>
-    <method name="set_modal" cid="gtk_window_set_modal" render="0"/>
-    <method name="set_opacity" cid="gtk_window_set_opacity" render="0"/>
-    <method name="set_position" cid="gtk_window_set_position" render="0"/>
-    <method name="set_resizable" cid="gtk_window_set_resizable" render="0"/>
-    <method name="set_role" cid="gtk_window_set_role" render="0"/>
-    <method name="set_screen" cid="gtk_window_set_screen" render="0"/>
-    <method name="set_skip_pager_hint" cid="gtk_window_set_skip_pager_hint" render="0"/>
-    <method name="set_skip_taskbar_hint" cid="gtk_window_set_skip_taskbar_hint" render="0"/>
-    <method name="set_startup_id" cid="gtk_window_set_startup_id" render="0"/>
+    <method name="get_urgency_hint" cid="gtk_window_get_urgency_hint" render="1"/>
+    <method name="get_window_type" cid="gtk_window_get_window_type" render="1"/>
+    <method name="has_group" cid="gtk_window_has_group" render="1"/>
+    <method name="has_toplevel_focus" cid="gtk_window_has_toplevel_focus" render="1"/>
+    <method name="iconify" cid="gtk_window_iconify" render="1"/>
+    <method name="is_active" cid="gtk_window_is_active" render="1"/>
+    <method name="is_maximized" cid="gtk_window_is_maximized" render="1"/>
+    <method name="maximize" cid="gtk_window_maximize" render="1"/>
+    <method name="mnemonic_activate" cid="gtk_window_mnemonic_activate" render="1"/>
+    <method name="move" cid="gtk_window_move" render="1"/>
+    <method name="parse_geometry" cid="gtk_window_parse_geometry" render="1"/>
+    <method name="present" cid="gtk_window_present" render="1"/>
+    <method name="present_with_time" cid="gtk_window_present_with_time" render="1"/>
+    <method name="propagate_key_event" cid="gtk_window_propagate_key_event" render="1"/>
+    <method name="remove_accel_group" cid="gtk_window_remove_accel_group" render="1"/>
+    <method name="remove_mnemonic" cid="gtk_window_remove_mnemonic" render="1"/>
+    <method name="reshow_with_initial_size" cid="gtk_window_reshow_with_initial_size" render="1"/>
+    <method name="resize" cid="gtk_window_resize" render="1"/>
+    <method name="resize_grip_is_visible" cid="gtk_window_resize_grip_is_visible" render="1"/>
+    <method name="resize_to_geometry" cid="gtk_window_resize_to_geometry" render="1"/>
+    <method name="set_accept_focus" cid="gtk_window_set_accept_focus" render="1"/>
+    <method name="set_application" cid="gtk_window_set_application" render="1"/>
+    <method name="set_attached_to" cid="gtk_window_set_attached_to" render="1"/>
+    <method name="set_decorated" cid="gtk_window_set_decorated" render="1"/>
+    <method name="set_default" cid="gtk_window_set_default" render="1"/>
+    <method name="set_default_geometry" cid="gtk_window_set_default_geometry" render="1"/>
+    <method name="set_default_size" cid="gtk_window_set_default_size" render="1"/>
+    <method name="set_deletable" cid="gtk_window_set_deletable" render="1"/>
+    <method name="set_destroy_with_parent" cid="gtk_window_set_destroy_with_parent" render="1"/>
+    <method name="set_focus" cid="gtk_window_set_focus" render="1"/>
+    <method name="set_focus_on_map" cid="gtk_window_set_focus_on_map" render="1"/>
+    <method name="set_focus_visible" cid="gtk_window_set_focus_visible" render="1"/>
+    <method name="set_geometry_hints" cid="gtk_window_set_geometry_hints" render="1"/>
+    <method name="set_gravity" cid="gtk_window_set_gravity" render="1"/>
+    <method name="set_has_resize_grip" cid="gtk_window_set_has_resize_grip" render="1"/>
+    <method name="set_has_user_ref_count" cid="gtk_window_set_has_user_ref_count" render="1"/>
+    <method name="set_hide_titlebar_when_maximized" cid="gtk_window_set_hide_titlebar_when_maximized" render="1"/>
+    <method name="set_icon" cid="gtk_window_set_icon" render="1"/>
+    <method name="set_icon_from_file" cid="gtk_window_set_icon_from_file" render="1"/>
+    <method name="set_icon_list" cid="gtk_window_set_icon_list" render="1"/>
+    <method name="set_icon_name" cid="gtk_window_set_icon_name" render="1"/>
+    <method name="set_keep_above" cid="gtk_window_set_keep_above" render="1"/>
+    <method name="set_keep_below" cid="gtk_window_set_keep_below" render="1"/>
+    <method name="set_mnemonic_modifier" cid="gtk_window_set_mnemonic_modifier" render="1"/>
+    <method name="set_mnemonics_visible" cid="gtk_window_set_mnemonics_visible" render="1"/>
+    <method name="set_modal" cid="gtk_window_set_modal" render="1"/>
+    <method name="set_opacity" cid="gtk_window_set_opacity" render="1"/>
+    <method name="set_position" cid="gtk_window_set_position" render="1"/>
+    <method name="set_resizable" cid="gtk_window_set_resizable" render="1"/>
+    <method name="set_role" cid="gtk_window_set_role" render="1"/>
+    <method name="set_screen" cid="gtk_window_set_screen" render="1"/>
+    <method name="set_skip_pager_hint" cid="gtk_window_set_skip_pager_hint" render="1"/>
+    <method name="set_skip_taskbar_hint" cid="gtk_window_set_skip_taskbar_hint" render="1"/>
+    <method name="set_startup_id" cid="gtk_window_set_startup_id" render="1"/>
     <method name="set_title" cid="gtk_window_set_title" render="1"/>
-    <method name="set_titlebar" cid="gtk_window_set_titlebar" render="0"/>
-    <method name="set_transient_for" cid="gtk_window_set_transient_for" render="0"/>
-    <method name="set_type_hint" cid="gtk_window_set_type_hint" render="0"/>
-    <method name="set_urgency_hint" cid="gtk_window_set_urgency_hint" render="0"/>
-    <method name="set_wmclass" cid="gtk_window_set_wmclass" render="0"/>
-    <method name="stick" cid="gtk_window_stick" render="0"/>
-    <method name="unfullscreen" cid="gtk_window_unfullscreen" render="0"/>
-    <method name="unmaximize" cid="gtk_window_unmaximize" render="0"/>
-    <method name="unstick" cid="gtk_window_unstick" render="0"/>
+    <method name="set_titlebar" cid="gtk_window_set_titlebar" render="1"/>
+    <method name="set_transient_for" cid="gtk_window_set_transient_for" render="1"/>
+    <method name="set_type_hint" cid="gtk_window_set_type_hint" render="1"/>
+    <method name="set_urgency_hint" cid="gtk_window_set_urgency_hint" render="1"/>
+    <method name="set_wmclass" cid="gtk_window_set_wmclass" render="1"/>
+    <method name="stick" cid="gtk_window_stick" render="1"/>
+    <method name="unfullscreen" cid="gtk_window_unfullscreen" render="1"/>
+    <method name="unmaximize" cid="gtk_window_unmaximize" render="1"/>
+    <method name="unstick" cid="gtk_window_unstick" render="1"/>
     <property name="accept-focus" cid="" render="0"/>
     <property name="application" cid="" render="0"/>
     <property name="attached-to" cid="" render="0"/>
@@ -12859,7 +12859,7 @@
   </record>
   <record name="WindowGeometryInfo" gtypestructfor="" ctype="GtkWindowGeometryInfo" render="0">
   </record>
-  <class name="WindowGroup" ctype="GtkWindowGroup" parent="GtkGObject.Object" render="1">
+  <class name="WindowGroup" ctype="GtkWindowGroup" parent="GObject" render="1">
     <constructor name="new" cid="gtk_window_group_new" render="0"/>
     <method name="add_window" cid="gtk_window_group_add_window" render="0"/>
     <method name="get_current_device_grab" cid="gtk_window_group_get_current_device_grab" render="0"/>

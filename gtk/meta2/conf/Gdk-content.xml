@@ -371,7 +371,7 @@
   </bitfield>
   <enumeration name="DragCancelReason" render="1">     <member name="no_target" value="0" cid="GDK_DRAG_CANCEL_NO_TARGET" glibnick="no-target" glibname="GDK_DRAG_CANCEL_NO_TARGET"/>
     <member name="user_cancelled" value="1" cid="GDK_DRAG_CANCEL_USER_CANCELLED" glibnick="user-cancelled" glibname="GDK_DRAG_CANCEL_USER_CANCELLED"/>
-    <member name="error" value="2" cid="GDK_DRAG_CANCEL_ERROR" glibnick="error" glibname="GDK_DRAG_CANCEL_ERROR"/>
+    <member name="gerror" value="2" cid="GDK_DRAG_CANCEL_ERROR" glibnick="error" glibname="GDK_DRAG_CANCEL_ERROR"/>
   </enumeration>
   <class name="DragContext" ctype="GdkDragContext" parent="GObject.Object" render="0">
     <method name="get_actions" cid="gdk_drag_context_get_actions" render="0"/>
@@ -746,9 +746,9 @@
     <member name="expose" value="2" cid="GDK_EXPOSE" glibnick="expose" glibname="GDK_EXPOSE"/>
     <member name="motion_notify" value="3" cid="GDK_MOTION_NOTIFY" glibnick="motion-notify" glibname="GDK_MOTION_NOTIFY"/>
     <member name="button_press" value="4" cid="GDK_BUTTON_PRESS" glibnick="button-press" glibname="GDK_BUTTON_PRESS"/>
-    <member name="2button_press" value="5" cid="GDK_2BUTTON_PRESS" glibnick="2button-press" glibname="GDK_2BUTTON_PRESS"/>
+    <member name="p2button_press" value="5" cid="GDK_2BUTTON_PRESS" glibnick="2button-press" glibname="GDK_2BUTTON_PRESS"/>
     <member name="double_button_press" value="5" cid="GDK_DOUBLE_BUTTON_PRESS" glibnick="double-button-press" glibname="GDK_DOUBLE_BUTTON_PRESS"/>
-    <member name="3button_press" value="6" cid="GDK_3BUTTON_PRESS" glibnick="3button-press" glibname="GDK_3BUTTON_PRESS"/>
+    <member name="p3button_press" value="6" cid="GDK_3BUTTON_PRESS" glibnick="3button-press" glibname="GDK_3BUTTON_PRESS"/>
     <member name="triple_button_press" value="6" cid="GDK_TRIPLE_BUTTON_PRESS" glibnick="triple-button-press" glibname="GDK_TRIPLE_BUTTON_PRESS"/>
     <member name="button_release" value="7" cid="GDK_BUTTON_RELEASE" glibnick="button-release" glibname="GDK_BUTTON_RELEASE"/>
     <member name="key_press" value="8" cid="GDK_KEY_PRESS" glibnick="key-press" glibname="GDK_KEY_PRESS"/>
@@ -809,7 +809,7 @@
   <function-macro name="FRAME_CLOCK_CLASS" render="0">   </function-macro>
   <function-macro name="FRAME_CLOCK_GET_CLASS" render="0">   </function-macro>
   <callback name="FilterFunc" ctype="GdkFilterFunc" render="0">  </callback>
-  <enumeration name="FilterReturn" render="1">     <member name="continue" value="0" cid="GDK_FILTER_CONTINUE" glibnick="continue" glibname="GDK_FILTER_CONTINUE"/>
+  <enumeration name="FilterReturn" render="1">     <member name="gcontinue" value="0" cid="GDK_FILTER_CONTINUE" glibnick="continue" glibname="GDK_FILTER_CONTINUE"/>
     <member name="translate" value="1" cid="GDK_FILTER_TRANSLATE" glibnick="translate" glibname="GDK_FILTER_TRANSLATE"/>
     <member name="remove" value="2" cid="GDK_FILTER_REMOVE" glibnick="remove" glibname="GDK_FILTER_REMOVE"/>
   </enumeration>
@@ -3453,12 +3453,12 @@
     <member name="all" value="15" cid="GDK_SEAT_CAPABILITY_ALL" glibnick="all" glibname="GDK_SEAT_CAPABILITY_ALL"/>
   </bitfield>
   <callback name="SeatGrabPrepareFunc" ctype="GdkSeatGrabPrepareFunc" render="0">  </callback>
-  <enumeration name="SettingAction" render="1">     <member name="new" value="0" cid="GDK_SETTING_ACTION_NEW" glibnick="new" glibname="GDK_SETTING_ACTION_NEW"/>
+  <enumeration name="SettingAction" render="1">     <member name="gnew" value="0" cid="GDK_SETTING_ACTION_NEW" glibnick="new" glibname="GDK_SETTING_ACTION_NEW"/>
     <member name="changed" value="1" cid="GDK_SETTING_ACTION_CHANGED" glibnick="changed" glibname="GDK_SETTING_ACTION_CHANGED"/>
     <member name="deleted" value="2" cid="GDK_SETTING_ACTION_DELETED" glibnick="deleted" glibname="GDK_SETTING_ACTION_DELETED"/>
   </enumeration>
   <enumeration name="Status" render="1">     <member name="ok" value="0" cid="GDK_OK" glibnick="ok" glibname="GDK_OK"/>
-    <member name="error" value="-1" cid="GDK_ERROR" glibnick="error" glibname="GDK_ERROR"/>
+    <member name="gerror" value="-1" cid="GDK_ERROR" glibnick="error" glibname="GDK_ERROR"/>
     <member name="error_param" value="-2" cid="GDK_ERROR_PARAM" glibnick="error-param" glibname="GDK_ERROR_PARAM"/>
     <member name="error_file" value="-3" cid="GDK_ERROR_FILE" glibnick="error-file" glibname="GDK_ERROR_FILE"/>
     <member name="error_mem" value="-4" cid="GDK_ERROR_MEM" glibnick="error-mem" glibname="GDK_ERROR_MEM"/>

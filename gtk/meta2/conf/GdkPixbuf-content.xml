@@ -54,7 +54,7 @@
   <function-macro name="PIXBUF_SIMPLE_ANIM_CLASS" render="0">   </function-macro>
   <function-macro name="PIXBUF_SIMPLE_ANIM_GET_CLASS" render="0">   </function-macro>
   <constant name="PIXBUF_VERSION" ctype="GDK_PIXBUF_VERSION" value="2.42.7" render="0">  </constant>
-  <class name="Pixbuf" ctype="GdkPixbuf" parent="GObject.Object" render="0">
+  <class name="Pixbuf" ctype="GdkPixbuf" parent="GObject" render="0">
     <implements name="Gio.Icon" render="0"/>
     <implements name="Gio.LoadableIcon" render="0"/>
     <constructor name="new" cid="gdk_pixbuf_new" render="0"/>
@@ -135,7 +135,7 @@
   <enumeration name="PixbufAlphaMode" render="1">     <member name="bilevel" value="0" cid="GDK_PIXBUF_ALPHA_BILEVEL" glibnick="bilevel" glibname="GDK_PIXBUF_ALPHA_BILEVEL"/>
     <member name="full" value="1" cid="GDK_PIXBUF_ALPHA_FULL" glibnick="full" glibname="GDK_PIXBUF_ALPHA_FULL"/>
   </enumeration>
-  <class name="PixbufAnimation" ctype="GdkPixbufAnimation" parent="GObject.Object" render="0">
+  <class name="PixbufAnimation" ctype="GdkPixbufAnimation" parent="GObject" render="0">
     <constructor name="new_from_file" cid="gdk_pixbuf_animation_new_from_file" render="0"/>
     <constructor name="new_from_resource" cid="gdk_pixbuf_animation_new_from_resource" render="0"/>
     <constructor name="new_from_stream" cid="gdk_pixbuf_animation_new_from_stream" render="0"/>
@@ -161,7 +161,7 @@
     <field name="get_size"/>
     <field name="get_iter"/>
   </record>
-  <class name="PixbufAnimationIter" ctype="GdkPixbufAnimationIter" parent="GObject.Object" render="0">
+  <class name="PixbufAnimationIter" ctype="GdkPixbufAnimationIter" parent="GObject" render="0">
     <virtual-method name="advance" render="0"/>
     <virtual-method name="get_delay_time" render="0"/>
     <virtual-method name="get_pixbuf" render="0"/>
@@ -217,7 +217,7 @@
     <member name="scalable" value="2" cid="GDK_PIXBUF_FORMAT_SCALABLE" glibnick="" glibname=""/>
     <member name="threadsafe" value="4" cid="GDK_PIXBUF_FORMAT_THREADSAFE" glibnick="" glibname=""/>
   </bitfield>
-  <class name="PixbufLoader" ctype="GdkPixbufLoader" parent="GObject.Object" render="0">
+  <class name="PixbufLoader" ctype="GdkPixbufLoader" parent="GObject" render="0">
     <constructor name="new" cid="gdk_pixbuf_loader_new" render="0"/>
     <constructor name="new_with_mime_type" cid="gdk_pixbuf_loader_new_with_mime_type" render="0"/>
     <constructor name="new_with_type" cid="gdk_pixbuf_loader_new_with_type" render="0"/>

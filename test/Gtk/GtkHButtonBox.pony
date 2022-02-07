@@ -1,4 +1,5 @@
 use "../G"
+use "../Gdk"
 
 use "lib:gtk-3"
 // Constructors

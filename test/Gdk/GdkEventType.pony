@@ -6,9 +6,9 @@ primitive GdkEventType
   fun expose(): I32 => 2
   fun motion_notify(): I32 => 3
   fun button_press(): I32 => 4
-  fun 2button_press(): I32 => 5
+  fun p2button_press(): I32 => 5
   fun double_button_press(): I32 => 5
-  fun 3button_press(): I32 => 6
+  fun p3button_press(): I32 => 6
   fun triple_button_press(): I32 => 6
   fun button_release(): I32 => 7
   fun key_press(): I32 => 8
