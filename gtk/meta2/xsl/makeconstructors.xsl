@@ -20,35 +20,9 @@ class <xsl:value-of select="$class"/> is <xsl:value-of select="$class"/>Interfac
   new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
-<!--
-<xsl:text>// Methods&#10;</xsl:text>
-<xsl:for-each select="/castxml2pony/ns[@ns=$ns]/class[@ctype=$class]/method[@render='1']">
-  <xsl:variable name="fnname" select="./@cid"/>
-  <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="1"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
-</xsl:for-each>
-<xsl:text>// Functions&#10;</xsl:text>
-<xsl:for-each select="/castxml2pony/ns[@ns=$ns]/class[@ctype=$class]/function[@render='1']">
-  <xsl:variable name="fnname" select="./@cid"/>
-  <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="1"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
-</xsl:for-each>
-</xsl:result-document> -->
+
 </xsl:template>
 
-
-
-
-
-
-<!--
-<xsl:template match="/castxml2pony/uses/use[@rv=concat('NullablePointer[', $struct, ']')]">
-  <xsl:variable name="fnname" select="./@name"/>
-  <xsl:if test="/castxml2pony/renders/renderuse[@name=$fnname]">
-    <xsl:if test="/castxml2pony/renders/renderuse[@name=$fnname]/@render eq '1'">
-      <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="@render"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
-    </xsl:if>
-  </xsl:if>
-</xsl:template>
--->
 <xsl:template name="mainuse">
 <xsl:param name="n" />
 <xsl:param name="render" />
