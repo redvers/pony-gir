@@ -25,3 +25,4 @@ primitive G
   fun g_main_depth(): I32 =>
     @g_main_depth()
 
+struct GList

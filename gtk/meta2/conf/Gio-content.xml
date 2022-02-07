@@ -264,7 +264,7 @@
   <class name="Application" ctype="GApplication" parent="GObject" render="1">
     <implements name="ActionGroup" render="0"/>
     <implements name="ActionMap" render="0"/>
-    <constructor name="new" cid="g_application_new" render="0"/>
+    <constructor name="new" cid="g_application_new" render="1"/>
     <function name="get_default" cid="g_application_get_default" render="0"/>
     <function name="id_is_valid" cid="g_application_id_is_valid" render="0"/>
     <virtual-method name="activate" render="0"/>
@@ -282,7 +282,7 @@
     <virtual-method name="run_mainloop" render="0"/>
     <virtual-method name="shutdown" render="0"/>
     <virtual-method name="startup" render="0"/>
-    <method name="activate" cid="g_application_activate" render="0"/>
+    <method name="activate" cid="g_application_activate" render="1"/>
     <method name="add_main_option" cid="g_application_add_main_option" render="0"/>
     <method name="add_main_option_entries" cid="g_application_add_main_option_entries" render="0"/>
     <method name="add_option_group" cid="g_application_add_option_group" render="0"/>
@@ -299,10 +299,10 @@
     <method name="hold" cid="g_application_hold" render="0"/>
     <method name="mark_busy" cid="g_application_mark_busy" render="0"/>
     <method name="open" cid="g_application_open" render="0"/>
-    <method name="quit" cid="g_application_quit" render="0"/>
+    <method name="quit" cid="g_application_quit" render="1"/>
     <method name="register" cid="g_application_register" render="0"/>
     <method name="release" cid="g_application_release" render="0"/>
-    <method name="run" cid="g_application_run" render="0"/>
+    <method name="run" cid="g_application_run" render="1"/>
     <method name="send_notification" cid="g_application_send_notification" render="0"/>
     <method name="set_action_group" cid="g_application_set_action_group" render="0"/>
     <method name="set_application_id" cid="g_application_set_application_id" render="0"/>

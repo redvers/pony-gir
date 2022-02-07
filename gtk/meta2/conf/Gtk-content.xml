@@ -629,7 +629,7 @@
     <virtual-method name="window_added" render="0"/>
     <virtual-method name="window_removed" render="0"/>
     <method name="add_accelerator" cid="gtk_application_add_accelerator" render="0"/>
-    <method name="add_window" cid="gtk_application_add_window" render="0"/>
+    <method name="add_window" cid="gtk_application_add_window" render="1"/>
     <method name="get_accels_for_action" cid="gtk_application_get_accels_for_action" render="0"/>
     <method name="get_actions_for_accel" cid="gtk_application_get_actions_for_accel" render="0"/>
     <method name="get_active_window" cid="gtk_application_get_active_window" render="0"/>
@@ -643,7 +643,7 @@
     <method name="list_action_descriptions" cid="gtk_application_list_action_descriptions" render="0"/>
     <method name="prefers_app_menu" cid="gtk_application_prefers_app_menu" render="0"/>
     <method name="remove_accelerator" cid="gtk_application_remove_accelerator" render="0"/>
-    <method name="remove_window" cid="gtk_application_remove_window" render="0"/>
+    <method name="remove_window" cid="gtk_application_remove_window" render="1"/>
     <method name="set_accels_for_action" cid="gtk_application_set_accels_for_action" render="0"/>
     <method name="set_app_menu" cid="gtk_application_set_app_menu" render="0"/>
     <method name="set_menubar" cid="gtk_application_set_menubar" render="0"/>
@@ -1013,10 +1013,10 @@
     <field name="get_internal_child"/>
   </record>
   <class name="Builder" ctype="GtkBuilder" parent="GObject" render="1">
-    <constructor name="new" cid="gtk_builder_new" render="0"/>
-    <constructor name="new_from_file" cid="gtk_builder_new_from_file" render="0"/>
-    <constructor name="new_from_resource" cid="gtk_builder_new_from_resource" render="0"/>
-    <constructor name="new_from_string" cid="gtk_builder_new_from_string" render="0"/>
+    <constructor name="new" cid="gtk_builder_new" render="1"/>
+    <constructor name="new_from_file" cid="gtk_builder_new_from_file" render="1"/>
+    <constructor name="new_from_resource" cid="gtk_builder_new_from_resource" render="1"/>
+    <constructor name="new_from_string" cid="gtk_builder_new_from_string" render="1"/>
     <virtual-method name="get_type_from_name" render="0"/>
     <method name="add_callback_symbol" cid="gtk_builder_add_callback_symbol" render="0"/>
     <method name="add_callback_symbols" cid="gtk_builder_add_callback_symbols" render="0"/>
