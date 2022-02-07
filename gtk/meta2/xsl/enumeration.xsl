@@ -8,7 +8,7 @@
 
 <xsl:template match="/castxml2pony/ns[@ns=$ns]/enumeration[@render='1']">
   <xsl:variable name="p" select="/castxml2pony/ns[@ns=$ns]/@p"/>
-  <xsl:result-document href="../../test/{concat($p, '/', $p, @name)}.pony" method="text">
+  <xsl:result-document href="../../test/Gtk/{concat($p, @name)}.pony" method="text">
 primitive <xsl:value-of select="$p"/><xsl:value-of select="@name"/>
 <xsl:for-each select="./member">
   fun <xsl:value-of select="@name"/>(): I32 => <xsl:value-of select="@value"/>

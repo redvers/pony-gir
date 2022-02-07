@@ -1,7 +1,6 @@
-use "../G"
-use "../Gdk"
-
 use "lib:gtk-3"
+use "lib:glib-2.0"
+use "lib:gobject-2.0"
 // Constructors
 // Methods
 use @gtk_bin_get_child[NullablePointer[GObjectStruct] val](bin: NullablePointer[GObjectStruct] tag)

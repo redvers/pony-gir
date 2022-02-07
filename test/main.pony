@@ -8,9 +8,6 @@ use @gtk_widget_get_name[Pointer[U8] ref](name: NullablePointer[GObjectStruct] t
 use @printf[I32](fmt: Pointer[U8] tag, ...)
 
 use "Gtk"
-use "G"
-use "lib:glib-2.0"
-use "lib:gobject-2.0"
 //use "Atk"
 //use "cairo"
 //use "Gdk"

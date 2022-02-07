@@ -1,4 +1,3 @@
-use @g_type_name[Pointer[U8] ref](gtype: U64)
 use @g_signal_connect_data[U64](instance: NullablePointer[GObjectStruct] tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any, destroydata: Pointer[None] tag, connectflags: I32)
 // Constructors
 // Methods

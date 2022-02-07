@@ -1,7 +1,6 @@
-use "../G"
-use "../Gdk"
-
 use "lib:gtk-3"
+use "lib:glib-2.0"
+use "lib:gobject-2.0"
 // Constructors
 use @gtk_button_new[NullablePointer[GObjectStruct] val]()
 use @gtk_button_new_from_icon_name[NullablePointer[GObjectStruct] val](iconname: Pointer[U8] tag, size: I32)

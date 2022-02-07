@@ -304,15 +304,14 @@ g9:
 #	sh mkclass GdkPixbuf Pixbuf Gdk
 
 gbase:
-	rm -f ../../test/G/G.pony
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject >> ../../test/G/G.pony
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gio     >> ../../test/G/G.pony
-	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GLib    >> ../../test/G/G.pony
-	echo 'primitive G'                                   >> ../../test/G/G.pony
-	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject    >> ../../test/G/G.pony
-	saxon-he -xi main.xml xsl/makebase.xsl ns=Gio        >> ../../test/G/G.pony
-	saxon-he -xi main.xml xsl/makebase.xsl ns=GLib       >> ../../test/G/G.pony
-#	cat out/GObject/GObject-use.pony out/GObject/GObject-fn.pony > ../../test/GObject/GObject.pony
+	rm -f ../../test/Gtk/G.pony
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GObject >> ../../test/Gtk/G.pony
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gio     >> ../../test/Gtk/G.pony
+	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=GLib    >> ../../test/Gtk/G.pony
+	echo 'primitive G'                                   >> ../../test/Gtk/G.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=GObject    >> ../../test/Gtk/G.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=Gio        >> ../../test/Gtk/G.pony
+	saxon-he -xi main.xml xsl/makebase.xsl ns=GLib       >> ../../test/Gtk/G.pony
 
 gtkbase:
 	saxon-he -xi main.xml xsl/makebaseuse.xsl ns=Gtk > ../../test/Gtk/Gtk.pony
@@ -321,7 +320,6 @@ gtkbase:
 
 
 bitfields:	
-	find ../../test/* -name 'B*.pony' -exec rm -f {} \;
 	saxon-he -xi main.xml xsl/bitfield.xsl ns=Gtk
 #	saxon-he -xi main.xml xsl/bitfield.xsl ns=Atk
 #	saxon-he -xi main.xml xsl/bitfield.xsl ns=cairo
@@ -335,7 +333,6 @@ bitfields:
 #	saxon-he -xi main.xml xsl/bitfield.xsl ns=Pango
 
 enumerations:	
-	find ../../test/* -name 'E*.pony' -exec rm -f {} \;
 	saxon-he -xi main.xml xsl/enumeration.xsl ns=Gtk
 #	saxon-he -xi main.xml xsl/enumeration.xsl ns=Atk
 #	saxon-he -xi main.xml xsl/enumeration.xsl ns=cairo
@@ -348,10 +345,6 @@ enumerations:
 #	saxon-he -xi main.xml xsl/enumeration.xsl ns=HarfBuzz
 #	saxon-he -xi main.xml xsl/enumeration.xsl ns=Pango
 
-clean:
-	mv ../../test/main.pony ../../test/main-ponyx
-	find ../../test/* -name 'E*.pony' -exec rm -f {} \;
-	mv ../../test/main-ponyx ../../test/main.pony
 
 castxmlstr:
 	../../../../castxml2pony/castxml2pony -x ../../castxml-results/gtk-3.xml -S

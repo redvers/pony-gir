@@ -1103,7 +1103,7 @@
   </function>
   <function name="signal_connect_closure_by_id" cid="g_signal_connect_closure_by_id" render="0">
   </function>
-  <function name="signal_connect_data" cid="g_signal_connect_data" render="1">
+  <function name="signal_connect_data" cid="g_signal_connect_data" render="0">
   </function>
   <function name="signal_connect_object" cid="g_signal_connect_object" render="0">
   </function>

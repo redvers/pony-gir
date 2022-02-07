@@ -71,5 +71,3 @@ primitive Gtk
   fun main_quit(): None =>
     @gtk_main_quit()
 
-
-

@@ -1,7 +1,6 @@
-use "../G"
-use "../Gdk"
-
 use "lib:gtk-3"
+use "lib:glib-2.0"
+use "lib:gobject-2.0"
 // Constructors
 // Methods
 use @gtk_container_add[None](container: NullablePointer[GObjectStruct] tag, widget: NullablePointer[GObjectStruct] tag)
