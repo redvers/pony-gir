@@ -15,6 +15,6 @@ class GtkFileFilter is GtkFileFilterInterface
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
-interface GtkFileFilterInterface is GInitiallyUnownedInterface
+interface GtkFileFilterInterface is GObjectInterface
   fun apply(): NullablePointer[GObjectStruct] val
 

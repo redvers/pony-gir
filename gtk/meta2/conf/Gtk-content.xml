@@ -447,7 +447,7 @@
     <field name="update"/>
     <field name="sync_action_properties"/>
   </record>
-  <class name="Adjustment" ctype="GtkAdjustment" parent="GInitiallyUnowned" render="1">
+  <class name="Adjustment" ctype="GtkAdjustment" parent="GObject" render="1">
     <constructor name="new" cid="gtk_adjustment_new" render="0"/>
     <virtual-method name="changed" render="0"/>
     <virtual-method name="value_changed" render="0"/>
@@ -1430,7 +1430,7 @@
   <record name="CellAccessiblePrivate" gtypestructfor="" ctype="GtkCellAccessiblePrivate" render="0">
   </record>
   <callback name="CellAllocCallback" ctype="GtkCellAllocCallback" render="0">  </callback>
-  <class name="CellArea" ctype="GtkCellArea" parent="GInitiallyUnowned" render="1">
+  <class name="CellArea" ctype="GtkCellArea" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <virtual-method name="activate" render="0"/>
@@ -1652,7 +1652,7 @@
     <field name="get_cells"/>
     <field name="get_area"/>
   </record>
-  <class name="CellRenderer" ctype="GtkCellRenderer" parent="GInitiallyUnowned" render="1">
+  <class name="CellRenderer" ctype="GtkCellRenderer" parent="GObject" render="1">
     <virtual-method name="activate" render="0"/>
     <virtual-method name="editing_canceled" render="0"/>
     <virtual-method name="editing_started" render="0"/>
@@ -3478,7 +3478,7 @@
   </record>
   <record name="FileChooserWidgetPrivate" gtypestructfor="" ctype="GtkFileChooserWidgetPrivate" render="0">
   </record>
-  <class name="FileFilter" ctype="GtkFileFilter" parent="GInitiallyUnowned" render="1">
+  <class name="FileFilter" ctype="GtkFileFilter" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_file_filter_new" render="0"/>
     <constructor name="new_from_gvariant" cid="gtk_file_filter_new_from_gvariant" render="0"/>
@@ -8059,7 +8059,7 @@
     <field name="groups"/>
     <field name="is_private"/>
   </record>
-  <class name="RecentFilter" ctype="GtkRecentFilter" parent="GInitiallyUnowned" render="1">
+  <class name="RecentFilter" ctype="GtkRecentFilter" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <constructor name="new" cid="gtk_recent_filter_new" render="0"/>
     <method name="add_age" cid="gtk_recent_filter_add_age" render="0"/>
@@ -11710,7 +11710,7 @@
     <field name="_gtk_reserved7"/>
     <field name="_gtk_reserved8"/>
   </record>
-  <class name="TreeViewColumn" ctype="GtkTreeViewColumn" parent="GInitiallyUnowned" render="1">
+  <class name="TreeViewColumn" ctype="GtkTreeViewColumn" parent="GObject" render="1">
     <implements name="Buildable" render="0"/>
     <implements name="CellLayout" render="0"/>
     <constructor name="new" cid="gtk_tree_view_column_new" render="0"/>
@@ -12686,7 +12686,7 @@
     <virtual-method name="set_focus" render="0"/>
     <method name="activate_default" cid="gtk_window_activate_default" render="1"/>
     <method name="activate_focus" cid="gtk_window_activate_focus" render="1"/>
-    <method name="activate_key" cid="gtk_window_activate_key" render="1"/>
+    <method name="activate_key" cid="gtk_window_activate_key" render="0"/>
     <method name="add_accel_group" cid="gtk_window_add_accel_group" render="1"/>
     <method name="add_mnemonic" cid="gtk_window_add_mnemonic" render="1"/>
     <method name="begin_move_drag" cid="gtk_window_begin_move_drag" render="1"/>
@@ -12694,24 +12694,24 @@
     <method name="close" cid="gtk_window_close" render="1"/>
     <method name="deiconify" cid="gtk_window_deiconify" render="1"/>
     <method name="fullscreen" cid="gtk_window_fullscreen" render="1"/>
-    <method name="fullscreen_on_monitor" cid="gtk_window_fullscreen_on_monitor" render="1"/>
+    <method name="fullscreen_on_monitor" cid="gtk_window_fullscreen_on_monitor" render="0"/>
     <method name="get_accept_focus" cid="gtk_window_get_accept_focus" render="1"/>
     <method name="get_application" cid="gtk_window_get_application" render="1"/>
-    <method name="get_attached_to" cid="gtk_window_get_attached_to" render="1"/>
+    <method name="get_attached_to" cid="gtk_window_get_attached_to" render="0"/>
     <method name="get_decorated" cid="gtk_window_get_decorated" render="1"/>
     <method name="get_default_size" cid="gtk_window_get_default_size" render="1"/>
-    <method name="get_default_widget" cid="gtk_window_get_default_widget" render="1"/>
+    <method name="get_default_widget" cid="gtk_window_get_default_widget" render="0"/>
     <method name="get_deletable" cid="gtk_window_get_deletable" render="1"/>
     <method name="get_destroy_with_parent" cid="gtk_window_get_destroy_with_parent" render="1"/>
-    <method name="get_focus" cid="gtk_window_get_focus" render="1"/>
+    <method name="get_focus" cid="gtk_window_get_focus" render="0"/>
     <method name="get_focus_on_map" cid="gtk_window_get_focus_on_map" render="1"/>
     <method name="get_focus_visible" cid="gtk_window_get_focus_visible" render="1"/>
     <method name="get_gravity" cid="gtk_window_get_gravity" render="1"/>
     <method name="get_group" cid="gtk_window_get_group" render="1"/>
     <method name="get_has_resize_grip" cid="gtk_window_get_has_resize_grip" render="1"/>
     <method name="get_hide_titlebar_when_maximized" cid="gtk_window_get_hide_titlebar_when_maximized" render="1"/>
-    <method name="get_icon" cid="gtk_window_get_icon" render="1"/>
-    <method name="get_icon_list" cid="gtk_window_get_icon_list" render="1"/>
+    <method name="get_icon" cid="gtk_window_get_icon" render="0"/>
+    <method name="get_icon_list" cid="gtk_window_get_icon_list" render="0"/>
     <method name="get_icon_name" cid="gtk_window_get_icon_name" render="1"/>
     <method name="get_mnemonic_modifier" cid="gtk_window_get_mnemonic_modifier" render="1"/>
     <method name="get_mnemonics_visible" cid="gtk_window_get_mnemonics_visible" render="1"/>
@@ -12719,15 +12719,15 @@
     <method name="get_opacity" cid="gtk_window_get_opacity" render="1"/>
     <method name="get_position" cid="gtk_window_get_position" render="1"/>
     <method name="get_resizable" cid="gtk_window_get_resizable" render="1"/>
-    <method name="get_resize_grip_area" cid="gtk_window_get_resize_grip_area" render="1"/>
+    <method name="get_resize_grip_area" cid="gtk_window_get_resize_grip_area" render="0"/>
     <method name="get_role" cid="gtk_window_get_role" render="1"/>
-    <method name="get_screen" cid="gtk_window_get_screen" render="1"/>
+    <method name="get_screen" cid="gtk_window_get_screen" render="0"/>
     <method name="get_size" cid="gtk_window_get_size" render="1"/>
     <method name="get_skip_pager_hint" cid="gtk_window_get_skip_pager_hint" render="1"/>
     <method name="get_skip_taskbar_hint" cid="gtk_window_get_skip_taskbar_hint" render="1"/>
     <method name="get_title" cid="gtk_window_get_title" render="1"/>
-    <method name="get_titlebar" cid="gtk_window_get_titlebar" render="1"/>
-    <method name="get_transient_for" cid="gtk_window_get_transient_for" render="1"/>
+    <method name="get_titlebar" cid="gtk_window_get_titlebar" render="0"/>
+    <method name="get_transient_for" cid="gtk_window_get_transient_for" render="0"/>
     <method name="get_type_hint" cid="gtk_window_get_type_hint" render="1"/>
     <method name="get_type" cid="gtk_window_get_type" render="1"/>
     <method name="get_urgency_hint" cid="gtk_window_get_urgency_hint" render="1"/>
@@ -12743,7 +12743,7 @@
     <method name="parse_geometry" cid="gtk_window_parse_geometry" render="1"/>
     <method name="present" cid="gtk_window_present" render="1"/>
     <method name="present_with_time" cid="gtk_window_present_with_time" render="1"/>
-    <method name="propagate_key_event" cid="gtk_window_propagate_key_event" render="1"/>
+    <method name="propagate_key_event" cid="gtk_window_propagate_key_event" render="0"/>
     <method name="remove_accel_group" cid="gtk_window_remove_accel_group" render="1"/>
     <method name="remove_mnemonic" cid="gtk_window_remove_mnemonic" render="1"/>
     <method name="reshow_with_initial_size" cid="gtk_window_reshow_with_initial_size" render="1"/>
@@ -12762,14 +12762,14 @@
     <method name="set_focus" cid="gtk_window_set_focus" render="1"/>
     <method name="set_focus_on_map" cid="gtk_window_set_focus_on_map" render="1"/>
     <method name="set_focus_visible" cid="gtk_window_set_focus_visible" render="1"/>
-    <method name="set_geometry_hints" cid="gtk_window_set_geometry_hints" render="1"/>
+    <method name="set_geometry_hints" cid="gtk_window_set_geometry_hints" render="0"/>
     <method name="set_gravity" cid="gtk_window_set_gravity" render="1"/>
     <method name="set_has_resize_grip" cid="gtk_window_set_has_resize_grip" render="1"/>
     <method name="set_has_user_ref_count" cid="gtk_window_set_has_user_ref_count" render="1"/>
     <method name="set_hide_titlebar_when_maximized" cid="gtk_window_set_hide_titlebar_when_maximized" render="1"/>
-    <method name="set_icon" cid="gtk_window_set_icon" render="1"/>
+    <method name="set_icon" cid="gtk_window_set_icon" render="0"/>
     <method name="set_icon_from_file" cid="gtk_window_set_icon_from_file" render="1"/>
-    <method name="set_icon_list" cid="gtk_window_set_icon_list" render="1"/>
+    <method name="set_icon_list" cid="gtk_window_set_icon_list" render="0"/>
     <method name="set_icon_name" cid="gtk_window_set_icon_name" render="1"/>
     <method name="set_keep_above" cid="gtk_window_set_keep_above" render="1"/>
     <method name="set_keep_below" cid="gtk_window_set_keep_below" render="1"/>
@@ -12780,13 +12780,13 @@
     <method name="set_position" cid="gtk_window_set_position" render="1"/>
     <method name="set_resizable" cid="gtk_window_set_resizable" render="1"/>
     <method name="set_role" cid="gtk_window_set_role" render="1"/>
-    <method name="set_screen" cid="gtk_window_set_screen" render="1"/>
+    <method name="set_screen" cid="gtk_window_set_screen" render="0"/>
     <method name="set_skip_pager_hint" cid="gtk_window_set_skip_pager_hint" render="1"/>
     <method name="set_skip_taskbar_hint" cid="gtk_window_set_skip_taskbar_hint" render="1"/>
     <method name="set_startup_id" cid="gtk_window_set_startup_id" render="1"/>
     <method name="set_title" cid="gtk_window_set_title" render="1"/>
     <method name="set_titlebar" cid="gtk_window_set_titlebar" render="1"/>
-    <method name="set_transient_for" cid="gtk_window_set_transient_for" render="1"/>
+    <method name="set_transient_for" cid="gtk_window_set_transient_for" render="0"/>
     <method name="set_type_hint" cid="gtk_window_set_type_hint" render="1"/>
     <method name="set_urgency_hint" cid="gtk_window_set_urgency_hint" render="1"/>
     <method name="set_wmclass" cid="gtk_window_set_wmclass" render="1"/>

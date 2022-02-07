@@ -15,6 +15,6 @@ class GtkCellRenderer is GtkCellRendererInterface
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
-interface GtkCellRendererInterface is GInitiallyUnownedInterface
+interface GtkCellRendererInterface is GObjectInterface
   fun apply(): NullablePointer[GObjectStruct] val
 

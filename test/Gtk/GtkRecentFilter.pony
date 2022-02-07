@@ -15,6 +15,6 @@ class GtkRecentFilter is GtkRecentFilterInterface
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
-interface GtkRecentFilterInterface is GInitiallyUnownedInterface
+interface GtkRecentFilterInterface is GObjectInterface
   fun apply(): NullablePointer[GObjectStruct] val
 

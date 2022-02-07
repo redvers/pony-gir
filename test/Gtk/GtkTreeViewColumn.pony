@@ -15,6 +15,6 @@ class GtkTreeViewColumn is GtkTreeViewColumnInterface
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
-interface GtkTreeViewColumnInterface is GInitiallyUnownedInterface
+interface GtkTreeViewColumnInterface is GObjectInterface
   fun apply(): NullablePointer[GObjectStruct] val
 

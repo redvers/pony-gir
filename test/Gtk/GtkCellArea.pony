@@ -15,6 +15,6 @@ class GtkCellArea is GtkCellAreaInterface
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
-interface GtkCellAreaInterface is GInitiallyUnownedInterface
+interface GtkCellAreaInterface is GObjectInterface
   fun apply(): NullablePointer[GObjectStruct] val
 

@@ -15,6 +15,6 @@ class GtkAdjustment is GtkAdjustmentInterface
 
   fun apply(): NullablePointer[GObjectStruct] val => _ptr
 
-interface GtkAdjustmentInterface is GInitiallyUnownedInterface
+interface GtkAdjustmentInterface is GObjectInterface
   fun apply(): NullablePointer[GObjectStruct] val
 

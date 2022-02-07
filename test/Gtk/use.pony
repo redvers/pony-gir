@@ -4,12 +4,4 @@ use @g_signal_connect_data[U64](instance: NullablePointer[GObjectStruct] tag, de
 use @g_object_get_data[Pointer[None]](gobject: NullablePointer[GObjectStruct] tag, key: Pointer[U8] tag)
 use @g_object_set_data[None](gobject: NullablePointer[GObjectStruct] tag, key: Pointer[U8] tag, data: Pointer[None] tag)
 
-struct GList
-struct Cairorectangleint
-struct GdkGeometry
 struct GError
-interface GInitiallyUnownedInterface
-struct GdkEventKey
-struct GdkScreen
-struct GdkPixbuf
-
