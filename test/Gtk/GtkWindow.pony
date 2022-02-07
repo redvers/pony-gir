@@ -6,7 +6,7 @@ use @gtk_window_new[NullablePointer[GObjectStruct] val](gtype: I32)
 // Methods
 use @gtk_window_activate_default[I32](window: NullablePointer[GObjectStruct] tag)
 use @gtk_window_activate_focus[I32](window: NullablePointer[GObjectStruct] tag)
-use @gtk_window_add_accel_group[None](window: NullablePointer[GObjectStruct] tag, accelgroup: GtkAccelGroup tag)
+use @gtk_window_add_accel_group[None](window: NullablePointer[GObjectStruct] tag, accelgroup: NullablePointer[GObjectStruct] tag)
 use @gtk_window_add_mnemonic[None](window: NullablePointer[GObjectStruct] tag, keyval: U32, target: NullablePointer[GObjectStruct] tag)
 use @gtk_window_begin_move_drag[None](window: NullablePointer[GObjectStruct] tag, button: I32, rootx: I32, rooty: I32, timestamp: U32)
 use @gtk_window_begin_resize_drag[None](window: NullablePointer[GObjectStruct] tag, edge: I32, button: I32, rootx: I32, rooty: I32, timestamp: U32)
@@ -52,14 +52,14 @@ use @gtk_window_move[None](window: NullablePointer[GObjectStruct] tag, x: I32, y
 use @gtk_window_parse_geometry[I32](window: NullablePointer[GObjectStruct] tag, geometry: Pointer[U8] tag)
 use @gtk_window_present[None](window: NullablePointer[GObjectStruct] tag)
 use @gtk_window_present_with_time[None](window: NullablePointer[GObjectStruct] tag, timestamp: U32)
-use @gtk_window_remove_accel_group[None](window: NullablePointer[GObjectStruct] tag, accelgroup: GtkAccelGroup tag)
+use @gtk_window_remove_accel_group[None](window: NullablePointer[GObjectStruct] tag, accelgroup: NullablePointer[GObjectStruct] tag)
 use @gtk_window_remove_mnemonic[None](window: NullablePointer[GObjectStruct] tag, keyval: U32, target: NullablePointer[GObjectStruct] tag)
 use @gtk_window_reshow_with_initial_size[None](window: NullablePointer[GObjectStruct] tag)
 use @gtk_window_resize[None](window: NullablePointer[GObjectStruct] tag, width: I32, height: I32)
 use @gtk_window_resize_grip_is_visible[I32](window: NullablePointer[GObjectStruct] tag)
 use @gtk_window_resize_to_geometry[None](window: NullablePointer[GObjectStruct] tag, width: I32, height: I32)
 use @gtk_window_set_accept_focus[None](window: NullablePointer[GObjectStruct] tag, setting: I32)
-use @gtk_window_set_application[None](window: NullablePointer[GObjectStruct] tag, application: GtkApplication tag)
+use @gtk_window_set_application[None](window: NullablePointer[GObjectStruct] tag, application: NullablePointer[GObjectStruct] tag)
 use @gtk_window_set_attached_to[None](window: NullablePointer[GObjectStruct] tag, attachwidget: NullablePointer[GObjectStruct] tag)
 use @gtk_window_set_decorated[None](window: NullablePointer[GObjectStruct] tag, setting: I32)
 use @gtk_window_set_default[None](window: NullablePointer[GObjectStruct] tag, defaultwidget: NullablePointer[GObjectStruct] tag)
@@ -120,7 +120,7 @@ interface GtkWindowInterface is GtkBinInterface
     @gtk_window_activate_focus(apply())
 
   fun gtk_window_add_accel_group(accelgroup: GtkAccelGroup tag): None =>
-    @gtk_window_add_accel_group(apply(), accelgroup)
+    @gtk_window_add_accel_group(apply(), accelgroup.apply())
 
   fun gtk_window_add_mnemonic(keyval: U32, target: GtkWidgetInterface): None =>
     @gtk_window_add_mnemonic(apply(), keyval, target.apply())
@@ -144,7 +144,8 @@ interface GtkWindowInterface is GtkBinInterface
     @gtk_window_get_accept_focus(apply())
 
   fun gtk_window_get_application(): GtkApplication =>
-    @gtk_window_get_application(apply())
+    let p: NullablePointer[GObjectStruct] val = @gtk_window_get_application(apply())
+    GtkApplication.from_ptr(p)
 
   fun gtk_window_get_decorated(): I32 =>
     @gtk_window_get_decorated(apply())
@@ -168,7 +169,8 @@ interface GtkWindowInterface is GtkBinInterface
     @gtk_window_get_gravity(apply())
 
   fun gtk_window_get_group(): GtkWindowGroup =>
-    @gtk_window_get_group(apply())
+    let p: NullablePointer[GObjectStruct] val = @gtk_window_get_group(apply())
+    GtkWindowGroup.from_ptr(p)
 
   fun gtk_window_get_has_resize_grip(): I32 =>
     @gtk_window_get_has_resize_grip(apply())
@@ -264,7 +266,7 @@ interface GtkWindowInterface is GtkBinInterface
     @gtk_window_present_with_time(apply(), timestamp)
 
   fun gtk_window_remove_accel_group(accelgroup: GtkAccelGroup tag): None =>
-    @gtk_window_remove_accel_group(apply(), accelgroup)
+    @gtk_window_remove_accel_group(apply(), accelgroup.apply())
 
   fun gtk_window_remove_mnemonic(keyval: U32, target: GtkWidgetInterface): None =>
     @gtk_window_remove_mnemonic(apply(), keyval, target.apply())
@@ -285,7 +287,7 @@ interface GtkWindowInterface is GtkBinInterface
     @gtk_window_set_accept_focus(apply(), setting)
 
   fun gtk_window_set_application(application: GtkApplication tag): None =>
-    @gtk_window_set_application(apply(), application)
+    @gtk_window_set_application(apply(), application.apply())
 
   fun gtk_window_set_attached_to(attachwidget: GtkWidgetInterface): None =>
     @gtk_window_set_attached_to(apply(), attachwidget.apply())
