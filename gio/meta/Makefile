@@ -1,3 +1,5 @@
+gr:
+	sh -x mkstruct.sh _4238 GResource g_resource
 all:
 	rm -f ../../test/Gio/*
 	sh -x mkstruct.sh _4138 GApplication g_application
@@ -45,7 +47,6 @@ all:
 	sh -x mkstruct.sh _4230 GSimpleIOStream
 	sh -x mkstruct.sh _4232 GPollableInputStream
 	sh -x mkstruct.sh _4234 GPollableOutputStream
-	sh -x mkstruct.sh _4238 GResource
 	sh -x mkstruct.sh _4240 GSeekable
 	sh -x mkstruct.sh _4242 GSimpleAsyncResult
 	sh -x mkstruct.sh _4260 GSocketConnectable

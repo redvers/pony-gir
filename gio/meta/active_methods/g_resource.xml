@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/gtk-3.xml"/>
+<renders>
+  <renderuse name="g_resource_enumerate_children" render="1"/>
+  <renderuse name="g_resource_error_get_type" render="1"/>
+  <renderuse name="g_resource_error_quark" render="1"/>
+  <renderuse name="g_resource_flags_get_type" render="1"/>
+  <renderuse name="g_resource_get_info" render="1"/>
+  <renderuse name="g_resource_get_type" render="1"/>
+  <renderuse name="g_resource_load" render="1"/>
+  <renderuse name="g_resource_lookup_data" render="1"/>
+  <renderuse name="g_resource_lookup_flags_get_type" render="1"/>
+  <renderuse name="g_resource_new_from_data" render="1"/>
+  <renderuse name="g_resource_open_stream" render="1"/>
+  <renderuse name="g_resource_ref" render="1"/>
+  <renderuse name="g_resource_unref" render="1"/>
+</renders>
+</castxml2pony>

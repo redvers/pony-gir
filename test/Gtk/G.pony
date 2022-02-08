@@ -8,8 +8,8 @@ use @g_ascii_dtostr[Pointer[U8]](buffer: Pointer[U8] tag, buflen: I32, d: F64)
 use @g_ascii_formatd[Pointer[U8]](buffer: Pointer[U8] tag, buflen: I32, format: Pointer[U8] tag, d: F64)
 use @g_ascii_strcasecmp[I32](s1: Pointer[U8] tag, s2: Pointer[U8] tag)
 use @g_ascii_strdown[Pointer[U8]](str: Pointer[U8] tag, len: I64)
-use @g_ascii_string_to_signed[I32](str: Pointer[U8] tag, base: U32, min: I64, max: I64, outnum: Pointer[I64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_ascii_string_to_unsigned[I32](str: Pointer[U8] tag, base: U32, min: U64, max: U64, outnum: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_ascii_string_to_signed[I32](str: Pointer[U8] tag, base: U32, min: I64, max: I64, outnum: Pointer[I64] tag, gerror: GError)
+use @g_ascii_string_to_unsigned[I32](str: Pointer[U8] tag, base: U32, min: U64, max: U64, outnum: Pointer[U64] tag, gerror: GError)
 use @g_ascii_strncasecmp[I32](s1: Pointer[U8] tag, s2: Pointer[U8] tag, n: U64)
 use @g_ascii_strtod[F64](nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag)
 use @g_ascii_strtoll[I64](nptr: Pointer[U8] tag, endptr: Pointer[Pointer[U8]] tag, base: U32)
@@ -22,7 +22,7 @@ use @g_assert_warning[None](logdomain: Pointer[U8] tag, file: Pointer[U8] tag, l
 use @g_assertion_message[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, message: Pointer[U8] tag)
 use @g_assertion_message_cmpstr[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, arg1: Pointer[U8] tag, cmp: Pointer[U8] tag, arg2: Pointer[U8] tag)
 use @g_assertion_message_cmpstrv[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, arg1: Pointer[Pointer[U8]] tag, arg2: Pointer[Pointer[U8]] tag, firstwrongidx: U64)
-use @g_assertion_message_error[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, gerror: NullablePointer[GErrorStruct] tag, errordomain: U32, errorcode: I32)
+use @g_assertion_message_error[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag, gerror: GError, errordomain: U32, errorcode: I32)
 use @g_assertion_message_expr[None](domain: Pointer[U8] tag, file: Pointer[U8] tag, line: I32, func: Pointer[U8] tag, expr: Pointer[U8] tag)
 use @g_atexit[None](func: Pointer[None] tag)
 use @g_atomic_int_add[I32](atomic: Pointer[I32] tag, gval: I32)
@@ -67,40 +67,40 @@ use @g_bit_storage[U32](number: U64)
 use @g_bit_trylock[I32](address: Pointer[I32] tag, lockbit: I32)
 use @g_bit_unlock[None](address: Pointer[I32] tag, lockbit: I32)
 use @g_bookmark_file_error_quark[U32]()
-use @g_byte_array_steal[Pointer[U8]](array: Pointer[GByteArray] tag, len: Pointer[U64] tag)
-use @g_byte_array_unref[None](array: Pointer[GByteArray] tag)
+use @g_byte_array_steal[Pointer[U8]](array: GByteArray tag, len: Pointer[U64] tag)
+use @g_byte_array_unref[None](array: GByteArray tag)
 use @g_canonicalize_filename[Pointer[U8]](filename: Pointer[U8] tag, relativeto: Pointer[U8] tag)
 use @glib_check_version[Pointer[U8]](requiredmajor: U32, requiredminor: U32, requiredmicro: U32)
 use @g_checksum_type_get_length[I64](checksumtype: I32)
 use @g_child_watch_add[U32](pid: I32, function: Pointer[None] tag, data: Pointer[None] tag)
 use @g_child_watch_add_full[U32](priority: I32, pid: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
-use @g_clear_error[None](err: NullablePointer[GErrorStruct] tag)
+use @g_clear_error[None](err: GError)
 use @g_clear_handle_id[None](tagptr: Pointer[U32] tag, clearfunc: Pointer[None] tag)
-use @g_clear_list[None](listptr: Pointer[GList] tag, destroy: Pointer[None] tag)
+use @g_clear_list[None](listptr: GList tag, destroy: Pointer[None] tag)
 use @g_clear_pointer[None](pp: Pointer[None] tag, destroy: Pointer[None] tag)
-use @g_clear_slist[None](slistptr: Pointer[GSList] tag, destroy: Pointer[None] tag)
-use @g_compute_checksum_for_bytes[Pointer[U8]](checksumtype: I32, data: Pointer[GBytes] tag)
+use @g_clear_slist[None](slistptr: GSList tag, destroy: Pointer[None] tag)
+use @g_compute_checksum_for_bytes[Pointer[U8]](checksumtype: I32, data: GBytes tag)
 use @g_compute_checksum_for_data[Pointer[U8]](checksumtype: I32, data: Pointer[U8] tag, length: U64)
 use @g_compute_checksum_for_string[Pointer[U8]](checksumtype: I32, str: Pointer[U8] tag, length: I64)
-use @g_compute_hmac_for_bytes[Pointer[U8]](digesttype: I32, key: Pointer[GBytes] tag, data: Pointer[GBytes] tag)
+use @g_compute_hmac_for_bytes[Pointer[U8]](digesttype: I32, key: GBytes tag, data: GBytes tag)
 use @g_compute_hmac_for_data[Pointer[U8]](digesttype: I32, key: Pointer[U8] tag, keylen: U64, data: Pointer[U8] tag, length: U64)
 use @g_compute_hmac_for_string[Pointer[U8]](digesttype: I32, key: Pointer[U8] tag, keylen: U64, str: Pointer[U8] tag, length: I64)
-use @g_convert[Pointer[U8]](str: Pointer[U8] tag, len: I64, tocodeset: Pointer[U8] tag, fromcodeset: Pointer[U8] tag, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_convert[Pointer[U8]](str: Pointer[U8] tag, len: I64, tocodeset: Pointer[U8] tag, fromcodeset: Pointer[U8] tag, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError)
 use @g_convert_error_quark[U32]()
-use @g_convert_with_fallback[Pointer[U8]](str: Pointer[U8] tag, len: I64, tocodeset: Pointer[U8] tag, fromcodeset: Pointer[U8] tag, fallback: Pointer[U8] tag, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_convert_with_iconv[Pointer[U8]](str: Pointer[U8] tag, len: I64, converter: Pointer[GIConv] tag, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_datalist_clear[None](datalist: Pointer[GData] tag)
-use @g_datalist_foreach[None](datalist: Pointer[GData] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
-use @g_datalist_get_data[Pointer[None]](datalist: Pointer[GData] tag, key: Pointer[U8] tag)
-use @g_datalist_get_flags[U32](datalist: Pointer[GData] tag)
-use @g_datalist_id_dup_data[Pointer[None]](datalist: Pointer[GData] tag, keyid: U32, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag)
-use @g_datalist_id_get_data[Pointer[None]](datalist: Pointer[GData] tag, keyid: U32)
-use @g_datalist_id_remove_no_notify[Pointer[None]](datalist: Pointer[GData] tag, keyid: U32)
-use @g_datalist_id_replace_data[I32](datalist: Pointer[GData] tag, keyid: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag)
-use @g_datalist_id_set_data_full[None](datalist: Pointer[GData] tag, keyid: U32, data: Pointer[None] tag, destroyfunc: Pointer[None] tag)
-use @g_datalist_init[None](datalist: Pointer[GData] tag)
-use @g_datalist_set_flags[None](datalist: Pointer[GData] tag, flags: U32)
-use @g_datalist_unset_flags[None](datalist: Pointer[GData] tag, flags: U32)
+use @g_convert_with_fallback[Pointer[U8]](str: Pointer[U8] tag, len: I64, tocodeset: Pointer[U8] tag, fromcodeset: Pointer[U8] tag, fallback: Pointer[U8] tag, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError)
+use @g_convert_with_iconv[Pointer[U8]](str: Pointer[U8] tag, len: I64, converter: GIConv tag, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError)
+use @g_datalist_clear[None](datalist: GData tag)
+use @g_datalist_foreach[None](datalist: GData tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
+use @g_datalist_get_data[Pointer[None]](datalist: GData tag, key: Pointer[U8] tag)
+use @g_datalist_get_flags[U32](datalist: GData tag)
+use @g_datalist_id_dup_data[Pointer[None]](datalist: GData tag, keyid: U32, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag)
+use @g_datalist_id_get_data[Pointer[None]](datalist: GData tag, keyid: U32)
+use @g_datalist_id_remove_no_notify[Pointer[None]](datalist: GData tag, keyid: U32)
+use @g_datalist_id_replace_data[I32](datalist: GData tag, keyid: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag)
+use @g_datalist_id_set_data_full[None](datalist: GData tag, keyid: U32, data: Pointer[None] tag, destroyfunc: Pointer[None] tag)
+use @g_datalist_init[None](datalist: GData tag)
+use @g_datalist_set_flags[None](datalist: GData tag, flags: U32)
+use @g_datalist_unset_flags[None](datalist: GData tag, flags: U32)
 use @g_dataset_destroy[None](datasetlocation: Pointer[None] tag)
 use @g_dataset_foreach[None](datasetlocation: Pointer[None] tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 use @g_dataset_id_get_data[Pointer[None]](datasetlocation: Pointer[None] tag, keyid: U32)
@@ -110,7 +110,7 @@ use @g_date_get_days_in_month[U8](month: I32, year: U16)
 use @g_date_get_monday_weeks_in_year[U8](year: U16)
 use @g_date_get_sunday_weeks_in_year[U8](year: U16)
 use @g_date_is_leap_year[I32](year: U16)
-use @g_date_strftime[U64](s: Pointer[U8] tag, slen: U64, format: Pointer[U8] tag, date: Pointer[GDate] tag)
+use @g_date_strftime[U64](s: Pointer[U8] tag, slen: U64, format: Pointer[U8] tag, date: GDate tag)
 use @g_date_valid_day[I32](day: U8)
 use @g_date_valid_dmy[I32](day: U8, month: I32, year: U16)
 use @g_date_valid_julian[I32](juliandate: U32)
@@ -119,7 +119,7 @@ use @g_date_valid_weekday[I32](weekday: I32)
 use @g_date_valid_year[I32](year: U16)
 use @g_dcgettext[Pointer[U8]](domain: Pointer[U8] tag, msgid: Pointer[U8] tag, category: I32)
 use @g_dgettext[Pointer[U8]](domain: Pointer[U8] tag, msgid: Pointer[U8] tag)
-use @g_dir_make_tmp[Pointer[U8]](tmpl: Pointer[U8] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_dir_make_tmp[Pointer[U8]](tmpl: Pointer[U8] tag, gerror: GError)
 use @g_direct_equal[I32](v1: Pointer[None] tag, v2: Pointer[None] tag)
 use @g_direct_hash[U32](v: Pointer[None] tag)
 use @g_dngettext[Pointer[U8]](domain: Pointer[U8] tag, msgid: Pointer[U8] tag, msgidplural: Pointer[U8] tag, n: U64)
@@ -132,18 +132,18 @@ use @g_environ_setenv[Pointer[Pointer[U8]]](envp: Pointer[Pointer[U8]] tag, vari
 use @g_environ_unsetenv[Pointer[Pointer[U8]]](envp: Pointer[Pointer[U8]] tag, variable: Pointer[U8] tag)
 use @g_file_error_from_errno[I32](errno: I32)
 use @g_file_error_quark[U32]()
-use @g_file_get_contents[I32](filename: Pointer[U8] tag, contents: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_file_open_tmp[I32](tmpl: Pointer[U8] tag, nameused: Pointer[Pointer[U8]] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_file_read_link[Pointer[U8]](filename: Pointer[U8] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_file_set_contents[I32](filename: Pointer[U8] tag, contents: Pointer[U8] tag, length: I64, gerror: NullablePointer[GErrorStruct] tag)
-use @g_file_set_contents_full[I32](filename: Pointer[U8] tag, contents: Pointer[U8] tag, length: I64, flags: I32, mode: I32, gerror: NullablePointer[GErrorStruct] tag)
+use @g_file_get_contents[I32](filename: Pointer[U8] tag, contents: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, gerror: GError)
+use @g_file_open_tmp[I32](tmpl: Pointer[U8] tag, nameused: Pointer[Pointer[U8]] tag, gerror: GError)
+use @g_file_read_link[Pointer[U8]](filename: Pointer[U8] tag, gerror: GError)
+use @g_file_set_contents[I32](filename: Pointer[U8] tag, contents: Pointer[U8] tag, length: I64, gerror: GError)
+use @g_file_set_contents_full[I32](filename: Pointer[U8] tag, contents: Pointer[U8] tag, length: I64, flags: I32, mode: I32, gerror: GError)
 use @g_file_test[I32](filename: Pointer[U8] tag, test: I32)
 use @g_filename_display_basename[Pointer[U8]](filename: Pointer[U8] tag)
 use @g_filename_display_name[Pointer[U8]](filename: Pointer[U8] tag)
-use @g_filename_from_uri[Pointer[U8]](uri: Pointer[U8] tag, hostname: Pointer[Pointer[U8]] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_filename_from_utf8[Pointer[U8]](utf8string: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_filename_to_uri[Pointer[U8]](filename: Pointer[U8] tag, hostname: Pointer[U8] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_filename_to_utf8[Pointer[U8]](opsysstring: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_filename_from_uri[Pointer[U8]](uri: Pointer[U8] tag, hostname: Pointer[Pointer[U8]] tag, gerror: GError)
+use @g_filename_from_utf8[Pointer[U8]](utf8string: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError)
+use @g_filename_to_uri[Pointer[U8]](filename: Pointer[U8] tag, hostname: Pointer[U8] tag, gerror: GError)
+use @g_filename_to_utf8[Pointer[U8]](opsysstring: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError)
 use @g_find_program_in_path[Pointer[U8]](program: Pointer[U8] tag)
 use @g_format_size[Pointer[U8]](size: U64)
 use @g_format_size_for_display[Pointer[U8]](size: I64)
@@ -154,7 +154,7 @@ use @g_get_charset[I32](charset: Pointer[Pointer[U8]] tag)
 use @g_get_codeset[Pointer[U8]]()
 use @g_get_console_charset[I32](charset: Pointer[Pointer[U8]] tag)
 use @g_get_current_dir[Pointer[U8]]()
-use @g_get_current_time[None](result: Pointer[GTimeVal] tag)
+use @g_get_current_time[None](result: GTimeVal tag)
 use @g_get_environ[Pointer[Pointer[U8]]]()
 use @g_get_filename_charsets[I32](filenamecharsets: Pointer[Pointer[U8]] tag)
 use @g_get_home_dir[Pointer[U8]]()
@@ -178,32 +178,32 @@ use @g_get_user_name[Pointer[U8]]()
 use @g_get_user_runtime_dir[Pointer[U8]]()
 use @g_get_user_special_dir[Pointer[U8]](directory: I32)
 use @g_getenv[Pointer[U8]](variable: Pointer[U8] tag)
-use @g_hash_table_add[I32](hashtable: Pointer[GHashTable] tag, key: Pointer[None] tag)
-use @g_hash_table_contains[I32](hashtable: Pointer[GHashTable] tag, key: Pointer[None] tag)
-use @g_hash_table_destroy[None](hashtable: Pointer[GHashTable] tag)
-use @g_hash_table_insert[I32](hashtable: Pointer[GHashTable] tag, key: Pointer[None] tag, value: Pointer[None] tag)
-use @g_hash_table_lookup[Pointer[None]](hashtable: Pointer[GHashTable] tag, key: Pointer[None] tag)
-use @g_hash_table_lookup_extended[I32](hashtable: Pointer[GHashTable] tag, lookupkey: Pointer[None] tag, origkey: Pointer[None] tag, value: Pointer[None] tag)
-use @g_hash_table_remove[I32](hashtable: Pointer[GHashTable] tag, key: Pointer[None] tag)
-use @g_hash_table_remove_all[None](hashtable: Pointer[GHashTable] tag)
-use @g_hash_table_replace[I32](hashtable: Pointer[GHashTable] tag, key: Pointer[None] tag, value: Pointer[None] tag)
-use @g_hash_table_size[U32](hashtable: Pointer[GHashTable] tag)
-use @g_hash_table_steal[I32](hashtable: Pointer[GHashTable] tag, key: Pointer[None] tag)
-use @g_hash_table_steal_all[None](hashtable: Pointer[GHashTable] tag)
-use @g_hash_table_steal_extended[I32](hashtable: Pointer[GHashTable] tag, lookupkey: Pointer[None] tag, stolenkey: Pointer[None] tag, stolenvalue: Pointer[None] tag)
-use @g_hash_table_unref[None](hashtable: Pointer[GHashTable] tag)
-use @g_hook_destroy[I32](hooklist: Pointer[GHookList] tag, hookid: U64)
-use @g_hook_destroy_link[None](hooklist: Pointer[GHookList] tag, hook: Pointer[GHook] tag)
-use @g_hook_free[None](hooklist: Pointer[GHookList] tag, hook: Pointer[GHook] tag)
-use @g_hook_insert_before[None](hooklist: Pointer[GHookList] tag, sibling: Pointer[GHook] tag, hook: Pointer[GHook] tag)
-use @g_hook_prepend[None](hooklist: Pointer[GHookList] tag, hook: Pointer[GHook] tag)
-use @g_hook_unref[None](hooklist: Pointer[GHookList] tag, hook: Pointer[GHook] tag)
+use @g_hash_table_add[I32](hashtable: GHashTable tag, key: Pointer[None] tag)
+use @g_hash_table_contains[I32](hashtable: GHashTable tag, key: Pointer[None] tag)
+use @g_hash_table_destroy[None](hashtable: GHashTable tag)
+use @g_hash_table_insert[I32](hashtable: GHashTable tag, key: Pointer[None] tag, value: Pointer[None] tag)
+use @g_hash_table_lookup[Pointer[None]](hashtable: GHashTable tag, key: Pointer[None] tag)
+use @g_hash_table_lookup_extended[I32](hashtable: GHashTable tag, lookupkey: Pointer[None] tag, origkey: Pointer[None] tag, value: Pointer[None] tag)
+use @g_hash_table_remove[I32](hashtable: GHashTable tag, key: Pointer[None] tag)
+use @g_hash_table_remove_all[None](hashtable: GHashTable tag)
+use @g_hash_table_replace[I32](hashtable: GHashTable tag, key: Pointer[None] tag, value: Pointer[None] tag)
+use @g_hash_table_size[U32](hashtable: GHashTable tag)
+use @g_hash_table_steal[I32](hashtable: GHashTable tag, key: Pointer[None] tag)
+use @g_hash_table_steal_all[None](hashtable: GHashTable tag)
+use @g_hash_table_steal_extended[I32](hashtable: GHashTable tag, lookupkey: Pointer[None] tag, stolenkey: Pointer[None] tag, stolenvalue: Pointer[None] tag)
+use @g_hash_table_unref[None](hashtable: GHashTable tag)
+use @g_hook_destroy[I32](hooklist: GHookList tag, hookid: U64)
+use @g_hook_destroy_link[None](hooklist: GHookList tag, hook: GHook tag)
+use @g_hook_free[None](hooklist: GHookList tag, hook: GHook tag)
+use @g_hook_insert_before[None](hooklist: GHookList tag, sibling: GHook tag, hook: GHook tag)
+use @g_hook_prepend[None](hooklist: GHookList tag, hook: GHook tag)
+use @g_hook_unref[None](hooklist: GHookList tag, hook: GHook tag)
 use @g_hostname_is_ascii_encoded[I32](hostname: Pointer[U8] tag)
 use @g_hostname_is_ip_address[I32](hostname: Pointer[U8] tag)
 use @g_hostname_is_non_ascii[I32](hostname: Pointer[U8] tag)
 use @g_hostname_to_ascii[Pointer[U8]](hostname: Pointer[U8] tag)
 use @g_hostname_to_unicode[Pointer[U8]](hostname: Pointer[U8] tag)
-use @g_iconv[U64](converter: Pointer[GIConv] tag, inbuf: Pointer[Pointer[U8]] tag, inbytesleft: Pointer[U64] tag, outbuf: Pointer[Pointer[U8]] tag, outbytesleft: Pointer[U64] tag)
+use @g_iconv[U64](converter: GIConv tag, inbuf: Pointer[Pointer[U8]] tag, inbytesleft: Pointer[U64] tag, outbuf: Pointer[Pointer[U8]] tag, outbytesleft: Pointer[U64] tag)
 use @g_idle_add[U32](function: Pointer[None] tag, data: Pointer[None] tag)
 use @g_idle_add_full[U32](priority: I32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 use @g_idle_remove_by_data[I32](data: Pointer[None] tag)
@@ -213,14 +213,14 @@ use @g_int_equal[I32](v1: Pointer[None] tag, v2: Pointer[None] tag)
 use @g_int_hash[U32](v: Pointer[None] tag)
 use @g_intern_static_string[Pointer[U8]](string: Pointer[U8] tag)
 use @g_intern_string[Pointer[U8]](string: Pointer[U8] tag)
-use @g_io_add_watch[U32](channel: Pointer[GIOChannel] tag, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag)
-use @g_io_add_watch_full[U32](channel: Pointer[GIOChannel] tag, priority: I32, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag)
+use @g_io_add_watch[U32](channel: GIOChannel tag, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag)
+use @g_io_add_watch_full[U32](channel: GIOChannel tag, priority: I32, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag)
 use @g_io_channel_error_from_errno[I32](en: I32)
 use @g_io_channel_error_quark[U32]()
 use @g_key_file_error_quark[U32]()
 use @g_listenv[Pointer[Pointer[U8]]]()
-use @g_locale_from_utf8[Pointer[U8]](utf8string: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_locale_to_utf8[Pointer[U8]](opsysstring: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_locale_from_utf8[Pointer[U8]](utf8string: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError)
+use @g_locale_to_utf8[Pointer[U8]](opsysstring: Pointer[U8] tag, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError)
 use @g_log_default_handler[None](logdomain: Pointer[U8] tag, loglevel: I32, message: Pointer[U8] tag, unuseddata: Pointer[None] tag)
 use @g_log_remove_handler[None](logdomain: Pointer[U8] tag, handlerid: U32)
 use @g_log_set_always_fatal[I32](fatalmask: I32)
@@ -229,15 +229,15 @@ use @g_log_set_fatal_mask[I32](logdomain: Pointer[U8] tag, fatalmask: I32)
 use @g_log_set_handler[U32](logdomain: Pointer[U8] tag, loglevels: I32, logfunc: Pointer[None] tag, userdata: Pointer[None] tag)
 use @g_log_set_handler_full[U32](logdomain: Pointer[U8] tag, loglevels: I32, logfunc: Pointer[None] tag, userdata: Pointer[None] tag, destroy: Pointer[None] tag)
 use @g_log_set_writer_func[None](func: Pointer[None] tag, userdata: Pointer[None] tag, userdatafree: Pointer[None] tag)
-use @g_log_structured_array[None](loglevel: I32, fields: Pointer[GLogField] tag, nfields: U64)
-use @g_log_variant[None](logdomain: Pointer[U8] tag, loglevel: I32, fields: Pointer[GVariant] tag)
-use @g_log_writer_default[I32](loglevel: I32, fields: Pointer[GLogField] tag, nfields: U64, userdata: Pointer[None] tag)
+use @g_log_structured_array[None](loglevel: I32, fields: GLogField tag, nfields: U64)
+use @g_log_variant[None](logdomain: Pointer[U8] tag, loglevel: I32, fields: GVariant tag)
+use @g_log_writer_default[I32](loglevel: I32, fields: GLogField tag, nfields: U64, userdata: Pointer[None] tag)
 use @g_log_writer_default_set_use_stderr[None](usestderr: I32)
 use @g_log_writer_default_would_drop[I32](loglevel: I32, logdomain: Pointer[U8] tag)
-use @g_log_writer_format_fields[Pointer[U8]](loglevel: I32, fields: Pointer[GLogField] tag, nfields: U64, usecolor: I32)
+use @g_log_writer_format_fields[Pointer[U8]](loglevel: I32, fields: GLogField tag, nfields: U64, usecolor: I32)
 use @g_log_writer_is_journald[I32](outputfd: I32)
-use @g_log_writer_journald[I32](loglevel: I32, fields: Pointer[GLogField] tag, nfields: U64, userdata: Pointer[None] tag)
-use @g_log_writer_standard_streams[I32](loglevel: I32, fields: Pointer[GLogField] tag, nfields: U64, userdata: Pointer[None] tag)
+use @g_log_writer_journald[I32](loglevel: I32, fields: GLogField tag, nfields: U64, userdata: Pointer[None] tag)
+use @g_log_writer_standard_streams[I32](loglevel: I32, fields: GLogField tag, nfields: U64, userdata: Pointer[None] tag)
 use @g_log_writer_supports_color[I32](outputfd: I32)
 use @g_main_depth[I32]()
 use @g_malloc[Pointer[None]](nbytes: U64)
@@ -248,7 +248,7 @@ use @g_markup_error_quark[U32]()
 use @g_markup_escape_text[Pointer[U8]](text: Pointer[U8] tag, length: I64)
 use @g_mem_is_system_malloc[I32]()
 use @g_mem_profile[None]()
-use @g_mem_set_vtable[None](vtable: Pointer[GMemVTable] tag)
+use @g_mem_set_vtable[None](vtable: GMemVTable tag)
 use @g_memdup[Pointer[None]](mem: Pointer[None] tag, bytesize: U32)
 use @g_memdup2[Pointer[None]](mem: Pointer[None] tag, bytesize: U64)
 use @g_mkdir_with_parents[I32](pathname: Pointer[U8] tag, mode: I32)
@@ -263,22 +263,22 @@ use @g_on_error_stack_trace[None](prgname: Pointer[U8] tag)
 use @g_once_init_enter[I32](location: Pointer[None] tag)
 use @g_once_init_leave[None](location: Pointer[None] tag, result: U64)
 use @g_option_error_quark[U32]()
-use @g_parse_debug_string[U32](string: Pointer[U8] tag, keys: Pointer[GDebugKey] tag, nkeys: U32)
+use @g_parse_debug_string[U32](string: Pointer[U8] tag, keys: GDebugKey tag, nkeys: U32)
 use @g_path_get_basename[Pointer[U8]](filename: Pointer[U8] tag)
 use @g_path_get_dirname[Pointer[U8]](filename: Pointer[U8] tag)
 use @g_path_is_absolute[I32](filename: Pointer[U8] tag)
 use @g_path_skip_root[Pointer[U8]](filename: Pointer[U8] tag)
-use @g_pattern_match[I32](pspec: Pointer[GPatternSpec] tag, stringlength: U32, string: Pointer[U8] tag, stringreversed: Pointer[U8] tag)
+use @g_pattern_match[I32](pspec: GPatternSpec tag, stringlength: U32, string: Pointer[U8] tag, stringreversed: Pointer[U8] tag)
 use @g_pattern_match_simple[I32](pattern: Pointer[U8] tag, string: Pointer[U8] tag)
-use @g_pattern_match_string[I32](pspec: Pointer[GPatternSpec] tag, string: Pointer[U8] tag)
+use @g_pattern_match_string[I32](pspec: GPatternSpec tag, string: Pointer[U8] tag)
 use @g_pointer_bit_lock[None](address: Pointer[None] tag, lockbit: I32)
 use @g_pointer_bit_trylock[I32](address: Pointer[None] tag, lockbit: I32)
 use @g_pointer_bit_unlock[None](address: Pointer[None] tag, lockbit: I32)
-use @g_poll[I32](fds: Pointer[GPollFD] tag, nfds: U32, timeout: I32)
-use @g_prefix_error_literal[None](err: NullablePointer[GErrorStruct] tag, prefix: Pointer[U8] tag)
-use @g_propagate_error[None](dest: NullablePointer[GErrorStruct] tag, src: NullablePointer[GErrorStruct] tag)
-use @g_ptr_array_find[I32](haystack: Pointer[GPtrArray] tag, needle: Pointer[None] tag, index: Pointer[U32] tag)
-use @g_ptr_array_find_with_equal_func[I32](haystack: Pointer[GPtrArray] tag, needle: Pointer[None] tag, equalfunc: Pointer[None] tag, index: Pointer[U32] tag)
+use @g_poll[I32](fds: GPollFD tag, nfds: U32, timeout: I32)
+use @g_prefix_error_literal[None](err: GError, prefix: Pointer[U8] tag)
+use @g_propagate_error[None](dest: GError, src: GError)
+use @g_ptr_array_find[I32](haystack: GPtrArray tag, needle: Pointer[None] tag, index: Pointer[U32] tag)
+use @g_ptr_array_find_with_equal_func[I32](haystack: GPtrArray tag, needle: Pointer[None] tag, equalfunc: Pointer[None] tag, index: Pointer[U32] tag)
 use @g_qsort_with_data[None](pbase: Pointer[None] tag, totalelems: I32, size: U64, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag)
 use @g_quark_from_static_string[U32](string: Pointer[U8] tag)
 use @g_quark_from_string[U32](string: Pointer[U8] tag)
@@ -308,7 +308,7 @@ use @g_ref_string_new[Pointer[U8]](str: Pointer[U8] tag)
 use @g_ref_string_new_intern[Pointer[U8]](str: Pointer[U8] tag)
 use @g_ref_string_new_len[Pointer[U8]](str: Pointer[U8] tag, len: I64)
 use @g_ref_string_release[None](str: Pointer[U8] tag)
-use @g_regex_check_replacement[I32](replacement: Pointer[U8] tag, hasreferences: Pointer[I32] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_regex_check_replacement[I32](replacement: Pointer[U8] tag, hasreferences: Pointer[I32] tag, gerror: GError)
 use @g_regex_error_quark[U32]()
 use @g_regex_escape_nul[Pointer[U8]](string: Pointer[U8] tag, length: I32)
 use @g_regex_escape_string[Pointer[U8]](string: Pointer[U8] tag, length: I32)
@@ -317,15 +317,15 @@ use @g_regex_split_simple[Pointer[Pointer[U8]]](pattern: Pointer[U8] tag, string
 use @g_reload_user_special_dirs_cache[None]()
 use @g_return_if_fail_warning[None](logdomain: Pointer[U8] tag, prettyfunction: Pointer[U8] tag, expression: Pointer[U8] tag)
 use @g_set_application_name[None](applicationname: Pointer[U8] tag)
-use @g_set_error_literal[None](err: NullablePointer[GErrorStruct] tag, domain: U32, code: I32, message: Pointer[U8] tag)
+use @g_set_error_literal[None](err: GError, domain: U32, code: I32, message: Pointer[U8] tag)
 use @g_set_prgname[None](prgname: Pointer[U8] tag)
 use @g_set_print_handler[Pointer[None]](func: Pointer[None] tag)
 use @g_set_printerr_handler[Pointer[None]](func: Pointer[None] tag)
 use @g_setenv[I32](variable: Pointer[U8] tag, value: Pointer[U8] tag, overwrite: I32)
 use @g_shell_error_quark[U32]()
-use @g_shell_parse_argv[I32](commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: Pointer[Pointer[U8]] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_shell_parse_argv[I32](commandline: Pointer[U8] tag, argcp: Pointer[I32] tag, argvp: Pointer[Pointer[U8]] tag, gerror: GError)
 use @g_shell_quote[Pointer[U8]](unquotedstring: Pointer[U8] tag)
-use @g_shell_unquote[Pointer[U8]](quotedstring: Pointer[U8] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_shell_unquote[Pointer[U8]](quotedstring: Pointer[U8] tag, gerror: GError)
 use @g_slice_alloc[Pointer[None]](blocksize: U64)
 use @g_slice_alloc0[Pointer[None]](blocksize: U64)
 use @g_slice_copy[Pointer[None]](blocksize: U64, memblock: Pointer[None] tag)
@@ -335,22 +335,22 @@ use @g_slice_get_config[I64](ckey: I32)
 use @g_slice_get_config_state[Pointer[I64]](ckey: I32, address: I64, nvalues: Pointer[U32] tag)
 use @g_slice_set_config[None](ckey: I32, value: I64)
 use @g_source_remove[I32](gtag: U32)
-use @g_source_remove_by_funcs_user_data[I32](funcs: Pointer[GSourceFuncs] tag, userdata: Pointer[None] tag)
+use @g_source_remove_by_funcs_user_data[I32](funcs: GSourceFuncs tag, userdata: Pointer[None] tag)
 use @g_source_remove_by_user_data[I32](userdata: Pointer[None] tag)
 use @g_source_set_name_by_id[None](gtag: U32, name: Pointer[U8] tag)
 use @g_spaced_primes_closest[U32](num: U32)
-use @g_spawn_async[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_spawn_async_with_fds[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, gerror: NullablePointer[GErrorStruct] tag)
-use @g_spawn_async_with_pipes[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, standardinput: Pointer[I32] tag, standardoutput: Pointer[I32] tag, standarderror: Pointer[I32] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_spawn_async_with_pipes_and_fds[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, sourcefds: Pointer[I32] tag, targetfds: Pointer[I32] tag, nfds: U64, childpidout: Pointer[I32] tag, stdinpipeout: Pointer[I32] tag, stdoutpipeout: Pointer[I32] tag, stderrpipeout: Pointer[I32] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_spawn_check_exit_status[I32](waitstatus: I32, gerror: NullablePointer[GErrorStruct] tag)
-use @g_spawn_check_wait_status[I32](waitstatus: I32, gerror: NullablePointer[GErrorStruct] tag)
+use @g_spawn_async[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, gerror: GError)
+use @g_spawn_async_with_fds[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, gerror: GError)
+use @g_spawn_async_with_pipes[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, standardinput: Pointer[I32] tag, standardoutput: Pointer[I32] tag, standarderror: Pointer[I32] tag, gerror: GError)
+use @g_spawn_async_with_pipes_and_fds[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, sourcefds: Pointer[I32] tag, targetfds: Pointer[I32] tag, nfds: U64, childpidout: Pointer[I32] tag, stdinpipeout: Pointer[I32] tag, stdoutpipeout: Pointer[I32] tag, stderrpipeout: Pointer[I32] tag, gerror: GError)
+use @g_spawn_check_exit_status[I32](waitstatus: I32, gerror: GError)
+use @g_spawn_check_wait_status[I32](waitstatus: I32, gerror: GError)
 use @g_spawn_close_pid[None](pid: I32)
-use @g_spawn_command_line_async[I32](commandline: Pointer[U8] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_spawn_command_line_sync[I32](commandline: Pointer[U8] tag, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, waitstatus: Pointer[I32] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_spawn_command_line_async[I32](commandline: Pointer[U8] tag, gerror: GError)
+use @g_spawn_command_line_sync[I32](commandline: Pointer[U8] tag, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, waitstatus: Pointer[I32] tag, gerror: GError)
 use @g_spawn_error_quark[U32]()
 use @g_spawn_exit_error_quark[U32]()
-use @g_spawn_sync[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, waitstatus: Pointer[I32] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_spawn_sync[I32](workingdirectory: Pointer[U8] tag, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, waitstatus: Pointer[I32] tag, gerror: GError)
 use @g_stpcpy[Pointer[U8]](dest: Pointer[U8] tag, src: Pointer[U8] tag)
 use @g_str_equal[I32](v1: Pointer[None] tag, v2: Pointer[None] tag)
 use @g_str_has_prefix[I32](str: Pointer[U8] tag, prefix: Pointer[U8] tag)
@@ -399,23 +399,23 @@ use @g_thread_pool_set_max_idle_time[None](interval: U32)
 use @g_thread_pool_set_max_unused_threads[None](maxthreads: I32)
 use @g_thread_pool_stop_unused_threads[None]()
 use @g_thread_yield[None]()
-use @g_time_val_from_iso8601[I32](isodate: Pointer[U8] tag, time: Pointer[GTimeVal] tag)
+use @g_time_val_from_iso8601[I32](isodate: Pointer[U8] tag, time: GTimeVal tag)
 use @g_timeout_add[U32](interval: U32, function: Pointer[None] tag, data: Pointer[None] tag)
 use @g_timeout_add_full[U32](priority: I32, interval: U32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
 use @g_timeout_add_seconds[U32](interval: U32, function: Pointer[None] tag, data: Pointer[None] tag)
 use @g_timeout_add_seconds_full[U32](priority: I32, interval: U32, function: Pointer[None] tag, data: Pointer[None] tag, notify: Pointer[None] tag)
-use @g_trash_stack_height[U32](stackp: Pointer[GTrashStack] tag)
-use @g_trash_stack_peek[Pointer[None]](stackp: Pointer[GTrashStack] tag)
-use @g_trash_stack_pop[Pointer[None]](stackp: Pointer[GTrashStack] tag)
-use @g_trash_stack_push[None](stackp: Pointer[GTrashStack] tag, datap: Pointer[None] tag)
+use @g_trash_stack_height[U32](stackp: GTrashStack tag)
+use @g_trash_stack_peek[Pointer[None]](stackp: GTrashStack tag)
+use @g_trash_stack_pop[Pointer[None]](stackp: GTrashStack tag)
+use @g_trash_stack_push[None](stackp: GTrashStack tag, datap: Pointer[None] tag)
 use @g_try_malloc[Pointer[None]](nbytes: U64)
 use @g_try_malloc0[Pointer[None]](nbytes: U64)
 use @g_try_malloc0_n[Pointer[None]](nblocks: U64, nblockbytes: U64)
 use @g_try_malloc_n[Pointer[None]](nblocks: U64, nblockbytes: U64)
 use @g_try_realloc[Pointer[None]](mem: Pointer[None] tag, nbytes: U64)
 use @g_try_realloc_n[Pointer[None]](mem: Pointer[None] tag, nblocks: U64, nblockbytes: U64)
-use @g_ucs4_to_utf16[Pointer[U16]](str: Pointer[U32] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_ucs4_to_utf8[Pointer[U8]](str: Pointer[U32] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_ucs4_to_utf16[Pointer[U16]](str: Pointer[U32] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError)
+use @g_ucs4_to_utf8[Pointer[U8]](str: Pointer[U32] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError)
 use @g_unichar_break_type[I32](c: U32)
 use @g_unichar_combining_class[I32](uc: U32)
 use @g_unichar_compose[I32](a: U32, b: U32, ch: Pointer[U32] tag)
@@ -456,21 +456,21 @@ use @g_unsetenv[None](variable: Pointer[U8] tag)
 use @g_uri_error_quark[U32]()
 use @g_uri_escape_bytes[Pointer[U8]](unescaped: Pointer[U8] tag, length: U64, reservedcharsallowed: Pointer[U8] tag)
 use @g_uri_escape_string[Pointer[U8]](unescaped: Pointer[U8] tag, reservedcharsallowed: Pointer[U8] tag, allowutf8: I32)
-use @g_uri_is_valid[I32](uristring: Pointer[U8] tag, flags: I32, gerror: NullablePointer[GErrorStruct] tag)
+use @g_uri_is_valid[I32](uristring: Pointer[U8] tag, flags: I32, gerror: GError)
 use @g_uri_join[Pointer[U8]](flags: I32, scheme: Pointer[U8] tag, userinfo: Pointer[U8] tag, host: Pointer[U8] tag, port: I32, path: Pointer[U8] tag, query: Pointer[U8] tag, fragment: Pointer[U8] tag)
 use @g_uri_join_with_user[Pointer[U8]](flags: I32, scheme: Pointer[U8] tag, user: Pointer[U8] tag, password: Pointer[U8] tag, authparams: Pointer[U8] tag, host: Pointer[U8] tag, port: I32, path: Pointer[U8] tag, query: Pointer[U8] tag, fragment: Pointer[U8] tag)
 use @g_uri_list_extract_uris[Pointer[Pointer[U8]]](urilist: Pointer[U8] tag)
 use @g_uri_parse_scheme[Pointer[U8]](uri: Pointer[U8] tag)
 use @g_uri_peek_scheme[Pointer[U8]](uri: Pointer[U8] tag)
-use @g_uri_resolve_relative[Pointer[U8]](baseuristring: Pointer[U8] tag, uriref: Pointer[U8] tag, flags: I32, gerror: NullablePointer[GErrorStruct] tag)
-use @g_uri_split[I32](uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, userinfo: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_uri_split_network[I32](uristring: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_uri_split_with_user[I32](uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, user: Pointer[Pointer[U8]] tag, password: Pointer[Pointer[U8]] tag, authparams: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_uri_resolve_relative[Pointer[U8]](baseuristring: Pointer[U8] tag, uriref: Pointer[U8] tag, flags: I32, gerror: GError)
+use @g_uri_split[I32](uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, userinfo: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, gerror: GError)
+use @g_uri_split_network[I32](uristring: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, gerror: GError)
+use @g_uri_split_with_user[I32](uriref: Pointer[U8] tag, flags: I32, scheme: Pointer[Pointer[U8]] tag, user: Pointer[Pointer[U8]] tag, password: Pointer[Pointer[U8]] tag, authparams: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, gerror: GError)
 use @g_uri_unescape_segment[Pointer[U8]](escapedstring: Pointer[U8] tag, escapedstringend: Pointer[U8] tag, illegalcharacters: Pointer[U8] tag)
 use @g_uri_unescape_string[Pointer[U8]](escapedstring: Pointer[U8] tag, illegalcharacters: Pointer[U8] tag)
 use @g_usleep[None](microseconds: U64)
-use @g_utf16_to_ucs4[Pointer[U32]](str: Pointer[U16] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: NullablePointer[GErrorStruct] tag)
-use @g_utf16_to_utf8[Pointer[U8]](str: Pointer[U16] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_utf16_to_ucs4[Pointer[U32]](str: Pointer[U16] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError)
+use @g_utf16_to_utf8[Pointer[U8]](str: Pointer[U16] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError)
 use @g_utf8_casefold[Pointer[U8]](str: Pointer[U8] tag, len: I64)
 use @g_utf8_collate[I32](str1: Pointer[U8] tag, str2: Pointer[U8] tag)
 use @g_utf8_collate_key[Pointer[U8]](str: Pointer[U8] tag, len: I64)
@@ -492,9 +492,9 @@ use @g_utf8_strrchr[Pointer[U8]](gp: Pointer[U8] tag, len: I64, c: U32)
 use @g_utf8_strreverse[Pointer[U8]](str: Pointer[U8] tag, len: I64)
 use @g_utf8_strup[Pointer[U8]](str: Pointer[U8] tag, len: I64)
 use @g_utf8_substring[Pointer[U8]](str: Pointer[U8] tag, startpos: I64, endpos: I64)
-use @g_utf8_to_ucs4[Pointer[U32]](str: Pointer[U8] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_utf8_to_ucs4[Pointer[U32]](str: Pointer[U8] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError)
 use @g_utf8_to_ucs4_fast[Pointer[U32]](str: Pointer[U8] tag, len: I64, itemswritten: Pointer[I64] tag)
-use @g_utf8_to_utf16[Pointer[U16]](str: Pointer[U8] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: NullablePointer[GErrorStruct] tag)
+use @g_utf8_to_utf16[Pointer[U16]](str: Pointer[U8] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError)
 use @g_utf8_validate[I32](str: Pointer[U8] tag, maxlen: I64, gend: Pointer[Pointer[U8]] tag)
 use @g_utf8_validate_len[I32](str: Pointer[U8] tag, maxlen: U64, gend: Pointer[Pointer[U8]] tag)
 use @g_uuid_string_is_valid[I32](str: Pointer[U8] tag)
@@ -547,10 +547,10 @@ primitive G
     consume p
 
   fun g_ascii_string_to_signed(str: String, base: U32, min: I64, max: I64, outnum: Pointer[I64] tag, gerror: GError): I32 =>
-    @g_ascii_string_to_signed(str.cstring(), base, min, max, outnum, gerror.apply())
+    @g_ascii_string_to_signed(str.cstring(), base, min, max, outnum, gerror)
 
   fun g_ascii_string_to_unsigned(str: String, base: U32, min: U64, max: U64, outnum: Pointer[U64] tag, gerror: GError): I32 =>
-    @g_ascii_string_to_unsigned(str.cstring(), base, min, max, outnum, gerror.apply())
+    @g_ascii_string_to_unsigned(str.cstring(), base, min, max, outnum, gerror)
 
   fun g_ascii_strncasecmp(s1: String, s2: String, n: U64): I32 =>
     @g_ascii_strncasecmp(s1.cstring(), s2.cstring(), n)
@@ -591,7 +591,7 @@ primitive G
     @g_assertion_message_cmpstrv(domain.cstring(), file.cstring(), line, func.cstring(), expr.cstring(), arg1, arg2, firstwrongidx)
 
   fun g_assertion_message_error(domain: String, file: String, line: I32, func: String, expr: String, gerror: GError, errordomain: U32, errorcode: I32): None =>
-    @g_assertion_message_error(domain.cstring(), file.cstring(), line, func.cstring(), expr.cstring(), gerror.apply(), errordomain, errorcode)
+    @g_assertion_message_error(domain.cstring(), file.cstring(), line, func.cstring(), expr.cstring(), gerror, errordomain, errorcode)
 
   fun g_assertion_message_expr(domain: String, file: String, line: I32, func: String, expr: String): None =>
     @g_assertion_message_expr(domain.cstring(), file.cstring(), line, func.cstring(), expr.cstring())
@@ -734,12 +734,12 @@ primitive G
     @g_bookmark_file_error_quark()
 
   fun g_byte_array_steal(array: GByteArray, len: Pointer[U64] tag): String =>
-    var pcstring: Pointer[U8] =  @g_byte_array_steal(array.apply(), len)
+    var pcstring: Pointer[U8] =  @g_byte_array_steal(array, len)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_byte_array_unref(array: GByteArray): None =>
-    @g_byte_array_unref(array.apply())
+    @g_byte_array_unref(array)
 
   fun g_canonicalize_filename(filename: String, relativeto: String): String =>
     var pcstring: Pointer[U8] =  @g_canonicalize_filename(filename.cstring(), relativeto.cstring())
@@ -761,22 +761,22 @@ primitive G
     @g_child_watch_add_full(priority, pid, function, data, notify)
 
   fun g_clear_error(err: GError): None =>
-    @g_clear_error(err.apply())
+    @g_clear_error(err)
 
   fun g_clear_handle_id(tagptr: Pointer[U32] tag, clearfunc: Pointer[None] tag): None =>
     @g_clear_handle_id(tagptr, clearfunc)
 
   fun g_clear_list(listptr: GList, destroy: Pointer[None] tag): None =>
-    @g_clear_list(listptr.apply(), destroy)
+    @g_clear_list(listptr, destroy)
 
   fun g_clear_pointer(pp: Pointer[None] tag, destroy: Pointer[None] tag): None =>
     @g_clear_pointer(pp, destroy)
 
   fun g_clear_slist(slistptr: GSList, destroy: Pointer[None] tag): None =>
-    @g_clear_slist(slistptr.apply(), destroy)
+    @g_clear_slist(slistptr, destroy)
 
   fun g_compute_checksum_for_bytes(checksumtype: I32, data: GBytes): String =>
-    var pcstring: Pointer[U8] =  @g_compute_checksum_for_bytes(checksumtype, data.apply())
+    var pcstring: Pointer[U8] =  @g_compute_checksum_for_bytes(checksumtype, data)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -791,7 +791,7 @@ primitive G
     consume p
 
   fun g_compute_hmac_for_bytes(digesttype: I32, key: GBytes, data: GBytes): String =>
-    var pcstring: Pointer[U8] =  @g_compute_hmac_for_bytes(digesttype, key.apply(), data.apply())
+    var pcstring: Pointer[U8] =  @g_compute_hmac_for_bytes(digesttype, key, data)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -806,7 +806,7 @@ primitive G
     consume p
 
   fun g_convert(str: String, len: I64, tocodeset: String, fromcodeset: String, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_convert(str.cstring(), len, tocodeset.cstring(), fromcodeset.cstring(), bytesread, byteswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_convert(str.cstring(), len, tocodeset.cstring(), fromcodeset.cstring(), bytesread, byteswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -814,50 +814,50 @@ primitive G
     @g_convert_error_quark()
 
   fun g_convert_with_fallback(str: String, len: I64, tocodeset: String, fromcodeset: String, fallback: String, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_convert_with_fallback(str.cstring(), len, tocodeset.cstring(), fromcodeset.cstring(), fallback.cstring(), bytesread, byteswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_convert_with_fallback(str.cstring(), len, tocodeset.cstring(), fromcodeset.cstring(), fallback.cstring(), bytesread, byteswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_convert_with_iconv(str: String, len: I64, converter: GIConv, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_convert_with_iconv(str.cstring(), len, converter.apply(), bytesread, byteswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_convert_with_iconv(str.cstring(), len, converter, bytesread, byteswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_datalist_clear(datalist: GData): None =>
-    @g_datalist_clear(datalist.apply())
+    @g_datalist_clear(datalist)
 
   fun g_datalist_foreach(datalist: GData, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
-    @g_datalist_foreach(datalist.apply(), func, userdata)
+    @g_datalist_foreach(datalist, func, userdata)
 
   fun g_datalist_get_data(datalist: GData, key: String): Pointer[None] =>
-    @g_datalist_get_data(datalist.apply(), key.cstring())
+    @g_datalist_get_data(datalist, key.cstring())
 
   fun g_datalist_get_flags(datalist: GData): U32 =>
-    @g_datalist_get_flags(datalist.apply())
+    @g_datalist_get_flags(datalist)
 
   fun g_datalist_id_dup_data(datalist: GData, keyid: U32, dupfunc: Pointer[None] tag, userdata: Pointer[None] tag): Pointer[None] =>
-    @g_datalist_id_dup_data(datalist.apply(), keyid, dupfunc, userdata)
+    @g_datalist_id_dup_data(datalist, keyid, dupfunc, userdata)
 
   fun g_datalist_id_get_data(datalist: GData, keyid: U32): Pointer[None] =>
-    @g_datalist_id_get_data(datalist.apply(), keyid)
+    @g_datalist_id_get_data(datalist, keyid)
 
   fun g_datalist_id_remove_no_notify(datalist: GData, keyid: U32): Pointer[None] =>
-    @g_datalist_id_remove_no_notify(datalist.apply(), keyid)
+    @g_datalist_id_remove_no_notify(datalist, keyid)
 
   fun g_datalist_id_replace_data(datalist: GData, keyid: U32, oldval: Pointer[None] tag, newval: Pointer[None] tag, destroy: Pointer[None] tag, olddestroy: Pointer[None] tag): I32 =>
-    @g_datalist_id_replace_data(datalist.apply(), keyid, oldval, newval, destroy, olddestroy)
+    @g_datalist_id_replace_data(datalist, keyid, oldval, newval, destroy, olddestroy)
 
   fun g_datalist_id_set_data_full(datalist: GData, keyid: U32, data: Pointer[None] tag, destroyfunc: Pointer[None] tag): None =>
-    @g_datalist_id_set_data_full(datalist.apply(), keyid, data, destroyfunc)
+    @g_datalist_id_set_data_full(datalist, keyid, data, destroyfunc)
 
   fun g_datalist_init(datalist: GData): None =>
-    @g_datalist_init(datalist.apply())
+    @g_datalist_init(datalist)
 
   fun g_datalist_set_flags(datalist: GData, flags: U32): None =>
-    @g_datalist_set_flags(datalist.apply(), flags)
+    @g_datalist_set_flags(datalist, flags)
 
   fun g_datalist_unset_flags(datalist: GData, flags: U32): None =>
-    @g_datalist_unset_flags(datalist.apply(), flags)
+    @g_datalist_unset_flags(datalist, flags)
 
   fun g_dataset_destroy(datasetlocation: Pointer[None] tag): None =>
     @g_dataset_destroy(datasetlocation)
@@ -887,7 +887,7 @@ primitive G
     @g_date_is_leap_year(year)
 
   fun g_date_strftime(s: String, slen: U64, format: String, date: GDate): U64 =>
-    @g_date_strftime(s.cstring(), slen, format.cstring(), date.apply())
+    @g_date_strftime(s.cstring(), slen, format.cstring(), date)
 
   fun g_date_valid_day(day: U8): I32 =>
     @g_date_valid_day(day)
@@ -918,7 +918,7 @@ primitive G
     consume p
 
   fun g_dir_make_tmp(tmpl: String, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_dir_make_tmp(tmpl.cstring(), gerror.apply())
+    var pcstring: Pointer[U8] =  @g_dir_make_tmp(tmpl.cstring(), gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -967,21 +967,21 @@ primitive G
     @g_file_error_quark()
 
   fun g_file_get_contents(filename: String, contents: Pointer[Pointer[U8]] tag, length: Pointer[U64] tag, gerror: GError): I32 =>
-    @g_file_get_contents(filename.cstring(), contents, length, gerror.apply())
+    @g_file_get_contents(filename.cstring(), contents, length, gerror)
 
   fun g_file_open_tmp(tmpl: String, nameused: Pointer[Pointer[U8]] tag, gerror: GError): I32 =>
-    @g_file_open_tmp(tmpl.cstring(), nameused, gerror.apply())
+    @g_file_open_tmp(tmpl.cstring(), nameused, gerror)
 
   fun g_file_read_link(filename: String, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_file_read_link(filename.cstring(), gerror.apply())
+    var pcstring: Pointer[U8] =  @g_file_read_link(filename.cstring(), gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_file_set_contents(filename: String, contents: String, length: I64, gerror: GError): I32 =>
-    @g_file_set_contents(filename.cstring(), contents.cstring(), length, gerror.apply())
+    @g_file_set_contents(filename.cstring(), contents.cstring(), length, gerror)
 
   fun g_file_set_contents_full(filename: String, contents: String, length: I64, flags: I32, mode: I32, gerror: GError): I32 =>
-    @g_file_set_contents_full(filename.cstring(), contents.cstring(), length, flags, mode, gerror.apply())
+    @g_file_set_contents_full(filename.cstring(), contents.cstring(), length, flags, mode, gerror)
 
   fun g_file_test(filename: String, test: I32): I32 =>
     @g_file_test(filename.cstring(), test)
@@ -997,22 +997,22 @@ primitive G
     consume p
 
   fun g_filename_from_uri(uri: String, hostname: Pointer[Pointer[U8]] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_filename_from_uri(uri.cstring(), hostname, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_filename_from_uri(uri.cstring(), hostname, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_filename_from_utf8(utf8string: String, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_filename_from_utf8(utf8string.cstring(), len, bytesread, byteswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_filename_from_utf8(utf8string.cstring(), len, bytesread, byteswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_filename_to_uri(filename: String, hostname: String, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_filename_to_uri(filename.cstring(), hostname.cstring(), gerror.apply())
+    var pcstring: Pointer[U8] =  @g_filename_to_uri(filename.cstring(), hostname.cstring(), gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_filename_to_utf8(opsysstring: String, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_filename_to_utf8(opsysstring.cstring(), len, bytesread, byteswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_filename_to_utf8(opsysstring.cstring(), len, bytesread, byteswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -1061,7 +1061,7 @@ primitive G
     consume p
 
   fun g_get_current_time(result: GTimeVal): None =>
-    @g_get_current_time(result.apply())
+    @g_get_current_time(result)
 
   fun g_get_environ(): Pointer[Pointer[U8]] =>
     @g_get_environ()
@@ -1159,64 +1159,64 @@ primitive G
     consume p
 
   fun g_hash_table_add(hashtable: GHashTable, key: Pointer[None] tag): I32 =>
-    @g_hash_table_add(hashtable.apply(), key)
+    @g_hash_table_add(hashtable, key)
 
   fun g_hash_table_contains(hashtable: GHashTable, key: Pointer[None] tag): I32 =>
-    @g_hash_table_contains(hashtable.apply(), key)
+    @g_hash_table_contains(hashtable, key)
 
   fun g_hash_table_destroy(hashtable: GHashTable): None =>
-    @g_hash_table_destroy(hashtable.apply())
+    @g_hash_table_destroy(hashtable)
 
   fun g_hash_table_insert(hashtable: GHashTable, key: Pointer[None] tag, value: Pointer[None] tag): I32 =>
-    @g_hash_table_insert(hashtable.apply(), key, value)
+    @g_hash_table_insert(hashtable, key, value)
 
   fun g_hash_table_lookup(hashtable: GHashTable, key: Pointer[None] tag): Pointer[None] =>
-    @g_hash_table_lookup(hashtable.apply(), key)
+    @g_hash_table_lookup(hashtable, key)
 
   fun g_hash_table_lookup_extended(hashtable: GHashTable, lookupkey: Pointer[None] tag, origkey: Pointer[None] tag, value: Pointer[None] tag): I32 =>
-    @g_hash_table_lookup_extended(hashtable.apply(), lookupkey, origkey, value)
+    @g_hash_table_lookup_extended(hashtable, lookupkey, origkey, value)
 
   fun g_hash_table_remove(hashtable: GHashTable, key: Pointer[None] tag): I32 =>
-    @g_hash_table_remove(hashtable.apply(), key)
+    @g_hash_table_remove(hashtable, key)
 
   fun g_hash_table_remove_all(hashtable: GHashTable): None =>
-    @g_hash_table_remove_all(hashtable.apply())
+    @g_hash_table_remove_all(hashtable)
 
   fun g_hash_table_replace(hashtable: GHashTable, key: Pointer[None] tag, value: Pointer[None] tag): I32 =>
-    @g_hash_table_replace(hashtable.apply(), key, value)
+    @g_hash_table_replace(hashtable, key, value)
 
   fun g_hash_table_size(hashtable: GHashTable): U32 =>
-    @g_hash_table_size(hashtable.apply())
+    @g_hash_table_size(hashtable)
 
   fun g_hash_table_steal(hashtable: GHashTable, key: Pointer[None] tag): I32 =>
-    @g_hash_table_steal(hashtable.apply(), key)
+    @g_hash_table_steal(hashtable, key)
 
   fun g_hash_table_steal_all(hashtable: GHashTable): None =>
-    @g_hash_table_steal_all(hashtable.apply())
+    @g_hash_table_steal_all(hashtable)
 
   fun g_hash_table_steal_extended(hashtable: GHashTable, lookupkey: Pointer[None] tag, stolenkey: Pointer[None] tag, stolenvalue: Pointer[None] tag): I32 =>
-    @g_hash_table_steal_extended(hashtable.apply(), lookupkey, stolenkey, stolenvalue)
+    @g_hash_table_steal_extended(hashtable, lookupkey, stolenkey, stolenvalue)
 
   fun g_hash_table_unref(hashtable: GHashTable): None =>
-    @g_hash_table_unref(hashtable.apply())
+    @g_hash_table_unref(hashtable)
 
   fun g_hook_destroy(hooklist: GHookList, hookid: U64): I32 =>
-    @g_hook_destroy(hooklist.apply(), hookid)
+    @g_hook_destroy(hooklist, hookid)
 
   fun g_hook_destroy_link(hooklist: GHookList, hook: GHook): None =>
-    @g_hook_destroy_link(hooklist.apply(), hook.apply())
+    @g_hook_destroy_link(hooklist, hook)
 
   fun g_hook_free(hooklist: GHookList, hook: GHook): None =>
-    @g_hook_free(hooklist.apply(), hook.apply())
+    @g_hook_free(hooklist, hook)
 
   fun g_hook_insert_before(hooklist: GHookList, sibling: GHook, hook: GHook): None =>
-    @g_hook_insert_before(hooklist.apply(), sibling.apply(), hook.apply())
+    @g_hook_insert_before(hooklist, sibling, hook)
 
   fun g_hook_prepend(hooklist: GHookList, hook: GHook): None =>
-    @g_hook_prepend(hooklist.apply(), hook.apply())
+    @g_hook_prepend(hooklist, hook)
 
   fun g_hook_unref(hooklist: GHookList, hook: GHook): None =>
-    @g_hook_unref(hooklist.apply(), hook.apply())
+    @g_hook_unref(hooklist, hook)
 
   fun g_hostname_is_ascii_encoded(hostname: String): I32 =>
     @g_hostname_is_ascii_encoded(hostname.cstring())
@@ -1238,7 +1238,7 @@ primitive G
     consume p
 
   fun g_iconv(converter: GIConv, inbuf: Pointer[Pointer[U8]] tag, inbytesleft: Pointer[U64] tag, outbuf: Pointer[Pointer[U8]] tag, outbytesleft: Pointer[U64] tag): U64 =>
-    @g_iconv(converter.apply(), inbuf, inbytesleft, outbuf, outbytesleft)
+    @g_iconv(converter, inbuf, inbytesleft, outbuf, outbytesleft)
 
   fun g_idle_add(function: Pointer[None] tag, data: Pointer[None] tag): U32 =>
     @g_idle_add(function, data)
@@ -1272,10 +1272,10 @@ primitive G
     consume p
 
   fun g_io_add_watch(channel: GIOChannel, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag): U32 =>
-    @g_io_add_watch(channel.apply(), condition, func, userdata)
+    @g_io_add_watch(channel, condition, func, userdata)
 
   fun g_io_add_watch_full(channel: GIOChannel, priority: I32, condition: I32, func: Pointer[None] tag, userdata: Pointer[None] tag, notify: Pointer[None] tag): U32 =>
-    @g_io_add_watch_full(channel.apply(), priority, condition, func, userdata, notify)
+    @g_io_add_watch_full(channel, priority, condition, func, userdata, notify)
 
   fun g_io_channel_error_from_errno(en: I32): I32 =>
     @g_io_channel_error_from_errno(en)
@@ -1290,12 +1290,12 @@ primitive G
     @g_listenv()
 
   fun g_locale_from_utf8(utf8string: String, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_locale_from_utf8(utf8string.cstring(), len, bytesread, byteswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_locale_from_utf8(utf8string.cstring(), len, bytesread, byteswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_locale_to_utf8(opsysstring: String, len: I64, bytesread: Pointer[U64] tag, byteswritten: Pointer[U64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_locale_to_utf8(opsysstring.cstring(), len, bytesread, byteswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_locale_to_utf8(opsysstring.cstring(), len, bytesread, byteswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -1324,13 +1324,13 @@ primitive G
     @g_log_set_writer_func(func, userdata, userdatafree)
 
   fun g_log_structured_array(loglevel: I32, fields: GLogField, nfields: U64): None =>
-    @g_log_structured_array(loglevel, fields.apply(), nfields)
+    @g_log_structured_array(loglevel, fields, nfields)
 
   fun g_log_variant(logdomain: String, loglevel: I32, fields: GVariant): None =>
-    @g_log_variant(logdomain.cstring(), loglevel, fields.apply())
+    @g_log_variant(logdomain.cstring(), loglevel, fields)
 
   fun g_log_writer_default(loglevel: I32, fields: GLogField, nfields: U64, userdata: Pointer[None] tag): I32 =>
-    @g_log_writer_default(loglevel, fields.apply(), nfields, userdata)
+    @g_log_writer_default(loglevel, fields, nfields, userdata)
 
   fun g_log_writer_default_set_use_stderr(usestderr: I32): None =>
     @g_log_writer_default_set_use_stderr(usestderr)
@@ -1339,7 +1339,7 @@ primitive G
     @g_log_writer_default_would_drop(loglevel, logdomain.cstring())
 
   fun g_log_writer_format_fields(loglevel: I32, fields: GLogField, nfields: U64, usecolor: I32): String =>
-    var pcstring: Pointer[U8] =  @g_log_writer_format_fields(loglevel, fields.apply(), nfields, usecolor)
+    var pcstring: Pointer[U8] =  @g_log_writer_format_fields(loglevel, fields, nfields, usecolor)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -1347,10 +1347,10 @@ primitive G
     @g_log_writer_is_journald(outputfd)
 
   fun g_log_writer_journald(loglevel: I32, fields: GLogField, nfields: U64, userdata: Pointer[None] tag): I32 =>
-    @g_log_writer_journald(loglevel, fields.apply(), nfields, userdata)
+    @g_log_writer_journald(loglevel, fields, nfields, userdata)
 
   fun g_log_writer_standard_streams(loglevel: I32, fields: GLogField, nfields: U64, userdata: Pointer[None] tag): I32 =>
-    @g_log_writer_standard_streams(loglevel, fields.apply(), nfields, userdata)
+    @g_log_writer_standard_streams(loglevel, fields, nfields, userdata)
 
   fun g_log_writer_supports_color(outputfd: I32): I32 =>
     @g_log_writer_supports_color(outputfd)
@@ -1385,7 +1385,7 @@ primitive G
     @g_mem_profile()
 
   fun g_mem_set_vtable(vtable: GMemVTable): None =>
-    @g_mem_set_vtable(vtable.apply())
+    @g_mem_set_vtable(vtable)
 
   fun g_memdup(mem: Pointer[None] tag, bytesize: U32): Pointer[None] =>
     @g_memdup(mem, bytesize)
@@ -1434,7 +1434,7 @@ primitive G
     @g_option_error_quark()
 
   fun g_parse_debug_string(string: String, keys: GDebugKey, nkeys: U32): U32 =>
-    @g_parse_debug_string(string.cstring(), keys.apply(), nkeys)
+    @g_parse_debug_string(string.cstring(), keys, nkeys)
 
   fun g_path_get_basename(filename: String): String =>
     var pcstring: Pointer[U8] =  @g_path_get_basename(filename.cstring())
@@ -1455,13 +1455,13 @@ primitive G
     consume p
 
   fun g_pattern_match(pspec: GPatternSpec, stringlength: U32, string: String, stringreversed: String): I32 =>
-    @g_pattern_match(pspec.apply(), stringlength, string.cstring(), stringreversed.cstring())
+    @g_pattern_match(pspec, stringlength, string.cstring(), stringreversed.cstring())
 
   fun g_pattern_match_simple(pattern: String, string: String): I32 =>
     @g_pattern_match_simple(pattern.cstring(), string.cstring())
 
   fun g_pattern_match_string(pspec: GPatternSpec, string: String): I32 =>
-    @g_pattern_match_string(pspec.apply(), string.cstring())
+    @g_pattern_match_string(pspec, string.cstring())
 
   fun g_pointer_bit_lock(address: Pointer[None] tag, lockbit: I32): None =>
     @g_pointer_bit_lock(address, lockbit)
@@ -1473,19 +1473,19 @@ primitive G
     @g_pointer_bit_unlock(address, lockbit)
 
   fun g_poll(fds: GPollFD, nfds: U32, timeout: I32): I32 =>
-    @g_poll(fds.apply(), nfds, timeout)
+    @g_poll(fds, nfds, timeout)
 
   fun g_prefix_error_literal(err: GError, prefix: String): None =>
-    @g_prefix_error_literal(err.apply(), prefix.cstring())
+    @g_prefix_error_literal(err, prefix.cstring())
 
   fun g_propagate_error(dest: GError, src: GError): None =>
-    @g_propagate_error(dest.apply(), src.apply())
+    @g_propagate_error(dest, src)
 
   fun g_ptr_array_find(haystack: GPtrArray, needle: Pointer[None] tag, index: Pointer[U32] tag): I32 =>
-    @g_ptr_array_find(haystack.apply(), needle, index)
+    @g_ptr_array_find(haystack, needle, index)
 
   fun g_ptr_array_find_with_equal_func(haystack: GPtrArray, needle: Pointer[None] tag, equalfunc: Pointer[None] tag, index: Pointer[U32] tag): I32 =>
-    @g_ptr_array_find_with_equal_func(haystack.apply(), needle, equalfunc, index)
+    @g_ptr_array_find_with_equal_func(haystack, needle, equalfunc, index)
 
   fun g_qsort_with_data(pbase: Pointer[None] tag, totalelems: I32, size: U64, comparefunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
     @g_qsort_with_data(pbase, totalelems, size, comparefunc, userdata)
@@ -1585,7 +1585,7 @@ primitive G
     @g_ref_string_release(str.cstring())
 
   fun g_regex_check_replacement(replacement: String, hasreferences: Pointer[I32] tag, gerror: GError): I32 =>
-    @g_regex_check_replacement(replacement.cstring(), hasreferences, gerror.apply())
+    @g_regex_check_replacement(replacement.cstring(), hasreferences, gerror)
 
   fun g_regex_error_quark(): U32 =>
     @g_regex_error_quark()
@@ -1616,7 +1616,7 @@ primitive G
     @g_set_application_name(applicationname.cstring())
 
   fun g_set_error_literal(err: GError, domain: U32, code: I32, message: String): None =>
-    @g_set_error_literal(err.apply(), domain, code, message.cstring())
+    @g_set_error_literal(err, domain, code, message.cstring())
 
   fun g_set_prgname(prgname: String): None =>
     @g_set_prgname(prgname.cstring())
@@ -1634,7 +1634,7 @@ primitive G
     @g_shell_error_quark()
 
   fun g_shell_parse_argv(commandline: String, argcp: Pointer[I32] tag, argvp: Pointer[Pointer[U8]] tag, gerror: GError): I32 =>
-    @g_shell_parse_argv(commandline.cstring(), argcp, argvp, gerror.apply())
+    @g_shell_parse_argv(commandline.cstring(), argcp, argvp, gerror)
 
   fun g_shell_quote(unquotedstring: String): String =>
     var pcstring: Pointer[U8] =  @g_shell_quote(unquotedstring.cstring())
@@ -1642,7 +1642,7 @@ primitive G
     consume p
 
   fun g_shell_unquote(quotedstring: String, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_shell_unquote(quotedstring.cstring(), gerror.apply())
+    var pcstring: Pointer[U8] =  @g_shell_unquote(quotedstring.cstring(), gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -1674,7 +1674,7 @@ primitive G
     @g_source_remove(gtag)
 
   fun g_source_remove_by_funcs_user_data(funcs: GSourceFuncs, userdata: Pointer[None] tag): I32 =>
-    @g_source_remove_by_funcs_user_data(funcs.apply(), userdata)
+    @g_source_remove_by_funcs_user_data(funcs, userdata)
 
   fun g_source_remove_by_user_data(userdata: Pointer[None] tag): I32 =>
     @g_source_remove_by_user_data(userdata)
@@ -1686,31 +1686,31 @@ primitive G
     @g_spaced_primes_closest(num)
 
   fun g_spawn_async(workingdirectory: String, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, gerror: GError): I32 =>
-    @g_spawn_async(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, childpid, gerror.apply())
+    @g_spawn_async(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, childpid, gerror)
 
   fun g_spawn_async_with_fds(workingdirectory: String, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, gerror: GError): I32 =>
-    @g_spawn_async_with_fds(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, childpid, stdinfd, stdoutfd, stderrfd, gerror.apply())
+    @g_spawn_async_with_fds(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, childpid, stdinfd, stdoutfd, stderrfd, gerror)
 
   fun g_spawn_async_with_pipes(workingdirectory: String, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, childpid: Pointer[I32] tag, standardinput: Pointer[I32] tag, standardoutput: Pointer[I32] tag, standarderror: Pointer[I32] tag, gerror: GError): I32 =>
-    @g_spawn_async_with_pipes(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, childpid, standardinput, standardoutput, standarderror, gerror.apply())
+    @g_spawn_async_with_pipes(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, childpid, standardinput, standardoutput, standarderror, gerror)
 
   fun g_spawn_async_with_pipes_and_fds(workingdirectory: String, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, stdinfd: I32, stdoutfd: I32, stderrfd: I32, sourcefds: Pointer[I32] tag, targetfds: Pointer[I32] tag, nfds: U64, childpidout: Pointer[I32] tag, stdinpipeout: Pointer[I32] tag, stdoutpipeout: Pointer[I32] tag, stderrpipeout: Pointer[I32] tag, gerror: GError): I32 =>
-    @g_spawn_async_with_pipes_and_fds(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, stdinfd, stdoutfd, stderrfd, sourcefds, targetfds, nfds, childpidout, stdinpipeout, stdoutpipeout, stderrpipeout, gerror.apply())
+    @g_spawn_async_with_pipes_and_fds(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, stdinfd, stdoutfd, stderrfd, sourcefds, targetfds, nfds, childpidout, stdinpipeout, stdoutpipeout, stderrpipeout, gerror)
 
   fun g_spawn_check_exit_status(waitstatus: I32, gerror: GError): I32 =>
-    @g_spawn_check_exit_status(waitstatus, gerror.apply())
+    @g_spawn_check_exit_status(waitstatus, gerror)
 
   fun g_spawn_check_wait_status(waitstatus: I32, gerror: GError): I32 =>
-    @g_spawn_check_wait_status(waitstatus, gerror.apply())
+    @g_spawn_check_wait_status(waitstatus, gerror)
 
   fun g_spawn_close_pid(pid: I32): None =>
     @g_spawn_close_pid(pid)
 
   fun g_spawn_command_line_async(commandline: String, gerror: GError): I32 =>
-    @g_spawn_command_line_async(commandline.cstring(), gerror.apply())
+    @g_spawn_command_line_async(commandline.cstring(), gerror)
 
   fun g_spawn_command_line_sync(commandline: String, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, waitstatus: Pointer[I32] tag, gerror: GError): I32 =>
-    @g_spawn_command_line_sync(commandline.cstring(), standardoutput, standarderror, waitstatus, gerror.apply())
+    @g_spawn_command_line_sync(commandline.cstring(), standardoutput, standarderror, waitstatus, gerror)
 
   fun g_spawn_error_quark(): U32 =>
     @g_spawn_error_quark()
@@ -1719,7 +1719,7 @@ primitive G
     @g_spawn_exit_error_quark()
 
   fun g_spawn_sync(workingdirectory: String, argv: Pointer[Pointer[U8]] tag, envp: Pointer[Pointer[U8]] tag, flags: I32, childsetup: Pointer[None] tag, userdata: Pointer[None] tag, standardoutput: Pointer[Pointer[U8]] tag, standarderror: Pointer[Pointer[U8]] tag, waitstatus: Pointer[I32] tag, gerror: GError): I32 =>
-    @g_spawn_sync(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, standardoutput, standarderror, waitstatus, gerror.apply())
+    @g_spawn_sync(workingdirectory.cstring(), argv, envp, flags, childsetup, userdata, standardoutput, standarderror, waitstatus, gerror)
 
   fun g_stpcpy(dest: String, src: String): String =>
     var pcstring: Pointer[U8] =  @g_stpcpy(dest.cstring(), src.cstring())
@@ -1906,7 +1906,7 @@ primitive G
     @g_thread_yield()
 
   fun g_time_val_from_iso8601(isodate: String, time: GTimeVal): I32 =>
-    @g_time_val_from_iso8601(isodate.cstring(), time.apply())
+    @g_time_val_from_iso8601(isodate.cstring(), time)
 
   fun g_timeout_add(interval: U32, function: Pointer[None] tag, data: Pointer[None] tag): U32 =>
     @g_timeout_add(interval, function, data)
@@ -1921,16 +1921,16 @@ primitive G
     @g_timeout_add_seconds_full(priority, interval, function, data, notify)
 
   fun g_trash_stack_height(stackp: GTrashStack): U32 =>
-    @g_trash_stack_height(stackp.apply())
+    @g_trash_stack_height(stackp)
 
   fun g_trash_stack_peek(stackp: GTrashStack): Pointer[None] =>
-    @g_trash_stack_peek(stackp.apply())
+    @g_trash_stack_peek(stackp)
 
   fun g_trash_stack_pop(stackp: GTrashStack): Pointer[None] =>
-    @g_trash_stack_pop(stackp.apply())
+    @g_trash_stack_pop(stackp)
 
   fun g_trash_stack_push(stackp: GTrashStack, datap: Pointer[None] tag): None =>
-    @g_trash_stack_push(stackp.apply(), datap)
+    @g_trash_stack_push(stackp, datap)
 
   fun g_try_malloc(nbytes: U64): Pointer[None] =>
     @g_try_malloc(nbytes)
@@ -1951,10 +1951,10 @@ primitive G
     @g_try_realloc_n(mem, nblocks, nblockbytes)
 
   fun g_ucs4_to_utf16(str: Pointer[U32] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError): Pointer[U16] =>
-    @g_ucs4_to_utf16(str, len, itemsread, itemswritten, gerror.apply())
+    @g_ucs4_to_utf16(str, len, itemsread, itemswritten, gerror)
 
   fun g_ucs4_to_utf8(str: Pointer[U32] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_ucs4_to_utf8(str, len, itemsread, itemswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_ucs4_to_utf8(str, len, itemsread, itemswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -2083,7 +2083,7 @@ primitive G
     consume p
 
   fun g_uri_is_valid(uristring: String, flags: I32, gerror: GError): I32 =>
-    @g_uri_is_valid(uristring.cstring(), flags, gerror.apply())
+    @g_uri_is_valid(uristring.cstring(), flags, gerror)
 
   fun g_uri_join(flags: I32, scheme: String, userinfo: String, host: String, port: I32, path: String, query: String, fragment: String): String =>
     var pcstring: Pointer[U8] =  @g_uri_join(flags, scheme.cstring(), userinfo.cstring(), host.cstring(), port, path.cstring(), query.cstring(), fragment.cstring())
@@ -2109,18 +2109,18 @@ primitive G
     consume p
 
   fun g_uri_resolve_relative(baseuristring: String, uriref: String, flags: I32, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_uri_resolve_relative(baseuristring.cstring(), uriref.cstring(), flags, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_uri_resolve_relative(baseuristring.cstring(), uriref.cstring(), flags, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
   fun g_uri_split(uriref: String, flags: I32, scheme: Pointer[Pointer[U8]] tag, userinfo: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, gerror: GError): I32 =>
-    @g_uri_split(uriref.cstring(), flags, scheme, userinfo, host, port, path, query, fragment, gerror.apply())
+    @g_uri_split(uriref.cstring(), flags, scheme, userinfo, host, port, path, query, fragment, gerror)
 
   fun g_uri_split_network(uristring: String, flags: I32, scheme: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, gerror: GError): I32 =>
-    @g_uri_split_network(uristring.cstring(), flags, scheme, host, port, gerror.apply())
+    @g_uri_split_network(uristring.cstring(), flags, scheme, host, port, gerror)
 
   fun g_uri_split_with_user(uriref: String, flags: I32, scheme: Pointer[Pointer[U8]] tag, user: Pointer[Pointer[U8]] tag, password: Pointer[Pointer[U8]] tag, authparams: Pointer[Pointer[U8]] tag, host: Pointer[Pointer[U8]] tag, port: Pointer[I32] tag, path: Pointer[Pointer[U8]] tag, query: Pointer[Pointer[U8]] tag, fragment: Pointer[Pointer[U8]] tag, gerror: GError): I32 =>
-    @g_uri_split_with_user(uriref.cstring(), flags, scheme, user, password, authparams, host, port, path, query, fragment, gerror.apply())
+    @g_uri_split_with_user(uriref.cstring(), flags, scheme, user, password, authparams, host, port, path, query, fragment, gerror)
 
   fun g_uri_unescape_segment(escapedstring: String, escapedstringend: String, illegalcharacters: String): String =>
     var pcstring: Pointer[U8] =  @g_uri_unescape_segment(escapedstring.cstring(), escapedstringend.cstring(), illegalcharacters.cstring())
@@ -2136,10 +2136,10 @@ primitive G
     @g_usleep(microseconds)
 
   fun g_utf16_to_ucs4(str: Pointer[U16] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError): Pointer[U32] =>
-    @g_utf16_to_ucs4(str, len, itemsread, itemswritten, gerror.apply())
+    @g_utf16_to_ucs4(str, len, itemsread, itemswritten, gerror)
 
   fun g_utf16_to_utf8(str: Pointer[U16] tag, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError): String =>
-    var pcstring: Pointer[U8] =  @g_utf16_to_utf8(str, len, itemsread, itemswritten, gerror.apply())
+    var pcstring: Pointer[U8] =  @g_utf16_to_utf8(str, len, itemsread, itemswritten, gerror)
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
@@ -2239,13 +2239,13 @@ primitive G
     consume p
 
   fun g_utf8_to_ucs4(str: String, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError): Pointer[U32] =>
-    @g_utf8_to_ucs4(str.cstring(), len, itemsread, itemswritten, gerror.apply())
+    @g_utf8_to_ucs4(str.cstring(), len, itemsread, itemswritten, gerror)
 
   fun g_utf8_to_ucs4_fast(str: String, len: I64, itemswritten: Pointer[I64] tag): Pointer[U32] =>
     @g_utf8_to_ucs4_fast(str.cstring(), len, itemswritten)
 
   fun g_utf8_to_utf16(str: String, len: I64, itemsread: Pointer[I64] tag, itemswritten: Pointer[I64] tag, gerror: GError): Pointer[U16] =>
-    @g_utf8_to_utf16(str.cstring(), len, itemsread, itemswritten, gerror.apply())
+    @g_utf8_to_utf16(str.cstring(), len, itemsread, itemswritten, gerror)
 
   fun g_utf8_validate(str: String, maxlen: I64, gend: Pointer[Pointer[U8]] tag): I32 =>
     @g_utf8_validate(str.cstring(), maxlen, gend)
