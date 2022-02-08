@@ -19,7 +19,7 @@ struct GHookListStruct
   var seq_id: U64 = U64(0) // Typedef
   var hook_size: U32 = U32(0) // Typedef
   var is_setup: U32 = U32(0) // Typedef
-  var hooks: NullablePointer[GHookStruct] = NullablePointer[GHookStruct].none() // PointerType
+  var hooks: GHookStruct = GHookStruct // PointerType
   var dummy3: Pointer[None] = Pointer[None] // Typedef
   var finalize_hook: Pointer[None] = Pointer[None] // Typedef
   var dummy: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

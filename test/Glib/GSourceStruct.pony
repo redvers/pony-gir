@@ -23,15 +23,15 @@
 */
 struct GSourceStruct
   var callback_data: Pointer[None] = Pointer[None] // Typedef
-  var callback_funcs: NullablePointer[GSourceCallbackFuncsStruct] = NullablePointer[GSourceCallbackFuncsStruct].none() // PointerType
-  var source_funcs: NullablePointer[GSourceFuncsStruct] = NullablePointer[GSourceFuncsStruct].none() // PointerType
+  var callback_funcs: GSourceCallbackFuncsStruct = GSourceCallbackFuncsStruct // PointerType
+  var source_funcs: GSourceFuncsStruct = GSourceFuncsStruct // PointerType
   var ref_count: U32 = U32(0) // Typedef
-  var context: NullablePointer[GMainContextStruct] = NullablePointer[GMainContextStruct].none() // PointerType
+  var context: GMainContextStruct = GMainContextStruct // PointerType
   var priority: I32 = I32(0) // Typedef
   var flags: U32 = U32(0) // Typedef
   var source_id: U32 = U32(0) // Typedef
-  var poll_fds: NullablePointer[GSListStruct] = NullablePointer[GSListStruct].none() // PointerType
-  var prev: NullablePointer[GSourceStruct] = NullablePointer[GSourceStruct].none() // PointerType
-  var next: NullablePointer[GSourceStruct] = NullablePointer[GSourceStruct].none() // PointerType
+  var poll_fds: GSListStruct = GSListStruct // PointerType
+  var prev: GSourceStruct = GSourceStruct // PointerType
+  var next: GSourceStruct = GSourceStruct // PointerType
   var name: Pointer[U8] = Pointer[U8] // PointerType
-  var priv: NullablePointer[GSourcePrivateStruct] = NullablePointer[GSourcePrivateStruct].none() // PointerType
+  var priv: GSourcePrivateStruct = GSourcePrivateStruct // PointerType

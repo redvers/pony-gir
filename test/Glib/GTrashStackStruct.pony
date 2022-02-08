@@ -10,4 +10,4 @@
      000000: [PointerType size=64]->[Struct size=64,fid: f116]: next  
 */
 struct GTrashStackStruct
-  var next: NullablePointer[GTrashStackStruct] = NullablePointer[GTrashStackStruct].none() // PointerType
+  var next: GTrashStackStruct = GTrashStackStruct // PointerType

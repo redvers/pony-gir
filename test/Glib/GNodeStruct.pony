@@ -15,7 +15,7 @@
 */
 struct GNodeStruct
   var data: Pointer[None] = Pointer[None] // Typedef
-  var next: NullablePointer[GNodeStruct] = NullablePointer[GNodeStruct].none() // PointerType
-  var prev: NullablePointer[GNodeStruct] = NullablePointer[GNodeStruct].none() // PointerType
-  var parent: NullablePointer[GNodeStruct] = NullablePointer[GNodeStruct].none() // PointerType
-  var children: NullablePointer[GNodeStruct] = NullablePointer[GNodeStruct].none() // PointerType
+  var next: GNodeStruct = GNodeStruct // PointerType
+  var prev: GNodeStruct = GNodeStruct // PointerType
+  var parent: GNodeStruct = GNodeStruct // PointerType
+  var children: GNodeStruct = GNodeStruct // PointerType

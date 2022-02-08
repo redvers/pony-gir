@@ -30,16 +30,16 @@
 */
 struct GIOChannelStruct
   var ref_count: I32 = I32(0) // Typedef
-  var funcs: NullablePointer[GIOFuncsStruct] = NullablePointer[GIOFuncsStruct].none() // PointerType
+  var funcs: GIOFuncsStruct = GIOFuncsStruct // PointerType
   var encoding: Pointer[U8] = Pointer[U8] // PointerType
-  var read_cd: NullablePointer[GIConvStruct] = NullablePointer[GIConvStruct].none() // Typedef
-  var write_cd: NullablePointer[GIConvStruct] = NullablePointer[GIConvStruct].none() // Typedef
+  var read_cd: GIConvStruct = GIConvStruct // Typedef
+  var write_cd: GIConvStruct = GIConvStruct // Typedef
   var line_term: Pointer[U8] = Pointer[U8] // PointerType
   var line_term_len: U32 = U32(0) // Typedef
   var buf_size: U64 = U64(0) // Typedef
-  var read_buf: NullablePointer[GStringStruct] = NullablePointer[GStringStruct].none() // PointerType
-  var encoded_read_buf: NullablePointer[GStringStruct] = NullablePointer[GStringStruct].none() // PointerType
-  var write_buf: NullablePointer[GStringStruct] = NullablePointer[GStringStruct].none() // PointerType
+  var read_buf: GStringStruct = GStringStruct // PointerType
+  var encoded_read_buf: GStringStruct = GStringStruct // PointerType
+  var write_buf: GStringStruct = GStringStruct // PointerType
   var partial_write_buf: Pointer[U8] = Pointer[U8] // ArrayType
   var use_buffer: U32 = U32(0) // Typedef
   var do_encode: U32 = U32(0) // Typedef

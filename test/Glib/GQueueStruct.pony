@@ -12,6 +12,6 @@
      000128: [FundamentalType(unsigned int) size=32]: length  
 */
 struct GQueueStruct
-  var head: NullablePointer[GListStruct] = NullablePointer[GListStruct].none() // PointerType
-  var tail: NullablePointer[GListStruct] = NullablePointer[GListStruct].none() // PointerType
+  var head: GListStruct = GListStruct // PointerType
+  var tail: GListStruct = GListStruct // PointerType
   var length: U32 = U32(0) // Typedef

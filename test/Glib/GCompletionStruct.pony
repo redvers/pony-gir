@@ -14,8 +14,8 @@
      000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: strncmp_func  
 */
 struct GCompletionStruct
-  var items: NullablePointer[GListStruct] = NullablePointer[GListStruct].none() // PointerType
+  var items: GListStruct = GListStruct // PointerType
   var func: Pointer[None] = Pointer[None] // Typedef
   var prefix: Pointer[U8] = Pointer[U8] // PointerType
-  var cache: NullablePointer[GListStruct] = NullablePointer[GListStruct].none() // PointerType
+  var cache: GListStruct = GListStruct // PointerType
   var strncmp_func: Pointer[None] = Pointer[None] // Typedef

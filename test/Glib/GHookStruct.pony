@@ -18,8 +18,8 @@
 */
 struct GHookStruct
   var data: Pointer[None] = Pointer[None] // Typedef
-  var next: NullablePointer[GHookStruct] = NullablePointer[GHookStruct].none() // PointerType
-  var prev: NullablePointer[GHookStruct] = NullablePointer[GHookStruct].none() // PointerType
+  var next: GHookStruct = GHookStruct // PointerType
+  var prev: GHookStruct = GHookStruct // PointerType
   var ref_count: U32 = U32(0) // Typedef
   var hook_id: U64 = U64(0) // Typedef
   var flags: U32 = U32(0) // Typedef

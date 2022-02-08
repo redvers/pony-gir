@@ -13,5 +13,5 @@
 */
 struct GListStruct
   var data: Pointer[None] = Pointer[None] // Typedef
-  var next: NullablePointer[GListStruct] = NullablePointer[GListStruct].none() // PointerType
-  var prev: NullablePointer[GListStruct] = NullablePointer[GListStruct].none() // PointerType
+  var next: GListStruct = GListStruct // PointerType
+  var prev: GListStruct = GListStruct // PointerType

@@ -12,4 +12,4 @@
 */
 struct GSListStruct
   var data: Pointer[None] = Pointer[None] // Typedef
-  var next: NullablePointer[GSListStruct] = NullablePointer[GSListStruct].none() // PointerType
+  var next: GSListStruct = GSListStruct // PointerType

@@ -1,6 +1,6 @@
 
 use "Glib"
-use "GObject"
+//use "GObject"
 //use "Gio"
 
 actor Main

@@ -34,8 +34,8 @@ struct GScannerStruct
   var max_parse_errors: U32 = U32(0) // Typedef
   var parse_errors: U32 = U32(0) // Typedef
   var input_name: Pointer[U8] = Pointer[U8] // PointerType
-  var qdata: NullablePointer[GDataStruct] = NullablePointer[GDataStruct].none() // PointerType
-  var config: NullablePointer[GScannerConfigStruct] = NullablePointer[GScannerConfigStruct].none() // PointerType
+  var qdata: GDataStruct = GDataStruct // PointerType
+  var config: GScannerConfigStruct = GScannerConfigStruct // PointerType
   var token: I32 = I32(0) // Typedef
   var value: U64 = U64(0) // Typedef
   var line: U32 = U32(0) // Typedef
@@ -44,7 +44,7 @@ struct GScannerStruct
   var next_value: U64 = U64(0) // Typedef
   var next_line: U32 = U32(0) // Typedef
   var next_position: U32 = U32(0) // Typedef
-  var symbol_table: NullablePointer[GHashTableStruct] = NullablePointer[GHashTableStruct].none() // PointerType
+  var symbol_table: GHashTableStruct = GHashTableStruct // PointerType
   var input_fd: I32 = I32(0) // Typedef
   var text: Pointer[U8] = Pointer[U8] // PointerType
   var text_end: Pointer[U8] = Pointer[U8] // PointerType
