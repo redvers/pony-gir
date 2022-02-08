@@ -21,21 +21,21 @@
   <record name="Array" gtypestructfor="" ctype="GArray" render="1">
     <field name="data"/>
     <field name="len"/>
-    <function name="append_vals" cid="g_array_append_vals" render="0"/>
+    <function name="append_vals" cid="g_array_append_vals" render="1"/>
     <function name="binary_search" cid="g_array_binary_search" render="0"/>
     <function name="copy" cid="g_array_copy" render="0"/>
-    <function name="free" cid="g_array_free" render="0"/>
-    <function name="get_element_size" cid="g_array_get_element_size" render="0"/>
-    <function name="insert_vals" cid="g_array_insert_vals" render="0"/>
-    <function name="create" cid="g_array_new" render="0"/>
-    <function name="prepend_vals" cid="g_array_prepend_vals" render="0"/>
+    <function name="free" cid="g_array_free" render="1"/>
+    <function name="get_element_size" cid="g_array_get_element_size" render="1"/>
+    <function name="insert_vals" cid="g_array_insert_vals" render="1"/>
+    <constructor name="create" cid="g_array_new" render="1"/>
+    <function name="prepend_vals" cid="g_array_prepend_vals" render="1"/>
     <function name="ref" cid="g_array_ref" render="0"/>
-    <function name="remove_index" cid="g_array_remove_index" render="0"/>
+    <function name="remove_index" cid="g_array_remove_index" render="1"/>
     <function name="remove_index_fast" cid="g_array_remove_index_fast" render="0"/>
     <function name="remove_range" cid="g_array_remove_range" render="0"/>
     <function name="set_clear_func" cid="g_array_set_clear_func" render="0"/>
     <function name="set_size" cid="g_array_set_size" render="0"/>
-    <function name="sized_new" cid="g_array_sized_new" render="0"/>
+    <constructor name="sized_new" cid="g_array_sized_new" render="1"/>
     <function name="sort" cid="g_array_sort" render="0"/>
     <function name="sort_with_data" cid="g_array_sort_with_data" render="0"/>
     <function name="steal" cid="g_array_steal" render="0"/>
@@ -150,7 +150,7 @@
     <function name="append" cid="g_byte_array_append" render="0"/>
     <function name="free" cid="g_byte_array_free" render="0"/>
     <function name="free_to_bytes" cid="g_byte_array_free_to_bytes" render="0"/>
-    <function name="new" cid="g_byte_array_new" render="0"/>
+    <constructor name="new" cid="g_byte_array_new" render="1"/>
     <function name="new_take" cid="g_byte_array_new_take" render="0"/>
     <function name="prepend" cid="g_byte_array_prepend" render="0"/>
     <function name="ref" cid="g_byte_array_ref" render="0"/>
@@ -719,7 +719,7 @@
   <record name="IConv" gtypestructfor="" ctype="GIConv" render="1">
     <method name="" cid="g_iconv" render="0"/>
     <method name="close" cid="g_iconv_close" render="0"/>
-    <function name="open" cid="g_iconv_open" render="0"/>
+    <constructor name="open" cid="g_iconv_open" render="1"/>
   </record>
   <constant name="IEEE754_DOUBLE_BIAS" ctype="G_IEEE754_DOUBLE_BIAS" value="1023" render="0">  </constant>
   <constant name="IEEE754_FLOAT_BIAS" ctype="G_IEEE754_FLOAT_BIAS" value="127" render="0">  </constant>
@@ -1034,7 +1034,7 @@
     <method name="unref" cid="g_main_context_unref" render="0"/>
     <method name="wait" cid="g_main_context_wait" render="0"/>
     <method name="wakeup" cid="g_main_context_wakeup" render="0"/>
-    <function name="default" cid="g_main_context_default" render="0"/>
+    <constructor name="default" cid="g_main_context_default" render="1"/>
     <function name="get_thread_default" cid="g_main_context_get_thread_default" render="0"/>
     <function name="ref_thread_default" cid="g_main_context_ref_thread_default" render="0"/>
   </record>
@@ -1743,7 +1743,7 @@
     <field name="next"/>
     <field name="name"/>
     <field name="priv"/>
-    <constructor name="new" cid="g_source_new" render="0"/>
+    <constructor name="new" cid="g_source_new" render="1"/>
     <method name="add_child_source" cid="g_source_add_child_source" render="0"/>
     <method name="add_poll" cid="g_source_add_poll" render="0"/>
     <method name="add_unix_fd" cid="g_source_add_unix_fd" render="0"/>
@@ -1973,7 +1973,7 @@
     <method name="unref" cid="g_thread_unref" render="0"/>
     <function name="error_quark" cid="g_thread_error_quark" render="0"/>
     <function name="exit" cid="g_thread_exit" render="0"/>
-    <function name="self" cid="g_thread_self" render="0"/>
+    <constructor name="self" cid="g_thread_self" render="1"/>
     <function name="yield" cid="g_thread_yield" render="0"/>
   </record>
   <enumeration name="ThreadError" render="0">     <member name="thread_error_again" value="0" cid="G_THREAD_ERROR_AGAIN" glibnick="" glibname=""/>
@@ -2400,7 +2400,7 @@
     <method name="to_string" cid="g_uri_to_string" render="0"/>
     <method name="to_string_partial" cid="g_uri_to_string_partial" render="0"/>
     <method name="unref" cid="g_uri_unref" render="0"/>
-    <function name="build" cid="g_uri_build" render="0"/>
+    <constructor name="build" cid="g_uri_build" render="1"/>
     <function name="build_with_user" cid="g_uri_build_with_user" render="0"/>
     <function name="error_quark" cid="g_uri_error_quark" render="0"/>
     <function name="escape_bytes" cid="g_uri_escape_bytes" render="0"/>
@@ -2875,13 +2875,13 @@
   </function>
   <function name="build_pathv" cid="g_build_pathv" render="0">
   </function>
-  <function name="byte_array_free" cid="g_byte_array_free" render="1">
+  <function name="byte_array_free" cid="g_byte_array_free" render="0">
   </function>
-  <function name="byte_array_free_to_bytes" cid="g_byte_array_free_to_bytes" render="1">
+  <function name="byte_array_free_to_bytes" cid="g_byte_array_free_to_bytes" render="0">
   </function>
-  <function name="byte_array_new" cid="g_byte_array_new" render="1">
+  <function name="byte_array_new" cid="g_byte_array_new" render="0">
   </function>
-  <function name="byte_array_new_take" cid="g_byte_array_new_take" render="1">
+  <function name="byte_array_new_take" cid="g_byte_array_new_take" render="0">
   </function>
   <function name="byte_array_steal" cid="g_byte_array_steal" render="1">
   </function>
@@ -2902,7 +2902,7 @@
   </function>
   <function name="child_watch_add_full" cid="g_child_watch_add_full" render="1">
   </function>
-  <function name="child_watch_source_new" cid="g_child_watch_source_new" render="1">
+  <function name="child_watch_source_new" cid="g_child_watch_source_new" render="0">
   </function>
   <function name="clear_error" cid="g_clear_error" render="1">
   </function>
@@ -3201,7 +3201,7 @@
   <docsection name="i18n" render="1">   </docsection>
   <function name="iconv" cid="g_iconv" render="1">
   </function>
-  <function name="iconv_open" cid="g_iconv_open" render="1">
+  <function name="iconv_open" cid="g_iconv_open" render="0">
   </function>
   <function name="idle_add" cid="g_idle_add" render="1">
   </function>
@@ -3209,7 +3209,7 @@
   </function>
   <function name="idle_remove_by_data" cid="g_idle_remove_by_data" render="1">
   </function>
-  <function name="idle_source_new" cid="g_idle_source_new" render="1">
+  <function name="idle_source_new" cid="g_idle_source_new" render="0">
   </function>
   <function name="int64_equal" cid="g_int64_equal" render="1">
   </function>
@@ -3231,7 +3231,7 @@
   </function>
   <function name="io_channel_error_quark" cid="g_io_channel_error_quark" render="1">
   </function>
-  <function name="io_create_watch" cid="g_io_create_watch" render="1">
+  <function name="io_create_watch" cid="g_io_create_watch" render="0">
   </function>
   <docsection name="iochannels" render="1">   </docsection>
   <function name="key_file_error_quark" cid="g_key_file_error_quark" render="1">
@@ -3299,13 +3299,13 @@
   <docsection name="macros" render="1">   </docsection>
   <docsection name="macros_misc" render="1">   </docsection>
   <docsection name="main" render="1">   </docsection>
-  <function name="main_context_default" cid="g_main_context_default" render="1">
+  <function name="main_context_default" cid="g_main_context_default" render="0">
   </function>
-  <function name="main_context_get_thread_default" cid="g_main_context_get_thread_default" render="1">
+  <function name="main_context_get_thread_default" cid="g_main_context_get_thread_default" render="0">
   </function>
-  <function name="main_context_ref_thread_default" cid="g_main_context_ref_thread_default" render="1">
+  <function name="main_context_ref_thread_default" cid="g_main_context_ref_thread_default" render="0">
   </function>
-  <function name="main_current_source" cid="g_main_current_source" render="1">
+  <function name="main_current_source" cid="g_main_current_source" render="0">
   </function>
   <function name="main_depth" cid="g_main_depth" render="1">
   </function>
@@ -3848,7 +3848,7 @@
   <function name="thread_pool_stop_unused_threads" cid="g_thread_pool_stop_unused_threads" render="1">
   </function>
   <docsection name="thread_pools" render="1">   </docsection>
-  <function name="thread_self" cid="g_thread_self" render="1">
+  <function name="thread_self" cid="g_thread_self" render="0">
   </function>
   <function name="thread_yield" cid="g_thread_yield" render="1">
   </function>
@@ -3863,9 +3863,9 @@
   </function>
   <function name="timeout_add_seconds_full" cid="g_timeout_add_seconds_full" render="1">
   </function>
-  <function name="timeout_source_new" cid="g_timeout_source_new" render="1">
+  <function name="timeout_source_new" cid="g_timeout_source_new" render="0">
   </function>
-  <function name="timeout_source_new_seconds" cid="g_timeout_source_new_seconds" render="1">
+  <function name="timeout_source_new_seconds" cid="g_timeout_source_new_seconds" render="0">
   </function>
   <docsection name="timers" render="1">   </docsection>
   <docsection name="timezone" render="1">   </docsection>
@@ -4003,9 +4003,9 @@
   </function>
   <function name="unsetenv" cid="g_unsetenv" render="1">
   </function>
-  <function name="uri_build" cid="g_uri_build" render="1">
+  <function name="uri_build" cid="g_uri_build" render="0">
   </function>
-  <function name="uri_build_with_user" cid="g_uri_build_with_user" render="1">
+  <function name="uri_build_with_user" cid="g_uri_build_with_user" render="0">
   </function>
   <function name="uri_error_quark" cid="g_uri_error_quark" render="1">
   </function>
@@ -4021,9 +4021,9 @@
   </function>
   <function name="uri_list_extract_uris" cid="g_uri_list_extract_uris" render="1">
   </function>
-  <function name="uri_parse" cid="g_uri_parse" render="1">
+  <function name="uri_parse" cid="g_uri_parse" render="0">
   </function>
-  <function name="uri_parse_params" cid="g_uri_parse_params" render="1">
+  <function name="uri_parse_params" cid="g_uri_parse_params" render="0">
   </function>
   <function name="uri_parse_scheme" cid="g_uri_parse_scheme" render="1">
   </function>
@@ -4037,7 +4037,7 @@
   </function>
   <function name="uri_split_with_user" cid="g_uri_split_with_user" render="1">
   </function>
-  <function name="uri_unescape_bytes" cid="g_uri_unescape_bytes" render="1">
+  <function name="uri_unescape_bytes" cid="g_uri_unescape_bytes" render="0">
   </function>
   <function name="uri_unescape_segment" cid="g_uri_unescape_segment" render="1">
   </function>
@@ -4113,9 +4113,9 @@
   </function>
   <function name="variant_is_signature" cid="g_variant_is_signature" render="1">
   </function>
-  <function name="variant_parse" cid="g_variant_parse" render="1">
+  <function name="variant_parse" cid="g_variant_parse" render="0">
   </function>
-  <function name="variant_parse_error_print_context" cid="g_variant_parse_error_print_context" render="1">
+  <function name="variant_parse_error_print_context" cid="g_variant_parse_error_print_context" render="0">
   </function>
   <function name="variant_parse_error_quark" cid="g_variant_parse_error_quark" render="1">
   </function>

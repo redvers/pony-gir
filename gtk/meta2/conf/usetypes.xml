@@ -1,5 +1,6 @@
 
 <typedefs>   
+<typedef name="GArray"          ponytypein="GArray"     ponytypeinconv=".array()"     ponytypeout="GArray"     structtype="GArray"     structdef="GArray"     argtype="Pointer[GArray] tag"     rvtype="Pointer[GArray] tag"/>    
 <typedef name="GHashTable"          ponytypein="GHashTable"     ponytypeinconv=".apply()"     ponytypeout="GHashTable"     structtype="GHashTable"     structdef="GHashTable"     argtype="Pointer[GHashTable] tag"     rvtype="Pointer[GHashTable] tag"/>    
 <typedef name="GBytes" ponytypein="GBytes" ponytypeinconv=".apply()" ponytypeout="GBytes" structtype="GBytes" structdef="GBytes" argtype="Pointer[GBytes] tag"     rvtype="Pointer[GBytes] tag"/>    
 <typedef name="GVariant"          ponytypein="GVariant"     ponytypeinconv=".apply()"     ponytypeout="GVariant"     structtype="GVariant"     structdef="GVariant"     argtype="Pointer[GVariant] tag"     rvtype="Pointer[GVariant] tag"/>    
@@ -395,7 +396,6 @@
 <typedef name="GAppInfoMonitor"          ponytypein="GAppInfoMonitor"     ponytypeinconv=""     ponytypeout="GAppInfoMonitor"     structtype="GAppInfoMonitor"     structdef="GAppInfoMonitor"     argtype="GAppInfoMonitor tag"     rvtype="GAppInfoMonitor"/>    
 <typedef name="GAppLaunchContext"          ponytypein="GAppLaunchContext"     ponytypeinconv=""     ponytypeout="GAppLaunchContext"     structtype="GAppLaunchContext"     structdef="GAppLaunchContext"     argtype="GAppLaunchContext tag"     rvtype="GAppLaunchContext"/>    
 <typedef name="GApplicationCommandLine"          ponytypein="GApplicationCommandLine"     ponytypeinconv=""     ponytypeout="GApplicationCommandLine"     structtype="GApplicationCommandLine"     structdef="GApplicationCommandLine"     argtype="GApplicationCommandLine tag"     rvtype="GApplicationCommandLine"/>    
-<typedef name="GArray"          ponytypein="GArray"     ponytypeinconv=""     ponytypeout="GArray"     structtype="GArray"     structdef="GArray"     argtype="GArray tag"     rvtype="GArray"/>    
 <typedef name="GAsyncInitable"          ponytypein="GAsyncInitable"     ponytypeinconv=""     ponytypeout="GAsyncInitable"     structtype="GAsyncInitable"     structdef="GAsyncInitable"     argtype="GAsyncInitable tag"     rvtype="GAsyncInitable"/>    
 <typedef name="GAsyncQueue"          ponytypein="GAsyncQueue"     ponytypeinconv=""     ponytypeout="GAsyncQueue"     structtype="GAsyncQueue"     structdef="GAsyncQueue"     argtype="GAsyncQueue tag"     rvtype="GAsyncQueue"/>    
 <typedef name="GAsyncResult"          ponytypein="GAsyncResult"     ponytypeinconv=""     ponytypeout="GAsyncResult"     structtype="GAsyncResult"     structdef="GAsyncResult"     argtype="GAsyncResult tag"     rvtype="GAsyncResult"/>    

@@ -1,4 +1,7 @@
-t:
+all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 gbase gtkbase bitfields enumerations glib
+
+glib:
+	sh mknonclass GLib Array G
 	sh mknonclass GLib HookList G
 	sh mknonclass GLib Hook G
 	sh mknonclass GLib HashTable G
@@ -27,7 +30,6 @@ t:
 	sh mknonclass GLib Uri G
 	sh mknonclass GLib VariantType G
 
-all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 gbase gtkbase bitfields enumerations
 
 
 
