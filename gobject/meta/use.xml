@@ -3078,9 +3078,9 @@
      ponyname="gref"
      fid="f139"
      lineno="508"
-     rv="Pointer[None]">
+    rv="None"> <!-- Removed to stop accidental struct leakage -->
      <useargs>
-       <usearg name="gobject" type="Pointer[None]"/>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_3616" name="g_object_unref"
@@ -3089,7 +3089,7 @@
      lineno="510"
      rv="None">
      <useargs>
-       <usearg name="gobject" type="Pointer[None]"/>
+       <usearg name="gobject" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_3617" name="g_object_weak_ref"
