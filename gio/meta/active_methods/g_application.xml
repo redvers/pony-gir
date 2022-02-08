@@ -3,9 +3,11 @@
 <xi:include href="../usetypes.xml"/>
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/gio.xml"/>
+<!--
 <inherits>
   <inherit name="GObject" ponyfn="gobject" path="parent_instance"/>
 </inherits>
+-->
 <renders>
   <renderuse name="g_application_activate" render="1"/>
   <renderuse name="g_application_add_main_option" render="1"/>
