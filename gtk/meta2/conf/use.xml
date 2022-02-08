@@ -75962,7 +75962,7 @@
      </useargs>
   </use>
   <use id="_13548" name="gtk_builder_new_from_file"
-     ponyname="gtk_builder_new_from_file"
+     ponyname="from_file"
      fid="f397"
      lineno="190"
      rv="GtkBuilder">
@@ -75971,7 +75971,7 @@
      </useargs>
   </use>
   <use id="_13549" name="gtk_builder_new_from_resource"
-     ponyname="gtk_builder_new_from_resource"
+     ponyname="from_resource"
      fid="f397"
      lineno="192"
      rv="GtkBuilder">
@@ -75980,7 +75980,7 @@
      </useargs>
   </use>
   <use id="_13550" name="gtk_builder_new_from_string"
-     ponyname="gtk_builder_new_from_string"
+     ponyname="from_string"
      fid="f397"
      lineno="194"
      rv="GtkBuilder">

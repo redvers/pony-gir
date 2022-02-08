@@ -28,12 +28,25 @@ actor Main
      *
      * "me.infect.red" is the application-name given to gnome/dbus */
     var app: GtkApplication = GtkApplication("me.infect.red", 0)
+    let aps: AppState = AppState
+    app.signal_connect[AppState]("activate", @{(obj: NullablePointer[GObjectStruct] val, data: AppState): None => data.activate(obj)}, aps)
     app.run(0, Pointer[Pointer[U8]])
 
-/*
 
-class AppState is PonyGtkApplication
+class AppState // is PonyGtkApplication
   var test: String = "This is an AppState"
+
+  fun ref activate(gtkapp: NullablePointer[GObjectStruct] val) =>
+	  Debug.out("UI Creation Callback!")
+//    let builder: GtkBuilder = GtkBuilder.from_resource("/ui/main.ui")
+//    let window: GtkWindow = GtkWindow.create_from_ref(builder.get_object("window"))
+//    gtkapp.add_window(window)
+
+
+
+
+
+/*
   let demolist: Array[@{(AppState): None}] = []
   let updatetextlist: Array[@{(AppState): None}] = []
   var infoview: NullablePointer[SGtkTextView] = NullablePointer[SGtkTextView].none()

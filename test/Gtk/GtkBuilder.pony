@@ -16,11 +16,11 @@ class GtkBuilder is GtkBuilderInterface
 
   new gtk_builder_new() =>
     _ptr = @gtk_builder_new()
-  new gtk_builder_new_from_file(filename: String) =>
+  new from_file(filename: String) =>
     _ptr = @gtk_builder_new_from_file(filename.cstring())
-  new gtk_builder_new_from_resource(resourcepath: String) =>
+  new from_resource(resourcepath: String) =>
     _ptr = @gtk_builder_new_from_resource(resourcepath.cstring())
-  new gtk_builder_new_from_string(string: String, length: I64) =>
+  new from_string(string: String, length: I64) =>
     _ptr = @gtk_builder_new_from_string(string.cstring(), length)
 
   new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr
