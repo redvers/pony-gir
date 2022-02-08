@@ -2,6 +2,7 @@
 <castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
 <xi:include href="../usetypes.xml"/>
 <xi:include href="../use.xml"/>
+<xi:include href="../renderstructs.xml"/>
 <xi:include href="../../../castxml-results/gobject.xml"/>
 <renders>
   <renderuse name="g_signal_accumulator_first_wins" render="1"/>
@@ -65,10 +66,10 @@
   <renderuse name="g_object_getv" render="1"/>
   <renderuse name="g_object_get_valist" render="0"/>
   <renderuse name="g_object_is_floating" render="1"/>
-  <renderuse name="g_object_new" render="1"/>
-  <renderuse name="g_object_newv" render="0"/>
-  <renderuse name="g_object_new_valist" render="0"/>
-  <renderuse name="g_object_new_with_properties" render="1"/>
+  <constructor name="g_object_new" render="1"/>
+  <constructor name="g_object_newv" render="1"/>
+  <constructor name="g_object_new_valist" render="0"/>
+  <constructor name="g_object_new_with_properties" render="1"/>
   <renderuse name="g_object_notify" render="1"/>
   <renderuse name="g_object_notify_by_pspec" render="1"/>
   <renderuse name="g_object_ref" render="1"/>

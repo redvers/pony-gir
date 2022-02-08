@@ -1,0 +1,128 @@
+GAppInfoMonitor GObject
+GAppLaunchContext GObject
+GApplication GObject
+GApplicationCommandLine GObject
+GBytesIcon GObject
+GCancellable GObject
+GCharsetConverter GObject
+GCredentials GObject
+GDBusActionGroup GObject
+GDBusAuthObserver GObject
+GDBusConnection GObject
+GDBusInterfaceSkeleton GObject
+GDBusMessage GObject
+GDBusMethodInvocation GObject
+GDBusObjectManagerClient GObject
+GDBusObjectManagerServer GObject
+GDBusObjectProxy GObject
+GDBusObjectSkeleton GObject
+GDBusProxy GObject
+GDBusServer GObject
+GDesktopAppInfo GObject
+GEmblem GObject
+GEmblemedIcon GObject
+GFileEnumerator GObject
+GFileIcon GObject
+GFileInfo GObject
+GFileMonitor GObject
+GFilenameCompleter GObject
+GIOStream GObject
+GInetAddress GObject
+GInetAddressMask GObject
+GInputStream GObject
+GListStore GObject
+GMenuAttributeIter GObject
+GMenuItem GObject
+GMenuLinkIter GObject
+GMenuModel GObject
+GMountOperation GObject
+GNetworkAddress GObject
+GNetworkService GObject
+GNotification GObject
+GOutputStream GObject
+GPermission GObject
+GPropertyAction GObject
+GResolver GObject
+GSettings GObject
+GSettingsBackend GObject
+GSimpleAction GObject
+GSimpleActionGroup GObject
+GSimpleAsyncResult GObject
+GSimpleProxyResolver GObject
+GSocket GObject
+GSocketAddress GObject
+GSocketAddressEnumerator GObject
+GSocketClient GObject
+GSocketControlMessage GObject
+GSocketListener GObject
+GSubprocess GObject
+GSubprocessLauncher GObject
+GTask GObject
+GTestDBus GObject
+GThemedIcon GObject
+GTlsCertificate GObject
+GTlsDatabase GObject
+GTlsInteraction GObject
+GTlsPassword GObject
+GUnixFDList GObject
+GUnixMountMonitor GObject
+GVfs GObject
+GVolumeMonitor GObject
+GZlibCompressor GObject
+GZlibDecompressor GObject
+
+GTlsConnection GIOStream
+GFileIOStream GIOStream
+GSimpleIOStream GIOStream
+GSocketConnection GIOStream
+
+GDBusMenuModel GMenuModel
+GMenu GMenuModel
+
+GBufferedInputStream GFilterInputStream
+GConverterInputStream GFilterInputStream
+
+GBufferedOutputStream GFilterOutputStream
+GConverterOutputStream GFilterOutputStream
+
+GDataInputStream GBufferedInputStream
+
+GDataOutputStream GFilterOutputStream
+
+GFileInputStream GInputStream
+GFilterInputStream GInputStream
+GMemoryInputStream GInputStream
+GUnixInputStream GInputStream
+
+GFileOutputStream GOutputStream
+GFilterOutputStream GOutputStream
+GMemoryOutputStream GOutputStream
+GUnixOutputStream GOutputStream
+
+GIOModule GTypeModule
+
+GInetSocketAddress GSocketAddress
+GNativeSocketAddress GSocketAddress
+GUnixSocketAddress GSocketAddress
+
+GNativeVolumeMonitor GVolumeMonitor
+
+GProxyAddress GInetSocketAddress
+
+GProxyAddressEnumerator GSocketAddressEnumerator
+
+GSimplePermission GPermission
+
+GSocketService GSocketListener
+
+GTcpConnection GSocketConnection
+
+GTcpWrapperConnection GTcpConnection
+
+GThreadedSocketService GSocketService
+
+GUnixConnection GSocketConnection
+
+GUnixCredentialsMessage GSocketControlMessage
+GUnixFDMessage GSocketControlMessage
+
