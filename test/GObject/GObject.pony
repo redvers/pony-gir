@@ -107,3 +107,5 @@ class GObject is GObjectInterface
 
 
 interface GObjectInterface
+  fun ref gobject(): GObjectStruct
+

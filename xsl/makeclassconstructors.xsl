@@ -6,9 +6,15 @@
 <xsl:param name="debug"/>
 
 
-<xsl:template match="/castxml2pony/renders/constructor[@render='1']">
-  <xsl:variable name="fnname" select="./@name"/>
-      <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="@render"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
+<xsl:template match="/castxml2pony">
+  <xsl:for-each select="/castxml2pony/renders/constructor[@render='1']">
+    <xsl:variable name="fnname" select="./@name"/>
+    <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="@render"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
+  </xsl:for-each>
+  <xsl:text>&#10;&#10;interface </xsl:text>
+  <xsl:value-of select="$struct"/>
+  <xsl:text>Interface&#10;</xsl:text>
+  <xsl:text>  fun ref gobject(): GObjectStruct&#10;&#10;</xsl:text>
 </xsl:template>
 
 <xsl:template name="mainuse">
