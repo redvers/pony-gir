@@ -94,7 +94,9 @@
 <xsl:choose>
 	<xsl:when test="@type='...'">...</xsl:when>
   <xsl:when test="((position() = 1) and (@type=concat('NullablePointer[', $struct, ']')))">gobject()</xsl:when>
+  <xsl:when test="((position() = 1) and (@type=concat('NullablePointer[', 'GObject', ']')))">gobject()</xsl:when>
   <xsl:when test="((position() = 1) and (@type=$struct))">gobject()</xsl:when>
+  <xsl:when test="((position() = 1) and (@type='GObject'))">gobject()</xsl:when>
 	<xsl:otherwise>
 		<xsl:value-of select="@name"/><xsl:variable name="ttype" select="@type"/><xsl:value-of select="/castxml2pony/typedefs/typedef[@name=$ttype]/@ponytypeinconv"/>
 	</xsl:otherwise>

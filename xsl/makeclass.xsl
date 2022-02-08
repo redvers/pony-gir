@@ -13,9 +13,9 @@
   <xsl:value-of select="./@name"/>
   <xsl:text>Interface&#10;</xsl:text>
   <xsl:text>  var _ptr: </xsl:text>
-  <xsl:value-of select="$classdata/@basestruct"/>
+  <xsl:value-of select="./@name"/>
   <xsl:text>Struct&#10;&#10;</xsl:text>
-  <xsl:text>  new from_ref(gobj: GObjectStruct) => _ptr = gobj&#10;&#10;</xsl:text>
+  <xsl:text>  new from_ref(objref: </xsl:text><xsl:value-of select="./@name"/><xsl:text>Struct) => _ptr = objref&#10;&#10;</xsl:text>
   <xsl:text>  fun ref gobject(): GObjectStruct => </xsl:text>
   <xsl:value-of select="$classdata/@basepath"/>
   <xsl:text>&#10;&#10;</xsl:text>

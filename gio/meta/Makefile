@@ -1,3 +1,5 @@
+gapplication:
+	sh -x mkclass.sh _4138 GApplication g_application
 all:
 	rm -f ../../test/Gio/*
 	sh -x mkstruct.sh _4138 GApplication g_application

@@ -1586,7 +1586,7 @@
      lineno="132"
      rv="String">
      <useargs>
-       <usearg name="application" type="GApplication"/>
+       <usearg name="application" type="GObject"/>
      </useargs>
   </use>
   <use id="_4494" name="g_application_set_application_id"
@@ -1823,7 +1823,7 @@
      lineno="213"
      rv="I32">
      <useargs>
-       <usearg name="application" type="GApplication"/>
+       <usearg name="application" type="GObject"/>
        <usearg name="argc" type="I32"/>
        <usearg name="argv" type="Array[String]"/>
      </useargs>
@@ -1834,7 +1834,7 @@
      lineno="218"
      rv="None">
      <useargs>
-       <usearg name="application" type="GApplication"/>
+       <usearg name="application" type="GObject"/>
      </useargs>
   </use>
   <use id="_4519" name="g_application_get_default"
