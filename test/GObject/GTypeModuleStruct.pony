@@ -2,11 +2,11 @@ use "../Glib"
 
 use "lib:glib-2.0"
 
-use @g_type_module_add_interface[None](module: GTypeModuleStruct tag, instancetype: U64, interfacetype: U64, interfaceinfo: NullablePointer[GInterfaceInfoStruct] tag)
+use @g_type_module_add_interface[None](module: GTypeModuleStruct tag, instancetype: U64, interfacetype: U64, interfaceinfo: GInterfaceInfoStruct tag)
 use @g_type_module_get_type[U64]()
 use @g_type_module_register_enum[U64](module: GTypeModuleStruct tag, name': Pointer[U8] tag, conststaticvalues: GEnumValueStruct tag)
-use @g_type_module_register_flags[U64](module: GTypeModuleStruct tag, name': Pointer[U8] tag, conststaticvalues: NullablePointer[GFlagsValueStruct] tag)
-use @g_type_module_register_type[U64](module: GTypeModuleStruct tag, parenttype: U64, typename: Pointer[U8] tag, typeinfo: NullablePointer[GTypeInfoStruct] tag, flags: I32)
+use @g_type_module_register_flags[U64](module: GTypeModuleStruct tag, name': Pointer[U8] tag, conststaticvalues: GFlagsValueStruct tag)
+use @g_type_module_register_type[U64](module: GTypeModuleStruct tag, parenttype: U64, typename: Pointer[U8] tag, typeinfo: GTypeInfoStruct tag, flags: I32)
 use @g_type_module_set_name[None](module: GTypeModuleStruct tag, name': Pointer[U8] tag)
 use @g_type_module_unuse[None](module: GTypeModuleStruct tag)
 use @g_type_module_use[I32](module: GTypeModuleStruct tag)
@@ -28,8 +28,8 @@ use @g_type_module_use[I32](module: GTypeModuleStruct tag)
 struct GTypeModuleStruct
   embed parent_instance: GObjectStruct = GObjectStruct // Typedef
   var use_count: U32 = U32(0) // Typedef
-  var type_infos: NullablePointer[GSListStruct] = NullablePointer[GSListStruct].none() // PointerType
-  var interface_infos: NullablePointer[GSListStruct] = NullablePointer[GSListStruct].none() // PointerType
+  var type_infos: GSListStruct = GSListStruct // PointerType
+  var interface_infos: GSListStruct = GSListStruct // PointerType
   var name: Pointer[U8] = Pointer[U8] // PointerType
 
   fun get_type(): U64 =>
@@ -44,15 +44,15 @@ struct GTypeModuleStruct
   fun set_name(name': String): None =>
     @g_type_module_set_name(this, name'.cstring())
 
-  fun register_type(parenttype: U64, typename: String, typeinfo: NullablePointer[GTypeInfoStruct] tag, flags: I32): U64 =>
+  fun register_type(parenttype: U64, typename: String, typeinfo: GTypeInfoStruct tag, flags: I32): U64 =>
     @g_type_module_register_type(this, parenttype, typename.cstring(), typeinfo, flags)
 
-  fun add_interface(instancetype: U64, interfacetype: U64, interfaceinfo: NullablePointer[GInterfaceInfoStruct] tag): None =>
+  fun add_interface(instancetype: U64, interfacetype: U64, interfaceinfo: GInterfaceInfoStruct tag): None =>
     @g_type_module_add_interface(this, instancetype, interfacetype, interfaceinfo)
 
   fun register_enum(name': String, conststaticvalues: GEnumValueStruct tag): U64 =>
     @g_type_module_register_enum(this, name'.cstring(), conststaticvalues)
 
-  fun register_flags(name': String, conststaticvalues: NullablePointer[GFlagsValueStruct] tag): U64 =>
+  fun register_flags(name': String, conststaticvalues: GFlagsValueStruct tag): U64 =>
     @g_type_module_register_flags(this, name'.cstring(), conststaticvalues)
 

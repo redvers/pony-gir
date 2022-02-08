@@ -15,6 +15,6 @@ use "lib:glib-2.0"
      000064: [PointerType size=64]->[Struct size=192,fid: f132]: value  
 */
 struct GObjectConstructParamStruct
-  var pspec: NullablePointer[GParamSpecStruct] = NullablePointer[GParamSpecStruct].none() // PointerType
-  var value: NullablePointer[GValueStruct] = NullablePointer[GValueStruct].none() // PointerType
+  var pspec: GParamSpecStruct = GParamSpecStruct // PointerType
+  var value: GValueStruct = GValueStruct // PointerType
 

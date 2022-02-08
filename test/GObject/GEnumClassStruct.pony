@@ -2,7 +2,7 @@ use "../Glib"
 
 use "lib:glib-2.0"
 
-use @g_enum_complete_type_info[None](genumtype: U64, info: NullablePointer[GTypeInfoStruct] tag, constvalues: GEnumValueStruct tag)
+use @g_enum_complete_type_info[None](genumtype: U64, info: GTypeInfoStruct tag, constvalues: GEnumValueStruct tag)
 use @g_enum_get_value[GEnumValueStruct](enumclass: GEnumClassStruct tag, value: I32)
 use @g_enum_get_value_by_name[GEnumValueStruct](enumclass: GEnumClassStruct tag, name': Pointer[U8] tag)
 use @g_enum_get_value_by_nick[GEnumValueStruct](enumclass: GEnumClassStruct tag, nick: Pointer[U8] tag)
@@ -28,7 +28,7 @@ struct GEnumClassStruct
   var minimum: I32 = I32(0) // Typedef
   var maximum: I32 = I32(0) // Typedef
   var n_values: U32 = U32(0) // Typedef
-  var values: NullablePointer[GEnumValueStruct] = NullablePointer[GEnumValueStruct].none() // PointerType
+  var values: GEnumValueStruct = GEnumValueStruct // PointerType
 
   fun get_value(value: I32): GEnumValueStruct =>
     @g_enum_get_value(this, value)
@@ -47,6 +47,6 @@ struct GEnumClassStruct
   fun register_static(name': String, conststaticvalues: GEnumValueStruct tag): U64 =>
     @g_enum_register_static(name'.cstring(), conststaticvalues)
 
-  fun complete_type_info(genumtype: U64, info: NullablePointer[GTypeInfoStruct] tag, constvalues: GEnumValueStruct tag): None =>
+  fun complete_type_info(genumtype: U64, info: GTypeInfoStruct tag, constvalues: GEnumValueStruct tag): None =>
     @g_enum_complete_type_info(genumtype, info, constvalues)
 

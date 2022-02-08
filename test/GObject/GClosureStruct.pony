@@ -38,5 +38,5 @@ struct GClosureStruct
   var is_invalid: U32 = U32(0) // Typedef
   var marshal: Pointer[None] = Pointer[None] // PointerType
   var data: Pointer[None] = Pointer[None] // Typedef
-  var notifiers: NullablePointer[GClosureNotifyDataStruct] = NullablePointer[GClosureNotifyDataStruct].none() // PointerType
+  var notifiers: GClosureNotifyDataStruct = GClosureNotifyDataStruct // PointerType
 

@@ -18,7 +18,7 @@ use "lib:glib-2.0"
 */
 struct GParamSpecVariantStruct
   embed parent_instance: GParamSpecStruct = GParamSpecStruct // Typedef
-  var gtype: NullablePointer[GVariantTypeStruct] = NullablePointer[GVariantTypeStruct].none() // PointerType
-  var default_value: NullablePointer[GVariantStruct] = NullablePointer[GVariantStruct].none() // PointerType
+  var gtype: GVariantTypeStruct = GVariantTypeStruct // PointerType
+  var default_value: GVariantStruct = GVariantStruct // PointerType
   var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType
 

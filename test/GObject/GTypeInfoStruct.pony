@@ -32,5 +32,5 @@ struct GTypeInfoStruct
   var instance_size: U16 = U16(0) // Typedef
   var n_preallocs: U16 = U16(0) // Typedef
   var instance_init: Pointer[None] = Pointer[None] // Typedef
-  var value_table: NullablePointer[GTypeValueTableStruct] = NullablePointer[GTypeValueTableStruct].none() // PointerType
+  var value_table: GTypeValueTableStruct = GTypeValueTableStruct // PointerType
 

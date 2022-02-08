@@ -26,7 +26,7 @@ use "lib:glib-2.0"
 */
 struct GObjectClassStruct
   embed g_type_class: GTypeClassStruct = GTypeClassStruct // Typedef
-  var construct_properties: NullablePointer[GSListStruct] = NullablePointer[GSListStruct].none() // PointerType
+  var construct_properties: GSListStruct = GSListStruct // PointerType
   var constructor: Pointer[None] = Pointer[None] // PointerType
   var set_property: Pointer[None] = Pointer[None] // PointerType
   var get_property: Pointer[None] = Pointer[None] // PointerType

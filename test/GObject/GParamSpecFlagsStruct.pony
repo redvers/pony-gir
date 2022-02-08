@@ -17,6 +17,6 @@ use "lib:glib-2.0"
 */
 struct GParamSpecFlagsStruct
   embed parent_instance: GParamSpecStruct = GParamSpecStruct // Typedef
-  var flags_class: NullablePointer[GFlagsClassStruct] = NullablePointer[GFlagsClassStruct].none() // PointerType
+  var flags_class: GFlagsClassStruct = GFlagsClassStruct // PointerType
   var default_value: U32 = U32(0) // Typedef
 

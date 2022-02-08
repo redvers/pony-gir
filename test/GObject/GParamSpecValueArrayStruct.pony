@@ -17,6 +17,6 @@ use "lib:glib-2.0"
 */
 struct GParamSpecValueArrayStruct
   embed parent_instance: GParamSpecStruct = GParamSpecStruct // Typedef
-  var element_spec: NullablePointer[GParamSpecStruct] = NullablePointer[GParamSpecStruct].none() // PointerType
+  var element_spec: GParamSpecStruct = GParamSpecStruct // PointerType
   var fixed_n_elements: U32 = U32(0) // Typedef
 

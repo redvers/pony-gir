@@ -5,9 +5,9 @@ use "lib:glib-2.0"
 use @g_value_copy[None](srcvalue: GValueStruct tag, destvalue: GValueStruct tag)
 use @g_value_dup_boxed[Pointer[None]](value: GValueStruct tag)
 use @g_value_dup_object[Pointer[None]](value: GValueStruct tag)
-use @g_value_dup_param[NullablePointer[GParamSpecStruct]](value: GValueStruct tag)
+use @g_value_dup_param[GParamSpecStruct](value: GValueStruct tag)
 use @g_value_dup_string[Pointer[U8]](value: GValueStruct tag)
-use @g_value_dup_variant[NullablePointer[GVariantStruct]](value: GValueStruct tag)
+use @g_value_dup_variant[GVariantStruct](value: GValueStruct tag)
 use @g_value_fits_pointer[I32](value: GValueStruct tag)
 use @g_value_get_boolean[I32](value: GValueStruct tag)
 use @g_value_get_boxed[Pointer[None]](value: GValueStruct tag)
@@ -21,7 +21,7 @@ use @g_value_get_int[I32](value: GValueStruct tag)
 use @g_value_get_int64[I64](value: GValueStruct tag)
 use @g_value_get_long[I64](value: GValueStruct tag)
 use @g_value_get_object[Pointer[None]](value: GValueStruct tag)
-use @g_value_get_param[NullablePointer[GParamSpecStruct]](value: GValueStruct tag)
+use @g_value_get_param[GParamSpecStruct](value: GValueStruct tag)
 use @g_value_get_pointer[Pointer[None]](value: GValueStruct tag)
 use @g_value_get_schar[I8](value: GValueStruct tag)
 use @g_value_get_string[Pointer[U8]](value: GValueStruct tag)
@@ -30,7 +30,7 @@ use @g_value_get_uchar[U8](value: GValueStruct tag)
 use @g_value_get_uint[U32](value: GValueStruct tag)
 use @g_value_get_uint64[U64](value: GValueStruct tag)
 use @g_value_get_ulong[U64](value: GValueStruct tag)
-use @g_value_get_variant[NullablePointer[GVariantStruct]](value: GValueStruct tag)
+use @g_value_get_variant[GVariantStruct](value: GValueStruct tag)
 use @g_value_init[GValueStruct](value: GValueStruct tag, gtype: U64)
 use @g_value_init_from_instance[None](value: GValueStruct tag, instance: Pointer[None] tag)
 use @g_value_peek_pointer[Pointer[None]](value: GValueStruct tag)
@@ -52,8 +52,8 @@ use @g_value_set_interned_string[None](value: GValueStruct tag, vstring: Pointer
 use @g_value_set_long[None](value: GValueStruct tag, vlong: I64)
 use @g_value_set_object[None](value: GValueStruct tag, vobject: Pointer[None] tag)
 use @g_value_set_object_take_ownership[None](value: GValueStruct tag, vobject: Pointer[None] tag)
-use @g_value_set_param[None](value: GValueStruct tag, param: NullablePointer[GParamSpecStruct] tag)
-use @g_value_set_param_take_ownership[None](value: GValueStruct tag, param: NullablePointer[GParamSpecStruct] tag)
+use @g_value_set_param[None](value: GValueStruct tag, param: GParamSpecStruct tag)
+use @g_value_set_param_take_ownership[None](value: GValueStruct tag, param: GParamSpecStruct tag)
 use @g_value_set_pointer[None](value: GValueStruct tag, vpointer: Pointer[None] tag)
 use @g_value_set_schar[None](value: GValueStruct tag, vchar: I8)
 use @g_value_set_static_boxed[None](value: GValueStruct tag, vboxed: Pointer[None] tag)
@@ -64,12 +64,12 @@ use @g_value_set_uchar[None](value: GValueStruct tag, vuchar: U8)
 use @g_value_set_uint[None](value: GValueStruct tag, vuint: U32)
 use @g_value_set_uint64[None](value: GValueStruct tag, vuint64: U64)
 use @g_value_set_ulong[None](value: GValueStruct tag, vulong: U64)
-use @g_value_set_variant[None](value: GValueStruct tag, variant: NullablePointer[GVariantStruct] tag)
+use @g_value_set_variant[None](value: GValueStruct tag, variant: GVariantStruct tag)
 use @g_value_take_boxed[None](value: GValueStruct tag, vboxed: Pointer[None] tag)
 use @g_value_take_object[None](value: GValueStruct tag, vobject: Pointer[None] tag)
-use @g_value_take_param[None](value: GValueStruct tag, param: NullablePointer[GParamSpecStruct] tag)
+use @g_value_take_param[None](value: GValueStruct tag, param: GParamSpecStruct tag)
 use @g_value_take_string[None](value: GValueStruct tag, vstring: Pointer[U8] tag)
-use @g_value_take_variant[None](value: GValueStruct tag, variant: NullablePointer[GVariantStruct] tag)
+use @g_value_take_variant[None](value: GValueStruct tag, variant: GVariantStruct tag)
 use @g_value_transform[I32](srcvalue: GValueStruct tag, destvalue: GValueStruct tag)
 use @g_value_type_compatible[I32](srctype: U64, desttype: U64)
 use @g_value_type_transformable[I32](srctype: U64, desttype: U64)
@@ -120,19 +120,19 @@ struct GValueStruct
   fun register_transform_func(srctype: U64, desttype: U64, transformfunc: Pointer[None] tag): None =>
     @g_value_register_transform_func(srctype, desttype, transformfunc)
 
-  fun set_param(param: NullablePointer[GParamSpecStruct] tag): None =>
+  fun set_param(param: GParamSpecStruct tag): None =>
     @g_value_set_param(this, param)
 
-  fun get_param(): NullablePointer[GParamSpecStruct] =>
+  fun get_param(): GParamSpecStruct =>
     @g_value_get_param(this)
 
-  fun dup_param(): NullablePointer[GParamSpecStruct] =>
+  fun dup_param(): GParamSpecStruct =>
     @g_value_dup_param(this)
 
-  fun take_param(param: NullablePointer[GParamSpecStruct] tag): None =>
+  fun take_param(param: GParamSpecStruct tag): None =>
     @g_value_take_param(this, param)
 
-  fun set_param_take_ownership(param: NullablePointer[GParamSpecStruct] tag): None =>
+  fun set_param_take_ownership(param: GParamSpecStruct tag): None =>
     @g_value_set_param_take_ownership(this, param)
 
   fun set_boxed(vboxed: Pointer[None] tag): None =>
@@ -286,16 +286,16 @@ struct GValueStruct
   fun get_gtype(): U64 =>
     @g_value_get_gtype(this)
 
-  fun set_variant(variant: NullablePointer[GVariantStruct] tag): None =>
+  fun set_variant(variant: GVariantStruct tag): None =>
     @g_value_set_variant(this, variant)
 
-  fun take_variant(variant: NullablePointer[GVariantStruct] tag): None =>
+  fun take_variant(variant: GVariantStruct tag): None =>
     @g_value_take_variant(this, variant)
 
-  fun get_variant(): NullablePointer[GVariantStruct] =>
+  fun get_variant(): GVariantStruct =>
     @g_value_get_variant(this)
 
-  fun dup_variant(): NullablePointer[GVariantStruct] =>
+  fun dup_variant(): GVariantStruct =>
     @g_value_dup_variant(this)
 
   fun take_string(vstring: String): None =>

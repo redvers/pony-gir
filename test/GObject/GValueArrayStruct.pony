@@ -28,7 +28,7 @@ use @g_value_array_sort_with_data[GValueArrayStruct](valuearray: GValueArrayStru
 */
 struct GValueArrayStruct
   var n_values: U32 = U32(0) // Typedef
-  var values: NullablePointer[GValueStruct] = NullablePointer[GValueStruct].none() // PointerType
+  var values: GValueStruct = GValueStruct // PointerType
   var n_prealloced: U32 = U32(0) // Typedef
 
   fun get_type(): U64 =>

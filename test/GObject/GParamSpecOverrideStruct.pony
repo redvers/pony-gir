@@ -16,5 +16,5 @@ use "lib:glib-2.0"
 */
 struct GParamSpecOverrideStruct
   embed parent_instance: GParamSpecStruct = GParamSpecStruct // Typedef
-  var overridden: NullablePointer[GParamSpecStruct] = NullablePointer[GParamSpecStruct].none() // PointerType
+  var overridden: GParamSpecStruct = GParamSpecStruct // PointerType
 

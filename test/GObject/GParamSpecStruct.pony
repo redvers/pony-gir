@@ -30,7 +30,7 @@ struct GParamSpecStruct
   var owner_type: U64 = U64(0) // Typedef
   var _nick: Pointer[U8] = Pointer[U8] // PointerType
   var _blurb: Pointer[U8] = Pointer[U8] // PointerType
-  var qdata: NullablePointer[GDataStruct] = NullablePointer[GDataStruct].none() // PointerType
+  var qdata: GDataStruct = GDataStruct // PointerType
   var ref_count: U32 = U32(0) // Typedef
   var param_id: U32 = U32(0) // Typedef
 

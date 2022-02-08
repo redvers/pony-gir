@@ -17,6 +17,6 @@ use "lib:glib-2.0"
 */
 struct GParamSpecEnumStruct
   embed parent_instance: GParamSpecStruct = GParamSpecStruct // Typedef
-  var enum_class: NullablePointer[GEnumClassStruct] = NullablePointer[GEnumClassStruct].none() // PointerType
+  var enum_class: GEnumClassStruct = GEnumClassStruct // PointerType
   var default_value: I32 = I32(0) // Typedef
 
