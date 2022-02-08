@@ -13,7 +13,7 @@ use @gtk_application_remove_window[None](application: NullablePointer[GObjectStr
 class GtkApplication is GtkApplicationInterface
   var _ptr: NullablePointer[GObjectStruct] val
 
-  new gtk_application_new(applicationid: String, flags: I32) =>
+  new create(applicationid: String, flags: I32) =>
     _ptr = @gtk_application_new(applicationid.cstring(), flags)
 
   new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr

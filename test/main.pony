@@ -27,8 +27,8 @@ actor Main
      * dispatching the callbacks.
      *
      * "me.infect.red" is the application-name given to gnome/dbus */
-//    var app: GtkApplication = GtkApplication("me.infect.red", 0, AppState)
- //   app.run()
+    var app: GtkApplication = GtkApplication("me.infect.red", 0)
+    app.run(0, Pointer[Pointer[U8]])
 
 /*
 

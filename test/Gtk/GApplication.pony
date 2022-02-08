@@ -10,7 +10,7 @@ use @g_application_run[I32](application: NullablePointer[GObjectStruct] tag, arg
 class GApplication is GApplicationInterface
   var _ptr: NullablePointer[GObjectStruct] val
 
-  new g_application_new(applicationid: String, flags: I32) =>
+  new create(applicationid: String, flags: I32) =>
     _ptr = @g_application_new(applicationid.cstring(), flags)
 
   new from_ptr(ptr: NullablePointer[GObjectStruct] val) => _ptr = ptr
@@ -26,6 +26,6 @@ interface GApplicationInterface is GObjectInterface
   fun g_application_quit(): None =>
     @g_application_quit(apply())
 
-  fun g_application_run(argc: I32, argv: Pointer[Pointer[U8]] tag): I32 =>
+  fun run(argc: I32, argv: Pointer[Pointer[U8]] tag): I32 =>
     @g_application_run(apply(), argc, argv)
 

@@ -1,10 +1,8 @@
 
-t:
-	sh mknonclass Gio Resource G
-
 all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 gbase gtkbase bitfields enumerations glib
 
 glib:
+	sh mknonclass Gio Resource G
 	sh mkst GLib Allocator G
 	sh mkst GLib Array G
 	sh mkst GLib AsyncQueue G
@@ -86,7 +84,6 @@ glib:
 	sh mkst GLib Variant G
 	sh mkst GLib VariantIter G
 	sh mkst GLib VariantType G
-	sh mkst Gio Resource G
 
 
 g0:
