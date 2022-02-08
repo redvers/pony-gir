@@ -9,12 +9,12 @@ if test -f "templates/$3$2.header"; then
   cat templates/$3$2.header                                   >> ../../test/Gtk/$3$2.pony
 fi
 
-saxon-he -xi main.xml xsl/makenongobj.xsl ns=$1 class=$3$2    >> ../../test/Gtk/$3$2.pony
+saxon-he -xi main.xml xsl/makenongobj.xsl ns=$1 class=$3$2  #  >> ../../test/Gtk/$3$2.pony
 
 if test -f "templates/$3.footer"; then
   cat templates/$3.footer                                     >> ../../test/Gtk/$3$2.pony
 fi
-
+#
 if test -f "templates/$3$2.footer"; then
   cat templates/$3$2.footer                                   >> ../../test/Gtk/$3$2.pony
 fi

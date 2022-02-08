@@ -20,11 +20,7 @@ actor Main
        references                                                */
     var gerror: GError = GError
     let resource: GResource = GResource.load("demo.gresource", gerror)
-//    if (resource.apply().is_null()) then
-//      @printf("Aborting\n".cstring())
-//      @exit(-1)
-//    end
-//    resource.register()
+    resource.register()
 
     /* This creates your GtkApplication.  AppState is the class
      * that is responsible for building your application and
