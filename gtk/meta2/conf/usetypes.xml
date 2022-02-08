@@ -1,6 +1,7 @@
 
 <typedefs>   
-<typedef name="GArray"          ponytypein="GArray"     ponytypeinconv=".array()"     ponytypeout="GArray"     structtype="GArray"     structdef="GArray"     argtype="Pointer[GArray] tag"     rvtype="Pointer[GArray] tag"/>    
+<typedef name="GResource"          ponytypein="GResource"     ponytypeinconv=".apply()"     ponytypeout="GResource"     structtype="GResource"     structdef="GResource"     argtype="Pointer[GResource] tag"     rvtype="Pointer[GResource] tag"/>    
+<typedef name="GArray"          ponytypein="GArray"     ponytypeinconv=".apply()"     ponytypeout="GArray"     structtype="GArray"     structdef="GArray"     argtype="Pointer[GArray] tag"     rvtype="Pointer[GArray] tag"/>    
 <typedef name="GHashTable"          ponytypein="GHashTable"     ponytypeinconv=".apply()"     ponytypeout="GHashTable"     structtype="GHashTable"     structdef="GHashTable"     argtype="Pointer[GHashTable] tag"     rvtype="Pointer[GHashTable] tag"/>    
 <typedef name="GBytes" ponytypein="GBytes" ponytypeinconv=".apply()" ponytypeout="GBytes" structtype="GBytes" structdef="GBytes" argtype="Pointer[GBytes] tag"     rvtype="Pointer[GBytes] tag"/>    
 <typedef name="GVariant"          ponytypein="GVariant"     ponytypeinconv=".apply()"     ponytypeout="GVariant"     structtype="GVariant"     structdef="GVariant"     argtype="Pointer[GVariant] tag"     rvtype="Pointer[GVariant] tag"/>    
@@ -16,7 +17,7 @@
 <typedef name="GLogField"          ponytypein="GLogField"     ponytypeinconv=".apply()"     ponytypeout="GLogField"     structtype="GLogField"     structdef="GLogField"     argtype="Pointer[GLogField] tag"     rvtype="Pointer[GLogField] tag"/>    
 <typedef name="GMainContext"          ponytypein="GMainContext"     ponytypeinconv=".apply()"     ponytypeout="GMainContext"     structtype="GMainContext"     structdef="GMainContext"     argtype="Pointer[GMainContext] tag"     rvtype="Pointer[GMainContext] tag"/>    
 <typedef name="GIOChannel"          ponytypein="GIOChannel"     ponytypeinconv=".apply()"     ponytypeout="GIOChannel"     structtype="GIOChannel"     structdef="GIOChannel"     argtype="Pointer[GIOChannel] tag"     rvtype="Pointer[GIOChannel] tag"/>    
-<typedef name="GError"          ponytypein="GError"     ponytypeinconv=".apply()"     ponytypeout="GError"     structtype="GError"     structdef="GError"     argtype="Pointer[GError] tag"     rvtype="Pointer[GError] tag"/>    
+<typedef name="GError"          ponytypein="GError"     ponytypeinconv=".apply()"     ponytypeout="GError"     structtype="GError"     structdef="GError"     argtype="NullablePointer[GErrorStruct] tag"     rvtype="NullablePointer[GErrorStruct] ref"/>
 <typedef name="GByteArray"          ponytypein="GByteArray"     ponytypeinconv=".apply()"     ponytypeout="GByteArray"     structtype="GByteArray"     structdef="GByteArray"     argtype="Pointer[GByteArray] tag"     rvtype="Pointer[GByteArray] tag"/>    
 <typedef name="GSource"          ponytypein="GSource"     ponytypeinconv=".apply()"     ponytypeout="GSource"     structtype="GSource"     structdef="GSource"     argtype="Pointer[GSource] tag"     rvtype="Pointer[GSource] tag"/>    
 <typedef name="GSourceFuncs"          ponytypein="GSourceFuncs"     ponytypeinconv=".apply()"     ponytypeout="GSourceFuncs"     structtype="GSourceFuncs"     structdef="GSourceFuncs"     argtype="Pointer[GSourceFuncs] tag"     rvtype="Pointer[GSourceFuncs] tag"/>    
@@ -586,7 +587,6 @@
 <typedef name="GRelation"          ponytypein="GRelation"     ponytypeinconv=""     ponytypeout="GRelation"     structtype="GRelation"     structdef="GRelation"     argtype="GRelation tag"     rvtype="GRelation"/>    
 <typedef name="GRemoteActionGroup"          ponytypein="GRemoteActionGroup"     ponytypeinconv=""     ponytypeout="GRemoteActionGroup"     structtype="GRemoteActionGroup"     structdef="GRemoteActionGroup"     argtype="GRemoteActionGroup tag"     rvtype="GRemoteActionGroup"/>    
 <typedef name="GResolver"          ponytypein="GResolver"     ponytypeinconv=""     ponytypeout="GResolver"     structtype="GResolver"     structdef="GResolver"     argtype="GResolver tag"     rvtype="GResolver"/>    
-<typedef name="GResource"          ponytypein="GResource"     ponytypeinconv=""     ponytypeout="GResource"     structtype="GResource"     structdef="GResource"     argtype="GResource tag"     rvtype="GResource"/>    
 <typedef name="GRWLock"          ponytypein="GRWLock"     ponytypeinconv=""     ponytypeout="GRWLock"     structtype="GRWLock"     structdef="GRWLock"     argtype="GRWLock tag"     rvtype="GRWLock"/>    
 <typedef name="GScannerConfig"          ponytypein="GScannerConfig"     ponytypeinconv=""     ponytypeout="GScannerConfig"     structtype="GScannerConfig"     structdef="GScannerConfig"     argtype="GScannerConfig tag"     rvtype="GScannerConfig"/>    
 <typedef name="GScanner"          ponytypein="GScanner"     ponytypeinconv=""     ponytypeout="GScanner"     structtype="GScanner"     structdef="GScanner"     argtype="GScanner tag"     rvtype="GScanner"/>    

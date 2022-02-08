@@ -1264,7 +1264,7 @@
      <useargs>
        <usearg name="domain" type="U32"/>
        <usearg name="code" type="I32"/>
-       <usearg name="format" type="String"/>
+       <usearg name="text" type="String"/>
        <usearg name="parg3" type="..."/>
      </useargs>
   </use>
@@ -46857,7 +46857,7 @@
      </useargs>
   </use>
   <use id="_6280" name="g_resource_load"
-     ponyname="g_resource_load"
+     ponyname="load"
      fid="f279"
      lineno="72"
      rv="GResource">
@@ -46917,7 +46917,7 @@
      </useargs>
   </use>
   <use id="_6285" name="g_resources_register"
-     ponyname="g_resources_register"
+     ponyname="register"
      fid="f279"
      lineno="98"
      rv="None">

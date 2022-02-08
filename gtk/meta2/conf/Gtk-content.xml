@@ -625,7 +625,7 @@
   <class name="Application" ctype="GtkApplication" parent="GApplication" render="1">
     <implements name="Gio.ActionGroup" render="0"/>
     <implements name="Gio.ActionMap" render="0"/>
-    <constructor name="new" cid="gtk_application_new" render="0"/>
+    <constructor name="create" cid="gtk_application_new" render="1"/>
     <virtual-method name="window_added" render="0"/>
     <virtual-method name="window_removed" render="0"/>
     <method name="add_accelerator" cid="gtk_application_add_accelerator" render="0"/>

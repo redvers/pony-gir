@@ -498,8 +498,8 @@
     <field name="domain"/>
     <field name="code"/>
     <field name="message"/>
-    <constructor name="new" cid="g_error_new" render="0"/>
-    <constructor name="new_literal" cid="g_error_new_literal" render="0"/>
+    <constructor name="gnew" cid="g_error_new" render="0"/>
+    <constructor name="create" cid="g_error_new_literal" render="0"/>
     <constructor name="new_valist" cid="g_error_new_valist" render="0"/>
     <method name="copy" cid="g_error_copy" render="0"/>
     <method name="free" cid="g_error_free" render="0"/>

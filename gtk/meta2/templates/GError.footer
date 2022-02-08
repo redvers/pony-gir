@@ -1,12 +1,3 @@
-// Constructors
-// Methods
-
-class GError
-  var _ptr: NullablePointer[GErrorStruct] ref
-
-
-  fun ref apply(): NullablePointer[GErrorStruct] ref => _ptr
-
   new create() =>
     let s: GErrorStruct = GErrorStruct
     _ptr = NullablePointer[GErrorStruct](s)

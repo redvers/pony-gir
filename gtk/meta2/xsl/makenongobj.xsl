@@ -27,7 +27,7 @@
   -->
 <xsl:variable name="ffirv" select="/castxml2pony/typedefs/typedef[@name=$class]/@rvtype"/>
 class <xsl:value-of select="$class"/><xsl:text>
-  var _ptr: </xsl:text><xsl:value-of select="$ffirv"/> = Pointer[<xsl:value-of select="$class"/>]<xsl:text>
+  var _ptr: </xsl:text><xsl:value-of select="$ffirv"/><xsl:text>
 
 </xsl:text>
 

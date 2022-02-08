@@ -4091,17 +4091,17 @@
     <member name="soa" value="4" cid="G_RESOLVER_RECORD_SOA" glibnick="soa" glibname="G_RESOLVER_RECORD_SOA"/>
     <member name="ns" value="5" cid="G_RESOLVER_RECORD_NS" glibnick="ns" glibname="G_RESOLVER_RECORD_NS"/>
   </enumeration>
-  <record name="Resource" gtypestructfor="" ctype="GResource" render="0">
+  <record name="Resource" gtypestructfor="" ctype="GResource" render="1">
     <constructor name="new_from_data" cid="g_resource_new_from_data" render="0"/>
-    <method name="_register" cid="g_resources_register" render="0"/>
-    <method name="_unregister" cid="g_resources_unregister" render="0"/>
+    <method name="register" cid="g_resources_register" render="1"/>
+    <method name="unregister" cid="g_resources_unregister" render="0"/>
     <method name="enumerate_children" cid="g_resource_enumerate_children" render="0"/>
     <method name="get_info" cid="g_resource_get_info" render="0"/>
     <method name="lookup_data" cid="g_resource_lookup_data" render="0"/>
     <method name="open_stream" cid="g_resource_open_stream" render="0"/>
     <method name="ref" cid="g_resource_ref" render="0"/>
     <method name="unref" cid="g_resource_unref" render="0"/>
-    <function name="load" cid="g_resource_load" render="0"/>
+    <constructor name="load" cid="g_resource_load" render="1"/>
   </record>
   <enumeration name="ResourceError" render="1">     <member name="not_found" value="0" cid="G_RESOURCE_ERROR_NOT_FOUND" glibnick="not-found" glibname="G_RESOURCE_ERROR_NOT_FOUND"/>
     <member name="internal" value="1" cid="G_RESOURCE_ERROR_INTERNAL" glibnick="internal" glibname="G_RESOURCE_ERROR_INTERNAL"/>

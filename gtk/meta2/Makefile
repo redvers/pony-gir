@@ -1,3 +1,6 @@
+gresource:
+	sh mknonclass GLib Error G
+	sh mknonclass Gio Resource G
 all:	g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 gbase gtkbase bitfields enumerations glib
 
 glib:
