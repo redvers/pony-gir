@@ -41,13 +41,13 @@
 
   <typedef name="NullablePointer[GSourcePrivate]"
     embed="var"
-    ponytypein="NullablePointer[GSourcePrivate] tag"
+    ponytypein="NullablePointer[GSourcePrivateStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GSourcePrivate]"
-    structtype="NullablePointer[GSourcePrivate]"
-    structdef="NullablePointer[GSourcePrivate].none()"
-    argtype="NullablePointer[GSourcePrivate] tag"
-    rvtype="NullablePointer[GSourcePrivate]"/>
+    ponytypeout="NullablePointer[GSourcePrivateStruct]"
+    structtype="NullablePointer[GSourcePrivateStruct]"
+    structdef="NullablePointer[GSourcePrivateStruct].none()"
+    argtype="NullablePointer[GSourcePrivateStruct] tag"
+    rvtype="NullablePointer[GSourcePrivateStruct]"/>
 
   <typedef name="I32"
     embed="var"
@@ -61,13 +61,13 @@
 
   <typedef name="NullablePointer[GIOFuncs]"
     embed="var"
-    ponytypein="NullablePointer[GIOFuncs] tag"
+    ponytypein="NullablePointer[GIOFuncsStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GIOFuncs]"
-    structtype="NullablePointer[GIOFuncs]"
-    structdef="NullablePointer[GIOFuncs].none()"
-    argtype="NullablePointer[GIOFuncs] tag"
-    rvtype="NullablePointer[GIOFuncs]"/>
+    ponytypeout="NullablePointer[GIOFuncsStruct]"
+    structtype="NullablePointer[GIOFuncsStruct]"
+    structdef="NullablePointer[GIOFuncsStruct].none()"
+    argtype="NullablePointer[GIOFuncsStruct] tag"
+    rvtype="NullablePointer[GIOFuncsStruct]"/>
 
   <typedef name="Pointer[U32]"
     embed="var"
@@ -91,23 +91,23 @@
 
   <typedef name="NullablePointer[GData]"
     embed="var"
-    ponytypein="NullablePointer[GData] tag"
+    ponytypein="NullablePointer[GDataStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GData]"
-    structtype="NullablePointer[GData]"
-    structdef="NullablePointer[GData].none()"
-    argtype="NullablePointer[GData] tag"
-    rvtype="NullablePointer[GData]"/>
+    ponytypeout="NullablePointer[GDataStruct]"
+    structtype="NullablePointer[GDataStruct]"
+    structdef="NullablePointer[GDataStruct].none()"
+    argtype="NullablePointer[GDataStruct] tag"
+    rvtype="NullablePointer[GDataStruct]"/>
 
   <typedef name="NullablePointer[Pointer[None]]"
     embed="var"
-    ponytypein="NullablePointer[Pointer[None]] tag"
+    ponytypein="Pointer[Pointer[None]] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[Pointer[None]]"
-    structtype="NullablePointer[Pointer[None]]"
-    structdef="NullablePointer[Pointer[None]].none()"
-    argtype="NullablePointer[Pointer[None]] tag"
-    rvtype="NullablePointer[Pointer[None]]"/>
+    ponytypeout="Pointer[Pointer[None]]"
+    structtype="Pointer[Pointer[None]]"
+    structdef="Pointer[Pointer[None]]"
+    argtype="Pointer[Pointer[None]] tag"
+    rvtype="Pointer[Pointer[None]]"/>
 
   <typedef name="I64"
     embed="var"
@@ -131,33 +131,33 @@
 
   <typedef name="NullablePointer[GList]"
     embed="var"
-    ponytypein="NullablePointer[GList] tag"
+    ponytypein="NullablePointer[GListStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GList]"
-    structtype="NullablePointer[GList]"
-    structdef="NullablePointer[GList].none()"
-    argtype="NullablePointer[GList] tag"
-    rvtype="NullablePointer[GList]"/>
+    ponytypeout="NullablePointer[GListStruct]"
+    structtype="NullablePointer[GListStruct]"
+    structdef="NullablePointer[GListStruct].none()"
+    argtype="NullablePointer[GListStruct] tag"
+    rvtype="NullablePointer[GListStruct]"/>
 
   <typedef name="NullablePointer[GIConv]"
     embed="var"
-    ponytypein="NullablePointer[GIConv] tag"
+    ponytypein="NullablePointer[GIConvStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GIConv]"
-    structtype="NullablePointer[GIConv]"
-    structdef="NullablePointer[GIConv].none()"
-    argtype="NullablePointer[GIConv] tag"
-    rvtype="NullablePointer[GIConv]"/>
+    ponytypeout="NullablePointer[GIConvStruct]"
+    structtype="NullablePointer[GIConvStruct]"
+    structdef="NullablePointer[GIConvStruct].none()"
+    argtype="NullablePointer[GIConvStruct] tag"
+    rvtype="NullablePointer[GIConvStruct]"/>
 
   <typedef name="NullablePointer[GVariantType]"
     embed="var"
-    ponytypein="NullablePointer[GVariantType] tag"
+    ponytypein="NullablePointer[GVariantTypeStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GVariantType]"
-    structtype="NullablePointer[GVariantType]"
-    structdef="NullablePointer[GVariantType].none()"
-    argtype="NullablePointer[GVariantType] tag"
-    rvtype="NullablePointer[GVariantType]"/>
+    ponytypeout="NullablePointer[GVariantTypeStruct]"
+    structtype="NullablePointer[GVariantTypeStruct]"
+    structdef="NullablePointer[GVariantTypeStruct].none()"
+    argtype="NullablePointer[GVariantTypeStruct] tag"
+    rvtype="NullablePointer[GVariantTypeStruct]"/>
 
   <typedef name="U16"
     embed="var"
@@ -171,23 +171,23 @@
 
   <typedef name="NullablePointer[GSourceFuncs]"
     embed="var"
-    ponytypein="NullablePointer[GSourceFuncs] tag"
+    ponytypein="NullablePointer[GSourceFuncsStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GSourceFuncs]"
-    structtype="NullablePointer[GSourceFuncs]"
-    structdef="NullablePointer[GSourceFuncs].none()"
-    argtype="NullablePointer[GSourceFuncs] tag"
-    rvtype="NullablePointer[GSourceFuncs]"/>
+    ponytypeout="NullablePointer[GSourceFuncsStruct]"
+    structtype="NullablePointer[GSourceFuncsStruct]"
+    structdef="NullablePointer[GSourceFuncsStruct].none()"
+    argtype="NullablePointer[GSourceFuncsStruct] tag"
+    rvtype="NullablePointer[GSourceFuncsStruct]"/>
 
   <typedef name="NullablePointer[GHook]"
     embed="var"
-    ponytypein="NullablePointer[GHook] tag"
+    ponytypein="NullablePointer[GHookStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GHook]"
-    structtype="NullablePointer[GHook]"
-    structdef="NullablePointer[GHook].none()"
-    argtype="NullablePointer[GHook] tag"
-    rvtype="NullablePointer[GHook]"/>
+    ponytypeout="NullablePointer[GHookStruct]"
+    structtype="NullablePointer[GHookStruct]"
+    structdef="NullablePointer[GHookStruct].none()"
+    argtype="NullablePointer[GHookStruct] tag"
+    rvtype="NullablePointer[GHookStruct]"/>
 
   <typedef name="None"
     embed="embed"
@@ -211,13 +211,13 @@
 
   <typedef name="NullablePointer[GScannerConfig]"
     embed="var"
-    ponytypein="NullablePointer[GScannerConfig] tag"
+    ponytypein="NullablePointer[GScannerConfigStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GScannerConfig]"
-    structtype="NullablePointer[GScannerConfig]"
-    structdef="NullablePointer[GScannerConfig].none()"
-    argtype="NullablePointer[GScannerConfig] tag"
-    rvtype="NullablePointer[GScannerConfig]"/>
+    ponytypeout="NullablePointer[GScannerConfigStruct]"
+    structtype="NullablePointer[GScannerConfigStruct]"
+    structdef="NullablePointer[GScannerConfigStruct].none()"
+    argtype="NullablePointer[GScannerConfigStruct] tag"
+    rvtype="NullablePointer[GScannerConfigStruct]"/>
 
   <typedef name="Anon"
     embed="embed"
@@ -231,23 +231,23 @@
 
   <typedef name="NullablePointer[GNode]"
     embed="var"
-    ponytypein="NullablePointer[GNode] tag"
+    ponytypein="NullablePointer[GNodeStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GNode]"
-    structtype="NullablePointer[GNode]"
-    structdef="NullablePointer[GNode].none()"
-    argtype="NullablePointer[GNode] tag"
-    rvtype="NullablePointer[GNode]"/>
+    ponytypeout="NullablePointer[GNodeStruct]"
+    structtype="NullablePointer[GNodeStruct]"
+    structdef="NullablePointer[GNodeStruct].none()"
+    argtype="NullablePointer[GNodeStruct] tag"
+    rvtype="NullablePointer[GNodeStruct]"/>
 
   <typedef name="NullablePointer[GHashTable]"
     embed="var"
-    ponytypein="NullablePointer[GHashTable] tag"
+    ponytypein="NullablePointer[GHashTableStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GHashTable]"
-    structtype="NullablePointer[GHashTable]"
-    structdef="NullablePointer[GHashTable].none()"
-    argtype="NullablePointer[GHashTable] tag"
-    rvtype="NullablePointer[GHashTable]"/>
+    ponytypeout="NullablePointer[GHashTableStruct]"
+    structtype="NullablePointer[GHashTableStruct]"
+    structdef="NullablePointer[GHashTableStruct].none()"
+    argtype="NullablePointer[GHashTableStruct] tag"
+    rvtype="NullablePointer[GHashTableStruct]"/>
 
   <typedef name="Pointer[U64]"
     embed="var"
@@ -261,83 +261,83 @@
 
   <typedef name="NullablePointer[GTrashStack]"
     embed="var"
-    ponytypein="NullablePointer[GTrashStack] tag"
+    ponytypein="NullablePointer[GTrashStackStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GTrashStack]"
-    structtype="NullablePointer[GTrashStack]"
-    structdef="NullablePointer[GTrashStack].none()"
-    argtype="NullablePointer[GTrashStack] tag"
-    rvtype="NullablePointer[GTrashStack]"/>
+    ponytypeout="NullablePointer[GTrashStackStruct]"
+    structtype="NullablePointer[GTrashStackStruct]"
+    structdef="NullablePointer[GTrashStackStruct].none()"
+    argtype="NullablePointer[GTrashStackStruct] tag"
+    rvtype="NullablePointer[GTrashStackStruct]"/>
 
   <typedef name="NullablePointer[GCond]"
     embed="var"
-    ponytypein="NullablePointer[GCond] tag"
+    ponytypein="NullablePointer[GCondStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GCond]"
-    structtype="NullablePointer[GCond]"
-    structdef="NullablePointer[GCond].none()"
-    argtype="NullablePointer[GCond] tag"
-    rvtype="NullablePointer[GCond]"/>
+    ponytypeout="NullablePointer[GCondStruct]"
+    structtype="NullablePointer[GCondStruct]"
+    structdef="NullablePointer[GCondStruct].none()"
+    argtype="NullablePointer[GCondStruct] tag"
+    rvtype="NullablePointer[GCondStruct]"/>
 
   <typedef name="NullablePointer[GSourceCallbackFuncs]"
     embed="var"
-    ponytypein="NullablePointer[GSourceCallbackFuncs] tag"
+    ponytypein="NullablePointer[GSourceCallbackFuncsStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GSourceCallbackFuncs]"
-    structtype="NullablePointer[GSourceCallbackFuncs]"
-    structdef="NullablePointer[GSourceCallbackFuncs].none()"
-    argtype="NullablePointer[GSourceCallbackFuncs] tag"
-    rvtype="NullablePointer[GSourceCallbackFuncs]"/>
+    ponytypeout="NullablePointer[GSourceCallbackFuncsStruct]"
+    structtype="NullablePointer[GSourceCallbackFuncsStruct]"
+    structdef="NullablePointer[GSourceCallbackFuncsStruct].none()"
+    argtype="NullablePointer[GSourceCallbackFuncsStruct] tag"
+    rvtype="NullablePointer[GSourceCallbackFuncsStruct]"/>
 
   <typedef name="NullablePointer[GSList]"
     embed="var"
-    ponytypein="NullablePointer[GSList] tag"
+    ponytypein="NullablePointer[GSListStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GSList]"
-    structtype="NullablePointer[GSList]"
-    structdef="NullablePointer[GSList].none()"
-    argtype="NullablePointer[GSList] tag"
-    rvtype="NullablePointer[GSList]"/>
+    ponytypeout="NullablePointer[GSListStruct]"
+    structtype="NullablePointer[GSListStruct]"
+    structdef="NullablePointer[GSListStruct].none()"
+    argtype="NullablePointer[GSListStruct] tag"
+    rvtype="NullablePointer[GSListStruct]"/>
 
   <typedef name="NullablePointer[GString]"
     embed="var"
-    ponytypein="NullablePointer[GString] tag"
+    ponytypein="NullablePointer[GStringStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GString]"
-    structtype="NullablePointer[GString]"
-    structdef="NullablePointer[GString].none()"
-    argtype="NullablePointer[GString] tag"
-    rvtype="NullablePointer[GString]"/>
+    ponytypeout="NullablePointer[GStringStruct]"
+    structtype="NullablePointer[GStringStruct]"
+    structdef="NullablePointer[GStringStruct].none()"
+    argtype="NullablePointer[GStringStruct] tag"
+    rvtype="NullablePointer[GStringStruct]"/>
 
   <typedef name="NullablePointer[GMainContext]"
     embed="var"
-    ponytypein="NullablePointer[GMainContext] tag"
+    ponytypein="NullablePointer[GMainContextStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GMainContext]"
-    structtype="NullablePointer[GMainContext]"
-    structdef="NullablePointer[GMainContext].none()"
-    argtype="NullablePointer[GMainContext] tag"
-    rvtype="NullablePointer[GMainContext]"/>
+    ponytypeout="NullablePointer[GMainContextStruct]"
+    structtype="NullablePointer[GMainContextStruct]"
+    structdef="NullablePointer[GMainContextStruct].none()"
+    argtype="NullablePointer[GMainContextStruct] tag"
+    rvtype="NullablePointer[GMainContextStruct]"/>
 
   <typedef name="NullablePointer[GSource]"
     embed="var"
-    ponytypein="NullablePointer[GSource] tag"
+    ponytypein="NullablePointer[GSourceStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GSource]"
-    structtype="NullablePointer[GSource]"
-    structdef="NullablePointer[GSource].none()"
-    argtype="NullablePointer[GSource] tag"
-    rvtype="NullablePointer[GSource]"/>
+    ponytypeout="NullablePointer[GSourceStruct]"
+    structtype="NullablePointer[GSourceStruct]"
+    structdef="NullablePointer[GSourceStruct].none()"
+    argtype="NullablePointer[GSourceStruct] tag"
+    rvtype="NullablePointer[GSourceStruct]"/>
 
   <typedef name="NullablePointer[GVariant]"
     embed="var"
-    ponytypein="NullablePointer[GVariant] tag"
+    ponytypein="NullablePointer[GVariantStruct] tag"
     ponytypeinconv=""
-    ponytypeout="NullablePointer[GVariant]"
-    structtype="NullablePointer[GVariant]"
-    structdef="NullablePointer[GVariant].none()"
-    argtype="NullablePointer[GVariant] tag"
-    rvtype="NullablePointer[GVariant]"/>
+    ponytypeout="NullablePointer[GVariantStruct]"
+    structtype="NullablePointer[GVariantStruct]"
+    structdef="NullablePointer[GVariantStruct].none()"
+    argtype="NullablePointer[GVariantStruct] tag"
+    rvtype="NullablePointer[GVariantStruct]"/>
 
   <typedef name="U8"
     embed="var"
