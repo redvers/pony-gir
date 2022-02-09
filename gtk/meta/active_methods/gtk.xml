@@ -96,7 +96,7 @@
   <renderuse name="gtk_hsv_to_rgb" render="0"/>
   <renderuse name="gtk_im_preedit_style_get_type" render="0"/>
   <renderuse name="gtk_im_status_style_get_type" render="0"/>
-  <renderuse name="gtk_init" render="0"/>
+  <renderuse name="gtk_init" render="1"/>
   <renderuse name="gtk_init_check" render="0"/>
   <renderuse name="gtk_init_with_args" render="0"/>
   <renderuse name="gtk_input_hints_get_type" render="0"/>
@@ -106,12 +106,12 @@
   <renderuse name="gtk_key_snooper_install" render="0"/>
   <renderuse name="gtk_key_snooper_remove" render="0"/>
   <renderuse name="gtk_license_get_type" render="0"/>
-  <renderuse name="gtk_main" render="0"/>
-  <renderuse name="gtk_main_do_event" render="0"/>
-  <renderuse name="gtk_main_iteration" render="0"/>
-  <renderuse name="gtk_main_iteration_do" render="0"/>
+  <renderuse name="gtk_main" render="1"/>
+  <renderuse name="gtk_main_do_event" render="1"/>
+  <renderuse name="gtk_main_iteration" render="1"/>
+  <renderuse name="gtk_main_iteration_do" render="1"/>
   <renderuse name="gtk_main_level" render="0"/>
-  <renderuse name="gtk_main_quit" render="0"/>
+  <renderuse name="gtk_main_quit" render="1"/>
   <renderuse name="gtk_message_type_get_type" render="0"/>
   <renderuse name="gtk_movement_step_get_type" render="0"/>
   <renderuse name="gtk_number_up_layout_get_type" render="0"/>

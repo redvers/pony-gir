@@ -7,6 +7,7 @@ use "lib:gio-2.0"
 use @g_object_notify[None](gobject: GObjectStruct tag, propertyname: Pointer[U8] tag)
 use @g_object_ref[None](gobject: GObjectStruct tag)
 use @g_object_unref[None](gobject: GObjectStruct tag)
+use @g_signal_connect_data[U64](instance: GObjectStruct tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any, destroydata: Pointer[None] tag, connectflags: I32)
 
 use @g_application_new[GApplicationStruct](applicationid: Pointer[U8] tag, flags: I32)
 use @g_application_get_application_id[Pointer[U8]](application: GObjectStruct tag)
@@ -29,14 +30,14 @@ class GApplication is GApplicationInterface
 interface GApplicationInterface is GObjectInterface
   fun ref gobject(): GObjectStruct
 
-  fun ref get_application_id(application: GObjectStruct tag): String =>
+  fun ref get_application_id(): String =>
     var pcstring: Pointer[U8] =  @g_application_get_application_id(gobject())
     let p: String iso = String.from_cstring(pcstring).clone()
     consume p
 
-  fun ref quit(application: GObjectStruct tag): None =>
+  fun ref quit(): None =>
     @g_application_quit(gobject())
 
-  fun ref run(application: GObjectStruct tag, argc: I32, argv: Pointer[Pointer[U8]]): I32 =>
+  fun ref run(argc: I32, argv: Pointer[Pointer[U8]]): I32 =>
     @g_application_run(gobject(), argc, argv)
 

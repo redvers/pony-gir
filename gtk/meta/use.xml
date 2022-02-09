@@ -883,7 +883,7 @@
      <useargs/>
   </use>
   <use id="_11546" name="gtk_widget_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f399"
      lineno="615"
      rv="NullablePointer[GtkWidget]">
@@ -4104,7 +4104,7 @@
      <useargs/>
   </use>
   <use id="_11934" name="gtk_window_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f403"
      lineno="147"
      rv="NullablePointer[GtkWindow]">
@@ -5349,7 +5349,7 @@
      <useargs/>
   </use>
   <use id="_11811" name="gtk_application_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f437"
      lineno="79"
      rv="NullablePointer[GtkApplication]">
@@ -6124,7 +6124,7 @@
      <useargs/>
   </use>
   <use id="_16833" name="gtk_window_group_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f440"
      lineno="69"
      rv="NullablePointer[GtkWindowGroup]">
@@ -7336,7 +7336,7 @@
      <useargs/>
   </use>
   <use id="_12261" name="gtk_label_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f446"
      lineno="91"
      rv="NullablePointer[GtkLabel]">
@@ -17303,7 +17303,7 @@
      <useargs/>
   </use>
   <use id="_13419" name="gtk_application_window_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f484"
      lineno="71"
      rv="NullablePointer[GtkWidget]">
@@ -18099,7 +18099,7 @@
      <useargs/>
   </use>
   <use id="_13579" name="gtk_button_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f491"
      lineno="96"
      rv="NullablePointer[GtkButton]">
@@ -26619,7 +26619,7 @@
      </useargs>
   </use>
   <use id="_15078" name="gtk_init"
-     ponyname="gtk_init"
+     ponyname="init"
      fid="f569"
      lineno="101"
      rv="None">
@@ -26683,14 +26683,14 @@
      <useargs/>
   </use>
   <use id="_15085" name="gtk_events_pending"
-     ponyname="gtk_events_pending"
+     ponyname="events_pending"
      fid="f569"
      lineno="149"
      rv="I32">
      <useargs/>
   </use>
   <use id="_15086" name="gtk_main_do_event"
-     ponyname="gtk_main_do_event"
+     ponyname="main_do_event"
      fid="f569"
      lineno="152"
      rv="None">
@@ -26699,35 +26699,35 @@
      </useargs>
   </use>
   <use id="_15087" name="gtk_main"
-     ponyname="gtk_main"
+     ponyname="main"
      fid="f569"
      lineno="154"
      rv="None">
      <useargs/>
   </use>
   <use id="_15088" name="gtk_main_level"
-     ponyname="gtk_main_level"
+     ponyname="main_level"
      fid="f569"
      lineno="156"
      rv="U32">
      <useargs/>
   </use>
   <use id="_15089" name="gtk_main_quit"
-     ponyname="gtk_main_quit"
+     ponyname="main_quit"
      fid="f569"
      lineno="158"
      rv="None">
      <useargs/>
   </use>
   <use id="_15090" name="gtk_main_iteration"
-     ponyname="gtk_main_iteration"
+     ponyname="main_iteration"
      fid="f569"
      lineno="160"
      rv="I32">
      <useargs/>
   </use>
   <use id="_15091" name="gtk_main_iteration_do"
-     ponyname="gtk_main_iteration_do"
+     ponyname="main_iteration_do"
      fid="f569"
      lineno="162"
      rv="I32">
@@ -37545,7 +37545,7 @@
      <useargs/>
   </use>
   <use id="_16794" name="gtk_widget_path_new"
-     ponyname="gnew"
+     ponyname="create"
      fid="f646"
      lineno="37"
      rv="NullablePointer[GtkWidgetPath]">
