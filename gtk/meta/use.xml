@@ -584,28 +584,28 @@
      </useargs>
   </use>
   <use id="_13529" name="gtk_builder_error_quark"
-     ponyname="gtk_builder_error_quark"
+     ponyname="error_quark"
      fid="f397"
      lineno="91"
      rv="U32">
      <useargs/>
   </use>
   <use id="_13530" name="gtk_builder_get_type"
-     ponyname="gtk_builder_get_type"
+     ponyname="get_type"
      fid="f397"
      lineno="119"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13531" name="gtk_builder_new"
-     ponyname="gtk_builder_new"
+     ponyname="create"
      fid="f397"
      lineno="121"
      rv="NullablePointer[GtkBuilder]">
      <useargs/>
   </use>
   <use id="_13532" name="gtk_builder_add_from_file"
-     ponyname="gtk_builder_add_from_file"
+     ponyname="add_from_file"
      fid="f397"
      lineno="124"
      rv="U32">
@@ -616,7 +616,7 @@
      </useargs>
   </use>
   <use id="_13533" name="gtk_builder_add_from_resource"
-     ponyname="gtk_builder_add_from_resource"
+     ponyname="add_from_resource"
      fid="f397"
      lineno="128"
      rv="U32">
@@ -627,7 +627,7 @@
      </useargs>
   </use>
   <use id="_13534" name="gtk_builder_add_from_string"
-     ponyname="gtk_builder_add_from_string"
+     ponyname="add_from_string"
      fid="f397"
      lineno="132"
      rv="U32">
@@ -639,7 +639,7 @@
      </useargs>
   </use>
   <use id="_13535" name="gtk_builder_add_objects_from_file"
-     ponyname="gtk_builder_add_objects_from_file"
+     ponyname="add_objects_from_file"
      fid="f397"
      lineno="137"
      rv="U32">
@@ -651,7 +651,7 @@
      </useargs>
   </use>
   <use id="_13536" name="gtk_builder_add_objects_from_resource"
-     ponyname="gtk_builder_add_objects_from_resource"
+     ponyname="add_objects_from_resource"
      fid="f397"
      lineno="142"
      rv="U32">
@@ -663,7 +663,7 @@
      </useargs>
   </use>
   <use id="_13537" name="gtk_builder_add_objects_from_string"
-     ponyname="gtk_builder_add_objects_from_string"
+     ponyname="add_objects_from_string"
      fid="f397"
      lineno="147"
      rv="U32">
@@ -676,7 +676,7 @@
      </useargs>
   </use>
   <use id="_13538" name="gtk_builder_get_object"
-     ponyname="gtk_builder_get_object"
+     ponyname="get_object"
      fid="f397"
      lineno="153"
      rv="NullablePointer[GObject]">
@@ -686,7 +686,7 @@
      </useargs>
   </use>
   <use id="_13539" name="gtk_builder_get_objects"
-     ponyname="gtk_builder_get_objects"
+     ponyname="get_objects"
      fid="f397"
      lineno="156"
      rv="NullablePointer[GSList]">
@@ -695,7 +695,7 @@
      </useargs>
   </use>
   <use id="_13540" name="gtk_builder_expose_object"
-     ponyname="gtk_builder_expose_object"
+     ponyname="expose_object"
      fid="f397"
      lineno="158"
      rv="None">
@@ -706,7 +706,7 @@
      </useargs>
   </use>
   <use id="_13541" name="gtk_builder_connect_signals"
-     ponyname="gtk_builder_connect_signals"
+     ponyname="connect_signals"
      fid="f397"
      lineno="162"
      rv="None">
@@ -716,7 +716,7 @@
      </useargs>
   </use>
   <use id="_13542" name="gtk_builder_connect_signals_full"
-     ponyname="gtk_builder_connect_signals_full"
+     ponyname="connect_signals_full"
      fid="f397"
      lineno="165"
      rv="None">
@@ -727,7 +727,7 @@
      </useargs>
   </use>
   <use id="_13543" name="gtk_builder_set_translation_domain"
-     ponyname="gtk_builder_set_translation_domain"
+     ponyname="set_translation_domain"
      fid="f397"
      lineno="169"
      rv="None">
@@ -737,7 +737,7 @@
      </useargs>
   </use>
   <use id="_13544" name="gtk_builder_get_translation_domain"
-     ponyname="gtk_builder_get_translation_domain"
+     ponyname="get_translation_domain"
      fid="f397"
      lineno="172"
      rv="String">
@@ -746,7 +746,7 @@
      </useargs>
   </use>
   <use id="_13545" name="gtk_builder_get_type_from_name"
-     ponyname="gtk_builder_get_type_from_name"
+     ponyname="get_type_from_name"
      fid="f397"
      lineno="174"
      rv="U64">
@@ -756,7 +756,7 @@
      </useargs>
   </use>
   <use id="_13546" name="gtk_builder_value_from_string"
-     ponyname="gtk_builder_value_from_string"
+     ponyname="value_from_string"
      fid="f397"
      lineno="178"
      rv="I32">
@@ -769,7 +769,7 @@
      </useargs>
   </use>
   <use id="_13547" name="gtk_builder_value_from_string_type"
-     ponyname="gtk_builder_value_from_string_type"
+     ponyname="value_from_string_type"
      fid="f397"
      lineno="184"
      rv="I32">
@@ -782,7 +782,7 @@
      </useargs>
   </use>
   <use id="_13548" name="gtk_builder_new_from_file"
-     ponyname="gtk_builder_new_from_file"
+     ponyname="new_from_file"
      fid="f397"
      lineno="190"
      rv="NullablePointer[GtkBuilder]">
@@ -791,7 +791,7 @@
      </useargs>
   </use>
   <use id="_13549" name="gtk_builder_new_from_resource"
-     ponyname="gtk_builder_new_from_resource"
+     ponyname="new_from_resource"
      fid="f397"
      lineno="192"
      rv="NullablePointer[GtkBuilder]">
@@ -800,7 +800,7 @@
      </useargs>
   </use>
   <use id="_13550" name="gtk_builder_new_from_string"
-     ponyname="gtk_builder_new_from_string"
+     ponyname="new_from_string"
      fid="f397"
      lineno="194"
      rv="NullablePointer[GtkBuilder]">
@@ -810,7 +810,7 @@
      </useargs>
   </use>
   <use id="_13551" name="gtk_builder_add_callback_symbol"
-     ponyname="gtk_builder_add_callback_symbol"
+     ponyname="add_callback_symbol"
      fid="f397"
      lineno="198"
      rv="None">
@@ -821,7 +821,7 @@
      </useargs>
   </use>
   <use id="_13552" name="gtk_builder_add_callback_symbols"
-     ponyname="gtk_builder_add_callback_symbols"
+     ponyname="add_callback_symbols"
      fid="f397"
      lineno="202"
      rv="None">
@@ -833,7 +833,7 @@
      </useargs>
   </use>
   <use id="_13553" name="gtk_builder_lookup_callback_symbol"
-     ponyname="gtk_builder_lookup_callback_symbol"
+     ponyname="lookup_callback_symbol"
      fid="f397"
      lineno="207"
      rv="Pointer[None]">
@@ -843,7 +843,7 @@
      </useargs>
   </use>
   <use id="_13554" name="gtk_builder_set_application"
-     ponyname="gtk_builder_set_application"
+     ponyname="set_application"
      fid="f397"
      lineno="211"
      rv="None">
@@ -853,7 +853,7 @@
      </useargs>
   </use>
   <use id="_13555" name="gtk_builder_get_application"
-     ponyname="gtk_builder_get_application"
+     ponyname="get_application"
      fid="f397"
      lineno="215"
      rv="NullablePointer[GObject]">
@@ -862,7 +862,7 @@
      </useargs>
   </use>
   <use id="_13556" name="gtk_builder_extend_with_template"
-     ponyname="gtk_builder_extend_with_template"
+     ponyname="extend_with_template"
      fid="f397"
      lineno="230"
      rv="U32">
@@ -36669,7 +36669,7 @@
      <useargs/>
   </use>
   <use id="_16662" name="gtk_builder_error_get_type"
-     ponyname="gtk_builder_error_get_type"
+     ponyname="error_get_type"
      fid="f643"
      lineno="59"
      rv="U64">

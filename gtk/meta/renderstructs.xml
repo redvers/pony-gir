@@ -1,3 +1,5 @@
 <renderstructs>
   <renderstruct id="_11804" basestruct="GObject" basepath="_ptr.parent.parent_instance" parent="GApplication"/>
+  <renderstruct id="_11068" basestruct="GObject" basepath="_ptr.parent_instance" parent="GObject"/>
+  <renderstruct id="_11046" basestruct="GObject" basepath="_ptr.parent_instance" parent="GObject"/>
 </renderstructs>

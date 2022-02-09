@@ -751,12 +751,12 @@
 
   <typedef name="NullablePointer[GtkWidget]"
     embed="var"
-    ponytypein="GtkWidgetStruct tag"
+    ponytypein="GObject"
     ponytypeinconv=""
     ponytypeout="GtkWidgetStruct"
     structtype="GtkWidgetStruct"
     structdef="GtkWidgetStruct"
-    argtype="GtkWidgetStruct tag"
+    argtype="GObjectStruct"
     rvtype="GtkWidgetStruct"/>
 
   <typedef name="NullablePointer[GtkTreeStore]"
@@ -2491,13 +2491,13 @@
 
   <typedef name="Array[NullablePointer[GError]]"
     embed="embed"
-    ponytypein="Pointer[NullablePointer[GError]] tag"
+    ponytypein="Pointer[NullablePointer[GErrorStruct]] tag"
     ponytypeinconv=""
-    ponytypeout="Pointer[NullablePointer[GError]]"
-    structtype="Pointer[NullablePointer[GError]]"
-    structdef="Pointer[NullablePointer[GError].none()]"
-    argtype="Pointer[NullablePointer[GError]] tag"
-    rvtype="Pointer[NullablePointer[GError]]"/>
+    ponytypeout="Pointer[NullablePointer[GErrorStruct]]"
+    structtype="Pointer[NullablePointer[GErrorStruct]]"
+    structdef="Pointer[NullablePointer[GErrorStruct].none()]"
+    argtype="Pointer[NullablePointer[GErrorStruct]] tag"
+    rvtype="Pointer[NullablePointer[GErrorStruct]]"/>
 
   <typedef name="NullablePointer[GString]"
     embed="var"
@@ -4501,12 +4501,12 @@
 
   <typedef name="NullablePointer[GtkBuilder]"
     embed="var"
-    ponytypein="GtkBuilderStruct tag"
-    ponytypeinconv=""
+    ponytypein="GtkBuilder tag"
+    ponytypeinconv=".gobject()"
     ponytypeout="GtkBuilderStruct"
     structtype="GtkBuilderStruct"
     structdef="GtkBuilderStruct"
-    argtype="GtkBuilderStruct tag"
+    argtype="GObjectStruct tag"
     rvtype="GtkBuilderStruct"/>
 
   <typedef name="NullablePointer[GdkPixbufAnimation]"
