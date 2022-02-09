@@ -12,7 +12,7 @@ use @g_object_unref[None](gobject: GObjectStruct tag)
 class GObject is GObjectInterface
   var _ptr: GObjectStruct
 
-  new from_ref(gobj: GObjectStruct) => _ptr = gobj
+  new from_ref(objref: GObjectStruct) => _ptr = objref
 
   fun ref gobject(): GObjectStruct => _ptr
 

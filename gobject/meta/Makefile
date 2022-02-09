@@ -1,9 +1,6 @@
-gobject:
-	sh -x mkclass.sh _3572 GObject g_object
-
-
 codegenstruct:
 	rm -f ../../test/GObject/*
+	sh -x mkclass.sh _3572 GObject g_object
 	cat templates/callbacks.txt > ../../test/GObject/callbacks.pony
 	sh -x mkstruct.sh _3572 GObject g_object
 	sh -x mkstruct.sh _3243 GTypeClass g_type_class
