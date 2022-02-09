@@ -1,3 +1,3 @@
 <renderstructs>
-  <renderstruct id="_4138" basestruct="GObject" basepath="_ptr.parent_instance" parent="GObject"/>
+  <renderstruct id="_4138" basestruct="GObject" basepath="_ptr" parent="GObject"/>
 </renderstructs>

@@ -1,0 +1,1 @@
+use @gtk_builder_add_callback_symbol[None](builder: GObjectStruct, name: Pointer[U8] tag, callback: Pointer[None])

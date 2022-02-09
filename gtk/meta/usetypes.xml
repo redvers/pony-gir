@@ -757,7 +757,7 @@
     structtype="GtkWidgetStruct"
     structdef="GtkWidgetStruct"
     argtype="GObjectStruct"
-    rvtype="GtkWidgetStruct"/>
+    rvtype="GObjectStruct"/>
 
   <typedef name="NullablePointer[GtkTreeStore]"
     embed="var"
@@ -1321,13 +1321,13 @@
 
   <typedef name="NullablePointer[GtkWindow]"
     embed="var"
-    ponytypein="GtkWindowStruct tag"
-    ponytypeinconv=""
-    ponytypeout="GtkWindowStruct"
+    ponytypein="GtkWindow"
+    ponytypeinconv=".gobject()"
+    ponytypeout="GObjectStruct"
     structtype="GtkWindowStruct"
     structdef="GtkWindowStruct"
-    argtype="GtkWindowStruct tag"
-    rvtype="GtkWindowStruct"/>
+    argtype="GObjectStruct tag"
+    rvtype="GObjectStruct"/>
 
   <typedef name="NullablePointer[GtkSelectionData]"
     embed="var"
@@ -1487,7 +1487,7 @@
     structtype="GtkApplicationStruct"
     structdef="GtkApplicationStruct"
     argtype="GtkApplicationStruct tag"
-    rvtype="GtkApplicationStruct"/>
+    rvtype="GObjectStruct"/>
 
   <typedef name="Array[NullablePointer[GtkPlacesSidebar]]"
     embed="embed"
@@ -1951,13 +1951,13 @@
 
   <typedef name="NullablePointer[GtkContainerClass]"
     embed="var"
-    ponytypein="GtkContainerClassStruct tag"
-    ponytypeinconv=""
-    ponytypeout="GtkContainerClassStruct"
+    ponytypein="GtkContainer tag"
+    ponytypeinconv=".gobject()"
+    ponytypeout="GtkContainer"
     structtype="GtkContainerClassStruct"
     structdef="GtkContainerClassStruct"
-    argtype="GtkContainerClassStruct tag"
-    rvtype="GtkContainerClassStruct"/>
+    argtype="GObject tag"
+    rvtype="GObject"/>
 
   <typedef name="Array[NullablePointer[GtkTextIter]]"
     embed="embed"
@@ -3111,13 +3111,13 @@
 
   <typedef name="NullablePointer[GtkContainer]"
     embed="var"
-    ponytypein="GtkContainerStruct tag"
-    ponytypeinconv=""
-    ponytypeout="GtkContainerStruct"
+    ponytypein="GtkContainer tag"
+    ponytypeinconv=".gobject()"
+    ponytypeout="GtkContainer"
     structtype="GtkContainerStruct"
     structdef="GtkContainerStruct"
-    argtype="GtkContainerStruct tag"
-    rvtype="GtkContainerStruct"/>
+    argtype="GObjectStruct tag"
+    rvtype="GObjectStruct"/>
 
   <typedef name="Array[NullablePointer[GtkGestureSingle]]"
     embed="embed"
@@ -4507,7 +4507,7 @@
     structtype="GtkBuilderStruct"
     structdef="GtkBuilderStruct"
     argtype="GObjectStruct tag"
-    rvtype="GtkBuilderStruct"/>
+    rvtype="GObjectStruct"/>
 
   <typedef name="NullablePointer[GdkPixbufAnimation]"
     embed="var"

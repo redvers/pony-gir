@@ -21,12 +21,10 @@ use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
-use @gtk_widget_destroy[None](widget': GObjectStruct)
-use @gtk_widget_show[None](widget': GObjectStruct)
-use @gtk_widget_hide[None](widget': GObjectStruct)
-use @gtk_widget_show_all[None](widget': GObjectStruct)
+use @gtk_container_add[None](container: GObjectStruct tag, widget': GObjectStruct)
+use @gtk_container_remove[None](container: GObjectStruct tag, widget': GObjectStruct)
 
-class GtkWidget is GtkWidgetInterface
+class GtkContainer is GtkContainerInterface
   var _ptr: GObjectStruct
 
   new from_ref(objref: GObjectStruct) => _ptr = objref
@@ -36,18 +34,6 @@ class GtkWidget is GtkWidgetInterface
 
 
 
-interface GtkWidgetInterface is GObjectInterface
+interface GtkContainerInterface is GtkWidgetInterface
   fun ref gobject(): GObjectStruct
-
-  fun ref destroy(): None =>
-    @gtk_widget_destroy(gobject())
-
-  fun ref show(): None =>
-    @gtk_widget_show(gobject())
-
-  fun ref hide(): None =>
-    @gtk_widget_hide(gobject())
-
-  fun ref show_all(): None =>
-    @gtk_widget_show_all(gobject())
 

@@ -1,6 +1,7 @@
+classes:
+	sh -x mkclass.sh _4138 GApplication g_application
 all:
 	rm -f ../../test/Gio/*
-	sh -x mkclass.sh _4138 GApplication g_application
 	sh -x mkstruct.sh _4138 GApplication g_application
 	sh -x mkstruct.sh _4090 GAppLaunchContext
 	sh -x mkstruct.sh _4431 GAppLaunchContextClass
