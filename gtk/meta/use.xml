@@ -849,14 +849,14 @@
      rv="None">
      <useargs>
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_13555" name="gtk_builder_get_application"
      ponyname="gtk_builder_get_application"
      fid="f397"
      lineno="215"
-     rv="NullablePointer[GtkApplication]">
+     rv="NullablePointer[GObject]">
      <useargs>
        <usearg name="builder" type="NullablePointer[GtkBuilder]"/>
      </useargs>
@@ -5161,7 +5161,7 @@
      ponyname="get_application"
      fid="f403"
      lineno="469"
-     rv="NullablePointer[GtkApplication]">
+     rv="NullablePointer[GObject]">
      <useargs>
        <usearg name="window" type="NullablePointer[GtkWindow]"/>
      </useargs>
@@ -5173,7 +5173,7 @@
      rv="None">
      <useargs>
        <usearg name="window" type="NullablePointer[GtkWindow]"/>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_12045" name="gtk_window_set_has_resize_grip"
@@ -5364,7 +5364,7 @@
      lineno="83"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="window" type="NullablePointer[GtkWindow]"/>
      </useargs>
   </use>
@@ -5374,7 +5374,7 @@
      lineno="87"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="window" type="NullablePointer[GtkWindow]"/>
      </useargs>
   </use>
@@ -5384,7 +5384,7 @@
      lineno="90"
      rv="NullablePointer[GList]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_11815" name="gtk_application_get_app_menu"
@@ -5393,7 +5393,7 @@
      lineno="93"
      rv="NullablePointer[GMenuModel]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_11816" name="gtk_application_set_app_menu"
@@ -5402,7 +5402,7 @@
      lineno="95"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="appmenu" type="NullablePointer[GMenuModel]"/>
      </useargs>
   </use>
@@ -5412,7 +5412,7 @@
      lineno="99"
      rv="NullablePointer[GMenuModel]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_11818" name="gtk_application_set_menubar"
@@ -5421,7 +5421,7 @@
      lineno="101"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="menubar" type="NullablePointer[GMenuModel]"/>
      </useargs>
   </use>
@@ -5431,7 +5431,7 @@
      lineno="105"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="accelerator" type="String"/>
        <usearg name="actionname" type="String"/>
        <usearg name="parameter" type="NullablePointer[GVariant]"/>
@@ -5443,7 +5443,7 @@
      lineno="111"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="actionname" type="String"/>
        <usearg name="parameter" type="NullablePointer[GVariant]"/>
      </useargs>
@@ -5454,7 +5454,7 @@
      lineno="124"
      rv="U32">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="window" type="NullablePointer[GtkWindow]"/>
        <usearg name="flags" type="I32"/>
        <usearg name="reason" type="String"/>
@@ -5466,7 +5466,7 @@
      lineno="129"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="cookie" type="U32"/>
      </useargs>
   </use>
@@ -5476,7 +5476,7 @@
      lineno="132"
      rv="I32">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="flags" type="I32"/>
      </useargs>
   </use>
@@ -5486,7 +5486,7 @@
      lineno="136"
      rv="NullablePointer[GtkWindow]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="id" type="U32"/>
      </useargs>
   </use>
@@ -5496,7 +5496,7 @@
      lineno="140"
      rv="NullablePointer[GtkWindow]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_11828" name="gtk_application_list_action_descriptions"
@@ -5505,7 +5505,7 @@
      lineno="143"
      rv="Array[String]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_11829" name="gtk_application_get_accels_for_action"
@@ -5514,7 +5514,7 @@
      lineno="146"
      rv="Array[String]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="detailedactionname" type="String"/>
      </useargs>
   </use>
@@ -5524,7 +5524,7 @@
      lineno="149"
      rv="Array[String]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="accel" type="String"/>
      </useargs>
   </use>
@@ -5534,7 +5534,7 @@
      lineno="154"
      rv="None">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="detailedactionname" type="String"/>
        <usearg name="accels" type="Array[String]"/>
      </useargs>
@@ -5545,7 +5545,7 @@
      lineno="159"
      rv="I32">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_11833" name="gtk_application_get_menu_by_id"
@@ -5554,7 +5554,7 @@
      lineno="162"
      rv="NullablePointer[GMenu]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
        <usearg name="id" type="String"/>
      </useargs>
   </use>
@@ -5564,7 +5564,7 @@
      lineno="165"
      rv="None">
      <useargs>
-       <usearg name="ptr" type="NullablePointer[GtkApplication]"/>
+       <usearg name="ptr" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_11839" name="glib_autoptr_cleanup_GtkApplication"
@@ -5573,7 +5573,7 @@
      lineno="165"
      rv="None">
      <useargs>
-       <usearg name="ptr" type="Array[NullablePointer[GtkApplication]]"/>
+       <usearg name="ptr" type="Array[NullablePointer[GObject]]"/>
      </useargs>
   </use>
   <use id="_11840" name="glib_listautoptr_cleanup_GtkApplication"
@@ -17308,7 +17308,7 @@
      lineno="71"
      rv="NullablePointer[GtkWidget]">
      <useargs>
-       <usearg name="application" type="NullablePointer[GtkApplication]"/>
+       <usearg name="application" type="NullablePointer[GObject]"/>
      </useargs>
   </use>
   <use id="_13420" name="gtk_application_window_set_show_menubar"

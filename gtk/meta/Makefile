@@ -5,7 +5,10 @@
 #	../../../../castxml/castxml --xmlin ../../castxml-results/gtk-3.xml -s f392 f393 f394 f395 f396 f397 f399 f400 f402 f403 f437 f438 f439 f440 f441 f442 f444 f445 f446 f447 f448 f449 f450 f451 f452 f453 f454 f455 f456 f457 f458 f459 f460 f461 f462 f463 f464 f465 f466 f467 f468 f469 f470 f471 f472 f473 f474 f475 f476 f477 f478 f479 f480 f481 f482 f483 f484 f485 f486 f487 f488 f489 f490 f491 f492 f493 f494 f495 f496 f497 f498 f499 f500 f501 f502 f503 f504 f505 f506 f507 f508 f509 f510 f511 f512 f513 f514 f515 f516 f517 f518 f519 f520 f521 f522 f523 f524 f525 f526 f527 f528 f529 f530 f531 f532 f533 f534 f535 f536 f537 f538 f539 f540 f541 f542 f543 f544 f545 f546 f547 f548 f549 f550 f551 f552 f555 f556 f557 f558 f559 f560 f561 f562 f563 f564 f565 f566 f567 f568 f569 f570 f571 f572 f573 f574 f575 f576 f577 f578 f579 f580 f581 f582 f583 f584 f585 f586 f587 f588 f589 f590 f591 f592 f593 f594 f595 f596 f597 f598 f599 f600 f601 f602 f603 f604 f605 f606 f607 f608 f609 f610 f611 f612 f613 f614 f615 f616 f617 f618 f619 f620 f621 f622 f623 f624 f625 f626 f627 f628 f629 f630 f631 f632 f633 f634 f635 f636 f637 f638 f639 f640 f641 f642 f643 f644 f645 f646 f682 f443
 #
 codegenstructs:
+
 	rm -f ../../test/Gtk/*
+	sh -x mkclass.sh _11804 GtkApplication gtk_application
+	sh -x mkstruct.sh _11804 GtkApplication gtk_application
 	sh -x mkstruct.sh _12159 GtkMisc
 	sh -x mkstruct.sh _12161 GtkMiscPrivate
 	sh -x mkstruct.sh _12163 GtkMiscClass
@@ -45,7 +48,6 @@ codegenstructs:
 	sh -x mkstruct.sh _11919 GtkWindowClass
 	sh -x mkstruct.sh _11921 GtkWindowGeometryInfo
 	sh -x mkstruct.sh _11927 GtkWindowGroupPrivate
-	sh -x mkstruct.sh _11804 GtkApplication gtk_application
 	sh -x mkstruct.sh _11806 GtkApplicationClass
 	sh -x mkstruct.sh _11808 GtkApplicationPrivate
 	sh -x mkstruct.sh _11843 GtkContainer gtk_container
@@ -77,9 +79,9 @@ codegenstructs:
 	sh -x mkstruct.sh _12324 GtkAccelLabelPrivate
 	sh -x mkstruct.sh _12345 GtkAccelMap
 	sh -x mkstruct.sh _12347 GtkAccelMapClass
-	sh -x mkstruct.sh _12374 GtkAccessible
-	sh -x mkstruct.sh _12376 GtkAccessiblePrivate
-	sh -x mkstruct.sh _12378 GtkAccessibleClass
+#	sh -x mkstruct.sh _12374 GtkAccessible
+#	sh -x mkstruct.sh _12376 GtkAccessiblePrivate
+#sh -x mkstruct.sh _12378 GtkAccessibleClass
 	sh -x mkstruct.sh _12384 GtkActionableInterface
 	sh -x mkstruct.sh _12386 GtkActionable
 	sh -x mkstruct.sh _12395 GtkActionBar
@@ -118,8 +120,8 @@ codegenstructs:
 	sh -x mkstruct.sh _12684 GtkTreeViewColumn
 	sh -x mkstruct.sh _12686 GtkTreeViewColumnClass
 	sh -x mkstruct.sh _12688 GtkTreeViewColumnPrivate
-	sh -x mkstruct.sh _12747 GtkTextAttributes
-	sh -x mkstruct.sh _12749 GtkTextAppearance
+#	sh -x mkstruct.sh _12747 GtkTextAttributes
+#	sh -x mkstruct.sh _12749 GtkTextAppearance
 	sh -x mkstruct.sh _12757 GtkTextChildAnchor
 	sh -x mkstruct.sh _12759 GtkTextChildAnchorClass
 	sh -x mkstruct.sh _12765 GtkTextIter
@@ -133,7 +135,7 @@ codegenstructs:
 	sh -x mkstruct.sh _16282 GtkTextBTree
 	sh -x mkstruct.sh _16284 GtkTextBufferPrivate
 	sh -x mkstruct.sh _16286 GtkTextBufferClass
-	sh -x mkstruct.sh _12879 GtkTargetPair
+#	sh -x mkstruct.sh _12879 GtkTargetPair
 	sh -x mkstruct.sh _12881 GtkTargetList
 	sh -x mkstruct.sh _12883 GtkTargetEntry
 	sh -x mkstruct.sh _12955 GtkEditable
