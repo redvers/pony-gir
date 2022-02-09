@@ -1,0 +1,4 @@
+use @g_object_notify[None](gobject: GObjectStruct tag, propertyname: Pointer[U8] tag)
+use @g_object_ref[None](gobject: GObjectStruct tag)
+use @g_object_unref[None](gobject: GObjectStruct tag)
+

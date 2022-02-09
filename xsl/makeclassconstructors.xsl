@@ -3,6 +3,7 @@
 <xsl:output method="text" omit-xml-declaration="yes" indent="no"/>
 <xsl:strip-space elements="*"/>
 <xsl:param name="struct"/>
+<xsl:param name="id"/>
 <xsl:param name="debug"/>
 
 
@@ -11,10 +12,12 @@
     <xsl:variable name="fnname" select="./@name"/>
     <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="@render"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
   </xsl:for-each>
+  <xsl:variable name="parent" select="/castxml2pony/renderstructs/renderstruct[@id=$id]/@parent"/>
   <xsl:text>&#10;&#10;interface </xsl:text>
   <xsl:value-of select="$struct"/>
-  <xsl:text>Interface&#10;</xsl:text>
-  <xsl:text>  fun ref gobject(): GObjectStruct&#10;&#10;</xsl:text>
+  <xsl:text>Interface</xsl:text>
+  <xsl:if test="$parent ne ''"> is <xsl:value-of select="$parent"/>Interface</xsl:if>
+  <xsl:text>&#10;  fun ref gobject(): GObjectStruct&#10;&#10;</xsl:text>
 </xsl:template>
 
 <xsl:template name="mainuse">

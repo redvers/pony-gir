@@ -1571,7 +1571,7 @@
      </useargs>
   </use>
   <use id="_4492" name="g_application_new"
-     ponyname="g_application_new"
+     ponyname="create"
      fid="f160"
      lineno="128"
      rv="GApplication">
@@ -1581,7 +1581,7 @@
      </useargs>
   </use>
   <use id="_4493" name="g_application_get_application_id"
-     ponyname="g_application_get_application_id"
+     ponyname="get_application_id"
      fid="f160"
      lineno="132"
      rv="String">
@@ -1818,7 +1818,7 @@
      </useargs>
   </use>
   <use id="_4517" name="g_application_run"
-     ponyname="g_application_run"
+     ponyname="run"
      fid="f160"
      lineno="213"
      rv="I32">
@@ -1829,7 +1829,7 @@
      </useargs>
   </use>
   <use id="_4518" name="g_application_quit"
-     ponyname="g_application_quit"
+     ponyname="quit"
      fid="f160"
      lineno="218"
      rv="None">
