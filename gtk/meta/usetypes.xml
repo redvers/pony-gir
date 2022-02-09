@@ -751,13 +751,13 @@
 
   <typedef name="NullablePointer[GtkWidget]"
     embed="var"
-    ponytypein="GtkWidgetStruct tag"
+    ponytypein="GObject"
     ponytypeinconv=""
     ponytypeout="GtkWidgetStruct"
     structtype="GtkWidgetStruct"
     structdef="GtkWidgetStruct"
-    argtype="GtkWidgetStruct tag"
-    rvtype="GtkWidgetStruct"/>
+    argtype="GObjectStruct"
+    rvtype="GObjectStruct"/>
 
   <typedef name="NullablePointer[GtkTreeStore]"
     embed="var"
@@ -1321,13 +1321,13 @@
 
   <typedef name="NullablePointer[GtkWindow]"
     embed="var"
-    ponytypein="GtkWindowStruct tag"
-    ponytypeinconv=""
-    ponytypeout="GtkWindowStruct"
+    ponytypein="GtkWindow"
+    ponytypeinconv=".gobject()"
+    ponytypeout="GObjectStruct"
     structtype="GtkWindowStruct"
     structdef="GtkWindowStruct"
-    argtype="GtkWindowStruct tag"
-    rvtype="GtkWindowStruct"/>
+    argtype="GObjectStruct tag"
+    rvtype="GObjectStruct"/>
 
   <typedef name="NullablePointer[GtkSelectionData]"
     embed="var"
@@ -1487,7 +1487,7 @@
     structtype="GtkApplicationStruct"
     structdef="GtkApplicationStruct"
     argtype="GtkApplicationStruct tag"
-    rvtype="GtkApplicationStruct"/>
+    rvtype="GObjectStruct"/>
 
   <typedef name="Array[NullablePointer[GtkPlacesSidebar]]"
     embed="embed"
@@ -1951,13 +1951,13 @@
 
   <typedef name="NullablePointer[GtkContainerClass]"
     embed="var"
-    ponytypein="GtkContainerClassStruct tag"
-    ponytypeinconv=""
-    ponytypeout="GtkContainerClassStruct"
+    ponytypein="GtkContainer tag"
+    ponytypeinconv=".gobject()"
+    ponytypeout="GtkContainer"
     structtype="GtkContainerClassStruct"
     structdef="GtkContainerClassStruct"
-    argtype="GtkContainerClassStruct tag"
-    rvtype="GtkContainerClassStruct"/>
+    argtype="GObject tag"
+    rvtype="GObject"/>
 
   <typedef name="Array[NullablePointer[GtkTextIter]]"
     embed="embed"
@@ -2491,13 +2491,13 @@
 
   <typedef name="Array[NullablePointer[GError]]"
     embed="embed"
-    ponytypein="Pointer[NullablePointer[GError]] tag"
+    ponytypein="Pointer[NullablePointer[GErrorStruct]] tag"
     ponytypeinconv=""
-    ponytypeout="Pointer[NullablePointer[GError]]"
-    structtype="Pointer[NullablePointer[GError]]"
-    structdef="Pointer[NullablePointer[GError].none()]"
-    argtype="Pointer[NullablePointer[GError]] tag"
-    rvtype="Pointer[NullablePointer[GError]]"/>
+    ponytypeout="Pointer[NullablePointer[GErrorStruct]]"
+    structtype="Pointer[NullablePointer[GErrorStruct]]"
+    structdef="Pointer[NullablePointer[GErrorStruct].none()]"
+    argtype="Pointer[NullablePointer[GErrorStruct]] tag"
+    rvtype="Pointer[NullablePointer[GErrorStruct]]"/>
 
   <typedef name="NullablePointer[GString]"
     embed="var"
@@ -3111,13 +3111,13 @@
 
   <typedef name="NullablePointer[GtkContainer]"
     embed="var"
-    ponytypein="GtkContainerStruct tag"
-    ponytypeinconv=""
-    ponytypeout="GtkContainerStruct"
+    ponytypein="GtkContainer tag"
+    ponytypeinconv=".gobject()"
+    ponytypeout="GtkContainer"
     structtype="GtkContainerStruct"
     structdef="GtkContainerStruct"
-    argtype="GtkContainerStruct tag"
-    rvtype="GtkContainerStruct"/>
+    argtype="GObjectStruct tag"
+    rvtype="GObjectStruct"/>
 
   <typedef name="Array[NullablePointer[GtkGestureSingle]]"
     embed="embed"
@@ -4501,13 +4501,13 @@
 
   <typedef name="NullablePointer[GtkBuilder]"
     embed="var"
-    ponytypein="GtkBuilderStruct tag"
-    ponytypeinconv=""
+    ponytypein="GtkBuilder tag"
+    ponytypeinconv=".gobject()"
     ponytypeout="GtkBuilderStruct"
     structtype="GtkBuilderStruct"
     structdef="GtkBuilderStruct"
-    argtype="GtkBuilderStruct tag"
-    rvtype="GtkBuilderStruct"/>
+    argtype="GObjectStruct tag"
+    rvtype="GObjectStruct"/>
 
   <typedef name="NullablePointer[GdkPixbufAnimation]"
     embed="var"

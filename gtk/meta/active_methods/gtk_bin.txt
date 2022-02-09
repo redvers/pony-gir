@@ -1,0 +1,2 @@
+gtk_bin_get_type
+gtk_bin_get_child

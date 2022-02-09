@@ -1,6 +1,6 @@
 all:
 	ponyc -d .
-	./test
+	GTK_DEBUG=interactive ./test --ponynoscale
 
 clean:
 	rm -f Atk/*.pony

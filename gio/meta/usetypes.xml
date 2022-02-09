@@ -126,8 +126,8 @@
     ponytypeout="GApplicationStruct"
     structtype="GApplicationStruct"
     structdef="GApplicationStruct"
-    argtype="GApplicationStruct tag"
-    rvtype="GApplicationStruct"/>
+    argtype="GObjectStruct tag"
+    rvtype="GObjectStruct"/>
 
   <typedef name="GFileOutputStream"
     embed="embed"
