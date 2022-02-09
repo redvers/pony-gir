@@ -1,0 +1,4 @@
+use ".."
+
+use @OPENSSL_sk_pop[X509Extension](sk: StackX509Extension tag)
+use @OPENSSL_sk_num[I32](sk: StackX509Extension tag)

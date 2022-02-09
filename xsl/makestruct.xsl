@@ -20,7 +20,7 @@
 
   Fields (Offset in bits):
 <xsl:apply-templates select="./field" mode="generateCommentField"/>*/
-struct <xsl:value-of select="./@name"/><xsl:text>
+struct <xsl:value-of select="./@name"/>Struct<xsl:text>
 </xsl:text>
 
 <xsl:if test="$renderfields='1'"><xsl:apply-templates select="./field" mode="generateField"/></xsl:if>

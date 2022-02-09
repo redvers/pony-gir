@@ -1,5 +1,6 @@
 codegenstruct:
 	rm -f ../../test/GObject/*
+	sh -x mkclass.sh _3572 GObject g_object
 	cat templates/callbacks.txt > ../../test/GObject/callbacks.pony
 	sh -x mkstruct.sh _3572 GObject g_object
 	sh -x mkstruct.sh _3243 GTypeClass g_type_class
@@ -56,7 +57,7 @@ codegenstruct:
 	sh -x mkstruct.sh _3780 GTypeModuleClass
 	sh -x mkstruct.sh _3799 GTypePluginClass
 	sh -x mkstruct.sh _3810 GValueArray g_value_array
-	sh -x mkprim.sh 0 GType g_type
+#	sh -x mkprim.sh 0 GType g_type
 
 
 structmeta:

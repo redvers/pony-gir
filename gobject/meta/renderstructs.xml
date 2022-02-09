@@ -154,7 +154,7 @@
   <renderstruct id="_3408" render="0"/><!-- GCClosure f134 -->
   <renderstruct id="_3472" render="0"/><!-- GSignalQuery f136 -->
   <renderstruct id="_3474" render="0"/><!-- GSignalInvocationHint f136 -->
-  <renderstruct id="_3572" render="0"/><!-- GObject f139 -->
+  <renderstruct id="_3572" render="0" basestruct="GObject" basepath="_ptr"/><!-- GObject f139 -->
   <renderstruct id="_3574" render="0"/><!-- GObjectClass f139 -->
   <renderstruct id="_3578" render="0"/><!-- GObjectConstructParam f139 -->
   <renderstruct id="_3654" render="0"/><!-- Anon f139 -->

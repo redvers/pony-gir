@@ -1,0 +1,5 @@
+use @g_object_notify[None](gobject: GObjectStruct tag, propertyname: Pointer[U8] tag)
+use @g_object_ref[None](gobject: GObjectStruct tag)
+use @g_object_unref[None](gobject: GObjectStruct tag)
+use @g_signal_connect_data[U64](instance: GObjectStruct tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any, destroydata: Pointer[None] tag, connectflags: I32)
+

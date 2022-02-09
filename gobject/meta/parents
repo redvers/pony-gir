@@ -1,0 +1,27 @@
+Binding GObject
+InitiallyUnowned GObject
+TypeModule GObject
+
+ParamSpecBoolean GParamSpec
+ParamSpecBoxed GParamSpec
+ParamSpecChar GParamSpec
+ParamSpecDouble GParamSpec
+ParamSpecEnum GParamSpec
+ParamSpecFlags GParamSpec
+ParamSpecFloat GParamSpec
+ParamSpecGType GParamSpec
+ParamSpecInt GParamSpec
+ParamSpecInt64 GParamSpec
+ParamSpecLong GParamSpec
+ParamSpecObject GParamSpec
+ParamSpecOverride GParamSpec
+ParamSpecParam GParamSpec
+ParamSpecPointer GParamSpec
+ParamSpecString GParamSpec
+ParamSpecUChar GParamSpec
+ParamSpecUInt GParamSpec
+ParamSpecUInt64 GParamSpec
+ParamSpecULong GParamSpec
+ParamSpecUnichar GParamSpec
+ParamSpecValueArray GParamSpec
+ParamSpecVariant GParamSpec

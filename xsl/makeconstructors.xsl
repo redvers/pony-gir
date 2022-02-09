@@ -6,7 +6,8 @@
 <xsl:param name="debug"/>
 
 
-<xsl:template match="/castxml2pony/uses/use[@rv=concat('NullablePointer[', $struct, ']')]">
+<!-- <xsl:template match="/castxml2pony/uses/use[@rv=concat('NullablePointer[', $struct, ']')]"> -->
+<xsl:template match="/castxml2pony/uses/use[@rv=$struct]">
   <xsl:variable name="fnname" select="./@name"/>
   <xsl:if test="/castxml2pony/renders/renderuse[@name=$fnname]">
     <xsl:if test="/castxml2pony/renders/renderuse[@name=$fnname]/@render eq '1'">

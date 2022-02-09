@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../../../castxml-results/ossl.xml"/>
+<renders>
+  <renderuse name="OPENSSL_sk_deep_copy" render="0"/>
+  <renderuse name="OPENSSL_sk_delete" render="0"/>
+  <renderuse name="OPENSSL_sk_delete_ptr" render="0"/>
+  <renderuse name="OPENSSL_sk_dup" render="0"/>
+  <renderuse name="OPENSSL_sk_find" render="0"/>
+  <renderuse name="OPENSSL_sk_find_ex" render="0"/>
+  <renderuse name="OPENSSL_sk_free" render="0"/>
+  <renderuse name="OPENSSL_sk_insert" render="0"/>
+  <renderuse name="OPENSSL_sk_is_sorted" render="0"/>
+  <renderuse name="OPENSSL_sk_new" render="0"/>
+  <renderuse name="OPENSSL_sk_new_null" render="0"/>
+  <renderuse name="OPENSSL_sk_new_reserve" render="0"/>
+  <renderuse name="OPENSSL_sk_num" render="0"/>
+  <renderuse name="OPENSSL_sk_pop" render="0"/>
+  <renderuse name="OPENSSL_sk_pop_free" render="0"/>
+  <renderuse name="OPENSSL_sk_push" render="0"/>
+  <renderuse name="OPENSSL_sk_reserve" render="0"/>
+  <renderuse name="OPENSSL_sk_set" render="0"/>
+  <renderuse name="OPENSSL_sk_set_cmp_func" render="0"/>
+  <renderuse name="OPENSSL_sk_shift" render="0"/>
+  <renderuse name="OPENSSL_sk_sort" render="0"/>
+  <renderuse name="OPENSSL_sk_unshift" render="0"/>
+  <renderuse name="OPENSSL_sk_value" render="0"/>
+  <renderuse name="OPENSSL_sk_zero" render="0"/>
+</renders>
+</castxml2pony>

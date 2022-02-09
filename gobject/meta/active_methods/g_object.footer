@@ -1,0 +1,14 @@
+
+//  fun ref g_object_get_data[A: Any](key: String): A =>
+//    @g_object_get_data(gobject(), key.cstring())
+
+//  fun ref g_object_set_data[A: Any](key: String, data: A): None =>
+//    @g_object_set_data(gobject(), key.cstring(), data)
+
+  fun ref signal_connect[A: Any](detailedsignal: String, chandler: @{(GObjectStruct, A): None}, data: A) =>
+    @g_signal_connect_data(gobject(), detailedsignal.cstring(), chandler, data, Pointer[None], I32(0))
+
+//  fun pony_type(): String val ? =>
+//    let id: U64 = apply().apply()?.g_type_instance.g_class.apply()?.g_type
+//    recover val String.from_cstring(@g_type_name(id)) end
+

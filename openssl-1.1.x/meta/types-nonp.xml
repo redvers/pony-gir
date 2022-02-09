@@ -1,0 +1,772 @@
+<typedefs>
+  <typedef name="String"
+    embed="var"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    embed="var"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+  <typedef name="StackstX509CRL"
+    embed="embed"
+    ponytypein="StackstX509CRL tag"
+    ponytypeinconv=""
+    ponytypeout="StackstX509CRL"
+    structtype="StackstX509CRL"
+    structdef="StackstX509CRL"
+    argtype="StackstX509CRL tag"
+    rvtype="StackstX509CRL"/>
+
+  <typedef name="StackstX509"
+    embed="embed"
+    ponytypein="StackstX509 tag"
+    ponytypeinconv=""
+    ponytypeout="StackstX509"
+    structtype="StackstX509"
+    structdef="StackstX509"
+    argtype="StackstX509 tag"
+    rvtype="StackstX509"/>
+
+  <typedef name="ASN1ITEMst"
+    embed="embed"
+    ponytypein="ASN1ITEMst tag"
+    ponytypeinconv=""
+    ponytypeout="ASN1ITEMst"
+    structtype="ASN1ITEMst"
+    structdef="ASN1ITEMst"
+    argtype="ASN1ITEMst tag"
+    rvtype="ASN1ITEMst"/>
+
+  <typedef name="U32"
+    embed="var"
+    ponytypein="U32"
+    ponytypeinconv=""
+    ponytypeout="U32"
+    structtype="U32"
+    structdef="U32(0)"
+    argtype="U32"
+    rvtype="U32"/>
+
+  <typedef name="Pthreadinternallist"
+    embed="embed"
+    ponytypein="Pthreadinternallist tag"
+    ponytypeinconv=""
+    ponytypeout="Pthreadinternallist"
+    structtype="Pthreadinternallist"
+    structdef="Pthreadinternallist"
+    argtype="Pthreadinternallist tag"
+    rvtype="Pthreadinternallist"/>
+
+  <typedef name="Pthreadinternalslist"
+    embed="embed"
+    ponytypein="Pthreadinternalslist tag"
+    ponytypeinconv=""
+    ponytypeout="Pthreadinternalslist"
+    structtype="Pthreadinternalslist"
+    structdef="Pthreadinternalslist"
+    argtype="Pthreadinternalslist tag"
+    rvtype="Pthreadinternalslist"/>
+
+  <typedef name="I64"
+    embed="var"
+    ponytypein="I64"
+    ponytypeinconv=""
+    ponytypeout="I64"
+    structtype="I64"
+    structdef="I64(0)"
+    argtype="I64"
+    rvtype="I64"/>
+
+  <typedef name="Pkcs7issuerandserialst"
+    embed="embed"
+    ponytypein="Pkcs7issuerandserialst tag"
+    ponytypeinconv=""
+    ponytypeout="Pkcs7issuerandserialst"
+    structtype="Pkcs7issuerandserialst"
+    structdef="Pkcs7issuerandserialst"
+    argtype="Pkcs7issuerandserialst tag"
+    rvtype="Pkcs7issuerandserialst"/>
+
+  <typedef name="I16"
+    embed="var"
+    ponytypein="I16"
+    ponytypeinconv=""
+    ponytypeout="I16"
+    structtype="I16"
+    structdef="I16(0)"
+    argtype="I16"
+    rvtype="I16"/>
+
+  <typedef name="Asn1pctxst"
+    embed="embed"
+    ponytypein="Asn1pctxst tag"
+    ponytypeinconv=""
+    ponytypeout="Asn1pctxst"
+    structtype="Asn1pctxst"
+    structdef="Asn1pctxst"
+    argtype="Asn1pctxst tag"
+    rvtype="Asn1pctxst"/>
+
+  <typedef name="DISTPOINTNAMEst"
+    embed="embed"
+    ponytypein="DISTPOINTNAMEst tag"
+    ponytypeinconv=""
+    ponytypeout="DISTPOINTNAMEst"
+    structtype="DISTPOINTNAMEst"
+    structdef="DISTPOINTNAMEst"
+    argtype="DISTPOINTNAMEst tag"
+    rvtype="DISTPOINTNAMEst"/>
+
+  <typedef name="F128"
+    embed="var"
+    ponytypein="F128"
+    ponytypeinconv=""
+    ponytypeout="F128"
+    structtype="F128"
+    structdef="F128(0)"
+    argtype="F128"
+    rvtype="F128"/>
+
+  <typedef name="StackstSXNETID"
+    embed="embed"
+    ponytypein="StackstSXNETID tag"
+    ponytypeinconv=""
+    ponytypeout="StackstSXNETID"
+    structtype="StackstSXNETID"
+    structdef="StackstSXNETID"
+    argtype="StackstSXNETID tag"
+    rvtype="StackstSXNETID"/>
+
+  <typedef name="GENERALNAMEst"
+    embed="embed"
+    ponytypein="GENERALNAMEst tag"
+    ponytypeinconv=""
+    ponytypeout="GENERALNAMEst"
+    structtype="GENERALNAMEst"
+    structdef="GENERALNAMEst"
+    argtype="GENERALNAMEst tag"
+    rvtype="GENERALNAMEst"/>
+
+  <typedef name="Asn1typest"
+    embed="embed"
+    ponytypein="ASN1Type tag"
+    ponytypeinconv=""
+    ponytypeout="ASN1Type"
+    structtype="ASN1Type"
+    structdef="ASN1Type"
+    argtype="ASN1Type tag"
+    rvtype="ASN1Type"/>
+
+  <typedef name="Pointer[U64]"
+    embed="var"
+    ponytypein="Pointer[U64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U64]"
+    structtype="Pointer[U64]"
+    structdef="Pointer[U64]"
+    argtype="Pointer[U64] tag"
+    rvtype="Pointer[U64]"/>
+
+  <typedef name="X509V3CONFMETHODst"
+    embed="embed"
+    ponytypein="X509V3CONFMETHODst tag"
+    ponytypeinconv=""
+    ponytypeout="X509V3CONFMETHODst"
+    structtype="X509V3CONFMETHODst"
+    structdef="X509V3CONFMETHODst"
+    argtype="X509V3CONFMETHODst tag"
+    rvtype="X509V3CONFMETHODst"/>
+
+  <typedef name="Pkcs7enccontentst"
+    embed="embed"
+    ponytypein="Pkcs7enccontentst tag"
+    ponytypeinconv=""
+    ponytypeout="Pkcs7enccontentst"
+    structtype="Pkcs7enccontentst"
+    structdef="Pkcs7enccontentst"
+    argtype="Pkcs7enccontentst tag"
+    rvtype="Pkcs7enccontentst"/>
+
+  <typedef name="StackstPKCS7RECIPINFO"
+    embed="embed"
+    ponytypein="StackstPKCS7RECIPINFO tag"
+    ponytypeinconv=""
+    ponytypeout="StackstPKCS7RECIPINFO"
+    structtype="StackstPKCS7RECIPINFO"
+    structdef="StackstPKCS7RECIPINFO"
+    argtype="StackstPKCS7RECIPINFO tag"
+    rvtype="StackstPKCS7RECIPINFO"/>
+
+  <typedef name="IOwidedata"
+    embed="embed"
+    ponytypein="IOwidedata tag"
+    ponytypeinconv=""
+    ponytypeout="IOwidedata"
+    structtype="IOwidedata"
+    structdef="IOwidedata"
+    argtype="IOwidedata tag"
+    rvtype="IOwidedata"/>
+
+  <typedef name="X509pubkeyst"
+    embed="embed"
+    ponytypein="X509pubkeyst tag"
+    ponytypeinconv=""
+    ponytypeout="X509pubkeyst"
+    structtype="X509pubkeyst"
+    structdef="X509pubkeyst"
+    argtype="X509pubkeyst tag"
+    rvtype="X509pubkeyst"/>
+
+  <typedef name="StackstGENERALSUBTREE"
+    embed="embed"
+    ponytypein="StackstGENERALSUBTREE tag"
+    ponytypeinconv=""
+    ponytypeout="StackstGENERALSUBTREE"
+    structtype="StackstGENERALSUBTREE"
+    structdef="StackstGENERALSUBTREE"
+    argtype="StackstGENERALSUBTREE tag"
+    rvtype="StackstGENERALSUBTREE"/>
+
+  <typedef name="StackstPKCS7SIGNERINFO"
+    embed="embed"
+    ponytypein="StackstPKCS7SIGNERINFO tag"
+    ponytypeinconv=""
+    ponytypeout="StackstPKCS7SIGNERINFO"
+    structtype="StackstPKCS7SIGNERINFO"
+    structdef="StackstPKCS7SIGNERINFO"
+    argtype="StackstPKCS7SIGNERINFO tag"
+    rvtype="StackstPKCS7SIGNERINFO"/>
+
+  <typedef name="Evpcipherinfost"
+    embed="embed"
+    ponytypein="Evpcipherinfost tag"
+    ponytypeinconv=""
+    ponytypeout="Evpcipherinfost"
+    structtype="Evpcipherinfost"
+    structdef="Evpcipherinfost"
+    argtype="Evpcipherinfost tag"
+    rvtype="Evpcipherinfost"/>
+
+  <typedef name="Biost"
+    embed="embed"
+    ponytypein="BIO tag"
+    ponytypeinconv=""
+    ponytypeout="BIO"
+    structtype="BIO"
+    structdef="BIO"
+    argtype="BIO tag"
+    rvtype="BIO"/>
+
+  <typedef name="Asn1stringst"
+    embed="embed"
+    ponytypein="ASN1String tag"
+    ponytypeinconv=""
+    ponytypeout="ASN1String"
+    structtype="ASN1String"
+    structdef="ASN1String"
+    argtype="ASN1String tag"
+    rvtype="ASN1String"/>
+
+  <typedef name="Pointer[U8]"
+    embed="var"
+    ponytypein="Pointer[U8] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U8]"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]"/>
+
+  <typedef name="StackstX509ATTRIBUTE"
+    embed="embed"
+    ponytypein="StackstX509ATTRIBUTE tag"
+    ponytypeinconv=""
+    ponytypeout="StackstX509ATTRIBUTE"
+    structtype="StackstX509ATTRIBUTE"
+    structdef="StackstX509ATTRIBUTE"
+    argtype="StackstX509ATTRIBUTE tag"
+    rvtype="StackstX509ATTRIBUTE"/>
+
+  <typedef name="IOcodecvt"
+    embed="embed"
+    ponytypein="IOcodecvt tag"
+    ponytypeinconv=""
+    ponytypeout="IOcodecvt"
+    structtype="IOcodecvt"
+    structdef="IOcodecvt"
+    argtype="IOcodecvt tag"
+    rvtype="IOcodecvt"/>
+
+  <typedef name="Pointer[Canceljmpbuftag]"
+    embed="var"
+    ponytypein="Pointer[Canceljmpbuftag] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Canceljmpbuftag]"
+    structtype="Pointer[Canceljmpbuftag]"
+    structdef="Pointer[Canceljmpbuftag]"
+    argtype="Pointer[Canceljmpbuftag] tag"
+    rvtype="Pointer[Canceljmpbuftag]"/>
+
+  <typedef name="Pointer[None]"
+    embed="var"
+    ponytypein="Pointer[None] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[None]"
+    structtype="Pointer[None]"
+    structdef="Pointer[None]"
+    argtype="Pointer[None] tag"
+    rvtype="Pointer[None]"/>
+
+  <typedef name="I8"
+    embed="var"
+    ponytypein="I8"
+    ponytypeinconv=""
+    ponytypeout="I8"
+    structtype="I8"
+    structdef="I8(0)"
+    argtype="I8"
+    rvtype="I8"/>
+
+  <typedef name="Confmethodst"
+    embed="embed"
+    ponytypein="Confmethodst tag"
+    ponytypeinconv=""
+    ponytypeout="Confmethodst"
+    structtype="Confmethodst"
+    structdef="Confmethodst"
+    argtype="Confmethodst tag"
+    rvtype="Confmethodst"/>
+
+  <typedef name="I32"
+    embed="var"
+    ponytypein="I32"
+    ponytypeinconv=""
+    ponytypeout="I32"
+    structtype="I32"
+    structdef="I32(0)"
+    argtype="I32"
+    rvtype="I32"/>
+
+  <typedef name="Pointer[U32]"
+    embed="var"
+    ponytypein="Pointer[U32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U32]"
+    structtype="Pointer[U32]"
+    structdef="Pointer[U32]"
+    argtype="Pointer[U32] tag"
+    rvtype="Pointer[U32]"/>
+
+  <typedef name="X509"
+    embed="embed"
+    ponytypein="X509 tag"
+    ponytypeinconv=""
+    ponytypeout="X509"
+    structtype="X509"
+    structdef="X509"
+    argtype="X509 tag"
+    rvtype="X509"/>
+
+  <typedef name="Pointer[I64]"
+    embed="var"
+    ponytypein="Pointer[I64] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[I64]"
+    structtype="Pointer[I64]"
+    structdef="Pointer[I64]"
+    argtype="Pointer[I64] tag"
+    rvtype="Pointer[I64]"/>
+
+  <typedef name="Pointer[Localedata]"
+    embed="var"
+    ponytypein="Pointer[Localedata] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Localedata]"
+    structtype="Pointer[Localedata]"
+    structdef="Pointer[Localedata]"
+    argtype="Pointer[Localedata] tag"
+    rvtype="Pointer[Localedata]"/>
+
+  <typedef name="U64"
+    embed="var"
+    ponytypein="U64"
+    ponytypeinconv=""
+    ponytypeout="U64"
+    structtype="U64"
+    structdef="U64(0)"
+    argtype="U64"
+    rvtype="U64"/>
+
+  <typedef name="IOFILE"
+    embed="embed"
+    ponytypein="IOFILE tag"
+    ponytypeinconv=""
+    ponytypeout="IOFILE"
+    structtype="IOFILE"
+    structdef="IOFILE"
+    argtype="IOFILE tag"
+    rvtype="IOFILE"/>
+
+  <typedef name="ASN1TEMPLATEst"
+    embed="embed"
+    ponytypein="ASN1TEMPLATEst tag"
+    ponytypeinconv=""
+    ponytypeout="ASN1TEMPLATEst"
+    structtype="ASN1TEMPLATEst"
+    structdef="ASN1TEMPLATEst"
+    argtype="ASN1TEMPLATEst tag"
+    rvtype="ASN1TEMPLATEst"/>
+
+  <typedef name="Stackstvoid"
+    embed="embed"
+    ponytypein="Stackstvoid tag"
+    ponytypeinconv=""
+    ponytypeout="Stackstvoid"
+    structtype="Stackstvoid"
+    structdef="Stackstvoid"
+    argtype="Stackstvoid tag"
+    rvtype="Stackstvoid"/>
+
+  <typedef name="StackstPOLICYQUALINFO"
+    embed="embed"
+    ponytypein="StackstPOLICYQUALINFO tag"
+    ponytypeinconv=""
+    ponytypeout="StackstPOLICYQUALINFO"
+    structtype="StackstPOLICYQUALINFO"
+    structdef="StackstPOLICYQUALINFO"
+    argtype="StackstPOLICYQUALINFO tag"
+    rvtype="StackstPOLICYQUALINFO"/>
+
+  <typedef name="Asn1objectst"
+    embed="embed"
+    ponytypein="ASN1Object tag"
+    ponytypeinconv=""
+    ponytypeout="ASN1Object"
+    structtype="ASN1Object"
+    structdef="ASN1Object"
+    argtype="ASN1Object tag"
+    rvtype="ASN1Object"/>
+
+  <typedef name="Evppkeyst"
+    embed="embed"
+    ponytypein="Evppkeyst tag"
+    ponytypeinconv=""
+    ponytypeout="Evppkeyst"
+    structtype="Evppkeyst"
+    structdef="Evppkeyst"
+    argtype="Evppkeyst tag"
+    rvtype="Evppkeyst"/>
+
+  <typedef name="Pointer[I32]"
+    embed="var"
+    ponytypein="Pointer[I32] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[I32]"
+    structtype="Pointer[I32]"
+    structdef="Pointer[I32]"
+    argtype="Pointer[I32] tag"
+    rvtype="Pointer[I32]"/>
+
+  <typedef name="Netscapespkacst"
+    embed="embed"
+    ponytypein="Netscapespkacst tag"
+    ponytypeinconv=""
+    ponytypeout="Netscapespkacst"
+    structtype="Netscapespkacst"
+    structdef="Netscapespkacst"
+    argtype="Netscapespkacst tag"
+    rvtype="Netscapespkacst"/>
+
+  <typedef name="StackstGENERALNAME"
+    embed="embed"
+    ponytypein="StackstGENERALNAME tag"
+    ponytypeinconv=""
+    ponytypeout="StackstGENERALNAME"
+    structtype="StackstGENERALNAME"
+    structdef="StackstGENERALNAME"
+    argtype="StackstGENERALNAME tag"
+    rvtype="StackstGENERALNAME"/>
+
+  <typedef name="U16"
+    embed="var"
+    ponytypein="U16"
+    ponytypeinconv=""
+    ponytypeout="U16"
+    structtype="U16"
+    structdef="U16(0)"
+    argtype="U16"
+    rvtype="U16"/>
+
+  <typedef name="ASN1ADBTABLEst"
+    embed="embed"
+    ponytypein="ASN1ADBTABLEst tag"
+    ponytypeinconv=""
+    ponytypeout="ASN1ADBTABLEst"
+    structtype="ASN1ADBTABLEst"
+    structdef="ASN1ADBTABLEst"
+    argtype="ASN1ADBTABLEst tag"
+    rvtype="ASN1ADBTABLEst"/>
+
+  <typedef name="None"
+    embed="embed"
+    ponytypein="None tag"
+    ponytypeinconv=""
+    ponytypeout="None"
+    structtype="None"
+    structdef="None"
+    argtype="None tag"
+    rvtype="None"/>
+
+  <typedef name="X509reqst"
+    embed="embed"
+    ponytypein="X509reqst tag"
+    ponytypeinconv=""
+    ponytypeout="X509reqst"
+    structtype="X509reqst"
+    structdef="X509reqst"
+    argtype="X509reqst tag"
+    rvtype="X509reqst"/>
+
+  <typedef name="Pointer[Pointer[None]]"
+    embed="var"
+    ponytypein="Pointer[Pointer[None]] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[None]]"
+    structtype="Pointer[Pointer[None]]"
+    structdef="Pointer[Pointer[None]]"
+    argtype="Pointer[Pointer[None]] tag"
+    rvtype="Pointer[Pointer[None]]"/>
+
+  <typedef name="Pointer[String]"
+    embed="var"
+    ponytypein="Pointer[String] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[String]"
+    structtype="Pointer[String]"
+    structdef="Pointer[String]"
+    argtype="Pointer[String] tag"
+    rvtype="Pointer[String]"/>
+
+  <typedef name="Anon"
+    embed="embed"
+    ponytypein="Anon tag"
+    ponytypeinconv=""
+    ponytypeout="Anon"
+    structtype="Anon"
+    structdef="Anon"
+    argtype="Anon tag"
+    rvtype="Anon"/>
+
+  <typedef name="Privatekeyst"
+    embed="embed"
+    ponytypein="Privatekeyst tag"
+    ponytypeinconv=""
+    ponytypeout="Privatekeyst"
+    structtype="Privatekeyst"
+    structdef="Privatekeyst"
+    argtype="Privatekeyst tag"
+    rvtype="Privatekeyst"/>
+
+  <typedef name="StackstX509ALGOR"
+    embed="embed"
+    ponytypein="StackstX509ALGOR tag"
+    ponytypeinconv=""
+    ponytypeout="StackstX509ALGOR"
+    structtype="StackstX509ALGOR"
+    structdef="StackstX509ALGOR"
+    argtype="StackstX509ALGOR tag"
+    rvtype="StackstX509ALGOR"/>
+
+  <typedef name="Pointer[U16]"
+    embed="var"
+    ponytypein="Pointer[U16] tag"
+    ponytypeinconv=""
+    ponytypeout="Pointer[U16]"
+    structtype="Pointer[U16]"
+    structdef="Pointer[U16]"
+    argtype="Pointer[U16] tag"
+    rvtype="Pointer[U16]"/>
+
+  <typedef name="IOmarker"
+    embed="embed"
+    ponytypein="IOmarker tag"
+    ponytypeinconv=""
+    ponytypeout="IOmarker"
+    structtype="IOmarker"
+    structdef="IOmarker"
+    argtype="IOmarker tag"
+    rvtype="IOmarker"/>
+
+  <typedef name="StackstASN1INTEGER"
+    embed="embed"
+    ponytypein="StackstASN1INTEGER tag"
+    ponytypeinconv=""
+    ponytypeout="StackstASN1INTEGER"
+    structtype="StackstASN1INTEGER"
+    structdef="StackstASN1INTEGER"
+    argtype="StackstASN1INTEGER tag"
+    rvtype="StackstASN1INTEGER"/>
+
+  <typedef name="Timespec"
+    embed="embed"
+    ponytypein="Timespec tag"
+    ponytypeinconv=""
+    ponytypeout="Timespec"
+    structtype="Timespec"
+    structdef="Timespec"
+    argtype="Timespec tag"
+    rvtype="Timespec"/>
+
+  <typedef name="LhashstCONFVALUE"
+    embed="embed"
+    ponytypein="LhashstCONFVALUE tag"
+    ponytypeinconv=""
+    ponytypeout="LhashstCONFVALUE"
+    structtype="LhashstCONFVALUE"
+    structdef="LhashstCONFVALUE"
+    argtype="LhashstCONFVALUE tag"
+    rvtype="LhashstCONFVALUE"/>
+
+  <typedef name="X509name"
+    embed="embed"
+    ponytypein="X509Name tag"
+    ponytypeinconv=""
+    ponytypeout="X509Name"
+    structtype="X509Name"
+    structdef="X509Name"
+    argtype="X509Name tag"
+    rvtype="X509Name"/>
+
+  <typedef name="X509crlst"
+    embed="embed"
+    ponytypein="X509crlst tag"
+    ponytypeinconv=""
+    ponytypeout="X509crlst"
+    structtype="X509crlst"
+    structdef="X509crlst"
+    argtype="X509crlst tag"
+    rvtype="X509crlst"/>
+
+  <typedef name="Pthreadcleanupbuffer"
+    embed="embed"
+    ponytypein="Pthreadcleanupbuffer tag"
+    ponytypeinconv=""
+    ponytypeout="Pthreadcleanupbuffer"
+    structtype="Pthreadcleanupbuffer"
+    structdef="Pthreadcleanupbuffer"
+    argtype="Pthreadcleanupbuffer tag"
+    rvtype="Pthreadcleanupbuffer"/>
+
+  <typedef name="ASIdentifierChoicest"
+    embed="embed"
+    ponytypein="ASIdentifierChoicest tag"
+    ponytypeinconv=""
+    ponytypeout="ASIdentifierChoicest"
+    structtype="ASIdentifierChoicest"
+    structdef="ASIdentifierChoicest"
+    argtype="ASIdentifierChoicest tag"
+    rvtype="ASIdentifierChoicest"/>
+
+  <typedef name="PROXYPOLICYst"
+    embed="embed"
+    ponytypein="PROXYPOLICYst tag"
+    ponytypeinconv=""
+    ponytypeout="PROXYPOLICYst"
+    structtype="PROXYPOLICYst"
+    structdef="PROXYPOLICYst"
+    argtype="PROXYPOLICYst tag"
+    rvtype="PROXYPOLICYst"/>
+
+  <typedef name="U8"
+    embed="var"
+    ponytypein="U8"
+    ponytypeinconv=""
+    ponytypeout="U8"
+    structtype="U8"
+    structdef="U8(0)"
+    argtype="U8"
+    rvtype="U8"/>
+
+  <typedef name="NOTICEREFst"
+    embed="embed"
+    ponytypein="NOTICEREFst tag"
+    ponytypeinconv=""
+    ponytypeout="NOTICEREFst"
+    structtype="NOTICEREFst"
+    structdef="NOTICEREFst"
+    argtype="NOTICEREFst tag"
+    rvtype="NOTICEREFst"/>
+
+  <typedef name="IPAddressChoicest"
+    embed="embed"
+    ponytypein="IPAddressChoicest tag"
+    ponytypeinconv=""
+    ponytypeout="IPAddressChoicest"
+    structtype="IPAddressChoicest"
+    structdef="IPAddressChoicest"
+    argtype="IPAddressChoicest tag"
+    rvtype="IPAddressChoicest"/>
+
+  <typedef name="StdynamicMEMfns"
+    embed="embed"
+    ponytypein="StdynamicMEMfns tag"
+    ponytypeinconv=""
+    ponytypeout="StdynamicMEMfns"
+    structtype="StdynamicMEMfns"
+    structdef="StdynamicMEMfns"
+    argtype="StdynamicMEMfns tag"
+    rvtype="StdynamicMEMfns"/>
+
+  <typedef name="Pkcs7st"
+    embed="embed"
+    ponytypein="Pkcs7st tag"
+    ponytypeinconv=""
+    ponytypeout="Pkcs7st"
+    structtype="Pkcs7st"
+    structdef="Pkcs7st"
+    argtype="Pkcs7st tag"
+    rvtype="Pkcs7st"/>
+
+  <typedef name="X509algorst"
+    embed="embed"
+    ponytypein="X509algorst tag"
+    ponytypeinconv=""
+    ponytypeout="X509algorst"
+    structtype="X509algorst"
+    structdef="X509algorst"
+    argtype="X509algorst tag"
+    rvtype="X509algorst"/>
+
+  <typedef name="Evpcipherst"
+    embed="embed"
+    ponytypein="Evpcipherst tag"
+    ponytypeinconv=""
+    ponytypeout="Evpcipherst"
+    structtype="Evpcipherst"
+    structdef="Evpcipherst"
+    argtype="Evpcipherst tag"
+    rvtype="Evpcipherst"/>
+</typedefs>
+

@@ -1,0 +1,1 @@
+cat use.xml | tr '\n' ' ' | sed -e 's/<use /\n<use /g'

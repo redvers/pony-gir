@@ -2,49 +2,52 @@
 <castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
 <xi:include href="../usetypes.xml"/>
 <xi:include href="../use.xml"/>
+<xi:include href="../renderstructs.xml"/>
 <xi:include href="../../../castxml-results/gio.xml"/>
+<!--
 <inherits>
   <inherit name="GObject" ponyfn="gobject" path="parent_instance"/>
 </inherits>
+-->
 <renders>
-  <renderuse name="g_application_activate" render="1"/>
-  <renderuse name="g_application_add_main_option" render="1"/>
-  <renderuse name="g_application_add_main_option_entries" render="1"/>
-  <renderuse name="g_application_add_option_group" render="1"/>
-  <renderuse name="g_application_bind_busy_property" render="1"/>
-  <renderuse name="g_application_flags_get_type" render="1"/>
-  <renderuse name="g_application_get_application_id" render="1"/>
-  <renderuse name="g_application_get_dbus_connection" render="1"/>
-  <renderuse name="g_application_get_dbus_object_path" render="1"/>
-  <renderuse name="g_application_get_default" render="1"/>
-  <renderuse name="g_application_get_flags" render="1"/>
-  <renderuse name="g_application_get_inactivity_timeout" render="1"/>
-  <renderuse name="g_application_get_is_busy" render="1"/>
-  <renderuse name="g_application_get_is_registered" render="1"/>
-  <renderuse name="g_application_get_is_remote" render="1"/>
-  <renderuse name="g_application_get_resource_base_path" render="1"/>
-  <renderuse name="g_application_get_type" render="1"/>
-  <renderuse name="g_application_hold" render="1"/>
-  <renderuse name="g_application_id_is_valid" render="1"/>
-  <renderuse name="g_application_mark_busy" render="1"/>
-  <renderuse name="g_application_new" render="1"/>
-  <renderuse name="g_application_open" render="1"/>
-  <renderuse name="g_application_quit" render="1"/>
-  <renderuse name="g_application_register" render="1"/>
-  <renderuse name="g_application_release" render="1"/>
-  <renderuse name="g_application_run" render="1"/>
-  <renderuse name="g_application_send_notification" render="1"/>
-  <renderuse name="g_application_set_action_group" render="1"/>
-  <renderuse name="g_application_set_application_id" render="1"/>
-  <renderuse name="g_application_set_default" render="1"/>
-  <renderuse name="g_application_set_flags" render="1"/>
-  <renderuse name="g_application_set_inactivity_timeout" render="1"/>
-  <renderuse name="g_application_set_option_context_description" render="1"/>
-  <renderuse name="g_application_set_option_context_parameter_string" render="1"/>
-  <renderuse name="g_application_set_option_context_summary" render="1"/>
-  <renderuse name="g_application_set_resource_base_path" render="1"/>
-  <renderuse name="g_application_unbind_busy_property" render="1"/>
-  <renderuse name="g_application_unmark_busy" render="1"/>
-  <renderuse name="g_application_withdraw_notification" render="1"/>
+  <constructor name="g_application_new" render="1"/>
+  <method name="g_application_activate" render="0"/>
+  <method name="g_application_add_main_option" render="0"/>
+  <method name="g_application_add_main_option_entries" render="0"/>
+  <method name="g_application_add_option_group" render="0"/>
+  <method name="g_application_bind_busy_property" render="0"/>
+  <method name="g_application_flags_get_type" render="0"/>
+  <method name="g_application_get_application_id" render="1"/>
+  <method name="g_application_get_dbus_connection" render="0"/>
+  <method name="g_application_get_dbus_object_path" render="0"/>
+  <function name="g_application_get_default" render="0"/>
+  <method name="g_application_get_flags" render="0"/>
+  <method name="g_application_get_inactivity_timeout" render="0"/>
+  <method name="g_application_get_is_busy" render="0"/>
+  <method name="g_application_get_is_registered" render="0"/>
+  <method name="g_application_get_is_remote" render="0"/>
+  <method name="g_application_get_resource_base_path" render="0"/>
+  <method name="g_application_get_type" render="0"/>
+  <method name="g_application_hold" render="0"/>
+  <function name="g_application_id_is_valid" render="0"/>
+  <method name="g_application_mark_busy" render="0"/>
+  <method name="g_application_open" render="0"/>
+  <method name="g_application_quit" render="1"/>
+  <method name="g_application_register" render="0"/>
+  <method name="g_application_release" render="0"/>
+  <method name="g_application_run" render="1"/>
+  <method name="g_application_send_notification" render="0"/>
+  <method name="g_application_set_action_group" render="0"/>
+  <method name="g_application_set_application_id" render="0"/>
+  <method name="g_application_set_default" render="0"/>
+  <method name="g_application_set_flags" render="0"/>
+  <method name="g_application_set_inactivity_timeout" render="0"/>
+  <method name="g_application_set_option_context_description" render="0"/>
+  <method name="g_application_set_option_context_parameter_string" render="0"/>
+  <method name="g_application_set_option_context_summary" render="0"/>
+  <method name="g_application_set_resource_base_path" render="0"/>
+  <method name="g_application_unbind_busy_property" render="0"/>
+  <method name="g_application_unmark_busy" render="0"/>
+  <method name="g_application_withdraw_notification" render="0"/>
 </renders>
 </castxml2pony>

@@ -1,136 +1,139 @@
 use "../Glib"
 use "../GObject"
-use "../Cairo"
-use "../Atk"
-use "../Pango"
-use "../Gdk"
+//use "../Cairo"
+//use "../Atk"
+//use "../Pango"
+//use "../Gdk"
 use "../Gio"
-use "../Harfbuzz"
+//use "../Harfbuzz"
 
 use "lib:gtk-3"
-use "lib:gdk-3"
-use "lib:z"
-use "lib:pangocairo-1.0"
-use "lib:pango-1.0"
-use "lib:harfbuzz"
-use "lib:atk-1.0"
-use "lib:cairo-gobject"
-use "lib:cairo"
-use "lib:gdk_pixbuf-2.0"
+//use "lib:gdk-3"
+//use "lib:z"
+//use "lib:pangocairo-1.0"
+//use "lib:pango-1.0"
+//use "lib:harfbuzz"
+//use "lib:atk-1.0"
+//use "lib:cairo-gobject"
+//use "lib:cairo"
+//use "lib:gdk_pixbuf-2.0"
 use "lib:glib-2.0"
+use "lib:gio-2.0"
+use "lib:gobject-2.0"
 
-use @g_signal_connect_data[U64](instance: GtkApplication tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None], data: Any, destroydata: Pointer[None] tag, connectflags: I32)
+use @g_object_notify[None](gobject: GObjectStruct tag, propertyname: Pointer[U8] tag)
+use @g_object_ref[None](gobject: GObjectStruct tag)
+use @g_object_unref[None](gobject: GObjectStruct tag)
+use @g_application_new[GApplicationStruct](applicationid: Pointer[U8] tag, flags: I32)
+use @g_application_get_application_id[Pointer[U8]](application: GObjectStruct tag)
+use @g_application_quit[None](application: GObjectStruct tag)
+use @g_application_run[I32](application: GObjectStruct tag, argc: I32, argv: Pointer[Pointer[U8]] tag)
+use @g_signal_connect_data[U64](instance: GObjectStruct tag, detailedsignal: Pointer[U8] tag, chandler: Pointer[None] tag, data: Any, destroydata: Pointer[None] tag, connectflags: I32)
+//use @g_object_get_data[Any](gobject: GObjectStruct tag, key: Pointer[U8] tag)
+//use @g_object_set_data[None](gobject: GObjectStruct tag, key: Pointer[U8] tag, data: Pointer[None] tag)
+use @gtk_application_new[GtkApplicationStruct](applicationid: Pointer[U8] tag, flags: I32)
 use @gtk_application_get_type[U64]()
-use @gtk_application_new[GtkApplication](applicationid: Pointer[U8] tag, flags: I32)
-use @gtk_application_add_window[None](application: GtkApplication tag, window: GtkWindow tag)
-use @gtk_application_remove_window[None](application: GtkApplication tag, window: GtkWindow tag)
-use @gtk_application_get_windows[NullablePointer[GList]](application: GtkApplication tag)
-use @gtk_application_get_app_menu[NullablePointer[GMenuModel]](application: GtkApplication tag)
-use @gtk_application_set_app_menu[None](application: GtkApplication tag, appmenu: NullablePointer[GMenuModel] tag)
-use @gtk_application_get_menubar[NullablePointer[GMenuModel]](application: GtkApplication tag)
-use @gtk_application_set_menubar[None](application: GtkApplication tag, menubar: NullablePointer[GMenuModel] tag)
-use @gtk_application_add_accelerator[None](application: GtkApplication tag, accelerator: Pointer[U8] tag, actionname: Pointer[U8] tag, parameter: NullablePointer[GVariant] tag)
-use @gtk_application_remove_accelerator[None](application: GtkApplication tag, actionname: Pointer[U8] tag, parameter: NullablePointer[GVariant] tag)
-use @gtk_application_inhibit[U32](application: GtkApplication tag, window: GtkWindow tag, flags: I32, reason: Pointer[U8] tag)
-use @gtk_application_uninhibit[None](application: GtkApplication tag, cookie: U32)
-use @gtk_application_is_inhibited[I32](application: GtkApplication tag, flags: I32)
-use @gtk_application_get_window_by_id[GtkWindow](application: GtkApplication tag, id: U32)
-use @gtk_application_get_active_window[GtkWindow](application: GtkApplication tag)
-use @gtk_application_list_action_descriptions[Pointer[Pointer[U8]]](application: GtkApplication tag)
-use @gtk_application_get_accels_for_action[Pointer[Pointer[U8]]](application: GtkApplication tag, detailedactionname: Pointer[U8] tag)
-use @gtk_application_get_actions_for_accel[Pointer[Pointer[U8]]](application: GtkApplication tag, accel: Pointer[U8] tag)
-use @gtk_application_set_accels_for_action[None](application: GtkApplication tag, detailedactionname: Pointer[U8] tag, accels: Pointer[Pointer[U8]] tag)
-use @gtk_application_prefers_app_menu[I32](application: GtkApplication tag)
-use @gtk_application_get_menu_by_id[NullablePointer[GMenu]](application: GtkApplication tag, id: Pointer[U8] tag)
+use @gtk_application_add_window[None](application: GObjectStruct tag, window: GtkWindowStruct tag)
+use @gtk_application_remove_window[None](application: GObjectStruct tag, window: GtkWindowStruct tag)
+use @gtk_application_get_windows[GListStruct](application: GObjectStruct tag)
+use @gtk_application_get_app_menu[GMenuModelStruct](application: GObjectStruct tag)
+use @gtk_application_set_app_menu[None](application: GObjectStruct tag, appmenu: GMenuModelStruct tag)
+use @gtk_application_get_menubar[GMenuModelStruct](application: GObjectStruct tag)
+use @gtk_application_set_menubar[None](application: GObjectStruct tag, menubar: GMenuModelStruct tag)
+use @gtk_application_add_accelerator[None](application: GObjectStruct tag, accelerator: Pointer[U8] tag, actionname: Pointer[U8] tag, parameter: GVariantStruct tag)
+use @gtk_application_remove_accelerator[None](application: GObjectStruct tag, actionname: Pointer[U8] tag, parameter: GVariantStruct tag)
+use @gtk_application_inhibit[U32](application: GObjectStruct tag, window: GtkWindowStruct tag, flags: I32, reason: Pointer[U8] tag)
+use @gtk_application_uninhibit[None](application: GObjectStruct tag, cookie: U32)
+use @gtk_application_is_inhibited[I32](application: GObjectStruct tag, flags: I32)
+use @gtk_application_get_window_by_id[GtkWindowStruct](application: GObjectStruct tag, id: U32)
+use @gtk_application_get_active_window[GtkWindowStruct](application: GObjectStruct tag)
+use @gtk_application_list_action_descriptions[Pointer[Pointer[U8]]](application: GObjectStruct tag)
+use @gtk_application_get_accels_for_action[Pointer[Pointer[U8]]](application: GObjectStruct tag, detailedactionname: Pointer[U8] tag)
+use @gtk_application_get_actions_for_accel[Pointer[Pointer[U8]]](application: GObjectStruct tag, accel: Pointer[U8] tag)
+use @gtk_application_set_accels_for_action[None](application: GObjectStruct tag, detailedactionname: Pointer[U8] tag, accels: Pointer[Pointer[U8]] tag)
+use @gtk_application_prefers_app_menu[I32](application: GObjectStruct tag)
+use @gtk_application_get_menu_by_id[GMenuStruct](application: GObjectStruct tag, id: Pointer[U8] tag)
 use @gtk_application_inhibit_flags_get_type[U64]()
 
+class GtkApplication is GtkApplicationInterface
+  var _ptr: GtkApplicationStruct
 
-/*
-  Source: headers/gtk-3.0/gtk/gtkapplication.h:43
-  Original Name: _GtkApplication
-  Struct Size (bits):  320
-  Struct Align (bits): 64
+  new from_ref(objref: GtkApplicationStruct) => _ptr = objref
 
-  Fields (Offset in bits):
-     000000: [Struct size=256,fid: f160]: parent  
-     000256: [PointerType size=64]->[Struct size=,fid: f437]: priv  
-*/
-struct GtkApplication
-  embed parent: GApplication = GApplication // Typedef
-  var priv: NullablePointer[GtkApplicationPrivate] = NullablePointer[GtkApplicationPrivate].none() // PointerType
+  fun ref gobject(): GObjectStruct => _ptr.parent.parent_instance
 
-  fun gnew(applicationid: String, flags: I32): GtkApplication =>
-    @gtk_application_new(applicationid.cstring(), flags)
-  fun get_type(): U64 =>
+
+
+  new create(applicationid: String, flags: I32) =>
+   _ptr =  @gtk_application_new(applicationid.cstring(), flags)
+
+
+interface GtkApplicationInterface is GApplicationInterface
+  fun ref gobject(): GObjectStruct
+
+  fun ref get_type(): U64 =>
     @gtk_application_get_type()
 
-  fun add_window(window: GtkWindow tag): None =>
-    @gtk_application_add_window(this, window)
+  fun ref add_window(window: GtkWindowStruct tag): None =>
+    @gtk_application_add_window(gobject(), window)
 
-  fun remove_window(window: GtkWindow tag): None =>
-    @gtk_application_remove_window(this, window)
+  fun ref remove_window(window: GtkWindowStruct tag): None =>
+    @gtk_application_remove_window(gobject(), window)
 
-  fun get_windows(): NullablePointer[GList] =>
-    @gtk_application_get_windows(this)
+  fun ref get_windows(): GListStruct =>
+    @gtk_application_get_windows(gobject())
 
-  fun get_app_menu(): NullablePointer[GMenuModel] =>
-    @gtk_application_get_app_menu(this)
+  fun ref get_app_menu(): GMenuModelStruct =>
+    @gtk_application_get_app_menu(gobject())
 
-  fun set_app_menu(appmenu: NullablePointer[GMenuModel] tag): None =>
-    @gtk_application_set_app_menu(this, appmenu)
+  fun ref set_app_menu(appmenu: GMenuModelStruct tag): None =>
+    @gtk_application_set_app_menu(gobject(), appmenu)
 
-  fun get_menubar(): NullablePointer[GMenuModel] =>
-    @gtk_application_get_menubar(this)
+  fun ref get_menubar(): GMenuModelStruct =>
+    @gtk_application_get_menubar(gobject())
 
-  fun set_menubar(menubar: NullablePointer[GMenuModel] tag): None =>
-    @gtk_application_set_menubar(this, menubar)
+  fun ref set_menubar(menubar: GMenuModelStruct tag): None =>
+    @gtk_application_set_menubar(gobject(), menubar)
 
-  fun add_accelerator(accelerator: String, actionname: String, parameter: NullablePointer[GVariant] tag): None =>
-    @gtk_application_add_accelerator(this, accelerator.cstring(), actionname.cstring(), parameter)
+  fun ref add_accelerator(accelerator: String, actionname: String, parameter: GVariantStruct tag): None =>
+    @gtk_application_add_accelerator(gobject(), accelerator.cstring(), actionname.cstring(), parameter)
 
-  fun remove_accelerator(actionname: String, parameter: NullablePointer[GVariant] tag): None =>
-    @gtk_application_remove_accelerator(this, actionname.cstring(), parameter)
+  fun ref remove_accelerator(actionname: String, parameter: GVariantStruct tag): None =>
+    @gtk_application_remove_accelerator(gobject(), actionname.cstring(), parameter)
 
-  fun inhibit(window: GtkWindow tag, flags: I32, reason: String): U32 =>
-    @gtk_application_inhibit(this, window, flags, reason.cstring())
+  fun ref inhibit(window: GtkWindowStruct tag, flags: I32, reason: String): U32 =>
+    @gtk_application_inhibit(gobject(), window, flags, reason.cstring())
 
-  fun uninhibit(cookie: U32): None =>
-    @gtk_application_uninhibit(this, cookie)
+  fun ref uninhibit(cookie: U32): None =>
+    @gtk_application_uninhibit(gobject(), cookie)
 
-  fun is_inhibited(flags: I32): I32 =>
-    @gtk_application_is_inhibited(this, flags)
+  fun ref is_inhibited(flags: I32): I32 =>
+    @gtk_application_is_inhibited(gobject(), flags)
 
-  fun get_window_by_id(id: U32): GtkWindow =>
-    @gtk_application_get_window_by_id(this, id)
+  fun ref get_window_by_id(id: U32): GtkWindowStruct =>
+    @gtk_application_get_window_by_id(gobject(), id)
 
-  fun get_active_window(): GtkWindow =>
-    @gtk_application_get_active_window(this)
+  fun ref get_active_window(): GtkWindowStruct =>
+    @gtk_application_get_active_window(gobject())
 
-  fun list_action_descriptions(): Pointer[Pointer[U8]] =>
-    @gtk_application_list_action_descriptions(this)
+  fun ref list_action_descriptions(): Pointer[Pointer[U8]] =>
+    @gtk_application_list_action_descriptions(gobject())
 
-  fun get_accels_for_action(detailedactionname: String): Pointer[Pointer[U8]] =>
-    @gtk_application_get_accels_for_action(this, detailedactionname.cstring())
+  fun ref get_accels_for_action(detailedactionname: String): Pointer[Pointer[U8]] =>
+    @gtk_application_get_accels_for_action(gobject(), detailedactionname.cstring())
 
-  fun get_actions_for_accel(accel: String): Pointer[Pointer[U8]] =>
-    @gtk_application_get_actions_for_accel(this, accel.cstring())
+  fun ref get_actions_for_accel(accel: String): Pointer[Pointer[U8]] =>
+    @gtk_application_get_actions_for_accel(gobject(), accel.cstring())
 
-  fun set_accels_for_action(detailedactionname: String, accels: Pointer[Pointer[U8]]): None =>
-    @gtk_application_set_accels_for_action(this, detailedactionname.cstring(), accels)
+  fun ref set_accels_for_action(detailedactionname: String, accels: Pointer[Pointer[U8]]): None =>
+    @gtk_application_set_accels_for_action(gobject(), detailedactionname.cstring(), accels)
 
-  fun prefers_app_menu(): I32 =>
-    @gtk_application_prefers_app_menu(this)
+  fun ref prefers_app_menu(): I32 =>
+    @gtk_application_prefers_app_menu(gobject())
 
-  fun get_menu_by_id(id: String): NullablePointer[GMenu] =>
-    @gtk_application_get_menu_by_id(this, id.cstring())
+  fun ref get_menu_by_id(id: String): GMenuStruct =>
+    @gtk_application_get_menu_by_id(gobject(), id.cstring())
 
-  fun inhibit_flags_get_type(): U64 =>
+  fun ref inhibit_flags_get_type(): U64 =>
     @gtk_application_inhibit_flags_get_type()
-
-
-  fun ref gobject(): GObject => parent.parent_instance
-  fun ref gapplication(): GApplication => parent
-  fun signal_connect[A: Any](detailedsignal: String, chandler: @{(GtkApplication, A): None}, data: A, destroydata: Pointer[None] tag, connectflags: I32): U64 =>
-    @g_signal_connect_data(this, detailedsignal.cstring(), chandler, data, destroydata, connectflags)
-
 

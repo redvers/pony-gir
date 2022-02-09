@@ -2,7 +2,7 @@
 <castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
 <xi:include href="./types.xml"/>
 <xi:include href="./renderstructs.xml"/>
-<xi:include href="./ossl.xml"/>
+<xi:include href="./../../castxml-results/ossl.xml"/>
                     <structs>
                       <struct name="Anon" id="_41" size="64" align="32" fid="f1" lineno="155">
     <field name="__val" id="_7629" type="Pointer[I32]" fieldid="_9712" offset="0" fid="f1" line="155"/>
@@ -13,14 +13,14 @@
     <field name="rem" id="_7633" type="I64" fieldid="_7628" offset="64" fid="f5" line="274"/>
   </struct>
 
-  <struct name="Asn1stringst" id="_108" size="192" align="64" fid="f6" lineno="146">
+  <struct name="ASN1String" id="_108" size="192" align="64" fid="f6" lineno="146">
     <field name="length" id="_7639" type="I32" fieldid="_7627" offset="0" fid="f6" line="147"/>
-    <field name="type" id="_7640" type="I32" fieldid="_7627" offset="32" fid="f6" line="148"/>
+    <field name="otype" id="_7640" type="I32" fieldid="_7627" offset="32" fid="f6" line="148"/>
     <field name="data" id="_7641" type="String" fieldid="_7997" offset="64" fid="f6" line="149"/>
     <field name="flags" id="_7642" type="I64" fieldid="_7628" offset="128" fid="f6" line="155"/>
   </struct>
 
-  <struct name="Asn1objectst" id="_127" size="" align="" fid="f7" lineno="60">
+  <struct name="ASN1Object" id="_127" size="" align="" fid="f7" lineno="60">
 
   </struct>
 
@@ -46,11 +46,11 @@
 
   </struct>
 
-  <struct name="Biost" id="_136" size="" align="" fid="f7" lineno="79">
+  <struct name="BIO" id="_136" size="" align="" fid="f7" lineno="79">
 
   </struct>
 
-  <struct name="Bignumst" id="_138" size="" align="" fid="f7" lineno="80">
+  <struct name="BIGNum" id="_138" size="" align="" fid="f7" lineno="80">
 
   </struct>
 
@@ -89,7 +89,7 @@
 
   </struct>
 
-  <struct name="Evpmdst" id="_156" size="" align="" fid="f7" lineno="91">
+  <struct name="EVPMD" id="_156" size="" align="" fid="f7" lineno="91">
 
   </struct>
 
@@ -178,16 +178,16 @@
 
   </struct>
 
-  <struct name="X509st" id="_196" size="" align="" fid="f7" lineno="121">
+  <struct name="X509" id="_196" size="" align="" fid="f7" lineno="121">
 
   </struct>
 
-  <struct name="X509algorst" id="_198" size="128" align="64" fid="f12" lineno="59">
+  <struct name="X509Algor" id="_198" size="128" align="64" fid="f12" lineno="59">
     <field name="algorithm" id="_7702" type="Asn1objectst" fieldid="_8205" offset="0" fid="f12" line="60"/>
     <field name="parameter" id="_7703" type="Asn1typest" fieldid="_8190" offset="64" fid="f12" line="61"/>
   </struct>
 
-  <struct name="X509crlst" id="_200" size="" align="" fid="f7" lineno="123">
+  <struct name="X509CRL" id="_200" size="" align="" fid="f7" lineno="123">
 
   </struct>
 
@@ -199,7 +199,7 @@
 
   </struct>
 
-  <struct name="X509namest" id="_206" size="" align="" fid="f7" lineno="126">
+  <struct name="X509Name" id="_206" size="" align="" fid="f7" lineno="126">
 
   </struct>
 
@@ -207,7 +207,7 @@
 
   </struct>
 
-  <struct name="X509storest" id="_210" size="" align="" fid="f7" lineno="128">
+  <struct name="X509Store" id="_210" size="" align="" fid="f7" lineno="128">
 
   </struct>
 
@@ -215,7 +215,7 @@
 
   </struct>
 
-  <struct name="X509objectst" id="_214" size="" align="" fid="f7" lineno="131">
+  <struct name="X509Object" id="_214" size="" align="" fid="f7" lineno="131">
 
   </struct>
 
@@ -241,8 +241,8 @@
 
   <struct name="V3extctx" id="_226" size="448" align="64" fid="f13" lineno="79">
     <field name="flags" id="_7718" type="I32" fieldid="_7627" offset="0" fid="f13" line="82"/>
-    <field name="issuer_cert" id="_7719" type="X509st" fieldid="_8551" offset="64" fid="f13" line="83"/>
-    <field name="subject_cert" id="_7720" type="X509st" fieldid="_8551" offset="128" fid="f13" line="84"/>
+    <field name="issuer_cert" id="_7719" type="X509" fieldid="_8551" offset="64" fid="f13" line="83"/>
+    <field name="subject_cert" id="_7720" type="X509" fieldid="_8551" offset="128" fid="f13" line="84"/>
     <field name="subject_req" id="_7721" type="X509reqst" fieldid="_8802" offset="192" fid="f13" line="85"/>
     <field name="crl" id="_7722" type="X509crlst" fieldid="_8577" offset="256" fid="f13" line="86"/>
     <field name="db_meth" id="_7723" type="X509V3CONFMETHODst" fieldid="_9717" offset="320" fid="f13" line="87"/>
@@ -287,7 +287,7 @@
 
   </struct>
 
-  <struct name="X509POLICYNODEst" id="_246" size="" align="" fid="f7" lineno="154">
+  <struct name="X509PolicyNode" id="_246" size="" align="" fid="f7" lineno="154">
 
   </struct>
 
@@ -639,7 +639,7 @@
 
   </struct>
 
-  <struct name="Biomethodst" id="_1025" size="" align="" fid="f61" lineno="250">
+  <struct name="BIOMethod" id="_1025" size="" align="" fid="f61" lineno="250">
 
   </struct>
 
@@ -706,9 +706,9 @@
 
   </struct>
 
-  <struct name="Asn1typest" id="_1552" size="128" align="64" fid="f6" lineno="444">
-    <field name="type" id="_8182" type="I32" fieldid="_7627" offset="0" fid="f6" line="445"/>
-    <field name="value" id="_8184" type="None" fieldid="_9845" offset="64" fid="f6" line="472"/>
+  <struct name="ASN1Type" id="_1552" size="128" align="64" fid="f6" lineno="444">
+    <field name="otype" id="_8182" type="I32" fieldid="_7627" offset="0" fid="f6" line="445"/>
+    <field name="value" id="_8184" type="U64" fieldid="_9845" offset="64" fid="f6" line="472"/>
   </struct>
 
   <struct name="StackstASN1TYPE" id="_1554" size="" align="" fid="f6" lineno="475">
@@ -726,7 +726,7 @@
   </struct>
 
   <struct name="Objnamest" id="_1891" size="192" align="64" fid="f67" lineno="35">
-    <field name="type" id="_8268" type="I32" fieldid="_7627" offset="0" fid="f67" line="36"/>
+    <field name="otype" id="_8268" type="I32" fieldid="_7627" offset="0" fid="f67" line="36"/>
     <field name="alias" id="_8269" type="I32" fieldid="_7627" offset="32" fid="f67" line="37"/>
     <field name="name" id="_8270" type="String" fieldid="_7635" offset="64" fid="f67" line="38"/>
     <field name="data" id="_8271" type="String" fieldid="_7635" offset="128" fid="f67" line="39"/>
@@ -835,11 +835,11 @@
 
   </struct>
 
-  <struct name="X509extensionst" id="_3026" size="" align="" fid="f12" lineno="81">
+  <struct name="X509Extension" id="_3026" size="" align="" fid="f12" lineno="81">
 
   </struct>
 
-  <struct name="StackstX509EXTENSION" id="_3028" size="" align="" fid="f12" lineno="83">
+  <struct name="StackX509Extension" id="_3028" size="" align="" fid="f12" lineno="83">
 
   </struct>
 
@@ -908,7 +908,7 @@
   </struct>
 
   <struct name="X509infost" id="_3213" size="512" align="64" fid="f12" lineno="245">
-    <field name="x509" id="_8588" type="X509st" fieldid="_8551" offset="0" fid="f12" line="246"/>
+    <field name="x509" id="_8588" type="X509" fieldid="_8551" offset="0" fid="f12" line="246"/>
     <field name="crl" id="_8589" type="X509crlst" fieldid="_8577" offset="64" fid="f12" line="247"/>
     <field name="x_pkey" id="_8590" type="Privatekeyst" fieldid="_8847" offset="128" fid="f12" line="248"/>
     <field name="enc_cipher" id="_8591" type="Evpcipherinfost" fieldid="_1968" offset="192" fid="f12" line="249"/>
@@ -932,7 +932,7 @@
   </struct>
 
   <struct name="Netscapecertificatesequence" id="_3247" size="128" align="64" fid="f12" lineno="272">
-    <field name="type" id="_8608" type="Asn1objectst" fieldid="_8205" offset="0" fid="f12" line="273"/>
+    <field name="otype" id="_8608" type="Asn1objectst" fieldid="_8205" offset="0" fid="f12" line="273"/>
     <field name="certs" id="_8609" type="StackstX509" fieldid="_8552" offset="64" fid="f12" line="274"/>
   </struct>
 
@@ -981,7 +981,7 @@
 
   </struct>
 
-  <struct name="StackstX509OBJECT" id="_3341" size="" align="" fid="f79" lineno="58">
+  <struct name="StackX509Object" id="_3341" size="" align="" fid="f79" lineno="58">
 
   </struct>
 
@@ -998,7 +998,7 @@
   </struct>
 
   <struct name="Pkcs7issuerandserialst" id="_3611" size="128" align="64" fid="f81" lineno="32">
-    <field name="issuer" id="_8702" type="X509namest" fieldid="_8526" offset="0" fid="f81" line="33"/>
+    <field name="issuer" id="_8702" type="X509Name" fieldid="_8526" offset="0" fid="f81" line="33"/>
     <field name="serial" id="_8703" type="Asn1stringst" fieldid="_8168" offset="64" fid="f81" line="34"/>
   </struct>
 
@@ -1022,7 +1022,7 @@
     <field name="issuer_and_serial" id="_8721" type="Pkcs7issuerandserialst" fieldid="_8778" offset="64" fid="f81" line="53"/>
     <field name="key_enc_algor" id="_8722" type="X509algorst" fieldid="_8130" offset="128" fid="f81" line="54"/>
     <field name="enc_key" id="_8723" type="Asn1stringst" fieldid="_8228" offset="192" fid="f81" line="55"/>
-    <field name="cert" id="_8724" type="X509st" fieldid="_8551" offset="256" fid="f81" line="56"/>
+    <field name="cert" id="_8724" type="X509" fieldid="_8551" offset="256" fid="f81" line="56"/>
   </struct>
 
   <struct name="StackstPKCS7RECIPINFO" id="_3645" size="" align="" fid="f81" lineno="59">
@@ -1078,7 +1078,7 @@
     <field name="length" id="_8765" type="I64" fieldid="_7628" offset="64" fid="f81" line="115"/>
     <field name="state" id="_8766" type="I32" fieldid="_7627" offset="128" fid="f81" line="119"/>
     <field name="detached" id="_8767" type="I32" fieldid="_7627" offset="160" fid="f81" line="120"/>
-    <field name="type" id="_8768" type="Asn1objectst" fieldid="_8205" offset="192" fid="f81" line="121"/>
+    <field name="otype" id="_8768" type="Asn1objectst" fieldid="_8205" offset="192" fid="f81" line="121"/>
     <field name="d" id="_8770" type="None" fieldid="_10040" offset="256" fid="f81" line="143"/>
   </struct>
 
@@ -1252,7 +1252,7 @@
   </struct>
 
   <struct name="GENERALNAMEst" id="_4785" size="128" align="64" fid="f13" lineno="123">
-    <field name="type" id="_9038" type="I32" fieldid="_7627" offset="0" fid="f13" line="133"/>
+    <field name="otype" id="_9038" type="I32" fieldid="_7627" offset="0" fid="f13" line="133"/>
     <field name="d" id="_9040" type="None" fieldid="_10120" offset="64" fid="f13" line="152"/>
   </struct>
 
@@ -1274,9 +1274,9 @@
   </struct>
 
   <struct name="DISTPOINTNAMEst" id="_4877" size="192" align="64" fid="f13" lineno="172">
-    <field name="type" id="_9067" type="I32" fieldid="_7627" offset="0" fid="f13" line="173"/>
+    <field name="otype" id="_9067" type="I32" fieldid="_7627" offset="0" fid="f13" line="173"/>
     <field name="name" id="_9069" type="None" fieldid="_10134" offset="64" fid="f13" line="177"/>
-    <field name="dpname" id="_9070" type="X509namest" fieldid="_8526" offset="128" fid="f13" line="179"/>
+    <field name="dpname" id="_9070" type="X509Name" fieldid="_8526" offset="128" fid="f13" line="179"/>
   </struct>
 
   <struct name="StackstDISTPOINT" id="_4879" size="" align="" fid="f13" lineno="203">
@@ -1375,7 +1375,7 @@
   </struct>
 
   <struct name="ASIdOrRangest" id="_5374" size="128" align="64" fid="f13" lineno="732">
-    <field name="type" id="_9216" type="I32" fieldid="_7627" offset="0" fid="f13" line="733"/>
+    <field name="otype" id="_9216" type="I32" fieldid="_7627" offset="0" fid="f13" line="733"/>
     <field name="u" id="_9218" type="None" fieldid="_10173" offset="64" fid="f13" line="737"/>
   </struct>
 
@@ -1384,7 +1384,7 @@
   </struct>
 
   <struct name="ASIdentifierChoicest" id="_5405" size="128" align="64" fid="f13" lineno="746">
-    <field name="type" id="_9227" type="I32" fieldid="_7627" offset="0" fid="f13" line="747"/>
+    <field name="otype" id="_9227" type="I32" fieldid="_7627" offset="0" fid="f13" line="747"/>
     <field name="u" id="_9229" type="None" fieldid="_10180" offset="64" fid="f13" line="751"/>
   </struct>
 
@@ -1399,7 +1399,7 @@
   </struct>
 
   <struct name="IPAddressOrRangest" id="_5431" size="128" align="64" fid="f13" lineno="770">
-    <field name="type" id="_9244" type="I32" fieldid="_7627" offset="0" fid="f13" line="771"/>
+    <field name="otype" id="_9244" type="I32" fieldid="_7627" offset="0" fid="f13" line="771"/>
     <field name="u" id="_9246" type="None" fieldid="_10183" offset="64" fid="f13" line="775"/>
   </struct>
 
@@ -1408,7 +1408,7 @@
   </struct>
 
   <struct name="IPAddressChoicest" id="_5462" size="128" align="64" fid="f13" lineno="784">
-    <field name="type" id="_9255" type="I32" fieldid="_7627" offset="0" fid="f13" line="785"/>
+    <field name="otype" id="_9255" type="I32" fieldid="_7627" offset="0" fid="f13" line="785"/>
     <field name="u" id="_9257" type="None" fieldid="_10190" offset="64" fid="f13" line="789"/>
   </struct>
 

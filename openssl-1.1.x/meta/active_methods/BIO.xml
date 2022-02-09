@@ -4,6 +4,20 @@
 <xi:include href="../use.xml"/>
 <xi:include href="../../../castxml-results/ossl.xml"/>
 <renders>
+  <renderuse name="PEM_read_bio" render="1"/>
+  <renderuse name="PEM_read_bio_X509" render="1"/>
+  <renderuse name="X509_aux_print" render="1"/>
+  <renderuse name="X509_NAME_print" render="1"/>
+  <renderuse name="X509_NAME_print_ex" render="1"/>
+  <renderuse name="X509_ocspid_print" render="1"/>
+  <renderuse name="X509_POLICY_NODE_print" render="1"/>
+  <renderuse name="X509_print" render="1"/>
+  <renderuse name="X509_print_ex" render="1"/>
+  <renderuse name="X509_signature_print" render="1"/>
+  <renderuse name="X509V3_extensions_print" render="1"/>
+  <renderuse name="X509V3_EXT_print" render="1"/>
+  <renderuse name="ASN1_TIME_print" render="1"/>
+  <renderuse name="ASN1_UTCTIME_print" render="1"/>
   <renderuse name="BIO_accept" render="0"/>
   <renderuse name="BIO_accept_ex" render="0"/>
   <renderuse name="BIO_ADDR_clear" render="0"/>
@@ -58,8 +72,8 @@
   <renderuse name="BIO_f_md" render="0"/>
   <renderuse name="BIO_f_nbio_test" render="0"/>
   <renderuse name="BIO_f_null" render="0"/>
-  <renderuse name="BIO_free" render="0"/>
-  <renderuse name="BIO_free_all" render="0"/>
+  <renderuse name="BIO_free" render="1"/>
+  <renderuse name="BIO_free_all" render="1"/>
   <renderuse name="BIO_f_reliable" render="0"/>
   <renderuse name="BIO_f_ssl" render="0"/>
   <renderuse name="BIO_get_accept_socket" render="0"/>
@@ -107,7 +121,7 @@
   <renderuse name="BIO_meth_set_read_ex" render="0"/>
   <renderuse name="BIO_meth_set_write" render="0"/>
   <renderuse name="BIO_meth_set_write_ex" render="0"/>
-  <renderuse name="BIO_new" render="0"/>
+  <renderuse name="BIO_new" render="1"/>
   <renderuse name="BIO_new_accept" render="0"/>
   <renderuse name="BIO_new_bio_pair" render="0"/>
   <renderuse name="BIO_new_buffer_ssl_connect" render="0"/>
@@ -136,7 +150,7 @@
   <renderuse name="BIO_ptr_ctrl" render="0"/>
   <renderuse name="BIO_push" render="0"/>
   <renderuse name="BIO_puts" render="0"/>
-  <renderuse name="BIO_read" render="0"/>
+  <renderuse name="BIO_read" render="1"/>
   <renderuse name="BIO_read_ex" render="0"/>
   <renderuse name="BIO_s_accept" render="0"/>
   <renderuse name="BIO_s_bio" render="0"/>
@@ -157,7 +171,7 @@
   <renderuse name="BIO_s_fd" render="0"/>
   <renderuse name="BIO_s_file" render="0"/>
   <renderuse name="BIO_s_log" render="0"/>
-  <renderuse name="BIO_s_mem" render="0"/>
+  <renderuse name="BIO_s_mem" render="1"/>
   <renderuse name="BIO_snprintf" render="0"/>
   <renderuse name="BIO_s_null" render="0"/>
   <renderuse name="BIO_sock_error" render="0"/>
@@ -177,7 +191,7 @@
   <renderuse name="BIO_vfree" render="0"/>
   <renderuse name="BIO_vprintf" render="0"/>
   <renderuse name="BIO_vsnprintf" render="0"/>
-  <renderuse name="BIO_write" render="0"/>
+  <renderuse name="BIO_write" render="1"/>
   <renderuse name="BIO_write_ex" render="0"/>
   <renderuse name="ERR_load_BIO_strings" render="0"/>
 </renders>
