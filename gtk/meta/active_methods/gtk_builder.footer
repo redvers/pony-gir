@@ -1,4 +1,7 @@
 
-fun ref add_callback_symbol[A: Any](name: String, callback: @{(GObjectStruct, A): None}) =>
-  @gtk_builder_add_callback_symbol(gobject(), name.cstring(), callback)
+  fun ref add_callback_symbol[A: Any](name: String, callback: @{(GObjectStruct, A): None}) =>
+    @gtk_builder_add_callback_symbol(gobject(), name.cstring(), callback)
+
+  fun ref connect_signals[A: Any](userdata: A): None =>
+    @gtk_builder_connect_signals(gobject(), userdata)
 

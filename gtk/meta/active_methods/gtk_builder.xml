@@ -20,8 +20,8 @@
   <method name="gtk_builder_get_object" render="1"/>
   <method name="gtk_builder_get_objects" render="0"/>
   <method name="gtk_builder_expose_object" render="0"/>
-  <method name="gtk_builder_connect_signals" render="1"/>
-  <method name="gtk_builder_connect_signals_full" render="1"/>
+  <method name="gtk_builder_connect_signals" render="0"/>
+  <method name="gtk_builder_connect_signals_full" render="0"/>
   <method name="gtk_builder_set_translation_domain" render="0"/>
   <method name="gtk_builder_get_translation_domain" render="0"/>
   <method name="gtk_builder_get_type_from_name" render="0"/>

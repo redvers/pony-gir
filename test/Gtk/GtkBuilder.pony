@@ -22,13 +22,13 @@ use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
 use @gtk_builder_add_callback_symbol[None](builder: GObjectStruct, name: Pointer[U8] tag, callback: Pointer[None])
+use @gtk_builder_connect_signals[None](builder: GObjectStruct tag, userdata: Any)
+
 use @gtk_builder_new_from_file[GObjectStruct](filename: Pointer[U8] tag)
 use @gtk_builder_new_from_string[GObjectStruct](string: Pointer[U8] tag, length: I64)
 use @gtk_builder_add_from_string[U32](builder: GObjectStruct tag, buffer: Pointer[U8] tag, length: U64, gerror: Pointer[NullablePointer[GErrorStruct]] tag)
 use @gtk_builder_add_objects_from_string[U32](builder: GObjectStruct tag, buffer: Pointer[U8] tag, length: U64, objectids: Pointer[Pointer[U8]] tag, gerror: Pointer[NullablePointer[GErrorStruct]] tag)
 use @gtk_builder_get_object[GObjectStruct](builder: GObjectStruct tag, name: Pointer[U8] tag)
-use @gtk_builder_connect_signals[None](builder: GObjectStruct tag, userdata: Any)
-use @gtk_builder_connect_signals_full[None](builder: GObjectStruct tag, func: Pointer[None] tag, userdata: Pointer[None] tag)
 use @gtk_builder_get_application[GObjectStruct](builder: GObjectStruct tag)
 
 class GtkBuilder is GtkBuilderInterface
@@ -59,16 +59,13 @@ interface GtkBuilderInterface is GObjectInterface
   fun ref get_object(name: String): GObjectStruct =>
     @gtk_builder_get_object(gobject(), name.cstring())
 
-  fun ref connect_signals[A: Any](userdata: A): None =>
-    @gtk_builder_connect_signals(gobject(), userdata)
-
-  fun ref connect_signals_full(func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
-    @gtk_builder_connect_signals_full(gobject(), func, userdata)
-
   fun ref get_application(): GObjectStruct =>
     @gtk_builder_get_application(gobject())
 
 
-fun ref add_callback_symbol[A: Any](name: String, callback: @{(GObjectStruct, A): None}) =>
-  @gtk_builder_add_callback_symbol(gobject(), name.cstring(), callback)
+  fun ref add_callback_symbol[A: Any](name: String, callback: @{(GObjectStruct, A): None}) =>
+    @gtk_builder_add_callback_symbol(gobject(), name.cstring(), callback)
+
+  fun ref connect_signals[A: Any](userdata: A): None =>
+    @gtk_builder_connect_signals(gobject(), userdata)
 

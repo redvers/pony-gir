@@ -21,10 +21,10 @@ use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
-use @gtk_widget_destroy[None](widget': GObjectStruct)
-use @gtk_widget_show[None](widget': GObjectStruct)
-use @gtk_widget_hide[None](widget': GObjectStruct)
-use @gtk_widget_show_all[None](widget': GObjectStruct)
+use @gtk_widget_destroy[None](widget': GObjectStruct tag)
+use @gtk_widget_show[None](widget': GObjectStruct tag)
+use @gtk_widget_hide[None](widget': GObjectStruct tag)
+use @gtk_widget_show_all[None](widget': GObjectStruct tag)
 
 class GtkWidget is GtkWidgetInterface
   var _ptr: GObjectStruct

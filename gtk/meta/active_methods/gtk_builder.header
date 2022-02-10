@@ -1,1 +1,3 @@
 use @gtk_builder_add_callback_symbol[None](builder: GObjectStruct, name: Pointer[U8] tag, callback: Pointer[None])
+use @gtk_builder_connect_signals[None](builder: GObjectStruct tag, userdata: Any)
+

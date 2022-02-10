@@ -21,8 +21,8 @@ use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
-use @gtk_container_add[None](container: GObjectStruct tag, widget': GObjectStruct)
-use @gtk_container_remove[None](container: GObjectStruct tag, widget': GObjectStruct)
+use @gtk_container_add[None](container: GObjectStruct tag, widget': GObjectStruct tag)
+use @gtk_container_remove[None](container: GObjectStruct tag, widget': GObjectStruct tag)
 
 class GtkContainer is GtkContainerInterface
   var _ptr: GObjectStruct
