@@ -1,5 +1,6 @@
 classes:
-	sh -x mkclass.sh _4138 GApplication g_application
+	sh -x mkclass.sh _5865 GListStore g_list_store
+#	sh -x mkclass.sh _4138 GApplication g_application
 all:
 	rm -f ../../test/Gio/*
 	sh -x mkstruct.sh _4138 GApplication g_application

@@ -1,3 +1,4 @@
 <renderstructs>
-  <renderstruct id="_4138" basestruct="GObject" basepath="_ptr" parent="GObject"/>
+  <renderstruct id="_4138" basestruct="GObject" basepath="_ptr" parent="GObject" name="GApplication"/>
+  <renderstruct id="_5865" basestruct="GObject" basepath="_ptr" parent="GObject" name="GListStore"/>
 </renderstructs>

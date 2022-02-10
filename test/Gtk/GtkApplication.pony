@@ -32,6 +32,7 @@ use @g_signal_connect_data[U64](instance: GObjectStruct tag, detailedsignal: Poi
 //use @g_object_get_data[Any](gobject: GObjectStruct tag, key: Pointer[U8] tag)
 //use @g_object_set_data[None](gobject: GObjectStruct tag, key: Pointer[U8] tag, data: Pointer[None] tag)
 use @gtk_application_new[GObjectStruct](applicationid: Pointer[U8] tag, flags: I32)
+use @gtk_application_add_window[None](application: GObjectStruct tag, window: GObjectStruct tag)
 
 class GtkApplication is GtkApplicationInterface
   var _ptr: GObjectStruct
@@ -48,4 +49,7 @@ class GtkApplication is GtkApplicationInterface
 
 interface GtkApplicationInterface is GApplicationInterface
   fun ref gobject(): GObjectStruct
+
+  fun ref add_window(window: GtkWindow): None =>
+    @gtk_application_add_window(gobject(), window.gobject())
 

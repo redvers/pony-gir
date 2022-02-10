@@ -1,11 +1,14 @@
 classes:
-	sh -x mkclass.sh _11068 GtkWidget gtk_widget
-	sh -x mkclass.sh _11046 GtkBuilder gtk_builder
-	sh -x mkclass.sh _11804 GtkApplication gtk_application
-	sh -x mkclass.sh _11843 GtkContainer gtk_container
-	sh -x mkclass.sh _11899 GtkBin gtk_bin
-	sh -x mkclass.sh _11072 GtkWindow gtk_window
-	sh -x mkclass.sh _13416 GtkApplicationWindow gtk_application_window
+	sh -x mkclass.sh _16620 GtkTreeStore gtk_tree_store
+	sh -x mkclass.sh _12489 GtkTreeIter null
+#	sh -x mkclass.sh _13215 GtkTreeView gtk_tree_view
+#	sh -x mkclass.sh _11068 GtkWidget gtk_widget
+#	sh -x mkclass.sh _11046 GtkBuilder gtk_builder
+#	sh -x mkclass.sh _11804 GtkApplication gtk_application
+#	sh -x mkclass.sh _11843 GtkContainer gtk_container
+#	sh -x mkclass.sh _11899 GtkBin gtk_bin
+#	sh -x mkclass.sh _11072 GtkWindow gtk_window
+#	sh -x mkclass.sh _13416 GtkApplicationWindow gtk_application_window
 
 newclasses:
 	sh -x mkclass.sh _12159 GtkMisc null
@@ -42,7 +45,6 @@ newclasses:
 	sh -x mkclass.sh _13055 GtkEntryCompletion null
 	sh -x mkclass.sh _13090 GtkImage null
 	sh -x mkclass.sh _13130 GtkEntry null
-	sh -x mkclass.sh _13215 GtkTreeView null
 	sh -x mkclass.sh _13333 GtkComboBox null
 	sh -x mkclass.sh _13381 GtkAppChooserButton null
 	sh -x mkclass.sh _13398 GtkShortcutsWindow null
@@ -169,7 +171,6 @@ newclasses:
 	sh -x mkclass.sh _16476 GtkToolItemGroup null
 	sh -x mkclass.sh _16500 GtkToolPalette null
 	sh -x mkclass.sh _16579 GtkTreeModelSort null
-	sh -x mkclass.sh _16620 GtkTreeStore null
 	sh -x mkclass.sh _16771 GtkViewport null
 	sh -x mkclass.sh _16787 GtkVolumeButton null
 

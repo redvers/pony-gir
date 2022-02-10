@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../renderstructs.xml"/>
+<xi:include href="../../../castxml-results/gtk-3.xml"/>
+<renders>
+  <constructor name="g_list_store_new" render="1"/>
+  <method name="g_list_store_append" render="1"/>
+  <method name="g_list_store_find" render="1"/>
+  <method name="g_list_store_find_with_equal_func" render="1"/>
+  <method name="g_list_store_get_type" render="1"/>
+  <method name="g_list_store_insert" render="1"/>
+  <method name="g_list_store_insert_sorted" render="1"/>
+  <method name="g_list_store_remove" render="1"/>
+  <method name="g_list_store_remove_all" render="1"/>
+  <method name="g_list_store_sort" render="1"/>
+  <method name="g_list_store_splice" render="1"/>
+</renders>
+</castxml2pony>

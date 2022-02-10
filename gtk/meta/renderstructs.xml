@@ -1,4 +1,5 @@
 <renderstructs>
+  <renderstruct id="_12489" basestruct="GObject" basepath="_ptr" parent="GObject" name="GtkTreeIter"/> <!-- This should be an interface, not a parent - FIXME -->
   <renderstruct id="_10981" basestruct="GObject" basepath="_ptr" parent="GObject" name="GtkAccelGroup"/>
   <renderstruct id="_11044" basestruct="GObject" basepath="_ptr" parent="GObject" name="GtkAdjustment"/>
   <renderstruct id="_11046" basestruct="GObject" basepath="_ptr" parent="GObject" name="GtkBuilder"/>

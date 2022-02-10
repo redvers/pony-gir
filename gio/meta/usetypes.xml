@@ -551,13 +551,13 @@
 
   <typedef name="GListStore"
     embed="embed"
-    ponytypein="GListStoreStruct tag"
-    ponytypeinconv=""
+    ponytypein="GListStore"
+    ponytypeinconv=".gobject()"
     ponytypeout="GListStoreStruct"
     structtype="GListStoreStruct"
     structdef="GListStoreStruct"
-    argtype="GListStoreStruct tag"
-    rvtype="GListStoreStruct"/>
+    argtype="GObjectStruct tag"
+    rvtype="GObjectStruct"/>
 
   <typedef name="GFileInputStream"
     embed="embed"
