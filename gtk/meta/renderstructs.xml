@@ -45,7 +45,7 @@
   <renderstruct id="_13381" basestruct="GObject" basepath="_ptr" parent="GtkComboBox" name="GtkAppChooserButton"/>
   <renderstruct id="_13398" basestruct="GObject" basepath="_ptr" parent="GtkWindow" name="GtkShortcutsWindow"/>
   <renderstruct id="_13416" basestruct="GObject" basepath="_ptr" parent="GtkWindow" name="GtkApplicationWindow"/>
-  <renderstruct id="_13425" basestruct="GObject" basepath="_ptr" parent="GtkContainerAccessible" name="GtkFrame"/>
+  <renderstruct id="_13425" basestruct="GObject" basepath="_ptr" parent="GtkBin" name="GtkFrame"/>
   <renderstruct id="_13441" basestruct="GObject" basepath="_ptr" parent="GtkFrame" name="GtkAspectFrame"/>
   <renderstruct id="_13452" basestruct="GObject" basepath="_ptr" parent="GtkWindow" name="GtkAssistant"/>
   <renderstruct id="_13488" basestruct="GObject" basepath="_ptr" parent="GtkBox" name="GtkButtonBox"/>
@@ -158,7 +158,7 @@
   <renderstruct id="_16105" basestruct="GObject" basepath="_ptr" parent="GtkBox" name="GtkShortcutLabel"/>
   <renderstruct id="_16115" basestruct="GObject" basepath="_ptr" parent="GtkBox" name="GtkShortcutsGroup"/>
   <renderstruct id="_16120" basestruct="GObject" basepath="_ptr" parent="GtkBox" name="GtkShortcutsSection"/>
-  <renderstruct id="_16134" basestruct="GObject" basepath="_ptr" parent="GtkContaine" name="GtkStack"/>
+  <renderstruct id="_16134" basestruct="GObject" basepath="_ptr" parent="GtkContainer" name="GtkStack"/>
   <renderstruct id="_16163" basestruct="GObject" basepath="_ptr" parent="GtkBin" name="GtkStackSidebar"/>
   <renderstruct id="_16180" basestruct="GObject" basepath="_ptr" parent="GtkEntry" name="GtkSpinButton"/>
   <renderstruct id="_16212" basestruct="GObject" basepath="_ptr" parent="GtkWidget" name="GtkSpinner"/>
