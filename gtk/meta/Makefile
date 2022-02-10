@@ -10,61 +10,31 @@ classes:
 newclasses:
 	sh -x mkclass.sh _12159 GtkMisc null
 	sh -x mkclass.sh _10981 GtkAccelGroup null
-#	sh -x mkclass.sh _10987 GtkAccelKey null
-#	sh -x mkclass.sh _10989 GtkAccelGroupEntry null
-#	sh -x mkclass.sh _11029 GtkBorder null
 	sh -x mkclass.sh _11044 GtkAdjustment null
 	sh -x mkclass.sh _11048 GtkClipboard null
-#	sh -x mkclass.sh _11050 GtkIconSet null
-#	sh -x mkclass.sh _11052 GtkIconSource null
-#	sh -x mkclass.sh _11058 GtkSelectionData null
 	sh -x mkclass.sh _11066 GtkTooltip null
-#	sh -x mkclass.sh _11070 GtkWidgetPath null
-#	sh -x mkclass.sh _11056 GtkRequisition null
 	sh -x mkclass.sh _11060 GtkSettings null
-#	sh -x mkclass.sh _16088 GtkSettingsValue null
 	sh -x mkclass.sh _11064 GtkStyleContext null
-#	sh -x mkclass.sh _11921 GtkWindowGeometryInfo null
 	sh -x mkclass.sh _11923 GtkWindowGroup null
 	sh -x mkclass.sh _12075 GtkDialog null
 	sh -x mkclass.sh _12108 GtkAboutDialog null
 	sh -x mkclass.sh _12171 GtkMenuShell null
 	sh -x mkclass.sh _12201 GtkMenu null
 	sh -x mkclass.sh _12252 GtkLabel gtk_label
-#	sh -x mkclass.sh _12258 GtkLabelSelectionInfo null
 	sh -x mkclass.sh _12320 GtkAccelLabel null
 	sh -x mkclass.sh _12345 GtkAccelMap null
-#	sh -x mkclass.sh _12374 GtkAccessible null
-#	sh -x mkclass.sh _12384 GtkActionableInterface null
-#	sh -x mkclass.sh _12386 GtkActionable null
 	sh -x mkclass.sh _12395 GtkActionBar null
-#	sh -x mkclass.sh _12430 GtkAppChooser null
 	sh -x mkclass.sh _12436 GtkAppChooserDialog null null
 	sh -x mkclass.sh _12448 GtkBox null
 	sh -x mkclass.sh _12469 GtkAppChooserWidget null
-#	sh -x mkclass.sh _12489 GtkTreeIter null
-#	sh -x mkclass.sh _12491 GtkTreePath null
-#	sh -x mkclass.sh _12493 GtkTreeRowReference null
-#	sh -x mkclass.sh _12495 GtkTreeModel null
-#	sh -x mkclass.sh _12565 GtkCellEditable null
 	sh -x mkclass.sh _12577 GtkCellRenderer null
-#	sh -x mkclass.sh _12613 GtkTreeSortable null
 	sh -x mkclass.sh _12625 GtkCellArea null
 	sh -x mkclass.sh _12631 GtkCellAreaContext null
 	sh -x mkclass.sh _12684 GtkTreeViewColumn null
-#	sh -x mkclass.sh _12747 GtkTextAttributes null
-#	sh -x mkclass.sh _12749 GtkTextAppearance null
 	sh -x mkclass.sh _12757 GtkTextChildAnchor null
-#	sh -x mkclass.sh _12765 GtkTextIter null
 	sh -x mkclass.sh _12769 GtkTextTag null
 	sh -x mkclass.sh _12767 GtkTextTagTable null
 	sh -x mkclass.sh _12783 GtkTextBuffer null
-#	sh -x mkclass.sh _16282 GtkTextBTree null
-#	sh -x mkclass.sh _12879 GtkTargetPair null
-#	sh -x mkclass.sh _12881 GtkTargetList null
-#	sh -x mkclass.sh _12883 GtkTargetEntry null
-#	sh -x mkclass.sh _12955 GtkEditable null
-#	sh -x mkclass.sh _12957 GtkEditableInterface null
 	sh -x mkclass.sh _12973 GtkIMContext null
 	sh -x mkclass.sh _12989 GtkEntryBuffer null
 	sh -x mkclass.sh _13007 GtkListStore null
@@ -73,7 +43,6 @@ newclasses:
 	sh -x mkclass.sh _13090 GtkImage null
 	sh -x mkclass.sh _13130 GtkEntry null
 	sh -x mkclass.sh _13215 GtkTreeView null
-#	sh -x mkclass.sh _13221 GtkTreeSelection null
 	sh -x mkclass.sh _13333 GtkComboBox null
 	sh -x mkclass.sh _13381 GtkAppChooserButton null
 	sh -x mkclass.sh _13398 GtkShortcutsWindow null
@@ -81,15 +50,9 @@ newclasses:
 	sh -x mkclass.sh _13441 GtkAspectFrame null
 	sh -x mkclass.sh _13452 GtkAssistant null
 	sh -x mkclass.sh _13488 GtkButtonBox null
-#	sh -x mkclass.sh _13504 GtkBindingSet null
-#	sh -x mkclass.sh _13506 GtkBindingEntry null
-#	sh -x mkclass.sh _13508 GtkBindingSignal null
-#	sh -x mkclass.sh _13510 GtkBindingArg null
-#	sh -x mkclass.sh _13557 GtkBuildable null
 	sh -x mkclass.sh _13572 GtkButton gtk_button
 	sh -x mkclass.sh _13608 GtkCalendar null
 	sh -x mkclass.sh _13633 GtkCellAreaBox null
-#	sh -x mkclass.sh _13661 GtkCellLayout null
 	sh -x mkclass.sh _13680 GtkCellRendererText null
 	sh -x mkclass.sh _13689 GtkCellRendererAccel null
 	sh -x mkclass.sh _13699 GtkCellRendererCombo null
@@ -104,12 +67,9 @@ newclasses:
 	sh -x mkclass.sh _13802 GtkMenuItem null
 	sh -x mkclass.sh _13829 GtkCheckMenuItem null
 	sh -x mkclass.sh _13885 GtkColorButton null
-#	sh -x mkclass.sh _13905 GtkColorChooser null
-#	sh -x mkclass.sh _13907 GtkColorChooserInterface null
 	sh -x mkclass.sh _13915 GtkColorChooserDialog null
 	sh -x mkclass.sh _13923 GtkColorChooserWidget null
 	sh -x mkclass.sh _13933 GtkComboBoxText null
-#	sh -x mkclass.sh _13953 GtkCssSection null
 	sh -x mkclass.sh _13968 GtkCssProvider null
 	sh -x mkclass.sh _14011 GtkDrawingArea null
 	sh -x mkclass.sh _14017 GtkEventBox null
@@ -120,15 +80,12 @@ newclasses:
 	sh -x mkclass.sh _14065 GtkExpander null
 	sh -x mkclass.sh _14090 GtkFixed null
 	sh -x mkclass.sh _14102 GtkFileFilter null
-#	sh -x mkclass.sh _14104 GtkFileFilterInfo null
-#	sh -x mkclass.sh _14121 GtkFileChooser null
 	sh -x mkclass.sh _14209 GtkFileChooserDialog null
 	sh -x mkclass.sh _14218 GtkNativeDialog null
 	sh -x mkclass.sh _14257 GtkFileChooserNative null
 	sh -x mkclass.sh _14286 GtkFileChooserWidget null
 	sh -x mkclass.sh _14294 GtkFlowBox null
 	sh -x mkclass.sh _14343 GtkFontButton null
-#	sh -x mkclass.sh _14367 GtkFontChooser null
 	sh -x mkclass.sh _14391 GtkFontChooserDialog null
 	sh -x mkclass.sh _14399 GtkFontChooserWidget null
 	sh -x mkclass.sh _14407 GtkGesture null
@@ -144,11 +101,9 @@ newclasses:
 	sh -x mkclass.sh _14504 GtkGLArea null
 	sh -x mkclass.sh _14528 GtkGrid null
 	sh -x mkclass.sh _14556 GtkHeaderBar null
-#	sh -x mkclass.sh _14656 GtkStyleProvider null
 	sh -x mkclass.sh _14730 GtkIconInfo null
 	sh -x mkclass.sh _14734 GtkIconTheme null
 	sh -x mkclass.sh _14806 GtkIconView null
-#	sh -x mkclass.sh _14880 GtkIMContextInfo null
 	sh -x mkclass.sh _14882 GtkIMContextSimple null
 	sh -x mkclass.sh _14892 GtkIMMulticontext null
 	sh -x mkclass.sh _14907 GtkInfoBar null
@@ -157,7 +112,6 @@ newclasses:
 	sh -x mkclass.sh _14956 GtkLevelBar null
 	sh -x mkclass.sh _14976 GtkLinkButton null
 	sh -x mkclass.sh _14989 GtkListBox null
-#	sh -x mkclass.sh _14993 GtkListBoxRow null
 	sh -x mkclass.sh _15060 GtkLockButton null
 	sh -x mkclass.sh _15107 GtkMenuBar null
 	sh -x mkclass.sh _15122 GtkPopover null
@@ -168,22 +122,16 @@ newclasses:
 	sh -x mkclass.sh _15243 GtkMenuToolButton null
 	sh -x mkclass.sh _15254 GtkMessageDialog null
 	sh -x mkclass.sh _15271 GtkModelButton null
-#	sh -x mkclass.sh _15279 GtkMountOperation null
 	sh -x mkclass.sh _15294 GtkNotebook null
 	sh -x mkclass.sh _15346 GtkOffscreenWindow null
-#	sh -x mkclass.sh _15354 GtkOrientable null
 	sh -x mkclass.sh _15361 GtkOverlay null
 	sh -x mkclass.sh _15373 GtkPadController null
-#	sh -x mkclass.sh _15377 GtkPadActionEntry null
-#	sh -x mkclass.sh _15385 GtkPaperSize null
 	sh -x mkclass.sh _15413 GtkPageSetup null
 	sh -x mkclass.sh _15443 GtkPaned null
 	sh -x mkclass.sh _15462 GtkPlacesSidebar null
 	sh -x mkclass.sh _15495 GtkPopoverMenu null
 	sh -x mkclass.sh _15502 GtkPrintContext null
 	sh -x mkclass.sh _15516 GtkPrintSettings null
-#	sh -x mkclass.sh _15519 GtkPageRange null
-#	sh -x mkclass.sh _15598 GtkPrintOperationPreview null
 	sh -x mkclass.sh _15610 GtkPrintOperation null
 	sh -x mkclass.sh _15655 GtkProgressBar null
 	sh -x mkclass.sh _15676 GtkRadioButton null
@@ -191,19 +139,13 @@ newclasses:
 	sh -x mkclass.sh _15708 GtkToggleToolButton null
 	sh -x mkclass.sh _15719 GtkRadioToolButton null
 	sh -x mkclass.sh _15730 GtkRange null
-#	sh -x mkclass.sh _15765 GtkRecentInfo null
-#	sh -x mkclass.sh _15767 GtkRecentData null
 	sh -x mkclass.sh _15769 GtkRecentManager null
-#	sh -x mkclass.sh _15816 GtkRecentFilter null
-#	sh -x mkclass.sh _15818 GtkRecentFilterInfo null
-#	sh -x mkclass.sh _15839 GtkRecentChooser null
 	sh -x mkclass.sh _15878 GtkRecentChooserDialog null
 	sh -x mkclass.sh _15887 GtkRecentChooserMenu null
 	sh -x mkclass.sh _15898 GtkRecentChooserWidget null
 	sh -x mkclass.sh _15925 GtkRevealer null
 	sh -x mkclass.sh _15940 GtkScale null
 	sh -x mkclass.sh _15961 GtkScaleButton null
-#	sh -x mkclass.sh _15977 GtkScrollable null
 	sh -x mkclass.sh _15991 GtkScrollbar null
 	sh -x mkclass.sh _15997 GtkScrolledWindow null
 	sh -x mkclass.sh _16041 GtkSearchBar null
@@ -214,10 +156,8 @@ newclasses:
 	sh -x mkclass.sh _16105 GtkShortcutLabel null
 	sh -x mkclass.sh _16115 GtkShortcutsGroup null
 	sh -x mkclass.sh _16120 GtkShortcutsSection null
-#	sh -x mkclass.sh _16125 GtkShortcutsShortcut null
 	sh -x mkclass.sh _16134 GtkStack null
 	sh -x mkclass.sh _16163 GtkStackSidebar null
-#	sh -x mkclass.sh _16173 GtkRequestedSize null
 	sh -x mkclass.sh _16180 GtkSpinButton null
 	sh -x mkclass.sh _16212 GtkSpinner null
 	sh -x mkclass.sh _16222 GtkStackSwitcher null
@@ -228,9 +168,6 @@ newclasses:
 	sh -x mkclass.sh _16453 GtkToolbar null
 	sh -x mkclass.sh _16476 GtkToolItemGroup null
 	sh -x mkclass.sh _16500 GtkToolPalette null
-#	sh -x mkclass.sh _16531 GtkToolShell null
-#	sh -x mkclass.sh _16562 GtkTreeDragSource null
-#	sh -x mkclass.sh _16570 GtkTreeDragDest null
 	sh -x mkclass.sh _16579 GtkTreeModelSort null
 	sh -x mkclass.sh _16620 GtkTreeStore null
 	sh -x mkclass.sh _16771 GtkViewport null
@@ -272,7 +209,6 @@ codegenstructs:
 	sh -x mkstruct.sh _11064 GtkStyleContext
 	sh -x mkstruct.sh _14662 GtkStyleContextClass
 	sh -x mkstruct.sh _14664 GtkStyleContextPrivate
-#	cat templates/gtkbin-fn.txt >>  GtkWindow
 	sh -x mkstruct.sh _11917 GtkWindowPrivate
 	sh -x mkstruct.sh _11919 GtkWindowClass
 	sh -x mkstruct.sh _11921 GtkWindowGeometryInfo
@@ -308,13 +244,9 @@ codegenstructs:
 	sh -x mkstruct.sh _12324 GtkAccelLabelPrivate
 	sh -x mkstruct.sh _12345 GtkAccelMap
 	sh -x mkstruct.sh _12347 GtkAccelMapClass
-#	sh -x mkstruct.sh _12374 GtkAccessible
-#	sh -x mkstruct.sh _12376 GtkAccessiblePrivate
-#sh -x mkstruct.sh _12378 GtkAccessibleClass
 	sh -x mkstruct.sh _12384 GtkActionableInterface
 	sh -x mkstruct.sh _12386 GtkActionable
 	sh -x mkstruct.sh _12395 GtkActionBar
-#	cat templates/gtkbin-fn.txt >>  GtkActionBar
 	sh -x mkstruct.sh _12397 GtkActionBarPrivate
 	sh -x mkstruct.sh _12399 GtkActionBarClass
 	sh -x mkstruct.sh _12430 GtkAppChooser
@@ -349,8 +281,6 @@ codegenstructs:
 	sh -x mkstruct.sh _12684 GtkTreeViewColumn
 	sh -x mkstruct.sh _12686 GtkTreeViewColumnClass
 	sh -x mkstruct.sh _12688 GtkTreeViewColumnPrivate
-#	sh -x mkstruct.sh _12747 GtkTextAttributes
-#	sh -x mkstruct.sh _12749 GtkTextAppearance
 	sh -x mkstruct.sh _12757 GtkTextChildAnchor
 	sh -x mkstruct.sh _12759 GtkTextChildAnchorClass
 	sh -x mkstruct.sh _12765 GtkTextIter
@@ -364,7 +294,6 @@ codegenstructs:
 	sh -x mkstruct.sh _16282 GtkTextBTree
 	sh -x mkstruct.sh _16284 GtkTextBufferPrivate
 	sh -x mkstruct.sh _16286 GtkTextBufferClass
-#	sh -x mkstruct.sh _12879 GtkTargetPair
 	sh -x mkstruct.sh _12881 GtkTargetList
 	sh -x mkstruct.sh _12883 GtkTargetEntry
 	sh -x mkstruct.sh _12955 GtkEditable
@@ -396,7 +325,6 @@ codegenstructs:
 	sh -x mkstruct.sh _13223 GtkTreeSelectionClass
 	sh -x mkstruct.sh _16595 GtkTreeSelectionPrivate
 	sh -x mkstruct.sh _13333 GtkComboBox
-#	cat templates/gtkbin-fn.txt >>  GtkComboBox
 	sh -x mkstruct.sh _13335 GtkComboBoxClass
 	sh -x mkstruct.sh _13337 GtkComboBoxPrivate
 	sh -x mkstruct.sh _13381 GtkAppChooserButton
@@ -408,7 +336,6 @@ codegenstructs:
 	sh -x mkstruct.sh _13414 GtkApplicationWindowClass
 	sh -x mkstruct.sh _13416 GtkApplicationWindow
 	sh -x mkstruct.sh _13425 GtkFrame
-#	cat templates/gtkbin-fn.txt >>  GtkFrame
 	sh -x mkstruct.sh _13427 GtkFramePrivate
 	sh -x mkstruct.sh _13429 GtkFrameClass
 	sh -x mkstruct.sh _13441 GtkAspectFrame
@@ -427,7 +354,6 @@ codegenstructs:
 	sh -x mkstruct.sh _13557 GtkBuildable
 	sh -x mkstruct.sh _13559 GtkBuildableIface
 	sh -x mkstruct.sh _13572 GtkButton gtk_button
-#	cat templates/gtkbin-fn.txt >>  GtkButton
 	sh -x mkstruct.sh _13574 GtkButtonPrivate
 	sh -x mkstruct.sh _13576 GtkButtonClass
 	sh -x mkstruct.sh _13608 GtkCalendar
@@ -471,7 +397,6 @@ codegenstructs:
 	sh -x mkstruct.sh _13793 GtkCheckButton
 	sh -x mkstruct.sh _13795 GtkCheckButtonClass
 	sh -x mkstruct.sh _13802 GtkMenuItem
-#	cat templates/gtkbin-fn.txt >>  GtkMenuItem
 	sh -x mkstruct.sh _13804 GtkMenuItemClass
 	sh -x mkstruct.sh _13806 GtkMenuItemPrivate
 	sh -x mkstruct.sh _13829 GtkCheckMenuItem
@@ -498,7 +423,6 @@ codegenstructs:
 	sh -x mkstruct.sh _14011 GtkDrawingArea
 	sh -x mkstruct.sh _14013 GtkDrawingAreaClass
 	sh -x mkstruct.sh _14017 GtkEventBox
-#	cat templates/gtkbin-fn.txt >>  GtkEventBox
 	sh -x mkstruct.sh _14019 GtkEventBoxClass
 	sh -x mkstruct.sh _14021 GtkEventBoxPrivate
 	sh -x mkstruct.sh _14029 GtkEventController
@@ -510,7 +434,6 @@ codegenstructs:
 	sh -x mkstruct.sh _14055 GtkEventControllerScroll
 	sh -x mkstruct.sh _14057 GtkEventControllerScrollClass
 	sh -x mkstruct.sh _14065 GtkExpander
-#	cat templates/gtkbin-fn.txt >>  GtkExpander
 	sh -x mkstruct.sh _14067 GtkExpanderClass
 	sh -x mkstruct.sh _14069 GtkExpanderPrivate
 	sh -x mkstruct.sh _14090 GtkFixed
@@ -536,7 +459,6 @@ codegenstructs:
 	sh -x mkstruct.sh _14294 GtkFlowBox
 	sh -x mkstruct.sh _14296 GtkFlowBoxClass
 	sh -x mkstruct.sh _14298 GtkFlowBoxChild
-#	cat templates/gtkbin-fn.txt >>  GtkFlowBoxChild
 	sh -x mkstruct.sh _14300 GtkFlowBoxChildClass
 	sh -x mkstruct.sh _14343 GtkFontButton
 	sh -x mkstruct.sh _14345 GtkFontButtonClass
@@ -612,7 +534,6 @@ codegenstructs:
 	sh -x mkstruct.sh _14989 GtkListBox
 	sh -x mkstruct.sh _14991 GtkListBoxClass
 	sh -x mkstruct.sh _14993 GtkListBoxRow
-#	cat templates/gtkbin-fn.txt >>  GtkListBoxRow
 	sh -x mkstruct.sh _14995 GtkListBoxRowClass
 	sh -x mkstruct.sh _15060 GtkLockButton
 	sh -x mkstruct.sh _15062 GtkLockButtonClass
@@ -621,7 +542,6 @@ codegenstructs:
 	sh -x mkstruct.sh _15109 GtkMenuBarPrivate
 	sh -x mkstruct.sh _15111 GtkMenuBarClass
 	sh -x mkstruct.sh _15122 GtkPopover
-#	cat templates/gtkbin-fn.txt >>  GtkPopover
 	sh -x mkstruct.sh _15124 GtkPopoverClass
 	sh -x mkstruct.sh _15126 GtkPopoverPrivate
 	sh -x mkstruct.sh _15148 GtkMenuButton
@@ -631,7 +551,6 @@ codegenstructs:
 	sh -x mkstruct.sh _15170 GtkSizeGroupPrivate
 	sh -x mkstruct.sh _15172 GtkSizeGroupClass
 	sh -x mkstruct.sh _15183 GtkToolItem
-#	cat templates/gtkbin-fn.txt >>  GtkToolItem
 	sh -x mkstruct.sh _15185 GtkToolItemClass
 	sh -x mkstruct.sh _15187 GtkToolItemPrivate
 	sh -x mkstruct.sh _15219 GtkToolButton
@@ -655,7 +574,6 @@ codegenstructs:
 	sh -x mkstruct.sh _15354 GtkOrientable
 	sh -x mkstruct.sh _15356 GtkOrientableIface
 	sh -x mkstruct.sh _15361 GtkOverlay
-#	cat templates/gtkbin-fn.txt >>  GtkOverlay
 	sh -x mkstruct.sh _15363 GtkOverlayClass
 	sh -x mkstruct.sh _15365 GtkOverlayPrivate
 	sh -x mkstruct.sh _15373 GtkPadController
@@ -714,7 +632,6 @@ codegenstructs:
 	sh -x mkstruct.sh _15900 GtkRecentChooserWidgetClass
 	sh -x mkstruct.sh _15902 GtkRecentChooserWidgetPrivate
 	sh -x mkstruct.sh _15925 GtkRevealer
-#	cat templates/gtkbin-fn.txt >>  GtkRevealer
 	sh -x mkstruct.sh _15927 GtkRevealerClass
 	sh -x mkstruct.sh _15940 GtkScale
 	sh -x mkstruct.sh _15942 GtkScalePrivate
@@ -727,11 +644,9 @@ codegenstructs:
 	sh -x mkstruct.sh _15991 GtkScrollbar
 	sh -x mkstruct.sh _15993 GtkScrollbarClass
 	sh -x mkstruct.sh _15997 GtkScrolledWindow
-#	cat templates/gtkbin-fn.txt >>  GtkScrolledWindow
 	sh -x mkstruct.sh _15999 GtkScrolledWindowPrivate
 	sh -x mkstruct.sh _16001 GtkScrolledWindowClass
 	sh -x mkstruct.sh _16041 GtkSearchBar
-#	cat templates/gtkbin-fn.txt >>  GtkSearchBar
 	sh -x mkstruct.sh _16043 GtkSearchBarClass
 	sh -x mkstruct.sh _16053 GtkSearchEntry
 	sh -x mkstruct.sh _16055 GtkSearchEntryClass
@@ -754,7 +669,6 @@ codegenstructs:
 	sh -x mkstruct.sh _16134 GtkStack
 	sh -x mkstruct.sh _16136 GtkStackClass
 	sh -x mkstruct.sh _16163 GtkStackSidebar
-#	cat templates/gtkbin-fn.txt >>  GtkStackSidebar
 	sh -x mkstruct.sh _16165 GtkStackSidebarPrivate
 	sh -x mkstruct.sh _16167 GtkStackSidebarClass
 	sh -x mkstruct.sh _16173 GtkRequestedSize
@@ -799,7 +713,6 @@ codegenstructs:
 	sh -x mkstruct.sh _16622 GtkTreeStoreClass
 	sh -x mkstruct.sh _16624 GtkTreeStorePrivate
 	sh -x mkstruct.sh _16771 GtkViewport
-#	cat templates/gtkbin-fn.txt >>  GtkViewport
 	sh -x mkstruct.sh _16773 GtkViewportPrivate
 	sh -x mkstruct.sh _16775 GtkViewportClass
 	sh -x mkstruct.sh _16787 GtkVolumeButton
