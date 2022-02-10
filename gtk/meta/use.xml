@@ -10436,21 +10436,21 @@
      </useargs>
   </use>
   <use id="_12693" name="gtk_tree_view_column_get_type"
-     ponyname="gtk_tree_view_column_get_type"
+     ponyname="column_get_type"
      fid="f462"
      lineno="105"
      rv="U64">
      <useargs/>
   </use>
   <use id="_12694" name="gtk_tree_view_column_new"
-     ponyname="gtk_tree_view_column_new"
+     ponyname="column_new"
      fid="f462"
      lineno="107"
      rv="NullablePointer[GtkTreeViewColumn]">
      <useargs/>
   </use>
   <use id="_12695" name="gtk_tree_view_column_new_with_area"
-     ponyname="gtk_tree_view_column_new_with_area"
+     ponyname="column_new_with_area"
      fid="f462"
      lineno="109"
      rv="NullablePointer[GtkTreeViewColumn]">
@@ -10459,7 +10459,7 @@
      </useargs>
   </use>
   <use id="_12696" name="gtk_tree_view_column_new_with_attributes"
-     ponyname="gtk_tree_view_column_new_with_attributes"
+     ponyname="column_new_with_attributes"
      fid="f462"
      lineno="111"
      rv="NullablePointer[GtkTreeViewColumn]">
@@ -10470,7 +10470,7 @@
      </useargs>
   </use>
   <use id="_12697" name="gtk_tree_view_column_pack_start"
-     ponyname="gtk_tree_view_column_pack_start"
+     ponyname="column_pack_start"
      fid="f462"
      lineno="115"
      rv="None">
@@ -10481,7 +10481,7 @@
      </useargs>
   </use>
   <use id="_12698" name="gtk_tree_view_column_pack_end"
-     ponyname="gtk_tree_view_column_pack_end"
+     ponyname="column_pack_end"
      fid="f462"
      lineno="119"
      rv="None">
@@ -10492,7 +10492,7 @@
      </useargs>
   </use>
   <use id="_12699" name="gtk_tree_view_column_clear"
-     ponyname="gtk_tree_view_column_clear"
+     ponyname="column_clear"
      fid="f462"
      lineno="123"
      rv="None">
@@ -10501,7 +10501,7 @@
      </useargs>
   </use>
   <use id="_12700" name="gtk_tree_view_column_add_attribute"
-     ponyname="gtk_tree_view_column_add_attribute"
+     ponyname="column_add_attribute"
      fid="f462"
      lineno="125"
      rv="None">
@@ -10513,7 +10513,7 @@
      </useargs>
   </use>
   <use id="_12701" name="gtk_tree_view_column_set_attributes"
-     ponyname="gtk_tree_view_column_set_attributes"
+     ponyname="column_set_attributes"
      fid="f462"
      lineno="130"
      rv="None">
@@ -10524,7 +10524,7 @@
      </useargs>
   </use>
   <use id="_12702" name="gtk_tree_view_column_set_cell_data_func"
-     ponyname="gtk_tree_view_column_set_cell_data_func"
+     ponyname="column_set_cell_data_func"
      fid="f462"
      lineno="134"
      rv="None">
@@ -10537,7 +10537,7 @@
      </useargs>
   </use>
   <use id="_12703" name="gtk_tree_view_column_clear_attributes"
-     ponyname="gtk_tree_view_column_clear_attributes"
+     ponyname="column_clear_attributes"
      fid="f462"
      lineno="140"
      rv="None">
@@ -10547,7 +10547,7 @@
      </useargs>
   </use>
   <use id="_12704" name="gtk_tree_view_column_set_spacing"
-     ponyname="gtk_tree_view_column_set_spacing"
+     ponyname="column_set_spacing"
      fid="f462"
      lineno="143"
      rv="None">
@@ -10557,7 +10557,7 @@
      </useargs>
   </use>
   <use id="_12705" name="gtk_tree_view_column_get_spacing"
-     ponyname="gtk_tree_view_column_get_spacing"
+     ponyname="column_get_spacing"
      fid="f462"
      lineno="146"
      rv="I32">
@@ -10566,7 +10566,7 @@
      </useargs>
   </use>
   <use id="_12706" name="gtk_tree_view_column_set_visible"
-     ponyname="gtk_tree_view_column_set_visible"
+     ponyname="column_set_visible"
      fid="f462"
      lineno="148"
      rv="None">
@@ -10576,7 +10576,7 @@
      </useargs>
   </use>
   <use id="_12707" name="gtk_tree_view_column_get_visible"
-     ponyname="gtk_tree_view_column_get_visible"
+     ponyname="column_get_visible"
      fid="f462"
      lineno="151"
      rv="I32">
@@ -10585,7 +10585,7 @@
      </useargs>
   </use>
   <use id="_12708" name="gtk_tree_view_column_set_resizable"
-     ponyname="gtk_tree_view_column_set_resizable"
+     ponyname="column_set_resizable"
      fid="f462"
      lineno="153"
      rv="None">
@@ -10595,7 +10595,7 @@
      </useargs>
   </use>
   <use id="_12709" name="gtk_tree_view_column_get_resizable"
-     ponyname="gtk_tree_view_column_get_resizable"
+     ponyname="column_get_resizable"
      fid="f462"
      lineno="156"
      rv="I32">
@@ -10604,7 +10604,7 @@
      </useargs>
   </use>
   <use id="_12710" name="gtk_tree_view_column_set_sizing"
-     ponyname="gtk_tree_view_column_set_sizing"
+     ponyname="column_set_sizing"
      fid="f462"
      lineno="158"
      rv="None">
@@ -10614,7 +10614,7 @@
      </useargs>
   </use>
   <use id="_12711" name="gtk_tree_view_column_get_sizing"
-     ponyname="gtk_tree_view_column_get_sizing"
+     ponyname="column_get_sizing"
      fid="f462"
      lineno="161"
      rv="I32">
@@ -10623,7 +10623,7 @@
      </useargs>
   </use>
   <use id="_12712" name="gtk_tree_view_column_get_x_offset"
-     ponyname="gtk_tree_view_column_get_x_offset"
+     ponyname="column_get_x_offset"
      fid="f462"
      lineno="163"
      rv="I32">
@@ -10632,7 +10632,7 @@
      </useargs>
   </use>
   <use id="_12713" name="gtk_tree_view_column_get_width"
-     ponyname="gtk_tree_view_column_get_width"
+     ponyname="column_get_width"
      fid="f462"
      lineno="165"
      rv="I32">
@@ -10641,7 +10641,7 @@
      </useargs>
   </use>
   <use id="_12714" name="gtk_tree_view_column_get_fixed_width"
-     ponyname="gtk_tree_view_column_get_fixed_width"
+     ponyname="column_get_fixed_width"
      fid="f462"
      lineno="167"
      rv="I32">
@@ -10650,7 +10650,7 @@
      </useargs>
   </use>
   <use id="_12715" name="gtk_tree_view_column_set_fixed_width"
-     ponyname="gtk_tree_view_column_set_fixed_width"
+     ponyname="column_set_fixed_width"
      fid="f462"
      lineno="169"
      rv="None">
@@ -10660,7 +10660,7 @@
      </useargs>
   </use>
   <use id="_12716" name="gtk_tree_view_column_set_min_width"
-     ponyname="gtk_tree_view_column_set_min_width"
+     ponyname="column_set_min_width"
      fid="f462"
      lineno="172"
      rv="None">
@@ -10670,7 +10670,7 @@
      </useargs>
   </use>
   <use id="_12717" name="gtk_tree_view_column_get_min_width"
-     ponyname="gtk_tree_view_column_get_min_width"
+     ponyname="column_get_min_width"
      fid="f462"
      lineno="175"
      rv="I32">
@@ -10679,7 +10679,7 @@
      </useargs>
   </use>
   <use id="_12718" name="gtk_tree_view_column_set_max_width"
-     ponyname="gtk_tree_view_column_set_max_width"
+     ponyname="column_set_max_width"
      fid="f462"
      lineno="177"
      rv="None">
@@ -10689,7 +10689,7 @@
      </useargs>
   </use>
   <use id="_12719" name="gtk_tree_view_column_get_max_width"
-     ponyname="gtk_tree_view_column_get_max_width"
+     ponyname="column_get_max_width"
      fid="f462"
      lineno="180"
      rv="I32">
@@ -10698,7 +10698,7 @@
      </useargs>
   </use>
   <use id="_12720" name="gtk_tree_view_column_clicked"
-     ponyname="gtk_tree_view_column_clicked"
+     ponyname="column_clicked"
      fid="f462"
      lineno="182"
      rv="None">
@@ -10707,7 +10707,7 @@
      </useargs>
   </use>
   <use id="_12721" name="gtk_tree_view_column_set_title"
-     ponyname="gtk_tree_view_column_set_title"
+     ponyname="column_set_title"
      fid="f462"
      lineno="189"
      rv="None">
@@ -10717,7 +10717,7 @@
      </useargs>
   </use>
   <use id="_12722" name="gtk_tree_view_column_get_title"
-     ponyname="gtk_tree_view_column_get_title"
+     ponyname="column_get_title"
      fid="f462"
      lineno="192"
      rv="String">
@@ -10726,7 +10726,7 @@
      </useargs>
   </use>
   <use id="_12723" name="gtk_tree_view_column_set_expand"
-     ponyname="gtk_tree_view_column_set_expand"
+     ponyname="column_set_expand"
      fid="f462"
      lineno="194"
      rv="None">
@@ -10736,7 +10736,7 @@
      </useargs>
   </use>
   <use id="_12724" name="gtk_tree_view_column_get_expand"
-     ponyname="gtk_tree_view_column_get_expand"
+     ponyname="column_get_expand"
      fid="f462"
      lineno="197"
      rv="I32">
@@ -10745,7 +10745,7 @@
      </useargs>
   </use>
   <use id="_12725" name="gtk_tree_view_column_set_clickable"
-     ponyname="gtk_tree_view_column_set_clickable"
+     ponyname="column_set_clickable"
      fid="f462"
      lineno="199"
      rv="None">
@@ -10755,7 +10755,7 @@
      </useargs>
   </use>
   <use id="_12726" name="gtk_tree_view_column_get_clickable"
-     ponyname="gtk_tree_view_column_get_clickable"
+     ponyname="column_get_clickable"
      fid="f462"
      lineno="202"
      rv="I32">
@@ -10764,7 +10764,7 @@
      </useargs>
   </use>
   <use id="_12727" name="gtk_tree_view_column_set_widget"
-     ponyname="gtk_tree_view_column_set_widget"
+     ponyname="column_set_widget"
      fid="f462"
      lineno="204"
      rv="None">
@@ -10774,7 +10774,7 @@
      </useargs>
   </use>
   <use id="_12728" name="gtk_tree_view_column_get_widget"
-     ponyname="gtk_tree_view_column_get_widget"
+     ponyname="column_get_widget"
      fid="f462"
      lineno="207"
      rv="NullablePointer[GtkWidget]">
@@ -10783,7 +10783,7 @@
      </useargs>
   </use>
   <use id="_12729" name="gtk_tree_view_column_set_alignment"
-     ponyname="gtk_tree_view_column_set_alignment"
+     ponyname="column_set_alignment"
      fid="f462"
      lineno="209"
      rv="None">
@@ -10793,7 +10793,7 @@
      </useargs>
   </use>
   <use id="_12730" name="gtk_tree_view_column_get_alignment"
-     ponyname="gtk_tree_view_column_get_alignment"
+     ponyname="column_get_alignment"
      fid="f462"
      lineno="212"
      rv="F32">
@@ -10802,7 +10802,7 @@
      </useargs>
   </use>
   <use id="_12731" name="gtk_tree_view_column_set_reorderable"
-     ponyname="gtk_tree_view_column_set_reorderable"
+     ponyname="column_set_reorderable"
      fid="f462"
      lineno="214"
      rv="None">
@@ -10812,7 +10812,7 @@
      </useargs>
   </use>
   <use id="_12732" name="gtk_tree_view_column_get_reorderable"
-     ponyname="gtk_tree_view_column_get_reorderable"
+     ponyname="column_get_reorderable"
      fid="f462"
      lineno="217"
      rv="I32">
@@ -10821,7 +10821,7 @@
      </useargs>
   </use>
   <use id="_12733" name="gtk_tree_view_column_set_sort_column_id"
-     ponyname="gtk_tree_view_column_set_sort_column_id"
+     ponyname="column_set_sort_column_id"
      fid="f462"
      lineno="225"
      rv="None">
@@ -10831,7 +10831,7 @@
      </useargs>
   </use>
   <use id="_12734" name="gtk_tree_view_column_get_sort_column_id"
-     ponyname="gtk_tree_view_column_get_sort_column_id"
+     ponyname="column_get_sort_column_id"
      fid="f462"
      lineno="228"
      rv="I32">
@@ -10840,7 +10840,7 @@
      </useargs>
   </use>
   <use id="_12735" name="gtk_tree_view_column_set_sort_indicator"
-     ponyname="gtk_tree_view_column_set_sort_indicator"
+     ponyname="column_set_sort_indicator"
      fid="f462"
      lineno="230"
      rv="None">
@@ -10850,7 +10850,7 @@
      </useargs>
   </use>
   <use id="_12736" name="gtk_tree_view_column_get_sort_indicator"
-     ponyname="gtk_tree_view_column_get_sort_indicator"
+     ponyname="column_get_sort_indicator"
      fid="f462"
      lineno="233"
      rv="I32">
@@ -10859,7 +10859,7 @@
      </useargs>
   </use>
   <use id="_12737" name="gtk_tree_view_column_set_sort_order"
-     ponyname="gtk_tree_view_column_set_sort_order"
+     ponyname="column_set_sort_order"
      fid="f462"
      lineno="235"
      rv="None">
@@ -10869,7 +10869,7 @@
      </useargs>
   </use>
   <use id="_12738" name="gtk_tree_view_column_get_sort_order"
-     ponyname="gtk_tree_view_column_get_sort_order"
+     ponyname="column_get_sort_order"
      fid="f462"
      lineno="238"
      rv="I32">
@@ -10878,7 +10878,7 @@
      </useargs>
   </use>
   <use id="_12739" name="gtk_tree_view_column_cell_set_cell_data"
-     ponyname="gtk_tree_view_column_cell_set_cell_data"
+     ponyname="column_cell_set_cell_data"
      fid="f462"
      lineno="244"
      rv="None">
@@ -10891,7 +10891,7 @@
      </useargs>
   </use>
   <use id="_12740" name="gtk_tree_view_column_cell_get_size"
-     ponyname="gtk_tree_view_column_cell_get_size"
+     ponyname="column_cell_get_size"
      fid="f462"
      lineno="250"
      rv="None">
@@ -10905,7 +10905,7 @@
      </useargs>
   </use>
   <use id="_12741" name="gtk_tree_view_column_cell_is_visible"
-     ponyname="gtk_tree_view_column_cell_is_visible"
+     ponyname="column_cell_is_visible"
      fid="f462"
      lineno="257"
      rv="I32">
@@ -10914,7 +10914,7 @@
      </useargs>
   </use>
   <use id="_12742" name="gtk_tree_view_column_focus_cell"
-     ponyname="gtk_tree_view_column_focus_cell"
+     ponyname="column_focus_cell"
      fid="f462"
      lineno="259"
      rv="None">
@@ -10924,7 +10924,7 @@
      </useargs>
   </use>
   <use id="_12743" name="gtk_tree_view_column_cell_get_position"
-     ponyname="gtk_tree_view_column_cell_get_position"
+     ponyname="column_cell_get_position"
      fid="f462"
      lineno="262"
      rv="I32">
@@ -10936,7 +10936,7 @@
      </useargs>
   </use>
   <use id="_12744" name="gtk_tree_view_column_queue_resize"
-     ponyname="gtk_tree_view_column_queue_resize"
+     ponyname="column_queue_resize"
      fid="f462"
      lineno="267"
      rv="None">
@@ -10945,7 +10945,7 @@
      </useargs>
   </use>
   <use id="_12745" name="gtk_tree_view_column_get_tree_view"
-     ponyname="gtk_tree_view_column_get_tree_view"
+     ponyname="column_get_tree_view"
      fid="f462"
      lineno="269"
      rv="NullablePointer[GtkWidget]">
@@ -10954,7 +10954,7 @@
      </useargs>
   </use>
   <use id="_12746" name="gtk_tree_view_column_get_button"
-     ponyname="gtk_tree_view_column_get_button"
+     ponyname="column_get_button"
      fid="f462"
      lineno="271"
      rv="NullablePointer[GtkWidget]">
@@ -15478,21 +15478,21 @@
      </useargs>
   </use>
   <use id="_13230" name="gtk_tree_view_get_type"
-     ponyname="gtk_tree_view_get_type"
+     ponyname="get_type"
      fid="f479"
      lineno="206"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13231" name="gtk_tree_view_new"
-     ponyname="gtk_tree_view_new"
+     ponyname="create"
      fid="f479"
      lineno="208"
      rv="NullablePointer[GtkTreeView]">
      <useargs/>
   </use>
   <use id="_13232" name="gtk_tree_view_new_with_model"
-     ponyname="gtk_tree_view_new_with_model"
+     ponyname="new_with_model"
      fid="f479"
      lineno="210"
      rv="NullablePointer[GtkWidget]">
@@ -15501,7 +15501,7 @@
      </useargs>
   </use>
   <use id="_13233" name="gtk_tree_view_get_model"
-     ponyname="gtk_tree_view_get_model"
+     ponyname="get_model"
      fid="f479"
      lineno="214"
      rv="NullablePointer[GtkTreeModel]">
@@ -15510,7 +15510,7 @@
      </useargs>
   </use>
   <use id="_13234" name="gtk_tree_view_set_model"
-     ponyname="gtk_tree_view_set_model"
+     ponyname="set_model"
      fid="f479"
      lineno="216"
      rv="None">
@@ -15520,7 +15520,7 @@
      </useargs>
   </use>
   <use id="_13235" name="gtk_tree_view_get_selection"
-     ponyname="gtk_tree_view_get_selection"
+     ponyname="get_selection"
      fid="f479"
      lineno="219"
      rv="NullablePointer[GtkTreeSelection]">
@@ -15529,7 +15529,7 @@
      </useargs>
   </use>
   <use id="_13236" name="gtk_tree_view_get_hadjustment"
-     ponyname="gtk_tree_view_get_hadjustment"
+     ponyname="get_hadjustment"
      fid="f479"
      lineno="222"
      rv="NullablePointer[GtkAdjustment]">
@@ -15538,7 +15538,7 @@
      </useargs>
   </use>
   <use id="_13237" name="gtk_tree_view_set_hadjustment"
-     ponyname="gtk_tree_view_set_hadjustment"
+     ponyname="set_hadjustment"
      fid="f479"
      lineno="224"
      rv="None">
@@ -15548,7 +15548,7 @@
      </useargs>
   </use>
   <use id="_13238" name="gtk_tree_view_get_vadjustment"
-     ponyname="gtk_tree_view_get_vadjustment"
+     ponyname="get_vadjustment"
      fid="f479"
      lineno="227"
      rv="NullablePointer[GtkAdjustment]">
@@ -15557,7 +15557,7 @@
      </useargs>
   </use>
   <use id="_13239" name="gtk_tree_view_set_vadjustment"
-     ponyname="gtk_tree_view_set_vadjustment"
+     ponyname="set_vadjustment"
      fid="f479"
      lineno="229"
      rv="None">
@@ -15567,7 +15567,7 @@
      </useargs>
   </use>
   <use id="_13240" name="gtk_tree_view_get_headers_visible"
-     ponyname="gtk_tree_view_get_headers_visible"
+     ponyname="get_headers_visible"
      fid="f479"
      lineno="234"
      rv="I32">
@@ -15576,7 +15576,7 @@
      </useargs>
   </use>
   <use id="_13241" name="gtk_tree_view_set_headers_visible"
-     ponyname="gtk_tree_view_set_headers_visible"
+     ponyname="set_headers_visible"
      fid="f479"
      lineno="236"
      rv="None">
@@ -15586,7 +15586,7 @@
      </useargs>
   </use>
   <use id="_13242" name="gtk_tree_view_columns_autosize"
-     ponyname="gtk_tree_view_columns_autosize"
+     ponyname="columns_autosize"
      fid="f479"
      lineno="239"
      rv="None">
@@ -15595,7 +15595,7 @@
      </useargs>
   </use>
   <use id="_13243" name="gtk_tree_view_get_headers_clickable"
-     ponyname="gtk_tree_view_get_headers_clickable"
+     ponyname="get_headers_clickable"
      fid="f479"
      lineno="241"
      rv="I32">
@@ -15604,7 +15604,7 @@
      </useargs>
   </use>
   <use id="_13244" name="gtk_tree_view_set_headers_clickable"
-     ponyname="gtk_tree_view_set_headers_clickable"
+     ponyname="set_headers_clickable"
      fid="f479"
      lineno="243"
      rv="None">
@@ -15614,7 +15614,7 @@
      </useargs>
   </use>
   <use id="_13245" name="gtk_tree_view_set_rules_hint"
-     ponyname="gtk_tree_view_set_rules_hint"
+     ponyname="set_rules_hint"
      fid="f479"
      lineno="246"
      rv="None">
@@ -15624,7 +15624,7 @@
      </useargs>
   </use>
   <use id="_13246" name="gtk_tree_view_get_rules_hint"
-     ponyname="gtk_tree_view_get_rules_hint"
+     ponyname="get_rules_hint"
      fid="f479"
      lineno="249"
      rv="I32">
@@ -15633,7 +15633,7 @@
      </useargs>
   </use>
   <use id="_13247" name="gtk_tree_view_get_activate_on_single_click"
-     ponyname="gtk_tree_view_get_activate_on_single_click"
+     ponyname="get_activate_on_single_click"
      fid="f479"
      lineno="251"
      rv="I32">
@@ -15642,7 +15642,7 @@
      </useargs>
   </use>
   <use id="_13248" name="gtk_tree_view_set_activate_on_single_click"
-     ponyname="gtk_tree_view_set_activate_on_single_click"
+     ponyname="set_activate_on_single_click"
      fid="f479"
      lineno="253"
      rv="None">
@@ -15652,7 +15652,7 @@
      </useargs>
   </use>
   <use id="_13249" name="gtk_tree_view_append_column"
-     ponyname="gtk_tree_view_append_column"
+     ponyname="append_column"
      fid="f479"
      lineno="258"
      rv="I32">
@@ -15662,7 +15662,7 @@
      </useargs>
   </use>
   <use id="_13250" name="gtk_tree_view_remove_column"
-     ponyname="gtk_tree_view_remove_column"
+     ponyname="remove_column"
      fid="f479"
      lineno="261"
      rv="I32">
@@ -15672,7 +15672,7 @@
      </useargs>
   </use>
   <use id="_13251" name="gtk_tree_view_insert_column"
-     ponyname="gtk_tree_view_insert_column"
+     ponyname="insert_column"
      fid="f479"
      lineno="264"
      rv="I32">
@@ -15683,7 +15683,7 @@
      </useargs>
   </use>
   <use id="_13252" name="gtk_tree_view_insert_column_with_attributes"
-     ponyname="gtk_tree_view_insert_column_with_attributes"
+     ponyname="insert_column_with_attributes"
      fid="f479"
      lineno="268"
      rv="I32">
@@ -15696,7 +15696,7 @@
      </useargs>
   </use>
   <use id="_13253" name="gtk_tree_view_insert_column_with_data_func"
-     ponyname="gtk_tree_view_insert_column_with_data_func"
+     ponyname="insert_column_with_data_func"
      fid="f479"
      lineno="274"
      rv="I32">
@@ -15711,7 +15711,7 @@
      </useargs>
   </use>
   <use id="_13254" name="gtk_tree_view_get_n_columns"
-     ponyname="gtk_tree_view_get_n_columns"
+     ponyname="get_n_columns"
      fid="f479"
      lineno="283"
      rv="U32">
@@ -15720,7 +15720,7 @@
      </useargs>
   </use>
   <use id="_13255" name="gtk_tree_view_get_column"
-     ponyname="gtk_tree_view_get_column"
+     ponyname="get_column"
      fid="f479"
      lineno="285"
      rv="NullablePointer[GtkTreeViewColumn]">
@@ -15730,7 +15730,7 @@
      </useargs>
   </use>
   <use id="_13256" name="gtk_tree_view_get_columns"
-     ponyname="gtk_tree_view_get_columns"
+     ponyname="get_columns"
      fid="f479"
      lineno="288"
      rv="NullablePointer[GList]">
@@ -15739,7 +15739,7 @@
      </useargs>
   </use>
   <use id="_13257" name="gtk_tree_view_move_column_after"
-     ponyname="gtk_tree_view_move_column_after"
+     ponyname="move_column_after"
      fid="f479"
      lineno="290"
      rv="None">
@@ -15750,7 +15750,7 @@
      </useargs>
   </use>
   <use id="_13258" name="gtk_tree_view_set_expander_column"
-     ponyname="gtk_tree_view_set_expander_column"
+     ponyname="set_expander_column"
      fid="f479"
      lineno="294"
      rv="None">
@@ -15760,7 +15760,7 @@
      </useargs>
   </use>
   <use id="_13259" name="gtk_tree_view_get_expander_column"
-     ponyname="gtk_tree_view_get_expander_column"
+     ponyname="get_expander_column"
      fid="f479"
      lineno="297"
      rv="NullablePointer[GtkTreeViewColumn]">
@@ -15769,7 +15769,7 @@
      </useargs>
   </use>
   <use id="_13260" name="gtk_tree_view_set_column_drag_function"
-     ponyname="gtk_tree_view_set_column_drag_function"
+     ponyname="set_column_drag_function"
      fid="f479"
      lineno="299"
      rv="None">
@@ -15781,7 +15781,7 @@
      </useargs>
   </use>
   <use id="_13261" name="gtk_tree_view_scroll_to_point"
-     ponyname="gtk_tree_view_scroll_to_point"
+     ponyname="scroll_to_point"
      fid="f479"
      lineno="306"
      rv="None">
@@ -15792,7 +15792,7 @@
      </useargs>
   </use>
   <use id="_13262" name="gtk_tree_view_scroll_to_cell"
-     ponyname="gtk_tree_view_scroll_to_cell"
+     ponyname="scroll_to_cell"
      fid="f479"
      lineno="310"
      rv="None">
@@ -15806,7 +15806,7 @@
      </useargs>
   </use>
   <use id="_13263" name="gtk_tree_view_row_activated"
-     ponyname="gtk_tree_view_row_activated"
+     ponyname="row_activated"
      fid="f479"
      lineno="317"
      rv="None">
@@ -15817,7 +15817,7 @@
      </useargs>
   </use>
   <use id="_13264" name="gtk_tree_view_expand_all"
-     ponyname="gtk_tree_view_expand_all"
+     ponyname="expand_all"
      fid="f479"
      lineno="321"
      rv="None">
@@ -15826,7 +15826,7 @@
      </useargs>
   </use>
   <use id="_13265" name="gtk_tree_view_collapse_all"
-     ponyname="gtk_tree_view_collapse_all"
+     ponyname="collapse_all"
      fid="f479"
      lineno="323"
      rv="None">
@@ -15835,7 +15835,7 @@
      </useargs>
   </use>
   <use id="_13266" name="gtk_tree_view_expand_to_path"
-     ponyname="gtk_tree_view_expand_to_path"
+     ponyname="expand_to_path"
      fid="f479"
      lineno="325"
      rv="None">
@@ -15845,7 +15845,7 @@
      </useargs>
   </use>
   <use id="_13267" name="gtk_tree_view_expand_row"
-     ponyname="gtk_tree_view_expand_row"
+     ponyname="expand_row"
      fid="f479"
      lineno="328"
      rv="I32">
@@ -15856,7 +15856,7 @@
      </useargs>
   </use>
   <use id="_13268" name="gtk_tree_view_collapse_row"
-     ponyname="gtk_tree_view_collapse_row"
+     ponyname="collapse_row"
      fid="f479"
      lineno="332"
      rv="I32">
@@ -15866,7 +15866,7 @@
      </useargs>
   </use>
   <use id="_13269" name="gtk_tree_view_map_expanded_rows"
-     ponyname="gtk_tree_view_map_expanded_rows"
+     ponyname="map_expanded_rows"
      fid="f479"
      lineno="335"
      rv="None">
@@ -15877,7 +15877,7 @@
      </useargs>
   </use>
   <use id="_13270" name="gtk_tree_view_row_expanded"
-     ponyname="gtk_tree_view_row_expanded"
+     ponyname="row_expanded"
      fid="f479"
      lineno="339"
      rv="I32">
@@ -15887,7 +15887,7 @@
      </useargs>
   </use>
   <use id="_13271" name="gtk_tree_view_set_reorderable"
-     ponyname="gtk_tree_view_set_reorderable"
+     ponyname="set_reorderable"
      fid="f479"
      lineno="342"
      rv="None">
@@ -15897,7 +15897,7 @@
      </useargs>
   </use>
   <use id="_13272" name="gtk_tree_view_get_reorderable"
-     ponyname="gtk_tree_view_get_reorderable"
+     ponyname="get_reorderable"
      fid="f479"
      lineno="345"
      rv="I32">
@@ -15906,7 +15906,7 @@
      </useargs>
   </use>
   <use id="_13273" name="gtk_tree_view_set_cursor"
-     ponyname="gtk_tree_view_set_cursor"
+     ponyname="set_cursor"
      fid="f479"
      lineno="347"
      rv="None">
@@ -15918,7 +15918,7 @@
      </useargs>
   </use>
   <use id="_13274" name="gtk_tree_view_set_cursor_on_cell"
-     ponyname="gtk_tree_view_set_cursor_on_cell"
+     ponyname="set_cursor_on_cell"
      fid="f479"
      lineno="352"
      rv="None">
@@ -15931,7 +15931,7 @@
      </useargs>
   </use>
   <use id="_13275" name="gtk_tree_view_get_cursor"
-     ponyname="gtk_tree_view_get_cursor"
+     ponyname="get_cursor"
      fid="f479"
      lineno="358"
      rv="None">
@@ -15942,7 +15942,7 @@
      </useargs>
   </use>
   <use id="_13276" name="gtk_tree_view_get_bin_window"
-     ponyname="gtk_tree_view_get_bin_window"
+     ponyname="get_bin_window"
      fid="f479"
      lineno="365"
      rv="NullablePointer[GdkWindow]">
@@ -15951,7 +15951,7 @@
      </useargs>
   </use>
   <use id="_13277" name="gtk_tree_view_get_path_at_pos"
-     ponyname="gtk_tree_view_get_path_at_pos"
+     ponyname="get_path_at_pos"
      fid="f479"
      lineno="367"
      rv="I32">
@@ -15966,7 +15966,7 @@
      </useargs>
   </use>
   <use id="_13278" name="gtk_tree_view_get_cell_area"
-     ponyname="gtk_tree_view_get_cell_area"
+     ponyname="get_cell_area"
      fid="f479"
      lineno="375"
      rv="None">
@@ -15978,7 +15978,7 @@
      </useargs>
   </use>
   <use id="_13279" name="gtk_tree_view_get_background_area"
-     ponyname="gtk_tree_view_get_background_area"
+     ponyname="get_background_area"
      fid="f479"
      lineno="380"
      rv="None">
@@ -15990,7 +15990,7 @@
      </useargs>
   </use>
   <use id="_13280" name="gtk_tree_view_get_visible_rect"
-     ponyname="gtk_tree_view_get_visible_rect"
+     ponyname="get_visible_rect"
      fid="f479"
      lineno="385"
      rv="None">
@@ -16000,7 +16000,7 @@
      </useargs>
   </use>
   <use id="_13281" name="gtk_tree_view_get_visible_range"
-     ponyname="gtk_tree_view_get_visible_range"
+     ponyname="get_visible_range"
      fid="f479"
      lineno="388"
      rv="I32">
@@ -16011,7 +16011,7 @@
      </useargs>
   </use>
   <use id="_13282" name="gtk_tree_view_is_blank_at_pos"
-     ponyname="gtk_tree_view_is_blank_at_pos"
+     ponyname="is_blank_at_pos"
      fid="f479"
      lineno="392"
      rv="I32">
@@ -16026,7 +16026,7 @@
      </useargs>
   </use>
   <use id="_13283" name="gtk_tree_view_enable_model_drag_source"
-     ponyname="gtk_tree_view_enable_model_drag_source"
+     ponyname="enable_model_drag_source"
      fid="f479"
      lineno="402"
      rv="None">
@@ -16039,7 +16039,7 @@
      </useargs>
   </use>
   <use id="_13284" name="gtk_tree_view_enable_model_drag_dest"
-     ponyname="gtk_tree_view_enable_model_drag_dest"
+     ponyname="enable_model_drag_dest"
      fid="f479"
      lineno="408"
      rv="None">
@@ -16051,7 +16051,7 @@
      </useargs>
   </use>
   <use id="_13285" name="gtk_tree_view_unset_rows_drag_source"
-     ponyname="gtk_tree_view_unset_rows_drag_source"
+     ponyname="unset_rows_drag_source"
      fid="f479"
      lineno="413"
      rv="None">
@@ -16060,7 +16060,7 @@
      </useargs>
   </use>
   <use id="_13286" name="gtk_tree_view_unset_rows_drag_dest"
-     ponyname="gtk_tree_view_unset_rows_drag_dest"
+     ponyname="unset_rows_drag_dest"
      fid="f479"
      lineno="415"
      rv="None">
@@ -16069,7 +16069,7 @@
      </useargs>
   </use>
   <use id="_13287" name="gtk_tree_view_set_drag_dest_row"
-     ponyname="gtk_tree_view_set_drag_dest_row"
+     ponyname="set_drag_dest_row"
      fid="f479"
      lineno="420"
      rv="None">
@@ -16080,7 +16080,7 @@
      </useargs>
   </use>
   <use id="_13288" name="gtk_tree_view_get_drag_dest_row"
-     ponyname="gtk_tree_view_get_drag_dest_row"
+     ponyname="get_drag_dest_row"
      fid="f479"
      lineno="424"
      rv="None">
@@ -16091,7 +16091,7 @@
      </useargs>
   </use>
   <use id="_13289" name="gtk_tree_view_get_dest_row_at_pos"
-     ponyname="gtk_tree_view_get_dest_row_at_pos"
+     ponyname="get_dest_row_at_pos"
      fid="f479"
      lineno="428"
      rv="I32">
@@ -16104,7 +16104,7 @@
      </useargs>
   </use>
   <use id="_13290" name="gtk_tree_view_create_row_drag_icon"
-     ponyname="gtk_tree_view_create_row_drag_icon"
+     ponyname="create_row_drag_icon"
      fid="f479"
      lineno="434"
      rv="NullablePointer[Cairosurface]">
@@ -16114,7 +16114,7 @@
      </useargs>
   </use>
   <use id="_13291" name="gtk_tree_view_set_enable_search"
-     ponyname="gtk_tree_view_set_enable_search"
+     ponyname="set_enable_search"
      fid="f479"
      lineno="439"
      rv="None">
@@ -16124,7 +16124,7 @@
      </useargs>
   </use>
   <use id="_13292" name="gtk_tree_view_get_enable_search"
-     ponyname="gtk_tree_view_get_enable_search"
+     ponyname="get_enable_search"
      fid="f479"
      lineno="442"
      rv="I32">
@@ -16133,7 +16133,7 @@
      </useargs>
   </use>
   <use id="_13293" name="gtk_tree_view_get_search_column"
-     ponyname="gtk_tree_view_get_search_column"
+     ponyname="get_search_column"
      fid="f479"
      lineno="444"
      rv="I32">
@@ -16142,7 +16142,7 @@
      </useargs>
   </use>
   <use id="_13294" name="gtk_tree_view_set_search_column"
-     ponyname="gtk_tree_view_set_search_column"
+     ponyname="set_search_column"
      fid="f479"
      lineno="446"
      rv="None">
@@ -16152,7 +16152,7 @@
      </useargs>
   </use>
   <use id="_13295" name="gtk_tree_view_get_search_equal_func"
-     ponyname="gtk_tree_view_get_search_equal_func"
+     ponyname="get_search_equal_func"
      fid="f479"
      lineno="449"
      rv="Pointer[None]">
@@ -16161,7 +16161,7 @@
      </useargs>
   </use>
   <use id="_13296" name="gtk_tree_view_set_search_equal_func"
-     ponyname="gtk_tree_view_set_search_equal_func"
+     ponyname="set_search_equal_func"
      fid="f479"
      lineno="451"
      rv="None">
@@ -16173,7 +16173,7 @@
      </useargs>
   </use>
   <use id="_13297" name="gtk_tree_view_get_search_entry"
-     ponyname="gtk_tree_view_get_search_entry"
+     ponyname="get_search_entry"
      fid="f479"
      lineno="457"
      rv="NullablePointer[GtkEntry]">
@@ -16182,7 +16182,7 @@
      </useargs>
   </use>
   <use id="_13298" name="gtk_tree_view_set_search_entry"
-     ponyname="gtk_tree_view_set_search_entry"
+     ponyname="set_search_entry"
      fid="f479"
      lineno="459"
      rv="None">
@@ -16192,7 +16192,7 @@
      </useargs>
   </use>
   <use id="_13299" name="gtk_tree_view_get_search_position_func"
-     ponyname="gtk_tree_view_get_search_position_func"
+     ponyname="get_search_position_func"
      fid="f479"
      lineno="462"
      rv="Pointer[None]">
@@ -16201,7 +16201,7 @@
      </useargs>
   </use>
   <use id="_13300" name="gtk_tree_view_set_search_position_func"
-     ponyname="gtk_tree_view_set_search_position_func"
+     ponyname="set_search_position_func"
      fid="f479"
      lineno="464"
      rv="None">
@@ -16213,7 +16213,7 @@
      </useargs>
   </use>
   <use id="_13301" name="gtk_tree_view_convert_widget_to_tree_coords"
-     ponyname="gtk_tree_view_convert_widget_to_tree_coords"
+     ponyname="convert_widget_to_tree_coords"
      fid="f479"
      lineno="471"
      rv="None">
@@ -16226,7 +16226,7 @@
      </useargs>
   </use>
   <use id="_13302" name="gtk_tree_view_convert_tree_to_widget_coords"
-     ponyname="gtk_tree_view_convert_tree_to_widget_coords"
+     ponyname="convert_tree_to_widget_coords"
      fid="f479"
      lineno="477"
      rv="None">
@@ -16239,7 +16239,7 @@
      </useargs>
   </use>
   <use id="_13303" name="gtk_tree_view_convert_widget_to_bin_window_coords"
-     ponyname="gtk_tree_view_convert_widget_to_bin_window_coords"
+     ponyname="convert_widget_to_bin_window_coords"
      fid="f479"
      lineno="483"
      rv="None">
@@ -16252,7 +16252,7 @@
      </useargs>
   </use>
   <use id="_13304" name="gtk_tree_view_convert_bin_window_to_widget_coords"
-     ponyname="gtk_tree_view_convert_bin_window_to_widget_coords"
+     ponyname="convert_bin_window_to_widget_coords"
      fid="f479"
      lineno="489"
      rv="None">
@@ -16265,7 +16265,7 @@
      </useargs>
   </use>
   <use id="_13305" name="gtk_tree_view_convert_tree_to_bin_window_coords"
-     ponyname="gtk_tree_view_convert_tree_to_bin_window_coords"
+     ponyname="convert_tree_to_bin_window_coords"
      fid="f479"
      lineno="495"
      rv="None">
@@ -16278,7 +16278,7 @@
      </useargs>
   </use>
   <use id="_13306" name="gtk_tree_view_convert_bin_window_to_tree_coords"
-     ponyname="gtk_tree_view_convert_bin_window_to_tree_coords"
+     ponyname="convert_bin_window_to_tree_coords"
      fid="f479"
      lineno="501"
      rv="None">
@@ -16291,7 +16291,7 @@
      </useargs>
   </use>
   <use id="_13308" name="gtk_tree_view_set_destroy_count_func"
-     ponyname="gtk_tree_view_set_destroy_count_func"
+     ponyname="set_destroy_count_func"
      fid="f479"
      lineno="514"
      rv="None">
@@ -16303,7 +16303,7 @@
      </useargs>
   </use>
   <use id="_13309" name="gtk_tree_view_set_fixed_height_mode"
-     ponyname="gtk_tree_view_set_fixed_height_mode"
+     ponyname="set_fixed_height_mode"
      fid="f479"
      lineno="520"
      rv="None">
@@ -16313,7 +16313,7 @@
      </useargs>
   </use>
   <use id="_13310" name="gtk_tree_view_get_fixed_height_mode"
-     ponyname="gtk_tree_view_get_fixed_height_mode"
+     ponyname="get_fixed_height_mode"
      fid="f479"
      lineno="523"
      rv="I32">
@@ -16322,7 +16322,7 @@
      </useargs>
   </use>
   <use id="_13311" name="gtk_tree_view_set_hover_selection"
-     ponyname="gtk_tree_view_set_hover_selection"
+     ponyname="set_hover_selection"
      fid="f479"
      lineno="525"
      rv="None">
@@ -16332,7 +16332,7 @@
      </useargs>
   </use>
   <use id="_13312" name="gtk_tree_view_get_hover_selection"
-     ponyname="gtk_tree_view_get_hover_selection"
+     ponyname="get_hover_selection"
      fid="f479"
      lineno="528"
      rv="I32">
@@ -16341,7 +16341,7 @@
      </useargs>
   </use>
   <use id="_13313" name="gtk_tree_view_set_hover_expand"
-     ponyname="gtk_tree_view_set_hover_expand"
+     ponyname="set_hover_expand"
      fid="f479"
      lineno="530"
      rv="None">
@@ -16351,7 +16351,7 @@
      </useargs>
   </use>
   <use id="_13314" name="gtk_tree_view_get_hover_expand"
-     ponyname="gtk_tree_view_get_hover_expand"
+     ponyname="get_hover_expand"
      fid="f479"
      lineno="533"
      rv="I32">
@@ -16360,7 +16360,7 @@
      </useargs>
   </use>
   <use id="_13315" name="gtk_tree_view_set_rubber_banding"
-     ponyname="gtk_tree_view_set_rubber_banding"
+     ponyname="set_rubber_banding"
      fid="f479"
      lineno="535"
      rv="None">
@@ -16370,7 +16370,7 @@
      </useargs>
   </use>
   <use id="_13316" name="gtk_tree_view_get_rubber_banding"
-     ponyname="gtk_tree_view_get_rubber_banding"
+     ponyname="get_rubber_banding"
      fid="f479"
      lineno="538"
      rv="I32">
@@ -16379,7 +16379,7 @@
      </useargs>
   </use>
   <use id="_13317" name="gtk_tree_view_is_rubber_banding_active"
-     ponyname="gtk_tree_view_is_rubber_banding_active"
+     ponyname="is_rubber_banding_active"
      fid="f479"
      lineno="541"
      rv="I32">
@@ -16388,7 +16388,7 @@
      </useargs>
   </use>
   <use id="_13318" name="gtk_tree_view_get_row_separator_func"
-     ponyname="gtk_tree_view_get_row_separator_func"
+     ponyname="get_row_separator_func"
      fid="f479"
      lineno="544"
      rv="Pointer[None]">
@@ -16397,7 +16397,7 @@
      </useargs>
   </use>
   <use id="_13319" name="gtk_tree_view_set_row_separator_func"
-     ponyname="gtk_tree_view_set_row_separator_func"
+     ponyname="set_row_separator_func"
      fid="f479"
      lineno="546"
      rv="None">
@@ -16409,7 +16409,7 @@
      </useargs>
   </use>
   <use id="_13320" name="gtk_tree_view_get_grid_lines"
-     ponyname="gtk_tree_view_get_grid_lines"
+     ponyname="get_grid_lines"
      fid="f479"
      lineno="552"
      rv="I32">
@@ -16418,7 +16418,7 @@
      </useargs>
   </use>
   <use id="_13321" name="gtk_tree_view_set_grid_lines"
-     ponyname="gtk_tree_view_set_grid_lines"
+     ponyname="set_grid_lines"
      fid="f479"
      lineno="554"
      rv="None">
@@ -16428,7 +16428,7 @@
      </useargs>
   </use>
   <use id="_13322" name="gtk_tree_view_get_enable_tree_lines"
-     ponyname="gtk_tree_view_get_enable_tree_lines"
+     ponyname="get_enable_tree_lines"
      fid="f479"
      lineno="557"
      rv="I32">
@@ -16437,7 +16437,7 @@
      </useargs>
   </use>
   <use id="_13323" name="gtk_tree_view_set_enable_tree_lines"
-     ponyname="gtk_tree_view_set_enable_tree_lines"
+     ponyname="set_enable_tree_lines"
      fid="f479"
      lineno="559"
      rv="None">
@@ -16447,7 +16447,7 @@
      </useargs>
   </use>
   <use id="_13324" name="gtk_tree_view_set_show_expanders"
-     ponyname="gtk_tree_view_set_show_expanders"
+     ponyname="set_show_expanders"
      fid="f479"
      lineno="562"
      rv="None">
@@ -16457,7 +16457,7 @@
      </useargs>
   </use>
   <use id="_13325" name="gtk_tree_view_get_show_expanders"
-     ponyname="gtk_tree_view_get_show_expanders"
+     ponyname="get_show_expanders"
      fid="f479"
      lineno="565"
      rv="I32">
@@ -16466,7 +16466,7 @@
      </useargs>
   </use>
   <use id="_13326" name="gtk_tree_view_set_level_indentation"
-     ponyname="gtk_tree_view_set_level_indentation"
+     ponyname="set_level_indentation"
      fid="f479"
      lineno="567"
      rv="None">
@@ -16476,7 +16476,7 @@
      </useargs>
   </use>
   <use id="_13327" name="gtk_tree_view_get_level_indentation"
-     ponyname="gtk_tree_view_get_level_indentation"
+     ponyname="get_level_indentation"
      fid="f479"
      lineno="570"
      rv="I32">
@@ -16485,7 +16485,7 @@
      </useargs>
   </use>
   <use id="_13328" name="gtk_tree_view_set_tooltip_row"
-     ponyname="gtk_tree_view_set_tooltip_row"
+     ponyname="set_tooltip_row"
      fid="f479"
      lineno="574"
      rv="None">
@@ -16496,7 +16496,7 @@
      </useargs>
   </use>
   <use id="_13329" name="gtk_tree_view_set_tooltip_cell"
-     ponyname="gtk_tree_view_set_tooltip_cell"
+     ponyname="set_tooltip_cell"
      fid="f479"
      lineno="578"
      rv="None">
@@ -16509,7 +16509,7 @@
      </useargs>
   </use>
   <use id="_13330" name="gtk_tree_view_get_tooltip_context"
-     ponyname="gtk_tree_view_get_tooltip_context"
+     ponyname="get_tooltip_context"
      fid="f479"
      lineno="584"
      rv="I32">
@@ -16524,7 +16524,7 @@
      </useargs>
   </use>
   <use id="_13331" name="gtk_tree_view_set_tooltip_column"
-     ponyname="gtk_tree_view_set_tooltip_column"
+     ponyname="set_tooltip_column"
      fid="f479"
      lineno="592"
      rv="None">
@@ -16534,7 +16534,7 @@
      </useargs>
   </use>
   <use id="_13332" name="gtk_tree_view_get_tooltip_column"
-     ponyname="gtk_tree_view_get_tooltip_column"
+     ponyname="get_tooltip_column"
      fid="f479"
      lineno="595"
      rv="I32">
@@ -18747,21 +18747,21 @@
      </useargs>
   </use>
   <use id="_13686" name="gtk_cell_renderer_text_get_type"
-     ponyname="gtk_cell_renderer_text_get_type"
+     ponyname="get_type"
      fid="f495"
      lineno="67"
      rv="U64">
      <useargs/>
   </use>
   <use id="_13687" name="gtk_cell_renderer_text_new"
-     ponyname="gtk_cell_renderer_text_new"
+     ponyname="create"
      fid="f495"
      lineno="69"
      rv="NullablePointer[GtkCellRenderer]">
      <useargs/>
   </use>
   <use id="_13688" name="gtk_cell_renderer_text_set_fixed_height_from_font"
-     ponyname="gtk_cell_renderer_text_set_fixed_height_from_font"
+     ponyname="set_fixed_height_from_font"
      fid="f495"
      lineno="72"
      rv="None">
@@ -36998,7 +36998,7 @@
      <useargs/>
   </use>
   <use id="_16709" name="gtk_tree_view_grid_lines_get_type"
-     ponyname="gtk_tree_view_grid_lines_get_type"
+     ponyname="grid_lines_get_type"
      fid="f643"
      lineno="175"
      rv="U64">
@@ -37397,14 +37397,14 @@
      <useargs/>
   </use>
   <use id="_16766" name="gtk_tree_view_drop_position_get_type"
-     ponyname="gtk_tree_view_drop_position_get_type"
+     ponyname="drop_position_get_type"
      fid="f643"
      lineno="351"
      rv="U64">
      <useargs/>
   </use>
   <use id="_16767" name="gtk_tree_view_column_sizing_get_type"
-     ponyname="gtk_tree_view_column_sizing_get_type"
+     ponyname="column_sizing_get_type"
      fid="f643"
      lineno="355"
      rv="U64">

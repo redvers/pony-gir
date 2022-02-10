@@ -21,6 +21,7 @@ use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
+use @gtk_cell_renderer_text_new[GObjectStruct]()
 
 class GtkCellRendererText is GtkCellRendererTextInterface
   var _ptr: GObjectStruct
@@ -30,6 +31,9 @@ class GtkCellRendererText is GtkCellRendererTextInterface
   fun ref gobject(): GObjectStruct => _ptr
 
 
+
+  new create() =>
+   _ptr =  @gtk_cell_renderer_text_new()
 
 
 interface GtkCellRendererTextInterface is GtkCellRendererInterface

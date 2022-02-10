@@ -1,6 +1,6 @@
 classes:
-	sh -x mkclass.sh _16620 GtkTreeStore gtk_tree_store
-	sh -x mkclass.sh _12489 GtkTreeIter null
+#	sh -x mkclass.sh _16620 GtkTreeStore gtk_tree_store
+#	sh -x mkclass.sh _12489 GtkTreeIter null
 #	sh -x mkclass.sh _13215 GtkTreeView gtk_tree_view
 #	sh -x mkclass.sh _11068 GtkWidget gtk_widget
 #	sh -x mkclass.sh _11046 GtkBuilder gtk_builder
@@ -9,6 +9,8 @@ classes:
 #	sh -x mkclass.sh _11899 GtkBin gtk_bin
 #	sh -x mkclass.sh _11072 GtkWindow gtk_window
 #	sh -x mkclass.sh _13416 GtkApplicationWindow gtk_application_window
+	sh -x mkclass.sh _13680 GtkCellRendererText gtk_cell_renderer_text
+	sh -x mkclass.sh _12577 GtkCellRenderer gtk_cell_renderer
 
 newclasses:
 	sh -x mkclass.sh _12159 GtkMisc null
@@ -30,7 +32,6 @@ newclasses:
 	sh -x mkclass.sh _12436 GtkAppChooserDialog null null
 	sh -x mkclass.sh _12448 GtkBox null
 	sh -x mkclass.sh _12469 GtkAppChooserWidget null
-	sh -x mkclass.sh _12577 GtkCellRenderer null
 	sh -x mkclass.sh _12625 GtkCellArea null
 	sh -x mkclass.sh _12631 GtkCellAreaContext null
 	sh -x mkclass.sh _12684 GtkTreeViewColumn null
@@ -55,7 +56,6 @@ newclasses:
 	sh -x mkclass.sh _13572 GtkButton gtk_button
 	sh -x mkclass.sh _13608 GtkCalendar null
 	sh -x mkclass.sh _13633 GtkCellAreaBox null
-	sh -x mkclass.sh _13680 GtkCellRendererText null
 	sh -x mkclass.sh _13689 GtkCellRendererAccel null
 	sh -x mkclass.sh _13699 GtkCellRendererCombo null
 	sh -x mkclass.sh _13707 GtkCellRendererPixbuf null

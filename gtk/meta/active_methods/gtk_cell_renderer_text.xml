@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<castxml2pony xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include href="../usetypes.xml"/>
+<xi:include href="../use.xml"/>
+<xi:include href="../renderstructs.xml"/>
+<xi:include href="../../../castxml-results/gtk-3.xml"/>
+<renders>
+  <constructor name="gtk_cell_renderer_text_new" render="1"/>
+  <method name="gtk_cell_renderer_text_set_fixed_height_from_font" render="0"/>
+  <method name="gtk_cell_renderer_text_get_type" render="0"/>
+</renders>
+</castxml2pony>
