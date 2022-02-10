@@ -55,5 +55,9 @@
   <renderuse name="g_type_set_qdata" render="1"/>
   <renderuse name="g_type_test_flags" render="1"/>
   <renderuse name="g_type_value_table_peek" render="1"/>
+
+  <renderuse name="g_gstring_get_type" render="1"/>
+
+
 </renders>
 </castxml2pony>

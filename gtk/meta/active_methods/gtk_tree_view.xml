@@ -9,7 +9,7 @@
   <constructor name="gtk_tree_view_new_with_model" render="0"/>
   <method name="gtk_tree_view_get_type" render="0"/>
   <method name="gtk_tree_view_get_model" render="0"/>
-  <method name="gtk_tree_view_set_model" render="0"/>
+  <method name="gtk_tree_view_set_model" render="1"/>
   <method name="gtk_tree_view_get_selection" render="0"/>
   <method name="gtk_tree_view_get_hadjustment" render="0"/>
   <method name="gtk_tree_view_set_hadjustment" render="0"/>
@@ -26,7 +26,7 @@
   <method name="gtk_tree_view_append_column" render="0"/>
   <method name="gtk_tree_view_remove_column" render="0"/>
   <method name="gtk_tree_view_insert_column" render="1"/>
-  <method name="gtk_tree_view_insert_column_with_attributes" render="1"/>
+  <method name="gtk_tree_view_insert_column_with_attributes" render="0"/>
   <method name="gtk_tree_view_insert_column_with_data_func" render="1"/>
   <method name="gtk_tree_view_get_n_columns" render="0"/>
   <method name="gtk_tree_view_get_column" render="0"/>

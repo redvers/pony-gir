@@ -37,3 +37,9 @@ class GtkContainer is GtkContainerInterface
 interface GtkContainerInterface is GtkWidgetInterface
   fun ref gobject(): GObjectStruct
 
+  fun ref add(widget': GtkWidgetInterface): None =>
+    @gtk_container_add(gobject(), widget'.gobject())
+
+  fun ref remove(widget': GtkWidgetInterface): None =>
+    @gtk_container_remove(gobject(), widget'.gobject())
+
