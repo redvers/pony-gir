@@ -15516,7 +15516,8 @@
      rv="None">
      <useargs>
        <usearg name="treeview" type="NullablePointer[GtkTreeView]"/>
-       <usearg name="model" type="NullablePointer[GtkTreeModel]"/>
+       <!-- <usearg name="model" type="NullablePointer[GtkTreeModel]"/> FIXME -->
+       <usearg name="model" type="NullablePointer[GtkListStore]"/>
      </useargs>
   </use>
   <use id="_13235" name="gtk_tree_view_get_selection"

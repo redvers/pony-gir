@@ -25,6 +25,7 @@ use "lib:gobject-2.0"
 use @gtk_tree_view_insert_column_with_attributes[I32](treeview: GObjectStruct tag, position: I32, title: Pointer[U8] tag, cell: GObjectStruct tag, ...)
 
 use @gtk_tree_view_new[GObjectStruct]()
+use @gtk_tree_view_set_model[None](treeview: GObjectStruct tag, model: GObjectStruct tag)
 use @gtk_tree_view_insert_column[I32](treeview: GObjectStruct tag, column: GObjectStruct tag, position: I32)
 use @gtk_tree_view_insert_column_with_data_func[I32](treeview: GObjectStruct tag, position: I32, title: Pointer[U8] tag, cell: GObjectStruct tag, func: Pointer[None] tag, data: Pointer[None] tag, dnotify: Pointer[None] tag)
 
@@ -44,6 +45,9 @@ class GtkTreeView is GtkTreeViewInterface
 interface GtkTreeViewInterface is GtkContainerInterface
   fun ref gobject(): GObjectStruct
 
+  fun ref set_model(model: GtkListStore): None =>
+    @gtk_tree_view_set_model(gobject(), model.gobject())
+
   fun ref insert_column(column: GtkTreeViewColumn, position: I32): I32 =>
     @gtk_tree_view_insert_column(gobject(), column.gobject(), position)
 
@@ -52,7 +56,8 @@ interface GtkTreeViewInterface is GtkContainerInterface
 
 
 /* Manually, with the … issue */
-  fun ref insert_column_with_attributes(position: I32, title: String, cell: (GtkCellRenderer | GtkCellRendererText), coltype: String, colnum: I32): I32 =>
+//  fun ref insert_column_with_attributes(position: I32, title: String, cell: (GtkCellRenderer | GtkCellRendererText), coltype: String, colnum: I32): I32 =>
+  fun ref insert_column_with_attributes(position: I32, title: String, cell: GtkCellRendererInterface, coltype: String, colnum: I32): I32 =>
          @gtk_tree_view_insert_column_with_attributes(gobject(), position, title.cstring(), cell.gobject(), coltype.cstring(), colnum, Pointer[None])
 
 

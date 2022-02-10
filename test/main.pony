@@ -48,7 +48,7 @@ class AppState
 
 
     let model: GtkListStore = create_and_fill_model() // GtkTreeModel *model = create_and_fill_model ();
- //  gtk_tree_view_set_model (GTK_TREE_VIEW (view), model);
+		view.set_model(model) //  gtk_tree_view_set_model (GTK_TREE_VIEW (view), model);
 //  g_object_unref (model);
     view
 
@@ -62,10 +62,11 @@ class AppState
 		var iter: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
 
 		store.gtk_list_store_append(iter) // gtk_list_store_append (store, &iter);
-		let colarr: Array[I32] = Array[I32]
-		colarr.push(0)
-		colarr.push(1)
 		store.gtk_list_store_set(iter, 0, "GLib".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
+		store.gtk_list_store_set(iter, 1, "Overview".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
+
+		store.gtk_list_store_append(iter) // gtk_list_store_append (store, &iter);
+		store.gtk_list_store_set(iter, 0, "GObject".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
 		store.gtk_list_store_set(iter, 1, "Overview".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
 
 		store
