@@ -14,11 +14,14 @@ use "lib:glib-2.0"
      000000: [Struct size=576,fid: f133]: parent_instance  
      000576: [PointerType size=64]->[Struct size=,fid: f89]: type  
      000640: [PointerType size=64]->[Struct size=,fid: f90]: default_value  
-     000704: [ArrayType size=(0-3)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: padding  
+     000704: [ArrayType size=(0-3)]->[PointerType size=64]->[FundamentalType(void) size=0]
 */
 struct GParamSpecVariantStruct
   embed parent_instance: GParamSpecStruct = GParamSpecStruct // Typedef
   var gtype: GVariantTypeStruct = GVariantTypeStruct // PointerType
   var default_value: GVariantStruct = GVariantStruct // PointerType
-  var padding: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType
+  var padding0: Pointer[None] = Pointer[None] // ArrayType
+  var padding1: Pointer[None] = Pointer[None] // ArrayType
+  var padding2: Pointer[None] = Pointer[None] // ArrayType
+  var padding3: Pointer[None] = Pointer[None] // ArrayType
 

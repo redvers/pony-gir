@@ -22,7 +22,7 @@ use "lib:glib-2.0"
      000512: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: notify  
      000576: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: constructed  
      000640: [FundamentalType(long unsigned int) size=64]: flags  
-     000704: [ArrayType size=(0-5)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: pdummy  
+     000704: [ArrayType size=(0-5)]->[PointerType size=64]->[FundamentalType(void) size=0]
 */
 struct GObjectClassStruct
   embed g_type_class: GTypeClassStruct = GTypeClassStruct // Typedef
@@ -36,5 +36,10 @@ struct GObjectClassStruct
   var notify: Pointer[None] = Pointer[None] // PointerType
   var constructed: Pointer[None] = Pointer[None] // PointerType
   var flags: U64 = U64(0) // Typedef
-  var pdummy: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType
+  var pdummy0: Pointer[None] = Pointer[None] // ArrayType
+  var pdummy1: Pointer[None] = Pointer[None] // ArrayType
+  var pdummy2: Pointer[None] = Pointer[None] // ArrayType
+  var pdummy3: Pointer[None] = Pointer[None] // ArrayType
+  var pdummy4: Pointer[None] = Pointer[None] // ArrayType
+  var pdummy5: Pointer[None] = Pointer[None] // ArrayType
 

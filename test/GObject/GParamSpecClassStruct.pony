@@ -26,5 +26,8 @@ struct GParamSpecClassStruct
   var value_set_default: Pointer[None] = Pointer[None] // PointerType
   var value_validate: Pointer[None] = Pointer[None] // PointerType
   var values_cmp: Pointer[None] = Pointer[None] // PointerType
-  var dummy: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType
+  var dummy0: Pointer[None] = Pointer[None] // ArrayType
+  var dummy1: Pointer[None] = Pointer[None] // ArrayType
+  var dummy2: Pointer[None] = Pointer[None] // ArrayType
+  var dummy3: Pointer[None] = Pointer[None] // ArrayType
 
