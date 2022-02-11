@@ -1,17 +1,17 @@
 classes:
-#	sh -x mkclass.sh _16620 GtkTreeStore gtk_tree_store
-#	sh -x mkclass.sh _12489 GtkTreeIter null
+	sh -x mkclass.sh _16620 GtkTreeStore gtk_tree_store
+	sh -x mkclass.sh _12489 GtkTreeIter null
 	sh -x mkclass.sh _13215 GtkTreeView gtk_tree_view
-#	sh -x mkclass.sh _11068 GtkWidget gtk_widget
-#	sh -x mkclass.sh _11046 GtkBuilder gtk_builder
-#	sh -x mkclass.sh _11804 GtkApplication gtk_application
-#	sh -x mkclass.sh _11843 GtkContainer gtk_container
-#	sh -x mkclass.sh _11899 GtkBin gtk_bin
-#	sh -x mkclass.sh _11072 GtkWindow gtk_window
-#	sh -x mkclass.sh _13416 GtkApplicationWindow gtk_application_window
-#	sh -x mkclass.sh _13680 GtkCellRendererText gtk_cell_renderer_text
-#	sh -x mkclass.sh _12577 GtkCellRenderer gtk_cell_renderer
-#	sh -x mkclass.sh _13007 GtkListStore gtk_list_store
+	sh -x mkclass.sh _11068 GtkWidget gtk_widget
+	sh -x mkclass.sh _11046 GtkBuilder gtk_builder
+	sh -x mkclass.sh _11804 GtkApplication gtk_application
+	sh -x mkclass.sh _11843 GtkContainer gtk_container
+	sh -x mkclass.sh _11899 GtkBin gtk_bin
+	sh -x mkclass.sh _11072 GtkWindow gtk_window
+	sh -x mkclass.sh _13416 GtkApplicationWindow gtk_application_window
+	sh -x mkclass.sh _13680 GtkCellRendererText gtk_cell_renderer_text
+	sh -x mkclass.sh _12577 GtkCellRenderer gtk_cell_renderer
+	sh -x mkclass.sh _13007 GtkListStore gtk_list_store
 
 newclasses:
 	sh -x mkclass.sh _12159 GtkMisc null

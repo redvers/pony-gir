@@ -5,14 +5,24 @@ use "Gio"
 use "Gtk"
 
 use @printf[I32](fmt: Pointer[U8] tag, ...)
+use @g_value_init[GValueStruct](value: GValueStruct, gtype: U64)
+use @g_value_set_string[None](value: GValueStruct, string: Pointer[U8] tag)
+use @g_value_set_int64[None](value: GValueStruct, num: I64)
 
 actor Main
   new create(env: Env) =>
     let app: GtkApplication = GtkApplication("red.evil.gtk-demo", 0)
     let appstate: AppState = AppState(env)
     app.signal_connect[AppState]("activate", @{(gobjstruct: GObjectStruct, data: AppState) => data.activate(gobjstruct)}, appstate)
-    app.run(0, Pointer[Pointer[U8]])
+  //  app.run(0, Pointer[Pointer[U8]])
 
+	let t: GValueStruct = GValueStruct
+  let ss: GValueStruct = @g_value_init(t, U64(16 << 2))
+	@printf("%lu\n".cstring(), t)
+	@printf("%lu\n".cstring(), ss)
+
+	@g_value_set_string(ss, "Hello World\n".cstring())
+	@g_value_set_int64(ss, I64(42))
 
 class AppState
   let env: Env
@@ -30,12 +40,13 @@ class AppState
     builder.add_callback_symbol[AppState]("appcallback", @{(gobj: GObjectStruct, data: AppState) => data.appcallback(gobj, "appcallback")})
     builder.connect_signals[AppState](this)
     appwindow = GtkWindow.from_ref(builder.get_object("toplevel_window"))
-    let treeview: GtkTreeView = create_view_and_model()
+//    let treeview: GtkTreeView = create_view_and_model()
     scrolled_window = GtkScrolledWindow.from_ref(builder.get_object("widget_list_scrolledwindow"))
-    scrolled_window.add(treeview)
+//    scrolled_window.add(treeview)
     application.add_window(appwindow)
     appwindow.show_all()
 
+/*
 	fun create_view_and_model(): GtkTreeView =>
     let view: GtkTreeView = GtkTreeView // GtkWidget *view = gtk_tree_view_new ();
     let renderer0: GtkCellRendererText = GtkCellRendererText // renderer = gtk_cell_renderer_text_new ();
@@ -70,27 +81,6 @@ class AppState
 		store.gtk_list_store_set(iter, 1, "Overview".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
 
 		store
-/*
-create_and_fill_model (void)
-{
-
-
-  /* append another row and fill in some data */
-  gtk_list_store_append (store, &iter);
-  gtk_list_store_set (store, &iter,
-                      COL_NAME, "Jane Doe",
-                      COL_AGE, 23,
-                      -1);
-
-  /* ... and a third row */
-  gtk_list_store_append (store, &iter);
-  gtk_list_store_set (store, &iter,
-                      COL_NAME, "Joe Bungop",
-                      COL_AGE, 91,
-                      -1);
-
-  return GTK_TREE_MODEL (store);
-}
 */
 
 

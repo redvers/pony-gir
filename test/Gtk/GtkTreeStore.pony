@@ -22,7 +22,7 @@ use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
 
-class GtkListStore is GtkListStoreInterface
+class GtkTreeStore is GtkTreeStoreInterface
   var _ptr: GObjectStruct
 
   new from_ref(objref: GObjectStruct) => _ptr = objref
@@ -32,6 +32,6 @@ class GtkListStore is GtkListStoreInterface
 
 
 
-interface GtkListStoreInterface is GObjectInterface
+interface GtkTreeStoreInterface is GObjectInterface
   fun ref gobject(): GObjectStruct
 
