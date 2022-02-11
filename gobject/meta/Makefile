@@ -56,6 +56,8 @@ codegenstruct:
 	sh -x mkstruct.sh _3780 GTypeModuleClass
 	sh -x mkstruct.sh _3799 GTypePluginClass
 	sh -x mkstruct.sh _3810 GValueArray g_value_array
+
+prims:
 	sh -x mkprim.sh 0 GType g_type
 
 
