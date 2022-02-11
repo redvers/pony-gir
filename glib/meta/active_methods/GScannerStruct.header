@@ -14,11 +14,11 @@
      000192: [PointerType size=64]->[Struct size=,fid: f65]: qdata  
      000256: [PointerType size=64]->[Struct size=320,fid: f102]: config  
      000320: [Enumeration size=32,fid: f102]: token  
-     000384: [UNION size=64] -- UNSUPPORTED FIXME: value  
+     000384: [UNION size=64]
      000448: [FundamentalType(unsigned int) size=32]: line  
      000480: [FundamentalType(unsigned int) size=32]: position  
      000512: [Enumeration size=32,fid: f102]: next_token  
-     000576: [UNION size=64] -- UNSUPPORTED FIXME: next_value  
+     000576: [UNION size=64]
      000640: [FundamentalType(unsigned int) size=32]: next_line  
      000672: [FundamentalType(unsigned int) size=32]: next_position  
      000704: [PointerType size=64]->[Struct size=,fid: f76]: symbol_table  

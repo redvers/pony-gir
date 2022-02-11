@@ -10,4 +10,11 @@
      000000: [UNION size=1024] -- UNSUPPORTED FIXME: u  
 */
 struct GVariantDictStruct
-  var u: U64 = U64(0) // ElaboratedType
+  var u0: U64 = U64(0) // ElaboratedType
+  var u1: U64 = U64(0) // ElaboratedType
+  var u2: U64 = U64(0) // ElaboratedType
+  var u3: U64 = U64(0) // ElaboratedType
+  var u4: U64 = U64(0) // ElaboratedType
+  var u5: U64 = U64(0) // ElaboratedType
+  var u6: U64 = U64(0) // ElaboratedType
+  var u7: U64 = U64(0) // ElaboratedType

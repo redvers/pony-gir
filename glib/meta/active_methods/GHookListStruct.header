@@ -12,8 +12,8 @@
      000080: [FundamentalType(unsigned int) size=32]: is_setup  
      000128: [PointerType size=64]->[Struct size=512,fid: f78]: hooks  
      000192: [PointerType size=64]->[FundamentalType(void) size=0]: dummy3  
-     000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: finalize_hook  
-     000320: [ArrayType size=(0-1)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: dummy  
+     000256: [PointerType size=64]->[FunctionType]
+     000320: [ArrayType size=(0-1)]->[PointerType size=64]->[FundamentalType(void) size=0]
 */
 struct GHookListStruct
   var seq_id: U64 = U64(0) // Typedef
@@ -22,4 +22,5 @@ struct GHookListStruct
   var hooks: GHookStruct = GHookStruct // PointerType
   var dummy3: Pointer[None] = Pointer[None] // Typedef
   var finalize_hook: Pointer[None] = Pointer[None] // Typedef
-  var dummy: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType
+  var dummy0: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType
+  var dummy1: Pointer[Pointer[None]] = Pointer[Pointer[None]] // ArrayType

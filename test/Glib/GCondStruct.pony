@@ -12,4 +12,4 @@
 */
 struct GCondStruct
   var p: Pointer[None] = Pointer[None] // Typedef
-  var i: Pointer[U32] = Pointer[U32] // ArrayType
+  var i: U64 = U64(0)

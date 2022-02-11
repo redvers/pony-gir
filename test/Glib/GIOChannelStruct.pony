@@ -18,7 +18,7 @@
      000512: [PointerType size=64]->[Struct size=192,fid: f84]: read_buf  
      000576: [PointerType size=64]->[Struct size=192,fid: f84]: encoded_read_buf  
      000640: [PointerType size=64]->[Struct size=192,fid: f84]: write_buf  
-     000704: [ArrayType size=(0-5)]->[FundamentalType(char) size=8] -- UNSUPPORTED - FIXME: partial_write_buf  
+     000704: [ArrayType size=(0-5)]->[FundamentalType(char) size=8] 
      000752: [FundamentalType(unsigned int) size=32]: use_buffer  
      000753: [FundamentalType(unsigned int) size=32]: do_encode  
      000754: [FundamentalType(unsigned int) size=32]: close_on_unref  
@@ -40,7 +40,12 @@ struct GIOChannelStruct
   var read_buf: GStringStruct = GStringStruct // PointerType
   var encoded_read_buf: GStringStruct = GStringStruct // PointerType
   var write_buf: GStringStruct = GStringStruct // PointerType
-  var partial_write_buf: Pointer[U8] = Pointer[U8] // ArrayType
+  var partial_write_buf0: U8 = U8(0)
+  var partial_write_buf1: U8 = U8(0)
+  var partial_write_buf2: U8 = U8(0)
+  var partial_write_buf3: U8 = U8(0)
+  var partial_write_buf4: U8 = U8(0)
+  var partial_write_buf5: U8 = U8(0)
   var use_buffer: U32 = U32(0) // Typedef
   var do_encode: U32 = U32(0) // Typedef
   var close_on_unref: U32 = U32(0) // Typedef
