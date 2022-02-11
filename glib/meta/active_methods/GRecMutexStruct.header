@@ -8,8 +8,9 @@
 
   Fields (Offset in bits):
      000000: [PointerType size=64]->[FundamentalType(void) size=0]: p  
-     000064: [ArrayType size=(0-1)]->[FundamentalType(unsigned int) size=32] -- UNSUPPORTED - FIXME: i  
+     000064: [ArrayType size=(0-1)]->[FundamentalType(unsigned int) size=32]
 */
 struct GRecMutexStruct
   var p: Pointer[None] = Pointer[None] // Typedef
-  var i: Pointer[U32] = Pointer[U32] // ArrayType
+  var i0: Pointer[U32] = Pointer[U32] // ArrayType
+  var i1: Pointer[U32] = Pointer[U32] // ArrayType

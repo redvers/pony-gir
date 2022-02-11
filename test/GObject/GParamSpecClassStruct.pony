@@ -17,7 +17,7 @@ use "lib:glib-2.0"
      000192: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: value_set_default  
      000256: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: value_validate  
      000320: [PointerType size=64]->[FunctionType] -- WRITE MANUALLY: values_cmp  
-     000384: [ArrayType size=(0-3)]->[PointerType size=64]->[FundamentalType(void) size=0] -- UNSUPPORTED - FIXME: dummy  
+     000384: [ArrayType size=(0-3)]->[PointerType size=64]->[FundamentalType(void) size=0]
 */
 struct GParamSpecClassStruct
   embed g_type_class: GTypeClassStruct = GTypeClassStruct // Typedef

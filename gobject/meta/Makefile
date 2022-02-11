@@ -1,5 +1,4 @@
 codegenstruct:
-	rm -f ../../test/GObject/*
 	sh -x mkclass.sh _3572 GObject g_object
 	cat templates/callbacks.txt > ../../test/GObject/callbacks.pony
 	sh -x mkstruct.sh _3572 GObject g_object
@@ -60,11 +59,11 @@ codegenstruct:
 	sh -x mkprim.sh 0 GType g_type
 
 
-structmeta:
-	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gobject.xml -S
-
-usemeta:
-	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gobject.xml -u f131 f132 f133 f134 f135 f136 f137 f138 f139 f140 f141 f142 f143 f144 f145 f146 f147 f148 f149 
-
-use:
-	saxon-he -xi use.xml ../../xsl/makeuse.xsl > ../../test/GObject/use.pony
+#structmeta:
+#	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gobject.xml -S
+#
+#usemeta:
+#	../../../../castxml2pony/castxml2pony --xmlin ../../castxml-results/gobject.xml -u f131 f132 f133 f134 f135 f136 f137 f138 f139 f140 f141 f142 f143 f144 f145 f146 f147 f148 f149 
+#
+#use:
+#	saxon-he -xi use.xml ../../xsl/makeuse.xsl > ../../test/GObject/use.pony

@@ -7,7 +7,7 @@
   Struct Align (bits): 64
 
   Fields (Offset in bits):
-     000000: [ArrayType size=(0-15)]->[FundamentalType(long unsigned int) size=64] -- UNSUPPORTED - FIXME: x  
+     000000: [ArrayType size=(0-15)]->[FundamentalType(long unsigned int) size=64]
 */
 struct GVariantIterStruct
   var x0: U64 = U64(0)

@@ -1,7 +1,6 @@
-classes:
+all:
 	sh -x mkclass.sh _5865 GListStore g_list_store
 	sh -x mkclass.sh _4138 GApplication g_application
-all:
 	sh -x mkstruct.sh _4138 GApplication g_application
 	sh -x mkstruct.sh _4090 GAppLaunchContext
 	sh -x mkstruct.sh _4431 GAppLaunchContextClass

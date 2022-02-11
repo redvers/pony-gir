@@ -12,8 +12,6 @@ classes:
 	sh -x mkclass.sh _13680 GtkCellRendererText gtk_cell_renderer_text
 	sh -x mkclass.sh _12577 GtkCellRenderer gtk_cell_renderer
 	sh -x mkclass.sh _13007 GtkListStore gtk_list_store
-
-newclasses:
 	sh -x mkclass.sh _12159 GtkMisc null
 	sh -x mkclass.sh _10981 GtkAccelGroup null
 	sh -x mkclass.sh _11044 GtkAdjustment null
@@ -174,9 +172,6 @@ newclasses:
 	sh -x mkclass.sh _16579 GtkTreeModelSort null
 	sh -x mkclass.sh _16771 GtkViewport null
 	sh -x mkclass.sh _16787 GtkVolumeButton null
-
-codegenstructs:
-
 	sh -x mkstruct.sh _11068 GtkWidget gtk_widget
 	sh -x mkstruct.sh _11804 GtkApplication gtk_application
 	sh -x mkstruct.sh _12159 GtkMisc
