@@ -41,10 +41,12 @@ class GtkBuilder is GtkBuilderInterface
 
 
   new new_from_file(filename: String) =>
-   _ptr =  @gtk_builder_new_from_file(filename.cstring())
+
+   _ptr = @gtk_builder_new_from_file(filename.cstring())
 
   new new_from_string(string: String, length: I64) =>
-   _ptr =  @gtk_builder_new_from_string(string.cstring(), length)
+
+   _ptr = @gtk_builder_new_from_string(string.cstring(), length)
 
 
 interface GtkBuilderInterface is GObjectInterface
@@ -59,8 +61,9 @@ interface GtkBuilderInterface is GObjectInterface
   fun ref get_object(name: String): GObjectStruct =>
     @gtk_builder_get_object(gobject(), name.cstring())
 
-  fun ref get_application(): GObjectStruct =>
-    @gtk_builder_get_application(gobject())
+  fun ref get_application(): GtkApplication =>
+    var gobj: GObjectStruct =  @gtk_builder_get_application(gobject())
+    GtkApplication.from_ref(gobj)
 
 
   fun ref add_callback_symbol[A: Any](name: String, callback: @{(GObjectStruct, A): None}) =>

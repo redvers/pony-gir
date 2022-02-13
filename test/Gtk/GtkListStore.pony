@@ -37,11 +37,13 @@ class GtkListStore is GtkListStoreInterface
 
 /*
   new gtk_list_store_new(ncolumns: I32, ...) =>
-   _ptr =  @gtk_list_store_new(ncolumns, ...)
+
+   _ptr = @gtk_list_store_new(ncolumns, ...)
 */
 
   new gtk_list_store_newv(ncolumns: I32, types: Pointer[U64] tag) =>
-   _ptr =  @gtk_list_store_newv(ncolumns, types)
+
+   _ptr = @gtk_list_store_newv(ncolumns, types)
 
 
 interface GtkListStoreInterface is GObjectInterface

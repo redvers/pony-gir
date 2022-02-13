@@ -54,10 +54,12 @@ class GtkLabel is GtkLabelInterface
 
 
   new create(str: String) =>
-   _ptr =  @gtk_label_new(str.cstring())
+
+   _ptr = @gtk_label_new(str.cstring())
 
   new new_with_mnemonic(str: String) =>
-   _ptr =  @gtk_label_new_with_mnemonic(str.cstring())
+
+   _ptr = @gtk_label_new_with_mnemonic(str.cstring())
 
 
 interface GtkLabelInterface

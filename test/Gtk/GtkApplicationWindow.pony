@@ -33,7 +33,8 @@ class GtkApplicationWindow is GtkApplicationWindowInterface
 
 
   new create(application: GObjectStruct tag) =>
-   _ptr =  @gtk_application_window_new(application)
+
+   _ptr = @gtk_application_window_new(application)
 
 
 interface GtkApplicationWindowInterface is GtkWindowInterface

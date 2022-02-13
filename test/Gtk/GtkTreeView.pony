@@ -39,7 +39,8 @@ class GtkTreeView is GtkTreeViewInterface
 
 
   new create() =>
-   _ptr =  @gtk_tree_view_new()
+
+   _ptr = @gtk_tree_view_new()
 
 
 interface GtkTreeViewInterface is GtkContainerInterface

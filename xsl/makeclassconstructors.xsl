@@ -53,15 +53,8 @@
 <xsl:if test="name($varargs)='Ellipsis'">/*</xsl:if>
 <xsl:if test="$render='0'"><xsl:text>/*
 </xsl:text></xsl:if><xsl:text>&#10;  new </xsl:text><xsl:value-of select="$n/@ponyname"/>(<xsl:value-of select="$args"/>) =>
-<xsl:variable name="pfix">
-<xsl:apply-templates select="/castxml2pony/typedefs/typedef[@name=$rrv]/ponytypeconvout/prefixs/prefix" mode="perline"/>
-</xsl:variable>
-<xsl:variable name="sfix">
-<xsl:apply-templates select="/castxml2pony/typedefs/typedef[@name=$rrv]/ponytypeconvout/suffixes/suffix" mode="perline"/>
-</xsl:variable>
 
-<xsl:if test="$pfix=''"><xsl:text>   _ptr = </xsl:text></xsl:if><xsl:value-of select="$pfix"/> @<xsl:value-of select="$n/@name"/>(<xsl:value-of select="$cargs"/>)
-<xsl:value-of select="$sfix"/>
+<xsl:text>   _ptr = @</xsl:text><xsl:value-of select="$n/@name"/>(<xsl:value-of select="$cargs"/>)
 <xsl:if test="$render='0'"><xsl:text>*/&#10;
 </xsl:text></xsl:if>
 <xsl:if test="name($varargs)='Ellipsis'">*/&#10;</xsl:if>

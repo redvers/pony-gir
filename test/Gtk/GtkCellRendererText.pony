@@ -33,7 +33,8 @@ class GtkCellRendererText is GtkCellRendererTextInterface
 
 
   new create() =>
-   _ptr =  @gtk_cell_renderer_text_new()
+
+   _ptr = @gtk_cell_renderer_text_new()
 
 
 interface GtkCellRendererTextInterface is GtkCellRendererInterface

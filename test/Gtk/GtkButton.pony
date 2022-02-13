@@ -34,10 +34,12 @@ class GtkButton is GtkButtonInterface
 
 
   new new_with_label(label: String) =>
-   _ptr =  @gtk_button_new_with_label(label.cstring())
+
+   _ptr = @gtk_button_new_with_label(label.cstring())
 
   new new_from_icon_name(iconname: String, size: I32) =>
-   _ptr =  @gtk_button_new_from_icon_name(iconname.cstring(), size)
+
+   _ptr = @gtk_button_new_from_icon_name(iconname.cstring(), size)
 
 
 interface GtkButtonInterface is GtkBinInterface

@@ -5,24 +5,24 @@ use "Gio"
 use "Gtk"
 
 use @printf[I32](fmt: Pointer[U8] tag, ...)
-use @g_value_init[GValueStruct](value: GValueStruct, gtype: U64)
-use @g_value_set_string[None](value: GValueStruct, string: Pointer[U8] tag)
-use @g_value_set_int64[None](value: GValueStruct, num: I64)
 
 actor Main
   new create(env: Env) =>
+    None
+    /*
     let app: GtkApplication = GtkApplication("red.evil.gtk-demo", 0)
     let appstate: AppState = AppState(env)
     app.signal_connect[AppState]("activate", @{(gobjstruct: GObjectStruct, data: AppState) => data.activate(gobjstruct)}, appstate)
   //  app.run(0, Pointer[Pointer[U8]])
 
-	let t: GValueStruct = GValueStruct
-  let ss: GValueStruct = @g_value_init(t, U64(16 << 2))
-	@printf("%lu\n".cstring(), t)
+  let ss: GValueStruct = GValueStruct.new_string()
+                         .>set_string("Hello World")
 	@printf("%lu\n".cstring(), ss)
 
-	@g_value_set_string(ss, "Hello World\n".cstring())
-	@g_value_set_int64(ss, I64(42))
+//  env.out.print(ss.get_string())
+
+//	@g_value_set_string(ss, "Hello World\n".cstring())
+//	@g_value_set_int64(ss, I64(42))
 
 class AppState
   let env: Env
@@ -90,4 +90,4 @@ class AppState
   fun appcallback(gobj: GObjectStruct, data: String) =>
     @printf("In appcallback()\n".cstring())
     Gtk.main_quit()
-
+*/
