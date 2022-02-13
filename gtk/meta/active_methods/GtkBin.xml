@@ -5,7 +5,7 @@
 <xi:include href="../renderstructs.xml"/>
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
 <renders>
-  <method name="gtk_bin_get_type" render="0"/>
-  <method name="gtk_bin_get_child" render="0"/>
+  <method name="gtk_bin_get_type" render="1"/>
+  <method name="gtk_bin_get_child" render="1"/>
 </renders>
 </castxml2pony>

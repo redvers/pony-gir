@@ -8,179 +8,179 @@
   <inherit name="GObject" ponyfn="gobject" path="parent_instance"/>
 </inherits>
 <renders>
-  <constructor name="gtk_widget_new" render="0"/>
-  <method name="gtk_widget_get_type" render="0"/>
+  <constructor name="gtk_widget_new" render="1"/>
+  <method name="gtk_widget_get_type" render="1"/>
   <method name="gtk_widget_destroy" render="1"/>
   <method name="gtk_widget_destroyed" render="0"/>
-  <method name="gtk_widget_unparent" render="0"/>
+  <method name="gtk_widget_unparent" render="1"/>
   <method name="gtk_widget_show" render="1"/>
   <method name="gtk_widget_hide" render="1"/>
-  <method name="gtk_widget_show_now" render="0"/>
+  <method name="gtk_widget_show_now" render="1"/>
   <method name="gtk_widget_show_all" render="1"/>
-  <method name="gtk_widget_set_no_show_all" render="0"/>
-  <method name="gtk_widget_get_no_show_all" render="0"/>
-  <method name="gtk_widget_map" render="0"/>
-  <method name="gtk_widget_unmap" render="0"/>
-  <method name="gtk_widget_realize" render="0"/>
-  <method name="gtk_widget_unrealize" render="0"/>
+  <method name="gtk_widget_set_no_show_all" render="1"/>
+  <method name="gtk_widget_get_no_show_all" render="1"/>
+  <method name="gtk_widget_map" render="1"/>
+  <method name="gtk_widget_unmap" render="1"/>
+  <method name="gtk_widget_realize" render="1"/>
+  <method name="gtk_widget_unrealize" render="1"/>
   <method name="gtk_widget_draw" render="0"/>
   <method name="gtk_widget_queue_draw" render="0"/>
   <method name="gtk_widget_queue_draw_area" render="0"/>
   <method name="gtk_widget_queue_draw_region" render="0"/>
   <method name="gtk_widget_queue_resize" render="0"/>
   <method name="gtk_widget_queue_resize_no_redraw" render="0"/>
-  <method name="gtk_widget_queue_allocate" render="0"/>
+  <method name="gtk_widget_queue_allocate" render="1"/>
   <method name="gtk_widget_get_frame_clock" render="0"/>
   <method name="gtk_widget_size_request" render="0"/>
   <method name="gtk_widget_size_allocate" render="0"/>
   <method name="gtk_widget_size_allocate_with_baseline" render="0"/>
   <method name="gtk_widget_get_request_mode" render="0"/>
-  <method name="gtk_widget_get_preferred_width" render="0"/>
-  <method name="gtk_widget_get_preferred_height_for_width" render="0"/>
-  <method name="gtk_widget_get_preferred_height" render="0"/>
-  <method name="gtk_widget_get_preferred_width_for_height" render="0"/>
-  <method name="gtk_widget_get_preferred_height_and_baseline_for_width" render="0"/>
+  <method name="gtk_widget_get_preferred_width" render="1"/>
+  <method name="gtk_widget_get_preferred_height_for_width" render="1"/>
+  <method name="gtk_widget_get_preferred_height" render="1"/>
+  <method name="gtk_widget_get_preferred_width_for_height" render="1"/>
+  <method name="gtk_widget_get_preferred_height_and_baseline_for_width" render="1"/>
   <method name="gtk_widget_get_preferred_size" render="0"/>
   <method name="gtk_widget_get_child_requisition" render="0"/>
-  <method name="gtk_widget_add_accelerator" render="0"/>
-  <method name="gtk_widget_remove_accelerator" render="0"/>
-  <method name="gtk_widget_set_accel_path" render="0"/>
+  <method name="gtk_widget_add_accelerator" render="1"/>
+  <method name="gtk_widget_remove_accelerator" render="1"/>
+  <method name="gtk_widget_set_accel_path" render="1"/>
   <method name="gtk_widget_list_accel_closures" render="0"/>
-  <method name="gtk_widget_can_activate_accel" render="0"/>
-  <method name="gtk_widget_mnemonic_activate" render="0"/>
-  <method name="gtk_widget_event" render="0"/>
-  <method name="gtk_widget_send_expose" render="0"/>
-  <method name="gtk_widget_send_focus_change" render="0"/>
-  <method name="gtk_widget_activate" render="0"/>
-  <method name="gtk_widget_reparent" render="0"/>
+  <method name="gtk_widget_can_activate_accel" render="1"/>
+  <method name="gtk_widget_mnemonic_activate" render="1"/>
+  <method name="gtk_widget_event" render="1"/>
+  <method name="gtk_widget_send_expose" render="1"/>
+  <method name="gtk_widget_send_focus_change" render="1"/>
+  <method name="gtk_widget_activate" render="1"/>
+  <method name="gtk_widget_reparent" render="1"/>
   <method name="gtk_widget_intersect" render="0"/>
   <method name="gtk_widget_region_intersect" render="0"/>
-  <method name="gtk_widget_freeze_child_notify" render="0"/>
+  <method name="gtk_widget_freeze_child_notify" render="1"/>
   <method name="gtk_widget_child_notify" render="0"/>
   <method name="gtk_widget_thaw_child_notify" render="0"/>
-  <method name="gtk_widget_set_can_focus" render="0"/>
-  <method name="gtk_widget_get_can_focus" render="0"/>
-  <method name="gtk_widget_has_focus" render="0"/>
-  <method name="gtk_widget_is_focus" render="0"/>
-  <method name="gtk_widget_has_visible_focus" render="0"/>
-  <method name="gtk_widget_grab_focus" render="0"/>
-  <method name="gtk_widget_set_focus_on_click" render="0"/>
-  <method name="gtk_widget_get_focus_on_click" render="0"/>
-  <method name="gtk_widget_set_can_default" render="0"/>
-  <method name="gtk_widget_get_can_default" render="0"/>
-  <method name="gtk_widget_has_default" render="0"/>
-  <method name="gtk_widget_grab_default" render="0"/>
-  <method name="gtk_widget_set_receives_default" render="0"/>
-  <method name="gtk_widget_get_receives_default" render="0"/>
-  <method name="gtk_widget_has_grab" render="0"/>
+  <method name="gtk_widget_set_can_focus" render="1"/>
+  <method name="gtk_widget_get_can_focus" render="1"/>
+  <method name="gtk_widget_has_focus" render="1"/>
+  <method name="gtk_widget_is_focus" render="1"/>
+  <method name="gtk_widget_has_visible_focus" render="1"/>
+  <method name="gtk_widget_grab_focus" render="1"/>
+  <method name="gtk_widget_set_focus_on_click" render="1"/>
+  <method name="gtk_widget_get_focus_on_click" render="1"/>
+  <method name="gtk_widget_set_can_default" render="1"/>
+  <method name="gtk_widget_get_can_default" render="1"/>
+  <method name="gtk_widget_has_default" render="1"/>
+  <method name="gtk_widget_grab_default" render="1"/>
+  <method name="gtk_widget_set_receives_default" render="1"/>
+  <method name="gtk_widget_get_receives_default" render="1"/>
+  <method name="gtk_widget_has_grab" render="1"/>
   <method name="gtk_widget_device_is_shadowed" render="0"/>
-  <method name="gtk_widget_set_name" render="0"/>
-  <method name="gtk_widget_get_name" render="0"/>
-  <method name="gtk_widget_set_state" render="0"/>
-  <method name="gtk_widget_get_state" render="0"/>
-  <method name="gtk_widget_set_state_flags" render="0"/>
-  <method name="gtk_widget_unset_state_flags" render="0"/>
-  <method name="gtk_widget_get_state_flags" render="0"/>
-  <method name="gtk_widget_set_sensitive" render="0"/>
-  <method name="gtk_widget_get_sensitive" render="0"/>
-  <method name="gtk_widget_is_sensitive" render="0"/>
-  <method name="gtk_widget_set_visible" render="0"/>
-  <method name="gtk_widget_get_visible" render="0"/>
-  <method name="gtk_widget_is_visible" render="0"/>
-  <method name="gtk_widget_set_has_window" render="0"/>
-  <method name="gtk_widget_get_has_window" render="0"/>
-  <method name="gtk_widget_is_toplevel" render="0"/>
-  <method name="gtk_widget_is_drawable" render="0"/>
-  <method name="gtk_widget_set_realized" render="0"/>
-  <method name="gtk_widget_get_realized" render="0"/>
-  <method name="gtk_widget_set_mapped" render="0"/>
-  <method name="gtk_widget_get_mapped" render="0"/>
-  <method name="gtk_widget_set_app_paintable" render="0"/>
-  <method name="gtk_widget_get_app_paintable" render="0"/>
-  <method name="gtk_widget_set_double_buffered" render="0"/>
-  <method name="gtk_widget_get_double_buffered" render="0"/>
-  <method name="gtk_widget_set_redraw_on_allocate" render="0"/>
+  <method name="gtk_widget_set_name" render="1"/>
+  <method name="gtk_widget_get_name" render="1"/>
+  <method name="gtk_widget_set_state" render="1"/>
+  <method name="gtk_widget_get_state" render="1"/>
+  <method name="gtk_widget_set_state_flags" render="1"/>
+  <method name="gtk_widget_unset_state_flags" render="1"/>
+  <method name="gtk_widget_get_state_flags" render="1"/>
+  <method name="gtk_widget_set_sensitive" render="1"/>
+  <method name="gtk_widget_get_sensitive" render="1"/>
+  <method name="gtk_widget_is_sensitive" render="1"/>
+  <method name="gtk_widget_set_visible" render="1"/>
+  <method name="gtk_widget_get_visible" render="1"/>
+  <method name="gtk_widget_is_visible" render="1"/>
+  <method name="gtk_widget_set_has_window" render="1"/>
+  <method name="gtk_widget_get_has_window" render="1"/>
+  <method name="gtk_widget_is_toplevel" render="1"/>
+  <method name="gtk_widget_is_drawable" render="1"/>
+  <method name="gtk_widget_set_realized" render="1"/>
+  <method name="gtk_widget_get_realized" render="1"/>
+  <method name="gtk_widget_set_mapped" render="1"/>
+  <method name="gtk_widget_get_mapped" render="1"/>
+  <method name="gtk_widget_set_app_paintable" render="1"/>
+  <method name="gtk_widget_get_app_paintable" render="1"/>
+  <method name="gtk_widget_set_double_buffered" render="1"/>
+  <method name="gtk_widget_get_double_buffered" render="1"/>
+  <method name="gtk_widget_set_redraw_on_allocate" render="1"/>
   <method name="gtk_widget_set_parent" render="0"/>
   <method name="gtk_widget_get_parent" render="0"/>
   <method name="gtk_widget_set_parent_window" render="0"/>
   <method name="gtk_widget_get_parent_window" render="0"/>
-  <method name="gtk_widget_set_child_visible" render="0"/>
-  <method name="gtk_widget_get_child_visible" render="0"/>
+  <method name="gtk_widget_set_child_visible" render="1"/>
+  <method name="gtk_widget_get_child_visible" render="1"/>
   <method name="gtk_widget_set_window" render="0"/>
   <method name="gtk_widget_get_window" render="0"/>
   <method name="gtk_widget_register_window" render="0"/>
   <method name="gtk_widget_unregister_window" render="0"/>
-  <method name="gtk_widget_get_allocated_width" render="0"/>
-  <method name="gtk_widget_get_allocated_height" render="0"/>
-  <method name="gtk_widget_get_allocated_baseline" render="0"/>
+  <method name="gtk_widget_get_allocated_width" render="1"/>
+  <method name="gtk_widget_get_allocated_height" render="1"/>
+  <method name="gtk_widget_get_allocated_baseline" render="1"/>
   <method name="gtk_widget_get_allocated_size" render="0"/>
   <method name="gtk_widget_get_allocation" render="0"/>
   <method name="gtk_widget_set_allocation" render="0"/>
   <method name="gtk_widget_set_clip" render="0"/>
   <method name="gtk_widget_get_clip" render="0"/>
   <method name="gtk_widget_get_requisition" render="0"/>
-  <method name="gtk_widget_child_focus" render="0"/>
-  <method name="gtk_widget_keynav_failed" render="0"/>
-  <method name="gtk_widget_error_bell" render="0"/>
+  <method name="gtk_widget_child_focus" render="1"/>
+  <method name="gtk_widget_keynav_failed" render="1"/>
+  <method name="gtk_widget_error_bell" render="1"/>
   <method name="gtk_widget_set_size_request" render="0"/>
   <method name="gtk_widget_get_size_request" render="0"/>
-  <method name="gtk_widget_set_events" render="0"/>
-  <method name="gtk_widget_add_events" render="0"/>
+  <method name="gtk_widget_set_events" render="1"/>
+  <method name="gtk_widget_add_events" render="1"/>
   <method name="gtk_widget_set_device_events" render="0"/>
   <method name="gtk_widget_add_device_events" render="0"/>
-  <method name="gtk_widget_set_opacity" render="0"/>
-  <method name="gtk_widget_get_opacity" render="0"/>
+  <method name="gtk_widget_set_opacity" render="1"/>
+  <method name="gtk_widget_get_opacity" render="1"/>
   <method name="gtk_widget_set_device_enabled" render="0"/>
   <method name="gtk_widget_get_device_enabled" render="0"/>
-  <method name="gtk_widget_get_toplevel" render="0"/>
-  <method name="gtk_widget_get_ancestor" render="0"/>
+  <method name="gtk_widget_get_toplevel" render="1"/>
+  <method name="gtk_widget_get_ancestor" render="1"/>
   <method name="gtk_widget_get_visual" render="0"/>
   <method name="gtk_widget_set_visual" render="0"/>
   <method name="gtk_widget_get_screen" render="0"/>
-  <method name="gtk_widget_has_screen" render="0"/>
-  <method name="gtk_widget_get_scale_factor" render="0"/>
+  <method name="gtk_widget_has_screen" render="1"/>
+  <method name="gtk_widget_get_scale_factor" render="1"/>
   <method name="gtk_widget_get_display" render="0"/>
   <method name="gtk_widget_get_root_window" render="0"/>
-  <method name="gtk_widget_get_settings" render="0"/>
+  <method name="gtk_widget_get_settings" render="1"/>
   <method name="gtk_widget_get_clipboard" render="0"/>
-  <method name="gtk_widget_get_hexpand" render="0"/>
-  <method name="gtk_widget_set_hexpand" render="0"/>
-  <method name="gtk_widget_get_hexpand_set" render="0"/>
-  <method name="gtk_widget_set_hexpand_set" render="0"/>
-  <method name="gtk_widget_get_vexpand" render="0"/>
-  <method name="gtk_widget_set_vexpand" render="0"/>
-  <method name="gtk_widget_get_vexpand_set" render="0"/>
-  <method name="gtk_widget_set_vexpand_set" render="0"/>
-  <method name="gtk_widget_queue_compute_expand" render="0"/>
-  <method name="gtk_widget_compute_expand" render="0"/>
-  <method name="gtk_widget_get_support_multidevice" render="0"/>
-  <method name="gtk_widget_set_support_multidevice" render="0"/>
+  <method name="gtk_widget_get_hexpand" render="1"/>
+  <method name="gtk_widget_set_hexpand" render="1"/>
+  <method name="gtk_widget_get_hexpand_set" render="1"/>
+  <method name="gtk_widget_set_hexpand_set" render="1"/>
+  <method name="gtk_widget_get_vexpand" render="1"/>
+  <method name="gtk_widget_set_vexpand" render="1"/>
+  <method name="gtk_widget_get_vexpand_set" render="1"/>
+  <method name="gtk_widget_set_vexpand_set" render="1"/>
+  <method name="gtk_widget_queue_compute_expand" render="1"/>
+  <method name="gtk_widget_compute_expand" render="1"/>
+  <method name="gtk_widget_get_support_multidevice" render="1"/>
+  <method name="gtk_widget_set_support_multidevice" render="1"/>
   <method name="gtk_widget_class_set_accessible_type" render="0"/>
   <method name="gtk_widget_class_set_accessible_role" render="0"/>
   <method name="gtk_widget_get_accessible" render="0"/>
-  <method name="gtk_widget_get_halign" render="0"/>
-  <method name="gtk_widget_set_halign" render="0"/>
-  <method name="gtk_widget_get_valign" render="0"/>
-  <method name="gtk_widget_get_valign_with_baseline" render="0"/>
-  <method name="gtk_widget_set_valign" render="0"/>
-  <method name="gtk_widget_get_margin_left" render="0"/>
-  <method name="gtk_widget_set_margin_left" render="0"/>
-  <method name="gtk_widget_get_margin_right" render="0"/>
-  <method name="gtk_widget_set_margin_right" render="0"/>
-  <method name="gtk_widget_get_margin_start" render="0"/>
-  <method name="gtk_widget_set_margin_start" render="0"/>
-  <method name="gtk_widget_get_margin_end" render="0"/>
-  <method name="gtk_widget_set_margin_end" render="0"/>
-  <method name="gtk_widget_get_margin_top" render="0"/>
-  <method name="gtk_widget_set_margin_top" render="0"/>
-  <method name="gtk_widget_get_margin_bottom" render="0"/>
-  <method name="gtk_widget_set_margin_bottom" render="0"/>
-  <method name="gtk_widget_get_events" render="0"/>
+  <method name="gtk_widget_get_halign" render="1"/>
+  <method name="gtk_widget_set_halign" render="1"/>
+  <method name="gtk_widget_get_valign" render="1"/>
+  <method name="gtk_widget_get_valign_with_baseline" render="1"/>
+  <method name="gtk_widget_set_valign" render="1"/>
+  <method name="gtk_widget_get_margin_left" render="1"/>
+  <method name="gtk_widget_set_margin_left" render="1"/>
+  <method name="gtk_widget_get_margin_right" render="1"/>
+  <method name="gtk_widget_set_margin_right" render="1"/>
+  <method name="gtk_widget_get_margin_start" render="1"/>
+  <method name="gtk_widget_set_margin_start" render="1"/>
+  <method name="gtk_widget_get_margin_end" render="1"/>
+  <method name="gtk_widget_set_margin_end" render="1"/>
+  <method name="gtk_widget_get_margin_top" render="1"/>
+  <method name="gtk_widget_set_margin_top" render="1"/>
+  <method name="gtk_widget_get_margin_bottom" render="1"/>
+  <method name="gtk_widget_set_margin_bottom" render="1"/>
+  <method name="gtk_widget_get_events" render="1"/>
   <method name="gtk_widget_get_device_events" render="0"/>
-  <method name="gtk_widget_get_pointer" render="0"/>
-  <method name="gtk_widget_is_ancestor" render="0"/>
-  <method name="gtk_widget_translate_coordinates" render="0"/>
-  <method name="gtk_widget_hide_on_delete" render="0"/>
+  <method name="gtk_widget_get_pointer" render="1"/>
+  <method name="gtk_widget_is_ancestor" render="1"/>
+  <method name="gtk_widget_translate_coordinates" render="1"/>
+  <method name="gtk_widget_hide_on_delete" render="1"/>
   <method name="gtk_widget_override_color" render="0"/>
   <method name="gtk_widget_override_background_color" render="0"/>
   <method name="gtk_widget_override_font" render="0"/>
@@ -193,10 +193,10 @@
   <method name="gtk_widget_get_font_options" render="0"/>
   <method name="gtk_widget_create_pango_layout" render="0"/>
   <method name="gtk_widget_render_icon_pixbuf" render="0"/>
-  <method name="gtk_widget_set_composite_name" render="0"/>
-  <method name="gtk_widget_get_composite_name" render="0"/>
-  <method name="gtk_widget_push_composite_child" render="0"/>
-  <method name="gtk_widget_pop_composite_child" render="0"/>
+  <method name="gtk_widget_set_composite_name" render="1"/>
+  <method name="gtk_widget_get_composite_name" render="1"/>
+  <method name="gtk_widget_push_composite_child" render="1"/>
+  <method name="gtk_widget_pop_composite_child" render="1"/>
   <method name="gtk_widget_class_install_style_property" render="0"/>
   <method name="gtk_widget_class_install_style_property_parser" render="0"/>
   <method name="gtk_widget_class_find_style_property" render="0"/>
@@ -204,34 +204,34 @@
   <method name="gtk_widget_style_get_property" render="0"/>
   <method name="gtk_widget_style_get_valist" render="0"/>
   <method name="gtk_widget_style_get" render="0"/>
-  <method name="gtk_widget_set_direction" render="0"/>
-  <method name="gtk_widget_get_direction" render="0"/>
-  <method name="gtk_widget_set_default_direction" render="0"/>
-  <method name="gtk_widget_get_default_direction" render="0"/>
-  <method name="gtk_widget_is_composited" render="0"/>
+  <method name="gtk_widget_set_direction" render="1"/>
+  <method name="gtk_widget_get_direction" render="1"/>
+  <method name="gtk_widget_set_default_direction" render="1"/>
+  <method name="gtk_widget_get_default_direction" render="1"/>
+  <method name="gtk_widget_is_composited" render="1"/>
   <method name="gtk_widget_shape_combine_region" render="0"/>
   <method name="gtk_widget_input_shape_combine_region" render="0"/>
   <method name="gtk_widget_list_mnemonic_labels" render="0"/>
-  <method name="gtk_widget_add_mnemonic_label" render="0"/>
-  <method name="gtk_widget_remove_mnemonic_label" render="0"/>
-  <method name="gtk_widget_set_tooltip_window" render="0"/>
-  <method name="gtk_widget_get_tooltip_window" render="0"/>
-  <method name="gtk_widget_trigger_tooltip_query" render="0"/>
-  <method name="gtk_widget_set_tooltip_text" render="0"/>
-  <method name="gtk_widget_get_tooltip_text" render="0"/>
-  <method name="gtk_widget_set_tooltip_markup" render="0"/>
-  <method name="gtk_widget_get_tooltip_markup" render="0"/>
-  <method name="gtk_widget_set_has_tooltip" render="0"/>
-  <method name="gtk_widget_get_has_tooltip" render="0"/>
-  <method name="gtk_widget_in_destruction" render="0"/>
-  <method name="gtk_widget_get_style_context" render="0"/>
+  <method name="gtk_widget_add_mnemonic_label" render="1"/>
+  <method name="gtk_widget_remove_mnemonic_label" render="1"/>
+  <method name="gtk_widget_set_tooltip_window" render="1"/>
+  <method name="gtk_widget_get_tooltip_window" render="1"/>
+  <method name="gtk_widget_trigger_tooltip_query" render="1"/>
+  <method name="gtk_widget_set_tooltip_text" render="1"/>
+  <method name="gtk_widget_get_tooltip_text" render="1"/>
+  <method name="gtk_widget_set_tooltip_markup" render="1"/>
+  <method name="gtk_widget_get_tooltip_markup" render="1"/>
+  <method name="gtk_widget_set_has_tooltip" render="1"/>
+  <method name="gtk_widget_get_has_tooltip" render="1"/>
+  <method name="gtk_widget_in_destruction" render="1"/>
+  <method name="gtk_widget_get_style_context" render="1"/>
   <method name="gtk_widget_get_path" render="0"/>
   <method name="gtk_widget_class_set_css_name" render="0"/>
   <method name="gtk_widget_class_get_css_name" render="0"/>
-  <method name="gtk_widget_get_modifier_mask" render="0"/>
+  <method name="gtk_widget_get_modifier_mask" render="1"/>
   <method name="gtk_widget_insert_action_group" render="0"/>
-  <method name="gtk_widget_add_tick_callback" render="0"/>
-  <method name="gtk_widget_remove_tick_callback" render="0"/>
+  <method name="gtk_widget_add_tick_callback" render="1"/>
+  <method name="gtk_widget_remove_tick_callback" render="1"/>
   <method name="gtk_widget_init_template" render="0"/>
   <method name="gtk_widget_get_template_child" render="0"/>
   <method name="gtk_widget_class_set_template" render="0"/>
@@ -243,6 +243,6 @@
   <method name="gtk_widget_list_action_prefixes" render="0"/>
   <method name="gtk_widget_set_font_map" render="0"/>
   <method name="gtk_widget_get_font_map" render="0"/>
-  <method name="gtk_widget_help_type_get_type" render="0"/>
+  <method name="gtk_widget_help_type_get_type" render="1"/>
 </renders>
 </castxml2pony>

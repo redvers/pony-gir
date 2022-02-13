@@ -21,6 +21,8 @@ use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
+use @gtk_bin_get_type[U64]()
+use @gtk_bin_get_child[GObjectStruct](bin: GObjectStruct tag)
 
 class GtkBin is GtkBinInterface
   var _ptr: GObjectStruct
@@ -34,4 +36,11 @@ class GtkBin is GtkBinInterface
 
 interface GtkBinInterface is GtkContainerInterface
   fun ref gobject(): GObjectStruct
+
+  fun ref gtk_bin_get_type(): U64 =>
+    @gtk_bin_get_type()
+
+  fun ref gtk_bin_get_child(): GtkWidget =>
+    var gobj: GObjectStruct =  @gtk_bin_get_child(gobject())
+    GtkWidget.from_ref(gobj)
 

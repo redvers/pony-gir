@@ -6,7 +6,7 @@
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
 <renders>
   <constructor name="gtk_cell_renderer_text_new" render="1"/>
-  <method name="gtk_cell_renderer_text_set_fixed_height_from_font" render="0"/>
-  <method name="gtk_cell_renderer_text_get_type" render="0"/>
+  <method name="gtk_cell_renderer_text_set_fixed_height_from_font" render="1"/>
+  <method name="gtk_cell_renderer_text_get_type" render="1"/>
 </renders>
 </castxml2pony>

@@ -22,6 +22,8 @@ use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
 use @gtk_cell_renderer_text_new[GObjectStruct]()
+use @gtk_cell_renderer_text_set_fixed_height_from_font[None](renderer: GObjectStruct tag, numberofrows: I32)
+use @gtk_cell_renderer_text_get_type[U64]()
 
 class GtkCellRendererText is GtkCellRendererTextInterface
   var _ptr: GObjectStruct
@@ -39,4 +41,10 @@ class GtkCellRendererText is GtkCellRendererTextInterface
 
 interface GtkCellRendererTextInterface is GtkCellRendererInterface
   fun ref gobject(): GObjectStruct
+
+  fun ref set_fixed_height_from_font(numberofrows: I32): None =>
+    @gtk_cell_renderer_text_set_fixed_height_from_font(gobject(), numberofrows)
+
+  fun ref get_type(): U64 =>
+    @gtk_cell_renderer_text_get_type()
 
