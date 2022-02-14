@@ -26,7 +26,8 @@ class GListStore is GListStoreInterface
 
 
   new g_list_store_new(itemtype: U64) =>
-   _ptr =  @g_list_store_new(itemtype)
+
+   _ptr = @g_list_store_new(itemtype)
 
 
 interface GListStoreInterface is GObjectInterface

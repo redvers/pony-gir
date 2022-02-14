@@ -6,31 +6,31 @@
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
 <renders>
   <renderuse name="gtk_cell_renderer_get_type" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_request_mode" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_preferred_width" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_preferred_height_for_width" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_preferred_height" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_preferred_width_for_height" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_preferred_size" render="1"/>
+  <renderuse name="gtk_cell_renderer_get_request_mode" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_preferred_width" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_preferred_height_for_width" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_preferred_height" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_preferred_width_for_height" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_preferred_size" render="0"/>
   <renderuse name="gtk_cell_renderer_get_aligned_area" render="0"/>
   <renderuse name="gtk_cell_renderer_get_size" render="0"/>
   <renderuse name="gtk_cell_renderer_render" render="0"/>
   <renderuse name="gtk_cell_renderer_activate" render="0"/>
   <renderuse name="gtk_cell_renderer_start_editing" render="0"/>
-  <renderuse name="gtk_cell_renderer_set_fixed_size" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_fixed_size" render="1"/>
-  <renderuse name="gtk_cell_renderer_set_alignment" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_alignment" render="1"/>
-  <renderuse name="gtk_cell_renderer_set_padding" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_padding" render="1"/>
-  <renderuse name="gtk_cell_renderer_set_visible" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_visible" render="1"/>
-  <renderuse name="gtk_cell_renderer_set_sensitive" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_sensitive" render="1"/>
-  <renderuse name="gtk_cell_renderer_is_activatable" render="1"/>
-  <renderuse name="gtk_cell_renderer_stop_editing" render="1"/>
-  <renderuse name="gtk_cell_renderer_get_state" render="1"/>
-  <renderuse name="gtk_cell_renderer_class_set_accessible_type" render="1"/>
-  <renderuse name="gtk_cell_renderer_mode_get_type" render="1"/>
+  <renderuse name="gtk_cell_renderer_set_fixed_size" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_fixed_size" render="0"/>
+  <renderuse name="gtk_cell_renderer_set_alignment" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_alignment" render="0"/>
+  <renderuse name="gtk_cell_renderer_set_padding" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_padding" render="0"/>
+  <renderuse name="gtk_cell_renderer_set_visible" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_visible" render="0"/>
+  <renderuse name="gtk_cell_renderer_set_sensitive" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_sensitive" render="0"/>
+  <renderuse name="gtk_cell_renderer_is_activatable" render="0"/>
+  <renderuse name="gtk_cell_renderer_stop_editing" render="0"/>
+  <renderuse name="gtk_cell_renderer_get_state" render="0"/>
+  <renderuse name="gtk_cell_renderer_class_set_accessible_type" render="0"/>
+  <renderuse name="gtk_cell_renderer_mode_get_type" render="0"/>
 </renders>
 </castxml2pony>

@@ -22,14 +22,17 @@ class GObject is GObjectInterface
 
 /*
   new gnew(objecttype: U64, firstpropertyname: String, ...) =>
-   _ptr =  @g_object_new(objecttype, firstpropertyname.cstring(), ...)
+
+   _ptr = @g_object_new(objecttype, firstpropertyname.cstring(), ...)
 */
 
   new newv(objecttype: U64, nparameters: U32, parameters: GParameterStruct tag) =>
-   _ptr =  @g_object_newv(objecttype, nparameters, parameters)
+
+   _ptr = @g_object_newv(objecttype, nparameters, parameters)
 
   new new_with_properties(objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8]], values: GValueStruct tag) =>
-   _ptr =  @g_object_new_with_properties(objecttype, nproperties, names, values)
+
+   _ptr = @g_object_new_with_properties(objecttype, nproperties, names, values)
 
 
 interface GObjectInterface

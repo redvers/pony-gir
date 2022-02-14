@@ -35,14 +35,7 @@ use @gtk_application_new[GObjectStruct](applicationid: Pointer[U8] tag, flags: I
 use @gtk_application_get_type[U64]()
 use @gtk_application_add_window[None](application: GObjectStruct tag, window: GObjectStruct tag)
 use @gtk_application_remove_window[None](application: GObjectStruct tag, window: GObjectStruct tag)
-use @gtk_application_inhibit[U32](application: GObjectStruct tag, window: GObjectStruct tag, flags: I32, reason: Pointer[U8] tag)
-use @gtk_application_uninhibit[None](application: GObjectStruct tag, cookie: U32)
-use @gtk_application_is_inhibited[I32](application: GObjectStruct tag, flags: I32)
-use @gtk_application_get_window_by_id[GObjectStruct](application: GObjectStruct tag, id: U32)
-use @gtk_application_get_active_window[GObjectStruct](application: GObjectStruct tag)
-use @gtk_application_list_action_descriptions[Pointer[Pointer[U8]]](application: GObjectStruct tag)
 use @gtk_application_prefers_app_menu[I32](application: GObjectStruct tag)
-use @gtk_application_inhibit_flags_get_type[U64]()
 
 class GtkApplication is GtkApplicationInterface
   var _ptr: GObjectStruct
@@ -70,29 +63,6 @@ interface GtkApplicationInterface is GApplicationInterface
   fun ref remove_window(window: GtkWindow): None =>
     @gtk_application_remove_window(gobject(), window.gobject())
 
-  fun ref inhibit(window: GtkWindow, flags: I32, reason: String): U32 =>
-    @gtk_application_inhibit(gobject(), window.gobject(), flags, reason.cstring())
-
-  fun ref uninhibit(cookie: U32): None =>
-    @gtk_application_uninhibit(gobject(), cookie)
-
-  fun ref is_inhibited(flags: I32): I32 =>
-    @gtk_application_is_inhibited(gobject(), flags)
-
-  fun ref get_window_by_id(id: U32): GtkWindow =>
-    var gobj: GObjectStruct =  @gtk_application_get_window_by_id(gobject(), id)
-    GtkWindow.from_ref(gobj)
-
-  fun ref get_active_window(): GtkWindow =>
-    var gobj: GObjectStruct =  @gtk_application_get_active_window(gobject())
-    GtkWindow.from_ref(gobj)
-
-  fun ref list_action_descriptions(): Pointer[Pointer[U8]] =>
-    @gtk_application_list_action_descriptions(gobject())
-
   fun ref prefers_app_menu(): I32 =>
     @gtk_application_prefers_app_menu(gobject())
-
-  fun ref inhibit_flags_get_type(): U64 =>
-    @gtk_application_inhibit_flags_get_type()
 

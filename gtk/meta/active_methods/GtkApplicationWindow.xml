@@ -7,10 +7,10 @@
 <renders>
   <constructor name="gtk_application_window_new" render="1"/>
   <method name="gtk_application_window_get_type" render="1"/>
-  <method name="gtk_application_window_set_show_menubar" render="1"/>
-  <method name="gtk_application_window_get_show_menubar" render="1"/>
+  <method name="gtk_application_window_set_show_menubar" render="0"/>
+  <method name="gtk_application_window_get_show_menubar" render="0"/>
   <method name="gtk_application_window_get_id" render="1"/>
-  <method name="gtk_application_window_set_help_overlay" render="1"/>
-  <method name="gtk_application_window_get_help_overlay" render="1"/>
+  <method name="gtk_application_window_set_help_overlay" render="0"/>
+  <method name="gtk_application_window_get_help_overlay" render="0"/>
 </renders>
 </castxml2pony>

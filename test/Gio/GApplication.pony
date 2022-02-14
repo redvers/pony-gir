@@ -24,7 +24,8 @@ class GApplication is GApplicationInterface
 
 
   new create(applicationid: String, flags: I32) =>
-   _ptr =  @g_application_new(applicationid.cstring(), flags)
+
+   _ptr = @g_application_new(applicationid.cstring(), flags)
 
 
 interface GApplicationInterface is GObjectInterface

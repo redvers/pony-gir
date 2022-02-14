@@ -6,30 +6,30 @@
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
 <renders>
   <constructor name="gtk_builder_new_from_file" render="1"/>
-  <constructor name="gtk_builder_new_from_resource" render="1"/>
+  <constructor name="gtk_builder_new_from_resource" render="0"/>
   <constructor name="gtk_builder_new_from_string" render="1"/>
   <constructor name="gtk_builder_new" render="1"/>
-  <method name="gtk_builder_error_quark" render="1"/>
+  <method name="gtk_builder_error_quark" render="0"/>
   <method name="gtk_builder_get_type" render="1"/>
   <method name="gtk_builder_add_from_file" render="1"/>
   <method name="gtk_builder_add_from_resource" render="1"/>
   <method name="gtk_builder_add_from_string" render="1"/>
-  <method name="gtk_builder_add_objects_from_file" render="1"/>
-  <method name="gtk_builder_add_objects_from_resource" render="1"/>
-  <method name="gtk_builder_add_objects_from_string" render="1"/>
+  <method name="gtk_builder_add_objects_from_file" render="0"/>
+  <method name="gtk_builder_add_objects_from_resource" render="0"/>
+  <method name="gtk_builder_add_objects_from_string" render="0"/>
   <method name="gtk_builder_get_object" render="1"/>
   <method name="gtk_builder_get_objects" render="0"/>
-  <method name="gtk_builder_expose_object" render="1"/>
+  <method name="gtk_builder_expose_object" render="0"/>
   <method name="gtk_builder_connect_signals" render="0"/>
-  <method name="gtk_builder_connect_signals_full" render="1"/>
-  <method name="gtk_builder_set_translation_domain" render="1"/>
-  <method name="gtk_builder_get_translation_domain" render="1"/>
+  <method name="gtk_builder_connect_signals_full" render="0"/>
+  <method name="gtk_builder_set_translation_domain" render="0"/>
+  <method name="gtk_builder_get_translation_domain" render="0"/>
   <method name="gtk_builder_get_type_from_name" render="1"/>
-  <method name="gtk_builder_value_from_string" render="1"/>
-  <method name="gtk_builder_value_from_string_type" render="1"/>
+  <method name="gtk_builder_value_from_string" render="0"/>
+  <method name="gtk_builder_value_from_string_type" render="0"/>
   <method name="gtk_builder_add_callback_symbol" render="0"/>
-  <method name="gtk_builder_add_callback_symbols" render="1"/>
-  <method name="gtk_builder_lookup_callback_symbol" render="1"/>
+  <method name="gtk_builder_add_callback_symbols" render="0"/>
+  <method name="gtk_builder_lookup_callback_symbol" render="0"/>
   <method name="gtk_builder_set_application" render="1"/>
   <method name="gtk_builder_get_application" render="1"/>
   <method name="gtk_builder_extend_with_template" render="1"/>

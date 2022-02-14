@@ -6,42 +6,42 @@
 <xi:include href="../../../castxml-results/gtk-3.xml"/>
 <renders>
   <method name="gtk_container_get_type" render="1"/>
-  <method name="gtk_container_set_border_width" render="1"/>
-  <method name="gtk_container_get_border_width" render="1"/>
+  <method name="gtk_container_set_border_width" render="0"/>
+  <method name="gtk_container_get_border_width" render="0"/>
   <method name="gtk_container_add" render="1"/>
   <method name="gtk_container_remove" render="1"/>
-  <method name="gtk_container_set_resize_mode" render="1"/>
-  <method name="gtk_container_get_resize_mode" render="1"/>
-  <method name="gtk_container_check_resize" render="1"/>
-  <method name="gtk_container_foreach" render="1"/>
+  <method name="gtk_container_set_resize_mode" render="0"/>
+  <method name="gtk_container_get_resize_mode" render="0"/>
+  <method name="gtk_container_check_resize" render="0"/>
+  <method name="gtk_container_foreach" render="0"/>
   <method name="gtk_container_get_children" render="0"/>
   <method name="gtk_container_propagate_draw" render="0"/>
   <method name="gtk_container_set_focus_chain" render="0"/>
   <method name="gtk_container_get_focus_chain" render="0"/>
-  <method name="gtk_container_unset_focus_chain" render="1"/>
-  <method name="gtk_container_set_reallocate_redraws" render="1"/>
-  <method name="gtk_container_set_focus_child" render="1"/>
-  <method name="gtk_container_get_focus_child" render="1"/>
-  <method name="gtk_container_set_focus_vadjustment" render="1"/>
-  <method name="gtk_container_get_focus_vadjustment" render="1"/>
-  <method name="gtk_container_set_focus_hadjustment" render="1"/>
-  <method name="gtk_container_get_focus_hadjustment" render="1"/>
-  <method name="gtk_container_resize_children" render="1"/>
-  <method name="gtk_container_child_type" render="1"/>
+  <method name="gtk_container_unset_focus_chain" render="0"/>
+  <method name="gtk_container_set_reallocate_redraws" render="0"/>
+  <method name="gtk_container_set_focus_child" render="0"/>
+  <method name="gtk_container_get_focus_child" render="0"/>
+  <method name="gtk_container_set_focus_vadjustment" render="0"/>
+  <method name="gtk_container_get_focus_vadjustment" render="0"/>
+  <method name="gtk_container_set_focus_hadjustment" render="0"/>
+  <method name="gtk_container_get_focus_hadjustment" render="0"/>
+  <method name="gtk_container_resize_children" render="0"/>
+  <method name="gtk_container_child_type" render="0"/>
   <method name="gtk_container_class_install_child_property" render="0"/>
   <method name="gtk_container_class_install_child_properties" render="0"/>
   <method name="gtk_container_class_find_child_property" render="0"/>
   <method name="gtk_container_class_list_child_properties" render="0"/>
-  <method name="gtk_container_add_with_properties" render="1"/>
-  <method name="gtk_container_child_set" render="1"/>
-  <method name="gtk_container_child_get" render="1"/>
+  <method name="gtk_container_add_with_properties" render="0"/>
+  <method name="gtk_container_child_set" render="0"/>
+  <method name="gtk_container_child_get" render="0"/>
   <method name="gtk_container_child_set_valist" render="0"/>
   <method name="gtk_container_child_get_valist" render="0"/>
-  <method name="gtk_container_child_set_property" render="1"/>
-  <method name="gtk_container_child_get_property" render="1"/>
-  <method name="gtk_container_child_notify" render="1"/>
-  <method name="gtk_container_child_notify_by_pspec" render="1"/>
-  <method name="gtk_container_forall" render="1"/>
+  <method name="gtk_container_child_set_property" render="0"/>
+  <method name="gtk_container_child_get_property" render="0"/>
+  <method name="gtk_container_child_notify" render="0"/>
+  <method name="gtk_container_child_notify_by_pspec" render="0"/>
+  <method name="gtk_container_forall" render="0"/>
   <method name="gtk_container_class_handle_border_width" render="0"/>
   <method name="gtk_container_get_path_for_child" render="0"/>
 </renders>
