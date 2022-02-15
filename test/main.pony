@@ -56,10 +56,30 @@ class AppState
     view.insert_column_with_attributes(-1, "Module", renderer1, "text", 1) // gtk_tree_view_insert_column_with_attributes (GTK_TREE_VIEW (view), -1, "Age", renderer, "text", COL_AGE, NULL);
 
 
-    let model: GtkListStore = create_and_fill_model() // GtkTreeModel *model = create_and_fill_model ();
+    let model: GtkTreeStore = create_and_fill_tree_model() // GtkTreeModel *model = create_and_fill_model ();
 		view.set_model(model) //  gtk_tree_view_set_model (GTK_TREE_VIEW (view), model);
-//  g_object_unref (model);
     view
+
+	fun create_and_fill_tree_model(): GtkTreeStore =>
+		let g_type_string: U64 = 16 << 2
+		let typearray: Array[U64] = Array[U64]
+		typearray.push(g_type_string)
+		typearray.push(g_type_string)
+		let store: GtkTreeStore = GtkTreeStore.gtk_tree_store_newv(2, typearray.cpointer()) // GtkListStore *store = gtk_list_store_new (NUM_COLS, G_TYPE_STRING, G_TYPE_UINT);
+
+		var glibiter: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
+		store.gtk_tree_store_append_root(glibiter) // gtk_list_store_append (store, &iter);
+    store.gtk_tree_store_set_string(glibiter, 0, "Glib")
+
+		var glibover: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
+		store.gtk_tree_store_append(glibover, glibiter) // gtk_list_store_append (store, &iter);
+    store.gtk_tree_store_set_string(glibover, 1, "Overview")
+
+
+    store
+
+
+
 
 	fun create_and_fill_model(): GtkListStore =>
 		let g_type_string: U64 = 16 << 2

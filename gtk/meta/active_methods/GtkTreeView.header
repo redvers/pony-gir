@@ -1,3 +1,4 @@
 /* Manually with this … declaration */
 use @gtk_tree_view_insert_column_with_attributes[I32](treeview: GObjectStruct tag, position: I32, title: Pointer[U8] tag, cell: GObjectStruct tag, ...)
+use @gtk_tree_view_set_model[None](treeview: GObjectStruct tag, model: GObjectStruct tag)
 

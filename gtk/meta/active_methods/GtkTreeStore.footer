@@ -1,0 +1,30 @@
+  fun ref gtk_tree_store_get_type(): U64 =>
+    @gtk_tree_store_get_type()
+
+  fun ref gtk_tree_store_set_column_types(ncolumns: I32, types: Pointer[U64] tag): None =>
+    @gtk_tree_store_set_column_types(gobject(), ncolumns, types)
+
+  fun ref gtk_tree_store_set_value(iter: GtkTreeIter, column: I32, value: GValueStruct tag): None =>
+    @gtk_tree_store_set_value(gobject(), iter.gobject(), column, value)
+
+  fun ref gtk_tree_store_set_valuesv(iter: GtkTreeIter, columns: Pointer[I32] tag, values: GValueStruct tag, nvalues: I32): None =>
+    @gtk_tree_store_set_valuesv(gobject(), iter.gobject(), columns, values, nvalues)
+
+  fun ref gtk_tree_store_remove(iter: GtkTreeIter): I32 =>
+    @gtk_tree_store_remove(gobject(), iter.gobject())
+
+  fun ref gtk_tree_store_iter_depth(iter: GtkTreeIter): I32 =>
+    @gtk_tree_store_iter_depth(gobject(), iter.gobject())
+
+  fun ref gtk_tree_store_clear(): None =>
+    @gtk_tree_store_clear(gobject())
+
+  fun ref gtk_tree_store_set_string(iter: GtkTreeIter, column: I32, value: String): None =>
+    @gtk_tree_store_set(gobject(), iter.gobject(), column, value.cstring(), I32(-1))
+
+  fun ref gtk_tree_store_append_root(iter: GtkTreeIter): None =>
+    @gtk_tree_store_append(gobject(), iter.gobject(), Pointer[None])
+
+  fun ref gtk_tree_store_append(iter: GtkTreeIter, parent: GtkTreeIter): None =>
+    @gtk_tree_store_append(gobject(), iter.gobject(), parent.gobject())
+

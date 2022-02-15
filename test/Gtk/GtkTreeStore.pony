@@ -21,12 +21,17 @@ use "lib:glib-2.0"
 use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
-use @gtk_tree_store_newv[GObjectStruct](ncolumns: I32, types: Pointer[U64] tag)
 use @gtk_tree_store_get_type[U64]()
 use @gtk_tree_store_set_column_types[None](treestore: GObjectStruct tag, ncolumns: I32, types: Pointer[U64] tag)
 use @gtk_tree_store_set_value[None](treestore: GObjectStruct tag, iter: GObjectStruct tag, column: I32, value: GValueStruct tag)
+use @gtk_tree_store_set[None](treestore: GObjectStruct tag, iter: GObjectStruct tag, ...)
 use @gtk_tree_store_set_valuesv[None](treestore: GObjectStruct tag, iter: GObjectStruct tag, columns: Pointer[I32] tag, values: GValueStruct tag, nvalues: I32)
-use @gtk_tree_store_append[None](treestore: GObjectStruct tag, iter: GObjectStruct tag, parent: GObjectStruct tag)
+use @gtk_tree_store_remove[I32](treestore: GObjectStruct tag, iter: GObjectStruct tag)
+use @gtk_tree_store_append[None](treestore: GObjectStruct tag, iter: GObjectStruct tag, ...)
+use @gtk_tree_store_iter_depth[I32](treestore: GObjectStruct tag, iter: GObjectStruct tag)
+use @gtk_tree_store_clear[None](treestore: GObjectStruct tag)
+
+use @gtk_tree_store_newv[GObjectStruct](ncolumns: I32, types: Pointer[U64] tag)
 
 class GtkTreeStore is GtkTreeStoreInterface
   var _ptr: GObjectStruct
@@ -56,6 +61,21 @@ interface GtkTreeStoreInterface is GObjectInterface
 
   fun ref gtk_tree_store_set_valuesv(iter: GtkTreeIter, columns: Pointer[I32] tag, values: GValueStruct tag, nvalues: I32): None =>
     @gtk_tree_store_set_valuesv(gobject(), iter.gobject(), columns, values, nvalues)
+
+  fun ref gtk_tree_store_remove(iter: GtkTreeIter): I32 =>
+    @gtk_tree_store_remove(gobject(), iter.gobject())
+
+  fun ref gtk_tree_store_iter_depth(iter: GtkTreeIter): I32 =>
+    @gtk_tree_store_iter_depth(gobject(), iter.gobject())
+
+  fun ref gtk_tree_store_clear(): None =>
+    @gtk_tree_store_clear(gobject())
+
+  fun ref gtk_tree_store_set_string(iter: GtkTreeIter, column: I32, value: String): None =>
+    @gtk_tree_store_set(gobject(), iter.gobject(), column, value.cstring(), I32(-1))
+
+  fun ref gtk_tree_store_append_root(iter: GtkTreeIter): None =>
+    @gtk_tree_store_append(gobject(), iter.gobject(), Pointer[None])
 
   fun ref gtk_tree_store_append(iter: GtkTreeIter, parent: GtkTreeIter): None =>
     @gtk_tree_store_append(gobject(), iter.gobject(), parent.gobject())
