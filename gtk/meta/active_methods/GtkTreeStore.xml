@@ -16,7 +16,7 @@
   <method name="gtk_tree_store_remove" render="0"/>
   <method name="gtk_tree_store_insert" render="0"/>
   <method name="gtk_tree_store_insert_before" render="0"/>
-  <method name="gtk_tree_store_insert_after" render="0"/>
+  <method name="gtk_tree_store_insert_after" render="1"/>
   <method name="gtk_tree_store_insert_with_values" render="0"/>
   <method name="gtk_tree_store_insert_with_valuesv" render="0"/>
   <method name="gtk_tree_store_prepend" render="0"/>

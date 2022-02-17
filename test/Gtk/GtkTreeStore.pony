@@ -32,6 +32,7 @@ use @gtk_tree_store_iter_depth[I32](treestore: GObjectStruct tag, iter: GObjectS
 use @gtk_tree_store_clear[None](treestore: GObjectStruct tag)
 
 use @gtk_tree_store_newv[GObjectStruct](ncolumns: I32, types: Pointer[U64] tag)
+use @gtk_tree_store_insert_after[None](treestore: GObjectStruct tag, iter: GObjectStruct tag, parent: GObjectStruct tag, sibling: GObjectStruct tag)
 
 class GtkTreeStore is GtkTreeStoreInterface
   var _ptr: GObjectStruct
@@ -49,6 +50,9 @@ class GtkTreeStore is GtkTreeStoreInterface
 
 interface GtkTreeStoreInterface is GObjectInterface
   fun ref gobject(): GObjectStruct
+
+  fun ref gtk_tree_store_insert_after(iter: GtkTreeIter, parent: GtkTreeIter, sibling: GtkTreeIter): None =>
+    @gtk_tree_store_insert_after(gobject(), iter.gobject(), parent.gobject(), sibling.gobject())
 
   fun ref gtk_tree_store_get_type(): U64 =>
     @gtk_tree_store_get_type()

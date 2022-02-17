@@ -17,12 +17,12 @@ actor Main
 
   let ss: GValueStruct = GValueStruct.new_string()
                          .>set_string("Hello World")
-	@printf("%lu\n".cstring(), ss)
+  @printf("%lu\n".cstring(), ss)
 
 //  env.out.print(ss.get_string())
 
-//	@g_value_set_string(ss, "Hello World\n".cstring())
-//	@g_value_set_int64(ss, I64(42))
+//  @g_value_set_string(ss, "Hello World\n".cstring())
+//  @g_value_set_int64(ss, I64(42))
 
 class AppState
   let env: Env
@@ -38,74 +38,80 @@ class AppState
     @printf("In activate()\n".cstring())
     builder = GtkBuilder.new_from_file("docs.glade")
     builder.add_callback_symbol[AppState]("appcallback", @{(gobj: GObjectStruct, data: AppState) => data.appcallback(gobj, "appcallback")})
+    builder.add_callback_symbol[AppState]("on_treeview_selection_changed", @{(gobj: GObjectStruct, data: AppState) => data.on_treeview_selection_changed(gobj, "appcallback")})
     builder.connect_signals[AppState](this)
     appwindow = GtkWindow.from_ref(builder.get_object("toplevel_window"))
-    let treeview: GtkTreeView = create_view_and_model()
-    scrolled_window = GtkScrolledWindow.from_ref(builder.get_object("widget_list_scrolledwindow"))
-    scrolled_window.add(treeview)
+    let view: GtkTreeView = GtkTreeView.from_ref(builder.get_object("treeview"))
+    let model: GtkTreeStore = create_and_fill_tree_model() // GtkTreeModel *model = create_and_fill_model ();
+    view.set_model(model) //  gtk_tree_view_set_model (GTK_TREE_VIEW (view), model);
     application.add_window(appwindow)
     appwindow.show_all()
 
-	fun create_view_and_model(): GtkTreeView =>
-    let view: GtkTreeView = GtkTreeView // GtkWidget *view = gtk_tree_view_new ();
-    let renderer0: GtkCellRendererText = GtkCellRendererText // renderer = gtk_cell_renderer_text_new ();
-    let renderer1: GtkCellRendererText = GtkCellRendererText // renderer = gtk_cell_renderer_text_new ();
+  fun create_and_fill_tree_model(): GtkTreeStore =>
+    let g_type_string: U64 = 16 << 2
+    let typearray: Array[U64] = Array[U64]
+    typearray.push(g_type_string)
+    typearray.push(g_type_string)
+    typearray.push(g_type_string)
+    let store: GtkTreeStore = GtkTreeStore.gtk_tree_store_newv(3, typearray.cpointer()) // GtkListStore *store = gtk_list_store_new (NUM_COLS, G_TYPE_STRING, G_TYPE_UINT);
 
-
-    view.insert_column_with_attributes(-1, "Package", renderer0, "text", 0) // gtk_tree_view_insert_column_with_attributes (GTK_TREE_VIEW (view), -1, "Name", renderer, "text", COL_NAME, NULL);
-    view.insert_column_with_attributes(-1, "Module", renderer1, "text", 1) // gtk_tree_view_insert_column_with_attributes (GTK_TREE_VIEW (view), -1, "Age", renderer, "text", COL_AGE, NULL);
-
-
-    let model: GtkTreeStore = create_and_fill_tree_model() // GtkTreeModel *model = create_and_fill_model ();
-		view.set_model(model) //  gtk_tree_view_set_model (GTK_TREE_VIEW (view), model);
-    view
-
-	fun create_and_fill_tree_model(): GtkTreeStore =>
-		let g_type_string: U64 = 16 << 2
-		let typearray: Array[U64] = Array[U64]
-		typearray.push(g_type_string)
-		typearray.push(g_type_string)
-		let store: GtkTreeStore = GtkTreeStore.gtk_tree_store_newv(2, typearray.cpointer()) // GtkListStore *store = gtk_list_store_new (NUM_COLS, G_TYPE_STRING, G_TYPE_UINT);
-
-		var glibiter: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
-		store.gtk_tree_store_append_root(glibiter) // gtk_list_store_append (store, &iter);
+    var glibiter: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
+    store.gtk_tree_store_append_root(glibiter) // gtk_list_store_append (store, &iter);
     store.gtk_tree_store_set_string(glibiter, 0, "Glib")
+    store.gtk_tree_store_set_string(glibiter, 1, "")
 
-		var glibover: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
-		store.gtk_tree_store_append(glibover, glibiter) // gtk_list_store_append (store, &iter);
-    store.gtk_tree_store_set_string(glibover, 1, "Overview")
+    let glibsections: Array[String] = ["Overview"; "GObject"; "RandomStuff"; "etc…"]
+    for f in glibsections.values() do
+      let glibover: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
+      store.gtk_tree_store_append(glibover, glibiter) // gtk_list_store_append (store, &iter);
+      store.gtk_tree_store_set_string(glibover, 0, "")
+      store.gtk_tree_store_set_string(glibover, 1, f)
+    end
 
+    var gtkiter: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
+    store.gtk_tree_store_append_root(gtkiter) // gtk_list_store_append (store, &iter);
+    store.gtk_tree_store_set_string(gtkiter, 0, "Gtk")
+    store.gtk_tree_store_set_string(gtkiter, 1, "")
 
+    let gtksections: Array[String] = ["Overview"; "GtkWindow"; "GtkBin"; "etc…"]
+    for f in gtksections.values() do
+      let gtkover: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
+      store.gtk_tree_store_append(gtkover, gtkiter) // gtk_list_store_append (store, &iter);
+      store.gtk_tree_store_set_string(gtkover, 0, "")
+      store.gtk_tree_store_set_string(gtkover, 1, f)
+    end
     store
 
 
 
+/*
+  fun create_and_fill_model(): GtkListStore =>
+    let g_type_string: U64 = 16 << 2
 
-	fun create_and_fill_model(): GtkListStore =>
-		let g_type_string: U64 = 16 << 2
+    let typearray: Array[U64] = Array[U64]
+    typearray.push(g_type_string)
+    typearray.push(g_type_string)
+    let store: GtkListStore = GtkListStore.gtk_list_store_newv(2, typearray.cpointer()) // GtkListStore *store = gtk_list_store_new (NUM_COLS, G_TYPE_STRING, G_TYPE_UINT);
+    var iter: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
 
-		let typearray: Array[U64] = Array[U64]
-		typearray.push(g_type_string)
-		typearray.push(g_type_string)
-		let store: GtkListStore = GtkListStore.gtk_list_store_newv(2, typearray.cpointer()) // GtkListStore *store = gtk_list_store_new (NUM_COLS, G_TYPE_STRING, G_TYPE_UINT);
-		var iter: GtkTreeIter = GtkTreeIter.from_ref(GObjectStruct)
-
-		store.gtk_list_store_append(iter) // gtk_list_store_append (store, &iter);
+    store.gtk_list_store_append(iter) // gtk_list_store_append (store, &iter);
 
     store.gtk_list_store_set_string(iter, 0, "Glib")
     store.gtk_list_store_set_string(iter, 1, "Overview")
-//		store.gtk_list_store_set(iter, 0, "GLib".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
-//		store.gtk_list_store_set(iter, 1, "Overview".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
+//    store.gtk_list_store_set(iter, 0, "GLib".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
+//    store.gtk_list_store_set(iter, 1, "Overview".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
 
-//		store.gtk_list_store_append(iter) // gtk_list_store_append (store, &iter);
-//		store.gtk_list_store_set(iter, 0, "GObject".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
-//		store.gtk_list_store_set(iter, 1, "Overview".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
+//    store.gtk_list_store_append(iter) // gtk_list_store_append (store, &iter);
+//    store.gtk_list_store_set(iter, 0, "GObject".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
+//    store.gtk_list_store_set(iter, 1, "Overview".cstring())// , 1, "Overview", -1)// gtk_list_store_set (store, &iter, COL_NAME, "Heinz El-Mann", COL_AGE, 51, -1);
 
-		store
+    store
 
-
-
+*/
 
   fun appcallback(gobj: GObjectStruct, data: String) =>
     @printf("In appcallback()\n".cstring())
     Gtk.main_quit()
+
+  fun on_treeview_selection_changed(gobj: GObjectStruct, data: String) =>
+    @printf("In on_tree()\n".cstring())
