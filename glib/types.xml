@@ -1,0 +1,81 @@
+<typedefs>
+  <typedef name="String"
+    ponytypein="String"
+    ponytypeinconv=".cstring()"
+    ponytypeout="String"
+    structtype="Pointer[U8]"
+    structdef="Pointer[U8]"
+    argtype="Pointer[U8] tag"
+    rvtype="Pointer[U8]">
+    <ponytypeconvout>
+      <prefixs>
+        <prefix>var pcstring: Pointer[U8] = </prefix>
+      </prefixs>
+      <suffixes>
+        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume p</suffix>
+      </suffixes>
+    </ponytypeconvout>
+  </typedef>
+
+  <typedef name="Array[String]"
+    ponytypein="Array[String]"
+    ponytypeinconv=""
+    ponytypeout="Pointer[Pointer[U8]]"
+    structtype="Pointer[Pointer[U8]]"
+    structdef="Pointer[Pointer[U8]]"
+    argtype="Pointer[Pointer[U8]] tag"
+    rvtype="Pointer[Pointer[U8]]"/>
+
+<typedef name="NullablePointer[_GSourceCallbackFuncs]" ponytypein="NullablePointer[_GSourceCallbackFuncs] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GSourceCallbackFuncs]" structtype="NullablePointer[_GSourceCallbackFuncs]" structdef="NullablePointer[_GSourceCallbackFuncs].none()" argtype="NullablePointer[_GSourceCallbackFuncs] tag" rvtype="NullablePointer[_GSourceCallbackFuncs]"/>
+<typedef name="NullablePointer[_GList]" ponytypein="NullablePointer[_GList] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GList]" structtype="NullablePointer[_GList]" structdef="NullablePointer[_GList].none()" argtype="NullablePointer[_GList] tag" rvtype="NullablePointer[_GList]"/>
+<typedef name="U32" ponytypein="U32" ponytypeinconv="" ponytypeout="U32" structtype="U32" structdef="U32(0)" argtype="U32" rvtype="U32"/>
+<typedef name="NullablePointer[_Pthreadinternalslist]" ponytypein="NullablePointer[_Pthreadinternalslist] tag" ponytypeinconv="" ponytypeout="NullablePointer[_Pthreadinternalslist]" structtype="NullablePointer[_Pthreadinternalslist]" structdef="NullablePointer[_Pthreadinternalslist].none()" argtype="NullablePointer[_Pthreadinternalslist] tag" rvtype="NullablePointer[_Pthreadinternalslist]"/>
+<typedef name="I64" ponytypein="I64" ponytypeinconv="" ponytypeout="I64" structtype="I64" structdef="I64(0)" argtype="I64" rvtype="I64"/>
+<typedef name="_Libcfpstate" ponytypein="_Libcfpstate tag" ponytypeinconv="" ponytypeout="_Libcfpstate" structtype="_Libcfpstate" structdef="_Libcfpstate" argtype="_Libcfpstate tag" rvtype="_Libcfpstate"/>
+<typedef name="_" ponytypein="_ tag" ponytypeinconv="" ponytypeout="_" structtype="_" structdef="_" argtype="_ tag" rvtype="_"/>
+<typedef name="I16" ponytypein="I16" ponytypeinconv="" ponytypeout="I16" structtype="I16" structdef="I16(0)" argtype="I16" rvtype="I16"/>
+<typedef name="Pointer[_Libcfpxreg]" ponytypein="Pointer[_Libcfpxreg] tag" ponytypeinconv="" ponytypeout="Pointer[_Libcfpxreg]" structtype="Pointer[_Libcfpxreg]" structdef="Pointer[_Libcfpxreg]" argtype="Pointer[_Libcfpxreg] tag" rvtype="Pointer[_Libcfpxreg]"/>
+<typedef name="NullablePointer[_GData]" ponytypein="NullablePointer[_GData] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GData]" structtype="NullablePointer[_GData]" structdef="NullablePointer[_GData].none()" argtype="NullablePointer[_GData] tag" rvtype="NullablePointer[_GData]"/>
+<typedef name="NullablePointer[_GNode]" ponytypein="NullablePointer[_GNode] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GNode]" structtype="NullablePointer[_GNode]" structdef="NullablePointer[_GNode].none()" argtype="NullablePointer[_GNode] tag" rvtype="NullablePointer[_GNode]"/>
+<typedef name="NullablePointer[_GHashTable]" ponytypein="NullablePointer[_GHashTable] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GHashTable]" structtype="NullablePointer[_GHashTable]" structdef="NullablePointer[_GHashTable].none()" argtype="NullablePointer[_GHashTable] tag" rvtype="NullablePointer[_GHashTable]"/>
+<typedef name="NullablePointer[_Ucontextt]" ponytypein="NullablePointer[_Ucontextt] tag" ponytypeinconv="" ponytypeout="NullablePointer[_Ucontextt]" structtype="NullablePointer[_Ucontextt]" structdef="NullablePointer[_Ucontextt].none()" argtype="NullablePointer[_Ucontextt] tag" rvtype="NullablePointer[_Ucontextt]"/>
+<typedef name="NullablePointer[_GSource]" ponytypein="NullablePointer[_GSource] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GSource]" structtype="NullablePointer[_GSource]" structdef="NullablePointer[_GSource].none()" argtype="NullablePointer[_GSource] tag" rvtype="NullablePointer[_GSource]"/>
+<typedef name="Pointer[U64]" ponytypein="Pointer[U64] tag" ponytypeinconv="" ponytypeout="Pointer[U64]" structtype="Pointer[U64]" structdef="Pointer[U64]" argtype="Pointer[U64] tag" rvtype="Pointer[U64]"/>
+<typedef name="NullablePointer[_GScannerConfig]" ponytypein="NullablePointer[_GScannerConfig] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GScannerConfig]" structtype="NullablePointer[_GScannerConfig]" structdef="NullablePointer[_GScannerConfig].none()" argtype="NullablePointer[_GScannerConfig] tag" rvtype="NullablePointer[_GScannerConfig]"/>
+<typedef name="NullablePointer[_GSourceFuncs]" ponytypein="NullablePointer[_GSourceFuncs] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GSourceFuncs]" structtype="NullablePointer[_GSourceFuncs]" structdef="NullablePointer[_GSourceFuncs].none()" argtype="NullablePointer[_GSourceFuncs] tag" rvtype="NullablePointer[_GSourceFuncs]"/>
+<typedef name="Pointer[_Xmmreg]" ponytypein="Pointer[_Xmmreg] tag" ponytypeinconv="" ponytypeout="Pointer[_Xmmreg]" structtype="Pointer[_Xmmreg]" structdef="Pointer[_Xmmreg]" argtype="Pointer[_Xmmreg] tag" rvtype="Pointer[_Xmmreg]"/>
+<typedef name="_Xsavehdr" ponytypein="_Xsavehdr tag" ponytypeinconv="" ponytypeout="_Xsavehdr" structtype="_Xsavehdr" structdef="_Xsavehdr" argtype="_Xsavehdr tag" rvtype="_Xsavehdr"/>
+<typedef name="NullablePointer[_GIOFuncs]" ponytypein="NullablePointer[_GIOFuncs] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GIOFuncs]" structtype="NullablePointer[_GIOFuncs]" structdef="NullablePointer[_GIOFuncs].none()" argtype="NullablePointer[_GIOFuncs] tag" rvtype="NullablePointer[_GIOFuncs]"/>
+<typedef name="NullablePointer[_Pthreadcleanupbuffer]" ponytypein="NullablePointer[_Pthreadcleanupbuffer] tag" ponytypeinconv="" ponytypeout="NullablePointer[_Pthreadcleanupbuffer]" structtype="NullablePointer[_Pthreadcleanupbuffer]" structdef="NullablePointer[_Pthreadcleanupbuffer].none()" argtype="NullablePointer[_Pthreadcleanupbuffer] tag" rvtype="NullablePointer[_Pthreadcleanupbuffer]"/>
+<typedef name="_Fpstate" ponytypein="_Fpstate tag" ponytypeinconv="" ponytypeout="_Fpstate" structtype="_Fpstate" structdef="_Fpstate" argtype="_Fpstate tag" rvtype="_Fpstate"/>
+<typedef name="Pointer[U8]" ponytypein="Pointer[U8] tag" ponytypeinconv="" ponytypeout="Pointer[U8]" structtype="Pointer[U8]" structdef="Pointer[U8]" argtype="Pointer[U8] tag" rvtype="Pointer[U8]"/>
+<typedef name="NullablePointer[_GTrashStack]" ponytypein="NullablePointer[_GTrashStack] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GTrashStack]" structtype="NullablePointer[_GTrashStack]" structdef="NullablePointer[_GTrashStack].none()" argtype="NullablePointer[_GTrashStack] tag" rvtype="NullablePointer[_GTrashStack]"/>
+<typedef name="I8" ponytypein="I8" ponytypeinconv="" ponytypeout="I8" structtype="I8" structdef="I8(0)" argtype="I8" rvtype="I8"/>
+<typedef name="Pointer[None]" ponytypein="Pointer[None] tag" ponytypeinconv="" ponytypeout="Pointer[None]" structtype="Pointer[None]" structdef="Pointer[None]" argtype="Pointer[None] tag" rvtype="Pointer[None]"/>
+<typedef name="I32" ponytypein="I32" ponytypeinconv="" ponytypeout="I32" structtype="I32" structdef="I32(0)" argtype="I32" rvtype="I32"/>
+<typedef name="Pointer[U32]" ponytypein="Pointer[U32] tag" ponytypeinconv="" ponytypeout="Pointer[U32]" structtype="Pointer[U32]" structdef="Pointer[U32]" argtype="Pointer[U32] tag" rvtype="Pointer[U32]"/>
+<typedef name="NullablePointer[_GMainContext]" ponytypein="NullablePointer[_GMainContext] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GMainContext]" structtype="NullablePointer[_GMainContext]" structdef="NullablePointer[_GMainContext].none()" argtype="NullablePointer[_GMainContext] tag" rvtype="NullablePointer[_GMainContext]"/>
+<typedef name="NullablePointer[Pointer[None]]" ponytypein="NullablePointer[Pointer[None]] tag" ponytypeinconv="" ponytypeout="NullablePointer[Pointer[None]]" structtype="NullablePointer[Pointer[None]]" structdef="NullablePointer[Pointer[None]].none()" argtype="NullablePointer[Pointer[None]] tag" rvtype="NullablePointer[Pointer[None]]"/>
+<typedef name="U64" ponytypein="U64" ponytypeinconv="" ponytypeout="U64" structtype="U64" structdef="U64(0)" argtype="U64" rvtype="U64"/>
+<typedef name="_Timespec" ponytypein="_Timespec tag" ponytypeinconv="" ponytypeout="_Timespec" structtype="_Timespec" structdef="_Timespec" argtype="_Timespec tag" rvtype="_Timespec"/>
+<typedef name="NullablePointer[_GSourcePrivate]" ponytypein="NullablePointer[_GSourcePrivate] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GSourcePrivate]" structtype="NullablePointer[_GSourcePrivate]" structdef="NullablePointer[_GSourcePrivate].none()" argtype="NullablePointer[_GSourcePrivate] tag" rvtype="NullablePointer[_GSourcePrivate]"/>
+<typedef name="Pointer[I32]" ponytypein="Pointer[I32] tag" ponytypeinconv="" ponytypeout="Pointer[I32]" structtype="Pointer[I32]" structdef="Pointer[I32]" argtype="Pointer[I32] tag" rvtype="Pointer[I32]"/>
+<typedef name="_Pthreadinternallist" ponytypein="_Pthreadinternallist tag" ponytypeinconv="" ponytypeout="_Pthreadinternallist" structtype="_Pthreadinternallist" structdef="_Pthreadinternallist" argtype="_Pthreadinternallist tag" rvtype="_Pthreadinternallist"/>
+<typedef name="U16" ponytypein="U16" ponytypeinconv="" ponytypeout="U16" structtype="U16" structdef="U16(0)" argtype="U16" rvtype="U16"/>
+<typedef name="Pointer[_Fpxreg]" ponytypein="Pointer[_Fpxreg] tag" ponytypeinconv="" ponytypeout="Pointer[_Fpxreg]" structtype="Pointer[_Fpxreg]" structdef="Pointer[_Fpxreg]" argtype="Pointer[_Fpxreg] tag" rvtype="Pointer[_Fpxreg]"/>
+<typedef name="None" ponytypein="None tag" ponytypeinconv="" ponytypeout="None" structtype="None" structdef="None" argtype="None tag" rvtype="None"/>
+<typedef name="Pointer[Pointer[None]]" ponytypein="Pointer[Pointer[None]] tag" ponytypeinconv="" ponytypeout="Pointer[Pointer[None]]" structtype="Pointer[Pointer[None]]" structdef="Pointer[Pointer[None]]" argtype="Pointer[Pointer[None]] tag" rvtype="Pointer[Pointer[None]]"/>
+<typedef name="Pointer[String]" ponytypein="Pointer[String] tag" ponytypeinconv="" ponytypeout="Pointer[String]" structtype="Pointer[String]" structdef="Pointer[String]" argtype="Pointer[String] tag" rvtype="Pointer[String]"/>
+<typedef name="NullablePointer[_GSList]" ponytypein="NullablePointer[_GSList] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GSList]" structtype="NullablePointer[_GSList]" structdef="NullablePointer[_GSList].none()" argtype="NullablePointer[_GSList] tag" rvtype="NullablePointer[_GSList]"/>
+<typedef name="NullablePointer[_Pthreadinternallist]" ponytypein="NullablePointer[_Pthreadinternallist] tag" ponytypeinconv="" ponytypeout="NullablePointer[_Pthreadinternallist]" structtype="NullablePointer[_Pthreadinternallist]" structdef="NullablePointer[_Pthreadinternallist].none()" argtype="NullablePointer[_Pthreadinternallist] tag" rvtype="NullablePointer[_Pthreadinternallist]"/>
+<typedef name="Pointer[U16]" ponytypein="Pointer[U16] tag" ponytypeinconv="" ponytypeout="Pointer[U16]" structtype="Pointer[U16]" structdef="Pointer[U16]" argtype="Pointer[U16] tag" rvtype="Pointer[U16]"/>
+<typedef name="Pointer[_Libcxmmreg]" ponytypein="Pointer[_Libcxmmreg] tag" ponytypeinconv="" ponytypeout="Pointer[_Libcxmmreg]" structtype="Pointer[_Libcxmmreg]" structdef="Pointer[_Libcxmmreg]" argtype="Pointer[_Libcxmmreg] tag" rvtype="Pointer[_Libcxmmreg]"/>
+<typedef name="NullablePointer[_GHook]" ponytypein="NullablePointer[_GHook] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GHook]" structtype="NullablePointer[_GHook]" structdef="NullablePointer[_GHook].none()" argtype="NullablePointer[_GHook] tag" rvtype="NullablePointer[_GHook]"/>
+<typedef name="Pointer[NullablePointer[_Localedata]]" ponytypein="Pointer[NullablePointer[_Localedata]] tag" ponytypeinconv="" ponytypeout="Pointer[NullablePointer[_Localedata]]" structtype="Pointer[NullablePointer[_Localedata]]" structdef="Pointer[NullablePointer[_Localedata]]" argtype="Pointer[NullablePointer[_Localedata]] tag" rvtype="Pointer[NullablePointer[_Localedata]]"/>
+<typedef name="NullablePointer[_GIConv]" ponytypein="NullablePointer[_GIConv] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GIConv]" structtype="NullablePointer[_GIConv]" structdef="NullablePointer[_GIConv].none()" argtype="NullablePointer[_GIConv] tag" rvtype="NullablePointer[_GIConv]"/>
+<typedef name="_Ymmhstate" ponytypein="_Ymmhstate tag" ponytypeinconv="" ponytypeout="_Ymmhstate" structtype="_Ymmhstate" structdef="_Ymmhstate" argtype="_Ymmhstate tag" rvtype="_Ymmhstate"/>
+<typedef name="U8" ponytypein="U8" ponytypeinconv="" ponytypeout="U8" structtype="U8" structdef="U8(0)" argtype="U8" rvtype="U8"/>
+<typedef name="NullablePointer[_GCond]" ponytypein="NullablePointer[_GCond] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GCond]" structtype="NullablePointer[_GCond]" structdef="NullablePointer[_GCond].none()" argtype="NullablePointer[_GCond] tag" rvtype="NullablePointer[_GCond]"/>
+<typedef name="NullablePointer[_GString]" ponytypein="NullablePointer[_GString] tag" ponytypeinconv="" ponytypeout="NullablePointer[_GString]" structtype="NullablePointer[_GString]" structdef="NullablePointer[_GString].none()" argtype="NullablePointer[_GString] tag" rvtype="NullablePointer[_GString]"/></typedefs>
+
