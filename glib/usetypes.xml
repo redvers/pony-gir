@@ -12,14 +12,14 @@
         <prefix>var pcstring: Pointer[U8] = </prefix>
       </prefixs>
       <suffixes>
-        <suffix>let p: String iso = String.from_cstring(pcstring).clone()</suffix>
-        <suffix>consume p</suffix>
+        <suffix>let ponyiso: String iso = String.from_cstring(pcstring).clone()</suffix>
+        <suffix>consume ponyiso</suffix>
       </suffixes>
     </ponytypeconvout>
   </typedef>
 
   <typedef name="Array[String]"
-    ponytypein="Array[String]"
+    ponytypein="Pointer[Pointer[U8]] tag"
     ponytypeinconv=""
     ponytypeout="Pointer[Pointer[U8]]"
     structtype="Pointer[Pointer[U8]]"
