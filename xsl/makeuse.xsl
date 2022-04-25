@@ -4,9 +4,9 @@
 <xsl:strip-space elements="*"/>
 <xsl:param name="debug" />
 
-<xsl:template match="/castxml2pony/renders/renderuse[@render='1']"> 
-  <xsl:variable name="fnname" select="./@name"/>
-  <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@name=$fnname]"/><xsl:with-param name="render" select="1"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
+<xsl:template match="/castxml2pony/renderuses/renderuse[@render='1']"> 
+  <xsl:variable name="fnname" select="./@id"/>
+  <xsl:call-template name="mainuse"><xsl:with-param name="n" select="/castxml2pony/uses/use[@id=$fnname]"/><xsl:with-param name="render" select="1"/><xsl:with-param name="debug" select="$debug"/></xsl:call-template>
 </xsl:template>
 
 
