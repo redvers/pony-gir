@@ -1,30 +1,7 @@
-primitive Glib
+use "lib:glib-2.0"
 
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:72
-  Original Name: g_allocator_freeheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:72
+primitive GlibSYS
 
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_allocator_free(allocator: NullablePointer[_GAllocator] tag): None =>
-    @g_allocator_free(allocator)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:69
-  Original Name: g_allocator_newheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:69
-
-  Return Value: [PointerType size=64]->[Struct size=,fid: f121]
-
-  Arguments:
-    [PointerType size=64]->[FundamentalType(char) size=8]
-    [FundamentalType(unsigned int) size=32]
-*/
-  fun g_allocator_new(name: String, npreallocs: U32): NullablePointer[_GAllocator] =>
-    @g_allocator_new(name.cstring(), npreallocs)
 
 
 /*
@@ -1564,18 +1541,6 @@ primitive Glib
 
 
 /*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:65
-  Original Name: g_blow_chunksheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:65
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-*/
-  fun g_blow_chunks(): None =>
-    @g_blow_chunks()
-
-
-/*
   Source: headers/glib-2.70.1/glib-2.0/glib/gbookmarkfile.h:152
   Original Name: g_bookmark_file_add_applicationheaders/glib-2.70.1/glib-2.0/glib/gbookmarkfile.h:152
 
@@ -2786,96 +2751,6 @@ primitive Glib
 */
   fun g_bytes_unref_to_data(bytes: NullablePointer[_GBytes] tag, size: Pointer[U64] tag): Pointer[None] =>
     @g_bytes_unref_to_data(bytes, size)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:55
-  Original Name: g_cache_destroyheaders/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:55
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f122]
-*/
-  fun g_cache_destroy(cache: NullablePointer[_GCache] tag): None =>
-    @g_cache_destroy(cache)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:57
-  Original Name: g_cache_insertheaders/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:57
-
-  Return Value: [PointerType size=64]->[FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f122]
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_cache_insert(cache: NullablePointer[_GCache] tag, key: Pointer[None] tag): Pointer[None] =>
-    @g_cache_insert(cache, key)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:63
-  Original Name: g_cache_key_foreachheaders/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:63
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f122]
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_cache_key_foreach(cache: NullablePointer[_GCache] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
-    @g_cache_key_foreach(cache, func, userdata)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:47
-  Original Name: g_cache_newheaders/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:47
-
-  Return Value: [PointerType size=64]->[Struct size=,fid: f122]
-
-  Arguments:
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-*/
-  fun g_cache_new(valuenewfunc: Pointer[None] tag, valuedestroyfunc: Pointer[None] tag, keydupfunc: Pointer[None] tag, keydestroyfunc: Pointer[None] tag, hashkeyfunc: Pointer[None] tag, hashvaluefunc: Pointer[None] tag, keyequalfunc: Pointer[None] tag): NullablePointer[_GCache] =>
-    @g_cache_new(valuenewfunc, valuedestroyfunc, keydupfunc, keydestroyfunc, hashkeyfunc, hashvaluefunc, keyequalfunc)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:60
-  Original Name: g_cache_removeheaders/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:60
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f122]
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_cache_remove(cache: NullablePointer[_GCache] tag, value: Pointer[None] tag): None =>
-    @g_cache_remove(cache, value)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:67
-  Original Name: g_cache_value_foreachheaders/glib-2.70.1/glib-2.0/glib/deprecated/gcache.h:67
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f122]
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_cache_value_foreach(cache: NullablePointer[_GCache] tag, func: Pointer[None] tag, userdata: Pointer[None] tag): None =>
-    @g_cache_value_foreach(cache, func, userdata)
 
 
 /*
@@ -8850,18 +8725,6 @@ primitive Glib
 
 
 /*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:76
-  Original Name: g_list_pop_allocatorheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:76
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-*/
-  fun g_list_pop_allocator(): None =>
-    @g_list_pop_allocator()
-
-
-/*
   Source: headers/glib-2.70.1/glib-2.0/glib/glist.h:124
   Original Name: g_list_positionheaders/glib-2.70.1/glib-2.0/glib/glist.h:124
 
@@ -8887,19 +8750,6 @@ primitive Glib
 */
   fun g_list_prepend(list: NullablePointer[_GList] tag, data: Pointer[None] tag): NullablePointer[_GList] =>
     @g_list_prepend(list, data)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:74
-  Original Name: g_list_push_allocatorheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:74
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_list_push_allocator(allocator: NullablePointer[_GAllocator] tag): None =>
-    @g_list_push_allocator(allocator)
 
 
 /*
@@ -10395,126 +10245,6 @@ primitive Glib
 
 
 /*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:52
-  Original Name: g_mem_chunk_alloc0headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:52
-
-  Return Value: [PointerType size=64]->[FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_mem_chunk_alloc0(memchunk: NullablePointer[_GMemChunk] tag): Pointer[None] =>
-    @g_mem_chunk_alloc0(memchunk)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:50
-  Original Name: g_mem_chunk_allocheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:50
-
-  Return Value: [PointerType size=64]->[FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_mem_chunk_alloc(memchunk: NullablePointer[_GMemChunk] tag): Pointer[None] =>
-    @g_mem_chunk_alloc(memchunk)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:57
-  Original Name: g_mem_chunk_cleanheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:57
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_mem_chunk_clean(memchunk: NullablePointer[_GMemChunk] tag): None =>
-    @g_mem_chunk_clean(memchunk)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:48
-  Original Name: g_mem_chunk_destroyheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:48
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_mem_chunk_destroy(memchunk: NullablePointer[_GMemChunk] tag): None =>
-    @g_mem_chunk_destroy(memchunk)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:54
-  Original Name: g_mem_chunk_freeheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:54
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_mem_chunk_free(memchunk: NullablePointer[_GMemChunk] tag, mem: Pointer[None] tag): None =>
-    @g_mem_chunk_free(memchunk, mem)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:63
-  Original Name: g_mem_chunk_infoheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:63
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-*/
-  fun g_mem_chunk_info(): None =>
-    @g_mem_chunk_info()
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:43
-  Original Name: g_mem_chunk_newheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:43
-
-  Return Value: [PointerType size=64]->[Struct size=,fid: f121]
-
-  Arguments:
-    [PointerType size=64]->[FundamentalType(char) size=8]
-    [FundamentalType(int) size=32]
-    [FundamentalType(long unsigned int) size=64]
-    [FundamentalType(int) size=32]
-*/
-  fun g_mem_chunk_new(name: String, atomsize: I32, areasize: U64, gtype: I32): NullablePointer[_GMemChunk] =>
-    @g_mem_chunk_new(name.cstring(), atomsize, areasize, gtype)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:61
-  Original Name: g_mem_chunk_printheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:61
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_mem_chunk_print(memchunk: NullablePointer[_GMemChunk] tag): None =>
-    @g_mem_chunk_print(memchunk)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:59
-  Original Name: g_mem_chunk_resetheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:59
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_mem_chunk_reset(memchunk: NullablePointer[_GMemChunk] tag): None =>
-    @g_mem_chunk_reset(memchunk)
-
-
-/*
   Source: headers/glib-2.70.1/glib-2.0/glib/gstrfuncs.h:261
   Original Name: g_memdup2headers/glib-2.70.1/glib-2.0/glib/gstrfuncs.h:261
 
@@ -11051,18 +10781,6 @@ primitive Glib
 
 
 /*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:84
-  Original Name: g_node_pop_allocatorheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:84
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-*/
-  fun g_node_pop_allocator(): None =>
-    @g_node_pop_allocator()
-
-
-/*
   Source: headers/glib-2.70.1/glib-2.0/glib/gnode.h:123
   Original Name: g_node_prependheaders/glib-2.70.1/glib-2.0/glib/gnode.h:123
 
@@ -11074,19 +10792,6 @@ primitive Glib
 */
   fun g_node_prepend(parent: NullablePointer[_GNode] tag, node: NullablePointer[_GNode] tag): NullablePointer[_GNode] =>
     @g_node_prepend(parent, node)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:82
-  Original Name: g_node_push_allocatorheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:82
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_node_push_allocator(allocator: NullablePointer[_GAllocator] tag): None =>
-    @g_node_push_allocator(allocator)
 
 
 /*
@@ -14018,106 +13723,6 @@ primitive Glib
 
 
 /*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:88
-  Original Name: g_relation_countheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:88
-
-  Return Value: [FundamentalType(int) size=32]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f124]
-    [PointerType size=64]->[FundamentalType(void) size=0]
-    [FundamentalType(int) size=32]
-*/
-  fun g_relation_count(relation: NullablePointer[_GRelation] tag, key: Pointer[None] tag, field: I32): I32 =>
-    @g_relation_count(relation, key, field)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:80
-  Original Name: g_relation_deleteheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:80
-
-  Return Value: [FundamentalType(int) size=32]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f124]
-    [PointerType size=64]->[FundamentalType(void) size=0]
-    [FundamentalType(int) size=32]
-*/
-  fun g_relation_delete(relation: NullablePointer[_GRelation] tag, key: Pointer[None] tag, field: I32): I32 =>
-    @g_relation_delete(relation, key, field)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:70
-  Original Name: g_relation_destroyheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:70
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f124]
-*/
-  fun g_relation_destroy(relation: NullablePointer[_GRelation] tag): None =>
-    @g_relation_destroy(relation)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:72
-  Original Name: g_relation_indexheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:72
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f124]
-    [FundamentalType(int) size=32]
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-*/
-  fun g_relation_index(relation: NullablePointer[_GRelation] tag, field: I32, hashfunc: Pointer[None] tag, keyequalfunc: Pointer[None] tag): None =>
-    @g_relation_index(relation, field, hashfunc, keyequalfunc)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:68
-  Original Name: g_relation_newheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:68
-
-  Return Value: [PointerType size=64]->[Struct size=,fid: f124]
-
-  Arguments:
-    [FundamentalType(int) size=32]
-*/
-  fun g_relation_new(fields: I32): NullablePointer[_GRelation] =>
-    @g_relation_new(fields)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:95
-  Original Name: g_relation_printheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:95
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f124]
-*/
-  fun g_relation_print(relation: NullablePointer[_GRelation] tag): None =>
-    @g_relation_print(relation)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:84
-  Original Name: g_relation_selectheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:84
-
-  Return Value: [PointerType size=64]->[Struct size=32,fid: f124]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f124]
-    [PointerType size=64]->[FundamentalType(void) size=0]
-    [FundamentalType(int) size=32]
-*/
-  fun g_relation_select(relation: NullablePointer[_GRelation] tag, key: Pointer[None] tag, field: I32): NullablePointer[_GTuples] =>
-    @g_relation_select(relation, key, field)
-
-
-/*
   Source: headers/glib-2.70.1/glib-2.0/glib/gutils.h:193
   Original Name: g_reload_user_special_dirs_cacheheaders/glib-2.70.1/glib-2.0/glib/gutils.h:193
 
@@ -15655,18 +15260,6 @@ primitive Glib
 
 
 /*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:80
-  Original Name: g_slist_pop_allocatorheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:80
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-*/
-  fun g_slist_pop_allocator(): None =>
-    @g_slist_pop_allocator()
-
-
-/*
   Source: headers/glib-2.70.1/glib-2.0/glib/gslist.h:115
   Original Name: g_slist_positionheaders/glib-2.70.1/glib-2.0/glib/gslist.h:115
 
@@ -15692,19 +15285,6 @@ primitive Glib
 */
   fun g_slist_prepend(list: NullablePointer[_GSList] tag, data: Pointer[None] tag): NullablePointer[_GSList] =>
     @g_slist_prepend(list, data)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:78
-  Original Name: g_slist_push_allocatorheaders/glib-2.70.1/glib-2.0/glib/deprecated/gallocator.h:78
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=,fid: f121]
-*/
-  fun g_slist_push_allocator(allocator: NullablePointer[_GAllocator] tag): None =>
-    @g_slist_push_allocator(allocator)
 
 
 /*
@@ -17765,188 +17345,6 @@ primitive Glib
 
 
 /*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:106
-  Original Name: g_thread_create_fullheaders/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:106
-
-  Return Value: [PointerType size=64]->[Struct size=192,fid: f39]
-
-  Arguments:
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FundamentalType(void) size=0]
-    [FundamentalType(long unsigned int) size=64]
-    [FundamentalType(int) size=32]
-    [FundamentalType(int) size=32]
-    [Enumeration size=32,fid: f39]
-    [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
-*/
-  fun g_thread_create_full(func: Pointer[None] tag, data: Pointer[None] tag, stacksize: U64, joinable: I32, bound: I32, priority: I32, gerror: Pointer[NullablePointer[_GError]] tag): NullablePointer[_GThread] =>
-    @g_thread_create_full(func, data, stacksize, joinable, bound, priority, gerror)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:100
-  Original Name: g_thread_createheaders/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:100
-
-  Return Value: [PointerType size=64]->[Struct size=192,fid: f39]
-
-  Arguments:
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FundamentalType(void) size=0]
-    [FundamentalType(int) size=32]
-    [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
-*/
-  fun g_thread_create(func: Pointer[None] tag, data: Pointer[None] tag, joinable: I32, gerror: Pointer[NullablePointer[_GError]] tag): NullablePointer[_GThread] =>
-    @g_thread_create(func, data, joinable, gerror)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:40
-  Original Name: g_thread_error_quarkheaders/glib-2.70.1/glib-2.0/glib/gthread.h:40
-
-  Return Value: [FundamentalType(unsigned int) size=32]
-
-  Arguments:
-*/
-  fun g_thread_error_quark(): U32 =>
-    @g_thread_error_quark()
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:156
-  Original Name: g_thread_exitheaders/glib-2.70.1/glib-2.0/glib/gthread.h:156
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_thread_exit(retval: Pointer[None] tag): None =>
-    @g_thread_exit(retval)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:119
-  Original Name: g_thread_foreachheaders/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:119
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_thread_foreach(threadfunc: Pointer[None] tag, userdata: Pointer[None] tag): None =>
-    @g_thread_foreach(threadfunc, userdata)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:158
-  Original Name: g_thread_joinheaders/glib-2.70.1/glib-2.0/glib/gthread.h:158
-
-  Return Value: [PointerType size=64]->[FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=192,fid: f39]
-*/
-  fun g_thread_join(thread: NullablePointer[_GThread] tag): Pointer[None] =>
-    @g_thread_join(thread)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:145
-  Original Name: g_thread_newheaders/glib-2.70.1/glib-2.0/glib/gthread.h:145
-
-  Return Value: [PointerType size=64]->[Struct size=192,fid: f39]
-
-  Arguments:
-    [PointerType size=64]->[FundamentalType(char) size=8]
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FundamentalType(void) size=0]
-*/
-  fun g_thread_new(name: String, func: Pointer[None] tag, data: Pointer[None] tag): NullablePointer[_GThread] =>
-    @g_thread_new(name.cstring(), func, data)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:141
-  Original Name: g_thread_refheaders/glib-2.70.1/glib-2.0/glib/gthread.h:141
-
-  Return Value: [PointerType size=64]->[Struct size=192,fid: f39]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=192,fid: f39]
-*/
-  fun g_thread_ref(thread: NullablePointer[_GThread] tag): NullablePointer[_GThread] =>
-    @g_thread_ref(thread)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:154
-  Original Name: g_thread_selfheaders/glib-2.70.1/glib-2.0/glib/gthread.h:154
-
-  Return Value: [PointerType size=64]->[Struct size=192,fid: f39]
-
-  Arguments:
-*/
-  fun g_thread_self(): NullablePointer[_GThread] =>
-    @g_thread_self()
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:115
-  Original Name: g_thread_set_priorityheaders/glib-2.70.1/glib-2.0/glib/deprecated/gthread.h:115
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=192,fid: f39]
-    [Enumeration size=32,fid: f39]
-*/
-  fun g_thread_set_priority(thread: NullablePointer[_GThread] tag, priority: I32): None =>
-    @g_thread_set_priority(thread, priority)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:149
-  Original Name: g_thread_try_newheaders/glib-2.70.1/glib-2.0/glib/gthread.h:149
-
-  Return Value: [PointerType size=64]->[Struct size=192,fid: f39]
-
-  Arguments:
-    [PointerType size=64]->[FundamentalType(char) size=8]
-    [PointerType size=64]->[FunctionType]  WRITE MANUALLY
-    [PointerType size=64]->[FundamentalType(void) size=0]
-    [PointerType size=64]->[PointerType size=64]->[Struct size=128,fid: f21]
-*/
-  fun g_thread_try_new(name: String, func: Pointer[None] tag, data: Pointer[None] tag, gerror: Pointer[NullablePointer[_GError]] tag): NullablePointer[_GThread] =>
-    @g_thread_try_new(name.cstring(), func, data, gerror)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:143
-  Original Name: g_thread_unrefheaders/glib-2.70.1/glib-2.0/glib/gthread.h:143
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=192,fid: f39]
-*/
-  fun g_thread_unref(thread: NullablePointer[_GThread] tag): None =>
-    @g_thread_unref(thread)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/gthread.h:160
-  Original Name: g_thread_yieldheaders/glib-2.70.1/glib-2.0/glib/gthread.h:160
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-*/
-  fun g_thread_yield(): None =>
-    @g_thread_yield()
-
-
-/*
   Source: headers/glib-2.70.1/glib-2.0/glib/gmain.h:740
   Original Name: g_timeout_add_fullheaders/glib-2.70.1/glib-2.0/glib/gmain.h:740
 
@@ -18930,34 +18328,6 @@ primitive Glib
 */
   fun g_try_realloc(mem: Pointer[None] tag, nbytes: U64): Pointer[None] =>
     @g_try_realloc(mem, nbytes)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:97
-  Original Name: g_tuples_destroyheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:97
-
-  Return Value: [FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=32,fid: f124]
-*/
-  fun g_tuples_destroy(tuples: NullablePointer[_GTuples] tag): None =>
-    @g_tuples_destroy(tuples)
-
-
-/*
-  Source: headers/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:99
-  Original Name: g_tuples_indexheaders/glib-2.70.1/glib-2.0/glib/deprecated/grel.h:99
-
-  Return Value: [PointerType size=64]->[FundamentalType(void) size=0]
-
-  Arguments:
-    [PointerType size=64]->[Struct size=32,fid: f124]
-    [FundamentalType(int) size=32]
-    [FundamentalType(int) size=32]
-*/
-  fun g_tuples_index(tuples: NullablePointer[_GTuples] tag, index: I32, field: I32): Pointer[None] =>
-    @g_tuples_index(tuples, index, field)
 
 
 /*
@@ -22443,3 +21813,5 @@ primitive Glib
 */
   fun g_warn_message(domain: String, file: String, line: I32, func: String, warnexpr: String): None =>
     @g_warn_message(domain.cstring(), file.cstring(), line, func.cstring(), warnexpr.cstring())
+
+// The End
