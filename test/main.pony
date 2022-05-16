@@ -109,7 +109,7 @@ class AppState
 
 */
 
-  fun appcallback(gobj: GObjectStruct, data: String) =>
+  fun ref appcallback(gobj: GObjectStruct, data: String) =>
     @printf("In appcallback()\n".cstring())
     Gtk.main_quit()
 
