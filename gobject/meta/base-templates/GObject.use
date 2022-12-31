@@ -1,0 +1,8 @@
+use @g_object_newv[GObjectStruct](objecttype: U64, nparameters: U32, parameters: GParameterStruct tag)
+use @g_object_new_with_properties[GObjectStruct](objecttype: U64, nproperties: U32, names: Pointer[Pointer[U8]] tag, values: GValueStruct tag)
+use @g_object_get_data[Pointer[None]](gobject: GObjectStruct tag, key: Pointer[U8] tag)
+use @g_object_get_type[U64]()
+use @g_object_notify[None](gobject: GObjectStruct tag, propertyname: Pointer[U8] tag)
+use @g_object_ref[None](gobject: GObjectStruct tag)
+use @g_object_set_data[None](gobject: GObjectStruct tag, key: Pointer[U8] tag, data: Pointer[None] tag)
+use @g_object_unref[None](gobject: GObjectStruct tag)

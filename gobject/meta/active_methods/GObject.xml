@@ -5,7 +5,7 @@
 <xi:include href="../renderstructs.xml"/>
 <xi:include href="../../../castxml-results/gobject.xml"/>
 <renders>
-  <constructor name="g_object_new" render="1"/>
+  <constructor name="g_object_new" render="0"/>
   <constructor name="g_object_newv" render="1"/>
   <constructor name="g_object_new_valist" render="0"/>
   <constructor name="g_object_new_with_properties" render="1"/>
@@ -22,10 +22,10 @@
   <method name="g_object_force_floating" render="0"/>
   <method name="g_object_freeze_notify" render="0"/>
   <method name="g_object_get" render="0"/>
-  <method name="g_object_get_data" render="0"/>
+  <method name="g_object_get_data" render="1"/>
   <method name="g_object_get_property" render="0"/>
   <method name="g_object_get_qdata" render="0"/>
-  <method name="g_object_get_type" render="0"/>
+  <method name="g_object_get_type" render="1"/>
   <method name="g_object_getv" render="0"/>
   <method name="g_object_get_valist" render="0"/>
   <method name="g_object_is_floating" render="0"/>
@@ -39,7 +39,7 @@
   <method name="g_object_replace_qdata" render="0"/>
   <method name="g_object_run_dispose" render="0"/>
   <method name="g_object_set" render="0"/>
-  <method name="g_object_set_data" render="0"/>
+  <method name="g_object_set_data" render="1"/>
   <method name="g_object_set_data_full" render="0"/>
   <method name="g_object_set_property" render="0"/>
   <method name="g_object_set_qdata" render="0"/>

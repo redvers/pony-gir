@@ -11,10 +11,10 @@
   <inherit name="GtkBin" ponyfn="gtkbin" path="bin"/>
 </inherits>
 <renders>
-  <constructor name="gtk_window_new" render="0"/>
-  <method name="gtk_window_get_type" render="0"/>
+  <constructor name="gtk_window_new" render="1"/>
+  <method name="gtk_window_get_type" render="1"/>
   <method name="gtk_window_set_title" render="1"/>
-  <method name="gtk_window_get_title" render="0"/>
+  <method name="gtk_window_get_title" render="1"/>
   <method name="gtk_window_set_wmclass" render="0"/>
   <method name="gtk_window_set_role" render="0"/>
   <method name="gtk_window_set_startup_id" render="0"/>

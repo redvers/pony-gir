@@ -1,15 +1,17 @@
 
 use "Glib"
 use "GObject"
-use "Gio"
+//use "Gio"
 use "Gtk"
 
-use @printf[I32](fmt: Pointer[U8] tag, ...)
-use @g_value_get_string[Pointer[U8] ref](t: GValueStruct)
+//use @printf[I32](fmt: Pointer[U8] tag, ...)
+//use @g_value_get_string[Pointer[U8] ref](t: GValueStruct)
 
 actor Main
   new create(env: Env) =>
     None
+
+    /*
     let app: GtkApplication = GtkApplication("red.evil.gtk-demo", 0)
     let appstate: AppState = AppState(env)
     app.signal_connect[AppState]("activate", @{(gobjstruct: GObjectStruct, data: AppState) => data.activate(gobjstruct)}, appstate)
@@ -115,3 +117,5 @@ class AppState
 
   fun on_treeview_selection_changed(gobj: GObjectStruct, data: String) =>
     @printf("In on_tree()\n".cstring())
+
+*/

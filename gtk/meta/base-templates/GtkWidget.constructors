@@ -1,0 +1,4 @@
+/*
+  new create(gtype: U64, firstpropertyname: String, ...) =>
+   _ptr = @gtk_widget_new(gtype, firstpropertyname.cstring(), ...)
+*/

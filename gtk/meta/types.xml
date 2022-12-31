@@ -1851,13 +1851,13 @@
 
   <typedef name="GObject"
     embed="embed"
-    ponytypein="GObjectStruct tag"
+    ponytypein="GObject tag"
     ponytypeinconv=""
-    ponytypeout="GObjectStruct"
-    structtype="GObjectStruct"
-    structdef="GObjectStruct"
-    argtype="GObjectStruct tag"
-    rvtype="GObjectStruct"/>
+    ponytypeout="GObject"
+    structtype="GObject"
+    structdef="GObject"
+    argtype="GObject tag"
+    rvtype="GObject"/>
 
   <typedef name="NullablePointer[GtkProgressBarPrivate]"
     embed="var"

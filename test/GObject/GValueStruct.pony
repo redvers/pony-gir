@@ -53,32 +53,32 @@ use @g_value_get_ulong[U64](value: GValueStruct, u64: U64)
   Struct Align (bits): 64
 
   Fields (Offset in bits):
-     000000: [FundamentalType(long unsigned int) size=64]: g_type
-     000064: [ArrayType size=(0-1)]->[UNION size=64]
+     000000: [FundamentalType(long unsigned int) size=64]: g_type  
+     000064: [ArrayType size=(0-1)]->[UNION size=64] 
 */
 struct GValueStruct
   var g_type: U64 = U64(0) // Typedef
   var data: U128 = U128(0)
 
-  fun ref new_char(): GValueStruct => @g_value_init(this, char()) ; this
-  fun ref new_uchar(): GValueStruct => @g_value_init(this, uchar()) ; this
-  fun ref new_boolean(): GValueStruct => @g_value_init(this, boolean()) ; this
-  fun ref new_int(): GValueStruct => @g_value_init(this, int()) ; this
-  fun ref new_uint(): GValueStruct => @g_value_init(this, uint()) ; this
-  fun ref new_long(): GValueStruct => @g_value_init(this, long()) ; this
-  fun ref new_ulong(): GValueStruct => @g_value_init(this, ulong()) ; this
-  fun ref new_int64(): GValueStruct => @g_value_init(this, int64()) ; this
-  fun ref new_uint64(): GValueStruct => @g_value_init(this, uint64()) ; this
-  fun ref new_enum(): GValueStruct => @g_value_init(this, enum()) ; this
-  fun ref new_flags(): GValueStruct => @g_value_init(this, flags()) ; this
-  fun ref new_float(): GValueStruct => @g_value_init(this, float()) ; this
-  fun ref new_double(): GValueStruct => @g_value_init(this, double()) ; this
-  fun ref new_string(): GValueStruct => @g_value_init(this, string()) ; this
-  fun ref new_pointer(): GValueStruct => @g_value_init(this, pointer()) ; this
-  fun ref new_boxed(): GValueStruct => @g_value_init(this, boxed()) ; this
-  fun ref new_param(): GValueStruct => @g_value_init(this, param()) ; this
-  fun ref new_gobject(): GValueStruct => @g_value_init(this, gobject()) ; this
-  fun ref new_variant(): GValueStruct => @g_value_init(this, variant()) ; this
+  fun ref new_char(): GValueStruct => @g_value_init(this, char())
+  fun ref new_uchar(): GValueStruct => @g_value_init(this, uchar())
+  fun ref new_boolean(): GValueStruct => @g_value_init(this, boolean())
+  fun ref new_int(): GValueStruct => @g_value_init(this, int())
+  fun ref new_uint(): GValueStruct => @g_value_init(this, uint())
+  fun ref new_long(): GValueStruct => @g_value_init(this, long())
+  fun ref new_ulong(): GValueStruct => @g_value_init(this, ulong())
+  fun ref new_int64(): GValueStruct => @g_value_init(this, int64())
+  fun ref new_uint64(): GValueStruct => @g_value_init(this, uint64())
+  fun ref new_enum(): GValueStruct => @g_value_init(this, enum())
+  fun ref new_flags(): GValueStruct => @g_value_init(this, flags())
+  fun ref new_float(): GValueStruct => @g_value_init(this, float())
+  fun ref new_double(): GValueStruct => @g_value_init(this, double())
+  fun ref new_string(): GValueStruct => @g_value_init(this, string())
+  fun ref new_pointer(): GValueStruct => @g_value_init(this, pointer())
+  fun ref new_boxed(): GValueStruct => @g_value_init(this, boxed())
+  fun ref new_param(): GValueStruct => @g_value_init(this, param())
+  fun ref new_gobject(): GValueStruct => @g_value_init(this, gobject())
+  fun ref new_variant(): GValueStruct => @g_value_init(this, variant())
 
 
   fun invalid(): U64 =>  0 << U64(2)

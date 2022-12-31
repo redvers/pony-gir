@@ -1,0 +1,8 @@
+class GtkWidget
+
+  var _ptr: GObjectStruct
+
+  new from_ref(objref: GObjectStruct) => _ptr = objref
+
+  fun ref gobject(): GObjectStruct => _ptr
+

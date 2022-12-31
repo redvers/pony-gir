@@ -4,7 +4,7 @@ use "../GObject"
 //use "../Atk"
 //use "../Pango"
 //use "../Gdk"
-use "../Gio"
+//use "../Gio"
 //use "../Harfbuzz"
 
 use "lib:gtk-3"
@@ -18,7 +18,7 @@ use "lib:gtk-3"
 //use "lib:cairo"
 //use "lib:gdk_pixbuf-2.0"
 use "lib:glib-2.0"
-use "lib:gio-2.0"
+//use "lib:gio-2.0"
 use "lib:gobject-2.0"
 
 

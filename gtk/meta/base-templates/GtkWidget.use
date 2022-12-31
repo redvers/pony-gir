@@ -1,0 +1,8 @@
+use @gtk_widget_new[GObjectStruct](gtype: U64, firstpropertyname: Pointer[U8] tag, ...)
+use @gtk_widget_get_type[U64]()
+use @gtk_widget_destroy[None](widget': GObjectStruct tag)
+use @gtk_widget_show[None](widget': GObjectStruct tag)
+use @gtk_widget_hide[None](widget': GObjectStruct tag)
+use @gtk_widget_show_all[None](widget': GObjectStruct tag)
+use @gtk_widget_set_name[None](widget': GObjectStruct tag, name: Pointer[U8] tag)
+use @gtk_widget_get_name[Pointer[U8]](widget': GObjectStruct tag)

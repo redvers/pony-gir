@@ -411,13 +411,13 @@
 
   <typedef name="NullablePointer[GTypeClass]"
     embed="var"
-    ponytypein="GTypeClassStruct tag"
+    ponytypein="GTypeClass tag"
     ponytypeinconv=""
-    ponytypeout="GTypeClassStruct"
-    structtype="GTypeClassStruct"
-    structdef="GTypeClassStruct"
-    argtype="GTypeClassStruct tag"
-    rvtype="GTypeClassStruct"/>
+    ponytypeout="GTypeClass"
+    structtype="GTypeClass"
+    structdef="GTypeClass"
+    argtype="GTypeClass tag"
+    rvtype="GTypeClass"/>
 
   <typedef name="Pointer[U8]"
     embed="var"
@@ -791,12 +791,12 @@
 
   <typedef name="GTypeInstance"
     embed="embed"
-    ponytypein="GTypeInstanceStruct tag"
+    ponytypein="GTypeInstance tag"
     ponytypeinconv=""
-    ponytypeout="GTypeInstanceStruct"
-    structtype="GTypeInstanceStruct"
-    structdef="GTypeInstanceStruct"
-    argtype="GTypeInstanceStruct tag"
-    rvtype="GTypeInstanceStruct"/>
+    ponytypeout="GTypeInstance"
+    structtype="GTypeInstance"
+    structdef="GTypeInstance"
+    argtype="GTypeInstance tag"
+    rvtype="GTypeInstance"/>
 </typedefs>
 

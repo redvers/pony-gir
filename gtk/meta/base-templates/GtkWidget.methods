@@ -1,0 +1,23 @@
+  fun ref get_type(): U64 =>
+    @gtk_widget_get_type()
+
+  fun ref destroy(): None =>
+    @gtk_widget_destroy(gobject())
+
+  fun ref show(): None =>
+    @gtk_widget_show(gobject())
+
+  fun ref hide(): None =>
+    @gtk_widget_hide(gobject())
+
+  fun ref show_all(): None =>
+    @gtk_widget_show_all(gobject())
+
+  fun ref set_name(name: String): None =>
+    @gtk_widget_set_name(gobject(), name.cstring())
+
+  fun ref get_name(): String =>
+    var pcstring: Pointer[U8] =  @gtk_widget_get_name(gobject())
+    let p: String iso = String.from_cstring(pcstring).clone()
+    consume p
+

@@ -1,0 +1,18 @@
+  fun ref get_data(key: String): Pointer[None] =>
+    @g_object_get_data(gobject(), key.cstring())
+
+  fun ref get_type(): U64 =>
+    @g_object_get_type()
+
+  fun ref notify(propertyname: String): None =>
+    @g_object_notify(gobject(), propertyname.cstring())
+
+  fun ref gref(): None =>
+    @g_object_ref(gobject())
+
+  fun ref set_data(key: String, data: Pointer[None] tag): None =>
+    @g_object_set_data(gobject(), key.cstring(), data)
+
+  fun ref unref(): None =>
+    @g_object_unref(gobject())
+
